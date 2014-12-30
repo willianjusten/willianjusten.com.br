@@ -54,7 +54,6 @@ gulp.task('stylus', function(){
         .pipe(gulp.dest('assets/css'))
 });
 
-
 /**
  * Javascript Task
  */
@@ -65,7 +64,6 @@ gulp.task('js', function(){
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'))
 });
-
 
 /**
  * Watch stylus files for changes & recompile
