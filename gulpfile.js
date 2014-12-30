@@ -42,15 +42,15 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 /**
  * Stylus task
  */
-// gulp.task('stylus', function(){
-//         gulp.src('src/styl/main.styl')
-//         .pipe(plumber())
-//         .pipe(stylus({
-//             use:[koutoSwiss(), prefixer(), jeet(),rupture()],
-//             compress: true
-//         }))
-//         .pipe(gulp.dest('build/css'))
-// });
+gulp.task('stylus', function(){
+        gulp.src('src/styl/main.styl')
+        .pipe(plumber())
+        .pipe(stylus({
+            use:[koutoSwiss(), prefixer(), jeet(),rupture()],
+            compress: true
+        }))
+        .pipe(gulp.dest('build/css'))
+});
 
 /**
  * Watch scss files for changes & recompile
