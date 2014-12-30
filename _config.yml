@@ -12,3 +12,6 @@ github_username:  willianjusten
 markdown: kramdown
 highlighter: pygments
 permalink: /:title/
+
+# exclude my node related stuff
+exclude: ['package.json', 'src']
