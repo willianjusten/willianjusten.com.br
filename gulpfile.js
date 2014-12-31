@@ -84,7 +84,7 @@ gulp.task('watch', function () {
     gulp.watch('src/styl/**/*.styl', ['stylus']);
     gulp.watch('src/js/**/*.js', ['js']);
      gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
