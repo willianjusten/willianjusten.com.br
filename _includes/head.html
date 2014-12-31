@@ -14,7 +14,7 @@
     <meta name="twitter:site" content="@willian_justen">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image:src" content=""> <!-- LEMBRAR DE COLOCAR IMAGEM AQUI -->
+    <meta name="twitter:image:src" content="{{ "/assets/img/placeholder-image.png" | prepend: site.baseurl }}"> <!-- LEMBRAR DE COLOCAR IMAGEM AQUI -->
 
     <!-- Social: Facebook / Open Graph -->
     <meta property="fb:admins" content="1611244354" />
@@ -22,7 +22,7 @@
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="blog">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:image" content="">  <!-- LEMBRAR DE COLOCAR IMAGEM AQUI -->
+    <meta property="og:image" content="{{ "/assets/img/placeholder-image.png" | prepend: site.baseurl }}">  <!-- LEMBRAR DE COLOCAR IMAGEM AQUI -->
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.date %}
