@@ -1,3 +1,13 @@
-<header>
-    post
+<header class="header-post">
+    <div class="content">
+         <div class="subheader">
+            <a href="{{ site.baseurl }}">
+                <svg class="icon-back icon-angle-left"><use xlink:href="#icon-angle-left"></use></svg>
+                <p>Home</p>
+            </a>
+         </div>
+        <p class="date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="subtitle">{{ page.description }}</p>
+    </div>
 </header>

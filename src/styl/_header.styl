@@ -1,5 +1,5 @@
 // Header home
-.site-header
+.header-site
     background main
     min-height: 100vh
     .content
@@ -19,3 +19,44 @@
         font-size rem(20px)
         +above(cut)
             font-size rem(40px)
+
+// Header Post
+.header-post
+    background main
+    padding 40px 10px
+    +above(cut)
+        padding 75px
+    .content
+        width 95%
+    .subheader
+        display table
+    .date
+        mainFont(300)
+        font-size rem(16px)
+    h1
+        font-size rem(40px)
+        margin 0 0 30px
+        +above(cut)
+            font-size rem(50px)
+    .subtitle
+        mainFont(300)
+        font-size rem(20px)
+    h1,.subtitle, .date
+        color sec
+        text-align center
+    svg
+        transition .8s
+    a,p
+        color sec
+        text-decoration none
+        mainFont(300)
+        font-size rem(18px)
+    a
+        height 50px
+        p,svg
+            float left
+        p
+            margin 10px
+        &:hover
+            .icon-back
+                transform translateX(-10px)
