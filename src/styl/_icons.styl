@@ -14,7 +14,7 @@ size(width = 30, height = 30)
         transition all .7s
         .icon
             fill sec
-            size(20,20)
+            size(18,18)
             +above(cut)
                 size()
         &:hover
@@ -24,9 +24,12 @@ size(width = 30, height = 30)
 
 .down
     position absolute
-    bottom 20px
+    bottom 40px
+    width 100%
     display block
     text-align center
     .icon
+        align(both)
         size(80,80)
         fill sec
+        animation pulse 1.3s infinite
