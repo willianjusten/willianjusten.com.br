@@ -14,4 +14,4 @@ highlighter: pygments
 permalink: /:title/
 
 # exclude my node related stuff
-exclude: ['package.json', 'src']
+exclude: ['package.json', 'src', 'node_modules']

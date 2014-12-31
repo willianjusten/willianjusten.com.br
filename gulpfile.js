@@ -8,6 +8,7 @@ var gulp        = require('gulp'),
     rupture     = require('rupture'),
     koutoSwiss  = require('kouto-swiss'),
     prefixer    = require('autoprefixer-stylus'),
+    imagemin    = require('gulp-imagemin'),
     cp          = require('child_process');
 
 var messages = {
@@ -66,12 +67,23 @@ gulp.task('js', function(){
 });
 
 /**
+ * Imagemin Task
+ */
+gulp.task('imagemin', function() {
+    return gulp.src('src/img/**/*')
+        .pipe(plumber())
+        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        .pipe(gulp.dest('assets/img/'));
+});
+
+/**
  * Watch stylus files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('src/styl/**/*.styl', ['stylus']);
     gulp.watch('src/js/**/*.js', ['js']);
+     gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
     gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
@@ -79,4 +91,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch']);
+gulp.task('default', ['js', 'stylus', 'imagemin', 'browser-sync', 'watch']);
