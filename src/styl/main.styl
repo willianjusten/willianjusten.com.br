@@ -24,6 +24,26 @@ normalize()
 
 @import "_variables"
 @import "_typo"
+@import "_icons"
 
 body
-    background-image url('/assets/img/noise.png')
+    // background-image url('/assets/img/noise.png')
+
+.site-header
+    background main
+    min-height: 100vh
+    h1,h2
+        color: sec
+        text-align center
+    h1
+        font-size rem(60px)
+        line-height 1
+        +above(cut)
+            font-size rem(100px)
+    h2
+        font-size rem(24px)
+        +above(cut)
+            font-size rem(40px)
+
+@import "_home"
+@import "_post"
