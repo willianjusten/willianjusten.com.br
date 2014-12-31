@@ -2,7 +2,7 @@
 title: Willian Justen - Desenvolvedor Front End
 email: willianjustenqui@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Um blog sobre desenvolvimento Front End feito por um desenvolvedor de meia tigela.
+  Um blog sobre desenvolvimento web com foco em Front End.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://willianjusten.com.br" # the base hostname & protocol for your site
 twitter_username: willian_justen
