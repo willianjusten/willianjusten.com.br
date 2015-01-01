@@ -6,7 +6,7 @@
                 <p>Home</p>
             </a>
          </div>
-        <p class="date">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <p class="date">{{ page.date | date_to_string }}</p>
         <h1 class="post-title">{{ page.title }}</h1>
         <p class="subtitle">{{ page.description }}</p>
     </div>
