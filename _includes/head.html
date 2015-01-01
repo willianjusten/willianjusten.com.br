@@ -23,7 +23,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <!-- <meta property="og:image" content="{{ "/assets/img/placeholder-image.png" | prepend: site.baseurl }}"> -->
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:site_name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
     {% if page.date %}
     <meta property="article:author" content="https://www.facebook.com/willian.justen" />
     <meta property="article:publisher" content="https://www.facebook.com/willian.justen" />
