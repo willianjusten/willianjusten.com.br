@@ -1,13 +1,14 @@
 <header class="header-post">
     <div class="content">
-         <div class="subheader">
+       <div class="subheader">
             <a href="/">
                 <svg class="icon-back icon-angle-left"><use xlink:href="#icon-angle-left"></use></svg>
                 <p>Home</p>
             </a>
-         </div>
+        </div>
+        <meta itemprop="datePublished" content="{{ page.date }}">
         <p class="date">{{ page.date | date_to_string }}</p>
-        <h1 class="post-title">{{ page.title }}</h1>
-        <p class="subtitle">{{ page.description }}</p>
+        <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <p itemprop="description" class="subtitle">{{ page.description }}</p>
     </div>
 </header>

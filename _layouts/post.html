@@ -2,14 +2,15 @@
 <html lang="pt-br">
     {% include head.html %}
     <body>
-    {% include svg-icons.html %}
-    {% include header-post.html %}
-    <div class="post">
+        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+            {% include header-post.html %}
 
-        <article class="post-content">
-            {{ content }}
-        </article>
+            <article class="post-content" itemprop="articleBody">
+                {{ content }}
+            </article>
 
-        {% include comments.html %}
-        {% include footer.html %}
-    </div>
+            {% include comments.html %}
+            {% include footer.html %}
+        </section>
+    </body>
+</html>
