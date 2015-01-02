@@ -3,4 +3,8 @@
 </footer>
 {% include svg-icons.html %}
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
-<script>smoothScroll.init();</script>
+<script>
+smoothScroll.init({
+    updateURL: false
+});
+</script>
