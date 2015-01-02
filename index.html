@@ -3,7 +3,6 @@ layout: default
 ---
 
 <section id="scroll" class="home">
-  <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -13,5 +12,4 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
 </section>
