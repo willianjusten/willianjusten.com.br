@@ -4,6 +4,10 @@ title:  "Welcome to Jekyll!"
 date:   2014-12-29 20:02:49
 description: "This is the first post in my blog!"
 categories: jekyll update
+tags:
+- jekyll
+- ruby
+- hightlight
 ---
 
 ![Jekyll logo](http://www.proxygear.com/images/posts/jekyll.png)
