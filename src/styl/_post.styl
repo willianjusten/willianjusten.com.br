@@ -36,11 +36,19 @@
         +above(cut)
             font-size rem(25px)
     ul
-        padding-left rem(120px)
+        padding-left rem(60px)
+        +above(cut)
+            padding-left rem(120px)
     blockquote
-        center(rem(700px))
+        center(rem(730px))
         border-left 5px solid main
-        padding-left 20px
+        padding 0 rem(30px)
         margin rem(50px) auto
+        +below(cut)
+            width 70%
         p
             color rgba(0,0,0,0.4)
+            margin 0
+            +below(cut)
+                font-size rem(16px)
+                padding 0
