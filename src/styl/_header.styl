@@ -23,13 +23,20 @@
 // Header Post
 .header-post
     background main
-    padding 40px 10px
-    +above(cut)
-        padding 75px
+    min-height: 100vh
     .content
         width 95%
+        align(both)
     .subheader
         display table
+        padding 20px
+        a
+            border 1px solid sec
+            border-radius 20px
+            padding 0 10px
+            +above(cut)
+                padding 0 10px
+
     .date
         mainFont(300)
         font-size rem(16px)
@@ -57,7 +64,7 @@
         p,svg
             float left
         p
-            margin 10px
+            margin 5px
         &:hover
             .icon-back
                 transform translateX(-10px)
