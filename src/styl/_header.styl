@@ -25,8 +25,10 @@
     background main
     min-height: 100vh
     .content
-        width 95%
+        width 90%
         align(both)
+        +above(cut)
+            center(1000px)
     .subheader
         display table
         padding 20px
@@ -65,6 +67,8 @@
             float left
         p
             margin 5px
+            +above(cut)
+                margin 10px
         &:hover
             .icon-back
                 transform translateX(-10px)
