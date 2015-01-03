@@ -3,6 +3,10 @@ layout: post
 title: "Testing Readability with a Bunch of Text"
 description: "A bunch of text for test the readability. I think this is the primary test."
 date: 2015-01-01 21:13:43
+tags:
+- accessibility
+- readability
+- aria
 categories: "readability"
 ---
 
