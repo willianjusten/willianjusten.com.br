@@ -35,7 +35,7 @@ Eu sou um cara muito curioso e gosto sempre de coisas novas, então eu utilizei:
 
 ### Por que de cada uma dessas tecnologias?
 
-Eu acho bastante interessante quando o desenvolvedor explica o porquê dele ter usado tal ferramenta/tecnologia ao invés de outra mais famosa ou mais leve, etc... Por isso, vou explicar rapidamente cada escolha minha e talvez de algumas dessas escolhas, eu faça posts mais completos, explicando bem detalhadamente.
+Eu acho bastante interessante quando o desenvolvedor explica o porquê dele ter usado tal ferramenta/tecnologia ao invés de outra mais famosa ou mais leve, etc... Por isso, vou explicar rapidamente cada escolha minha. Talvez eu crie posts mais detalhados de algumas dessas tecnologias.
 
 #### Jekyll
 
@@ -43,13 +43,14 @@ Apesar de eu trabalhar atualmente com JS, eu acabei optando pelo Jekyll pela fac
 
 E para iniciar o blog, basta ter o ruby instalado na máquina, se você é usuário Mac já vem instalado por padrão (mas aconselho fortemente a atualizar), se você é usuário Linux, algumas distribuições já vem por padrão e outras é só instalar via gerenciador de pacotes. Agora, se você é usuário Windows, muda essa bosta (brincadeirinha xD), mas vai ter algumas dores de cabeça para fazer tudo funcionar... Eu não deveria, mas vou te ajudar usuário Windows, segue o link desse cara que vai resolver o seu problema [Jekyll Windows - Juthilo](http://jekyll-windows.juthilo.com/)
 
-Como eu falei para alguns amigos que estava criando um blog e iria usar Jekyll e eles me pediram dicas de como usar, eu vou criar um post mais completo, explicando não só o passo a passo para instalar, mas como ele funciona, ferramentas para se trabalhar melhor com ele e outras coisinhas mais. Então se você tem interesse em saber mais sobre o Jekyll, aguarda que logo logo tem post sobre ele.
+Durante a criação desse blog, eu cheguei a falar sobre ele para alguns amigos, quando disse que estava utilizando Jekyll, alguns me pediram dicas de como usar e outras coisas mais. Então eu vou criar um post mais completo, explicando não só o passo a passo para instalar, mas como ele funciona, ferramentas para se trabalhar melhor com ele e outras coisinhas mais. Se você tem interesse em saber mais sobre o Jekyll, aguarda que logo logo tem post sobre ele.
+
 
 #### GulpJS
 
 Definitivamente meu automatizador favorito, seja pela velocidade, seja pela facilidade com que é de se escrever para ele. Junto com ele utilizei os seguintes plugins:
 
-* [Browser Sync](http://www.browsersync.io/docs/gulp/) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading para mim, depois que conheci essa ferramenta me apaixonei, se você não consegue, corre para olhar, é fantástica.
+* [Browser Sync](http://www.browsersync.io/docs/gulp/) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading, depois que conheci essa ferramenta me apaixonei, se você não conhece, corre para olhar, é fantástica.
 * [Gulp-stylus](https://www.npmjs.com/package/gulp-stylus) - para compilar meu lindo Stylus
 * [Gulp-uglify](https://www.npmjs.com/package/gulp-uglify) - minificar o js
 * [Gulp-concat](https://www.npmjs.com/package/gulp-concat) - concatenar os arquivos
@@ -59,7 +60,7 @@ Se quiser entender melhor como eu fiz toda essa bagunça funcionar, só abrir o 
 
 #### SVG
 
-Para os que me conhecem, sabem que sou apaixonado por SVG e por isso criei a [awesome-svg](https://github.com/willianjusten/awesome-svg), que é um conjunto de informações relacionadas a SVG, desde seu uso básico até opções mais avançadas.
+Para os que me conhecem, sabem que sou apaixonado por SVG e por isso criei a [awesome-svg](https://github.com/willianjusten/awesome-svg), que é um conjunto de informações relacionadas a SVG, desde seu uso básico até opções mais avançadas, se você quer aprender SVG, te aconselho fortemente a ler.
 
 Para esse blog, eu não poderia deixar de usar SVG, sendo assim, todos os ícones utilizados no blog são feitos em svg. Para tal, eu criei uma partial do Jekyll contendo as `defs` de todos os ícones e então chamei cada ícone que eu desejava usando o `use`, conforme exemplo abaixo:
 
@@ -107,7 +108,7 @@ Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em c
         stack()
 {% endhighlight %}
 
-A linha `2` mostra um dos poderes do Jeet, onde eu defino que o elemento `.datetime` irá ocupar cerca `1/6` de todo o `container`. Se estivéssemos trabalhando com o bootstrap seria similar a classe `.col-md-2`, que representa `2` colunas num total de `12`. As linhas `5`, `12` e `20` também são Jeet e esse `stack`, quer dizer que os elementos devem ser empilhados e o elemento que recebe essa função passa a receber um `width: 100%`.
+A linha `2` mostra um dos poderes do Jeet, onde eu defino que o elemento `.datetime` irá ocupar cerca `1/6` de todo o `container`. Se estivéssemos trabalhando com o bootstrap seria similar a classe `.col-md-2`, que representa `2` colunas num total de `12`. As linhas `5`, `12` e `20` também são do Jeet e esse `stack`, quer dizer que os elementos devem ser empilhados e o elemento que recebe essa função passa a receber um `width: 100%`.
 
 As linhas `4`, `11` e `19` mostram a utilização do Rupture, onde o `+below(cut)` é compilado para `@media only screen and (max-width:37.5rem)`, onde `37.5rem` é o valor da variável `cut`. O Rupture permite utilizar palavras como `below`, `above`, `between`, `at`, o que é muito mais fácil de se escrever e entender do que ficar colocando várias medias queries.
 
