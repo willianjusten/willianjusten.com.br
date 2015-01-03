@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<section id="scroll" class="home">
+<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <article class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <meta itemprop="datePublished" content="{{ post.date }}">
+            <p class="date">{{ post.date | date_to_string }}</p>
+            <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+            <p itemprop="description" class="subtitle">{{ post.description }}</p>
+        </article>
     {% endfor %}
-</section>
+</main>
