@@ -4,7 +4,7 @@ layout: default
 
 <main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     {% for post in site.posts %}
-        <article class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
             <meta itemprop="datePublished" content="{{ post.date }}">
             <p class="date">{{ post.date | date_to_string }}</p>
             <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
