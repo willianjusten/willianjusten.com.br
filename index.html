@@ -7,7 +7,7 @@ layout: default
         <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date}}">
-                    <time class="" datetime="{{ post.date | date_to_xmlschema }}">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
                         <span class="day">
                             {{ post.date | date: "%d" }}
                         </span>
