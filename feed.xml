@@ -8,6 +8,8 @@ layout: null
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <icon>http://willianjusten.com.br/assets/img/icons/apple-touch-icon-144x144.png</icon>
+    <logo>http://willianjusten.com.br/assets/img/icons/apple-touch-icon-144x144.png</logo>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
