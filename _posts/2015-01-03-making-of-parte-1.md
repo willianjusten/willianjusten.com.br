@@ -20,7 +20,7 @@ E por que eu trabalho com web agora? Ah...porque web é incrível e a facilidade
 
 Eu pretendo escrever o máximo que der e sobre tudo, desde o avançado até dicas rápidas para iniciantes. O foco principal será em tecnologias Front End, mas isso não impede que um dia escreva sobre Python ou alguma técnica de estudo. Espero que gostem do blog e todo feedback é bem vindo =)
 
-## Tecnolgias utilizadas
+## Tecnologias utilizadas
 
 Eu sou um cara muito curioso e gosto sempre de coisas novas, então eu utilizei:
 
