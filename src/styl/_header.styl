@@ -26,6 +26,7 @@
 .header-post
     background main
     min-height: 100vh
+    content 'viewport-units-buggyfill; min-height:100vh;'
     .content
         width 90%
         align(both)
@@ -66,10 +67,11 @@
     a
         float left
         p,svg
-            display inline-block
-            vertical-align middle
+            float left
         p
-            margin 0
+            margin rem(5px)
+            +above(cut)
+                margin rem(10px)
         &:hover
             .icon-back
                 transform translateX(-10px)
