@@ -54,7 +54,7 @@ ruby -v
 
 {% highlight sh %}
 # Instalando o Jekyll
-gem install
+gem install jekyll
 
 # Iniciando um projeto com ele
 jekyll new meu-blog-lindo
