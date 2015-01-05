@@ -8,6 +8,7 @@ tags:
 - desenvolvimento
 - frontend
 - "#1postperday"
+- rss
 categories:
 ---
 
@@ -34,3 +35,18 @@ Eu particularmente utilizo o [Feedly](http://feedly.com/) e junto a ele uso uma 
 ![Imagem mostrando uma tela com xml para rss](/assets/img/one-post-per-day/feedly.png)
 
 Se você estiver com a extensão do Feedly instalada e clicar em [RSS](http://willianjusten.com.br/feed.xml) vai abrir uma janela parecida com a da imagem acima, aí é só mandar abrir e pronto, toda vez que lançar algo novo, você é avisado, assim fica mais fácil de não perder nada.
+
+E para vocês não falarem que eu fiz um post praticamente inútil, vai aqui um listinha de feeds que eu sigo (não são todos, porque senão seria um listão):
+
+#### Gringos
+* [Echo JS](http://www.echojs.com/rss) - posts sobre JS o dia inteiro
+* [A List Apart](http://alistapart.com/site/rss) - blog sobre desenvolvimento web
+* [Codrops](http://feeds2.feedburner.com/tympanus) - blog mais lindo sobre desenvolvimento web e design
+* [Creative JS](http://creativejs.com/feed/) - Blog sobre JS e um pouco de curiosidades
+* [CSS-Tricks](http://feeds.feedburner.com/CssTricks) - Blog sobre desenvolvimento frontend
+* [Smashing Magazine](http://rss1.smashingmagazine.com/feed/) - Blog sobre desenvolvimento web
+
+#### Brazucas
+* [Tableless](http://tableless.com.br/feed/) - Blog sobre desenvolvimento web
+* [Imasters](http://imasters.com.br/feed/) - Blog e fórum de desenvolvimento web
+* [Nomadev](http://nomadev.com.br/rss/) - Blog de um cara louco que chamam de [Suissa](https://twitter.com/osuissa)
