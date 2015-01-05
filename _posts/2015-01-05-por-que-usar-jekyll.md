@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Por que usar Jekyll?"
+title: "Flame War: Por que usar Jekyll?"
 date: 2015-01-05 21:18:29
 description: "Depois de várias dúvidas, aqui vai uma lista de razões para se utilizar o Jekyll para criação de Blogs de desenvolvimento. "
 tags:
@@ -10,7 +10,7 @@ tags:
 categories:
 ---
 
-Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s>
+Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s> E brincadeirinha, não vai rolar flame war aqui, assim espero =o
 
 Bom, como disse no [primeiro post](http://willianjusten.com.br/making-of-parte-1/) e expliquei um pouco melhor no [segundo post](http://willianjusten.com.br/making-of-parte-2/), eu utilizei o [Jekyll](http://jekyllrb.com/), que é um gerador estático, para criar o meu Blog. Algumas pessoas acharam muito legal a ideia, disseram até que já haviam pensado em criar utilizando o Jekyll ou outros geradores estáticos. Mas tiveram algumas pessoas que ficaram ainda com dúvidas de porque utilizar o Jekyll e não fazer na mão ou em um Wordpress. E teve um amigo de um grupo do qual eu participo que fez a seguinte postagem.
 
