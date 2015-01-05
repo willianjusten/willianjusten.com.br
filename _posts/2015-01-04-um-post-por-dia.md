@@ -18,7 +18,7 @@ A maioria dos desenvolvedores que tem um blog, sabem o quanto é difícil manter
 
 Assim como o Fernando falou, a ideia é gerar e compartilhar conteúdo em pt-BR, que sabemos que ainda há bem pouco.
 
-Todos os posts serão compartilhados com a hashtag **1postperday**, então se você quiser seguir, basta procurar por essa tag.
+Todos os posts serão compartilhados com a hashtag **#1postperday**, então se você quiser seguir, basta procurar por essa tag.
 
 Se você é desenvolvedor e se interessou pela ideia, não espera não, vai lá postar começar a postar!!
 
