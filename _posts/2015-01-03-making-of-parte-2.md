@@ -118,7 +118,7 @@ Para ser expert em Gulp, basta saber suas funções principais e que ele trabalh
 
 Isso mesmo! É só isso que você precisa saber, sabendo disso, mão na massa!
 
-#### Primeiro definir e chamar as dependências
+#### Primeiro definir as variáveis e chamar as dependências
 
 {% highlight javascript %}
 var gulp        = require('gulp'),
@@ -133,6 +133,10 @@ var gulp        = require('gulp'),
     prefixer    = require('autoprefixer-stylus'),
     imagemin    = require('gulp-imagemin'),
     cp          = require('child_process');
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
 {% endhighlight %}
 
 #### Definir as tasks do jekyll para dar build e rebuild a cada arquivo atualizado
