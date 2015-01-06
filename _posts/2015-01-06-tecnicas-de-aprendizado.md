@@ -11,6 +11,8 @@ tags:
 categories:
 ---
 
+![Tirinha da Mafalda: Garoto fala: As pessoas esperam que o ano que está começando seja melhor que o anterior. Mafalda responde: Aposto que o ano que está começando espera que as pessoas é que sejam melhores]("/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png")
+
 Você já se pegou deixando uma tarefa para depois só porque estava cansado ou com preguiça de fazer naquele momento? Já ficou se punindo por não ter feito algo que deveria fazer? Ou então sentou para estudar e até a parede parecia mais interessante? Se você respondeu **não** para todas as perguntas, <s>some daqui seu ET</s>, brincadeiras a parte, é comum do ser humano achar certas tarefas tediantes/desagradáveis e por isso perdemos nosso foco e deixamos de fazer nossas tarefas e isso se chama Procrastinação.
 
 > **Procrastinação:** é o ato de adiar tarefas, realizando outras, menos importantes ou mais prazerosas, deixando as mais importantes para depois.
