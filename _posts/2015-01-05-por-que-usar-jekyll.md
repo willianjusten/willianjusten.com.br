@@ -3,7 +3,7 @@ layout: post
 title: "Flame War: Por que usar Jekyll?"
 date: 2015-01-05 21:18:29
 description: "Depois de várias dúvidas, aqui vai uma lista de razões para se utilizar o Jekyll para criação de Blogs de desenvolvimento. "
-image: "http://www.theironsamurai.com/wp-content/uploads/2014/12/yoda-flame-war.jpg"
+image: "/assets/img/flame-war/yoda-flame-war.jpg"
 tags:
 - jekyll
 - gerador estático
