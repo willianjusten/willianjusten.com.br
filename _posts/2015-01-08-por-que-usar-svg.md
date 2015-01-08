@@ -8,6 +8,7 @@ tags:
 - frontend
 - trend
 - "#dicarapida"
+image: "/assets/img/por-que-usar-svg/coloridos.jpg"
 categories:
 twitter_text: "Por que você deveria estar usando SVG?"
 ---
