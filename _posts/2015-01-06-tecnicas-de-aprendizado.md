@@ -8,7 +8,7 @@ tags:
 - estudo
 - produtividade
 - procrastinação
-categories:
+twitter_text: "tecnicas de aprendizado"
 ---
 
 ![Tirinha da Mafalda: Garoto fala: As pessoas esperam que o ano que está começando seja melhor que o anterior. Mafalda responde: Aposto que o ano que está começando espera que as pessoas é que sejam melhores](/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png)

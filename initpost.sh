@@ -116,6 +116,7 @@ echo "date: ${CURRENT_DATE} ${TIME}"
 echo "description:"
 echo "tags:"
 echo "categories:"
+echo "twitter_text:"
 echo "---"
 
 }

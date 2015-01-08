@@ -9,7 +9,7 @@ tags:
 - gulp
 - stylus
 - github pages
-categories:
+twitter_text: "Making of parte 2 #jekyll #ghpages"
 ---
 
 ## Introdução

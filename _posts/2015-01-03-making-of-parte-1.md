@@ -8,7 +8,7 @@ tags:
 - gulp
 - stylus
 - svg
-categories: iniciante
+twitter_text: "Making of parte 2 #jekyll #gulp #svg #stylus"
 ---
 
 ## Antes de qualquer coisa...

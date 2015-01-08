@@ -8,7 +8,6 @@ tags:
 - jekyll
 - gerador estático
 - discussão
-categories:
 ---
 
 Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s> E brincadeirinha, não vai rolar flame war aqui, assim espero =o

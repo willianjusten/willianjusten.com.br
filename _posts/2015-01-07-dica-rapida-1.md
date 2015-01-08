@@ -8,7 +8,7 @@ tags:
 - touch icons
 - tile icons
 - dica
-categories:
+twitter_text: "Favicons, touch icons e tile icons..."
 ---
 
 Já que estou participando da campanha do [Fernando Daciuk](http://blog.da2k.com.br/) que é o **#1postperday**, resolvi criar uma outra hashtag, que será a **#dicarapida**. Como o próprio nome diz, serão dicas rápidas, mas que as vezes a gente não faz ou esquece ou ninguém falou por ser "bobo".
