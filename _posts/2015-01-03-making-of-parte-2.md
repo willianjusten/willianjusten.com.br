@@ -9,7 +9,7 @@ tags:
 - gulp
 - stylus
 - github pages
-twitter_text: "Making of parte 2 #jekyll #ghpages"
+twitter_text: "Making of parte 2"
 ---
 
 ## Introdução
@@ -50,7 +50,7 @@ ruby -v
 # ruby 2.2.0
 {% endhighlight %}
 
-**Passo 3:** Após instalado o ruby, é chegada a vez do Jekyll de fato, o processo é fácil e rápido. Se demorar um pouco e nada acontecer na tela, espere mais um pouco, o ruby infelizmente não dá um feedback durante as instalações e aí acada dando impressão de travado mesmo...
+**Passo 3:** Após instalado o ruby, é chegada a vez do Jekyll de fato, o processo é fácil e rápido. Se demorar um pouco e nada acontecer na tela, espere mais um pouco, o ruby infelizmente não dá um feedback durante as instalações e aí acaba dando impressão de travado mesmo...
 
 {% highlight sh %}
 # Instalando o Jekyll

@@ -8,6 +8,7 @@ tags:
 - jekyll
 - gerador estático
 - discussão
+twitter_text: "Por que usar Jekyll?"
 ---
 
 Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s> E brincadeirinha, não vai rolar flame war aqui, assim espero =o
