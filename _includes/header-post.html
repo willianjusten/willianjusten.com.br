@@ -7,7 +7,9 @@
     </div>
     <div class="content">
         <meta itemprop="datePublished" content="{{ page.date }}">
-        <p class="date">{{ page.date | date_to_string }}</p>
+        {% if page.date %}
+            <p class="date">{{ page.date | date_to_string }}</p>
+        {% endif %}
         <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
         <p itemprop="description" class="subtitle">{{ page.description }}</p>
     </div>
