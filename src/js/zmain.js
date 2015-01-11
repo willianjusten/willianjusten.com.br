@@ -37,7 +37,7 @@ $(document).ready(function() {
       };
 
     bs.dothis.on('click', function() {
-      $('.search-wrapper').css({ display: "block" });
+      $('.search-wrapper').css({ transform: "translateY(0)" });
       bs.searchform.toggleClass('active');
       bs.searchform.find('input').focus();
       bs.canvas.toggleClass('search-overlay');
