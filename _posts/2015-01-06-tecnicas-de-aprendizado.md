@@ -7,7 +7,6 @@ image: "/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png"
 tags:
 - estudo
 - produtividade
-- procrastinação
 twitter_text: "Tecnicas de aprendizado"
 ---
 

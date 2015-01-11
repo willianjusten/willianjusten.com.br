@@ -6,8 +6,6 @@ description: "Depois de várias dúvidas, aqui vai uma lista de razões para se 
 image: "/assets/img/flame-war/yoda-flame-war.jpg"
 tags:
 - jekyll
-- gerador estático
-- discussão
 twitter_text: "Por que usar Jekyll?"
 ---
 

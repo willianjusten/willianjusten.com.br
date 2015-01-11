@@ -1,25 +1,25 @@
 ---
 layout: minimal
-title: "#Tags"
-permalink: /tags/index.html
-description: "Procure os assuntos pelas tags."
+title: "Séries"
+permalink: /series/index.html
+description: "Aqui ficarão as series em que iremos abordar sobre determinados assuntos."
 ---
 
 <div class="tags">
-{% assign tags_list = site.tags %}
-  {% if tags_list.first[0] == null %}
-    {% for tag in tags_list %}
+{% assign categories_list = site.categories %}
+  {% if categories_list.first[0] == null %}
+    {% for tag in categories_list %}
         <a data-scroll href="#{{ tag }}">{{ tag }}</a>
     {% endfor %}
   {% else %}
-    {% for tag in tags_list %}
+    {% for tag in categories_list %}
         <a data-scroll href="#{{ tag[0] }}">{{ tag[0] }}</a>
     {% endfor %}
   {% endif %}
-{% assign tags_list = nil %}
+{% assign categories_list = nil %}
 </div>
 
-{% for tag in site.tags  %}
+{% for tag in site.categories %}
     <span class="tag-title" id="{{ tag[0] }}">{{ tag[0] }}</span>
     <ul class="post-list">
         {% assign pages_list = tag[1] %}

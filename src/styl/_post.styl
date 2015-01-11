@@ -4,7 +4,7 @@
         max-width 100%
         margin rem(30px) auto
         display block
-    p, h1, h2, h3, h4,ul,ol
+    p, h1, h2, h3, h4,ul,ol, .tags
         center(rem(800px))
         padding 0 rem(20px)
         margin 0 auto rem(30px)
@@ -39,10 +39,6 @@
         line-height 1.4
         +above(cut)
             font-size rem(25px)
-    ul,ol
-        padding-left rem(60px)
-        +above(cut)
-            padding-left rem(120px)
     blockquote
         center(rem(730px))
         border-left rem(5px) solid main
@@ -79,3 +75,32 @@ table
     th, td
         border rem(2px) solid #ccc
         padding rem(5px)
+
+.tag-title
+    mainFont(300)
+    font-size rem(36px)
+    margin-top rem(60px)
+    center(rem(800px))
+    +below(cut)
+        font-size rem(28px)
+        margin-top rem(20px)
+        padding 0 rem(20px)
+
+.post-list
+    list-style none
+    margin rem(25px) auto
+    +below(cut)
+        padding 0 rem(20px)
+    a
+        display block
+        border-bottom 1px solid darken(lightGray,10%)
+        padding rem(10px) 0
+        text-decoration none
+        transition all .5s
+        &:hover
+            color hover
+            border-bottom 1px solid hover
+    .entry-date
+        float right
+        +below(cut)
+            display none

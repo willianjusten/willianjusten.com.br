@@ -6,9 +6,6 @@ description: "Algumas dicas para fazer com que seu site ou blog seja melhor inde
 image: "/assets/img/seo/seo.jpg"
 tags:
 - seo
-- buscas
-- google
-- bing
 twitter_text: "Como melhorar meu SEO?"
 ---
 
