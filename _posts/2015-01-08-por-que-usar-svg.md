@@ -9,7 +9,7 @@ tags:
 - trend
 - "#dicarapida"
 image: "/assets/img/por-que-usar-svg/coloridos.jpg"
-categories:
+categories: O mundo mágico do SVG
 twitter_text: "Por que você deveria estar usando SVG?"
 ---
 
