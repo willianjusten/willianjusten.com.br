@@ -1,26 +1,14 @@
 <div id="fade"></div>
-<a id="slide" class="fade"></a>
+<a id="slide" class="fade">
+<svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+<svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
+</a>
 <aside id="sidebar">
 <nav id="navigation">
   <h2>MENU</h2>
-  <hr>
   {% for link in site.links %}
-    <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>x</li>
+    <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
   {% endfor %}
-  <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+  <li><a class="feed" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a></li>
 </nav>
 </aside>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-$("a#slide").click(function(){
-    $("#sidebar,a#slide,#fade").addClass("slide")
-});
-
-$("#fade").click(function(){
-    $("#sidebar,a#slide,#fade").removeClass("slide")
-});
-
-</script>
