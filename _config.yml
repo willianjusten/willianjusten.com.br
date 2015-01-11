@@ -13,5 +13,17 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Séries
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: Sobre mim
+    url: /about
+
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

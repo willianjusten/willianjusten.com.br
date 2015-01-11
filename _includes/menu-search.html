@@ -1,0 +1,26 @@
+<div id="fade"></div>
+<a id="slide" class="fade"></a>
+<aside id="sidebar">
+<nav id="navigation">
+  <h2>MENU</h2>
+  <hr>
+  {% for link in site.links %}
+    <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>x</li>
+  {% endfor %}
+  <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+</nav>
+</aside>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$("a#slide").click(function(){
+    $("#sidebar,a#slide,#fade").addClass("slide")
+});
+
+$("#fade").click(function(){
+    $("#sidebar,a#slide,#fade").removeClass("slide")
+});
+
+</script>

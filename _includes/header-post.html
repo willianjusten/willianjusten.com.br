@@ -1,10 +1,4 @@
 <header class="header-post" role="banner">
-   <div class="subheader">
-        <a aria-label="Retornar para a Home" href="/">
-            <svg class="icon-back icon-angle-left"><use xlink:href="#icon-angle-left"></use></svg>
-            <p>Home</p>
-        </a>
-    </div>
     <div class="content">
         <meta itemprop="datePublished" content="{{ page.date }}">
         {% if page.date %}
@@ -14,4 +8,5 @@
         <p itemprop="description" class="subtitle">{{ page.description }}</p>
     </div>
      <a class="down" data-scroll href="#scroll"><svg class="icon icon-angle-down"><use xlink:href="#icon-angle-down"></use></svg></a>
+     {% include menu-search.html %}
 </header>
