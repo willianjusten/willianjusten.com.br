@@ -15,7 +15,7 @@ $("a#slide").click(function(){
 $("#fade").click(function(){
     $("#sidebar,a#slide,#fade").removeClass("slide");
     $("#open").show();
-    $("#searchg").show();
+    $("#search").show();
     $("#close").hide();
 });
 
