@@ -6,7 +6,7 @@ description: "Aqui ficarão as series em que iremos abordar sobre determinados a
 ---
 
 {% for tag in site.categories %}
-  <h2 id="{{ tag[0] }}" style="color: #c91b26">{{ tag[0] | capitalize }}</h2>
+  <span class="tag-title" id="{{ tag[0] }}">{{ tag[0] | capitalize }}</span>
   <ul class="post-list">
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}

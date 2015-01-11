@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Por que usar SVG?"
+title: "#1 - Por que usar SVG?"
 date: 2015-01-08 08:39:47
 description: "O SVG finalmente começa dar o ar das graças e você vai saber aqui o porquê disso."
 tags:
@@ -9,7 +9,8 @@ tags:
 - trend
 - "#dicarapida"
 image: "/assets/img/por-que-usar-svg/coloridos.jpg"
-categories: O mundo mágico do SVG
+categories:
+- "O mundo mágico do SVG"
 twitter_text: "Por que você deveria estar usando SVG?"
 ---
 
