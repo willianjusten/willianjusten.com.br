@@ -10,23 +10,31 @@ body
 
 a, #sidebar, #fade, body
     transition all .25s ease
-
-a#slide
+a#slide, #search
     position absolute
     display block
     width 40px
     height 40px
     top 10px
-    left 10px
     z-index 31
-
+#slide
+    left 10px
+#search
+    right 10px
+    background darken(main,10%)
+    border-radius rem(3px)
+    padding rem(2px) rem(3px)
 .icon-menu
     cursor pointer
     padding rem(5px)
+    border-radius rem(3px)
     background darken(main,10%)
     width rem(40px)
     height rem(40px)
     fill sec
+.icon-search
+    width rem(35px)
+    height rem(35px)
 
 #fade
     cursor pointer
