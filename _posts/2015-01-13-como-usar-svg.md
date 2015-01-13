@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Como usar SVG"
+title: "#2 - Como usar SVG"
 date: 2015-01-13 02:20:24
 image: '/assets/img/como-usar-svg/como-usar-svg.png'
 description: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
@@ -11,7 +11,7 @@ categories:
 twitter_text: "Como usar o SVG?"
 ---
 
-## Introducação
+## Introdução
 
 Como eu havia falado no [último post](http://willianjusten.com.br/atualizacoes/), irei fazer uma série de posts ensinando tudo sobre SVG, sim, você vai cansar de me ver falando sobre SVG, até que você comece a usar!! =)
 
@@ -39,7 +39,7 @@ Cada uma dessas formas tem suas utilidades, vantagens e desvantagens e eu irei e
 Para adicionar um SVG como imagem, basta colocá-lo dentro da `src` da tag `img`.
 
 {% highlight html %}
-<img src="http://s3.amazonaws.com/wd-static/static_v1/pt/logo.svg" />
+<img src="img/logo.svg" alt="Logo" />
 {% endhighlight %}
 
 A utilização desta forma impede o acesso dos elementos separados do SVG, porém a imagem não irá perder qualidade caso seja redimensionada.
