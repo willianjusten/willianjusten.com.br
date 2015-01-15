@@ -2,7 +2,6 @@
 layout: post
 title: "Meu dia a dia como dev frontend"
 date: 2015-01-15 18:17:11
-image: '/assets/img/'
 description: "Um pouco do meu dia a dia como dev frontend. Minha máquina, meus programas, arquivos, configurações."
 tags:
 - frontend
