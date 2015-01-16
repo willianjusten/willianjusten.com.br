@@ -48,6 +48,8 @@ Particularmente sou muiiiiito fã do [icomoon](https://icomoon.io/), tanto que f
 * [Material Design Icons](https://github.com/google/material-design-icons) - Free
 * [Iconic](https://useiconic.com/) - Pago
 * [Svg Icons by BBriel](http://svgicons.sparkk.fr/) - Free
+* [Flaticon](http://www.flaticon.com/) - Free e Pago
+* [The Noun Project](http://thenounproject.com/)
 * [Awesome Svg - Icons](https://github.com/willianjusten/awesome-svg/blob/master/topics/Icons.md) - tem mais links aqui
 
 ## Patterns
