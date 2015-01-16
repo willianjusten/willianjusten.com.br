@@ -33,7 +33,7 @@ Praticamente não consigo trabalhar em uma tela só, então no trablho eu uso um
 
 ![Quadro Kanban](/assets/img/workflow/quadro.jpg)
 
-Tenho um quadro em que faço algumas anotações e trabalho com meu [Personal Kanban](http://en.wikipedia.org/wiki/Kanban_board), que nada mais é que uma listinha de tarefas a fazer, sendo feitas e já feitas. Para quem não pode ter um quadro, existem vários apps que permitem fazer essa organização, o que eu mais aconselho é o [Trello](), eu só tenho um quadro mesmo, porque eu acordo e já olho para ele, se fosse aplicativo, acabaria me esquecendo de olhar, sério, eu só não esqueço a cabeça porque está presa no corpo.
+Tenho um quadro em que faço algumas anotações e trabalho com meu [Personal Kanban](http://en.wikipedia.org/wiki/Kanban_board), que nada mais é que uma listinha de tarefas a fazer, sendo feitas e já feitas. Para quem não pode ter um quadro, existem vários apps que permitem fazer essa organização, o que eu mais aconselho é o [Trello](http://trello.com), eu só tenho um quadro mesmo, porque eu acordo e já olho para ele, se fosse aplicativo, acabaria me esquecendo de olhar, sério, eu só não esqueço a cabeça porque está presa no corpo.
 
 ## Aplicativos
 
