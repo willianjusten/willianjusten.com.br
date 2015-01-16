@@ -29,7 +29,7 @@ Eu uso um Macbook Air 13", tanto em casa, quanto no [Queremos!](http://www.quere
 
 Utilizei durante muito tempo notebooks da Dell e meu último foi da Samsung (acho que ele me traumatizou)... Neles eu sempre utilizei Linux, comecei com o [Ubuntu](http://www.ubuntu.com/) e depois fui parar no lindo [Elementary](http://elementaryos.org/) (que inclusive é bastante similar ao Mac OS e facilitou a transição).
 
-Praticamente não consigo trabalhar em uma tela só, então no trablho eu uso um monitor de 23" FullHD da LG e em casa utilizo um de 25" da Samsung. Não sou altamente crítico com monitor não, contanto que tenha uma resolução e tela grandes, está ótimo.
+Praticamente não consigo trabalhar em uma tela só, então no trabalho eu uso um monitor de 23" FullHD da LG e em casa utilizo um de 25" da Samsung. Não sou altamente crítico com monitor não, contanto que tenha uma resolução e tela grandes, está ótimo.
 
 ![Quadro Kanban](/assets/img/workflow/quadro.jpg)
 
