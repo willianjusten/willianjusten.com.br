@@ -72,13 +72,16 @@ O Jekyll é bastante simples, então possui basicamente 3 comandos:
 O Jekyll utiliza o [YAML](http://yaml.org/) e para guardar e organizar informações, ele utiliza o Front Matter, que deve ser a primeira coisa a ser escrita no arquivo e as informações devem ser escritas entre o par de três traços, conforme a sintaxe do YAML, segue abaixo um exemplo:
 
 {% highlight yaml %}
+---
 layout: default
 title: Um nome legal para o meu Blog
+---
 {% endhighlight %}
 
 De acordo com a sintaxe, colocamos o nome da variável seguido de 2 pontos e o valor para a variável, que pode ser qualquer valor ou conjunto de valores. Segue alguns exemplos abaixo:
 
 {% highlight yaml %}
+---
 layout: post
 title: "Perguntas e Respostas - Jekyll"
 date: 2015-01-21 06:15:41
@@ -87,6 +90,7 @@ description: "Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funcio
 tags:
 - jekyll
 - frontend
+---
 {% endhighlight %}
 
 <h3 id="globais">O que são variáveis globais?</h3>
