@@ -63,7 +63,7 @@ E quando mandamos compilar os arquivos usando o comando `jekyll build` ou `jekyl
 
 O Jekyll é bastante simples, então possui basicamente 3 comandos:
 
-* `jekyll new projeto` : comando utilizado para criar um novo projeto.
+* `jekyll new nome-do-projeto` : comando utilizado para criar um novo projeto.
 * `jekyll serve` : serve para iniciar um servidor (na porta 4000 por padrão) e ficar assistindo os arquivos.
 * `jekyll build` : para gerar os arquivos estáticos
 
