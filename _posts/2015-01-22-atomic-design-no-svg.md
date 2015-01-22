@@ -9,7 +9,7 @@ tags:
 - "atomic design"
 categories:
 - "O mundo mágico do SVG"
-twitter_text: "Estruturando, agrupando e referenciando em SVG."
+twitter_text: "Atomic Design no SVG! Entendendo o conceito."
 ---
 
 ## Índice da série
