@@ -25,7 +25,7 @@ Primeiro de tudo, aviso que este post será praticamente uma tradução adaptada
 
 Ps.: não é preguiça, é porque acho essa mulher incrível e sou mega fã das grandes contribuições em SVG que ela traz <3
 
-Neste post iremos abordar os elementros que dão uma melhor estruturação ao SVG, nos permitindo agrupar e referenciar partes do SVG dentro do documento, conferindo um código mais limpo, de melhor manutenção e com um código mais legível. É muito importante que prestem atenção a este assunto, já que ele contém a base principal para tudo que será feito e utilizado depois. Começarei utilizando o artigo da Sara como base e finalizarei divagando sobre um conceito que eu venho pensado bastante e discutido bastante com meu amigo maluco da cabeça, o [Suissa](http://twitter.com/osuissa/).
+Neste post iremos abordar os elementos que dão uma melhor estruturação ao SVG, nos permitindo agrupar e referenciar partes do SVG dentro do documento, conferindo um código mais limpo, de melhor manutenção e com um código mais legível. É muito importante que prestem atenção a este assunto, já que ele contém a base principal para tudo que será feito e utilizado depois. Começarei utilizando o artigo da Sara como base e finalizarei divagando sobre um conceito que eu venho pensado bastante e discutido bastante com meu amigo maluco da cabeça, o [Suissa](http://twitter.com/osuissa/).
 
 ## Agrupando com o elemento `<g>`
 
@@ -88,7 +88,7 @@ Se você quiser redimensionar o pássaro para duas vezes o seu tamanho, você po
 }
 {% endhighlight %}
 
-Agrupar faz a interatividade, em particular, mais conveniente. Você pode colocar eventos de mouse para todo o pássaro e ter a resposta a esses eventos em todo gru
+Agrupar faz a interatividade, em particular, mais conveniente. Você pode colocar eventos de mouse para todo o pássaro e ter a resposta a esses eventos em todo grupo.
 
 O elemento `<g>` tem mais uma importante característica: ele pode ser o seu próprio `<title>` e `<desc>`, que ajudam na acessibilidade aos leitores de tela, e sobretudo faz o código mais legível para os humanos. Por exemplo:
 
