@@ -21,7 +21,7 @@ twitter_text: "Atomic Design no SVG! Entendendo o conceito."
 
 ## Introdução
 
-Primeiro de tudo, aviso que este post será praticamente uma tradução adaptada desse [incrivel post](http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/) da [Sara Soueidan](http://sarasoueidan.com/about.html), que escreveu tão bem essa parte, que não vi justificativas plausíveis para escrever de outra forma. Claro que tentarei ser um pouco mais simplista com as palavras, para facilitar o entendimento de todos.
+Primeiro de tudo, aviso que o início deste post será praticamente uma tradução adaptada desse [incrivel post](http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/) da [Sara Soueidan](http://sarasoueidan.com/about.html), que escreveu tão bem essa parte, que não vi justificativas plausíveis para escrever de outra forma. Claro que tentarei ser um pouco mais simplista com as palavras, para facilitar o entendimento de todos.
 
 Ps.: não é preguiça, é porque acho essa mulher incrível e sou mega fã das grandes contribuições em SVG que ela traz <3
 
@@ -29,11 +29,11 @@ Neste post iremos abordar os elementos que dão uma melhor estruturação ao SVG
 
 ## Agrupando com o elemento `<g>`
 
-O "g" de `<g>` vem da palavra *group*. Esse elemento serve para agrupar um conjunto de outros elementos relacionados. Em termos de editores gráficos, como o Adobe Illustrator, o elemento `<g>` tem uma função similar a opção de agrupar objetos. Você também pode pensar no *group* num conceito similar a uma camada nos editores gráficos, visto que a camada é só um grupo de elementos.
+O `<g>` vem da palavra *group*. Esse elemento serve para agrupar um conjunto de outros elementos relacionados. Em termos de editores gráficos, como o Adobe Illustrator, o elemento `<g>` tem uma função similar a opção de agrupar objetos. Você também pode pensar no *group* num conceito similar a uma camada nos editores gráficos, visto que a camada é só um grupo de elementos.
 
 O elemento `<g>` agrupa todos os seus descendentes em um só grupo, mesmo que exista outro elemento `<g>` interno a ele. É comum possuir uma `id` para dar nome a todo um grupo e qualquer estilo que for aplicado ao elemento `<g>` será aplicado em seus elementos internos. Isto torna fácil a adição de estilos, transformações, interatividades e até animações em um grupo inteiro de objetos.
 
-Por exemplo, o seguinte pássaro é feito de algumas formas, como `<paths>` e `<círcle>`.
+Por exemplo, o seguinte pássaro é feito de algumas formas, como `<paths>` e `<circle>`.
 
 ![Um pássaro em SVG descontruido, mostrando suas formas basicas](http://sarasoueidan.com/images/grouping-bird.svg)
 
@@ -78,7 +78,7 @@ Agrupar elementos no SVG funcionam da mesma maneira. Neste exemplo, nós agrupam
 
 Se você muda a cor de preenchimento do grupo `#body`, a cor de preenchimento de todos os elementos dentro do grupos irão mudar para a cor escolhida. Isto é muito conveniente.
 
-Agrupar elementos é muito útil, não só para própositos organizacionais ou estruturais. É particularmente útil quando você quer adicionar interatividade ou transformações em um gráfico SVG feito de muito elementos. Você pode associar estes elementos em um grupo e definir transformações para mover, redimensionar ou rotacionar todos os elementos juntos, dessa forma as relações espacial de um para o outro se mantém.
+Agrupar elementos é muito útil, não só para própositos organizacionais ou estruturais. É particularmente útil quando você quer adicionar interatividade ou transformações em um gráfico SVG feito de muito elementos. Você pode associar estes elementos em um grupo e definir transformações para mover, redimensionar ou rotacionar todos os elementos juntos, dessa forma as relações espaciais de um para o outro se mantém.
 
 Se você quiser redimensionar o pássaro para duas vezes o seu tamanho, você poderá fazer isso com uma linha de CSS se todos os elementos estiverem no mesmo grupo.
 
@@ -278,7 +278,7 @@ Como pôde ver durante todo o post, eu bati na tecla da utilização de componen
 
 #### Moléculas
 
-> As moléculas é onde as coisas ficam mais interessantes, quando combinamos alguns átomos para formar pequenos grupos. Seria como o grupo de folhas do exemplo da árvore.
+> São nas moléculas q/ue as coisas ficam mais interessantes, quando combinamos alguns átomos para formar pequenos grupos. Seria como o grupo de folhas do exemplo da árvore.
 
 #### Organismos
 
