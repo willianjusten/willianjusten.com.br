@@ -8,7 +8,7 @@ tags:
 - cssconfbr
 - frontend
 categories:
-twitter_text: "Ganhe 12% de desconto na Css Conf Br 2015!"
+twitter_text: "Ganhe um superg desconto na Css Conf Br 2015!"
 ---
 
 Faaaaaaalaaa Galera!! (A lá Daniel Filho no Zofe) Eu estou alguns dias sem postar, pois estou passando por algumas mudanças e infelizmente não estou podendo focar nos posts. Mas para não deixar a galera sem nada, consegui com o pessoal da [CSS Conf BR - 20015](http://www.conferenciacssbrasil.com.br/) um desconto de 12%!! Mas o pessoal precisa aproveitar agora, porque sexta-feira o lote já deve aumentar!!
