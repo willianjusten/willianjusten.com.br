@@ -7,7 +7,7 @@ tags:
 - svg
 - frontend
 - trend
-- "#dicarapida"
+- "dicarapida"
 image: "/assets/img/por-que-usar-svg/coloridos.jpg"
 categories:
 - "O mundo mágico do SVG"
