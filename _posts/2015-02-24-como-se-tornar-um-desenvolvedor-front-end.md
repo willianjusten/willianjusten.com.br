@@ -362,6 +362,12 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 - [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - PtBr
 - [Blog do Senai Cimatec - Bahia](http://softwaresenai.github.io/)
 
+#### Eventos
+
+Nada melhor que um bom networking para te ajudar a conhecer mais coisas. E nada melhor que os eventos para isso, além de palestras ótimas, sempre acaba conhecendo alguém para te ajudar no futuro.
+
+Falando nisso, vai rolar o GDG DevFest em BH, se quiser que eu vá, [vote aqui](http://call4paperz.com/events/gdg-devfest-extended-bh-2015--2)
+
 ---
 
 <h2 id="dicas">Dicas</h2>
