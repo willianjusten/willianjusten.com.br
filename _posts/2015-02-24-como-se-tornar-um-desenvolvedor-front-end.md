@@ -98,7 +98,7 @@ Olha, definir níveis de conhecimento, seja para qualquer profissão é algo bas
 
 - CSS (Entender pre-processadores e suas funcões)
 - JS (Conhecimento forte na linguagem, entender algumas arquiteturas e Testes)
-- NojeJS (Saber como funciona e alguns conhecimentos basicos para automatização e afins)
+- NodeJS (Saber como funciona e alguns conhecimentos basicos para automatização e afins)
 - Grunt/Gulp (saber como automatizar processos)
 - Bons conhecimentos de performance
 - Noções de UX/UI (**Extra**)
