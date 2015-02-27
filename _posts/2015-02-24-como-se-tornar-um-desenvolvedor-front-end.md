@@ -59,7 +59,7 @@ O post será separado em algumas partes, onde irei responder algumas dúvidas co
 
 <h2 id="import">Qual a importância do Front End?</h2>
 
-É claro que a maioria já deve saber a necessidade desse profissional, mas vale resaltar alguns detalhes:
+É claro que a maioria já deve saber a necessidade desse profissional, mas vale ressaltar alguns detalhes:
 
 - 80% do tempo de carregamento é gasto no frontend
 - Cada vez mais as interfaces vem ficando complexas e detalhadas, fazendo ainda mais necessária a presença de um especialista
