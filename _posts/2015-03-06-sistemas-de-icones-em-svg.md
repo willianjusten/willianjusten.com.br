@@ -54,7 +54,7 @@ Talvez seja o mais utilizado dos tipos. Consiste em criar um tipo de fonte conte
 * Escalável
 * Permite modificar cor (somente uma cor por vez! Ainda é monocromático)
 
-**Desvantangens**
+**Desvantagens**
 
 * Maior número de requisições normalmente.
 * Enquanto não carrega a fonte, bug de aparecer um quadrado é bem comum.
