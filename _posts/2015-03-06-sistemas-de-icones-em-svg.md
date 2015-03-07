@@ -148,4 +148,6 @@ Segue abaixo o nosso exemplo, bastante fácil e prático.
 
 Espero que todos tenham entendido, é um processo bem simples, mas que faz todo diferença no trabalho final, vamos sempre lembrar que quanto mais qualidade o nosso projeto tiver, melhor! =)
 
+Se quiser mais links sobre ícones em SVG, veja na [awesome-svg](https://github.com/willianjusten/awesome-svg/blob/master/topics/Icons.md).
+
 Nos próximos posts irei ensinar como estilizar esse ícones, animá-los e fazer várias outras brincadeiras. Se curtiu, compartilha ae! =)
