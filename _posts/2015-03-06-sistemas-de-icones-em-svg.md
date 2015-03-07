@@ -80,7 +80,7 @@ Beleza campeão, mas com SVG você pode fazer o mesmo e até melhor, se quiser, 
 
 **Desvantagens**
 
-* Certa imcompatibilidade com IE8- (pode usar fallback! \o/)
+* Certa incompatibilidade com IE8- (pode usar fallback! \o/)
 
 Bom, vendo essa lista, fica claro que ícones em SVG são bem melhores e mais funcionais, está esperando o quê para mudar os ícones nos seus sites e sistemas? Como fazer? Então vamos nessa =)
 
