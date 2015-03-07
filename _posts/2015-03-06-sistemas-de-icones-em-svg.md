@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sistemas de Ícones em SVG"
+title: "#6 - Sistemas de Ícones em SVG"
 date: 2015-03-06 19:33:23
 image: '/assets/img/svg-icons/main.png'
 description: "Como usar ícones em SVG e por que ele é bem melhor que outras alternativas?"
