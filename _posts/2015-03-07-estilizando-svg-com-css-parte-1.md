@@ -24,7 +24,7 @@ Também pretendo escrever menos e colocar mais exemplos, para facilitar o entend
 
 Como eu sempre escrevo escutando alguma coisa, vou sempre falar o que estou ouvindo nos meus posts, hoje é dia de [Faded Paper Figures](http://www.fadedpaperfigures.com/).
 
-No [artigo passado](http://willianjusten.com.br/sistemas-de-icones-em-svg/) eu falei que uma das vantagens do SVG é poder estilizá-lo via SVG e hoje vamos falar um pouquinho sobre essa grande vantagem.
+No [artigo passado](http://willianjusten.com.br/sistemas-de-icones-em-svg/) eu falei que uma das vantagens do SVG é poder estilizá-lo via CSS e hoje vamos falar um pouquinho sobre essa grande vantagem.
 
 ## Propriedades de Estilo
 
