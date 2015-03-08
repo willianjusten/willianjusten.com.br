@@ -9,7 +9,7 @@ tags:
 - css
 categories:
 - "O mundo mágico do SVG"
-twitter_text:
+twitter_text: "Estilizando SVG com CSS - Parte 1"
 ---
 
 ## Índice da série
