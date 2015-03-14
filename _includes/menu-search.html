@@ -14,10 +14,12 @@
 <aside id="sidebar">
 <nav id="navigation">
   <h2>MENU</h2>
-  {% for link in site.links %}
-    <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
-  {% endfor %}
-  <li><a class="feed" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a></li>
+  <ul>
+    {% for link in site.links %}
+      <li><a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+    <li><a class="feed" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">Feed</a></li>
+  </ul>
 </nav>
 </aside>
 <a id="search" class="dosearch">
