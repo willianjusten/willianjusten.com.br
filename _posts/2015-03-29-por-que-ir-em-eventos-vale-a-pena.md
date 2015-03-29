@@ -8,7 +8,7 @@ tags:
 - eventos
 - frontend
 categories:
-twitter_text: "Alguns dos motivos que fazem os eventos serem tão sensacionais e que todos deveríamos ir."
+twitter_text: "Alguns dos motivos que fazem os eventos serem tão sensacionais!"
 ---
 
 ## Introdução
