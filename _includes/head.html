@@ -24,7 +24,6 @@
     <!-- Social: Facebook / Open Graph -->
     <meta property="fb:admins" content="1611244354" />
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}blog{% endif %}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.image %}
     <meta property="og:image" content="{{ site.url }}{{page.image }}">
