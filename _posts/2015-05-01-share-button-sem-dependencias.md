@@ -121,6 +121,10 @@ Exemplo de uso no meu blog:
 
 Se você notar, eu além de colocar os links, também coloquei uma função de `onclick`. Essa função servirá para criar uma nova janela, recebendo a url passada, um título e o tamanho da janela. Isso serve para que o usuário não saia do meu site enquanto compartilha.
 
+## Extra
+
+Meu amigo [Cleyson Leal](https://twitter.com/cleysonlb) me falou que quando precisa criar links rapidinhos utiliza o [Share Link Generator](http://www.sharelinkgenerator.com/), já utilizei também. Para quem não vai usar backend para nada e só precisa criar um link, também é uma boa pedida.
+
 ## Conclusão
 
 Vimos que a função de share é importante e não precisamos mais depender de libs externas para fazer esse trabalho, com isso nossos sites carregam mais rápido e não perdem suas funcionalidades.
