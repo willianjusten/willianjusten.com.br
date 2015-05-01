@@ -37,7 +37,7 @@ De acordo com uma [pesquisa da Entrepreneur](http://www.entrepreneur.com/article
 
 O maior de todos os problemas desses botões é que eles carregam muitas coisas, que acabam prejudicando bastante a performance do seu site, além de poder correr o risco de bloquear a renderização de outras coisas.
 
-Aqui abaixo coloco os links das próprias redes sociais disponibilizam:
+Aqui abaixo coloco os links que as próprias redes sociais disponibilizam:
 
 * [Facebook](https://developers.facebook.com/docs/plugins/share-button)
 * [Twitter](https://about.twitter.com/resources/buttons)
