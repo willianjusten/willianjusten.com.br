@@ -32,13 +32,6 @@
     {% endif %}
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
-    {% if page.date %}
-    <meta property="article:author" content="https://www.facebook.com/willian.justen" />
-    <meta property="article:publisher" content="https://www.facebook.com/willian.justen" />
-    <meta property="article:published_time" content="{{ page.date }}" />
-    {% for tag in page.tags %}
-        <meta property="article:tag" content="{{ tag }}">
-    {% endfor%}
     {% endif %}
 
     <!-- Social: Google+ / Schema.org  -->
