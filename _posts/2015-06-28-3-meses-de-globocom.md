@@ -8,7 +8,7 @@ tags:
 - trabalho
 - globo
 categories:
-twitter_text: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia."
+twitter_text: "Um pouco do que passei até chegar na gcom."
 ---
 
 ## Introdução
