@@ -82,7 +82,7 @@ Ao chegar na globo, já para trabalhar. Fui apresentado ao meu novo time, que se
 
 [Rômulo Jales](https://twitter.com/romulojales), é um cabra da peste arretado, lá de Pernambuco, é o cara do Backend. Parece que respira programação e sempre te dá uma solução para um problema. Profundo conhecedor de Python e também um grande conselheiro e amigo. Não tem nem muito tempo que o conheço, mas já me acolhe e me ajuda como se nos conhecessemos há anos.
 
-André Cataldo, o SM (Scrum Master) do time. Sempre preocupado com o time e o andamento dos projetos. É tipo um xerifão, as vezes nervoso, mas sempre atento para nos ajudar e nos atender em nossos problemas. Sabe como ser justo e comemorar uma conquista. Também um dos caras mais experientes da globo.com, com quase 14 anos só lá dentro, sendo que a globo.com fez 15 anos esse ano!
+[André Cataldo](https://twitter.com/andrecataldo), o SM (Scrum Master) do time. Sempre preocupado com o time e o andamento dos projetos. É tipo um xerifão, as vezes nervoso, mas sempre atento para nos ajudar e nos atender em nossos problemas. Sabe como ser justo e comemorar uma conquista. Também um dos caras mais experientes da globo.com, com quase 14 anos só lá dentro, sendo que a globo.com fez 15 anos esse ano!
 
 
 ## Dia-a-dia no globoesporte
