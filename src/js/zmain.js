@@ -1,9 +1,3 @@
-// Polyfill VH
-window.viewportUnitsBuggyfill.init({hacks: window.viewportUnitsBuggyfillHacks});;
-smoothScroll.init({
-    updateURL: false
-})
-
 // Menu
 $("a#slide").click(function(){
     $("#sidebar,a#slide,#fade").addClass("slide");
