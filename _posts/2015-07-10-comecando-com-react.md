@@ -9,7 +9,7 @@ tags:
 - js
 categories:
 - Aprendendo ReactJS
-twitter_text: "Tentando entender o que é? Para que serve? Por onde começar?"
+twitter_text: "ReactJS - Tentando entender o que é? Para que serve? Por onde começar?"
 ---
 
 ## Introdução
