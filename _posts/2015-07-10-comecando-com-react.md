@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#1 - Começando com ReactJS"
-date: 2015-07-08 22:04:05
+date: 2015-07-10 22:04:05
 image: '/assets/img/react-1/main.png'
 description: "Tentando entender o que é? Para que serve? Por onde começar?"
 tags:
