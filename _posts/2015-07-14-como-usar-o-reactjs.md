@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#2 - Como usar o ReactJS"
-date: 2015-07-13 21:49:16
+date: 2015-07-14 12:16:16
 image: '/assets/img/react-2/main.png'
 description: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
 tags:
@@ -32,7 +32,7 @@ Se você quiser se adiantar um pouco, aconselho a ir dando uma lida na [API do R
 
 Para usar o React da forma mais simples, basta baixar uma de suas versões na [página de downloads](https://facebook.github.io/react/downloads.html).
 
-Ou se desejar, tem também links da CND para o React e o JSXTransformer.
+Ou se desejar, tem também links da CDN para o React e o JSXTransformer.
 
 {% highlight html %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
@@ -173,7 +173,7 @@ Basicamente o que muda aqui é que iremos escrever em `JSX`, mas o código a sub
 
 ### Usando o CommonJS
 
-Muita gente que trabalha com `NodeJS` está acostumado com a sintaxe dele e seu sistema modular, que é o padrão do CommonJS. O React também permite essa abordagem (que é linda <3).
+Muita gente que trabalha com `NodeJS` está acostumada com a sintaxe dele e seu sistema modular, que é o padrão do CommonJS. O React também permite essa abordagem (que é linda <3).
 
 Dessa forma, não precisamos chamar o `React` e nem o `JSXTransformer` diretamente no nosso markup, visto que ele será chamado via `require` dentro do código e quando ele for compilado, já terá todo ele incluso. O trecho de código chamando o React seria:
 
