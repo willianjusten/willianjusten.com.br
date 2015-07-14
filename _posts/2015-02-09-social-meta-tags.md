@@ -81,7 +81,7 @@ Para que o twitter passe a aceitar seus cards, você precisa validar [neste link
 
 Por último, mas não menos importante, vem o Google Plus. Apesar de muita gente achar inútil, ele tem uma indexação excelente e por ser do google, muitas vezes é favorecido, portanto, não vamos esquecer dele =p
 
-Ele segue o padrão do [Schema.org](COLOCAR LINK AQUI) e seguem abaixo as tags:
+Ele segue o padrão do [Schema.org](http://schema.org/) e seguem abaixo as tags:
 
 {% highlight html %}
 <link rel="author" href="google plus do autor">
