@@ -22,7 +22,7 @@ Hoje resolvi que seria o dia de escutar clássicos e estou ouvindo [Pink Floyd](
 
 No [post anterior](http://willianjusten.com.br/estilizando-svg-com-css-parte-1/) eu expliquei um pouco sobre quais propriedades o SVG possui, quais ele compartilha com o CSS e quais as formas de estilizar. Hoje vou mostrar um pouco de algumas propriedades na prática.
 
-**Nota**: irei utilizar alguns conceitos já explicados e mostrados em outros posts, então caso você se perca em alguma parte do código, dá uma olhada nos [posts anteriores](willianjusten.com.br/series/#o mundo mágico do svg)
+**Nota**: irei utilizar alguns conceitos já explicados e mostrados em outros posts, então caso você se perca em alguma parte do código, dá uma olhada nos [posts anteriores](http://willianjusten.com.br/series/)
 
 ## Propriedade Fill
 
