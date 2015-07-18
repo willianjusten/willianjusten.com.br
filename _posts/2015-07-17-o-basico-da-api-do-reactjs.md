@@ -188,7 +188,7 @@ O objeto de `propTypes` permite validar as propriedades que estão sendo passada
 
 O método de `render` é responsável por pegar as informações e renderizar na tela, mas existem outros ciclos que podem existir dentro dessa renderização, que são:
 
-* `componentWillMount`: chamado uma vez só, tanto do lado client quando do server antes do renderizamento acontecer.
+* `componentWillMount`: chamado uma vez só, tanto do lado client quando do server antes da renderização acontecer.
 * `componentDidMount`: chamado uma vez só, só na parte do cliente, depois da renderização.
 * `shouldComponentUpdate`: chamado depois da renderização quando as propriedades e o estado está sendo definido. Ele retorna `true` ou `false` para dizer se o elemento deve atualizar.
 * `componentWillUnmount`: chamado quando desejamos desmontar o componente.
