@@ -18,7 +18,7 @@ O post de hoje é extra, ele não era esperado, mas recebi um email de mais uma 
 
 Se você quiser pular já para o resultado está aqui:
 
-* [Usando CSS simples](willianjusten.com.br/labs/full-screen-sections/height-100.html)
+* [Usando CSS simples](http://willianjusten.com.br/labs/full-screen-sections/height-100.html)
 * [Usando Viewport Units](http://willianjusten.com.br/labs/full-screen-sections/viewport.html)
 
 ## Dúvida
