@@ -120,7 +120,7 @@ Para termos uma altura de 80% da tela usando o viewport units é bastante simple
 }
 {% endhighlight %}
 
-Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](file:///Users/will/Developer/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
+Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](http://willianjusten.com.br/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
 
 ## Conclusão
 
