@@ -91,7 +91,7 @@ header {
 }
 {% endhighlight %}
 
-Segue um [exemplo](http://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, way-aria e etc =)
+Segue um [exemplo](http://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
 
 Se você se perguntar, mas como centralizou o texto, tem um [site irado](http://howtocenterincss.com/) que ajuda como centralizar qualquer coisa só com CSS.
 
