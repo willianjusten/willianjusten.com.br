@@ -19,9 +19,10 @@ Enquanto escrevo esse post vou ouvindo [Deftones](https://open.spotify.com/artis
 Já faz um tempinho que não escrevia sobre SVG, então vou dar uma quebra nos outros posts e voltar a falar um pouquinho sobre. Se você ainda não conhece SVG <s>sai daqui</s>, dá uma olhadinha na [série](http://willianjusten.com.br/series/) que eu escrevo nesse blog.
 
 Esse post foi baseado num apanhado de informações de vários cantos:
- * [Guide SVG Animation Smil](https://css-tricks.com/guide-svg-animations-smil/)
- * [Three ways animate svg](https://css-tricks.com/video-screencasts/135-three-ways-animate-svg/)
- * [How SVG Shape Morphing Works](https://css-tricks.com/svg-shape-morphing-works/)
+ 
+* [Guide SVG Animation Smil](https://css-tricks.com/guide-svg-animations-smil/)
+* [Three ways animate svg](https://css-tricks.com/video-screencasts/135-three-ways-animate-svg/)
+* [How SVG Shape Morphing Works](https://css-tricks.com/svg-shape-morphing-works/)
 
 
 ## Animações
