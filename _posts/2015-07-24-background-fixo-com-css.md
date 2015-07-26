@@ -132,6 +132,41 @@ Um fundo fixo e um pouco sem graça né? Para deixar ele com uma interação dif
 
 E bom, é isso, algo bem simples, mas bonito e apresentável =)
 
+## Polyfill
+
+Como sabemos as viewport units não são totalmente compatíveis em todos os browsers e por isso, podemos usar algum polyfill para poder garantir uma melhor compatibilidade. Algumas pessoas me mandaram algumas dúvidas relacionadas a isso. Então estou adicionando aqui o link de um polyfill que achei excelente como se utiliza.
+
+* [VUnit](http://joaocunha.github.io/vunit/)
+
+Para utilizar é bem simples, basta inserir a chamada do script e seu inicializador:
+
+{% highlight html %}
+<script type="text/javascript" src="js/vunit.js"></script>
+new vUnit({
+    CSSMap: {
+        '.vh': {
+            property: 'height',
+            reference: 'vh'
+        }
+    }
+}).init();
+{% endhighlight %}
+
+Você define uma classe, ali no caso é o `.vh` e está irá de `.vh0` até `vh100` indicando o tamanho e qual a referência. No caso eu quero que ele mude as unidades de `vh` para `height`. 
+
+No markup ficaria assim:
+
+{% highlight html %}
+<section class="vh100">
+  <blockquote cite="Friedrich Nietzsche">
+      <h3>"Without music, life would be a mistake."</h3>
+      <p>Friedrich Nietzsche</p>
+  </blockquote>
+</section>
+{% endhighlight %}
+
+Onde o `class="vh100"` indica que eu quero uma área com 100% de altura da viewport.
+
 ## Conclusão
 
 Enfim, foi mais um post pequeno, fácil e rápido mostrando algumas coisinhas legais do css. Lembre-se que são só experimentos e não necessarimente você precisa usar todas essas coisas. Se tiver alguma dúvida ou quiser perguntar alguma coisa, só falar nos comentários abaixo.
