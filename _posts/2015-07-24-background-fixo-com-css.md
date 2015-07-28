@@ -30,25 +30,33 @@ Para quem gosta de ver o resultado antes mesmo de começar <s>apressadinho =p</s
 Para cada frase eu criei uma seção e de acordo com os pesos que eu desejava para a fonte, utilizei diferentes `headings` e o `p` para os autores. Como são citações, utilizei a tag `blockquote`, se não conhece, dê uma olhada na [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote).
 
 {% highlight html %}
-<section>
+<section class="vh100">
+  <h1>Great Music Quotes</h1>
+</section>
+
+<section class="vh100">
   <blockquote cite="Friedrich Nietzsche">
       <h3>"Without music, life would be a mistake."</h3>
       <p>Friedrich Nietzsche</p>
   </blockquote>
 </section>
 
-<section>
+<section class="vh100">
   <blockquote cite="John Green">
       <h1>"Some people have lives; some people have music."</h1>
       <p>John Green</p>
   </blockquote>
 </section>
 
-<section>
+<section class="vh100">
   <blockquote cite="Victor Hugo">
       <h4>"Music expresses that which cannot be said and on which it is impossible to be silent."</h4>
       <p>Victor Hugo</p>
   </blockquote>
+</section>
+
+<section class="vh100">
+  <h1>Where words leave off, music begins.</h1>
 </section>
 {% endhighlight %}
 
