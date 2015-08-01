@@ -4,19 +4,29 @@ smoothScroll.init({
 })
 
 // Menu
-$("a#slide").click(function(){
-    $("#sidebar,a#slide,#fade").addClass("slide");
-    $("#open").hide();
-    $("#search").hide();
-    $("#close").show();
+var slideButton = document.getElementById('slide'),
+    sidebar     = document.getElementById('sidebar'),
+    fade        = document.getElementById('fade'),
+    open        = document.getElementById('open'),
+    close       = document.getElementById('close'),
+    search      = document.getElementById('search');
+
+var slideItens = [slideButton, sidebar, fade];
+
+slideButton.addEventListener('click', function(){
+  for(var i = 0; i < slideItens.length; i++) {
+    slideItens[i].classList.add('slide');
+  }
 });
 
-$("#fade").click(function(){
-    $("#sidebar,a#slide,#fade").removeClass("slide");
-    $("#open").show();
-    $("#search").show();
-    $("#close").hide();
-});
+fade.addEventListener('click', function(){
+  for(var i = 0; i < slideItens.length; i++) {
+    slideItens[i].classList.remove('slide');
+  }
+  open.style.display = '';
+  search.style.display = '';
+  close.style.display = 'none';
+}); 
 
 // Search
 $(document).ready(function() {
