@@ -17,14 +17,17 @@ slideButton.addEventListener('click', function(){
   for(var i = 0; i < slideItens.length; i++) {
     slideItens[i].classList.add('slide');
   }
+  open.style.display = 'none';
+  search.style.display = 'none';
+  close.style.display = 'block';
 });
 
 fade.addEventListener('click', function(){
   for(var i = 0; i < slideItens.length; i++) {
     slideItens[i].classList.remove('slide');
   }
-  open.style.display = '';
-  search.style.display = '';
+  open.style.display = 'block';
+  search.style.display = 'block';
   close.style.display = 'none';
 }); 
 
