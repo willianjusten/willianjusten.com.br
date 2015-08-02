@@ -13,7 +13,15 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
-# Links to include in footer navigation
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
 # For external links add external: true
 links:
   - title: Home
