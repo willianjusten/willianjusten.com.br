@@ -5,8 +5,8 @@
         var settings = $.extend({
             jsonFile        : '/search.json',
             jsonFormat      : 'title,category,desc,url,date,shortdate',
-            template        : '<a href="{url}" title="{title}">{title}</a>',
-            searchResults   : '.results',
+            template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
+            searchResults   : '.search-results',
             searchResultsTitle   : '<h4>Resultados da busca:</h4>',
             limit           : '5',
             noResults       : '<p>Oh droga!<br/><small>Não encontramos nada :(</small></p>'

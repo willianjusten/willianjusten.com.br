@@ -32,14 +32,7 @@ fade.addEventListener('click', function(){
 }); 
 
 // Search
-$(document).ready(function() {
-      $('.search-field').simpleJekyllSearch({
-          jsonFile : '/search.json',
-          searchResults : '.search-results',
-          template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>'
-        });
-  });
-  (function( $, window, undefined ) {
+(function( $, window, undefined ) {
 
      var bs = {
           close: $(".icon-remove-sign"),
@@ -53,6 +46,7 @@ $(document).ready(function() {
       bs.searchform.toggleClass('active');
       bs.searchform.find('input').focus();
       bs.canvas.toggleClass('search-overlay');
+      $('.search-field').simpleJekyllSearch();
     });
 
       bs.close.on('click', function() {
