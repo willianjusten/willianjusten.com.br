@@ -1,5 +1,3 @@
-/*global jQuery */
-
 (function($) {
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
@@ -88,4 +86,4 @@
             searchResults.children().remove();
         }
     }
-}(jQuery));
+}(Zepto));
