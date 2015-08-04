@@ -8,18 +8,18 @@ body
   right 0
   margin auto
 
-a, #sidebar, #fade, body
+a, aside, .overlay, body
     transition all .25s ease
-a#slide, #search
+a.slideButton, .dosearch
     position absolute
     display block
     width 40px
     height 40px
     top 10px
     z-index 31
-#slide
+.slideButton
     left 10px
-#search
+.dosearch
     right 10px
     background darken(main,10%)
     border-radius rem(3px)
@@ -36,13 +36,13 @@ a#slide, #search
     width rem(35px)
     height rem(35px)
 
-#fade
+.overlay
     cursor pointer
 
 #close
     display none
 
-#sidebar
+aside
     position fixed
     height 100%
     width rem(240px)
@@ -58,7 +58,7 @@ a#slide, #search
         mainFont(800)
         font-size rem(20px)
         color sec
-    #navigation
+    nav
         ul
             padding 0
         li
@@ -81,11 +81,11 @@ a#slide, #search
         left 0
 
 
-a#slide.slide
+a.slideButton.slide
     left rem(250px)
     pointer-events none
 
-#fade
+.overlay
     position fixed
     width 100%
     height 100%
