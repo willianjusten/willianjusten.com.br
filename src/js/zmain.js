@@ -1,8 +1,3 @@
-// Scroll
-smoothScroll.init({
-    updateURL: false
-})
-
 (function( $, window, undefined ) {
   // Menu
   $("a#slide").click(function(){
@@ -40,4 +35,9 @@ smoothScroll.init({
     bs.searchform.toggleClass('active');
     bs.canvas.removeClass('search-overlay');
   });
+
+  // Scroll
+  smoothScroll.init({
+    updateURL: false
+  })
 })( Zepto, window );
