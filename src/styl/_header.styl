@@ -2,13 +2,18 @@ html,
 body
 	height 100%
 
-// Header home
-.header-site
+
+$bg
 	background main
 	height 100%
 	.content
 		width 95%
 		align(both)
+		text-align center
+
+// Header home
+.header-site
+	@extends $bg
 	h1,h2
 		color: sec
 		text-align center
@@ -29,11 +34,8 @@ body
 
 // Header Post
 .header-post
-	background main
-	height 100%
+	@extends $bg
 	.content
-		width 90%
-		align(both)
 		+above(cut)
 			center(1000px)
 	.subheader
@@ -61,21 +63,8 @@ body
 	h1,.subtitle, .date
 		color sec
 		text-align center
-	svg
-		transition .8s
 	a,p
 		color sec
 		text-decoration none
 		mainFont(300)
 		font-size rem(18px)
-	a
-		float left
-		p,svg
-			float left
-		p
-			margin rem(5px)
-			+above(cut)
-				margin rem(10px)
-		&:hover
-			.icon-back
-				transform translateX(-10px)
