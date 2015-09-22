@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manipulando SVG com JS"
+title: "#14 - Manipulando SVG com JS"
 date: 2015-09-11 21:14:39
 image: '/assets/img/manipulando-svg-com-js/main.png'
 description: 'Veja como manipular SVG com JS e algumas libs para brincar.'
