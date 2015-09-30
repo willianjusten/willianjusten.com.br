@@ -6,6 +6,7 @@ image: '/assets/img/estrutura-do-svg/estrutura-do-svg.png'
 description: "Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho."
 tags:
 - svg
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estrutura do SVG - Saiba melhor como funciona."

@@ -7,6 +7,7 @@ description: "Hoje em dia com a variedade de telas que temos, o desafio é dar o
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Criando um SVG responsivo e adaptativo!"

@@ -7,6 +7,7 @@ description: "Como criar animações para o SVG usando só CSS."
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como criar animações para o SVG usando só CSS."

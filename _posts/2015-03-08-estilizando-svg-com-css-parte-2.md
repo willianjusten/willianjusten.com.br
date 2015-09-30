@@ -7,6 +7,7 @@ description: "Aprenda quais as propriedades que o SVG possui e como trabalhar co
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estilizando SVG com CSS - Parte 2"

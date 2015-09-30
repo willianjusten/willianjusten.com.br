@@ -7,6 +7,7 @@ description: "Como usar ícones em SVG e por que ele é bem melhor que outras al
 tags:
 - svg
 - icons
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como usar ícones em SVG e por que ele é bem melhor que outras alternativas? "

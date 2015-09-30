@@ -6,7 +6,7 @@ image: '/assets/img/atomic-svg/atomic-svg.png'
 description: "Neste artigo iremos saber mais sobre a estruturação de um SVG, seus elementos, suas vantagens e um pouco de Atomic Design."
 tags:
 - svg
-- "atomic design"
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Atomic Design no SVG! Entendendo o conceito."

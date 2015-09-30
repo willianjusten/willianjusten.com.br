@@ -7,6 +7,7 @@ description: 'Aprenda a criar animações usando só SVG e nada mais!'
 tags:
 - svg
 - smil
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: 'Aprenda a criar animações usando só SVG e nada mais!'

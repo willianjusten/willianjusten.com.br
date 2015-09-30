@@ -6,7 +6,7 @@ image: '/assets/img/share-buttons/main.png'
 description: "Ser social é muito importante, então nada melhor do que fazer com que o seu usuário consiga compartilhar mais fácil seu conteúdo."
 tags:
 - social
-- no-deps
+- tutorial
 categories:
 twitter_text: "Aprenda a criar social share buttons sem dependências para o seu site."
 ---

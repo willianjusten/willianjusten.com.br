@@ -7,6 +7,7 @@ description: 'O passo a passo para deixar seu blog com seu domínio.'
 tags:
 - github pages
 - jekyll
+- tutorial
 categories:
 twitter_text: 'Como ter Domínio Proprio no Github Pages'
 ---

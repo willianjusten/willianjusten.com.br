@@ -7,7 +7,7 @@ description: 'Aprenda como ser mais social, ter maior relevância nas redes soci
 tags:
 - social
 - seo
-- dicarapida
+- tutorial
 categories:
 twitter_text: 'Aprenda a usar as meta tags sociais.'
 ---

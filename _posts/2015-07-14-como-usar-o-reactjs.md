@@ -7,6 +7,7 @@ description: "As diferentes formas de se usar e se iniciar um projeto com ReactJ
 tags:
 - react
 - js
+- tutorial
 categories:
 - Aprendendo ReactJS
 twitter_text: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."

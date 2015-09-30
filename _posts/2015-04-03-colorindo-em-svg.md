@@ -7,6 +7,7 @@ description: "Vamos voltar a ser crianças e colorir as coisas!"
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Colorindo em SVG. Vamos voltar a ser crianças e colorir as coisas!"
