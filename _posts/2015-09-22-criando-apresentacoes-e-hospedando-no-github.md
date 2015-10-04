@@ -2,7 +2,7 @@
 layout: post
 title: "Criando apresentações e hospedando no github"
 date: 2015-09-22 13:36:35
-image: '/assets/img/'
+image: '/assets/img/reveal/main.png'
 description: "Aprenda a criar slides para suas apresentações e hospedá-las online no github pages."
 tags:
 - js
@@ -83,5 +83,207 @@ O legalzão do RevealJS é que eu posso colocar qualquer coisa como fundo do meu
 <section data-background-iframe="https://willianjusten.com.br"></section>
 {% endhighlight %}
 
+### Slide transitions
+
+Podemos fazer diferentes transições entre os slides e para isso, usamos a propriedade `data-transition` dentro da nossa `section`, que é o nosso slide.
+
+{% highlight html %}
+<!-- Essa transição irá ser passada como um zoom. -->
+<section data-transition="zoom"></section>
+
+<!-- Escolha a velocidade do slide entre: default, fast or slow! -->
+<section data-transition-speed="fast"></section>
+{% endhighlight %}
+
+Podemos usar também as transições de entrada e saída de cada slide:
+
+{% highlight html %}
+<!-- Transição padrão de deslizar para o lado. -->
+<section data-transition="slide"></section>
+
+<!-- Desliza quando entra (slide-in) e esmaece quando sai. (fade-out) -->
+<section data-transition="slide-in fade-out"></section>
+
+<!-- Esmaece quando entra (fade-in) e desliza quando sai. (slide-out) -->
+<section data-transition="fade-in slide-out"></section>
+{% endhighlight %}
+
+### Transições dentro do slide
+
+Digamos que queremos ir passando item por item de uma lista, sem mostrar ela toda, para isso, basta usarmos `class='fragment'` e esse só será mostrado ao pressionar a tecla de próximo.
+
+{% highlight html %}
+<section>
+    <p class="fragment grow">grow</p>
+    <p class="fragment shrink">shrink</p>
+    <p class="fragment fade-out">fade-out</p>
+    <p class="fragment current-visible">visible only once</p>
+    <p class="fragment highlight-current-blue">blue only once</p>
+    <p class="fragment highlight-red">highlight-red</p>
+    <p class="fragment highlight-green">highlight-green</p>
+    <p class="fragment highlight-blue">highlight-blue</p>
+</section>
+{% endhighlight %}
+
+### Configurações
+
+O RevealJS te permite fazer várias configurações para iniciar a apresentação, como são muitas, prefiro passar [esse link](https://github.com/hakimel/reveal.js#configuration) que diz todas e ainda explica um pouco sobre cada opção.
+
+## Passos para criar uma apresentação do zero!
+
+#### 1 - Baixe os arquivos no github
+
+Só ir no [github deles](https://github.com/hakimel/reveal.js) e mandar baixar, lá já terão os arquivos necessários para criar a apresentação.
+
+#### 2 - Monte um html básico
+
+{% highlight html %}
+!doctype html>
+<html lang="pt-br">    
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+</body>
+</html>
+{% endhighlight %}
+
+#### 3 - Adicione o css e o tema no head
+
+{% highlight html %}
+<head>
+    <meta charset="utf-8">
+    <title>Reveal.js Slide Demo</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme"> 
+</head>
+{% endhighlight %}
+
+Existem diferentes temas, basta escolher dentro da pasta de "themes".
+
+#### 4 - Crie o Markup básico 
+
+Como dito um pouco mais acima, precisamos ter um markup com as classes `reveal` e `slides` para tudo passar a funcionar direitinho.
+
+{% highlight html %}
+<div class="reveal">
+    <div class="slides">
+        <section>Slide Horizontal Simples</section>
+        <section>
+            <section>Slide Veritical 1</section>
+            <section>Slide Veritical 2</section>
+        </section>
+    </div>
+</div>
+{% endhighlight %}
+
+#### 5 - Carregue o Javascript no fim do html
+
+{% highlight html %}
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+{% endhighlight %}
+
+#### 6 - Inicialize o RevealJS e configure
+
+Não adianta só colocar o `js` no final do arquivo, precisamos inicializar para que a mágica aconteça!
+
+{% highlight js %}
+// Veja todas as configurações em:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+    controls: true, // mostra as setinhas na parte inferior
+    progress: true, // mostra uma barra de progresso
+    center: true, // centraliza os slides
+    transition: 'slide' // none/fade/slide/convex/concave/zoom
+}); 
+{% endhighlight %} 
+
+#### 8 - Hospedando no Github
+
+Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pages.github.com/), que permite hospedar páginas estáticas nele. Para hospedarmos algo lá, basta criarmos um projetinho com o nome que desejarmos e ao invés de usar a branch master, usarmos a branch `gh-pages`. Após isso, o projeto vai ficar hospedado em `nomedousuario.github.io/nome-do-projeto`, caso você tenha um domínio configurado, ele ficará como `dominio/nome-do-projeto`. Segue um exemplo de uma das minhas últimas apresentações [Frontend Carioca 2015](http://willianjusten.com.br/frontend-carioca-2015/).
+
+---
+
+### Pow, legal, mas não tem nada mais prático não?
+
+Eu sou a preguiça em pessoa e sempre que eu puder, vou tentar fazer algo para agilizar e organizar minhas coisas. Pensando nisso, eu criei um [Reveal Boilerplate](https://github.com/willianjusten/reveal-boilerplate), que além de já ter tudo do RevealJS, inclui algumas coisas legais para o meu desenvolvimento.
+
+Eu uso o [Jade](http://jade-lang.com/) para escrever meus slides separados de forma mais organizada. Tem também o [Stylus](http://learnboost.github.io/stylus/), que é o pre-processador mais lindinho de todos. E para rodar tudo, compilar e fazer todas as outras mágicas, eu tenho o [GulpJS](http://gulpjs.com/).
+
+### Como funciona o Boilerplate?
+
+#### 1 - Estrutura 
+
+Todos os arquivos importantes ficam dentro da pasta [src](https://github.com/willianjusten/reveal-boilerplate/tree/master/src), que é onde ficam os arquivos ainda não compilados.
+
+A pasta [src/templates](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/templates) é onde ficam os [includes](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/templates/inc), estes são responsáveis pela inclusão dos scripts, arquivos de css, descrições, meta-tag e etc.
+
+E o arquivo [src/templates/index.jade](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/templates/index.jade) é onde eu monto e faço a chamada dos meus slides.
+
+Cada slide fica separado na pasta [src/slides](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/slides) e pode ser chamado nessa index na ordem que eu desejar, assim fica tudo mais arrumadinho e me facilita a deletar/chamar ou não um slide =)
+
+Os slides podem ser escritos usando a sintaxe do Jade ou tambem em html normal, então se você não souber escrever em jade, não se preocupe, escreva em html e tudo irá funcionar igual, basta lembrar de quando for incluir um slide na `index.jade`, coloque a extensão `.html` no final do arquivo. Segue exemplo:
+
+{% highlight html %}
+doctype html
+html
+    include inc/head
+    body
+        .reveal
+            .slides
+                include ../slides/slide-1.html
+                include ../slides/slide-2.html
+        include inc/scripts
+{% endhighlight %}
+
+Quando o arquivo for compilado, ele irá ler normalmente e juntar tudo para você em um só arquivo.
+
+#### 2 - Baixando o Boilerplate e instalando
+
+Basta ir em [Reveal-Boilerplate](https://github.com/willianjusten/reveal-boilerplate/), clonar ou baixar os arquivos na sua máquina. 
+
+Depois basta criar um repositório no seu github com os arquivos iniciais. Segue os passos básicos:
+
+Vá em [Create new repository](https://github.com/new) no github e preencha os dados corretamente:
+
+![Imagem de criação de um novo repositório no Github](/assets/img/reveal/github-repo.png)
+
+{% highlight bash %}
+// inicializando um repositório git no seu local
+git init
+
+// adicionando todos os arquivos 
+git add .
+
+// commitando tudo 
+git commit -m "initial commit"
+
+// adicionando o repositório remoto do github
+git remote add origin git@github.com:seu-usuario/seus-slides-lindos.git
+
+// fazendo o primeiro deploy na mão para ligar os repositórios
+git push -u origin master
+{% endhighlight %}
+
+#### 3 - Rodando, compilando e fazendo deploy
+
+Como eu disse, uso o Gulp para fazer as mágicas, então a primeira coisa a se fazer é instalar as dependências do `package.json`, para isso é só rodar:
+
+{% highlight bash %}
+npm install
+{% endhighlight %}
+
+Depois de tudo instalado, é só rodar o Gulp. Ele possui alguns comandos separados, mas em geral o comando principal utilizado será só `gulp`, que é responsável por fazer todas as compilações necessárias e levantar um servidor com livereload em `localhost:3000`. Os arquivos compilados irão para uma pasta `build`, que irá conter só os arquivos finais que são as pastas: `css`, `js`, `images` e `index.html`.
+
+Depois de tudo feito e compilado, só precisamos fazer o deploy para o github, para isso também temos 2 comandos:
+
+- `gulp deploy-pages`: faz deploy dos arquivos de `build` para o branch `gh-pages`.
+- `gulp deploy-src`: faz deploy dos arquivos de `src` para o branch `master`.
+
+
+## Conclusão
+
+Bom, é só isso pessoal, espero que esse post ajude e que passem a criar mais apresentações direto no browser ao invés de usarem softwares proprietários. E é claro, quem quiser contribuir no meu [boilerplate](https://github.com/willianjusten/reveal-boilerplate), ficarei eternamente grato! Não sabe o que pode melhorar? Fala comigo que eu com certeza tenho uma lista de desejos, que inclusive deveria colocar lá nas issues, mas estou com preguiça, me pergunta que eu falo e você preenche para mim pelo menos, já vai estar ajudando ahuahuahua
 
 
