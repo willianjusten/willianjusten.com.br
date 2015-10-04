@@ -6,10 +6,9 @@ image: '/assets/img/reveal/main.png'
 description: "Aprenda a criar slides para suas apresentações e hospedá-las online no github pages."
 tags:
 - js
-- slides
 - github
 categories:
-twitter_text: "Aprenda a criar slides para suas apresentações e hospedá-las online no github pages."
+twitter_text: "Aprenda a criar slides para suas apresentações e hospedá-las online no github."
 ---
 
 ## Introdução
