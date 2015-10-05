@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "#15 - Efeito de desenhar com SVG"
+title: "#15 - Criando o efeito de desenhar com SVG"
 date: 2015-10-04 18:41:21
-image: '/assets/img/'
+image: '/assets/img/draw-svg/main.png'
 description: 'Um tutorial de como fazer aquele efeito legal de desenhar elementos na tela com SVG.'
 tags:
 - svg
