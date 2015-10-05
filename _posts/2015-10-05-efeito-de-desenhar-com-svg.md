@@ -17,7 +17,7 @@ twitter_text: 'Aprenda como desenhar na tela usando SVG.'
 
 Estou aproveitando que estou descendo a serra e vou iniciar mais um post, não sei se vou ter paciência para terminar, mas vamos lá. No momento estou ouvindo Radiohead, mais especificamente o cd The Bends, que é um dos meus favoritos.
 
-Nesse post eu vou mostrar uma das paradas mais legais de todas do SVG, que é a técnica de Line Drawing, mais famosa como "aqueles efeito louco de desenhar na tela". Essa é uma técnica bastante simples, mas que pode ser utilizada de diversas formas e permite criar vários tipos de interação e usabilidade.
+Nesse post eu vou mostrar uma das paradas mais legais de todas do SVG, que é a técnica de Line Drawing, mais famosa como "aquele efeito louco de desenhar na tela". Essa é uma técnica bastante simples, mas que pode ser utilizada de diversas formas e permite criar vários tipos de interação e usabilidade.
 
 Se você não sabe que efeito é esse, dá uma olhadinha nessa [coleção do codepen](http://codepen.io/collection/cEust/10/).
 
