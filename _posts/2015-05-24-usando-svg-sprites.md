@@ -7,6 +7,7 @@ description: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Apr
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda as técnicas de como usar."

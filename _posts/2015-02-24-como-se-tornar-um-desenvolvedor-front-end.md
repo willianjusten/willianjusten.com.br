@@ -8,6 +8,7 @@ tags:
 - frontend
 - css
 - js
+- tutorial
 categories:
 twitter_text: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade."
 ---

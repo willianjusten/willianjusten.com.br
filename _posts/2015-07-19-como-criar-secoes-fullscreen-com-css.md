@@ -6,6 +6,7 @@ image: '/assets/img/header-full/main.png'
 description: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer também."
 tags:
 - css
+- tutorial
 categories:
 twitter_text: "Como criar seções fullscreen com CSS e chamar atenção dos usuários."
 ---

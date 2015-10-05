@@ -7,7 +7,7 @@ description: 'Como fazer a barra de notificações do android ficar com a cor do
 tags:
 - android
 - theme
-- dicarapida
+- tutorial
 categories:
 twitter_text: 'Como fazer a barra de notificações do android ficar com a cor do seu site.'
 ---

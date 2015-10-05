@@ -6,6 +6,7 @@ image: '/assets/img/como-usar-svg/como-usar-svg.png'
 description: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
 tags:
 - svg
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como usar o SVG?"

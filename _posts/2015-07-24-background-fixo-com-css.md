@@ -6,7 +6,7 @@ image: '/assets/img/reveal-bg/main-2.png'
 description: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
 tags:
 - css
-- trend
+- tutorial
 categories:
 twitter_text: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
 ---

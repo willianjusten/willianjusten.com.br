@@ -7,6 +7,7 @@ description: "Aprenda as diferentes formas de mudar o estilo de um SVG somente c
 tags:
 - svg
 - css
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estilizando SVG com CSS - Parte 1"

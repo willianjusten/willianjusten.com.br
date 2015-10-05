@@ -7,6 +7,7 @@ description: 'Porque CSS é muito mais do que só classes e ids. Aprenda alguns 
 tags:
 - css
 - frontend
+- tutorial
 categories:
 twitter_text: "Porque o CSS é muito mais do que só classes e ids."
 ---

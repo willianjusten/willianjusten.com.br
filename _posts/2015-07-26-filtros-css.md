@@ -6,6 +6,7 @@ image: '/assets/img/filtros-css/main.png'
 description: 'Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css.'
 tags:
 - css
+- tutorial
 categories:
 twitter_text: "Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css."
 ---

@@ -7,6 +7,7 @@ description: 'Veja como manipular SVG com JS e algumas libs para brincar.'
 tags:
 - svg
 - js
+- tutorial
 categories:
 - "O mundo mágico do SVG"
 twitter_text: 'Veja como manipular SVG com JS e algumas libs para brincar.'
