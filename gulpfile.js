@@ -9,7 +9,8 @@ var gulp        = require('gulp'),
 	koutoSwiss  = require('kouto-swiss'),
 	prefixer    = require('autoprefixer-stylus'),
 	imagemin    = require('gulp-imagemin'),
-	cp          = require('child_process');
+	cp          = require('child_process'),
+	cache       = require('gulp-cache');
 
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -54,7 +55,7 @@ gulp.task('stylus', function(){
 		}))
 		.pipe(gulp.dest('_site/assets/css/'))
 		.pipe(browserSync.reload({stream:true}))
-		.pipe(gulp.dest('assets/css'))
+		.pipe(gulp.dest('assets/css'));
 });
 
 /**
@@ -65,7 +66,7 @@ gulp.task('js', function(){
 		.pipe(plumber())
 		.pipe(concat('main.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('assets/js/'))
+		.pipe(gulp.dest('assets/js/'));
 });
 
 /**
@@ -74,7 +75,7 @@ gulp.task('js', function(){
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*.{jpg,png,gif}')
 		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+		.pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
 		.pipe(gulp.dest('assets/img/'));
 });
 
