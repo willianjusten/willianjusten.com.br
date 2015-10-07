@@ -10,6 +10,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estrutura do SVG - Saiba melhor como funciona."
+introduction: "Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho."
 ---
 
 ## Índice da série

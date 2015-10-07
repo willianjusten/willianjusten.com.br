@@ -8,6 +8,7 @@ tags:
 - jekyll
 categories:
 twitter_text: "Perguntas e Respostas sobre Jekyll"
+introduction: "FAQ: Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funciona esse gerador estático e já saia usando."
 ---
 
 ## Introdução

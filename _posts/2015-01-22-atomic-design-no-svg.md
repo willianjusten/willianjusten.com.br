@@ -10,6 +10,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Atomic Design no SVG! Entendendo o conceito."
+introduction: "Neste artigo iremos saber mais sobre a estruturação de um SVG, como usar groups, <use>, <defs> e mais para organizar os elementos, as vantagens disso e um pouco de Atomic Design."
 ---
 
 ## Índice da série

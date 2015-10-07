@@ -9,6 +9,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Onde baixar SVG?"
+introduction: "Eu sou programador e não designer, como é que vou fazer essas coisas aí? Aqui vou mostrar que não precisa ser designer para poder usar SVG. Vários links para baixar SVG de vários sites."
 ---
 
 ## Índice da série
