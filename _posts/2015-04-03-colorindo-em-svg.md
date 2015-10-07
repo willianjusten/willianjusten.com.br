@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Colorindo em SVG. Vamos voltar a ser crianças e colorir as coisas!"
+introduction: "Vamos voltar a ser crianças e colorir as coisas! Aprenda como colorir o SVG usando classes, property-attributes e mais."
 ---
 
 ## Índice da série

@@ -9,6 +9,7 @@ tags:
 - tutorial
 categories:
 twitter_text: "Aprenda a criar social share buttons sem dependências para o seu site."
+introduction: "Ser social é muito importante, então nada melhor do que fazer com que o seu usuário consiga compartilhar mais fácil seu conteúdo. Saiba como criar botões de share sem dependências."
 ---
 
 ## Introdução

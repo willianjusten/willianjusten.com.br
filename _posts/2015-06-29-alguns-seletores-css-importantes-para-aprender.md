@@ -10,6 +10,7 @@ tags:
 - tutorial
 categories:
 twitter_text: "Porque o CSS é muito mais do que só classes e ids."
+introduction: "Porque CSS é muito mais do que só classes e ids. Veja alguns truques legais para facilitar nos seus layouts."
 ---
 
 ## Introdução

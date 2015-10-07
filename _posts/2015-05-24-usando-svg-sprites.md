@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda as técnicas de como usar."
+introduction: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda como utilizar essa técnica com SVG de várias formas."
 ---
 
 ## Índice da série

@@ -11,6 +11,7 @@ tags:
 categories:
 - Aprendendo ReactJS
 twitter_text: "ReactJS - Tentando entender o que é? Para que serve? Por onde começar?"
+introduction: "O ReactJS é a onda do momento! Vamos entender o que é? Para que serve? Por onde começar?"
 ---
 
 ## Introdução

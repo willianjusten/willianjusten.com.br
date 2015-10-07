@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Criando um SVG responsivo e adaptativo!"
+introduction: "Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela. Saiba como criar um SVG responsivo e adaptativo."
 ---
 
 ## Índice da série

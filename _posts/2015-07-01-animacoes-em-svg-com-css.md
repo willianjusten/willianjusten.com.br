@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como criar animações para o SVG usando só CSS."
+introduction: "Veja como criar diferentes animações para o SVG usando só CSS3. E já saia criando loaders e outras coisas mais."
 ---
 
 ## Índice da série

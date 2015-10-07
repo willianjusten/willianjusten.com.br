@@ -9,6 +9,7 @@ tags:
 - frontend
 categories:
 twitter_text: "Alguns dos motivos que fazem os eventos serem tão sensacionais!"
+introduction: "Alguns dos motivos que fazem os eventos de desenvolvimento serem tão sensacionais e que todos deveríamos ir."
 ---
 
 ## Introdução
