@@ -8,6 +8,7 @@ tags:
 - jekyll
 categories:
 twitter_text: 'Atualizações no blog!'
+introduction: "O blog cresceu um pouquinho e algumas modificações foram inevitáveis. Vou mostrar um pouco do que mudou, como uma nova busca e um menu para facilitar o acesso."
 ---
 
 ![Acessos no Brasil](/assets/img/atualizacoes/brasil.png)

@@ -7,6 +7,7 @@ image: "/assets/img/flame-war/yoda-flame-war.jpg"
 tags:
 - jekyll
 twitter_text: "Por que usar Jekyll?"
+introduction: "Alguns motivos para se usar um gerador estático para a criação do seu blog. Mais especificamente sobre o Jekyll, ferramenta usada na criação do meu blog."
 ---
 
 Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s> E brincadeirinha, não vai rolar flame war aqui, assim espero =o

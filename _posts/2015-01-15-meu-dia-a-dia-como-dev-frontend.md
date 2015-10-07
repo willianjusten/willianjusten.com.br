@@ -7,6 +7,7 @@ tags:
 - frontend
 categories:
 twitter_text: "Meu dia a dia como dev frontend."
+introduction: "Um pouco do meu dia a dia como dev frontend. Minha máquina, meus programas, arquivos, configurações."
 ---
 
 Como alguns devem saber o [Luiz Felipe Tartarotti Fialho](https://github.com/LFeh) criou um [repositório](https://github.com/LFeh/1-post-por-dia) no github bastante legal, para que pessoas possam pedir alguns temas.

@@ -8,6 +8,7 @@ tags:
 - seo
 - tutorial
 twitter_text: "Como melhorar meu SEO?"
+introduction: "Quer aparecer entre os primeiros do Google? Quer vender mais e ter mais acessos? Aprenda algumas técnicas de SEO para ser melhor indexado."
 ---
 
 ![SEO](/assets/img/seo/seo.jpg)

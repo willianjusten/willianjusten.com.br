@@ -10,6 +10,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como usar o SVG?"
+introduction: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
 ---
 
 ## Introdução

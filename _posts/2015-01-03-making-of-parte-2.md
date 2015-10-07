@@ -10,6 +10,7 @@ tags:
 - stylus
 - github pages
 twitter_text: "Making of parte 2"
+introduction: "Uma continuação sobre a criação do meu blog, mostrando um passo a passo de como criar um blog em Jekyll usando Gulp e Stylus e fazendo funcionar no Github Pages."
 ---
 
 ## Introdução

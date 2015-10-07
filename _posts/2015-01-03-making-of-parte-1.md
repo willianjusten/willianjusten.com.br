@@ -9,6 +9,7 @@ tags:
 - stylus
 - svg
 twitter_text: "Making of parte 1"
+introduction: "Uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido elas para a criação desse meu lindo blog."
 ---
 
 ## Antes de qualquer coisa...
