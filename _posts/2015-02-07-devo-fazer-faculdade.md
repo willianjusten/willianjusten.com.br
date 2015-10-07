@@ -9,6 +9,7 @@ tags:
 - programação
 categories:
 twitter_text: 'Devo fazer faculdade? Desmistificando algumas dúvidas.'
+introduction: "Será que faculdade é importante para quem faz programação? Essa dúvida sempre acontece e nesse post iremos conversar um pouco mais sobre."
 ---
 
 ## Introdução

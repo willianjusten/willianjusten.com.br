@@ -10,6 +10,7 @@ tags:
 - tutorial
 categories:
 twitter_text: 'Aprenda a usar as meta tags sociais.'
+introduction: "Aprenda como ser mais social, ter maior relevância nas redes sociais e atrair mais usuários. Para isso, basta criar as meta tags corretas."
 ---
 
 ## Introdução

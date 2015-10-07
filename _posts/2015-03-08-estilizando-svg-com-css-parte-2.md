@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estilizando SVG com CSS - Parte 2"
+introduction: "Aprenda algumas propriedades que o SVG e como trabalhar com elas."
 ---
 
 ## Índice da série

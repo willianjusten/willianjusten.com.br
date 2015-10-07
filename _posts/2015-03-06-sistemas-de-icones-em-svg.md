@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Como usar ícones em SVG e por que ele é bem melhor que outras alternativas? "
+introduction: "Como dizem 'Uma imagem vale mais que mil palavras' e isso é um fato. Muitas vezes conseguimos simbolizar uma ação apenas com uma imagem. Então vamos aprender a usar ícones em SVG."
 ---
 
 ## Índice da série

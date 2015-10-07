@@ -9,6 +9,7 @@ tags:
 categories:
 - Links da Semana
 twitter_text: 'Alguns links legais vistos na semana'
+introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e acho que todos deveriam ler."
 ---
 
 Fiquei um tempo sem fazer esse tipo de post, mas pretendo retorná-lo, porque links interessantes nunca são demais =)

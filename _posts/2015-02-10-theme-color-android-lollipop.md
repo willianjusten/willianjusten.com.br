@@ -10,6 +10,7 @@ tags:
 - tutorial
 categories:
 twitter_text: 'Como fazer a barra de notificações do android ficar com a cor do seu site.'
+introduction: "Como fazer a barra de notificações do android ficar com a cor do seu site em uma linha só de código."
 ---
 
 Fala galera, vim trazer mais uma **#dicarapida**, essa é bem rápida mesmo. Um amigo estava navegando meu blog no celular dele e notou que tudo ficou com a cor do meu site e me perguntou como fazia, já que o intuito do blog é passar conhecimento, mesmo que seja bem pequeno e simples, resolvi mandar essa dica aqui =)

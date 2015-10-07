@@ -11,6 +11,7 @@ tags:
 - tutorial
 categories:
 twitter_text: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade."
+introduction: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade, seguindo desde o básico, ao intermediário e avançado. Vendo desde o HTML, CSS e JS até Ferramentas de automação e Performance."
 ---
 
 ## Índice

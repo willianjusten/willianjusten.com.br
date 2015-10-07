@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: "Estilizando SVG com CSS - Parte 1"
+introduction: "Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS, mude suas cores, contornos e mais."
 ---
 
 ## Índice da série
