@@ -9,6 +9,7 @@ tags:
 - tutorial
 categories:
 twitter_text: "Como criar seções fullscreen com CSS e chamar atenção dos usuários."
+introduction: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units."
 ---
 
 ## Introdução 

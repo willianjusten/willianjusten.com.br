@@ -11,6 +11,7 @@ tags:
 categories:
 - "O mundo mágico do SVG"
 twitter_text: 'Aprenda como desenhar na tela usando SVG.'
+introduction: "Um tutorial de como fazer aquele efeito legal de desenhar elementos na tela com SVG e CSS3."
 ---
 
 ## Introdução

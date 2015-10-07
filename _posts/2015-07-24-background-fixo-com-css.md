@@ -9,6 +9,7 @@ tags:
 - tutorial
 categories:
 twitter_text: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
+introduction: "Como atrair usuários usando seções com backgrounds fixos usando só css, também conhecidos como Paralax."
 ---
 
 ## Introdução

@@ -11,6 +11,7 @@ tags:
 categories:
 - Aprendendo ReactJS
 twitter_text: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
+introduction: "As diferentes formas de se usar e se iniciar um projeto com ReactJS. Veja usando o famoso JSX, sem ele e alguns boilerplates famosos."
 ---
 
 ## Introdução

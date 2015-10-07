@@ -9,6 +9,7 @@ tags:
 - tutorial
 categories:
 twitter_text: "Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css."
+introduction: "Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css."
 ---
 
 ## Introdução

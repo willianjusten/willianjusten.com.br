@@ -9,6 +9,7 @@ tags:
 - github
 categories:
 twitter_text: "Aprenda a criar slides para suas apresentações e hospedá-las online no github."
+introduction: "Um tutorial de como criar slides para suas apresentações com o RevealJS e hospedá-las online no github pages."
 ---
 
 ## Introdução
