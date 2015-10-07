@@ -3,6 +3,7 @@
     padding rem(40px) 0
     border-bottom 3px solid lightGray
     center(rem(1000px))
+    display table
     +below(rem(1000px))
         padding-left rem(20px)
         padding-right rem(20px)
@@ -10,6 +11,9 @@
         col(1/6)
         text-align center
         text-decoration none
+        display table-cell
+        vertical-align middle
+        float none
         +below(cut)
             stack()
         .day
@@ -23,7 +27,7 @@
             color black
             font-size rem(18px)
     .content
-        col(5/6)
+        margin-left rem(40px)
         +below(cut)
             stack()
         a
@@ -39,6 +43,8 @@
             color texts
             mainFont(300)
             font-size rem(20px)
-            a
-                color main
-                text-decoration underline
+        .see
+            color main
+            text-decoration underline
+            mainFont(300)
+            font-size rem(20px)
