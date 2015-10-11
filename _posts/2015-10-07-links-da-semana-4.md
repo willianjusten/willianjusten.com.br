@@ -32,6 +32,7 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Lazyload](http://verlok.github.io/lazyload/)
 - [From Rest to GraphQL](https://blog.jacobwgillespie.com/from-rest-to-graphql-b4e95e94c26b)
 - [React Style Guide](https://reactjsnews.com/react-style-guide-patterns-i-like/)
+- [Checklist for your new Open Source JavaScript Project](https://ericdouglas.github.io/2015/09/27/checklist-for-your-new-open-source-javascript-project/)
 
 ## Python
 
@@ -54,6 +55,7 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Open Source Society University](https://github.com/open-source-society/computer-science)
 - [N1 - Extensible opensource Mail Client](https://nylas.com/N1)
 - [Clipboard JS](http://zenorocha.github.io/clipboard.js/)
+- [Accelerated Mobile Pages Project](https://www.ampproject.org/)
 
 ## Variados
 
@@ -61,3 +63,5 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Scale 2015](https://code.facebook.com/posts/496171527213781/inside-scale-2015/)
 - [Goodbye, Native Mobile Apps](https://atavistinsider.atavist.com/goodbye-native-mobile-apps/)
 - [Inside the Dev Team Death Spiral](https://medium.com/javascript-scene/inside-the-dev-team-death-spiral-6a7ea255467b)
+- [Introducing the New Motion UI by Zurb](http://zurb.com/article/1409/introducing-the-new-motion-ui)
+- [MorphSVGPlugin](http://greensock.com/morphSVG)
