@@ -2,7 +2,7 @@
 layout: post
 title: "Links da semana #4"
 date: 2015-10-11 19:19:17
-image: '/assets/img/links-semana-3/main.png'
+image: '/assets/img/links-da-semana/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
 tags:
 - linksdasemana
