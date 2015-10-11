@@ -6,7 +6,7 @@ description: "Detalhes fazem a diferença, vamos falar sobre Favicons, Touch Ico
 tags:
 - "dicarapida"
 twitter_text: "Favicons, touch icons e tile icons..."
-description: "Qual a importância dos favicons, touch icons e tile icons. Como criá-los automáticamente e como usá-los em seu site."
+introduction: "Qual a importância dos favicons, touch icons e tile icons. Como criá-los automáticamente e como usá-los em seu site."
 ---
 
 Já que estou participando da campanha do [Fernando Daciuk](http://blog.da2k.com.br/) que é o **#1postperday**, resolvi criar uma outra hashtag, que será a **#dicarapida**. Como o próprio nome diz, serão dicas rápidas, mas que as vezes a gente não faz ou esquece ou ninguém falou por ser "bobo".
