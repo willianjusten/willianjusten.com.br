@@ -28,12 +28,20 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Novo site para o Medium Editor](https://yabwe.github.io/medium-editor/)
 - [#NodeJS : A quick optimization advice](https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e)
 - [Nanoflux is a very lightweight agnostic full Flux implementation.](https://www.npmjs.com/package/nanoflux)
+- [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
+- [Lazyload](http://verlok.github.io/lazyload/)
+- [From Rest to GraphQL](https://blog.jacobwgillespie.com/from-rest-to-graphql-b4e95e94c26b)
 
 ## Python
 
 - [Python Pedia - Python Programming Resources.](https://pythonpedia.com/)
 - [Testing in Django](http://masteringdjango.com/testing-in-django/)
 - [Scaling Django to 8 Billion Page Views](http://blog.disqus.com/post/62187806135/scaling-django-to-8-billion-page-views)
+
+## CSS
+
+- [Why You Need to Refactor Your CSS](http://seesparkbox.com/foundry/why_you_need_to_refactor_your_css)
+- [CSS Modules](http://glenmaddern.com/articles/css-modules)
 
 ## Workflow
 
@@ -51,3 +59,4 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Software needs to be better — FunFunFunction #1](https://medium.com/humans-create-software/software-needs-to-be-better-funfunfunction-1-411942de9768)
 - [Scale 2015](https://code.facebook.com/posts/496171527213781/inside-scale-2015/)
 - [Goodbye, Native Mobile Apps](https://atavistinsider.atavist.com/goodbye-native-mobile-apps/)
+- [Inside the Dev Team Death Spiral](https://medium.com/javascript-scene/inside-the-dev-team-death-spiral-6a7ea255467b)
