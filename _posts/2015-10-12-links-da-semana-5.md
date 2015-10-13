@@ -40,6 +40,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 ## Opensource
 
 - [Exposé - A simple static site generator for photoessays](https://github.com/Jack000/Expose)
+- [The official Javascript client for Cosmic JS](https://github.com/cosmicjs/cosmicjs-node)
 
 ## Design
 
@@ -54,3 +55,4 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Performance Budget - Calcule o que gastar em seu site](http://www.performancebudget.io/)
 - [Writing Developer Job Postings](http://www.tokyodev.com/2015/08/28/writing-developer-job-posting/)
 - [Teste seu site no Http2](http://http2.loadimpact.com/)
+- [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
