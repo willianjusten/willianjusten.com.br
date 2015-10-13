@@ -34,6 +34,8 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 ## CSS
 
 - [Understanding and Using rem Units in CSS](http://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
+- [Using Web Fonts the Best Way (in 2015).](https://helloanselm.com/2015/using-webfonts-in-2015/)
+- [CodePen's CSS](http://codepen.io/chriscoyier/post/codepens-css)
 
 ## Opensource
 
@@ -44,9 +46,11 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [25 Luxury Website Designs with Elegant Layouts](http://line25.com/inspiration/luxury-website-designs)
 - [What’s New for Designers, October 2015](http://www.webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
 - [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
+- [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
 
 ## Variados
 
 - [What's the Fuss with Google's Accelerated Mobile Pages (AMP)?](https://auth0.com/blog/2015/10/12/whats-the-fuss-with-googles-accelerated-mobile-pages-amp/)
 - [Performance Budget - Calcule o que gastar em seu site](http://www.performancebudget.io/)
 - [Writing Developer Job Postings](http://www.tokyodev.com/2015/08/28/writing-developer-job-posting/)
+- [Teste seu site no Http2](http://http2.loadimpact.com/)
