@@ -30,6 +30,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Integrating React with gulp](https://jonsuh.com/blog/integrating-react-with-gulp/)
 - [A cartoon guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
 - [Zepto Builder](http://github.e-sites.nl/zeptobuilder)
+- [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
 
 ## CSS
 
@@ -48,6 +49,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [What’s New for Designers, October 2015](http://www.webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
 - [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
 - [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
+- [Design to Code with Atomic Design Principles and Sketch](https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37)
 
 ## Variados
 
@@ -56,3 +58,5 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Writing Developer Job Postings](http://www.tokyodev.com/2015/08/28/writing-developer-job-posting/)
 - [Teste seu site no Http2](http://http2.loadimpact.com/)
 - [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
+- [Github Classroom](https://classroom.github.com/)
+- [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
