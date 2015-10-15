@@ -31,12 +31,14 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [A cartoon guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
 - [Zepto Builder](http://github.e-sites.nl/zeptobuilder)
 - [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
+- [A Responsive Material Design App With Polymer Starter Kit](http://www.smashingmagazine.com/2015/10/responsive-material-design-app-with-polymer-starter-kit/)
 
 ## CSS
 
 - [Understanding and Using rem Units in CSS](http://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
 - [Using Web Fonts the Best Way (in 2015).](https://helloanselm.com/2015/using-webfonts-in-2015/)
 - [CodePen's CSS](http://codepen.io/chriscoyier/post/codepens-css)
+- [Um lego feito em CSS puro - LOUCO](http://codepen.io/rachel_web/pen/rOLRvM/)
 
 ## Opensource
 
@@ -60,3 +62,4 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
 - [Github Classroom](https://classroom.github.com/)
 - [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
+- [How to Modularize HTML Using Template Engines and Gulp](http://www.zell-weekeat.com/nunjucks-with-gulp)
