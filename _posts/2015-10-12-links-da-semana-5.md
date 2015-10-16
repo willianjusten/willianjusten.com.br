@@ -30,12 +30,15 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Integrating React with gulp](https://jonsuh.com/blog/integrating-react-with-gulp/)
 - [A cartoon guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
 - [Zepto Builder](http://github.e-sites.nl/zeptobuilder)
+- [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
+- [A Responsive Material Design App With Polymer Starter Kit](http://www.smashingmagazine.com/2015/10/responsive-material-design-app-with-polymer-starter-kit/)
 
 ## CSS
 
 - [Understanding and Using rem Units in CSS](http://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
 - [Using Web Fonts the Best Way (in 2015).](https://helloanselm.com/2015/using-webfonts-in-2015/)
 - [CodePen's CSS](http://codepen.io/chriscoyier/post/codepens-css)
+- [Um lego feito em CSS puro - LOUCO](http://codepen.io/rachel_web/pen/rOLRvM/)
 
 ## Opensource
 
@@ -48,6 +51,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [What’s New for Designers, October 2015](http://www.webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
 - [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
 - [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
+- [Design to Code with Atomic Design Principles and Sketch](https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37)
 
 ## Variados
 
@@ -57,3 +61,6 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Teste seu site no Http2](http://http2.loadimpact.com/)
 - [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
 - [O lado ruim de trabalhar no Google em 23 frases](http://exame.abril.com.br/carreira/noticias/o-lado-ruim-de-trabalhar-no-google-em-23-frases/lista)
+- [Github Classroom](https://classroom.github.com/)
+- [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
+- [How to Modularize HTML Using Template Engines and Gulp](http://www.zell-weekeat.com/nunjucks-with-gulp)
