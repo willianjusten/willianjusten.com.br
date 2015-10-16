@@ -56,3 +56,4 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Writing Developer Job Postings](http://www.tokyodev.com/2015/08/28/writing-developer-job-posting/)
 - [Teste seu site no Http2](http://http2.loadimpact.com/)
 - [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
+- [O lado ruim de trabalhar no Google em 23 frases](http://exame.abril.com.br/carreira/noticias/o-lado-ruim-de-trabalhar-no-google-em-23-frases/lista)
