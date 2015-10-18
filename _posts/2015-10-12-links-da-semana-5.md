@@ -39,13 +39,17 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 - [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
 - [A Responsive Material Design App With Polymer Starter Kit](http://www.smashingmagazine.com/2015/10/responsive-material-design-app-with-polymer-starter-kit/)
 - [Screamer.JS - create customisable Web Notifications](https://github.com/willianjusten/screamer-js/)
+- [React Native - Morphing SVG Paths with React Art](http://browniefed.com/blog/2015/10/14/react-native-morphing-svg-paths-with-react-art/)
+- [React+Flux can do in just 137 lines what jQuery can do in 10](http://swizec.com/blog/reactflux-can-do-in-just-137-lines-what-jquery-can-do-in-10/swizec/6740)
 
-## CSS
+## CSS / SVG
 
 - [Understanding and Using rem Units in CSS](http://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
 - [Using Web Fonts the Best Way (in 2015).](https://helloanselm.com/2015/using-webfonts-in-2015/)
 - [CodePen's CSS](http://codepen.io/chriscoyier/post/codepens-css)
 - [Um lego feito em CSS puro - LOUCO](http://codepen.io/rachel_web/pen/rOLRvM/)
+- [CodePen Challenge #5: Spooky Halloween SVG Characters](http://codepen.io/collection/nJGmgJ/)
+- [Effect Ideas for Image Grids](http://tympanus.net/codrops/2015/10/15/effect-ideas-for-image-grids/)
 
 ## Opensource
 
@@ -68,6 +72,7 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 - [Writing Developer Job Postings](http://www.tokyodev.com/2015/08/28/writing-developer-job-posting/)
 - [Teste seu site no Http2](http://http2.loadimpact.com/)
 - [Hybrid Mobile Apps With Couchbase And Ionic Framework](http://blog.couchbase.com/hybrid-mobile-apps-with-couchbase-and-ionic-framework)
+- [O lado ruim de trabalhar no Google em 23 frases](http://exame.abril.com.br/carreira/noticias/o-lado-ruim-de-trabalhar-no-google-em-23-frases/lista)
 - [Github Classroom](https://classroom.github.com/)
 - [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
 - [How to Modularize HTML Using Template Engines and Gulp](http://www.zell-weekeat.com/nunjucks-with-gulp)
