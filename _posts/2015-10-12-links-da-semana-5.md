@@ -16,8 +16,14 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 
 ## Introdução
 
-Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, aqui vão os links que eu li nessa semana.
+Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, aqui vão os links que eu li nessa semana. Eu ouvi várias coisas durante a semana enquanto mostrava essa lista que foram: 
 
+- [Supercombo](https://open.spotify.com/artist/73HkjgziMO6I83vFOS8mo1) - banda brasileira de indie, calma e bem legal.
+- [Anavitória](https://open.spotify.com/artist/1sPg5EHuQXTMElpZ4iUgXe) - dupla brasileira com voz bem fofinha <3
+- [Anathema](https://open.spotify.com/artist/0ZXKT0FCsLWkSLCjoBJgBX) - banda natural de liverpool, tem duas músicas incríveis que adoro que são [Untouchable Pt.1](https://open.spotify.com/track/7uMlAgdCGMnxaRfRlZZWDs) e [Untouchable Pt.2](https://open.spotify.com/track/3w3hBA9IiyioNpvcxZSJQL).
+- [Amarante](https://open.spotify.com/artist/3yR3HP47svRNUefemTZAAc) - conheci essa banda nesse [vídeo](https://www.youtube.com/watch?v=eRvk5UQY1Js&spfreload=10) e desde então sou apaixonado.
+
+Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deixei de pegar vários links novos, que seguem:
 
 ## Javascript
 
@@ -32,6 +38,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Zepto Builder](http://github.e-sites.nl/zeptobuilder)
 - [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
 - [A Responsive Material Design App With Polymer Starter Kit](http://www.smashingmagazine.com/2015/10/responsive-material-design-app-with-polymer-starter-kit/)
+- [Screamer.JS - create customisable Web Notifications](https://github.com/willianjusten/screamer-js/)
 
 ## CSS
 
@@ -52,6 +59,7 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
 - [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
 - [Design to Code with Atomic Design Principles and Sketch](https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37)
+- [Um site simplesmente foda](http://keepearthquakesweird.com/)
 
 ## Variados
 
@@ -63,3 +71,5 @@ Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, a
 - [Github Classroom](https://classroom.github.com/)
 - [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
 - [How to Modularize HTML Using Template Engines and Gulp](http://www.zell-weekeat.com/nunjucks-with-gulp)
+- [Detox - Replace your Facebook feed with something positively distracting.](http://usedetox.com/)
+- [Front-end Developer Handbook](https://frontendmasters.gitbooks.io/front-end-handbook/content/index.html)
