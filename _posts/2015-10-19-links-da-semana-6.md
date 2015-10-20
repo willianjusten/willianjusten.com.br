@@ -17,9 +17,17 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 ## Introdução
 
 
+## Javascript
+
+- [Choosing a JavaScript Build Tool – Babel, Browserify, Webpack, Grunt and Gulp](http://jamesknelson.com/which-build-system-should-i-use-for-my-javascript-app/)
 
 ## Design / Inspiracional
 
 - [Landing Folio - Várias Landing Pages para inspiração](http://www.landingfolio.com/)
 - [Lightning Design System - Um design system feito pela Salesforce](http://www.lightningdesignsystem.com/)
+- [Object Oriented UX](http://alistapart.com/article/object-oriented-ux)
 
+## Variados
+
+- [Chrome Devtools Tips & Tricks](http://mo.github.io/2015/10/19/chrome-devtools.html)
+- [Node.js for the Real World](http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world)
