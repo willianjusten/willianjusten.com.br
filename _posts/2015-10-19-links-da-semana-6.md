@@ -16,6 +16,7 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 
 ## Introdução
 
+- [Apanhador Só](https://open.spotify.com/artist/3DtHAw4MrjXhVFotN5n8fZ)
 
 ## Javascript
 
