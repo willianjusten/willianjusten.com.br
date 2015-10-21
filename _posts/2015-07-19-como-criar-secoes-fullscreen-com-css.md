@@ -50,7 +50,7 @@ Seguem alguns exemplos de sites que utilizam dessa técnica:
 ---
 
 ![Pen & Quill](/assets/img/header-full/header-3.png)
-[Pen & Quill](![Pen & Quill]())
+[Pen & Quill](http://penandquill.net/)
 
 
 ## Problema

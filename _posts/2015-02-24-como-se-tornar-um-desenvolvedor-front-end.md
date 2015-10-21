@@ -362,7 +362,6 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 - [Nomadev](http://nomadev.com.br/) - PtBr
 - [Leandro Oriente Blog](http://leandrooriente.com/) - PtBr
 - [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - PtBr
-- [Blog do Senai Cimatec - Bahia](http://softwaresenai.github.io/)
 
 #### Eventos
 
