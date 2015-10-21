@@ -86,8 +86,8 @@ img {
 }   
 </style>
 
-<img class="gray-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="gray-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="gray-1" alt="Imagem com escala de cinza 100%" src="/assets/img/filtros-css/imagem-exemplo.jpg"/>
+<img class="gray-2" alt="Imagem com escala de cinza 70%" src="/assets/img/filtros-css/imagem-exemplo.jpg"/>
 
 ---
 
@@ -119,8 +119,8 @@ Para dar aquele aspecto de foto envelhecida, o funcionamento é o mesmo do `gray
 }
 </style>
 
-<img class="sepia-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="sepia-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="sepia-1" alt="Imagem com escala de sepia 100%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="sepia-2" alt="Imagem com escala de sepia 70%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -152,8 +152,8 @@ Eu adoro esse efeito! Ele funciona similar ao filtro de gausiano do Photoshop e 
 }   
 </style>
 
-<img class="blur-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="blur-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="blur-1" alt="Imagem com blur de 3px" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="blur-2" alt="Imagem com blur de 30px" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -185,8 +185,8 @@ A saturação define a intensidade de uma cor numa imagem. Quanto maior o valor 
 }
 </style>
 
-<img class="saturate-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="saturate-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="saturate-1" alt="Imagem com saturação de 50%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="saturate-2" alt="Imagem com saturação de 500%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 
 ---
@@ -219,8 +219,8 @@ Bem parecido com o `saturate`, ele também recebe valores em `%` e quanto maior 
 }
 </style>
 
-<img class="contrast-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="contrast-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="contrast-1" alt="Imagem com contraste de 50%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="contrast-2" alt="Imagem com constraste de 500%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -252,8 +252,8 @@ Essa propriedade como o nome já diz, aumenta ou diminui o brilho da imagem e re
 }
 </style>
 
-<img class="brightness-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="brightness-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="brightness-1" alt="Imagem com brilho de 50%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="brightness-2" alt="Imagem com brilho de 500%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -285,8 +285,8 @@ Como sabemos, a distrubuição das cores pode ser feita numa escala dentro de um
 }
 </style>
 
-<img class="hue-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
-<img class="hue-2" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="hue-1" alt="Imagem com hue-rotate(45)" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="hue-2" alt="Imagem com hue-rotate(120)" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -308,7 +308,7 @@ Aquele filtro engraçado que quem for das antigas vai lembrar imediatamente daqu
 }
 </style>
 
-<img class="invert-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="invert-1" alt="Imagem com invert(100)" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -332,7 +332,7 @@ Serve para aplicar uma transparência na imagem, indo dos valores de `0` até `1
 }
 </style>
 
-<img class="opacity-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="opacity-1" alt="Imagem com opacidade de 50%" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 
 ### Drop-shadow
@@ -353,7 +353,7 @@ Também similar a propriedade `box-shadow` do css, ela tem a diferença de tamb�
 }
 </style>
 
-<img class="drop-1" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="drop-1" alt="Imagem com drop-shadow" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ---
 
@@ -374,7 +374,7 @@ Então, o photoshop é legal e com certeza é uma mão na roda para esse tipo de
 }
 </style>
 
-<img class="gray" src="/assets/img/filtros-css/imagem-exemplo.jpg">
+<img class="gray" alt="Imagem com cinza e blur" src="/assets/img/filtros-css/imagem-exemplo.jpg">
 
 ## Conclusão
 

@@ -50,7 +50,7 @@ Meu browser principal é Google Chrome, mas também tenho utilizado bastante do 
 * [Vagrant](https://www.vagrantup.com/) - para criar ambientes de desenvolvimento separados.
 * [Dropbox](https://www.dropbox.com/) - meu salvador da pátria para guardar todas as minhas coisas.
 * [Hipchat](https://www.hipchat.com/) - programa de chat que utilizo no trabalho, ele é integrado ao new relic e a cada deploy ou commit, ele envia uma mensagem para todo o grupo.
-* [Spotify]() - sério, ele é muito importante para mim, sem ele, não trabalho direito.
+* [Spotify](https://www.spotify.com/br/) - sério, ele é muito importante para mim, sem ele, não trabalho direito.
 
 ## Workflow
 

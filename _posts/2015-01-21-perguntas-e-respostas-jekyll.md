@@ -99,7 +99,7 @@ tags:
 Existe um arquivo YAML que será lido inteiramente pelo projeto, que é o `_config.yml`. Portanto, qualquer variável colocada naquele arquivo, poderá ser chamada em qualquer parte do projeto. Existem umas variáveis pré-definidas:
 
 * `layout` : serve para definir qual arquivo dentro da pasta `_layouts` irá utilizar.
-* `permalink` : serve para definir como será criado o link - [veja mais sobre](#permalinks).
+* `permalink` : serve para definir como será criado o link - [veja mais sobre](#permalink).
 * `published` : para definir se o arquivo poderá ser gerado ou não, o padrão é `true`.
 * `category ou categories` : como o nome já diz, define uma categoria ou conjunto delas para o post.
 * `tags` : serve para definir um conjunto de tags para o post, acima temos um exemplo.
