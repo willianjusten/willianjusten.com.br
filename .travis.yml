@@ -2,9 +2,6 @@ language: ruby
 rvm:
 - 2.1
 
-before_script:
- - bundle install
-
 script: rake test
 
 branches:
