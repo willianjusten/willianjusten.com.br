@@ -36,3 +36,4 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 - [Node.js for the Real World](http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world)
 - [Frontend Cheat Sheets](https://webdesignviews.com/cheat-sheets/)
 - [Get Started Building Your Blog With Parse.js: Delete, Logout, and Single Blog View](http://code.tutsplus.com/tutorials/get-started-building-your-blog-with-parsejs-delete-logout-and-single-blog-view--cms-24196)
+- [Awesome & Marvelous Amas (Ask me Anything)](https://github.com/sindresorhus/amas)
