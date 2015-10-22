@@ -82,9 +82,9 @@ Tendo a imagem pronta, fica simples de usar, segue um exemplo:
 	}
 </style>
 
-<img class="animais" src="/assets/img/animals-sprite.svg#icon-pig">
-<img class="animais" src="/assets/img/animals-sprite.svg#icon-cow">
-<img class="animais" src="/assets/img/animals-sprite.svg#icon-fox">
+<img class="animais" alt="Imagem de um porquinho" src="/assets/img/animals-sprite.svg#icon-pig">
+<img class="animais" alt="Imagem de uma vaca" src="/assets/img/animals-sprite.svg#icon-cow">
+<img class="animais" alt="Imagem de uma raposa" src="/assets/img/animals-sprite.svg#icon-fox">
 
 {% highlight html %}
 <img src="/assets/img/animals-sprite.svg#icon-pig" alt="Porquinho">

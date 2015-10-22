@@ -44,7 +44,6 @@ Particularmente sou muiiiiito fã do [icomoon](https://icomoon.io/), tanto que f
 #### Links
 
 * [Icomoon](https://icomoon.io/) - Free e Pago
-* [Iconmelon](http://iconmelon.com/) - Free
 * [Iconmonstr](http://iconmonstr.com/) - Free
 * [Material Design Icons](https://github.com/google/material-design-icons) - Free
 * [Iconic](https://useiconic.com/) - Pago

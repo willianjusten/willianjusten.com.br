@@ -60,7 +60,6 @@ O GTD é uma invenção do David Allen, dono do site [gettingthingsdone.com](htt
 #### Links para começar
 
 * [Site oficial](http://gettingthingsdone.com/) - lá tem as etapas, links para livros e etc.
-* [VidaOrganizada.com](http://vidaorganizada.com/organizacao/como-eu-utilizo-o-metodo-gtd-e-o-toodledo/) - Um blog que fala sobre organização pessoal e nesse post fala de uma experiência com esse método.
 * [Produzindo.net](http://www.produzindo.net/gtd-getting-things-done-parte-1-introducao/) - Um blog falando mais a fundo sobre o GTD
 
 ### Seinfeld Secret Method (Don't Break the Chain)

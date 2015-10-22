@@ -245,7 +245,7 @@ Basta ir em [Reveal-Boilerplate](https://github.com/willianjusten/reveal-boilerp
 
 Depois basta criar um repositório no seu github com os arquivos iniciais. Segue os passos básicos:
 
-Vá em [Create new repository](https://github.com/new) no github e preencha os dados corretamente:
+Vá em `Create new repository` na parte superior do github e preencha os dados corretamente:
 
 ![Imagem de criação de um novo repositório no Github](/assets/img/reveal/github-repo.png)
 
