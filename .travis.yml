@@ -8,8 +8,8 @@ before_script:
 script: ./cibuild.sh
 
 branches:
-  only:
   - master
+  - drafts
 
 env:
   global:
