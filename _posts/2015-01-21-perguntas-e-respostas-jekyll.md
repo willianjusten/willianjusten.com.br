@@ -233,7 +233,7 @@ código a ser mostrado
 
 <h3 id="disqus">Como usar esse sistema de comentários?</h3>
 
-O sistema que eu utilizo para comentários é o [Disqus](https://disqus.com/) e é bastante fácil fazê-lo funcionar. Basta [criar uma conta](https://disqus.com/admin/create/) para o seu site e então adicionar ao seu site no footer. O script do meu site ficou assim:
+O sistema que eu utilizo para comentários é o [Disqus](https://disqus.com/) e é bastante fácil fazê-lo funcionar. Basta [criar uma conta](https://disqus.com/profile/signup/) no Disqus, solicitar um token para o seu site e então adicionar ao seu site no footer. O script do meu site ficou assim:
 
 {% highlight javascript %}
 var disqus_loaded = false;
