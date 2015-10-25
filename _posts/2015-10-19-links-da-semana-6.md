@@ -41,6 +41,7 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 - [Flexbox Grid System for Stylus](http://stylusgrid.com/)
 - [Project Cards Template](https://codyhouse.co/gem/project-cards-template/)
 - [How To Work With SVG Text](http://vanseodesign.com/web-design/how-to-work-with-svg-text/)
+- [CSSgram - library for recreating Instagram filters with CSS filters and blend modes.](http://una.im/CSSgram/)
 
 ## Variados
 
