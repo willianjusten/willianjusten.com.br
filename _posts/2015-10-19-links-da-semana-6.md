@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Links da semana #6"
-date: 2015-10-18 19:19:17
+date: 2015-10-25 19:19:17
 image: '/assets/img/links-da-semana/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
 tags:
