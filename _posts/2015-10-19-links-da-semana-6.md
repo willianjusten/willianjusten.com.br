@@ -16,22 +16,35 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 
 ## Introdução
 
-- [Apanhador Só](https://open.spotify.com/artist/3DtHAw4MrjXhVFotN5n8fZ)
+Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de semana inteiro... Mas como eu já tinha começado a montar a lista, vou postar as coisas que eu vi. E para não ficar sem música, essa semana fiquei ouvindo uma banda brasileira bem legal chamada [Apanhador Só](https://open.spotify.com/artist/3DtHAw4MrjXhVFotN5n8fZ).
 
 ## Javascript
 
 - [Choosing a JavaScript Build Tool – Babel, Browserify, Webpack, Grunt and Gulp](http://jamesknelson.com/which-build-system-should-i-use-for-my-javascript-app/)
 - [PlainJS - Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
 - [Web.br 2015 - Evolução e futuro do uso de paradigmas no JavaScript](https://www.youtube.com/watch?v=uEglleenUFk)
+- [The struggles of publishing a JavaScript library](http://nolanlawson.com/2015/10/19/the-struggles-of-publishing-a-javascript-library/)
+- [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
+- [Building Real-time Chess with Socket.io](http://dwcares.com/realchess/)
+- [Tips on Setting up Karma Testing with Webpack](http://mike-ward.net/2015/09/07/tips-on-setting-up-karma-testing-with-webpack/)
+- [Lazy Loading Images on the Web](http://developer.telerik.com/featured/lazy-loading-images-on-the-web/)
 
 ## Design / Inspiracional
 
 - [Landing Folio - Várias Landing Pages para inspiração](http://www.landingfolio.com/)
 - [Lightning Design System - Um design system feito pela Salesforce](http://www.lightningdesignsystem.com/)
 - [Object Oriented UX](http://alistapart.com/article/object-oriented-ux)
+- [Bringing card design to a new level.](http://flyingdog.de/nhp/blog/cards/How_to_Cards_Desktop.php)
+
+## CSS / SVG
+
+- [Flexbox Grid System for Stylus](http://stylusgrid.com/)
+- [Project Cards Template](https://codyhouse.co/gem/project-cards-template/)
+- [How To Work With SVG Text](http://vanseodesign.com/web-design/how-to-work-with-svg-text/)
 
 ## Variados
 
+- [Jekyll Date Formatting Examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
 - [Chrome Devtools Tips & Tricks](http://mo.github.io/2015/10/19/chrome-devtools.html)
 - [Node.js for the Real World](http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world)
 - [Frontend Cheat Sheets](https://webdesignviews.com/cheat-sheets/)
@@ -39,3 +52,4 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 - [Awesome & Marvelous Amas (Ask me Anything)](https://github.com/sindresorhus/amas)
 - [Livro Designing for Performance - LEIAM](http://designingforperformance.com/)
 - [Web performance today](http://www.zeldman.com/2015/10/21/web-performance-today/)
+- [Resume Builder - create your resumes easily](http://resumator.qwilr.com/)
