@@ -25,8 +25,6 @@ Estar bem posicionado nos mecanismos de busca lhe permite ganhar mais acessos e 
 
 Quando eu disse produto, pode ser qualquer coisa, pode ser uma loja de e-commerce em que você realmente vende produtos. Pode ser um site de agência em que você vende um serviço. Pode ser um blog também, onde você divulga no intuito de compartilhar seus pensamentos e conhecimento. Enfim, se você tem um site, você deve querer que ele seja visto, então é importante que você faça um trabalho legal de SEO.
 
-![Hum...parece interessante. Me fale mais](http://geradormemes.com/media/created/l8hqci.jpg)
-
 ## E como faço esse tal de SEO?
 
 Bom, o assunto SEO é gigantesco, existem livros, cursos e inclusive profissionais que trabalham somente com isso. Vou passar aqui umas dicas importantes, que podem ajudar bastante:
