@@ -74,7 +74,7 @@ Como podemos notar, o Jekyll já cria uma estrutura bem legal e organizada. Vou 
 * `_posts`: onde iremos escrever nossos posts, o padrão para escrever é em [Markdown](http://daringfireball.net/projects/markdown/syntax)
 * `_sass`: os arquivos que geram o css, se você preferir trabalhar em [sass](http://sass-lang.com/), o próprio jekyll compila para você.
 * `css`: pasta para onde vão os arquivos gerados pelo sass.
-* `_config.xml`: o arquivo de configurações do seu blog, qualquer dado universal ao blog, deve ser colocado lá. Assim como outras definições, como qual tipo de markdown usar, excludes e etc.
+* `_config.yml`: o arquivo de configurações do seu blog, qualquer dado universal ao blog, deve ser colocado lá. Assim como outras definições, como qual tipo de markdown usar, excludes e etc.
 * `about.md`: um arquivo do tipo `page` que irá gerenciar uma página /about
 * `feed.xml`: arquivo para gerar o feed para o seu blog, essencial para que as pessoas possam seguir seu blog com mais facilidade.
 * `index.html`: A página inicial do seu blog
