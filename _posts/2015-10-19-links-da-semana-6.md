@@ -48,7 +48,6 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 - [Jekyll Date Formatting Examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
 - [Chrome Devtools Tips & Tricks](http://mo.github.io/2015/10/19/chrome-devtools.html)
 - [Node.js for the Real World](http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-real-world)
-- [Frontend Cheat Sheets](https://webdesignviews.com/cheat-sheets/)
 - [Get Started Building Your Blog With Parse.js: Delete, Logout, and Single Blog View](http://code.tutsplus.com/tutorials/get-started-building-your-blog-with-parsejs-delete-logout-and-single-blog-view--cms-24196)
 - [Awesome & Marvelous Amas (Ask me Anything)](https://github.com/sindresorhus/amas)
 - [Livro Designing for Performance - LEIAM](http://designingforperformance.com/)
