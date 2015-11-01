@@ -82,8 +82,6 @@ No caso eu utilizei `keyframes` para criar a minha rotação e o `animate` para 
 * [Usando animações CSS pela MDN](https://developer.mozilla.org/pt-BR/docs/CSS/Using_CSS_animations)
 * [Criando animação Flipping por Maujor](http://www.maujor.com/tutorial/criando-animacao-flipping-com-css.php)
 
-E em caso de ainda querer saber mais, temos o nosso grande amigo [Google](http://lmgtfy.com/?css&animations).
-
 
 ### Extras: bug do Firefox e Safari
 
