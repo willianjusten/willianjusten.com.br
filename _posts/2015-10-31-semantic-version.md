@@ -38,7 +38,7 @@ Digamos que eu tenha uma simples API com um método `all` que retorna um array c
 
 Depois de lançado, eu vi que dentro do meu método `all`, tinha um bug que fazia não retornar o último item do array. Eu apliquei a correção e lancei uma nova versão. Como era somente um bug, eu deverei mudar o valor da última casa e por isso a versão será `1.0.1`.
 
-Mais para frente eu resolvi criar um método chamado `getItem(item)`, que é responsável por pegar um único item daquele array todo. Como eu adicionei uma nova feature, eu irei mudar o número do meio e assim a versão ficará como `1.1.1`.
+Mais para frente eu resolvi criar um método chamado `getItem(item)`, que é responsável por pegar um único item daquele array todo. Como eu adicionei uma nova feature, eu irei mudar o número do meio e resetar o último dígito, assim a versão ficará como `1.1.0`, pois irei criar uma nova versão minor e essa ainda não teve nenhuma correção de bugs.
 
 Se um dia eu resolver mudar as assinaturas dos métodos, modificando seus nomes e as formas de chamar, então será uma grande mudança e para isso eu irei alterar o primeiro número e por esta ser uma nova versão, os outros números serão resetados e com isso eu terei a versão `2.0.0`.
 
