@@ -9,7 +9,7 @@ tags:
 - frontend
 - tutorial
 categories:
-twitter_text: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms.'
+twitter_text: 'Aprenda a criar um menu off canvas usando CSS3.'
 introduction: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms e um pouquinho de javascript.'
 ---
 
