@@ -132,7 +132,7 @@ Eu criei uma variável `a`, mas nunca utilizei no meu código, eu usei console.l
 
 Para um código pequeno desses, talvez não fizesse diferença, mas pense num código beeeem maior, ele pode ser uma mão na roda =D
 
-Mas rodar isso o tempo no terminal é ruim, até mesmo se colocarmos num gulp/grunt da vida, o legal é mostrar no nosso editor. Se você usa Sublime Text, continua lendo aí, que vou mostrar a cereja do bolo!
+Mas rodar isso o tempo todo no terminal é ruim, até mesmo se colocarmos num gulp/grunt da vida, o legal é mostrar no nosso editor. Se você usa Sublime Text, continua lendo aí, que vou mostrar a cereja do bolo!
 
 ## Usando o eslint no Sublime
 
