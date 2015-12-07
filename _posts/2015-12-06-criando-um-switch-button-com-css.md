@@ -100,7 +100,7 @@ Depois, na própria label, iremos utilizar o seletor `:before`, que vai ser resp
   transition: all 0.4s;
 }
 .switch--shadow + label:after {
-  width: 58px;
+  width: 60px;
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
