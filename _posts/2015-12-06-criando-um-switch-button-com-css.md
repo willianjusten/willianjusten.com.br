@@ -100,7 +100,7 @@ Depois, na própria label, iremos utilizar o seletor `:before`, que vai ser resp
   transition: all 0.4s;
 }
 .switch--shadow + label:after {
-  width: 60px;
+  width: 62px;
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -131,6 +131,11 @@ Verificando se o input foi marcado e caso tenha sido, mudar a cor e também move
 
 <p data-height="266" data-theme-id="11319" data-slug-hash="jWOgVM" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/jWOgVM/'>jWOgVM</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+## Atualização
+
+Meu amigo [Davidson](https://twitter.com/davidsonFellipe) lá de NY resolveu dar uma de flanelinha de layout =p
+Brincadeiras a parte, ele fez umas edições para que o visual ficasse um pouco mais realista e condizente com o iOS. A mudança foi basicamente no tamanho da bolinha, que estava erroneamente com `width:58px`, se quiser, dá uma olhadinha na [pen original](http://codepen.io/fellipe/pen/adzmPR) dele também.
 
 ## Conclusão
 
