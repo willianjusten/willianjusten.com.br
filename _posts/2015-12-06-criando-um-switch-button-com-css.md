@@ -8,7 +8,7 @@ tags:
 - css
 - design
 categories:
-twitter_text: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps."
+twitter_text: "Aprenda a criar os famosos botões de on/off usados no iOS, Android e WebApps."
 introduction: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps. E deixe a usabilidade do seu sistema melhor."
 ---
 
