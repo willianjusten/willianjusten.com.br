@@ -6,7 +6,7 @@ image: '/assets/img/on-off/on-off-ios.jpg'
 description: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps."
 tags:
 - css
-- design
+- tutorial
 categories:
 twitter_text: "Aprenda a criar os famosos botões de on/off usados no iOS, Android e WebApps."
 introduction: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps. E deixe a usabilidade do seu sistema melhor."
