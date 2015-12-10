@@ -26,7 +26,7 @@ Tentarei não fazer um post grande e cansativo, portanto, irei separar os concei
 
 ## Criando e Renderizando componentes
 
-O primeiro de tudo é saber como podemos criar os componentes e como renderizá-los. Para isso, irei demonstrar com um simples `Hello World`, mas lembre-se que isso poderiam ser componentes de qualquer forma. 
+O primeiro de tudo é saber como podemos criar os componentes e como renderizá-los. Para isso, irei demonstrar com um simples `Hello World`, mas lembre-se que isso poderiam ser componentes de qualquer forma.
 
 ### React.render
 
@@ -55,7 +55,7 @@ React.render(
 
 Sem o JSX, não temos como adicionar tags html dentro do nosso render, portanto, precisamos criar esses elementos na mão. Para criar, utilizamos o método `createElement`, que recebe 3 parâmetros também. O primeiro parâmetro é a tag html, o segundo é um objeto, que fica responsável pelo conjunto de informações, que podem ser classes, ids, data, estilos, etc.
 
-Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), falando sobre este método. 
+Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), falando sobre este método.
 
 ### Render com JSX
 
@@ -114,7 +114,7 @@ React.render(
 )
 {% endhighlight %}
 
-### Exemplos 
+### Exemplos
 
 Seguem os exemplos rodando no Codepen:
 
@@ -221,9 +221,9 @@ var Timer = React.createClass({
     },
 
     render: function() {
-        
+
         var elapsed = Math.round(this.state.elapsed / 100);
-        var seconds = (elapsed / 10).toFixed(1);    
+        var seconds = (elapsed / 10).toFixed(1);
 
         return (
             <p>Já se passaram <b>{seconds}</b> segundos.</p>
@@ -258,12 +258,14 @@ O legal é que o React irá modificar somente o elemento que está com estado se
 
 ## Conclusão
 
-Bom, esses são os principais métodos do React e com eles já conseguimos fazer bastante coisa, se quiser se aprofundar, vale dar uma olhada na [documentação](https://facebook.github.io/react/docs/top-level-api.html). Durante a elaboração dos códigos, eu foquei somente nas possibilidades do React e não no JS em si, caso você ainda não se sinta confortável com algumas das coisas feitas acima, aconselho que volte um pouco e estude mais de JS, para que possa desenvolver melhor. Lembrando que é sempre mais importante saber a linguagem do que uma biblioteca. 
+Bom, esses são os principais métodos do React e com eles já conseguimos fazer bastante coisa, se quiser se aprofundar, vale dar uma olhada na [documentação](https://facebook.github.io/react/docs/top-level-api.html). Durante a elaboração dos códigos, eu foquei somente nas possibilidades do React e não no JS em si, caso você ainda não se sinta confortável com algumas das coisas feitas acima, aconselho que volte um pouco e estude mais de JS, para que possa desenvolver melhor. Lembrando que é sempre mais importante saber a linguagem do que uma biblioteca.
 
 #### Ahhh, mas como eu aprendo mais de Javascript?
 
 Tem um curso do [Fernando Daciuk](https://twitter.com/fdaciuk) que é foda para caramba e vai te ensinar a realmente virar um Ninja no JS, se quiser saber mais do curso, basta ir [nesse link](http://blog.da2k.com.br/curso-javascript-ninja/). Pode parecer propaganda, mas não é, o curso é realmente bom e é realmente importante entender a linguagem antes de partir mais para frente. Mas qualquer dúvida, é claro que você pode falar nos comentários abaixo!!
 
+## Veja mais posts
 
+[Serie sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
 
 

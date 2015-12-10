@@ -222,4 +222,6 @@ Também existem alguns posts bem interessantes sobre organizações:
 
 Bom, agora que já sabemos para que serve e diversas formas de usar, já poderemos começar a brincar com alguns conceitos do React e fazer algumas brincadeiras, que irão começar no próximo post. Esse post ficou meio grande e talvez um pouco complexo, se tiverem alguma dúvida, só comentarem abaixo =)
 
+## Veja mais posts
 
+[Serie sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
