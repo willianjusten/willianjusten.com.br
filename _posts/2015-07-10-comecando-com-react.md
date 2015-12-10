@@ -109,6 +109,10 @@ Tendo a estrutura de componentes e seus subcomponentes, fica mais fácil de trab
 
 Essa foi só a primeira parte, para entendermos pelo menos um pouco do que é, o que não é e seu funcionamento. Para os próximos posts, a ideia é já começar a pôr a mão na massa e codificar pequenos exemplos, até para entender mais algumas coisas de seu funcionamento.
 
+## Veja mais posts
+
+[Serie sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
+
 
 
 
