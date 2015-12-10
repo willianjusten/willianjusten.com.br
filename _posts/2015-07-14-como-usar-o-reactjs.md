@@ -224,4 +224,4 @@ Bom, agora que já sabemos para que serve e diversas formas de usar, já poderem
 
 ## Veja mais posts
 
-[Serie sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
+[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)

@@ -266,6 +266,6 @@ Tem um curso do [Fernando Daciuk](https://twitter.com/fdaciuk) que é foda para 
 
 ## Veja mais posts
 
-[Serie sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
+[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
 
 
