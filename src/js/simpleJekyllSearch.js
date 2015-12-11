@@ -2,11 +2,11 @@
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
             jsonFile        : '/search.json',
-            jsonFormat      : 'title,category,desc,url,date,shortdate',
+            jsonFormat      : 'title,tags,url,date',
             template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
             searchResults   : '.search-results',
             searchResultsTitle   : '<h4>Resultados da busca:</h4>',
-            limit           : '5',
+            limit           : '10',
             noResults       : '<p>Oh droga!<br/><small>Não encontramos nada :(</small></p>'
         }, options);
 
@@ -39,7 +39,7 @@
         function registerEvent(){
             origThis.keyup(function(e){
                 if($(this).val().length){
-                    writeMatches( performSearch($(this).val()) );
+                    writeMatches( performSearch($(this).val()));
                 }else{
                     clearSearchResults();
                 }
