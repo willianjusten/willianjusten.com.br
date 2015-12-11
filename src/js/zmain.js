@@ -30,10 +30,19 @@
     $('.search-field').simpleJekyllSearch();
   });
 
-  bs.close.on('click', function() {
+  function close_search() {
     $('.search-wrapper').toggleClass('active');
     bs.searchform.toggleClass('active');
     bs.canvas.removeClass('search-overlay');
+  }
+
+  bs.close.on('click', close_search);
+
+  // Closing menu with ESC
+  document.addEventListener('keyup', function(e){
+      if(e.keyCode == 27 && $('.search-overlay').length) {
+          close_search();
+      }
   });
 
   // Scroll
