@@ -6,11 +6,10 @@ image: 'http://willianjusten.com.br/imasters-2015/img/visao-programador.png'
 description: 'Para que servem os testes? O que eu ganho com eles? Que tipos de testes existem? O que fazer e o que não fazer.'
 tags:
 - tdd
-- qualidade
 - dev
 categories:
 - 'Aprendendo Testes'
-twitter_text: 'Para que servem os testes? O que eu ganho com eles?..'
+twitter_text: 'Para que servem os testes? O que eu ganho com eles? O que fazer e o que não fazer?'
 introduction: 'Para que servem os testes? O que eu ganho com eles? Que tipos de testes existem? O que fazer e o que não fazer. Algumas dúvidas importantes para começarmos a brincar nesse mundo dos testes e TDD.'
 ---
 
