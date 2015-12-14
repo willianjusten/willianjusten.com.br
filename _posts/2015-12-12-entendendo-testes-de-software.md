@@ -78,7 +78,7 @@ Pensando num código legível, documentação e agilidade, que nasceu o TDD, tra
 TDD é o desenvolvimento de software orientado a testes, Test Driven Development em inglês. Porém mais do que simplesmente testar seu código, TDD é uma filosofia, uma cultura. E foi fortemente adotado e influenciado pelo movimento ágil.
 
 De acordo com Kent Beck, um método ágil é comparável ao ato de dirigir um
-carro: você deve observar a estrada e fazer correções contínuas para se manter no caminho. Neste contexto onde a agilidade é fundamental, o testador seria aquele que ajuda o motorista a chegar com segurança ao seu destino, impedindo que sejam feitas conversões incorretas durante o percurso, evitando que o motorista se perca e fazendo com que ele pare e peça instruções quando necessário. 
+carro: você deve observar a estrada e fazer correções contínuas para se manter no caminho. Neste contexto onde a agilidade é fundamental, o testador seria aquele que ajuda o motorista a chegar com segurança ao seu destino, impedindo que sejam feitas conversões incorretas durante o percurso, evitando que o motorista se perca e fazendo com que ele pare e peça instruções quando necessário.
 
 Neste ambiente, destaca-se o TDD, como sendo uma abordagem evolutiva na qual o desenvolvedor escreve o teste antes de escrever o código funcional necessário para satisfazer aquele teste.
 
@@ -138,7 +138,7 @@ O TDD se baseia principalmente nos testes unitários, que de fato são a base pa
 
 ![Pirâmide de testes](http://martinfowler.com/bliki/images/testPyramid/pyramid.png)
 
-Nessa pirâmide, podemos ver que os testes unitários formam a base, seguidos pelos testes de serviço, que podem ser entendidos como testes de integração e testes de sanidade. Por final, temos os testes de interface, também conhecidos como testes de aceitação. Esse tipo de lógica faz com que os testes sejam mais eficazes e rápidos. 
+Nessa pirâmide, podemos ver que os testes unitários formam a base, seguidos pelos testes de serviço, que podem ser entendidos como testes de integração e testes de sanidade. Por final, temos os testes de interface, também conhecidos como testes de aceitação. Esse tipo de lógica faz com que os testes sejam mais eficazes e rápidos.
 
 E eles seguem o seguinte fluxo, se os testes unitários passarem, realizamos a integração entre os componentes e vemos se os mesmos continuam funcionando. Tudo estando ok, fazemos os testes de aceitação, que já trabalham com a interface e também com usuários diretamente. Se algum teste quebra, todo o resto é abortado, evitando assim de rodarmos testes mais lentos sem necessidade.
 
@@ -192,7 +192,7 @@ Já tendo uma ideia de como funciona o Ciclo do TDD, quais tipos de testes exist
 
 ### Não coloque a carroça na frente dos bois
 
-Sim, é isso mesmo que você leu. Não tente avançar o ciclo dos testes, só porque você já sabe como implementar do início ao fim. É importante que você se mantenha no ciclo (Red, Green, Refactor), isso vai fazer com que através da prática e disciplina, você se acostume e acabe ganhando agilidade e melhor visão do processo de desenvolvimento. 
+Sim, é isso mesmo que você leu. Não tente avançar o ciclo dos testes, só porque você já sabe como implementar do início ao fim. É importante que você se mantenha no ciclo (Red, Green, Refactor), isso vai fazer com que através da prática e disciplina, você se acostume e acabe ganhando agilidade e melhor visão do processo de desenvolvimento.
 
 ### Trate código de teste como código de produção
 
@@ -218,7 +218,7 @@ Isso serve para o seu código e para o seu teste também, se você precisa escre
 
 Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a cada teste que escrevemos, uma ferramenta roda tudo e nos reporta os erros que tivermos e os que passaram. Para auxiliar, seguem algumas ferramentas comuns, lembrando que existem centenas por aí, então vou me atentar a colocar algumas das mais comuns.
 
-<h3 id="js-tools">Javascript</h3>
+<h3 id="tool-js">Javascript</h3>
 
 - [Jasmine](http://jasmine.github.io/edge/introduction.html) - talvez um dos mais conhecidos frameworks para teste em JS, trabalha com BDD (behavior-driven development), ou seja, teste orientado a comportamento.
 - [Mocha](https://mochajs.org/) - outro bastante conhecido, altamente plugável e com várias features excelentes.
@@ -231,14 +231,14 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 - [Nightwatch](http://nightwatchjs.org/) - talvez um dos melhores para se fazer testes End-to-End (E2E), onde você faz um teste completo de sua aplicação.
 - [Protractor](http://www.protractortest.org/#/) - outro para testes E2E, mais focado para o AngularJS.
 
-<h3 id="python-tools">Python</h3>
+<h3 id="tool-python">Python</h3>
 
 - [Unit testing framework](https://docs.python.org/2/library/unittest.html) - talvez a mais comum e conhecida do Python, até por já vir inclusa com a linguagem. Bastante poderosa e simples de se utilizar.
 - [Pytest](http://pytest.org/latest/) - outra bastante utilizada no universo python, possui várias integrações e ótima sintaxe.
 - [Splinter](https://splinter.readthedocs.org/en/latest/) - criada por uma galera da Globo para realizar testes E2E, vale uma olhada.
 - [Locust](http://locust.io/) - ferramenta para teste de carga.
 
-<h3 id="ruby-tools">Ruby</h3>
+<h3 id="tool-ruby">Ruby</h3>
 
 - [Test::Unit](http://test-unit.github.io/) - outra que vem por padrão na linguagem, sendo amplamente utilizada.
 - [RSpec](http://rspec.info/) - framework para testes BDD em Ruby, tem uma ótima documentação.
