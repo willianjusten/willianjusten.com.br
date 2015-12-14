@@ -38,7 +38,6 @@ Sem mais delongas, aqui vão os links mais legais que vi na semana.
 * [Flux Comparison](https://github.com/voronianski/flux-comparison) - alguns comparativos utilizando o Flux.
 * [Scala JS is no longer experimental](http://scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html) - um anúncio de que agora podemos usar Scala também em JS.
 * [New Course: Essential Tools for JavaScript Developers](http://code.tutsplus.com/articles/new-course-essential-tools-for-javascript-developers--cms-23273) - um curso sobre sobre algumas ferramentas essenciais para desenvolvedores Javascript.
-* [A guide to the basics of jQuery](http://jqfundamentals.com/) - um guia sobre JQuery feito pela galera da Bocoup.
 * [Expert ES6](http://tagtree.io/courses/expert-es6/do) - um curso de ES6 pela Tagtree.
 
 
