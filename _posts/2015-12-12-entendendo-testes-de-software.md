@@ -250,4 +250,4 @@ Bom pessoal, sei que foi um post grande, talvez um pouco cansativo, mas é basta
 
 ## Extra
 
-E para quem se interessou pelo assunto, a [Isabella Silveira](https://twitter.com/silveira_bells) vai falar sobre o assunto lá no [FrontinRio](http://frontinrio.com.br/), aconselho a galera que é do Rio e proximidades irem, vai ser legal para caramba, eu vou estar lá também, se alguém quiser bater um papo =D
+E para quem se interessou pelo assunto, a [Isabella Silveira](https://twitter.com/silveira_bells) vai falar sobre o assunto lá no [FrontinRio](http://frontinrio.com.br/), aconselho a galera que é do Rio e proximidades irem, vai ser legal para caramba. Eu vou estar lá também, se alguém quiser bater um papo =D
