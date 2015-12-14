@@ -180,7 +180,7 @@ Os mocks são extremamente úteis quando precisamos isolar pontos de integraçã
 Temos 2 métodos:
 
 * `buscaInfoProduto`: método que vai ao banco de dados e retorna um objeto contendo o nome e preço do produto.
-* `blackFriday`: método que pega o valor do produto, multipla ele por 2 e retorna o objeto desse produto.
+* `blackFriday`: método que pega o valor do produto, multiplica ele por 2 e retorna o objeto desse produto.
 
 Concorda comigo que para testar o método `blackFriday`, eu só preciso saber que dado um objeto com preço X, ele vai multiplicar esse valor por 2?
 
