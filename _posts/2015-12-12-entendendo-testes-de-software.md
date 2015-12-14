@@ -208,7 +208,7 @@ Esse é o padrão do TDD, mas não custa reafirmar, só escreva um próximo test
 
 ### Não teste o desnecessário
 
-Por exemplo, se você estiver usando um framework, você não precisa testar se o método dele está funcionando, ele já foi amplamente testado no framework e o que você estará fazendo, nada mais é que repetindo testes.
+Por exemplo, se você estiver usando um framework, você não precisa testar se o método dele está funcionando, isso já foi amplamente testado no framework e o que você estará fazendo, nada mais é que repetindo testes.
 
 ### Responsabilidade Única
 
