@@ -157,7 +157,7 @@ Para seguir um padrão legal do seu teste unitário, ele deve ser capaz de respo
 * Qual o seu atual retorno?
 * O que eu espero que retorne?
 
-Se você conseguir olhar para o teste e conseguir responder tudo isso, seu teste é bastante válido e irá te ajudar bastante caso algo dê errado.
+Se você conseguir olhar para o teste e responder tudo isso, seu teste é bastante válido e irá te ajudar bastante caso algo dê errado.
 
 <h3 id="smoke">Teste de Sanidade (Smoke Test)</h3>
 
