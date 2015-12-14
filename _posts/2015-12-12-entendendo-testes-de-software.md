@@ -204,7 +204,7 @@ Quanto mais desacoplados seus testes, melhor. Isso evita a quebra em cascata, au
 
 ### Um teste de cada vez
 
-Esse é o padrão do TDD, mas não custa reafirmar, só escreva um próximo testes, se o primeiro passar. Isso garante que não ficarão coisas pela metade e nem o risco de acabar esquecendo algo no meio do caminho.
+Esse é o padrão do TDD, mas não custa reafirmar, só escreva um próximo teste, se o primeiro passar. Isso garante que não ficarão coisas pela metade e nem o risco de acabar esquecendo algo no meio do caminho.
 
 ### Não teste o desnecessário
 
