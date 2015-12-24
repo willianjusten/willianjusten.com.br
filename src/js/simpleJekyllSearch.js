@@ -60,7 +60,7 @@
 
         }
 
-        function writeMatches(m){
+        function writeMatches(m) {
             clearSearchResults();
             searchResults.append( $(settings.searchResultsTitle) );
 
