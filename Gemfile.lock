@@ -86,8 +86,9 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll
+  pygments.rb
   rake
   travis-lint
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
