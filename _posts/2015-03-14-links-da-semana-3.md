@@ -37,7 +37,6 @@ Se quiser saber como foi feito, avisar de algum erro ou melhorar algumas coisas,
 * [React D3 Components](https://github.com/codesuki/react-d3-components)
 * [React JS Tutorial and Guide to the Gotchas](https://zapier.com/engineering/react-js-tutorial-guide-gotchas/)
 * [Radium - set of tools to manage inline styles on React elements.](http://projects.formidablelabs.com/radium/)
-* [Don't depende on JS to render your page](http://blog.donnywals.com/dont-depend-on-javascript-to-render-your-page/)
 * [Create a Password Management App Using Ionic Framework and Firebase](https://www.airpair.com/ionic-framework/posts/ionic-firebase-password-manager)
 * [Build User Interfaces with React](http://www.crashlytics.com/blog/building-user-interfaces-with-react/)
 * [Measuring JavaScript Performance with console.time](http://adripofjavascript.com/blog/drips/measuring-javascript-performance-with-console-time.html)
