@@ -13,7 +13,9 @@ layout: default
                         {{ post.date | date: "%B %d, %Y" }}
                     </time>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">{{ post.title }}</h2>
+                        <h2 class="post-title" itemprop="name">
+                            {{ post.title }}
+                        </h2>
                     </a>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                         <p class="description">{{ post.introduction }}</p>
