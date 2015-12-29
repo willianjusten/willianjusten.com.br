@@ -4,6 +4,8 @@ title: "#7 - Estilizando SVG com CSS - Parte 1"
 date: 2015-03-07 14:58:45
 image: '/assets/img/estilizando-svg/main.png'
 description: "Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - css

@@ -4,6 +4,8 @@ title: "Criando apresentações e hospedando no github"
 date: 2015-10-04 18:36:35
 image: '/assets/img/reveal/main.png'
 description: "Aprenda a criar slides para suas apresentações e hospedá-las online no github pages."
+main-class: 'dev'
+color: '#637a91'
 tags:
 - js
 - github

@@ -4,6 +4,8 @@ title: "Criando um switch button com CSS"
 date: 2015-12-06 20:42:25
 image: '/assets/img/on-off/on-off-ios.jpg'
 description: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps."
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - tutorial

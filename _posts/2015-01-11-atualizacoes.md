@@ -4,6 +4,8 @@ title: "Atualizações"
 date: 2015-01-11 18:34:00
 image: '/assets/img/atualizacoes/atualizacoes.png'
 description: 'O blog cresceu um pouquinho e algumas modificações foram inevitáveis. Vou mostrar um pouco do que mudou.'
+main-class: 'jekyll'
+color: '#B31917'
 tags:
 - jekyll
 categories:

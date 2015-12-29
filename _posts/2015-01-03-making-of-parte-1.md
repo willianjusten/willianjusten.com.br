@@ -3,6 +3,8 @@ layout: post
 title: "Making of - Parte 1"
 date: 2015-01-03 05:54:23
 description: "Quais ferramentas foram utilizadas para montar esse blog e o porquê de ter escolhido cada uma delas."
+main-class: 'jekyll'
+color: '#B31917'
 tags:
 - jekyll
 - gulp

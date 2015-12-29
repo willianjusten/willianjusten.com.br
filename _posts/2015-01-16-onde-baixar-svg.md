@@ -4,6 +4,8 @@ title: "#3 - Onde baixar SVG?"
 date: 2015-01-16 14:51:33
 image: '/assets/img/baixar-svg/baixar-svg.png'
 description: "Eu sou programador e não designer, como é que vou fazer essas coisas aí? Aqui vou mostrar que não precisa ser designer para poder usar SVG."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 categories:

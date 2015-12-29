@@ -4,6 +4,8 @@ title: "#1 - Começando com ReactJS"
 date: 2015-07-10 22:04:05
 image: '/assets/img/react-1/main.png'
 description: "Tentando entender o que é? Para que serve? Por onde começar?"
+main-class: 'js'
+color: '#D6BA32'
 tags:
 - react
 - js

@@ -4,6 +4,8 @@ title: "#2 - Como usar o ReactJS"
 date: 2015-07-14 12:16:16
 image: '/assets/img/react-2/main.png'
 description: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
+main-class: 'js'
+color: '#D6BA32'
 tags:
 - react
 - js

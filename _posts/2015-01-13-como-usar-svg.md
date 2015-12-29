@@ -4,6 +4,8 @@ title: "#2 - Como usar SVG"
 date: 2015-01-13 02:20:24
 image: '/assets/img/como-usar-svg/como-usar-svg.png'
 description: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - tutorial

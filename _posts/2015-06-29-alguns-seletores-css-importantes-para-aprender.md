@@ -4,6 +4,8 @@ title: "Alguns seletores css importantes para aprender"
 date: 2015-06-29 21:22:47
 image: '/assets/img/seletores-css/main.png'
 description: 'Porque CSS é muito mais do que só classes e ids. Aprenda alguns truques legais para facilitar nos seus layouts.'
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - frontend

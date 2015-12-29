@@ -4,6 +4,8 @@ title: "#4 - A estrutura do SVG"
 date: 2015-01-20 13:01:39
 image: '/assets/img/estrutura-do-svg/estrutura-do-svg.png'
 description: "Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - tutorial

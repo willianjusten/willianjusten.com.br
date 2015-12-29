@@ -4,6 +4,8 @@ title: "Devo fazer faculdade?"
 date: 2015-02-07 10:47:02
 image: '/assets/img/fazer-faculdade/face-img.png'
 description: 'Essa dúvida sempre acontece, principalmente para quem trabalha com programação. Vamos conversar mais sobre o assunto.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - faculdade
 - programação

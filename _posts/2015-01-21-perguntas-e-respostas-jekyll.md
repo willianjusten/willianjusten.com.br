@@ -4,6 +4,8 @@ title: "Perguntas e Respostas - Jekyll"
 date: 2015-01-21 06:15:41
 image: '/assets/img/perguntas-jekyll/perguntas-jekyll.png'
 description: "Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funciona esse gerador estático."
+main-class: 'jekyll'
+color: '#B31917'
 tags:
 - jekyll
 categories:

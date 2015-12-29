@@ -4,6 +4,8 @@ title: "#10 - Criando um SVG responsivo e adaptativo"
 date: 2015-04-04 15:18:49
 image: '/assets/img/responsivo-svg/main.png'
 description: "Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - css

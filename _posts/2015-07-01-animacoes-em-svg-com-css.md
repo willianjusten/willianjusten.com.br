@@ -4,6 +4,8 @@ title: "#12 - Animações em SVG com CSS"
 date: 2015-07-01 04:22:29
 image: '/assets/img/svg-animacoes-css/main.png'
 description: "Como criar animações para o SVG usando só CSS."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - css

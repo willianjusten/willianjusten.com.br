@@ -4,6 +4,8 @@ title: "#13 - Animando SVG com SMIL"
 date: 2015-07-21 21:55:02
 image: '/assets/img/svg-smil/main.png'
 description: 'Aprenda a criar animações usando só SVG e nada mais!'
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - smil

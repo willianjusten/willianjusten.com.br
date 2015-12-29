@@ -4,6 +4,8 @@ title: "Flame War: Por que usar Jekyll?"
 date: 2015-01-05 21:18:29
 description: "Depois de várias dúvidas, aqui vai uma lista de razões para se utilizar o Jekyll para criação de Blogs de desenvolvimento. "
 image: "/assets/img/flame-war/yoda-flame-war.jpg"
+main-class: 'jekyll'
+color: '#B31917'
 tags:
 - jekyll
 twitter_text: "Por que usar Jekyll?"

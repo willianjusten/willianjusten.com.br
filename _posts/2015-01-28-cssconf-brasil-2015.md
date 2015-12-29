@@ -4,6 +4,8 @@ title: "Conferência de CSS Brasil 2015"
 date: 2015-01-28 21:52:13
 image: '/assets/img/cssconf15/cssconf15.png'
 description: "Ganhe 12% de desconto no ingresso usando o código: divulgawillian"
+main-class: 'dev'
+color: '#637a91'
 tags:
 - cssconfbr
 - frontend

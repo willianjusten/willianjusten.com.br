@@ -4,6 +4,8 @@ title: "Entendendo Testes de Software"
 date: 2015-12-12 13:49:42
 image: '/imasters-2015/img/visao-programador.png'
 description: 'Para que servem os testes? O que eu ganho com eles? Que tipos de testes existem? O que fazer e o que não fazer.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - tdd
 - dev

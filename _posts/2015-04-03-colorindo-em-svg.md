@@ -4,6 +4,8 @@ title: "#9 - Colorindo em SVG"
 date: 2015-04-03 15:59:38
 image: '/assets/img/colorindo-svg/main.png'
 description: "Vamos voltar a ser crianças e colorir as coisas!"
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - css

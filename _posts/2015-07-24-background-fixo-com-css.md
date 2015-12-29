@@ -4,6 +4,8 @@ title: "Background fixo com CSS"
 date: 2015-07-24 00:50:02
 image: '/assets/img/reveal-bg/main-2.png'
 description: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - tutorial
