@@ -16,7 +16,7 @@ for theme, category-color in themes
                 color category-color
                 border-bottom 2px dashed category-color
                 &:hover
-                    background category-color
+                    background-color category-color
                     color #fff
             strong
                 color category-color
@@ -27,10 +27,12 @@ for theme, category-color in themes
 
         .header-post,
         .header-site
-            background category-color
+            background-color category-color
             h1
                 text-shadow 3px 3px darken(category-color, 20%)
-
+        .bar-header
+            .logo a
+                color category-color
         .author .email
             color category-color
 
@@ -43,6 +45,7 @@ for theme, category-color in themes
                 &:after
                     +below(cut)
                         background-color category-color
-
+        .icon-menu
+            fill category-color
         footer
-            background category-color
+            background-color category-color
