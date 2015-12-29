@@ -27,7 +27,6 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 - [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
 - [Building Real-time Chess with Socket.io](http://dwcares.com/realchess/)
 - [Tips on Setting up Karma Testing with Webpack](http://mike-ward.net/2015/09/07/tips-on-setting-up-karma-testing-with-webpack/)
-- [Lazy Loading Images on the Web](http://developer.telerik.com/featured/lazy-loading-images-on-the-web/)
 
 ## Design / Inspiracional
 
