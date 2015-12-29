@@ -5,6 +5,7 @@ body
 
 $bg
 	height 100%
+	background main
 	.content
 		width 95%
 		align(both)
@@ -16,6 +17,7 @@ $bg
 	h1,h2
 		color: sec
 		text-align center
+	    text-shadow 3px 3px darken(main, 20%)
 	.site-title
 		font-size rem(60px)
 		line-height 1
@@ -52,7 +54,8 @@ $bg
 		font-size rem(16px)
 	h1
 		font-size rem(30px)
-		margin 0 0 30px
+		margin 0 0 30px    
+		text-shadow 3px 3px darken(main, 20%)
 		+above(cut)
 			font-size rem(60px)
 	.subtitle

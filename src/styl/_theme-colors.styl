@@ -1,26 +1,39 @@
-main = #199FCE
+themes = {
+    post-jekyll: #D75A58,
+    post-css: #0562DC,
+    post-js: yellow,
+    post-html: red,
+    post-dev: gray
+}
 
-.post-content
-    a
-        color main
-        border-bottom 2px dashed main
-        &:hover
-            background main
-            color #fff
-    p,
-    li
-        code
-            color main
+for theme, category-color in themes
+    .{theme}
+        .post-content
+            h1,h2,h3,h4
+                color category-color
+            a
+                color category-color
+                border-bottom 2px dashed category-color
+                &:hover
+                    background category-color
+                    color #fff
+            p,
+            li
+                code
+                    color category-color
 
-.header-post,
-.header-site
-    background main
-    h1
-        text-shadow 3px 3px darken(main, 20%)
+        .header-post,
+        .header-site
+            background category-color
+            h1
+                text-shadow 3px 3px darken(category-color, 20%)
 
-.author .email
-    color main
+        .author .email
+            color category-color
 
-.share a
-    &:hover svg
-        fill main
+        .share a
+            &:hover svg
+                fill category-color
+
+        footer
+            background category-color
