@@ -1,5 +1,5 @@
 themes = {
-    post-jekyll: #D75A58,
+    post-jekyll: #B31917,
     post-css: #0562DC,
     post-js: yellow,
     post-html: red,
@@ -17,6 +17,8 @@ for theme, category-color in themes
                 &:hover
                     background category-color
                     color #fff
+            strong
+                color category-color
             p,
             li
                 code
@@ -34,6 +36,12 @@ for theme, category-color in themes
         .share a
             &:hover svg
                 fill category-color
+                
+        body
+            &.search-overlay 
+                &:after
+                    +below(cut)
+                        background-color category-color
 
         footer
             background category-color
