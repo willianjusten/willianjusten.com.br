@@ -1,7 +1,8 @@
 themes = {
     post-jekyll: #B31917,
     post-css: #2DA0C3,
-    post-js: #7AAB13,
+    post-js: #D6BA32,
+    post-nodejs: #7AAB13,
     post-html: #EB7728,
     post-svg: #7D669E,
     post-dev: #637a91
@@ -24,6 +25,8 @@ for theme, category-color in themes
             li
                 code
                     color category-color
+            blockquote
+                border-left .313rem solid category-color
 
         .header-post,
         .header-site
@@ -47,5 +50,20 @@ for theme, category-color in themes
                         background-color category-color
         .icon-menu
             fill category-color
+            
+        .box-body
+            h2
+                color category-color
+            .tags a
+                color category-color
+                border 1px solid category-color
+        .ribbon span
+            background-color category-color
+            &:before
+                border-left 3px solid darken(category-color, 30%)
+                border-top 3px solid darken(category-color, 30%)
+            &:after
+                border-right 3px solid darken(category-color, 30%)
+                border-top 3px solid darken(category-color, 30%)
         footer
             background-color category-color
