@@ -3,37 +3,7 @@ layout: default
 ---
 
 <main class="home" id="scroll" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    
-    {% assign latest_post = site.posts.first %}
-    <article class="post-item post-latest" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <a class="datetime" href="{{ latest_post.url | prepend: site.baseurl }}">
-                <meta itemprop="datePublished" content="{{ latest_post.date | date_to_xmlschema }}">
-                <time datetime="{{ latest_post.date | date_to_xmlschema }}">
-                    <span class="day">
-                        {{ latest_post.date | date: "%d" }}
-                    </span>
-                    <span class="month-year">
-                        {{ latest_post.date | date: "%B %Y" }}
-                    </span>
-                </time>
-            </a>
-            <div class="content">
-                <a href="{{ latest_post.url | prepend: site.baseurl }}"><h2 class="post-title" itemprop="name">{{ latest_post.title }}</h2></a>
-                <p class="description">
-                    {{ latest_post.introduction }}
-                </p>
-
-                <a class="see" href="{{ latest_post.url | prepend: site.baseurl }}">Leia mais sobre {{ latest_post.title }}</a>
-
-                <div class="tags">
-                    {% for tag in latest_post.tags %}
-                        <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-    </article>
-
-    {% for post in site.posts offset:1 %}
+    {% for post in site.posts %}
         <article class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <a class="datetime" href="{{ post.url | prepend: site.baseurl }}">
                     <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
