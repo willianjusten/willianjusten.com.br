@@ -37,6 +37,12 @@
     	margin auto !important
     h1,h2,h3,h4,h5
         mainFont(800)
+        &:before
+            display block
+            content " "
+            margin-top -60px
+            height 60px
+            visibility hidden
     h1
         font-size rem(30px)
         line-height 1.4
