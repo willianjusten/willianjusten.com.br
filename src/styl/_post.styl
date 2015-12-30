@@ -1,3 +1,11 @@
+$padding-title-header
+    &:before
+        display block
+        content " "
+        margin-top -60px
+        height 75px
+        visibility hidden
+
 .post-content
     padding rem(40px) 0
     img
@@ -37,12 +45,7 @@
     	margin auto !important
     h1,h2,h3,h4,h5
         mainFont(800)
-        &:before
-            display block
-            content " "
-            margin-top -60px
-            height 60px
-            visibility hidden
+        @extend $padding-title-header
     h1
         font-size rem(30px)
         line-height 1.4
@@ -98,6 +101,7 @@ table
     font-size rem(36px)
     margin-top rem(60px)
     center(rem(800px))
+    @extend $padding-title-header
     +below(cut)
         font-size rem(28px)
         margin-top rem(20px)
