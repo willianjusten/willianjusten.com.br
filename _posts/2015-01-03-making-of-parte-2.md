@@ -4,6 +4,8 @@ title: "Making of Parte 2"
 date: 2015-01-04 22:21:31
 description: "Aqui vou mostrar o passo a passo de como criei o blog em Jekyll, usando Gulp e Stylus e coloquei para funcionar no Github Pages."
 image: "/assets/img/making-of-parte-2/imagem-principal.png"
+main-class: 'jekyll'
+color: '#B31917'
 tags:
 - jekyll
 - gulp

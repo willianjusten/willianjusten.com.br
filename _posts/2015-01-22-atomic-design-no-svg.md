@@ -4,6 +4,8 @@ title: "#5 - Atomic Design no SVG - g, use, defs, symbol"
 date: 2015-01-22 10:00:00
 image: '/assets/img/atomic-svg/atomic-svg.png'
 description: "Neste artigo iremos saber mais sobre a estruturação de um SVG, seus elementos, suas vantagens e um pouco de Atomic Design."
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - tutorial

@@ -4,6 +4,8 @@ title: "Theme Color Android Lollipop"
 date: 2015-02-10 21:08:04
 image: '/assets/img/theme-color/main.png'
 description: 'Como fazer a barra de notificações do android ficar com a cor do seu site.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - android
 - theme

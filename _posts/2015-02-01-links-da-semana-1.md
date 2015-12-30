@@ -4,6 +4,8 @@ title: "Links da semana #1"
 date: 2015-02-01 18:37:40
 image: '/assets/img/links-semana-1/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - linksdasemana
 categories:

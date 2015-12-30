@@ -28,12 +28,10 @@ links:
     url: /
   - title: Séries
     url: /series
-  - title: Tutorial SVG
-    url: /tutorial-svg
   - title: Tags
     url: /tags
   - title: Sobre mim
     url: /about
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'vendor']
+exclude: ['package.json', 'src', 'node_modules']

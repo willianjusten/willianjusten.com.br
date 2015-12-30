@@ -4,6 +4,8 @@ title: "Como melhorar meu SEO?"
 date: 2015-01-09 21:21:53
 description: "Algumas dicas para fazer com que seu site ou blog seja melhor indexado pelos buscadores."
 image: "/assets/img/seo/seo.jpg"
+main-class: 'dev'
+color: '#637a91'
 tags:
 - seo
 - tutorial

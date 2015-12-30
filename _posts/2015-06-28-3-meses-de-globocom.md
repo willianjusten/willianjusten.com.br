@@ -4,6 +4,8 @@ title: "3 meses de globo.com"
 date: 2015-06-28 17:36:52
 image: '/assets/img/3-meses-globocom/main.png'
 description: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia."
+main-class: 'dev'
+color: '#637a91'
 tags:
 - trabalho
 - globo

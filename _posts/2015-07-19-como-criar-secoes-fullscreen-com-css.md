@@ -4,6 +4,8 @@ title: "Como criar seções fullscreen com CSS"
 date: 2015-07-19 13:44:01
 image: '/assets/img/header-full/main.png'
 description: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer também."
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - tutorial

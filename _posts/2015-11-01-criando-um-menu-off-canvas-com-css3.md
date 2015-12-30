@@ -4,6 +4,8 @@ title: "Criando um menu Off Canvas com CSS3"
 date: 2015-11-01 13:01:02
 image: '/assets/img/off-canvas/main.png'
 description: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms.'
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - frontend

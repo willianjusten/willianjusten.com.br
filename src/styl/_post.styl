@@ -19,12 +19,16 @@
     p,li
         color texts
         code
-            color colorcode
+            color main
     a
-        mainFont(300)
         color main
+        border-bottom 2px dashed main
+        mainFont(300)
         text-decoration none
-        border-bottom 2px solid #0562dc
+        transition all .3s
+        &:hover
+            background main
+            color #fff
     iframe
         margin-top rem(30px)
         width 100%
@@ -33,6 +37,12 @@
     	margin auto !important
     h1,h2,h3,h4,h5
         mainFont(800)
+        &:before
+            display block
+            content " "
+            margin-top -60px
+            height 60px
+            visibility hidden
     h1
         font-size rem(30px)
         line-height 1.4
@@ -105,8 +115,9 @@ table
         text-decoration none
         transition all .5s
         &:hover
-            color hover
-            border-bottom 1px solid hover
+            color darken(main, 50%)
+            border-bottom 1px solid darken(main, 50%)
+            background #fff
     .entry-date
         float right
         +below(cut)

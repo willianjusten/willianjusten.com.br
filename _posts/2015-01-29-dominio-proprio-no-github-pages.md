@@ -4,6 +4,8 @@ title: "Como ter Domínio Proprio no Github Pages"
 date: 2015-01-29 04:16:36
 image: '/assets/img/dominio/ogimage.png'
 description: 'O passo a passo para deixar seu blog com seu domínio.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - github pages
 - jekyll

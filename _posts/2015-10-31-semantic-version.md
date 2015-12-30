@@ -4,6 +4,8 @@ title: "Versionando seu projeto"
 date: 2015-10-31 21:36:09
 image: '/assets/img/semver/main.png'
 description: 'Como versionar corretamente o seu projeto e assim conseguir informar rapidamente que tipo de mudança ocorreu.'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - projetos
 - semver

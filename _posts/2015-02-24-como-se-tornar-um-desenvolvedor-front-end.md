@@ -4,6 +4,8 @@ title: "Como se tornar um desenvolvedor Front End"
 date: 2015-02-24 15:46:24
 image: '/assets/img/quero-ser-desenvolvedor-frontend/main.png'
 description: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade."
+main-class: 'dev'
+color: '#637a91'
 tags:
 - frontend
 - css

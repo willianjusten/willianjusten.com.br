@@ -4,6 +4,8 @@ title: "#15 - Criando o efeito de desenhar com SVG"
 date: 2015-10-05 18:41:21
 image: '/assets/img/draw-svg/main.png'
 description: 'Um tutorial de como fazer aquele efeito legal de desenhar elementos na tela com SVG.'
+main-class: 'svg'
+color: '#7D669E'
 tags:
 - svg
 - css

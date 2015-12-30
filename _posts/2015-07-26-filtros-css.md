@@ -4,6 +4,8 @@ title: "Filtros CSS"
 date: 2015-07-26 17:30:23
 image: '/assets/img/filtros-css/main.png'
 description: 'Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css.'
+main-class: 'css'
+color: '#2DA0C3'
 tags:
 - css
 - tutorial

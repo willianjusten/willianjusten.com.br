@@ -44,9 +44,12 @@
           close_search();
       }
   });
+  if (document.getElementsByClassName('home').length >=1 ) {
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+  }
 
-  // Scroll
-  smoothScroll.init({
-    updateURL: false
-  })
 })( Zepto, window );
