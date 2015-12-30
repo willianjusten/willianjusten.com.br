@@ -4,8 +4,8 @@ title: "Por que ir em eventos vale a pena?"
 date: 2015-03-29 11:35:14
 image: '/assets/img/eventos/main.png'
 description: "Alguns dos motivos que fazem os eventos serem tão sensacionais e que todos deveríamos ir."
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - eventos
 - frontend

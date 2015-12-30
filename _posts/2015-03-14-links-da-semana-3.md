@@ -4,8 +4,8 @@ title: "Links da semana #3"
 date: 2015-03-14 17:22:20
 image: '/assets/img/links-semana-3/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - linksdasemana
 categories:

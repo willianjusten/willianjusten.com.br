@@ -4,8 +4,8 @@ title: "Técnicas de aprendizado"
 date: 2015-01-06 08:21:26
 description: "Se você tem costume de procrastinar, tem dificuldade de aprender algo rápido. Aprenda técnicas que te permitem aprender melhor e aumentar sua produtividade."
 image: "/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png"
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - estudo
 - produtividade

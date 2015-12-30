@@ -4,8 +4,8 @@ title: "Links da semana #6"
 date: 2015-10-25 19:19:17
 image: '/assets/img/links-da-semana/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - dev
 - js

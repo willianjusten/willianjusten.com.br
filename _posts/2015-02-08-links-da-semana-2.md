@@ -4,8 +4,8 @@ title: "Links da semana #2"
 date: 2015-02-08 13:49:52
 image: '/assets/img/links-semana-2/main.png'
 description: 'Links sobre coisas interessantes que fui vendo pela semana.'
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - linksdasemana
 categories:

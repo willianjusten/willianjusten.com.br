@@ -4,8 +4,8 @@ title: "#1postperday!"
 date: 2015-01-05 11:21:09
 description: "A ideia é postar pelo menos uma vez por dia, quanto mais conteúdo de web em PT-BR melhor!"
 image: "/assets/img/one-post-per-day/imagem-principal.png"
-main-class: 'dev'
-color: '#637a91'
+main-class: 'misc'
+color: '#7AAB13'
 tags:
 - "#1postperday"
 - rss
