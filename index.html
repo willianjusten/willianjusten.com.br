@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<main class="home" id="scroll" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
         <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon">
-                    <a href="/category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
+                    <a href="{{site.url}}/category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
                 </span>
                 <div class="box-body">
                     <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
