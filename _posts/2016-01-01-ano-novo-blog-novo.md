@@ -167,6 +167,49 @@ Todas os destaques de texto também passam a receber a cor da categoria, além d
 
 ![Post do novo blog](/assets/img/blog-novo/post-new.png)
 
+## Cores (Update)
+
+Para que as categorias tivessem suas respectivas cores, eu fiz o seguinte, separei todos os elementos de cor num arquivo chamado [_theme-colors.styl](https://github.com/willianjusten/willianjusten.github.io/blob/master/src/styl/_theme-colors.styl), criei um objeto tendo `categoria-cor` e então iterei a partir de um elemento pai, para que ele fosse modificando todas as cores.
+Segue um trecho do arquivo de cores:
+
+{% highlight css %}
+/* Aqui eu defino os temas e cores */
+themes = {
+    post-jekyll: #B31917,
+    post-css: #2DA0C3,
+    post-js: #D6BA32,
+    post-html: #EB7728,
+    post-svg: #7D669E,
+    post-dev: #637a91,
+    post-misc: #7AAB13
+}
+
+/* aqui eu faço a iteração, tendo o elemento pai
+ o nome do tema */
+for theme, category-color in themes
+    .{theme}
+        .title-category
+            color category-color
+        .post-content
+            h1,h2,h3,h4
+                color category-color
+            a
+                color category-color
+                border-bottom 2px dashed category-color
+                &:hover
+                    background-color category-color
+                    color #fff
+            strong
+                color category-color
+            p,
+            li
+                code
+                    color category-color
+            blockquote
+                border-left .313rem solid category-color
+
+{% endhighlight %}
+
 ## Conclusão
 
 Bom pessoal, esse é o visual do Blog 2016, espero que tenham gostado, peço feedback de todos para saber o que posso melhorar ou até se odiaram o novo visual e querem que eu volte para o antigo <s>mas eu não volto não =p</s>
