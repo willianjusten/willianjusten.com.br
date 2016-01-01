@@ -155,7 +155,7 @@ Pensando nisso, eu criei algumas categorias como:
 - `dev`: essa categoria é para abordar temas mais abertos de programação como ter domínio próprio em github, testes, etc. Sua cor é o cinza.
 - `misc`: miscelânia, como o nome já diz, é um conjunto de tudo, que pode abordar tanto coisas de programação, como links da semana, novidades do blog, coisas off-topic, enfim, todo o resto. Sua cor é o verde.
 
-Para acessar qualquer uma das categorias em específico, basta clicar no `ribbon` no canto superior do card, segue exemplo da [página de js](http://willianjusten.com.br/category/js/).
+Para acessar qualquer uma das categorias em específico, basta clicar no `ribbon` no canto superior do card, segue exemplo da [página de js](http://willianjusten.com.br/category/js).
 
 ### Página de Post
 
