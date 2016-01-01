@@ -7,7 +7,7 @@ layout: default
     {% for post in site.posts %}
         <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon">
-                    <a href="category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
+                    <a href="/category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
                 </span>
                 <div class="box-body">
                     <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
