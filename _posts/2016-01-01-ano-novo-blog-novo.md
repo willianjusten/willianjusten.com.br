@@ -134,6 +134,7 @@ Se você quiser entender mais de `flexbox`, acesse os seguintes links:
 
 - [A guide to Flexbox by Css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Awesome Flexbox by Afonse Pacifer](https://github.com/afonsopacifer/awesome-flexbox)
+- [Flexbox Froggy](http://flexboxfroggy.com/)
 
 #### Interação no Scroll
 
