@@ -34,4 +34,4 @@ links:
     url: /about
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: ['package.json', 'src', 'node_modules', 'vendor/bundle/ruby']
