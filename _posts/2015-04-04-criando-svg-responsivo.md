@@ -181,7 +181,12 @@ Para o corte 2, queremos retirar também o cristal grande e para que a logo perm
 }
 {% endhighlight %}
 
-Feito isso, seu componente já está responsivo e adaptativo!! [Veja esse experimento feito!](http://codepen.io/willianjusten/full/ZYVPep/).
+Feito isso, seu componente já está responsivo e adaptativo!! Veja o experimento pronto abaixo:
+
+<p data-height="266" data-theme-id="11319" data-slug-hash="ZYVPep" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/ZYVPep/'>Logo SVG Responsive Example</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+Abra ele numa outra aba e dê resize para ver os diferentes estados.
 
 ## Conclusão
 
