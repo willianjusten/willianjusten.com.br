@@ -48,8 +48,6 @@ Aqui abaixo coloco os links que as próprias redes sociais disponibilizam:
 
 Criando cada um desses botões e adicionando somentes eles em uma página, temos cerca de 41 requests, dentre arquivos `js`, `json`, `png`...
 
-![Imagem das requisições](http://davidgoss.co.uk/wp-content/uploads/2013/12/devtools-screenshot.png)
-
 ## Como corrigir isso?
 
 Cada uma dessas redes sociais possui uma url para share também, que nos facilita bastante, visto que basta utilizarmos e passarmos os parâmetros certos e nada externo será requisitado.

@@ -291,7 +291,6 @@ A maioria das empresas utiliza um desses dois para poder organizar melhor seu c�
 
 #### Intermediário/Avançado
 - [A web-focused git workflow](http://joemaller.com/990/a-web-focused-git-workflow/)
-- [Using git for deployment](https://danbarber.me/using-git-for-deployment/)
 - [Deploy web applications easily with svn](http://taylorjasko.com/deploy-web-applications-easily-with-svn/)
 
 ---

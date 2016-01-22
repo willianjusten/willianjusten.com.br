@@ -22,7 +22,7 @@ Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando t
 
 ## Introdução
 
-Vou escrevendo esse post ouvindo algumas músicas do Need For Speed, em especial [Get Low](https://open.spotify.com/track/0r2Bul2NuCViraT2zX1l5j). Para quem não sabe, a EA vai fazer um [reboot da série](http://www.techtudo.com.br/noticias/noticia/2015/05/need-speed-reboot-da-serie-e-anunciado-para-ps4-xbox-one-e-pc.html) e me deixou bastante animado, já que sou bastante fã.
+Vou escrevendo esse post ouvindo algumas músicas do Need For Speed, em especial [Get Low](https://open.spotify.com/track/0r2Bul2NuCViraT2zX1l5j). Para quem não sabe, a EA vai fazer um reboot da série e me deixou bastante animado, já que sou bastante fã.
 
 Bom, vamos deixar de lenga-lenga e partir para o que importa. Como já vimos em posts anteriores, o SVG é excelente para ícones e existem várias formas de se utilizar. Hoje vou mostrar um pouco das técnicas de sprite que permite utilizar a tag `img` para chamar nosso ícone desejado.
 

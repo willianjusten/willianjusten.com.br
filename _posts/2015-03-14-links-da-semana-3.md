@@ -16,9 +16,7 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 
 Fiquei um tempo sem fazer esse tipo de post, mas pretendo retorná-lo, porque links interessantes nunca são demais =)
 
-Antes de liberar os vários links, vou falar de um em especial que saiu essa semana que foi o [Infográfico de comemoração das 100 Weeklies enviadas pela BrazilJS Foundation](http://jugoncalv.es/cem/) feito pela [Ju Goncalves](http://jugoncalv.es/) e com uma ajudinha minha =)
-
-Se quiser saber como foi feito, avisar de algum erro ou melhorar algumas coisas, vai lá no [repositório do github](https://github.com/jugoncalves/cem) e não esqueça de dar uma Star se curtiu! =)
+Antes de liberar os vários links, vou falar de um em especial que saiu essa semana que foi o [Infográfico de comemoração das 100 Weeklies enviadas pela BrazilJS Foundation](https://github.com/jugoncalves/cem) feito pela [Ju Goncalves](http://jugoncalv.es/) e com uma ajudinha minha =)
 
 ## CSS
 
@@ -27,7 +25,7 @@ Se quiser saber como foi feito, avisar de algum erro ou melhorar algumas coisas,
 * [Creative Gooey Effects](http://tympanus.net/codrops/2015/03/10/creative-gooey-effects) - Lucas Bebber não é desse mundo, manda muito =)
 * [Flickity - touch and responsible gallery](http://flickity.metafizzy.co/)
 * [Practice your skills by getting random suggestions or creative inspiration!](http://tevko.github.io/practice/index.html)
-* [How to get started with css shapes](http://www.webdesignerdepot.com/2015/03/how-to-get-started-with-css-shapes/)
+* [How to get started with css shapes](https:// webdesignerdepot.com/2015/03/how-to-get-started-with-css-shapes/)
 * [Can css be too modular?](http://csswizardry.com/2015/03/can-css-be-too-modular/)
 * [Automating Style Guide-Driven Development](http://www.smashingmagazine.com/2015/03/05/automating-style-guide-driven-development/)
 

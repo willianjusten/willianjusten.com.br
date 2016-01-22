@@ -32,7 +32,7 @@ No [artigo passado](http://willianjusten.com.br/sistemas-de-icones-em-svg/) eu f
 
 ## Propriedades de Estilo
 
-Para nós que trabalhamos com Web sabemos que existem milhares de propriedades CSS e cada vez tem [crescido mais](http://www.webdesignerdepot.com/2015/01/css-you-can-get-excited-about-in-2015/). No SVG não é diferente, ele além de compartilhar uma série de propriedades com o CSS, também tem suas propriedades únicas.
+Para nós que trabalhamos com Web sabemos que existem milhares de propriedades CSS e cada vez tem [crescido mais](https://webdesignerdepot.com/2015/01/css-you-can-get-excited-about-in-2015/). No SVG não é diferente, ele além de compartilhar uma série de propriedades com o CSS, também tem suas propriedades únicas.
 
 ![Propriedades em SVG e CSS](/assets/img/estilizando-svg/svg-properties.png)
 

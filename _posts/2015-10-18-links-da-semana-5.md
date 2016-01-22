@@ -61,7 +61,7 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 ## Design
 
 - [25 Luxury Website Designs with Elegant Layouts](http://line25.com/inspiration/luxury-website-designs)
-- [What’s New for Designers, October 2015](http://www.webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
+- [What’s New for Designers, October 2015](https://webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
 - [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
 - [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
 - [Design to Code with Atomic Design Principles and Sketch](https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37)
