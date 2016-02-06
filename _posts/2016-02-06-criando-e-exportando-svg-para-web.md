@@ -157,7 +157,6 @@ Para encaixar a artboard ao desenho:
 Sabemos que isso é uma coisa idiota, mas é importante de se falar, por algumas razões:
 
 - **Os ids e classes que você usa no editor gráfico vão ser passados para o código gerado.** Quanto mais semântico e explicativos são seus nomes, menos confusão e ruído gerado com o seu desenvolvedor. Não precisa ser neurótico e querer os nomes perfeitos. Mas, por exemplo, se você estiver desenhando um carro, crie um id para grupo ou layer das rodas, quanto mais fácil de lermos esse código gerado, melhor para a manutenção.
-
 - **Use camadas(layers) para agrupar elementos relacionados.** Camadas são traduzidas em grupos no código, o que auxilia a identificação. Crie grupos/camadas principalmente se você deseja animá-los como um todo. Muito tempo gasto do desenvolvedor é organizando e reagrupando elementos, se você como designer já fizer isso, vai ajudar muito no processo.
 
 ## 8 - Escolhas as melhores opções de exportar para web
