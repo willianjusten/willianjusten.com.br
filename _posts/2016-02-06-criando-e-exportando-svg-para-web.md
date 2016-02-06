@@ -92,7 +92,7 @@ A Sara recomenda e eu também, a leitura sobre como fazer o SVG mais acessível,
 * [Using Aria to Enhance SVG Acessibility](https://www.paciellogroup.com/blog/2013/12/using-aria-enhance-svg-accessibility/)
 
 
-Outro contra é que se você converter textos para outlines, pode acabar aumentar bastante o tamanho do arquivo SVG, dependendo da complexidade da fonte, com esse aumento de código, você também pode acabar afetando a leitura do código gerado. Segue um exemplo do texto convertido e o outro não:
+Outro contra é que se você converter textos para outlines, pode acabar aumentando bastante o tamanho do arquivo SVG, dependendo da complexidade da fonte, com esse aumento de código, você também pode acabar afetando a leitura do código gerado. Segue um exemplo do texto convertido e o outro não:
 
 ![Exemplo de texto convertido e não convertido](https://sarasoueidan.com/images/text-output.jpg)
 
