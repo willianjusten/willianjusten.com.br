@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Criando e Exportando SVG para Web"
+title: "#16 - Criando e Exportando SVG para Web"
 date: 2016-02-06 13:29:04
 image: '/assets/img/svg-export/google-svg-logos.png'
 description: 'Aprenda como otimizar seu SVG para ter a melhor entrega para web. Se você é designer ajude seu amigo dev.'
