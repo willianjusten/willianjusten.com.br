@@ -10,7 +10,7 @@ github_username:  willianjusten
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 
