@@ -25,7 +25,7 @@ Antes de liberar os vários links, vou falar de um em especial que saiu essa sem
 * [Creative Gooey Effects](http://tympanus.net/codrops/2015/03/10/creative-gooey-effects) - Lucas Bebber não é desse mundo, manda muito =)
 * [Flickity - touch and responsible gallery](http://flickity.metafizzy.co/)
 * [Practice your skills by getting random suggestions or creative inspiration!](http://tevko.github.io/practice/index.html)
-* [How to get started with css shapes](https:// webdesignerdepot.com/2015/03/how-to-get-started-with-css-shapes/)
+* [How to get started with css shapes](https://webdesignerdepot.com/2015/03/how-to-get-started-with-css-shapes/)
 * [Can css be too modular?](http://csswizardry.com/2015/03/can-css-be-too-modular/)
 * [Automating Style Guide-Driven Development](http://www.smashingmagazine.com/2015/03/05/automating-style-guide-driven-development/)
 

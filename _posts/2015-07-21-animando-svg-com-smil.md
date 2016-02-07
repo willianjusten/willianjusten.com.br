@@ -194,9 +194,6 @@ As animações realizadas para o botão acima ficam separadas em:
 
 Para cada uma dessas animações utilizamos a tag `animate` sempre definindo o `to`, que significa para onde estamos transformando. O JS utilizado no exemplo é só para adicionar o textinho (salvar -> salvo!) e iniciar as animações. Mas lembramos que podemos utilizar o `begin=click` para fazer esse tipo de trigger para inicialização.
 
-Outras animações que também podem ser utilizadas são em gráficos, segue um [exemplo usando RaphaelJS](http://raphaeljs.com/chart.html).
-
-
 ## Conclusão
 
 Bom pessoal, esse post serviu para mostrar mais uma habilidade exclusiva e super interessante que o SVG possui. Lembre-se que animações para conseguir melhorar a usabilidade do usuário são sempre boas adições e o SVG pode te prover isso muito bem. Existem muitas coisas sobre SMIL, portanto não fique somente neste post e busque ainda mais informação, qualquer coisa, também pergunte nos comentários.

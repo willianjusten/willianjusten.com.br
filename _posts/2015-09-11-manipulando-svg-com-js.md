@@ -140,7 +140,7 @@ Talvez uma das mais famosas bibliotecas de SVG que tem, criada pelo [Dmitry Bara
 
 Uma das mais antigas libs de SVG que tem, também criada pelo Dmistry, tem como premissa funcionar em navegadores muito velhos, inclusive o IE6. Possui uma API bastante simples de trabalhar e permite também criar, animar e estilizar o SVG.
 
-[Link do RaphaelJS](http://raphaeljs.com/)
+[Link do RaphaelJS](https://github.com/DmitryBaranovskiy/raphael)
 
 ### D3
 
