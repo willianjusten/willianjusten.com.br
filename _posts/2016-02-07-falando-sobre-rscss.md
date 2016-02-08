@@ -59,13 +59,13 @@ Resolvi fazer esse post por alguns motivos e eles foram:
 - Não achei NADA em português!
 - Por que não fazer? xD
 
-O post será fortemente baseado na [ÓTIMA documentação do RSCSS](http://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente quiser partir para o original, só clicar ali =)
+O post será fortemente baseado na [ÓTIMA documentação do RSCSS](http://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente partir para o original, só clicar ali =)
 
 Eu irei escrever os exemplos em **SCSS**, porém eles podem ser portados para qualquer pre-processador e até mesmo CSS puro <s>tem maluco para tudo.</s>
 
 <h2 id="oq-vem">O que vem a ser o RSCSS?</h2>
 
-Quanto maior o projeto vai ficando, mais elementos são criados e mais CSS é criado. Isso pode acarretar em linhas e mais linhas de CSS, que se não forem bem cuidados, poderão causar várias confusões. Você já se pegou fazendo as seguintes perguntas:
+Quanto maior o projeto vai ficando, mais elementos são criados e mais CSS é criado. Isso pode acarretar em linhas e mais linhas de CSS, que se não forem bem cuidadas, poderão causar várias confusões. Você já se pegou fazendo as seguintes perguntas:
 
 - O que essa classe significa?
 - Essa classe está sendo utilizada?
