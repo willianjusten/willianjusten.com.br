@@ -258,7 +258,7 @@ Assim como os componentes, podemos querer variar os elementos. Preste atenção,
 }
 {% endhighlight %}
 
-<h4 id="elementos-tracos">3.3 Por que usar prefixos com traço?</h4>
+<h4 id="variacoes-tracos">3.3 Por que usar prefixos com traço?</h4>
 
 Alguns dos motivos de se usar são:
 
