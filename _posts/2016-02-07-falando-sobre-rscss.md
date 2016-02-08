@@ -156,7 +156,7 @@ Se temos o markup limpo, colocando só classes base e usando nesting, acabamos t
 
 <h2 id="e-se">E se existisse uma maneira de ter os dois limpos?</h2>
 
-Dessa forma nasceu o [RSCSS](http://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [sobre seletores css importantes para aprender](http://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
+Dessa forma nasceu o [RSCSS](http://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [seletores css importantes para aprender](http://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
 
 O mesmo exemplo do card usando essa metodologia ficaria:
 
