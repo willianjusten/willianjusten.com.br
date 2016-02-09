@@ -24,7 +24,7 @@ introduction: "Neste artigo iremos saber mais sobre a estruturação de um SVG, 
 
 ## Introdução
 
-Primeiro de tudo, aviso que o início deste post será praticamente uma tradução adaptada desse [incrivel post](http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/) da [Sara Soueidan](http://sarasoueidan.com/about.html), que escreveu tão bem essa parte, que não vi justificativas plausíveis para escrever de outra forma. Claro que tentarei ser um pouco mais simplista com as palavras, para facilitar o entendimento de todos.
+Primeiro de tudo, aviso que o início deste post será praticamente uma tradução adaptada desse [incrivel post](http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/) da [Sara Soueidan](https://sarasoueidan.com/about/), que escreveu tão bem essa parte, que não vi justificativas plausíveis para escrever de outra forma. Claro que tentarei ser um pouco mais simplista com as palavras, para facilitar o entendimento de todos.
 
 Ps.: não é preguiça, é porque acho essa mulher incrível e sou mega fã das grandes contribuições em SVG que ela traz <3
 

@@ -58,7 +58,7 @@ Antes de liberar os vários links, vou falar de um em especial que saiu essa sem
 * [What’s the difference between Unit Testing, TDD and BDD?](http://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/)
 * [9 Tips improving your time management](http://www.creativebloq.com/career/9-tips-improving-your-time-management-31514419)
 * [10 steps to freelance success](http://www.creativebloq.com/career/10-steps-freelance-success-31514415)
-* [Start.me - Personalize your start page](http://www.start.me/en)
+* [Start.me - Personalize your start page](https://start.me)
 * [I built a chrome extension to control my online time wastage and it worked!](https://medium.com/@nashvail/i-built-a-chrome-extension-to-control-my-online-time-wastage-and-it-worked-bd1168e03b01) - Ideia genial poder medir o tempo gasto nas coisas!
 * [Tinychart - Create beautiful graphics with JSON or table](http://tinychart.co/)
 
