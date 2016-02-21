@@ -42,7 +42,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 </svg>
 {% endhighlight %}
 
-###O que são essas coisas ali com a tag SVG?
+### O que são essas coisas ali com a tag SVG?
 
 São os `namespaces` do SVG. Eles servem para identificar a versão utilizada no SVG e o namespace padrão dele, assim o browser irá saber qual a melhor forma de renderizar aquele SVG. Isso será bastante importante para nós quando formos manipular o SVG através do Javascript, pois para criar novos elementos e definir atributos, iremos trabalhar no DOM através dos namespaces.
 
