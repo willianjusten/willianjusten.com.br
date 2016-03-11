@@ -27,7 +27,6 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 - [Web.br 2015 - Evolução e futuro do uso de paradigmas no JavaScript](https://www.youtube.com/watch?v=uEglleenUFk)
 - [The struggles of publishing a JavaScript library](http://nolanlawson.com/2015/10/19/the-struggles-of-publishing-a-javascript-library/)
 - [ES6 Overview in 350 Bullet Points](https://ponyfoo.com/articles/es6)
-- [Building Real-time Chess with Socket.io](http://dwcares.com/realchess/)
 - [Tips on Setting up Karma Testing with Webpack](http://mike-ward.net/2015/09/07/tips-on-setting-up-karma-testing-with-webpack/)
 
 ## Design / Inspiracional

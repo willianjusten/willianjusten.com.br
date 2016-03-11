@@ -48,7 +48,6 @@ Antes de liberar os vários links, vou falar de um em especial que saiu essa sem
 * [How Cards Are Quietly Transforming The Web](http://techcrunch.com/2015/02/27/cards-transforming-web/)
 * [How to prototype websites on paper](http://www.creativebloq.com/ux/how-prototype-websites-paper-31514246)
 * [Defringe - a curated online gallery that filters creative content on the web](http://defringe.com/)
-* [Specfox - Easy Website Specifications](https://specfox.com/)
 * [Lumi - Build your Brand](http://www.lumi.com/)
 * [Arstropad - Mac & Ipad Draw Together](http://astropad.com/)
 
