@@ -98,13 +98,21 @@ $padding-title-header
     	border 1px solid lightGray
     	margin 50px auto
 
-table
-    margin rem(50px) auto
-    +below(cut)
-        display none
-    th, td
-        border rem(2px) solid #ccc
-        padding rem(5px)
+    > table
+        margin rem(50px) auto
+        +below(cut)
+            display none
+        th, td
+            border rem(2px) solid #ccc
+            padding rem(5px)
+    
+    td > pre
+        padding 0
+        margin 0
+    
+    td.gutter.gl
+        padding-right rem(25px)
+        line-height rem(24px)
 
 .tag-title
     mainFont(300)
