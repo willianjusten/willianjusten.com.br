@@ -4,7 +4,7 @@ email: willianjustenqui@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Um blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://willianjusten.com.br" # the base hostname & protocol for your site
+url: "http://willianjusten.com.br" # the base hostname & protocol for your site
 twitter_username: willian_justen
 github_username:  willianjusten
 
