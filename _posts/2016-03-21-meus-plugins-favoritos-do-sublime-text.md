@@ -78,8 +78,8 @@ Eu sou bastante preocupado com código, gosto de tudo seguindo o mesmo padrão d
 
 - [Sublime CssComb](https://github.com/csscomb/sublime-csscomb) - padroniza meu CSS de acordo com o padrão passado no arquivo do .csscomb
 - [EditorConfig Sublime](https://github.com/sindresorhus/editorconfig-sublime) - segue padrão definido no .editorconfig (USE AGORA MESMO!)
-[Sublime Linter](https://github.com/SublimeLinter/SublimeLinter3) - o responsável por fazer o Linter dentro do Sublime, ferramenta magnífica.
-[Sublime Linter JSCS](https://packagecontrol.io/packages/SublimeLinter-jscs) - junto com o Sublime Linter, ele verifica o padrão do código JS de acordo com o definido no arquivo do jscs
+- [Sublime Linter](https://github.com/SublimeLinter/SublimeLinter3) - o responsável por fazer o Linter dentro do Sublime, ferramenta magnífica.
+- [Sublime Linter JSCS](https://packagecontrol.io/packages/SublimeLinter-jscs) - junto com o Sublime Linter, ele verifica o padrão do código JS de acordo com o definido no arquivo do jscs
 
 ## Snippets
 
