@@ -10,7 +10,7 @@ tags:
     - dev
     - creative
 categories:
-twitter_text: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes e o processo criativo."
+twitter_text: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes."
 introduction: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes e o processo criativo."
 ---
 
