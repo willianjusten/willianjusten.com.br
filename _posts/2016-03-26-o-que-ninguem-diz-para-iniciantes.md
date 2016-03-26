@@ -56,7 +56,7 @@ Há alguns dias eu postei na timeline do meu Facebook um vídeo bem interessante
 
 <iframe width="560" height="420" src="https://www.youtube.com/embed/ztspvPYybIY" frameborder="0" allowfullscreen></iframe>
 
-Um cara franzino, tímido, embolado com as palavras, que nem sabia se iria funcionar seu side project. E que hoje é só conhecido por ter ajudado no desenvolvimento da ferramenta de desenvolvimento que mais cresce no mundo.
+Um cara franzino, tímido, embolado com as palavras, que nem sabia se iria funcionar seu side project. E que hoje é só conhecido por ter ajudado no criação da ferramenta de desenvolvimento que mais cresce no mundo.
 
 Ou seja, se você é tímido, tem vergonha de se apresentar, tem vergonha do que faz e nunca mostra nada para os outros. Perca esse medo! Contribua no Github, faça um blog, grave vídeos, se mostre! Você pode ser o mais novo grande desenvolvedor da década.
 
