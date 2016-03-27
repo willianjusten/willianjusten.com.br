@@ -23,24 +23,24 @@ Bom, sem mais delongas, senão vou chorar. Vou escrevendo enquanto escuto uma [P
 
 ## Paixão por Música
 
-Acho que nem preciso dizer que amo Música né? Praticamente todos os meus posts possuem uma playlist do que estou ouvindo. Trabalhei numa empresa de crowdfunding de shows chamada [Queremos](http://www.queremos.com.br/) e [WeDemand](http://www.wedemand.com/) lá fora e já perdi a conta de quantos shows já fui.
+Acho que nem preciso dizer que amo Música né? Praticamente todos os meus posts possuem uma playlist do que estou ouvindo. Trabalhei numa empresa de crowdfunding de shows chamada [Queremos](http://www.queremos.com.br/) / [WeDemand](http://www.wedemand.com/) e já perdi a conta de quantos shows já fui.
 
 Sempre fui apaixonado por música, qualquer tipo, mas uma em si, sempre me chamava muito a atenção, que eram as dos jogos. Eu cresci com nintendinho, super nintendo, por aí vai. E aquelas músicas clássicas de 8 bits eram incríveis para mim. Eu queria muito aprender a criar aquelas músicas e fazer as minhas próprias. Foi aí que eu conheci o [Guitar Pro](https://www.guitar-pro.com/en/index.php) e comecei a criar músicas MIDI, que ficavam bem parecidas com as dos jogos, para mim era mágico.
 
 Depois começaram as ondas dos jogos musicais, nossa, como eu era viciado! Joguei de todos os tipos, desde os famosos Guitar Hero's da vida, até jogos pouco falados como [Rez](https://www.youtube.com/watch?v=5riv2plc_NM).
 
-E junto aos jogos, eu utilizava um player de música, que os mais antigos vão lembrar com muita alegria, o bom e velho [Winamp](http://www.winamp.com/), e como não lembrar os visualizadores de música que ele tinha, era incrível. E você ainda podia baixar, futucar e customizar do seu jeito! Dali, rolaram várias e várias madrugadas editando para fazer desenhos maneiros e psicodélicos.
+Junto aos jogos, eu também utilizava um player de música, que os mais antigos vão lembrar com muita carinho, o bom e velho [Winamp](http://www.winamp.com/). E como não lembrar os visualizadores de música que ele tinha, era incrível. Você ainda podia baixar, futucar e customizar do seu jeito! Dali, rolaram várias e várias madrugadas editando para fazer desenhos maneiros e psicodélicos.
 
-Então, muito tempo se passou, hoje eu já sei alguma coisa de Javascript e por que não brincar com essas coisas que eu tanto amava quando jovem?
+Então... muito tempo se passou, hoje eu já sei alguma coisa de Javascript e por que não brincar com essas coisas que eu tanto amava quando jovem?
 
 
 ## Nascimento de outra Awesome
 
 Para quem já vem seguindo meu trabalho faz tempo, sabem que eu criei uma lista com vários conteúdos sobre SVG, que dei o nome de [Awesome SVG](https://github.com/willianjusten/awesome-svg). Essa lista, nada mais era que links que eu já tinha nos bookmarks e queria organizar de alguma forma para passar para os outros que quisessem aprender também.
 
-Dessa vez, não foi diferente, eu tinha vários links de coisas que já havia estudado sobre e como eu estava pensando em focar mais nesse assunto esse ano, resolvi juntar. Só que dessa vez, eu resolvi não fazer sozinho. Eu havia visto um trabalho super legal (super legal nada, ficou do caralho, [olha lá](https://lhbzr.com/)) do [Luis Henrique Bizarro](https://lhbzr.com/) e resolvi bater um papo com ele para ver se ele se interessava. Ele não só se interessou, como ele já até me conhecia e curtia meu trabalho <3
+Dessa vez, não foi diferente, eu tinha vários links de coisas que já havia estudado  e como eu estava pensando em focar mais nesse assunto esse ano, resolvi juntar tudo. Só que dessa vez, resolvi não fazer sozinho. Eu havia visto um trabalho super legal (super legal nada, ficou do caralho, [olha lá](https://lhbzr.com/)) do [Luis Henrique Bizarro](https://lhbzr.com/) e resolvi bater um papo com ele para ver se ele se interessava. Ele não só se interessou, como já até me conhecia e curtia meu trabalho <3
 
-Outra pessoa que eu também resolvi chamar foi o [Márcio Ribeiro](http://cargocollective.com/marcioribeiro) um designer com os dois pés em Dev e que também ama Audio Visualização. O cara manda bem para caramba e eu sabia que precisava chamá-lo para algum projeto comigo.
+Outra pessoa que eu também resolvi chamar foi o [Márcio Ribeiro](http://cargocollective.com/marcioribeiro) um designer com os dois pés em Dev e que também ama Audio Visualização. O cara manda bem para caramba e eu sabia que precisava chamá-lo para algum projeto comigo. Não deu outra, a logo está absurdamente linda <3
 
 Tendo o trio formado e com o [repositório criado](https://github.com/willianjusten/awesome-audio-visualization), começamos a adicionar vários links em diferentes categorias. Hoje já são mais de 130 links para vocês acessarem, desde experimentos até tutoriais e vídeos.
 
