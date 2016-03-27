@@ -33,7 +33,6 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
 - [Lazyload](http://verlok.github.io/lazyload/)
 - [From Rest to GraphQL](https://blog.jacobwgillespie.com/from-rest-to-graphql-b4e95e94c26b)
-- [React Style Guide](https://reactjsnews.com/react-style-guide-patterns-i-like/)
 - [Checklist for your new Open Source JavaScript Project](https://ericdouglas.github.io/2015/09/27/checklist-for-your-new-open-source-javascript-project/)
 
 ## Python
