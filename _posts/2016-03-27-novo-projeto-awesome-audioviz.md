@@ -60,7 +60,7 @@ Eu peguei e gravei um vídeo beeeeeem porquinho, propondo a minha talk, se quise
 
 <iframe width="420" height="420" src="https://www.youtube.com/embed/sj04n3btjwk" frameborder="0" allowfullscreen></iframe>
 
-O pessoal do FrontinSampa já viu e já aprovou! Então, para quem quiser me ver em Sampa, estarei lá no [FrontinSampa](http://frontinsampa.com.br/) dia 2 de Julho. E vamos torcer para eu passar na BrazilJS também, se eu não passar, bom, vou estar lá de qualquer maneira em Agosto! \o/
+O pessoal do FrontinSampa já viu e já aprovou! Então, para quem quiser me ver em Sampa, estarei lá no [FrontinSampa](http://frontinsampa.com.br/) dia 2 de Julho. Quem for no FrontinSampa e falar comigo pessoalmente, vai ganhar um curso premium meu! E vamos torcer para eu passar na BrazilJS também, se eu não passar, bom, vou estar lá de qualquer maneira em Agosto! \o/
 
 ## Conclusão
 
