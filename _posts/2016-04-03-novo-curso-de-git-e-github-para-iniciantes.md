@@ -84,3 +84,4 @@ Se você gostou da ideia e quer mais cursos e com mais frequência, me ajude a t
 ## Um abraço e que comecem os estudos!!
 
 Vamos lá galera, todo mundo acessando, compartilhando, curtindo, comentando e sendo feliz!!!
+[Link do curso Git e Github para iniciantes](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes/)
