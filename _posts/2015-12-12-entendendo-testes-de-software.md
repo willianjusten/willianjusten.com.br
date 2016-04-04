@@ -228,7 +228,7 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 - [Tape](https://github.com/substack/tape) - criado pelo Substack, outro com proposta de ser bem pequenino, mas com bastante plugins.
 - [Jest](https://facebook.github.io/jest/) - criado pelo Facebook para realizar testes no React, trabalha em cima de Mocks por default.
 - [QUnit](https://qunitjs.com/) - usada pela galera do JQuery, tendo o [Leo Balter](https://twitter.com/leobalter) como um dos desenvolvedores.
-- [Karma](http://karma-runner.github.io/0.13/index.html) - diferente dos outros, o Karma não serve para escrever os testes e sim para rodá-los em cima de browers, dos quais inclui até headless browser como o PhantomJS.
+- [Karma](http://karma-runner.github.io/0.13/index.html) - diferente dos outros, o Karma não serve para escrever os testes e sim para rodá-los em cima de browsers, dos quais inclui até headless browser como o PhantomJS.
 - [CasperJS](http://casperjs.org/) - permite rodar testes de aceitação usando headless browser (PhantomJS e SlimerJS), numa sintaxe bastante simples.
 - [Nightwatch](http://nightwatchjs.org/) - talvez um dos melhores para se fazer testes End-to-End (E2E), onde você faz um teste completo de sua aplicação.
 - [Protractor](http://www.protractortest.org/#/) - outro para testes E2E, mais focado para o AngularJS.
