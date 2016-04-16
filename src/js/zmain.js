@@ -58,4 +58,13 @@
       updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
   });
 
+function scrollBanner() {
+  scrollPos = $(window).scrollTop();
+  var headerText = document.querySelector('.header-post .content')
+  headerText.style.marginTop = -(scrollPos/3)+"px";
+  headerText.style.opacity = 1-(scrollPos/480);
+}
+
+window.addEventListener('scroll', scrollBanner);
+
 })( Zepto, window );

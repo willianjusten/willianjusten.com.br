@@ -3,12 +3,11 @@ body
 	height 100%
 
 $bg
-	height 100%
 	background-color main
 	.content
 		width 95%
-		align(both)
 		text-align center
+		padding rem(140px) 0 rem(66px)
 
 .bar-header
 	background sec
@@ -33,9 +32,12 @@ $bg
 // Header Post
 .header-post
 	@extends $bg
+	min-height rem(500px)
+	position fixed
+	width 100%
 	.content
-		+above(cut)
-			center(1000px)
+		margin auto
+		max-width rem(800px)
 	.subheader
 		display table
 		padding 20px
