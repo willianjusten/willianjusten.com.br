@@ -11,7 +11,7 @@ tags:
 - frontend
 - parallax
 categories:
-twitter_text: "Aprenda a fazer esse efeito simples e deixe seu site ainda mais bonito."
+twitter_text: "Aprenda a fazer esse efeito e deixe seu site ainda mais bonito."
 introduction: "Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito."
 ---
 
