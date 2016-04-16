@@ -69,6 +69,8 @@ function scrollBanner() {
   }
 }
 
-window.addEventListener('scroll', scrollBanner);
+if (screen.width > 1024) {
+  window.addEventListener('scroll', scrollBanner);
+}
 
 })( Zepto, window );
