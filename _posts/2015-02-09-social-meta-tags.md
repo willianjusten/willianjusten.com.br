@@ -33,7 +33,7 @@ Cada rede social possui um conjunto de informações para serem lidas e elas ser
 
 ## Facebook
 
-A maior rede social que temos hoje possui um conjunto de informações que é o chamado [Open Graph](https://developers.facebook.com/docs/sharing/best-practices?locale=pt_BR). A partir dela conseguimos organizar bastante as informações e inclusive fazer uma análise do nosso site utilizando o [Facebook Insights](https://developers.facebook.com/docs/platforminsights/domains?locale=pt_BR).
+A maior rede social que temos hoje possui um conjunto de informações que é o chamado [Open Graph](https://developers.facebook.com/docs/sharing/best-practices?locale=pt_BR). A partir dela conseguimos organizar bastante as informações e inclusive fazer uma análise do nosso site utilizando o Facebook Insights.
 
 Existem vários tipos de Meta Tags que o Open Graph suporta e todas elas são sempre iniciadas com o prefixo `og:`, caso queira saber todas que tem, basta dar uma olhada lá no site do [Open Graph](https://developers.facebook.com/docs/sharing/best-practices#tags).
 
