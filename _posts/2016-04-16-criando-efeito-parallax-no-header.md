@@ -17,7 +17,7 @@ introduction: "Aprenda a fazer esse efeito simples que pode deixar seu site aind
 
 ## Introdução
 
-E aí pessoal, aproveitando que não escrevo há um tempinho aqui, resolvi fazer esse post bastamte simples, explicando como fiz o novo estilo do header do meu blog. Aproveito para pegar feedbacks do que acharam, eu confesso que ainda não sei se gostei ou não =/
+E aí pessoal, aproveitando que não escrevo há um tempinho aqui, resolvi fazer esse post bastante simples, explicando como fiz o novo estilo do header do meu blog. Aproveito para pegar feedbacks do que acharam, eu confesso que ainda não sei se gostei ou não =/
 
 Vou ouvindo uma banda bem maneira chamada [Dark Stares](https://open.spotify.com/album/4I63EqCJ5b8sfJyWSo5bvS), um rock bem maneiro com guitarras distorcidas, baixos e baterias bem destacados.
 
