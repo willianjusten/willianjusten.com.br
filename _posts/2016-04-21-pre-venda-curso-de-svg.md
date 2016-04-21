@@ -12,7 +12,7 @@ tags:
 - tutorial
 categories:
 - "O mundo mágico do SVG"
-twitter_text: 'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
+twitter_text: 'Se adiante e adquira um dos cursos mais completos de SVG.'
 introduction: 'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
 ---
 
