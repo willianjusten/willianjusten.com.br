@@ -140,6 +140,8 @@ Todas as informações aqui, também podem ser encontradas no [repositório do c
 
 **Banco Itau**
 
+Quem fizer transferência, manda um email para willianjustenqui@gmail.com com a confirmação. Para ter o seu email salvo.
+
 ### Contato
 
 Qualquer dúvida ou curiosidade, é só mandar um email para willianjustenqui@gmail.com ou então falar comigo através de qualquer rede social.
