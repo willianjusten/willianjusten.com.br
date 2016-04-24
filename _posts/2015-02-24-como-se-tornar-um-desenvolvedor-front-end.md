@@ -284,6 +284,7 @@ Quantas vezes você já se pegou fazendo 1000 backups só para não perder certa
 A maioria das empresas utiliza um desses dois para poder organizar melhor seu código, além de poder versionar, o git permite um controle dos colaboradores, controle de flow, separação em branches e muito mais.
 
 #### Básico
+- [Meu curso de Git e Github para iniciantes](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes)
 - [Try Git - Code School](https://try.github.io/levels/1/challenges/1)
 - [Guia prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 - [Introdução ao git e github - Vídeo](https://www.youtube.com/watch?v=yNwh0S0S0bU)
