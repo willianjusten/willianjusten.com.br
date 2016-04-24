@@ -40,10 +40,10 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
 
 - Introdução ao SVG
     - Introdução do Curso
-    - O que é SVG?
-    - Por que usar SVG?
-    - Quando usar SVG?
-    - Como criar um SVG?
+    - O que é?
+    - Por que usar?
+    - Quando usar?
+    - Como criar?
     - Onde baixar?
 - Como usar e suas vantagens/desvantagens?
     - Como imagem
