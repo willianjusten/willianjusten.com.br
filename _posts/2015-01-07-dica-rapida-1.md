@@ -139,7 +139,7 @@ Para fazer funcionar, basta adicionar as seguintes linhas no head:
 
 #### E como faço para testar se eu não uso essa porcaria de windows 8?
 
-Tem [esse site](http://www.buildmypinnedsite.com/en), que cria o tile e ainda mostra um preview para você.
+Tem [esse site](http://www.buildmypinnedsite.com/), que cria o tile e ainda mostra um preview para você.
 
 ## Conclusão
 
