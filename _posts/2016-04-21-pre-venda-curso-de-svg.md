@@ -40,6 +40,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
 
 - Introdução ao SVG
     - Introdução do Curso
+    - História
     - O que é?
     - Por que usar?
     - Quando usar?
