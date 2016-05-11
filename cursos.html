@@ -10,7 +10,9 @@ layout: default
                     <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
                 </span>
                 <div class="box-body cursos-box-body">
-                    <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
+                    <a class="post-link" href="{{ curso.link }}">
+                        <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
+                    </a>
                     <div class="cursos-container">
                         <a class="post-link" href="{{ curso.link }}">
                             <h2 class="post-title" itemprop="name">
