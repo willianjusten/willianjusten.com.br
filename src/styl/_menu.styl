@@ -33,6 +33,24 @@ a.slideButton, .dosearch
 .icon-search
     width rem(35px)
     height rem(35px)
+.cursos-menu
+    position fixed
+    font-size rem(20px)
+    top rem(16px)
+    right rem(110px)
+    z-index 17
+    text-decoration none
+    color #005f97
+    +below(cut)
+        display none
+    &:after
+        content 'new'
+        display inline-block
+        font-size 12px
+        vertical-align super
+        margin 0 5px
+        color #B91515
+        font-weight bold
 
 .overlay
     cursor pointer

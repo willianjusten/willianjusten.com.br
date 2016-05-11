@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="home cursos-content" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+    <div id="grid" class="row flex-grid">
+    {% for curso in site.cursos %}
+        <article class="box-item post-{{curso.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                <span class="ribbon">
+                    <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
+                </span>
+                <div class="box-body cursos-box-body">
+                    <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
+                    <div class="cursos-container">
+                        <a class="post-link" href="{{ curso.link }}">
+                            <h2 class="post-title" itemprop="name">
+                                {{ curso.title }}
+                            </h2>
+                        </a>
+                        <a class="post-link" href="{{ curso.link }}">
+                            <p class="description">{{ curso.introduction }}</p>
+                        </a>
+                        <div class="tags">
+                            {% for tag in curso.tags %}
+                                <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+        </article>
+    {% endfor %}
+    </div>
+</main>

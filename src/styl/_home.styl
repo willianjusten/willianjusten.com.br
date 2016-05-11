@@ -7,6 +7,9 @@ main
 .flex-grid
     display flex
     flex-flow row wrap
+    
+.cursos-content
+    min-height calc('100vh - 172px')
 
 .title-category
     center(rem(1000px))
@@ -24,6 +27,16 @@ main
     min-height rem(285px)
     transition all .3s
     position relative
+    +below(cut)
+        margin 0 rem(10px) rem(50px)
+    .cursos-image
+        background-size cover
+        background-position top center
+        width 100%
+        height 175px
+        border-bottom 1px solid #eee
+        +below(cut)
+            height 200px
     &:hover
         box-shadow 1px 2px 10px #eee
     a
@@ -31,8 +44,12 @@ main
         &:hover
             .box-item
                 box-shadow 10px 10px 10px #eee
+    .cursos-container
+        padding rem(25px)
     .box-body
         padding rem(25px)
+        &.cursos-box-body
+            padding 0
         time
             font-size rem(14px)
             color #b2bac2
