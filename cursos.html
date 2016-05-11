@@ -10,16 +10,16 @@ layout: default
                     <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
                 </span>
                 <div class="box-body cursos-box-body">
-                    <a class="post-link" href="{{ curso.link }}">
+                    <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
                         <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
                     </a>
                     <div class="cursos-container">
-                        <a class="post-link" href="{{ curso.link }}">
+                        <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
                             <h2 class="post-title" itemprop="name">
                                 {{ curso.title }}
                             </h2>
                         </a>
-                        <a class="post-link" href="{{ curso.link }}">
+                        <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
                             <p class="description">{{ curso.introduction }}</p>
                         </a>
                         <div class="tags">
