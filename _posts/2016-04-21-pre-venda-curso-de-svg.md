@@ -57,6 +57,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - ViewBox e ViewPort
     - preserveAspectRatio
     - Formas Básicas
+    - Elemento Path
     - Groups, defs, use e symbol
 - Estilizando o SVG
     - Métodos para estilizar e Peso das Propriedades
