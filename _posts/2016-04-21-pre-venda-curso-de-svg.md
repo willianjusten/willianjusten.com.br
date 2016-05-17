@@ -53,6 +53,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Como Data URIs
     - Inline SVG
 - A estrutura do SVG
+    - Plano Cartesiano
     - ViewBox e ViewPort
     - preserveAspectRatio
     - Formas Básicas
