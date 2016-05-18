@@ -62,8 +62,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
 - Estilizando o SVG
     - Métodos para estilizar e Peso das Propriedades
     - Fill e Stroke
-    - O poder do currentColor
-    - Reutilizando com estilos diferentes
+    - Colorindo ícones com mais de uma cor
 - Projeto #1 - Construindo um SVG responsivo e adaptativo
     - Tornando o SVG Fluido
     - Tornando o SVG adaptativo
