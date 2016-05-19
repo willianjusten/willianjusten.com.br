@@ -1,0 +1,126 @@
+---
+layout: post
+title: "Mudando sua vida através de projetos paralelos"
+date: 2016-05-19 14:39:52
+image: '/assets/img/'
+description: "Fica aqui um relato de alguém que mudou sua vida e quer mudar ainda mais."
+main-class: 'misc'
+color: '#7AAB13'
+tags:
+    - dev
+    - life
+categories:
+twitter_text: 'Mudando sua vida através de projetos paralelos'
+introduction: 'Fica aqui um relato de alguém que mudou sua vida e quer mudar ainda mais.'
+---
+
+## Introdução
+
+Fala pessoal, quando eu escrevi o post [O que ninguém diz para os iniciantes](http://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), eu dizia que aquele talvez fosse o post que mais me emocionava. Mas eu acho que estou ficando muito molenga, porque esse post vai ser mais um que vou me emocionar enquanto escrevo.
+
+Para não perder o costume, a playlist que estou escutando hoje é uma de minha autoria e especial para esse post, que é [Side Projects](https://open.spotify.com/user/willianjusten/playlist/031nQBF66JwosHhCH9Degg). Na playlist você vai encontrar, em sua maioria, bandas indies e desconhecidas (sim, ouço muita coisa desconhecida), mas que você talvez curta =)
+
+Esse post deve acabar ficando um pouquinho grande e por isso, vou separá-lo em alguns tópicos principais. Que serão:
+
+- [Um mergulho na minha história](#historia)
+- [Novos rumos](#novos-rumos)
+- [Novos projetos](#novos-projetos)
+- [Conclusão](#conclusao)
+
+Bom, sem mais delongas, vamos ao post! Prepara um cafézinho que o post vai ser um pouquinho grande, mas lê até o final please, não sou eu quem está pedindo, é esse lindo gatinho.
+
+![Um gatinho com olhinhos de pedindo alguma coisa](/assets/img/side-projects/cat.jpg)
+
+<h2 id="historia">Um mergulho na minha história</h2>
+
+Quando eu lancei o meu blog, há mais ou menos 1 ano e meio atrás, eu fiz uma [pequena apresentação sobre mim](http://willianjusten.com.br/making-of-parte-1/), falando que passei por outra área antes de chegar de fato a programação. Mas vou completar essa história com mais alguns pedacinhos. Eu sempre gosto de saber a experiência de vida das pessoas, o que fizeram antes, quais suas escolhas para tal, então por que eu mesmo não fazer né?
+
+Bom, eu como todo nerd/geek sempre fui apaixonado por jogos, como eles funcionavam, a lógica e a física me impressionavam. E por causa disso, lá pelos idos de 2000, acabei conhecendo uma parada chamada [Rpg Maker](http://www.rpgmakerweb.com/), era uma engine beeeem tosca, mas que te permitia criar joguinhos de RPG com interface gráfica e alguns pequenos detalhes de lógica todo fundamentado em condicionais, ali deve ter sido meu "primeiro contato" com "programação". Criei vários joguinhos com meus primos, me divertia muito.
+
+Aquele foi meu primeiro contato, mas depois passei a ser só um player normal. Comecei a me apaixonar por Química, porque ela me permitia entender como as coisas funcionavam, sim, eu sempre fui aquele que futucava tudo para entender. E então eu fiz um curso técnico em Química e logo após, entrei para uma faculdade de Química muito boa.
+
+Naquela época eu jogava um MMORPG chamado [World of Warcraft](http://us.battle.net/wow/pt/), mas jogava no servidor oficial da Blizzard mesmo. Mal entrei na faculdade e conheci uns amigos que jogavam em um servidor pirata chamado [Mod World](https://www.youtube.com/watch?v=RHNkvHmh8Ac). Fiquei impressionado com aquilo, para as pessoas que conhecem o jogo, sabem que ele é gigantesco, fiquei curioso como as pessoas conseguiram fazer o jogo funcionar num servidor não oficial e ainda chamar tantas outras pessoas para jogar. Resolvi jogar nesse servidor pirata para conhecer e também porque era mais divertido jogar com meus amigos de faculdade.
+
+Ao mesmo tempo, na Química eu estava começando a conhecer o pessoal do Laboratório de Química Computacional, eles precisavam de alguém que sabia mexer com Linux, que gostasse de Química e quisesse aprender mais sobre modelagem 3d. Na hora eu me ofereci e acabei ganhando uma bolsa de iniciação científica. Comecei a trabalhar bastante com computação desde então, eu aprendi a mexer em clusters (mas antes eu quase ferrei um =x), aprendi Fortran, Matriz Z, OpenGL e um pouquinho de C/C++. 
+
+E eis que o inesperado aconteceu, infelizmente o fundador do servidor de WoW havia falecido de um infarto fulminante e pediram então se alguém se voluntariava a tentar tocar o barco no lugar dele, só enquanto as coisas se ajustavam. Como eu sou maluco, me ofereci. A questão é que eu num tinha a mínima ideia de como era gerenciar um servidor de um jogo, ainda mais um tão grande e com tantas coisas. 
+
+A primeira merda que deu, foi que a máquina atual que ficava o jogo era muito cara e sem o fundador, não teríamos como pagar. Então me foi encubida a tarefa de escolher um novo lugar para hospedar o jogo. E vocês acham que eu sabia como escolher? Eu não tinha a mínima ideia! Mas nosso amigo Google é realmente um companheiro, bastou algumas pesquisas, falar com as pessoas certas e nos fóruns corretos e descobri qual seria a melhor configuração. Depois disso, ainda precisei aprender como fazer tudo rodar, conectar o banco de dados, nossa, foram alguns dias intensos. Faltei aula a semana toda só para me dedicar a isso e no final deu tudo certo! Ver a galera gritando nos canais meu nome e agradecendo, foi demais, uma das melhores sensações que eu já tinha tido, eu finalmente tinha sido útil! Foi nesse mesmo servidor que eu fiz meu melhor amigo até hoje, um gaúcho chamado Leonardo Silva, tive uma namorada de 5 anos e fiz outros grandes amigos até da nossa área como o [Yuri Piratello](https://br.linkedin.com/in/yuripiratello), que sempre me ajuda em umas dúvidas idiotas.
+
+Só que fazer faculdade, iniciação científica e manter o servidor estava ficando muito difícil e eu tive que desistir desse que foi meu **primeiro projeto paralelo**... Passei mais um ano arrastado na faculdade e decidi que não era mais isso que eu queria, eu gostava mesmo era de computação, esse negócio de fórmulas de Físico Química estava chato demais. Larguei a faculdade prestes a terminar e fiz minha **primeira grande mudança**, voltar para minha cidade natal e começar um curso de TI!
+
+Quando eu voltei para minha cidade, eu precisava arrumar um emprego, porque não tinha como minha mãe ficar me sustentando. E o meu primeiro serviço na área foi como professor num cursinho de informática, isso mesmo, eu ensinava Office, Linux e Hardware... Na faculdade, como eu já sabia um pouquinho mais dos assuntos, passei quase o curso todo auxiliando meus amigos, cheguei até dar aula de programação para um grupinho. Um amigo, [Felipe Borde](https://br.linkedin.com/in/felipe-lima-8690b4b0/en), sempre falava que eu deveria dar aula, que eu explicava muito bem. Eu não sabia o que isso iria virar né...
+
+Dentro da faculdade de TI, eu resolvi criar esse blog, meu **segundo projeto paralelo** de grande importância. Meu amigo [Guilherme Louro](http://guilhermelouro.com.br/) ficava me sacaneando para eu criar logo um site e foi assim que eu criei. Nesse blog, eu me dediquei a sempre passar conteúdo que eu achava importante e também para eu fixar melhor algum assunto. Foi através desse blog que eu comecei a ficar mais ativo na comunidade, acabei conhecendo várias e várias pessoas da área, comecei a palestrar, fui trabalhar na [globo.com](http://www.globo.com/) e depois na [HUGE](http://www.hugeinc.com/).
+
+E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes) e agora estou fazendo a [pré-venda do meu curso de SVG](http://willianjusten.com.br/pre-venda-curso-de-svg/).
+
+Isso é um pouquinho da minha história, sempre fui meio maluco de meter as caras, mudei bastante através dos meus projetos paralelos e continuo mudando. E reparei que a cada projeto paralelo, uma grande mudança veio junto.
+
+<h2 id="novos-rumos">Novos Rumos</h2>
+
+E assim como no meu primeiro projeto paralelo teve uma grande mudança, que foi sair da Química para TI. No meu segundo projeto paralelo também tiveram as mudanças de empresas e conhecimento. Para fechar meu terceiro projeto paralelo, eu tinha que ter uma grande mudança também! 
+
+Anuncio aqui, que saí da HUGE para me dedicar totalmente aos meus projetos paralelos durante um tempo e também um sonho que tenho há muito tempo, que é viajar pelo mundo, conhecendo novas culturas, novas pessoas e claro, vendo como são os programadores em cada lugarzinho. Sempre me imaginei como na cena abaixo:
+
+![Um homem sentado a beira de um lago com várias montanhas com picos congelados a frente](/assets/img/side-projects/digital-nomad.jpg)
+
+E para conseguir essa grande mudança, não depende inteiramente de mim, mas de vocês também, que acessam meu blog, compartilham meu conteúdo por aí, me ajudam consumindo meu cursos, fazendo doação e também me apoiando ao comprar meus cursos. Atualmente, vocês podem me ajudar doando nos seguintes botões:
+
+<div class="container-donation">
+    <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+        <input type="hidden" name="currency" value="BRL">
+        <input type="hidden" name="receiverEmail" value="willianjustenqui@gmail.com">
+        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+    </form>
+
+    <form class="form-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="A2ZASCVXE7X36">
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" alt="doe =)" width="1" height="1">
+    </form>
+</div>
+
+E como a maioria deve saber, eu estou construindo um curso de SVG que está em pré-venda, mas até o **próximo domingo (22/05)** eu estou disponibilizando o curso ainda mais barato! Saindo por apenas **R$ 120,00** e só podem ser comprados através dos botões abaixo ou transferência. Depois desses dias, eu vou remover esses botões, então, seja esperto.
+
+### Promoção da Pré-venda (até dia 22/05)
+
+<div class="container-donation">
+    <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/payment.html?iot=button" method="post" onsubmit="ga('send', 'event', 'mkt', 'click', 'pagseguro curso promo')">
+        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+        <input type="hidden" name="code" value="CD5792A15454185CC4AF8F8425902268" />
+        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+    </form>
+
+    <form class="form-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"  onsubmit="ga('send', 'event', 'mkt', 'click', 'paypal curso promo')">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="7PUZS7ZCPUPLL">
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+    </form>
+</div>
+
+
+### Transferência
+
+**Nome:** Willian Justen de Vasconcellos
+
+**Agência:** 2971
+
+**Conta:** 25198-4
+
+**Banco Itau**
+
+Quem fizer transferência, manda um email para willianjustenqui@gmail.com com a confirmação. Para ter o seu email salvo.
+
+<h2 id="novos-projetos">Novos Projetos</h2>
+
+Além desse novo rumo que estarei tomando para minha vida, também pretendo criar novos projetos, tudo sempre em prol de ajudar a comunidade e retornar a ajuda que vocês me derem para esse meu sonho. Pretendo sim criar novos cursos de diversos assuntos que vocês tem me pedido e algumas coisas bastante novas que nunca vi sendo feito por aqui. Espero que gostem das surpresas que tem por vir =D
+
+<h2 id="conclusao">Conclusão</h2>
+
+Bom galera, é isso aí, a ideia de criar esse post era passar um pouquinho da minha vida, como ela foi mudando de acordo com meus projetos paralelos. Mostrar para vocês que suas vidas podem mudar e muito fora do seu trabalho principal. Se você faz administração, se você faz química, seja lá o que for, busque o que você ama, mesmo que possa parecer a pior escolha naquele momento, tudo que você faz por amor acaba sendo mais reconfortante e mais valoroso no final.
+
+Você não tem como saber onde os seus projetos paralelos vão te levar. Quando você começa a trabalhar neles, você ainda não consegue ver claramente os benefícios que ele está te trazendo. Mas esses projetos podem trazer várias coisas. Seja um novo portfólio que vai trazer um próximo trabalho ou cliente. Pode ser algo que você se apaixone tanto que te revigore e faça voltar a ter amor pelas coisas e pela sua vida. Enfim, um projeto paralelo pode significar várias coisas e tudo que você precisa é começar!
