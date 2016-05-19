@@ -2,7 +2,7 @@
 layout: post
 title: "Mudando sua vida através de projetos paralelos"
 date: 2016-05-19 14:39:52
-image: '/assets/img/'
+image: '/assets/img/side-projects/digital-nomad.jpg'
 description: "Fica aqui um relato de alguém que mudou sua vida e quer mudar ainda mais."
 main-class: 'misc'
 color: '#7AAB13'
