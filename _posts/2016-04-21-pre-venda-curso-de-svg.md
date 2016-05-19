@@ -68,7 +68,6 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Tornando o SVG adaptativo
 - Sistemas de Ícones em SVG
     - Aprimorando o Symbols e Defs
-    - SVG também tem Sprites
     - Usando o Icomoon
 - Projeto #2 - Criando um boilerplate em Gulp para gerar sprites
 - Projeto #3 - Criando um loader com SVG e CSS Animations
