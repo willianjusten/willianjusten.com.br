@@ -105,7 +105,7 @@ E para conseguir essa grande mudança, eu venho me planejando já há algum temp
     </form>
 </div>
 
-E também para conseguir gerar o resto da renda, que vai me permitir esse desafio, estou estou construindo um curso de SVG que está em pré-venda.
+E também para conseguir gerar o resto da renda, que vai me permitir esse desafio, estou construindo um curso de SVG que está em pré-venda.
 
 Até o **próximo domingo (22/05)** eu estou disponibilizando o curso ainda mais barato! Saindo por apenas **R$ 120,00** e só podem ser comprados através dos botões abaixo ou transferência. Depois desses dias, eu vou remover esses botões, então, seja esperto.
 
