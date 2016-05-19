@@ -23,6 +23,7 @@ Para não perder o costume, a playlist que estou escutando hoje é uma de minha 
 Esse post deve acabar ficando um pouquinho grande e por isso, vou separá-lo em alguns tópicos principais. Que serão:
 
 - [Um mergulho na minha história](#historia)
+- [Meus cursos](#meus-cursos)
 - [Novos rumos](#novos-rumos)
 - [Novos projetos](#novos-projetos)
 - [Conclusão](#conclusao)
@@ -57,6 +58,27 @@ E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a
 
 Isso é um pouquinho da minha história, sempre fui meio maluco de meter as caras, mudei bastante através dos meus projetos paralelos e continuo mudando. E reparei que a cada projeto paralelo, uma grande mudança veio junto.
 
+<h2 id="meus-cursos">Meus cursos</h2>
+
+Continuando a falar dos cursos que já lancei, queria agradecer imensamente a todos que já se inscreveram, que compartilharam e principalmente, a todos aqueles que já assistiram e finalizaram o curso, vocês são demais!
+
+Vou passar algumas estátisticas para vocês entenderem o quanto estou feliz e também porque quero sempre deixar tudo transparente para vocês, nessa nova etapa.
+
+Já foram **1896 alunos inscritos!**
+
+Segue o gráfico referente ao [curso de Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll)
+
+![Gráfico de estatística para o Jekyll](/assets/img/side-projects/jekyll-stats.png)
+
+Como podemos ver, foram **mais de 350 horas assistidas**, aproximadamente **7500 vídeos tocados** e cerca de 40% das pessoas que iniciaram o curso, finalizaram ele. Isso é incrível!! <3
+
+E para o [curso de Git e Github](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes) os números são ainda mais surpreendentes para mim.
+
+![Gráfico de estatística para o git](/assets/img/side-projects/github-stats.png)
+
+Foram **mais de 600 horas assistidas**, com mais de **14 mil vídeos tocados**, sendo que mais de 50% alunos finalizaram o curso! Ou seja, mais de **800 pessoas** melhoraram seu conhecimento em Git, uma ferramenta que é fundamental para o nosso dia a dia como programador.
+
+
 <h2 id="novos-rumos">Novos Rumos</h2>
 
 E assim como no meu primeiro projeto paralelo teve uma grande mudança, que foi sair da Química para TI. No meu segundo projeto paralelo também tiveram as mudanças de empresas e conhecimento. Para fechar meu terceiro projeto paralelo, eu tinha que ter uma grande mudança também! 
@@ -65,7 +87,7 @@ Anuncio aqui, que saí da HUGE para me dedicar totalmente aos meus projetos para
 
 ![Um homem sentado a beira de um lago com várias montanhas com picos congelados a frente](/assets/img/side-projects/digital-nomad.jpg)
 
-E para conseguir essa grande mudança, não depende inteiramente de mim, mas de vocês também, que acessam meu blog, compartilham meu conteúdo por aí, me ajudam consumindo meu cursos, fazendo doação e também me apoiando ao comprar meus cursos. Atualmente, vocês podem me ajudar doando nos seguintes botões:
+E para conseguir essa grande mudança, eu venho me planejando já há algum tempinho. Juntei um dinheiro enquanto estives nas empresas grandes que passei e agora comecei com essa iniciativa dos cursos online. Como eu sempre tento fazer as minhas coisas pela comunidade, resolvi criar cursos gratuitos, onde quem quiser ajudar, pode doar o quanto achar que os cursos valem, através dos botões:
 
 <div class="container-donation">
     <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
@@ -83,7 +105,11 @@ E para conseguir essa grande mudança, não depende inteiramente de mim, mas de 
     </form>
 </div>
 
-E como a maioria deve saber, eu estou construindo um curso de SVG que está em pré-venda, mas até o **próximo domingo (22/05)** eu estou disponibilizando o curso ainda mais barato! Saindo por apenas **R$ 120,00** e só podem ser comprados através dos botões abaixo ou transferência. Depois desses dias, eu vou remover esses botões, então, seja esperto.
+E também para conseguir gerar o resto da renda, que vai me permitir esse desafio, estou estou construindo um curso de SVG que está em pré-venda.
+
+Até o **próximo domingo (22/05)** eu estou disponibilizando o curso ainda mais barato! Saindo por apenas **R$ 120,00** e só podem ser comprados através dos botões abaixo ou transferência. Depois desses dias, eu vou remover esses botões, então, seja esperto.
+
+E quem me ajudou desde cedo na pré-venda já vai ganhar R$ 30,00 de desconto em qualquer outro curso que eu lançar! Vocês foram muito importantes por apostarem em mim desde o início.
 
 ### Promoção da Pré-venda (até dia 22/05)
 
