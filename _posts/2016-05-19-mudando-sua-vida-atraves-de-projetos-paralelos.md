@@ -87,7 +87,7 @@ Anuncio aqui, que saí da HUGE para me dedicar totalmente aos meus projetos para
 
 ![Um homem sentado a beira de um lago com várias montanhas com picos congelados a frente](/assets/img/side-projects/digital-nomad.jpg)
 
-E para conseguir essa grande mudança, eu venho me planejando já há algum tempinho. Juntei um dinheiro enquanto estives nas empresas grandes que passei e agora comecei com essa iniciativa dos cursos online. Como eu sempre tento fazer as minhas coisas pela comunidade, resolvi criar cursos gratuitos, onde quem quiser ajudar, pode doar o quanto achar que os cursos valem, através dos botões:
+E para conseguir essa grande mudança, eu venho me planejando já há algum tempinho. Juntei um dinheiro enquanto estive nas empresas grandes que passei e agora comecei com essa iniciativa dos cursos online. Como eu sempre tento fazer as minhas coisas pela comunidade, resolvi criar cursos gratuitos, onde quem quiser ajudar, pode doar o quanto achar que os cursos valem, através dos botões:
 
 <div class="container-donation">
     <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
