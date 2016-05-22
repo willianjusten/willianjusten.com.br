@@ -69,8 +69,8 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Tornando o SVG Fluido
     - Tornando o SVG adaptativo
 - Sistemas de Ícones em SVG
+    - Fixando o uso de ícones com Symbol
     - Usando o Icomoon
-    - Aprimorando o Symbols e Defs
 - Projeto #2 - Criando um boilerplate em Gulp para gerar sprites
 - Projeto #3 - Criando um loader com SVG e CSS Animations
     - Entendendo a animação com keyframes

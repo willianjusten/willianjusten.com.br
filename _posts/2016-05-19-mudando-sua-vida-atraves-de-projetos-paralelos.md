@@ -116,7 +116,7 @@ E quem me ajudou desde cedo na pré-venda já vai ganhar R$ 30,00 de desconto em
 <div class="container-donation">
     <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/payment.html?iot=button" method="post" onsubmit="ga('send', 'event', 'mkt', 'click', 'pagseguro curso promo')">
         <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-        <input type="hidden" name="code" value="CD5792A15454185CC4AF8F8425902268" />
+        <input type="hidden" name="code" value="B7D3680785859C6114551F90C2F31025" />
         <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
     </form>
 
