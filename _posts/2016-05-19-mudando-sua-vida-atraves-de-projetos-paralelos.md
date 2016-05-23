@@ -64,7 +64,7 @@ Continuando a falar dos cursos que já lancei, queria agradecer imensamente a to
 
 Vou passar algumas estátisticas para vocês entenderem o quanto estou feliz e também porque quero sempre deixar tudo transparente para vocês, nessa nova etapa.
 
-Já foram **1896 alunos inscritos!**
+Já foram **1957 alunos inscritos!** (Editado)
 
 Segue o gráfico referente ao [curso de Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll)
 
@@ -113,33 +113,7 @@ E quem me ajudou desde cedo na pré-venda já vai ganhar R$ 30,00 de desconto em
 
 ### Promoção da Pré-venda (até dia 22/05)
 
-<div class="container-donation">
-    <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/payment.html?iot=button" method="post" onsubmit="ga('send', 'event', 'mkt', 'click', 'pagseguro curso promo')">
-        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-        <input type="hidden" name="code" value="B7D3680785859C6114551F90C2F31025" />
-        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-    </form>
-
-    <form class="form-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"  onsubmit="ga('send', 'event', 'mkt', 'click', 'paypal curso promo')">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="7PUZS7ZCPUPLL">
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-    </form>
-</div>
-
-
-### Transferência
-
-**Nome:** Willian Justen de Vasconcellos
-
-**Agência:** 2971
-
-**Conta:** 25198-4
-
-**Banco Itau**
-
-Quem fizer transferência, manda um email para willianjustenqui@gmail.com com a confirmação. Para ter o seu email salvo.
+**Promoção esgotada! Muito obrigado a todos! =D**
 
 <h2 id="novos-projetos">Novos Projetos</h2>
 
