@@ -78,7 +78,6 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
 - Animações SVG com SMIL
     - Entendendo o que é SMIL
     - Criando uma animação simples
-    - Nomeando animações e sincronizando
     - Famoso Morph Path
     - Especificando um caminho para a animação
 - Manipulando SVG com JS
