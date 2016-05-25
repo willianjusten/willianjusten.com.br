@@ -91,7 +91,6 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
 - Filtros SVG
     - Alguns tipos de filtros
     - Aplicando em textos
-- Projeto #5 - Criando o efeito de desenho animado antigo
 - Acessibilidade no SVG
     - Dicas e informações para deixar tudo mais acessivel
 - Performance
