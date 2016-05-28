@@ -85,7 +85,8 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Criando novos elementos com JS
     - Definindo atributos
     - Algumas bibliotecas aconselhadas
-- Projeto #4 - Desenhando dinâmicamente com SVG
+- Entendendo o stroke-dasharray e stroke-dashoffset
+    - Criando um loader animado usando propriedades do stroke
     - Fazendo o efeito de desenhar
     - Usando o scroll para controlar o desenho
 - Filtros SVG
