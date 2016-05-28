@@ -82,8 +82,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Especificando um caminho para a animação
 - Manipulando SVG com JS
     - Identificando e Estilizando pelo DOM
-    - Criando novos elementos com JS
-    - Definindo atributos
+    - Criando novos elementos com JS e definindo atributos
     - Algumas bibliotecas aconselhadas
 - Entendendo o stroke-dasharray e stroke-dashoffset
     - Criando um loader animado usando propriedades do stroke
