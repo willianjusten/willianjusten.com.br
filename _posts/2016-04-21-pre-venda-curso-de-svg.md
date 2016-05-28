@@ -91,7 +91,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Usando o scroll para controlar o desenho
 - Filtros SVG
     - Alguns tipos de filtros
-    - Aplicando em textos
+    - Criando uma animação com filtros
 - Acessibilidade no SVG
     - Dicas e informações para deixar tudo mais acessivel
 - Performance
