@@ -32,6 +32,10 @@ Role a página até a parte de [pré-venda](#pre-venda) ou clique no link para e
 
 **O curso terá início entre o fim de Maio e início de Junho! =D**
 
+## Video
+
+<iframe width="420" height="420" src="https://www.youtube.com/embed/5CzafH8TUA8" frameborder="0" allowfullscreen></iframe>
+
 ## Objetivo do Curso
 
 O curso tem como objetivo passar desde os conceitos básicos do SVG até os mais avançados, permitindo criar basicamente o que se quiser com SVG. O curso será desenvolvido em pequenos módulos com vídeos curtos, facilitando assim o aprendizado e o desenvolvimento do aluno, visando sempre uma didática simples, concisa e bastante aplicada a prática de trabalho.
