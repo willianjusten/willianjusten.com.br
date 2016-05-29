@@ -84,7 +84,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Identificando e Estilizando pelo DOM
     - Criando novos elementos com JS e definindo atributos
     - Algumas bibliotecas aconselhadas
-- Entendendo o stroke-dasharray e stroke-dashoffset
+- Criando animações com as propriedades de Stroke
     - Criando um loader animado usando propriedades do stroke
     - Fazendo o efeito de desenhar
     - Usando o scroll para controlar o desenho
