@@ -85,8 +85,7 @@ Existirão alguns projetos ao decorrer do curso, para aplicarmos os conceitos ap
     - Famoso Morph Path
     - Especificando um caminho para a animação
 - Manipulando SVG com JS
-    - Identificando e Estilizando pelo DOM
-    - Criando novos elementos com JS e definindo atributos
+    - Utilizando JS para estilizar e criar novos elementos
     - Algumas bibliotecas aconselhadas
 - Criando animações com as propriedades de Stroke
     - Criando um loader animado usando propriedades do stroke
