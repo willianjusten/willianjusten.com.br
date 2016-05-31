@@ -30,7 +30,7 @@ Se você já leu meus posts e/ou assistiu algum curso meu e gostou, não perca a
 
 Role a página até a parte de [pré-venda](#pre-venda) ou clique no link para escolhar uma das opções. Que pode ser Paypal, Pagseguro ou até mesmo transferência bancária.
 
-**O curso terá início entre o fim de Maio e início de Junho! =D**
+**A pré-venda vai até dia 05/06 e o lançamento do curso será 06/06!**
 
 ## Video
 
