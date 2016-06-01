@@ -222,7 +222,11 @@ Essa demo irá funcionar no Chrome Canary e Firefox Developer Edition, então, m
 
 ## Conclusão
 
-Bom pessoal, foi um post rapidinho e simples, só mesmo para que vocês vejam as diferentes formas de fazer essa técnica, que é bastante importante e legal =)
+Bom pessoal, foi um post rapidinho e simples, só mesmo para que vocês vejam as diferentes formas de fazer essa técnica, que é bastante importante e legal.
+
+Se você gostou do post, não deixe de comentar, curtir, compartilhar =)
+
+Também lembrando aqui, que a promoção de [pré-venda](http://willianjusten.com.br/pre-venda-curso-de-svg/) do meu Curso de SVG está chegando ao fim, esse domingo (05/06) é o último, então corre para aproveitar o descontão!
 
 
 
