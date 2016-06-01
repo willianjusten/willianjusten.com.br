@@ -145,7 +145,7 @@ Repare que estamos diminuindo ao invés de um altura de `50px`, o valor de `70px
 
 ## Utilizando flexbox
 
-Um grande problema das técnicas acima é que precisamos ter uma altura fixa para o nosso footer e isso, em geral, não é algo muito bom para o design, os conteúdos podem mudar, assimm como a altura. Usar o flexbox para o rodapé fixo não só não necessita de markup extra, como também não precisa de uma altura fixa, genial não?
+Um grande problema das técnicas acima é que precisamos ter uma altura fixa para o nosso footer e isso, em geral, não é algo muito bom para o design, os conteúdos podem mudar, assim como a altura. Usar o flexbox para o rodapé fixo não só não necessita de markup extra, como também não precisa de uma altura fixa, genial não?
 
 {% highlight html %}
     <body>
