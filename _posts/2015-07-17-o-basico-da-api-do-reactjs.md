@@ -30,15 +30,17 @@ Tentarei não fazer um post grande e cansativo, portanto, irei separar os concei
 
 O primeiro de tudo é saber como podemos criar os componentes e como renderizá-los. Para isso, irei demonstrar com um simples `Hello World`, mas lembre-se que isso poderiam ser componentes de qualquer forma.
 
-### React.render
+### ReactDOM.render
 
 {% highlight js %}
-ReactComponent render(
-  ReactElement elemento_para_criar,
+render(
+  ReactElement element,
   DOMElement container,
   [function callback]
 )
 {% endhighlight %}
+
+**update: (02/06/2016)** - O método anteriormente ficava dentro da API do React, mas agora passou para a API específica do ReactDOM.
 
 O método `render` é um dos métodos mais importantes do React e que será responsável por renderizar elementos. Ele recebe 3 parâmetros, que são o elemento a ser criado, o local onde será inserido no DOM e uma função de callback, que é chamada logo após a renderização.
 
@@ -49,7 +51,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/1-render-getting-star
 ### Render sem JSX - React.createElement
 
 {% highlight js linenos %}
-React.render(
+ReactDOM.render(
     React.createElement('h1', null, "Hello World!"),
     document.getElementById("content")
 );
@@ -62,7 +64,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), fal
 ### Render com JSX
 
 {% highlight js %}
-React.render(
+ReactDOM.render(
     <h1>Hello World!</h1>,
     document.getElementById("content")
 );
@@ -87,7 +89,7 @@ var Hello = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 );
@@ -110,7 +112,7 @@ class Hello extends React.Component {
     }
 }
 
-React.render(
+ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 )
@@ -132,7 +134,7 @@ Já que é tudo JS, podemos usar o próprio JS para brincar dentro do render, co
 {% highlight js %}
 var frutas = ['Banana', 'Maçã', 'Uva'];
 
-React.render(
+ReactDOM.render(
   <div>
   {
     frutas.map(function (fruta) {
@@ -162,7 +164,7 @@ var Hello = React.createClass({
     }
 })
 
-React.render(<Hello name='Willian' />, document.getElementById('hello'));
+ReactDOM.render(<Hello name='Willian' />, document.getElementById('hello'));
 {% endhighlight %}
 
 Olhando no exemplo, notamos que ele recebe o nome da variável `name` e consegue renderizar o nome corretamente.
@@ -233,7 +235,7 @@ var Timer = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <Timer start={Date.now()} />,
     document.getElementById('timer')
 );
