@@ -55,7 +55,7 @@ Resumindo:
 
 Se quiser mais alguns motivos:
 
-* [6 Reasons Why We Love React.js](http://www.syncano.com/reactjs-reasons-why-part-1/)
+* [6 Reasons Why We Love React.js](https://www.syncano.io/blog/reactjs-reasons-why-part-1/)
 
 ## Como funciona?
 
