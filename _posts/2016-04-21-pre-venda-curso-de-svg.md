@@ -113,26 +113,10 @@ Todas as informações aqui, também podem ser encontradas no [repositório do c
 
 <h2 id="pre-venda">Pré-venda</h2>
 
-### Paypal 
+As compras agora poderão ser feitas de duas formas:
 
-<div class="button-post">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="ga('send', 'event', 'mkt', 'click', 'paypal curso')">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="TVDRNPCH55SJ2">
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1" alt="paypal">
-    </form>
-</div>
-
-### Pagseguro
-
-<div class="button-post">
-    <form action="https://pagseguro.uol.com.br/checkout/v2/cart.html?action=add" method="post" onsubmit="ga('send', 'event', 'mkt', 'click', 'pagseguro curso')">
-        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-        <input type="hidden" name="itemCode" value="9734468F919160CCC4B38FA33BDB8735" />
-        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-    </form>
-</div>
+- Em dólar direto pela plataforma: [Teachable](http://willianjusten.teachable.com/courses/aprendendo-svg-do-inicio-ao-avancado). No valor de **US$ 50,00**
+- Em real através do Eventick: [Eventick](http://www.eventick.com.br/curso-de-svg). No valor de de **R$ 150,00** na pré-venda e **R$ 200,00** no lançamento dia **06/06**.
 
 ### Transferência
 
