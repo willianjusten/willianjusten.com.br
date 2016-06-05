@@ -30,9 +30,7 @@ Se você já leu meus posts e/ou assistiu algum curso meu e gostou, não perca a
 
 Role a página até a parte de [pré-venda](#pre-venda) ou clique no link para escolhar uma das opções. Que pode ser Paypal, Pagseguro ou até mesmo transferência bancária.
 
-**A pré-venda foi finalizada, muito obrigado a todos!**
-
-O curso agora está disponível em seu preço normal e você pode [comprar por aqui](http://www.eventick.com.br/curso-de-svg)
+**A pré-venda vai até dia 05/06 e o lançamento do curso será 06/06!**
 
 ## Video
 
@@ -113,12 +111,12 @@ Todos os alunos que terminarem o curso irão receber um certificado de conclusã
 
 Todas as informações aqui, também podem ser encontradas no [repositório do curso](https://github.com/willianjusten/curso-de-svg), lá eu disponibilizarei os exemplos que serão feitos no curso e também irei tirar todas as dúvidas através das issues que podem ser abertas lá.
 
-<h2 id="pre-venda">Pré-venda Finalizada!</h2>
+<h2 id="pre-venda">Pré-venda</h2>
 
 As compras agora poderão ser feitas de duas formas:
 
 - Em dólar direto pela plataforma: [Teachable](http://willianjusten.teachable.com/courses/aprendendo-svg-do-inicio-ao-avancado). No valor de **US$ 50,00**
-- Em real através do Eventick: [Eventick](http://www.eventick.com.br/curso-de-svg). No valor de **R$ 200,00**.
+- Em real através do Eventick: [Eventick](http://www.eventick.com.br/curso-de-svg). No valor de de **R$ 150,00** na pré-venda e **R$ 200,00** no lançamento dia **06/06**.
 
 ### Transferência
 
