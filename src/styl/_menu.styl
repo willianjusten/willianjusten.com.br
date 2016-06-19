@@ -69,6 +69,8 @@ aside
     background-color main
     z-index 20
     box-shadow inset -10px -1px 15px -9px rgba(0,0,0,0.5)
+    @media(max-height: 420px)
+        padding: 0.7rem 0 0
     h2
         text-align center
         margin 0 0 rem(10px)
@@ -92,8 +94,8 @@ aside
                 &:hover
                     color main
                     background sec
-        .feed
-            border-bottom 1px solid sec
+                @media(max-height: 420px)
+                    padding 0.65rem
     &.slide
         right 0
 
