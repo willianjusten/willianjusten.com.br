@@ -8,6 +8,7 @@ main-class: 'js'
 color: '#D6BA32'
 tags:
 - js
+- tip
 categories:
 twitter_text: "Funções anônimas podem esconder uma má prática."
 introduction: "É muito comum usar funções anônimas o tempo todo, mas porque isso não é tão bom?"
