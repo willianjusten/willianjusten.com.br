@@ -89,8 +89,8 @@ function toggleActive() {
     this.classList.toggle('active')
 }
 
-document.querySelector('.item', toggleActive);
-document.querySelector('.another-item', toggleActive);
+document.querySelector('.item').addEventListener('click', toggleActive)
+document.querySelector('.another-item').addEventListener('click', toggleActive)
 {% endhighlight %}
 
 ## Funções declaradas facilitam o desacoplamento
