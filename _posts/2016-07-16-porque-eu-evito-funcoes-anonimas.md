@@ -29,8 +29,6 @@ var hey = function() {
     console.log('Hey');
 }
 
-const hey = () => console.log('Hey');
-
 function hey() {
     console.log('Hey');
 }
