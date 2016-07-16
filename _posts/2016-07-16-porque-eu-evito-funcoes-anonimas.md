@@ -38,7 +38,7 @@ obj.hey = function() {
 }
 {% endhighlight %}
 
-Se você reparar, somente a terceira opção, de fato a função é nomeada. Não estou dizendo para nunca utilizar as outras formas, mas tomar alguns cuidados, por quê?
+Se você reparar, a primeira forma estou nomeando a função através de uma variável e a segunda eu estou nomeando da forma tradicional. Mas precisamos tomar cuidado com o funcionamento dessas formas, por quê?
 
 ## Funções anônimas são difíceis de debugar
 
