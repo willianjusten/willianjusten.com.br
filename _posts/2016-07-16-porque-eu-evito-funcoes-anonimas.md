@@ -3,7 +3,7 @@ layout: post
 title: "Porque eu evito funções anônimas"
 date: 2016-07-16 13:08:38
 image: '/assets/img/js-anonima/anonima-erro.png'
-description:
+description: "Funções anônimas podem esconder uma má prática."
 main-class: 'js'
 color: '#D6BA32'
 tags:
