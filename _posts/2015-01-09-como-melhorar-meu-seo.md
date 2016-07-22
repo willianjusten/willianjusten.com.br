@@ -21,7 +21,7 @@ Search Engine Optimization ou SEO é um conjunto de estratégias e métodos para
 
 ## Qual a importância?
 
-Estar bem posicionado nos mecanismos de busca lhe permite ganhar mais acessos e com isso divulgar mais o seu produto.
+Estar [bem posicionado](http://neilpatel.com/br/2016/01/15/o-guia-rapido-e-pratico-para-seo-on-page/) nos mecanismos de busca lhe permite ganhar mais acessos e com isso divulgar mais o seu produto.
 
 >Ahhhh é só para isso? Não preciso disso não, eu quero fazer é um brógui.
 
