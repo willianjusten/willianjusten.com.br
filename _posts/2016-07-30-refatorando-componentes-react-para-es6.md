@@ -61,7 +61,15 @@ export default class MeuComponente extends React.Component {
 }
 ```
 
-Repare que eu estou também exportando diretamente o `MeuComponent` passando o `export default` no início. Quando eu passo o `default`, estou dizendo que não me importo em qual nome ele vai receber quando for importado. Se eu tivesse colocado só `export`, eu obrigatoriamente teria que importar com o mesmo nome. Outra forma de escrever exportando seria removendo o `export default` no início e colocando `export default MeuComponente;` ao final do código.
+Repare que eu estou também exportando diretamente o `MeuComponent` passando o `export default` no início. Quando eu passo o `default`, estou dizendo que não me importo em qual nome ele vai receber quando for importado. Se eu tivesse colocado só `export`, eu obrigatoriamente teria que importar com o mesmo nome. Outra forma de escrever exportando seria removendo o `export default` no início e colocando `export default MeuComponente;` ao final do código, que é minha opção favorita.
+
+```js
+class MeuComponente extends React.Component {
+    ...
+}
+
+export default MeuComponente;
+```
 
 ### PropTypes e getDefaultProps
 
