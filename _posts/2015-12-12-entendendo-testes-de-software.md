@@ -43,8 +43,6 @@ introduction: 'Para que servem os testes? O que eu ganho com eles? Que tipos de 
 
 Fala pessoal, esse talvez seja um dos posts que mais quis escrever e mais demorei também. Muito pelo fato de que eu não conseguia definir uma linha de pensamento de como escrever. Eu decidi que irei falar as teorias primeiro, que eu considero muito importante <s>por mais que ninguém goste</s> e então farei a prática.
 
-A ideia é ser uma pequena série de posts, onde vou falar sobre testes, Integração Contínua (CI), Entrega Contínua (CD) e após isso, a criação de uma app simples usando testes do início ao fim e fazendo deploy via CI no Heroku.
-
 Enquanto eu vou escrevendo, vou ouvindo [Ghost B.C.](https://open.spotify.com/artist/1Qp56T7n950O3EGMsSl81D), uma banda bastante controversa, mas que passei a curtir bastante.
 
 Pega lá um cafézinho e vem comigo, sei que você não gosta de teoria, mas é importante saber umas coisinhas.
