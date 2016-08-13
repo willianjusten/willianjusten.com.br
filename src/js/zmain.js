@@ -69,7 +69,7 @@ function scrollBanner() {
   }
 }
 
-if (screen.width > 1024) {
+if (screen.width > 1024 && document.getElementsByClassName('header-post').length >=1) {
   window.addEventListener('scroll', scrollBanner);
 }
 
