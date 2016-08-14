@@ -27,13 +27,13 @@ Como foi um vídeo, infelizmente não teve trilha sonora enquanto gravei, maaaas
 
 ## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PxLJg6v-u2k" frameborder="0" allowfullscreen></iframe>
+<div class='embed-container'><iframe style="width: 100% !important; height: 400px" src='https://www.youtube.com/embed/PxLJg6v-u2k' frameborder='0' allowfullscreen></iframe></div>
 
 ## Detalhes
 
 Quem curtiu e já está doido para começar uma aplicação React, segue o [link do create-react-app](https://github.com/facebookincubator/create-react-app). E para quem viu no vídeo, os passos são:
 
-```bash
+{% highlight sh %}
 # instalar globalmente o gerador
 npm install -g create-react-app
 
@@ -42,7 +42,7 @@ create-react-app nome-da-aplicacao
 
 # para rodar
 npm start
-```
+{% endhighlight %}
 
 ## Info
 
