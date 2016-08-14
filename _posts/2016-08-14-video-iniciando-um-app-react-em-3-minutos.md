@@ -23,7 +23,7 @@ Olá pessoal, esse vai ser meu primeiro post com vídeo, olha que legal <3
 
 A ideia é trazer esse novo modelo com vídeos bem curtinhos para galera que, assim como eu, não está com muito tempo para ler posts imensos e pode até ouvir enquanto faz outras coisas.
 
-Como foi um vídeo, infelizmente não teve trilha sonora enquanto gravei, maaaas, para não deixar você triste sem música, depois de assistir o vídeo, dá um play em [Gudrid Hansdottir](https://open.spotify.com/artist/6iDKe5bQr1XkmNsouyK5Pm), tem um som bem bacana e suave =D
+Como foi um vídeo, infelizmente não teve trilha sonora enquanto gravei, maaaas, para não deixar você triste sem música, depois de assistir o vídeo, dá um play em [Gudrid Hansdottir](https://open.spotify.com/artist/6iDKe5bQr1XkmNsouyK5Pm), tem um som bem bacana e suave, indicação do meu amigo [Jonas Mendes](http://nipher.io/).
 
 ## Video
 
