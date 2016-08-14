@@ -209,7 +209,9 @@ Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pa
 
 ### Pow, legal, mas não tem nada mais prático não?
 
-Eu sou a preguiça em pessoa e sempre que eu puder, vou tentar fazer algo para agilizar e organizar minhas coisas. Pensando nisso, eu criei um [Reveal Boilerplate](https://github.com/willianjusten/reveal-boilerplate), que além de já ter tudo do RevealJS, inclui algumas coisas legais para o meu desenvolvimento.
+![Qualy Presenter](https://raw.githubusercontent.com/Qualy-org/qualy-presenter/master/src/img/qualy-presenter.png)
+
+Eu sou a preguiça em pessoa e sempre que eu puder, vou tentar fazer algo para agilizar e organizar minhas coisas. Pensando nisso, eu criei o [Qualy Presenter](https://github.com/Qualy-org/qualy-presenter), que além de já ter tudo do RevealJS, inclui algumas coisas legais para o meu desenvolvimento.
 
 Eu uso o [Jade](http://jade-lang.com/) para escrever meus slides separados de forma mais organizada. Tem também o [Stylus](http://learnboost.github.io/stylus/), que é o pre-processador mais lindinho de todos. E para rodar tudo, compilar e fazer todas as outras mágicas, eu tenho o [GulpJS](http://gulpjs.com/).
 
@@ -217,13 +219,13 @@ Eu uso o [Jade](http://jade-lang.com/) para escrever meus slides separados de fo
 
 #### 1 - Estrutura 
 
-Todos os arquivos importantes ficam dentro da pasta [src](https://github.com/willianjusten/reveal-boilerplate/tree/master/src), que é onde ficam os arquivos ainda não compilados.
+Todos os arquivos importantes ficam dentro da pasta [src](https://github.com/Qualy-org/qualy-presenter/tree/master/src), que é onde ficam os arquivos ainda não compilados.
 
-A pasta [src/templates](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/templates) é onde ficam os [includes](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/templates/inc), estes são responsáveis pela inclusão dos scripts, arquivos de css, descrições, meta-tag e etc.
+A pasta [src/templates](https://github.com/Qualy-org/qualy-presenter/tree/master/src/templates) é onde ficam os [includes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/templates/inc), estes são responsáveis pela inclusão dos scripts, arquivos de css, descrições, meta-tag e etc.
 
-E o arquivo [src/templates/index.jade](https://github.com/willianjusten/reveal-boilerplate/blob/master/src/templates/index.jade) é onde eu monto e faço a chamada dos meus slides.
+E o arquivo [src/templates/index.jade](https://github.com/Qualy-org/qualy-presenter/blob/master/src/templates/index.jade) é onde eu monto e faço a chamada dos meus slides.
 
-Cada slide fica separado na pasta [src/slides](https://github.com/willianjusten/reveal-boilerplate/tree/master/src/slides) e pode ser chamado nessa index na ordem que eu desejar, assim fica tudo mais arrumadinho e me facilita a deletar/chamar ou não um slide =)
+Cada slide fica separado na pasta [src/slides](https://github.com/Qualy-org/qualy-presenter/tree/master/src/slides) e pode ser chamado nessa index na ordem que eu desejar, assim fica tudo mais arrumadinho e me facilita a deletar/chamar ou não um slide =)
 
 Os slides podem ser escritos usando a sintaxe do Jade ou tambem em html normal, então se você não souber escrever em jade, não se preocupe, escreva em html e tudo irá funcionar igual, basta lembrar de quando for incluir um slide na `index.jade`, coloque a extensão `.html` no final do arquivo. Segue exemplo:
 
@@ -243,7 +245,7 @@ Quando o arquivo for compilado, ele irá ler normalmente e juntar tudo para voc�
 
 #### 2 - Baixando o Boilerplate e instalando
 
-Basta ir em [Reveal-Boilerplate](https://github.com/willianjusten/reveal-boilerplate/), clonar ou baixar os arquivos na sua máquina. 
+Basta ir em [Qualy Presenter](https://github.com/Qualy-org/qualy-presenter/), clonar ou baixar os arquivos na sua máquina. 
 
 Depois basta criar um repositório no seu github com os arquivos iniciais. Segue os passos básicos:
 
