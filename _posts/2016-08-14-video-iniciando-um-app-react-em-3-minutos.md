@@ -31,6 +31,8 @@ Como foi um vídeo, infelizmente não teve trilha sonora enquanto gravei, maaaas
 
 ## Detalhes
 
+É importantante que você tenha o **Node >= 4** para que possa funcionar. Aconselho o Node >=6 para uma melhor performance.
+
 Quem curtiu e já está doido para começar uma aplicação React, segue o [link do create-react-app](https://github.com/facebookincubator/create-react-app). E para quem viu no vídeo, os passos são:
 
 {% highlight sh %}
