@@ -9,6 +9,7 @@ color: '#7AAB13'
 tags:
     - dev
     - eventos
+    - braziljs
 categories:
 twitter_text: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
 introduction: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
