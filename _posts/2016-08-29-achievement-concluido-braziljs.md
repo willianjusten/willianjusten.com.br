@@ -65,7 +65,7 @@ Ter visto a galera rindo dos meus exemplos e das minhas piadas bobas foi só me 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">final da palestra do <a href="https://twitter.com/Willian_justen">@Willian_justen</a> foi excelente 😁 <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a> <a href="https://t.co/aDLggwbhUd">pic.twitter.com/aDLggwbhUd</a></p>&mdash; yuri (@ybrntt) <a href="https://twitter.com/ybrntt/status/769259830305550340">August 26, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-E para assistir a apresentação inteira, só seguir [nesse link](https://youtu.be/tJ0XV9W4nHw?t=23396), já no tempo marcado.
+E para assistir a apresentação inteira, só seguir [nesse link](https://youtu.be/tJ0XV9W4nHw?t=23396), já no tempo marcado. Os slides também [estão aqui](http://willianjusten.com.br/braziljs-16).
 
 ## Depois
 
