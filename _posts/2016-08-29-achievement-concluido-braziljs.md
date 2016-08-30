@@ -11,7 +11,7 @@ tags:
     - eventos
     - braziljs
 categories:
-twitter_text: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
+twitter_text: "Tudo que me aconteceu antes, durante e depois."
 introduction: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
 ---
 
