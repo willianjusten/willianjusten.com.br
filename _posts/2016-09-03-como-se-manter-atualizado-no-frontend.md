@@ -149,7 +149,7 @@ Já se imaginou conversando com criadores das ferramentas que você utiliza no d
 - [@davidwalshblog](https://twitter.com/davidwalshblog) - desenvolver na Mozilla e escritor no blog de próprio nome.
 - [@jaffathecake](https://twitter.com/jaffathecake) - engenheiro na Google, vem falando muito sobre Service Workers.
 - [@jeresig](https://twitter.com/jeresig) - criador do jQuery, fundador da Khan Academy e escritor.
-- [@leaverou](https://twitter.com/leaverou) - criadora de várias ferramentas de desenvolvimento e pesquisadora no MIT.
+- [@leaverou](https://twitter.com/leaveroudev) - criadora de várias ferramentas de desenvolvimento e pesquisadora no MIT.
 - [@paul_irish](https://twitter.com/paul_irish) - outro engenheiro da Google, que trabalha bastante no Chrome DevTools.
 
 <h3 id="github">Github</h3>
