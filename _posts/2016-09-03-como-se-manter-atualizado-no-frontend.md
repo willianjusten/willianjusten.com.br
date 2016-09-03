@@ -110,6 +110,9 @@ Weekly é um conjunto de links, como o nome já diz, semanal. Dos trocentos link
 - [Javascript Weekly](http://javascriptweekly.com/) - weekly totalmente focada em JS.
 - [FiveJS](https://fivejs.codeschool.com/) - patrocinada pela CodeSchool, são 5 vídeos/links sobre JS da semana.
 - [Web Tools Weekly](http://webtoolsweekly.com/) - já pensou numa newsletter falando sobre ferramentas para te ajudar no dia a dia?
+- [Node Weekly](http://nodeweekly.com/) - Weekly com as principais novidades sobre Node.js.
+- [X-Team Weekly](https://x-team.com) - Weekly do X-team, com conteúdo além de links técnicos, como produtividade e inspiração.
+- [Ruby Weekly](http://rubyweekly.com/) - Ruby Weekly com o melhor do ruby.
 
 <h2 id="eventos">E eventos?</h2>
 
