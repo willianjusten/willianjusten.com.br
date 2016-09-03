@@ -151,6 +151,8 @@ Já se imaginou conversando com criadores das ferramentas que você utiliza no d
 
 Muita gente não vê a razão de seguir pessoas no Github, mas é uma das formas mais incríveis de você descobrir projetinhos novos! Assim como o Twitter, não vou colocar todos, pois seria uma lista gigantesca, mas coloco [minha lista de pessoas que sigo](https://github.com/willianjusten/following) e alguns importantes.
 
+Além de seguir pessoas no Github, existe o [Trending](https://github.com/trending), onde mostra os projetos que receberam mais stars durante um período de tempo, o que também é bastante legal.
+
 - [Euzinho](https://github.com/willianjusten/) - ah vai, segue lá, custa nada ahuahua
 - [Sinde Sorhus](https://github.com/sindresorhus) - o mito do Github, o cara criou praticamente tudo que você conhece e mais.
 - [Contra](https://github.com/contra) - criador do Gulp e várias outras coisinhas.
