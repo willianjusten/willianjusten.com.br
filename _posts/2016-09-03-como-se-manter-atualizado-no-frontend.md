@@ -38,7 +38,7 @@ Faaala pessoal, o post de hoje é uma dúvida comum de todo mundo (inclusive min
 
 **Primeiro aviso**, a ideia do post não é que você saia correndo pelos hypes e modinhas que aparecem todo dia no nosso mundo, a ideia é você saber melhor quando um post de certo blog que você segue lançou <s>tipo o meu</s> ou quando vai rolar um eventinho bacana e talz, enfim, serão várias dicas de apps e sites que poderão facilitar e muito a sua vida!
 
-Eu vou dividir cada tópico em 2 pedaços, um para falar das ferramentas/apps/sites e outro para vários links que vocês deveriam seguir. Nessa segunda parte, eu vou pedir muito a ajuda de vocês! Sim, quero deixar esse post vivo, e para isso, é só vocês enviarem links maneiros lá no [github desse blog](https://github.com/willianjusten/willianjusten.github.io), seja em forma de issue ou até PR nesse post (mais legal ainda =p), com coisas que vocês acham que todos deveriam ver/seguir.
+Eu vou dividir cada tópico em 2 pedaços, um para falar das ferramentas/apps/sites e outro para vários links que vocês deveriam seguir. Nessa segunda parte, eu vou pedir muito a ajuda de vocês! Sim, quero deixar esse post vivo, e para isso, é só vocês enviarem links maneiros lá no [github desse blog](https://github.com/willianjusten/willianjusten.github.io), seja em forma de issue ou até [PR nesse post](https://github.com/willianjusten/willianjusten.github.io/blob/master/_posts/2016-09-03-como-se-manter-atualizado-no-frontend.md) (mais legal ainda =p), com coisas que vocês acham que todos deveriam ver/seguir.
 
 A trilha sonora do post de hoje é uma banda sueca, que faz um som instrumental de muito boa qualidade e se chama [pg.lost](https://open.spotify.com/artist/6YK58h9BCYpFNv10fsMwoS), talvez um dos melhores sons dos últimos tempos que eu tenha ouvido.
 
@@ -164,4 +164,4 @@ Muita gente não vê a razão de seguir pessoas no Github, mas é uma das formas
 
 Bom galera, é isso aí, se atualizar no mundo de Frontend é bastante complicado, mas podemos tornar essa tarefa um pouco mais simples e mais direcionada utilizando essas ferramentas e dicas =)
 
-Lembre-se, conhece algo maneiro e que merece ser mencionado aqui? Manda uma issue lá no [Github do blog](https://github.com/willianjusten/willianjusten.github.io) ou até mesmo um PR direto nesse post. 
+Lembre-se, conhece algo maneiro e que merece ser mencionado aqui? Manda uma issue lá no [Github do blog](https://github.com/willianjusten/willianjusten.github.io) ou até mesmo um [PR direto nesse post](https://github.com/willianjusten/willianjusten.github.io/blob/master/_posts/2016-09-03-como-se-manter-atualizado-no-frontend.md). 
