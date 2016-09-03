@@ -110,7 +110,7 @@ Weekly é um conjunto de links, como o nome já diz, semanal. Dos trocentos link
 - [Javascript Weekly](http://javascriptweekly.com/) - weekly totalmente focada em JS.
 - [FiveJS](https://fivejs.codeschool.com/) - patrocinada pela CodeSchool, são 5 vídeos/links sobre JS da semana.
 - [Web Tools Weekly](http://webtoolsweekly.com/) - já pensou numa newsletter falando sobre ferramentas para te ajudar no dia a dia?
-- [Umaar Hansa Dev Tips](https://umaar.com/dev-tips/]) - Uma weekly para acompanhar as novas features e recursos do Devtools do Chrome
+- [Umaar Hansa Dev Tips](https://umaar.com/dev-tips/) - Uma weekly para acompanhar as novas features e recursos do Devtools do Chrome
 
 <h2 id="eventos">E eventos?</h2>
 
