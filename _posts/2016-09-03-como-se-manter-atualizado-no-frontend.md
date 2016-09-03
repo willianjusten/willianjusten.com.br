@@ -9,7 +9,7 @@ color: '#637a91'
 tags:
 - frontend
 - tip
-- productivity
+- eventos
 categories:
 twitter_text: 'Se mantendo atualizado na bagunça que é o frontend'
 introduction: 'O mundo do Frontend muda muito o tempo todo e fica difícil de acompanhar toda essa mudança, aqui vão umas dicas para ajudar bastante nisso.'
