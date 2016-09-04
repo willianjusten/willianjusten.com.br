@@ -90,6 +90,7 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Una Kravets Blog](https://una.im/) - desenvolvedora na DigitalOcean sempre trás muitos assuntos legais.
 - [A List Apart](http://alistapart.com/) - um blog escrito por várias autoridades de desenvolvimento.
 - [Sitepoint](https://www.sitepoint.com/) - como se entitulam um blog de desenvolvedores para desenvolvedores.
+- [Mozilla Hacks](https://hacks.mozilla.org/) - novidades da Mozilla para desenvolvedores web.
 
 #### Em português
 
