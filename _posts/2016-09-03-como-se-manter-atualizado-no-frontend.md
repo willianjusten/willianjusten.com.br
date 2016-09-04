@@ -99,6 +99,7 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
 - [Da2k](http://blog.da2k.com.br/) - blog de outro amigão o Fernando Daciuk, com posts super completos de JS.
 - [Nando Moreira Blog](https://nandomoreira.me/blog/) - o cara que mais muda de layout para blog na face da Terra! Tem bastante coisa legal lá, vale a leitura.
+- [Arquitetura de Informação](http://arquiteturadeinformacao.com/) - blog bem legal sobre usabilidade, user experience, design, tecnologia e comportamento.
 
 <h2 id="reddit">Reddit</h2>
 
