@@ -91,6 +91,7 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [A List Apart](http://alistapart.com/) - um blog escrito por várias autoridades de desenvolvimento.
 - [Sitepoint](https://www.sitepoint.com/) - como se entitulam um blog de desenvolvedores para desenvolvedores.
 - [Mozilla Hacks](https://hacks.mozilla.org/) - novidades da Mozilla para desenvolvedores web.
+- [Hacker News](https://news.ycombinator.com/) - páginas selecionadas diariamente com novidades sobre front-end e TI em geral.
 
 #### Em português
 
