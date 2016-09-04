@@ -23,6 +23,7 @@ introduction: 'O mundo do Frontend muda muito o tempo todo e fica difícil de ac
     - [Panda](#panda)
     - [Pocket](#pocket)
     - [Links dos blogs](#links-blogs)
+- [Reddit](#reddit)
 - [Weekly](#weekly)
 - [E eventos?](#eventos)
     - [Meetup](#meetup)
@@ -98,6 +99,18 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
 - [Da2k](http://blog.da2k.com.br/) - blog de outro amigão o Fernando Daciuk, com posts super completos de JS.
 - [Nando Moreira Blog](https://nandomoreira.me/blog/) - o cara que mais muda de layout para blog na face da Terra! Tem bastante coisa legal lá, vale a leitura.
+
+<h2 id="reddit">Reddit</h2>
+
+O [reddit](https://www.reddit.com) é um agregador de links/notícias, quase que uma rede social para postar coisas de diversas categorias (os chamados [subreddits](https://www.reddit.com/subreddits/)) e, eventualmente, discutir sobre elas. Para desenvolvedores web, existem vários subreddits interessantes:
+
+- [/r/programming](https://www.reddit.com/r/programming) - links mais gerais sobre programação
+- [/r/webdev](https://www.reddit.com/r/webdev/) - links específicos sobre desenvolvimento web
+- [/r/Frontend](https://www.reddit.com/r/Frontend/) - links específicos sobre front-end
+- [/r/css](https://www.reddit.com/r/css/) - links específicos sobre CSS
+- [/r/javascript](https://www.reddit.com/r/javascript/) - links específicos sobre JavaScript
+
+É possível ainda criar uma coleção pessoal (chamado de multireddit), onde todas as coisas postadas nos subreddits selecionados passam a aparecer nessa coleção.
 
 <h2 id="weekly">Weekly</h2>
 
