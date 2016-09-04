@@ -90,7 +90,6 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Una Kravets Blog](https://una.im/) - desenvolvedora na DigitalOcean sempre trás muitos assuntos legais.
 - [A List Apart](http://alistapart.com/) - um blog escrito por várias autoridades de desenvolvimento.
 - [Sitepoint](https://www.sitepoint.com/) - como se entitulam um blog de desenvolvedores para desenvolvedores.
-- [Can I use](http://caniuse.com/) - tabelas de compatibilidade dos novos implementados nos browsers.
 - [Hacker News](https://news.ycombinator.com/) - páginas selecionadas diariamente com novidades sobre front-end e TI em geral. 
 
 #### Em português
