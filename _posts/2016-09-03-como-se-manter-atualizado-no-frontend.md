@@ -146,6 +146,8 @@ O Youtube é uma plataforma que oferece uma grande variedade de vídeos, princip
 - [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/videos)
 - [LearnCode Academy](https://www.youtube.com/user/learncodeacademy/videos)
 - [Nic Raboy](https://www.youtube.com/user/nicraboy/videos)
+- [DevTips](https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ)
+- [Codecourse](https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g)
 
 #### Em português
 
@@ -153,6 +155,11 @@ O Youtube é uma plataforma que oferece uma grande variedade de vídeos, princip
 - [Webschool JavaScript](https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg)
 - [Loiane Groner](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg)
 - [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ)
+- [BrazilJS](https://www.youtube.com/channel/UCnLdHOuue5i1O7TsH6oh07w)
+- [CSS Cast Show](https://www.youtube.com/channel/UC9d_htYmYYFUXB2vBKx4NgA)
+- [Gravento](https://www.youtube.com/channel/UCU_SZQAcN4IDs_RXY7iT4sg)
+- [Elcio Ferreira](https://www.youtube.com/channel/UCQj6o0dPVJd6yy16-49qIIg)
+- [Estevan Maito](https://www.youtube.com/channel/UCIUOmAsotrzdK8VsZuHfVHw)
 
 <h2 id="eventos">E eventos?</h2>
 
