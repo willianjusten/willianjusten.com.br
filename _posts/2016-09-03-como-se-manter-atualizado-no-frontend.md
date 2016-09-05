@@ -134,20 +134,20 @@ Weekly é um conjunto de links, como o nome já diz, semanal. Dos trocentos link
 
 <h2 id="youtube">Youtube</h2>
 
-O Youtube é uma plataforma que oferece uma grande variedade de vídeos, principalmente para desenvolvedores, há muitos tutoriais e cursos que ajudam os desenvolvedores a se manter atualizado.Segue alguns que podem ajudar nessa missão:
+O Youtube é uma plataforma que oferece uma grande variedade de vídeos, principalmente para desenvolvedores, há muitos tutoriais e cursos que ajudam os desenvolvedores a se manterem atualizados. Segue alguns que podem ajudar nessa missão:
 
 #### Em inglês
 
 - [thenewboston](https://www.youtube.com/user/thenewboston/videos)
 - [codigofacilito](https://www.youtube.com/user/codigofacilito/videos)
 - [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/videos)
-- [LearnCode.academy](https://www.youtube.com/user/learncodeacademy/videos)
+- [LearnCode Academy](https://www.youtube.com/user/learncodeacademy/videos)
 - [Nic Raboy](https://www.youtube.com/user/nicraboy/videos)
 
 #### Em português
 
 - [Rodrigo Branas](https://www.youtube.com/channel/UCkqOofjb7nl6V8vXrIbGtiQ)
-- [「 Webschool.io - JavaScript 」](https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg)
+- [Webschool JavaScript](https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg)
 - [Loiane Groner](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg)
 
 <h2 id="eventos">E eventos?</h2>
