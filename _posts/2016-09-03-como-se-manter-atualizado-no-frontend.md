@@ -148,6 +148,7 @@ O Youtube é uma plataforma que oferece uma grande variedade de vídeos, princip
 - [Nic Raboy](https://www.youtube.com/user/nicraboy/videos)
 - [DevTips](https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ)
 - [Codecourse](https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g)
+- [CSS-TRICKS | Chrys Coyier](https://www.youtube.com/channel/UCADyUOnhyEoQqrw_RrsGleA)
 
 #### Em português
 
