@@ -152,6 +152,7 @@ O Youtube é uma plataforma que oferece uma grande variedade de vídeos, princip
 - [Rodrigo Branas](https://www.youtube.com/channel/UCkqOofjb7nl6V8vXrIbGtiQ)
 - [Webschool JavaScript](https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg)
 - [Loiane Groner](https://www.youtube.com/channel/UCqQn92noBhY9VKQy4xCHPsg)
+- [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ)
 
 <h2 id="eventos">E eventos?</h2>
 
