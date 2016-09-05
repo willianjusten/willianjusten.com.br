@@ -136,7 +136,7 @@ Como o próprio ciclo do TDD já sugere, a última etapa é a refatoração. Ent
 
 O TDD se baseia principalmente nos testes unitários, que de fato são a base para o desenvolvimento orientado por testes. Mas existem outros testes tão importantes quanto. Martin Fowler, que é basicamente um dos maiores apoiadores do TDD, disse o seguinte: a maioria do desenvolvimento sempre foi pensada na interface e, com isso, os testes mais criados também eram os de interface. Mas o problema é que esses testes são muito lentos e nós não queremos isso. Nós queremos respostas eficientes e rápidas, por isso, os testes unitários precisam ser o de maior de número e os mesmos precisam ser bem rápidos. Seguindo esse pensamento, ele desenvolveu a seguinte pirâmide:
 
-![Pirâmide de testes](http://martinfowler.com/bliki/images/testPyramid/pyramid.png)
+![Pirâmide de testes](http://andimarek.github.io/angular-testing/images/pyramid.png)
 
 Nessa pirâmide, podemos ver que os testes unitários formam a base, seguidos pelos testes de serviço, que podem ser entendidos como testes de integração e testes de sanidade. Por final, temos os testes de interface, também conhecidos como testes de aceitação. Esse tipo de lógica faz com que os testes sejam mais eficazes e rápidos.
 
