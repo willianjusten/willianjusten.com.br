@@ -95,6 +95,7 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Hacker News](https://news.ycombinator.com/) - páginas selecionadas diariamente com novidades sobre front-end e TI em geral.
 - [Design Modo](http://designmodo.com/) - desde inspiração e novidade sobre UI/UX até programação front-end.
 - [Developer Drive](http://www.developerdrive.com/) - blog com novidade e tutoriais sobre desenvolvimento web.
+- [Wes Bos](http://wesbos.com/) - blog do canadaense Wes Bos, criador de alguns cursos de muita qualidade e ta sempre trazendo coisas novas.
 
 #### Em português
 
@@ -129,7 +130,7 @@ Weekly é um conjunto de links, como o nome já diz, semanal. Dos trocentos link
 - [Frontend Focus](http://html5weekly.com/) - antiga html5weekly, focando em bastante conteúdo de canvas, webGL, etc.
 - [Javascript Weekly](http://javascriptweekly.com/) - weekly totalmente focada em JS.
 - [FiveJS](https://fivejs.codeschool.com/) - patrocinada pela CodeSchool, são 5 vídeos/links sobre JS da semana.
-- [Web Tools Weekly](http://webtoolsweekly.com/) - já pensou numa newsletter falando sobre ferramentas para te ajudar 
+- [Web Tools Weekly](http://webtoolsweekly.com/) - já pensou numa newsletter falando sobre ferramentas para te ajudar
 - [Umaar Hansa Dev Tips](https://umaar.com/dev-tips/) - Uma weekly para acompanhar as novas features e recursos do Devtools do Chrome
 - [Accessibility Weekly](http://a11yweekly.com/) - Uma weekly focado em recursos de acessibilidade e diversas dicas sobre o assunto.
 - [Node Weekly](http://nodeweekly.com/) - Weekly com as principais novidades sobre Node.js.
@@ -150,6 +151,8 @@ O Youtube é uma plataforma que oferece uma grande variedade de vídeos, princip
 - [DevTips](https://www.youtube.com/channel/UCyIe-61Y8C4_o-zZCtO4ETQ)
 - [Codecourse](https://www.youtube.com/channel/UCpOIUW62tnJTtpWFABxWZ8g)
 - [CSS-TRICKS](https://www.youtube.com/channel/UCADyUOnhyEoQqrw_RrsGleA)
+- [Funfunfunction](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q)
+- [Level Up Tuts](https://www.youtube.com/user/LevelUpTuts/)
 
 #### Em português
 
@@ -171,7 +174,7 @@ Eu costumo comparar eventos de Desenvolvimento com Pokemon, temos que capturar t
 
 ![Tela do Meetup](/assets/img/up-to-date/meetup.png)
 
-O [Meetup](https://www.meetup.com) é definitivamente o mais famoso site/app para se buscar eventos tanto no Brasil como lá fora, tem uma interface bem direta e simples, listando os eventos que tem para acontecer e se você clicar no evento, poderá ver quem vai no evento e mais detalhes sobre ele. No mês de Julho inclusive, eu tive a honra de participar do [Meetup CSS SP](https://www.meetup.com/CSS-SP/) que aconteceu lá na Google e tudo é sempre coordenado pela plataforma do Meetup. 
+O [Meetup](https://www.meetup.com) é definitivamente o mais famoso site/app para se buscar eventos tanto no Brasil como lá fora, tem uma interface bem direta e simples, listando os eventos que tem para acontecer e se você clicar no evento, poderá ver quem vai no evento e mais detalhes sobre ele. No mês de Julho inclusive, eu tive a honra de participar do [Meetup CSS SP](https://www.meetup.com/CSS-SP/) que aconteceu lá na Google e tudo é sempre coordenado pela plataforma do Meetup.
 
 <h3 id="eventos-frontendbr">Eventos - Front-end Brasil</h3>
 
@@ -218,4 +221,4 @@ Além de seguir pessoas no Github, existe o [Trending](https://github.com/trendi
 
 Bom galera, é isso aí, se atualizar no mundo de Frontend é bastante complicado, mas podemos tornar essa tarefa um pouco mais simples e mais direcionada utilizando essas ferramentas e dicas =)
 
-Lembre-se, conhece algo maneiro e que merece ser mencionado aqui? Manda uma issue lá no [Github do blog](https://github.com/willianjusten/willianjusten.github.io) ou até mesmo um [PR direto nesse post](https://github.com/willianjusten/willianjusten.github.io/blob/master/_posts/2016-09-03-como-se-manter-atualizado-no-frontend.md). 
+Lembre-se, conhece algo maneiro e que merece ser mencionado aqui? Manda uma issue lá no [Github do blog](https://github.com/willianjusten/willianjusten.github.io) ou até mesmo um [PR direto nesse post](https://github.com/willianjusten/willianjusten.github.io/blob/master/_posts/2016-09-03-como-se-manter-atualizado-no-frontend.md).
