@@ -78,7 +78,7 @@ E como fazer para ler tantos links legais? Bom, durante muito tempo, eu trabalhe
 
 <h3 id="links-blogs">Links dos Blogs</h3>
 
-Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar alguns aqui e aí conto com a ajuda de vocês para fazer a lista crescer com referências maneiras hein!
+Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar alguns aqui e aí conto com a ajuda de vocês para fazer a lista crescer com referências maneiras hein! Acabei me lembrando que o Lfeh fez uma [lista bem maneira de alguns blogs](https://github.com/LFeh/feed-list), vale a pena olhar também hein!
 
 #### Em inglês
 
