@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS com TDD na Prática e Novidades"
+title: "Curso JS com TDD na Prática e Novidades"
 date: 2016-09-10 12:53:11
 image: '/assets/img/cursos/js-tdd.png'
 description: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
@@ -43,7 +43,12 @@ Se você quiser ler mais sobre testes, eu escrevi um [post bem completo](https:/
 
 <h2 id="tdd-empresas">TDD nas grandes empresas</h2>
 
-Como eu disse acima, o TDD é uma prática que te permite escrever um código com mais qualidade e menos passível de erros/bugs, sendo assim, muitas das empresas já aplicam essas boas práticas na maioria de seus produtos e algumas já colocam como requisito saber testes, ou seja, você não vai ficar para trás né?
+Como eu disse acima, o TDD é uma prática que te permite escrever um código com mais qualidade e menos passível de erros/bugs, sendo assim, muitas das empresas já aplicam essas boas práticas na maioria de seus produtos e algumas já colocam como requisito saber testes, ou seja, você não vai ficar para trás né? Olha umas vagas legais aí pedindo testes:
+
+- [Software Engineer (Frontend) - Web Client - Twitter](https://careers.twitter.com/en/work-for-twitter/software-engineer-frontend-web-client.html)
+- 
+
+
 
 <h2 id="faq">Perguntas Frequentes</h2>
 
