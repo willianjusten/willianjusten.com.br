@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS com TDD na Pratica e Novidades"
+title: "JS com TDD na Prática e Novidades"
 date: 2016-09-10 12:53:11
 image: '/assets/img/cursos/js-tdd.png'
 description: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
