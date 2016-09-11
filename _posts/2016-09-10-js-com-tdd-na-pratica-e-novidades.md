@@ -8,7 +8,7 @@ main-class: 'js'
 color: '#D6BA32'
 tags:
 - js
-- video
+- tdd
 categories:
 twitter_text: 'Aprenda testes na prática!'
 introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
