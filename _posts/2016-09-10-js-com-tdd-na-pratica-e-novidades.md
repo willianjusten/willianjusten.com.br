@@ -10,7 +10,7 @@ tags:
 - js
 - video
 categories:
-twitter_text:
+twitter_text: 'Aprenda testes na prática!'
 introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
 ---
 
