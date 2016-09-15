@@ -14,6 +14,8 @@ twitter_text: "Making of parte 1"
 introduction: "Uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido elas para a criação desse meu lindo blog."
 ---
 
+Existe uma continuação desse post em [Making of - parte 2](https://willianjusten.com.br/making-of-parte-2/).
+
 ## Antes de qualquer coisa...
 
 Bom, antes de começar explicando como criei esse blog, algumas ideias e o que aconteceu durante o processo, é melhor eu me apresentar né?
