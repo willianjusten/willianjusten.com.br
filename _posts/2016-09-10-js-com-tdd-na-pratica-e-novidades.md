@@ -19,7 +19,7 @@ introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha port
 - [Introdução](#intro)
 - [O que é TDD e por que usar?](#tdd)
 - [TDD nas grandes empresas](#tdd-empresas)
-- [Ementa](#ementa)
+- [Ementa do Curso](#ementa)
 - [Perguntas Frequentes](#faq)
 - [Módulo Extra: TDD no React](#tdd-react)
 - [Minha nova aventura](#aventura)
