@@ -19,6 +19,7 @@ introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha port
 - [Introdução](#intro)
 - [O que é TDD e por que usar?](#tdd)
 - [TDD nas grandes empresas](#tdd-empresas)
+- [Ementa](#ementa)
 - [Perguntas Frequentes](#faq)
 - [Módulo Extra: TDD no React](#tdd-react)
 - [Minha nova aventura](#aventura)
@@ -47,6 +48,42 @@ Como eu disse acima, o TDD é uma prática que te permite escrever um código co
 
 - [Software Engineer (Frontend) - Web Client - Twitter](https://careers.twitter.com/en/work-for-twitter/software-engineer-frontend-web-client.html)
 
+<h2 id="ementa">Ementa do Curso</h2>
+
+### Módulo 1
+
+Será mais sobre o start de um projeto, falarei sobre styleguides, eslint, editorconfig, hooks e outros arquivos importantes para iniciar um projeto.
+
+### Módulo 2
+
+Iremos ver/revisar as novas e importantes features do ES6, com pequenos exemplos e uma explicação bem direta e dinâmica de como podemos usar essas novas features a nosso favor.
+
+### Módulo 3
+
+Será focado totalmente na teoria de testes, entendendo todos os conceitos, necessidades e as escolhas para bons testes.
+
+### Módulo 4
+
+Iremos criar uma biblioteca bem simples, onde iremos aprender a criar o resto da estrutura de testes, como definir as bibliotecas de testes e coverage, rodar os scripts e escrever a biblioteca toda a partir de testes desde o zero.
+
+Nesse módulo também veremos como colocar essa biblioteca no TravisCI e como publicá-la no NPM para que outras pessoas possam utilizar.
+
+### Módulo 5
+
+Iremos aprender a fazer uma CLI em Node usando testes desde o zero. Uma CLI é bastante importante se você deseja automatizar algum processo e criar mini programas dentro do seu próprio terminal.
+
+Dentro desse módulo, teremos como exercício, aplicar todas as coisas aprendidas no módulo 4 como coverage, CI e publicar no npm.
+
+### Módulo 6
+
+Iremos escrever uma aplicação com mais detalhes, inteiramente em Javascript e com testes desde o início, facilitando com que você esteja apto a criar aplicações grandes em sua empresa ou projetos pessoais.
+
+### Módulo 7
+
+Será sobre testes em React, iremos utilizar um boilerplate idealizado por mim, chamado [Lyef](https://github.com/lyef/lyef-react-component), onde iremos aprender a criar componentes isolados e desenvolvidos em cima de testes.
+
+Com o curso, a pessoa estará apta a trabalhar em 3 áreas bem distintas no desenvolvimento Javascript (bibliotecas, CLI's e aplicações) e irá poder escrever seus próprios testes durante o desenvolvimento.
+
 <h2 id="faq">Perguntas Frequentes</h2>
 
 ### 1) Tem como parcelar o curso?
@@ -57,7 +94,7 @@ Tem sim gente, dependendo da bandeira do cartão, pode ser em até 12x. Para iss
 
 ### 2) Já tem a ementa? 
 
-Ainda estou finalizando o conteúdo que iremos ter durante o curso, por isso eu abri essa pré-venda com um desconto maneiro de 50%, para quem já conhece minha metodologia e quer me apoiar já desde o início. Tem também um [rascunho](https://www.facebook.com/willian.justen.cursos/photos/a.808763882559204.1073741828.787922347976691/841024392666486/?type=3&theater) do que iremos ter durante o curso se você já estiver ansioso. Minha dica é que aproveitem a promoção, pois ela só vai até dia 01/10 (1 de Outubro).
+A espera acabou e temos a ementa completa, que você pode ver logo acima em [ementa](#ementa).
 
 ### 3) Quando o curso começa e como vai funcionar?
 
