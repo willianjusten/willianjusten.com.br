@@ -47,6 +47,7 @@ Se você quiser ler mais sobre testes, eu escrevi um [post bem completo](https:/
 Como eu disse acima, o TDD é uma prática que te permite escrever um código com mais qualidade e menos passível de erros/bugs, sendo assim, muitas das empresas já aplicam essas boas práticas na maioria de seus produtos e algumas já colocam como requisito saber testes, ou seja, você não vai ficar para trás né? Olha umas vagas legais aí pedindo testes:
 
 - [Software Engineer (Frontend) - Web Client - Twitter](https://careers.twitter.com/en/work-for-twitter/software-engineer-frontend-web-client.html)
+- [Vagas no FrontendBR Github](https://github.com/frontendbr/vagas/issues)
 
 <h2 id="ementa">Ementa do Curso</h2>
 
