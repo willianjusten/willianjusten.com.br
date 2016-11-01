@@ -216,7 +216,7 @@ Além de seguir pessoas no Github, existe o [Trending](https://github.com/trendi
 - [Matt DesLauriers](https://github.com/mattdesl) - desenvolvedor na Jam3, escritor do Promise Cookbook e outras coisas legais.
 - [Lea Verou](https://github.com/LeaVerou) - criadora de várias ferramentas de desenvolvimento e pesquisadora no MIT.
 - [Addy Osmani](https://github.com/addyosmani) - engenheiro na Google, trabalhando ativamente no Google Chrome.
-- [John Resig](https://github.com/jeresig) - criador do jQuery, fundador da Khan Academy e escritor.
+- [John Resig](https://github.com/jeresig) - criador do jQuery, Engenheiro de Software na Khan Academy e escritor.
 
 <h2 id="conclusao">Conclusão</h2>
 
