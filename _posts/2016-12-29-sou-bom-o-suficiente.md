@@ -7,7 +7,7 @@ description: "Essa é uma pergunta bastante comum de nós desenvolvedores, e por
 main-class: 'misc'
 color: '#7AAB13'
 tags:
-- sindrome-do-impostor
+- sindromedoimpostor
 - life
 categories:
 twitter_text: "Sou bom o suficiente? Saiba pq essa pergunta é tão comum p/ devs"
