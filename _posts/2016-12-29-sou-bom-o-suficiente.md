@@ -87,7 +87,7 @@ Já parou para pensar que você só vai conseguir evoluir (e ver evolução) se 
 
 Eu tinha muito medo de review de código, demorava horas/dias trabalhando em um mínimo trecho de código com um enorme medo de quem alguém pudesse olhar e falar que estava tudo errado <s>ou falar que tava uma merda mesmo</s>. 
 
-Isso só me prejudicava pois eu demorava muito para entregar e os erros que eu cometeria sem saber, eu continuava cometendo, pois para mim não eram erros. Quando realizei que reviews são importantes para que você além de terminar sua tarefa melhor, seja guiado para o caminho certo, comecei a notar uma grande evolução no meu código entregado e também passei a aprender muito mais.
+Isso só me prejudicava pois eu demorava muito para entregar e os erros que eu cometeria sem saber, eu continuava cometendo, pois para mim não eram erros. Quando percebi que reviews são importantes para que você além de terminar sua tarefa melhor, seja guiado para o caminho certo, comecei a notar uma grande evolução no meu código entregado e também passei a aprender muito mais.
 
 ### Diminua sua ansiedade
 
