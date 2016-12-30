@@ -10,7 +10,7 @@ tags:
 - sindrome-do-impostor
 - life
 categories:
-twitter_text: "Sou bom o suficiente? Pergunta bastante comum de nós desenvolvedores, e pq será isso?"
+twitter_text: "Sou bom o suficiente? Saiba pq essa pergunta é tão comum p/ devs"
 introduction: "Essa é uma pergunta bastante comum de nós desenvolvedores, e por que será isso?"
 ---
 
