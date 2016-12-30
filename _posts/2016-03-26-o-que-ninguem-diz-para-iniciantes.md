@@ -18,10 +18,6 @@ introduction: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes 
 
 Fala pessoal, o post de hoje é totalmente inspirado em um vídeo bastante legal, que eu acho motivacional para caramba e que eu gostaria de ter assistido há mais tempo. O vídeo em questão se chama Nobody Tells This To Beginners e se trata de uma montagem em cima da entrevista de Ira Glass sobre esse assunto.
 
-## Entrevista Original
-
-<iframe width="420" height="420" src="https://www.youtube.com/embed/BI23U7U2aUY" frameborder="0" allowfullscreen></iframe>
-
 ## Vídeo Inspirado
 
 <iframe width="560" height="420" src="https://www.youtube.com/embed/E1oZhEIrer4" frameborder="0" allowfullscreen></iframe>
