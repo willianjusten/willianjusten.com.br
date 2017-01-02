@@ -107,6 +107,14 @@ A área de desenvolvimento é gigantesca, existem milhares de linguagens, biblio
 
 A Síndrome do Impostor é uma coisa muito interna, mas coordenadores e colegas de trabalho são bastante importante para ajudar em quão confiante você pode ser com seu trabalho e suas habilidades. Sempre escute os bons feedbacks e aprenda com eles, isso significa que você não precisa chegar amanhã na empresa se achando o melhor do mundo, mas também não precisa se sentir um impostor por estar ali. Escute bem as dicas e absorva tudo que for de bom e, caso você ouça algo ruim e que não lhe fará bem só deixe para lá e busque outros feedbacks melhores.
 
+## Mais leitura
+
+Se você ficou curioso com o assunto e quer conhecer outros programadores que também relataram esse problema, seguem alguns links:
+
+- [Overcoming Impostor Syndrome or How I Learned to Stop Worrying and Love Coding by Alicia Liu](https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5#.g63job35d)
+- [I’m an Impostor by David Walsh](https://davidwalsh.name/impostor-syndrome)
+- [Feeling like a better developer aka overcoming impostor syndrome - Video RubyConf15](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/feeling-like-a-better-developer-aka-overcoming-impostor-syndrome-by-joss-paling-1729)
+
 ## Conclusão
 
 Bom pessoal, é basicamente isso que eu queria passar para vocês. Estamos aí quase acabando o ano, geral definindo suas metas e se preocupando com sua vida e analisando como foi seu ano. Peço que vocês analisem o ano que passou, em quais momentos você se sentiu assim e o que você pode fazer para melhorar, essa será sua meta de 2017 a partir de então.
