@@ -9,6 +9,7 @@ color: '#7AAB13'
 tags:
 - trip
 - ireland
+- exchange
 categories:
 - Experiências no Exterior
 twitter_text: "Algumas coisas sobre como vir para Irlanda."
