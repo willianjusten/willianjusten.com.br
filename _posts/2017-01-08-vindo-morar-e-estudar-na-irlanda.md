@@ -18,7 +18,7 @@ introduction: "Algumas coisas que eu passei e você precisa saber se deseja vir 
 
 ## Introdução
 
-Faaaala pessoal, esse é um dos posts mais pedidos dos últimos tempos. Várias pessoas quando descobriram que eu estava morando na Irlanda quiseram saber mil coisas e eu recebi vários emails sobre isso. Para não deixar só em emails, eu resolvi escrever sobre isso.
+Faaaala pessoal, esse é um dos posts mais pedidos dos últimos tempos. Várias pessoas quando descobriram que eu estava morando na Irlanda quiseram saber mil coisas e eu recebi vários emails sobre isso, para não deixar só em emails, resolvi escrever aqui.
 
 Eu irei separar em algumas partes, esse aqui será o post maior, onde irei falar mais sobre o processo e mais alguns detalhes sobre a Irlanda. Farei outros posts especificamente sobre Mercado de Trabalho e outros detalhes. O post é grande, então pega lá um cafézinho =)
 
