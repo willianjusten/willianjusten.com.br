@@ -149,7 +149,7 @@ Voltado para quem quer aprimorar o vocabulário em áreas relacionadas à negóc
 
 Como o foco é o mercado de negócios, é fundamental que o aluno já consiga estabelecer uma conversação com razoável fluência. Por isso, o nível de inglês do estudante deve ser entre intermediário e avançado,
 
-O curso de Business English tem duração a partir de 4 semanas, e, em média, dura de 8 a 12 semana.
+O curso de Business English tem duração a partir de 4 semanas, e, em média, dura de 8 a 12 semanas.
 
 ### Preparação para Exames de proficiência
 
