@@ -76,10 +76,6 @@ Dentro desse módulo, teremos como exercício, aplicar todas as coisas aprendida
 
 ### Módulo 6
 
-Iremos escrever uma aplicação com mais detalhes, inteiramente em Javascript e com testes desde o início, facilitando com que você esteja apto a criar aplicações grandes em sua empresa ou projetos pessoais.
-
-### Módulo 7
-
 Será sobre testes em React, iremos utilizar um boilerplate idealizado por mim, chamado [Lyef](https://github.com/lyef/lyef-react-component), onde iremos aprender a criar componentes isolados e desenvolvidos em cima de testes.
 
 Com o curso, a pessoa estará apta a trabalhar em 3 áreas bem distintas no desenvolvimento Javascript (bibliotecas, CLI's e aplicações) e irá poder escrever seus próprios testes durante o desenvolvimento.
