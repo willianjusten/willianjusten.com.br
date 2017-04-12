@@ -185,7 +185,7 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [Codecademy HTML](http://www.codecademy.com/pt-BR/tracks/web)
 - [Dash](https://dash.generalassemb.ly/)
 - [Teamtreehouse](http://teamtreehouse.com/library/topic:learn-html/type:course)
-- [CodeScholl](https://www.codeschool.com/paths/html-css)
+- [CodeSchool](https://www.codeschool.com/paths/html-css)
 - [30 Days to Learn Html and CSS](https://www.youtube.com/watch?v=yTHTo28hwTQ&list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
 - [Learn to code Html & CSS](http://learn.shayhowe.com/)
 - [Apostila Web da Caelum](http://www.caelum.com.br/apostila-html-css-javascript/)
