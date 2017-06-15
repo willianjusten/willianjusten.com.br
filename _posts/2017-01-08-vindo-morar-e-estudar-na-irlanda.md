@@ -22,7 +22,7 @@ Faaaala pessoal, esse é um dos posts mais pedidos dos últimos tempos. Várias 
 
 Eu irei separar em algumas partes, esse aqui será o post maior, onde irei falar mais sobre o processo e mais alguns detalhes sobre a Irlanda. Farei outros posts especificamente sobre Mercado de Trabalho e outros detalhes. O post é grande, então pega lá um cafézinho =)
 
-A trilha sonora do dia é de uma banda de rock instrumental de Madrid, que achei fantástica e tenho ouvido nos últimos dias, a banda se chama [Tounda](https://open.spotify.com/artist/3cgIU3hh7Y4pUsPgHB8aYT) e vale a pena ouvir o trabalho dos caras.
+A trilha sonora do dia é de uma banda de rock instrumental de Madrid, que achei fantástica e tenho ouvido nos últimos dias, a banda se chama [Toundra](https://open.spotify.com/artist/3cgIU3hh7Y4pUsPgHB8aYT) e vale a pena ouvir o trabalho dos caras.
 
 Vou separar esse post em algumas partes, pois acho que ficará mais simples de se localizar também.
 
