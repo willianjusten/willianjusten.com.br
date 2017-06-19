@@ -1,4 +1,9 @@
 /*--search--*/
+input
+    +placeholder()
+        color #ddd
+        font-size rem(26px)
+
 input[type="search"]
     -webkit-box-sizing content-box
     -moz-box-sizing content-box
@@ -37,6 +42,7 @@ input[type="search"]::-webkit-search-cancel-button
         box-shadow none
         background-clip padding-box
         -webkit-appearance none
+        padding-bottom rem(10px)
         &:focus
             outline 0
             box-shadow none
@@ -57,9 +63,6 @@ input[type="search"]::-webkit-search-cancel-button
         height 30px
         text-align center
         cursor pointer
-    &::-webkit-input-placeholder
-        font-size rem(26px)
-
 
 .search-form .search-field::-webkit-search-decoration,
 .search-form .search-field::-webkit-search-cancel-button,
