@@ -8,10 +8,9 @@ main-class: 'dev'
 color: '#637a91'
 tags:
 - dev
-- entrevista
 - remoto
 categories:
-twitter_text: 'Uma entrevista onde falo sobre meus primeiros trabalhos, desafios e meu futuro.'
+twitter_text: 'Uma entrevista onde falo sobre meus primeiros trabalhos, desafios e mais'
 introduction: 'Uma pequena entrevista onde falo sobre meus primeiros trabalhos, desafios e meu futuro.'
 ---
 
