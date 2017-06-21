@@ -96,7 +96,7 @@ Por mais que estejamos em todos os lugares do mundo, a gente tá sempre perto de
 
 E segue aqui um belo print que um amigo do time resolveu fazer, quando eu estava trabalhando sentado numa cadeirinha com as montanhas da Austria no fundo...
 
-![Uma foto minha com um amigo dizendo "That's what I call I participate on daily calls from anywhere"](https://willianjusten.com.br/assets/img/external/anywhere.png).
+![Uma foto minha com um amigo dizendo "That's what I call I participate on daily calls from anywhere"](https://willianjusten.com.br/assets/img/external/anywhere.png)
 
 ### Quais são as skills de quem trabalha nesta área?
 
