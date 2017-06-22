@@ -16,7 +16,7 @@ introduction: 'Uma pequena entrevista onde falo sobre meus primeiros trabalhos, 
 
 ## Introdução
 
-Fala pessoal, o [William Oliveira]() me pediu para participar de uma entrevista para o [Training Center](https://github.com/training-center/sobre), demorei demaaaais para fazer, mas acabei enviando para ele esses dias. Você pode ler no [Medium](https://medium.com/trainingcenter/como-%C3%A9-trabalhar-como-desenvolvedor-front-end-remoto-por-willian-justen-e7cdf7fe2e64) ou só seguir o post aqui, que a entrevista está na íntegra também.
+Fala pessoal, o [William Oliveira](https://twitter.com/w_oliveiras) me pediu para participar de uma entrevista para o [Training Center](https://github.com/training-center/sobre), demorei demaaaais para fazer, mas acabei enviando para ele esses dias. Você pode ler no [Medium](https://medium.com/trainingcenter/como-%C3%A9-trabalhar-como-desenvolvedor-front-end-remoto-por-willian-justen-e7cdf7fe2e64) ou só seguir o post aqui, que a entrevista está na íntegra também.
 
 Enquanto escrevi a entrevista e até agora, estou ouvindo a mesma banda, que é [Mt. Wolf](https://open.spotify.com/album/4WBiO5swd0JJnrDyo34CPg), eles tem um som muito legal e ótimo para relaxar, se curte um som mais calmo e atmosférico, vai sem medo =D
 
