@@ -2,7 +2,7 @@
 layout: post
 title: "Minha trajetoria até me tornar Desenvolvedor"
 date: 2017-06-21 19:49:40
-image: '/assets/img/'
+image: '/assets/img/external/hate-programming.png'
 description: 'Uma pequena entrevista onde falo sobre meus primeiros trabalhos, desafios e meu futuro.'
 main-class: 'dev'
 color: '#637a91'
