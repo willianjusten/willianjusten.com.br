@@ -14,7 +14,7 @@ twitter_text: 'Algumas dicas que podem ajudar muito a sua maneira de programar e
 introduction: 'Algumas dicas que podem ajudar muito a sua maneira de programar e pensar.'
 ---
 
-##Introdução
+## Introdução
 
 Fala pessoal, nos últimos dias eu não tenho passado bem de saúde e com isso não tenho ficado muito no computador, para não me entediar tanto, resolvi ler alguns livros e um deles é um livro incrível, que resolvi pegar as dicas dele e passar para vocês.
 
@@ -94,7 +94,7 @@ Bom, vamos lá, eu basicamente vou passar aqui as dicas adaptadas do livro para 
 64. **Inglês é uma outra linguagem de programação** - Escreva documentos como você escreve código, honre o princípio do *DRY*, use metadata e geração automática.
 65. **Assine o seu trabalho** - os grandes construtores ficam orgulhosos de assinar suas obras, você também deveria se orgulhar.
 
-##Conclusão
+## Conclusão
 
 Espero que depois dessa leitura, você tenha identificado várias das suas falhas e também vários dos seus acertos e se organize para seguir sempre assim. E lembre-se o aprendizado é algo contínuo e importante, então sempre dê uma lida nessas dicas e pensa se está utilizando tudo que está ali ou se está se sabotando em algum momento.
 
