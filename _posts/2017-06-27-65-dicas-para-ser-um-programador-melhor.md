@@ -34,7 +34,7 @@ Bom, vamos lá, eu basicamente vou passar aqui as dicas adaptadas do livro para 
 4. **Não conviva com janelas quebradas** - Corrija designs ruins, decisões erradas e código ruim quando vê-los.
 5. **Seja um catalisador de mudanças** - Você não pode forçar as pessoas a mudarem. Mas você pode mostrá-las como o futuro pode ser e ajudá-las a participar na criação disso.
 6. **Veja o quadro geral** - Não fique tão focado só nos detalhes que esqueça de verificar o que está acontecendo ao se redor.
-7. **Faça da Qualidade um requisito** - Wnvolva os usuários para determinar a real qualidade que o projeto precisa ter e cumpra.
+7. **Faça da Qualidade um requisito** - Envolva os usuários para determinar a real qualidade que o projeto precisa ter e cumpra.
 8. **Invista regularmente no seu Portfolio de Conhecimento** - Faça do aprender um hábito.
 9. **Analise criticamente o que você lê ou escuta** - Não seja influenciado pelo hype das coisas. Analise a informação em termos de você e seu projeto.
 10. **É o que você diz e a maneira que você diz** - Não faz sentido você ter grandes ideias se você não consegue comunicá-las efetivamente.
