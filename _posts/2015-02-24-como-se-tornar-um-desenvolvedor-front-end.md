@@ -114,7 +114,7 @@ Olha, definir níveis de conhecimento, seja para qualquer profissão é algo bas
 - NodeJS (saber como criar módulos, chamá-los tanto no front quanto no back)
 - Ter sólida experiência em sistemas front como o MEAN Stack
 
-![Gato surpreso](http://ohmygodcats.com/wp-content/uploads/2013/01/Suprised-Catnip-Cat.jpg)
+![Gato surpreso](https://i.imgflip.com/1ih4qs.jpg)
 
 <h2 id="eita">Eita lascou, como aprendo tudo isso?</h2>
 
