@@ -7,7 +7,7 @@ image: '/assets/img/cursos/cursos-bg.png'
 
 <main class="home cursos-content" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <div id="grid" class="row flex-grid">
-    {% for curso in site.cursos %}
+    {% for curso in site.cursos reversed %}
         <article class="box-item post-{{curso.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon">
                     <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
