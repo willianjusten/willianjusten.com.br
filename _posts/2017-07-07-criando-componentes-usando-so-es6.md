@@ -243,7 +243,7 @@ export default function renderAlbumInfo(data, element) {
 };
 {% endhighlight %}
 
-Repare que eu estou exportando somente a função `renderAlbumTracks`, deixando assim o método `createMarkup` como privado, assim não corro o risco da criação do meu markup ser poluído por outro código.
+Repare que eu estou exportando somente a função `renderAlbumInfo`, deixando assim o método `createMarkup` como privado, assim não corro o risco da criação do meu markup ser poluído por outro código.
 
 E aí no meu arquivo `main` eu teria algo como:
 
