@@ -157,7 +157,7 @@ renderAlbumInfo(data, album);
 
 Com o código feito acima, já temos as informações do album, mas ainda faltam as músicas ao lado. Conforme a imagem abaixo:
 
-![Lista de músicas do album](/assets/img/componentes-es6/album-info.png)
+![Lista de músicas do album](/assets/img/componentes-es6/album-list.png)
 
 Se vocês repararem, dentro dessa lista temos um padrão básico, que é sempre: `Número da Música - Nome da Música - Tempo`. O que podemos fazer então é criar um loop para criar música depois de música e então apendar a lista inteira.
 
