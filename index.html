@@ -12,7 +12,7 @@ layout: default
                 <div class="box-body">
                     <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
-                        {% include post-date.html %}
+                        {% include date.html date=post.date %}
                     </time>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                         <h2 class="post-title" itemprop="name">
