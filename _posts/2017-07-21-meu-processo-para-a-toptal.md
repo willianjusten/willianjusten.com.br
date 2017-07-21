@@ -7,11 +7,10 @@ description: 'Algumas coisas que aconteceram até eu entrar na Toptal e algumas 
 main-class: 'misc'
 color: '#7AAB13'
 tags:
-- interview
 - remoto
 - toptal
 categories:
-twitter_text: 'Algumas coisas que aconteceram até eu entrar na Toptal e algumas das dúvidas comuns.'
+twitter_text: 'Meu processo para a Toptal e algumas das dúvidas comuns.'
 introduction: 'Algumas coisas que aconteceram até eu entrar na Toptal e algumas das dúvidas comuns.'
 ---
 
