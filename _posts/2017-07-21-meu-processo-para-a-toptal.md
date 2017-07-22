@@ -56,7 +56,7 @@ Pouco tempo depois eu recebi o email e nele já tinha o Github do desenvolvedor 
 
 Essa etapa foi com um Russo e foi muito muito maneira. Primeiramente a gente bateu um papo, que já foi bem mais técnico, indo desde escolhas em projetos passados, até uma análise do meu Github. Ele já tinha dado uma olhada em praticamente tudo que eu tinha feito e fez vários comentários relacionados aos meus códigos, inclusive reclamou que meu blog era em Português, porque ele tinha se interessado em ler, mas quando traduzia ficava muito estranho.
 
-Depois dessa conversa, teve uma pequena etapa de live coding, divido em 2 pequenos testes. O primeiro tinha umas coisas quebradas na tela e eu tinha que corrigir, mas sem mudar o tamanho dos elementos. Era basicamente usar `box-sizing: border-box`, mas ele falou que esse teste servia para ver se a pessoa não iria querer criar coisas malucas só para corrigir, pois o simples é sempre o melhor.
+Depois dessa conversa, teve uma pequena etapa de live coding, divido em 2 pequenos testes. O primeiro tinha umas coisas quebradas na tela e eu tinha que corrigir, mas sem mudar o tamanho dos elementos. Era uma coisa muito simples, mas ele falou que esse teste servia para ver se a pessoa não iria querer criar coisas malucas só para corrigir, pois o simples é sempre o melhor.
 
 O segundo teste eram alguns ícones em SVG na tela (nem amo SVG né?) e ele pediu para que eu deixasse aqueles ícones organizados legais, com uma UX interessante. Eu fiz algumas edições para ficarem lado a lado, adicionei cores e animações. Inclusive usei um filtro em SVG que deixou ele boquiaberto, acho que só passei por causa disso ahuaua
 
