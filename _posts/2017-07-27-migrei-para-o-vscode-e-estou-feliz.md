@@ -2,7 +2,7 @@
 layout: post
 title: "Migrei para o VSCode e estou feliz!"
 date: 2017-07-27 19:08:41
-image: '/assets/img/vscode/vscode'
+image: '/assets/img/vscode/vscode.png'
 description: "Um pouco da minha experiência com esse editor que me fez aposentar o Sublime e plugins que uso."
 main-class: 'dev'
 color: '#637a91'
