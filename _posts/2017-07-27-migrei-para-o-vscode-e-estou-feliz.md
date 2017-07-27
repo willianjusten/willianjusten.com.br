@@ -81,6 +81,7 @@ Os plugins do Sublime eram incríveis, eu conseguia transformar um editor simple
 - [Reactjs code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets) - snippets para quem usa React.
 - [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings) - o cara que fez a minha transição praticamente imperceptível, ele transforma todos os comandos do Sublime!
 - [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer) - para poder visualizar SVG diretamente do editor.
+- [vscode-spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify) - integra com o Spotify e tem a opção de ver a letra da música! Você pode ver a letra da música cara, isso é demais!
 - [Wakatime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime) - porque eu sou fissurado com métricas.
 
 ## Conclusão
