@@ -247,7 +247,3 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 <h2 id="conclusao">Conclusão</h2>
 
 Bom pessoal, sei que foi um post grande, talvez um pouco cansativo, mas é bastante importante que se entenda a teoria para partir para a prática, ao menos um pouquinho, para que a prática seja mais proveitosa. Nos próximos posts falarei sobre CI/CD e então a prática de tudo que falamos. Peço que comentem sobre o que acharam, o que esperam ler/ver sobre o assunto, enfim, qualquer feedback será bastante importante para o desenvolvimento dos outros posts.
-
-## Extra
-
-E para quem se interessou pelo assunto, a [Isabella Silveira](https://twitter.com/silveira_bells) vai falar sobre lá no [FrontinRio](http://frontinrio.com.br/), aconselho a galera que é do Rio e proximidades irem, vai ser legal para caramba. Eu vou estar lá também, se alguém quiser bater um papo =D
