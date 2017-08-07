@@ -112,7 +112,7 @@ Para fazer o cálculo do scroll e identificar o progresso, vamos utilizar algums
 
 - [clientHeight](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/clientHeight) - permite verificar a altura da janela do browser, ou seja, só a parte visível da sua tela.
 - [scrollTop](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollTop) - verifica a distância do topo da página até o topo da primeira parte visível da tela. Dá uma olhada no link, lá tem uma imagem bem explicativa.
-- [scrollHeight](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollHeight) - verifica a altura do elemento, contanto suas partes não visíveis.
+- [scrollHeight](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollHeight) - verifica a altura do elemento, considerando suas partes não visíveis.
 
 Tendo esses métodos em mente, fica fácil criar a seguinte função:
 
