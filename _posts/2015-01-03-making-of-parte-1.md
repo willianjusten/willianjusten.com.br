@@ -35,7 +35,7 @@ Eu sou um cara muito curioso e gosto sempre de coisas novas, então eu utilizei:
 * [Stylus](http://learnboost.github.io/stylus/) - tem pre-processador css mais bonito que stylus? Totalmente flexível, completo e o mais importante, totalmente em Javascript =)
 * [Jeet](http://jeet.gs) - sistema de grid feito em stylus.
 * [Kouto Swiss](http://kouto-swiss.io/) - um framework para stylus.
-* [Rupture](http://jenius.github.io/rupture/) - uma ferramenta para facilitar o trabalho com media queries no stylus.
+* [Rupture](http://jescalan.github.io/rupture/) - uma ferramenta para facilitar o trabalho com media queries no stylus.
 * [Github Pages](https://pages.github.com/) - onde está hospedado esse lindo blog (se você não achou bonito, se retire! Brincadeira, pode continuar, só me manda um feedback do que não gostou).
 
 ### Por que de cada uma dessas tecnologias?
