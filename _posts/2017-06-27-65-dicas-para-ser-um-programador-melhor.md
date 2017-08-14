@@ -72,7 +72,7 @@ Bom, vamos lá, eu basicamente vou passar aqui as dicas adaptadas do livro para 
 42. **Não programe por coincidência** - Confie em coisas confiáveis. Tome cuidado com a complexidade acidental e não confunda uma feliz coincidência com o plano final.
 43. **Estime a ordem de seus algoritmos** - Tenha uma ideia de o quão demoradas as coisas podem acontecer antes de escrever seu código.
 44. **Teste suas estimativas** - Análises matemáticas de algoritmos não dizem tudo. Teste seu código sempre no ambiente mais próximo do real.
-45. **Refatore cedo, refatore frequentemente** - Assim como você pode arrumar e reorganizar um jardim, reescreva, retrabalhe e rearquitete seu código sempre que necessário. Corriga a raiz dos problemas.
+45. **Refatore cedo, refatore frequentemente** - Assim como você pode arrumar e reorganizar um jardim, reescreva, retrabalhe e rearquitete seu código sempre que necessário. Corrija a raiz dos problemas.
 46. **Codifique para testar** - Comece pensando sobre como testar antes de escrever uma linha de código.
 47. **Teste seu software, ou seus usuários irão testar por você** - Teste implacavelmente. Não deixe seus usuários acharem bugs para você.
 48. **Não use código mágico que você não entende** - Mágicas podem gerar códigos complicados. Tenha certeza que você entende tudo que o código faz, antes de implementá-lo em seu projeto.
