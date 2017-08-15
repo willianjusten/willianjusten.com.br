@@ -54,7 +54,7 @@ Bom, vamos lá, eu basicamente vou passar aqui as dicas adaptadas do livro para 
 24. **Corrija o problema. Não fique culpando** - Não importa se o bug é sua culpa ou de outro, é um problema e precisa ser corrigido.
 25. **Não entre em pânico quando estiver debugando** - Respire bem fundo e *pense!* sobre o que pode estar causando o bug.
 26. **O "select" não está quebrado** - É muito raro achar um problema que seja de fato do sistema operacional ou do compilador. O bug na maioria das vezes está na sua aplicação.
-27. **Não assuma, prove!** - Prove suas premissas num ambiente com dado real e sob as mesmas condições.
+27. **Não presuma, prove!** - Prove suas premissas num ambiente com dado real e sob as mesmas condições.
 28. **Aprenda manipulação de texto na sua linguagem** - você passa boa parte do tempo trabalhando com textos. Por que não deixar o computador fazer um pouco desse trabalho para você?
 29. **Escreva código que faça código** - Geradores de código aumentam sua produtividade e ajudam a evitar duplicações.
 30. **Você não pode escrever um software perfeito** - Softwares não podem ser perfeitos. Proteja seu código e os usuários dos erros inevitáveis.
