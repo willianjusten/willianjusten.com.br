@@ -130,12 +130,7 @@ Uma desculpa que as pessoas acabam fazendo é *É tudo muito caro, então a gent
 
 Nossa, como esse post ficou imenso! Enfim pessoal, eu queria mais que tudo agradecer a essa incrível marca! São mais de **10 mil alunos** e mais de **1400 comentários** no Udemy, sendo a maioria deles de 5 estrelas! Mesmo com coisinhas chatas, que falei acima, vocês sempre me inspiram e me animam a continuar fazendo o que eu faço. Aprendi demais com vocês durante todo esse tempo e espero continuar aprendendo mais e mais.
 
-Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse blog. Eu coloquei um código de **100% de desconto** para o meu curso de JS com TDD na Prática em algum lugar desse blog, quem achar, corre para pegar o curso! E o cupom pode estar embaixo do seu nariz =p
-
-<!-- Os 5 mais rápidos a descobrir isso, vão levar meu curso de TDD de graça!
-  E o código do cupom é NUMERO + A resposta para a vida, o universo e tudo mais.
-  E aí? Já sabe? Corre lá https://www.udemy.com/js-com-tdd-na-pratica/ e coloca
-  o cupom, preste bem atencao na dica acima. -->
+Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse blog. Eu coloquei um código de **100% de desconto** para o meu curso de JS com TDD na Prática em algum lugar desse blog, quem achar, corre para pegar o curso!
 
 E aqui também vão alguns cupons de eventos maneiros que estão para acontecer:
 
