@@ -117,20 +117,10 @@ Todas as informações aqui, também podem ser encontradas no [repositório do c
 
 As compras agora poderão ser feitas de duas formas:
 
-- Em dólar direto pela plataforma: [Teachable](http://willianjusten.teachable.com/courses/aprendendo-svg-do-inicio-ao-avancado). No valor de **US$ 50,00**
-- Em real através do Eventick: [Eventick](http://www.eventick.com.br/curso-de-svg). No valor de **R$ 200,00**.
+- <s>Em dólar direto pela plataforma</s>
+- <s>Em real através do Eventick </s>
 
-### Transferência
-
-**Nome:** Willian Justen de Vasconcellos
-
-**Agência:** 2971
-
-**Conta:** 25198-4
-
-**Banco Itau**
-
-Quem fizer transferência, manda um email para willianjustenqui@gmail.com com a confirmação. Para ter o seu email salvo.
+**Update:** o curso agora pode ser adquirido através da [Udemy](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/)
 
 ### Contato
 

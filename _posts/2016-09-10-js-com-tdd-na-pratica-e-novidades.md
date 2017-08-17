@@ -86,7 +86,7 @@ Com o curso, a pessoa estará apta a trabalhar em 3 áreas bem distintas no dese
 
 Tem sim gente, dependendo da bandeira do cartão, pode ser em até 12x. Para isso é só você preencher seus dados do cartão na [página de compra](https://www.sympla.com.br/javascript-com-tdd-na-pratica__146668).
 
-### 2) Já tem a ementa? 
+### 2) Já tem a ementa?
 
 A espera acabou e temos a ementa completa, que você pode ver logo acima em [ementa](#ementa).
 
@@ -114,7 +114,7 @@ O curso começa agora e nunca termina! Você quem irá decidir quando começar e
 
 São vários módulos divididos em pequenos vídeos, cada módulo tem o intuito de ensinar algum conceito básico e importante sobre Boas Práticas e Testes. Após todos os módulos, você estará apto a criar aplicações javascript modernas e com qualidade. Se quiser, dá uma olhada nos [cursos disponíveis](https://willianjusten.com.br/cursos), tem cursos gratuitos lá para você poder ver o que acha.
 
---- 
+---
 
 <h2 id="modulo-1">Módulo 1: Boas Práticas</h2>
 
@@ -136,4 +136,4 @@ Cheguei aqui na Irlanda na quarta (07/09) e já fiz taaaanta coisa, que nossa, h
 
 Então né, como já disse no texto acima, eu estou aqui por minha conta, não vim por empresa nenhuma. Muita gente faz até cara estranha quando digo isso. E através da venda dos meus cursos que acabo conseguindo gerar uma renda para poder morar aqui.
 
-E se você se interessou, as vendas estão abertas no [link](https://www.sympla.com.br/javascript-com-tdd-na-pratica__146668).
+E se você se interessou, as vendas estão abertas no [link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD).
