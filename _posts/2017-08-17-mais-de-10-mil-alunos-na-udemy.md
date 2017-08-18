@@ -132,7 +132,7 @@ Nossa, como esse post ficou imenso! Enfim pessoal, eu queria mais que tudo agrad
 
 Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse blog. Eu coloquei um código de **100% de desconto** para o meu curso de JS com TDD na Prática em algum lugar desse blog, quem achar, corre para pegar o curso! E o cupom pode estar embaixo do seu nariz =p
 
-**Update:** tiveram já 5 máquinas absurdamente rápidas que conseguiram os cupons! Meus parabéns! =D
+**Update:** tiveram já 5 máquinas absurdamente rápidas que conseguiram os cupons! Meus parabéns!! =D
 
 E aqui também vão alguns cupons de eventos maneiros que estão para acontecer:
 
