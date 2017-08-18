@@ -64,7 +64,7 @@ gulp.task('stylus', function(){
 gulp.task('js', function(){
 	return gulp.src((env.p) ? 'src/js/**/*.js' : ['src/js/**/*.js', '!src/js/analytics.js'])
 		.pipe(plumber())
-		.pipe(concat('main.js'))
+		.pipe(concat('scripts.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js/'));
 });
