@@ -78,3 +78,29 @@ if (screen.width > 1024 && document.getElementsByClassName('header-post').length
 }
 
 })( Zepto, window );
+
+function queroMeuCupom() {
+  console.log("Para ganhar seu cupom, algumas charadas você vai ter que responder, como responder? Tente executar!\n\n");
+  console.log("O que há em nenhuma parte mas em todos os lugares, exceto quando algo é?");
+}
+
+function nada() {
+  console.log("Meus parabéns, a primeira charada você acertou, que tal outra?\n\n\n");
+  console.log("Leve como uma pena, mas ninguém pode segurar por muito tempo. O que eu sou?");
+}
+
+function folego() {
+  console.log("Está ficando bom, mas que tal outra?\n\n\n");
+  console.log("O que não é nem café da manhã nem almoço?");
+}
+
+function jantar() {
+  console.log("Muiiiito bem, só mais uma?\n\n\n");
+  console.log("Insiste em me ignorar e finalmente quando me vou, você luta para me ter de volta. Quem eu sou?");
+}
+
+function tempo() {
+  console.log("Pronto! Você passou por todas as charadas! Agora compartilhe um post meu (facebook ou twitter) me marcando e sem mencionar o jogo e darei a última charada!");
+}
+
+queroMeuCupom();
