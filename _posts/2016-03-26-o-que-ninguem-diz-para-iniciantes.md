@@ -54,7 +54,7 @@ Há alguns dias eu postei na timeline do meu Facebook um vídeo bem interessante
 
 Um cara franzino, tímido, embolado com as palavras, que nem sabia se iria funcionar seu side project. E que hoje é só conhecido por ter ajudado na criação da ferramenta de desenvolvimento que mais cresce no mundo.
 
-Ou seja, se você é tímido, tem vergonha de se apresentar, tem vergonha do que faz e nunca mostra nada para os outros. Perca esse medo! Contribua no Github, faça um blog, grave vídeos, se mostre! Você pode ser o mais novo grande desenvolvedor da década.
+Ou seja, se você é tímido, tem vergonha de se apresentar, tem vergonha do que faz e nunca mostra nada para os outros. Perca esse medo! Contribua no Github, faça um blog, grave vídeos, se mostre! Você pode ser o mais novo grande desenvolvedor da década. E se você está lendo aqui, para te ajudar a virar um grande desenvolvedor, vou lhe dar um curso grátis, basta que você resolva a última charada: O *cupom* é o número de alunos que estou comemorando, e existem 10 tipos que podem acertar a resposta. As que sabem e as que não sabem.Agora vai lá na Udemy e boa sorte! (PS.: funciona com qualquer curso meu!)
 
 ## Conclusão
 
