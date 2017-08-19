@@ -134,6 +134,12 @@ Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse bl
 
 **Update:** tiveram já 5 máquinas absurdamente rápidas que conseguiram os cupons! Meus parabéns!! =D
 
+Mas lembrando que existem cupons de desconto, seguem eles:
+
+- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=SEGUIDORFIEL)
+- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=SEGUIDORFIEL)
+- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD)
+
 E aqui também vão alguns cupons de eventos maneiros que estão para acontecer:
 
 - [BrazilJS Fortaleza](https://eventloop.com.br/braziljs-conf-2017-fortaleza?applyCoupon=willjusten-braziljs-for)
