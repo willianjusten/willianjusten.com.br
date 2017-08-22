@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Criando Componentes React com Testes - <br/> Lyef-flag"
+title: "Criando Componentes React com Testes - Lyef-flag"
 date: 2017-08-22 17:36:07
 image: '/assets/img/lyef-flags/main.png'
 description: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
