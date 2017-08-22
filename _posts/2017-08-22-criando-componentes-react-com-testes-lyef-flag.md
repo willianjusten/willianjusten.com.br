@@ -63,7 +63,7 @@ Nosso componente poderia ser escrito da seguinte forma então:
 <Flag country="br" size="small" />
 {% endhighlight %}
 
-Nosso componente seria o `Flag` e ele poderá receber duas `props` que são `country` e `size`. Tendo isso em mente, a gente já pode então definir o código no Storybook para as stories, para você entender mais sobre como escrever Stories e como elas funcionam, [segue esse link](https://storybook.js.org/basics/writing-stories/). Dentro do arquivo `stories/Main.js` iremos escrever o seguinte código:
+Ele vai ser o `Flag` e poderá receber duas `props` que são `country` e `size`. Tendo isso em mente, a gente já pode então definir o código para as stories, para você entender mais sobre como escrever Stories e como elas funcionam, [segue esse link](https://storybook.js.org/basics/writing-stories/). Dentro do arquivo `stories/Main.js` iremos escrever o seguinte código:
 
 {% highlight js %}
 import React from 'react';
