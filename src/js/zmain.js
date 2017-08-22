@@ -1,8 +1,5 @@
 (function( $, window, undefined ) {
 
-  // init highlight
-  hljs.initHighlightingOnLoad();
-
   // Menu
   $("a#slide").click(function(){
     $("#sidebar,a#slide,#fade").addClass("slide");
