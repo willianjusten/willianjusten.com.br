@@ -10,7 +10,7 @@ tags:
 - react
 - js
 categories:
-- Aprendendo ReactJS
+- Componentes React
 twitter_text: "Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS"
 introduction: "Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS"
 ---
