@@ -25,7 +25,7 @@ Bom, deixar de conversa e vamos lá. O componente de hoje será extremamente sim
 
 ## Sobre o Componente que iremos criar
 
-Como dito, o componente de hoje será bastante simples e se chama [Lyef-flags](https://github.com/lyef/lyef-flags), o código você pode ver no link ali e se quiser, pode ver a [demo aqui](https://lyef.github.io/lyef-flags/). O componente irá utilizar o banco de images do [Flagpedia](http://flagpedia.net/) para poder renderizar a bandeirinha de acordo com a sigla passado e o tamanho definido.
+Como dito, o componente de hoje será bastante simples e se chama [Lyef-flags](https://github.com/lyef/lyef-flags), o código você pode ver no link ali e se quiser, pode ver a [demo aqui](https://lyef.github.io/lyef-flags/). O componente irá utilizar o banco de images do [Flagpedia](http://flagpedia.net/) para poder renderizar a bandeirinha de acordo com a sigla passada e o tamanho definido.
 
 ![Exemplo das bandeirinhas](/assets/img/lyef-flags/flags.png)
 
