@@ -103,7 +103,7 @@ storiesOf('Flag', module)
     ));
 {% endhighlight %}
 
-Como pode ver, eu utilizei o `storiesOf` para criar as `stories` do meu componente que será o `Flag` e utilizei o `.add('description')` para colocar cada `storie` que nós queriamos.
+Como pode ver, eu utilizei o `storiesOf` para criar as `stories` do meu componente que será o `Flag` e utilizei o `.add('description')` para colocar cada `story` que nós queriamos.
 
 Tendo isso pronto, podemos rodar o Storybook com o comando `npm start` e você irá receber a seguinte tela:
 
