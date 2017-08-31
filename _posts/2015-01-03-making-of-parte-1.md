@@ -79,7 +79,7 @@ Eu poderia ficar um post inteiro explicando os motivos de se utilizar SVG, mas o
 
 2- [Funciona bem na maioria dos navegadores](http://caniuse.com/#search=svg) (ao menos os que desejo alcançar) e não tem erros bizarros quando demora para carregar, como os font-icons. Segue uma imagem com um bug bem comum dos font-icons.
 
-![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](http://i.stack.imgur.com/vZhku.png)
+![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](https://i.stack.imgur.com/vZhku.png)
 
 
 #### Stylus
@@ -90,7 +90,7 @@ Um outro cara que eu conheço que utiliza Stylus é o maluco do [Suissa](https:/
 
 Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em cima. O Jeet por ser um grid semântico (lê-se nada de col-md-xs-lg-motherfucker). O Rupture, para evitar de escrever @media direto e o Kouto Swiss, que possui várias e várias funções bem legais para trabalhar. Segue abaixo um exemplo de um trecho utilizando o poder desses 3 em conjunto:
 
-{% highlight css linenos%}
+{% highlight css %}
 .datetime
     col(1/6)
     text-align center

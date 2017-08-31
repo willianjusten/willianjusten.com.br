@@ -180,7 +180,7 @@ Aqui ficam dois detalhes **muito importantes**, na linha `3`, eu utilizo o `.pip
 
 E na linha `5`, eu faço as chamadas dos componentes do stylus, assim fica mais fácil de chamar no arquivo stylus, ao invés de colocar chamada para `node_modules` eu simplesmente coloco `@import "jeet"`.
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 gulp.task('stylus', function(){
         gulp.src('src/styl/main.styl')
         .pipe(plumber())

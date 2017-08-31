@@ -45,7 +45,7 @@ Depois de criada a base, veremos simples inputs de checkbox, aqueles quadradinho
 
 **Atenção, todo o css usado aqui, foi sem prefixos, por favor, se desejar maior compatibilidade, use os prefixos, de preferência use um pre-processador para isso =)**
 
-{% highlight css linenos %}
+{% highlight css %}
 .switch {
   position: absolute;
   margin-left: -9999px;

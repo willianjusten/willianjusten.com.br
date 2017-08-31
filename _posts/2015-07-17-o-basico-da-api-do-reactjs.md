@@ -50,7 +50,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/1-render-getting-star
 
 ### Render sem JSX - React.createElement
 
-{% highlight js linenos %}
+{% highlight js %}
 ReactDOM.render(
     React.createElement('h1', null, "Hello World!"),
     document.getElementById("content")
@@ -80,7 +80,7 @@ ReactClass createClass(object specification)
 
 Serve para criar um componente dada uma especificação. Um componente implementa um método render que retorna um filho único. Esse filho pode ter uma estrutura arbitrária. A vantagem deste método é que nos permite já criar componentes para serem reaproveitados.
 
-{% highlight js linenos %}
+{% highlight js %}
 var Hello = React.createClass({
     render: function() {
       return (
@@ -205,7 +205,7 @@ Existem mais métodos na API, basta dar uma [olhada aqui](https://facebook.githu
 
 Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o código e vamos destrinchá-lo:
 
-{% highlight js linenos %}
+{% highlight js %}
 var Timer = React.createClass({
 
     getInitialState: function(){

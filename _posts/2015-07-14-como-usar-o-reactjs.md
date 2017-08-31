@@ -66,7 +66,7 @@ Essa forma é a mais básica de todas e funciona como se fosse usar uma bibliote
 
 E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou chamando de um outro arquivo.
 
-{% highlight js linenos %}
+{% highlight js %}
 <script>
   var ExampleApplication = React.createClass({
     render: function() {
@@ -116,7 +116,7 @@ Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/j
 
 **update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga <interpretar class=""></interpretar>
 
-{% highlight js linenos %}
+{% highlight js %}
 <script type="text/babel">
   var ExampleApplication = React.createClass({
     render: function() {
@@ -146,7 +146,7 @@ Com o ES6 vindo aí com força total, o React passou a dar suporte a partir da [
 
 **update: (02/06/2016)** - antes utilizámos o parâmetro `harmony=true`, agora é só passar que o tipo é `text/babel` para funcionar.
 
-{% highlight js linenos %}
+{% highlight js %}
 <script type="text/babel">
   class ExampleApplication extends React.Component {
     render() {
@@ -172,7 +172,7 @@ O grande diferencial aqui fica por conta da criação de uma classe `ExampleAppl
 
 ### JS pré-compilado
 
-Podemos escrever em `JSX` e antes de enviar para nosso servidor, podemos fazer um build compilando esse `JSX` para `JS`. 
+Podemos escrever em `JSX` e antes de enviar para nosso servidor, podemos fazer um build compilando esse `JSX` para `JS`.
 
 **update: (02/06/2016)** - Antigamente utilizávamos o react-tools para fazer esse trabalho de compilação. Mas agora fica tudo a cargo do babel. Onde instalamos a cli do babel e o seu preset para react.
 

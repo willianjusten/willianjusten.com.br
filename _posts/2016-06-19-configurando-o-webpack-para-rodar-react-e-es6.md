@@ -26,7 +26,7 @@ Se você quiser pular tudo e ver o código final, só [abrir aqui](https://githu
 
 ## O que é webpack?
 
-Bom, eu falei que o webpack é um `module loader`, mas que desgraça é essa? Foi-se o tempo que escrevíamos todo o nosso código num grande arquivo javascript e chamávamos de `script.js`. Com o tempo, fomos aprendendo que é importante separar as responsabilidades e criar arquivos menores. Esses arquivos menores, nada mais são, que `módulos` da nossa aplicação. E o webpack é responsável por empacotar esses módulos e entregá-los para a web. 
+Bom, eu falei que o webpack é um `module loader`, mas que desgraça é essa? Foi-se o tempo que escrevíamos todo o nosso código num grande arquivo javascript e chamávamos de `script.js`. Com o tempo, fomos aprendendo que é importante separar as responsabilidades e criar arquivos menores. Esses arquivos menores, nada mais são, que `módulos` da nossa aplicação. E o webpack é responsável por empacotar esses módulos e entregá-los para a web.
 
 Existem outros do gênero como o [Browserify](http://browserify.org/), que trabalha com a estrutura de CommonJS para requerer novos módulos, por exemplo.
 
@@ -72,11 +72,11 @@ npm install webpack-dev-server --save-dev
 
 Você pode usar só a ferramenta do webpack pelo terminal, mas como, em geral, você vai utilizá-lo só em projetos um pouquinho mais detalhados, é legal criar um arquivo de configuração. Então, para isso, crie um arquivo `webpack.config.js`. E as primeiras configurações podem ser:
 
-{% highlight js linenos %}
+{% highlight js %}
 module.exports = {
     entry: './app/App.js',
     output: {
-        path: './public', 
+        path: './public',
         filename: 'bundle.js'
     }
 }
@@ -126,7 +126,7 @@ O `babel-core` e `babel-loader` são os pacotes principais do babel para o funci
 
 Com tudo instalado, precisamos colocar mais algumas linhas no nosso `webpack.config.js`, para avisar dessa compilação.
 
-{% highlight js linenos %}
+{% highlight js %}
 module: {
     loaders: [{
         test: /\.js$/,
