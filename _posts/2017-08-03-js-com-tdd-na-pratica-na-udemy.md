@@ -18,9 +18,7 @@ introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha port
 
 Faaaala pessoal, hoje eu estou muito feliz de estar lançando meu curso de [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD) em sua totalidade na Udemy! O Curso tem mais de **140 vídeos** e mais de **14 horas de duração**, foi um curso bastante trabalhoso de se fazer, mas que estou bastante feliz com o resultado =D
 
-Eu vou deixar um vídeo aqui embaixo explicando tudo que vai ter no curso, assim fica mais fácil de entender. Mas para você que é apressadinho e já quer comprar, é só acessar [esse link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD) e o cupom é **LANCAMENTOTDD**
-
-Se você quiser dividir o curso, pode também fazer a compra pelo [Sympla](https://www.sympla.com.br/javascript-com-tdd-na-pratica__173102) usando o mesmo cupom **LANCAMENTOTDD**. Lembrando que para compras no Sympla, o processo é manual, então pode ter um delay entre a compra e a liberação, nada muito grande =)
+Eu vou deixar um vídeo aqui embaixo explicando tudo que vai ter no curso, assim fica mais fácil de entender. A promoção de lançamento acabou e foi um sucesso, mas você sempre pode comprar com um desconto bem maneiro com o cupom **SEGUIDORFIEL** ou clicando no [seguinte link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=SEGUIDORFIEL), aproveite!
 
 ## Vídeo
 
