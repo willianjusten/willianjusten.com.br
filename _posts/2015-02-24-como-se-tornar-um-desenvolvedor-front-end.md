@@ -190,6 +190,7 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [Learn to code Html & CSS](http://learn.shayhowe.com/)
 - [Apostila Web da Caelum](http://www.caelum.com.br/apostila-html-css-javascript/)
 - [Dive into Html5 em Português](http://diveintohtml5.com.br/)
+- [HTML Cheat Sheet](https://digital.com/tools/html-cheatsheet/)
 
 #### Semântica
 - [Use Html5 sectioning elements](http://blog.teamtreehouse.com/use-html5-sectioning-elements)
@@ -357,7 +358,7 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 
 - [Codrops](http://tympanus.net/codrops/)
 - [EchoJS](http://www.echojs.com/)
-- [Html5 Rocks](http://html5rocks.com/)
+- [Google’s Web Fundamentals Program](https://developers.google.com/web)
 - [Css-tricks](http://css-tricks.com/)
 - [Smashing Magazine](http://www.smashingmagazine.com/)
 - [Da2k Blog](http://blog.da2k.com.br/) - PtBr
