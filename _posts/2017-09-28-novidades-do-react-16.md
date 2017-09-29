@@ -227,6 +227,10 @@ Como dito antes, a forma de empacotamento do React mudou. E não existe mais `re
 
 O React 16 depende dos collection types [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) e [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set). Se você precisa dar suporte para browsers antigos que não suportam nativamente, será necessário incluir um polyfill na aplicação. Você pode ver mais sobre [aqui](https://facebook.github.io/react/blog/#javascript-environment-requirements).
 
+## Site atualizado da Documentação
+
+É isso mesmo, refizeram o site da documentação, ficou mais limpo, mais fácil de acessar os menus e numa linguagem de bem fácil entendimento, dá uma [checada lá](https://reactjs.org/).
+
 ## Conclusão
 
 Bom galera, é basicamente isso. O React continua firme e forte e cada vez melhorando mais! Não precisa ter medo de começar a estudar não, porque a biblioteca vai longe ainda. E essas mudanças novas foram mais do que bem vindas!
