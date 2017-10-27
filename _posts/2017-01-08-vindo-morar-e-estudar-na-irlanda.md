@@ -47,7 +47,7 @@ Vou separar esse post em algumas partes, pois acho que ficará mais simples de s
 
 <h2 id="estudar-ingles">Estudar Inglês</h2>
 
-Como todo já sabe, inglês é a coisa mais importante para um programador e isso vem antes de qualquer linguagem de programação. É claro que você pode ser um programador incrível e não saber uma gota de inglês, porém você terá muito mais dificuldades de conseguir isso.
+Como todo mundo já sabe, inglês é a coisa mais importante para um programador e isso vem antes de qualquer linguagem de programação. É claro que você pode ser um programador incrível e não saber uma gota de inglês, porém você terá muito mais dificuldades de conseguir isso.
 
 Através do inglês podemos consumir conteúdos únicos e bastante atualizados, seja de onde for, já que inglês é a língua universal. Sem contar que o inglês abre muitas portas para trabalhos no exterior e permite que você seja visto de onde quer que seja.
 
