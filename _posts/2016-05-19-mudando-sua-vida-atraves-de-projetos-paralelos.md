@@ -42,9 +42,9 @@ Aquele foi meu primeiro contato, mas depois passei a ser só um player normal. C
 
 Naquela época eu jogava um MMORPG chamado [World of Warcraft](http://us.battle.net/wow/pt/), mas jogava no servidor oficial da Blizzard mesmo. Mal entrei na faculdade e conheci uns amigos que jogavam em um servidor pirata chamado [Mod World](https://www.youtube.com/watch?v=RHNkvHmh8Ac). Fiquei impressionado com aquilo, para as pessoas que conhecem o jogo, sabem que ele é gigantesco, fiquei curioso como as pessoas conseguiram fazer o jogo funcionar num servidor não oficial e ainda chamar tantas outras pessoas para jogar. Resolvi jogar nesse servidor pirata para conhecer e também porque era mais divertido jogar com meus amigos de faculdade.
 
-Ao mesmo tempo, na Química eu estava começando a conhecer o pessoal do Laboratório de Química Computacional, eles precisavam de alguém que sabia mexer com Linux, que gostasse de Química e quisesse aprender mais sobre modelagem 3d. Na hora eu me ofereci e acabei ganhando uma bolsa de iniciação científica. Comecei a trabalhar bastante com computação desde então, eu aprendi a mexer em clusters (mas antes eu quase ferrei um =x), aprendi Fortran, Matriz Z, OpenGL e um pouquinho de C/C++. 
+Ao mesmo tempo, na Química eu estava começando a conhecer o pessoal do Laboratório de Química Computacional, eles precisavam de alguém que sabia mexer com Linux, que gostasse de Química e quisesse aprender mais sobre modelagem 3d. Na hora eu me ofereci e acabei ganhando uma bolsa de iniciação científica. Comecei a trabalhar bastante com computação desde então, eu aprendi a mexer em clusters (mas antes eu quase ferrei um =x), aprendi Fortran, Matriz Z, OpenGL e um pouquinho de C/C++.
 
-E eis que o inesperado aconteceu, infelizmente o fundador do servidor de WoW havia falecido de um infarto fulminante e pediram então se alguém se voluntariava a tentar tocar o barco no lugar dele, só enquanto as coisas se ajustavam. Como eu sou maluco, me ofereci. A questão é que eu num tinha a mínima ideia de como era gerenciar um servidor de um jogo, ainda mais um tão grande e com tantas coisas. 
+E eis que o inesperado aconteceu, infelizmente o fundador do servidor de WoW havia falecido de um infarto fulminante e pediram então se alguém se voluntariava a tentar tocar o barco no lugar dele, só enquanto as coisas se ajustavam. Como eu sou maluco, me ofereci. A questão é que eu num tinha a mínima ideia de como era gerenciar um servidor de um jogo, ainda mais um tão grande e com tantas coisas.
 
 A primeira merda que deu, foi que a máquina atual que ficava o jogo era muito cara e sem o fundador, não teríamos como pagar. Então me foi encubida a tarefa de escolher um novo lugar para hospedar o jogo. E vocês acham que eu sabia como escolher? Eu não tinha a mínima ideia! Mas nosso amigo Google é realmente um companheiro, bastou algumas pesquisas, falar com as pessoas certas e nos fóruns corretos e descobri qual seria a melhor configuração. Depois disso, ainda precisei aprender como fazer tudo rodar, conectar o banco de dados, nossa, foram alguns dias intensos. Faltei aula a semana toda só para me dedicar a isso e no final deu tudo certo! Ver a galera gritando nos canais meu nome e agradecendo, foi demais, uma das melhores sensações que eu já tinha tido, eu finalmente tinha sido útil! Foi nesse mesmo servidor que eu fiz meu melhor amigo até hoje, um gaúcho chamado Leonardo Silva, conheci uma guria que namorei por 5 anos e fiz outros grandes amigos até da nossa área como o [Yuri Piratello](https://br.linkedin.com/in/yuripiratello), que sempre me ajuda em umas dúvidas idiotas.
 
@@ -81,43 +81,25 @@ Foram **mais de 600 horas assistidas**, com mais de **14 mil vídeos tocados**, 
 
 <h2 id="novos-rumos">Novos Rumos</h2>
 
-E assim como no meu primeiro projeto paralelo teve uma grande mudança, que foi sair da Química para TI. No meu segundo projeto paralelo também tiveram as mudanças de empresas e conhecimento. Para fechar meu terceiro projeto paralelo, eu tinha que ter uma grande mudança também! 
+E assim como no meu primeiro projeto paralelo teve uma grande mudança, que foi sair da Química para TI. No meu segundo projeto paralelo também tiveram as mudanças de empresas e conhecimento. Para fechar meu terceiro projeto paralelo, eu tinha que ter uma grande mudança também!
 
 Anuncio aqui, que saí da HUGE para me dedicar totalmente aos meus projetos paralelos durante um tempo e também um sonho que tenho há muito tempo, que é viajar pelo mundo, conhecendo novas culturas, novas pessoas e claro, vendo como são os programadores em cada lugarzinho. Sempre me imaginei como na cena abaixo:
 
 ![Um homem sentado a beira de um lago com várias montanhas com picos congelados a frente](/assets/img/side-projects/digital-nomad.jpg)
 
-E para conseguir essa grande mudança, eu venho me planejando já há algum tempinho. Juntei um dinheiro enquanto estive nas empresas grandes que passei e agora comecei com essa iniciativa dos cursos online. Como eu sempre tento fazer as minhas coisas pela comunidade, resolvi criar cursos gratuitos, onde quem quiser ajudar, pode doar o quanto achar que os cursos valem, através dos botões:
-
-<div class="container-donation">
-    <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-        <input type="hidden" name="currency" value="BRL">
-        <input type="hidden" name="receiverEmail" value="willianjustenqui@gmail.com">
-        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
-    </form>
-
-    <form class="form-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="A2ZASCVXE7X36">
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" alt="doe =)" width="1" height="1">
-    </form>
-</div>
-
-E também para conseguir gerar o resto da renda, que vai me permitir esse desafio, estou construindo um curso de SVG que está em pré-venda.
-
-Até o **próximo domingo (22/05)** eu estou disponibilizando o curso ainda mais barato! Saindo por apenas **R$ 120,00** e só podem ser comprados através dos botões abaixo ou transferência. Depois desses dias, eu vou remover esses botões, então, seja esperto.
-
-E quem me ajudou desde cedo na pré-venda já vai ganhar R$ 30,00 de desconto em qualquer outro curso que eu lançar! Vocês foram muito importantes por apostarem em mim desde o início.
-
-### Promoção da Pré-venda (até dia 22/05)
-
-**Promoção esgotada! Muito obrigado a todos! =D**
+E para conseguir essa grande mudança, eu venho me planejando já há algum tempinho. Juntei um dinheiro enquanto estive nas empresas grandes que passei e agora comecei com essa iniciativa dos cursos online. Fiz cursos gratuitos para mostrar as pessoas como seria meu conteúdo/didática e então depois lancei cursos pagos, que também tiveram ótima recepção.
 
 <h2 id="novos-projetos">Novos Projetos</h2>
 
 Além desse novo rumo que estarei tomando para minha vida, também pretendo criar novos projetos, tudo sempre em prol de ajudar a comunidade e retornar a ajuda que vocês me derem para esse meu sonho. Pretendo sim criar novos cursos de diversos assuntos que vocês tem me pedido e algumas coisas bastante novas que nunca vi sendo feito por aqui. Espero que gostem das surpresas que tem por vir =D
+
+## Black Friday
+
+E se você leu esse post, ~~ou só desceu até aqui~~, seguem aqui cupons dos meus cursos com promoção **destruidora** com todos os preços no mínimo! Clique nos links abaixo ou então use o código **BLACKFRIDAYJA**.
+
+- [Curso de JS com TDD + ES6](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=BLACKFRIDAYJA)
+- [Curso de ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=BLACKFRIDAYJA)
+- [Curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=BLACKFRIDAYJA)
 
 <h2 id="conclusao">Conclusão</h2>
 
