@@ -11,13 +11,14 @@ tags:
 - dicas
 - lifestyle
 categories:
+- "Trabalhar no exterior, remoto, viagens, etc."
 twitter_text: 'Será que a diferença é tão grande assim?'
 introduction: 'Será que a diferença é tão grande assim? Vamos conversar um pouco sobre isso.'
 ---
 
 ## Introdução
 
-Faaaala pessoal, o post de hoje vai ser retirado da minha primeira iteração com as respostas do [formulário](https://willianjusten.typeform.com/to/MtDdfi) que passei pedindo para as pessoas me perguntarem coisas sobre Trabalho Remoto, viagens e etc.
+Faaaala pessoal, o post de hoje vai ser retirado da minha primeira iteração com as respostas do [formulário](https://willianjusten.typeform.com/to/MtDdfi) que passei pedindo para as pessoas me perguntarem coisas sobre Trabalho Remoto, viagens e etc. Todos esses posts vão ficar separados na série chamada [Trabalhar no exterior, remoto, viagens e etc.](https://willianjusten.com.br/series/#trabalhar-no-exterior-remoto-viagens-etc).
 
 Tiveram muiiitas perguntas que acho que dá para criar uns 50 posts só disso. Mas uma pergunta que teve bastante repetição e por isso resolvi falar especificamente sobre foi:
 

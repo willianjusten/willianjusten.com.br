@@ -11,7 +11,7 @@ tags:
 - ireland
 - exchange
 categories:
-- Experiências no Exterior
+- "Trabalhar no exterior, remoto, viagens, etc."
 twitter_text: "Algumas coisas sobre como vir para Irlanda."
 introduction: "Algumas coisas que eu passei e você precisa saber se deseja vir morar e/ou estudar aqui também."
 ---
@@ -51,7 +51,7 @@ Como todo mundo já sabe, inglês é a coisa mais importante para um programador
 
 Através do inglês podemos consumir conteúdos únicos e bastante atualizados, seja de onde for, já que inglês é a língua universal. Sem contar que o inglês abre muitas portas para trabalhos no exterior e permite que você seja visto de onde quer que seja.
 
-Sabendo disso, fica aquela pergunta então. Como estudar? E uma das formas que mais facilita é ir morar num país nativo da língua inglesa, mas que fique bem claro, só morar fora não te dará fluência! Morar fora vai te ajudar a ter um convívio mais direto com a língua e consequentemente você acabará treinando mais a língua. 
+Sabendo disso, fica aquela pergunta então. Como estudar? E uma das formas que mais facilita é ir morar num país nativo da língua inglesa, mas que fique bem claro, só morar fora não te dará fluência! Morar fora vai te ajudar a ter um convívio mais direto com a língua e consequentemente você acabará treinando mais a língua.
 
 Tendo esse desejo de estudar em mente e condições de tentar morar fora um tempo, vem outra pergunta, onde?
 
@@ -89,7 +89,7 @@ Ah esse país maravilhoso! O Canadá é um EUA que deu certo para mim, com uma c
 
 **Vantagens**
 
-O custo é um pouco menor que os EUA, o inglês deles é bastante e costuma ser um pouco mais neutro que o inglês americano, possuindo menos gírias. Possuem algumas das melhores escolas do mundo. 
+O custo é um pouco menor que os EUA, o inglês deles é bastante e costuma ser um pouco mais neutro que o inglês americano, possuindo menos gírias. Possuem algumas das melhores escolas do mundo.
 
 **Desvantagens**
 
@@ -109,7 +109,7 @@ O inglês não é a primeira lingua da maioria da população. Por ser uma ilha 
 
 ### Australia / Nova Zelândia
 
-Países maravilhosos e com clima excelente, bem próximos do Brasil. Com pessoas muito amigáveis e um estilo de vida bastante aventureiro. 
+Países maravilhosos e com clima excelente, bem próximos do Brasil. Com pessoas muito amigáveis e um estilo de vida bastante aventureiro.
 
 **Vantagens**
 
@@ -129,7 +129,7 @@ Os cursos são bastante baratos e você ainda tem a possibilidade de trabalhar 2
 
 **Desvantagens**
 
-O inglês em algumas partes da Irlanda tem um sotaque bastante carregado. Dublin é uma cidade tão cosmopolita que as vezes fica até difícil arrumar irlandeses de fato. Dublin é uma cidade bem pequena e antiga, então acaba que os aluguéis são caros e as casas não tão boas... 
+O inglês em algumas partes da Irlanda tem um sotaque bastante carregado. Dublin é uma cidade tão cosmopolita que as vezes fica até difícil arrumar irlandeses de fato. Dublin é uma cidade bem pequena e antiga, então acaba que os aluguéis são caros e as casas não tão boas...
 
 <h2 id="cursos-irlanda">Cursos na Irlanda</h2>
 
@@ -246,7 +246,7 @@ Esse visto garante a permanência em solo irlandês até uma data especificada, 
 
 Você faz tudo na Irlanda, **isso mesmo**, o processo é feito na Irlanda! Mas não pense que é essa molezinha também, você precisa das seguintes coisas:
 
-- Matrícula em uma escola 
+- Matrícula em uma escola
 - Seguro governamental obrigatório
 - Comprovante de acomodação (pode ser temporária)
 - Comprovante de 3000 euros
@@ -339,9 +339,9 @@ E não é só comida que é barata aqui não, existem lojas que vendem roupas be
 
 Uma coisa que também deixa bastante gente curiosa é: Quanto eu vou gastar para ir? Vou aqui colocar algumas coisas importantes para você ter em mente, os preços são estimados e obviamente variam de pessoa para pessoa. Se você tiver um estilo de vida mais barato, pode acabar gastando menos. Então vamos aqui a listinha:
 
-- Escola (inclui 1 semana acomodação, seguro obrigatório): ~2400 euros 
+- Escola (inclui 1 semana acomodação, seguro obrigatório): ~2400 euros
 - Passagem aérea ida/volta: ~800 euros
-- Dinheiro de comprovação: 3000 euros (mas o mínimo recomendado é 4000 euros) 
+- Dinheiro de comprovação: 3000 euros (mas o mínimo recomendado é 4000 euros)
 
 Esses acima são os que você já vai gastar antes mesmo de embarcar para a Irlanda. Depois disso, você ainda vai ter alguns gastos de primeiro mês que são bem importantes de serem lembrados:
 
@@ -360,9 +360,9 @@ A Irlanda é conhecida como Ilha Esmeralda pois é cercada de verde por todos os
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BNWzfWjg3GU/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">More than 800km on the road and I finally achieved my dream! #ireland #dingle #ringofkerry #nofilter</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Willian Justen de Vasconcellos (@will_justen) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-28T13:57:35+00:00">Nov 28, 2016 às 5:57 PST</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
-Aqui na Irlanda é bem fácil de se locomover, você pode usar trem para trechos próximos de Dublin ou carro/ônibus para outros pontos mais distantes. O país é bem pequeno, então com 5-6h você atravessa de uma ponta para a outra. 
+Aqui na Irlanda é bem fácil de se locomover, você pode usar trem para trechos próximos de Dublin ou carro/ônibus para outros pontos mais distantes. O país é bem pequeno, então com 5-6h você atravessa de uma ponta para a outra.
 
-Além da beleza natural, nós temos também vários artistas pela cidade, tocando, dançando, enfim, fazendo qualquer coisa para chamar a sua atenção. 
+Além da beleza natural, nós temos também vários artistas pela cidade, tocando, dançando, enfim, fazendo qualquer coisa para chamar a sua atenção.
 
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BLoFAzxgNpk/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">39th day! There&#39;s always an artist in each corner of Ireland! #ireland #dance #art</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Um vídeo publicado por Willian Justen de Vasconcellos (@will_justen) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-16T13:55:00+00:00">Out 16, 2016 às 6:55 PDT</time></p></div></blockquote>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
@@ -386,7 +386,7 @@ E além da Irlanda ser bela, uma grande vantagem dessa ilha maravilhosa é que e
 
 <h2 id="conclusao">Conclusão</h2>
 
-Bom galera, estas aí são algumas das coisas mais importantes se você tem em mente fazer um curso de línguas e/ou morar na Irlanda. O gasto inicial pode parecer alto, mas o retorno eu garanto que é muito mais valioso, seja pela quantidade de cultura que você ganha, seja pelo conhecimento que você adquire. 
+Bom galera, estas aí são algumas das coisas mais importantes se você tem em mente fazer um curso de línguas e/ou morar na Irlanda. O gasto inicial pode parecer alto, mas o retorno eu garanto que é muito mais valioso, seja pela quantidade de cultura que você ganha, seja pelo conhecimento que você adquire.
 
 Morar em um outro país é uma experiência de vida que muda muito a gente em diferentes formas e essa mudança é muito importante para nos conhecermos e entendermos como o mundo funciona fora da sua zona de controle.
 
