@@ -75,7 +75,7 @@ Ok, você já entendeu que o inglês é de extrema importância para nossa área
 
 > O mais importante numa comunicação é entender e se fazer entendido. Nada mais.
 
-Claro que não rola fazer entrevistas se você só sabe o verbo `to be` e `the books is on the table`. Mas se você é capaz de se comunicar (mesmo que lhe falte um pouco de vocabulário e alguns errinhos de concordância) e principalmente de entender o que falam contigo, isso é mais do que meio caminho andado. Você vai ver que depois de um tempo imerso na língua, as dificuldades vão começar a desaparecer.
+Claro que não rola fazer entrevistas se você só sabe o verbo `to be` e `the book is on the table`. Mas se você é capaz de se comunicar (mesmo que lhe falte um pouco de vocabulário e alguns errinhos de concordância) e principalmente de entender o que falam contigo, isso é mais do que meio caminho andado. Você vai ver que depois de um tempo imerso na língua, as dificuldades vão começar a desaparecer.
 
 Lembre-se também que, com exceção de EUA, Canadá, UK, a maioria dos outros países também não tem inglês como língua nativa. Isso significa que a mesma dificuldade que você tem as vezes, as pessoas também terão! Eu até hoje não conheci um Francês/Belga que tivesse uma pronúncia 100% correta, é difícil para caramba para eles! O mesmo eu diria dos espanhóis, eu estou passando uma temporada na Espanha e já trabalhei em alguns coworkings aqui onde tinha bastante gente que sabia beeeem pouquinho de Inglês, mas ficavam super felizes de conversar e treinar comigo.
 
