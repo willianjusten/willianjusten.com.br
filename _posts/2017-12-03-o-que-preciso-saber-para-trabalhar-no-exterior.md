@@ -44,7 +44,7 @@ Não importa que todo dia nasce um Framework JS novo, não importa que te falara
 
 Muitos desenvolvedores acabam aprendendo boa parte das coisas na prática e isso é fantástico! Só que dentro disso, está uma pequena armadilha também. Muita gente aprende na prática que se usar X funciona, mas se usar Y não funciona. Só que o mais importante "Por que isso funciona assim?", as vezes é deixado de lado. Se você conseguir aliar a teoria à prática, de forma que você realmente entenda os processos, isso além de te salvar horas debugando, vai te permitir ter discussões melhores e ideias melhores sobre determinado assunto. É por isso que muitos testes para fora são mais focados em algoritmos e estrutura de dados, pois eles entendem que se você sabe sobre os processos, aprender o ecossistema da empresa será muito mais rápido e fácil. Então toma um tempinho para dar uma olhada em Algoritmos e Estrutura de Dados, tente fazer alguns desafios do [HackerRank](https://www.hackerrank.com/) ou outros similares, garanto que vai te abrir o mundo.
 
-O [Jean Carlo Emer](https://twitter.com/jcemer) fez uma palestra bem foda falando um pouco disso, [olha os slides aqui](https://www.slideshare.net/jeancarloemer/what-i-learned-interviewing-for-frontend-developer-roles).
+O [Jean Carlo Emer](https://twitter.com/jcemer) fez uma palestra bem foda falando um pouco disso, [olha os slides aqui](https://www.slideshare.net/jeancarloemer/what-i-learned-interviewing-for-frontend-developer-roles) e o [vídeo aqui](https://www.youtube.com/watch?v=nfk3G3VB0OY).
 
 ## Pesquise, pergunte, não tenha dúvidas
 
