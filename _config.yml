@@ -13,7 +13,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-
 # html minify
 compress_html:
   clippings: all
