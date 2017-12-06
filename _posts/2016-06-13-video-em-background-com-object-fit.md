@@ -32,35 +32,35 @@ Com o `object-fit` eu consigo usar também em imagens e **vídeos**, fazendo ess
 
 Primeiro criaremos nosso markup, bem simples, contendo só o `wrapper` que é onde queremos que o vídeo preencha todo e a nossa tag de vídeo.
 
-{% highlight html %}
+```html
 <div class="wrapper">
     <video autoplay loop poster="img/bg-course.png">
         <source src="video-full.mp4">
     </video>
 </div>
-{% endhighlight %}
+```
 
 As opções em vídeo são `autoplay` para que o vídeo inicie sozinho, `loop` para que ele fique repetindo e `poster` onde defino uma imagem padrão, para os momentos que o vídeo ainda não foi carregado ou que deu erro. Dentro de `source`, podemos colocar o vídeo em diferentes formatos, veja a [tabela de compatibilidade](http://caniuse.com/#search=video) para ver quais formatos você vai precisar utilizar.
 
 Depois de criado o markup, vamos definir nossos estilos. Criamos um `wrapper` onde o nosso vídeo vai ficar, eu estou usando as famosas [viewport units](http://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/), para poder definir a altura toda da tela. Também coloco um `overflow: hidden` para evitar que algo passe para fora do container.
 
-{% highlight css %}
+```css
 .wrapper {
     width:100%;
     height:100vh;
     overflow: hidden;
 }
-{% endhighlight %}
+```
 
 E aí para o vídeo, para que ele ocupe toda a tela, vamos colocar:
 
-{% highlight css %}
+```css
 .wrapper video {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-{% endhighlight %}
+```
 
 O `object-fit: cover` fará com que o vídeo preencha a tela sem perder o seu aspecto. Dentro de `object-fit` temos outras opções também como `contain`, que fará com que o vídeo caiba dentro do espaço sem distorcer, mas podendo ter espaços vazios. E a opção `fill`, que irá preencher tudo, mas irá distorcer a imagem/vídeo.
 

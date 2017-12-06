@@ -32,11 +32,11 @@ Se pararmos para pensar, todo desenho começa a partir de um contorno e depois c
 
 A propriedade `stroke-dasharray` permite você determinar qual vai ser o tamanho do traço no contorno e o espaço entre um traço e outro. Exemplo:
 
-{% highlight css %}
+```css
 path {
     stroke-dasharray: 10;
 }
-{% endhighlight %}
+```
 
 Isso significa que cada traço no desenho terá um tamanho de 10 e um espaço de 10 para o próximo traço.
 
@@ -45,21 +45,21 @@ Já a propriedade `stroke-dashoffset` permite mudar onde o `stroke-dasharray` va
 Então para o efeito acontecer, basta que eu determine que o `stroke-dasharray` seja o tamanho máximo do elemento e fazer com que o `stroke-dashoffset` vá diminuindo do tamanho máximo até zero. Assim teríamos:
 
 #### Passo 1 
-{% highlight css %}
+```css
 inicio {
     stroke-dasharray: 'tamanho do desenho';
     stroke-dashoffset: 'tamanho do desenho';
 }
-{% endhighlight %}
+```
 
 Aqui, como determinamos que o `stroke-dashoffset` é o tamanho do desenho, ele empurra todo o traço e não enxergamos nada na tela.
 
 #### Passo 2 
-{% highlight css %}
+```css
 final {
     stroke-dashoffset: 0;
 }
-{% endhighlight %}
+```
 
 Nesse passo, dizemos que o traço deve começar do ponto zero do mesmo e como dizemos que o `stroke-dasharray` tem o tamanho todo, vemos claramente todo o contorno.
 
@@ -83,7 +83,7 @@ Sempre que baixar um SVG ou criar um, a melhor coisa a se fazer é dar uma otimi
 
 Basta copiar o código gerado e colar inline no seu html. Aproveite e defina uma classe para o SVG, no caso, eu coloquei `class="hello"`.
 
-{% highlight html %}
+```html
 <svg class="hello" width="230.3px" height="155.9px" viewBox="0 0 230.3 155.9">
     <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M0.5,0.2c2.2,5.8,0.7,12,0.9,18.2C2,33.2,4.9,48.5,7,63.2
         c2.2,15.4,5.8,30.3,7.4,45.7c1.3,13.2,0.4,29.8,4.7,42c-0.3-16.9-3.1-48.5,19.5-49.6c21.2-1,11.1,25.8,23.1,37.2
@@ -92,16 +92,16 @@ Basta copiar o código gerado e colar inline no seu html. Aproveite e defina uma
         c8.4-19.3,6.5-43,6.5-64c0-7.3-4.1-27-13-15.4c-4.3,5.6-4.1,23.6-4.4,30.7c-0.5,11.9-1.1,24.4,2.4,35.7c5,15.9,14.8,31.2,30.1,38.3
         c7.9,3.7,19.4,7.5,25.9-0.5c3.6-4.4,4.6-23.3,2.2-28.6c-5.5-12.5-25-10.9-29.4,1.6c-5.2,14.8,1.6,25.3,9,34.8"/>
 </svg>
-{% endhighlight %}
+```
 
 ### 4 - Descobrindo o tamanho total do path
 
 Para que possamos fazer o truque de desenhar, precisamos saber o tamanho do path para definir em nosso `stroke-dasharray` e `stroke-dashoffset`. Para isso, basta usarmos um método do Javascript. No próprio console do seu devTools, faça:
 
-{% highlight js %}
+```js
 var draw = document.querySelector('.hello path');
 console.log(draw.getTotalLength());
-{% endhighlight %}
+```
 
 No meu caso, o resultado foi de `1044.4212646484375`.
 
@@ -109,16 +109,16 @@ No meu caso, o resultado foi de `1044.4212646484375`.
 
 Depois de tudo ali em cima, agora fica bem fácil de fazer essa animação. Primeiro vamos definir para a nossa classe `hello`, o seu tamanho máximo e uma largura para o traço.
 
-{% highlight css %}
+```css
 .hello {
     stroke-width: 3px;
     stroke-dasharray: 1045; // numero arrendoda do tamanho 
 }
-{% endhighlight %}
+```
 
 Depois disso, vamos criar a animação em css usando `@keyframes`, se você não conhece ainda, dá uma lidinha no [site da MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes), lá eles falam bastante sobre. Mas o que você precisa saber é que através dos keyframes a gente consegue definir estados da animação, seja "de-para" (from-to) até o uso de porcentagens de um tempo. Para o nosso caso, faremos aquela jogadinha dos `strokes`.
 
-{% highlight css %}
+```css
 
 // write é o nome da nossa animação
 @keyframes write {
@@ -129,17 +129,17 @@ Depois disso, vamos criar a animação em css usando `@keyframes`, se você não
         stroke-dashoffset: 0; // tamanho final
     }
 }
-{% endhighlight %}
+```
 
 Feito isso, basta definirmos essa animação lá na nossa classe `hello`:
 
-{% highlight css %}
+```css
 .hello {
     stroke-width: 3px;
     stroke-dasharray: 1045; // numero arrendoda do tamanho 
     animation: 6s write; // quanto menor, mais rápido
 }
-{% endhighlight %}
+```
 
 Prontinho, temos nossa animação feita!! Segue abaixo o exemplo criado, para ver a animação é só clicar em "Rerun" ali no canto inferior direito:
 
@@ -166,7 +166,7 @@ Segue um exemplo:
 
 Vamos prestar atenção a certos trechos do código. Primeiro precisamos verificar qual o tamanho do elemento e então definir seu `stroke-dasharray` e o `stroke-dashoffset` igual nos outros exemplos.
 
-{% highlight js %}
+```js
 // Seleciona o path do nosso desenho
 var path = document.querySelector('path');
 
@@ -179,11 +179,11 @@ path.style.strokeDasharray = pathLength + ' ' + pathLength;
 // Faz com que o stroke-offset fique com o tamanho total
 // Escondendo assim o desenho
 path.style.strokeDashoffset = pathLength;
-{% endhighlight %}
+```
 
 Depois nós precisamos criar um evento de `scroll` e de acordo com ele, ir diminuindo o valor do `stroke-dashoffset` até 0.
 
-{% highlight js %}
+```js
 // Adiciona o evento de Scroll
 window.addEventListener("scroll", function(e) {
   // determina a porcentagem do quanto o usuário já scrollou na tela
@@ -195,7 +195,7 @@ window.addEventListener("scroll", function(e) {
   // Diminuindo o valor do offset para criar o desenho
   path.style.strokeDashoffset = pathLength - drawLength;
 });
-{% endhighlight %}
+```
 
 ## Conclusão
 

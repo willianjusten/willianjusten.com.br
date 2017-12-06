@@ -42,9 +42,9 @@ Cada uma dessas formas tem suas utilidades, vantagens e desvantagens e eu irei e
 
 Para adicionar um SVG como imagem, basta colocá-lo dentro da `src` da tag `img`.
 
-{% highlight html %}
+```html
 <img src="img/logo.svg" alt="Logo" />
-{% endhighlight %}
+```
 
 A utilização desta forma impede o acesso dos elementos separados do SVG, porém a imagem não irá perder qualidade caso seja redimensionada.
 
@@ -55,11 +55,11 @@ A utilização desta forma impede o acesso dos elementos separados do SVG, poré
 
 Para adicionar um SVG como background-image, basta criar um elemento com uma classe definida e então nesta classe, adicionar o SVG na propriedade de background-image.
 
-{% highlight css %}
+```css
 .element {
     background-image: url(/image/image.svg);
 }
-{% endhighlight %}
+```
 
 Quando se deseja criar grandes cenários, um método bastante interessante é utilizar o background-image para o SVG, assim você consegue desenhar vários elementos na tela com mais facilidade e podendo replicá-los ao decorrer de seu ambiente. Um exemplo bem legal é o [Santa Tracker](https://santatracker.google.com) da Google, que utiliza está técnica.
 
@@ -74,25 +74,25 @@ O SVG inline é a utilização da sua estrutura jogada diretamente no código ht
 
 São métodos antigos, que eu já não aconselho a utilizar, visto que perdem performance na página e não irão adicionar nada para que o workflow seja preferido. De qualquer forma, para adicionar, seria:
 
-{% highlight html %}
+```html
 <iframe src="img/img.svg" frameborder="0"></iframe>
 
 <object data="img/img.svg" type=""></object>
 
 <embed src="img/img.svg" type="" />
-{% endhighlight %}
+```
 
 ### 5 - Via Data URIs
 
 Uma das últimas formas de se adicionar o SVG no nosso html é utilizando os Data URIs, que pode ser inserido como utf-8 ou convertido para base64 e adicionado na tag de `img` ou como propriedade de `background-image`.
 
-{% highlight html %}
+```html
 <img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDo etc">
 
 .base64 {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0i etc);
 }
-{% endhighlight %}
+```
 
 A vantagem é que dependendo do tipo do seu svg, ele convertido pode ficar bastante pequeno, deixando o sistema ainda mais leve. Um dos exemplos mais legais que eu já vi trabalhando com isso é o site do [Make your money matter](http://makeyourmoneymatter.org/).
 

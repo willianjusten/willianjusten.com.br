@@ -59,13 +59,13 @@ Como dito acima, as `stories` são pequenos textos que definem o funcionamento d
 
 Nosso componente poderia ser escrito da seguinte forma então:
 
-{% highlight html %}
+```html
 <Flag country="br" size="small" />
-{% endhighlight %}
+```
 
 Ele vai ser o `Flag` e poderá receber duas `props` que são `country` e `size`. Tendo isso em mente, a gente já pode então definir o código para as stories, para você entender mais sobre como escrever Stories e como elas funcionam, [segue esse link](https://storybook.js.org/basics/writing-stories/). Dentro do arquivo `stories/Main.js` iremos escrever o seguinte código:
 
-{% highlight js %}
+```js
 import React from 'react';
 import Flag from '../src/Main'; // Nosso Componente
 import { storiesOf } from '@storybook/react';
@@ -101,7 +101,7 @@ storiesOf('Flag', module)
             <Flag country="br" size="normal" />
         </div>
     ));
-{% endhighlight %}
+```
 
 Como pode ver, eu utilizei o `storiesOf` para criar as `stories` do meu componente que será o `Flag` e utilizei o `.add('description')` para colocar cada `story` que nós queriamos.
 
@@ -119,7 +119,7 @@ Como falado no [primeiro post sobre a Lyef](https://willianjusten.com.br/lyef-cr
 
 Então vamos lá para o arquivo `tests/specs/Main.spec.js`, podemos apagar o que tiver lá e deixar só os `imports` necessários e escrever nosso primeiro teste, ficando assim:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 import React from 'react';
@@ -136,11 +136,11 @@ describe('<Flag />', () => {
     });
 
 });
-{% endhighlight %}
+```
 
 Precisamos garantir que o componente vai responder pela tag `<Flag>` e que essa terá suas `props` recebidas corretamente. Se você rodar o teste com o comando `npm run test:tdd`, não vai quebrar pois já tem um código sujo lá em `src/Main.js` criando o "Hello !", mas você vai receber um warning até relacionado a props não passada. Mas claramente vamos arrumar o código lá então:
 
-{% highlight js %}
+```js
 // src/Main.js
 
 import React from 'react';
@@ -157,7 +157,7 @@ Flag.propTypes = {
 
 export default Flag;
 
-{% endhighlight %}
+```
 
 Reparem que eu defini então o nosso componente para usar o nome `Flag` como default e também já defini nossas `props` como o teste determinava. Reparem que eu defini o `country` como `isRequired` visto que para renderizar a bandeira eu preciso sempre desse valor, já para o `size` eu só defini que preciso de uma `string`, mas deixei aberto para que possa ter ou não o valor definido.
 
@@ -165,7 +165,7 @@ Reparem que eu defini então o nosso componente para usar o nome `Flag` como def
 
 Beleza, temos aí o início do nosso componente, mas obviamente tá longe do que queremos. Nós queremos renderizar uma `img` com a bandeira definida né? Então o próximo passo é verificar se estou renderizando uma `img` ao montar o componente, escrevendo o próximo teste:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 ...
@@ -177,17 +177,17 @@ it('should render an image element', () => {
 
 ...
 
-{% endhighlight %}
+```
 
 Ao adicionar esse novo teste, nossos testes quebraram, informando `AssertionError: expected { Object (root, unrendered, ...) } to have a length of 1 but got 0`, ou seja, não tem nenhuma `img` renderizada. Para resolver isso de um jeito bem fácil, é só ir no nosso componente e adicionar isso:
 
-{% highlight js %}
+```js
 // src/Main.js
 
 const Flag = ({ country, size }) => (
     <img src="" alt="" />
 );
-{% endhighlight %}
+```
 
 E prontinho, mais um teste passando! Só que ainda longe do que queremos.
 
@@ -195,7 +195,7 @@ E prontinho, mais um teste passando! Só que ainda longe do que queremos.
 
 Agora já renderiza uma `img`, mas cadê a bandeirinha? A `src` sequer tá preenchida! Vamos mudar isso né, então vamos a mais um teste:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 it('should get have br on img src when country br is passed', () => {
@@ -203,7 +203,7 @@ it('should get have br on img src when country br is passed', () => {
     expect(wrapper.find('img').props().src.includes('br')).to.equal(true);
 });
 
-{% endhighlight %}
+```
 
 Nesse meu teste, eu estou fazendo o seguinte, estou checando se dentro da `src` da imagem eu tenho a string `br`, pois eu sei que a url da bandeira do brasil é `http://flagpedia.net/data/flags/small/br.png`, ou seja, utiliza o `br` ali. Para fazer o nosso teste passar, lembrando que:
 
@@ -211,13 +211,13 @@ Nesse meu teste, eu estou fazendo o seguinte, estou checando se dentro da `src` 
 
 Nós podemos alterar o nosso componente para o seguinte código:
 
-{% highlight js %}
+```js
 // src/Main.js
 
 const Flag = ({ country, size }) => (
     <img src="http://flagpedia.net/data/flags/small/br.png" alt="br" />
 );
-{% endhighlight %}
+```
 
 E prontinho! Nosso teste está passando!
 
@@ -225,7 +225,7 @@ E prontinho! Nosso teste está passando!
 
 Já estamos chegando lá, a bandeirinha tá inclusive aparecendo agora, mas o código tá `hardcoded`. Qual melhor maneira de evitar isso num teste? Escrever mais um teste similar, só que agora usando uma outra bandeira, ficando assim:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 it('should get have ca on img src when country ca is passed', () => {
@@ -233,17 +233,17 @@ it('should get have ca on img src when country ca is passed', () => {
     expect(wrapper.find('img').props().src.includes('ca')).to.equal(true);
 });
 
-{% endhighlight %}
+```
 
 Claro que o teste quebrou, pois só temos a bandeirinha do Brasil sempre. Para corrigir o código, vamos finalmente iniciar a codificação. Para essa primeira etapa, eu vou alterar a `url` da imagem só na parte da sigla, vou utilizar o [Template String](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings) para facilitar nessa concatenação. E como é um código JS, eu preciso encapsular isso entre as chaves também:
 
-{% highlight js %}
+```js
 // src/Main.js
 
 const Flag = ({ country, size }) => (
     <img src={`http://flagpedia.net/data/flags/small/${country}.png`} alt={country} />
 );
-{% endhighlight %}
+```
 
 Agora falta só fazer a parte do tamanho, lembrando que se eu não passar nenhum valor, eu preciso que o tamanho seja `small`.
 
@@ -251,7 +251,7 @@ Agora falta só fazer a parte do tamanho, lembrando que se eu não passar nenhum
 
 Agora já pensando na parte do `size`, precisamos criar um teste que dado um diferente `size` passado, eu mude na url o tamanho. Vamos fazer assim:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 it('should get have normal on img src when size normal is passed', () => {
@@ -259,17 +259,17 @@ it('should get have normal on img src when size normal is passed', () => {
     expect(wrapper.find('img').props().src.includes('normal')).to.equal(true);
 });
 
-{% endhighlight %}
+```
 
 Aqui eu quero verificar que dado `size="normal"` a url precisa conter a string `normal`. E claro, quebrou! Vamos então ao código para corrigir isso:
 
-{% highlight js %}
+```js
 // src/Main.js
 
 const Flag = ({ country, size }) => (
     <img src={`http://flagpedia.net/data/flags/${size}/${country}.png`} alt={country} />
 );
-{% endhighlight %}
+```
 
 E com isso, o teste passou normalmente.
 
@@ -277,7 +277,7 @@ E com isso, o teste passou normalmente.
 
 Mas e se eu não passar `size` nenhum? Eu preciso também garantir que vai vir `small` né? Vamos criar o seguinte código de teste:
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 it('should get have small on img src even when size is not passed', () => {
@@ -285,17 +285,17 @@ it('should get have small on img src even when size is not passed', () => {
     expect(wrapper.find('img').props().src.includes('small')).to.equal(true);
 });
 
-{% endhighlight %}
+```
 
 Com isso, nosso teste quebrou, mostrando que ainda falta esse pedaço. Para resolver isso vou usar o [default parameter](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Parametros_Predefinidos), garantindo que `size` vai ser `small` caso não receba nada.
 
-{% highlight js %}
+```js
 // src/Main.js
 
 const Flag = ({ country, size = 'small' }) => (
     <img src={`http://flagpedia.net/data/flags/${size}/${country}.png`} alt={country} />
 );
-{% endhighlight %}
+```
 
 E prontinho, nosso teste passou!
 
@@ -304,7 +304,7 @@ E prontinho, nosso teste passou!
 Agora só precisamos garantir que nosso código vai funcionar com os tamanhos `big` e `ultra` também. E para isso vamos adicionar os testes:
 
 
-{% highlight js %}
+```js
 // tests/specs/Main.spec.js
 
 it('should get have big on img src when size big is passed', () => {
@@ -317,7 +317,7 @@ it('should get have ultra on img src when size ultra is passed', () => {
     expect(wrapper.find('img').props().src.includes('ultra')).to.equal(true);
 });
 
-{% endhighlight %}
+```
 
 E dessa vez não precisamos escrever mais nenhum teste, pois o código já está passando! Se você rodar agora o Storybook novamente com `npm start` você irá ver todo ele funcionando com as bandeirinhas! E você sequer precisou ficar vendo a tela para garantir que está funcionando, pois já tinha teste para tudo =D
 

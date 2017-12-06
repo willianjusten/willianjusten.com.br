@@ -32,31 +32,31 @@ A prática consiste basicamente em você ter um arquivo com vários ícones, fam
 
 Um exemplo de sprite svg seria:
 
-{% highlight html %}
+```html
 <svg>
     <symbol id="icon-lamp" viewBox="0 0 57 64">...</symbol>
     <symbol id="icon-globe" viewBox="0 0 57 64">...</symbol>
     <symbol id="icon-chemistry" viewBox="0 0 57 64">...</symbol>
 </svg>
-{% endhighlight %}
+```
 
 Se você quiser ver o código extendido, só clicar [neste link](http://willianjusten.com.br/assets/img/react-svg/sprite.svg).
 
 Se você reparar, cada ícone tem o seu próprio `symbol` e também sua própria `viewBox`, que serve para delimitar seu tamanho e área. Para você utilizar um ícone dessa forma, basta você utilizar a tag `use`, seguindo esse exemplo:
 
-{% highlight html %}
+```html
 <svg>
     <use xlink:href="#icon-lamp" />
 </svg>
-{% endhighlight %}
+```
 
 No lugar do `xlink:href`, você passa o id do ícone que você deseja. Para chamar dessa forma, é necessário que o SVG já tenha sido carregado na página anteriormente, para que o `use` consiga encontrar a referência. Mas também é possível utilizar com um sprite totalmente externo, o conhecido `external use`, onde você passa o link da sua imagem + o id, da seguinte forma:
 
-{% highlight html %}
+```html
 <svg>
     <use xlink:href="http://willianjusten.com.br/assets/img/react-svg/sprite.svg#icon-lamp" />
 </svg>
-{% endhighlight %}
+```
 
 Bom, agora que demos uma revisada em como se utilizar ícones SVG, vamos para a parte do React.
 
@@ -72,21 +72,21 @@ As `stateless functions` são de fato, funções sem estado. Ué? Como assim? Vo
 
 No React você pode definir seus componentes como funções puras do Javascript, isso mesmo. Sem precisar criar classe, definir estados, nem nada. Você escreve como se fosse Javascript puro mesmo. Vamos dar uma olhada na sintaxe de como funciona:
 
-{% highlight js %}
+```js
 function helloMessage(props) {
     return <div>Hello {props.name}</div>;
 }
 ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
-{% endhighlight %}
+```
 
 Reparem, eu criei uma função chamada `helloMessage`, que recebe um parâmetro `props`. Essa funciona me retorna uma div com um texto dentro escrito "Hello Willian", isso acontece, pois eu estou passando a propriedade `name`, que fica dentro de `props`.
 
 Reescrevendo o código acima em ES6, ficaria assim:
 
-{% highlight js %}
+```js
 const HelloMessage = (props) => <div>Hello {props.name}</div>;
 ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
-{% endhighlight %}
+```
 
 Ali utilizo `const` e a `fat arrow` do ES6 para diminuir minha escrita e ficar ainda mais bonito meu JS.
 
@@ -96,7 +96,7 @@ Essa forma simplificada é destinada para se criar componentes que não vão ter
 
 É muito simples meu caro, se já sabemos como chamar nossos sprites, basta passar essa forma para dentro do React. Escrevendo em ES6 ficaria:
 
-{% highlight js %}
+```js
 // Definimos a url onde se encontra o sprite
 const url = 'http://willianjusten.com.br/assets/img/react-svg/sprite.svg';
 
@@ -117,7 +117,7 @@ ReactDOM.render(
     <Icon icon='lamp' />
   </div>,
   document.getElementById('app'));
-{% endhighlight %}
+```
 
 Definimos a url do nosso sprite, nesse caso, estou chamando um sprite do meu blog mesmo. Depois criamos nossa `stateless function` e ali temos alguns pulos do gato.
 

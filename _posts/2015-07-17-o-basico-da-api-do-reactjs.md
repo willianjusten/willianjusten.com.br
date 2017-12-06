@@ -32,13 +32,13 @@ O primeiro de tudo é saber como podemos criar os componentes e como renderizá-
 
 ### ReactDOM.render
 
-{% highlight js %}
+```js
 render(
   ReactElement element,
   DOMElement container,
   [function callback]
 )
-{% endhighlight %}
+```
 
 **update: (02/06/2016)** - O método anteriormente ficava dentro da API do React, mas agora passou para a API específica do ReactDOM.
 
@@ -50,12 +50,12 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/1-render-getting-star
 
 ### Render sem JSX - React.createElement
 
-{% highlight js %}
+```js
 ReactDOM.render(
     React.createElement('h1', null, "Hello World!"),
     document.getElementById("content")
 );
-{% endhighlight %}
+```
 
 Sem o JSX, não temos como adicionar tags html dentro do nosso render, portanto, precisamos criar esses elementos na mão. Para criar, utilizamos o método `createElement`, que recebe 3 parâmetros também. O primeiro parâmetro é a tag html, o segundo é um objeto, que fica responsável pelo conjunto de informações, que podem ser classes, ids, data, estilos, etc.
 
@@ -63,24 +63,24 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), fal
 
 ### Render com JSX
 
-{% highlight js %}
+```js
 ReactDOM.render(
     <h1>Hello World!</h1>,
     document.getElementById("content")
 );
-{% endhighlight %}
+```
 
 Para o render com o JSX, basta criamos o elemento com as tags do próprio html e ligarmos a um container.
 
 ## React.createClass
 
-{% highlight js %}
+```js
 ReactClass createClass(object specification)
-{% endhighlight %}
+```
 
 Serve para criar um componente dada uma especificação. Um componente implementa um método render que retorna um filho único. Esse filho pode ter uma estrutura arbitrária. A vantagem deste método é que nos permite já criar componentes para serem reaproveitados.
 
-{% highlight js %}
+```js
 var Hello = React.createClass({
     render: function() {
       return (
@@ -93,7 +93,7 @@ ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 );
-{% endhighlight %}
+```
 
 Como podemos notar, com a utilização do `React.createClass`, habilitamos um componente com o nome da variável determinada, no nosso caso `Hello` e então podemos chamá-lo em diversos lugares como `<Hello />`, conforme indicado na linha `10`.
 
@@ -103,7 +103,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/4-createclass), expli
 
 No ES6, nós ganhamos classes para o nosso lindo javascript e, com isso, conseguimos extender métodos para essa classe, permitindo também a criação de componentes reutilizáveis, conforme o exemplo a seguir:
 
-{% highlight js %}
+```js
 class Hello extends React.Component {
     render(){
         return (
@@ -116,7 +116,7 @@ ReactDOM.render(
     <Hello />,
     document.getElementById("content")
 )
-{% endhighlight %}
+```
 
 ### Exemplos
 
@@ -131,7 +131,7 @@ Repare que eu criei diferentes containers para que cada elemento fosse renderiza
 
 Já que é tudo JS, podemos usar o próprio JS para brincar dentro do render, como, por exemplo, receber um array e iterar nele para poder renderizar uma lista.
 
-{% highlight js %}
+```js
 var frutas = ['Banana', 'Maçã', 'Uva'];
 
 ReactDOM.render(
@@ -144,7 +144,7 @@ ReactDOM.render(
   </div>,
   document.getElementById('compras')
 );
-{% endhighlight %}
+```
 
 <p data-height="266" data-theme-id="11319" data-slug-hash="waxpmW" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/waxpmW/'>React Render Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -155,7 +155,7 @@ No exemplo, eu tenho um array `frutas` e através do comando `map`, eu itero e m
 
 Quando utilizamos nossos componentes no React, nós podemos adicionar atributos a eles, dos quais chamamos de `props`. Esses atributos ficam disponíveis para nosso componente através do `this.props` e podem ser usados no método de `render` para renderizar dados dinâmicos, de acordo com o quisermos passar.
 
-{% highlight js %}
+```js
 var Hello = React.createClass({
     render: function () {
         return (
@@ -165,7 +165,7 @@ var Hello = React.createClass({
 })
 
 ReactDOM.render(<Hello name='Willian' />, document.getElementById('hello'));
-{% endhighlight %}
+```
 
 Olhando no exemplo, notamos que ele recebe o nome da variável `name` e consegue renderizar o nome corretamente.
 
@@ -205,7 +205,7 @@ Existem mais métodos na API, basta dar uma [olhada aqui](https://facebook.githu
 
 Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o código e vamos destrinchá-lo:
 
-{% highlight js %}
+```js
 var Timer = React.createClass({
 
     getInitialState: function(){
@@ -239,7 +239,7 @@ ReactDOM.render(
     <Timer start={Date.now()} />,
     document.getElementById('timer')
 );
-{% endhighlight %}
+```
 
 Na linha `3`, usamos o método `getInitialState` para poder definir que o estado inicial é quando `elapsed` vale 0, ou seja, não passou o tempo ainda.
 

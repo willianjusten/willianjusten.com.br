@@ -85,7 +85,7 @@ O CSS de hoje em dia nos permite componentizar tudo muito facilmente, ainda mais
 
 Atire a primeira pedra quem nunca fez um grande uso de nesting como:
 
-{% highlight scss %}
+```scss
 .nav {
     ul {
         li {
@@ -95,11 +95,11 @@ Atire a primeira pedra quem nunca fez um grande uso de nesting como:
         }
     }
 }
-{% endhighlight %}
+```
 
 O problema de se fazer isso ali, é que quando temos um grande número de propriedades, a leitura já começa a ficar dificultada, como:
 
-{% highlight scss %}
+```scss
 .nav {
     width: 100%;
     padding: 10px 25px;
@@ -122,13 +122,13 @@ O problema de se fazer isso ali, é que quando temos um grande número de propri
         }
     }
 }
-{% endhighlight %}
+```
 
 Sem contar a dificuldade de leitura daquilo ali, ainda estamos gerando um código assim:
 
-{% highlight css %}
+```css
 .nav ul li a { ... }
-{% endhighlight %}
+```
 
 Isso é horrível, pois aumenta bastante a especificidade e se eu num futuro quiser mudar um pouco das propriedades, vou ter que criar algo para sobrescrever isso, o que vai acabar sujando ainda mais o meu código.
 
@@ -188,46 +188,46 @@ Elementos são coisas dentro do seu componente:
 
 Cada componente deve ter elementos. E eles devem ter classes com **somente uma palavra**.
 
-{% highlight scss %}
+```scss
 .search-form {
     > .field {...}
     > .action {...}
 }
-{% endhighlight %}
+```
 
 <h4 id="elementos-seletores">2.2 Elementos seletores</h4>
 
 Prefira usar o seletor filho `>` sempre que possível. Isso previne que a propriedade passe para componentes internos indesejados, e também performa melhor que seletores descendentes.
 
-{% highlight scss %}
+```scss
 .article-card {
     .title { /* bom */ }
     > .author { /* melhor ainda */ }
 }
-{% endhighlight %}
+```
 
 <h4 id="elementos-multiplas-palavras">2.3 Múltiplas palavras</h4>
 
 Para aqueles elementos que precisam de uma ou mais palavras, concatene elas sem traços ou underscore.
 
-{% highlight scss %}
+```scss
 .profile-box {
   > .firstname { /* ... */ }
   > .lastname { /* ... */ }
   > .avatar { /* ... */ }
 }
-{% endhighlight %}
+```
 
 <h4 id="elementos-evite-tags">2.4 Evite usar tags como seletores</h4>
 
 Use classe sempre que possível. Tags são ok, mas podem vir com uma pequena perda de performance por não serem muito específicas e também podem não ser tão descritivas.
 
-{% highlight scss %}
+```scss
 .article-card {
   > h3    { /* ✗ evite */ }
   > .name { /* ✓ melhor */ }
 }
-{% endhighlight %}
+```
 
 <h3 id="variacoes">3. Variações</h3>
 
@@ -239,24 +239,24 @@ Componentes podem ter variações, assim como os elementos também.
 
 As classes de variações devem ser prefixadas por um traço. É legal pensar nisso como forma de comandos no terminal, onde a gente tem o comando principal e podemos passar opções sempre como `-algumaCoisa`.
 
-{% highlight scss %}
+```scss
 .like-button {
   &.-wide { /* ... */ }
   &.-short { /* ... */ }
   &.-disabled { /* ... */ }
 }
-{% endhighlight %}
+```
 
 <h4 id="variacoes-elementos">3.2 Variações nos elementos</h4>
 
 Assim como os componentes, podemos querer variar os elementos. Preste atenção, essa variação é específica daquele elemento (classe), portanto, não há problemas em colocá-lo adjacente, como mostrado abaixo.
 
-{% highlight scss %}
+```scss
 .shopping-card {
   > .title { /* ... */ }
   > .title.-small { /* ... */ }
 }
-{% endhighlight %}
+```
 
 <h4 id="variacoes-tracos">3.3 Por que usar prefixos com traço?</h4>
 
@@ -270,7 +270,7 @@ Alguns dos motivos de se usar são:
 
 ![Componentes aninhados](http://rscss.io/images/component-nesting.png)
 
-{% highlight html %}
+```html
 <div class='article-link'>
   <div class='vote-box'>
     ...
@@ -278,7 +278,7 @@ Alguns dos motivos de se usar são:
   <h3 class='title'>...</h3>
   <p class='meta'>...</p>
 </div>
-{% endhighlight %}
+```
 
 Algumas vezes precisamos ter componentes dentro de componentes. Aqui vão algumas dicas de como se fazer:
 
@@ -286,50 +286,50 @@ Algumas vezes precisamos ter componentes dentro de componentes. Aqui vão alguma
 
 Evite modificar o componente interno através do commponente principal. 
 
-{% highlight scss %}
+```scss
 .article-header {
   > .vote-box > .up { /* ✗ evite isso */ }
 }
-{% endhighlight %}
+```
 
 Ao invés disso, prefira adicionar uma variação ao componente interno e aplicar a partir dele.
 
-{% highlight html %}
+```html
 <div class='article-header'>
   <div class='vote-box -highlight'>
     ...
   </div>
   ...
 </div>
-{% endhighlight %}
+```
 
-{% highlight scss %}
+```scss
 .vote-box {
   &.-highlight > .up { /* ... */ }
 }
-{% endhighlight %}
+```
 
 <h4 id="nested-simplifique">4.2 Simplifique componentes internos</h4>
 
 As vezes, quando usando componentes aninhados, seu markup pode ficar um pouco sujo:
 
-{% highlight html %}
+```html
 <div class='search-form'>
   <input class='input' type='text'>
   <button class='search-button -red -large'></button>
 </div>
-{% endhighlight %}
+```
 
 Você pode simplificar isso, utilizando a propriedade de `@extend` de seu pre-processador:
 
-{% highlight html %}
+```html
 <div class='search-form'>
   <input class='input' type='text'>
   <button class='submit'></button>
 </div>
-{% endhighlight %}
+```
 
-{% highlight scss %}
+```scss
 .search-form {
   > .submit {
     @extend .search-button;
@@ -337,7 +337,7 @@ Você pode simplificar isso, utilizando a propriedade de `@extend` de seu pre-pr
     @extend .search-button.-large;
   }
 }
-{% endhighlight %}
+```
 
 Assim, seu elemento `.submit` irá receber todas as propriedades que precisa, de uma forma que não fique com um markup sujo.
 
@@ -358,7 +358,7 @@ Componentes devem ser criados de uma forma que possam ser reutilizados em difere
 
 Se você realmente precisa definir algum tipo de posicionamento no componente, faça isso no componente pai que irá contê-lo. No exemplo abaixo, note que a largura e float são aplicadas no contexto do componente `list`, não no componente em si.
 
-{% highlight scss %}
+```scss
 .article-list {
   & {
     @include clearfix;
@@ -376,24 +376,24 @@ Se você realmente precisa definir algum tipo de posicionamento no componente, f
   > .title { /* ... */ }
   > .category { /* ... */ }
 }
-{% endhighlight %}
+```
 
 <h3 id="helpers">6. Helpers</h3>
 
 Essas classes tem como uso principal, sobrescrever valores, coloque-as em arquivos separados e as nomeie com underscore. Essas classes, em geral, são marcadas com `!important`. Portanto, use com muita cautela e as evite o máximo possível.
 
-{% highlight scss %}
+```scss
 ._unmargin { margin: 0 !important; }
 ._center { text-align: center !important; }
 ._pull-left { float: left !important; }
 ._pull-right { float: right !important; }
-{% endhighlight %}
+```
 
 <h3 id="estrutura-css">7. Estrutura CSS</h3>
 
 O RSCSS não tem uma premissa forte para estrutura não, tendo somente como único conselho, colocar um componente por arquivo.
 
-{% highlight scss %}
+```scss
 /* css/components/search-form.scss */
 .search-form {
   > .button { /* ... */ }
@@ -404,13 +404,13 @@ O RSCSS não tem uma premissa forte para estrutura não, tendo somente como úni
   &.-small { /* ... */ }
   &.-wide { /* ... */ }
 }
-{% endhighlight %}
+```
 
 E, então chamar esses componentes usando o glob matching: 
 
-{% highlight scss %}
+```scss
 @import 'components/*';
-{% endhighlight %}
+```
 
 <h3 id="exemplo">Exemplo</h3>
 

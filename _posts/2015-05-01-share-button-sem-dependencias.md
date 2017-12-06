@@ -60,18 +60,18 @@ Cada uma dessas redes sociais possui uma url para share também, que nos facilit
 
 #### Modo de uso
 
-{% highlight html %}
+```html
 <a aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?url=seusite/&amp;text=seutexto&amp;via=seutwitter" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter">Compartilhe no Twitter</a>
-{% endhighlight %}
+```
 
 Exemplo de uso no meu blog, como utilizo Jekyll, eu deixo os dados serem gerados diretamente pelo meu "backend". Você pode fazer o mesmo usando a linguagem do seu backend.
 
-{% highlight html %}
+```html
 <a aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
     </a>
-{% endhighlight %}
+```
 
 ### Facebook
 
@@ -80,18 +80,18 @@ Exemplo de uso no meu blog, como utilizo Jekyll, eu deixo os dados serem gerados
 
 #### Modo de uso
 
-{% highlight html %}
+```html
 <a aria-label="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=linkdoseusite" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook"> Compartilhe no Facebook</a>
-{% endhighlight %}
+```
 
 Exemplo de uso no meu blog:
 
-{% highlight html %}
+```html
   <a aria-label="Compartilhe no Facebook"href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook">
         <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
     </a>
-{% endhighlight %}
+```
 
 ### Google Plus
 
@@ -101,24 +101,24 @@ Exemplo de uso no meu blog:
 
 #### Modo de uso
 
-{% highlight html %}
+```html
 <a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url=seusite" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+">Compartilhe no Google+</a>
-{% endhighlight %}
+```
 
 Exemplo de uso no meu blog:
 
-{% highlight html %}
+```html
     <a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+">
         <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
     </a>
-{% endhighlight %}
+```
 
 ## Detalhes
 
-{% highlight js %}
+```js
  onclick="window.open(this.href, 'título da janela', 'width=490,height=530');return false;"
-{% endhighlight %}
+```
 
 Se você notar, eu além de colocar os links, também coloquei uma função de `onclick`. Essa função servirá para criar uma nova janela, recebendo a url passada, um título e o tamanho da janela. Isso serve para que o usuário não saia do meu site enquanto compartilha.
 

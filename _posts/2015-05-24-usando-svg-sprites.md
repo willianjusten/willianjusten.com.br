@@ -50,21 +50,21 @@ Assim como os sprites criados com `background-position` no `css`, no `svg` nós 
 
 Tendo em vista que as propriedades da `viewBox` são "posicao x, posicao y, largura, altura". Nosso svg ficará assim:
 
-{% highlight html %}
+```html
 <svg viewBox="0 0 225 55">...</svg>
-{% endhighlight %}
+```
 
 ### 1 - Técnica com views no SVG
 
 Para cada ícone precisaremos criar uma `view` bem simples, colocando cada ícone em sua posição.
 
-{% highlight html %}
+```html
 <view id='icon-pig' viewBox='0 0 45 55' />
 <view id='icon-chicken' viewBox='45 0 45 55' />
 <view id='icon-fox' viewBox='90 0 45 55' />
 <view id='icon-rabbit' viewBox='135 0 45 55' />
 <view id='icon-cow' viewBox='180 0 45 55' />
-{% endhighlight %}
+```
 
 Se você notar, a largura, altura e posição y se mantém e só modificamos a posição no eixo x, que representa uma imagem ao lado da outra.
 
@@ -88,13 +88,13 @@ Tendo a imagem pronta, fica simples de usar, segue um exemplo:
 <img class="animais" alt="Imagem de uma vaca" src="/assets/img/animals-sprite.svg#icon-cow">
 <img class="animais" alt="Imagem de uma raposa" src="/assets/img/animals-sprite.svg#icon-fox">
 
-{% highlight html %}
+```html
 <img src="/assets/img/animals-sprite.svg#icon-pig" alt="Porquinho">
 
 <img src="/assets/img/animals-sprite.svg#icon-cow" alt="Vaquinha">
 
 <img src="/assets/img/animals-sprite.svg#icon-fox" alt="Raposinha">
-{% endhighlight %}
+```
 
 ### 2 - Técnica com a view definida na chamada da imagem
 
@@ -102,9 +102,9 @@ Se você não quiser criar uma `view` dentro do arquivo SVG, pode definir direta
 
 <img class="animal" src="/assets/img/animals-sprite.svg#svgView(viewBox(45, 0, 45, 55))" alt="Galinha">
 
-{% highlight html %}
+```html
 <img src="/assets/img/animals-sprite.svg#svgView(viewBox(45, 0, 45, 55))" alt="Galinha">
-{% endhighlight %}
+```
 
 ### 3 - Técnica utilizando :target
 
@@ -114,18 +114,18 @@ Uma técnica bem legal, que vi no [css-tricks](https://css-tricks.com/svg-fragme
 
 A técnica é bem simples, basta ocultar todos os elementos do SVG e só mostrar o que estiver com `:target` marcado.
 
-{% highlight css %}
+```css
 g {
 	display: none;
 }
 g:target {
 	display: inline;
 }
-{% endhighlight %}
+```
 
 Dessa forma não há necessidade de se criar views, bastando somente colocar `ids` em cada ícone.
 
-{% highlight html %}
+```html
 <svg>
 	<g id="pig">...</g>
 	<g id="chicken">...</g>
@@ -133,15 +133,15 @@ Dessa forma não há necessidade de se criar views, bastando somente colocar `id
 	<g id="rabbit">...</g>
 	<g id="cow">...</g>
 </svg>
-{% endhighlight %}
+```
 
 E para usar cada ícone, basta chamar a imagem seguida da `id`.
 
 <img class="animal" src="http://willianjusten.com.br/assets/img/animals-sprite-stack.svg#rabbit" alt="Coelhinho">
 
-{% highlight html %}
+```html
 <img src="/assets/img/animals-sprite-stack.svg#rabbit" alt="Coelhinho">
-{% endhighlight %}
+```
 
 ## Conclusão
 

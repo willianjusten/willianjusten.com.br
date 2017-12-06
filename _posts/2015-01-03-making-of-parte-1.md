@@ -69,9 +69,9 @@ Para os que me conhecem, sabem que sou apaixonado por SVG e por isso criei a [aw
 
 Para esse blog, eu não poderia deixar de usar SVG, sendo assim, todos os ícones utilizados no blog são feitos em svg. Para tal, eu criei uma partial do Jekyll contendo as `defs` de todos os ícones e então chamei cada ícone que eu desejava usando o `use`, conforme exemplo abaixo:
 
-{% highlight html %}
+```html
 <svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg>
-{% endhighlight %}
+```
 
 Eu poderia ficar um post inteiro explicando os motivos de se utilizar SVG, mas os motivos para utilizar SVG no blog foram:
 
@@ -90,7 +90,7 @@ Um outro cara que eu conheço que utiliza Stylus é o maluco do [Suissa](https:/
 
 Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em cima. O Jeet por ser um grid semântico (lê-se nada de col-md-xs-lg-motherfucker). O Rupture, para evitar de escrever @media direto e o Kouto Swiss, que possui várias e várias funções bem legais para trabalhar. Segue abaixo um exemplo de um trecho utilizando o poder desses 3 em conjunto:
 
-{% highlight css %}
+```css
 .datetime
     col(1/6)
     text-align center
@@ -111,7 +111,7 @@ Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em c
     col(5/6)
     +below(cut)
         stack()
-{% endhighlight %}
+```
 
 A linha `2` mostra um dos poderes do Jeet, onde eu defino que o elemento `.datetime` irá ocupar cerca `1/6` de todo o `container`. Se estivéssemos trabalhando com o bootstrap seria similar a classe `.col-md-2`, que representa `2` colunas num total de `12`. As linhas `5`, `12` e `20` também são do Jeet e esse `stack`, quer dizer que os elementos devem ser empilhados e o elemento que recebe essa função passa a receber um `width: 100%`.
 

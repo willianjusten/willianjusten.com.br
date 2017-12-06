@@ -83,8 +83,7 @@ render() {
 
 Lembrando de não esquecer de usar o `key` para não receber nenhum warning. No futuro eles planejam fazer uma forma para também não precisar de adicionar o `key` para esses casos. E o mesmo ocorre para strings, que agora são suportadas diretamente:
 
-{% highlight jsx %}
-
+```jsx
 // antes encapsulando com um span
 render() {
   return <span>Usando o Span!<span>;
@@ -94,7 +93,7 @@ render() {
 render() {
   return 'Sem Spans!';
 }
-{% endhighlight %}
+```
 
 ### Melhor error handling
 
@@ -104,7 +103,7 @@ Com o `Error boundaries` nós podemos capturar esses errors em qualquer parte do
 
 E como isso funciona? É bastante simples! Temos um novo método chamado `componentDidCatch`, que vai ser responsável por fazer o report desse erro para nós e então facilitar para tratarmos. Segue um exemplo básico abaixo:
 
-{% highlight jsx %}
+```jsx
 componentDidCatch(error, info) {
   // Adicionamos uma variável no nosso state
   // para tratarmos na nossa UI
@@ -113,11 +112,11 @@ componentDidCatch(error, info) {
   console.log(error); // o erro em si
   console.log(info); // contém o Component Stack
 }
-{% endhighlight %}
+```
 
 Depois de definido o nosso `componentDidCatch` podemos ir no método `render` do nosso componente e só colocar a validação necessária, para imprimir o componente que queremos ou caso tenha um erro, imprimir nossa mensagem, por exemplo:
 
-{% highlight jsx %}
+```jsx
  render() {
     if (this.state.hasError) {
       // Imprimindo uma mensagem de erro
@@ -128,13 +127,13 @@ Depois de definido o nosso `componentDidCatch` podemos ir no método `render` do
       ...
     }
   }
-{% endhighlight %}
+```
 
 ### Portals
 
 Essa feature permite renderizar um elemento filho num DOM node que existe fora da hierarquia do pai do componente. Como assim? Em geral, quando retornamos um elemento de método `render` de um componente, ele é montado no DOM com filho do nó pai mais próximo. Exemplo:
 
-{% highlight jsx %}
+```jsx
 render() {
   // React monta uma nova div e renderiza o filho dentro
   return (
@@ -143,11 +142,11 @@ render() {
     </div>
   );
 }
-{% endhighlight %}
+```
 
 Mas, as vezes é interessante inserirmos o filho numa posição diferente do DOM:
 
-{% highlight jsx %}
+```jsx
 render() {
   // O React não vai criar uma nova div. Ele vai renderizar o filho dentro do `domNode`.
   // `domNode` é qualquer nó válido, independente de sua localização no DOM.
@@ -156,7 +155,7 @@ render() {
     domNode,
   );
 }
-{% endhighlight %}
+```
 
 Um caso típico do uso de `portals` é quando um componente pai tem `overflow: hidden` ou `z-index`, mas você precisa que o filho "vaze" do container. Como, por exemplo, `tooltips`, `hovercards` e `dialogs`.
 
@@ -174,7 +173,7 @@ Você pode ler mais sobre o `ReactDomServer` está funcionando, [nesse post](htt
 
 Antes não era possível criar atributos customizados na nossa tag. Ou seja, se não fosse `camelCase` ou tivesse `data-` ou `aria-`, o React acabava não imprimindo o que queríamos.
 
-{% highlight jsx %}
+```jsx
 <div mycustomattribute="something" />
 
 // React 15 iria imprimir
@@ -182,7 +181,7 @@ Antes não era possível criar atributos customizados na nossa tag. Ou seja, se 
 
 // React 16 imprime o que desejo
 <div mycustomattribute="something" />
-{% endhighlight %}
+```
 
 Essa é uma mudança pequena, mas que pode ser útil para aqueles casos onde necessitamos de atributo para um browser específico ou alguma coisa de API externa. Você pode ler mais sobre essa feature [aqui](https://facebook.github.io/react/blog/2017/09/08/dom-attributes-in-react-16.html).
 

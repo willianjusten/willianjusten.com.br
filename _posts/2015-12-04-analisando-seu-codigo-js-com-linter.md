@@ -49,7 +49,7 @@ Pensando nisso, foram criadas várias ferramentas para fazer análise por você.
 
 Cada uma dessas ferramentas possui um módulo no npm e podem ser fácilmente instaladas.
 
-{% highlight  bash %}
+```bash
 
 npm install -g jslint
 
@@ -59,7 +59,7 @@ npm install -g jshint
 npm install -g eslint
 npm install -g babel-eslint
 
-{% endhighlight %}
+```
 
 E todas elas também possuem integrações com vários editores de código como Sublime, Atom, Brackets, etc...
 
@@ -75,7 +75,7 @@ Após instalado o `eslint`, vá até o diretório do seu projeto, digite `eslint
 
 Após isso, será criado um arquivo chamado `.eslintrc` dentro da pasta raiz do seu projeto, contendo informações parecidas com:
 
-{% highlight js %}
+```js
 module.exports = {
     "rules": {
         "indent": [
@@ -108,13 +108,13 @@ module.exports = {
         "react"
     ]
 };
-{% endhighlight %}
+```
 
 Se você quiser entender tudo que ele escreveu ali, dá uma olhadinha na [documentação](http://eslint.org/docs/user-guide/configuring) é super detalhada e bem explicada.
 
 Tendo já o arquivo, basta você rodar no terminal em cima do arquivo desejado e ele fará o report se algum erro acontecer, como, por exemplo, tendo um arquivo js:
 
-{% highlight js %}
+```js
 (function () {
     'use strict';
     
@@ -125,7 +125,7 @@ Tendo já o arquivo, basta você rodar no terminal em cima do arquivo desejado e
     }
 
 })()
-{% endhighlight %}
+```
 
 Se eu rodar o `eslint` no terminal analisando esse código, ele vai me retornar os seguintes erros:
 

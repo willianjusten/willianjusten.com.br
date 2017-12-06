@@ -30,15 +30,15 @@ Se você quiser ver na prática ao invés de só no vídeo, segue o [link da dem
 
 Como visto no vídeo, primeiro a gente precisa criar um triângulo, definindo um `svg` com sua `viewbox`. Se quiser, tem um [post sobre a estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/) onde você pode ler mais sobre também. E o código fica:
 
-{% highlight html %}
+```html
 <svg width="200" height="200" viewBox="0 0 40 60">
     <polygon class="triangle" fill="none" stroke="#fff" stroke-width="1" points="16,1 32,32 1,32" />
 </svg>
-{% endhighlight %}
+```
 
 Depois disso, nós precisamos criar a nossa animação usando as propriedades `stroke-dasharray` e `stroke-dashoffset`, você pode ler mais nesse [post sobre o efeito de desenhar com SVG](https://willianjusten.com.br/efeito-de-desenhar-com-svg/). E unida a essas duas propriedades, precisamos usar o `keyframes` para criar a animação.
 
-{% highlight css %}
+```css
 .triangle {
     stroke-dasharray: 17;
     animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
@@ -48,20 +48,20 @@ Depois disso, nós precisamos criar a nossa animação usando as propriedades `s
         stroke-dashoffset: 136;
     }
 }
-{% endhighlight %}
+```
 
 Por fim, basta adicionar o texto de loading e posicioná-lo em nosso SVG.
 
-{% highlight html %}
+```html
 <svg width="200" height="200" viewBox="0 0 40 60">
     <polygon class="triangle" fill="none" stroke="#fff" stroke-width="1" points="16,1 32,32 1,32" />
     <text class="loading" x="0" y="45" fill="#fff">Loading...</text>
 </svg>
-{% endhighlight %}
+```
 
 E fazer a animação dele utilizando a opacidade para que ele fique piscando.
 
-{% highlight css %}
+```css
 .loading {
     font-family: 'Orbitron', sans-serif;
     font-size: 7px;
@@ -72,7 +72,7 @@ E fazer a animação dele utilizando a opacidade para que ele fique piscando.
         opacity: 0;
     }
 }
-{% endhighlight %}
+```
 
 ## Conclusão
 

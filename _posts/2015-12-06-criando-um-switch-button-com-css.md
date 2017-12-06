@@ -30,12 +30,12 @@ Muitas vezes, precisamos responder alguma pergunta com `Sim` ou `Não` ou ligar 
 
 Primeiro de tudo, como vamos trabalhar com um `checkbox`, nada mais justo que criar um né?
 
-{% highlight html %}
+```html
 <div class="switch__container">
   <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
   <label for="switch-shadow"></label>
 </div>
-{% endhighlight %}
+```
 
 A classe `switch__container` por fora vai servir só para se você quiser dar algum espaçamento e organizar melhor a combinação input + label. Por dentro, vamos criar um `input` e um `label` ligados, para isso, utilizamos o `id="switch-shadow"` e o `for="switch-shadow"`. Precisamos que a label tenha o `for` para o input, pois esse será o truque mais importante.
 
@@ -45,7 +45,7 @@ Depois de criada a base, veremos simples inputs de checkbox, aqueles quadradinho
 
 **Atenção, todo o css usado aqui, foi sem prefixos, por favor, se desejar maior compatibilidade, use os prefixos, de preferência use um pre-processador para isso =)**
 
-{% highlight css %}
+```css
 .switch {
   position: absolute;
   margin-left: -9999px;
@@ -59,7 +59,7 @@ Depois de criada a base, veremos simples inputs de checkbox, aqueles quadradinho
   outline: none;
   user-select: none;
 }
-{% endhighlight %}
+```
 
 Usamos aqui o seletor `+`, conhecido como adjacente, que pega o primeiro elemento após o primeiro seletor. Se quiser ver mais sobre esse seletor, veja [esse meu post sobre alguns seletores css](http://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/).
 
@@ -71,7 +71,7 @@ As linhas `1-5` servem somente para esconder o checkbox feio e jogá-lo para for
 
 Aqui, nossa `label` será o elemento principal para criação do desenho. Primeiro, vamos definir um tamanho para ela, uma cor e também esse aspecto arredondado.
 
-{% highlight css %}
+```css
 .switch--shadow + label {
   padding: 2px;
   width: 120px;
@@ -79,13 +79,13 @@ Aqui, nossa `label` será o elemento principal para criação do desenho. Primei
   background-color: #dddddd;
   border-radius: 60px;
 }
-{% endhighlight %}
+```
 
 Com esse primeiro passo, teremos nada mais que um retângulo com as bordas completamente arredondadas, num fundo cinza.
 
 Depois, na própria label, iremos utilizar o seletor `:before`, que vai ser responsável por fazer a transição entre o cinza e o fundo verde. E vamos usar o seletor `:after` para criar a bolinha, que irá de um lado para o outro.
 
-{% highlight css %}
+```css
 .switch--shadow + label:before,
 .switch--shadow + label:after {
   display: block;
@@ -108,7 +108,7 @@ Depois, na própria label, iremos utilizar o seletor `:before`, que vai ser resp
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.4s;
 }
-{% endhighlight %}
+```
 
 As primeiras propriedades que são em conjunto para o `:before` e para o `:after`, servem para definir conteúdo para os mesmos, para que assim, possamos manipular.
 
@@ -120,14 +120,14 @@ Com esses estilos, nós já temos o nosso botão prontinho, só falta criar a in
 
 Esse é um truque bem legal e que serve para muitas coisas, existe um seletor no css, chamado `:checked`, que verifica se o input foi marcado ou não. Com isso em mãos, podemos fazer a seguinte regra:
 
-{% highlight css %}
+```css
 .switch--shadow:checked + label:before {
   background-color: #8ce196;
 }
 .switch--shadow:checked + label:after {
   transform: translateX(60px);
 }
-{% endhighlight %}
+```
 
 Verificando se o input foi marcado e caso tenha sido, mudar a cor e também mover a bolinha para o lado. E pronto! Seu switch botão no estilo iOS está criado! Se quiser, você pode brincar com o CSS e fazer outros estilos, como um flat ou qualquer outro. Segue abaixo uma Demo do que fizemos:
 

@@ -37,7 +37,7 @@ O esquema é o seguinte, para dar a impressão que o conteúdo está passando po
 
 Nosso header então vai ter as seguintes propriedades:
 
-{% highlight css %}
+```css
 .header-paralax {
     background-image: url('img/header.jpg');
     background-size: cover;
@@ -45,7 +45,7 @@ Nosso header então vai ter as seguintes propriedades:
     position: fixed;
     height: 600px;
 }
-{% endhighlight %}
+```
 
 Depois de feito o header, só precisamos ajustar o conteúdo da parte que vai sobrepor o header. Quando colocamos um elemento com `position: fixed` ele passa a não ter "espaço ocupado" e todo conteúdo já sobrepõe ele na hora. Mas não queremos isso, senão o header nem apareceria. Nós precisamos pegar o nosso conteúdo e espaçar exatamente da altura do header, no nosso exemplo `height: 600px`. Para isso, definimos um `position: relative`, que fará nosso conteúdo respeitar a nova posição e daremos um `top: 600px`.
 
@@ -53,14 +53,14 @@ O problema de fazermos isso é que se o conteúdo não tiver um fundo, na hora q
 
 As propriedades do nosso exemplo vão ficar assim:
 
-{% highlight css %}
+```css
 main {
     background: #E7E3DA;
     position: relative;
     top: 600px;
     font-family: 'Raleway', sans-serif;
 }
-{% endhighlight %}
+```
 
 
 Pronto! O efeito de sobrepôr já está feito! Se você quiser, já pode parar por aí =)
@@ -73,7 +73,7 @@ O efeito pode ser aplicado em qualquer parte do hero, seja o background vindo em
 
 Vou separar bastante para todo mundo, mesmo que não saiba muito de JS, entenda bem o que aconteceu. Existem várias formas de se fazer isso, se você tem uma maneira ainda melhor e mais performática, fala nos comentários =)
 
-{% highlight js %}
+```js
 function scrollBanner() {
   var scrollPos;
   var headerText = document.querySelector('.header-paralax h1');
@@ -86,7 +86,7 @@ function scrollBanner() {
 }
 
 window.addEventListener('scroll', scrollBanner);
-{% endhighlight %}
+```
 
 Criamos uma função scrollBanner que vai ser a responsável pela mágica. E então criamos um `addEventListener`, que serve para ficar vigiando se houve `scroll` ou não ná página. Se houver um scroll, a função é chamada.
 

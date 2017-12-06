@@ -74,16 +74,16 @@ O Jekyll é bastante simples, então possui basicamente 3 comandos:
 
 O Jekyll utiliza o [YAML](http://yaml.org/) e para guardar e organizar informações, ele utiliza o Front Matter, que deve ser a primeira coisa a ser escrita no arquivo e as informações devem ser escritas entre o par de três traços, conforme a sintaxe do YAML, segue abaixo um exemplo:
 
-{% highlight yaml %}
+```yaml
 ---
 layout: default
 title: Um nome legal para o meu Blog
 ---
-{% endhighlight %}
+```
 
 De acordo com a sintaxe, colocamos o nome da variável seguido de 2 pontos e o valor para a variável, que pode ser qualquer valor ou conjunto de valores. Segue alguns exemplos abaixo:
 
-{% highlight yaml %}
+```yaml
 ---
 layout: post
 title: "Perguntas e Respostas - Jekyll"
@@ -94,7 +94,7 @@ tags:
 - jekyll
 - frontend
 ---
-{% endhighlight %}
+```
 
 <h3 id="globais">O que são variáveis globais?</h3>
 
@@ -129,7 +129,7 @@ Além das variáveis globais, as páginas e o site também possuem um conjunto d
 
 Depois de a variável criada, basta chamá-la utilizando a sintaxe de moustache, `{ {` variável `} }`. Se a variável for específica de um front matter, devemos especificar, abaixo seguem exemplos. **Aviso: não existem espaços entre as chaves, tive de colocar senão não daria para mostrar xD**
 
-{% highlight html %}
+```html
 
 <!-- variável da página -->
 <title>{ { page.title } }</title>
@@ -139,7 +139,7 @@ Depois de a variável criada, basta chamá-la utilizando a sintaxe de moustache,
 
 <!-- variável global -->
 <title>{ { title } }</title>
-{% endhighlight %}
+```
 
 
 <h3 id="funcoes">Quais funções/comandos temos no Jekyll?</h3>
@@ -148,7 +148,7 @@ Como o Jekyll é feito em Ruby, temos a nossa disposição uma base de comandos 
 
 Podemos incluir arquivos utilizando o comando `{ % include % }`, segue abaixo o código do meu layout `default`.
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
     { % include head.html % }
@@ -161,27 +161,27 @@ Podemos incluir arquivos utilizando o comando `{ % include % }`, segue abaixo o 
         { % include footer.html % }
     </body>
 </html>
-{% endhighlight %}
+```
 
 Podemos iterar uma lista de posts utilizando o comando `{ % for variavel in conteudo % }`, segue abaixo o loop que utilizo para mostrar as tags de um post:
 
-{% highlight html %}
+```html
 <div class="tags">
     { % for tag in post.tags % }
         <a href="/tags/#{ {tag} }">{ { tag } }</a>
     { % endfor % }
 </div>
-{% endhighlight %}
+```
 
 Temos também a possibilidade de utilizar as condicionais `if`, `else if`, `else`. Segue um exemplo abaixo, que utilizo para setar uma imagem default para a og:image. Aproveitando, já mostro uma outra função no Jekyll, que é a possibilidade de usar pipes `|` para encadear comandos ou criar filtros, no caso abaixo, utilizo para adicionar a url base do site na frente do caminho para a imagem.
 
-{% highlight html %}
+```html
 { % if page.image % }
     <meta property="og:image" content="{ { site.url } }{ {page.image } }">
 { % else % }
     <meta property="og:image" content="{ { "/assets/img/blog-image.png" | prepend: site.url } }">
 { % endif % }
-{% endhighlight %}
+```
 
 <h3 id="post">Como crio um post?</h3>
 
@@ -208,36 +208,36 @@ Depende. Se você estiver utilizando o github pages, suba somente as pastas base
 
 O próprio Jekyll já compila o Sass, o único passo importante é adicionar o front matter no arquivo principal do sass. Pode adicionar só os traços, que são o suficiente. Exemplo:
 
-{% highlight css %}
+```css
 ---
 ---
 
 @import "base"
 @import "functions"
-{% endhighlight %}
+```
 
 <h3 id="highlight">Como faço para mostrar código colorido?</h3>
 
 O próprio jekyll usa por padrão o [pygments](http://pygments.org/) para poder marcar os códigos. Basta definir no `_config.yml`:
 
-{% highlight yaml %}
+```yaml
 highlighter: pygments
-{% endhighlight %}
+```
 
 E então adicionar o seu código dessa forma:
 
-{% highlight html %}
+```html
 
 { % highlight linguagem % }
 código a ser mostrado
 { % endhightlight % }
-{% endhighlight %}
+```
 
 <h3 id="disqus">Como usar esse sistema de comentários?</h3>
 
 O sistema que eu utilizo para comentários é o [Disqus](https://disqus.com/) e é bastante fácil fazê-lo funcionar. Basta [criar uma conta](https://disqus.com/profile/signup/) no Disqus, solicitar um token para o seu site e então adicionar ao seu site no footer. O script do meu site ficou assim:
 
-{% highlight javascript %}
+```js
 var disqus_loaded = false;
 
 function load_disqus()
@@ -258,7 +258,7 @@ window.onscroll = function(e) {
             load_disqus()
     }
 };
-{% endhighlight %}
+```
 
 Um detalhe que acho interessante, é não carregar o Disqus logo que o blog é aberto, afinal de contas, a pessoa não vai direto para os comentários. Assim a gente melhora a performance e carregamento de nosso blog. Um esquema que eu faço é analisar o tamanho da página e um pouco antes da página finalizar, eu disparo uma trigger que carrega o disqus.
 
@@ -269,7 +269,7 @@ Enquanto a pessoa vai lendo e descendo, eu faço o carregamento, quando o usuár
 Criar permalinks é a coisa mais fácil do mundo no Jekyll e isso é lindo demais =)
 Basta definir no `_config.yml` como você quer que seja o link, seguem exemplos abaixo:
 
-{% highlight yaml %}
+```yaml
 # comportamento default
 permalink: /:categories/:year/:month/:day/:title.html
 
@@ -278,7 +278,7 @@ permalink: /:category/:title
 
 # mostrando somente o título
 permalink: /:title/
-{% endhighlight %}
+```
 
 Se quiser saber de mais alguns tipos, só olhar [aqui](http://jekyllrb.com/docs/permalinks/).
 

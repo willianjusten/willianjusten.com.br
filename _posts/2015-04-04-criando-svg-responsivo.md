@@ -42,11 +42,11 @@ Antes de sair adicionando o SVG a torto e a direito, precisamos nos atentar para
 
 Se você determinar um tamanho dentro do elemento `svg`, que é o nosso "container", você estará bloqueando o tamanho e com isso perdendo a fluidez.
 
-{% highlight html %}
+```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 128" width="32" height="128">
 	<!-- tira aquele width e height ali!!! -->
 </svg>
-{% endhighlight %}
+```
 
 ### 2 - Determine uma viewBox
 
@@ -56,21 +56,21 @@ Os valores min representam em qual ponto dentro da imagem a viewBox deve iniciar
 
 Se nós optarmos por não definir a viewBox a imagem não será redimensionada e irá corresponder a configuração feita na viewport.
 
-{% highlight html %}
+```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="...">
 	<!-- defina a viewBox bonitinha =) -->
 </svg>
-{% endhighlight %}
+```
 
 ### 3 - Coloque o preserveAspectratio para xMidYMidmeet
 
 Se a `viewport` e `viewBox` não possuirem as mesmas dimensões de width e height, o atributo `preserveAspectRatio` direciona o browser em como efetuar o display da imagem. Se o elemento já possuir uma viewBox e não tiver tamanho fixado na viewport, este se torna um item não obrigatório.
 
-{% highlight html %}
+```html
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 	<!-- se não tiver viewBox ou width e height -->
 </svg>
-{% endhighlight %}
+```
 
 ## Adicionando o  SVG
 
@@ -80,7 +80,7 @@ Tendo feito essas especificações, basta inserir o seu SVG onde quiser. E como 
 
 Basta adicionar o svg como `src` e para assegurar que ele possua o tamanho máximo de onde se encontrar, basta definir o `width` como máximo. Assim, a imagem vai adquirir o tamanho máximo de onde você adicionar.
 
-{% highlight html %}
+```html
 <style>
 	img,
 	object,
@@ -91,7 +91,7 @@ Basta adicionar o svg como `src` e para assegurar que ele possua o tamanho máxi
 <img src="imagem.svg" alt="Minha linda imagem em SVG">
 <object data="imagem.svg" type="image/svg+xml"></object>
 <embed src="imagem.svg" type="image/svg+xml">
-{% endhighlight %}
+```
 
 <p data-height="266" data-theme-id="11319" data-slug-hash="PwvoXB" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PwvoXB/'>Using Fluid SVG as IMG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -102,7 +102,7 @@ Experimente mudar o tamanho do container para ver que a imagem continuará a mes
 
 Nesses casos não há necessidade de nenhum hack, basta adicionar onde desejar e ele irá se adaptar de acordo com o container em que estiver.
 
-{% highlight html %}
+```html
 <!-- como background -->
 .element {
 	background-image: url("imagem.svg");
@@ -116,7 +116,7 @@ Nesses casos não há necessidade de nenhum hack, basta adicionar onde desejar e
 		<!-- conteúdo do svg aqui -->
 	</svg>
 </div>
-{% endhighlight %}
+```
 
 ## Logos Adaptativas
 
@@ -130,7 +130,7 @@ Para fazer essa mágica é bastante fácil, basta já termos definido como Respo
 
 Segue uma base de código de como fica:
 
-{% highlight html %}
+```html
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612">
     <g class="shards">
       <!-- aqui temos os cristais verde e amarelo -->
@@ -145,7 +145,7 @@ Segue uma base de código de como fica:
       <!-- aqui fica o texto -->
     </g>
   </svg>
-{% endhighlight %}
+```
 
 De posse das classes dos elementos, basta pensarmos nos Steps que queremos e nos cortes da tela.
 
@@ -153,19 +153,19 @@ De posse das classes dos elementos, basta pensarmos nos Steps que queremos e nos
 
 Para a primeira diferenciação, queremos retirar os cristais amarelo e verde, visto que eles ficam muito grandes para telas menores, para isso, basta omitirmos a classe `.shards`, que definimos anteriormente.
 
-{% highlight css %}
+```css
 @media (min-width: 480px) and (max-width: 640px) {
 	.shards {
 		display: none;
 	}
 }
-{% endhighlight %}
+```
 
 ### Corte 2
 
 Para o corte 2, queremos retirar também o cristal grande e para que a logo permaneça visível, queremos deixar o texto na cor roxa. Para isso é só usar a propriedade `fill`, como vimos no [post anterior](http://willianjusten.com.br/colorindo-em-svg/).
 
-{% highlight css %}
+```css
 @media (max-width: 480px) {
   .shards {
     display: none;
@@ -179,7 +179,7 @@ Para o corte 2, queremos retirar também o cristal grande e para que a logo perm
     display: none
   }
 }
-{% endhighlight %}
+```
 
 Feito isso, seu componente já está responsivo e adaptativo!! Veja o experimento pronto abaixo:
 

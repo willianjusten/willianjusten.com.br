@@ -34,21 +34,21 @@ Os filtros em CSS já são compatíveis com a maioria dos browsers e você pode 
 
 Para usar é bastante fácil, basta escolher a imagem que deseja aplicar o filtro e definir a propriedade de filtro que deseja aplicar, segue um exemplo:
 
-{% highlight css %}
+```css
 .minha-imagem {
     -webkit-filter: grayscale(100%); // suporte Chrome, Safari, Android, Opera
             filter: grayscale(100%); // suporte para Firefox
 }
-{% endhighlight %}
+```
 
 Mais de um filtro pode ser aplicado numa mesma imagem também, ficando assim:
 
-{% highlight css %}
+```css
 .minha-imagem {
     -webkit-filter: grayscale(100%) blur(5px); 
             filter: grayscale(100%) blur(5px); 
 }
-{% endhighlight %}
+```
 
 ## Diferentes tipos de filtros
 
@@ -60,7 +60,7 @@ No momento já existe um número bem legal de filtros e com expectativa de cria�
 
 Serve para aplicar um filtro preto e branco nas imagens e pode ir de `0` a `1` ou de `0%` a `100%`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: grayscale(100%); 
             filter: grayscale(100%); 
@@ -70,7 +70,7 @@ Serve para aplicar um filtro preto e branco nas imagens e pode ir de `0` a `1` o
     -webkit-filter: grayscale(.7); 
             filter: grayscale(.7); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 img {
@@ -97,7 +97,7 @@ img {
 
 Para dar aquele aspecto de foto envelhecida, o funcionamento é o mesmo do `grayscale`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: sepia(100%); 
             filter: sepia(100%); 
@@ -107,7 +107,7 @@ Para dar aquele aspecto de foto envelhecida, o funcionamento é o mesmo do `gray
     -webkit-filter: sepia(.7); 
             filter: sepia(.7); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .sepia-1 {
@@ -130,7 +130,7 @@ Para dar aquele aspecto de foto envelhecida, o funcionamento é o mesmo do `gray
 
 Eu adoro esse efeito! Ele funciona similar ao filtro de gausiano do Photoshop e serve para deixar a foto desfocada. Ele funciona recebendo valores em `px` como parâmetro. Quanto maior o valor, mais desfocado fica.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: blur(3px); 
             filter: blur(3px); 
@@ -140,7 +140,7 @@ Eu adoro esse efeito! Ele funciona similar ao filtro de gausiano do Photoshop e 
     -webkit-filter: blur(30px); 
             filter: blur(30px); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
  .blur-1 {
@@ -163,7 +163,7 @@ Eu adoro esse efeito! Ele funciona similar ao filtro de gausiano do Photoshop e 
 
 A saturação define a intensidade de uma cor numa imagem. Quanto maior o valor de `saturate`, mais intensa será a cor da imagem. Ele recebe valores em porcentagem.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: saturate(50%); 
             filter: saturate(50%); 
@@ -173,7 +173,7 @@ A saturação define a intensidade de uma cor numa imagem. Quanto maior o valor 
     -webkit-filter: saturate(500%); 
             filter: saturate(500%); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .saturate-1 {
@@ -197,7 +197,7 @@ A saturação define a intensidade de uma cor numa imagem. Quanto maior o valor 
 
 Bem parecido com o `saturate`, ele também recebe valores em `%` e quanto maior o seu valor, mais intensas são as cores.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: contrast(50%); 
             filter: contrast(50%); 
@@ -207,7 +207,7 @@ Bem parecido com o `saturate`, ele também recebe valores em `%` e quanto maior 
     -webkit-filter: contrast(500%); 
             filter: contrast(500%); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .contrast-1 {
@@ -230,7 +230,7 @@ Bem parecido com o `saturate`, ele também recebe valores em `%` e quanto maior 
 
 Essa propriedade como o nome já diz, aumenta ou diminui o brilho da imagem e recebe valores em `%`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: brightness(50%); 
             filter: brightness(50%); 
@@ -240,7 +240,7 @@ Essa propriedade como o nome já diz, aumenta ou diminui o brilho da imagem e re
     -webkit-filter: brightness(500%); 
             filter: brightness(500%); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .brightness-1 {
@@ -263,7 +263,7 @@ Essa propriedade como o nome já diz, aumenta ou diminui o brilho da imagem e re
 
 Como sabemos, a distrubuição das cores pode ser feita numa escala dentro de um círculo, o que essa propriedade faz é "rodar" essa paleta e com isso obter cores diferentes. Essa propriedade, portanto, aceita valores em `deg`, podendo ir de `0deg` até `360deg`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: hue-rotate(45deg); 
             filter: hue-rotate(45deg); 
@@ -273,7 +273,7 @@ Como sabemos, a distrubuição das cores pode ser feita numa escala dentro de um
     -webkit-filter: hue-rotate(120deg); 
             filter: hue-rotate(120deg); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .hue-1 {
@@ -296,12 +296,12 @@ Como sabemos, a distrubuição das cores pode ser feita numa escala dentro de um
 
 Aquele filtro engraçado que quem for das antigas vai lembrar imediatamente daqueles negativos que a gente levava para revelar as fotos. Essa propriedade inverte as cores, pegando sempre o inverso da cor real. Aceita valore de `0%` até `100%`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: invert(100%); 
             filter: invert(100%); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .invert-1 {
@@ -318,12 +318,12 @@ Aquele filtro engraçado que quem for das antigas vai lembrar imediatamente daqu
 
 Serve para aplicar uma transparência na imagem, indo dos valores de `0` até `1`ou de `0%` até `100%`. Essa propriedade é similar a `opacity` do css, a diferença é que em alguns browsers, eles usam aceleração via hardware, o que deixa a performance melhor.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: opacity(50%); 
             filter: opacity(50%); 
 }
-{% endhighlight %}
+```
 
 ---
 
@@ -341,12 +341,12 @@ Serve para aplicar uma transparência na imagem, indo dos valores de `0` até `1
 
 Também similar a propriedade `box-shadow` do css, ela tem a diferença de também receber aceleração via hardware e ser mais performática. Outra diferença é que ela se aplica ao entorno do elemento, ao invés de criar uma caixa, como o `box-shadow` faz. Os valores que recebe são `drop-shadow(eixoX eixoY dispersão cor)`.
 
-{% highlight css %}
+```css
 .imagem-1 {
     -webkit-filter: drop-shadow(10px 10px 5px #000); 
             filter: drop-shadow(10px 10px 5px #000); 
 }
-{% endhighlight %}
+```
 
 <style type="text/css">
 .drop-1 {

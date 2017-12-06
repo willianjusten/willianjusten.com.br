@@ -46,7 +46,7 @@ Se você quiser mover o pássaro inteiro de um lugar para o outro no Illustrator
 
 Agrupar elementos no SVG funcionam da mesma maneira. Neste exemplo, nós agrupamos os elementos do corpo, os elementos da cabeça e então unimos os dois grupos em um grupo com a `id` igual a `bird`.
 
-{% highlight html %}
+```html
 <svg width="1144.12px" height="400px" viewBox="0 0 572.06 200">
     <style>
         svg{background-color:white;}
@@ -77,7 +77,7 @@ Agrupar elementos no SVG funcionam da mesma maneira. Neste exemplo, nós agrupam
         </g>
     </g>
 </svg>
-{% endhighlight %}
+```
 
 Se você muda a cor de preenchimento do grupo `#body`, a cor de preenchimento de todos os elementos dentro do grupos irão mudar para a cor escolhida. Isto é muito conveniente.
 
@@ -85,24 +85,24 @@ Agrupar elementos é muito útil, não só para própositos organizacionais ou e
 
 Se você quiser redimensionar o pássaro para duas vezes o seu tamanho, você poderá fazer isso com uma linha de CSS se todos os elementos estiverem no mesmo grupo.
 
-{% highlight css %}
+```css
 #bird {
     transform: scale(2);
 }
-{% endhighlight %}
+```
 
 Agrupar faz a interatividade, em particular, mais conveniente. Você pode colocar eventos de mouse para todo o pássaro e ter a resposta a esses eventos em todo grupo.
 
 O elemento `<g>` tem mais uma importante característica: ele pode ser o seu próprio `<title>` e `<desc>`, que ajudam na acessibilidade aos leitores de tela, e sobretudo faz o código mais legível para os humanos. Por exemplo:
 
-{% highlight html %}
+```html
 
 <g id="bird">
     <title>Pássaro</title>
     <desc>A imagem de um pequeno e fofo pássaro verde com o bico laranja.</desc>
     <!-- ... -->
 </g>
-{% endhighlight %}
+```
 
 ## Reutilizando Elementos com o `<use>`
 
@@ -116,25 +116,25 @@ O elemento `<use>` pega os atributos x, y, altura e largura, e então referencia
 
 Por exemplo, se nós estivermos criando um outro pássaro no nosso SVG, nós poderemos reutilizar o pássaro existente, da seguinte forma:
 
-{% highlight html %}
+```html
 <use x="100" y="100" xlink:href="#bird" />
-{% endhighlight %}
+```
 
 Perceba que você pode referenciar qualquer elemento SVG dentro do atributo `xlink:href`, até mesmo se o elemento for de um arquivo externo. O elemento referenciado ou grupo não precisa estar no mesmo arquivo. Essa é uma grande forma de organizar arquivos (por exemplo, você pode ter um arquivo para componentes reutilizáveis) **eu ouvi um Atomic Design irmão?**
 
 Se o pássaro do nosso exemplo, estivesse em um arquivo separado chamado `animals.svg`, por exemplo, nós poderíamos referenciar da seguinte forma:
 
-{% highlight html %}
+```html
 <use x="100" y="100" xlink:href="pasta-do-arquivo/animals.svg#bird" />
-{% endhighlight %}
+```
 
 Porém, referenciar SVG externo no `<use>` não funciona no IE <s>grandes novidades, browser de bosta</s>. Tem um [artigo](http://css-tricks.com/svg-use-external-source/) do Chris Coyier que fala em detalhes e mecanismos de fallback.
 
 Alguns detalhes sobre o `<use>` que são importantes. Como dito anteriormente a movimentação do novo grupo é feita tomando como referência o ponto superior esquerdo (0,0), o que não foi dito é que essa relação é feita tomando como referência o ponto do objeto original. Como no exemplo abaixo:
 
-{% highlight html %}
+```html
 <use xlink:href="#bird" transform="translate(100, 100)" />
-{% endhighlight %}
+```
 
 ![A copia de um pássaro deslocado 100,100](http://sarasoueidan.com/images/bird-reuse.jpg)
 
@@ -150,7 +150,7 @@ Então, utilizando o `<defs>` nós podemos definir um elemento que queremos usar
 
 O seguinte exemplo mostra um gradiente SVG sendo definido e então sendo utilizado como preenchimento de um retângulo:
 
-{% highlight html %}
+```html
 <svg>
     <defs>
         <linearGradient id="gradient">
@@ -161,7 +161,7 @@ O seguinte exemplo mostra um gradiente SVG sendo definido e então sendo utiliza
 
     <rect stroke="#eee" stroke-width="5" fill="url(#gradient)"></rect>
 </svg>
-{% endhighlight %}
+```
 
 Definindo o gradiente linear dentro do elemento `<defs>` garante que o gradiente não será renderizado até que ele seja referenciado em algum lugar que seja necessário.
 
@@ -176,7 +176,7 @@ Todos esses problemas podem ser evitados usando o elemento `<defs>`. Não só o 
 
 No exemplo seguinte temos uma árvore. A árvore é feita de um caule e um grupo de folhas. As folhas são agrupadas em um grupo com a `id="leaves"`, e então esse grupo é agrupado com o caule em um grupo com `id="tree"`.
 
-{% highlight html %}
+```html
 <svg width="500.79px" height="200px" viewBox="0 0 500.79 200">
     <style type="text/css">
         #leaves{fill:#8CC63F;}
@@ -194,7 +194,7 @@ No exemplo seguinte temos uma árvore. A árvore é feita de um caule e um grupo
         </g>
     </g>
 </svg>
-{% endhighlight %}
+```
 
 E teremos uma árvore igual a desenhada abaixo:
 
@@ -202,7 +202,7 @@ E teremos uma árvore igual a desenhada abaixo:
 
 Se quisermos colocar esse grupo `#tree` em um elemento `<defs>`, a árvore não será mais renderizada.
 
-{% highlight html %}
+```html
 <svg width="500.79px" height="200px" viewBox="0 0 500.79 200">
     <style type="text/css">
         #leaves{fill:#8CC63F;}
@@ -214,17 +214,17 @@ Se quisermos colocar esse grupo `#tree` em um elemento `<defs>`, a árvore não 
         </g>
     </defs>
 </svg>
-{% endhighlight %}
+```
 
 Agora a árvore serve como template. Nós podemos usá-la utilizando o elemento `<use>`, exatamente como faríamos com qualquer elemento. A única diferença nesse caso é que os atributos x e y agora são relativos ao sistema de coordenadas.
 
 Por exemplo, se quisermos criar três cópias dessa árvore e posicioná-las no SVG, e assumindo neste caso que o sistema de coordenadas bate com a largura e altura da viewport, nós teremos o seguinte resultado com este código:
 
-{% highlight html %}
+```html
 <use xlink:href="#tree" x="50" y="100" />
 <use xlink:href="#tree" x="200" y="100" />
 <use xlink:href="#tree" x="350" y="100" />
-{% endhighlight %}
+```
 
 ![3 árvores identicas deslocadas](http://sarasoueidan.com/images/tree.svg)
 

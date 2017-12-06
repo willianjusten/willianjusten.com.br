@@ -28,16 +28,16 @@ Esse é um post bem legal, especialmente para quem está começando, pois vou mo
 
 Em ES5 seria o modelo normal do CommonJS:
 
-{% highlight js %}
+```js
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
-{% endhighlight %}
+```
 
 Já em ES6 usando o sistema de [import de módulos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import):
 
-{% highlight js %}
+```js
 import React, { PropTypes } from 'react';
-{% endhighlight %}
+```
 
 Se você reparar, no `PropTypes` eu utilizo as chaves em volta, isso significa que eu estou pegando só uma parte do módulo `react`, que é o `PropTypes`, evitando ter que digitar `React.PropTypes` toda vez que precisar. Isso se chama [Object destructuring](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 
@@ -45,37 +45,37 @@ Se você reparar, no `PropTypes` eu utilizo as chaves em volta, isso significa q
 
 Em ES5 nós criamos componentes utilizando o método `React.createClass` e depois nós os exportamos usando o `module.exports`.
 
-{% highlight js %}
+```js
 var MeuComponente = React.createClass({
     ...
 });
 
 module.exports = MeuComponente;
-{% endhighlight %}
+```
 
 Em ES6, você pode criar uma classe e extender de `React.Component` para ter as funcionalidades do React.
 
-{% highlight js %}
+```js
 export default class MeuComponente extends React.Component {
     ...
 }
-{% endhighlight %}
+```
 
 Repare que eu estou também exportando diretamente o `MeuComponent` passando o `export default` no início. Quando eu passo o `default`, estou dizendo que não me importo em qual nome ele vai receber quando for importado. Se eu tivesse colocado só `export`, eu obrigatoriamente teria que importar com o mesmo nome. Outra forma de escrever exportando seria removendo o `export default` no início e colocando `export default MeuComponente;` ao final do código, que é minha opção favorita.
 
-{% highlight js %}
+```js
 class MeuComponente extends React.Component {
     ...
 }
 
 export default MeuComponente;
-{% endhighlight %}
+```
 
 ### PropTypes e getDefaultProps
 
 Em ES5, meu objeto de propTypes fica **dentro** da minha classe, assim como tenho um método para definir minhas propriedades default.
 
-{% highlight js %}
+```js
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 
@@ -89,11 +89,11 @@ var MeuComponente = React.createClass({
         };
     }
 });
-{% endhighlight %}
+```
 
 Já em ES6, tanto a definição de `PropTypes` quanto o `defaultProps` vão para o lado de **fora**.
 
-{% highlight js %}
+```js
 import React, { PropTypes } from 'react';
 
 export default class MeuComponente extends Component {
@@ -107,13 +107,13 @@ MeuComponente.propTypes = {
 MeuComponente.defaultProps = {
     title: 'Heey',
 };
-{% endhighlight %}
+```
 
 ### getInitialState
 
 Para definir estados iniciais ao meu componente, em ES5 eu preciso usar o método `getInitialState`.
 
-{% highlight js %}
+```js
 var MeuComponente = React.createClass({
     getInitialState: function() {
         return {
@@ -121,11 +121,11 @@ var MeuComponente = React.createClass({
         };
     },
 });
-{% endhighlight %}
+```
 
 Como em ES6 estamos criando classes, nós temos o `constructor`, que como o nome já diz, irá construir nossa instância base, então é lá que vamos definir nossos estados iniciais.
 
-{% highlight js %}
+```js
 export default class MeuComponente extends Component {
     constructor(props) {
         super(props);
@@ -134,7 +134,7 @@ export default class MeuComponente extends Component {
         };
     }
 }
-{% endhighlight %}
+```
 
 ### Fazendo Bind dos métodos
 
@@ -144,7 +144,7 @@ O que acontece é que quando se utilizava o `React.CreateClass`, ele já fazia o
 
 Em ES5 temos:
 
-{% highlight js %}
+```js
 var MeuComponente = React.createClass({
     handleClick: function(event) {
         this.setState({
@@ -152,11 +152,11 @@ var MeuComponente = React.createClass({
         });
     }
 });
-{% endhighlight %}
+```
 
 Em ES6, precisaremos fazer o bind manual então:
 
-{% highlight js %}
+```js
 export default class MeuComponente extends Component {
     constructor() { 
         super();
@@ -169,7 +169,7 @@ export default class MeuComponente extends Component {
         });
     }
 }
-{% endhighlight %}
+```
 
 Reparem que eu faço o bind no `contructor`, que é a forma correta de se fazer. Se você já viu um bind direto na função, **corrija**, é uma má prática.
 
@@ -177,7 +177,7 @@ Reparem que eu faço o bind no `contructor`, que é a forma correta de se fazer.
 
 Se você reparar no exemplo acima, em ES5 eu uso `handleClick: function()...` e já no ES6 eu escrevo só `handleClick()` direto. Isso acontece pois todos os métodos são propriedades do objeto. Em ES5, eu preciso definir o nome da propriedade e então chamar uma função, que é o método que eu quero em si.
 
-{% highlight js %}
+```js
 var MeuComponente = React.createClass({
     componentWillMount: function() {
         ...
@@ -185,17 +185,17 @@ var MeuComponente = React.createClass({
 });
 
 module.exports = MeuComponente;
-{% endhighlight %}
+```
 
 Em ES6, como temos a [Shorthand Syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions), podemos simplesmente escrever como método direto:
 
-{% highlight js %}
+```js
 export default class Mycomponent extends React.Component {
     componentWillMount() {
         ...
     }
 }
-{% endhighlight %}
+```
 
 ## Conclusão
 

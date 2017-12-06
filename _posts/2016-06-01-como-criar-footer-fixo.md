@@ -34,7 +34,7 @@ E para fazer isso, não é tão complicado, mas demanda alguns "pulos do gato", 
 
 Uma das formas mais comuns é criar um elemento que segura todo o conteúdo exceto o footer. E ele tem uma margem da altura do footer, que é a base [desse site](http://ryanfait.com/html5-sticky-footer/). Então para fazer isso, fazemos o seguinte:
 
-{% highlight html %}
+```html
     <body>
       <div class="wrapper">
 
@@ -44,11 +44,11 @@ Uma das formas mais comuns é criar um elemento que segura todo o conteúdo exce
       </div>
       <footer class="footer"></footer>
     </body>
-{% endhighlight %}
+```
 
 Aqui você cria um `wrapper` que será responsável por ter uma altura máxima da tela e empurrar o nosso `footer` para baixo. Essa técnica também necessita de um elemento `push` para garantir que a margem negativa não puxe o rodapé e ele cubra alguma parte do conteúdo. E para o css faremos:
 
-{% highlight css %}
+```css
     html, body {
       height: 100%;
       margin: 0;
@@ -63,7 +63,7 @@ Aqui você cria um `wrapper` que será responsável por ter uma altura máxima d
     .push {
       height: 50px;
     }
-{% endhighlight %}
+```
 
 Para que possamos definir um elemento qualquer da tela com altura máxima, precisamos primeiro definir que o `html` e o `body` tenham uma altura de `100%`. Depois temos ali nosso `wrapper` que vai ter obrigatoriamente ter uma altura mínima de `100%` e ali está a margem negativa, que representa a altura do rodapé. Segue abaixo um pen dessa técnica:
 
@@ -74,7 +74,7 @@ Para que possamos definir um elemento qualquer da tela com altura máxima, preci
 
 Essa técnica não necessita de um elemento `push`, mas ao invés disso, necessita de um outro elemento de `wrapper` em torno do conteúdo, isso para poder aplicar um `padding-bottom` para não permitir o rodapé subir em cima do conteúdo. O markup fica assim:
 
-{% highlight html %}
+```html
     <body>
       <div class="content">
         <div class="content-inside">
@@ -83,11 +83,11 @@ Essa técnica não necessita de um elemento `push`, mas ao invés disso, necessi
       </div>
       <footer class="footer"></footer>
     </body>
-{% endhighlight %}
+```
 
 E o CSS então, irá aplicar um `padding-bottom` no `content-inside` e o rodapé fará a margem negativa, para poder ocupar seu espaço na parte inferior.
 
-{% highlight css %}
+```css
     html, body {
       height: 100%;
       margin: 0;
@@ -106,7 +106,7 @@ E o CSS então, irá aplicar um `padding-bottom` no `content-inside` e o rodapé
       height: 50px;
       margin-top: -50px;
     }
-{% endhighlight %}
+```
 
 O visual ficará o mesmo:
 
@@ -117,18 +117,18 @@ O visual ficará o mesmo:
 
 Esse método é bastante legal, pois você não vai precisar criar elementos extras para ajudar a altura. Para isso você vai utilizar o método `calc()` e uma unidade de medida que eu gosto bastante que é a `vh` (viewport height), que serve para calcular a altura máxima da tela.
 
-{% highlight html %}
+```html
     <body>
       <div class="content">
         content
       </div>
       <footer class="footer"></footer>
     </body>
-{% endhighlight %}
+```
 
 E no css teremos:
 
-{% highlight css %}
+```css
     .content {
       min-height: calc(100vh - 70px);
     }
@@ -136,7 +136,7 @@ E no css teremos:
     .footer {
       height: 50px;
     }
-{% endhighlight %}
+```
 
 Repare que estamos diminuindo ao invés de um altura de `50px`, o valor de `70px`, isso está sendo feito, pois assumimos que o último elemento do `content` tenha uma margem para o rodapé. O valor de `100vh` fará com que o content tenha o tamanho todo da tela menos a altura que determinamos.
 
@@ -147,18 +147,18 @@ Repare que estamos diminuindo ao invés de um altura de `50px`, o valor de `70px
 
 Um grande problema das técnicas acima é que precisamos ter uma altura fixa para o nosso footer e isso, em geral, não é algo muito bom para o design, os conteúdos podem mudar, assim como a altura. Usar o flexbox para o rodapé fixo não só não necessita de markup extra, como também não precisa de uma altura fixa, genial não?
 
-{% highlight html %}
+```html
     <body>
       <div class="content">
         content
       </div>
       <footer class="footer"></footer>
     </body>
-{% endhighlight %}
+```
 
 E um css tão simples quanto:
 
-{% highlight css %}
+```css
     html {
       height: 100%;
     }
@@ -172,7 +172,7 @@ E um css tão simples quanto:
     .content {
       flex: 1;
     }
-{% endhighlight %}
+```
 
 <p data-height="300" data-theme-id="11319" data-slug-hash="RRbKrL" data-default-tab="result" data-user="chriscoyier" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/chriscoyier/pen/RRbKrL/">Sticky Footer with Flexbox</a> by Chris Coyier (<a href="http://codepen.io/chriscoyier">@chriscoyier</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -187,18 +187,18 @@ Tem um guia bastante legal sobre flexbox [aqui](https://css-tricks.com/snippets/
 
 A opção de Grid Layout é a opção mais nova de todas e ainda não tem um suporte tão bom. Mas se você já quiser dar uma olhadinha, tem [outro guia legal](https://css-tricks.com/snippets/css/complete-guide-grid/). No markup teremos:
 
-{% highlight html %}
+```html
     <body>
       <div class="content">
         content
       </div>
       <footer class="footer"></footer>
     </body>
-{% endhighlight %}
+```
 
 E no CSS:
 
-{% highlight css %}
+```css
     html {
       height: 100%;
     }
@@ -213,7 +213,7 @@ E no CSS:
       grid-row-start: 2;
       grid-row-end: 3;
     }
-{% endhighlight %}
+```
 
 Essa demo irá funcionar no Chrome Canary e Firefox Developer Edition, então, muito provavelmente não vai estar funcionando no seu browser tá, mas já é uma forma de começar a ver essa nova tecnologia =)
 

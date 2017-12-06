@@ -37,7 +37,7 @@ Essas triggers podem ser ativadas através de commits, push para o repositório 
 
 Todo repositório Git ao ser criado, gera um pasta `.git`, que, em geral, é oculta pelos sistemas operacionais. Dentro dessa pasta que é feita toda a mágica de versionamento, logs, separação de branches e etc. E lá também que temos os hooks, se você mandar listar o que tem na pasta `.git`, você verá algo como:
 
-{% highlight shell %}
+```bash
 $ tree -d -L 1
 .
 ├── branches
@@ -48,21 +48,21 @@ $ tree -d -L 1
 └── refs
 
 6 directories
-{% endhighlight %}
+```
 
 Como vamos trabalhar com Hooks, já é de se imaginar que devemos nos preocupar com a pasta `hooks`. Se listarmos os arquivos, teremos:
 
-{% highlight shell %}
+```bash
 $ ls 
 
 applypatch-msg.sample     pre-applypatch.sample     pre-rebase.sample
 commit-msg.sample         pre-commit.sample         prepare-commit-msg.sample
 post-update.sample        pre-push.sample           update.sample
-{% endhighlight %}
+```
 
 Se você reparar, eles já possuem nomes bem distintos de quando serão ativados. Todos estão com a extensão `.sample` e para fazê-los funcionar, basta remover essa extensão. Todos eles já possuem algum código dentro, por exemplo, se eu pegar o arquivo `commit-msg.sample`.
 
-{% highlight shell %}
+```bash
 #!/bin/sh
 #
 # An example hook script to check the commit log message.
@@ -87,15 +87,15 @@ test "" = "$(grep '^Signed-off-by: ' "$1" |
         echo >&2 Duplicate Signed-off-by lines.
         exit 1
 }
-{% endhighlight %}
+```
 
 Poderíamos editar esse mesmo arquivo e colocar algo como: 
 
-{% highlight shell %}
+```bash
 #!/bin/sh
 
 echo 'Boa! Continue trabalhando campeão!'
-{% endhighlight %}
+```
 
 No momento de commitar algo, ele irá mostrar da seguinte forma:
 
@@ -111,13 +111,13 @@ O [Husky](https://github.com/typicode/husky) é uma ferramenta incrível feita p
 
 Primeiro você precisa instalar, o que é um simples:
 
-{% highlight shell %}
+```bash
 $ npm install husky --save-dev
-{% endhighlight %}
+```
 
 Depois disso, basta ir no seu `package.json` na parte de scripts e colocar os hooks desejados e as tarefas que você deseja fazer. Segue um exemplo:
 
-{% highlight json %}
+```json
 {
     "scripts": {
         "precommit": "npm run lint && npm test",
@@ -126,7 +126,7 @@ Depois disso, basta ir no seu `package.json` na parte de scripts e colocar os ho
         "test": "..."
     }
 }
-{% endhighlight %}
+```
 
 Ali eu estou criando dois hooks que são `precommit` e `prepush` e estou dizendo que antes de um commit ou um push para o remoto, eles deverão rodar os comandos `lint` e `test`, que eu também determinei no meu npm script. Isso vai garantir que ele verifique se no código não tem nada fora do padrão de escrita, usando o nosso lint. E também irá rodar os testes, evitando que suba algo quebrado. 
 

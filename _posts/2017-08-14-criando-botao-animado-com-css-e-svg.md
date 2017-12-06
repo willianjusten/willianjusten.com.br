@@ -38,13 +38,13 @@ Vamos as etapas:
 
 O primeiro de tudo é criar nosso botão limpo, ou seja, o estado `antes do envio`. Que vai ter o seguinte html e css:
 
-{% highlight html %}
+```html
 <button id="send" class="send">Send</button>
-{% endhighlight %}
+```
 
 Já estou adicionando o `id` pois ele será utilizado futuramente em nosso Javascript. E a classe será para adicionarmos os estilos, que serão:
 
-{% highlight css %}
+```css
 .send {
   background: none;
   color: white;
@@ -55,11 +55,11 @@ Já estou adicionando o `id` pois ele será utilizado futuramente em nosso Javas
   outline: none;
   padding: 15px 70px;
 }
-{% endhighlight %}
+```
 
 Com isso, vamos ter nosso botão hiper mega simples na tela. Se você estiver partindo do zero, lembre-se de adicionar um `background` no body e alinhamentos/resets se desejar. Adicionei os seguintes detalhes:
 
-{% highlight css %}
+```css
 * {
   margin: 0;
   padding: 0;
@@ -72,21 +72,21 @@ body {
   height: 100vh;
   justify-content: center;
 }
-{% endhighlight %}
+```
 
 ### Estado de Loading
 
 Para o estado de loading, queremos fazer um efeito do botão diminuindo para ficar do tamanho de uma bola e criar um efeito como se estivesse "pulsando". E para isso farei o seguinte, irei encapsular o texto de send num `spam`, que assim posso adicionar um `display: none` nesse estado de loading. Outra coisa que irei fazer é diminuir o padding desse botão, transformando ele num círculo e vou utilizar o `transition` para que está mudança de tamanho seja suave.
 
-{% highlight html %}
+```html
 <button id="send" class="send">
   <span>Send</span>
 </button>
-{% endhighlight %}
+```
 
 Acima é o nosso html e assim vai ficar o nosso css, utilizando uma classe `.is-loading` para indicar que está carregando/enviando o dado.
 
-{% highlight css %}
+```css
 .send {
   // outras propriedades
   transition: padding 500ms ease-in-out;
@@ -99,7 +99,7 @@ Acima é o nosso html e assim vai ficar o nosso css, utilizando uma classe `.is-
 .is-loading span {
   display: none;
 }
-{% endhighlight %}
+```
 
 ### Adicionando a trigger
 
@@ -107,13 +107,13 @@ Como aqui já temos dois estados o `normal` e o `is-loading` eu vou adicionar j�
 
 Para isso é bem simples, vou buscar o elemento e usar o `addEventListener` para verificar o `click` e usarei o `classList.add` para adicionar a nossa classe, ficando assim:
 
-{% highlight js %}
+```js
 const btn = document.getElementById('send');
 
 btn.addEventListener('click', () => {
   btn.classList.add('is-loading');
 });
-{% endhighlight %}
+```
 
 Feito isso, já podemos clicar no botão e veremos a animação simples de diminuir. Agora vamos fazer o pulse!
 
@@ -121,7 +121,7 @@ Feito isso, já podemos clicar no botão e veremos a animação simples de dimin
 
 Para fazer esse efeito, iremos utilizar o `animation` com o `keyframes`. Precisamos aumentar/diminuir o botão e para isso vamos usar o `scale` e o efeito da sombra expandida será feita com o `box-shadow`, o conjunto pronto então será:
 
-{% highlight css %}
+```css
 .send {
   // outras propriedades
   box-shadow: 0 0 0 0 rgba(69, 152, 27, 0.5);
@@ -146,7 +146,7 @@ Para fazer esse efeito, iremos utilizar o `animation` com o `keyframes`. Precisa
     box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
   }
 }
-{% endhighlight %}
+```
 
 Eu adicionei no estado `0%` que é o `.send` puro um `box-shadow` sem mover nenhuma posição da cor verde e eu então criei 3 diferentes etapas na nossa animação. No primeiro momento, que é o `0%`, eu diminuo a bolinha. Depois um pouco mais da metade da animação, em `70%`, eu volto ao tamanho normal e crio a expansão do `box-shadow` mudando o `blur` (que é a última propriedade do box-shadow) para `50px` e por fim, aos `100%` eu volto o blur para zero e diminuo o botão. Isso com a opção de `infinite` na animação, faz com que o botão fique aumentando/diminuindo com a sombra até que eu remova essa classe.
 
@@ -154,7 +154,7 @@ Eu adicionei no estado `0%` que é o `.send` puro um `box-shadow` sem mover nenh
 
 Como aqui é só exemplo, para que a gente possa simular um `success` vamos utilizar o `setTimeout` que vai adicionar a classe `is-success` e remover a `is-loading` depois de um tempo. Ficando assim:
 
-{% highlight js %}
+```js
 const btn = document.getElementById('send');
 
 btn.addEventListener('click', () => {
@@ -166,7 +166,7 @@ btn.addEventListener('click', () => {
     btn.classList.remove('is-loading');
   }, 4000);
 });
-{% endhighlight %}
+```
 
 Reparem que com esse código, ao final de `4s` ou `4000ms`, o botão vai voltar ao estado inicial, pois estaremos removendo a classe `is-loading` e ainda não temos estilos para o `is-sucess`, vamos fazê-lo então.
 
@@ -174,7 +174,7 @@ Reparem que com esse código, ao final de `4s` ou `4000ms`, o botão vai voltar 
 
 Para finalizar nosso botão, a classe `is-success` vai mudar o `background` para ter a cor sólida e vai permanecer também no mesmo formato de círculo que o `is-loading`, para isso vamos adicionar o `background` dentro da `transition` do nosso botão e adicionar os estilos do `is-success` ficando assim:
 
-{% highlight css %}
+```css
 .send {
   // outras propriedades
   transition: background, padding 500ms ease-in-out;
@@ -188,11 +188,11 @@ Para finalizar nosso botão, a classe `is-success` vai mudar o `background` para
 .is-success span {
   display: none;
 }
-{% endhighlight %}
+```
 
 Depois disso, vamos fazer o pequeno detalhe do sinal de ok/certo com SVG, para isso vamos adicionar o seguinte SVG dentro do nosso botão.
 
-{% highlight html %}
+```html
 <button id="send" class="send">
   <svg viewBox="0 0 90.594 59.714">
     <polyline
@@ -206,11 +206,11 @@ Depois disso, vamos fazer o pequeno detalhe do sinal de ok/certo com SVG, para i
   </svg>
   <span>Send</span>
 </button>
-{% endhighlight %}
+```
 
 E vamos fazer também uma edição no CSS para ele sumir/aparecer com o `is-sucess`.
 
-{% highlight css %}
+```css
 svg {
   width: 0;
   height: 0;
@@ -220,11 +220,11 @@ svg {
   height: 30px;
   width: 30px;
 }
-{% endhighlight %}
+```
 
 Agora está faltando só fazer o efeito de desenhar, para isso, já temos uma classe `check` lá no nosso SVG, para que possamos fazer essa animação, que vai ser baseada em `stroke-dashoffset` e `stroke-dasharray`, que você pode ler [melhor sobre aqui](https://willianjusten.com.br/efeito-de-desenhar-com-svg/). O CSS dessa parte ficará:
 
-{% highlight css %}
+```css
 .check {
   stroke-dasharray: 130px 130px;
   stroke-dashoffset: 130px;
@@ -234,7 +234,7 @@ Agora está faltando só fazer o efeito de desenhar, para isso, já temos uma cl
 .is-success .check {
   stroke-dashoffset : 0px;
 }
-{% endhighlight %}
+```
 
 Reparem que inicialmente eu to movendo o meu desenho todo para fora de visão e no `.is-success .check` eu retorno para o zero, através de uma `transition`, criando o efeito final que queríamos, que é o símbolo ser desenhado na tela. Segue então nosso resultado final:
 

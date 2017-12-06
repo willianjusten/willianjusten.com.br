@@ -40,7 +40,7 @@ As formas básicas vem com um conjunto de atributos que permitem manipular posi�
 
 Segue um exemplo da diferença entre a criação de um círculo via forma básica e via path:
 
-{% highlight html %}
+```html
 <circle fill="#FFFFFF"
         stroke="#000"
         cx="28.1"
@@ -56,7 +56,7 @@ Segue um exemplo da diferença entre a criação de um círculo via forma básic
          S0.5,43.3,0.5,28.1
          S12.9,0.5,28.1,0.5
          S55.7,12.9,55.7,28.1z"/>
-{% endhighlight %}
+```
 
 Um exemplo bem bacana sobre a importância da otimização e o quão impactante é. A Google não faz muito tempo, refez sua logo se baseando em SVG e no quanto podia otimizar/economizar com isso.
 

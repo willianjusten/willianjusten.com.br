@@ -33,17 +33,17 @@ Mas se você acha que irá precisar criar então 3 arquivos diferentes, se engan
 
 Basta adicionar a seguinte `meta tag` no `head`:
 
-{% highlight html %}
+```html
 <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
-{% endhighlight %}
+```
 
 Algumas pessoas apoiam utilizar um formato mais adaptável que é o `png` usando as novas meta tags com size, como mostrado no código abaixo:
 
-{% highlight html %}
+```html
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-{% endhighlight %}
+```
 
 ### Mas se pode usar png, por que você vem me falar para usar o formato .ico que é velho??
 
@@ -111,7 +111,7 @@ Relaxa amigo, existem geradores na net, esses dois abaixo são muito bons:
 
 E como faço para os apps lerem isso aí?
 
-{% highlight html %}
+```html
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -120,7 +120,7 @@ E como faço para os apps lerem isso aí?
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-{% endhighlight %}
+```
 
 E prontinho, olha que legal, já funciona!!
 
@@ -132,10 +132,10 @@ Com o desenvolvimento do windows 8 e do surface, agora temos aquela interface fl
 
 Para fazer funcionar, basta adicionar as seguintes linhas no head:
 
-{% highlight html %}
+```html
 <meta name="msapplication-TileColor" content="#0562DC">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-{% endhighlight %}
+```
 
 #### E como faço para testar se eu não uso essa porcaria de windows 8?
 

@@ -35,7 +35,7 @@ Como foi um vídeo, infelizmente não teve trilha sonora enquanto gravei, maaaas
 
 Quem curtiu e já está doido para começar uma aplicação React, segue o [link do create-react-app](https://github.com/facebookincubator/create-react-app). E para quem viu no vídeo, os passos são:
 
-{% highlight sh %}
+```bash
 # instalar globalmente o gerador
 npm install -g create-react-app
 
@@ -44,7 +44,7 @@ create-react-app nome-da-aplicacao
 
 # para rodar
 npm start
-{% endhighlight %}
+```
 
 ## Info
 

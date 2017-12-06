@@ -65,7 +65,7 @@ Assim como as diferentes tags que o SVG possui para suas formas, ele também pos
 
 ### Sintaxe
 
-{% highlight html %}
+```html
 <animate id="myAnim" 
          attributeName=" " 
          from=" " 
@@ -75,7 +75,7 @@ Assim como as diferentes tags que o SVG possui para suas formas, ele também pos
          fill=" " 
          ...
 />
-{% endhighlight %}
+```
 
 Para o `animate` temos os principais atributos:
 
@@ -94,18 +94,18 @@ Existem duas formas de se aplicar animações, que são:
 
 #### Especificando um target
 
-{% highlight html %}
+```html
 <rect id="myRect" ... />
 <animate xlink:href="#myRect" ... />
-{% endhighlight %}
+```
 
 #### Aninhando dentro do elemento
 
-{% highlight html %}
+```html
 <rect id="myRect" ...>
     <animate ... />
 </rect>
-{% endhighlight %}
+```
 
 Um outro detalhe muito importante é que para cada `animate` só podemos animar um atributo principal, que é determinado pelo `attributeName`. Portanto se quisermos fazer 2 tipos diferentes de animação, iremos precisar de 2 elementos `animate` para cada atributo.
 
@@ -114,7 +114,7 @@ Um outro detalhe muito importante é que para cada `animate` só podemos animar 
 <p data-height="266" data-theme-id="11319" data-slug-hash="BNOJjg" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/BNOJjg/'>Guide to SVG Animations</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight html %}
+```html
 <svg width="500" height="100">
   <circle id="orange-circle" r="30" cx="50" cy="50" fill="orange" />
   
@@ -127,7 +127,7 @@ Um outro detalhe muito importante é que para cada `animate` só podemos animar 
            begin="click"
            fill="freeze" />
 </svg>
-{% endhighlight %}
+```
 
 No exemplo acima, determinamos que vamos alterar o atributo `cx` do círculo, ou seja, sua posição no `eixo x`, passando de `50` para `450`, com a duração de `1s` após haver o `click` e tendo animação finalizada pelo `freeze` ao final da movimentação.
 
@@ -143,10 +143,10 @@ Assim como nos keyframes do css, no SMIL também podemos criar um conjunto de va
 
 Segue um exemplo utilizando:
 
-{% highlight html %}
+```html
 values="50; 490; 350; 450"
 keyTimes="0; 0.5; 0.8; 1"
-{% endhighlight %}
+```
 
 <p data-height="266" data-theme-id="11319" data-slug-hash="bdxaWN" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bdxaWN/'>Guide to SVG Animations</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>

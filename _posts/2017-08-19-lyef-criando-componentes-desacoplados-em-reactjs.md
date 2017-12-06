@@ -56,10 +56,10 @@ Para implementar o Styleguide, eu utilizei o [Eslint](https://eslint.org/), que 
 
 Para rodar o linter separadamente eu tinha os seguintes comandos:
 
-{% highlight sh %}
+```bash
 $ npm run lint # verificar todos os arquivos por erros
 $ npm run lint:fix # verificar e corrigir os erros possíveis automaticamente
-{% endhighlight %}
+```
 
 E o pulo do gato final foi o seguinte: "Ok, os padrões vão estar todos lá escritos, mas o que me garante que vão seguir?". Para ter certeza que todos iriam seguir os padrões definidos eu utilizei o [Husky](https://github.com/typicode/husky) que trabalha com [Git Hooks](https://willianjusten.com.br/trabalhando-com-git-hooks-de-forma-facil/), ou seja, antes de qualquer push, eu rodava o eslint e se algo estivesse errado, a pessoa não conseguia subir o código. De início isso causou um pouquinho de chateação, mas depois foi visto como isso ajudava a ter um código correto e foi bem recebido.
 
@@ -77,11 +77,11 @@ E só para também fechar a parte de testes, eu adicionei o [Nyc/Istambul](https
 
 Para rodar os testes, existiam os seguintes comandos:
 
-{% highlight sh %}
+```bash
 $ npm test # rodava os testes em single-run mode, ou seja, só uma vez
 $ npm run test:tdd # rodava os testes e ficava assistindo atrás de mudanças
 $ npm run test:coverage # rodava os testes e gerava os relatórios de cobertura
-{% endhighlight %}
+```
 
 ![Imagem dos testes rodando](https://github.com/lyef/lyef-react-component/raw/master/images/tests.gif)
 

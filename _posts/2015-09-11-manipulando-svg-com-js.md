@@ -45,38 +45,38 @@ Como já sabemos, o SVG quando incorporado numa página de html5, se comporta co
 
 Vamos considerar o seguinte SVG:
 
-{% highlight html %}
+```html
 <svg id='icone-lindao'>
     <path id='curva' d='...' />
     <path id='outra-curva' d='...' />
 </svg>
-{% endhighlight %}
+```
 
 Através do javascript podemos fazer o seguinte:
 
-{% highlight js %}
+```js
 var icone = document.getElementById('icone-lindao');
 var curva = document.getElementById('curva');
 var outraCurva = document.getElementById('outra-curva');
-{% endhighlight %}
+```
 
 Com isso, já teríamos todos os elementos selecionados, para ter certeza que selecionou mesmo o elemento, basta imprimir no console.
 
-{% highlight js %}
+```js
 console.log(icone);
 console.log(curva);
 console.log(outraCurva);
-{% endhighlight %}
+```
 
 Sabendo disso, podemos aproveitar do nosso lindo javascript e manipular esse elemento como se ele fosse um outro qualquer do meu documento. Para estilizar, podemos usar o `elemento.style` e brincar com suas propriedades. Um exemplo seria mudar a cor do preenchimento (fill) do componente.
 
-{% highlight js %}
+```js
 curva.style.fill = '#FAFAFA';
-{% endhighlight %}
+```
 
 Além de adicionar estilos diretos, podemos adicionar uma classe/id ao elemento e deixar os estilos a cargo do próprio CSS. Para adicionar classes via JS, você pode usar de várias formas, aqui estou usando o `classList`, que acho bem fácil.
 
-{% highlight html %}
+```html
 <style type="text/css">
     .vermelhinho { fill: red; }
 </style>
@@ -84,7 +84,7 @@ Além de adicionar estilos diretos, podemos adicionar uma classe/id ao elemento 
 <script type="text/javascript">
     curva.classList.add('vermelhinho');
 </script>
-{% endhighlight %}
+```
 
 Segue um exemplo fazendo algumas interações com um SVG:
 
@@ -100,17 +100,17 @@ Como dito no [post de estrutura](http://willianjusten.com.br/a-estrutura-do-svg/
 
 E para criar elementos SVG, utilizamos o [createElementNS](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElementNS). A sintaxe é bastante simples:
 
-{% highlight js %}
+```js
 var element = document.createElementNS(namespaceURI, qualifiedName);
-{% endhighlight %}
+```
 
 Onde `namespaceURI` é o namespace do nosso SVG e o `qualifiedName` é o nome do elemento, por exemplo, se queremos criar um elemento `SVG` iremos usar esse nome, caso queiramos um círculo, vamos usar `circle`.
 
 Após criado o elemento, precisamos definir atributos para o mesmo e para isso usamos o [setAtributeNS](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/setAttributeNS). Que tem a seguinte sintaxe:
 
-{% highlight js %}
+```js
 element.setAttributeNS(namespace, name, value);
-{% endhighlight %}
+```
 
 O `namespace` aqui permanece o mesmo padrão para SVG. O `name` é o atributo que você quer definir, o raio de um círculo seria o `r`, por exemplo. E `value` é claro, é o valor dessa propriedade. 
 

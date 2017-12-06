@@ -39,7 +39,7 @@ Existem vários tipos de Meta Tags que o Open Graph suporta e todas elas são se
 
 Abaixo seguem algumas das tags principais, das quais inclusive utilizo no meu blog:
 
-{% highlight html %}
+```html
 <!-- Social: Facebook / Open Graph -->
 <meta property="fb:admins" content="id do seu fb insight">
 <meta property="og:url" content="url do seu site">
@@ -53,7 +53,7 @@ Abaixo seguem algumas das tags principais, das quais inclusive utilizo no meu bl
 <meta property="article:published_time" content="momento de publicação">
 <meta property="article:tag" content="tag1">
 <meta property="article:tag" content="tag2">
-{% endhighlight %}
+```
 
 Tendo esse conjunto de informações, quando você for colocar seu link em algum lugar do facebook, ele vai ler as informações e colocar semelhante a imagem abaixo:
 
@@ -67,14 +67,14 @@ Outra grande rede social, um pouco mais simples, mas que também permite carrega
 
 Seguem as tags básicas:
 
-{% highlight html %}
+```html
 <!-- Social: Twitter -->
 <meta name="twitter:card" content="summary_large_image"> <!-- aqui fica o tipo de card -->
 <meta name="twitter:site" content="@willian_justen"> <!-- twitter handler do site -->
 <meta name="twitter:title" content="Título do Post">
 <meta name="twitter:description" content="Descrição do post">
 <meta property="twitter:image:src" content="link da imagem">
-{% endhighlight %}
+```
 
 Para que o twitter passe a aceitar seus cards, você precisa validar [neste link aqui](https://cards-dev.twitter.com/validator). Após validado, quando você postar algum link do seu site, ele será visualizado conforme a imagem abaixo:
 
@@ -86,13 +86,13 @@ Por último, mas não menos importante, vem o Google Plus. Apesar de muita gente
 
 Ele segue o padrão do [Schema.org](http://schema.org/) e seguem abaixo as tags:
 
-{% highlight html %}
+```html
 <link rel="author" href="google plus do autor">
 <!-- Social: Google+ / Schema.org  -->
 <meta itemprop="name" content="Título da página">
 <meta itemprop="description" content="Pequena descrição">
 <meta itemprop="image" content="imagem da página">
-{% endhighlight %}
+```
 
 ## Conclusão
 

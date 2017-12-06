@@ -40,33 +40,33 @@ Ou você pode utilizar de uma CDN também:
 
 **update: (02/06/2016)** - O react se desmembrou em react e react-dom desde o lançamento do post. Agora qualquer tratamento de renderização e DOM são tratados no react-dom.
 
-{% highlight html %}
+```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-{% endhighlight %}
+```
 
 O carregamento do Babel serve para poder transpilar em tempo real, o seu código.
 
 Existe também como baixar via [Bower](http://bower.io/):
 
-{% highlight bash %}
+```bash
 bower install --save react
-{% endhighlight %}
+```
 
 
 ### Básico sem JSX
 
 Essa forma é a mais básica de todas e funciona como se fosse usar uma biblioteca normal de Javascript. Baixe o arquivo do React e chame no seu html:
 
-{% highlight html %}
+```html
 <script src="react.js"></script>
 <script src="react-dom.js"></script>
-{% endhighlight %}
+```
 
 E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou chamando de um outro arquivo.
 
-{% highlight js %}
+```js
 <script>
   var ExampleApplication = React.createClass({
     render: function() {
@@ -88,7 +88,7 @@ E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou c
     );
   }, 50);
 </script>
-{% endhighlight %}
+```
 
 **update: (02/06/2016)** - na linha `16` atualizamos para utilizar o `ReactDOM.render()`, pois ele agora é separado do React original.
 
@@ -106,17 +106,17 @@ O JSX é uma sintaxe criada para o React, que se assemelha ao XML e que facilita
 
 Para usar essa sintaxe diretamente no Browser, precisamos do Babel e do React chamados no nosso html:
 
-{% highlight html %}
+```html
 <script src="react.js"></script>
 <script src="react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
-{% endhighlight %}
+```
 
 Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/jsx">` ou num arquivo externo com a extensão `.jsx`. Segue um exemplo usando um script inline:
 
 **update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga <interpretar class=""></interpretar>
 
-{% highlight js %}
+```js
 <script type="text/babel">
   var ExampleApplication = React.createClass({
     render: function() {
@@ -135,7 +135,7 @@ Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/j
     );
   }, 50);
 </script>
-{% endhighlight %}
+```
 
 As grandes diferenças nessa sintaxe estão na linha `8` e `14`. Na linha `8`, não necessitamos mais de utilizar função para criar um elemento, bastando apenas utilizar a tag html que quisermos. E na linha `14` é onde criamos nosso componente, que está recebendo suas devidas propriedades.
 
@@ -146,7 +146,7 @@ Com o ES6 vindo aí com força total, o React passou a dar suporte a partir da [
 
 **update: (02/06/2016)** - antes utilizámos o parâmetro `harmony=true`, agora é só passar que o tipo é `text/babel` para funcionar.
 
-{% highlight js %}
+```js
 <script type="text/babel">
   class ExampleApplication extends React.Component {
     render() {
@@ -165,7 +165,7 @@ Com o ES6 vindo aí com força total, o React passou a dar suporte a partir da [
     );
   }, 50);
 </script>
-{% endhighlight %}
+```
 
 O grande diferencial aqui fica por conta da criação de uma classe `ExampleApplication` e a extensão que fazemos de `React.Component` para criar o nosso componente. A utilização de `${}` para concatenar uma variável e o uso do fat arrow `=>` para nos facilitar e escrever menos, também são algumas das vantagens do ES6.
 
@@ -176,16 +176,16 @@ Podemos escrever em `JSX` e antes de enviar para nosso servidor, podemos fazer u
 
 **update: (02/06/2016)** - Antigamente utilizávamos o react-tools para fazer esse trabalho de compilação. Mas agora fica tudo a cargo do babel. Onde instalamos a cli do babel e o seu preset para react.
 
-{% highlight bash %}
+```bash
 npm install -g babel-cli
 npm install babel-preset-react
-{% endhighlight %}
+```
 
 E então rodarmos o compilador, definindo que o preset é react e para onde queremos jogar nosso código compilado.
 
-{% highlight bash %}
+```bash
 babel example.js --presets react --out-dir=build
-{% endhighlight %}
+```
 
 Basicamente o que muda aqui é que iremos escrever em `JSX`, mas o código a subir será `JS` puro.
 
@@ -195,24 +195,24 @@ Muita gente que trabalha com `NodeJS` está acostumada com a sintaxe dele e seu 
 
 Dessa forma, não precisamos chamar o `React` diretamente no nosso markup, visto que ele será chamado via `require` dentro do código e quando ele for compilado, já terá todo ele incluso. O trecho de código chamando o React seria:
 
-{% highlight js %}
+```js
 var React = require('react');
 var ReactDOM = require('react-dom');
-{% endhighlight %}
+```
 
 Para esses casos, eu sempre opto por iniciar um projeto com o `npm init` e então instalo as dependências no meu projeto, para que fiquem na pasta `node_modules`. Para trabalhar com o CommonJS, eu utilizo bastante o [Browserify](http://browserify.org/), mas você também pode optar pelo [Webpack](http://webpack.github.io/), que inclusive é preferido pelos devs de React.
 
 Para o browserify, basta instalar os seguintes módulos:
 
-{% highlight bash %}
+```bash
 npm install browserify envify reactify react --save-dev
-{% endhighlight %}
+```
 
 E para compilar usando o browserify, basta rodar:
 
-{% highlight bash %}
+```bash
 browserify --debug --transform reactify index.js > bundle.js
-{% endhighlight %}
+```
 
 Onde ele irá pegar o conteúdo de `index.js` e compilar para `bundle.js`.
 

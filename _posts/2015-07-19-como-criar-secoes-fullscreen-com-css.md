@@ -64,7 +64,7 @@ Nós estamos muito acostumados a trabalhar com a largura dos elementos e deixamo
 
 A primeira solução e mais simples é criar uma forma do elemento que desejamos ter altura máxima ter algum ponto relativo para que ele se expanda. Vamos tomar como o exemplo o seguinte markup:
 
-{% highlight html %}
+```html
 <html>
     <!-- outras informações -->
     <body>
@@ -76,24 +76,24 @@ A primeira solução e mais simples é criar uma forma do elemento que desejamos
         </header>
     </body>
 </html>
-{% endhighlight %}
+```
 
 Os elementos mais externos que envolvem o `header` são o `html` e o `body`, dessa forma, podemos determinar que ambos devem conter em todo o espaço da tela:
 
-{% highlight css %}
+```css
 html,body{
     width: 100%;
     height:100%;
 }
-{% endhighlight %}
+```
 
 Depois disso, basta definirmos a altura em porcentagem que queremos que o `header` tenha, no caso vamos colocar um altura de 100%.
 
-{% highlight css %}
+```css
 header {
     height: 100%;
 }
-{% endhighlight %}
+```
 
 Segue um [exemplo](http://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
 
@@ -107,22 +107,22 @@ Como nem tudo são flores, essas unidades não são compatíveis com todos os br
 
 Então, para a nossa situação, vamos imaginar o seguinte markup:
 
-{% highlight html %}
+```html
  <section class="height-80">
     <div class="content">
         <h1>Viewport Units são demais!</h1>
         <p>Essa div foi setada para ter 80vh, ocupando 80% da tela =)</p>
     </div>
 </section>
-{% endhighlight %}
+```
 
 Para termos uma altura de 80% da tela usando o viewport units é bastante simples. Iremos utilizar a unidade `vh` que vai de 0 até 100vh, que é o mesmo que 0 a 100%. Nosso css ficaria assim:
 
-{% highlight css %}
+```css
 .height-80 {
     height: 80vh;
 }
-{% endhighlight %}
+```
 
 Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](http://willianjusten.com.br/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
 

@@ -50,7 +50,7 @@ A documentação dele se encontra [aqui](https://github.com/hakimel/reveal.js) e
 
 O Markup inicial precisa seguir um padrão, que é:
 
-{% highlight html %}
+```html
 <div class="reveal">
     <div class="slides">
         <section>Slide Horizontal Simples</section>
@@ -60,7 +60,7 @@ O Markup inicial precisa seguir um padrão, que é:
         </section>
     </div>
 </div>
-{% endhighlight %}
+```
 
 Para iniciar uma apresentação, precisamos de uma `div` com a classe `reveal`, que deverá englobar todos os slides. A seção de slides deverá ficar dentro de uma `div` com a classe `slides`. Agora cada `section` dentro dessa organização já será um slide.
 
@@ -68,7 +68,7 @@ Para iniciar uma apresentação, precisamos de uma `div` com a classe `reveal`, 
 
 O legalzão do RevealJS é que eu posso colocar qualquer coisa como fundo do meu slide, vídeos, sites, cores e **GIFS**! E é fácil fácil de fazer funcionar:
 
-{% highlight html %}
+```html
 <!-- fundos com cores -->
 <section data-background="#ff0000"></section>
 
@@ -83,23 +83,23 @@ O legalzão do RevealJS é que eu posso colocar qualquer coisa como fundo do meu
 
 <!-- um site dentro do próprio slide! -->
 <section data-background-iframe="https://willianjusten.com.br"></section>
-{% endhighlight %}
+```
 
 ### Slide transitions
 
 Podemos fazer diferentes transições entre os slides e para isso, usamos a propriedade `data-transition` dentro da nossa `section`, que é o nosso slide.
 
-{% highlight html %}
+```html
 <!-- Essa transição irá ser passada como um zoom. -->
 <section data-transition="zoom"></section>
 
 <!-- Escolha a velocidade do slide entre: default, fast or slow! -->
 <section data-transition-speed="fast"></section>
-{% endhighlight %}
+```
 
 Podemos usar também as transições de entrada e saída de cada slide:
 
-{% highlight html %}
+```html
 <!-- Transição padrão de deslizar para o lado. -->
 <section data-transition="slide"></section>
 
@@ -108,13 +108,13 @@ Podemos usar também as transições de entrada e saída de cada slide:
 
 <!-- Esmaece quando entra (fade-in) e desliza quando sai. (slide-out) -->
 <section data-transition="fade-in slide-out"></section>
-{% endhighlight %}
+```
 
 ### Transições dentro do slide
 
 Digamos que queremos ir passando item por item de uma lista, sem mostrar ela toda, para isso, basta usarmos `class='fragment'` e esse só será mostrado ao pressionar a tecla de próximo.
 
-{% highlight html %}
+```html
 <section>
     <p class="fragment grow">grow</p>
     <p class="fragment shrink">shrink</p>
@@ -125,7 +125,7 @@ Digamos que queremos ir passando item por item de uma lista, sem mostrar ela tod
     <p class="fragment highlight-green">highlight-green</p>
     <p class="fragment highlight-blue">highlight-blue</p>
 </section>
-{% endhighlight %}
+```
 
 ### Configurações
 
@@ -139,7 +139,7 @@ Só ir no [github deles](https://github.com/hakimel/reveal.js) e mandar baixar, 
 
 #### 2 - Monte um html básico
 
-{% highlight html %}
+```html
 !doctype html>
 <html lang="pt-br">    
 <head>
@@ -148,18 +148,18 @@ Só ir no [github deles](https://github.com/hakimel/reveal.js) e mandar baixar, 
 <body>
 </body>
 </html>
-{% endhighlight %}
+```
 
 #### 3 - Adicione o css e o tema no head
 
-{% highlight html %}
+```html
 <head>
     <meta charset="utf-8">
     <title>Reveal.js Slide Demo</title>
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme"> 
 </head>
-{% endhighlight %}
+```
 
 Existem diferentes temas, basta escolher dentro da pasta de "themes".
 
@@ -167,7 +167,7 @@ Existem diferentes temas, basta escolher dentro da pasta de "themes".
 
 Como dito um pouco mais acima, precisamos ter um markup com as classes `reveal` e `slides` para tudo passar a funcionar direitinho.
 
-{% highlight html %}
+```html
 <div class="reveal">
     <div class="slides">
         <section>Slide Horizontal Simples</section>
@@ -177,20 +177,20 @@ Como dito um pouco mais acima, precisamos ter um markup com as classes `reveal` 
         </section>
     </div>
 </div>
-{% endhighlight %}
+```
 
 #### 5 - Carregue o Javascript no fim do html
 
-{% highlight html %}
+```html
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.min.js"></script>
-{% endhighlight %}
+```
 
 #### 6 - Inicialize o RevealJS e configure
 
 Não adianta só colocar o `js` no final do arquivo, precisamos inicializar para que a mágica aconteça!
 
-{% highlight js %}
+```js
 // Veja todas as configurações em:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
@@ -199,7 +199,7 @@ Reveal.initialize({
     center: true, // centraliza os slides
     transition: 'slide' // none/fade/slide/convex/concave/zoom
 }); 
-{% endhighlight %} 
+``` 
 
 #### 8 - Hospedando no Github
 
@@ -229,7 +229,7 @@ Cada slide fica separado na pasta [src/slides](https://github.com/Qualy-org/qual
 
 Os slides podem ser escritos usando a sintaxe do Jade ou tambem em html normal, então se você não souber escrever em jade, não se preocupe, escreva em html e tudo irá funcionar igual, basta lembrar de quando for incluir um slide na `index.jade`, coloque a extensão `.html` no final do arquivo. Segue exemplo:
 
-{% highlight html %}
+```html
 doctype html
 html
     include inc/head
@@ -239,7 +239,7 @@ html
                 include ../slides/slide-1.html
                 include ../slides/slide-2.html
         include inc/scripts
-{% endhighlight %}
+```
 
 Quando o arquivo for compilado, ele irá ler normalmente e juntar tudo para você em um só arquivo.
 
@@ -253,7 +253,7 @@ Vá em `Create new repository` na parte superior do github e preencha os dados c
 
 ![Imagem de criação de um novo repositório no Github](/assets/img/reveal/github-repo.png)
 
-{% highlight bash %}
+```bash
 // inicializando um repositório git no seu local
 git init
 
@@ -268,15 +268,15 @@ git remote add origin git@github.com:seu-usuario/seus-slides-lindos.git
 
 // fazendo o primeiro deploy na mão para ligar os repositórios
 git push -u origin master
-{% endhighlight %}
+```
 
 #### 3 - Rodando, compilando e fazendo deploy
 
 Como eu disse, uso o Gulp para fazer as mágicas, então a primeira coisa a se fazer é instalar as dependências do `package.json`, para isso é só rodar:
 
-{% highlight bash %}
+```bash
 npm install
-{% endhighlight %}
+```
 
 Depois de tudo instalado, é só rodar o Gulp. Ele possui alguns comandos separados, mas em geral o comando principal utilizado será só `gulp`, que é responsável por fazer todas as compilações necessárias e levantar um servidor com livereload em `localhost:3000`. Os arquivos compilados irão para uma pasta `build`, que irá conter só os arquivos finais que são as pastas: `css`, `js`, `images` e `index.html`.
 

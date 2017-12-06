@@ -42,17 +42,17 @@ Se quiser saber melhor de todas as propriedades tem esse [artigo da W3C sobre SV
 
 ### Estilo inline
 
-{% highlight html %}
+```html
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
   <polygon points="..." style="fill:#0562DC; stroke: #000; stroke-width: 5;"/>
 </svg>
-{% endhighlight %}
+```
 
 Note que eu adiciono um `style` dentro elemento que eu desejo modificar, as vezes pode ser útil quando não tenho acesso a uma folha de estilo independente ou desejo fazer uma rápida modificação.
 
 ### Estilo dentro do SVG
 
-{% highlight html %}
+```html
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
 	<style type="text/css">
 		polygon {
@@ -63,13 +63,13 @@ Note que eu adiciono um `style` dentro elemento que eu desejo modificar, as veze
 	</style>
 	<polygon points="..." />
 </svg>
-{% endhighlight %}
+```
 
 Bastante útil quando se deseja componentizar um elemento SVG, visto que sua estrutura e todo o seu estilo pode ser facilmente movimentado entre sistemas diferentes.
 
 ### Estilo fora do SVG
 
-{% highlight html %}
+```html
 
 <!DOCTYPE html>
 <html>
@@ -86,20 +86,20 @@ Bastante útil quando se deseja componentizar um elemento SVG, visto que sua est
 	<polygon points="..." />
 </svg>
 </html>
-{% endhighlight %}
+```
 
 Não é um método muito utilizado, visto que caso aquele SVG não fique mais naquele arquivo depois de um tempo, os estilos tornam-se inúteis e a manutenção não é tão boa.
 
 ### Estilos externos
 
-{% highlight html %}
+```html
 <?xml version="1.0" standalone="no"?>
 <?xml-stylesheet type="text/css" href="styles.css"?>
 
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px" viewBox="0 0 300 300">
     <!-- Conteúdo do SVG -->
 </svg>
-{% endhighlight %}
+```
 
 Quando você quiser separar totalmente a estrutura do estilo, você pode criar um arquivo separado contendo os estilos. **Nota:** você pode ser "purista" e chamar o estilo pelo xml _para_ manter um padrão de SVG ou também pode chamar via `<link rel="stylesheet" href="styles.css">`
 

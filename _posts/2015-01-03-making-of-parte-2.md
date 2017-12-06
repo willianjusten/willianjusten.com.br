@@ -30,15 +30,15 @@ Se você quiser pular todo o blá blá blá e ver só o [código fonte](https://
 Primeiro de tudo foi necessário criar a base, como disse preferi usar o `Jekyll`, mesmo ele sendo em `Ruby`. Como utilizo Mac OS, ele já possuía o ruby instalado por padrão no meu Yosemite, mas como era uma versão mais velha e lenta, preferi atualizar. Vou dar aqui o passo considerando um Mac novo, se algumas dessas etapas você já tiver feito, só passar para a próxima. Caso utilize Linux segue esses passo [aqui](http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/) e caso use Windows tem [aquele guia que passei](http://jekyll-windows.juthilo.com/)
 
 **Passo 1:** Instalar o [Homebrew](http://brew.sh/)
-{% highlight sh %}
+```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
+```
 
 **Passo 2:** Instalando o [Ruby 2.2](https://www.ruby-lang.org/)
 
 Iremos utilizar o [rbenv](https://github.com/sstephenson/rbenv) que permite trabalhar com diferentes ambientes de Ruby.
 
-{% highlight sh %}
+```bash
 brew install rbenv ruby-build
 
 # Adicionando o rbenv ao bash para que seja carregado toda vez que abrir o terminal
@@ -51,17 +51,17 @@ rbenv global 2.2.0
 
 ruby -v
 # ruby 2.2.0
-{% endhighlight %}
+```
 
 **Passo 3:** Após instalado o ruby, é chegada a vez do Jekyll de fato, o processo é fácil e rápido. Se demorar um pouco e nada acontecer na tela, espere mais um pouco, o ruby infelizmente não dá um feedback durante as instalações e aí acaba dando impressão de travado mesmo...
 
-{% highlight sh %}
+```bash
 # Instalando o Jekyll
 gem install jekyll
 
 # Iniciando um projeto com ele
 jekyll new meu-blog-lindo
-{% endhighlight %}
+```
 
 Com esses comandos já temos toda a estrutura de pastas do jekyll, de acordo com a imagem abaixo.
 
@@ -83,9 +83,9 @@ Como podemos notar, o Jekyll já cria uma estrutura bem legal e organizada. Vou 
 
 Quando você compila estes arquivos com o Jekyll, ele gerá uma nova pasta `_site`, que irá conter todos os arquivos do site já gerados e estáticos. Pastas iniciadas pelo *underline* não são compiladas e passadas para a pasta `_site`. Outra forma de excluir arquivos é adicionando no `_config.xml`. É muito importante adicionar a pasta `node_modules` nesse exclude, senão o jekyll irá pensar que precisa copiar todo o conteúdo, o que estragaria muito com o desempenho.
 
-{% highlight ruby %}
+```ruby
 exclude: ['package.json', 'src', 'node_modules']
-{% endhighlight %}
+```
 
 Como eu também precisei trabalhar com javascript, stylus e também adicionar imagens. Criei uma pasta `src` contendo as pastas `js`, `styl` e `img`. Durante a compilação esses arquivos e pastas são jogados para uma pasta `assets`.
 
@@ -95,15 +95,15 @@ Para fazer a compilação do meu Stylus, concatenar meu javascript, minificar im
 
 Tendo o NodeJS já instalado, basta ir no terminal e iniciar o projeto:
 
-{% highlight sh %}
+```bash
 npm init
-{% endhighlight %}
+```
 
 Ele vai te fazer umas perguntas, vai seguindo os passos e no final é só confirmar e isso irá gerar um arquivo `package.json` com os dados preenchidos. Depois basta instalar os plugins necessários, que eu já falei no [post anterior](http://willianjusten.com.br/making-of-parte-1/).
 
-{% highlight sh %}
+```bash
 npm install --save-dev gulp gulp-uglify gulp-concat gulp-stylus autoprefixer-stylus browser-sync gulp-imagemin gulp-plumber jeet kouto-swiss rupture
-{% endhighlight %}
+```
 
 Depois de tudo instalado precisamos fazer nosso `Gulpfile.js`, que irá ter todas as tasks para automatizar o nosso sistema.
 
@@ -123,7 +123,7 @@ Isso mesmo! É só isso que você precisa saber, sabendo disso, mão na massa!
 
 #### Primeiro definir as variáveis e chamar as dependências
 
-{% highlight javascript %}
+```js
 var gulp        = require('gulp'),
     plumber     = require('gulp-plumber'),
     browserSync = require('browser-sync'),
@@ -140,11 +140,11 @@ var gulp        = require('gulp'),
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
-{% endhighlight %}
+```
 
 #### Definir as tasks do jekyll para dar build e rebuild a cada arquivo atualizado
 
-{% highlight javascript %}
+```js
 /**
  * Monta o site do Jekyll
  */
@@ -172,7 +172,7 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
         }
     });
 });
-{% endhighlight %}
+```
 
 #### Compilar o Stylus
 
@@ -180,7 +180,7 @@ Aqui ficam dois detalhes **muito importantes**, na linha `3`, eu utilizo o `.pip
 
 E na linha `5`, eu faço as chamadas dos componentes do stylus, assim fica mais fácil de chamar no arquivo stylus, ao invés de colocar chamada para `node_modules` eu simplesmente coloco `@import "jeet"`.
 
-{% highlight javascript %}
+```js
 gulp.task('stylus', function(){
         gulp.src('src/styl/main.styl')
         .pipe(plumber())
@@ -192,13 +192,13 @@ gulp.task('stylus', function(){
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'))
 });
-{% endhighlight %}
+```
 
 #### Minificar e concatenar o JS
 
 Não podemos confundir a ordem aqui, primeiro devemos concatenar todos os arquivos e só depois minificar. O processo de `uglify` além de deixar tudo em uma linha só, muda também o nome de varíaveis e funções para diminuir ainda mais o arquivo. Se você minificar tudo primeiro e depois concatenar, as vezes pode correr o risco de haver conflito. Outro detalhe importante, a concatenação é feita em ordem alfabética, se você tiver um arquivo `a` que depende de `z`, melhor modificar seus arquivos para nomes numerados para que o Gulp concatene na ordem que você deseja. Caso contrário, pode dar erro de dependência. Um erro comum é um plugin que precisa de Jquery estar acima dele e acusar que a variável `$` não foi definida.
 
-{% highlight javascript  %}
+```js
 gulp.task('js', function(){
     return gulp.src('src/js/**/*.js')
         .pipe(plumber())
@@ -206,24 +206,24 @@ gulp.task('js', function(){
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'))
 });
-{% endhighlight %}
+```
 
 #### Otimizar imagens
 
-{% highlight javascript  %}
+```js
 gulp.task('imagemin', function() {
     return gulp.src('src/img/**/*')
         .pipe(plumber())
         .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('assets/img/'));
 });
-{% endhighlight %}
+```
 
 #### Vigiar todos os arquivos e Tarefa default
 
 A tarefa `default` é determinada para que quando se digite somente `gulp` no terminal, rode a sequência de funções desejadas, neste caso fazemos a compilação de nossos assets primeiro, depois disparamos o server e por último ficamos assintindo para possíveis mudanças.
 
-{% highlight javascript  %}
+```js
 gulp.task('watch', function () {
     gulp.watch('src/styl/**/*.styl', ['stylus']);
     gulp.watch('src/js/**/*.js', ['js']);
@@ -232,7 +232,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['js', 'stylus', 'imagemin', 'browser-sync', 'watch']);
-{% endhighlight %}
+```
 
 Prontinho, agora basta digitar `gulp` no seu terminal e ele irá rodar todas as tarefas e levantar o servidor em `localhost:3000`, conforme a imagem abaixo.
 
@@ -256,7 +256,7 @@ Para que funcione no branch `master`, você precisa criar utilizando o `seunomed
 
 #### Passo Final:
 
-{% highlight sh  %}
+```bash
 # Iniciar um repositório git na pasta do projeto
 git init
 
@@ -271,7 +271,7 @@ git remote add origin https://github.com/seunomedeusuario/seunomedeusuario.githu
 
 # Subir seu lindo blog
 git push -u origin master
-{% endhighlight %}
+```
 
 Com esses passos o seu Blog já está no Github Pages e se tudo estiver certinho em 20-30 minutos você já pode acessar através da url `seunomedeusuario.github.io`.
 

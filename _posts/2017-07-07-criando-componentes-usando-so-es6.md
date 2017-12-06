@@ -27,7 +27,7 @@ E durante esse post eu vou ouvindo a trilha sonora de um dos mais belos jogos de
 
 As `strings` são representadas no JavaScript utilizando as aspas simples `'minha string'` ou aspas duplas `"minha string"`. Mas para algumas tarefas em JS, trabalhar com strings era bem chatinho, como, por exemplo, para trabalhar com múltiplas linhas, o código precisava ser assim:
 
-{% highlight js %}
+```js
 const text = 'Minha primeira linha\n' +
              'Minha segunda linha\n' +
              'Minha terceira linha.';
@@ -37,19 +37,19 @@ console.log(text);
 // > Minha primeira linha
 //   Minha segunda linha
 //   Minha terceira linha
-{% endhighlight %}
+```
 
 Repare que precisávamos utilizar o operador `+` para concatenar as strings e não só isso, precisávamos também utilizar o `\n` para indicar uma quebra de linha.
 
 Outro caso em que era bem chatinho trabalhar com strings era essa parte da concatenação, onde precisávamos quebrar a string e usar o `+` para juntar com nossa variável. Dessa forma:
 
-{% highlight js %}
+```js
 const name = 'Willian';
 
 console.log('Hello ' + name + '!');
 
 // > Hello Willian!
-{% endhighlight %}
+```
 
 Precisávamos inclusive prestar atenção para não esquecer o espaço depois da palavra, porque senão juntava com a variável e ficava tudo horrível.
 
@@ -59,7 +59,7 @@ Com a chegada do ES6, veio essa coisa maravilhosa que é o Template String. Agor
 
 Para trabalhar com múltiplas linhas ficaria assim:
 
-{% highlight js %}
+```js
 const text = `Minha primeira linha
               Minha segunda linha
               Minha terceira linha.`;
@@ -69,21 +69,21 @@ console.log(text);
 // > Minha primeira linha
 //   Minha segunda linha
 //   Minha terceira linha
-{% endhighlight %}
+```
 
 E para trabalhar com interpolação, podemos utilizar a sintaxe `${variavel}` dentro da string, desse forma:
 
-{% highlight js %}
+```js
 const name = 'Willian';
 
 console.log(`Hello ${name}!`);
 
 // > Hello Willian!
-{% endhighlight %}
+```
 
 Outra coisa legal é que podemos adicionar funções dentro dessas strings para rodar, um exemplo:
 
-{% highlight js %}
+```js
 function sum(a, b) {
     return a + b;
 }
@@ -91,7 +91,7 @@ function sum(a, b) {
 console.log(`2 + 2 = ${sum(2, 2)}`);
 
 // > 2 + 2 = 4
-{% endhighlight %}
+```
 
 Isso abre diversas possibilidades e facilita demais na escrita e leitura do nosso código.
 
@@ -109,16 +109,16 @@ O primeiro componente que iremos criar será o componente onde mostra as informa
 
 Para isso teríamos um Markup da seguinte forma:
 
-{% highlight html %}
+```html
     <img class="album-image" src="..." alt="Ten">
     <p class="album-title">Ten</p>
     <p class="album-artist">Pearl Jam</p>
     <p class="album-counter">11 Músicas</p>
-{% endhighlight %}
+```
 
 E transformando isso para o nosso lindo ES6, ficaria assim então:
 
-{% highlight js %}
+```js
 function createMarkupAlbum(data) {
   return (`
     <img class="album-image" src="${data.images}" alt="${data.name}">
@@ -127,7 +127,7 @@ function createMarkupAlbum(data) {
     <p class="album-counter">${data.tracks.length} Músicas</p>
   `);
 }
-{% endhighlight %}
+```
 
 Onde o `data` é a informação que pode vir de uma `API`, `json` ou até mesmo uma `variável`, como utilizada no exemplo.
 
@@ -135,12 +135,12 @@ Onde o `data` é a informação que pode vir de uma `API`, `json` ou até mesmo 
 
 Depois de criada o método de montar o markup, precisamos renderizar na tela e para isso é bastante simples. Precisamos basicamente selecionar um elemento do DOM e usar o `innerHTML` para apendar o nosso markup criado, que nada mais é que uma string =D
 
-{% highlight js %}
+```js
 function renderAlbumInfo(data, element) {
   const markup = createMarkupAlbum(data);
   element.innerHTML = markup;
 };
-{% endhighlight %}
+```
 
 Repare que o meu método chama internamente o `createMarkupAlbum` que vai montar o nosso markup recebendo a informação do nosso `data` passado e depois disso, apenderemos o markup no `element` definido.
 
@@ -148,10 +148,10 @@ Repare que o meu método chama internamente o `createMarkupAlbum` que vai montar
 
 Com os nossos métodos criados, precisamos só então criar um elemento no html para apendar nosso componente na tela e chamar o método para fazê-lo.
 
-{% highlight js %}
+```js
 const album = document.getElementById('album');
 renderAlbumInfo(data, album);
-{% endhighlight %}
+```
 
 ### Criando markups mais complexos e utilizando funções
 
@@ -163,7 +163,7 @@ Se vocês repararem, dentro dessa lista temos um padrão básico, que é sempre:
 
 Nosso conjunto de dados para as `tracks` é um array da seguinte forma:
 
-{% highlight js %}
+```js
 "tracks" : [
     {
       "duration_ms" : 231367,
@@ -177,11 +177,11 @@ Nosso conjunto de dados para as `tracks` é um array da seguinte forma:
       "track_number" : 2
     }...
 ]
-{% endhighlight %}
+```
 
 Para isso podemos utilizar o método `map` que vai iterar cada item dessa lista e vai criar o markup para nós. Ao final de cada iteração vamos usar o método `join('')` para unir as strings criando a lista completa. O código fica assim:
 
-{% highlight js %}
+```js
 function createMarkupTracks(tracks) {
   return tracks.map(track => `
     <div class="music">
@@ -190,11 +190,11 @@ function createMarkupTracks(tracks) {
       <p class="music-duration">${convertToHumanTime(track.duration_ms)}</p>
     </div>`).join('');
 }
-{% endhighlight %}
+```
 
 Repare que ali eu ainda tenho uma função `convertToHumanTime`, ela é necessária pois no meu array eu estou recebendo o tempo em `ms`, que não é tão legível para nós. Então como eu posso utilizar funções dentro dos meus templates, eu crio essa função do lado de fora, que fica desse jeito:
 
-{% highlight js %}
+```js
 function convertToHumanTime(duration) {
   let s = parseInt((duration / 1000) % 60, 10);
   const m = parseInt((duration / (1000 * 60)) % 60, 10);
@@ -203,11 +203,11 @@ function convertToHumanTime(duration) {
 
   return `${m}:${s}`;
 }
-{% endhighlight %}
+```
 
 Depois disso é só criar a função para apendar esse markup igual feito anteriormente:
 
-{% highlight js %}
+```js
 function renderAlbumTracks(data, element) {
   const markup = createMarkupTracks(data);
   element.innerHTML = markup;
@@ -215,7 +215,7 @@ function renderAlbumTracks(data, element) {
 
 const list = document.getElementById('list');
 renderAlbumTracks(data.tracks, list);
-{% endhighlight %}
+```
 
 E é isso gente! Nosso componente está prontinho e renderizado na tela! =D
 
@@ -225,7 +225,7 @@ Para ver o código completo, só ir lá no [link do codepen](https://codepen.io/
 
 Só para complementar o código, podemos separar esses métodos e importá-los num arquivo `main` que será responsável por fazer tudo isso. Um exemplo seria:
 
-{% highlight js %}
+```js
 function createMarkup(data) {
   return (`
     <img class="album-image" src="${data.images[0].url}" alt="${data.name}">
@@ -241,20 +241,20 @@ export default function renderAlbumInfo(data, element) {
 
   return data;
 };
-{% endhighlight %}
+```
 
 Repare que eu estou exportando somente a função `renderAlbumInfo`, deixando assim o método `createMarkup` como privado, assim não corro o risco da criação do meu markup ser poluído por outro código.
 
 E aí no meu arquivo `main` eu teria algo como:
 
-{% highlight js %}
+```js
 import renderAlbumInfo from './AlbumInfo';
 
 const albumInfo = document.getElementById('album-info');
 
 spotify.album.getAlbum(albumId)
     .then(data => renderAlbumInfo(data, albumInfo))
-{% endhighlight %}
+```
 
 Onde o meu `data` está sendo extraído da própria API do Spotify e alimentando o meu método `renderAlbumInfo`.
 

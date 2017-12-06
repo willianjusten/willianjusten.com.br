@@ -85,13 +85,13 @@ Como um dos objetivos era já mostrar informação desde o início, não cabia m
 
 Para fazer isso foi bastante simples, eu usei o seletor `:after` no meu link `a`, para adicionar conteúdos diferentes de acordo com a resolução.
 
-{% highlight css %}
+```css
 &:after
     transition all .4s
     content '</> WJ'
     +above(cut)
         content '</> Willian Justen'
-{% endhighlight %}
+```
 
 O código está em `Stylus` e aquele comando `+above(cut)` é uma feature do [Rupture](https://jenius.github.io/rupture/), que ajuda bastante para trabalhar com media-queries sem ter que escrever muita coisa.
 
@@ -117,14 +117,14 @@ Desde o primeiro blog, o objetivo foi entregar a melhor experiência para qualqu
 
 Para ter isso, foi tão fácil, que tenho até vergonha de falar, já que eu pensava que `flexbox` era mais difícil e talz. Mas as linhas foram:
 
-{% highlight css %}
+```css
 .flex-grid
     display flex
     flex-flow row wrap
 
 .box-item
     flex 1 0 300px
-{% endhighlight %}
+```
 
 O `.flex-grid` foi responsável só para ser o container `flex` dos cards, utilizando a propriedade `display flex`. Já o `flex-flow row wrap`, serve para dizer a `direction` dos elementos, no caso em coluna e o `wrap` para dizer como eles vão se comportar empilhando e diminuindo/aumentando.
 
@@ -173,7 +173,7 @@ Todas os destaques de texto também passam a receber a cor da categoria, além d
 Para que as categorias tivessem suas respectivas cores, eu fiz o seguinte, separei todos os elementos de cor num arquivo chamado [_theme-colors.styl](https://github.com/willianjusten/willianjusten.github.io/blob/master/src/styl/_theme-colors.styl), criei um objeto tendo `categoria-cor` e então iterei a partir de um elemento pai, para que ele fosse modificando todas as cores.
 Segue um trecho do arquivo de cores:
 
-{% highlight css %}
+```css
 /* Aqui eu defino os temas e cores */
 themes = {
     post-jekyll: #B31917,
@@ -209,7 +209,7 @@ for theme, category-color in themes
             blockquote
                 border-left .313rem solid category-color
 
-{% endhighlight %}
+```
 
 ## Conclusão
 

@@ -40,9 +40,9 @@ Sua máquina obviamente precisa ter o [Node.js](https://nodejs.org/en/) instalad
 
 Para instalar globalmente, basta ir no terminal e digitar:
 
-{% highlight bash %}
+```bash
 sudo npm install webpack -g
-{% endhighlight %}
+```
 
 Lembrando que a necessidade do sudo pode variar de sistema para sistema.
 
@@ -50,29 +50,29 @@ Lembrando que a necessidade do sudo pode variar de sistema para sistema.
 
 É sempre importante ter o webpack como dependência dentro do projeto, para que você possa usar via local ao invés de só globalmente. Para isso, primeiro inicie um projeto:
 
-{% highlight bash %}
+```bash
 npm init
-{% endhighlight %}
+```
 
 E então instale o webpack salvando o mesmo no `package.json` criado.
 
-{% highlight bash %}
+```bash
 npm install webpack --save-dev
-{% endhighlight %}
+```
 
 ### Dev Tools
 
 Se você quiser usar coisas como `hot reload`, levantar um servidor automaticamente, mapsource e outras coisinhas, você precisa instalar esse também.
 
-{% highlight bash %}
+```bash
 npm install webpack-dev-server --save-dev
-{% endhighlight %}
+```
 
 ## Começando a trabalhar
 
 Você pode usar só a ferramenta do webpack pelo terminal, mas como, em geral, você vai utilizá-lo só em projetos um pouquinho mais detalhados, é legal criar um arquivo de configuração. Então, para isso, crie um arquivo `webpack.config.js`. E as primeiras configurações podem ser:
 
-{% highlight js %}
+```js
 module.exports = {
     entry: './app/App.js',
     output: {
@@ -80,21 +80,21 @@ module.exports = {
         filename: 'bundle.js'
     }
 }
-{% endhighlight %}
+```
 
 Encapsulamos tudo dentro do `module.exports`, porque nosso arquivo não deixa de ser também um módulo. Na linha `2`, determinamos qual é o arquivo principal que irá carregar toda nossa aplicação. Depois definimos no `output`, na linha `4` onde vamos jogar o arquivo e na linha `5`, qual será o nome do arquivo.
 
 Agora crie seu arquivo `App.js` na pasta `app` e escreva dentro dele:
 
-{% highlight js %}
+```js
 console.log('webpack está funcionando');
-{% endhighlight %}
+```
 
 Crie seu `index.html` na pasta `public` e coloque a seguinte linha:
 
-{% highlight html %}
+```html
 <script src="bundle.js"></script>
-{% endhighlight %}
+```
 
 Agora se você rodar `webpack` dentro da pasta raiz, ele irá criar o arquivo `bundle.js` dentro de public e se você abrir o `index.html`, vai estar lá a mensagem no seu console =)
 
@@ -102,13 +102,13 @@ Agora se você rodar `webpack` dentro da pasta raiz, ele irá criar o arquivo `b
 
 Como já instalamos o `webpack-dev-server` lá no início, a única coisa que precisamos é configurar para tudo funcionar certinho. Então vamos adicionar ao `webpack.config.js` mais o seguinte trecho:
 
-{% highlight js %}
+```js
 devServer: {
     inline: true,
     contentBase: './public',
     port: 3333
 }
-{% endhighlight %}
+```
 
 Utilizamos o `inline: true` para ele colocar um runner do webpack dentro do arquivo temporariamente, que vai servir para nosso hot reload. O `contentBase` é de onde queremos que ele leia, em geral, vai ser onde seu `index.html` estiver. Por fim, escolha uma porta não utilizada e pronto. Para rodar digite `webpack-dev-server` no terminal e ele irá levantar um servidor local para você.
 
@@ -118,15 +118,15 @@ O ES6 está aí e hoje em dia quem não escreve com ele, está perdendo muita pr
 
 Precisamos primeiro instalar todas as coisinhas necessárias:
 
-{% highlight bash %}
+```bash
 npm install --save-dev babel-core babel-loader babel-preset-es2015
-{% endhighlight %}
+```
 
 O `babel-core` e `babel-loader` são os pacotes principais do babel para o funcionamento do mesmo, enquanto o `babel-preset-es2015`, como o nome já diz, será responsável pelas coisas do es6 (aka es2015).
 
 Com tudo instalado, precisamos colocar mais algumas linhas no nosso `webpack.config.js`, para avisar dessa compilação.
 
-{% highlight js %}
+```js
 module: {
     loaders: [{
         test: /\.js$/,
@@ -137,16 +137,16 @@ module: {
         }
     }]
 }
-{% endhighlight %}
+```
 
 Na linha `3` eu defino que quero que ele leia qualquer arquivo `.js`, na `4` eu garanto que ele não vai ler os `node_modules` (muito importante hein!), na `5` eu defino o babel como meu loader e da `6-8`, eu defino que o preset que vou usar é do `es2015` para ele compilar meus códigos novos.
 
 Feito isso, para testar, vamos lá no nosso arquivo `App.js` e escrever:
 
-{% highlight js %}
+```js
 const hey = 'Heyyy';
 console.log(`${hey} webpack funcionando!`);
-{% endhighlight %}
+```
 
 Se mandarmos rodar agora o `webpack-dev-server`, ele vai entender coisas novas como o `const` e o template literal. Bastante legal né? Se você queria só o es6, é só parar por aí e está tudo ok.
 
@@ -156,54 +156,54 @@ Como disse para vocês, o webpack se popularizou muito devido ao React, pois a m
 
 Para isso é bem fácil, primeiro vamos instalar as coisinhas do nosso React queridão:
 
-{% highlight bash %}
+```bash
 npm install react react-dom --save
-{% endhighlight %}
+```
 
 Depois precisamos também instalar o preset do react, para o nosso Babel conseguir compilar o JSX.
 
-{% highlight bash %}
+```bash
 npm install babel-preset-react --save-dev
-{% endhighlight %}
+```
 
 Feito isso, é só adicionar esse novo preset na configuração do `webpack.config.js`.
 
-{% highlight js %}
+```js
 query: {
     presets: ['es2015', 'react']
 }
-{% endhighlight %}
+```
 
 ## Vendo o React em ação
 
 Agora que já temos tudo montadinho, vamos só criar uma bobeirinha em React para ver se está tudo ok. Primeiro vá no index e crie uma div com o id `app`.
 
-{% highlight html %}
+```html
 <div id="app"></div>
-{% endhighlight %}
+```
 
 Depois, dentro da pasta `app`, vamos criar uma nova pasta chamada `components` e nela criar um arquivo `Home.js`, com o seguinte conteúdo:
 
-{% highlight js %}
+```js
 import React from 'react';
 
 const Home = () => <h1>Hello World!</h1>
 
 export default Home;
 
-{% endhighlight %}
+```
 
 Só estou importando o React e criando uma stateless function de um componente chamado Home e exportando ele.
 
 Depois disso, vamos ao nosso arquivo `App.js`, apagar o que tinha lá e escrever:
 
-{% highlight js %}
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './components/Home';
 
 ReactDOM.render(<Home />, document.getElementById('app'));
-{% endhighlight %}
+```
 
 Importo as coisas do React, o nosso novo componente da Home e então mando renderizar. Se tudo estiver configurado certinho, você verá um belo `Hello World!` na tela =D
 

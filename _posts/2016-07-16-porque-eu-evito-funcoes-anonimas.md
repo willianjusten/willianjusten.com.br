@@ -24,7 +24,7 @@ Enquanto escrevo, vou ouvindo uma playlist chamada [Infinite Indie Folk](https:/
 
 Existem diversas formas de se criar funções em JS e algumas delas são:
 
-{% highlight js %}
+```js
 var hey = function() {
     console.log('Hey');
 }
@@ -36,7 +36,7 @@ function hey() {
 obj.hey = function() {
     console.log('Hey');
 }
-{% endhighlight %}
+```
 
 Se você reparar, a primeira forma estou nomeando a função através de uma variável e a segunda eu estou nomeando da forma tradicional. Mas precisamos tomar cuidado com o funcionamento dessas formas, por quê?
 
@@ -44,11 +44,11 @@ Se você reparar, a primeira forma estou nomeando a função através de uma var
 
 Vamos supor que eu tenha uma função que joga um erro qualquer quando executada:
 
-{% highlight js %}
+```js
 setTimeout(function() {
     throw new Error('hey');
 }, 200);
-{% endhighlight %}
+```
 
 Quando executar essa função, o erro claramente é jogado no console, como podemos verificar na imagem abaixo:
 
@@ -58,11 +58,11 @@ O problema aqui é que apesar dele jogar o erro, eu não sei a fonte do erro, po
 
 Agora escrevendo a mesma função, porém nomeada:
 
-{% highlight js %}
+```js
 setTimeout(function Hey() {
     throw new Error('hey');
 }, 200);
-{% endhighlight %}
+```
 
 Olha como fica o retorno:
 
@@ -74,28 +74,28 @@ Quando abrimos o erro, podemos ver claramente que o erro se encontra na função
 
 Digamos que eu queira criar um evento, que ao clicar num certo elemento, ele adicione/remova uma classe. Em Javascript puro eu poderia fazer algo como:
 
-{% highlight js %}
+```js
 document.querySelector('.item').addEventListener('click', function(event) {
     this.classList.toggle('active');
 });
-{% endhighlight %}
+```
 
 Você pode olhar o método acima e falar: **Mas o que tem de errado aí?** De fato, não tem nada de errado, mas se eu quisesse utilizar o mesmo método para outro seletor? Não daria né. Por que não fazer assim então:
 
-{% highlight js %}
+```js
 function toggleActive() {
     this.classList.toggle('active')
 }
 
 document.querySelector('.item').addEventListener('click', toggleActive)
 document.querySelector('.another-item').addEventListener('click', toggleActive)
-{% endhighlight %}
+```
 
 ## Funções declaradas facilitam o desacoplamento
 
 Vamos pensar num código simples de node, onde apendamos um texto e notificamos o usuário, vamos primeiro ver um exemplo comum que pessoas fazem, usando `funções anônimas`:
 
-{% highlight js %}
+```js
 var fs = require('fs');
 
 var myFile = '/tmp/test';
@@ -108,7 +108,7 @@ fs.readFile(myFile, 'utf8', function(err, txt) {
         console.log('Texto adicionado!');
     });
 });
-{% endhighlight %}
+```
 
 Ali temos um arquivo de texto `myFile` que é lido e adicionado `Mais algum texto!`, então escrevemos no arquivo e informamos o usuário da tarefa concluída.
 
@@ -116,7 +116,7 @@ Se repararmos, temos ali duas funções anônimas, que por si só, já poderiam 
 
 Para melhorar isso, poderíamos primeiro nomear as funções, para já pelo menos saber de onde o erro vem:
 
-{% highlight js %}
+```js
 var fs = require('fs');
 
 var myFile = '/tmp/test';
@@ -129,11 +129,11 @@ fs.readFile(myFile, 'utf8', function appendText(err, txt) {
         console.log('Texto adicionado!');
     });
 });
-{% endhighlight %}
+```
 
 Tendo os nomes, caso algum erro dos erros estoure na tela, já saberemos de onde vem. Mesmo assim, ainda está bem ruim de ler e ficou ainda mais sujo colocando os nomes, então por que não separar as funções?
 
-{% highlight js %}
+```js
 var fs = require('fs');
 
 function notifyUser(err) {  
@@ -150,7 +150,7 @@ function appendText(err, txt) {
 
 var myFile = '/tmp/test';
 fs.readFile(myFile, 'utf8', appendText);
-{% endhighlight %}
+```
 
 Olha como ficou mais fácil, temos as nossas funções separadas com suas responsabilidades ÚNICAS e o código ficou muito mais fácil de ler e entender.
 

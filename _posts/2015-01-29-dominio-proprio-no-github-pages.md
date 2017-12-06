@@ -37,7 +37,7 @@ Para que funcione no branch `master`, você precisa criar utilizando o `seunomed
 
 #### Passo Final:
 
-{% highlight sh  %}
+```bash
 # Iniciar um repositório git na pasta do projeto
 git init
 
@@ -52,7 +52,7 @@ git remote add origin https://github.com/seunomedeusuario/seunomedeusuario.githu
 
 # Subir seu lindo blog
 git push -u origin master
-{% endhighlight %}
+```
 
 Com esses passos o seu Blog já está no Github Pages e se tudo estiver certinho em 20-30 minutos você já pode acessar através da url `seunomedeusuario.github.io`.
 

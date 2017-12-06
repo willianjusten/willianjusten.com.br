@@ -31,7 +31,7 @@ A ideia também não será escrever algo muito extenso e cansativo, mas uma base
 
 Como a maioria já deve saber o SVG tem uma sintaxe baseada em `xml`. Estamos na segunda edição da versão [1.1](http://www.w3.org/TR/SVG/). E a especificação do [SVG 2.0](http://www.w3.org/TR/SVG2/) já está sendo formulada, já em um processo bastante adiantado, seguindo os moldes das novas especificações, como CSS3 e o HTML5.
 
-{% highlight xml %}
+```xml
 <svg
 version="1.1"
 xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- código para o desenho -->
 
 </svg>
-{% endhighlight %}
+```
 
 ### O que são essas coisas ali com a tag SVG?
 
@@ -61,11 +61,11 @@ O SVG é tem algumas formas básicas, que permitem fazer os lindos desenhos que 
 <p data-height="266" data-theme-id="11319" data-slug-hash="PwmEag" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PwmEag/'>Exemplo do elemento Rect</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <rect x="50" y="30" width="300" height="200" fill="#0562dc"></rect>
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar um retângulo e tem os seguintes atributos:
 
@@ -81,11 +81,11 @@ Esse elemento permite criar um retângulo e tem os seguintes atributos:
 <p data-height="266" data-theme-id="11319" data-slug-hash="YPVYOO" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/YPVYOO/'>Exemplo do elemento circle</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <circle cx="75" cy="75" r="50" fill="#0562dc" />
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar um círculo e tem os seguintes atributos:
 
@@ -99,11 +99,11 @@ Esse elemento permite criar um círculo e tem os seguintes atributos:
 <p data-height="266" data-theme-id="11319" data-slug-hash="bNWaZN" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bNWaZN/'>Exemplo do elemento ellipse</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <ellipse cx="100" cy="60" rx="100" ry="50" fill="#0562DC" />
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 
@@ -118,11 +118,11 @@ Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 <p data-height="266" data-theme-id="11319" data-slug-hash="pvPpmE" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/pvPpmE/'>Exemplo do elemento line</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <line x1="20" y1="10" x2="180" y2="60" stroke="#0562DC" stroke-width="4"/>
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar uma linha e tem os seguintes atributos:
 
@@ -138,11 +138,11 @@ Esse elemento permite criar uma linha e tem os seguintes atributos:
 <p data-height="266" data-theme-id="11319" data-slug-hash="NPjXZG" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/NPjXZG/'>NPjXZG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" fill="white" stroke="#0562DC" stroke-width="4" />
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar uma polyline e tem os seguintes atributos:
 
@@ -156,11 +156,11 @@ Esse elemento permite criar uma polyline e tem os seguintes atributos:
 <p data-height="266" data-theme-id="11319" data-slug-hash="bNWaXd" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bNWaXd/'>Exemplo do elemento polygon</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-{% highlight xml %}
+```xml
 <svg>
   <polygon points="50,5 100,5 125,30 125,80 100,105 50,105 25,80 25,30" fill="#0562DC" stroke="#000" stroke-width="4"/>
 </svg>
-{% endhighlight %}
+```
 
 Esse elemento permite criar um polígono e tem os seguintes atributos:
 

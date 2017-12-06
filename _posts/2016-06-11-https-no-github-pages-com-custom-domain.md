@@ -79,9 +79,9 @@ Para garantir que todo mundo que acesse o site, acesse como https, devemos fazer
 
 Tá faltando pouquinho, mas não podemos deixar passar uma coisa **muito importante**, que é dizer para os buscadores que os conteúdos com e sem https são iguais, para eles não caracterizarem isso como cópia. Para isso, basta utilizarmos a seguinte tag:
 
-{% highlight html %}
+```html
 <link rel="canonical" href="https://www.seudominio.com.br/url_da_pagina">
-{% endhighlight %}
+```
 
 Se você estiverem utilizando um gerador estático como o Jekyll, vocês deixam a parte da `url_da_pagina` dinâmica.
 

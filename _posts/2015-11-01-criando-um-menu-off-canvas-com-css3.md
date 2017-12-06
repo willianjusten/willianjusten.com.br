@@ -47,7 +47,7 @@ Para que o menu apareça na tela, o que fazemos é deslocar tudo para o lado dir
 
 Bom, vamos começar a mão na massa, porque isso é tão fácil de fazer e já estou enrolando muito. Primeiro de tudo, vamos montar nossa estrutura, que vai seguir basicamente aquelas 3 camadas ditas acima.
 
-{% highlight html %}
+```html
 <body>
     <div class="wrapper">
         <div class="canvas">
@@ -55,11 +55,11 @@ Bom, vamos começar a mão na massa, porque isso é tão fácil de fazer e já e
         </div>
     </div>
 </body>
-{% endhighlight %}
+```
 
 Dentro dessas camadas, vamos colocar algum conteúdo, só para não ficar muito vazio.
 
-{% highlight html %}
+```html
 <body>
     <div class="wrapper">
         <div class="canvas">
@@ -82,7 +82,7 @@ Dentro dessas camadas, vamos colocar algum conteúdo, só para não ficar muito 
         </div>
     </div>
 </body>
-{% endhighlight %}
+```
 
 Note também, que eu criei um botão com a seguinte classe `toggle-menu`, que vai ser responsável por fazer a mágica de abrir e fechar o menu.
 
@@ -92,20 +92,20 @@ Note também, que eu criei um botão com a seguinte classe `toggle-menu`, que va
 
 Depois de montada a estrutura, precisamos deixar um pouco bonitinho e fazer a mágica acontecer. Primeiro vamos montar nosso `wrapper`, ele é o responsável por segurar o conteúdo de nosso site e "esconder" as coisas que estiverem por fora dele, por esse motivo iremos utilizar a propriedade `overflow: hidden`, que vai esconder essas coisinhas.
 
-{% highlight css %}
+```css
 .wrapper {
     position: relative; 
     overflow: hidden;
     width: 100%; 
     height: 3000px; /* só para deixar a página grande*/
 }
-{% endhighlight %}
+```
 
 ### Canvas
 
 O canvas nada mais é que nossa tela e que será responsável por se mover pelas laterais junto com o menu, ou seja, movimentos no `eixo X`. Em seu estado inicial, ele deverá assumir que `x é igual a 0`, visto que ainda não se moveu. Coloquei também uma `transition` só para que o efeito seja suave e bonitinho <3
 
-{% highlight css %}
+```css
 .canvas {
     width: 100%;
     height: 100%;
@@ -113,13 +113,13 @@ O canvas nada mais é que nossa tela e que será responsável por se mover pelas
     transform: translateX(0);
     transition: .3s ease all;
 }
-{% endhighlight %}
+```
 
 ### Menu
 
 Nosso menu inicialmente precisa estar do lado de fora do wrapper e para isso terá um valor negativo de X. As outras propriedades são somente para dar um pouco de estilo ao mesmo.
 
-{% highlight css %}
+```css
 .menu {
     height: 100%;
     position: absolute;
@@ -128,23 +128,23 @@ Nosso menu inicialmente precisa estar do lado de fora do wrapper e para isso ter
     background: #BF0000;
     padding: 5rem;
 }
-{% endhighlight %}
+```
 
 ### Animação
 
 Depois de feitas essas adições de CSS, nosso menu já se encontra do lado de fora escondido, nosso canvas já está aparecendo, mas e como será o efeito para tudo funcionar? Simples, precisamos mover o nosso canvas para o lado direito, no tamanho exato que o menu foi deslocado, ou seja `300px`.
 
-{% highlight css %}
+```css
 .wrapper.show-menu .canvas {
     transform: translateX(300px);
 }
-{% endhighlight %}
+```
 
 ## Javascript
 
 Para funcionar o menu, só falta criarmos alguma trigger que será responsável por adicionar e remover a classe `.show-menu` do nosso `wrapper`. Podemos fazer isso usando Javascript puro, jQuery ou podemos até fazer sem o uso de classes e sim esquema de `:checked` de inputs e aí nem usar JS, enfim, fica a seu critério. Aqui segue um exemplo bem simples com JS Puro.
 
-{% highlight js %}
+```js
 // elementos auxiliares
 var toogleMenu = document.querySelectorAll('.toggle-menu'),
     wrapper    = document.querySelector('.wrapper');
@@ -163,7 +163,7 @@ function menuAction() {
         wrapper.classList.add('show-menu');
     }
 }
-{% endhighlight %}
+```
 
 O código acima usa o `classList` para verificar se já existe a classe e adicionar ou então remover, fazendo assim a animação funcionar.
 
@@ -178,7 +178,7 @@ E o resultado fica assim:
 
 Um truque bem famoso que podemos usar para otimizar a animação é forçar o uso da aceleração via hardware do computador, definindo as transições em `3D`. A mudança pode ser bem pequena e quase imperceptível para a maioria das máquinas, mas já é um ganho, no caso, faríamos assim, substituimos o `translateX()` pelo `translate3d()`.
 
-{% highlight css %}
+```css
 /* Antes */
 .canvas {
   transform: translateX(0);
@@ -195,13 +195,13 @@ Um truque bem famoso que podemos usar para otimizar a animação é forçar o us
   transform: translate3d(300px, 0, 0);  
 }
 
-{% endhighlight %}
+```
 
 ### Fechar o menu com a tecla ESC
 
 Uma coisa que já é quase intuitivo é fechar as coisas usando a tecla `ESC`, então por que não criar um evento para isso no nosso menu? Em Javascript Puro ficaria assim
 
-{% highlight js %}
+```js
 // Adicionando evento para fechar o menu ao pressionar a tecla ESC
 document.addEventListener('keyup', function(e){
     if(e.keyCode == 27) {
@@ -210,7 +210,7 @@ document.addEventListener('keyup', function(e){
         }
     }
 });
-{% endhighlight %}
+```
 
 ## Conclusão
 

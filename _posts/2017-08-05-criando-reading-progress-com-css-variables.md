@@ -30,7 +30,7 @@ A outra pergunta comum é: `Mas por que usar isso? Já tenho no meu pre-processa
 
 Bom, vamos logo para a parte prática que é mais interessante. Digamos que eu tenha um site e eu quero que o header tenha cores diferentes se estiver na home ou em páginas normais. Seguindo o seguinte html:
 
-{% highlight html %}
+```html
 
 <!-- Página Home  -->
 <html>
@@ -47,11 +47,11 @@ Bom, vamos logo para a parte prática que é mais interessante. Digamos que eu t
         ...
     <body>
 </html>
-{% endhighlight %}
+```
 
 Tendo em vista o seguinte markup, podemos criar um css assim:
 
-{% highlight css %}
+```css
 :root {
   --header-home-bg-color: blue;
   --header-pages-bg-color: white;
@@ -64,18 +64,18 @@ Tendo em vista o seguinte markup, podemos criar um css assim:
 .page .header {
   background-color: var(--header-pages-bg-color);
 }
-{% endhighlight %}
+```
 
 Bastante intuitivo né? Mas vamos as explicações de como funciona. Para você definir uma variável no CSS, basta utilizar esses dois traços no início da variável, `--variavel-linda` e para utilizar o valor dela, é só chamar dentro do `var(--variavel-linda)`. Sim gente, é só isso. Precisa de mais nada! E outra coisa bastante legal, o `var` pode receber dois parâmetros, um que é sua variável e o outro que é um fallback caso o valor da sua variável seja inválido. Por exemplo:
 
-{% highlight css %}
+```css
 :root {
   --font-stack: "Open Sans";
 }
 body {
   font-family: var(--font-stack, "Arial");
 }
-{% endhighlight %}
+```
 
 Caso o valor de `--font-stack` não fosse achado ou válido, ele iria utilizar o valor `Arial`.
 
@@ -85,17 +85,17 @@ Claro que precisamos integrar isso com JS né? E é também simples demais. Bast
 
 Primeiro vamos criar nosso html bem bobo, que vai ser um grande texto num container. E o item principal, nossa div `progress`, que vai ser responsável por fazer a barrinha de progresso no topo.
 
-{% highlight html %}
+```html
 <div class="progress"></div>
 
 <div class="container">
   <!-- texto  -->
 </div>
-{% endhighlight %}
+```
 
 Depois vamos criar nosso CSS para o `progress`.
 
-{% highlight css %}
+```css
 .progress {
   background: linear-gradient(to right, #3863a0 var(--scroll), transparent 0);
   background-repeat: no-repeat;
@@ -104,7 +104,7 @@ Depois vamos criar nosso CSS para o `progress`.
   height: 8px;
   z-index: 2;
 }
-{% endhighlight %}
+```
 
 Reparem que eu estou utilizando uma variável ali que é `var(--scroll)` e também reparem que eu não criei ela no CSS, pois eu vou criar no meu JS.
 
@@ -116,7 +116,7 @@ Para fazer o cálculo do scroll e identificar o progresso, vamos utilizar algums
 
 Tendo esses métodos em mente, fica fácil criar a seguinte função:
 
-{% highlight js %}
+```js
 const progress = document.querySelector('.progress');
 const body = document.body;
 const page = document.documentElement;
@@ -126,7 +126,7 @@ document.addEventListener('scroll', function() {
   scroll = body.scrollTop / (body.scrollHeight - page.clientHeight) * 100;
   progress.style.setProperty('--scroll', scroll + '%');
 });
-{% endhighlight %}
+```
 
 Primeiro eu verifico a altura do topo da página até o topo do meu elemento (body.scrollTop) e então divido pelo tamanho total do meu elemento menos a altura do browser, isso multiplicado por 100, para poder obter a porcentagem do quanto eu já desci na tela.
 

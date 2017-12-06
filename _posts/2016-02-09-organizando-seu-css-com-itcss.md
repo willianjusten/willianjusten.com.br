@@ -53,41 +53,41 @@ Essas camadas são organizadas da mais genérica até a mais específica. E esta
 
 Essas são as configurações básicas da sua arquitetura. Em geral, são as variáveis globais que vão definir cores, espaçamentos e outras configurações desejadas para o funcionamento do seu framework em si. Perceba que nada aqui será gerado como CSS final, sendo somente utilizado na criação.
 
-{% highlight scss %}
+```scss
 $color-ui: #BADA55;
 $spacing-unit: 10px;
-{% endhighlight %}
+```
 
 ### Tools
 
 É o lugar onde você vai guardar seus mixins e funções necessárias para a construção de seus layouts. Pode ser qualquer coisa, desde mixins de font-face, até mixins de animações, etc. Repare que aqui, nada é gerado diretamente como CSS final também.
 
-{% highlight scss %}
+```scss
 @mixin font-brand() {
     fotn-family: "UI font", sans-serif;
     font-weigth: 400;
 }
-{% endhighlight %}
+```
 
 ### Generic
 
 Essa é a primeira camada que vai de fato aplicar CSS final e ela é destinada para as propriedades mais genéricas e com a menor especificidade possível. Em geral, é onde colocamos resets, `box-sizing`, etc.
 
-{% highlight scss %}
+```scss
 * {
     box-sizing: border-box;
 }
-{% endhighlight %}
+```
 
 ### Base
 
 Aqui ficarão as estilizações básicas, a última camada que veremos seletores em tags diretamente. Portanto aqui ficarão estilos para os headings `h1-h6`, `blockquotes`, `a`, `buttons`, etc. **Mas lembre-se são estilizações BÁSICAS**, nada de estilizar tudo aqui!
 
-{% highlight css %}
+```css
 ul {
     list-style: square outside;
 }
-{% endhighlight %}
+```
 
 ### Objects
 
@@ -95,7 +95,7 @@ Seguindo os princípios de OOCSS (CSS Orientado a Objetos), aqui é onde iremos 
 
 Aqui é onde fazemos os padrões de botões, listas, paineis, etc. Nesse momento, só é permitido também o uso de classes. Seguindo o padrão do RSCSS, teríamos algo assim:
 
-{% highlight scss %}
+```scss
 .base-list {
     margin: 0;
     padding: 0;
@@ -105,7 +105,7 @@ Aqui é onde fazemos os padrões de botões, listas, paineis, etc. Nesse momento
         padding: $spacing-unit;
     }
 }
-{% endhighlight %}
+```
 
 ### Components
 
@@ -113,7 +113,7 @@ Aqui como o nome já diz, teremos nossos componentes já mais específicos. De a
 
 Normalmente, aqui ficarão listas específicas como de produtos, cards específicos como aqueles incluindo imagens, etc. Seguindo o RSCSS, teríamos algo como:
 
-{% highlight scss %}
+```scss
 .products-list {
     @extend font-brand();
     border-top: 1px solid $color-ui;
@@ -122,7 +122,7 @@ Normalmente, aqui ficarão listas específicas como de produtos, cards específi
         border-bottom: 1px solid $color-ui;
     }
 }
-{% endhighlight %}
+```
 
 ### Trumps
 
@@ -130,11 +130,11 @@ Por final temos Trumps, que no RSCSS também são chamados de Helpers. Essa cama
 
 É importante que você não confunda a existência dessa camada e saia colocando tudo aqui, essa camada somente deverá ser utilizada em casos que não vá afetar a estrutura da página.
 
-{% highlight css %}
+```css
 .hidden {
     display: none !important;
 }
-{% endhighlight %}
+```
 
 ## Coisas para se prestar atenção
 

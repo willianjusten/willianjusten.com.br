@@ -25,9 +25,9 @@ Para quem não tem o Lollipop ainda e quiser saber como é mais ou menos, segue 
 
 Para fazer isso é bastante simples, basta adicionar uma meta tag no head do seu site.
 
-{% highlight html %}
+```html
 <!-- Android Lolipop Theme Color -->
 <meta name="theme-color" content="cor em hexadecimal">
-{% endhighlight %}
+```
 
 Bom é só isso, vamos tornar nossos sites cada vez mais com a nossa cara, pequenos detalhes fazem a diferença!
