@@ -61,8 +61,7 @@ Ou seja, a diminuição foi de cerca de **30%**, isso é muito importante para e
 
 Agora você pode retornar um array de elementos diretamente para o render. Antes precisávamos encapsular os elementos em alguma `<div>` ou outro elemento. Agora não é mais necessário isso =)
 
-{% highlight jsx %}
-
+```jsx
 // antes encapsulando com uma div
 render() {
   return (
@@ -80,7 +79,7 @@ render() {
     <p key='text'>Meu texto lindo aqui.</p>
   ]
 }
-{% endhighlight %}
+```
 
 Lembrando de não esquecer de usar o `key` para não receber nenhum warning. No futuro eles planejam fazer uma forma para também não precisar de adicionar o `key` para esses casos. E o mesmo ocorre para strings, que agora são suportadas diretamente:
 
