@@ -29,19 +29,19 @@ Segue um passeio pelas principais features desse editor.
 ### Intellisense
 A primeira coisa que eles já tem orgulho de falar que tem é o [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense), que traz um sistema inteligente de autocomplete para variáveis e métodos, além de mostrar várias informações daquele método/variável. Abaixo segue um Gif dessa maravilha rodando.
 
-![Intellisense em ação](https://code.visualstudio.com/images/intellisense_intellisense.gif)
+![Intellisense em ação](https://code.visualstudio.com/assets/docs_carousel/intellisense_b.png)
 
 ### Debugging
 
 Isso mesmo, você pode depurar sua aplicação, adicionar breakpoints, identificar valores dentro da call stack e outras várias coisas, diretamente do editor. E ele roda leve leve, <s>não adianta mais dar desculpa que usa aquela sua IDE pesada.</s> E ele funciona não só para uma linguagem, mas para várias, bastando instalar a extensão que desejar. Dá uma olhada na [página da documentação deles](https://code.visualstudio.com/docs/editor/debugging), vários exemplos legais.
 
-![Exemplo do Debugging funcionando](https://code.visualstudio.com/images/debugging_debugging_hero.png)
+![Exemplo do Debugging funcionando](https://code.visualstudio.com/assets/docs_carousel/debug_b.png)
 
 ### Multi-cursor, linter e mais
 
 Isso mesmo, aquelas coisas maravilhosas que você usava no Sublime e não trocava de jeito nenhum, todas estão no VScode e de forma bem melhorada. Dá uma olhadinha na página de [Basic Editing](https://code.visualstudio.com/docs/editor/codebasics) deles, que tem bastante coisa legal mostrando lá.
 
-![Exemplo mostrando o multicursor](https://code.visualstudio.com/docs_carousel/multi-cursor-edit.png)
+![Exemplo mostrando o multicursor](https://code.visualstudio.com/assets/docs_carousel/multi-cursor-edit.png)
 
 ### Code Navigation e Refactor
 
@@ -51,7 +51,7 @@ Uma das coisas que eu ficava muito chateado de não ter no Sublime (até tinham 
 
 E uma das coisas mais bonitas e funcionais que tem no VSCode é essa integração. Eu confesso que me falavam e eu pensava: "Pow, mas eu sempre tenho terminal aberto, uso muito bem o Git por lá, num preciso disso." e bom, mereço ficar quieto da próxima. É claro que consigo fazer tudo no terminal, mas a forma simples e fácil que o VSCode faz essa integração, agiliza demais no meu workflow. Eu consigo ver difs mais claros entre os arquivos, para resolver conflitos ele ainda me mostra opções como "Ignorar mudanças vindas do remoto, mesclar com as mudanças atuais, ignorar mudanças atuais", cara, isso é uma mão na roda! Olha essa [página](https://code.visualstudio.com/docs/editor/versioncontrol) e tenha ideia de quanta coisa boa essa integração tem!
 
-![Tela mostrando o diff](https://code.visualstudio.com/images/versioncontrol_diff-review-pane.png)
+![Tela mostrando o diff](https://code.visualstudio.com/assets/docs_carousel/git_b.png)
 
 E se depois de tudo isso você não está convencido, acessa lá o [site deles](https://code.visualstudio.com/docs) e leia por si só. Maaaaas, ainda não acabou, agora vem a cereja no topo do bolo, os **plugins**!
 
