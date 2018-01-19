@@ -1,7 +1,7 @@
 ---
 title: "Curso Completo de JavaScript Moderno - ES6"
 image: '/assets/img/cursos/curso-es6.png'
-link: 'https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=FELIZ_NATAL_2017'
+link: 'https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=PROMOSITE'
 introduction: 'O JavaScript evoluiu bastante e agora é muito mais fácil de escrever, aprenda todos os novos truques dessa grande atualização.'
 main-class: 'js'
 color: '#D6BA32'
