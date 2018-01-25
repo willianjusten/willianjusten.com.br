@@ -48,7 +48,7 @@ Uma das formas disponíveis é o [Clip-path do CSS](https://developer.mozilla.or
 
 Como você pode ver, eu utilizei duas classes com a propriedade `clip-path`:
 
-{% highlight css %}
+```css
 .polygon {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
@@ -56,7 +56,7 @@ Como você pode ver, eu utilizei duas classes com a propriedade `clip-path`:
 .circle {
   clip-path: circle(100px at 150px 100px);
 }
-{% endhighlight %}
+```
 
 Sobre o `.polygon`, você basicamente define os pontos com as coodenadas do eixo (x,y), ou seja, a primeira coordenada (primeiro ponto) possui um deslocamento de `50%` no eixo `x` e `0%` no eixo y.
 
@@ -71,7 +71,7 @@ Enquanto o `clip-path` do CSS não é compatível em tudo, usando SVG você alca
 
 Para fazer funcionar, é extremamente similar ao feito com o CSS, mas a diferença é que a forma é criada no SVG, segue abaixo o código:
 
-{% highlight html %}
+```html
 <svg class="clip-svg">
   <defs>
     <clipPath id="triangle-mask" clipPathUnits="objectBoundingBox">
@@ -79,13 +79,13 @@ Para fazer funcionar, é extremamente similar ao feito com o CSS, mas a diferen�
     </clipPath>
   </defs>
 </svg>
-{% endhighlight %}
+```
 
 Repare em duas coisas importantes, primeiro uma classe no externo do SVG, que é o `clip-svg`, todo SVG por padrão vem com um tamanho no Browser e ocupa um espaço, então para remover isso, adicionamos essa classe e zeramos `height` e `width` no css. E depois temos o id `#triangle-mask`, que vai ser referenciado no nosso css, de forma a criar o clip que desejamos. E para determinar isso, é só uma linha:
 
-{% highlight css %}
+```css
 clip-path: url("#triangle-mask");
-{% endhighlight %}
+```
 
 Gostou disso, mas achou extremamente difícil/chato criar as formas? Não se preocupe! Existe uma ferramenta chamada [Clippy](http://bennettfeely.com/clippy/). Através dela você tem formas pré-determinadas e também pode criar as suas.
 
@@ -122,14 +122,14 @@ E por último, você pode ter também o `mask-image`, onde você determina no cs
 
 Como você pode ver, nós temos a `img` que vai conter a imagem que nós queremos mostrar e no css nós definimos o `mask-image` que é a forma/ícone onde vamos inserir a imagem. Temos as seguintes linhas de código:
 
-{% highlight css %}
+```css
 .object-mask {
   mask-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ed/Logo_of_Unsplash.svg);
   mask-repeat: no-repeat;
   mask-size: 350px;
   mask-position: center;
 }
-{% endhighlight %}
+```
 
 Como podemos ver acima, esse `mask-image` lembra muito com as propriedades de um `background-image`, onde determinamos se vai repetir ou não, seu tamanho e sua posição.
 
