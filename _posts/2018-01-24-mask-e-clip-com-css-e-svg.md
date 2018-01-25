@@ -29,6 +29,8 @@ Eu resolvi fazer esse post, pois recebi um email do [Unsplash](https://unsplash.
 
 É um efeito extremamente simples de se fazer, mas que ficou super bonito e único. Então vamos lá aprender a fazer isso e brincar em nossos novos sites e aplicações!
 
+**Importante:** por se tratar de propriedades experimentais, é possível que não funcione em todos os dispositivos e browsers. Por preferência veja no Chrome Desktop =)
+
 ## Clipping
 
 Para quem já usou Photoshop deve conhecer o `Clipping Mask` e o que faremos não é nada diferente disso. O Clipping envolve usar uma camada com uma forma (um círculo, triângulo, texto) sobre uma imagem ou um elemento. Qualquer coisa atrás dessa forma fica aparente e o resto ao redor some. Segue um exemplo abaixo:
