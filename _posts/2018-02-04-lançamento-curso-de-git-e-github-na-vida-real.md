@@ -49,6 +49,6 @@ Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udem
 
 >Ué, mas o curso não está sendo lançado agora? Vai botar um preço tão baixo assim?
 
-Sim e assim sempre será! O cupom **PROMOSITE** vai sempre existir e sempre será esse preço. Quanto mais pessoas conseguirem fazer o curso e aprenderem, mais eu vou ficar feliz. Os motivos de colocar o curso como pago é que assim eu garanto que a Udemy vai gerar certificado para todos (no curso gratuito muita gente não conseguia gerar) e isso também irá me ajudar a continuar viajando e fotografando o mundo, que tem sido uma grande paixão minha.
+Sim e assim sempre será! O cupom **PROMOSITE** vai sempre existir e sempre será esse preço. Quanto mais pessoas conseguirem fazer o curso e aprenderem, mais eu vou ficar feliz. Os motivos de colocar o curso como pago é que assim eu garanto que a Udemy vai gerar certificado para todos (no curso gratuito muita gente não conseguia gerar) e isso também irá me ajudar a continuar [viajando e fotografando o mundo](https://unsplash.com/@willianjusten), que tem sido uma grande paixão minha.
 
 Então aproveite o **CARNAGIT** e estude muito nesse feriadão!
