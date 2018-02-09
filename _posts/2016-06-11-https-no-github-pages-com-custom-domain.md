@@ -71,7 +71,7 @@ Feito isso, já temos o nosso certificado ativado, só esperar mais um pouquinho
 
 ### Redirecionando para HTTPS
 
-Para garantir que todo mundo que acesse o site, acesse como https, devemos fazer um redirecionamento **301**, onde queremos que todos os links acessados sem https sejam jogados para o link com o protocolo certo. Para isso, é só ir na parte de **Page Rules** e definir essa regra, semelhante a imagem abaixo:
+Para garantir que todo mundo que acesse o site, acesse como https, devemos fazer um redirecionamento **301**, onde queremos que todos os links acessados sem https sejam jogados para o link com o protocolo certo. Para isso, é só ir na parte de **Crypto** e definir essa regra, semelhante a imagem abaixo:
 
 ![Tela de Redirect](/assets/img/https/redirect.png)
 
