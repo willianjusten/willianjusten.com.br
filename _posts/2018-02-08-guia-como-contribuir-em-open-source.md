@@ -2,7 +2,7 @@
 layout: post
 title: "Guia: Como contribuir em Open Source"
 date: 2018-02-08 21:01:03
-image: '/assets/img/guide-guide/main.jpg'
+image: '/assets/img/git-guide/main.jpg'
 description: "Quer contribuir em open source e não sabe como e nem por onde começar? Esse pequeno guia pode te ajudar."
 main-class: 'dev'
 color: '#637a91'
