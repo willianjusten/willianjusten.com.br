@@ -75,7 +75,7 @@ A licença não deve restringir qualquer parte de vender ou distribuir o softwar
 
 ### Trabalhos derivados
 
-A licença deve permitir que modificações e trabalhos derivados, e deve permitir a distribuição sob os mesmos termos da licença do software original.
+A licença deve permitir modificações e trabalhos derivados, e deve permitir a distribuição sob os mesmos termos da licença do software original.
 
 ### Sem discriminação contra pessoas ou grupos
 
@@ -99,7 +99,7 @@ A comunidade open source exatamente por ser tão aberta e livre, permite que exi
 
 ### Criar uma boa imagem e ajudar na carreira
 
-Pense no open source como seu grande portfólio. E se você tem projetos interessantes e que pessoas se interessam, isso pode atrair headhunters e outros devs a se espelhar em você. Mas lembre-se, você não precisa criar o "novo React", qualquer contribuição é válida e sempre pode ajudar alguém que está começando, não tenha medo de contribuir, por mais que ache que "é algo bobo".
+Pense no open source como seu grande portfólio. E se você tem projetos interessantes e que pessoas se interessam, isso pode atrair headhunters e outros devs a se espelhar em você. Mas lembre-se, você não precisa criar o "novo React". Qualquer contribuição é válida e sempre pode ajudar alguém que está começando, não tenha medo de contribuir, por mais que ache que "é algo bobo".
 
 ## Como contribuir?
 
@@ -152,7 +152,7 @@ Como eu disse mais acima, open source não é somente código, hoje isso pode se
 - Ajude a moderar quadros de discussão ou canais de conversação (Slack, Gitter)
 - Participe do [FrontendBr](http://github.com/frontendbr/forum) e ajude pessoas de todo o Brasil <3
 
-### Você pode simplesmente ajudar em outras coisas que não código!
+### Você pode simplesmente ajudar em outras coisas que não sejam código!
 
 - Você pode ajudar em listas ou até criando listas de links úteis para algum estudo. [Aqui](https://github.com/sindresorhus/awesome) tem uma lista imensa com várias listas que você pode começar a ajudar hoje mesmo. Eu tenho um carinho muito grande por esse tipo de coisa e inclusive tenho 2 listas, uma sobre [SVG](https://github.com/willianjusten/awesome-svg) e outra sobre [Audio Visualização](https://github.com/willianjusten/awesome-audio-visualization).
 - Existe também um projeto da h5bp sobre [Perguntas comuns em Entrevistas](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
@@ -167,7 +167,7 @@ Quando você está "iniciando" em algum projeto, é comum que os mantenedores do
 
 Todo projeto open source é diferente, mas existem algumas coisas que ao passar dos tempos passaram a ganhar nomenclaturas e padrões. Tendo isso em mente, nós temos alguns papeís dentro do projeto:
 
-- **Author**: a pessoa/organização quem criou o projeto.
+- **Author**: a pessoa/organização que criou o projeto.
 - **Owner**: pessoa que tem os direitos administrativos do repositório (nem sempre é o autor)
 - **Mantenedores**: os responsáveis por guiar a visão e organização do projeto. (podem ser ou não os autores do projeto)
 - **Contribuintes**: todo mundo que já contribuiu em alguma coisa no projeto.
@@ -176,7 +176,7 @@ Todo projeto open source é diferente, mas existem algumas coisas que ao passar 
 Temos também a documentação, que tem seguido o seguinte padrão:
 
 - **LICENSE**: por definição, todo projeto open source precisa ter uma licença. Se ele não possui uma licença, ele não é open source. E essa licença que vai guiar as permissões diante daquele projeto.
-- **README**: é a documentação de "boas-vindas" do projeto, onde, em geral, explicação um pouco sobre o projeto e como começar com ele.
+- **README**: é a documentação de "boas-vindas" do projeto, onde, em geral, explica um pouco sobre o projeto e como começar com ele.
 - **CONTRIBUTING**: enquanto o README ajuda as pessoas a *usarem* o projeto, o contributing ajuda as pessoas a *contribuirem* com o projeto. Ele explica o processo para contribuição e outros detalhes caso necessário. Enquanto nem todo projeto possui um arquivo de contributing, os projetos que o possuem já sinalizam que contribuições são bem vindas e aceitas.
 - **CODE_OF_CONDUCT**: o código de conduta serve para definir regras para o comportamento de todos os participantes, de forma a facilitar um ambiente amigável e acolhedor.
 
@@ -232,7 +232,7 @@ Quando você estiver procurando por um projeto para contribuir, também é impor
 
 ## Como submeter uma contribuição?
 
-Tão importante quanto contribuir é a forma com que você comunica/contribui. Para que sua contribuição seja levada a sério, siga alguns passos como:
+Tão importante quanto contribuir, é a forma com que você comunica/contribui. Para que sua contribuição seja levada a sério, siga alguns passos como:
 
 ### Comunique efetivamente
 
@@ -317,11 +317,11 @@ Depois que você submete sua contribuição, algumas coisas podem acontecer, que
 
 ### Você não recebe uma resposta
 
-Felizmente você fez a listinha antes de contribuir para o projeto e viu que o projeto tinha sinais de atividade. Mas, as vezes, mesmo em projetos ativos, é possível de você não receber nenhuma resposta.
+Felizmente você fez a listinha antes de contribuir para o projeto e viu que o projeto tinha sinais de atividade. Mas, as vezes, mesmo em projetos ativos, é possível você não receber nenhuma resposta.
 
-Se você não recebeu nenhuma resposta mesmo depois de uma semana, é aceitável que dentro desse mesmo PR, você faça uma pergunta por alguém para revisar, lembrando de seguir as normais já faladas acima.
+Se você não recebeu nenhuma resposta mesmo depois de uma semana, é aceitável que dentro desse mesmo PR, você faça uma pergunta por alguém para revisar, lembrando de seguir as normas já faladas acima.
 
-Se mesmo depois de pedir, ninguém responder, é possível que você nem receba mais respostas. Isso é bastante chato, mas não deixe que isso desencorage você. Acontece com todo mundo. Existem vários motivos para que você não tenha recebido uma resposta e bom, eles são fora do seu alcance. A dica é, tente procurar outro projeto ou forma de contribuir.
+Se mesmo depois de pedir, ninguém responder, é possível que você nem receba mais respostas. Isso é bastante chato, mas não deixe que isso desencorage você. Acontece com todo mundo. Existem vários motivos para que você não tenha recebido uma resposta, e bom, eles estão fora do seu alcance. A dica é, tente procurar outro projeto ou forma de contribuir.
 
 ### Respondem e pedem mudanças
 
