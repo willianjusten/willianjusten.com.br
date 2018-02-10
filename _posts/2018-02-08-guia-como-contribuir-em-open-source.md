@@ -258,7 +258,7 @@ Antes de abrir uma issue ou um Pull Request, tenha alguns pontos em mente.
 Assim como um email, toda contribuição, não importa quão simples ou útil, ela vai precisar ser lida por alguém. E a maioria dos projetos tem mais pedidos do que pessoas disponíveis para ajudar. Então seja conciso:
 
 - **Bom**: Eu gostaria de escrever um tutorial sobre a API.
-- **Ruim**: Eu estava dirigindo na auto-estrada outro dia e então parei num post de gasolina e tive uma grande ideia de algo que poderíamos fazer, mas antes de eu explicar o quê, deixe me mostrar...
+- **Ruim**: Eu estava dirigindo na auto-estrada outro dia e então parei num posto de gasolina e tive uma grande ideia de algo que poderíamos fazer, mas antes de eu explicar o quê, deixe me mostrar...
 
 #### Mantenha toda comunicação pública
 
