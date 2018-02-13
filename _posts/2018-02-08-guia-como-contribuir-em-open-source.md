@@ -150,7 +150,7 @@ Como eu disse mais acima, open source não é somente código, hoje isso pode se
 - Responda perguntas sobre o projeto no Stack Overflow, Reddit, Quora, etc.
 - Responda as pessoas em issues abertas
 - Ajude a moderar quadros de discussão ou canais de conversação (Slack, Gitter)
-- Participe do [FrontendBr](http://github.com/frontendbr/forum) e ajude pessoas de todo o Brasil <3
+- Participe do [FrontendBr](http://github.com/frontendbr/forum) e do [BackendBr](http://github.com/backend-br/forum), ajude pessoas de todo o Brasil <3
 
 ### Você pode simplesmente ajudar em outras coisas que não sejam código!
 
