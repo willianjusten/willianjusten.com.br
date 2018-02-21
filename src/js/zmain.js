@@ -53,12 +53,6 @@
       } );
   }
 
-  smoothScroll.init({
-      selectorHeader: '.bar-header', // Selector for fixed headers (must be a valid CSS selector)
-      speed: 500, // Integer. How fast to complete the scroll in milliseconds
-      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-  });
-
 function scrollBanner() {
   var scrollPos;
   var headerText = document.querySelector('.header-post .content')
