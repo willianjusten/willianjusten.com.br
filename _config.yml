@@ -38,4 +38,13 @@ collections:
   - cursos
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'vendor/bundle/ruby']
+exclude: [
+  'package.json',
+  'src',
+  'node_modules',
+  'vendor/bundle/ruby',
+  'package-lock.json',
+  'Readme.md',
+  'gulpfile.js',
+  'initpost.sh'
+]
