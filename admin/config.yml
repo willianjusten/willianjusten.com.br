@@ -1,5 +1,5 @@
 backend:
-  name: willianjusten.com.br
+  name: github
   repo: willianjusten/willianjusten.com.br
   branch: master
   site_domain: willianjusten.com.br
