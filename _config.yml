@@ -48,3 +48,5 @@ exclude: [
   'gulpfile.js',
   'initpost.sh'
 ]
+
+include: ['_redirects']
