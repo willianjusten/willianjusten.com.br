@@ -1,0 +1,52 @@
+{
+	"name": "Willian Justen Blog",
+	"short_name": "WJusten",
+	"theme_color": "#005f97",
+	"background_color": "#000000",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"lang": "pt-BR",
+	"orientation": "any",
+	"icons": [
+		{
+			"src": "/assets/img/icons/apple-touch-icon-57x57.png",
+			"sizes": "57x57",
+			"type": "image/png"
+		},
+        {
+			"src": "/assets/img/icons/apple-touch-icon-60x60.png",
+			"sizes": "60x60",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/img/icons/apple-touch-icon-72x72.png",
+			"sizes": "72x72",
+			"type": "image/png"
+		},
+        {
+			"src": "/assets/img/icons/apple-touch-icon-114x114.png",
+			"sizes": "114x114",
+			"type": "image/png"
+		},
+        {
+			"src": "/assets/img/icons/apple-touch-icon-120x120.png",
+			"sizes": "120x120",
+			"type": "image/png"
+		},
+        {
+			"src": "/assets/img/icons/apple-touch-icon-144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		},
+        {
+			"src": "/assets/img/icons/favicon-512x512.png",
+            "sizes": "512x512",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "/assets/img/icons/favicon.ico",
+			"type": "image/x-icon"
+		}
+	]
+}

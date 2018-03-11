@@ -64,4 +64,18 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800' rel='stylesheet' type='text/css'>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <!-- Add manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Add Service Worker -->
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").then(function(registration) {
+            console.info("Service Worker registration successful with scope: ", registration.scope);
+            }).catch(function(err) {
+            console.error("Service Worker registration failed: ", err);
+            });
+        }
+    </script>
 </head>
