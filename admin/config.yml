@@ -3,7 +3,6 @@ backend:
   repo: willianjusten/willianjusten.com.br
   branch: master
   site_domain: willianjusten.com.br
-publish_mode: editorial_workflow
 media_folder: "assets/img"
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
