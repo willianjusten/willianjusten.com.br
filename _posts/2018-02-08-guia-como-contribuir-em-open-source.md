@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "Guia: Como contribuir em Open Source"
-date: 2018-02-08 21:01:03
-image: '/assets/img/git-guide/main.jpg'
-description: "Quer contribuir em open source e não sabe como e nem por onde começar? Esse pequeno guia pode te ajudar."
-main-class: 'dev'
+date: 2018-02-08T21:01:03.000Z
+image: /assets/img/git-guide/main.jpg
+title: 'Guia: Como contribuir em Open Source'
+description: >-
+  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
+  pequeno guia pode te ajudar.
+introduction: >-
+  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
+  pequeno guia pode te ajudar.
+twitter_text: >-
+  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
+  pequeno guia pode te ajudar.
+main-class: dev
 color: '#637a91'
 tags:
-- opensource
-- git
-- github
-categories:
-twitter_text: "Quer contribuir em open source e não sabe como e nem por onde começar? Esse pequeno guia pode te ajudar."
-introduction: "Quer contribuir em open source e não sabe como e nem por onde começar? Esse pequeno guia pode te ajudar."
+  - opensource
+  - git
+  - github
 ---
 
 ## Índice
@@ -59,7 +64,7 @@ introduction: "Quer contribuir em open source e não sabe como e nem por onde co
 
 ## Introdução
 
-Fala pessoal, primeiro de tudo, quero agradecer ao apoio que muita gente tem dado ao meu mais novo [Curso de Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=GITGUIA) e também falar que esse post é totalmente ligado ao curso, pois é uma dúvida que nesses últimos dias surgiu para caramba, muitos me perguntando como contribuir, o que fazer para achar algo, enfim, várias coisas, então resolvi escrever algumas coisinhas, espero que seja útil. Muita coisa eu estou pegando do [guia de open source do Github](https://opensource.guide/how-to-contribute/) e outras mais fontes, fica tranquilo que vou colocando link em tudo.
+Olá pessoal, primeiro de tudo, quero agradecer ao apoio que muita gente tem dado ao meu mais novo [Curso de Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=GITGUIA) e também falar que esse post é totalmente ligado ao curso, pois é uma dúvida que nesses últimos dias surgiu para caramba, muitos me perguntando como contribuir, o que fazer para achar algo, enfim, várias coisas, então resolvi escrever algumas coisinhas, espero que seja útil. Muita coisa eu estou pegando do [guia de open source do Github](https://opensource.guide/how-to-contribute/) e outras mais fontes, fica tranquilo que vou colocando link em tudo.
 
 Enquanto escrevo vou ouvindo uma banda que tem dominado minhas playlists nos últimos dias, a banda se chama [Naxatras](https://open.spotify.com/artist/6HN1s0JzLowapZ7nhOAJ71?si=HdwvHdUVQzqaLdrjvcOYLA) e tem um som absurdamente bom, vai por mim! Eles são da Grécia e tem um som muito muito legal, com misturas de Blues, psicodelia e até umas pitadas de música árabe em algumas músicas. A música [Space Tunnel](https://open.spotify.com/track/630AJdTUlZ7M9SlbfGpMaa?si=H4xmNgu3Qf2dkzNgTA3JWA) começa com um baixo de arrepiar! Enfim, vamos ao guia e curta esse som!
 
