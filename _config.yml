@@ -36,13 +36,13 @@ links:
   - title: Home
     url: /
   - title: Cursos
-    url: /cursos
+    url: /cursos/
   - title: Séries
-    url: /series
+    url: /series/
   - title: Tags
-    url: /tags
+    url: /tags/
   - title: Sobre mim
-    url: /about
+    url: /about/
 
 collections:
   - cursos
