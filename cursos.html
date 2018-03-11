@@ -13,7 +13,7 @@ image: '/assets/img/cursos/cursos-bg.png'
                     <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
                 </span>
                 <div class="box-body cursos-box-body">
-                    <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
+                    <a aria-label="{{ curso.title }}" class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
                         <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
                     </a>
                     <div class="cursos-container">
