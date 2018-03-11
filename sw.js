@@ -5,15 +5,18 @@ layout: null
 var urlsToCache = [];
 
 // Cache posts
-// Limits the number of posts that gets cached to 3
-// Reads a piece of front-matter in each post that directs the second loop to the folder where the assets are held
-{% for post in site.posts limit: 3 %}
-    urlsToCache.push("{{ post.url }}");
-    {% for file in site.static_files %}
-        {% if file.path contains post.assets %}
-            urlsToCache.push("{{ file.path }}");
-        {% endif %}
-    {% endfor %}
+{% for post in site.posts limit: 6 %}
+  urlsToCache.push("{{ post.url }}")
+{% endfor %}
+
+// Cache pages
+{% for page in site.pages_to_cache %}
+  urlsToCache.push("{{ page }}")
+{% endfor %}
+
+// Cache assets
+{% for asset in site.files_to_cache %}
+  urlsToCache.push("{{ asset }}")
 {% endfor %}
 
 var CACHE_NAME = 'willian-justen-{{ site.time }}';

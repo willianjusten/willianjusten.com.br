@@ -20,6 +20,16 @@ compress_html:
   endings: []
   profile: false
 
+files_to_cache:
+ - '/assets/css/main.css'
+ - '/assets/js/main.js'
+
+pages_to_cache:
+  - '/'
+  - '/cursos/'
+  - '/about/index.html'
+  - '/tags/index.html'
+
 # Links to include in menu navigation
 # For external links add external: true
 links:
