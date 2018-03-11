@@ -10,7 +10,7 @@ image: '/assets/img/cursos/cursos-bg.png'
     {% for curso in site.cursos reversed %}
         <article class="box-item post-{{curso.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon">
-                    <a href="{{site.url}}/category/{{curso.main-class}}"><span>{{curso.main-class}}</span></a>
+                    <a href="{{site.url}}/category/{{curso.main-class}}/"><span>{{curso.main-class}}</span></a>
                 </span>
                 <div class="box-body cursos-box-body">
                     <a aria-label="{{ curso.title }}" class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
