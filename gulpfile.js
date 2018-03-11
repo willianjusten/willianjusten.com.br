@@ -45,15 +45,15 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function(){
-		gulp.src('src/styl/main.styl')
+		gulp.src(['src/styl/home.styl', 'src/styl/posts.styl', 'src/styl/minimal.styl'])
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[koutoSwiss(), prefixer(), jeet(), rupture()],
 			compress: true
 		}))
-		.pipe(gulp.dest('_site/assets/css/'))
+		.pipe(gulp.dest('_includes'))
 		.pipe(browserSync.reload({stream:true}))
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('_includes'));
 });
 
 /**

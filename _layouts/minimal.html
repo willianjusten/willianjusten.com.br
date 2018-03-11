@@ -5,6 +5,11 @@ layout: compress
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
     {% include head.html %}
+
+    <!-- Inline css minimal -->
+    <style type="text/css">
+        {% include minimal.css %}
+    </style>
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}

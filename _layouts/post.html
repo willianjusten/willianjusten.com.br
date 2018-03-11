@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="http://schema.org/BlogPosting" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
     {% include head.html %}
+
+    <!-- Inline css posts -->
+    <style type="text/css">
+        {% include posts.css %}
+    </style>
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}
