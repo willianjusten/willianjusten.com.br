@@ -9,7 +9,6 @@ var env         = require('minimist')(process.argv.slice(2)),
 	rupture     = require('rupture'),
 	koutoSwiss  = require('kouto-swiss'),
 	prefixer    = require('autoprefixer-stylus'),
-	imagemin    = require('gulp-imagemin'),
 	cp          = require('child_process');
 
 var messages = {
@@ -67,16 +66,6 @@ gulp.task('js', function(){
 		.pipe(concat('main.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js/'));
-});
-
-/**
- * Imagemin Task
- */
-gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*.{jpg,png,gif}')
-		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('assets/img/'));
 });
 
 /**
