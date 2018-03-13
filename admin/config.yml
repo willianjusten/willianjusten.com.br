@@ -4,6 +4,7 @@ backend:
   branch: master
   site_domain: willianjusten.com.br
 media_folder: "assets/img"
+publish_mode: editorial_workflow
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
