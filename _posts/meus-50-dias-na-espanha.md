@@ -55,7 +55,33 @@ Bom, para ficar melhor organizado, eu vou fazer o seguinte, primeiro eu vou fala
 
 ## A tecnologia ajudando minha vida
 
+Bom, eu sou um cara de tecnologia e sempre estou disposto a usá-la para o meu favor e para as viagens não poderia deixar de usar né?
 
+Para acomodação eu costumo usar muito o [Airbnb](www.airbnb.com.br/c/willianj60) porque permite que eu tenha um espaço mais calmo (muitas vezes com mesa para trabalhar) e eu também consigo conversar com nativos, o que é sempre bom para pegar dicas e até mesmo ter experiências super legais. Além de ser mais barato né? Já achei muito Airbnb mais barato até que hostel! Hostels são legais sim, mas nunca se sabe se no seu quarto vai ter aquele cara bêbado que chega as 4h da manhã e vai ficar roncando a noite inteira. Como eu disse, eu passei esses dias viajando e **trabalhando**, não poderia ter uma noite ruim de sono, pois iria complicar todo o meu dia. Então vale gastar uns euros a mais e ter dias tranquilos.
+
+E para locomoção, nada de avião, eu usei basicamente trem, ônibus e caronas! Isso mesmo, eu viajei a Espanha praticamente toda usando caronas! Como assim? Existe um aplicativo chamado [BlaBlaCar](https://www.blablacar.com.br) que super funciona na Espanha, na realidade, parece que o BlaBlaCar lá é mais famoso que Uber praticamente! Foi uma economia do caramba, além de ter conversas suuuuper legais, conheci um designer Belga que me deu carona para Valência, discutimos altas paradas de tecnologia, super maneiro!
+
+Em algumas cidades pequenas que fui ou trechos bem longos, eu acabei usando trem ou ônibus. Para pesquisar sobre trens disponíveis e preços, eu usei a [GoEuro](https://www.goeuro.com), que é tipo uma Trivago dos trens. E para ônibus num teve jeito, era conversando com os nativos e cruzando os dedos para não pegar nada errado xD
+
+Como eu sou apaixonado por trilhas e montanhas, é claro que eu iria fazer trilhas por lá e um aplicativo que me salvou **demais** foi o [Wikiloc](https://www.wikiloc.com/), ele tem trilhas de pessoas reais com várias descrições e dá para salvar o mapa offline, então é uma mão na roda!
+
+Para ajudar com lugares dentro da cidade e coisas mais turísticas, eu uso o [Google Trips](https://get.google.com/trips/), que sempre tem bastante coisa bacaninha e eu posso construir meu planejamento (não que eu faça muito isso).
+
+E uma coisa **muiiiiito importante**, para usar esse montão de app e internet, a primeira coisa que eu faço ao chegar num país novo é comprar um chip com bastante internet! Agora a Europa tem uma regra que o chip de qualquer país Europeu precisa funcionar em outro país Europeu, ent˜o fadasdas
+
+## Rotina de trabalhar e viajar
+
+Bom, para quem não sabe, eu trabalho remotamente no Core Team da [Toptal](https://www.toptal.com/). Não sou freelancer, trabalho num dos times que faz a plataforma existir (sim, ainda causa bastante confusão na galera). E como sou um contratado normal, eu tenho que trabalhar normalmente como qualquer um, bom, talvez não tãaaao igual. 
+
+Todo dia eu tinha uma daily (reunião rápida de 15min no max) para falarmos sobre o que estávamos fazendo, se tivemos algum impedimento, o que vamos fazer e para atualizações (se iria ficar off em certo período, ida ao médico, folga, etc). Essa daily acontecia sempre as 15:30 no horário da Espanha, então era bem tranquilo, pois eu podia ir para um café ou fazer a reunião do Airbnb mesmo.
+
+A cada 15 dias a gente tem também uma retrospectiva, onde é uma reunião um pouquinho maior (1 hora) para discutir sobre o que tem funcionado, o que não tem sido tão bom e action points para melhorar no futuro. Essa retro costuma vir sempre 15 minutos depois da daily e as vezes dura mais de 1h, então nesses dias eu preferia ficar em casa direto, para garantir que poderia participar com calma e também para não ter muitos ruídos externos para atrapalhar.
+
+Tirando essas duas reuniões, a gente precisa sempre estar disponível para parear com alguém caso necessário e também para trabalhar obviamente. Então como eu fazia minha organização?
+
+- Acordava cedo (por volta de 7-8h da manhã), eu sei, isso nem é tão cedo. Mas fala isso para o meu corpo...
+- Toda a manhã eu pegava para passear pela cidade até umas 14h, aí eu ia almoçar e caso o restaurante fosse silencioso, eu fazia a daily dali mesmo com meu celular (4G na Europa é lindo, falarei disso já já.)
+- 
 
 ## Criando o Volta Mozão
 
