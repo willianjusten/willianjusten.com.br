@@ -136,7 +136,7 @@ Lá em Sevilla já estava com toda a galera da Toptal e pegamos um bus particula
 
 Como eu já tinha passeado por Sevilla no final de semana com o pessoal da Toptal, fui lá para um último dia, pois queria voar meu drone sobre o Metropol Parasol, e [super valeu a pena](https://unsplash.com/photos/v4t6eg2VMWE). Fiquei num [Airbnb simples](https://www.airbnb.com.br/rooms/19778915) lá, que na realidade não era uma casa de uma pessoa normal e sim uma pensão, mas não tive nenhum problema, era um quarto só para mim, só que foi bem caro, pois eu queria do lado da estação de trem. Foi a facada de **29,58 euros** para um dia só.
 
-Aqui peguei meu primeiro BlaBlaCar, que paguei a bagatela de 6 euros para ir até Ronda. Fui com duas garotas espanholas bem novas que também iam turistar por Ronda (namorada com ciúmes, mas ok, escolhi pegar motoristas homens depois ou senhoras de idade).
+Aqui peguei meu primeiro BlaBlaCar, que paguei a bagatela de 6 euros para ir até Ronda. Fui com duas garotas espanholas bem novas que também iam turistar por Ronda.
 
 ## Ronda (03/11 - 04/11)
 
