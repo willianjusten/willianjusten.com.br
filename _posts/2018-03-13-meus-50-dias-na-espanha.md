@@ -12,6 +12,8 @@ tags:
   - travel
   - remoto
   - experiencia
+categories:
+- "Trabalhar no exterior, remoto, viagens, etc."
 ---
 ## Introdução
 
