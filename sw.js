@@ -19,7 +19,7 @@ var urlsToCache = [];
   urlsToCache.push("{{ asset }}")
 {% endfor %}
 
-var CACHE_NAME = 'willian-justen-{{ site.time }}';
+var CACHE_NAME = 'willian-justen-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
