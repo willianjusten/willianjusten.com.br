@@ -4,7 +4,8 @@
   "description": "Um blog sobre desenvolvimento web focado em frontend.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "keywords": [
     "frontend",
@@ -20,9 +21,7 @@
   "devDependencies": {
     "autoprefixer-stylus": "^0.4.0",
     "browser-sync": "^1.9.0",
-    "grunt": "^0.4.5",
     "gulp": "^3.8.10",
-    "gulp-cache": "^0.3.0",
     "gulp-concat": "^2.4.3",
     "gulp-plumber": "^0.6.6",
     "gulp-stylus": "^1.3.7",
