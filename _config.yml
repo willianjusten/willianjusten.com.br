@@ -58,4 +58,4 @@ exclude: [
   'initpost.sh'
 ]
 
-include: ['_redirects']
+include: ['_redirects', '_headers']

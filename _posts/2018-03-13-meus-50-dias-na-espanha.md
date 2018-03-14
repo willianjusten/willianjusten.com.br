@@ -15,7 +15,7 @@ tags:
 ---
 ## Introdução
 
-Eu sei, já deve estar pensando, qual é, isso é um blog de tecnologia ou um blog de viagens? Bom, na realidade, esse blog nunca foi **só** de tecnologia, é um espacinho que eu uso para escrever de tudo e como eu sou da área de TI, acabo escrevendo muito sobre isso. Mas, como eu agora tenho focado em outras coisas como viagens e fotografia, achei que talvez fosse interessante falar sobre isso também. E bom, seguindo a filosofia da minha mãe:
+Eu sei, você já deve estar pensando, qual é, isso é um blog de tecnologia ou um blog de viagens? Bom, na realidade, esse blog nunca foi **só** de tecnologia, é um espacinho que eu uso para escrever de tudo e como eu sou da área de TI, acabo escrevendo muito sobre isso. Mas, como eu agora tenho focado em outras coisas como viagens e fotografia, achei que talvez fosse interessante falar sobre isso também. E bom, seguindo a filosofia da minha mãe:
 
 > O blog é meu, eu escrevo o que eu quiser.
 
