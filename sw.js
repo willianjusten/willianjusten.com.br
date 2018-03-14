@@ -17,35 +17,38 @@ const filesToCache = [
   {% endfor %}
 ];
 
-self.addEventListener("install", function(e){
-  self.skipWaiting();
+// Cache on install
+this.addEventListener("install", event => {
+  this.skipWaiting();
 
-  e.waitUntil(
-    caches.open(staticCacheName).then(function(cache){
-      return cache.addAll(filesToCache);
+  event.waitUntil(
+    caches.open(staticCacheName)
+      .then(cache => {
+        return cache.addAll(filesToCache);
     })
   )
 });
 
-self.addEventListener("activate", function(e){
-  e.waitUntil(
-    caches.keys().then(function(cacheNames){
+// Clear cache on activate
+this.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
       return Promise.all(
-        cacheNames.filter(function(cacheName){
-          return cacheName.startsWith("willian-justen-")
-            && cacheName != staticCacheName;
-        }).map(function(cacheName){
-          return caches.delete(cacheName);
-        })
-      )
+        cacheNames
+          .filter(cacheName => (cacheName.startsWith('willian-justen-')))
+          .filter(cacheName => (cacheName !== staticCacheName))
+          .map(cacheName => caches.delete(cacheName))
+      );
     })
-  )
+  );
 });
 
-self.addEventListener("fetch", function(e){
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
+// Serve from Cache
+this.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
   )
 });
