@@ -179,7 +179,7 @@ Uma cidade histórica e com influência árabe extremamente forte, devido ao dom
 * O Alhambra é enorme e você vai perder um dia inteiro lá
 * Comida barata de novo! Menu por **4-5 euros** e as famosas tapas (um petisco + cerveja) por **1-2 euros**.
 
-De Granada eu peguei um BlaBlaCar para Torrevieja, esse já foi mais carinho por duas razões, era o único que tinha e bom, é longe para caramba né. Fui com um casal de Russos que moram na Espanha e custou **22 euros**.
+De Granada eu peguei um BlaBlaCar para Torrevieja, esse já foi mais carinho por duas razões, era o único que tinha e bom, é longe para caramba né. Fui com um casal de Russos que moram na Espanha e custou **22 euros**. Eu de novo esqueci de colocar cinto de segurança e imagina o que aconteceu? Isso mesmo! A polícia parou a gente logo no início da viagem e eu tive que pagar **100 euros** em multa! Depois desse dia eu já entrava no carro botando o cinto no primeiro segundo!
 
 ### Torrevieja (11/11 - 15/11)
 
