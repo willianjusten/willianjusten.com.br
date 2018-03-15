@@ -50,5 +50,8 @@ this.addEventListener("fetch", event => {
       .then(response => {
         return response || fetch(event.request);
       })
+      .catch(() => {
+        return caches.match('/offline/index.html');
+      })
   )
 });

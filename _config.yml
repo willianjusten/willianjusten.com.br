@@ -27,6 +27,7 @@ pages_to_cache:
   - '/cursos/'
   - '/about/index.html'
   - '/tags/index.html'
+  - '/offline/index.html'
 
 # Links to include in menu navigation
 # For external links add external: true
