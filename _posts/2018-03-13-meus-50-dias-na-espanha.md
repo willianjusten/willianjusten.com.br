@@ -12,8 +12,6 @@ tags:
   - travel
   - remoto
   - experiencia
-categories:
-- "Trabalhar no exterior, remoto, viagens, etc."
 ---
 ## Introdução
 
@@ -110,6 +108,8 @@ Eu lancei o [projetinho open source](http://github.com/willianjusten/volta-mozao
 
 ## Madrid (23/10 - 26/10)
 
+![Templo de Debod](/assets/img/willian-justen-de-vasconcellos-594081-unsplash.jpg)
+
 Eu peguei um vôo do Rio para Madrid e lá eu fiquei num [Airbnb](https://www.airbnb.com.br/rooms/14055712?s=51) bastante bacana. Nesse Airbnb eu peguei duas noites, que deram o valor de **32,90 euros**. Chegando ao Airbnb o que eu descubro? A minha host era uma brasileira que já vivia na Espanha há mais de 30 anos! Foi muiiito bom, pois ela deu excelentes dicas, ficamos tão amigos que quando eu falei que no final da viagem eu voltava a Madrid, ela ofereceu a casa dela de graça! YEY! Já cheguei economizando! Bom, mais ou menos, pois foi em Madrid que comprei a minha linda câmera, uma [Sony Alpha 6500 + Zeis 16-70mm](https://www.bhphotovideo.com/c/product/1326408-REG/sony_alpha_a6500_mirrorless_digital.html).
 
 ### Impressões
@@ -142,6 +142,8 @@ Aqui peguei meu primeiro BlaBlaCar, que paguei a bagatela de 6 euros para ir at�
 
 ## Ronda (03/11 - 04/11)
 
+![Puente Nuevo](https://source.unsplash.com/vgfT4xaRs_c/1600x900)
+
 Uma cidade super pequinina, mas que tem uma ponte muito legal que liga uma parte da cidade a outra. Tem uma trilha muiito maneira lá que dá até uma cachoeira e um pequeno lago. Fiquei num [Airbnb](https://www.airbnb.com.br/rooms/17443906) de um senhor muito simpático que já me ajudou no meu péssimo espanhol, a casa era ótima e muito bem localizada, o preço foi ok do meu ponto de vista, **21,26 euros** por 1 dia (que na realidade eu deixei minhas coisas na casa até as 22h do outro dia).
 
 ### Impressões
@@ -171,6 +173,8 @@ De Málaga eu fui para Granada de BlaBlaCar e custou **8,50 euros**.
 
 ### Granada (7/11 - 11/11)
 
+![Alhambra](https://source.unsplash.com/Cdb3-cWZBeo/1600x900)
+
 Uma cidade histórica e com influência árabe extremamente forte, devido ao domínio dos Mouros. A cidade é super bonita e tem uma vista linda para a Sierra Nevada. A cidade tem várias ruas bem estreitas e muitas subidas, você facilmente pode se perder lá, mas no final vai cair em alguma rua com marroquinos te oferecendo qualquer coisa. Fiquei num [Airbnb](https://www.airbnb.com.br/rooms/17070774) bem simples lá, mas com uma internet maravilhosa e bem no centro de tudo! O preço foi bem bacana também, paguei **74,00 euros** pelos 4 dias.
 
 ### Impressões
@@ -198,7 +202,9 @@ De Torrevieja fui para Valência de BlaBlaCar por **13 euros**.
 
 ### Valencia (15/11 - 18/11)
 
-Tem a Cidade das Artes e Ciências, já justifica você ir! Tirando isso, a cidade é super limpa, organizada, fácil de se locomover, incrível. Lá eu fiquei num [Airbnb](https://www.airbnb.com.br/rooms/19393756) tão simpático de um Sírio, um Espanhol e 2 lindos cachorrinhos! Eu olhava pela janela e via a Cidade das Artes na minha frente literalmente, melhor localização impossível e eu paguei **64,14 euros** pelos 3 dias.
+![Cidade das Artes e Ciências](https://source.unsplash.com/SKsf4V9qujM/1600x900)
+
+Tem a Cidade das Artes e Ciências, já justifica você ir! É um conjunto com várias construções enormes, onde tem museu de ciências, aquário, cinema num dome imenso e mais. Tirando isso, a cidade é super limpa, organizada, fácil de se locomover, incrível. Lá eu fiquei num [Airbnb](https://www.airbnb.com.br/rooms/19393756) tão simpático de um Sírio, um Espanhol e 2 lindos cachorrinhos! Eu olhava pela janela e via a Cidade das Artes na minha frente literalmente, melhor localização impossível e eu paguei **64,14 euros** pelos 3 dias.
 
 ### Impressões
 
@@ -210,6 +216,8 @@ Tem a Cidade das Artes e Ciências, já justifica você ir! Tirando isso, a cida
 De Valencia eu fui para Bilbao de BlaBlaCar, sim, é longe para caraaaaamba! Saí as 6h da manhã e fiquei a manhã toda no carro para a Espanha até o norte. Foi carinho, só que mais barato que qualquer trem e mais rápido. Custou **35 euros**.
 
 ### Bilbao (18/11 - 23/11)
+
+![Guggenhein](https://source.unsplash.com/ZB3mkIOycjE/1600x900)
 
 Como eles dizem, você está no País Basco e não na Espanha. Sim, é muito diferente, a arquitetura, a comida (aqui são pintxos ao invés de tapas) e até a língua, que aliás é uma das mais antigas do mundo e que não se parece com absolutamente nada! Fiquei num [Airbnb](https://www.airbnb.com.br/rooms/19572302) super porcaria que na real era uma pensão e tinha um casal em outro quarto que parecia que estava em Amsterdam de tanto que fumavam maconha... E foi caro, não recomendo a ninguém, paguei **143,38 euros** pelas 5 noites.
 
@@ -229,18 +237,21 @@ De Bilbao fui para Santander de BlaBlaCar e me custou **7 euros**.
 
 ### Santander (23/11 - 27/11)
 
-Santander é bem famosa no verão pelas suas praias, eu nem sabia muiito da cidade, mas eu resolvi parar nela porque se aproximava dos Picos de Europa que era onde eu realmente queria ir. Que felicidade que eu parei em Santander! Cidade linda demais, com umas paisagens épicas, tirei tantas fotos de drone nessa cidade que tenho fotos para postar até o ano que vem! Vai lá no meu [Unsplash](https://unsplash.com/collections/1589714/my-adventures-in-spain) e veja algumas fotos do Faro de Cabo Mayor e se você viu a miniatura desse post, é uma foto de lá.
+![Cabo de Faro Mayor](https://source.unsplash.com/HCvTsYtqOpc/1600x900)
 
+Santander é bem famosa no verão pelas suas praias, eu nem sabia muiito da cidade, mas eu resolvi parar nela porque se aproximava dos Picos de Europa que era onde eu realmente queria ir. Que felicidade que eu parei em Santander! Cidade linda demais, com umas paisagens épicas, tirei tantas fotos de drone nessa cidade que tenho fotos para postar até o ano que vem! Vai lá no meu [Unsplash](https://unsplash.com/collections/1589714/my-adventures-in-spain) e veja algumas fotos.
 ### Impressões
 
-- Pessoas muito simpáticas e que adoram conversar
-- Muitos lugares para comer e baratos, **5-8 euros** para um menu
-- Eles deixam a garrafa inteira de vinho na mesa e você não paga mais por isso! Eu me assustei pensando que ia morrer numa grana xD
-- Lindas paisagens no Faro de Cabo Mayor
+* Pessoas muito simpáticas e que adoram conversar
+* Muitos lugares para comer e baratos, **5-8 euros** para um menu
+* Eles deixam a garrafa inteira de vinho na mesa e você não paga mais por isso! Eu me assustei pensando que ia morrer numa grana xD
+* Lindas paisagens no Faro de Cabo Mayor
 
 De Santander eu fui para uma cidade chamada Canga de Onís, que é uma cidade próxima a Covadonga e os Picos de Europa. Tive que ir de bus que era a única alternativa e paguei **13 euros**.
 
 ### Canga de Onís (27/11 - 30/11)
+
+![Lagos de Covadonga](https://source.unsplash.com/uewFv0SEIEM/1600x900)
 
 Fiquei num [Airbnb](https://www.airbnb.com.br/rooms/18388865) de um casal super simpático, mas ele ficava fora da cidade, mesmo assim, foi um dos lugares mais caros da viagem, paguei **104,97 euros** por 3 dias. Mas foi lá que eu tive uma das aventuras mais legais de todas, eu fiz **48km** subindo e descendo montanha para ir no Santuário de Covadonga e os famosos lagos Enol e Ercina. Eu [fiz um post no Facebook sobre](https://www.facebook.com/willjusten/posts/10213253161676193) se quiser rir sobre as coisas que aconteceram, foi bem maneiro e eu fiquei todo quebrado, mas valeu super a pena!
 
@@ -258,9 +269,9 @@ Lá eu fiquei no [Airbnb mais bonito e organizado](https://www.airbnb.com.br/roo
 
 ### Impressões
 
-- A cidade é movimentada pela galera que faz o El Camino de Santiago
-- Mochileiros em todos os cantos
-- Comida barata e boa! Achei menu por **3 euros** e bom!
+* A cidade é movimentada pela galera que faz o El Camino de Santiago
+* Mochileiros em todos os cantos
+* Comida barata e boa! Achei menu por **3 euros** e bom!
 
 De Santiago fui para Vigo, última cidade da viagem, peguei um BlaBlaCar que deu **9 euros**.
 
@@ -270,9 +281,9 @@ Eu já estava bem cansado de pular de cidade em cidade e já tinha visto tudo qu
 
 ### Impressões
 
-- É uma cidade sem muitos atrativos turisticos
-- Fuja dessa cidade em Dezembro, chove todos os dias
-- Comida por um preço razoável, **6-10 euros**
+* É uma cidade sem muitos atrativos turisticos
+* Fuja dessa cidade em Dezembro, chove todos os dias
+* Comida por um preço razoável, **6-10 euros**
 
 ## Conclusão
 
