@@ -2,7 +2,7 @@
 layout: post
 date: '2018-03-16 11:42:05'
 image: /assets/img/willian-justen-de-vasconcellos-441777-unsplash.jpg
-title: Medindo performance do seu site com Lighthouse
+title: Medindo a performance do seu site com Lighthouse
 description: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
 introduction: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
 twitter_text: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
@@ -17,7 +17,7 @@ tags:
 
 Fala pessoal, para quem me segue no [Twitter](https://twitter.com/Willian_justen) deve ter visto que eu ando falando bastante sobre performance e talvez vocês tenham percebido também que o nosso blog lindinho tem estado bem mais rápido e "diferente". Fazia um tempo que eu num estudava um pouquinho e aí usei meu blog como cobaia, porque ele foi criado para isso né.
 
-Eu sou extremamente aficcionado por performance, por mais que o blog já fosse rápido, muitas coisas me deixavam agoniado e quando rodei o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) no meu blog e vi várias notas baixas, foi a gota d'água, eu precisava fazer alguma coisa!
+Eu sou extremamente aficcionado por performance e por mais que o blog já fosse rápido, muitas coisas me deixavam agoniado e quando rodei o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) no blog e vi várias notas baixas, foi a gota d'água, eu precisava fazer alguma coisa!
 
 Eu fiz muiiiitas mudanças no blog, desde o servidor, até fontes e funcionamento offline. E bom, como eu aprendi vários detalhes, por que não compartilhar com vocês? A partir de hoje eu vou começar vários posts sobre tudo que fiz e dicas sobre isso, se você não quiser perder nada, adiciona o [feed do blog](https://willianjusten.com.br/feed.xml) no seu [Feedly](https://feedly.com/) ou me segue no Twitter/Facebook/Slack, acessa o blog todo dia <s>ok, não precisa, mas se quiser...</s>
 
@@ -37,7 +37,7 @@ E da mesma forma que uma boa performance traz dados bons, uma performance com pr
 * [BBC descobriu que eles perdem 10% de usuários a cada segundo adicional ao load do site](https://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale)
 * [DoubleClick da Google descobriu que 53% das visitas a sites via mobile são abandonadas se a página dura mais de 3s para carregar](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/)
 
-É meus amigos, vocês não querem que o usuário abra o seu site e ele demore tanto que o usuário decida sair né? Então performance importa e muito! Não é só para os robôs do Google é para algo maior, os seus usuários.
+É meus amigos, vocês não querem que o usuário abra o seu site e ele demore tanto que o usuário decida sair né? Então performance importa e muito! Não é só para os robôs do Google, é para algo maior, os seus usuários.
 
 ## O que é o Lighthouse?
 
@@ -63,7 +63,7 @@ Eles tem as referências para todas as regras no [site deles](https://developers
 
 ## Como usar?
 
-Existem algumas formas possíveis de utilizar o Lighthouse hoje, elas são:
+Existem algumas formas possíveis de utilizar o Lighthouse hoje, que são:
 
 * [Via extensão no Google Chrome](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) - é atualizada constantemente e abre uma aba nova com o resultado, muito simples de usar.
 * Via aba Audit no Google Chrome DevTools - funciona bem, mas não abre aba nova e tive impressão de uns valores estarem meio errados.
