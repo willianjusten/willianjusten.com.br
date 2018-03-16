@@ -24,10 +24,10 @@ files_to_cache:
  - '/assets/js/main.js'
 
 pages_to_cache:
-  - '/cursos/index.html'
-  - '/series/index.html'
-  - '/about/index.html'
-  - '/tags/index.html'
+  - '/cursos/'
+  - '/series/'
+  - '/about/'
+  - '/tags/'
   - '/offline/index.html'
 
 # Links to include in menu navigation
