@@ -19,7 +19,7 @@ Fala pessoal, para quem me segue no [Twitter](https://twitter.com/Willian_justen
 
 Eu sou extremamente aficcionado por performance e por mais que o blog já fosse rápido, muitas coisas me deixavam agoniado e quando rodei o [Lighthouse](https://developers.google.com/web/tools/lighthouse/) no blog e vi várias notas baixas, foi a gota d'água, eu precisava fazer alguma coisa!
 
-Eu fiz muiiiitas mudanças no blog, desde o servidor, até fontes e funcionamento offline. E bom, como eu aprendi vários detalhes, por que não compartilhar com vocês? A partir de hoje eu vou começar vários posts sobre tudo que fiz e dicas sobre isso, se você não quiser perder nada, adiciona o [feed do blog](https://willianjusten.com.br/feed.xml) no seu [Feedly](https://feedly.com/) ou me segue no Twitter/Facebook/Slack, acessa o blog todo dia <s>ok, não precisa, mas se quiser...</s>
+Eu fiz muiiiitas mudanças no blog, desde o servidor, até fontes e funcionamento offline. E bom, como eu aprendi vários detalhes, por que não compartilhar com vocês? A partir de hoje, vou começar vários posts sobre tudo que fiz e dicas sobre isso, se você não quiser perder nada, adiciona o [feed do blog](https://willianjusten.com.br/feed.xml) no seu [Feedly](https://feedly.com/) ou me segue no Twitter/Facebook/Slack, acessa o blog todo dia <s>ok, não precisa, mas se quiser...</s>
 
 Enquanto eu vou escrevendo esse post, vou ouvindo uma [Playlist](https://open.spotify.com/user/willianjusten/playlist/31qxv1gv7rMf9S3BFcHBob?si=zDTUBl4PQX-RFvFCMvlOfg) que acabei de criar com várias músicas acústicas calminhas e de bandas desconhecidas.
 
