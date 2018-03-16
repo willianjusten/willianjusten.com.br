@@ -24,7 +24,8 @@ files_to_cache:
  - '/assets/js/main.js'
 
 pages_to_cache:
-  - '/cursos/'
+  - '/cursos/index.html'
+  - '/series/index.html'
   - '/about/index.html'
   - '/tags/index.html'
   - '/offline/index.html'
