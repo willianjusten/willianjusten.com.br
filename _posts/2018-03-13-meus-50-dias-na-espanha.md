@@ -51,7 +51,7 @@ Sobre Barcelona, eu já tinha ido numa outra viagem e a cidade é muito lotada, 
 
 ## Como vou separar esse post?
 
-Para ficar melhor organizado, eu vou fazer o seguinte, primeiro eu vou falar sobre os apps/tecnologias que me ajudaram na viagem, tanto na parte de locomoção como hospedagem e busca de lugares para visitar. Aí vou falar sobre a parte do trabalho remoto, como eu separava minha rotina e etc. E no final eu vou escrever mais sobre meu roteiro e experiências. Assim, você pode ler só o quiser (espero que queira ler tudo xD).
+Para ficar melhor organizado, eu vou fazer o seguinte, primeiro eu vou falar sobre os apps/tecnologias que me ajudaram na viagem, tanto na parte de locomoção como hospedagem e busca de lugares para visitar. Aí vou falar sobre a parte do trabalho remoto, como eu separava minha rotina e etc. E no final eu vou escrever mais sobre meu roteiro e experiências. Assim, você pode ler só que o quiser (espero que queira ler tudo xD).
 
 ## A tecnologia ajudando minha vida
 
