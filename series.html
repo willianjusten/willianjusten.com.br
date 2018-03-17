@@ -6,7 +6,7 @@ image: '/assets/img/series.png'
 description: "Aqui ficarão as series em que iremos abordar sobre determinados assuntos."
 ---
 
-{% for tag in site.categories %}
+{% for tag in site.categories reversed %}
   <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] | capitalize }}</span>
   <ul class="post-list">
     {% assign pages_list = tag[1] %}
