@@ -51,25 +51,25 @@ Pega lá um cafézinho e vem comigo, sei que você não gosta de teoria, mas é 
 
 Antes mesmo de começar a falar sobre Testes, precisamos voltar um pouco e falar sobre Qualidade de Software. A nossa preocupação por ter um sistema de qualidade, que nos fez pensar em métodos para garantir isso e daí nasceram os testes! =D
 
-Esse ano eu tive a oportunidade de palestrar na [Imasters DeveloperWeek 2015 - RJ](http://developerweek.imasters.com.br/rio-de-janeiro/) e falei sobre Qualidade de Software, você pode ver os [slides aqui](http://willianjusten.github.io/imasters-2015/#/). E como a palavra *qualidade* é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
+Esse ano eu tive a oportunidade de palestrar na [Imasters DeveloperWeek 2015 - RJ](http://developerweek.imasters.com.br/rio-de-janeiro/) e falei sobre Qualidade de Software, você pode ver os [slides aqui](https://willianjusten.github.io/imasters-2015/#/). E como a palavra *qualidade* é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
 
 <h3 id="qualidade-cliente">Qualidade para o cliente</h3>
 
 Para um cliente, ele quer que tudo esteja funcionando, que seja bonito e o principal, que ele não gaste muito com isso. O medidor de qualidade para o cliente é quando ele faz uma cara mais ou menos assim:
 
-![Foto de um cara sorrindo](http://willianjusten.github.io/imasters-2015/img/visao-cliente.gif)
+![Foto de um cara sorrindo](https://willianjusten.github.io/imasters-2015/img/visao-cliente.gif)
 
 <h3 id="qualidade-chefe">Qualidade para o chefe</h3>
 
 Já para o seu chefe/empresa, qualidade é quando você faz as coisas sem demorar muito ou ter que refazer. Quando ele consegue gerar lucros e o cliente está feliz. Uma imagem que demonstra muito bem o que importa (qualidade) para o seu chefe é:
 
-![Um homem deitado no dinheiro](http://willianjusten.github.io/imasters-2015/img/visao-chefe.gif)
+![Um homem deitado no dinheiro](https://willianjusten.github.io/imasters-2015/img/visao-chefe.gif)
 
 <h3 id="qualidade-dev">Qualidade para o desenvolvedor</h3>
 
 Nós desenvolvedores, obviamente vamos ver qualidade aonde? Se você respondeu no código, ponto para você! Quanto mais fácil de ler e entender o código, mais qualidade ele tem para nós. Assim como você ter uma boa documentação. Segue abaixo uma imagem que descreve bastante nossas reações a códigos bons e ruins:
 
-![Uma imagem com duas portas e pessoas discutindo, uma tem várias reclamações pelo código ruim, a outra tem poucas, pois o código é bom.](http://willianjusten.github.io/imasters-2015/img/visao-programador.png)
+![Uma imagem com duas portas e pessoas discutindo, uma tem várias reclamações pelo código ruim, a outra tem poucas, pois o código é bom.](https://willianjusten.github.io/imasters-2015/img/visao-programador.png)
 
 Pensando num código legível, documentação e agilidade, que nasceu o TDD, trazido pelo Kent Beck, na época da ascenção do Método Ágil.
 
@@ -84,7 +84,7 @@ Neste ambiente, destaca-se o TDD, como sendo uma abordagem evolutiva na qual o d
 
 <h2 id="ciclo">Ciclo de desenvolvimento com TDD</h2>
 
-![Flow de Desenvolvimento com TDD](http://willianjusten.github.io/imasters-2015/img/tdd_flow.gif)
+![Flow de Desenvolvimento com TDD](https://willianjusten.github.io/imasters-2015/img/tdd_flow.gif)
 
 Todos que já viram pelo menos um pouco sobre TDD devem ter visto essa imagem. Ela é basicamente a estrutura do funcionamento da cultura do TDD. Possuindo 3 grandes passos:
 
