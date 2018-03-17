@@ -12,6 +12,8 @@ tags:
   - performance
   - pwa
   - seo
+categories:
+  - "Performance Web"
 ---
 ## Introdução
 
@@ -84,7 +86,7 @@ Cada um desses pontos sempre vem com boas explicações do que fazer para melhor
 
 > Seu site não precisa ter os absolutos 100 em tudo! Existem pontos que você pode ou não mudar. Então analise com calma e veja os prós e contras daquilo que o Google recomenda.
 
-Se o seu site já estiver com **90+**, é um ótimo sinal! E se ele não estiver, também não tem problema, veja os problemas e vá melhorando conforme você achar necessário. 
+Se o seu site já estiver com **90+**, é um ótimo sinal! E se ele não estiver, também não tem problema, veja os problemas e vá melhorando conforme você achar necessário.
 
 ## Conclusão
 
