@@ -50,7 +50,8 @@ Apesar de parecer ser super simples, não é tãaao assim também. Você precisa
 
 ```css
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 ```
 
@@ -58,7 +59,8 @@ E o Medium/Wordpress fazem umas pequenas mudanças e usam:
 
 ```css
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+      Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 ```
 
