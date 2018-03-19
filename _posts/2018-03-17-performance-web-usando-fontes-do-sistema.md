@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-03-17 07:41:16'
+date: '2018-03-19 07:41:16'
 image: /assets/img/alexander-andrews-513060-unsplash.jpg
 title: 'Performance Web: Usando fontes do sistema '
 description: Como algo tão simples como as fontes podem ajudar na performance do seu site.
