@@ -1,7 +1,7 @@
 ---
 layout: post
-date: '2018-03-21 07:55:37'
-image: /assets/img/sawyer-critical.jpg
+date: '2018-03-20 07:55:37'
+image: /assets/img/cover-critical.jpg
 title: 'Perfomance Web: Critical CSS e Jekyll'
 description: >-
   A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica simples
