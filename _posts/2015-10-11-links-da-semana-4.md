@@ -55,7 +55,7 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 
 - [Open Source Society University](https://github.com/open-source-society/computer-science)
 - [N1 - Extensible opensource Mail Client](https://nylas.com/)
-- [Clipboard JS](https://zenorocha.github.io/clipboard.js/)
+- [Clipboard JS](https://clipboardjs.com/)
 - [Accelerated Mobile Pages Project](https://www.ampproject.org/)
 
 ## Variados
