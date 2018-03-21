@@ -26,9 +26,9 @@ Bom, vamos ao post que interessa, mais um pouquinho da minha história em palavr
 
 ![Profile Photo](https://willianjusten.com.br/assets/img/external/willian-profile.jpg)
 
-Olá, meu nome é [Willian Justen](https://twitter.com/Willian_justen) e sou de uma cidade na serra do Rio de Janeiro chamada Petrópolis (carinhosamente apelidada de Silent Hill brasileira). Tenho 27 anos e atualmente sou Desenvolvedor Front-End no Core Team da [Toptal](http://toptal.com/), onde trabalho remotamente com pessoas do mundo todo, mas antes de trabalhar nela, trabalhei também em algumas empresas bem interessantes como [HUGE](http://www.hugeinc.com/), [Globo.com](http://www.globo.com/) e [Queremos/WeDemand](https://queremos.com.br). 
+Olá, meu nome é [Willian Justen](https://twitter.com/Willian_justen) e sou de uma cidade na serra do Rio de Janeiro chamada Petrópolis (carinhosamente apelidada de Silent Hill brasileira). Tenho 27 anos e atualmente sou Desenvolvedor Front-End no Core Team da [Toptal](http://toptal.com/), onde trabalho remotamente com pessoas do mundo todo, mas antes de trabalhar nela, trabalhei também em algumas empresas bem interessantes como [HUGE](http://www.hugeinc.com/), [Globo.com](http://www.globo.com/) e [Queremos/WeDemand](https://queremos.com.br).
 
-Escrevo num [blog pessoal](https://willianjusten.com.br/) e também crio [cursos](https://willianjusten.com.br/cursos), que hoje estão sendo transferidos 
+Escrevo num [blog pessoal](https://willianjusten.com.br/) e também crio [cursos](https://willianjusten.com.br/cursos/), que hoje estão sendo transferidos
 para a plataforma da [Udemy](https://www.udemy.com/user/willian-justen-de-vasconcellos/).
 
 ### Como você conheceu a área de Desenvolvimento?
@@ -55,11 +55,11 @@ Muita gente da área vislumbra poder trabalhar remoto, alguns porque preferem te
 
 ### Como foi o seu primeiro trampo (alocado)?
 
-Eu costumo dizer que tive 2 primeiros trampos na área. O primeiro de todos foi exatamente quando eu saí da Química, eu tinha voltado para minha cidade natal, mas eu não queria ficar parado, já estava "velho" e tinha acabado de desistir de uma faculdade no final, se eu ficasse parado, a família iria encher o saco. 
+Eu costumo dizer que tive 2 primeiros trampos na área. O primeiro de todos foi exatamente quando eu saí da Química, eu tinha voltado para minha cidade natal, mas eu não queria ficar parado, já estava "velho" e tinha acabado de desistir de uma faculdade no final, se eu ficasse parado, a família iria encher o saco.
 
 Eu fui virar então, um professor de cursinho de informática, ensinando Windows, Office, Linux e Redes/Hardware. Pode parecer um emprego bem ruim (na real era mesmo), mas aprendi muitas coisas com ele. Se hoje dou cursos e tenho didática, é porque observei demais como os meus alunos, desde crianças de 7-8 anos até idosos de 70 anos, iam aprendendo e absorvendo as coisas.
 
-O problema desse emprego é que eu não estava necessariamente aprendendo nada novo da área e isso me chateava um pouco. Então na primeira oportunidade eu fui tentar uma vaga de estágio numa agência web em Petrópolis mesmo. E bom, foi lá que tudo começou. 
+O problema desse emprego é que eu não estava necessariamente aprendendo nada novo da área e isso me chateava um pouco. Então na primeira oportunidade eu fui tentar uma vaga de estágio numa agência web em Petrópolis mesmo. E bom, foi lá que tudo começou.
 
 A vaga era para desenvolvedor web, mas eu não sabia praticamente nada de web! O que eu fiz? Bom, uma semana antes de fazer a entrevista, eu resolvi montar um CV diferente, para tentar chamar a atenção, já que eu não tinha tanto conhecimento em web, mas eu já tinha um pouco de conhecimento de Photoshop e outras linguagens. Eu criei então um CV, basicamente uma imagem, utilizando o formato do Windows 8, aquela interface Metro, com ícones e cores flat.
 
@@ -75,7 +75,7 @@ Eu fiquei nessa empresa por 1 ano e meio, quando decidi que queria tentar alguma
 
 ### Como foi o seu primeiro trampo (remoto)?
 
-Bom, essa é uma área relativamente nova para mim. Minha primeira experiência remota foi para uma empresa americana, que eu trabalhei como freela contratado por 3 meses para ajudar a construir um site para um evento. Foi muito legal e muito frustrante ao mesmo tempo. Foi a primeira vez que eu trabalhei tendo que falar numa outra língua que não o Português e bom, eu ficava extremamente nervoso para me comunicar, mas foi aí que eu descobri um primeiro truque. 
+Bom, essa é uma área relativamente nova para mim. Minha primeira experiência remota foi para uma empresa americana, que eu trabalhei como freela contratado por 3 meses para ajudar a construir um site para um evento. Foi muito legal e muito frustrante ao mesmo tempo. Foi a primeira vez que eu trabalhei tendo que falar numa outra língua que não o Português e bom, eu ficava extremamente nervoso para me comunicar, mas foi aí que eu descobri um primeiro truque.
 
 > Se você não conseguir se comunicar bem falando. Escreva! Você vai pensar 2x no que quer falar e aí vai ser mais fácil de ser entendido.
 

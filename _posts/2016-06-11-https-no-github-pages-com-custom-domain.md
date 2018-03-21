@@ -27,13 +27,13 @@ Vou ouvindo uma playlist que tem combinado um pouco com meus últimos dias, [Lif
 
 Primeiro de tudo, precisamos entender o que é HTTPS. O **HTTPS** é uma implementação do protocolo HTTP já conhecido, sobre uma camada adicional de segurança que utiliza o protocolo **SSL/TLS**. Essa camada adicional permite que os dados sejam transmitidos por meio de uma conexão criptografada e também é feita uma verificação de autenticidade do servidor e do cliente por meio de certificados digitais.
 
-Esse protocolo ficou mais famoso inicialmente em ecommerces, pois esse tipo de serviço é o mais importante para se ter segurança e passou a ser obrigatório para quase todos gateways de pagamento. 
+Esse protocolo ficou mais famoso inicialmente em ecommerces, pois esse tipo de serviço é o mais importante para se ter segurança e passou a ser obrigatório para quase todos gateways de pagamento.
 
 Mas você pode ter esse protocolo em qualquer site, inclusive, a [Google fez um post](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) falando que irá utilizar o HTTPS como um elemento para pontuação nas buscas, então vale bastante a pena.
 
 ## Como fazer?
 
-Bom, o primeiro de tudo é, você sabe como fazer uma página no Github Pages? Caso não saiba, dá uma olhada nesse [meu curso de Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll), lá eu ensino a criar um blog do zero e subir no Github Pages.
+Bom, o primeiro de tudo é, você sabe como fazer uma página no Github Pages? Caso não saiba, dá uma olhada nesse [meu curso de Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/), lá eu ensino a criar um blog do zero e subir no Github Pages.
 
 A segunda pergunta é, você sabe como fazer um Custom Domain? Não? Então dá uma olhada [nesse post sobre como ter domínio próprio no Github Pages](https://willianjusten.com.br/dominio-proprio-no-github-pages/). Tendo isso feito, só partir para a real tarefa do dia =)
 
@@ -92,18 +92,3 @@ Se for um blog que vocês estão mudando e utilizarem o disqus, vocês vão prec
 ## Conclusão
 
 Bom pessoal, foi um post bem simples, fiz mais até para salvar o procedimento, vai que no futuro eu precise fazer de novo né? Eu tinha ficado feliz quando vi que teria https no Github Pages, mas quando vi que não funcionaria em Custom Domain, fiquei tristinho e por isso fui ver como resolver o problema. Se você passou pelo mesmo que eu, só seguir aí, que vai funcionar beleza =)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

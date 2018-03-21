@@ -85,10 +85,9 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Codrops](http://tympanus.net/codrops/) - o melhor blog para buscar boas referências e tutoriais sobre coisas voadoras de front.
 - [Smashing Magazine](https://www.smashingmagazine.com/) - outro blog referência para front, com artigos sobre diversos assuntos, como performance, UX, novas metodologias.
 - [CSS Tricks](http://css-tricks.com/) - quem nunca caiu no CSS-tricks numa busca no Google? O blog tem de tudo, muitos tutoriais de CSS, SVG e JS.
-- [CSS Wizardry](http://csswizardry.com/) - blog do criador do ITCSS, tem bastante coisa sobre boas práticas de CSS.
+- [CSS Wizardry](https://csswizardry.com/) - blog do criador do ITCSS, tem bastante coisa sobre boas práticas de CSS.
 - [David Walsh](https://davidwalsh.name/) - esse cara escreve muito há anos, sempre com novas dicas sobre JS e coisas para desenvolvimento.
-- [Sara Soueidan Blog](https://sarasoueidan.com/articles/) - sou fã demais dessa mulher, a maior referência de SVG do mundo!
-- [Una Kravets Blog](https://una.im/) - desenvolvedora na DigitalOcean sempre trás muitos assuntos legais.
+- [Sara Soueidan Blog](https://sarasoueidan.com/blog/) - sou fã demais dessa mulher, a maior referência de SVG do mundo!
 - [A List Apart](http://alistapart.com/) - um blog escrito por várias autoridades de desenvolvimento.
 - [Sitepoint](https://www.sitepoint.com/) - como se entitulam um blog de desenvolvedores para desenvolvedores.
 - [Mozilla Hacks](https://hacks.mozilla.org/) - novidades da Mozilla para desenvolvedores web.
@@ -100,9 +99,9 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 #### Em português
 
 - [Esse blog lindo](https://willianjusten.com.br/) - um blog que de vez em quando escreve algo que presta =)
-- [Tableless](http://tableless.com.br/) - blog bem antigo na área, com bastante conteúdo sobre diversas áreas.
+- [Tableless](https://tableless.com.br/) - blog bem antigo na área, com bastante conteúdo sobre diversas áreas.
 - [Blog do Maujor](http://www.maujor.com/blog/) - como não falar dessa lenda? Muito material bom lá.
-- [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
+- [Felipe Fialho Blog](https://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
 - [Da2k](http://blog.da2k.com.br/) - blog de outro amigão o Fernando Daciuk, com posts super completos de JS.
 - [Nando Moreira Blog](https://nandomoreira.me/blog/) - o cara que mais muda de layout para blog na face da Terra! Tem bastante coisa legal lá, vale a leitura.
 - [Arquitetura de Informação](http://arquiteturadeinformacao.com/) - blog bem legal sobre usabilidade, user experience, design, tecnologia e comportamento.
@@ -128,9 +127,8 @@ Weekly é um conjunto de links, como o nome já diz, semanal. Dos trocentos link
 
 - [BrazilJS Weekly](https://braziljs.org/#weekly) - a weekly mais famosa de desenvolvimento no Brasil.
 - [Web Design Weekly](https://web-design-weekly.com/) - muitos artigos sobre desenvolvimento em geral.
-- [Frontend Focus](http://html5weekly.com/) - antiga html5weekly, focando em bastante conteúdo de canvas, webGL, etc.
+- [Frontend Focus](https://frontendfoc.us/) - antiga html5weekly, focando em bastante conteúdo de canvas, webGL, etc.
 - [Javascript Weekly](http://javascriptweekly.com/) - weekly totalmente focada em JS.
-- [FiveJS](https://fivejs.codeschool.com/) - patrocinada pela CodeSchool, são 5 vídeos/links sobre JS da semana.
 - [Web Tools Weekly](http://webtoolsweekly.com/) - já pensou numa newsletter falando sobre ferramentas para te ajudar
 - [Umaar Hansa Dev Tips](https://umaar.com/dev-tips/) - Uma weekly para acompanhar as novas features e recursos do Devtools do Chrome
 - [Accessibility Weekly](http://a11yweekly.com/) - Uma weekly focado em recursos de acessibilidade e diversas dicas sobre o assunto.

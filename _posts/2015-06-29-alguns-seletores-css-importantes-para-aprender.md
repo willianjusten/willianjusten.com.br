@@ -111,7 +111,7 @@ Para selecionar o primeiro e o último filho de um elemento. Um dos pseudo-selet
 
 ## A:checked
 
-Seletor utilizado em inputs do tipo `radio` e `checkbox`, serve para várias coisas legais, bastante utilizado em interações sem precisar usar uma linha de JS. Se quiser ver uns exemplos maneiros, tem esse [projeto do Felipe Fialho](http://www.felipefialho.com/css-components/).
+Seletor utilizado em inputs do tipo `radio` e `checkbox`, serve para várias coisas legais, bastante utilizado em interações sem precisar usar uma linha de JS. Se quiser ver uns exemplos maneiros, tem esse [projeto do Felipe Fialho](https://www.felipefialho.com/css-components/).
 
 E aqui um exemplo simples:
 

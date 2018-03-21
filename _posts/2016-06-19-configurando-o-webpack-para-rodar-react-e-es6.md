@@ -30,7 +30,7 @@ Bom, eu falei que o webpack é um `module loader`, mas que desgraça é essa? Fo
 
 Existem outros do gênero como o [Browserify](http://browserify.org/), que trabalha com a estrutura de CommonJS para requerer novos módulos, por exemplo.
 
-Os criadores do webpack fizeram [uma página](http://webpack.github.io/docs/motivation.html) explicando as motivações para a criação desse projeto, se você estiver interessado em saber mais um pouquinho, vai lá.
+Os criadores do webpack fizeram [uma página](https://webpack.js.org/concepts/manifest/) explicando as motivações para a criação desse projeto, se você estiver interessado em saber mais um pouquinho, vai lá.
 
 ## Instalando o webpack
 

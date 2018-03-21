@@ -28,7 +28,7 @@ Vou falando e ouvindo [um álbum de remixes do Ludovico Einaudi](https://open.sp
 
 Já fiz dois posts sobre esse tipo de técnica em SVG. Um sobre [sistemas de ícones em SVG](http://willianjusten.com.br/sistemas-de-icones-em-svg/) e um outro sobre a [própria técnica](http://willianjusten.com.br/usando-svg-sprites/) de utilizar sprites em SVG.
 
-A prática consiste basicamente em você ter um arquivo com vários ícones, famoso sprite, com cada ícone sendo um `symbol` do SVG referenciado pelo seu id. 
+A prática consiste basicamente em você ter um arquivo com vários ícones, famoso sprite, com cada ícone sendo um `symbol` do SVG referenciado pelo seu id.
 
 Um exemplo de sprite svg seria:
 
@@ -100,7 +100,7 @@ Essa forma simplificada é destinada para se criar componentes que não vão ter
 // Definimos a url onde se encontra o sprite
 const url = 'http://willianjusten.com.br/assets/img/react-svg/sprite.svg';
 
-// Aqui criamos um componente 
+// Aqui criamos um componente
 // que irá gerar nosso ícone SVG
 const Icon = (props) => (
   <svg viewBox='0 0 16 16' className={`icon icon-${props.icon}`}>
@@ -108,7 +108,7 @@ const Icon = (props) => (
   </svg>
 );
 
-// Aqui chamamos nossos ícones 
+// Aqui chamamos nossos ícones
 // passando a propriedade "icon"
 ReactDOM.render(
   <div class="icons">
@@ -129,13 +129,10 @@ Segue o exemplo funcional:
 <p data-height="300" data-theme-id="11319" data-slug-hash="bedoLV" data-default-tab="result" data-user="willianjusten" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/willianjusten/pen/bedoLV/">SVG Sprites with React</a> by Willian Justen de Vasconcellos (<a href="http://codepen.io/willianjusten">@willianjusten</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Se você estiver com dúvidas no ES6, como funciona esse tal de `const`, `fat arrow` e agora esse tal de `template string`, aconselho o [Blog do Nipher](http://nipher.io/series), onde ele explica isso muito bem.
+Se você estiver com dúvidas no ES6, como funciona esse tal de `const`, `fat arrow` e agora esse tal de `template string`, aconselho o [Blog do Nipher](https://nipher.io/series), onde ele explica isso muito bem.
 
 ## Conclusão
 
 Bom galera, post bastante simples, mas muito importante, tanto para o ecossistema React, quanto para o SVG. É importante que você tente ao máximo criar funções puras para ter mais performance na sua aplicação React. E também é bastante importante que você utilize Sprites SVG para diminuir o número de requisições e também possuir ícones que se adaptam em qualquer tipo de tela.
 
 Se você estiver com dúvidas em SVG e quiser saber mais, aproveita que até dia **05/06** meu curso está com o desconto da pré-venda, você pode saber [mais informações aqui](http://willianjusten.com.br/pre-venda-curso-de-svg/).
-
-
-

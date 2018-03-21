@@ -32,7 +32,7 @@ E para fazer isso, não é tão complicado, mas demanda alguns "pulos do gato", 
 
 ## Wrapper com margem negativa
 
-Uma das formas mais comuns é criar um elemento que segura todo o conteúdo exceto o footer. E ele tem uma margem da altura do footer, que é a base [desse site](http://ryanfait.com/html5-sticky-footer/). Então para fazer isso, fazemos o seguinte:
+Uma das formas mais comuns é criar um elemento que segura todo o conteúdo exceto o footer e ele tem uma margem da altura do footer. Então para fazer isso, fazemos o seguinte:
 
 ```html
     <body>
@@ -227,19 +227,3 @@ Bom pessoal, foi um post rapidinho e simples, só mesmo para que vocês vejam as
 Se você gostou do post, não deixe de comentar, curtir, compartilhar =)
 
 Também lembrando aqui, que a promoção de [pré-venda](http://willianjusten.com.br/pre-venda-curso-de-svg/) do meu Curso de SVG está chegando ao fim, esse domingo (05/06) é o último, então corre para aproveitar o descontão!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

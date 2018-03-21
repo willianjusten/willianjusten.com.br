@@ -16,7 +16,7 @@ introduction: "Confesso que o Sublime é meu amorzinho, nele eu consigo ser prod
 
 ## Introdução
 
-Faaaala galera! (roubando aqui a clássica fala do [Daniel Filho](https://twitter.com/danielfilho)). Esses dias eu liberei meu curso sobre como desenvolver sites estáticos utilizando Jekyll bem [aqui](http://willianjusten.teachable.com) e uma coisa que muitos vieram perguntar foram quais plugins e temas eu utilizo no meu Sublime. Como eu também sou um cara super curioso no que os outros usam e vivo caçando plugins, resolvi escrever o que uso.
+Faaaala galera! (roubando aqui a clássica fala do [Daniel Filho](https://twitter.com/danielfilho)). Esses dias eu liberei meu curso sobre como desenvolver sites estáticos utilizando Jekyll bem [aqui](https://www.udemy.com/criando-sites-estaticos-com-jekyll/) e uma coisa que muitos vieram perguntar foram quais plugins e temas eu utilizo no meu Sublime. Como eu também sou um cara super curioso no que os outros usam e vivo caçando plugins, resolvi escrever o que uso.
 
 Vai ser um post bem rapidinho e a ideia é que todo mundo compartilhe aqui os plugins que utiliza e que eu não listei, sempre bom saber de algo que pode acelerar meu desenvolvimento.
 
@@ -49,7 +49,7 @@ Bom, o Sublime já vem com a maioria dos Highlights para as principais linguagen
 - [Stylus Syntax](https://github.com/billymoon/Stylus)
 - [Liquid Syntax](https://github.com/siteleaf/liquid-syntax-mode)
 
-## Git 
+## Git
 
 Todo mundo aqui usa Git né (quem não usa, deveria =p), e uma das coisas que eu fazia muito era ficar digitando `git status` para saber quais linhas eu alterei antes de dar o push, foi aí que descobri o maravilhoso [Sublime Git Gutter](https://github.com/jisaacks/GitGutter), ele coloca do lado um aviso das coisas que mudei, não é incrível?
 
@@ -107,7 +107,3 @@ Você pode usar para metrificar seus freelas, mas também pode usar só de curio
 ## Conclusão
 
 Bom pessoal, tema light e rapidinho, mas com coisinhas bem interessantes, espero que vocês gostem e não esqueçam de falar o que utilizam nos comentários abaixo, adoro descobrir plugins novos!!
-
-
-
-

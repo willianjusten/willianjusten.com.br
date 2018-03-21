@@ -32,7 +32,7 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 - [Nanoflux is a very lightweight agnostic full Flux implementation.](https://www.npmjs.com/package/nanoflux)
 - [Lazy, composable, and modular JavaScript](https://codewords.recurse.com/issues/four/lazy-composable-and-modular-javascript)
 - [Lazyload](http://verlok.github.io/lazyload/)
-- [From Rest to GraphQL](https://blog.jacobwgillespie.com/from-rest-to-graphql-b4e95e94c26b)
+- [From Rest to GraphQL](https://0x2a.sh/from-rest-to-graphql-b4e95e94c26b)
 - [Checklist for your new Open Source JavaScript Project](https://ericdouglas.github.io/2015/09/27/checklist-for-your-new-open-source-javascript-project/)
 
 ## Python
@@ -43,8 +43,8 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 
 ## CSS
 
-- [Why You Need to Refactor Your CSS](http://seesparkbox.com/foundry/why_you_need_to_refactor_your_css)
-- [CSS Modules](http://glenmaddern.com/articles/css-modules)
+- [Why You Need to Refactor Your CSS](https://seesparkbox.com/foundry/why_you_need_to_refactor_your_css)
+- [CSS Modules](https://glenmaddern.com/articles/css-modules)
 
 ## Workflow
 
@@ -54,8 +54,8 @@ Fala pessoal, resolvi voltar a postar os links que mais curti durante a semana. 
 ## Open Source
 
 - [Open Source Society University](https://github.com/open-source-society/computer-science)
-- [N1 - Extensible opensource Mail Client](https://nylas.com/N1)
-- [Clipboard JS](http://zenorocha.github.io/clipboard.js/)
+- [N1 - Extensible opensource Mail Client](https://nylas.com/)
+- [Clipboard JS](https://zenorocha.github.io/clipboard.js/)
 - [Accelerated Mobile Pages Project](https://www.ampproject.org/)
 
 ## Variados

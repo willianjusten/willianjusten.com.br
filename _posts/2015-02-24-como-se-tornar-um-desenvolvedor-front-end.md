@@ -150,7 +150,7 @@ Eles são basicamente o nosso braço direito, é importante escolher um editor q
 #### Sublime Text
 
 - [12 Most-Wanted Sublime Text Tips And Tricks](http://www.hongkiat.com/blog/sublime-text-tips/)
-- [7 Plugins do sublime que você deveria conhecer](http://tableless.com.br/7-plugins-sublime-text-que-voce-deveria-conhecer/)
+- [7 Plugins do sublime que você deveria conhecer](https://tableless.com.br/7-plugins-sublime-text-que-voce-deveria-conhecer/)
 
 #### Brackets
 
@@ -172,7 +172,7 @@ Se você quer ser realmente um programador bom, vai ter que largar esse medo e c
 - [Unix: Conceitos e Comandos Básicos](http://www.ime.usp.br/~ueda/ldoc/rb.html)
 - [Unix Course](http://www.tutorialspoint.com/unix/)
 - [Learn Shell](http://learnshell.org/)
-- [Learning the Shell](http://linuxcommand.org/learning_the_shell.php)
+- [Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)
 - [Blog do Vitor Britto](http://vitorbritto.com.br/blog/) - Esse cara vira e mexe solta alguma dica muito legal sobre.
 
 ---
@@ -187,10 +187,9 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [Teamtreehouse](http://teamtreehouse.com/library/topic:learn-html/type:course)
 - [CodeSchool](https://www.codeschool.com/paths/html-css)
 - [30 Days to Learn Html and CSS](https://www.youtube.com/watch?v=yTHTo28hwTQ&list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
-- [Learn to code Html & CSS](http://learn.shayhowe.com/)
+- [Learn to code Html & CSS](https://learn.shayhowe.com/)
 - [Apostila Web da Caelum](http://www.caelum.com.br/apostila-html-css-javascript/)
-- [Dive into Html5 em Português](http://diveintohtml5.com.br/)
-- [HTML Cheat Sheet](https://digital.com/tools/html-cheatsheet/)
+- [Dive into Html5 em Português](https://diveintohtml5.com.br/)
 
 #### Semântica
 - [Use Html5 sectioning elements](http://blog.teamtreehouse.com/use-html5-sectioning-elements)
@@ -198,7 +197,7 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [A semântica do HTML](https://speakerdeck.com/diegoeis/a-semantica-do-html)
 
 ### Acessibilidade
-- [Slides de Acessibilidade na web](http://tableless.com.br/slides-para-devs-9-acessibilidade-na-web/)
+- [Slides de Acessibilidade na web](https://tableless.com.br/slides-para-devs-9-acessibilidade-na-web/)
 - [WebAIM](http://webaim.org/intro/)
 
 ---
@@ -219,12 +218,12 @@ No início era só um modo de deixar as páginas um pouquinhos mais bonitas, hoj
 
 - [Css3 for web Designers - Book](http://www.abookapart.com/products/css3-for-web-designers)
 - [The Guide to CSS Animation](http://www.smashingmagazine.com/2011/09/14/the-guide-to-css-animation-principles-and-examples/)
-- [Transition e Animation](http://tableless.com.br/transition-e-animation/)
+- [Transition e Animation](https://tableless.com.br/transition-e-animation/)
 - [MDN: CSS Animations](https://developer.mozilla.org/pt-BR/docs/CSS/Using_CSS_animations)
 
 #### Frameworks / Grids / Responsive
 
-- [Utilizando o bootstrap de forma consistente](http://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/)
+- [Utilizando o bootstrap de forma consistente](https://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/)
 - [Desenvolvendo com Bootstrap 3](http://thiagonasc.com/desenvolvimento-web/desenvolvendo-com-bootstrap-3-um-framework-front-end-que-vale-a-pena)
 - [Snippets para Bootstrap](http://bootsnipp.com/)
 - [Foundation 5 para iniciantes - video](http://dev.rbtech.info/zurb-foundation-5-iniciantes-aula-1/)
@@ -244,9 +243,9 @@ No início era só um modo de deixar as páginas um pouquinhos mais bonitas, hoj
 #### Metodologias / Boas Práticas
 
 - [How to structure a Sass project](http://thesassway.com/beginner/how-to-structure-a-sass-project)
-- [Css Performance Organization](http://learn.shayhowe.com/advanced-html-css/performance-organization/)
+- [Css Performance Organization](https://learn.shayhowe.com/advanced-html-css/performance-organization/)
 - [OOCSS, SMACSS](http://www.slideshare.net/maxdesign/css-oocss-and-smacss)
-- [Understanding BEM syntax](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+- [Understanding BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 - [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
 
 #### Inpirações / Tutoriais
@@ -268,7 +267,7 @@ Tome bastante cuidado ao querer tomar atalhos, como utilizar JQuery para tudo ou
 
 No início é comum utilizarmos plugins prontos para realizar ações específicas (sliders, lightbox), mas com o tempo vai se fazendo necessário criar soluções únicas e para isso que precisamos entender bem a linguagem.
 
-A Ju Goncalves fez um [post bem legal](http://jugoncalv.es/blog/javascript/how-to-start-with-javascript/) aconselhando livros e outros detalhes legais, aconselho a leitura.
+A Ju Goncalves fez um [post bem legal](http://jugoncalv.es/blog/javascript/how-to-start-with-javascript) aconselhando livros e outros detalhes legais, aconselho a leitura.
 
 O Vitor Britto também fez outro [incrível post](http://www.vitorbritto.com.br/blog/the-book-is-on-the-table/) falando sobre livros de JS.
 
@@ -280,12 +279,12 @@ O Vitor Britto também fez outro [incrível post](http://www.vitorbritto.com.br/
 
 <h2 id="git">Controle de Versão</h2>
 
-Quantas vezes você já se pegou fazendo 1000 backups só para não perder certas versões dos arquivos? E se isso pudesse ser feito de uma forma mais fácil e ainda permitisse muito mais? Para isso temos ferramentas de controle de versão, sendo o [Git](http://git-scm.com/) e o [SVN](http://tortoisesvn.net/) os mais famosos. Se você quiser brincar com o [github](http://github.com), o git será a pedida.
+Quantas vezes você já se pegou fazendo 1000 backups só para não perder certas versões dos arquivos? E se isso pudesse ser feito de uma forma mais fácil e ainda permitisse muito mais? Para isso temos ferramentas de controle de versão, sendo o [Git](http://git-scm.com/) e o [SVN](https://tortoisesvn.net/) os mais famosos. Se você quiser brincar com o [github](http://github.com), o git será a pedida.
 
 A maioria das empresas utiliza um desses dois para poder organizar melhor seu código, além de poder versionar, o git permite um controle dos colaboradores, controle de flow, separação em branches e muito mais.
 
 #### Básico
-- [Meu curso de Git e Github para iniciantes](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes)
+- [Meu curso de Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
 - [Try Git - Code School](https://try.github.io/levels/1/challenges/1)
 - [Guia prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 - [Introdução ao git e github - Vídeo](https://www.youtube.com/watch?v=yNwh0S0S0bU)
@@ -305,9 +304,9 @@ E qual a importância disso? Estar bem posicionado nos mecanismos de busca lhe p
 
 Nem todo desenvolvedor Front End precisa ser o mestre de tudo em SEO, podemos deixar isso para especialistas, mas algumas informações básicas é importante também.
 
-- [Agência Mestre - MestreSEO](http://www.agenciamestre.com/)
+- [Agência Mestre - MestreSEO](https://www.agenciamestre.com/)
 - [Como melhorar meu SEO?](http://willianjusten.com.br/como-melhorar-meu-seo/)
-- [Dicas de SEO para Front-end](http://tableless.com.br/dicas-de-seo-para-front-end/)
+- [Dicas de SEO para Front-end](https://tableless.com.br/dicas-de-seo-para-front-end/)
 
 ---
 
@@ -321,16 +320,16 @@ O [Davidson Fellipe](https://twitter.com/davidsonFellipe) fez uma awesome só di
 
 <h2 id="task">Automação de Tarefas</h2>
 
-Durante o percurso de frontend, principalmente na parte de performance você irá ver que muitas tarefas se tornam bastante repetitivas, como compilar o css, minificar javascript e etc. Para facilitar essas tarefas, temos essas ferramentas de automação. Existem várias, mas dentre as puramente Javascript e que se tem mais utilizado na área de Front End, temos o [Grunt](http://gruntjs.com/) e o [Gulp](http://gulpjs.com/).
+Durante o percurso de frontend, principalmente na parte de performance você irá ver que muitas tarefas se tornam bastante repetitivas, como compilar o css, minificar javascript e etc. Para facilitar essas tarefas, temos essas ferramentas de automação. Existem várias, mas dentre as puramente Javascript e que se tem mais utilizado na área de Front End, temos o [Grunt](https://gruntjs.com/) e o [Gulp](http://gulpjs.com/).
 
-- [State of Grunt](http://cowboy.github.io/state-of-grunt-fe-summit-2014-talk)
+- [State of Grunt](https://cowboy.github.io/state-of-grunt-fe-summit-2014-talk)
 - [Gulp - The vision, history and future of the project](https://medium.com/@contrahacks/gulp-3828e8126466)
-- [Grunt vs Gulp - Beyond Numbers](http://jaysoo.ca/2014/01/27/gruntjs-vs-gulpjs/)
-- [Building with Gulp](http://www.smashingmagazine.com/2014/06/11/building-with-gulp/)
-- [Slides of Gulp](http://slides.com/contra/gulp)
-- [Gulp, Grunt, Whatever](http://ponyfoo.com/articles/gulp-grunt-whatever)
-- [Gulp: O novo automatizador](http://tableless.com.br/gulp-o-novo-automatizador/)
-- [Bye bye Grunt.js, hello Gulp.js!](http://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/)
+- [Grunt vs Gulp - Beyond Numbers](https://jaysoo.ca/2014/01/27/gruntjs-vs-gulpjs/)
+- [Building with Gulp](https://www.smashingmagazine.com/2014/06/11/building-with-gulp/)
+- [Slides of Gulp](https://slides.com/contra/gulp)
+- [Gulp, Grunt, Whatever](https://ponyfoo.com/articles/gulp-grunt-whatever)
+- [Gulp: O novo automatizador](https://tableless.com.br/gulp-o-novo-automatizador/)
+- [Bye bye Grunt.js, hello Gulp.js!](https://blog.caelum.com.br/bye-bye-grunt-js-hello-gulp-js/)
 
 ---
 
@@ -350,7 +349,7 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 #### Weeklys
 
 - [Web Design Weekly](http://web-design-weekly.com/)
-- [Html5 Weekly](http://html5weekly.com/)
+- [Frontend Focus](https://frontendfoc.us/)
 - [Css Weekly](http://css-weekly.com/)
 - [Javascript Weekly](http://javascriptweekly.com/)
 
@@ -362,9 +361,8 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 - [Css-tricks](http://css-tricks.com/)
 - [Smashing Magazine](http://www.smashingmagazine.com/)
 - [Da2k Blog](http://blog.da2k.com.br/) - PtBr
-- [Nomadev](http://nomadev.com.br/) - PtBr
 - [Leandro Oriente Blog](http://leandrooriente.com/) - PtBr
-- [Felipe Fialho Blog](http://www.felipefialho.com/blog/) - PtBr
+- [Felipe Fialho Blog](https://www.felipefialho.com/blog/) - PtBr
 
 #### Eventos
 
@@ -400,4 +398,4 @@ Para os mais experientes, faltou alguma coisa muito importante que esqueci de fa
 - [Guia Front-end das Galáxias](http://pt.slideshare.net/davidsonfellipe/guia-do-front-end-das-galaxias)
 - [Google Trends](http://www.google.com.br/trends/explore#q=frontend%20developer&cmpt=q&tz=)
 - [Como me tornar um desenvolvedor front end](http://leandrooriente.com/como-me-tornar-um-desenvolvedor-front-end/)
-- [Como se tornar um dev front-end](http://tableless.com.br/tornar-dev-front-end/)
+- [Como se tornar um dev front-end](https://tableless.com.br/tornar-dev-front-end/)

@@ -46,9 +46,8 @@ Sendo assim e sem mais delongas, irei dedicar um dia para compartilhar os links 
 - [React in 7 Minutes](https://egghead.io/lessons/react-react-in-7-minutes) - egghead, mesmo criador de vários vídeos de Angular resolve falar um pouco de React.
 
 ### Etc
-* [Google Analytics Alternatives](https://limelight.link/sites/day/20150128) - alternativas ao Google Analytics para mapear as informações de acesso do seu site.
 * [Tech Trends 2015](http://www.frogdesign.com/techtrends2015/) - algumas das tendências para 2015 de acordo com a Frog.
-* [Formatting Academic Publications in HTML & CSS](http://thomaspark.me/2015/01/pubcss-formatting-academic-publications-in-html-css/) - para quem faz trabalhos acadêmicos é algo bem interessante.
+* [Formatting Academic Publications in HTML & CSS](https://thomaspark.me/2015/01/pubcss-formatting-academic-publications-in-html-css/) - para quem faz trabalhos acadêmicos é algo bem interessante.
 * [SVG OMG](https://jakearchibald.github.io/svgomg/) - uma GUI para o SVGO online <3
 * [Hipster Logo Generator](http://www.hipsterlogogenerator.com/) - um gerador de logos hipster, bem divertido para brincar.
 * [Pokemon Branding](http://pictogram.agency/pokemonbranding/) - uns conceitos de design interessantes utilizando pokemons <3

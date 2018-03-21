@@ -14,7 +14,7 @@ twitter_text: "Como criar seções fullscreen com CSS e chamar atenção dos usu
 introduction: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units."
 ---
 
-## Introdução 
+## Introdução
 
 O som de hoje fica com uma banda brasileira que mescla MPB e Rock e chama [Maglore](https://open.spotify.com/artist/24me6m3bV7l2rnUwaXV0Tj), curti bastante o som deles, espero que curtam também =)
 
@@ -43,11 +43,6 @@ Seguem alguns exemplos de sites que utilizam dessa técnica:
 
 ![Cameo](/assets/img/header-full/header-1.png)
 [Cameo - Vimeo](https://vimeo.com/cameo)
-
----
-
-![Take It app](/assets/img/header-full/header-2.png)
-[Take It App](http://www.takeitapp.co/en)
 
 ---
 
@@ -130,15 +125,3 @@ Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, e
 
 Bom, esse foi um post rapidinho, espero que ajude quem ainda tinha essa dúvida e para lembrar que CSS é demais e podemos fazer muitas coisas com ele =)
 Se alguém tiver alguma dúvida sobre qualquer coisa, pode mandar nos comentários, email ou redes sociais e eu terei o maior prazer de tentar ajudar.
-
-
-
-
-
-
-
-
-
-
-
-

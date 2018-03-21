@@ -112,7 +112,7 @@ O curso começa agora e nunca termina! Você quem irá decidir quando começar e
 
 ### 9) Como funciona o curso?
 
-São vários módulos divididos em pequenos vídeos, cada módulo tem o intuito de ensinar algum conceito básico e importante sobre Boas Práticas e Testes. Após todos os módulos, você estará apto a criar aplicações javascript modernas e com qualidade. Se quiser, dá uma olhada nos [cursos disponíveis](https://willianjusten.com.br/cursos), tem cursos gratuitos lá para você poder ver o que acha.
+São vários módulos divididos em pequenos vídeos, cada módulo tem o intuito de ensinar algum conceito básico e importante sobre Boas Práticas e Testes. Após todos os módulos, você estará apto a criar aplicações javascript modernas e com qualidade. Se quiser, dá uma olhada nos [cursos disponíveis](https://willianjusten.com.br/cursos/), tem cursos gratuitos lá para você poder ver o que acha.
 
 ---
 

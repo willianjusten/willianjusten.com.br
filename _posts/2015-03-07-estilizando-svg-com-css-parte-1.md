@@ -105,7 +105,7 @@ Quando você quiser separar totalmente a estrutura do estilo, você pode criar u
 
 ## Peso das propriedades
 
-![Peso das propriedades](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2014/10/04-diagram-opt.jpg)
+![Peso das propriedades](/assets/img/estilizando-svg/css-specificity.jpg)
 
 Na imagem acima os elementos na parte inferior sobreescrevem os elementos anteriores, ou seja, um estilo inline irá sobreescrever um estilo em um arquivo externo. Vamos a um exemplo para entedermos melhor:
 

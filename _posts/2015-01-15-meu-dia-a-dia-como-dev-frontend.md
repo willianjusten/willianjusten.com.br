@@ -28,9 +28,9 @@ O [Fernando Daciuk](https://github.com/fdaciuk) já fez o [post dele](http://blo
 
 ![Mesa de trabalho](/assets/img/workflow/mesa.jpg)
 
-Eu uso um Macbook Air 13", tanto em casa, quanto no [Queremos!](http://www.queremos.com.br/), não ligo muito para guerrinha Apple x PC, mas dei preferência ao Air por ser bastante leve e fino, como eu ando bastante, é bem melhor carregar uma coisa levinha do que um trambolho gigante e pesado.
+Eu uso um Macbook Air 13", tanto em casa, quanto no [Queremos!](https://www.queremos.com.br/), não ligo muito para guerrinha Apple x PC, mas dei preferência ao Air por ser bastante leve e fino, como eu ando bastante, é bem melhor carregar uma coisa levinha do que um trambolho gigante e pesado.
 
-Utilizei durante muito tempo notebooks da Dell e meu último foi da Samsung (acho que ele me traumatizou)... Neles eu sempre utilizei Linux, comecei com o [Ubuntu](http://www.ubuntu.com/) e depois fui parar no lindo [Elementary](http://elementaryos.org/) (que inclusive é bastante similar ao Mac OS e facilitou a transição).
+Utilizei durante muito tempo notebooks da Dell e meu último foi da Samsung (acho que ele me traumatizou)... Neles eu sempre utilizei Linux, comecei com o [Ubuntu](http://www.ubuntu.com/) e depois fui parar no lindo [Elementary](https://elementaryos.org/) (que inclusive é bastante similar ao Mac OS e facilitou a transição).
 
 Praticamente não consigo trabalhar em uma tela só, então no trabalho eu uso um monitor de 23" FullHD da LG e em casa utilizo um de 25" da Samsung. Não sou altamente crítico com monitor não, contanto que tenha uma resolução e tela grandes, está ótimo.
 
@@ -64,11 +64,3 @@ Eu mudo bastante as ferramentas e tecnologias de acordo com os projetos, mas o q
 Eu tenho um boilerplate que uso bastante e adapto bastante também, que é o [Fast](https://github.com/willianjusten/Fast)
 
 Em alguns projetos gosto de utilizar o MEAN (MongoDB, Express, AngularJS, NodeJS), também curto Python, então já me aventurei um pouco com o [Flask](http://flask.pocoo.org/), [Bottle](http://bottlepy.org/) e o [Django](https://www.djangoproject.com/). No Queremos! tem uma parte rodando o [Symfony](http://symfony.com/), que é um Framework PHP. Enfim, não tenho medo de aprender coisas novas, seja no Frontend, seja no Backend, o importante é se aventurar! \o/
-
-
-
-
-
-
-
-

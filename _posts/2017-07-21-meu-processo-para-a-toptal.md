@@ -36,7 +36,7 @@ Existem os freelancers que **usam** a plataforma da Toptal e existem os funcion�
 
 ## Processo
 
-Bom, para começo de tudo, um amigo que trabalhou comigo na HUGE tinha recebido um email com uma proposta para trabalhar na Toptal enquanto jogava videogame lá em casa e você pode [ler o relato dele aqui](http://nipher.io/mudancas). Ele acabou fazendo o processo todo e passou, indo trabalhar lá em Maio. No mesmo mês eu saía da HUGE para me dedicar aos meus cursos e começar a viajar pelo mundo, que já era um desejo muito grande meu, você também pode [ler aqui](https://willianjusten.com.br/mudando-sua-vida-atraves-de-projetos-paralelos/).
+Bom, para começo de tudo, um amigo que trabalhou comigo na HUGE tinha recebido um email com uma proposta para trabalhar na Toptal enquanto jogava videogame lá em casa e você pode [ler o relato dele aqui](https://nipher.io/mudancas). Ele acabou fazendo o processo todo e passou, indo trabalhar lá em Maio. No mesmo mês eu saía da HUGE para me dedicar aos meus cursos e começar a viajar pelo mundo, que já era um desejo muito grande meu, você também pode [ler aqui](https://willianjusten.com.br/mudando-sua-vida-atraves-de-projetos-paralelos/).
 
 O Jonas começou a trabalhar lá e em Setembro eu estava indo morar na Europa. Ele, como estava trabalhando remoto nessa empresa maravilhosa que permitia viajar e trabalhar ao mesmo tempo, aproveitou e foi para Europa no mesmo vôo que o meu!
 

@@ -23,7 +23,7 @@ Enquanto escrevo esse post vou ouvindo [Deftones](https://open.spotify.com/artis
 Já faz um tempinho que não escrevia sobre SVG, então vou dar uma quebra nos outros posts e voltar a falar um pouquinho sobre. Se você ainda não conhece SVG <s>sai daqui</s>, dá uma olhadinha na [série](http://willianjusten.com.br/series/) que eu escrevo nesse blog.
 
 Esse post foi baseado num apanhado de informações de vários cantos:
- 
+
 * [Guide SVG Animation Smil](https://css-tricks.com/guide-svg-animations-smil/)
 * [Three ways animate svg](https://css-tricks.com/video-screencasts/135-three-ways-animate-svg/)
 * [How SVG Shape Morphing Works](https://css-tricks.com/svg-shape-morphing-works/)
@@ -44,13 +44,13 @@ O SVG é tão incrível que permite vários tipos de animações, já falei sobr
 
 ## Por que usar esse treco aí?
 
-A animação em SMIL é [declarativa](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#toc-imperative-declarative), ou seja, você declara transições e estados para os elementos. A vantagem é que os browsers podem otimizar esse tipo de animação, não pesando tanto na renderização. A grande desvantagem de animações declarativas é que, em geral, elas não são tem tanto poder e não fazem tantas coisas. Eis que o SMIL brilha, ele tem a facilidade e otimização que o CSS permite com o poder de manipulação que só o JS teria.
+A animação em SMIL é [declarativa](https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/#toc-imperative-declarative), ou seja, você declara transições e estados para os elementos. A vantagem é que os browsers podem otimizar esse tipo de animação, não pesando tanto na renderização. A grande desvantagem de animações declarativas é que, em geral, elas não são tem tanto poder e não fazem tantas coisas. Eis que o SMIL brilha, ele tem a facilidade e otimização que o CSS permite com o poder de manipulação que só o JS teria.
 
 Como o SMIL é mais poderoso, ele permite animar propriedades que o CSS não conseguiria, como, por exemplo, as formas das Paths.
 
 Outra coisa bastante bacana é que animações feita em SMIL funcionam até mesmo quando o SVG é inserido na tag `img`! =)
 
-E também conseguimos manipular as animações com eventos! Convencido? 
+E também conseguimos manipular as animações com eventos! Convencido?
 
 
 ## Comandos básicos
@@ -66,13 +66,13 @@ Assim como as diferentes tags que o SVG possui para suas formas, ele também pos
 ### Sintaxe
 
 ```html
-<animate id="myAnim" 
-         attributeName=" " 
-         from=" " 
+<animate id="myAnim"
+         attributeName=" "
+         from=" "
          to=" "
          dur=" "
          begin=" "
-         fill=" " 
+         fill=" "
          ...
 />
 ```
@@ -117,12 +117,12 @@ Um outro detalhe muito importante é que para cada `animate` só podemos animar 
 ```html
 <svg width="500" height="100">
   <circle id="orange-circle" r="30" cx="50" cy="50" fill="orange" />
-  
-  <animate 
+
+  <animate
            xlink:href="#orange-circle"
            attributeName="cx"
            from="50"
-           to="450" 
+           to="450"
            dur="1s"
            begin="click"
            fill="freeze" />
@@ -173,7 +173,7 @@ Agora vamos pensar numa situação em que eu tenho um quadrado virando um triân
 Mas e se eu quisesse além de mudar os 3 visuais, também quisesse mudar de cor? Basta adicionar mais um animate, passando os `values` do `attributeName=fill`. Segue um exemplo colorido:
 
 <p data-height="266" data-theme-id="11319" data-slug-hash="rVZppG" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/rVZppG/'>SVG SMIL Animation</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script> 
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
 ## Aplicação prática em UX
@@ -187,7 +187,7 @@ Podemos, por exemplo, aplicar uma mudança de um ícone para dar um feedback par
 
 As animações realizadas para o botão acima ficam separadas em:
 
-* Transformar no check 
+* Transformar no check
 * Mudar para cor verde
 * Transformar na estrela
 * Mudar para cor amarela
@@ -197,13 +197,3 @@ Para cada uma dessas animações utilizamos a tag `animate` sempre definindo o `
 ## Conclusão
 
 Bom pessoal, esse post serviu para mostrar mais uma habilidade exclusiva e super interessante que o SVG possui. Lembre-se que animações para conseguir melhorar a usabilidade do usuário são sempre boas adições e o SVG pode te prover isso muito bem. Existem muitas coisas sobre SMIL, portanto não fique somente neste post e busque ainda mais informação, qualquer coisa, também pergunte nos comentários.
-
-
-
-
-
-
-
-
-
-

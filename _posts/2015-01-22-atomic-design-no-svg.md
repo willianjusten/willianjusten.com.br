@@ -28,7 +28,7 @@ Primeiro de tudo, aviso que o início deste post será praticamente uma traduç�
 
 Ps.: não é preguiça, é porque acho essa mulher incrível e sou mega fã das grandes contribuições em SVG que ela traz <3
 
-Neste post iremos abordar os elementos que dão uma melhor estruturação ao SVG, nos permitindo agrupar e referenciar partes do SVG dentro do documento, conferindo um código mais limpo, de melhor manutenção e com um código mais legível. É muito importante que prestem atenção a este assunto, já que ele contém a base principal para tudo que será feito e utilizado depois. Começarei utilizando o artigo da Sara como base e finalizarei divagando sobre um conceito que eu venho pensado bastante e discutido bastante com meu amigo maluco da cabeça, o [Suissa](http://twitter.com/osuissa/).
+Neste post iremos abordar os elementos que dão uma melhor estruturação ao SVG, nos permitindo agrupar e referenciar partes do SVG dentro do documento, conferindo um código mais limpo, de melhor manutenção e com um código mais legível. É muito importante que prestem atenção a este assunto, já que ele contém a base principal para tudo que será feito e utilizado depois. Começarei utilizando o artigo da Sara como base e finalizarei divagando sobre um conceito que eu venho pensado bastante.
 
 ## Agrupando com o elemento `<g>`
 
@@ -261,15 +261,6 @@ Esse pensamento que faz o motor do Atomic Design funcionar, nós não estamos de
 * Páginas
 
 Para entender ainda melhor sobre todos os conceitos, leia o [post do criador Brad Frost](http://bradfrost.com/blog/post/atomic-web-design/).
-
-Se você olhar estes artigos do Suissa:
-
-* [Passo-a-passo como desenvolver com Atomic Design, Mobile-first e Stylus - Pt1](http://nomadev.com.br/passo-a-passo-como-desenvolver-com-atomic-design-mobile-first-e-stylus/)
-* [Passo-a-passo como desenvolver com Atomic Design, Mobile-first e Stylus - Pt 2](http://nomadev.com.br/passo-a-passo-como-desenvolver-com-atomic-design-mobile-first-e-stylus-parte-2/)
-* [Passo-a-passo como desenvolver com Atomic Design, Mobile-first e Stylus - Pt 3](http://nomadev.com.br/passo-a-passo-como-desenvolver-com-atomic-design-mobile-first-e-stylus-parte-3/)
-* [Atomic Design Extended - Bósons e Quarks](http://nomadev.com.br/atomic-design-b%C3%B3sons-e-quarks-extended/)
-
-Vai ver que o cara estava tomando cerveja batizada e fumando cigarrinho do capeta para inventar umas outras paradas loucas.
 
 #### Mas voltando, por que eu estou falando disso no meio de um post sobre SVG?
 

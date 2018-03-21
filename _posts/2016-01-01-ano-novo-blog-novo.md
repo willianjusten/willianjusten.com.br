@@ -93,7 +93,7 @@ Para fazer isso foi bastante simples, eu usei o seletor `:after` no meu link `a`
         content '</> Willian Justen'
 ```
 
-O código está em `Stylus` e aquele comando `+above(cut)` é uma feature do [Rupture](https://jenius.github.io/rupture/), que ajuda bastante para trabalhar com media-queries sem ter que escrever muita coisa.
+O código está em `Stylus` e aquele comando `+above(cut)` é uma feature do [Rupture](https://jescalan.github.io/rupture/), que ajuda bastante para trabalhar com media-queries sem ter que escrever muita coisa.
 
 ### Cards de Post
 
@@ -148,7 +148,7 @@ Uma das tarefas era essa, organizar mais o meu blog, para que tantos os novatos 
 
 Pensando nisso, eu criei algumas categorias como:
 
-- `jekyll`: como esse post é feito nele e eu já comentei algumas dele, nada mais justo que ter sua categoria própria. A cor dele é vermelho. 
+- `jekyll`: como esse post é feito nele e eu já comentei algumas dele, nada mais justo que ter sua categoria própria. A cor dele é vermelho.
 - `css`: que blog de frontend seria sem o css? Sua cor é um azul esverdeado.
 - `svg`: preciso dizer algo sobre? Sua cor é roxo
 - `js`: outro tópico indispensável para front, sua cor é o amarelo da linguagem.
@@ -214,14 +214,3 @@ for theme, category-color in themes
 ## Conclusão
 
 Bom pessoal, esse é o visual do Blog 2016, espero que tenham gostado, peço feedback de todos para saber o que posso melhorar ou até se odiaram o novo visual e querem que eu volte para o antigo <s>mas eu não volto não =p</s>
-
-
-
-
-
-
-
-
-
-
-

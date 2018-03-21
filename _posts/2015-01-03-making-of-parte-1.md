@@ -20,7 +20,7 @@ Existe uma continuação desse post em [Making of - parte 2](https://willianjust
 
 Bom, antes de começar explicando como criei esse blog, algumas ideias e o que aconteceu durante o processo, é melhor eu me apresentar né?
 
-Meu nome é Willian Justen de Vasconcellos, tenho 24 anos (nada de piadinhas...) e sou Desenvolvedor Front End no [Queremos!](http://queremos.com.br)/[WeDemand](http://wedemand.com). Trabalho há cerca de 3 anos na área de web, tendo finalizado meu curso de Tecnologia da Informação na Faeterj-Petrópolis no ano de 2014. Mas curiosamente essa não foi minha primeira faculdade, eu também fiz **Química Industrial** na Uff, sim, você leu certo, eu realmente fiz Química...
+Meu nome é Willian Justen de Vasconcellos, tenho 24 anos (nada de piadinhas...) e sou Desenvolvedor Front End no [Queremos!](https://queremos.com.br)/[WeDemand](https://wedemand.com). Trabalho há cerca de 3 anos na área de web, tendo finalizado meu curso de Tecnologia da Informação na Faeterj-Petrópolis no ano de 2014. Mas curiosamente essa não foi minha primeira faculdade, eu também fiz **Química Industrial** na Uff, sim, você leu certo, eu realmente fiz Química...
 E por que eu trabalho com web agora? Ah...porque web é incrível e a facilidade em aprender cada dia mais, me deixa mais feliz com a escolha que fiz.
 
 Eu pretendo escrever o máximo que der e sobre tudo, desde o avançado até dicas rápidas para iniciantes. O foco principal será em tecnologias Front End, mas isso não impede que um dia escreva sobre Python ou alguma técnica de estudo. Espero que gostem do blog e todo feedback é bem vindo =)
@@ -55,7 +55,7 @@ Durante a criação desse blog, eu cheguei a falar sobre ele para alguns amigos,
 
 Definitivamente meu automatizador favorito, seja pela velocidade, seja pela facilidade com que é de se escrever para ele. Junto com ele utilizei os seguintes plugins:
 
-* [Browser Sync](http://www.browsersync.io/docs/gulp/) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading, depois que conheci essa ferramenta me apaixonei, se você não conhece, corre para olhar, é fantástica.
+* [Browser Sync](https://browsersync.io/docs/gulp) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading, depois que conheci essa ferramenta me apaixonei, se você não conhece, corre para olhar, é fantástica.
 * [Gulp-stylus](https://www.npmjs.com/package/gulp-stylus) - para compilar meu lindo Stylus
 * [Gulp-uglify](https://www.npmjs.com/package/gulp-uglify) - minificar o js
 * [Gulp-concat](https://www.npmjs.com/package/gulp-concat) - concatenar os arquivos
@@ -86,8 +86,6 @@ Eu poderia ficar um post inteiro explicando os motivos de se utilizar SVG, mas o
 
 Praticamente o pre-processador mais desconhecido entre os grandes e na minha opinião o melhor deles também. Versátil, com centenas de opções e ainda fácil para quem já escreve seguindo indentação, como feito em Python, Ruby, Jade. Fui conhecer essa belezura ano passado através de um post da [Ju Gonçalves](http://jugoncalv.es/), ela se não me engano foi uma primeiras pessoas que eu vi falando sobre Stylus no Brasil, aqui fica meu obrigado por ter me mostrado <3
 
-Um outro cara que eu conheço que utiliza Stylus é o maluco do [Suissa](https://twitter.com/osuissa), ele inclusive fez um post falando sobre [Por que usar Stylus?](http://nomadev.com.br/por-que-usar-stylus/), dá uma lidinha lá, já dá para ter uma boa ideia do porquê desse amor por Stylus.
-
 Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em cima. O Jeet por ser um grid semântico (lê-se nada de col-md-xs-lg-motherfucker). O Rupture, para evitar de escrever @media direto e o Kouto Swiss, que possui várias e várias funções bem legais para trabalhar. Segue abaixo um exemplo de um trecho utilizando o poder desses 3 em conjunto:
 
 ```css
@@ -117,7 +115,7 @@ A linha `2` mostra um dos poderes do Jeet, onde eu defino que o elemento `.datet
 
 As linhas `4`, `11` e `19` mostram a utilização do Rupture, onde o `+below(cut)` é compilado para `@media only screen and (max-width:37.5rem)`, onde `37.5rem` é o valor da variável `cut`. O Rupture permite utilizar palavras como `below`, `above`, `between`, `at`, o que é muito mais fácil de se escrever e entender do que ficar colocando várias medias queries.
 
-As linhas `9` e `15` mostram uma das funções do Kouto Swiss, que é a conversão de `px` para `rem`, que é uma unidade de medida mais adaptável, se você nunca ouviu falar, dá uma lidinha nesse artigo do Tableless [Qual unidade utilizar – Pixel, EM ou REM ](http://tableless.com.br/unidade-pixels-em-rem/).
+As linhas `9` e `15` mostram uma das funções do Kouto Swiss, que é a conversão de `px` para `rem`, que é uma unidade de medida mais adaptável, se você nunca ouviu falar, dá uma lidinha nesse artigo do Tableless [Qual unidade utilizar – Pixel, EM ou REM ](https://tableless.com.br/unidade-pixels-em-rem/).
 
 #### Github Pages
 

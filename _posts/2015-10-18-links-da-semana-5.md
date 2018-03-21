@@ -18,7 +18,7 @@ introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e
 
 ## Introdução
 
-Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, aqui vão os links que eu li nessa semana. Eu ouvi várias coisas durante a semana enquanto mostrava essa lista que foram: 
+Tentando seguir o padrão de lançar todo Domingo os links que li pela semana, aqui vão os links que eu li nessa semana. Eu ouvi várias coisas durante a semana enquanto mostrava essa lista que foram:
 
 - [Supercombo](https://open.spotify.com/artist/73HkjgziMO6I83vFOS8mo1) - banda brasileira de indie, calma e bem legal.
 - [Anavitória](https://open.spotify.com/artist/1sPg5EHuQXTMElpZ4iUgXe) - dupla brasileira com voz bem fofinha <3
@@ -31,17 +31,14 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 
 - [ES6 Interactive Guide](http://projects.formidablelabs.com/es6-interactive-guide/#/)
 - [The Refactoring Tales](http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html)
-- [React Native - How to make Facebook Reactions](http://browniefed.com/blog/2015/10/11/react-native-how-to-make-facebook-reactions/)
 - [Sri (Scala React interface) - Build truly native cross platform](https://github.com/chandu0101/sri)
 - [The Future of Web Development - React, Falcor, and ES6](http://engineering.widen.com/blog/future-of-the-web-react-falcor/)
 - [How To Write a Pacman Game in JavaScript](http://www.masswerk.at/JavaPac/pacman-howto.html)
 - [Integrating React with gulp](https://jonsuh.com/blog/integrating-react-with-gulp/)
 - [A cartoon guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
-- [Zepto Builder](http://github.e-sites.nl/zeptobuilder)
 - [ES6 in Depth](https://ponyfoo.com/articles/tagged/es6-in-depth)
 - [A Responsive Material Design App With Polymer Starter Kit](http://www.smashingmagazine.com/2015/10/responsive-material-design-app-with-polymer-starter-kit/)
 - [Screamer.JS - create customisable Web Notifications](https://github.com/willianjusten/screamer-js/)
-- [React Native - Morphing SVG Paths with React Art](http://browniefed.com/blog/2015/10/14/react-native-morphing-svg-paths-with-react-art/)
 - [React+Flux can do in just 137 lines what jQuery can do in 10](http://swizec.com/blog/reactflux-can-do-in-just-137-lines-what-jquery-can-do-in-10/swizec/6740)
 
 ## CSS / SVG
@@ -62,7 +59,7 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 
 - [25 Luxury Website Designs with Elegant Layouts](http://line25.com/inspiration/luxury-website-designs)
 - [What’s New for Designers, October 2015](https://webdesignerdepot.com/2015/10/whats-new-for-designers-october-2015/)
-- [A collection of free resources made by designers at Facebook.](http://facebook.github.io/design/)
+- [A collection of free resources made by designers at Facebook.](https://facebook.design)
 - [Every website looks the same, and that’s ok](https://medium.com/@WebdesignerDepot/every-website-looks-the-same-and-that-s-ok-36c32bd8a1dd)
 - [Design to Code with Atomic Design Principles and Sketch](https://medium.com/re-write/the-unicorn-workflow-design-to-code-with-atomic-design-principles-and-sketch-8b0fe7d05a37)
 - [Um site simplesmente foda](http://keepearthquakesweird.com/)
@@ -77,6 +74,5 @@ Bom, a listinha de músicas dessa semana foi de bastante calmaria, mas não deix
 - [O lado ruim de trabalhar no Google em 23 frases](http://exame.abril.com.br/carreira/noticias/o-lado-ruim-de-trabalhar-no-google-em-23-frases/lista)
 - [Github Classroom](https://classroom.github.com/)
 - [A source control backed CMS for developers working with non-developers](http://cloudcannon.com/)
-- [How to Modularize HTML Using Template Engines and Gulp](http://www.zell-weekeat.com/nunjucks-with-gulp)
 - [Detox - Replace your Facebook feed with something positively distracting.](http://usedetox.com/)
 - [Front-end Developer Handbook](https://frontendmasters.gitbooks.io/front-end-handbook/content/index.html)

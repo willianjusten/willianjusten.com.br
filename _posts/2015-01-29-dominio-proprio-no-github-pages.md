@@ -15,7 +15,7 @@ twitter_text: 'Como ter Domínio Proprio no Github Pages'
 introduction: "Um tutorial passo a passo de como colocar um domínio próprio no Github Pages e já sair com seu blog personalizado."
 ---
 
-Como já disse no [Making of - Parte 1](http://willianjusten.com.br/making-of-parte-1/) e no [Making of - Parte 2](http://willianjusten.com.br/making-of-parte-2/), o meu blog é hospedado no github pages. E não é só o meu, mas vários, um que está fazendo muito sucesso agora é o blog do [Fernando Daciuk](http://blog.da2k.com.br/), que é feito no [Hexo](http://hexo.io/), mas também hospedado no github pages.
+Como já disse no [Making of - Parte 1](http://willianjusten.com.br/making-of-parte-1/) e no [Making of - Parte 2](http://willianjusten.com.br/making-of-parte-2/), o meu blog é hospedado no github pages. E não é só o meu, mas vários, um que está fazendo muito sucesso agora é o blog do [Fernando Daciuk](http://blog.da2k.com.br/), que é feito no [Hexo](https://hexo.io/), mas também hospedado no github pages.
 
 **Ou seja, esse processo é para qualquer tipo de site feito no github pages, através de qualquer ferramenta!!**
 
@@ -78,6 +78,6 @@ Feito isso fica faltando somente mais uma etapa.
 
 ## 3 - Criação do arquivo CNAME
 
-Esse é molezinha, basta criar um arquivo CNAME **(precisar estar maiúsculo)**. E dentro deste arquivo, você irá colocar o seu domínio próprio, um exemplo é o meu [CNAME](https://github.com/willianjusten/willianjusten.github.io/blob/master/CNAME) lá no github. **Lembre-se de não colocar protocolo e nem www.**
+Esse é molezinha, basta criar um arquivo CNAME **(precisar estar maiúsculo)**. E dentro deste arquivo, você irá colocar o seu domínio próprio. **Lembre-se de não colocar protocolo e nem www.**
 
 Feito tudo isso, basta esperar um tempinho até o DNS propagar e tudo show de bola =)

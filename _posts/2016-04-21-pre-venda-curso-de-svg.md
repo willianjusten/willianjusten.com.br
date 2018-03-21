@@ -18,7 +18,7 @@ introduction: 'Se adiante e adquira um dos cursos mais completos de SVG totalmen
 
 ## Introdução
 
-Faaala pessoal! Estou aqui para passar uma novidade bem rapidinha para vocês. Quando lancei meu [primeiro post](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) sobre o início da criação dos meus cursos, eu falei para vocês que sempre iria disponibilizar conteúdo gratuito e assim foi com o [Curso de Git e Github](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes) e o [Curso de Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll).
+Faaala pessoal! Estou aqui para passar uma novidade bem rapidinha para vocês. Quando lancei meu [primeiro post](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) sobre o início da criação dos meus cursos, eu falei para vocês que sempre iria disponibilizar conteúdo gratuito e assim foi com o [Curso de Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e o [Curso de Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/).
 
 Mas hoje eu estou aqui, para disponibilizar a [pré-venda](#pre-venda) do meu mais novo curso que será premium, que será: **Aprendendo SVG do início ao avançado**! =D
 

@@ -26,7 +26,7 @@ P.S.: também esperei os 3 meses de experiência antes de escrever, vai que me d
 
 ## Contatos
 
-Eu trabalhava no [Queremos](http://www.queremos.com.br/), um lugar muito legal, com várias pessoas legais e uma ideia incrível. A empresa fica no Humaitá, bairro da zona sul do Rio de Janeiro. Como eu sou de uma cidade serrana, bastante afastada, não tinha muitos contatos, mas quando desci para trabalhar no Queremos, acabei conhecendo muitas pessoas e uma delas foi o [Davidson Fellipe](https://twitter.com/davidsonFellipe).
+Eu trabalhava no [Queremos](https://www.queremos.com.br/), um lugar muito legal, com várias pessoas legais e uma ideia incrível. A empresa fica no Humaitá, bairro da zona sul do Rio de Janeiro. Como eu sou de uma cidade serrana, bastante afastada, não tinha muitos contatos, mas quando desci para trabalhar no Queremos, acabei conhecendo muitas pessoas e uma delas foi o [Davidson Fellipe](https://twitter.com/davidsonFellipe).
 
 Conversa vai, conversa vem, ele perguntou se eu um dia não teria interesse em trabalhar na globo.com. Na hora eu fiquei receoso, porque a gente ouve sempre que os caras que trabalham na globo.com são todos gênios (e são mesmo!) e eu, um pobre iniciante nesse ramo de desenvolvimento, achava que nunca iria passar, mas falei que tinha interesse sim.
 
@@ -106,8 +106,6 @@ Dava para ver na galera a animação e empolgação nos projetos, pelo que falar
 
 Bom, como disse lá no início, apesar de eu ser do Estado do Rio de Janeiro, sou de uma cidade serrana, chamada Petrópolis, que é cerca de 2:30 da globo.com (isso já contando o trânsito que sempre existe). Esse processo de subida todo dia, gastando cerca de 5h era muito cansativo. Mesmo indo num ônibus confortável e "dormindo" boa parte do trajeto, eu precisava acordar bastante cedo. Foi aí que resolvi me mudar para mais próximo do trabalho, é claro que toda mudança é cansativa e estressante também, mas já venho notado os benefícios de fazer isso. Então, se você é de longe, não tenha medo de se mudar, a empresa é legal e tenho certeza que você será bem acolhido.
 
-Se você tem interesse, não tenha medo de tentar e basta enviar seu currículo no [github da globo](https://github.com/globocom/iwanttoworkatglobocom).
+Se você tem interesse, não tenha medo de tentar e basta enviar seu currículo no [github da globo](https://talentos.globo.com/).
 
 Uffa, escrevi demais já! Enfim, espero que tenha respondido a maioria das dúvidas que me fizeram nesse tempo e caso queiram comentar mais alguma coisa, só falar nos comentários.
-
-

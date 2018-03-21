@@ -56,7 +56,7 @@ Cada uma dessas redes sociais possui uma url para share também, que nos facilit
 
 * URL: [https://twitter.com/intent/tweet](https://twitter.com/intent/tweet)
 * Parâmetros: `url`, `text`, `via`, `related`, `hashtags`
-* Ver mais em: [https://dev.twitter.com/docs/intents#tweet-intent](https://dev.twitter.com/docs/intents#tweet-intent)
+* Ver mais em: [https://dev.twitter.com/docs/intents#tweet-intent](https://dev.twitter.com/web/tweet-button/web-intent)
 
 #### Modo de uso
 
@@ -133,5 +133,3 @@ Vimos que a função de share é importante e não precisamos mais depender de l
 Com o exemplo acima, nós temos só a funcionalidade, mas nosso botão ainda está sem nenhum estilo, você pode se inspirar e criar várias coisinhas legais, desde o minimalista, como fiz no meu blog, até algo bastante detalhado e com mil efeitos. Segue aqui o [link do codepen](http://codepen.io/search?q=share&limit=all&depth=everything&show_forks=false), em que você pode se inspirar um pouquinho.
 
 Você tem alguma dúvida e quer que ela seja explicada aqui? Basta falar comigo pelas redes sociais ou me mandar um email, ficarei super feliz de ajudar. Abraços e até mais!
-
-

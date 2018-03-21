@@ -78,8 +78,8 @@ Esse é um método simples de implementar e tem como objetivo marcar as coisas q
 #### Links para começar
 
 * [How Seinfeld's Productivity Secret Fixed My Procrastination Problem](http://lifehacker.com/5886128/how-seinfelds-productivity-secret-fixed-my-procrastination-problem) - um cara contanto sua experiência sobre o método
-* [Writerstore.com](http://www.writersstore.com/dont-break-the-chain-jerry-seinfeld/) - um artigo falando um pouco mais do método
-* [jamesclear.com](http://jamesclear.com/stop-procrastinating-seinfeld-strategy) - mais um artigo falando sobre o método
+* [Writerstore.com](https://www.writersstore.com/dont-break-the-chain-jerry-seinfeld/) - um artigo falando um pouco mais do método
+* [jamesclear.com](https://jamesclear.com/stop-procrastinating-seinfeld-strategy) - mais um artigo falando sobre o método
 
 ### Seu próprio método
 
@@ -93,5 +93,3 @@ As vezes você não quer seguir a risca nenhum desses métodos, mas quer parar d
 ### Conclusão
 
 Se existe coisa pior que a procrastinação, eu não conheço. Hoje de manhã estava conversando com o [Fernando Daciuk](http://blog.da2k.com.br/) exatamente sobre procrastinação, é uma parada muito complicada, todo mundo já viveu ou vive um tempo em que fazer qualquer coisas fora do horário de expediente já é cansativo e desanimador. Espero que com esse texto você se anime mais, busque conhecimento, compartilhe o que aprendeu e se dedique mais. Quem fala aqui é um ex-químico que se apaixonou tanto pela área que desistiu de tudo só para começar a aprender a mexer com web. Boa sorte galera! E se você tem uma história legal, compartilha aí com a gente!!
-
-

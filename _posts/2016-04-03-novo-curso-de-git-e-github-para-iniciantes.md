@@ -19,7 +19,7 @@ introduction: 'Aprenda como funciona o git e o github em vídeos curtos e práti
 
 Vou escrevendo essa post enquanto escuto uma [playlist especial do Batman](https://open.spotify.com/user/spotifybrazilian/playlist/5jcu1LG141GiVpKuZVOTzn), até nisso é muito melhor que o super homem =p
 
-Fazem 15 dias que eu lancei um [curso de Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll) em cima de uma plataforma bastante legal. Fiz um [post](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) falando da minha vontade de fazer vídeo aulas, o porquê de começar com Jekyll e coisinhas mais. Dessa vez, resolvi fazer mais um curso gratuito =)
+Fazem 15 dias que eu lancei um [curso de Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/) em cima de uma plataforma bastante legal. Fiz um [post](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) falando da minha vontade de fazer vídeo aulas, o porquê de começar com Jekyll e coisinhas mais. Dessa vez, resolvi fazer mais um curso gratuito =)
 
 ## Por que Git e Github?
 
@@ -42,7 +42,7 @@ O curso tem aproximadamente 2h de aula, com vídeos bem pequenos, para não cans
 
 Todos os cursos são feitos em cima de uma plataforma, que facilita bastante para estudar, saber o que já assistiu, ler textos, fazer perguntas através de comentários, tudo isso de uma forma bastante simples, que eu espero que vocês gostem.
 
-Terão cursos gratuitos como o [Criando sites estáticos com Jekyll](http://willianjusten.teachable.com/courses/criando-sites-estaticos-com-jekyll) e agora esse de [Git e Github para iniciantes](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes/). Sendo que a periodicidade de lançamento desses cursos gratuitos vai depender das doações de quem puder colaborar, dos compartilhamentos e claro, do uso da plataforma.
+Terão cursos gratuitos como o [Criando sites estáticos com Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/) e agora esse de [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/). Sendo que a periodicidade de lançamento desses cursos gratuitos vai depender das doações de quem puder colaborar, dos compartilhamentos e claro, do uso da plataforma.
 
 Mas também irão ter cursos premium, onde a qualidade de vídeo e gravação será outra, assim como maior conteúdo e material para estudo. Os cursos pagos serão seus para sempre e você poderá fazer quando quiser, sem esse negócio de mensalidade, anuidade e etc. Comprou comprou, agora é seu! O pagamento dos cursos poderá ser feito via Paypal, cartão de crédito direto na plataforma e se você quiser um desconto, pode me mandar uma mensagem e fazer uma transferência ou depósito. O negócio é todo mundo conseguir fazer os cursos e ser feliz =D
 
@@ -84,4 +84,4 @@ Se você gostou da ideia e quer mais cursos e com mais frequência, me ajude a t
 ## Um abraço e que comecem os estudos!!
 
 Vamos lá galera, todo mundo acessando, compartilhando, curtindo, comentando e sendo feliz!!!
-[Link do curso Git e Github para iniciantes](http://willianjusten.teachable.com/courses/git-e-github-para-iniciantes/)
+[Link do curso Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)

@@ -20,7 +20,7 @@ introduction: "Se inspire com alguns sites feitos usando a técnica do parallax.
 
 Fala pessoal! Hoje eu venho a trazer para vocês um post bem simples, mais para vocês se inspirarem um pouco e verem algumas das várias possibilidades de uma técnica que eu acho bastante interessante. Eu vou começar a criar posts que vão entrar na categoria de collections, onde vou juntar vários sites para vocês se inspirarem que utilizem certa técnica ou tecnologia.
 
-Enquanto vou escrevendo, vou ouvindo um bom som na playlist [Volume Máximo](https://open.spotify.com/user/spotifybrazilian/playlist/7w7CeDkSKeGPBfHd3HSi98) do Spotify. 
+Enquanto vou escrevendo, vou ouvindo um bom som na playlist [Volume Máximo](https://open.spotify.com/user/spotifybrazilian/playlist/7w7CeDkSKeGPBfHd3HSi98) do Spotify.
 
 ## O efeito parallax
 
@@ -65,12 +65,6 @@ Objetos com movimentações em tempos/velocidades diferentes ao decorrer da tela
 ![Giampiero Bodino - Italian High Jewellery](/assets/img/parallax-sites/giam.png)
 
 Várias ilustrações em camadas diferentes que são movimentadas baseadas no drag. [Vá para o site](http://www.giampierobodino.com/)
-
-### L’Amour Fou
-
-![L’Amour Fou](/assets/img/parallax-sites/lamour.png)
-
-Site bastante bonito com movimentações suaves entre os elementos no decorrer da tela. [Vá para o site](http://www.lamourfou.be/en)
 
 ### Anton & Irene
 
@@ -120,12 +114,6 @@ Site em ilustração contando uma história a partir do scroll. [Vá para o site
 
 Site que utiliza técnica de "cortina" para passar entre uma tela e outra, unida a animação de elementos. [Vá para o site](http://www.soleilnoir.net/believein/#/start)
 
-### Oakley Airbrake MX
-
-![Oakley Airbrake MX](/assets/img/parallax-sites/oakley.png)
-
-Ideia de utilizar o scroll para fazer um 360 de um produto deles. [Vá para o site](http://moto.oakley.com/)
-
 ### The Arnold Clark Savings Challenge
 
 ![The Arnold Clark Savings Challenge](/assets/img/parallax-sites/arnold.png)
@@ -142,20 +130,3 @@ Animações sutis nos elementos enquanto é feito o scroll. [Vá para o site](ht
 
 Bom galera, espero que tenham se inspirado com esses vários sites maravilhosos. Eu sou viciado em ver referências e roubar pequenos detalhes para mim =p
 Então espero que tenha bastante gente que goste desse tipo de coisa também.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -44,7 +44,7 @@ Já a propriedade `stroke-dashoffset` permite mudar onde o `stroke-dasharray` va
 
 Então para o efeito acontecer, basta que eu determine que o `stroke-dasharray` seja o tamanho máximo do elemento e fazer com que o `stroke-dashoffset` vá diminuindo do tamanho máximo até zero. Assim teríamos:
 
-#### Passo 1 
+#### Passo 1
 ```css
 inicio {
     stroke-dasharray: 'tamanho do desenho';
@@ -54,7 +54,7 @@ inicio {
 
 Aqui, como determinamos que o `stroke-dashoffset` é o tamanho do desenho, ele empurra todo o traço e não enxergamos nada na tela.
 
-#### Passo 2 
+#### Passo 2
 ```css
 final {
     stroke-dashoffset: 0;
@@ -112,7 +112,7 @@ Depois de tudo ali em cima, agora fica bem fácil de fazer essa animação. Prim
 ```css
 .hello {
     stroke-width: 3px;
-    stroke-dasharray: 1045; // numero arrendoda do tamanho 
+    stroke-dasharray: 1045; // numero arrendoda do tamanho
 }
 ```
 
@@ -123,7 +123,7 @@ Depois disso, vamos criar a animação em css usando `@keyframes`, se você não
 // write é o nome da nossa animação
 @keyframes write {
     0% {
-        stroke-dashoffset: 1045; // tamanho inicial 
+        stroke-dashoffset: 1045; // tamanho inicial
     }
     100% {
         stroke-dashoffset: 0; // tamanho final
@@ -136,7 +136,7 @@ Feito isso, basta definirmos essa animação lá na nossa classe `hello`:
 ```css
 .hello {
     stroke-width: 3px;
-    stroke-dasharray: 1045; // numero arrendoda do tamanho 
+    stroke-dasharray: 1045; // numero arrendoda do tamanho
     animation: 6s write; // quanto menor, mais rápido
 }
 ```
@@ -157,7 +157,7 @@ Para esse exemplo, utilizei 3 pontos no `keyframe` para poder pintar somente ao 
 
 ## Desenhando com Scroll
 
-Outro efeito legal é fazer o desenho ser criado ao scrollar a tela. Para isso precisamos de um pouquinho mais de Javascript, para que a cada scroll, a gente vá diminuindo o valor do `stroke-dashoffset` até que ele alcance o valor de zero. 
+Outro efeito legal é fazer o desenho ser criado ao scrollar a tela. Para isso precisamos de um pouquinho mais de Javascript, para que a cada scroll, a gente vá diminuindo o valor do `stroke-dashoffset` até que ele alcance o valor de zero.
 
 Segue um exemplo:
 
@@ -188,10 +188,10 @@ Depois nós precisamos criar um evento de `scroll` e de acordo com ele, ir dimin
 window.addEventListener("scroll", function(e) {
   // determina a porcentagem do quanto o usuário já scrollou na tela
   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-    
+
   // Determinando o tamanho do desenho pela porcentagem
   var drawLength = pathLength * scrollPercentage;
-  
+
   // Diminuindo o valor do offset para criar o desenho
   path.style.strokeDashoffset = pathLength - drawLength;
 });
@@ -205,7 +205,3 @@ E se você acha que o efeito é legal, mas não saberia aplicar em seu site, seg
 
 - [Garden](http://gardenestudio.com.br/)
 - [Panizzon](http://panizzon.ind.br/)
-- [Guillaume Juvenet Portfolio](http://www.guillaumejuvenet.com/)
-
-
-

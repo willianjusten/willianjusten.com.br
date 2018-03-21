@@ -21,7 +21,7 @@ Sem mais delongas, aqui vão os links mais legais que vi na semana.
 * [Progressive Enhancement and Data Visualizations](http://css-tricks.com/progressive-enhancement-data-visualizations/) - uma abordagem muito legal para construção de um gráfico pensando no conceito de Progressive Enhancement.
 * [CSS Reference by Codrops](http://tympanus.net/codrops/2015/02/03/introducing-codrops-css-reference/) - um compilado de todas as informações de CSS feito pela galera do Codrops, simplesmente lindo.
 * [MProgress](http://lightningtgc.github.io/MProgress.js/) - um barra de progresso feita nos moldes do Material Design.
-* [Playing around with CSS text-shadow](http://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow) - um artigo brincando com as propriedades de text-shadow.
+* [Playing around with CSS text-shadow](https://ashleynolan.co.uk/blog/playing-around-with-css-text-shadow) - um artigo brincando com as propriedades de text-shadow.
 * [Gooey Effect](http://css-tricks.com/gooey-effect/) - um tutorial do nosso amigo brasileiro Lucas Bebber falando sobre como fez o efeito com filtros de SVG.
 * [Style Guide Generator](http://alistapart.com/blog/post/style-guide-generator-roundup) - um artigo mostrando alguns geradores de Style Guide.
 * [Vector Graphics in Sass](http://www.sitepoint.com/vector-graphics-sass/) - como criar vetores utilizando só Sass, abordagem louca e legal.
@@ -38,9 +38,8 @@ Sem mais delongas, aqui vão os links mais legais que vi na semana.
 * [Redefining Lazy Loading With Lazy Load XT](http://www.smashingmagazine.com/2015/02/03/redefining-lazy-loading-with-lazy-load-xt/) - um artigo bem interessante falando sobre porque, quando e como implementar um lazy loading no sistema.
 * [First steps in setting up travis ci to your javascript project](http://orizens.com/wp/topics/first-steps-in-setting-up-travis-ci-to-your-javascript-project/) - um artigo ensinando como implementar o Travis CI em projetos JS, vale a leitura.
 * [Flux Comparison](https://github.com/voronianski/flux-comparison) - alguns comparativos utilizando o Flux.
-* [Scala JS is no longer experimental](http://scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html) - um anúncio de que agora podemos usar Scala também em JS.
 * [New Course: Essential Tools for JavaScript Developers](http://code.tutsplus.com/articles/new-course-essential-tools-for-javascript-developers--cms-23273) - um curso sobre sobre algumas ferramentas essenciais para desenvolvedores Javascript.
-* [Expert ES6](http://tagtree.io/courses/expert-es6/do) - um curso de ES6 pela Tagtree.
+* [Tagtree Courses](http://tagtree.io/library) - um curso de ES6 pela Tagtree.
 
 
 ## Etc

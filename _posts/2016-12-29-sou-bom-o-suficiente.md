@@ -50,13 +50,13 @@ Quando você sente que nunca é bom o suficiente em algo e tem o constante medo 
 
 ![Gráfico mostrando os dois efeitos](/assets/img/sindrome-do-impostor/imposter.jpg)
 
-É comprovado que essa Síndrome é bastante comum em profissões que possuem muitas cobranças e análises, como jornalistas, escritores e claro, programadores! 
+É comprovado que essa Síndrome é bastante comum em profissões que possuem muitas cobranças e análises, como jornalistas, escritores e claro, programadores!
 
 Há pouco tempo o Hubspot fez uma pesquisa sobre essa Síndrome na área de Desenvolvimento e encontrou resultados muito interessantes.
 
 ![Gráfico mostrando a frequência da Síndrome do Impostor em pessoas da área](/assets/img/sindrome-do-impostor/impostor-graph.png)
 
-Praticamente todos os desenvolvedores já passaram ou passam por momentos da Síndrome do Impostor. E isso independe a experiência, pois até programadores com 10 anos ou mais já relataram passar por isso. 
+Praticamente todos os desenvolvedores já passaram ou passam por momentos da Síndrome do Impostor. E isso independe a experiência, pois até programadores com 10 anos ou mais já relataram passar por isso.
 
 É claro que é normal os iniciantes passarem por mais momentos assim, pois eles vêem um mundo gigante diante deles e acabam se sentindo incapazes de evoluir e não percebem o quão rápido evoluem. Lembro de ter feito um post chamado [O que ninguém diz para os iniciantes](https://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), onde vi várias pessoas com esse aspecto e que tentei mostrar que não precisava ser o fim do mundo.
 
@@ -85,7 +85,7 @@ E por aí vai, existem N razões que provocam essas sensações...
 
 Já parou para pensar que você só vai conseguir evoluir (e ver evolução) se você errar e te corrigirem para não fazer mais? Pense que a cada erro é um acerto no futuro e que além disso, a pessoa que te corrigiu irá enxergar que você já não erra mais naquilo e evoluiu.
 
-Eu tinha muito medo de review de código, demorava horas/dias trabalhando em um mínimo trecho de código com um enorme medo de quem alguém pudesse olhar e falar que estava tudo errado <s>ou falar que tava uma merda mesmo</s>. 
+Eu tinha muito medo de review de código, demorava horas/dias trabalhando em um mínimo trecho de código com um enorme medo de quem alguém pudesse olhar e falar que estava tudo errado <s>ou falar que tava uma merda mesmo</s>.
 
 Isso só me prejudicava pois eu demorava muito para entregar e os erros que eu cometeria sem saber, eu continuava cometendo, pois para mim não eram erros. Quando percebi que reviews são importantes para que você além de terminar sua tarefa melhor, seja guiado para o caminho certo, comecei a notar uma grande evolução no meu código entregado e também passei a aprender muito mais.
 
@@ -113,7 +113,6 @@ Se você ficou curioso com o assunto e quer conhecer outros programadores que ta
 
 - [Overcoming Impostor Syndrome or How I Learned to Stop Worrying and Love Coding by Alicia Liu](https://medium.com/@aliciatweet/overcoming-impostor-syndrome-bdae04e46ec5#.g63job35d)
 - [I’m an Impostor by David Walsh](https://davidwalsh.name/impostor-syndrome)
-- [Feeling like a better developer aka overcoming impostor syndrome - Video RubyConf15](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/feeling-like-a-better-developer-aka-overcoming-impostor-syndrome-by-joss-paling-1729)
 
 ## Conclusão
 

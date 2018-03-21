@@ -100,6 +100,4 @@ Se você não clicou ainda, o [demo está aqui](http://willianjusten.com.br/labs
 
 Pronto pessoal, foi um post bastante simples, mas que é interessante para firmarmos algumas propriedades e conceitos importantes. Espero que tenham gostado, devo fazer mais alguns posts do gênero, ensinando a fazer pequenos detalhes/efeitos para deixar seus sites mais legais.
 
-Queria também agradecer o carinho da galera que tem acessado os meus [cursos online](http://willianjusten.teachable.com/courses), tem sido bastante legal ver todo mundo assistindo, aprendendo, divulgando e dando dicas. Se você ainda não acessou, vai lá e se inscreva. Todo mundo que se inscreve nos meus cursos, são avisados quando lanço um novo post e também devo começar a enviar links e notícias interessantes que eu ver por aí, em forma de weekly. Não perde a chance =)
-
-
+Queria também agradecer o carinho da galera que tem acessado os meus [cursos online](http://willianjusten.com.br/cursos/), tem sido bastante legal ver todo mundo assistindo, aprendendo, divulgando e dando dicas. Se você ainda não acessou, vai lá e se inscreva. Todo mundo que se inscreve nos meus cursos, são avisados quando lanço um novo post e também devo começar a enviar links e notícias interessantes que eu ver por aí, em forma de weekly. Não perde a chance =)

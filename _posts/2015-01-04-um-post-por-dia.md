@@ -46,8 +46,3 @@ E para vocês não falarem que eu fiz um post praticamente inútil, vai aqui um 
 * [Creative JS](http://creativejs.com/feed/) - Blog sobre JS e um pouco de curiosidades
 * [CSS-Tricks](http://feeds.feedburner.com/CssTricks) - Blog sobre desenvolvimento frontend
 * [Smashing Magazine](http://rss1.smashingmagazine.com/feed/) - Blog sobre desenvolvimento web
-
-#### Brazucas
-* [Tableless](http://tableless.com.br/feed/) - Blog sobre desenvolvimento web
-* [Imasters](http://imasters.com.br/feed/) - Blog e fórum de desenvolvimento web
-* [Nomadev](http://nomadev.com.br/rss/) - Blog de um cara louco que chamam de [Suissa](https://twitter.com/osuissa)

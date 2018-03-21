@@ -136,15 +136,8 @@ Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse bl
 
 Mas lembrando que existem cupons de desconto, seguem eles:
 
-- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=SEGUIDORFIEL)
-- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=SEGUIDORFIEL)
-- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD)
-
-E aqui também vão alguns cupons de eventos maneiros que estão para acontecer:
-
-- [BrazilJS Fortaleza](https://eventloop.com.br/braziljs-conf-2017-fortaleza?applyCoupon=willjusten-braziljs-for)
-- [BrazilJS Porto Alegre](https://eventloop.com.br/braziljs-conf-2017-poa?applyCoupon=willjusten-braziljs)
-
-E o tem também para o primeiro evento de Frontend que eu fui na vida e que me inspirou a querer um dia palestrar e passar meu conhecimento. Que é o [Front in BH](https://www.sympla.com.br/conf-front-in-bh-2k17__125649?d=CUPOMDOJUSTEN), evento bão demais sô!
+- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOSITE)
+- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=PROMOSITE)
+- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOSITE)
 
 Abraços para vocês e que comece a caça ao cupom de **100%**!

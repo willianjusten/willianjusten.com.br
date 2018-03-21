@@ -52,7 +52,7 @@ Mas também farei conteúdo pago. Aí você vem e fala: "Uééeee? Mas você aca
 
 ## Funcionamento
 
-Todos os cursos serão feitos em cima de uma plataforma, que facilita bastante para estudar, saber o que já assistiu, ler textos, fazer perguntas através de comentários, tudo isso de uma forma bastante simples, que eu espero que vocês gostem. Se quiserem já pular o resto do post e olhar como está lindo [se cadastra lá!](http://willianjusten.teachable.com/).
+**Atualizado 2018**: Todos os cursos funcionam na Udemy e você pode ver a lista de todos os cursos e seus cupons de desconto no [link aqui](https://willianjusten.com.br/cursos/).
 
 Como eu disse acima, existirão cursos gratuitos rolando e cursos pagos também, os pagos serão seus para sempre e você poderá fazer quando quiser, sem esse negócio de mensalidade, anuidade e etc. Comprou comprou, agora é seu! O pagamento dos cursos poderá ser feito via Paypal, cartão de crédito direto na plataforma e se você quiser um desconto, pode me mandar uma mensagem e fazer uma transferência ou depósito. O negócio é todo mundo conseguir fazer os cursos e ser feliz =D
 
@@ -97,13 +97,4 @@ Se você gostou da ideia e quer mais cursos e com mais frequência, me ajude a t
 
 Vamos lá galera, todo mundo acessando, compartilhando, curtindo, comentando e sendo feliz!!!
 
-[Link maravilhoso do projeto!](http://willianjusten.teachable.com/)
-
-
-
-
-
-
-
-
-
+[Link maravilhoso para os cursos!](http://willianjusten.com.br/cursos/)

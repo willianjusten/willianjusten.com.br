@@ -28,7 +28,7 @@ Bom, eu não tenho as melhores aptidões em design e confesso que ver aquele mon
 
 Sempre que eu vou a eventos, me interesso em ter os slides depois para poder ler com mais calma e até mesmo fazer testes quando são códigos expostos ali. Então eu queria disponibilizar meus slides de forma fácil também, sendo assim, eu vi que realmente precisava de algo web.
 
-Eu já havia visto um padrão de algumas palestras e todas elas eram web, fui caçar melhor e então encontrei o amado [RevealJS](http://lab.hakim.se/reveal-js/). Junto com ele achei alguns outros, como o [Slides](http://slides.com/), que é mantido pela galera do RevealJS, só que possui uma UI para poder montar os slides. Também encontrei o [Spectable](http://spectacle.surge.sh/#/), que foi baseado no RevealJS, mas feito todo em React <3 (preciso testá-lo depois!)
+Eu já havia visto um padrão de algumas palestras e todas elas eram web, fui caçar melhor e então encontrei o amado [RevealJS](https://lab.hakim.se/reveal-js/). Junto com ele achei alguns outros, como o [Slides](http://slides.com/), que é mantido pela galera do RevealJS, só que possui uma UI para poder montar os slides. Também encontrei o [Spectable](http://spectacle.surge.sh/#/), que foi baseado no RevealJS, mas feito todo em React <3 (preciso testá-lo depois!)
 
 ## Coisas legais que o RevealJS tem!
 

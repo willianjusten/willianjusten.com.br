@@ -28,13 +28,13 @@ Eu sempre falo para os meus amigos, que uma das melhores coisa da vida é viajar
 
 Dessa vez eu tive a oportunidade de viajar com o [Pedro Polisenso](http://pedropolisenso.com/) e o [Diego Ramos](https://github.com/rdiego26), dois caras fantásticos e que fizeram a viagem ainda mais divertida. Nunca tínhamos viajado juntos e foi uma oportunidade e tanto, para trocar conhecimentos, tanto na área de dev, como sobre coisas da vida também.
 
-Lá, eu também já conhecia uma galera ([Yan Magalhães](https://twitter.com/yaanmagale), [Lucas Maia](http://twitter.com/lucasmaiaesilva), [Fernanda Feliciano](https://www.facebook.com/fernandafeliciano), [Felipe Siqueira](https://www.twitter.com/flipggs), [Bruno Pulis](http://twitter.com/brunopulis), [Gabriel Azevedo](http://twitter.com/azevedo_dev) e mais...) e com isso, já ganhei hospedagem de graça e ainda guias turísticos!! =)
+Lá, eu também já conhecia uma galera ([Yan Magalhães](https://twitter.com/yaanmagale), [Lucas Maia](http://twitter.com/lucasmaiaesilva), [Fernanda Feliciano](https://www.facebook.com/fernandafeliciano), [Felipe Siqueira](https://www.twitter.com/flipggs), [Bruno Pulis](http://twitter.com/brunopulis) e mais...) e com isso, já ganhei hospedagem de graça e ainda guias turísticos!! =)
 
 ## Amigos novos
 
 Uma das melhores coisas num evento é poder conversar com gente nova e aprender com elas. Me diverti demais nos 3 dias em que fiquei em BH e conheci muiiiita gente! Pessoas que já me conheciam, até pelo blog e outras que nunca tinham ouvido falar no meu nome também. Ganhei contatos de trabalho, mais novos amigos dispostos a oferecer hospedagem free e, é claro, dispostos a sair, se divertir e estudar juntos.
 
-Agradecimentos para [Tiago Porto](http://twitter.com/_tiagoporto), [Dayman Novaes](http://twitter.com/daymannovaes), [Ana Gomes](https://www.facebook.com/anapgferreira) e todos os outros, que foram mega atenciosos comigo e me mostraram vários lugares legais =)
+Agradecimentos para [Tiago Porto](http://twitter.com/_tiagoporto), [Dayman Novaes](http://twitter.com/daymannovaes) e todos os outros, que foram mega atenciosos comigo e me mostraram vários lugares legais =)
 
 ## Conhecimento
 

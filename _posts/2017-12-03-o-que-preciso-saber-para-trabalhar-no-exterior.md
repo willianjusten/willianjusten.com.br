@@ -85,7 +85,7 @@ Aí vem aquela outra pergunta bem comum "Tem como aprender rápido e fácil? Pre
 
 Eu diria que as melhores formas que eu conheço seriam: Intercâmbio em algum país que tenha inglês como língua nativa ou ter aulas com algum professor de língua nativa. E claro, o mais importante de tudo, é praticar e praticar e praticar. Mudar todas os eletrônicos e contas para o inglês. Assistir séries em inglês, ouvir as músicas e ler as letras. Enfim, tentar ficar o mais imerso possível!
 
-Sobre ter aulas com professor de língua nativa, eu conheço o [iTalki](https://www.italki.com/i/BfeCdE?hl=pt), alguns amigos fazem ou já fizeram e dizem que ajuda bastante. Lá você pode marcar aulas com um professor nativo e ele vai te guiar da melhor forma possível. É muito mais efetivo que uma turma de 20 cabeças no Brasil, por exemplo...
+Sobre ter aulas com professor de língua nativa, eu conheço o [iTalki](https://www.italki.com/), alguns amigos fazem ou já fizeram e dizem que ajuda bastante. Lá você pode marcar aulas com um professor nativo e ele vai te guiar da melhor forma possível. É muito mais efetivo que uma turma de 20 cabeças no Brasil, por exemplo...
 
 E sobre intercâmbio, eu fiz o meu na Irlanda e você pode ler [nesse post aqui](https://willianjusten.com.br/vindo-morar-e-estudar-na-irlanda/). Eu era uma das pessoas que já tinha um inglês razoável, mas achava que era um bosta completo e tinha muito muito nervoso de falar em inglês até para o espelho! E bom, quando eu cheguei na Irlanda, eu tive que me virar. Claro que na Irlanda tem muitos brasileiros, mas eu sempre me forçava a falar em inglês e também fazia muita coisa sozinho, só para ter que falar.
 

@@ -49,11 +49,11 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 
 <h2 id="intro">Introdução</h2>
 
-Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/spotifybrazilian/playlist/7wvnJuxgxbCSOmO6JltKGt), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
+Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/22g5lp4mpz3qkneqipjafud6a/playlist/6fLTsHRyGMtOOF0oUtcCjW?si=ha-ZW1idT-ubl79Ea5e2QA), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
 
 O post de hoje vai ser relacionado a uma metodologia CSS que eu não conhecia e passei a conhecer lá na HUGE. Confesso que a primeira, segunda, terceira e até a quarta vez que eu vi, achei bem ruinzinha. Mas há uns dias eu peguei para ler, fazer uns testes e até assistir uns vídeos e bom, fui convertido!
 
-Resolvi fazer esse post por alguns motivos e eles foram: 
+Resolvi fazer esse post por alguns motivos e eles foram:
 
 - Fixar um pouco da metodologia (sim! eu uso meu blog para estudar, você deveria também =p)
 - Não achei NADA em português!
@@ -89,7 +89,7 @@ Atire a primeira pedra quem nunca fez um grande uso de nesting como:
 .nav {
     ul {
         li {
-            a { 
+            a {
                 ...
             }
         }
@@ -112,7 +112,7 @@ O problema de se fazer isso ali, é que quando temos um grande número de propri
             border: 1px solid #ccc;
             padding: 10px 50px;
 
-            a { 
+            a {
                 color: #333;
 
                 &:hover {
@@ -284,7 +284,7 @@ Algumas vezes precisamos ter componentes dentro de componentes. Aqui vão alguma
 
 <h4 id="nested-variacoes">4.1 Variações</h4>
 
-Evite modificar o componente interno através do commponente principal. 
+Evite modificar o componente interno através do commponente principal.
 
 ```scss
 .article-header {
@@ -406,7 +406,7 @@ O RSCSS não tem uma premissa forte para estrutura não, tendo somente como úni
 }
 ```
 
-E, então chamar esses componentes usando o glob matching: 
+E, então chamar esses componentes usando o glob matching:
 
 ```scss
 @import 'components/*';
@@ -425,6 +425,3 @@ Repare que o nesting de só até dois elementos foi respeitado, que o componente
 
 Bom galera, sei que o post ficou grandinho, eu mesmo não esperava fazer tão grande, acabou que eu basicamente traduzi toda a documentação e falei um pouquinho mais até. Entenda que assim como toda metodologia, ela pode funcionar ou não para você, a ideia aqui é passar mais uma opção para que você escolha a que melhor se adaptar. Eu não gostei muito quando vi, hoje já estou achando bastante simples e eficiente.
 Outro ponto importante é, se você trabalha com uma equipe, não saia mudando tudo sem avisar, comunique a todos, mostre os pontos e, caso tenha um consenso, sigam todos o mesmo padrão.
-
-
-

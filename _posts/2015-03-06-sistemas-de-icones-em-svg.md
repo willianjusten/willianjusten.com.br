@@ -69,7 +69,7 @@ Talvez seja o mais utilizado dos tipos. Consiste em criar um tipo de fonte conte
 
 Basicamente um ícone desenhado no illustrator e exportado para o formato SVG.
 
-> Ahhh, mas eu não sei desenhar não, para icon font eu baixo o [Font Awesome](https://fortawesome.github.io/Font-Awesome/) e vem tudo pronto. - Você mesmo!
+> Ahhh, mas eu não sei desenhar não, para icon font eu baixo o [Font Awesome](https://fontawesome.com/) e vem tudo pronto. - Você mesmo!
 
 Beleza campeão, mas com SVG você pode fazer o mesmo e até melhor, se quiser, dá uma olhada nesse post, [onde baixar SVG](http://willianjusten.com.br/onde-baixar-svg/) e você irá ver que tem muita coisa legal =)
 

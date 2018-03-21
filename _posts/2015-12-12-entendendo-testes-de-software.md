@@ -239,8 +239,8 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 
 * [Unit testing framework](https://docs.python.org/2/library/unittest.html) - talvez a mais comum e conhecida do Python, até por já vir inclusa com a linguagem. Bastante poderosa e simples de se utilizar.
 * [Pytest](http://pytest.org/latest/) - outra bastante utilizada no universo python, possui várias integrações e ótima sintaxe.
-* [Splinter](https://splinter.readthedocs.org/en/latest/) - criada por uma galera da Globo para realizar testes E2E, vale uma olhada.
-* [Locust](http://locust.io/) - ferramenta para teste de carga.
+* [Splinter](https://splinter.readthedocs.io/en/latest/) - criada por uma galera da Globo para realizar testes E2E, vale uma olhada.
+* [Locust](https://locust.io/) - ferramenta para teste de carga.
 
 <h3 id="tool-ruby">Ruby</h3>
 
