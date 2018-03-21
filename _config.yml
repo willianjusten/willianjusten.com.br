@@ -56,7 +56,9 @@ exclude: [
   'package-lock.json',
   'Readme.md',
   'gulpfile.js',
-  'initpost.sh'
+  'initpost.sh',
+  'testlinks.sh',
+  '.travis.yml'
 ]
 
 include: ['_redirects', '_headers']
