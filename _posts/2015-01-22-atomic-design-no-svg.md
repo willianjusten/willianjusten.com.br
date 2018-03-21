@@ -38,11 +38,11 @@ O elemento `<g>` agrupa todos os seus descendentes em um só grupo, mesmo que ex
 
 Por exemplo, o seguinte pássaro é feito de algumas formas, como `<paths>` e `<circle>`.
 
-![Um pássaro em SVG descontruido, mostrando suas formas basicas](http://sarasoueidan.com/images/grouping-bird.svg)
+![Um pássaro em SVG descontruido, mostrando suas formas basicas](/assets/img/atomic-svg/grouping-bird.svg)
 
 Se você quiser mover o pássaro inteiro de um lugar para o outro no Illustrator, você também irá querer agrupar todos os elementos juntos, para não ter que selecionar cada parte toda vez que quiser mover.
 
-![Agrupando no illustrator](http://sarasoueidan.com/images/grouping-in-illustrator.png)
+![Agrupando no illustrator](/assets/img/atomic-svg/grouping-in-illustrator.png)
 
 Agrupar elementos no SVG funcionam da mesma maneira. Neste exemplo, nós agrupamos os elementos do corpo, os elementos da cabeça e então unimos os dois grupos em um grupo com a `id` igual a `bird`.
 
@@ -136,7 +136,7 @@ Alguns detalhes sobre o `<use>` que são importantes. Como dito anteriormente a 
 <use xlink:href="#bird" transform="translate(100, 100)" />
 ```
 
-![A copia de um pássaro deslocado 100,100](http://sarasoueidan.com/images/bird-reuse.jpg)
+![A copia de um pássaro deslocado 100,100](/assets/img/atomic-svg/bird-reuse.jpg)
 
 O fato de a movimentação ser feita tomando o elemento original como referência não é uma coisa muito boa. Outro pequeno problema é que o elemento copiado pelo `<use>` terá sempre os mesmos estilos que o elemento original, portanto, se rotaciornarmos o elemento original, o elemento copiado também irá rotacionar.
 
@@ -198,7 +198,7 @@ No exemplo seguinte temos uma árvore. A árvore é feita de um caule e um grupo
 
 E teremos uma árvore igual a desenhada abaixo:
 
-![Desenho de uma árvore simples](http://sarasoueidan.com/images/defined-tree.jpg)
+![Desenho de uma árvore simples](/assets/img/atomic-svg/defined-tree.jpg)
 
 Se quisermos colocar esse grupo `#tree` em um elemento `<defs>`, a árvore não será mais renderizada.
 
@@ -226,7 +226,7 @@ Por exemplo, se quisermos criar três cópias dessa árvore e posicioná-las no 
 <use xlink:href="#tree" x="350" y="100" />
 ```
 
-![3 árvores identicas deslocadas](http://sarasoueidan.com/images/tree.svg)
+![3 árvores identicas deslocadas](/assets/img/atomic-svg/tree.svg)
 
 Como você pode ver na imagem acima, cada uma das árvores foi posicionada relativamente a origem do sistema de coordenadas, que nesse caso é o canto superior esquerdo do SVG.
 
@@ -243,7 +243,7 @@ O `<symbol>` é mais indicado para definir elementos reutilizáveis. E também s
 
 Leu tudo? Entendeu mais ou menos os conceitos de `<g>`, `<use>`, `<defs>` e `<symbol>`? Então como prêmio, veja esse lindo filhotinho, relaxa um pouco, se estiver cansado, levanta, pega um café, dá um andadinha e volta, porque ainda não acabou!! =)
 
-![Cachorrinho filhote de barriga para cima](http://puppytoob.toobnetwork.com/wp-content/uploads/sites/3/2012/08/cute-puppies01.jpg)
+![Cachorrinho filhote abaixado e olhando](/assets/img/atomic-svg/puppy_dog_eyes_cute.jpg)
 
 
 ### Mas como assim Atomic Design? O que é essa bosta? E por que você tanto fala disso?
