@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2018-03-21 07:55:37'
-image: /assets/img/sawyer-bengtson-279792-unsplash (1).jpg
+image: /assets/img/sawyer-critical.jpg
 title: 'Perfomance Web: Critical CSS e Jekyll'
 description: >-
   A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica simples
@@ -101,6 +101,3 @@ Você pode ver o [exemplo do meu blog aqui](https://github.com/willianjusten/wil
 ## Conclusão
 
 Espero que tenham entendido a importância do CSS crítico e que eu tenha gerado boas ideias para vocês. Para quem estiver usando Jekyll ou outro gerador estático, deu para ver que é bem fácil de fazer. Rumo a uma web mais rápida! \o/
-
-
-
