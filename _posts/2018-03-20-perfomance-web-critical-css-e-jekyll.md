@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-03-20 07:55:37'
+date: '2018-03-21 02:55:37'
 image: /assets/img/cover-critical.jpg
 title: 'Perfomance Web: Critical CSS e Jekyll'
 description: >-
@@ -92,7 +92,7 @@ Depois dos arquivos já no `includes`, você vai adicionar o css nos templates, 
 <!-- _layouts/default.html -->
 
 <style type="text/css">
-    {% include home.css %}
+    { % include home.css % }
 </style>
 ```
 
