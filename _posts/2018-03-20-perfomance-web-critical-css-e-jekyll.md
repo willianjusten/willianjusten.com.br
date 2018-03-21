@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-03-20 02:55:37'
+date: '2018-03-21 04:55:37'
 image: /assets/img/cover-critical.jpg
 title: 'Perfomance Web: Critical CSS e Jekyll'
 description: >-
