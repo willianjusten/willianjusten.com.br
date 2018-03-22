@@ -26,11 +26,9 @@ Todos sabemos que a pior coisa do mundo é o usuário abrir o nosso site e encon
 
 No meu blog eu costumo referenciar vários links, tanto internos como externos, atualmente já são mais de **1500 links**! E como saber se os links estão sempre funcionando? Hoje mesmo alguns alunos comentaram de uma página com imagens quebradas e eu fiquei tão triste...
 
-Foi aí que lembrei do que fiz com a [Awesome SVG](https://github.com/willianjusten/awesome-svg) e a [Awesome Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization), que são duas listas de links que tenho no Github. Lá eu uso o [awesome bot](https://github.com/dkhamsing/awesome_bot), que pega todas as urls da lista e vai testando uma a uma. E aí resolver fazer uma solução para o meu blog também.
+Foi aí que lembrei do que fiz com a [Awesome SVG](https://github.com/willianjusten/awesome-svg) e a [Awesome Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization), que são duas listas de links que tenho no Github. Lá eu uso o [awesome bot](https://github.com/dkhamsing/awesome_bot), que pega todas as urls da lista e vai testando uma a uma. E aí resolvi fazer uma solução para o meu blog também.
 
 ## Htmlproofer
-
-É isso aí, essas foram as ferramentas que eu utilizei para poder fazer a verificação dos links e imagens do meu blog. E como foi?
 
 O [Html Proofer](https://github.com/gjtorikian/html-proofer) é o cara responsável por rodar todo o meu site em busca dos links/imagens quebrados, mas não só isso, ele faz várias outras verificações como checar se o site tem favicon, se scripts externos estão carregando corretamente. E tudo isso de forma bem fácil e customizável, vai lá no github do projeto e veja como é simples.
 
@@ -49,7 +47,7 @@ Eu precisei usar o `--http-status-ignore "0,999"`, pois alguns sites com latênc
 
 ## Travis CI
 
-O segundo carinha que utilizei foi o [Travis CI](https://travis-ci.org/). Ele é um CI simples e que funciona muito bem com projetos open source, bastando criar um arquivinho e tudo passa a funcionar.
+O segundo carinha que utilizei foi o [Travis CI](https://travis-ci.org/). Ele é um CI simples e que funciona muito bem com projetos open source, basta criar um arquivinho e tudo passa a funcionar.
 
 Eu criei um arquivo `.travis.yml` no meu repositório com o seguinte:
 
@@ -74,9 +72,7 @@ env:
 
 O `HtmlProofer` e o `Jekyll` são em Ruby, então por isso eu defini o ambiente como de ruby. O `before_script` serve para rodar coisas que são necessárias antes do meu teste principal. No caso eu mudo a permissão para execução do `testlinks.sh`, assim a máquina consegue rodar sem problemas.
 
-Depois eu mando executar o script, que basicamente gera os arquivos do Jekyll e depois roda o HtmlProofer para verificar tudo. Eu também defino os branches `master` e `drafts`, que são os que utilizo no meu blog.
-
-E também defino uma variável global, só para a instalação do Htmlproofer ser mais rápida.
+Depois eu mando executar o script, que basicamente gera os arquivos do Jekyll e depois roda o HtmlProofer para verificar tudo. Eu também defino os branches `master` e `drafts`, que são os que utilizo no meu blog. Também defino uma variável global, só para a instalação do Htmlproofer ser mais rápida.
 
 ## Nightli.es
 
