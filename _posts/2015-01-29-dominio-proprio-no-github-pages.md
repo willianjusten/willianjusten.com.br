@@ -15,7 +15,7 @@ twitter_text: 'Como ter Domínio Proprio no Github Pages'
 introduction: "Um tutorial passo a passo de como colocar um domínio próprio no Github Pages e já sair com seu blog personalizado."
 ---
 
-Como já disse no [Making of - Parte 1](http://willianjusten.com.br/making-of-parte-1/) e no [Making of - Parte 2](http://willianjusten.com.br/making-of-parte-2/), o meu blog é hospedado no github pages. E não é só o meu, mas vários, um que está fazendo muito sucesso agora é o blog do [Fernando Daciuk](http://blog.da2k.com.br/), que é feito no [Hexo](https://hexo.io/), mas também hospedado no github pages.
+Como já disse no [Making of - Parte 1](https://willianjusten.com.br/making-of-parte-1/) e no [Making of - Parte 2](https://willianjusten.com.br/making-of-parte-2/), o meu blog é hospedado no github pages. E não é só o meu, mas vários, um que está fazendo muito sucesso agora é o blog do [Fernando Daciuk](http://blog.da2k.com.br/), que é feito no [Hexo](https://hexo.io/), mas também hospedado no github pages.
 
 **Ou seja, esse processo é para qualquer tipo de site feito no github pages, através de qualquer ferramenta!!**
 

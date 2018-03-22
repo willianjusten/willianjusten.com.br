@@ -17,7 +17,7 @@ introduction: 'Organizar CSS em larga escala é difícil, mas não precisa ser t
 
 ## Introdução
 
-Fala aí pessoal, no [último post](http://willianjusten.com.br/falando-sobre-rscss/) falei um pouco de uma metodologia para nomear componentes e como escrever suas propriedades. Mas só isso não serve para manter um projeto em larga escala. Precisamos de uma arquitetura para organizar melhor todos os outros arquivos, que não são necessariamente componentes.
+Fala aí pessoal, no [último post](https://willianjusten.com.br/falando-sobre-rscss/) falei um pouco de uma metodologia para nomear componentes e como escrever suas propriedades. Mas só isso não serve para manter um projeto em larga escala. Precisamos de uma arquitetura para organizar melhor todos os outros arquivos, que não são necessariamente componentes.
 
 Para escrever esse post, estou ouvindo uma playlist bem calminha chamada [Tarde Acústica](https://open.spotify.com/user/spotifybrazilian/playlist/3KWwHMxIV2J6bSVciz8dzo), acho que o Spotify me recomenda essa lista há milênios, já ouvi umas vezes, mas tá com umas músicas novas legais. No meio do post eu cansei, tava me deixando mais lento, então resolvi trocar para [Eminem](https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR), que fazia um tempo que não ouvia, olha, te falar que rendeu mais xD
 
@@ -157,4 +157,4 @@ Colocando ali, você garante que ele será lido por último no CSS e consequente
 
 ## Conclusão
 
-Bom galera, com isso eu fecho o básico para termos um bom padrão de escrita e arquitetura de nosso CSS. Espero que tenha sido útil para vocês, assim como foi para mim (sim, eu estudei bastante junto). Qualquer dúvida ou comentário, não deixem de fazer aqui ou nas redes sociais. 
+Bom galera, com isso eu fecho o básico para termos um bom padrão de escrita e arquitetura de nosso CSS. Espero que tenha sido útil para vocês, assim como foi para mim (sim, eu estudei bastante junto). Qualquer dúvida ou comentário, não deixem de fazer aqui ou nas redes sociais.

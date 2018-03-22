@@ -18,7 +18,7 @@ introduction: "Vamos voltar a ser crianças e colorir as coisas! Aprenda como co
 
 ## Índice da série
 
-Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 ## Introdução
 
@@ -34,7 +34,7 @@ As cores estão em tudo e a boa escolha delas irá influir diretamente na beleza
 
 Eu costumo dizer que uma das melhores vantagens do SVG é poder manipular as cores, dessa forma podemos criar ícones únicos, ter várias logos diferentes no mesmo site, mas vindo de uma só fonte, dentre outras coisas mega legais.
 
-No post [Estilizando SVG com CSS - Parte 1](http://willianjusten.com.br/estilizando-svg-com-css-parte-1/) eu falei das formas de se estilizar e no post [Estilizando SVG com CSS - Parte 2](http://willianjusten.com.br/estilizando-svg-com-css-parte-2/) eu mostrei algumas propriedades e como usá-las. Agora vamos a prática, que é mais legal.
+No post [Estilizando SVG com CSS - Parte 1](https://willianjusten.com.br/estilizando-svg-com-css-parte-1/) eu falei das formas de se estilizar e no post [Estilizando SVG com CSS - Parte 2](https://willianjusten.com.br/estilizando-svg-com-css-parte-2/) eu mostrei algumas propriedades e como usá-las. Agora vamos a prática, que é mais legal.
 
 ### Mas e como funciona?
 
@@ -72,7 +72,7 @@ Relaxa, com o SVG seus problemas acabaram! Basta termos uma só imagem em SVG e 
 
 Para funcionar, criamos uma imagem SVG padrão sem estilos, dentro do elemento `symbol`, que irá nos permitir trabalhar com diferentes tamanhos e utilizamos o elemento `use` para chamar a logo, dentro de alguns estilos diferentes.
 
-Se você se esqueceu como funciona o `symbol` e o `use`, dá uma lidinha no post [Atomic Design no SVG](http://willianjusten.com.br/atomic-design-no-svg/).
+Se você se esqueceu como funciona o `symbol` e o `use`, dá uma lidinha no post [Atomic Design no SVG](https://willianjusten.com.br/atomic-design-no-svg/).
 
 A ideia é possuirmos um só componente reutilizável e independente, assim podemos brincar como quisermos =)
 

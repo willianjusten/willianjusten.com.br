@@ -26,7 +26,7 @@ Faaaaaala pessoal, quanto tempo não escrevo aqui e hoje eu venho trazer um post
 
 ## Detalhes
 
-Se você quiser ver na prática ao invés de só no vídeo, segue o [link da demo](http://willianjusten.com.br/curso-de-svg/strokes/loader.html).
+Se você quiser ver na prática ao invés de só no vídeo, segue o [link da demo](https://willianjusten.com.br/curso-de-svg/strokes/loader.html).
 
 Como visto no vídeo, primeiro a gente precisa criar um triângulo, definindo um `svg` com sua `viewbox`. Se quiser, tem um [post sobre a estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/) onde você pode ler mais sobre também. E o código fica:
 

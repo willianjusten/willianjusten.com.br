@@ -18,15 +18,15 @@ introduction: "Aprenda algumas propriedades que o SVG e como trabalhar com elas.
 
 ## Índice da série
 
-Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 ## Introdução
 
 Hoje resolvi que seria o dia de escutar clássicos e estou ouvindo [Pink Floyd](http://www.pinkfloyd.com/), para ser mais específico o [The Dark Side of The Moon - 2011 Remastered Version](http://open.spotify.com/album/3a0UOgDWw2pTajw85QPMiz), se quiser clica ali e segue junto =)
 
-No [post anterior](http://willianjusten.com.br/estilizando-svg-com-css-parte-1/) eu expliquei um pouco sobre quais propriedades o SVG possui, quais ele compartilha com o CSS e quais as formas de estilizar. Hoje vou mostrar um pouco de algumas propriedades na prática.
+No [post anterior](https://willianjusten.com.br/estilizando-svg-com-css-parte-1/) eu expliquei um pouco sobre quais propriedades o SVG possui, quais ele compartilha com o CSS e quais as formas de estilizar. Hoje vou mostrar um pouco de algumas propriedades na prática.
 
-**Nota**: irei utilizar alguns conceitos já explicados e mostrados em outros posts, então caso você se perca em alguma parte do código, dá uma olhada nos [posts anteriores](http://willianjusten.com.br/series/)
+**Nota**: irei utilizar alguns conceitos já explicados e mostrados em outros posts, então caso você se perca em alguma parte do código, dá uma olhada nos [posts anteriores](https://willianjusten.com.br/series/)
 
 ## Propriedade Fill
 

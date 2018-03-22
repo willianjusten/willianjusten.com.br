@@ -18,7 +18,7 @@ introduction: "Veja como criar diferentes animações para o SVG usando só CSS3
 
 ## Índice da série
 
-Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então, para facilitar, basta ir em [séries](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então, para facilitar, basta ir em [séries](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 
 ## Introdução
@@ -29,15 +29,15 @@ Como de costume, a trilha sonora enquanto escrevo esse post é uma playlist cham
 O post de hoje será em forma de mini-tutorial, então já vou passando logo os exemplos que faremos hoje.
 
 * [Airplane Loader SVG](https://willianjusten.github.io/svg-animation-css/loader.html)
-* [Earth SVG](http://willianjusten.com.br/svg-animation-css/)
+* [Earth SVG](https://willianjusten.com.br/svg-animation-css/)
 * [Repositório no Github](https://github.com/willianjusten/svg-animation-css)
 
 
 ## Relembrando...
 
-Uma das grandes vantagens do SVG é que ele é um código xml, que pode ser facilmente manipulado. Esse código possui uma estrutura bem definida, com elementos bases e se você quiser lembrar um pouquinho, basta ler [A estrutura do SVG](http://willianjusten.com.br/a-estrutura-do-svg/).
+Uma das grandes vantagens do SVG é que ele é um código xml, que pode ser facilmente manipulado. Esse código possui uma estrutura bem definida, com elementos bases e se você quiser lembrar um pouquinho, basta ler [A estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/).
 
-E como irei fazer animações usando CSS, é bom que você já tenha lido as formas de se [estilizar o SVG usando CSS](http://willianjusten.com.br/estilizando-svg-com-css-parte-1/) e se quiser, pode também se aprofundar em alguns dos [estilos especificos do SVG](http://willianjusten.com.br/estilizando-svg-com-css-parte-2/).
+E como irei fazer animações usando CSS, é bom que você já tenha lido as formas de se [estilizar o SVG usando CSS](https://willianjusten.com.br/estilizando-svg-com-css-parte-1/) e se quiser, pode também se aprofundar em alguns dos [estilos especificos do SVG](https://willianjusten.com.br/estilizando-svg-com-css-parte-2/).
 
 
 ### Passo 1 - Obtendo um SVG
@@ -46,7 +46,7 @@ Para este tutorial, eu vou utilizar 2 SVG diferentes. Um contendo somente um ele
 
 Os arquivos foram [exemplo 1](http://www.freepik.com/free-vector/airplane-vector-template-free_714802.htm) e [exemplo 2](http://www.freepik.com/free-vector/world-travel-vector-free-template_714008.htm).
 
-Se você quiser, tem o link de [onde baixar svg?](http://willianjusten.com.br/onde-baixar-svg/).
+Se você quiser, tem o link de [onde baixar svg?](https://willianjusten.com.br/onde-baixar-svg/).
 
 
 ### Passo 2 - Limpando o vetor

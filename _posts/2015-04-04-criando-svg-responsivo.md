@@ -18,7 +18,7 @@ introduction: "Hoje em dia com a variedade de telas que temos, o desafio é dar 
 
 ## Índice da série
 
-Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 ## Introdução
 
@@ -74,7 +74,7 @@ Se a `viewport` e `viewBox` não possuirem as mesmas dimensões de width e heigh
 
 ## Adicionando o  SVG
 
-Tendo feito essas especificações, basta inserir o seu SVG onde quiser. E como eu disse no post [Como usar SVG](http://willianjusten.com.br/como-usar-svg/), existem algumas maneiras de se utilizar SVG e em todas elas é possível criar um SVG fluido, uns são nativos e outros precisam de hack para IEca... Mas isso não é problema para nós!
+Tendo feito essas especificações, basta inserir o seu SVG onde quiser. E como eu disse no post [Como usar SVG](https://willianjusten.com.br/como-usar-svg/), existem algumas maneiras de se utilizar SVG e em todas elas é possível criar um SVG fluido, uns são nativos e outros precisam de hack para IEca... Mas isso não é problema para nós!
 
 ### Como imagem, object e embed
 
@@ -163,7 +163,7 @@ Para a primeira diferenciação, queremos retirar os cristais amarelo e verde, v
 
 ### Corte 2
 
-Para o corte 2, queremos retirar também o cristal grande e para que a logo permaneça visível, queremos deixar o texto na cor roxa. Para isso é só usar a propriedade `fill`, como vimos no [post anterior](http://willianjusten.com.br/colorindo-em-svg/).
+Para o corte 2, queremos retirar também o cristal grande e para que a logo permaneça visível, queremos deixar o texto na cor roxa. Para isso é só usar a propriedade `fill`, como vimos no [post anterior](https://willianjusten.com.br/colorindo-em-svg/).
 
 ```css
 @media (max-width: 480px) {

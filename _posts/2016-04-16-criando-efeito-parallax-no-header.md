@@ -29,7 +29,7 @@ Quando eu fui tirar screenshots do meu blog, notei que todas acabavam ficando co
 
 Foi aí que um amigo falou que gostava muito do header do [blog do Invision](http://blog.invisionapp.com/designtalk-a-license-for-creative-advocacy/), eu olhei e pensei, pow isso aí é simplão, dá para fazer com css rapidinho e o detalhe do scroll com js puro. Acabou que eu fiz um para mim...
 
-Se você quiser ver a demo feita para esse post, [clique aqui](http://willianjusten.com.br/labs/header-parallax/).
+Se você quiser ver a demo feita para esse post, [clique aqui](https://willianjusten.com.br/labs/header-parallax/).
 
 ## Parte do CSS
 
@@ -94,10 +94,10 @@ Depois disso, precisamos pegar o valor da posição do scroll, que pode ser capt
 
 Para não ficar chamando a função o tempo todo, mesmo depois do header sumir, verificamos se o valor de `scrollPos` é menor que a altura do nosso header. Se for menor, nós aplicamos o `translateY` para subir um pouquinho o título e também diminuímos a `opacity`, causando o efeito desejado. Os cálculos ali acima foram feitos só para a transição ser mais suave e ajustados no olho mesmo. Queremos uma `opacity` de zero quando o scroll for total (600), então `600 - (600/600)` vai se encarregar disso. E a movimentação do título precisa ser mais devagar para dar o efeito de parallax, então divido o valor do scroll por 3.
 
-Se você não clicou ainda, o [demo está aqui](http://willianjusten.com.br/labs/header-parallax/).
+Se você não clicou ainda, o [demo está aqui](https://willianjusten.com.br/labs/header-parallax/).
 
 ## Conclusão
 
 Pronto pessoal, foi um post bastante simples, mas que é interessante para firmarmos algumas propriedades e conceitos importantes. Espero que tenham gostado, devo fazer mais alguns posts do gênero, ensinando a fazer pequenos detalhes/efeitos para deixar seus sites mais legais.
 
-Queria também agradecer o carinho da galera que tem acessado os meus [cursos online](http://willianjusten.com.br/cursos/), tem sido bastante legal ver todo mundo assistindo, aprendendo, divulgando e dando dicas. Se você ainda não acessou, vai lá e se inscreva. Todo mundo que se inscreve nos meus cursos, são avisados quando lanço um novo post e também devo começar a enviar links e notícias interessantes que eu ver por aí, em forma de weekly. Não perde a chance =)
+Queria também agradecer o carinho da galera que tem acessado os meus [cursos online](https://willianjusten.com.br/cursos/), tem sido bastante legal ver todo mundo assistindo, aprendendo, divulgando e dando dicas. Se você ainda não acessou, vai lá e se inscreva. Todo mundo que se inscreve nos meus cursos, são avisados quando lanço um novo post e também devo começar a enviar links e notícias interessantes que eu ver por aí, em forma de weekly. Não perde a chance =)

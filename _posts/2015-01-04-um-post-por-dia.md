@@ -27,7 +27,7 @@ Se você é desenvolvedor e se interessou pela ideia, não espera não, vai lá 
 
 Recebi ótimos feedbacks de amigos e pessoas desconhecidas, agradeço bastante a todo mundo =)
 
-Mas eu também vi bastante gente falando "Até favoritei seu blog para acompanhar", acho mega legal isso, mas pow, favoritar não vai te avisar se tem post novo ou não, segue no [RSS](http://willianjusten.com.br/feed.xml) que é bem mais fácil.
+Mas eu também vi bastante gente falando "Até favoritei seu blog para acompanhar", acho mega legal isso, mas pow, favoritar não vai te avisar se tem post novo ou não, segue no [RSS](https://willianjusten.com.br/feed.xml) que é bem mais fácil.
 
 Aqui tem um [listinha de apps](http://www.tecmundo.com.br/android/25914-android-10-programas-para-leitura-de-feeds.htm) para poder acessar pelo celular se quiser, diz para android, mas tem os mesmos apps para iOS também.
 
@@ -35,7 +35,7 @@ Eu particularmente utilizo o [Feedly](http://feedly.com/) e junto a ele uso uma 
 
 ![Imagem mostrando uma tela com xml para rss](/assets/img/one-post-per-day/feedly.png)
 
-Se você estiver com a extensão do Feedly instalada e clicar em [RSS](http://willianjusten.com.br/feed.xml) vai abrir uma janela parecida com a da imagem acima, aí é só mandar abrir e pronto, toda vez que lançar algo novo, você é avisado, assim fica mais fácil de não perder nada.
+Se você estiver com a extensão do Feedly instalada e clicar em [RSS](https://willianjusten.com.br/feed.xml) vai abrir uma janela parecida com a da imagem acima, aí é só mandar abrir e pronto, toda vez que lançar algo novo, você é avisado, assim fica mais fácil de não perder nada.
 
 E para vocês não falarem que eu fiz um post praticamente inútil, vai aqui um listinha de feeds que eu sigo (não são todos, porque senão seria um listão):
 

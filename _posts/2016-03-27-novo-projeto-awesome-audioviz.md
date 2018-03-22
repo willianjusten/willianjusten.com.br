@@ -17,7 +17,7 @@ introduction: "Quem já acessou esse blog uma vez na vida já viu como eu amo m�
 
 ## Introdução
 
-Primeiro de tudo, gostaria muito de agradecer a receptividade do [post de ontem](http://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), foram muitos compartilhamentos, likes, comentários tanto no blog, como nos posts dos grupos, bate papos privados e até doações! Fico bastante feliz que eu ajude e inspire outras pessoas, eu escrevo no blog muito por amor ao que faço e pela vontade de ajudar a todos.
+Primeiro de tudo, gostaria muito de agradecer a receptividade do [post de ontem](https://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), foram muitos compartilhamentos, likes, comentários tanto no blog, como nos posts dos grupos, bate papos privados e até doações! Fico bastante feliz que eu ajude e inspire outras pessoas, eu escrevo no blog muito por amor ao que faço e pela vontade de ajudar a todos.
 
 Bom, sem mais delongas, senão vou chorar. Vou escrevendo enquanto escuto uma [Playlist de ChillStep](https://open.spotify.com/user/kent1337/playlist/6IjDl5eRczFdgZkKYXhuHZ) muito boa.
 

@@ -61,7 +61,7 @@ Depois de criada a base, veremos simples inputs de checkbox, aqueles quadradinho
 }
 ```
 
-Usamos aqui o seletor `+`, conhecido como adjacente, que pega o primeiro elemento após o primeiro seletor. Se quiser ver mais sobre esse seletor, veja [esse meu post sobre alguns seletores css](http://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/).
+Usamos aqui o seletor `+`, conhecido como adjacente, que pega o primeiro elemento após o primeiro seletor. Se quiser ver mais sobre esse seletor, veja [esse meu post sobre alguns seletores css](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/).
 
 As linhas `1-5` servem somente para esconder o checkbox feio e jogá-lo para fora da tela, garantindo assim, que ele não seja clicável. Enquanto as linhas `5-13` serão responsáveis por deixar o elemento ali "clicável" usando a propriedade `cursor: pointer`, também remove a opção de selecionar a label com o `user-select: none` e deixa ele como um elemento de bloco, para que possamos botar tamanho e estilo.
 

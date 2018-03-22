@@ -17,10 +17,10 @@ introduction: "Neste artigo iremos saber mais sobre a estruturação de um SVG, 
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](http://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](http://willianjusten.com.br/como-usar-svg/)
-* [#3 - Onde Baixar SVG](http://willianjusten.com.br/onde-baixar-svg/)
-* [#4 - A Estrutura do SVG](http://willianjusten.com.br/a-estrutura-do-svg/)
+* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
+* [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
+* [#4 - A Estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/)
 
 ## Introdução
 

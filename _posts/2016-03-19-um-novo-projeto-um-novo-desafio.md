@@ -97,4 +97,4 @@ Se você gostou da ideia e quer mais cursos e com mais frequência, me ajude a t
 
 Vamos lá galera, todo mundo acessando, compartilhando, curtindo, comentando e sendo feliz!!!
 
-[Link maravilhoso para os cursos!](http://willianjusten.com.br/cursos/)
+[Link maravilhoso para os cursos!](https://willianjusten.com.br/cursos/)

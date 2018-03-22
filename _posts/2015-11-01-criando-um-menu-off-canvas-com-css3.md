@@ -15,7 +15,7 @@ twitter_text: 'Aprenda a criar um menu off canvas usando CSS3.'
 introduction: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms e um pouquinho de javascript.'
 ---
 
-## Introdução 
+## Introdução
 
 Como eu disse no post anterior, vou tentar voltar a escrever um pouquinho mais e para isso escolhi uma coisa que há muito tempo já haviam me perguntado, que era, como criar um menu off canvas como eu uso nesse blog. A trilha sonora de hoje vai ser [Forever Alone](https://open.spotify.com/user/spotify/playlist/2U3mZqDktE7UJ1gE4eVoUv) (que minha namorada não leia isso =o).
 
@@ -23,7 +23,7 @@ Como eu disse no post anterior, vou tentar voltar a escrever um pouquinho mais e
 
 Esse menu passou a ser mais famoso com o uso de dispositivos mobile, onde não possuímos tanto espaço em tela para poder ter um menu lateral. Então nada melhor do que esconder e mostrar só quando necessário né?
 
-Se você é daqueles que gosta de ver funcionando primeiro, segue a [DEMO](http://willianjusten.com.br/labs/menu-off-canvas/#).
+Se você é daqueles que gosta de ver funcionando primeiro, segue a [DEMO](https://willianjusten.com.br/labs/menu-off-canvas/#).
 
 **O exemplo mostrado aqui abaixo está bem simplificado sem o uso de prefixos para os browsers e pode ser instável em certas versões. Por favor, utilize um auto-prefixer para que tudo fique correto =)**
 
@@ -77,7 +77,7 @@ Dentro dessas camadas, vamos colocar algum conteúdo, só para não ficar muito 
                 <a href="#" class="toggle-menu">Abrir o menu</a>
                 <h1>Menu Off Canvas!!</h1>
                 <p>Uma simples demo mostrando como funciona o menu off canvas.</p>
-                <p>Tutorial em <a href="http://willianjusten.com.br/criando-um-menu-off-canvas-com-css3/">willianjusten.com.br</a></p>
+                <p>Tutorial em <a href="https://willianjusten.com.br/criando-um-menu-off-canvas-com-css3/">willianjusten.com.br</a></p>
             </div>
         </div>
     </div>
@@ -88,15 +88,15 @@ Note também, que eu criei um botão com a seguinte classe `toggle-menu`, que va
 
 ## CSS
 
-### Wrapper 
+### Wrapper
 
 Depois de montada a estrutura, precisamos deixar um pouco bonitinho e fazer a mágica acontecer. Primeiro vamos montar nosso `wrapper`, ele é o responsável por segurar o conteúdo de nosso site e "esconder" as coisas que estiverem por fora dele, por esse motivo iremos utilizar a propriedade `overflow: hidden`, que vai esconder essas coisinhas.
 
 ```css
 .wrapper {
-    position: relative; 
+    position: relative;
     overflow: hidden;
-    width: 100%; 
+    width: 100%;
     height: 3000px; /* só para deixar a página grande*/
 }
 ```
@@ -184,7 +184,7 @@ Um truque bem famoso que podemos usar para otimizar a animação é forçar o us
   transform: translateX(0);
 }
 .show-menu .canvas {
-  transform: translateX(300px);  
+  transform: translateX(300px);
 }
 
 /* Novo */
@@ -192,7 +192,7 @@ Um truque bem famoso que podemos usar para otimizar a animação é forçar o us
   transform: translate3d(0);
 }
 .show-menu .canvas {
-  transform: translate3d(300px, 0, 0);  
+  transform: translate3d(300px, 0, 0);
 }
 
 ```
@@ -216,4 +216,3 @@ document.addEventListener('keyup', function(e){
 
 É basicamente isso pessoal, existem várias coisas que vocês podem brincar, como tipos diferentes de animação e velocidades de transição. Também podem brincar com novas posições, com menus vindo de cima, da direita, enfim...
 Quem fizer uma brincadeira nova, posta aí nos comentários.
-

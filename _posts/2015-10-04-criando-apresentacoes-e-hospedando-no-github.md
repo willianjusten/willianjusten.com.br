@@ -203,7 +203,7 @@ Reveal.initialize({
 
 #### 8 - Hospedando no Github
 
-Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pages.github.com/), que permite hospedar páginas estáticas nele. Para hospedarmos algo lá, basta criarmos um projetinho com o nome que desejarmos e ao invés de usar a branch master, usarmos a branch `gh-pages`. Após isso, o projeto vai ficar hospedado em `nomedousuario.github.io/nome-do-projeto`, caso você tenha um domínio configurado, ele ficará como `dominio/nome-do-projeto`. Segue um exemplo de uma das minhas últimas apresentações [Frontend Carioca 2015](http://willianjusten.com.br/frontend-carioca-2015/).
+Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pages.github.com/), que permite hospedar páginas estáticas nele. Para hospedarmos algo lá, basta criarmos um projetinho com o nome que desejarmos e ao invés de usar a branch master, usarmos a branch `gh-pages`. Após isso, o projeto vai ficar hospedado em `nomedousuario.github.io/nome-do-projeto`, caso você tenha um domínio configurado, ele ficará como `dominio/nome-do-projeto`. Segue um exemplo de uma das minhas últimas apresentações [Frontend Carioca 2015](https://willianjusten.com.br/frontend-carioca-2015/).
 
 ---
 

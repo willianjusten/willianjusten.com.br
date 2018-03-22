@@ -21,7 +21,7 @@ Faaaala pessoal, faz um tempinho que escrevi meu último post, nesses últimos d
 Lá eu palestrei sobre dois assuntos bem legais e se você ainda não viu meus slides, seguem:
 
 - [CSS loves Math - Meetup CSS SP](https://willianjusten.com.br/meetup-css-sp)
-- [JS loves Music](http://willianjusten.com.br/frontinsampa-16)
+- [JS loves Music](https://willianjusten.com.br/frontinsampa-16)
 
 Enquanto escrevo esse post vou ouvindo a trilha de um jogo que estou viciado, o jogo em questão é o premiado [Life is Strange](https://www.youtube.com/watch?v=AURVxvIZrmU) e se você só de assistir esse trailer, já se apaixonou pelo jogo, segue comigo na [playlist](https://open.spotify.com/user/officiallifeisstrange/playlist/1f5ZzLDTXHTDR8CYIEddpW), que é incrivel <3
 
@@ -29,7 +29,7 @@ Enquanto escrevo esse post vou ouvindo a trilha de um jogo que estou viciado, o 
 
 Git hooks são scripts que rodam automaticamente cada vez que você realiza alguma ação em particular no repositório Git. Eles permitem modificar o comportamento interno do Git e adicionar triggers customizáveis em vários pontos chave do ciclo de desenvolvimento.
 
-Casos comuns do uso de Git Hooks são encorajar alguma política de commit, alterar algo do ambiente dependendo do estado do repositório ou implementar algum workflow de Integração Contínua. 
+Casos comuns do uso de Git Hooks são encorajar alguma política de commit, alterar algo do ambiente dependendo do estado do repositório ou implementar algum workflow de Integração Contínua.
 
 Essas triggers podem ser ativadas através de commits, push para o repositório remoto, rebase, merges e etc.
 
@@ -53,7 +53,7 @@ $ tree -d -L 1
 Como vamos trabalhar com Hooks, já é de se imaginar que devemos nos preocupar com a pasta `hooks`. Se listarmos os arquivos, teremos:
 
 ```bash
-$ ls 
+$ ls
 
 applypatch-msg.sample     pre-applypatch.sample     pre-rebase.sample
 commit-msg.sample         pre-commit.sample         prepare-commit-msg.sample
@@ -89,7 +89,7 @@ test "" = "$(grep '^Signed-off-by: ' "$1" |
 }
 ```
 
-Poderíamos editar esse mesmo arquivo e colocar algo como: 
+Poderíamos editar esse mesmo arquivo e colocar algo como:
 
 ```bash
 #!/bin/sh
@@ -128,7 +128,7 @@ Depois disso, basta ir no seu `package.json` na parte de scripts e colocar os ho
 }
 ```
 
-Ali eu estou criando dois hooks que são `precommit` e `prepush` e estou dizendo que antes de um commit ou um push para o remoto, eles deverão rodar os comandos `lint` e `test`, que eu também determinei no meu npm script. Isso vai garantir que ele verifique se no código não tem nada fora do padrão de escrita, usando o nosso lint. E também irá rodar os testes, evitando que suba algo quebrado. 
+Ali eu estou criando dois hooks que são `precommit` e `prepush` e estou dizendo que antes de um commit ou um push para o remoto, eles deverão rodar os comandos `lint` e `test`, que eu também determinei no meu npm script. Isso vai garantir que ele verifique se no código não tem nada fora do padrão de escrita, usando o nosso lint. E também irá rodar os testes, evitando que suba algo quebrado.
 
 ![Um carinha com bigodes e vestido com camisa de unicórnio falando it's magic de forma bem engraçada](http://i.imgur.com/iZcUNxH.gif)
 
@@ -137,14 +137,3 @@ Se você não conhece o `eslint` para verificar seu padrão de escrita, dá uma 
 ## Conclusão
 
 Bom galera, espero que vocês tenham entendido o quanto é simples de se utilizar um Git Hook e como ele pode ser importante para o nosso desenvolvimento. Não quero mais ninguém subindo código fora de padrão e com testes quebrando hein! =p
-
-
-
-
-
-
-
-
-
-
-

@@ -22,7 +22,7 @@ Faaaaaaaala pessoal, primeiro de tudo, um Feliz 2016 para todos! Que grandes coi
 
 Vou ouvindo uma playlist super super calma chamada [ChillStep](https://open.spotify.com/user/kent1337/playlist/6IjDl5eRczFdgZkKYXhuHZ) enquanto escrevo esse post, mas na criação desse novo visual, eu ouvi muito as [playlists comemorativas de Star Wars](https://open.spotify.com/user/official_star_wars), em especial a do [Finn](https://open.spotify.com/user/official_star_wars/playlist/6v62GOY5tiFfIwkhOHMwS5), que é composta de Indies, minha paixão <3
 
-Bom, como eu havia falado no [post passado](http://willianjusten.com.br/meu-ano-de-2015/), eu estava preparando um visual novo para o site e esse post vai servir para falar um pouco desse processo, minhas viagens em busca do novo visual, algumas coisas que necessariamente precisavam ter, outras que eu queria manter, enfim, uma salada mista de inspirações e a concepção de fato.
+Bom, como eu havia falado no [post passado](https://willianjusten.com.br/meu-ano-de-2015/), eu estava preparando um visual novo para o site e esse post vai servir para falar um pouco desse processo, minhas viagens em busca do novo visual, algumas coisas que necessariamente precisavam ter, outras que eu queria manter, enfim, uma salada mista de inspirações e a concepção de fato.
 
 Eu sempre fui uma pessoa muito curiosa para saber como certos designs foram pensados e criados, então acho que esse meu post vai servir para essas pessoas curiosas assim como eu.
 
@@ -47,7 +47,7 @@ E os posts também ocupavam uma área relativamente grande, com a data num desta
 - Css feito usando [Stylus](http://stylus-lang.com/) `<3`
 - Gulp para fazer processamento dos assets, livereload e build
 
-Se quiser saber um pouco mais da construção dele, tem os posts [Making of - Parte 1](http://willianjusten.com.br/making-of-parte-1/) e [Making of - Parte 2](http://willianjusten.com.br/making-of-parte-2/)
+Se quiser saber um pouco mais da construção dele, tem os posts [Making of - Parte 1](https://willianjusten.com.br/making-of-parte-1/) e [Making of - Parte 2](https://willianjusten.com.br/making-of-parte-2/)
 
 ## Blog Novo
 
@@ -140,7 +140,7 @@ Se você quiser entender mais de `flexbox`, acesse os seguintes links:
 
 Para os cards não aparecem "duros" no scroll, eu resolvi aplicar uma leve animação neles. Essa animação foi inspirada nesse [post do Codrops](http://tympanus.net/codrops/2013/07/02/loading-effects-for-grid-items-with-css-animations/), lá eles utilizam o Masonry e coisinhas a mais, o que eu precisava era só a interação no scroll, então fiz minhas devidas modificações.
 
-Eu ia fazer um gif mostrando a animação, mas acho que é melhor você testar por si, vai lá na [Home](http://willianjusten.com.br), faça o scroll e veja por si mesmo =p
+Eu ia fazer um gif mostrando a animação, mas acho que é melhor você testar por si, vai lá na [Home](https://willianjusten.com.br), faça o scroll e veja por si mesmo =p
 
 ### Organização
 
@@ -156,7 +156,7 @@ Pensando nisso, eu criei algumas categorias como:
 - `dev`: essa categoria é para abordar temas mais abertos de programação como ter domínio próprio em github, testes, etc. Sua cor é o cinza.
 - `misc`: miscelânia, como o nome já diz, é um conjunto de tudo, que pode abordar tanto coisas de programação, como links da semana, novidades do blog, coisas off-topic, enfim, todo o resto. Sua cor é o verde.
 
-Para acessar qualquer uma das categorias em específico, basta clicar no `ribbon` no canto superior do card, segue exemplo da [página de js](http://willianjusten.com.br/category/js).
+Para acessar qualquer uma das categorias em específico, basta clicar no `ribbon` no canto superior do card, segue exemplo da [página de js](https://willianjusten.com.br/category/js).
 
 ### Página de Post
 

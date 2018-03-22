@@ -15,7 +15,7 @@ introduction: "FAQ: Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como 
 
 ## Introdução
 
-Desde a criação do meu blog e dos posts [making of - parte 1](http://willianjusten.com.br/making-of-parte-1/) e [making of - parte 2](http://willianjusten.com.br/making-of-parte-2/), apareceu um grande número de pessoas mais interessadas em Jekyll e o modelo de gerador estático.
+Desde a criação do meu blog e dos posts [making of - parte 1](https://willianjusten.com.br/making-of-parte-1/) e [making of - parte 2](https://willianjusten.com.br/making-of-parte-2/), apareceu um grande número de pessoas mais interessadas em Jekyll e o modelo de gerador estático.
 
 É claro que com esse interesse, surgiram várias dúvidas, que não puderam ser explicadas somente com os dois posts. Tiveram várias pessoas que vieram me perguntar alguns detalhes em particular e o [William Goulart](https://github.com/wgoulart) colocou [essa issue](https://github.com/LFeh/1-post-por-dia/issues/20) no nosso [repositório destinado a dúvidas e pedidos de posts](https://github.com/LFeh/1-post-por-dia/), que o grande [Luiz Felipe](https://github.com/LFeh) criou.
 

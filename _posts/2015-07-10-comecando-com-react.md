@@ -113,4 +113,4 @@ Essa foi só a primeira parte, para entendermos pelo menos um pouco do que é, o
 
 ## Veja mais posts
 
-[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
+[Série sobre React](https://willianjusten.com.br/series/#aprendendo-reactjs)

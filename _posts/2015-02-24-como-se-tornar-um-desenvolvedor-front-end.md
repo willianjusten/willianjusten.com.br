@@ -122,7 +122,7 @@ Estava achando que ser desenvolvedor front end é moleza? Como disse o [Nicholas
 
 ![Um tweet falando sobre como a profissão de frontender é difícil](/assets/img/quero-ser-desenvolvedor-frontend/twitter.png)
 
-Cada dia uma nova tecnologia é lançada e precisamos nos manter sempre atualizados, a questão é, como fazer tudo isso? Fiz um post há um tempo atrás falando sobre [técnicas de aprendizado](http://willianjusten.com.br/tecnicas-de-aprendizado/), que podem ajudar um pouco nessa longa caminhada.
+Cada dia uma nova tecnologia é lançada e precisamos nos manter sempre atualizados, a questão é, como fazer tudo isso? Fiz um post há um tempo atrás falando sobre [técnicas de aprendizado](https://willianjusten.com.br/tecnicas-de-aprendizado/), que podem ajudar um pouco nessa longa caminhada.
 
 Vou separar aqui as principais áreas que precisamos estudar, o porquê delas e alguns links para auxiliá-los no estudo.
 
@@ -305,7 +305,7 @@ E qual a importância disso? Estar bem posicionado nos mecanismos de busca lhe p
 Nem todo desenvolvedor Front End precisa ser o mestre de tudo em SEO, podemos deixar isso para especialistas, mas algumas informações básicas é importante também.
 
 - [Agência Mestre - MestreSEO](https://www.agenciamestre.com/)
-- [Como melhorar meu SEO?](http://willianjusten.com.br/como-melhorar-meu-seo/)
+- [Como melhorar meu SEO?](https://willianjusten.com.br/como-melhorar-meu-seo/)
 - [Dicas de SEO para Front-end](https://tableless.com.br/dicas-de-seo-para-front-end/)
 
 ---

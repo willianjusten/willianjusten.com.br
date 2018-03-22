@@ -17,9 +17,9 @@ introduction: "Aqui irei explicar as diferentes formas de se inserir um SVG na s
 
 ## Introdução
 
-Como eu havia falado no [último post](http://willianjusten.com.br/atualizacoes/), irei fazer uma série de posts ensinando tudo sobre SVG, sim, você vai cansar de me ver falando sobre SVG, até que você comece a usar!! =)
+Como eu havia falado no [último post](https://willianjusten.com.br/atualizacoes/), irei fazer uma série de posts ensinando tudo sobre SVG, sim, você vai cansar de me ver falando sobre SVG, até que você comece a usar!! =)
 
-O [primeiro post](http://willianjusten.com.br/por-que-usar-svg/), foi falando sobre o porquê de usar SVG. Lá eu falei várias coisas legais que podem ser feitas com essa tecnologia e eu aposto que vocês se impressionaram com alguma das habilidades que ela tem.
+O [primeiro post](https://willianjusten.com.br/por-que-usar-svg/), foi falando sobre o porquê de usar SVG. Lá eu falei várias coisas legais que podem ser feitas com essa tecnologia e eu aposto que vocês se impressionaram com alguma das habilidades que ela tem.
 
 Agora que você já está ambientado com o que é SVG e porque usar o SVG nos seus sites e aplicações, só falta uma coisa:
 

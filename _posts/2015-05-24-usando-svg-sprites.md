@@ -18,7 +18,7 @@ introduction: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Ap
 
 ## Índice da série
 
-Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 ## Introdução
 
@@ -36,7 +36,7 @@ Além desses benefícios, acho muito mais fácil de organizar os ícones, afinal
 
 ## Escolhendo os ícones
 
-O primeiro de tudo é escolher seus ícones de preferência e montar o arquivo SVG. Se você não sabe desenhar e não tem ideia de onde baixar, fiz um [post falando sobre vários lugares para baixar](http://willianjusten.com.br/onde-baixar-svg/).
+O primeiro de tudo é escolher seus ícones de preferência e montar o arquivo SVG. Se você não sabe desenhar e não tem ideia de onde baixar, fiz um [post falando sobre vários lugares para baixar](https://willianjusten.com.br/onde-baixar-svg/).
 
 Para o post eu utilizei o seguinte [conjunto de ícones](http://br.freepik.com/vetores-gratis/animais-vector-set-plana_715458.htm).
 
@@ -68,7 +68,7 @@ Para cada ícone precisaremos criar uma `view` bem simples, colocando cada ícon
 
 Se você notar, a largura, altura e posição y se mantém e só modificamos a posição no eixo x, que representa uma imagem ao lado da outra.
 
-Com o arquivo todo pronto, eu salvei com o nome de `animals-sprite.svg` dentro da minha pasta `/assets/img/`. Se quiser dar uma olhada diretamente na imagem, segue [link](http://willianjusten.com.br/assets/img/animals-sprite.svg).
+Com o arquivo todo pronto, eu salvei com o nome de `animals-sprite.svg` dentro da minha pasta `/assets/img/`. Se quiser dar uma olhada diretamente na imagem, segue [link](https://willianjusten.com.br/assets/img/animals-sprite.svg).
 
 Tendo a imagem pronta, fica simples de usar, segue um exemplo:
 
@@ -137,7 +137,7 @@ Dessa forma não há necessidade de se criar views, bastando somente colocar `id
 
 E para usar cada ícone, basta chamar a imagem seguida da `id`.
 
-<img class="animal" src="http://willianjusten.com.br/assets/img/animals-sprite-stack.svg#rabbit" alt="Coelhinho">
+<img class="animal" src="https://willianjusten.com.br/assets/img/animals-sprite-stack.svg#rabbit" alt="Coelhinho">
 
 ```html
 <img src="/assets/img/animals-sprite-stack.svg#rabbit" alt="Coelhinho">

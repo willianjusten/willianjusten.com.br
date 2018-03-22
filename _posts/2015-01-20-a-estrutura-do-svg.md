@@ -17,9 +17,9 @@ introduction: "Saiba como o SVG funciona de verdade, seus elementos, alguns de s
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](http://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](http://willianjusten.com.br/como-usar-svg/)
-* [#3 - Onde Baixar SVG](http://willianjusten.com.br/onde-baixar-svg/)
+* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
+* [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
 
 ## Introdução
 

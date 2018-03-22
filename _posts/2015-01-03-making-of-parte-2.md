@@ -99,7 +99,7 @@ Tendo o NodeJS já instalado, basta ir no terminal e iniciar o projeto:
 npm init
 ```
 
-Ele vai te fazer umas perguntas, vai seguindo os passos e no final é só confirmar e isso irá gerar um arquivo `package.json` com os dados preenchidos. Depois basta instalar os plugins necessários, que eu já falei no [post anterior](http://willianjusten.com.br/making-of-parte-1/).
+Ele vai te fazer umas perguntas, vai seguindo os passos e no final é só confirmar e isso irá gerar um arquivo `package.json` com os dados preenchidos. Depois basta instalar os plugins necessários, que eu já falei no [post anterior](https://willianjusten.com.br/making-of-parte-1/).
 
 ```bash
 npm install --save-dev gulp gulp-uglify gulp-concat gulp-stylus autoprefixer-stylus browser-sync gulp-imagemin gulp-plumber jeet kouto-swiss rupture

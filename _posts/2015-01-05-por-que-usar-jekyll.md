@@ -14,7 +14,7 @@ introduction: "Alguns motivos para se usar um gerador estático para a criação
 
 Olá pessoal, hoje terá um post extra! <s>Não vai se acostumando!</s> E brincadeirinha, não vai rolar flame war aqui, assim espero =o
 
-Bom, como disse no [primeiro post](http://willianjusten.com.br/making-of-parte-1/) e expliquei um pouco melhor no [segundo post](http://willianjusten.com.br/making-of-parte-2/), eu utilizei o [Jekyll](http://jekyllrb.com/), que é um gerador estático, para criar o meu Blog. Algumas pessoas acharam muito legal a ideia, disseram até que já haviam pensado em criar utilizando o Jekyll ou outros geradores estáticos. Mas tiveram algumas pessoas que ficaram ainda com dúvidas de porque utilizar o Jekyll e não fazer na mão ou em um Wordpress. E teve um amigo de um grupo do qual eu participo que fez a seguinte postagem.
+Bom, como disse no [primeiro post](https://willianjusten.com.br/making-of-parte-1/) e expliquei um pouco melhor no [segundo post](https://willianjusten.com.br/making-of-parte-2/), eu utilizei o [Jekyll](http://jekyllrb.com/), que é um gerador estático, para criar o meu Blog. Algumas pessoas acharam muito legal a ideia, disseram até que já haviam pensado em criar utilizando o Jekyll ou outros geradores estáticos. Mas tiveram algumas pessoas que ficaram ainda com dúvidas de porque utilizar o Jekyll e não fazer na mão ou em um Wordpress. E teve um amigo de um grupo do qual eu participo que fez a seguinte postagem.
 
 > Quero abrir aqui uma discussão sobre o furor gerado em cima do Jekyll.
 Gostaria que fosse deixado de lado a paixão e orgulho de ser desenvolvedor e fosse debatido o exato motivo de uso da ferramente e que me dissessem porque vocês a usam, se usam.

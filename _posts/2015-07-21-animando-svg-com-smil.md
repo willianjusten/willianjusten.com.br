@@ -20,7 +20,7 @@ introduction: "Aprenda a criar animações usando só SVG e nada mais, através 
 
 Enquanto escrevo esse post vou ouvindo [Deftones](https://open.spotify.com/artist/6Ghvu1VvMGScGpOUJBAHNH), mudar para um som mais pesado para animar um pouco.
 
-Já faz um tempinho que não escrevia sobre SVG, então vou dar uma quebra nos outros posts e voltar a falar um pouquinho sobre. Se você ainda não conhece SVG <s>sai daqui</s>, dá uma olhadinha na [série](http://willianjusten.com.br/series/) que eu escrevo nesse blog.
+Já faz um tempinho que não escrevia sobre SVG, então vou dar uma quebra nos outros posts e voltar a falar um pouquinho sobre. Se você ainda não conhece SVG <s>sai daqui</s>, dá uma olhadinha na [série](https://willianjusten.com.br/series/) que eu escrevo nesse blog.
 
 Esse post foi baseado num apanhado de informações de vários cantos:
 
@@ -33,7 +33,7 @@ Esse post foi baseado num apanhado de informações de vários cantos:
 
 Não é de hoje que animações são as queridinhas nos sites e apps, seja pela melhoria em algum aspecto na usabilidade, seja pela beleza que a animação pode proporcionar.
 
-O SVG é tão incrível que permite vários tipos de animações, já falei sobre [animações usando css](http://willianjusten.com.br/animacoes-em-svg-com-css/) e agora irei falar sobre um tipo específico do SVG, que é a animação usando SMIL.
+O SVG é tão incrível que permite vários tipos de animações, já falei sobre [animações usando css](https://willianjusten.com.br/animacoes-em-svg-com-css/) e agora irei falar sobre um tipo específico do SVG, que é a animação usando SMIL.
 
 
 ## Mas o que é SMIL? É de comer?

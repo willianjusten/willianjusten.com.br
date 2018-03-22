@@ -16,7 +16,7 @@ introduction: 'Fica aqui um relato de alguém que mudou sua vida e quer mudar ai
 
 ## Introdução
 
-Fala pessoal, quando eu escrevi o post [O que ninguém diz para os iniciantes](http://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), eu dizia que aquele talvez fosse o post que mais me emocionava. Mas eu acho que estou ficando muito molenga, porque esse post vai ser mais um que vou me emocionar enquanto escrevo.
+Fala pessoal, quando eu escrevi o post [O que ninguém diz para os iniciantes](https://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), eu dizia que aquele talvez fosse o post que mais me emocionava. Mas eu acho que estou ficando muito molenga, porque esse post vai ser mais um que vou me emocionar enquanto escrevo.
 
 Para não perder o costume, a playlist que estou escutando hoje é uma de minha autoria e especial para esse post, que é [Side Projects](https://open.spotify.com/user/willianjusten/playlist/031nQBF66JwosHhCH9Degg). Na playlist você vai encontrar, em sua maioria, bandas indies e desconhecidas (sim, ouço muita coisa desconhecida), mas que você talvez curta =)
 
@@ -34,7 +34,7 @@ Bom, sem mais delongas, vamos ao post! Prepara um cafézinho que o post vai ser 
 
 <h2 id="historia">Um mergulho na minha história</h2>
 
-Quando eu lancei o meu blog, há mais ou menos 1 ano e meio atrás, eu fiz uma [pequena apresentação sobre mim](http://willianjusten.com.br/making-of-parte-1/), falando que passei por outra área antes de chegar de fato a programação. Mas vou completar essa história com mais alguns pedacinhos. Eu sempre gosto de saber a experiência de vida das pessoas, o que fizeram antes, quais suas escolhas para tal, então por que eu mesmo não fazer né?
+Quando eu lancei o meu blog, há mais ou menos 1 ano e meio atrás, eu fiz uma [pequena apresentação sobre mim](https://willianjusten.com.br/making-of-parte-1/), falando que passei por outra área antes de chegar de fato a programação. Mas vou completar essa história com mais alguns pedacinhos. Eu sempre gosto de saber a experiência de vida das pessoas, o que fizeram antes, quais suas escolhas para tal, então por que eu mesmo não fazer né?
 
 Bom, eu como todo nerd/geek sempre fui apaixonado por jogos, como eles funcionavam, a lógica e a física me impressionavam. E por causa disso, lá pelos idos de 2000, acabei conhecendo uma parada chamada [Rpg Maker](http://www.rpgmakerweb.com/), era uma engine beeeem tosca, mas que te permitia criar joguinhos de RPG com interface gráfica e alguns pequenos detalhes de lógica todo fundamentado em condicionais, ali deve ter sido meu "primeiro contato" com "programação". Criei vários joguinhos com meus primos, me divertia muito.
 
@@ -54,7 +54,7 @@ Quando eu voltei para minha cidade, eu precisava arrumar um emprego, porque não
 
 Dentro da faculdade de TI, eu resolvi criar esse blog, meu **segundo projeto paralelo** de grande importância. Meu amigo [Guilherme Louro](http://guilhermelouro.com.br/) ficava me sacaneando para eu criar logo um site e foi assim que eu criei. Nesse blog, eu me dediquei a sempre passar conteúdo que eu achava importante e também para eu fixar melhor algum assunto. Foi através desse blog que eu comecei a ficar mais ativo na comunidade, acabei conhecendo várias e várias pessoas da área, comecei a palestrar, fui trabalhar na [globo.com](http://www.globo.com/) e depois na [HUGE](http://www.hugeinc.com/).
 
-E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOSITE).
+E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](https://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOSITE).
 
 Isso é um pouquinho da minha história, sempre fui meio maluco de meter as caras, mudei bastante através dos meus projetos paralelos e continuo mudando. E reparei que a cada projeto paralelo, uma grande mudança veio junto.
 

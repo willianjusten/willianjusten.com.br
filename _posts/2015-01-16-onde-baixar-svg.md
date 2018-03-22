@@ -16,12 +16,12 @@ introduction: "Eu sou programador e não designer, como é que vou fazer essas c
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](http://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](http://willianjusten.com.br/como-usar-svg/)
+* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
 
 ## Não sei desenhar, não posso usar SVG.
 
-Vejo demais essa frase e é pura desculpa. Eu sou um péssimo desenhista e mesmo assim sou um evangelista do SVG. E por quê? Simples, existem milhares de lugares com SVG para baixar de graça ou a preços muito baixos. No [post anterior](http://willianjusten.com.br/como-usar-svg/), eu já expliquei como usar SVG, agora vou apresentar alguns lugares para pegarmos material para podermos começar a brincadeira.
+Vejo demais essa frase e é pura desculpa. Eu sou um péssimo desenhista e mesmo assim sou um evangelista do SVG. E por quê? Simples, existem milhares de lugares com SVG para baixar de graça ou a preços muito baixos. No [post anterior](https://willianjusten.com.br/como-usar-svg/), eu já expliquei como usar SVG, agora vou apresentar alguns lugares para pegarmos material para podermos começar a brincadeira.
 
 ## Bancos de imagens
 
@@ -71,4 +71,4 @@ No ano em que passou, as patterns bombaram e a famosa [técnica de polyart](http
 
 ## Agora não tem mais desculpa!
 
-Já sabemos [por que usar SVG](http://willianjusten.com.br/por-que-usar-svg/), [como usar](http://willianjusten.com.br/como-usar-svg/) e agora onde baixar SVG. Se você ainda der desculpa para não usar... <s>some daqui</s>. Nos próximos posts iremos começar a colocar a "mão na massa" e trabalhar =)
+Já sabemos [por que usar SVG](https://willianjusten.com.br/por-que-usar-svg/), [como usar](https://willianjusten.com.br/como-usar-svg/) e agora onde baixar SVG. Se você ainda der desculpa para não usar... <s>some daqui</s>. Nos próximos posts iremos começar a colocar a "mão na massa" e trabalhar =)

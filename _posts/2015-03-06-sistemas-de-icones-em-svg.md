@@ -18,11 +18,11 @@ introduction: "Como dizem 'Uma imagem vale mais que mil palavras' e isso é um f
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](http://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](http://willianjusten.com.br/como-usar-svg/)
-* [#3 - Onde Baixar SVG](http://willianjusten.com.br/onde-baixar-svg/)
-* [#4 - A Estrutura do SVG](http://willianjusten.com.br/a-estrutura-do-svg/)
-* [#5 - Atomic Design no SVG - g, use, defs, symbol](http://willianjusten.com.br/atomic-design-no-svg/)
+* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
+* [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
+* [#4 - A Estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/)
+* [#5 - Atomic Design no SVG - g, use, defs, symbol](https://willianjusten.com.br/atomic-design-no-svg/)
 
 ## Introdução
 
@@ -71,7 +71,7 @@ Basicamente um ícone desenhado no illustrator e exportado para o formato SVG.
 
 > Ahhh, mas eu não sei desenhar não, para icon font eu baixo o [Font Awesome](https://fontawesome.com/) e vem tudo pronto. - Você mesmo!
 
-Beleza campeão, mas com SVG você pode fazer o mesmo e até melhor, se quiser, dá uma olhada nesse post, [onde baixar SVG](http://willianjusten.com.br/onde-baixar-svg/) e você irá ver que tem muita coisa legal =)
+Beleza campeão, mas com SVG você pode fazer o mesmo e até melhor, se quiser, dá uma olhada nesse post, [onde baixar SVG](https://willianjusten.com.br/onde-baixar-svg/) e você irá ver que tem muita coisa legal =)
 
 **Vantagens**
 
@@ -116,7 +116,7 @@ Clicando em `Generate SVG/PNG` conforme indicado no canto inferior esquerdo da i
 
 ![Passo 3](/assets/img/svg-icons/passo-3.png)
 
-Segue abaixo o conteúdo do zip baixado, indicando os 3 ícones em PNG e em SVG separados e no formato de `defs`, que já é a união de todos os ícones num arquivo só e já utilizando o elemento `defs`, que permite adicionar os ícones, sem renderizá-los diretamente. Eu fiz um post explicando um pouco sobre algumas dessas propriedades do SVG, se não estiver familiriazado, dê uma lidinha no artigo: [#5 - Atomic Design no SVG - g, use, defs, symbol](http://willianjusten.com.br/atomic-design-no-svg/)
+Segue abaixo o conteúdo do zip baixado, indicando os 3 ícones em PNG e em SVG separados e no formato de `defs`, que já é a união de todos os ícones num arquivo só e já utilizando o elemento `defs`, que permite adicionar os ícones, sem renderizá-los diretamente. Eu fiz um post explicando um pouco sobre algumas dessas propriedades do SVG, se não estiver familiriazado, dê uma lidinha no artigo: [#5 - Atomic Design no SVG - g, use, defs, symbol](https://willianjusten.com.br/atomic-design-no-svg/)
 
 ![Arquivos](/assets/img/svg-icons/arquivos.png)
 

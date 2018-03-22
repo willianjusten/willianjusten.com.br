@@ -226,4 +226,4 @@ Bom pessoal, foi um post rapidinho e simples, só mesmo para que vocês vejam as
 
 Se você gostou do post, não deixe de comentar, curtir, compartilhar =)
 
-Também lembrando aqui, que a promoção de [pré-venda](http://willianjusten.com.br/pre-venda-curso-de-svg/) do meu Curso de SVG está chegando ao fim, esse domingo (05/06) é o último, então corre para aproveitar o descontão!
+Também lembrando aqui, que a promoção de [pré-venda](https://willianjusten.com.br/pre-venda-curso-de-svg/) do meu Curso de SVG está chegando ao fim, esse domingo (05/06) é o último, então corre para aproveitar o descontão!

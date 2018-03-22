@@ -19,7 +19,7 @@ introduction: 'Aprenda como funciona o git e o github em vídeos curtos e práti
 
 Vou escrevendo essa post enquanto escuto uma [playlist especial do Batman](https://open.spotify.com/user/spotifybrazilian/playlist/5jcu1LG141GiVpKuZVOTzn), até nisso é muito melhor que o super homem =p
 
-Fazem 15 dias que eu lancei um [curso de Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/) em cima de uma plataforma bastante legal. Fiz um [post](http://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) falando da minha vontade de fazer vídeo aulas, o porquê de começar com Jekyll e coisinhas mais. Dessa vez, resolvi fazer mais um curso gratuito =)
+Fazem 15 dias que eu lancei um [curso de Jekyll](https://www.udemy.com/criando-sites-estaticos-com-jekyll/) em cima de uma plataforma bastante legal. Fiz um [post](https://willianjusten.com.br/um-novo-projeto-um-novo-desafio/) falando da minha vontade de fazer vídeo aulas, o porquê de começar com Jekyll e coisinhas mais. Dessa vez, resolvi fazer mais um curso gratuito =)
 
 ## Por que Git e Github?
 

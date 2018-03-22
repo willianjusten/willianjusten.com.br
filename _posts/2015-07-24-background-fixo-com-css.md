@@ -20,13 +20,13 @@ Mais um post extra que venho fazendo enquanto subo a serra em direção a minha 
 
 ## O que vamos fazer?
 
-Seguindo um pouco daquele post sobre [Seções em Fullscreen](http://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/), resolvi dar uma melhorada naquela técnica incluindo outras técnicas. A ideia desses tipos de posts é mostrar alguns conceitos simples e propriedades do css, para que iniciantes conheçam utilidades práticas de algumas coisas.
+Seguindo um pouco daquele post sobre [Seções em Fullscreen](https://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/), resolvi dar uma melhorada naquela técnica incluindo outras técnicas. A ideia desses tipos de posts é mostrar alguns conceitos simples e propriedades do css, para que iniciantes conheçam utilidades práticas de algumas coisas.
 
 **Lembrando que são experimentos, verifique a compatibilidade e o suporte que deseja ter.**
 
 Para quem gosta de ver o resultado antes mesmo de começar <s>apressadinho =p</s>, segue aqui o link do experimento:
 
-* [DEMO](http://willianjusten.com.br/labs/background-fixo-css/)
+* [DEMO](https://willianjusten.com.br/labs/background-fixo-css/)
 
 ## Montando o Markup
 
@@ -68,13 +68,13 @@ Para cada frase eu criei uma seção e de acordo com os pesos que eu desejava pa
 
 ### Seções com altura total
 
-Primeiro, para ter seções ocupando 100% da viewport, vou fazer o mesmo trabalho do [post anterior](http://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/), ou seja, irei [viewport units](http://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/). E para os espaçamentos e fontes, resolvi brincar com as viewport units também, porém, trabalhando com a largura da tela `vw`.
+Primeiro, para ter seções ocupando 100% da viewport, vou fazer o mesmo trabalho do [post anterior](https://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/), ou seja, irei [viewport units](http://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/). E para os espaçamentos e fontes, resolvi brincar com as viewport units também, porém, trabalhando com a largura da tela `vw`.
 
 ```css
-section { 
-    height: 100vh; 
+section {
+    height: 100vh;
     padding: 2vw;
-    font-size: 4vw; 
+    font-size: 4vw;
 }
 ```
 
@@ -83,19 +83,19 @@ section {
 Para centralizar os textos, também resolvi brincar dessa vez com Flexbox, se quiser aprender sobre tem esse [artigo fodão](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) que ensina tudo. Primeiro defino o `display: flex` para informar que vou usar esse modelo de layout.  Depois defino que quero organizar o layout com `flex-direction: column`, que no caso irá organizar de de cima para baixo. E então uso `align-itens: center` para ter meu texto centralizado verticalmente.
 
 ```css
-section { 
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
 }
 ```
 
 Para a primeira seção o seu título precisava de um destaque maior, resolvi usar o pseudo-seletor `first-of-type` para pegar só essa primeira seção. Lembrando que pseudo-seletores não são tão performáticos quanto classes, mas em momentos que você não pode utilizar classes diretamente, se tornam ótimas soluções.
 
 ```css
-section:first-of-type { 
+section:first-of-type {
     text-transform: uppercase;
     font-size: 7vw;
 }
@@ -117,19 +117,19 @@ O `backgroung-size` será responsável por fazer a imagem ocupar toda a área qu
 Como são vários backgrounds diferentes, resolvi brincar com outro pseudo-seletor que é o `nth-child(n)`, ele é responsável por selecionar elementos de acordo com o valor de `n` passado. Aproveitei que as seções ímpares são aquelas com letra branca e sombra, usei o `nth-of-type(odd)`, para assim, selecionar os números ímpares (1,3,5).
 
 ```css
-section:nth-of-type(odd) { 
+section:nth-of-type(odd) {
     color: #fff;
     background-color: #000;
-    text-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
-section:nth-child(1) { 
-    background-image: url(../img/guitar.jpg); 
+section:nth-child(1) {
+    background-image: url(../img/guitar.jpg);
 }
-section:nth-child(3) { 
-    background-image: url(../img/bass.jpg); 
+section:nth-child(3) {
+    background-image: url(../img/bass.jpg);
 }
-section:nth-child(5) { 
-    background-image: url(../img/drums.jpg); 
+section:nth-child(5) {
+    background-image: url(../img/drums.jpg);
 }
 ```
 
@@ -163,7 +163,7 @@ new vUnit({
 }).init();
 ```
 
-Você define uma classe, ali no caso é o `.vh` e está irá de `.vh0` até `vh100` indicando o tamanho e qual a referência. No caso eu quero que ele mude as unidades de `vh` para `height`. 
+Você define uma classe, ali no caso é o `.vh` e está irá de `.vh0` até `vh100` indicando o tamanho e qual a referência. No caso eu quero que ele mude as unidades de `vh` para `height`.
 
 No markup ficaria assim:
 
@@ -181,4 +181,3 @@ Onde o `class="vh100"` indica que eu quero uma área com 100% de altura da viewp
 ## Conclusão
 
 Enfim, foi mais um post pequeno, fácil e rápido mostrando algumas coisinhas legais do css. Lembre-se que são só experimentos e não necessarimente você precisa usar todas essas coisas. Se tiver alguma dúvida ou quiser perguntar alguma coisa, só falar nos comentários abaixo.
-

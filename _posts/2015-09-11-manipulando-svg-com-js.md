@@ -26,7 +26,7 @@ Esse post será bem simples e introdutório, até mesmo porque se fosse sobre tu
 
 ## Em que momentos devo usar JS?
 
-Como já dito em [posts anteriores](http://willianjusten.com.br/series/), tem como animar SVG com CSS e também com SMIL, então precisamos saber uns motivos para ter mais essa opção né? E elas são:
+Como já dito em [posts anteriores](https://willianjusten.com.br/series/), tem como animar SVG com CSS e também com SMIL, então precisamos saber uns motivos para ter mais essa opção né? E elas são:
 
 - Se você estiver trabalhando com dados via JSON (em geral gráficos).
 - Quando precisa de alguma lógica mais complexa por trás de acordo com certas condições do contexto.
@@ -95,7 +95,7 @@ Segue um exemplo fazendo algumas interações com um SVG:
 
 Sim, nós podemos criar SVG direto com JS e manipular essas propriedades! Para criar um elemento SVG, precisamos entender alguns métodos importantes e suas informações.
 
-Como dito no [post de estrutura](http://willianjusten.com.br/a-estrutura-do-svg/), o SVG possui um Namespace que o define como um XML do tipo SVG, este é:
+Como dito no [post de estrutura](https://willianjusten.com.br/a-estrutura-do-svg/), o SVG possui um Namespace que o define como um XML do tipo SVG, este é:
 `http://www.w3.org/2000/svg`.
 
 E para criar elementos SVG, utilizamos o [createElementNS](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElementNS). A sintaxe é bastante simples:
@@ -112,7 +112,7 @@ Após criado o elemento, precisamos definir atributos para o mesmo e para isso u
 element.setAttributeNS(namespace, name, value);
 ```
 
-O `namespace` aqui permanece o mesmo padrão para SVG. O `name` é o atributo que você quer definir, o raio de um círculo seria o `r`, por exemplo. E `value` é claro, é o valor dessa propriedade. 
+O `namespace` aqui permanece o mesmo padrão para SVG. O `name` é o atributo que você quer definir, o raio de um círculo seria o `r`, por exemplo. E `value` é claro, é o valor dessa propriedade.
 
 Abaixo segue um exemplo de como criar um círculo usando esses simples métodos:
 
@@ -170,8 +170,3 @@ Essa não é uma biblioteca específica de SVG, mas ela é incrível com qualque
 ## Conclusão
 
 Bom galera, eu mostrei aqui o básico de como brincar com o SVG e JS e algumas bibliotecas, agora é você partir para começar a brincadeira. Quem fizer exemplos legais, manda aí nos comentários, adoro ver coisinhas feitas com SVG <3
-
-
-
-
-

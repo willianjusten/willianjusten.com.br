@@ -18,7 +18,7 @@ introduction: "Aprenda as diferentes formas de mudar o estilo de um SVG somente 
 
 ## Índice da série
 
-Uffa, tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](http://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
+Uffa, tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando todos o tempo todo aqui já vai ficar ruim, então para facilitar, basta ir em [series](https://willianjusten.com.br/series/) e lá estarão todos os meus links sobre SVG.
 
 Espero voltar a escrever com mais frequência, até porque tem muita coisa legal para aprendermos em SVG ainda!
 
@@ -28,7 +28,7 @@ Também pretendo escrever menos e colocar mais exemplos, para facilitar o entend
 
 Como eu sempre escrevo escutando alguma coisa, vou sempre falar o que estou ouvindo nos meus posts, hoje é dia de [Faded Paper Figures](http://www.fadedpaperfigures.com/).
 
-No [artigo passado](http://willianjusten.com.br/sistemas-de-icones-em-svg/) eu falei que uma das vantagens do SVG é poder estilizá-lo via CSS e hoje vamos falar um pouquinho sobre essa grande vantagem.
+No [artigo passado](https://willianjusten.com.br/sistemas-de-icones-em-svg/) eu falei que uma das vantagens do SVG é poder estilizá-lo via CSS e hoje vamos falar um pouquinho sobre essa grande vantagem.
 
 ## Propriedades de Estilo
 
