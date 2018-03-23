@@ -72,7 +72,7 @@ As `stateless functions` são de fato, funções sem estado. Ué? Como assim? Vo
 
 No React você pode definir seus componentes como funções puras do Javascript, isso mesmo. Sem precisar criar classe, definir estados, nem nada. Você escreve como se fosse Javascript puro mesmo. Vamos dar uma olhada na sintaxe de como funciona:
 
-```js
+```jsx
 function helloMessage(props) {
     return <div>Hello {props.name}</div>;
 }
@@ -83,7 +83,7 @@ Reparem, eu criei uma função chamada `helloMessage`, que recebe um parâmetro 
 
 Reescrevendo o código acima em ES6, ficaria assim:
 
-```js
+```jsx
 const HelloMessage = (props) => <div>Hello {props.name}</div>;
 ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
 ```
@@ -96,7 +96,7 @@ Essa forma simplificada é destinada para se criar componentes que não vão ter
 
 É muito simples meu caro, se já sabemos como chamar nossos sprites, basta passar essa forma para dentro do React. Escrevendo em ES6 ficaria:
 
-```js
+```jsx
 // Definimos a url onde se encontra o sprite
 const url = 'https://willianjusten.com.br/assets/img/react-svg/sprite.svg';
 

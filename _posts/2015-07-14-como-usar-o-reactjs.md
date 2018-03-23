@@ -55,27 +55,25 @@ Essa forma é a mais básica de todas e funciona como se fosse usar uma bibliote
 E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou chamando de um outro arquivo.
 
 ```js
-<script>
-  var ExampleApplication = React.createClass({
-    render: function() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        'O React está rodando com sucesso há ' + seconds + ' seconds.';
-        return React.DOM.p(null, message);
-      }
-  });
+var ExampleApplication = React.createClass({
+  render: function() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      'O React está rodando com sucesso há ' + seconds + ' seconds.';
+      return React.DOM.p(null, message);
+    }
+});
 
-  var ExampleApplicationFactory = React.createFactory(ExampleApplication);
-  var start = new Date().getTime();
+var ExampleApplicationFactory = React.createFactory(ExampleApplication);
+var start = new Date().getTime();
 
-  setInterval(function() {
-    ReactDOM.render(
-      ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+setInterval(function() {
+  ReactDOM.render(
+    ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 **update: (02/06/2016)** - na linha `16` atualizamos para utilizar o `ReactDOM.render()`, pois ele agora é separado do React original.
@@ -104,25 +102,23 @@ Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/j
 
 **update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga <interpretar class=""></interpretar>
 
-```js
-<script type="text/babel">
-  var ExampleApplication = React.createClass({
-    render: function() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        'React has been successfully running for ' + seconds + ' seconds.';
-        return <p>{message}</p>;
-      }
-  });
-  var start = new Date().getTime();
-  setInterval(function() {
-    ReactDOM.render(
-      <ExampleApplication elapsed={new Date().getTime() - start} />,
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+```jsx
+var ExampleApplication = React.createClass({
+  render: function() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      'React has been successfully running for ' + seconds + ' seconds.';
+      return <p>{message}</p>;
+    }
+});
+var start = new Date().getTime();
+setInterval(function() {
+  ReactDOM.render(
+    <ExampleApplication elapsed={new Date().getTime() - start} />,
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 As grandes diferenças nessa sintaxe estão na linha `8` e `14`. Na linha `8`, não necessitamos mais de utilizar função para criar um elemento, bastando apenas utilizar a tag html que quisermos. E na linha `14` é onde criamos nosso componente, que está recebendo suas devidas propriedades.
@@ -134,25 +130,23 @@ Com o ES6 vindo aí com força total, o React passou a dar suporte a partir da [
 
 **update: (02/06/2016)** - antes utilizámos o parâmetro `harmony=true`, agora é só passar que o tipo é `text/babel` para funcionar.
 
-```js
-<script type="text/babel">
-  class ExampleApplication extends React.Component {
-    render() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        `React has been successfully running for ${seconds} seconds.`;
-        return <p>{message}</p>;
-    }
+```jsx
+class ExampleApplication extends React.Component {
+  render() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      `React has been successfully running for ${seconds} seconds.`;
+      return <p>{message}</p>;
   }
-  var start = new Date().getTime();
-    setInterval(() => {
-      ReactDOM.render(
-      <ExampleApplication elapsed={new Date().getTime() - start} />,
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+}
+var start = new Date().getTime();
+  setInterval(() => {
+    ReactDOM.render(
+    <ExampleApplication elapsed={new Date().getTime() - start} />,
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 O grande diferencial aqui fica por conta da criação de uma classe `ExampleApplication` e a extensão que fazemos de `React.Component` para criar o nosso componente. A utilização de `${}` para concatenar uma variável e o uso do fat arrow `=>` para nos facilitar e escrever menos, também são algumas das vantagens do ES6.
