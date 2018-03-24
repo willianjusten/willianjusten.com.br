@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2015-12-12T13:49:42.000Z
-image: /imasters-2015/img/visao-programador.png
+image: /assets/img/testes/visao-programador.png
 title: Entendendo Testes de Software
 description: >-
   Para que servem os testes? O que eu ganho com eles? Que tipos de testes
