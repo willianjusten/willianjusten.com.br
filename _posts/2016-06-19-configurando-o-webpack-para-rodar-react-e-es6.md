@@ -11,7 +11,7 @@ tags:
 - es6
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "Facilite sua vida com esse module bundler."
 introduction: "Aprenda como utilizar esse module bundler para facilitar sua vida nos projetos com ES6 e React."
 ---

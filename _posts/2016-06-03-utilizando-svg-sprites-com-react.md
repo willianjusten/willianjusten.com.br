@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: 'Aprenda a utilizar ícones SVG dentro do React de forma fácil.'
 introduction: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil.'
 ---

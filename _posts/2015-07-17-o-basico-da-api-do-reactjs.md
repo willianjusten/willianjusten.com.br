@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "Aprenda um pouco mais sobre os principais métodos do ReactJS."
 introduction: "Aprenda um pouco mais sobre a API do React e como começar a brincar."
 ---

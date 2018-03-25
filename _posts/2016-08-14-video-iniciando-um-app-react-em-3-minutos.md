@@ -12,7 +12,7 @@ tags:
 - video
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "Iniciando um app React em 3 minutos."
 introduction: "Iniciar um projeto React não precisa e nem deve ser muito trabalhoso. Vamos aprender como mudar isso =D"
 ---

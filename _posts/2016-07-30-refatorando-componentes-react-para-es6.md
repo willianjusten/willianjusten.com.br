@@ -11,14 +11,14 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "Aproveite a nova sintaxe e entenda a diferença entre os códigos."
 introduction: "Aproveite a nova sintaxe e entenda a diferença entre os códigos."
 ---
 
 ## Introdução
 
-Fala pessoal, vou ouvindo uma banda chamada [Balmorhea](https://open.spotify.com/artist/1U0FaHAc4fcwQcYEJFgkm9), que é uma banda de post-rock instrumental, tem um som ótimo para estudar/codar, pois é calma e tem várias sonoridades. 
+Fala pessoal, vou ouvindo uma banda chamada [Balmorhea](https://open.spotify.com/artist/1U0FaHAc4fcwQcYEJFgkm9), que é uma banda de post-rock instrumental, tem um som ótimo para estudar/codar, pois é calma e tem várias sonoridades.
 
 São 3:20 da manhã e a insônia não me deixa dormir, eu deveria estar fazendo mil outras coisas, mas sei lá, quando vem a vontade de escrever, melhor obedecer né. Só não sei quando vou postar, quem sabe se eu terminar antes de dormir =)
 
@@ -140,7 +140,7 @@ export default class MeuComponente extends Component {
 
 Esse talvez seja o ponto de maior incidência de erros da história do React! Muita gente já deve ter ido dormir pensando "Por que meu método tá dando undefined? Tá tudo certinho..."
 
-O que acontece é que quando se utilizava o `React.CreateClass`, ele já fazia o [autobinding](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html#autobinding), fazendo a ligação do `this` a todos os métodos. 
+O que acontece é que quando se utilizava o `React.CreateClass`, ele já fazia o [autobinding](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html#autobinding), fazendo a ligação do `this` a todos os métodos.
 
 Em ES5 temos:
 
@@ -158,11 +158,11 @@ Em ES6, precisaremos fazer o bind manual então:
 
 ```js
 export default class MeuComponente extends Component {
-    constructor() { 
+    constructor() {
         super();
         this.handleClick = this.handleClick.bind(this);
     }
-    
+
     handleClick(event) {
         this.setState({
             liked: !this.state.liked,
