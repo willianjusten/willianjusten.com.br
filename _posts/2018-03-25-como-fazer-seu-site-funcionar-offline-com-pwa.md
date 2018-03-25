@@ -21,8 +21,19 @@ categories:
 - [O que é Progressive Web App](#o-que-e-pwa)
 - [O checklist para se ter um PWA](#checklist-pwa)
   - [Use HTTPS e redirecione sempre para HTTPS](#https)
-
-
+  - [Tenha um site Responsivo e Rápido](#responsivo)
+  - [Tenha uma cor tema no site](#tema)
+  - [Tenha um Manifesto com informações do seu site](#manifest)
+  - [Registre um Service Worker e responda 200 quando offline](#register)
+- [O que é um Service Worker?](#o-que-e-service-worker)
+- [Informações Importantes do Service Worker](#informacoes-importantes)
+  - [Detectando se o Browser suporta](#detectando)
+  - [Registrando](#registrando)
+  - [Ciclo de Vida](#ciclo-de-vida)
+  - [Install](#install)
+  - [Activate](#activate)
+  - [Fetch](#fetch)
+- [Conclusão](#conclusao)
 
 <h2 id="intro">Introdução</h2>
 
@@ -69,7 +80,7 @@ O HTTPS é uma implementação do protocolo HTTP já conhecido, sobre uma camada
 
 Se você estiver usando o Github Pages, eu escrevi [um post ensinando](https://willianjusten.com.br/https-no-github-pages-com-custom-domain/) como fazer isso. Se você outro servidor, verifique como habilitar o SSL no seu domínio, isso é uma regra **obrigatória**. E, por favor, lembre de habilitar o redirecionamento 301 de `http` para `https`, senão as pessoas vão acabar podendo acessar através dos 2 protocolos e a Google pode acabar até punindo por considerar conteúdo copiado.
 
-### 2 - Tenha um site Responsivo e Rápido
+<h3 id="responsivo">2 - Tenha um site Responsivo e Rápido</h3>
 
 Se a ideia é dar uma interação como se fosse de um app, isso é uma regra mais que fundamental. E dentro dela, não se esqueça de definir a meta tag correta para a viewport:
 
@@ -79,7 +90,7 @@ Se a ideia é dar uma interação como se fosse de um app, isso é uma regra mai
 
 Sobre performance, só ficar ligado na série [Performance Web](https://willianjusten.com.br/series/#performance-web) e seguir as dicas que o seu site com certeza irá passar.
 
-### 3 - Tenha uma cor tema no site
+<h3 id="tema">3 - Tenha uma cor tema no site</h3>
 
 Eu escrevi um post sobre essa [Theme Color](https://willianjusten.com.br/theme-color-android-lollipop/) lá em 2015, na época era meio que uma novidade para quem usava Android Lollipop, mas hoje funciona em todos os Androids atuais e também é uma regra. E para fazer isso é só adicionar essa meta tag:
 
@@ -87,13 +98,13 @@ Eu escrevi um post sobre essa [Theme Color](https://willianjusten.com.br/theme-c
 <meta name="theme-color" content="cor em hexadecimal">
 ```
 
-### 4 - Tenha um Manifesto com informações do seu site
+<h3 id="manifest">4 - Tenha um Manifesto com informações do seu site</h3>
 
 O que significa isso? É um arquivo chamado `manifest.json` que vai conter informações relevantes do seu site, permitindo que o browser entenda que seu site é um PWA e vai inclusive habilitar uma mensagem para o usuário para que ele possa instalar o site na home do celular, o que faz com o site fique com um visual igual de um app mesmo.
 
 E como esse `manifest.json` se parece? Segue abaixo o exemplo do meu blog (sem todos os ícones):
 
-```json
+```js
 {
   "name": "Willian Justen Blog",
   "short_name": "WJusten",
@@ -140,17 +151,17 @@ Tudo estando certinho, se você tiver visitantes assíduos, é possível que ele
 
 ![Tela do meu blog mostrando para instalar o site como app](/assets/img/manifest.jpg)
 
-### 5 - Registre um Service Worker e responda 200 quando offline
+<h3 id="register">5 - Registre um Service Worker e responda 200 quando offline</h3>
 
 É aqui onde começa a brincadeira legal e que representa o título! E para essa parte, eu vou separar um pouquinho, pois é um assunto com mais detalhes.
 
-## O que é um Service Worker?
+<h2 id="o-que-e-service-worker">O que é um Service Worker?</h2>
 
 Um **Service Worker** é um script que seu navegador executa em segundo plano, separado da página da Web, possibilitando recursos que não precisam de uma página da Web ou de interação do usuário. Atualmente, os service workers já incluem recursos como notificações push e sincronização em segundo plano. No futuro, os service workers permitirão outras ações como sincronização periódica ou geolocalização. O que mais vamos discutir aqui é a capacidade de interceptar e tratar solicitações de rede, respondendo com um cache caso tivermos.
 
 Eu vou explicar algumas coisas de forma básica, mas tem um curso **MARAVILHOSO** e **GRÁTIS** lá na [Udacity](https://br.udacity.com/course/offline-web-applications--ud899) feito por nada menos que o Jake Archibald. Sério, se você se interessou pelo assunto, faz o curso, ele é rápido, leve e muito didático!
 
-## Informações Importantes do Service Worker
+<h2 id="informacoes-importantes">Informações Importantes do Service Worker</h2>
 
 * O Service Worker funciona numa thread separada no browser, com isso não tem acesso ao DOM.
 * O arquivo do SW precisa sempre ter o mesmo nome e ficar sempre ficar no mesmo lugar. Caso contrário, vai gerar uma duplicação de Service Worker.
@@ -159,7 +170,7 @@ Eu vou explicar algumas coisas de forma básica, mas tem um curso **MARAVILHOSO*
 
 Existe esse [post](https://jakearchibald.com/2014/offline-cookbook/) do Jake Archibald que é bem completo e explica sobre os ciclos de forma bem detalhada. Abaixo eu vou mostrar de forma simples e rápida como construir seu Service Worker do zero.
 
-### Detectando se o Browser suporta
+<h3 id="detectando">Detectando se o Browser suporta</h3>
 
 O site [Is Service Worker Ready?](https://jakearchibald.github.io/isserviceworkerready/) mostra os browsers que já suportam e quais coisas que já funcionam. E como você pode ver, nem todos os browsers suportam 100% ainda, então, nós fazemos um snippet bem simples.
 
@@ -171,7 +182,7 @@ if ('serviceWorker' in navigator) {
 }
 ```
 
-### Registrando
+<h3 id="registrando">Registrando</h3>
 
 Com o snippet dali de cima que já faz a verificação, precisamos registrar o nosso arquivo de Service Worker para ele poder começar a funcionar. Coloque  esse registro no `head` do site, pois é muito importante inicializar o worker antes de tudo.
 
@@ -183,7 +194,7 @@ if ('serviceWorker' in navigator) {
 }
 ```
 
-### Ciclo de Vida
+<h3 id="ciclo-de-vida">Ciclo de Vida</h3>
 
 O Service Worker trabalha numa estrutura já determinada de ciclo de vida. Entendendo como funciona cada evento e suas respostas é a melhor forma de atualizar e cachear os arquivos.
 
@@ -198,7 +209,7 @@ O Service Worker possui então as seguintes etapas:
 
 Eu vou cobrir somente os 3 primeiros eventos, que são os necessários para fazer nossas páginas funcionarem em modo offline. Então, mãos na massa, vamos criar o arquivo `sw.js` na raiz do nosso site e ir preenchendo.
 
-### Install
+<h3 id="install">Install</h3>
 
 O evento de `install` é ativado somente uma vez, quando você registra a versão do `sw.js` pela primeira vez. Se o `sw.js` muda uma única coisa, o `install` é chamado novamente. Use esse evento para preparar tudo que seja necessário. Abaixo eu vou mostrar um exemplo com alguns detalhes que fiz para o meu caso, que é em Jekyll:
 
@@ -210,15 +221,15 @@ layout: null
 const staticCacheName = 'willian-justen-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 
 const filesToCache = [
-  {% for page in site.pages_to_cache %}
-    '{{ page }}',
-  {% endfor %}
-  {% for post in site.posts limit: 6%}
-    '{{ post.url }}',
-  {% endfor %}
-  {% for asset in site.files_to_cache %}
-    '{{ asset }}',
-  {% endfor %}
+  { % for page in site.pages_to_cache % }
+    '{ { page } }',
+  { % endfor % }
+  { % for post in site.posts limit: 6 % }
+    '{ { post.url } }',
+  { % endfor % }
+  { % for asset in site.files_to_cache % }
+    '{ { asset } }',
+  { % endfor % }
 ];
 
 // Cache on install
@@ -240,7 +251,7 @@ E aí entram coisas importantes em qualquer site, não só sites em Jekyll. Prec
 
 Definido o nome do cache, precisamos definir quais os arquivos que vamos salvar! No meu blog, eu defino algumas variáveis no meu [_config.yml](https://github.com/willianjusten/willianjusten.com.br/blob/master/_config.yml) e também itero para pegar os últimos 6 posts do meu blog.
 
-### Activate
+<h3 id="activate">Activate</h3>
 
 O evento `activate` é ativado somente uma vez também, quando uma nova versão do `sw.js` foi instalado e não tem nenhuma versão anterior rodando em outra aba. Então você basicamente utiliza esse evento para deletar coisas antigas de versões anteriores.
 
@@ -262,7 +273,7 @@ this.addEventListener('activate', event => {
 
 Verifique que eu filtro o cache para ver se ele inicia com `willian-justen-` que é o que eu defini no nome do meu cache e também se o nome é diferente. Caso o nome seja diferente, eu deleto os arquivos antigos. Isso é **muito** importante, cache é a coisa mais braba do Service Worker, se você não deletar corretamente, o usuário vai estar vendo coisas velhas.
 
-### Fetch
+<h3 id="fetch">Fetch</h3>
 
 O evento de `fetch` é ativado toda vez que uma página é requisitada.
 
@@ -287,6 +298,6 @@ O `fetch` irá verificar se o arquivo requisitado contém no cache e caso sim, e
 
 Yeeeey! Agora nosso site salva algumas páginas e também tem redirect para um joguinho super legal caso não tenha aquele arquivo salvo! Se quiser, aqui está [o arquivo completo](https://github.com/willianjusten/willianjusten.com.br/blob/master/sw.js) do `sw.js`.
 
-## Conclusão
+<h2 id="conclusao">Conclusão</h2>
 
 É isso galera! Espero que tenham curtido o post, eu tentei fazer algo mais simples e rápido, mas não sem passar os passos necessários para você ter sua PWA. Espero que se divirtam com o [joguinho](https://willianjusten.com.br/offline/) também! Nos próximos posts irei falar um pouco sobre o [https://www.netlify.com/](Netlify), não, não é aquela plataforma de séries que você assiste todo dia, mas é algo tão legal quanto!
