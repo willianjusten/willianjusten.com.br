@@ -26,7 +26,7 @@ categories:
   - [Tenha um Manifesto com informações do seu site](#manifest)
   - [Registre um Service Worker e responda 200 quando offline](#register)
 - [O que é um Service Worker?](#o-que-e-service-worker)
-- [Informações Importantes do Service Worker](#informacoes-importantes)
+  - [Informações Importantes do Service Worker](#informacoes-importantes)
   - [Detectando se o Browser suporta](#detectando)
   - [Registrando](#registrando)
   - [Ciclo de Vida](#ciclo-de-vida)
