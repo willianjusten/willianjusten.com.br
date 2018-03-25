@@ -11,7 +11,6 @@ tags:
 - frontend
 - parallax
 categories:
-- collection
 twitter_text: "Se inspire com alguns sites feitos usando parallax."
 introduction: "Se inspire com alguns sites feitos usando a técnica do parallax."
 ---

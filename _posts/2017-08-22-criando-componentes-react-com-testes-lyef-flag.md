@@ -10,7 +10,7 @@ tags:
 - react
 - js
 categories:
-- Componentes React
+- Aprendendo Reactjs
 twitter_text: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
 introduction: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
 ---
