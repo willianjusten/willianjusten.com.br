@@ -78,7 +78,7 @@ E o Lighthouse, que é aquela ferramenta que vimos [nesse post](https://willianj
 
 O HTTPS é uma implementação do protocolo HTTP já conhecido, sobre uma camada adicional de segurança que utiliza o protocolo SSL/TLS. Essa camada adicional permite que os dados sejam transmitidos por meio de uma conexão criptografada e também é feita uma verificação de autenticidade do servidor e do cliente por meio de certificados digitais.
 
-Se você estiver usando o Github Pages, eu escrevi [um post ensinando](https://willianjusten.com.br/https-no-github-pages-com-custom-domain/) como fazer isso. Se você outro servidor, verifique como habilitar o SSL no seu domínio, isso é uma regra **obrigatória**. E, por favor, lembre de habilitar o redirecionamento 301 de `http` para `https`, senão as pessoas vão acabar podendo acessar através dos 2 protocolos e a Google pode acabar até punindo por considerar conteúdo copiado.
+Se você estiver usando o Github Pages, eu escrevi [um post ensinando](https://willianjusten.com.br/https-no-github-pages-com-custom-domain/) como fazer isso. Se você usa outro servidor, verifique como habilitar o SSL no seu domínio, isso é uma regra **obrigatória**. E, por favor, lembre de habilitar o redirecionamento 301 de `http` para `https`, senão as pessoas vão acabar podendo acessar através dos 2 protocolos e a Google pode acabar até punindo por considerar conteúdo copiado.
 
 <h3 id="responsivo">2 - Tenha um site Responsivo e Rápido</h3>
 
@@ -165,7 +165,7 @@ Eu vou explicar algumas coisas de forma básica, mas tem um curso **MARAVILHOSO*
 
 * O Service Worker funciona numa thread separada no browser, com isso não tem acesso ao DOM.
 * O arquivo do SW precisa sempre ter o mesmo nome e ficar sempre ficar no mesmo lugar. Caso contrário, vai gerar uma duplicação de Service Worker.
-* O arquivo do SW não pode cachear de forma alguma, senão ele pode agir contra você e deixar um cache infinito na máquina do usuário. Porém não use `sw.js?hash_aqui`, pois será considerado outro SW. Dentro do seu servidor, defina para sempre renovar o arquivo então.
+* O arquivo do SW não pode cachear de forma alguma, senão ele pode agir contra você e deixar um cache infinito na máquina do usuário. Porém não use `sw.js?hash_aqui`, pois será considerado outro SW. O certo é dentro do seu servidor você definir o max-age e colocar para sempre carregar de novo, sem cache.
 * Fique atento ao ciclo de vida do SW, ao mesmo tempo que ele ajuda, também pode atrapalhar. Lembre sempre de deletar o cache antigo quando atualizar algo no site.
 
 Existe esse [post](https://jakearchibald.com/2014/offline-cookbook/) do Jake Archibald que é bem completo e explica sobre os ciclos de forma bem detalhada. Abaixo eu vou mostrar de forma simples e rápida como construir seu Service Worker do zero.
@@ -300,4 +300,4 @@ Yeeeey! Agora nosso site salva algumas páginas e também tem redirect para um j
 
 <h2 id="conclusao">Conclusão</h2>
 
-É isso galera! Espero que tenham curtido o post, eu tentei fazer algo mais simples e rápido, mas não sem passar os passos necessários para você ter sua PWA. Espero que se divirtam com o [joguinho](https://willianjusten.com.br/offline/) também! Nos próximos posts irei falar um pouco sobre o [https://www.netlify.com/](Netlify), não, não é aquela plataforma de séries que você assiste todo dia, mas é algo tão legal quanto!
+É isso galera! Espero que tenham curtido o post, eu tentei fazer algo mais simples e rápido, mas não sem passar os passos necessários para você ter sua PWA. Espero que se divirtam com o [joguinho](https://willianjusten.com.br/offline/) também! Nos próximos posts irei falar um pouco sobre o [Netlify](https://www.netlify.com/), não, não é aquela plataforma de séries que você assiste todo dia, mas é algo tão legal quanto!
