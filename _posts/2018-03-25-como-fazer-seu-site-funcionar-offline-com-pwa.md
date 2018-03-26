@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-03-24 03:20:50'
+date: '2018-03-26 03:20:50'
 image: /assets/img/offline.png
 title: Como fazer seu site funcionar offline com PWA
 description: O passo-a-passo de como criar um site PWA que funciona até offline.
