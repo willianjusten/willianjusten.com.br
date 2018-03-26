@@ -164,7 +164,7 @@ Eu vou explicar algumas coisas de forma básica, mas tem um curso **MARAVILHOSO*
 <h2 id="informacoes-importantes">Informações Importantes do Service Worker</h2>
 
 * O Service Worker funciona numa thread separada no browser, com isso não tem acesso ao DOM.
-* O arquivo do SW precisa sempre ter o mesmo nome e ficar sempre ficar no mesmo lugar. Caso contrário, vai gerar uma duplicação de Service Worker.
+* O arquivo do SW precisa sempre ter o mesmo nome e ficar sempre no mesmo lugar. Caso contrário, vai gerar uma duplicação de Service Worker.
 * O arquivo do SW não pode cachear de forma alguma, senão ele pode agir contra você e deixar um cache infinito na máquina do usuário. Porém não use `sw.js?hash_aqui`, pois será considerado outro SW. O certo é dentro do seu servidor você definir o max-age e colocar para sempre carregar de novo, sem cache.
 * Fique atento ao ciclo de vida do SW, ao mesmo tempo que ele ajuda, também pode atrapalhar. Lembre sempre de deletar o cache antigo quando atualizar algo no site.
 
