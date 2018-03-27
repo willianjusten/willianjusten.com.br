@@ -1,0 +1,67 @@
+text-color = #ddd
+bg-color = #2b2b2b
+
+.dark-theme
+    .bar-header
+        background bg-color
+    .post
+        background #444
+    .title-category
+        color text-color
+    .post-content
+        h1,h2,h3,h4
+            color text-color
+        a
+            color text-color
+            border-bottom 2px dashed text-color
+            &:hover
+                background-color bg-color
+                color #fff
+        strong,
+        code
+            color text-color
+            background black
+            padding 2px 5px
+            border-radius 5px
+        p,
+        li,
+        code
+            color text-color
+        blockquote
+            border-left .313rem solid bg-color
+
+        pre
+            code
+                background: none
+                padding 0 1.25rem
+        .externalLink:after
+            filter invert(1)
+
+    .header-post,
+    .header-site
+        background-color bg-color
+        color text-color
+    .bar-header
+        .logo a
+            color text-color
+    .author .email
+        color text-color
+
+    .share a
+        &:hover svg
+            fill text-color
+    body
+        &.search-overlay
+            &:after
+                +below(cut)
+                    background-color text-color
+    .icon-menu
+        fill text-color
+    .cursos-menu
+        color text-color
+    aside
+        background-color bg-color
+        nav li a:hover
+            color bg-color
+    footer
+        background-color bg-color

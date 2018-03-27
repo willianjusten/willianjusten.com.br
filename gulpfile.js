@@ -72,7 +72,7 @@ gulp.task('js', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-	gulp.watch('src/styl/**/*.styl', ['stylus']);
+	gulp.watch('src/styl/**/*.styl', ['stylus', 'jekyll-rebuild']);
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch(['**/*.html','index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
