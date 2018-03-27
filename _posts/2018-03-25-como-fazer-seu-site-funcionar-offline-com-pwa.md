@@ -70,7 +70,7 @@ Mas fique tranquilo, segue o post que eu vou explicar o passo-a-passo e é mais 
 
 <h2 id="checklist-pwa">O checklist para se ter um PWA</h2>
 
-A Google criou uma [checklist para ter um PWA](https://developers.google.com/web/progressive-web-apps/checklist) que diz o mínimo necessário para ser considerado um PWA e também algumas coisas a mais que podem ser interessantes. 
+A Google criou uma [checklist para ter um PWA](https://developers.google.com/web/progressive-web-apps/checklist) que diz o mínimo necessário para ser considerado um PWA e também algumas coisas a mais que podem ser interessantes.
 
 E o Lighthouse, que é aquela ferramenta que vimos [nesse post](https://willianjusten.com.br/medindo-performance-do-seu-site-com-lighthouse/) usa essa checklist para analisar seu site para ver se ele está de acordo ou não. Vai ser através dessa lista que iremos partir =D
 
@@ -112,7 +112,7 @@ E como esse `manifest.json` se parece? Segue abaixo o exemplo do meu blog (sem t
   "background_color": "#005f97",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/?utm_source=homescreen"
+  "start_url": "/?utm_source=homescreen",
   "lang": "pt-BR",
   "orientation": "any",
   "icons": [
