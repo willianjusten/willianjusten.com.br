@@ -1,9 +1,19 @@
 text-color = #ddd
 bg-color = #2b2b2b
 
-.dark-theme
-    .bar-header
+.night-mode
+    .bar-header,
+    .box-item
         background bg-color
+    .box-item
+        border none
+        .box-body h2
+            color text-color
+        .box-body p
+            color darken(text-color, 20%)
+        &:hover
+            box-shadow 1px 2px 10px black;
+    .home,
     .post
         background #444
     .title-category
@@ -36,6 +46,23 @@ bg-color = #2b2b2b
                 padding 0 1.25rem
         .externalLink:after
             filter invert(1)
+
+    .author
+        background  bg-color
+        .name a,
+        .desc,
+        .email
+            color text-color
+
+    .share
+        color text-color
+        a
+            filter invert(1)
+            &:hover
+                color darken(text-color, 25%)
+
+    .comments
+        color text-color
 
     .header-post,
     .header-site
