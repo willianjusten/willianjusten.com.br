@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp js && gulp stylus && gulp jekyll-build"
   },
   "keywords": [
     "frontend",
