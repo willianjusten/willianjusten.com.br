@@ -7,8 +7,8 @@ description: "Aprenda como criar um botão para mudar as cores do seu site com J
 main-class: 'js'
 color: '#D6BA32'
 tags:
-- react
 - js
+- theme
 categories:
 twitter_text: "Aprenda como criar um botão para mudar as cores do seu site com JS puro."
 introduction: "Aprenda como criar um botão para mudar as cores do seu site com JS puro."
