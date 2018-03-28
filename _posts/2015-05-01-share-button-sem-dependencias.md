@@ -4,8 +4,8 @@ title: "Share Buttons sem dependências"
 date: 2015-05-01 10:57:03
 image: '/assets/img/share-buttons/main.png'
 description: "Ser social é muito importante, então nada melhor do que fazer com que o seu usuário consiga compartilhar mais fácil seu conteúdo."
-main-class: 'html'
-color: '#EB7728'
+main-class: 'dev'
+color: '#637a91'
 tags:
 - social
 - tutorial
