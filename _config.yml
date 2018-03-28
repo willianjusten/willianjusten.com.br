@@ -21,7 +21,7 @@ compress_html:
   profile: false
 
 files_to_cache:
- - '/assets/js/main.js'
+ - '/assets/js/blog.js'
 
 pages_to_cache:
   - '/cursos/'
