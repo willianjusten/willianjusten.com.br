@@ -59,7 +59,7 @@ Resolvi fazer esse post por alguns motivos e eles foram:
 - Não achei NADA em português!
 - Por que não fazer? xD
 
-O post será fortemente baseado na [ÓTIMA documentação do RSCSS](http://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente partir para o original, só clicar ali =)
+O post será fortemente baseado na [ÓTIMA documentação do RSCSS](https://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente partir para o original, só clicar ali =)
 
 Eu irei escrever os exemplos em **SCSS**, porém eles podem ser portados para qualquer pre-processador e até mesmo CSS puro <s>tem maluco para tudo.</s>
 
@@ -156,7 +156,7 @@ Se temos o markup limpo, colocando só classes base e usando nesting, acabamos t
 
 <h2 id="e-se">E se existisse uma maneira de ter os dois limpos?</h2>
 
-Dessa forma nasceu o [RSCSS](http://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [seletores css importantes para aprender](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
+Dessa forma nasceu o [RSCSS](https://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [seletores css importantes para aprender](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
 
 O mesmo exemplo do card usando essa metodologia ficaria:
 
@@ -168,7 +168,7 @@ O mesmo exemplo do card usando essa metodologia ficaria:
 
 A primeira coisa que você deve fazer é pensar em tudo como se fossem componentes. Considere cada pedaço de sua interface como um componente individual. Segue exemplo de um form dentro de uma navbar:
 
-![Search Form dentro de uma navbar](http://rscss.io/images/component-example.png)
+![Search Form dentro de uma navbar](/assets/img/rscss/component-example.png)
 
 <h4 id="comp-name">1.1 Nomeando Componentes</h4>
 
@@ -182,7 +182,7 @@ Os componentes deverão ter **pelo menos duas palavras**, separadas por um traç
 
 Elementos são coisas dentro do seu componente:
 
-![Elementos dentro do search-form](http://rscss.io/images/component-elements.png)
+![Elementos dentro do search-form](/assets/img/rscss/component-elements.png)
 
 <h4 id="elementos-name">2.1 Nomeando elementos</h4>
 
@@ -233,7 +233,7 @@ Use classe sempre que possível. Tags são ok, mas podem vir com uma pequena per
 
 Componentes podem ter variações, assim como os elementos também.
 
-![Exemplo de variações](http://rscss.io/images/component-modifiers.png)
+![Exemplo de variações](/assets/img/rscss/component-modifiers.png)
 
 <h4 id="variacoes-name">3.1 Nomeando variações</h4>
 
@@ -268,7 +268,7 @@ Alguns dos motivos de se usar são:
 
 <h3 id="componentes-nested">4. Componentes aninhados (nested)</h3>
 
-![Componentes aninhados](http://rscss.io/images/component-nesting.png)
+![Componentes aninhados](/assets/img/rscss/component-nesting.png)
 
 ```html
 <div class='article-link'>
@@ -343,7 +343,7 @@ Assim, seu elemento `.submit` irá receber todas as propriedades que precisa, de
 
 <h3 id="layouts">5. Layouts</h3>
 
-![Exemplo de cards em layouts](http://rscss.io/images/layouts.png)
+![Exemplo de cards em layouts](/assets/img/rscss/layouts.png)
 
 <h4 id="layouts-evite">5.1 Evite propriedades de posicionamento</h4>
 
