@@ -62,7 +62,7 @@ gulp.task('stylus', function(){
 gulp.task('js', function(){
 	return gulp.src('src/js/**/*.js')
 		.pipe(plumber())
-		.pipe(concat('main.js'))
+		.pipe(concat('blog.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js/'));
 });
