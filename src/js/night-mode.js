@@ -2,6 +2,7 @@
 	var nightModeStorage = localStorage.getItem('gmtNightMode');
 	var nightMode = document.querySelector('#night-mode');
 	var metaThemeColor = document.querySelector("meta[name=theme-color]");
+	var initialThemeColor = metaThemeColor.content;
 
 	if (nightModeStorage) {
 		document.documentElement.classList.add('night-mode');
@@ -20,7 +21,7 @@
 			return;
 		}
 		localStorage.removeItem('gmtNightMode');
-		metaThemeColor.setAttribute("content", '#005f97');
+		metaThemeColor.setAttribute("content", initialThemeColor);
 	}, false);
 
 })(window, document);
