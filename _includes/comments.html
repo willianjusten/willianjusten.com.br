@@ -13,16 +13,16 @@
         };
 
         var d = document, s = d.createElement('script');
-        
+
         s.src = '//willianjusten.disqus.com/embed.js';
-        
+
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
 
         disqus_loaded = true;
     };
     window.onscroll = function(e) {
-        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)) {
             //hit bottom of page
             if (disqus_loaded==false)
                 load_disqus()

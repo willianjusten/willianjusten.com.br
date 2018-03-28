@@ -15,6 +15,16 @@
 	nightMode.addEventListener('click', function (event) {
 		document.documentElement.classList.toggle('night-mode');
 
+		if (typeof(DISQUS) !== 'undefined') {
+			DISQUS.reset({
+				reload: true,
+					config: function () {
+						this.page.identifier = document.location.href;
+						this.page.url = document.location.href;
+					}
+			});
+		}
+
 		if ( document.documentElement.classList.contains('night-mode') ) {
 			localStorage.setItem('gmtNightMode', true);
 			metaThemeColor.setAttribute("content", '#2b2b2b');
