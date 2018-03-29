@@ -3,20 +3,36 @@ layout: default
 color: '#005f97'
 ---
 
-<main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+<main class="home" id="post" role="main">
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
-        <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
                 <span class="ribbon">
                     <a href="{{site.url}}/category/{{post.main-class}}/"><span>{{post.main-class}}</span></a>
                 </span>
                 <div class="box-body">
                     <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
+                    <meta itemprop="dateModified" content="{{post.date | date_to_xmlschema }}">
+                    <meta itemprop="mainEntityOfPage" content="{{ post.url | prepend: site.url }}">
+
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <meta itemprop="name" content="Willian Justen">
+                    </div>
+
+                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                        <meta itemprop="name" content="Willian Justen Blog">
+                        <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                            <meta itemprop="url" content="https://willianjusten.com.br/assets/img/icons/favicon-512x512.png">
+                        </div>
+                    </div>
+
+                    <meta itemprop="image" content="{{ site.url }}{{ post.image }}">
+
                     <time datetime="{{ post.date | date_to_xmlschema }}">
                         {% include date.html date=post.date %}
                     </time>
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">
+                        <h2 class="post-title" itemprop="name headline">
                             {{ post.title }}
                         </h2>
                     </a>
@@ -33,3 +49,16 @@ color: '#005f97'
     {% endfor %}
     </div>
 </main>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Website",
+        "url": "https://willianjusten.com.br",
+        "name": "Willian Justen Blog",
+        "author": {
+            "type": "Person",
+            "name": "Willian Justen de Vasconcellos"
+        },
+        "description": "{{ site.description }}"
+    }
+</script>

@@ -23,9 +23,9 @@
     };
     window.onscroll = function(e) {
         if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)) {
-            //hit bottom of page
-            if (disqus_loaded==false)
-                load_disqus()
+            if (disqus_loaded==false) {
+                load_disqus();
+            }
         }
     };
 </script>

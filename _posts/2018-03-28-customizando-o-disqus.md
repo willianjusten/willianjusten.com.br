@@ -12,7 +12,6 @@ tags:
   - disqus
   - jekyll
 categories:
-  - ''
 ---
 ## Introdução
 
@@ -70,7 +69,7 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 ```
 
-Ele cria o script, apenda na página e é isso. O disqus vai carregar a partir dali e não vai fazer mais nada. 
+Ele cria o script, apenda na página e é isso. O disqus vai carregar a partir dali e não vai fazer mais nada.
 
 Só que como fica se o site mudar de claro para escuro? Isso mesmo, o disqus não vai mudar nada, ele vai ter carregado e identificado que era claro e fim. Só que não queremos isso né? Por isso, na trigger onde eu chamo a mudança do tema, eu coloquei a seguinte linha:
 
