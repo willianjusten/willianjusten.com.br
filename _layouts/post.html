@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="http://schema.org/BlogPosting" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
+<html lang="pt-br" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
     {% include head.html %}
 
     <!-- Inline css posts -->
@@ -12,7 +12,7 @@
         {% include night-mode.html %}
         <section class="post">
 
-            <article role="article" id="post" class="post-content" itemprop="articleBody">
+            <article role="article" id="post" class="post-content">
                 {{ content }}
             </article>
 
@@ -22,5 +22,37 @@
             {% include comments.html %}
             {% include footer.html %}
         </section>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+                },
+                "headline": "{{page.title}}",
+                "datePublished": "{{page.date}}",
+                "dateModified": "{{page.date}}",
+                "description": "{{page.description}}",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.url }}{{page.image }}"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Willian Justen de Vasconcellos"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Willian Justen Blog",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://willianjusten.com.br/assets/img/icons/favicon-512x512.png"
+                    }
+                },
+                "articleBody": "{{ content | strip_html | strip_newlines }}"
+            }
+        </script>
     </body>
 </html>
