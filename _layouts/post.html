@@ -51,7 +51,7 @@
                         "url": "https://willianjusten.com.br/assets/img/icons/favicon-512x512.png"
                     }
                 },
-                "articleBody": "{{ content | strip_html | strip_newlines }}"
+                "articleBody": "{{ content | strip_html | strip_newlines | replace: '"', '' }}"
             }
         </script>
     </body>
