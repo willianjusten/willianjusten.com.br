@@ -3,7 +3,7 @@ layout: post
 title: "#9 - Colorindo em SVG"
 date: 2015-04-03 15:59:38
 image: '/assets/img/colorindo-svg/main.png'
-description: "Vamos voltar a ser crianças e colorir as coisas!"
+description: "Vamos voltar a ser crianças e colorir as coisas! Aprenda as técnicas para mudar as cores do SVG."
 main-class: 'svg'
 color: '#7D669E'
 tags:
