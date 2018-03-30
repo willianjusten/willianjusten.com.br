@@ -63,7 +63,7 @@ Assim como você pode acabar não fazendo faculdade e se tornar um cara de suces
 
 Existe uma palestra muito famosa do Jobs, em que ele fala um pouquinho da sua experiência e como ele deixou a faculdade para estudar caligrafia, vale assistir.
 
-<div class='embed-container'><iframe style="width: 100% !important; height: 400px" src='http://www.youtube.com/embed/PX_jsFtCzO8' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe style="width: 100% !important; height: 400px" src='https://www.youtube.com/embed/66f2yP7ehDs' frameborder='0' allowfullscreen></iframe></div>
 
 ## Já sou velho e trabalho com isso tem 20 anos
 
