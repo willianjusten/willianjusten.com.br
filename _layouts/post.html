@@ -18,14 +18,16 @@ layout: compress
 
             <article role="article" id="post" class="post-content">
                 {{ content }}
+                <hr/>
             </article>
 
+            {% include related.html %}
             {% include venda-git.html %}
             {% include share.html %}
             {% include author.html %}
             {% include comments.html %}
             {% include footer.html %}
-        </section>
+        </>
 
         <script type="application/ld+json">
             {

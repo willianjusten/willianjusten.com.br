@@ -1,0 +1,32 @@
+.post-content
+    padding-bottom 0
+
+.related
+    center(rem(800px))
+    padding 0 rem(20px)
+
+.related-post_title
+    text-align center
+
+.related-posts_section
+    column-count 1
+    column-gap rem(60px)
+    list-style none
+    padding 0 rem(20px)
+    +above(cut)
+        column-count 2
+        padding rem(20px) 0 0
+
+.related-post
+    text-align left
+    -webkit-column-break-inside avoid
+    -moz-column-break-inside avoid
+    column-break-inside avoid
+    a
+        margin auto
+        display block
+        font-size rem(16px)
+        text-decoration none
+        padding-bottom rem(20px)
+        &:hover
+            opacity 0.8
