@@ -61,9 +61,7 @@ Na faculdade aprenderemos conceitos e paradigmas que são mais difíceis de sere
 
 Assim como você pode acabar não fazendo faculdade e se tornar um cara de sucesso como Bill Gates, Steve Jobs, Mark Zuckerberg...Você também pode fracassar feio e não conquistar nada na sua vida. Não devemos comparar casos a parte com a nossa realidade, não que fazendo faculdade você será bem sucedido, isso será conquistado com o seu esforço.
 
-Existe uma palestra muito famosa do Jobs, em que ele fala um pouquinho da sua experiência e como ele deixou a faculdade para estudar caligrafia, vale assistir.
-
-<div class='embed-container'><iframe style="width: 100% !important; height: 400px" src='https://www.youtube.com/embed/66f2yP7ehDs' frameborder='0' allowfullscreen></iframe></div>
+Existe uma [palestra muito famosa do Jobs](https://www.youtube.com/watch?v=66f2yP7ehDs), em que ele fala um pouquinho da sua experiência e como ele deixou a faculdade para estudar caligrafia, vale assistir.
 
 ## Já sou velho e trabalho com isso tem 20 anos
 
