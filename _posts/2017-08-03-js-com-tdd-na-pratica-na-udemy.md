@@ -3,7 +3,7 @@ layout: post
 title: "JS com TDD na Prática na Udemy"
 date: 2017-08-03 12:30:47
 image: '/assets/img/cursos/js-tdd.png'
-description: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
+description: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado agora na Udemy!'
 main-class: 'js'
 color: '#D6BA32'
 tags:
@@ -11,7 +11,7 @@ tags:
 - tdd
 categories:
 twitter_text: 'Aprenda testes na prática!'
-introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
+introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado agora na Udemy!'
 ---
 
 ## Introdução

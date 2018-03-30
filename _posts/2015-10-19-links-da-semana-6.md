@@ -3,7 +3,7 @@ layout: post
 title: "Links da semana #6"
 date: 2015-10-25 19:19:17
 image: '/assets/img/links-da-semana/main.png'
-description: 'Links sobre coisas interessantes que fui vendo pela semana.'
+description: 'Links da semana #6 - Links sobre coisas interessantes que fui vendo pela semana.'
 main-class: 'misc'
 color: '#7AAB13'
 tags:
