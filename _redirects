@@ -6,6 +6,7 @@
 /audio-experiments/* https://audio-experiments.willianjusten.com.br/:splat 200
 /labs/* https://labs.willianjusten.com.br/:splat 200
 /curso-de-svg/* https://curso-de-svg.willianjusten.com.br/:splat 200
+/photo-portfolio/* https://photo-portfolio.willianjusten.com.br/:splat 200
 
 /minimal-blog/* https://willianjusten.github.io/minimal-blog/
 /screamer-js/example/ https://willianjusten.github.io/screamer-js/example/
@@ -14,7 +15,6 @@
 /frontend-carioca-2015 https://willianjusten.github.io/frontend-carioca-2015/
 /imasters-2015 https://willianjusten.github.io/imasters-2015/
 /meetup-css-sp https://willianjusten.github.io/meetup-css-sp/
-/photo-portfolio https://willianjusten.github.io/photo-portfolio/
 /js-tdd-slides https://willianjusten.github.io/js-tdd-slides/
 /tutorial-svg https://willianjusten.com.br/category/svg/
 /welcome-to-jekyll https://willianjusten.com.br/category/jekyll/
