@@ -2,7 +2,7 @@
 layout: post
 title: "Como colocar seu site no ar de graca"
 date: 2018-04-02 01:30:42
-image: '/assets/img/'
+image: '/assets/img/netlify/main.png'
 description: Calma, não é click-bait. Conheça e domine o Netlify para subir todos os seus projetos e freelas de um jeito fácil, rápido e otimizado.
 main-class: dev
 color: '#637a91'
