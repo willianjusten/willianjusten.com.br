@@ -31,7 +31,7 @@ Basicamente o que você precisa fazer é alterar as cores das fontes/fundo no CS
 Para ativar os modos, nós vamos usar nosso lindo Javascript, que nos permite tudo! Primeiramente nós precisamos criar um input/botão que vai ser onde iremos clicar para ficar mudando entre um e outro.
 
 ```html
-<input id="night-mode" class="lamp" type="checkbox" aria-label="nigth-mode">
+<input id="night-mode" class="lamp" type="checkbox" aria-label="night-mode">
 ```
 
 Repare que eu coloco um id ali que é `#night-mode`, pois é ele que eu vou usar para ativar/desativar o nosso querido night mode. Como disse na primeira etapa, nós precisamos adicionar o modificador ao html, para que ele comece a fazer a troca de cores certo? Então no Javascript podemos fazer assim:
