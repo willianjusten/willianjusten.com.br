@@ -62,11 +62,11 @@ Um exemplo bem bacana sobre a importância da otimização e o quão impactante 
 
 A logo inicial, possuía vários pontos e detalhes:
 
-![Logo antiga do Google](http://i.kinja-img.com/gawker-media/image/upload/s--zmSvRcRR--/c_scale,fl_progressive,q_80,w_800/1416113051534017317.png)
+![Logo antiga do Google](https://i.kinja-img.com/gawker-media/image/upload/s--zmSvRcRR--/c_scale,fl_progressive,q_80,w_800/1416113051534017317.png)
 
 Para melhor performance, a Google resolveu trabalhar com formas básicas, diminuindo e muito o uso de pontos e paths.
 
-![Nova Logo do Google](http://i.kinja-img.com/gawker-media/image/upload/s--IcQEd58x--/c_scale,fl_progressive,q_80,w_800/1416113051641962533.png)
+![Nova Logo do Google](https://i.kinja-img.com/gawker-media/image/upload/s--IcQEd58x--/c_scale,fl_progressive,q_80,w_800/1416113051641962533.png)
 
 ## 2 - Converta textos para Outlines... Ou não...
 
