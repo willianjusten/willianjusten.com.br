@@ -34,7 +34,6 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 - [Landing Folio - Várias Landing Pages para inspiração](https://www.landingfolio.com/)
 - [Lightning Design System - Um design system feito pela Salesforce](http://www.lightningdesignsystem.com/)
 - [Object Oriented UX](http://alistapart.com/article/object-oriented-ux)
-- [Bringing card design to a new level.](http://flyingdog.de/nhp/blog/cards/How_to_Cards_Desktop.php)
 
 ## CSS / SVG
 
