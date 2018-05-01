@@ -7,7 +7,7 @@
         {% if post.url != page.url %}
             {% if post.main-class == page.main-class %}
                 <li class="related-post">
-                    <a href="{{ post.url }}" onclick="ga('send', 'event', 'related', 'above', '{{page.main-class}}')">{{ post.title }}</a>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
                 {% assign maxRelatedCounter  = maxRelatedCounter | plus: 1 %}
                 {% if maxRelatedCounter == 8 %}
