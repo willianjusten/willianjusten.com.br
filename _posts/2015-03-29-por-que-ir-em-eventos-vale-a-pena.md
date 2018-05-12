@@ -28,7 +28,7 @@ Eu sempre falo para os meus amigos, que uma das melhores coisa da vida é viajar
 
 Dessa vez eu tive a oportunidade de viajar com o [Pedro Polisenso](http://pedropolisenso.com/) e o [Diego Ramos](https://github.com/rdiego26), dois caras fantásticos e que fizeram a viagem ainda mais divertida. Nunca tínhamos viajado juntos e foi uma oportunidade e tanto, para trocar conhecimentos, tanto na área de dev, como sobre coisas da vida também.
 
-Lá, eu também já conhecia uma galera ([Yan Magalhães](https://twitter.com/yaanmagale), [Lucas Maia](http://twitter.com/lucasmaiaesilva), [Fernanda Feliciano](https://www.facebook.com/fernandafeliciano), [Felipe Siqueira](https://www.twitter.com/flipggs), [Bruno Pulis](http://twitter.com/brunopulis) e mais...) e com isso, já ganhei hospedagem de graça e ainda guias turísticos!! =)
+Lá, eu também já conhecia uma galera ([Yan Magalhães](https://twitter.com/yaanmagale), [Lucas Maia](http://twitter.com/lucasmaiaesilva), [Fernanda Feliciano](https://www.facebook.com/fernandafeliciano), [Felipe Siqueira](https://www.twitter.com/flipggs) e mais...) e com isso, já ganhei hospedagem de graça e ainda guias turísticos!! =)
 
 ## Amigos novos
 
