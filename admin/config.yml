@@ -31,5 +31,5 @@ collections:
         ]
         }
       - {label: "Tags", name: "tags", widget: "list", default: [""]}
-      - {label: "Category", name: "categories", widget: "list"}
+      - {label: "Category", name: "categories", widget: "list", default: [""]}
       - {label: "Body", name: "body", widget: "markdown"}
