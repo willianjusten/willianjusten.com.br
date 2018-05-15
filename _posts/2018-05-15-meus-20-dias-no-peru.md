@@ -65,7 +65,7 @@ Você pode ver mais fotos no meu [Album de Cusco do Facebook](https://www.facebo
 
 Foi a primeira cidade que fomos, pois é conhecida como a cidade base de muitos passeios, incluindo o famoso Machu Picchu, que na realidade, tem como cidade base Aguas Calientes, que vou falar mais para frente.
 
-No primeiro dia que chegamos, é indicado fazer uma pequena caminhada pela cidade, nada muito grande, pois como a cidade fica em 2800m de altitude, o soroche (mal de altitude) pode acabar pegando. Com isso, nós demos uma caminhada por volta do nosso Airbnb, fomos no mercado, compramos macarrão instantâneo, água e voltamos para casa. 
+No primeiro dia que chegamos, é indicado fazer uma pequena caminhada pela cidade, nada muito grande, pois como a cidade fica em 2800m de altitude, o soroche (mal de altitude) pode acabar pegando. Com isso, nós demos uma caminhada por volta do nosso Airbnb, fomos no mercado, compramos macarrão instantâneo, água e voltamos para casa.
 
 Lá no Airbnb, mal chegamos e já fomos recebidos pela nossa host com o famoso chá de coca, que sim, funciona bastante contra o soroche.
 
@@ -73,7 +73,7 @@ No dia seguinte, nós passeamos por todo o centro de Cusco a procura das agênci
 
 Nesse mesmo dia, nós fomos ao Mercado São Pedro, que é super legal, cheio de coisas de artesanato, comidas típicas, panos e outros vários cacarecos que você vai encontrar em todos os cantos do Peru.
 
-Nos outros dias que ficamos em Cusco, na realidade a gente acordava bem cedinho para ir fazer os tours e chegávamos no finzinho do dia, só mesmo para comer algo e dormir para o dia seguinte. Mas no último dia que ficamos lá, acabamos vendo uma espécie de "Carnaval" do Peru, super bonito! 
+Nos outros dias que ficamos em Cusco, na realidade a gente acordava bem cedinho para ir fazer os tours e chegávamos no finzinho do dia, só mesmo para comer algo e dormir para o dia seguinte. Mas no último dia que ficamos lá, acabamos vendo uma espécie de "Carnaval" do Peru, super bonito!
 
 ### Impressões e Informações
 
@@ -168,7 +168,7 @@ Demos azar pois no dia anterior choveu bastante e com isso, todo o percurso prat
 
 Demoramos cerca de 1:30 para subir e alcançar o lago. Tiveram pessoas que fizeram mais rápido e outras que desistiram e pegaram o cavalo. Não é uma subida tão fácil e acho que por ter muita lama, ficou ainda mais complicado. É importante lembrar de levar folhas de coca, bala de coca e muita água.
 
-Chegando no lago, aconteceu o que imaginávamos, o lago estava completamente lotado, o que chateou bastante a nós dois (talvez mais a Maria Alice, que já tava puta pela caminhada). Diferente de outros lugares que fomos e que também tinha bastante gente, lá, as pessoas estavam bagunçando muito, então não foi um momento de paz e tranquilidade que nós queríamos. Tirando isso, o lago é extremamente bonita e a cor dele é bem diferente dos outros lugares que fomos.
+Chegando no lago, aconteceu o que imaginávamos, o lago estava completamente lotado, o que chateou bastante a nós dois (talvez mais a Maria Alice, que já tava puta pela caminhada). Diferente de outros lugares que fomos e que também tinha bastante gente, lá, as pessoas estavam bagunçando muito, então não foi um momento de paz e tranquilidade que nós queríamos. Tirando isso, o lago é extremamente bonito e a cor dele é bem diferente dos outros lugares que fomos.
 
 Uma dica é talvez ir depois do almoço, assim, o número de pessoas vai diminuir consideravelmente e você vai poder ter mais paz por lá.
 
@@ -200,9 +200,9 @@ Lá passamos 5 maravilhosas horas dentro do ônibus, onde assistimos 2 filmes e 
 
 Você pode ver mais fotos no meu [Album de Ica/Huacachina no Facebook](https://www.facebook.com/willjusten/media_set?set=a.10214489964635494.1073741866.1611244354&type=3). Eu também estou postando fotos em alta qualidade para download lá no meu [Unsplash](https://unsplash.com/collections/2048586/my-adventures-in-peru)
 
-Confesso, que esse era um dos lugares que eu mais esperava ir. É um deserto e um pequeno "Oásis". Não me desapontei, o lugar é muito legal e as dunas são incríveis! O centrinho de Ica em si não tem nada e por ser uma cidade no deserto, é quente para caramba e durante o dia é bem complicado de ficar andando na rua. Devido a isso, teve um dia que ficamos a tarde inteira jogando um fliperama de basquete (sim, eu sou fã de basquete desde pequeno). 
+Confesso, que esse era um dos lugares que eu mais esperava ir. É um deserto e um pequeno "Oásis". Não me desapontei, o lugar é muito legal e as dunas são incríveis! O centrinho de Ica em si não tem nada e por ser uma cidade no deserto, é quente para caramba e durante o dia é bem complicado de ficar andando na rua. Devido a isso, teve um dia que ficamos a tarde inteira jogando um fliperama de basquete (sim, eu sou fã de basquete desde pequeno).
 
-Num dos dias, fizemos um passeio de bugre, que é como uma montanha russa, só que muito mais legal! A Maria também brincou de sandboard, eu decidi não arriscar ficar todo ralado e só tirar fotos mesmo. Em Ica foi o primeiro lugar que consegui subir o meu drone! Pensa na alegria da criança! 
+Num dos dias, fizemos um passeio de bugre, que é como uma montanha russa, só que muito mais legal! A Maria também brincou de sandboard, eu decidi não arriscar ficar todo ralado e só tirar fotos mesmo. Em Ica foi o primeiro lugar que consegui subir o meu drone! Pensa na alegria da criança!
 
 Em Ica, também ficamos num Airbnb, que foi absurdamente barato, deu **10reais/dia**, mas, infelizmente não era tão bom assim. Novamente era uma casa separada, o que já deixa mais confortável. Porém não era tão limpo e só tinha agua fria! Véi, pode estar fazendo 60 graus lá fora, eu vou querer tomar meu banho quente!
 
@@ -253,7 +253,7 @@ O lugar é maravilhoso, foi meu primeiro contato com águas tão azuis e foi lin
 
 Você pode ver mais fotos no meu [Album do Glaciar Pastoruri no Facebook](https://www.facebook.com/willjusten/media_set?set=a.10214611524874424.1073741868.1611244354&type=3). Eu também estou postando fotos em alta qualidade para download lá no meu [Unsplash](https://unsplash.com/collections/2048586/my-adventures-in-peru)
 
-Foi um dos meus passeios favoritos e também da Maria, no caminho até chegar lá tivemos algumas paradas para ver a vegetação local, uma água colorida muito doida e também uma água com gás natural. 
+Foi um dos meus passeios favoritos e também da Maria, no caminho até chegar lá tivemos algumas paradas para ver a vegetação local, uma água colorida muito doida e também uma água com gás natural.
 
 Chegando perto do glaciar, nós precisamos fazer uma caminhada de uns 30-40min bem tranquila, numa calçada de cimento, o que fez ainda ser mais fácil do que ficar pisando em pedras ou lama, como nos outros passeios.
 
@@ -276,7 +276,7 @@ Lá no topo já podemos ver o glaciar e junto dele um lago formado pelo seu dege
 
 Eu ainda não tive tempo de editar as fotos de Lima, mas assim que postar, vou colocar o link aqui.
 
-Engraçado que quando você pensa no Peru, você tem uma imagem mais das pessoas de origem indígena, artesanatos e ruínas, mas Lima é bem diferente disso. Lá é uma cidade bem rica, com prédios super altos e bonitos. E o artesanato você quase não vê. 
+Engraçado que quando você pensa no Peru, você tem uma imagem mais das pessoas de origem indígena, artesanatos e ruínas, mas Lima é bem diferente disso. Lá é uma cidade bem rica, com prédios super altos e bonitos. E o artesanato você quase não vê.
 
 Apesar disso, eu confesso que gostei bastante de Lima, ela tem uma costa super linda, onde você fica olhando o mar o tempo todo. E por seu relevo ser diferente, você está no alto das rochas e o oceano mais abaixo, fica uma visão super legal.
 
@@ -285,7 +285,7 @@ Lá eu também pude voar meu drone e tirar fotos bem legais <3
 ### Impressões e Informações
 
 * Definitivamente a cidade mais cara de todo o Peru
-* Ficamos no [Munay Bed and Breakfast](www.booking.com/s/17_6/465d2d0b) que é um hostel bem direitinho em frente a praia em Miraflores, quarto privado com banheiro. Conseguimos uma promoção pelo Booking, mas mesmo assim foi **R$100/dia**.
+* Ficamos no [Munay Bed and Breakfast](https://www.booking.com/s/17_6/465d2d0b) que é um hostel bem direitinho em frente a praia em Miraflores, quarto privado com banheiro. Conseguimos uma promoção pelo Booking, mas mesmo assim foi **R$100/dia**.
 * Prefira ficar no bairro de Miraflores, apesar de mais caro, é o mais bonito e com mais coisas para se fazer.
 * Não precisa ficar muitos dias lá, em 2 dias já viu o suficiente.
 
