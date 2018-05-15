@@ -186,7 +186,7 @@ Uma dica é talvez ir depois do almoço, assim, o número de pessoas vai diminui
 
 ## Cusco - Lima - Ica (12/04)
 
-Decidimos pegar um avião de Cusco para Lima, pois era mais rápido e mais barato que de ônibus. De Cusco para Lima demorou aproximadamente 1h. Lá, nós iríamos pegar um taxi ou um ônibus para a Cruz del Sur, que é a empresa de Ônibus que leva para Ica. Porém, um taxista nos abordou no caminho (e, eu, como todo bom morador do rio já desconfiei), mas ele nos falou de um lugar que era mais perto e mais fácil de pegar ônibus, depois de uma pesquisada marota na internet, vi que era verdade e aceitei.
+Decidimos pegar um avião de Cusco para Lima, pois era mais rápido e mais barato que de ônibus. De Cusco para Lima demorou aproximadamente 1h. Lá, nós iríamos pegar um taxi ou um ônibus para a Cruz del Sur, que é a empresa de ônibus que leva para Ica. Porém, um taxista nos abordou no caminho (e, eu, como todo bom morador do rio já desconfiei), mas ele nos falou de um lugar que era mais perto e mais fácil de pegar ônibus, depois de uma pesquisada marota na internet, vi que era verdade e aceitei.
 
 Fomos tranquilamente para esse terminal, que também é um shopping, mas quando estávamos quaaase chegando lá, os policiais pararam o carro, entraram nele e simplesmente tiraram a chave do carro! Nos ignoraram completamente, mesmo com o cara falando que só queria nos deixar no terminal. Enfim, não sabemos se o carro era roubado ou outra coisa, mas é fato que o taxista não tinha os documentos do carro e ele devia estar sendo procurado, afinal de contas, os policiais pararam especificamente o nosso carro.
 
@@ -242,7 +242,7 @@ O lugar é maravilhoso, foi meu primeiro contato com águas tão azuis e foi lin
 ### Impressões e Informações
 
 * O passeio custou **R$50/pessoa** e fizemos pela Golden Tour que é a única que faz esse lugar.
-* Se você tem medo de altura e é atrapalhado, pergunte primeiro se você vai subir o mirante. Se disserem sim, só fique em baixo e vale tão a pena quanto.
+* Se você tem medo de altura e é atrapalhado, pergunte primeiro se você vai subir o mirante. Se disserem sim, só fique em baixo que vale tão a pena quanto.
 * Se você gostar de aventura, vai ser legal.
 * A água é impressionantemente azul!
 * Demora muiiiiito para chegar de van, mas a vista é bem bonita, vários penhascos.
