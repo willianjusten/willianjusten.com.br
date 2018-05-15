@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2018-05-14 05:11:28'
-image: /assets/img/peru.png
+image: /assets/img/peru-cover.png
 title: Meus 20 dias no Peru
 description: >-
   Um pouco do roteiro que fiz, lugares que me hospedei, trilhas que fiz, meus
