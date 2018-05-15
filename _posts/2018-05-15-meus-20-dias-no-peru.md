@@ -77,7 +77,7 @@ Nos outros dias que ficamos em Cusco, na realidade a gente acordava bem cedinho 
 
 ### Impressões e Informações
 
-Nós ficamos no [Airbnb da Rosa](https://www.airbnb.com.br/rooms/18484940?s=51), onde pagamos cerca de **R$33/dia**, o que foi bem impressionante para gente, pois é um valor bastante barato. O lugar era uma kitnet separada da casa da host, super limpo e muito bem localizado, o que nos facilitava bastante na locomoção. Super aconselho lá, se for de casal ou até mesmo se quiser um espaço sozinho. Lembrando que se cadastrar [no meu link do Airbnb](www.airbnb.com.br/c/willianj60), você ainda ganha um descontão na primeira viagem e também me ajuda =D
+Nós ficamos no [Airbnb da Rosa](https://www.airbnb.com.br/rooms/18484940?s=51), onde pagamos cerca de **R$33/dia**, o que foi bem impressionante para gente, pois é um valor bastante barato. O lugar era uma kitnet separada da casa da host, super limpo e muito bem localizado, o que nos facilitava bastante na locomoção. Super aconselho lá, se for de casal ou até mesmo se quiser um espaço sozinho. Lembrando que se cadastrar [no meu link do Airbnb](https://www.airbnb.com.br/c/willianj60), você ainda ganha um descontão na primeira viagem e também me ajuda =D
 
 * Uma cidade bastante rica culturamente.
 * Bastante acolhedora.
@@ -272,7 +272,7 @@ Lá no topo já podemos ver o glaciar e junto dele um lago formado pelo seu dege
 
 ## Lima (20/04 - 24/04)
 
-![](/assets/img/lima.jpg)
+![3 fotos: superior esquerda: uma garota de costas em frente a um farol e duas palmeiras. Superior direita: uma vista aerea da praia e predios de Miraflores. Destaque inferior: panaroma da cidade de Lima no Bairro de Miraflores](/assets/img/lima.jpg)
 
 Eu ainda não tive tempo de editar as fotos de Lima, mas assim que postar, vou colocar o link aqui.
 
