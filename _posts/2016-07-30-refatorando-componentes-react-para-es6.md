@@ -30,7 +30,7 @@ Em ES5 seria o modelo normal do CommonJS:
 
 ```js
 var React = require('react');
-var ReactPropTypes = React.PropTypes;
+var PropTypes = require('prop-types');
 ```
 
 Já em ES6 usando o sistema de [import de módulos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import):
@@ -43,10 +43,10 @@ Se você reparar, no `PropTypes` eu utilizo as chaves em volta, isso significa q
 
 ### Criando um componente e exportando
 
-Em ES5 nós criamos componentes utilizando o método `React.createClass` e depois nós os exportamos usando o `module.exports`.
+Em ES5 nós criamos componentes utilizando o método `createReactClass` e depois nós os exportamos usando o `module.exports`.
 
 ```js
-var MeuComponente = React.createClass({
+var MeuComponente = createReactClass({
     ...
 });
 
@@ -73,15 +73,16 @@ export default MeuComponente;
 
 ### PropTypes e getDefaultProps
 
-Em ES5, meu objeto de propTypes fica **dentro** da minha classe, assim como tenho um método para definir minhas propriedades default.
+~~Em ES5, meu objeto de propTypes fica **dentro** da minha classe, assim como tenho um método para definir minhas propriedades default.~~
+**update 17/05/2018** - após a versão 15.5 PropTypes foi colocado em uma biblioteca separada do React
 
 ```js
 var React = require('react');
-var ReactPropTypes = React.PropTypes;
+var PropTypes = require('prop-types');
 
-var MeuComponente = React.createClass({
+var MeuComponente = createReactClass({
     propTypes: {
-        title: ReactPropTypes.string.isRequired
+        title: PropTypes.string.isRequired
     },
     getDefaultProps: function() {
         return {
@@ -91,10 +92,11 @@ var MeuComponente = React.createClass({
 });
 ```
 
-Já em ES6, tanto a definição de `PropTypes` quanto o `defaultProps` vão para o lado de **fora**.
+~~Já em ES6, tanto a definição de `PropTypes` quanto o `defaultProps` vão para o lado de **fora**.~~
 
 ```js
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types;
 
 export default class MeuComponente extends Component {
     ...
@@ -114,7 +116,7 @@ MeuComponente.defaultProps = {
 Para definir estados iniciais ao meu componente, em ES5 eu preciso usar o método `getInitialState`.
 
 ```js
-var MeuComponente = React.createClass({
+var MeuComponente = createReactClass({
     getInitialState: function() {
         return {
             title: this.props.title,
@@ -140,12 +142,12 @@ export default class MeuComponente extends Component {
 
 Esse talvez seja o ponto de maior incidência de erros da história do React! Muita gente já deve ter ido dormir pensando "Por que meu método tá dando undefined? Tá tudo certinho..."
 
-O que acontece é que quando se utilizava o `React.CreateClass`, ele já fazia o [autobinding](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html#autobinding), fazendo a ligação do `this` a todos os métodos.
+O que acontece é que quando se utilizava o `createReactClass`, ele já fazia o [autobinding](https://facebook.github.io/react/blog/2015/01/27/react-v0.13.0-beta-1.html#autobinding), fazendo a ligação do `this` a todos os métodos.
 
 Em ES5 temos:
 
 ```js
-var MeuComponente = React.createClass({
+var MeuComponente = createReactClass({
     handleClick: function(event) {
         this.setState({
             liked: !this.state.liked,
@@ -178,7 +180,7 @@ Reparem que eu faço o bind no `contructor`, que é a forma correta de se fazer.
 Se você reparar no exemplo acima, em ES5 eu uso `handleClick: function()...` e já no ES6 eu escrevo só `handleClick()` direto. Isso acontece pois todos os métodos são propriedades do objeto. Em ES5, eu preciso definir o nome da propriedade e então chamar uma função, que é o método que eu quero em si.
 
 ```js
-var MeuComponente = React.createClass({
+var MeuComponente = createReactClass({
     componentWillMount: function() {
         ...
     }

@@ -55,13 +55,13 @@ Essa forma é a mais básica de todas e funciona como se fosse usar uma bibliote
 E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou chamando de um outro arquivo.
 
 ```js
-var ExampleApplication = React.createClass({
+var ExampleApplication = createReactClass({
   render: function() {
     var elapsed = Math.round(this.props.elapsed  / 100);
     var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
     var message =
       'O React está rodando com sucesso há ' + seconds + ' seconds.';
-      return React.DOM.p(null, message);
+      return ReactDOMFactories.p(null, message);
     }
 });
 
@@ -77,6 +77,13 @@ setInterval(function() {
 ```
 
 **update: (02/06/2016)** - na linha `16` atualizamos para utilizar o `ReactDOM.render()`, pois ele agora é separado do React original.
+
+**update: (16/05/2018)** - na linha `1` atualizamos para utilizar `createReactClass` e na linha 8 atualizamos para `ReactDOMFactories` pois `React.createClass` e `React.DOM` foram marcados como deprecated na versão 15.0 e removidos na 16.0, para utilizá-los é necessário adicionar as bibliotecas create-react-class e react-dom-factories ao projeto
+
+```html
+<script src="https://unpkg.com/create-react-class@15.6.3/create-react-class.min.js"></script>
+<script src="https://unpkg.com/react-dom-factories@1.0.2/index.js"></script>
+```
 
 Utilizando o React em JS cru, necessitamos de algumas manipulações para criação de elementos ou utilizar alguns que o próprio React nos dá.
 
@@ -95,15 +102,17 @@ Para usar essa sintaxe diretamente no Browser, precisamos do Babel e do React ch
 ```html
 <script src="react.js"></script>
 <script src="react-dom.js"></script>
+<script src="https://unpkg.com/create-react-class@15.6.3/create-react-class.min.js"></script>
+<script src="https://unpkg.com/react-dom-factories@1.0.2/index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
 ```
 
 Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/jsx">` ou num arquivo externo com a extensão `.jsx`. Segue um exemplo usando um script inline:
 
-**update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga <interpretar class=""></interpretar>
+**update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga interpretar
 
 ```jsx
-var ExampleApplication = React.createClass({
+var ExampleApplication = createReactClass({
   render: function() {
     var elapsed = Math.round(this.props.elapsed  / 100);
     var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );

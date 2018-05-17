@@ -72,16 +72,16 @@ ReactDOM.render(
 
 Para o render com o JSX, basta criamos o elemento com as tags do próprio html e ligarmos a um container.
 
-## React.createClass
+## createReactClass
 
 ```js
-ReactClass createClass(object specification)
+createReactClass(object specification)
 ```
 
 Serve para criar um componente dada uma especificação. Um componente implementa um método render que retorna um filho único. Esse filho pode ter uma estrutura arbitrária. A vantagem deste método é que nos permite já criar componentes para serem reaproveitados.
 
 ```jsx
-var Hello = React.createClass({
+var Hello = createReactClass({
     render: function() {
       return (
         <h1>Hello World!</h1>
@@ -95,7 +95,7 @@ ReactDOM.render(
 );
 ```
 
-Como podemos notar, com a utilização do `React.createClass`, habilitamos um componente com o nome da variável determinada, no nosso caso `Hello` e então podemos chamá-lo em diversos lugares como `<Hello />`, conforme indicado na linha `10`.
+Como podemos notar, com a utilização do `createReactClass`, habilitamos um componente com o nome da variável determinada, no nosso caso `Hello` e então podemos chamá-lo em diversos lugares como `<Hello />`, conforme indicado na linha `10`.
 
 Segue um [vídeo em inglês](http://learnreact.com/lessons/4-createclass), explicando como funciona.
 
@@ -156,7 +156,7 @@ No exemplo, eu tenho um array `frutas` e através do comando `map`, eu itero e m
 Quando utilizamos nossos componentes no React, nós podemos adicionar atributos a eles, dos quais chamamos de `props`. Esses atributos ficam disponíveis para nosso componente através do `this.props` e podem ser usados no método de `render` para renderizar dados dinâmicos, de acordo com o quisermos passar.
 
 ```jsx
-var Hello = React.createClass({
+var Hello = createReactClass({
     render: function () {
         return (
             <h1>Hello { this.props.name }!</h1>
@@ -206,7 +206,7 @@ Existem mais métodos na API, basta dar uma [olhada aqui](https://facebook.githu
 Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o código e vamos destrinchá-lo:
 
 ```jsx
-var Timer = React.createClass({
+var Timer = createReactClass({
 
     getInitialState: function(){
         return { elapsed: 0 };

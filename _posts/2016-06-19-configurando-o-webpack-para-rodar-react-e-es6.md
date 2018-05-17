@@ -76,7 +76,7 @@ Você pode usar só a ferramenta do webpack pelo terminal, mas como, em geral, v
 module.exports = {
     entry: './app/App.js',
     output: {
-        path: './public',
+        path: __dirname + '/public',
         filename: 'bundle.js'
     }
 }
@@ -128,10 +128,10 @@ Com tudo instalado, precisamos colocar mais algumas linhas no nosso `webpack.con
 
 ```js
 module: {
-    loaders: [{
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
+        loader: 'babel-loader',
         query: {
             presets: ['es2015']
         }
