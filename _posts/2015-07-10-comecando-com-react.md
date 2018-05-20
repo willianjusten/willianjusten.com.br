@@ -1,31 +1,31 @@
 ---
 layout: post
-title: "#1 - Começando com ReactJS"
-date: 2015-07-10 22:04:05
-image: '/assets/img/react-1/main.png'
-description: "Tentando entender o que é? Para que serve? Por onde começar?"
-main-class: 'js'
+date: 2015-07-10T22:04:05.000Z
+image: /assets/img/react-1/main.png
+title: '#1 - Começando com ReactJS'
+description: Tentando entender o que é? Para que serve? Por onde começar?
+introduction: >-
+  O ReactJS é a onda do momento! Vamos entender o que é? Para que serve? Por
+  onde começar?
+twitter_text: ReactJS - Tentando entender o que é? Para que serve? Por onde começar?
+main-class: js
 color: '#D6BA32'
 tags:
-- react
-- js
-- tutorial
+  - react
+  - js
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "ReactJS - Tentando entender o que é? Para que serve? Por onde começar?"
-introduction: "O ReactJS é a onda do momento! Vamos entender o que é? Para que serve? Por onde começar?"
+  - Aprendendo ReactJS
 ---
-
 ## Introdução
 
 A trilha sonora da vez fica com a banda [Tristeza](https://open.spotify.com/artist/3oglFEsE6GvwwJFConxKa5), um indie instrumental bastante maneiro, ótimo para quem está querendo focar um pouco e também relaxar.
 
-Como podem notar pelo título **#1 - Começando com React**, farei uma nova série sobre React e este será o primeiro post sobre o assunto. O objetivo será aprender mais enquanto escrevo esses posts e também passar a bola para quem quiser começar a aprender também.
-
+Como podem notar pelo título **\#1 - Começando com React**, farei uma nova série sobre React e este será o primeiro post sobre o assunto. O objetivo será aprender mais enquanto escrevo esses posts e também passar a bola para quem quiser começar a aprender também.
 
 ## Moda Jovem
 
-<script type="text/javascript" src="//www.google.com.br/trends/embed.js?hl=pt-BR&q=ReactJS&date=1/2012+37m&cmpt=q&tz=Etc/GMT%2B3&tz=Etc/GMT%2B3&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=700&h=330"></script>
+![Gráfico indicando que o react é cada vez mais falado.](/assets/img/trends.png)
 
 Desde quando o React foi lançado, ele foi crescendo e ganhando bastante força, principalmente por ter o Facebook como seu criador. Isso, de fato, o tornou vítima do rótulo "moda jovem". Mas será que esse rótulo é válido e o React é só uma modinha passageira ou ele tem algo realmente bom? Não irei responder essa pergunta, irei mostrar o que ele faz, como funciona e você deverá escolher se ele te atende ou não em sua necessidade.
 
@@ -75,7 +75,6 @@ Como podemos observar, ele inicialmente tem a cópia "original" do componente e 
 
 Se você quiser saber ainda melhor como funciona, tem esse [post explicando o algoritmo](http://calendar.perfplanet.com/2013/diff/).
 
-
 ## Pensando em Componentes
 
 Como enfatizado em algumas partes do post, o React serve para criar componentes, portanto é importante entender o conceito de componentização e saber como aplicá-lo para os seus sistemas.
@@ -101,9 +100,9 @@ E ainda dentro desses subcomponentes, podemos separar mais 2 elementos, que são
 A partir disso, já conseguimos montar uma hierarquia desses componentes e subcomponentes, que seria:
 
 * Slide
-	- SlideItem
-		+ SlideTitle
-		+ SlideSubtitle
+  		- SlideItem
+  			+ SlideTitle
+  			+ SlideSubtitle
 
 Tendo a estrutura de componentes e seus subcomponentes, fica mais fácil de trabalhar com a abordagem do React e criar suas interfaces.
 
