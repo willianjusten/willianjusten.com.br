@@ -1,4 +1,4 @@
-<section class="share">
+<section class="share" onclick="ga('send', 'event', 'share', 'click', 'share_buttons')" >
     <h3>Compartilhe</h3>
     <a aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?text=&quot;{{ page.twitter_text }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}"
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter">
