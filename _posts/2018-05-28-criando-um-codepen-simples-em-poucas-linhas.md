@@ -164,9 +164,21 @@ iframeComponent.writeln(`
 
 Com essas mudanças, nosso editor já tem um syntax highlight lindão e o resto todo funcionando! =)
 
-Como eu tirei o placeholder, já que agora é um `pre`, eu resolvi no css adicionar as seguintes linhas para deixar bonitinho uma label para cada campo:
+Como eu tirei o placeholder, já que agora é um `pre`, eu resolvi no css adicionar as seguintes linhas para deixar bonitinho uma label para cada campo e também precisei renomear onde era `textarea` para `pre`, ficando assim:
 
 ```css
+.editor pre {
+  background: #1E1F20;
+  border: 1px solid rgb(211, 211, 211);
+  color: rgb(211, 211, 211);
+  flex: 1;
+  font-size: 16px;
+  height: 50vh;
+  padding: 30px 10px;
+  margin: 0;
+  position: relative;
+}
+
 .editor pre:before {
   display: block;
   font-size: 12px;
