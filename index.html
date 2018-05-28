@@ -5,7 +5,7 @@ color: '#005f97'
 
 <main class="home" id="post" role="main">
     <div id="grid" class="row flex-grid">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
         <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
                 <span class="ribbon">
                     <a href="{{site.url}}/category/{{post.main-class}}/"><span>{{post.main-class}}</span></a>
@@ -47,6 +47,8 @@ color: '#005f97'
                 </div>
         </article>
     {% endfor %}
+
+    {% include pagination.html %}
     </div>
 </main>
 <script type="application/ld+json">

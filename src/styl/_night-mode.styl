@@ -5,7 +5,8 @@ bg-color = #2b2b2b
     background #444
 
     a,
-    .related-post a
+    .related-post a,
+    .page_number
         color #D6BA32
 
     .bar-header,
@@ -93,6 +94,12 @@ bg-color = #2b2b2b
         fill text-color
     .cursos-menu
         color text-color
+
+    a.previous,
+    a.next
+        background bg-color
+        &:hover
+            color #D6BA32
     aside
         background-color bg-color
         nav li a:hover
