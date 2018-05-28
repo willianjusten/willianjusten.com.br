@@ -396,6 +396,5 @@ Para os mais experientes, faltou alguma coisa muito importante que esqueci de fa
 
 - [O Papel do Desenvolvedor Front End](http://pt.slideshare.net/raelmax/o-papel-do-desenvolvedor-front-end)
 - [Guia Front-end das Galáxias](http://pt.slideshare.net/davidsonfellipe/guia-do-front-end-das-galaxias)
-- [Google Trends](http://www.google.com.br/trends/explore#q=frontend%20developer&cmpt=q&tz=)
 - [Como me tornar um desenvolvedor front end](http://leandrooriente.com/como-me-tornar-um-desenvolvedor-front-end/)
 - [Como se tornar um dev front-end](https://tableless.com.br/tornar-dev-front-end/)
