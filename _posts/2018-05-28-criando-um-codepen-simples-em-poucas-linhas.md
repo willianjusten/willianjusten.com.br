@@ -83,7 +83,7 @@ Agora nós precisamos fazer esse código funcionar né? E para isso, vamos criar
 const htmlField = document.getElementById("html");
 const cssField = document.getElementById("css");
 const jsField = document.getElementById("js");
-const preview = document.getElementById("code");
+const preview = document.getElementById("preview");
 
 function render() {
   let iframeComponent = preview.contentWindow.document;
