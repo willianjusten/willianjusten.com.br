@@ -9,6 +9,7 @@
 /photo-portfolio/* https://photo-portfolio.willianjusten.com.br/:splat 200
 /greensock-course/* https://greensock-course.willianjusten.com.br/:splat 200
 /devconf-18/* https://devconf-18.willianjusten.com.br/:splat 200
+/dumb-codepen/* https://dumb-codepen.willianjusten.com.br/:splat 200
 
 /minimal-blog/* https://willianjusten.github.io/minimal-blog/
 /screamer-js/example/ https://willianjusten.github.io/screamer-js/example/
