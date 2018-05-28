@@ -16,15 +16,15 @@ tags:
 
 Fala pessoal, faz um bom tempinho que não escrevo no blog e menos ainda sobre coisinhas técnicas. Então resolvi fazer um post simples de uma bobeirinha que fiz para uma palestra lá em [São Carlos](http://2018.devconf.opensanca.com.br/).
 
-Eu queria muito fazer um live-coding, mas imaginei que não fosse ter internet e por isso o Codepen não iria funcionar. E aí, o que eu pensei? Vou fazer um Codepen meu! Porque claro, eu tinha feito uma viagem de 11h de ônibus já era 1h da manhã e eu tinha que inventar besteira... No final deu tudo certo e umas pessoas até me perguntaram como funcionava e é tão idiota que tenho vergonha de mostrar, mas funciona xD
+Eu queria muito fazer um live-coding, mas imaginei que não fosse ter internet e por isso o Codepen não iria funcionar. E aí o que eu pensei? Vou fazer um Codepen meu! Porque claro, eu tinha feito uma viagem de 11h de ônibus já era 1h da manhã, mas eu tinha que inventar besteira... No final deu tudo certo e umas pessoas até me perguntaram como funcionava e é tão idiota que tenho vergonha de mostrar, mas funciona xD
 
-Como é de costume, vou ouvindo música enquanto escrevo, hoje estou ouvindo vários remixes do [Neelix](https://www.youtube.com/watch?v=3TCTJ_Rqyf4&start_radio=1&list=RD3TCTJ_Rqyf4).
+Como de costume, vou ouvindo música enquanto escrevo, hoje estou ouvindo vários remixes do [Neelix](https://www.youtube.com/watch?v=3TCTJ_Rqyf4&start_radio=1&list=RD3TCTJ_Rqyf4).
 
 ## Sobre o Editor
 
 ![Screenshot do editor](/assets/img/cover.png)
 
-Bom, assim como o codepen, ele basicamente tem 3 `textareas` para html, css e js. E claro, um live preview do que está acontecendo.
+Assim como o codepen, ele basicamente tem 3 `textareas`, para html, css e js. E, claro, um live preview do que está acontecendo.
 
 Se quiser ver funcionando, só [acessar aqui!](https://willianjusten.com.br/dumb-codepen/)
 
@@ -32,7 +32,7 @@ Se quiser ver funcionando, só [acessar aqui!](https://willianjusten.com.br/dumb
 
 ## Criando a estrutura
 
-A primeira coisa que precisamos fazer é um `index.html` que vai ter então os componentes necessários para funcionar:
+A primeira coisa que precisamos fazer é um `index.html` que vai ter os componentes necessários para funcionar:
 
 ```html
   <!-- Preview -->
@@ -46,7 +46,7 @@ A primeira coisa que precisamos fazer é um `index.html` que vai ter então os c
   </div>
 ```
 
-É necessário ser um `iframe`, pois é nele que vamos jogar o código gerado dos 3 `textarea`. Tendo feito isso, vamos dar uma organizada na tela para ficar mais apresentável. Vamos criar um `style.css` e adicionar no arquivo `index.html` e dentro dele vamos colocar:
+É necessário ser um `iframe`, pois é nele que vamos jogar o código gerado dos 3 `textarea`. Tendo feito isso, vamos dar uma organizada na tela para ficar mais apresentável. Vamos criar um `style.css` e dentro dele vamos colocar:
 
 ```css
 * {
@@ -108,15 +108,15 @@ compile();
 render();
 ```
 
-Sim, todo o código necessário para criar esse simples editor está aí. Então vamos por partes. 
+Sim, todo o código necessário para criar esse editor está aí. Então vamos por partes. 
 
 Primeiro é necessário criar os seletores para todos os nossos campos, que são criados nas linhas `1-4`.
 
-Depois temos a função que faz a mágica acontecer, que é a `render()`, ela eu vou separar um pouquinho para explicar. A primeira coisa que precisamos fazer é pegar o iframe para poder editá-lo, por isso eu uso o [contentWindow.document](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentWindow) que vai me liberar a API do `#document` do iframe, me permitindo assim editar todo o seu conteúdo.
+Depois temos a função que faz a mágica acontecer, que é a `render()`, ela eu vou separar um pouquinho para explicar. 
 
-Após isso, eu uso o `.open()` para abrir a edição e utilizo o [writeln](https://developer.mozilla.org/en-US/docs/Web/API/Document/writeln), que nada mais é que um processo de escrita. E aí, se você reparar, eu uso [Template String](https://willianjusten.com.br/criando-componentes-usando-so-es6/) para poder criar o conteúdo que vou adicionar. Que é o valor do html, o css que eu deixo inline encapsulado na tag `<style>` e o js que eu encapsulo na tag `<script>`.
+A primeira coisa que precisamos fazer é pegar o iframe para poder editá-lo, por isso eu uso o [contentWindow.document](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentWindow) que vai me liberar a API do `#document` do iframe, me permitindo assim editar todo o seu conteúdo.
 
-Feita essa adição eu fecho com o `.close()`.
+Após isso, eu uso o `.open()` para abrir a edição e utilizo o [writeln](https://developer.mozilla.org/en-US/docs/Web/API/Document/writeln), que nada mais é que um processo de escrita. E aí, se você reparar, eu uso [Template String](https://willianjusten.com.br/criando-componentes-usando-so-es6/) para poder criar o conteúdo que vou adicionar. Que é o valor do html, o css que eu deixo inline encapsulado na tag `<style>` e o js que eu encapsulo na tag `<script>`. Feita essa adição eu fecho com o `.close()`.
 
 Tendo isso, eu já consigo renderizar qualquer conteúdo dentro do iframe, mas como fazer para tornar isso automático? Ou seja, para cada edição, ele atualizar o iframe.
 
@@ -163,6 +163,30 @@ iframeComponent.writeln(`
 ```
 
 Com essas mudanças, nosso editor já tem um syntax highlight lindão e o resto todo funcionando! =)
+
+Como eu tirei o placeholder, já que agora é um `pre`, eu resolvi no css adicionar as seguintes linhas para deixar bonitinho uma label para cada campo:
+
+```css
+.editor pre:before {
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#html:before {
+  content: 'HTML';
+}
+
+#css:before {
+  content: 'CSS';
+}
+
+#js:before {
+  content: 'JS';
+}
+```
 
 Se você quiser ver o código inteiro, segue o [repositório no Github](https://github.com/willianjusten/dumb-codepen), inclusive, se você quiser sugerir melhorias e inclusive falar que tá uma merda e refazer, sinta-se a vontade! =D
 
