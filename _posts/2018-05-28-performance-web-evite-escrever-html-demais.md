@@ -18,7 +18,7 @@ tags:
   - performance
   - seo
 categories:
-  - Performance web
+  - Performance Web
 ---
 ## Introdução
 
@@ -85,4 +85,3 @@ E o que esses dados significam? Significa que eu já mostro o conteúdo na tela 
 ## Conclusão
 
 A ideia desse post é mostrar que as vezes de onde menos esperamos, podemos melhorar. A gente sempre se preocupa com outras coisas no nosso site, mas nos esquecemos que o HTML também é importante. Como podem notar, pelo simples fato de criar uma paginação no meu blog, eu já dei uma melhorada em vários índices de velocidade. Meu próximo passo é reescrever todo o CSS e os seletores para seguir alguma metodologia, é bem possível que eu siga para a [Metodologia BEM](http://getbem.com/), que tem sido a mais indicada pela [Google](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations).
-
