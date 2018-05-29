@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-05-28 08:10:42'
+date: '2018-05-29 08:10:42'
 image: /assets/img/web-perf-html-cover.jpg
 title: 'Performance Web: Evite escrever HTML demais'
 description: >-
