@@ -32,7 +32,7 @@ Quando a gente começa a falar de performance, todo mundo vai logo pensando em r
 
 Só que, e o HTML? Será que ele não é importante também? Cada pedaço de HTML que você escreve, é uma parte do DOM, ou seja, a cada `<div>` nós temos um nó no DOM. E um DOM muito grande pode prejudicar a performance de muitas maneiras. Por exemplo:
 
-* `Performance no carregamento`: se você está criando um DOM muito grande, você pode estar enviar muitos bytes desnecessários. Em resumo, um HTML maior, significa arquivo maior sendo baixado.
+* `Performance no carregamento`: se você está criando um DOM muito grande, você pode estar enviando muitos bytes desnecessários. Em resumo, um HTML maior, significa um arquivo maior sendo baixado.
 * `Demora para o browser entender o conteúdo`: se o conteúdo for muito grande, o browser precisa primeiro ler tudo, para só então montar a página. O problema é que muitas vezes esse "DOM extra" nem sequer vai ser mostrado na primeira dobra da página. Isso faz com que o usuário demore mais tempo para poder interagir com o conteúdo da página.
 * `Gasto de memória`: toda página que o browser está acessando gasta uma certa quantia de memória, seja para poder "pintar" na tela o conteúdo, seja para informar ao JS os seletores que você possa estar trabalhando. Se o conteúdo for muito grande, mais pesado o processo fica e com isso mais memória é pedida.
 
