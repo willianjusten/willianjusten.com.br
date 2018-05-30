@@ -91,7 +91,7 @@ Simples, como o `nav` é filho do `body`, o pai vai sempre estar na tela e o pos
 
 Eu resolvi colocar um outro elemento com `position: sticky` para mostrar a diferença e também porque é divertido ver o Samuel L. Jackson pulando no meio da tela e não saindo, vai dizer que não é legal?
 
-Bom, vamos entender como esse funciona, primeiro, vamos ver o markup:
+Bom, vamos entender como esse funciona, primeiro, vamos ao markup:
 
 ```html
 <article class="container">
