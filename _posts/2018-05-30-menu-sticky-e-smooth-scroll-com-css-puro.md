@@ -123,7 +123,7 @@ Eu digo para o meu elemento o seguinte, no momento que o meu elemento `pai` apar
 
 ### Compatibilidade
 
-Essa propriedade apesar de já ser velha conhecida, como falei lá no início do post, ela ainda está sendo aplicada aos poucos pelos browsers, mas já está funcionando nos browsers mais atuais, salvo alguns detalhes, que você pode olhar no [Can I use](https://caniuse.com/#feat=css-sticky). 
+Essa propriedade apesar de já ser velha conhecida, como falei lá no início do post, ela ainda está sendo aplicada aos poucos pelos browsers, mas já está funcionando nos browsers mais atuais. E você pode olhar no [Can I use](https://caniuse.com/#feat=css-sticky). 
 
 ## Smooth Scroll
 
