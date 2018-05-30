@@ -93,7 +93,7 @@ Eu resolvi colocar um outro elemento com `position: sticky` para mostrar a difer
 
 Bom, vamos entender como esse funciona, primeiro, vamos ver o markup:
 
-```
+```html
 <article class="container">
     <section id="hey"></section>
     <section id="cool"></section>
