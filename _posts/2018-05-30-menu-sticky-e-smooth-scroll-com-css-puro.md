@@ -112,7 +112,7 @@ Reparem agora que eu tenho a imagem com a classe `.sticky` e ela está dentro do
 
 Agora então definindo o seguinte css:
 
-```
+```css
 .sticky {
     position: sticky;
     bottom: 50px;
