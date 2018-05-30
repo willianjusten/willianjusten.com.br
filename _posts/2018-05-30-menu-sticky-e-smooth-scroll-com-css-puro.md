@@ -43,9 +43,11 @@ Mas agora em 2016 o [sticky voltou](https://developers.google.com/web/updates/20
 
 > O `position: sticky;` é um híbrido entre o `fixed` e o `relative`. O elemento é tratado como `relative` até alcançar um limite especificado, que é através do `top, bottom, left, right`. Alcançando esse ponto, ele vai ser tratado como fixo. E assim que chegar a sua posição "original", ele voltará a funcionar como `relative`.
 
+Parece meio complicado né? Vamos tentar ver melhor na prática.
+
 ### Menu fixo
 
-Okay, meio complicado né? Vamos tentar melhor na prática. Então vamos lá, como foi feito o exemplo acima? Primeiro vendo o menu, temos o seguinte html:
+Vamos lá, como foi feito o exemplo acima? Primeiro vendo o menu, temos o seguinte html:
 
 ```html
 <body>
