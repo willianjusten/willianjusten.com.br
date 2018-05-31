@@ -137,10 +137,10 @@ O nosso CSS dessa primeira parte ficou assim:
     }
 ```
 
-Tem ali também um "reset default", que sempre uso nesses experimentos básicos e também as `transitions` e `transforms` que foram necessários para rotacionar os elementos e criar a animação necessários.
+Tem ali também um "reset default", que sempre uso nesses experimentos básicos e também as `transitions` e `transforms` que foram necessários para rotacionar os elementos e criar a animação necessária.
 
 ## Conclusão
 
-Bom pessoal, espero que tenham gostado do post/vídeo, é uma nova modalidade que eu quero estar testando. E se você curtiu, não deixa de se inscrever lá no [Canal do YouTube](https://www.youtube.com/WillianJustenCursos) e também compartilhar com a galera.
+Bom pessoal, espero que tenham gostado do post/vídeo, é uma nova modalidade que eu quero estar testando. E se você curtiu, não deixe de se inscrever lá no [Canal do YouTube](https://www.youtube.com/WillianJustenCursos) e também compartilhar com a galera.
 
 Lembrando que amanhã (se você estiver lendo no dia que lancei), vai ter a segunda parte, onde eu ensino a criar o menu. Se esse dia já passou, vai ter o link aqui direitinho para o próximo post/vídeo.
