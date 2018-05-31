@@ -21,7 +21,7 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, como o [ultimo post](https://willianjusten.com.br/menu-sticky-e-smooth-scroll-com-css-puro/) que eu escrevi teve uma recepção muito legal, resolvi dar continuidade e ensinar coisinhas úteis com css, que podem ser interessantes e utilizados no seu dia-a-dia de trabalho.
+Fala pessoal, como o [ultimo post](https://willianjusten.com.br/menu-sticky-e-smooth-scroll-com-css-puro/) que eu escrevi teve uma recepção muito legal, resolvi dar continuidade e ensinar coisinhas úteis com css, que podem ser interessantes e utilizadas no seu dia-a-dia de trabalho.
 
 Eu resolvi fazer em vídeo, porque fica mais fácil de mostrar cada detalhe, e bom, assim se você nunca fez um [curso meu](https://willianjusten.com.br/cursos/), já pode ver a didática para ver se gosta.
 
