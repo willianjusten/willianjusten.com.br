@@ -38,6 +38,8 @@ Assim fica mais leve para você, podendo ver só o que se interessa e também aj
 
 ## Vídeo
 
+<iframe width="560" height="420" src="https://www.youtube.com/embed/IGz4BI-aO_8" frameborder="0" allowfullscreen></iframe>
+
 ## Código e detalhes
 
 O vídeo já é bem explicativo, então eu não vou entrar em muitos detalhes, só vou deixar aqui alguns links complementares, que podem ser importantes para você, caso não tenha entendido alguns dos pedaços:
