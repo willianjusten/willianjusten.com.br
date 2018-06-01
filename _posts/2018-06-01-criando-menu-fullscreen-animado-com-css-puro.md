@@ -29,6 +29,8 @@ Então, sem mais delongas, vamos ao vídeo e logo abaixo, o código como sempre.
 
 ## Vídeo
 
+<iframe width="560" height="420" src="https://www.youtube.com/embed/i5Fps4GBBns" frameborder="0" allowfullscreen></iframe>
+
 ## Código
 
 Primeiro segue o nosso html, que dessa vez não mudou muita coisa, só mesmo tendo a adição do nosso menu:
