@@ -27,6 +27,8 @@ Fala pessoal, seguindo a mesma onda dos outros posts, eu acabei criando uma nova
 
 E o post de hoje é para mostrar como se criar um spinner loader com **uma div** e só **10 linhas** de CSS. Bom, segue o vídeo embaixo e o código, como tem sido nesses posts.
 
+Se você quiser ver funcionando, aqui [está o link](https://willianjusten.com.br/labs/spinner-loader/).
+
 ## Video
 
 <iframe width="560" height="420" src="https://www.youtube.com/embed/j3rOA1spG8A" frameborder="0" allowfullscreen></iframe>
