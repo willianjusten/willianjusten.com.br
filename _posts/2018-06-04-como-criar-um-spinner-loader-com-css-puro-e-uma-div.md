@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-06-05 10:00:00'
+date: '2018-06-04 10:00:00'
 image: /assets/img/spinner-loader-cover.png
 title: Como criar um loader com CSS puro e uma div
 description: >-
