@@ -18,6 +18,8 @@ tags:
   - video
   - css
   - frontend
+categories:
+  - Dicas de CSS
 ---
 ## Introdução
 
@@ -95,6 +97,6 @@ Se você quiser ver todo o código completo, só acessar [esse link do Github](h
 
 ## Conclusão
 
-Bom pessoal, espero que tenham gostado desse novo formato, com vídeo e post. Acho que fica mais dinâmico quando é para explicar esse tipo de coisa. Se vocês gostaram, por favor, não deixem de compartilhar e dar joinhas lá no [YouTube](https://www.youtube.com/WillianJustenCursos). 
+Bom pessoal, espero que tenham gostado desse novo formato, com vídeo e post. Acho que fica mais dinâmico quando é para explicar esse tipo de coisa. Se vocês gostaram, por favor, não deixem de compartilhar e dar joinhas lá no [YouTube](https://www.youtube.com/WillianJustenCursos).
 
 E se você achou uma merda, pode falar também, eu aceito críticas numa boa e isso ajuda muito a melhorar para os próximos vídeos. Espero vocês nos próximos posts e vídeos!

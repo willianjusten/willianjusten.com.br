@@ -17,6 +17,8 @@ color: '#2DA0C3'
 tags:
   - frontend
   - css
+categories:
+  - Dicas de CSS
 ---
 ## Introdução
 
@@ -81,7 +83,7 @@ nav {
 
 Se você não reconhece aquele valor `vh` ali, saiba que é uma viewport unit, eu escrevi sobre isso, [neste post](https://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/). Mas tenha em mente que a única coisa que isso faz é dar uma altura de 90% do espaço da tela visível.
 
-Com isso, o meu `nav` vai aparecer logo no finalzinho da tela certo? Já que o header vai ocupar 90% de altura. E é aí que entra o pulo do gato. Ao definir o `position: sticky` no meu `nav` junto com o `top: 0`, eu digo para ele que no momento que o `nav` alcançar o topo do `body`, que ele comece a se comportar como `fixed` e é isso que faz o nosso menu ficar preso ali no topo. 
+Com isso, o meu `nav` vai aparecer logo no finalzinho da tela certo? Já que o header vai ocupar 90% de altura. E é aí que entra o pulo do gato. Ao definir o `position: sticky` no meu `nav` junto com o `top: 0`, eu digo para ele que no momento que o `nav` alcançar o topo do `body`, que ele comece a se comportar como `fixed` e é isso que faz o nosso menu ficar preso ali no topo.
 
 > E porque ele não some da tela por mais que faça scroll?
 
@@ -108,7 +110,7 @@ Bom, vamos entender como esse funciona, primeiro, vamos ao markup:
 </article>
 ```
 
-Reparem agora que eu tenho a imagem com a classe `.sticky` e ela está dentro do pai, que é o `.container`. Isso significa que o posicionamento da minha imagem vai funcionar em relação ao `.container`. 
+Reparem agora que eu tenho a imagem com a classe `.sticky` e ela está dentro do pai, que é o `.container`. Isso significa que o posicionamento da minha imagem vai funcionar em relação ao `.container`.
 
 Agora então definindo o seguinte css:
 
@@ -123,7 +125,7 @@ Eu digo para o meu elemento o seguinte, no momento que o meu elemento `pai` apar
 
 ### Compatibilidade
 
-Essa propriedade apesar de já ser velha conhecida, como falei lá no início do post, ela ainda está sendo aplicada aos poucos pelos browsers, mas já está funcionando nos browsers mais atuais. E você pode olhar no [Can I use](https://caniuse.com/#feat=css-sticky). 
+Essa propriedade apesar de já ser velha conhecida, como falei lá no início do post, ela ainda está sendo aplicada aos poucos pelos browsers, mas já está funcionando nos browsers mais atuais. E você pode olhar no [Can I use](https://caniuse.com/#feat=css-sticky).
 
 ## Smooth Scroll
 

@@ -18,6 +18,8 @@ tags:
   - video
   - css
   - animacao
+categories:
+  - Dicas de CSS
 ---
 ## Introdução
 
