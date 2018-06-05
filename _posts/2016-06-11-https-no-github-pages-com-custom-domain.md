@@ -17,6 +17,8 @@ introduction: "Aprenda a colocar a sua página do Github Pages com Custom Domain
 
 ## Introdução
 
+**Update:** O Github agora já dá suporte a `https` em Custom Domain, você pode ler [nesse post do Github](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/), ou seja, não é mais necessário utilizar os passos que digo abaixo.
+
 Fala pessoal, o post de hoje será para falar sobre uma notícia boa, uma notícia triste e uma solução para isso. Alguns de vocês devem ter visto que o [Github liberou HTTPS para o Github Pages](https://github.com/blog/2186-https-for-github-pages), essa é a notícia boa! A notícia ruim é que não aceita para quem usa Custom Domain, ou seja, um domínio próprio, assim como o meu **willianjusten.com.br**.
 
 Mas não fique triste, resolvi usar meu próprio blog de cobaia para tentar uma solução, funciona muito bem e é bem fácil de fazer. Só ter paciência (eu num tenho nenhuma) de esperar o DNS propagar direitinho e seguir os passos certinhos.
