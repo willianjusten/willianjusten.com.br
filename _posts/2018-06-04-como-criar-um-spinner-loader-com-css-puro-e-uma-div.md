@@ -2,7 +2,7 @@
 layout: post
 date: '2018-06-04 10:50:13'
 image: /assets/img/spinner-loader-cover.png
-title: Como criar um spinner loader com CSS puro e uma div
+title: Como criar um loader com CSS puro e uma div
 description: >-
   Todos nós já tivemos que usar um loader na vida, aprenda a criar o seu do zero
   com pouquíssimas linhas de código.
