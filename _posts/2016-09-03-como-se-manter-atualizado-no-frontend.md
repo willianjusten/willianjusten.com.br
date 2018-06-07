@@ -99,11 +99,9 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 #### Em português
 
 - [Esse blog lindo](https://willianjusten.com.br/) - um blog que de vez em quando escreve algo que presta =)
-- [Tableless](https://tableless.com.br/) - blog bem antigo na área, com bastante conteúdo sobre diversas áreas.
 - [Blog do Maujor](http://www.maujor.com/blog/) - como não falar dessa lenda? Muito material bom lá.
 - [Felipe Fialho Blog](https://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
 - [Da2k](http://blog.da2k.com.br/) - blog de outro amigão o Fernando Daciuk, com posts super completos de JS.
-- [Nando Moreira Blog](https://nandomoreira.me/blog/) - o cara que mais muda de layout para blog na face da Terra! Tem bastante coisa legal lá, vale a leitura.
 - [Arquitetura de Informação](http://arquiteturadeinformacao.com/) - blog bem legal sobre usabilidade, user experience, design, tecnologia e comportamento.
 - [UI Lab](http://www.uilab.com.br/) - blog com novidades e dicas sobre usabilidade, user experience, design e user interface.
 
