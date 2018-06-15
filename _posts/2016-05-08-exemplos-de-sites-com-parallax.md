@@ -33,13 +33,6 @@ Segue aqui um vídeo do próprio Walt Disney explicando como funciona esse efeit
 
 ## Exemplos
 
-### The Dangers of Fracking
-
-![The Dangers of Fracking](/assets/img/parallax-sites/dangers.png)
-
-Site em ilustração contando uma história a partir do scroll. [Vá para o site](http://www.dangersoffracking.com/)
-
-
 ### Alquimia WRG
 
 ![Alquimia WRG](/assets/img/parallax-sites/alquimia.png)
@@ -106,12 +99,6 @@ Site em ilustração contando uma história a partir do scroll. [Vá para o site
 ![Every last drop](/assets/img/parallax-sites/drop.png)
 
 Site em ilustração contando uma história a partir do scroll. [Vá para o site](http://everylastdrop.co.uk/)
-
-### Soleil Noir 2012
-
-![Soleil Noir 2012](/assets/img/parallax-sites/soleil.png)
-
-Site que utiliza técnica de "cortina" para passar entre uma tela e outra, unida a animação de elementos. [Vá para o site](http://www.soleilnoir.net/believein/#/start)
 
 ### The Arnold Clark Savings Challenge
 
