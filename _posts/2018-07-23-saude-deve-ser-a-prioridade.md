@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-07-24 09:19:43'
+date: '2018-07-23 09:19:43'
 image: /assets/img/saude.jpg
 title: Saude deve ser a prioridade
 description: Uma conversa séria de um dev que se arrepende de algumas escolhas.
