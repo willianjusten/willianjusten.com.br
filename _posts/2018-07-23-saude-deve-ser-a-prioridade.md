@@ -28,7 +28,7 @@ Essas são as perguntas da maioria dos programadores né? E para isso, o que nó
 
 Já se perguntou quantas vezes você se preocupou com a sua saúde? E quantas vezes se preocupou em aprender linguagem X? Não estou falando que é para você virar um  [hipocondríaco](https://pt.wikipedia.org/wiki/Hipocondria) maluco, achando que está doente sempre e que precisa se cuidar 500% do tempo. Mas é para se preocupar sim!
 
-### Saúde mental E física!
+### Saúde mental e física!
 
 Há algum tempo, vários artigos tem aparecido sobre saúde mental e como um descanso e terapia são necessários nessa nossa área, que é tão estressante. Aliás, se você tem passado por alguns momentos complicados, tente pensar sobre isso. Vou listar aqui, alguns artigos bem legais sobre isso, recomendo a leitura:
 
