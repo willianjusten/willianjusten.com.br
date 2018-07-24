@@ -64,9 +64,3 @@ Bom, alguns de vocês já devem ter captado a mensagem, mas outros devem estar s
 Agora, infelizmente estou pagando caro por isso e por mais que eu esteja me cuidando agora, sei que terão muitas coisas que não vou conseguir voltar ao que era antes. 
 
 Que fique claro, esse não é um post com objetivo de receber "mensagens de melhora" nem nada. O objetivo é fazer com que vocês reflitam um pouco sobre a saúde de vocês.
-
-
-
-
-
-
