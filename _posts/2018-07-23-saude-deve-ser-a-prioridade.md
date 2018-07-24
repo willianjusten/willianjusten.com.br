@@ -2,7 +2,7 @@
 layout: post
 date: '2018-07-23 09:19:43'
 image: /assets/img/saude.jpg
-title: Saúde deve ser a prioridade
+title: Saúde deve ser uma prioridade
 description: Uma conversa séria de um dev que se arrepende de algumas escolhas.
 introduction: Uma conversa séria de um dev que se arrepende de algumas escolhas.
 twitter_text: Uma conversa séria de um dev que se arrepende de algumas escolhas.
