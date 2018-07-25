@@ -22,9 +22,9 @@ Hoje eu venho falar sobre uma coisa que nós como desenvolvedores praticamente n
 
 ### Devo focar em React? Angular? VueJS? Mas e a saúde?
 
-Essas são as perguntas da maioria dos programadores né? E para isso, o que nós fazemos? Viramos noites e noites, muitos tomam litros de café para ficar acordados, outros até energéticos, que acabam até criando arritmias... E nessa busca desenfreada de aprender tudo, de se tornar o melhor, a gente nem pensa na saúde, mas precisamos lembrar de uma coisa.
+Essas são as perguntas da maioria dos programadores, né? E para isso, o que nós fazemos? Viramos noites e noites, muitos tomam litros de café para ficar acordados, outros até energéticos, que acabam até criando arritmias... E nessa busca desenfreada de aprender tudo, de se tornar o melhor, a gente nem pensa na saúde, mas precisamos lembrar de uma coisa.
 
-> Um dia o corpo cobra e as vezes o preço é caro demais.
+> Um dia o corpo cobra e às vezes o preço é caro demais.
 
 Já se perguntou quantas vezes você se preocupou com a sua saúde? E quantas vezes se preocupou em aprender linguagem X? Não estou falando que é para você virar um  [hipocondríaco](https://pt.wikipedia.org/wiki/Hipocondria) maluco, achando que está doente sempre e que precisa se cuidar 500% do tempo. Mas é para se preocupar sim!
 
