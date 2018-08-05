@@ -27,6 +27,9 @@ main
     min-height rem(285px)
     transition all .3s
     position relative
+    max-width: 315px
+    +below(1000px)
+        max-width: 100%
     +below(cut)
         margin 0 rem(10px) rem(50px)
     .cursos-image
