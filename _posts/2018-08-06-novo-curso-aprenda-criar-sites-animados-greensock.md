@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2018-08-06 08:00:00'
-image: /assets/img/spinner-loader-cover.png
+image: /assets/img/greensock.png
 title: Novo Curso - Aprenda a criar sites animados com Greensock
 description: >-
   Aprenda a criar animações avançadas de uma forma fácil e divertida!
