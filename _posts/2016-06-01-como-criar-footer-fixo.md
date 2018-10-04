@@ -26,7 +26,7 @@ Vou ouvindo meu ídolo [John Frusciante](https://open.spotify.com/artist/7rN3Agi
 
 Como falei um pouco acima, as vezes, nós temos algum site e queremos que o rodapé fique fixo na parte inferior, mesmo que o conteúdo seja menor que a tela, algo similar a seguinte imagem.
 
-![Imagem de um rodapé fixo](https://cdn.css-tricks.com/wp-content/uploads/2016/05/sticky-footer-1.svg)
+![Imagem de um rodapé fixo](/assets/img/footer-fixo/sticky-footer-1.svg)
 
 E para fazer isso, não é tão complicado, mas demanda alguns "pulos do gato", que vou mostrar para vocês.
 
