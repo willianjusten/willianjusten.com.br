@@ -27,6 +27,24 @@ Há cerca de 4 meses, eu fiz uma palestra para a rede de freelancers da Toptal, 
 
 O post é grande, então provavelmente eu vou ouvir mais coisas, mas no momento estou ouvindo o [primeiro album](https://open.spotify.com/album/7zeCZY6rQRufc8IHGKyXGX?si=3ju90hWyTTO606aYm4UfSg) da banda Greta Van Fleet, um som que lembra muito Led Zeppelin, eu já falei uma vez dessa banda, mas precisava falar de novo agora que lançaram esse album, eles são espetaculares!
 
+## Índice
+
+- [Razões para criar um curso online](#razões-para-criar-um-curso-online)
+- [Princípios para um bom curso online](#princípios-para-um-bom-curso-online)
+- [Planejando o curso](#planejando-o-curso)
+- [Produzindo o curso](#produzindo-o-curso)
+    - [Detalhes técnicos e qualidade](#detalhes-técnicos-e-qualidade)
+    - [Entrega do Instrutor](#entrega-do-instrutor)
+    - [Dicas de Softwares](#dicas-de-softwares)
+    - [Meu passo-a-passo ao gravar um curso](#meu-passo-a-passo-ao-gravar-um-curso)
+- [Publicando o seu curso](#publicando-o-seu-curso)
+    - [Self Hostings](#self-hostings)
+    - [Marketplaces](#marketplaces)
+    - [Minha opinião](#minha-opinião)
+    - [Meu histórico](#meu-histórico)
+- [Sobre feedbacks](#sobre-feedbacks)
+- [Conclusão](#conclusão)
+
 ## Razões para criar um curso online
 
 Bom, existem diversas razões para lançar um curso online, vou passar alguns pontos que mais acho válidos, mas é claro que você pode incluir mais coisas.
@@ -175,10 +193,66 @@ E para cada uma dessas opções, nós temos as vantagens e desvantagens.
 
 **Vantagens:**
 
+- A taxa a ser paga é basicamente do sistema de pagamento, todo o resto é seu.
+- Os valores a serem cobrados ficam de acordo com você, nada é fixo.
+- Controle total na customização: cores, textos, layouts, player de vídeo.
+
 **Desvantagens:**
+
+- Todos os custos de manutenção são por sua conta.
+- O Marketing precisa ser feito por você.
+- Caso você não seja conhecido, sua marca terá menos credibilidade e pessoas terão medo de comprar e não receber.
 
 ### Marketplaces
 
 **Vantagens:**
 
+- O Marketing é feito para você
+- Sem custos de manutenção
+- Uma base gigante de alunos já cadastrados
+- Marketplaces famosas como a Udemy já são mais confiadas pelos alunos, até mesmo pela política de devolução em 30 dias.
+
 **Desvantagens:**
+
+- Nenhum ou baixo controle na determinação dos preços
+- Caso a venda seja orgânica, a taxa que eles pegam pode ser muito alta
+- Sua marca pode acabar sendo diluída
+- Sem acesso aos emails dos estudantes ou pouquíssimas informações
+
+### Minha opinião 
+
+Os Marketplaces como a Udemy são bons para pessoas que não possuem nenhum pública, ou seja, estão começando do zero, pois lá eles já vão ter um alcance para a base da própria Marketplace. Outro ponto importante é que as pessoas não precisam de ter um capital inicial para começar, visto que já está tudo pronto e não é necessário pagar nada por isso.
+
+O Self-hosting é melhor para pessoas que já possuem um público ou que sejam excelentes com publicidade, um exemplo de pessoa que faz assim é o Wes Bos, mas ele fez parcerias com mil lugares e todo mundo acabou conhecendo ele. Precisa lembrar que nesse caso, é necessário já ter um capital legal, pois você precisa pagar servidores, campanhas de publicidade e outros pequenos detalhes também.
+
+### Meu histórico
+
+Eu cheguei a usar a Teachable que é uma plataforma de Self-hosting onde eu pagava bem menos taxas, mas após pedidos de muitos alunos, eu resolvi fazer a migração para a Udemy. Posso dizer com 100% de certeza que minhas taxas só aumentaram, hoje já tenho mais de 50 mil alunos e muito disso é graças ao marketing pesado que a Udemy faz.
+
+É claro que os preços são bem complicados e as vezes a gente se sente um pouco prostituído com isso, afinal de contas é algo que dá muito trabalho, mas acaba sendo vendido por R$ 19,99. Só que precisa se pensar em duas coisas:
+
+- Sendo mais barato, seu conhecimento pode ser passado para mais e mais pessoas, inclusive aquelas que realmente necessitam e não teriam como pagar mais por isso.
+- A balança acaba se equilibrando, se você vende muitos cursos a um preço mais baixo, isso vai dar a mesma coisa ou até mais que vender poucos cursos a um preço mais alto.
+
+## Sobre feedbacks
+
+Depois de publicado o curso, está na hora de vender os cursos e receber os feedbacks dos alunos. E essa parte também é muito importante estar preparado! Existem alguns tipos de feedback aqui:
+
+- `Só elogios`: esse é um feedback que te deixa sempre muito feliz, a pessoa elogia seu modo de ensinar, como seu curso foi feito e agradece por tudo.
+- `Bons elogios mas algumas ressalvas`: esse aqui é o meu feedback favorito! A pessoa elogia o curso, mas aponta coisas que poderiam ser melhoradas ao ponto de vista dela. Isso é sempre bom, pois você sempre acaba aprendendo alguma coisa nova com o aluno, as vezes são coisas que para você é normal, mas para o aluno acaba sendo ruim ou difícil. Você como aluno, não tenha medo de dar suas críticas, é super importante para o crescimento do professor.
+- `Só críticas, mas construtivas`: a pessoa não gostou nada do curso, mas deu vários pontos para isso. Sei que você vai ficar triste, pois a gente sempre quer fazer o melhor, mas as vezes isso acontece. Pegue essas críticas e se possível, tente melhorar e atualizar no curso mesmo, caso seja inviável, já deixe anotado para não repetir num próximo curso.
+- `Mil xingamentos e reclamações infundadas`: nesses casos, a gente costuma ficar é puto ao invés de triste. O cara está reclamando coisas que não fazem sentido, muitas vezes a pessoa sequer viu o restante do curso. Nesses casos, tente se acalmar e então vá conversar educadamente com o aluno, muitas das vezes eles mesmos se arrependem do que disseram e mudam seus reviews.
+
+## Presente Surpresa!!
+
+Se você leu até aqui, tenho uma surpresa que acho que vai ser bem legal para você! Estarei liberando aqui **20 cupons** para cada curso meu, **totalmente grátis!** Se for rápido, é só clicar no curso desejado e pegar seu curso =)
+
+- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMO50MILALUNOS)
+- [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMO50MILALUNOS)
+- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMO50MILALUNOS)
+- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMO50MILALUNOS)
+
+## Conclusão
+
+Bom pessoal, espero que esse post seja interessante para vocês, mesmo que vocês não tenham interesse em criar um curso, mas para saberem como que funciona por trás. Existe muito trabalho até sair um curso fresquinho para vocês, mas é sempre um trabalho bem gratificante, quando a gente recebe mensagens de apoio e agradecimento.
+
