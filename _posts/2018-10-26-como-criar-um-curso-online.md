@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-10-26 02:55:18'
+date: '2018-10-29 02:55:18'
 image: /assets/img/criar-curso-online.jpg
 title: Como criar um Curso Online
 description: >-
