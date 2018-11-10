@@ -274,7 +274,7 @@ Lá no topo já podemos ver o glaciar e junto dele um lago formado pelo seu dege
 
 ![3 fotos: superior esquerda: uma garota de costas em frente a um farol e duas palmeiras. Superior direita: uma vista aerea da praia e predios de Miraflores. Destaque inferior: panaroma da cidade de Lima no Bairro de Miraflores](/assets/img/lima.jpg)
 
-Eu ainda não tive tempo de editar as fotos de Lima, mas assim que postar, vou colocar o link aqui.
+Você pode ver e baixar minhas fotos lá no [Unsplash](https://willianjusten.com.br/meus-20-dias-no-peru/).
 
 Engraçado que quando você pensa no Peru, você tem uma imagem mais das pessoas de origem indígena, artesanatos e ruínas, mas Lima é bem diferente disso. Lá é uma cidade bem rica, com prédios super altos e bonitos. E o artesanato você quase não vê.
 
