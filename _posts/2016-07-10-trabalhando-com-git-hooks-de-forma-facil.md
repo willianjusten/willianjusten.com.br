@@ -130,7 +130,7 @@ Depois disso, basta ir no seu `package.json` na parte de scripts e colocar os ho
 
 Ali eu estou criando dois hooks que são `precommit` e `prepush` e estou dizendo que antes de um commit ou um push para o remoto, eles deverão rodar os comandos `lint` e `test`, que eu também determinei no meu npm script. Isso vai garantir que ele verifique se no código não tem nada fora do padrão de escrita, usando o nosso lint. E também irá rodar os testes, evitando que suba algo quebrado.
 
-![Um carinha com bigodes e vestido com camisa de unicórnio falando it's magic de forma bem engraçada](http://i.imgur.com/iZcUNxH.gif)
+![Um carinha com bigodes e vestido com camisa de unicórnio falando it's magic de forma bem engraçada](https://i.imgur.com/iZcUNxH.gif)
 
 Se você não conhece o `eslint` para verificar seu padrão de escrita, dá uma olhada nesse [post sobre linters](https://willianjusten.com.br/analisando-seu-codigo-js-com-linter/) que eu escrevi.
 
