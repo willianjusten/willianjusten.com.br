@@ -199,7 +199,7 @@ Bom, falei um pouco disso antes, mas eu diria que a flexibilidade de poder escol
 
 #### Como são os projetos que você pega sendo do core team da Toptal e qual a diferença dos projetos de quem é freelancer?
 
-Como eu trabalho no time de páginas públicas, eu basicamente ajudo na criação do CMS para os editores poderem criar as páginas e posts do blog. Já quem trabalha como freelancer pode trabalhar de um tudo, isso vai depender de para qual cliente ele vai trabalhar.
+Como eu trabalho no time de páginas públicas, eu basicamente ajudo na criação do CMS para os editores poderem criar as páginas e posts do blog. Já quem trabalha como freelancer pode trabalhar com qualquer coisa, isso vai depender de para qual cliente ele vai trabalhar.
 
 #### Quais ferramentas utiliza para medir a sua produtividade?
 
