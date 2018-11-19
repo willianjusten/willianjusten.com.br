@@ -206,9 +206,9 @@ Como eu trabalho no time de páginas públicas, eu basicamente ajudo na criaçã
 
 Na Toptal nós não utilizamos nenhuma ferramenta para medir produtividade para saber "Fulano trabalhou 5h no dia tal...", nós achamos que esses valores não condizem com a realidade. Uma pessoa pode trabalhar 2h e fazer muitas coisas, enquanto uma outra pode ficar 12h na frente do computador só enrolando.
 
-Como trabalhamos com Scrum, na hora de fazer a estimativa das tasks, nós fazemos nós definimos Story Points usando o [hatjitsu](https://tools.wmflabs.org/hatjitsu/), onde cada um vota num peso que cada task vai ter. O Scrum Master por sua vez analisa quantos pontos o time está entregando e define quantas tarefas serão feitas no Sprint. E ao final do Sprint ele analisa se produzimos bem ou se fomos abaixo da média.
+Como trabalhamos com Scrum, na hora de fazer a estimativa das tasks, nós definimos Story Points usando o [hatjitsu](https://tools.wmflabs.org/hatjitsu/), onde cada um vota num peso que cada task vai ter. O Scrum Master por sua vez analisa quantos pontos o time está entregando e define quantas tarefas serão feitas no Sprint. E ao final do Sprint ele analisa se produzimos bem ou se fomos abaixo da média.
 
-E eu gosto de métricas, então pessoalmente eu utilizo o [Wakatime](https://wakatime.com/), assim consigo ter uma ideia do tempo que estou gastando e até qual linguagem fico mais tempo, é bem legal xD
+Eu gosto de métricas, então pessoalmente eu utilizo o [Wakatime](https://wakatime.com/), assim consigo ter uma ideia do tempo que estou gastando e até qual linguagem fico mais tempo, é bem legal xD
 
 #### Quais ferramentas utiliza para se organizar? E no trabalho?
 
