@@ -222,6 +222,8 @@ Utilizamos o [Github](https://github.com/toptal) para todo o nosso código e o [
 
 Nossa comunicação via texto é toda usando o [Slack](https://slack.com/) ou o Gmail (mas esse é utilizado mais para reports semanais e coisas mais alto nível).
 
+Pessoalmente eu utilizo o [Wunderlist](https://wunderlist.com/) para criar listas de coisas a serem feitas e uso bastante papel e caneta, sempre tenho folhas ao meu lado.
+
 #### Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?
 
 Na Toptal acabamos utilizando o [Zoom](https://zoom.us/) que nem é bem uma ferramenta para parear, mas como permite acesso a mouse/teclado, acabamos fazendo para isso.
