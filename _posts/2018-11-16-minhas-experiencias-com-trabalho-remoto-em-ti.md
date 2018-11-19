@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2018-11-15 04:13:33'
+date: '2018-11-19 04:13:33'
 image: /assets/img/remote-work.jpg
 title: Minhas experiências com Trabalho Remoto em TI
 description: >-
@@ -26,37 +26,38 @@ categories:
 ---
 ## Índice
 
+- [Índice](#%C3%ADndice)
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-hist%C3%B3ria)
 - [Minha rotina de trabalho remoto](#minha-rotina-de-trabalho-remoto)
 - [Você está preparado para a vida de Remoto?](#voc%C3%AA-est%C3%A1-preparado-para-a-vida-de-remoto)
-    - [Experiência](#experi%C3%AAncia)
-    - [Disciplina](#disciplina)
-    - [Comunicação](#comunica%C3%A7%C3%A3o)
-    - [Local de trabalho e equipamentos](#local-de-trabalho-e-equipamentos)
-    - [Personalidade](#personalidade)
+  - [Experiência](#experi%C3%AAncia)
+  - [Disciplina](#disciplina)
+  - [Comunicação](#comunica%C3%A7%C3%A3o)
+  - [Local de trabalho e equipamentos](#local-de-trabalho-e-equipamentos)
+  - [Personalidade](#personalidade)
 - [Perguntas e Respostas](#perguntas-e-respostas)
-    - [Perguntas sobre trabalho remoto](#perguntas-sobre-trabalho-remoto)
-        - [Qual a vantagem e desvantagem de se trabalhar remotamente? Qual a maior dificuldade que você encontrou nesse tipo de trabalho?](#qual-a-vantagem-e-desvantagem-de-se-trabalhar-remotamente-qual-a-maior-dificuldade-que-voc%C3%AA-encontrou-nesse-tipo-de-trabalho)
-        - [Como são os projetos que você pega sendo do core team da Toptal e qual a diferença dos projetos de quem é freelancer?](#como-s%C3%A3o-os-projetos-que-voc%C3%AA-pega-sendo-do-core-team-da-toptal-e-qual-a-diferen%C3%A7a-dos-projetos-de-quem-%C3%A9-freelancer)
-        - [Quais ferramentas utiliza para medir a sua produtividade?](#quais-ferramentas-utiliza-para-medir-a-sua-produtividade)
-        - [Quais ferramentas utiliza para se organizar? E no trabalho?](#quais-ferramentas-utiliza-para-se-organizar-e-no-trabalho)
-        - [Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?](#at%C3%A9-hoje-s%C3%B3-ouvi-falar-sobre-ferramentas-de-pareamento-remoto-mas-nunca-vi-na-pr%C3%A1tica-quais-s%C3%A3o)
-        - [Qual stack você usa na Toptal?](#qual-stack-voc%C3%AA-usa-na-toptal)
-        - [Como você recebe seu pagamento? Existe CLT ou só PJ?](#como-voc%C3%AA-recebe-seu-pagamento-existe-clt-ou-s%C3%B3-pj)
-        - [Como manter-se animado a programar em um trabalho remoto?](#como-manter-se-animado-a-programar-em-um-trabalho-remoto)
-        - [Iniciei ontem a trabalhar remotamente, fico receoso de não estar 100% do tempo à disposição. Como dizer não?](#iniciei-ontem-a-trabalhar-remotamente-fico-receoso-de-n%C3%A3o-estar-100-do-tempo-%C3%A0-disposi%C3%A7%C3%A3o-como-dizer-n%C3%A3o)
-        - [Como um iniciante em programação pode se organizar para adquirir conhecimento e conseguir trabalhar remoto?](#como-um-iniciante-em-programa%C3%A7%C3%A3o-pode-se-organizar-para-adquirir-conhecimento-e-conseguir-trabalhar-remoto)
-        - [É possível conseguir um trabalho remoto apenas com certificações e cursos online, isto é, sem curso superior?](#%C3%A9-poss%C3%ADvel-conseguir-um-trabalho-remoto-apenas-com-certifica%C3%A7%C3%B5es-e-cursos-online-isto-%C3%A9-sem-curso-superior)
-        - [Qual a média de idade dos desenvolvedores fora do Brasil? Desenvolvedores mais velhos tem espaço na Europa?](#qual-a-m%C3%A9dia-de-idade-dos-desenvolvedores-fora-do-brasil-desenvolvedores-mais-velhos-tem-espa%C3%A7o-na-europa)
-        - [No seu primeiro trabalho em inglês, como você julga seu nível de inglês pra falar com os colegas de trabalho? E para o exterior, como é?](#no-seu-primeiro-trabalho-em-ingl%C3%AAs-como-voc%C3%AA-julga-seu-n%C3%ADvel-de-ingl%C3%AAs-pra-falar-com-os-colegas-de-trabalho-e-para-o-exterior-como-%C3%A9)
-    - [Perguntas sobre viagens e trabalho](#perguntas-sobre-viagens-e-trabalho)
-        - [Você gasta bastante dinheiro para viajar? Como faz com hospedagem?](#voc%C3%AA-gasta-bastante-dinheiro-para-viajar-como-faz-com-hospedagem)
-        - [Como você consegue trabalhar quando viaja?](#como-voc%C3%AA-consegue-trabalhar-quando-viaja)
-        - [Como você tem achado os locais para trampar? Existe algum app que o ajuda nesta tarefa?](#como-voc%C3%AA-tem-achado-os-locais-para-trampar-existe-algum-app-que-o-ajuda-nesta-tarefa)
-        - [É tranquilo encontrar internet boa para trabalhar remoto viajando?](#%C3%A9-tranquilo-encontrar-internet-boa-para-trabalhar-remoto-viajando)
-        - [Gostaria de saber como a mudança de lugares afeta sua rotina de produtividade e concentração.](#gostaria-de-saber-como-a-mudan%C3%A7a-de-lugares-afeta-sua-rotina-de-produtividade-e-concentra%C3%A7%C3%A3o)
-        - [Como você cria seu roteiro para viagens? Utiliza algum app?](#como-voc%C3%AA-cria-seu-roteiro-para-viagens-utiliza-algum-app)
+  - [Perguntas sobre trabalho remoto](#perguntas-sobre-trabalho-remoto)
+    - [Qual a vantagem e desvantagem de se trabalhar remotamente? Qual a maior dificuldade que você encontrou nesse tipo de trabalho?](#qual-a-vantagem-e-desvantagem-de-se-trabalhar-remotamente-qual-a-maior-dificuldade-que-voc%C3%AA-encontrou-nesse-tipo-de-trabalho)
+    - [Como são os projetos que você pega sendo do core team da Toptal e qual a diferença dos projetos de quem é freelancer?](#como-s%C3%A3o-os-projetos-que-voc%C3%AA-pega-sendo-do-core-team-da-toptal-e-qual-a-diferen%C3%A7a-dos-projetos-de-quem-%C3%A9-freelancer)
+    - [Quais ferramentas utiliza para medir a sua produtividade?](#quais-ferramentas-utiliza-para-medir-a-sua-produtividade)
+    - [Quais ferramentas utiliza para se organizar? E no trabalho?](#quais-ferramentas-utiliza-para-se-organizar-e-no-trabalho)
+    - [Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?](#at%C3%A9-hoje-s%C3%B3-ouvi-falar-sobre-ferramentas-de-pareamento-remoto-mas-nunca-vi-na-pr%C3%A1tica-quais-s%C3%A3o)
+    - [Qual stack você usa na Toptal?](#qual-stack-voc%C3%AA-usa-na-toptal)
+    - [Como você recebe seu pagamento? Existe CLT ou só PJ?](#como-voc%C3%AA-recebe-seu-pagamento-existe-clt-ou-s%C3%B3-pj)
+    - [Como manter-se animado a programar em um trabalho remoto?](#como-manter-se-animado-a-programar-em-um-trabalho-remoto)
+    - [Iniciei ontem a trabalhar remotamente, fico receoso de não estar 100% do tempo à disposição. Como dizer não?](#iniciei-ontem-a-trabalhar-remotamente-fico-receoso-de-n%C3%A3o-estar-100-do-tempo-%C3%A0-disposi%C3%A7%C3%A3o-como-dizer-n%C3%A3o)
+    - [Como um iniciante em programação pode se organizar para adquirir conhecimento e conseguir trabalhar remoto?](#como-um-iniciante-em-programa%C3%A7%C3%A3o-pode-se-organizar-para-adquirir-conhecimento-e-conseguir-trabalhar-remoto)
+    - [É possível conseguir um trabalho remoto apenas com certificações e cursos online, isto é, sem curso superior?](#%C3%A9-poss%C3%ADvel-conseguir-um-trabalho-remoto-apenas-com-certifica%C3%A7%C3%B5es-e-cursos-online-isto-%C3%A9-sem-curso-superior)
+    - [Qual a média de idade dos desenvolvedores fora do Brasil? Desenvolvedores mais velhos tem espaço na Europa?](#qual-a-m%C3%A9dia-de-idade-dos-desenvolvedores-fora-do-brasil-desenvolvedores-mais-velhos-tem-espa%C3%A7o-na-europa)
+    - [No seu primeiro trabalho em inglês, como você julga seu nível de inglês pra falar com os colegas de trabalho? E para o exterior, como é?](#no-seu-primeiro-trabalho-em-ingl%C3%AAs-como-voc%C3%AA-julga-seu-n%C3%ADvel-de-ingl%C3%AAs-pra-falar-com-os-colegas-de-trabalho-e-para-o-exterior-como-%C3%A9)
+  - [Perguntas sobre viagens e trabalho](#perguntas-sobre-viagens-e-trabalho)
+    - [Você gasta bastante dinheiro para viajar? Como faz com hospedagem?](#voc%C3%AA-gasta-bastante-dinheiro-para-viajar-como-faz-com-hospedagem)
+    - [Como você consegue trabalhar quando viaja?](#como-voc%C3%AA-consegue-trabalhar-quando-viaja)
+    - [Como você tem achado os locais para trampar? Existe algum app que o ajuda nesta tarefa?](#como-voc%C3%AA-tem-achado-os-locais-para-trampar-existe-algum-app-que-o-ajuda-nesta-tarefa)
+    - [É tranquilo encontrar internet boa para trabalhar remoto viajando?](#%C3%A9-tranquilo-encontrar-internet-boa-para-trabalhar-remoto-viajando)
+    - [Gostaria de saber como a mudança de lugares afeta sua rotina de produtividade e concentração.](#gostaria-de-saber-como-a-mudan%C3%A7a-de-lugares-afeta-sua-rotina-de-produtividade-e-concentra%C3%A7%C3%A3o)
+    - [Como você cria seu roteiro para viagens? Utiliza algum app?](#como-voc%C3%AA-cria-seu-roteiro-para-viagens-utiliza-algum-app)
 - [Conclusão](#conclus%C3%A3o)
 
 ## Introdução
@@ -83,13 +84,13 @@ Acho que a maioria tem **desejo de trabalhar para empresas de fora** e comigo n�
 
 Durante o meu tempo na Huge eu acabei trabalhando em um projeto que precisava mais de inglês e eu me sentia um burro completo, os americanos falavam super rápido, as vezes as vozes eram super abafadas e eu não entendia absolutamente nada. Isso estava afetando demais minha auto-estima e foi então que eu resolvi juntar todo meu dinheiro e [ir morar e estudar na Irlanda](https://willianjusten.com.br/vindo-morar-e-estudar-na-irlanda/).
 
-Junto com essa minha ida para a Europa, eu também decidi que era isso que eu queria da minha vida. 
+Junto com essa minha ida para a Europa, eu também decidi que era isso que eu queria da minha vida.
 
 - Poder morar onde quiser e viajar mais
 - Não me preocupar com trânsito
 - Ter horários mais flexíveis
 - Me isolar em dias ruins de depressão
-- Estar em contato com pessoas de todo o mundo. 
+- Estar em contato com pessoas de todo o mundo.
 
 E para isso, só tinha uma opção, **trabalhar remoto**.
 
@@ -101,7 +102,7 @@ Como disse, eu trabalho no core team da [Toptal](https://www.toptal.com/), que �
 
 Eu não sou freelancer, sou contratado pela empresa e possuo salário fixo (falarei sobre essa parte um pouquinho mais a frente na parte das perguntas).
 
-Dentro da empresa existem vários times para cada parte, eu atualmente trabalho no time responsável pelas páginas públicas da Toptal, ou seja, todas as páginas que as pessoas podem acessar, como home, blog, campanhas, entre outras. 
+Dentro da empresa existem vários times para cada parte, eu atualmente trabalho no time responsável pelas páginas públicas da Toptal, ou seja, todas as páginas que as pessoas podem acessar, como home, blog, campanhas, entre outras.
 
 Nós trabalhamos com a metodologia [Scrum](https://www.scrum.org/resources/what-is-scrum) e o time é composto por:
 
@@ -124,7 +125,7 @@ Além da daily, também possuímos algumas reuniões pré-definidas que são:
 
 E além de todas essas reuniões, ainda existem pequenas reuniões para sincronizar informações entre os times que estivermos trabalhando mais próximos, seções de pair programming com pessoas do time para ajudar em algo ou ser ajudado, enfim, são muitos compromissos! Como falei, a comunicação é uma grande parte do trabalho!
 
-Baseado então nesses horários/dias, eu organizo meu dia, que não é lá tão agitado/diferente de uma pessoa que trabalhasse num escritório. Eu odeio acordar cedo, então acordo lá pelas 10:15 e as vezes faço a reunião do celular mesmo e na cama, não precisamos deixar a câmera ativa sempre, então é bem okay isso. Logo depois da daily, eu levanto e pego algo para comer ou minha mãe/namorada me dão algo (tá vendo, tem suas vantagens de não morar sozinho também =p). Pela manhã eu costumo revisar todos os Pull Requests abertos, pois assim não preciso pensar tanto (não funciono de manhã, já falei) e ajudo bastante, reviews são mais essenciais que seu código! Depois disso eu almoço (sempre aviso quando vou ficar ausente) e aí na volta trabalho até umas 18-19h. 
+Baseado então nesses horários/dias, eu organizo meu dia, que não é lá tão agitado/diferente de uma pessoa que trabalhasse num escritório. Eu odeio acordar cedo, então acordo lá pelas 10:15 e as vezes faço a reunião do celular mesmo e na cama, não precisamos deixar a câmera ativa sempre, então é bem okay isso. Logo depois da daily, eu levanto e pego algo para comer ou minha mãe/namorada me dão algo (tá vendo, tem suas vantagens de não morar sozinho também =p). Pela manhã eu costumo revisar todos os Pull Requests abertos, pois assim não preciso pensar tanto (não funciono de manhã, já falei) e ajudo bastante, reviews são mais essenciais que seu código! Depois disso eu almoço (sempre aviso quando vou ficar ausente) e aí na volta trabalho até umas 18-19h.
 
 ## Você está preparado para a vida de Remoto?
 
@@ -150,7 +151,7 @@ Mas é complicado dizer isso quando não se está realmente dentro de casa. Se v
 
 Se você morar com mãe/parceiro(a), um diálogo assim é super comum:
 
-> **Parceiro(a)/Mãe** - Vai ali no mercado para mim rapidinho? <br> 
+> **Parceiro(a)/Mãe** - Vai ali no mercado para mim rapidinho? <br>
 **Você** - Não posso, estou trabalhando. <br>
 **Parceiro(a)/Mãe** - É rapidinho pow, preciso de massa de tomate para fazer o almoço. <br>
 **Você** - Já disse, estou trabalhando, não posso. <br>
@@ -172,7 +173,7 @@ Essa é outra característica que você aprende muito trabalhando alocado, você
 
 > Ué? Como assim? Por que se preocupar com local de trabalho se vai ser remoto?
 
-É de extrema importância que você defina um local onde irá trabalhar, mesmo que seja em seu quarto, tente criar uma separação entre um e outro, e evite deixar coisas que possam roubar sua atenção enquanto trabalha. 
+É de extrema importância que você defina um local onde irá trabalhar, mesmo que seja em seu quarto, tente criar uma separação entre um e outro, e evite deixar coisas que possam roubar sua atenção enquanto trabalha.
 
 Outra coisa importante é que você tenha um bom equipamento para trabalhar, isso inclui uma boa mesa, cadeira, monitor/computador. Pense que esse canto será a sua empresa e por isso, você precisa estar confortável e com equipamentos que permitam ter uma boa performance. Não estou falando que você precisa gastar milhões, mas trabalhar numa cadeira de plástico vai te trazer sérias consequências depois. Eu escrevi um [post sobre meu setup](https://willianjusten.com.br/meu-setup/), eu fui adquirindo as coisas aos pouquinhos e me sinto muito hoje.
 
@@ -223,7 +224,7 @@ Nossa comunicação via texto é toda usando o [Slack](https://slack.com/) ou o 
 
 #### Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?
 
-Na Toptal acabamos utilizando o [Zoom](https://zoom.us/) que nem é bem uma ferramenta para parear, mas como permite acesso a mouse/teclado, acabamos fazendo para isso. 
+Na Toptal acabamos utilizando o [Zoom](https://zoom.us/) que nem é bem uma ferramenta para parear, mas como permite acesso a mouse/teclado, acabamos fazendo para isso.
 
 No VS Code existe um plugin genial que permite isso e funciona muito bem, se chama [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share), o único porém é que ambos precisam usar o VS Code e bom, no meu time só tem outra pessoa que usa. O resto usa Vim, RubyMine, Atom...
 
@@ -233,7 +234,7 @@ Para cada time podem existir diferentes stacks, tem gente trabalhando com Python
 
 Eu no caso trabalho com Ruby/Rails no Backend e Javascript/Sass/Slim no Frontend. Sendo que da parte do Javascript, já cheguei a trabalhar com Backbone e um framework próprio, Javascript puro e agora estamos migrando para Typescript puro (nada de Angular, React ou Vue, só Typescript mesmo).
 
-#### Como você recebe seu pagamento? Existe CLT ou só PJ? 
+#### Como você recebe seu pagamento? Existe CLT ou só PJ?
 
 Essa é uma das perguntas que mais me fazem! No início da Toptal, eu recebia através de um sistema chamado [Payoneer](https://www.payoneer.com/), que consiste basicamente numa conta no Bank of America e eu tenho um cartão de débito, onde conforme vou usando, vai debitando dessa minha conta. E eu também posso retirar dinheiro no caixa eletrônico, mas preciso pagar várias taxas quanto a isso.
 
@@ -281,7 +282,7 @@ Eu escrevi um post [o que é preciso saber para trabalhar no exterior](https://w
 
 #### Você gasta bastante dinheiro para viajar? Como faz com hospedagem?
 
-Eu sou uma pessoa bastante econômica, minha namorada diria pão duro, mas eu não consigo evitar, acho que é até um desafio legal a se fazer. 
+Eu sou uma pessoa bastante econômica, minha namorada diria pão duro, mas eu não consigo evitar, acho que é até um desafio legal a se fazer.
 
 Eu fiz uma [viagem de 50 dias na Espanha](https://willianjusten.com.br/meus-50-dias-na-espanha/) onde eu utilizei caronas através do [BlaBlaCar](https://www.blablacar.com.br/) para me locomover por praticamente todo o país!
 
