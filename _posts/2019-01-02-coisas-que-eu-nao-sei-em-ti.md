@@ -2,7 +2,7 @@
 layout: post
 date: '2019-01-02 04:02:08'
 image: /assets/img/coisas-que-nao-sei.jpg
-title: Coisas que eu nao sei em TI
+title: Coisas que eu não sei em TI
 description: >-
   Eu faço bastante coisa, mas existem outras mil coisas que eu não sei e não tem
   problema nisso.
