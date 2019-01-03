@@ -19,13 +19,11 @@ tags:
   - dicas
   - lifestyle
 categories:
-  - Trabalhar no exterior
-  - remoto
-  - viagens
-  - etc.
+  - "Trabalhar no exterior, remoto, viagens, etc."
 ---
 ## Índice
 
+- [- "Trabalhar no exterior, remoto, viagens, etc."](#%22trabalhar-no-exterior-remoto-viagens-etc%22)
 - [Índice](#%C3%ADndice)
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-hist%C3%B3ria)
