@@ -35,7 +35,21 @@ Enquanto escrevo, vou ouvindo uma banda recomendada pelo meu amigo [Jonas Mendes
 
 Bom, vamos lá, vou separar os tópicos aqui, para facilitar um pouquinho:
 
-### Primeiro contato com React
+- [Primeiro contato com React](#primeiro-contato-com-react)
+- [React e Classes no JavaScript](#react-e-classes-no-javascript)
+- [Template Literals](#template-literals)
+- [Arrow Functions](#arrow-functions)
+- [Funções como componentes no React](#fun%C3%A7%C3%B5es-como-componentes-no-react)
+- [Sintaxe do React Class Component](#sintaxe-do-react-class-component)
+- [Map, Reduce e Filter no React](#map-reduce-e-filter-no-react)
+- [Operador Ternário no React](#operador-tern%C3%A1rio-no-react)
+- [Importando e Exportando no React](#importando-e-exportando-no-react)
+- [Funções de Ordem Superior](#fun%C3%A7%C3%B5es-de-ordem-superior)
+- [Funções de Ordem Superior no React](#fun%C3%A7%C3%B5es-de-ordem-superior-no-react)
+- [Destructuring e Spread Operators](#destructuring-e-spread-operators)
+- [Conclusão](#conclus%C3%A3o)
+
+## Primeiro contato com React
 
 Quando você entra no mundo React, é bem provável que você inicie o projeto utilizando o [create-react-app](https://github.com/facebook/create-react-app), já que essa é uma das ferramentas mais conhecidas para quem quer iniciar um projeto React sem muitas dificuldades e já com toda uma estrutura pronta. Isso tudo com o suporte do próprio time do React e Facebook. Ou então você pode acabar indo para alguns tutoriais na internet também.
 
