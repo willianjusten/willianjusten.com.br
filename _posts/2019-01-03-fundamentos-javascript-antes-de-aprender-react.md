@@ -35,8 +35,6 @@ Enquanto escrevo, vou ouvindo [Solar Fields](https://open.spotify.com/artist/7Gy
 
 Bom, vamos lá, vou separar os tópicos aqui, para facilitar um pouquinho:
 
-- [- es6](#es6)
-- [Introdução](#introdu%C3%A7%C3%A3o)
 - [Primeiro contato com React](#primeiro-contato-com-react)
 - [React e Classes no JavaScript](#react-e-classes-no-javascript)
 - [Template Literals](#template-literals)
