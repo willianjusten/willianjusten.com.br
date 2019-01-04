@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2019-01-03 02:26:13'
+date: '2019-01-04 02:26:13'
 image: /assets/img/fundamentos-pre-react.jpg
 title: Fundamentos JavaScript antes de aprender React
 description: >-
