@@ -88,7 +88,7 @@ export default App;
 
 E logo de cara você já vai ver um `React class component`, ou seja, o uso de classes dentro do JavaScript. Hoje, isso já deve ser normal para uma grande parcela, mas ainda pode causar dificuldades para alguns iniciantes, já que o uso de classes veio somente com o ES6. E o uso de classes traz consigo conceitos como: definições de classe, métodos de classe e herança. Dentro do React não somos obrigados a usar somente classes, mas em algum momento você pode precisar/ver e vai ter que entender esses conceitos.
 
-### React e Classes no JavaScript
+## React e Classes no JavaScript
 
 Antes do ES6, já havia uma forma de trabalhar com heranças e objetos, utilizando os [prototypes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain), as Classes no ES6 nada mais são que um "sugar syntax" disso, ou seja, por debaixo dos panos também é usado o prototype. 
 
@@ -169,7 +169,7 @@ E é por isso que o método `render()` é obrigatório nos `React Class Componen
 
 Bom, apesar de estar falando bastante de classes aqui e mostrando que é quase uma base para os componentes, o mais aconselhado é que você estenda somente o `React.Component` e trabalhe mais com composição ao invés de herança, existe inclusive uma parte na [documentação oficial falando sobre isso](https://reactjs.org/docs/composition-vs-inheritance.html).
 
-### Template Literals
+## Template Literals
 
 Uma outra coisa super simples, mas que ainda confunde muita gente são os template literals, que ajudam bastante na hora da concatenação de strings. Agora não precisamos mais usar aqueles sinais de `+` em mil cantos para concatenar as coisas, mas sim utilizar essa aspa invertida e escrever as variáveis nessa notação `${variável}`. Veja abaixo o antes e depois:
 
@@ -184,7 +184,7 @@ getName() {
 }
 ```
 
-### Arrow Functions
+## Arrow Functions
 
 Outra coisa que veio com o ES6, mas ainda causa confusão para os iniciantes são as arrow functions. Isso muito acontece pois tem momentos que as chaves são necessárias, outros momentos que o `return` e necessário e vezes que ambos podem ser omitidos. Abaixo seguem os exemplos:
 
@@ -206,7 +206,7 @@ const getGreeting = () =>
 
 Se você tem um método de uma linha só, as chaves e o return não se fazem necessários, mas se os métodos são um pouco maiores, há essa necessidade, é bom não confundir. Já tive muito aluno travando por esquecer de colocar o `return` mas ter adicionado as chaves.
 
-### Funções como componentes no React
+## Funções como componentes no React
 
 O React usa o melhor dos diferentes paradigmas da programação. No lado da programação orientada a objeto, ele permite a criação dos `React class components`, que permitem herdar métodos da API do React, assim como propriedades, como o `this.state`. 
 
@@ -230,7 +230,7 @@ const Greeting = (props) =>
   <h1>{props.greeting}</h1>
 ```
 
-### Sintaxe do React Class Component
+## Sintaxe do React Class Component
 
 As formas de definir componentes no React estão sempre evoluindo. No início era possível ver o uso do método `React.createClass`, mas com a chegada do ES6, passamos a ver mais o uso como mostrado acima, estendendo `Component` do pacote do `react.
 
@@ -298,7 +298,7 @@ class Counter extends Component {
 }
 ```
 
-### Map, Reduce e Filter no React
+## Map, Reduce e Filter no React
 
 No React não existem métodos ou qualquer coisa que seja para trabalhar com arrays, objetos. Tudo que você usa e precisa, é o amado JavaScript. Com isso, alguns métodos como `map`, `reduce` e `filter` passam a ser os queridinhos para quem trabalha com React, mas por quê?
 
@@ -385,7 +385,7 @@ Se você quiser ler mais sobre os métodos, segue aqui a documentação:
 - [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 
-### Operador Ternário no React
+## Operador Ternário no React
 
 No JSX não é possível utilizar o famoso `if-else` diretamente, mas você pode criar uma condicional antes e parar a renderização usando um return vazio. Desta forma, o React não irá mostrar nada em tela.
 
@@ -451,7 +451,7 @@ export default App;
 
 Outra forma de fazer, só retornando um dos lados da condicional, é usando o operador `&&`, da seguinte forma:
 
-```
+```jsx
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -482,7 +482,7 @@ export default App;
 
 Repare que caso o `showUsers` seja falso, nada irá aparecer, não precisando escrever o `: null` feito anteriormente.
 
-### Importando e Exportando no React
+## Importando e Exportando no React
 
 Tá aí uma coisa que confunde muita gente. Como devo importar/exportar as coisas? Tem horas que tem umas chaves, outras horas não tem, o que significam?
 
@@ -540,7 +540,7 @@ console.log(developer);
 // output: { firstname: 'Robin', lastname: 'Wieruch' }
 ```
 
-### Funções de Ordem Superior
+## Funções de Ordem Superior
 
 As Funções de Ordem Superior (High-order Functions) são um grande conceito na programação, principalmente quando se está indo para o lado funcional. No React, faz total sentido saber sobre esse tipo de funções, pois em algum momento você terá que trabalhar com `high-order component (hoc)` e será muito mais fácil de entender se você souber sobre as high-order functions primeiro.
 
@@ -572,7 +572,7 @@ Repare que nós temos uma função que é o `map` e ela recebe como parâmetro u
 
 Para entender ainda melhor desse conceito, aconselho dar uma lida [nesse capítulo do Eloquente JavaScript](http://braziljs.github.io/eloquente-javascript/chapters/funcoes-de-ordem-superior/) que mostra vários exemplos bem interessantes.
 
-### Funções de Ordem Superior no React
+## Funções de Ordem Superior no React
 
 Como falado antes, no React nós podemos criar componentes com funções simples, os chamados `stateless components`. Então um `high-order component` nada mais é que um `componente` que aceita um outro `componente` como argumento e retorna um `componente`. 
 
@@ -641,7 +641,7 @@ class Counter extends Component {
 
 Repare que temos os métodos `doIncrement` e `doDecrement` fora do componente e exportados. Assim nós conseguimos testar os métodos de forma isolada e organizada.
 
-### Destructuring e Spread Operators
+## Destructuring e Spread Operators
 
 Um pouco acima tinha um tal de `...props` que é usado para caramba no React, e isso é mais uma das maravilhas que vieram com o ES6. É muito comum se querer acessar várias propriedades de um `state` ou do `props` do componente, ao invés de assinalar variáveis um a um, podemos usar o destructuring para isso.
 
@@ -676,7 +676,7 @@ const { users, ...rest } = this.state
 
 Ali nós teremos a propriedade `users` separada e o resto ficara no objeto `rest`. No nosso exemplo acima, nós queríamos o valor de `children` separado e para não perder nenhuma outra propriedade, nós mantivemos o resto do objeto `props`, usando o spread operator.
 
-### Conclusão
+## Conclusão
 
 Bom galera, sei que o post ficou grandinho, mas espero que tenha sido útil para vocês. Muitas pessoas dizem que React tem uma curva de aprendizado muito grande e é difícil, mas na maioria das vezes, não é o React em si, mas algumas coisas básicas da linguagem.
 
