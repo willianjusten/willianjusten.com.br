@@ -283,9 +283,378 @@ class Counter extends Component {
 
 ### Map, Reduce e Filter no React
 
+No React não existem métodos ou qualquer coisa que seja para trabalhar com arrays, objetos. Tudo que você usa e precisa, é o amado JavaScript. Com isso, alguns métodos como `map`, `reduce` e `filter` passam a ser os queridinhos para quem trabalha com React, mas por quê?
+
+Simples, eles são métodos puros, que recebem um valor e retornam outro da forma desejada, trabalhando da forma funcional que o React tanto gosta. Eles facilitam bastante para retornar items da forma desejada (`map`), filtrar informações baseadas em algum parâmetro desejado (`filter`) ou até mesmo realizar operações em cima de um conjunto de valores para retornar somente um já trabalhado (`reduce`).
+
+Um exemplo com o `map` para renderizar uma lista de items seria:
+
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    var users = [
+      { name: 'Robin' },
+      { name: 'Markus' },
+    ];
+
+    return (
+      <ul>
+        {users.map(function (user) {
+          return <li>{user.name}</li>;
+        })}
+      </ul>
+    );
+  }
+}
+
+export default App;
+```
+
+Para deixar ainda mais limpo, podemos fazer o uso da Arrow Function e criar a mesma coisa em somente uma linha:
+
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    var users = [
+      { name: 'Robin' },
+      { name: 'Markus' },
+    ];
+
+    return (
+      <ul>
+        {users.map(user => <li>{user.name}</li>)}
+      </ul>
+    );
+  }
+}
+
+export default App;
+```
+
+E, como disse anteriormente, não só o `map` ajuda, mas funções como o `filter` também são geniais, como no exemplo abaixo:
+
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    var users = [
+      { name: 'Robin', isDeveloper: true },
+      { name: 'Markus', isDeveloper: false },
+    ];
+
+    return (
+      <ul>
+        {users
+          .filter(user => user.isDeveloper)
+          .map(user => <li>{user.name}</li>)
+        }
+      </ul>
+    );
+  }
+}
+
+export default App;
+```
+
+Se você quiser ler mais sobre os métodos, segue aqui a documentação:
+
+- [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [Filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
 
+### Operador Ternário no React
 
+No JSX não é possível utilizar o famoso `if-else` diretamente, mas você pode criar uma condicional antes e parar a renderização usando um return vazio. Desta forma, o React não irá mostrar nada em tela.
 
+```jsx
+import React, { Component } from 'react';
 
+class App extends Component {
+  render() {
+    const users = [
+      { name: 'Robin' },
+      { name: 'Markus' },
+    ];
 
+    const showUsers = false;
+
+    if (!showUsers) {
+      return null;
+    }
+
+    return (
+      <ul>
+        {users.map(user => <li>{user.name}</li>)}
+      </ul>
+    );
+  }
+}
+
+export default App;
+```
+
+Entretanto, se você quiser usar a lógica de if-else dentro do JSX, você pode utilizar os [operadores ternários](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator), da seguinte forma:
+
+```jsx
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    const users = [
+      { name: 'Robin' },
+      { name: 'Markus' },
+    ];
+
+    const showUsers = false;
+
+    return (
+      <div>
+        {
+          showUsers ? (
+            <ul>
+              {users.map(user => <li>{user.name}</li>)}
+            </ul>
+          ) : (
+            null
+          )
+        }
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+Outra forma de fazer, só retornando um dos lados da condicional, é usando o operador `&&`, da seguinte forma:
+
+```
+import React, { Component } from 'react';
+
+class App extends Component {
+  render() {
+    const users = [
+      { name: 'Robin' },
+      { name: 'Markus' },
+    ];
+
+    const showUsers = false;
+
+    return (
+      <div>
+        {
+          showUsers && (
+            <ul>
+              {users.map(user => <li>{user.name}</li>)}
+            </ul>
+          )
+        }
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+Repare que caso o `showUsers` seja falso, nada irá aparecer, não precisando escrever o `: null` feito anteriormente.
+
+### Importando e Exportando no React
+
+Tá aí uma coisa que confunde muita gente. Como devo importar/exportar as coisas? Tem horas que tem umas chaves, outras horas não tem, o que significam?
+
+Começaremos a falar pelos `exports`, que já irão explicar os `imports` diretamente. Nós possuímos 2 tipos de `exports`, que são:
+
+- `named exports`: que são utilizados para exportar diversos métodos/valores de dentro de um mesmo arquivo.
+
+```js
+const firstname = 'Robin';
+const lastname = 'Wieruch';
+
+export { firstname, lastname };
+```
+
+Repare que temos 2 variáveis e as duas variáveis estão sendo exportadas separadamente. Na hora de importar esses valores, nós só podemos utilizar o mesmo nome que fora exportado ou então utilizar um alias. Existem 3 formas de se importar `named exports`.
+
+```js
+
+// Importando diretamente valor a valor, para isso é necessário o uso de chaves
+import { firstname, lastname } from './file1.js';
+console.log(firstname); // "Robin"
+
+// Importando todos os valores e atribuindo a um objeto
+import * as person from './file1.js';
+console.log(person.firstname); // "Robin"
+
+// Importando somente um valor, mas atribuindo um alias para o valor
+import { firstname as username } from './file1.js';
+console.log(username); // "Robin"
+```
+
+Cada uma das formas de importar tem suas vantagens.
+
+- Importar um objeto inteiro facilita para identificar de forma rápida de onde está vindo. 
+- O uso do alias permite importar um método com outro nome para evitar que algum conflito possa acontecer com outro método de mesmo nome. 
+- Importar valor a valor permite que não importemos coisas que não iremos utilizar naquele momento.
+
+A outra forma de exportar métodos é o `default export`, onde exportamos somente um único valor por arquivo. É o caso do nosso `App` que mostramos em alguns exemplos com React acima. Nesse caso, na hora de importar, não precisa necessariamente possuir o mesmo nome, exemplo:
+
+```js
+const robin = {
+  firstname: 'Robin',
+  lastname: 'Wieruch',
+};
+
+export default robin;
+```
+
+E na hora de importar, podemos utilizar um nome qualquer que não `robin`:
+
+```js
+import developer from './file1.js';
+
+console.log(developer);
+// output: { firstname: 'Robin', lastname: 'Wieruch' }
+```
+
+### Funções de Ordem Superior
+
+As Funções de Ordem Superior (High-order Functions) são um grande conceito na programação, principalmente quando se está indo para o lado funcional. No React, faz total sentido saber sobre esse tipo de funções, pois em algum momento você terá que trabalhar com `high-order component (hoc)` e será muito mais fácil de entender se você souber sobre as high-order functions primeiro.
+
+Talvez você não saiba, mas nós já falamos sobre HOF há pouco tempo ainda nesse post! Isso mesmo, o `map()` é um exemplo de uma HOF, que nada mais é que `uma função que aceita uma ou mais funções como argumento.` 
+
+Vamos dar uma olhada no map novamente:
+
+```js
+const collection = ['Willian', 'Jonas', 'Marcio'];
+
+// Usando Função ES5
+collection.map(function (person) {
+   return `${person} Developer`; 
+   // Output: ["Willian Developer", "Jonas Developer", "Marcio Developer"]
+})
+
+// Usando Arrow Function com {} e return
+collection.map(person => {
+  return `${person} Developer`;
+  // Output: ["Willian Developer", "Jonas Developer", "Marcio Developer"]
+})
+
+// Usando Arrow Function e return implícito
+collection.map(person => `${person} Developer`);
+// Output: ["Willian Developer", "Jonas Developer", "Marcio Developer"]
+```
+
+Repare que nós temos uma função que é o `map` e ela recebe como parâmetro uma outra função, e esta função usada de parâmetro que irá trabalhar em cima dos dados. Esse tipo de conceito nos permite abstrair melhor as ações, fazendo com que elas sejam de diversas formas, inclusive uma função pode servir para criar outra função maior ou até mesmo criar recursões.
+
+Para entender ainda melhor desse conceito, aconselho dar uma lida [nesse capítulo do Eloquente JavaScript](http://braziljs.github.io/eloquente-javascript/chapters/funcoes-de-ordem-superior/) que mostra vários exemplos bem interessantes.
+
+### Funções de Ordem Superior no React
+
+Como falado antes, no React nós podemos criar componentes com funções simples, os chamados `stateless components`. Então um `high-order component` nada mais é que um `componente` que aceita um outro `componente` como argumento e retorna um `componente`. 
+
+Um exemplo, você pode criar um HOC que deixa tudo que é passado em maiúsculo.
+
+```jsx
+const yell = (PassedComponent) =>
+  ({ children, ...props }) =>
+    <PassedComponent {...props}>
+      {children.toUpperCase()}!
+    </PassedComponent>
+
+const Title = (props) => <h1>{props.children}</h1>
+const AngryTitle = yell(Title)
+
+<AngryTitle>Whatever</AngryTitle>
+// Output: <h1>WHATEVER!</h1>
+```
+
+Alguns detalhes como `children` e `props` ali são do React, então não vamos falar muito sobre eles. Mas entenda que o `children` será o conteúdo passado dentro de um componente, que no nosso caso é o texto `Whatever`. E o `props` é um objeto simples que são passados através de atributos para o componente. 
+
+Temos ali um método chamado `yell` que recebe um componente e utiliza o mesmo para encapsular o conteúdo, somente alterando o valor passado do children para ficar em maiúsculo.
+
+Temos também o componente `Title` que recebe um atributo e o imprime na tela entre `<h1></h1>` de forma bem simples.
+
+E o componente que faz essa conexão toda, que é o `AngryTitle`, que é responsável por chamar o método `yell` e dentro dele passa o componente `Title`. 
+
+Dessa forma, a string `Whatever` é passada para a função acima que transforma essa string em maiúscula e encapsula no componente `Title`, que por sua vez imprime o `<h1>WHATEVER!</h1>` na tela.
+
+Isso pode parecer meio "inútil" e embolado, mas facilita e muito em abstrações maiores. Um grande exemplo que usa HOC é o Redux, que usa o `connect` para passar valores da `store` para os componentes.
+
+Outro coisa útil é que extraindo funções em high-order functions para fora do componente React pode auxiliar para testar estados em isolamento também. Um exemplo abaixo:
+
+```jsx
+export const doIncrement = state =>
+  ({ counter: state.counter + 1 });
+
+export const doDecrement = state =>
+  ({ counter: state.counter - 1 });
+
+class Counter extends Component {
+  state = {
+    counter: 0,
+  };
+
+  onIncrement = () => {
+    this.setState(doIncrement);
+  }
+
+  onDecrement = () => {
+    this.setState(doDecrement);
+  }
+
+  render() {
+    return (
+      <div>
+        <p>{this.state.counter}</p>
+
+        <button onClick={this.onIncrement} type="button">Increment</button>
+        <button onClick={this.onDecrement} type="button">Decrement</button>
+      </div>
+    );
+  }
+}
+```
+
+Repare que temos os métodos `doIncrement` e `doDecrement` fora do componente e exportados. Assim nós conseguimos testar os métodos de forma isolada e organizada.
+
+### Destructuring e Spread Operators
+
+Um pouco acima tinha um tal de `...props` que é usado para caramba no React, e isso é mais uma das maravilhas que vieram com o ES6. É muito comum se querer acessar várias propriedades de um `state` ou do `props` do componente, ao invés de assinalar variáveis um a um, podemos usar o destructuring para isso.
+
+```js
+// sem destructuring
+const users = this.state.users;
+const counter = this.state.counter;
+
+// com destructuring
+const { users, counter } = this.state;
+```
+
+Ali já teremos as variáveis `users` e `counters` criadas, sem precisar fazer uma a uma. E isso é especialmente benéfico quando trabalhamos com `stateless components`, pois iremos sempre receber o objeto `props` em nossa função. Assim poderemos já chamar o conteúdo diretamente de `props` ao invés de o objeto todo.
+
+```jsx
+// sem destructuring
+function Greeting(props) {
+  return <h1>{props.greeting}</h1>;
+}
+
+// com destructuring
+function Greeting({ greeting }) {
+  return <h1>{greeting}</h1>;
+}
+```
+
+E quanto aos pontinhos? Bom, esse é o `spread operator`, ele permite separar partes de um objeto, tendo propriedades específicas separadas e o resto num objeto.
+
+```js
+const { users, ...rest } = this.state
+```
+
+Ali nós teremos a propriedade `users` separada e o resto ficara no objeto `rest`. 
