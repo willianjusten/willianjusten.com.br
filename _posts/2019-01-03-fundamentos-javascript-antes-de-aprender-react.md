@@ -27,10 +27,13 @@ O [primeiro post](https://willianjusten.com.br/comecando-com-react/) da série e
 
 O que eu mais vejo são pessoas com dificuldades não no React, mas em coisas básicas como a sintaxe do ES6, high-order functions e até operadores ternários. Esse post vai ser baseado [num outro post em inglês](https://www.robinwieruch.de/javascript-fundamentals-react-requirements) que também fala bastante disso.
 
+Se você já trabalha com React ou já sabe bem as novas sintaxes de ES6 assim como conceitos básicos de JavaScript, esse post provavelmente vai ser bem chato e repetitivo para ti, então se não quiser ler, não tem problema. Se você ainda nem começou com React e sente que ainda faltam coisas básicas, dá uma lidinha nesse post.
+
+Vários dos conceitos abordados e principalmente a parte de ES6, eu tenho um [curso sobre isso na Udemy](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=SEGUIDORBLOG) que talvez possa te interessar.
+
 Enquanto escrevo, vou ouvindo uma banda recomendada pelo meu amigo [Jonas Mendes](https://nipher.io/), que também é programador. A banda em questão se chama [Solar Fields](https://open.spotify.com/artist/7GyhmlEy51sGUE09A5AWzc?si=P3-T0rYMQ7yyvOnDUDWTJg) e é da Suécia, terra onde meu amigo mora faz um tempinho. Eles tem uma pegada instrumental ambiente, bem relaxante também.
 
 Bom, vamos lá, vou separar os tópicos aqui, para facilitar um pouquinho:
-
 
 ### Primeiro contato com React
 
@@ -657,4 +660,10 @@ E quanto aos pontinhos? Bom, esse é o `spread operator`, ele permite separar pa
 const { users, ...rest } = this.state
 ```
 
-Ali nós teremos a propriedade `users` separada e o resto ficara no objeto `rest`. 
+Ali nós teremos a propriedade `users` separada e o resto ficara no objeto `rest`. No nosso exemplo acima, nós queríamos o valor de `children` separado e para não perder nenhuma outra propriedade, nós mantivemos o resto do objeto `props`, usando o spread operator.
+
+### Conclusão
+
+Bom galera, sei que o post ficou grandinho, mas espero que tenha sido útil para vocês. Muitas pessoas dizem que React tem uma curva de aprendizado muito grande e é difícil, mas na maioria das vezes, não é o React em si, mas algumas coisas básicas da linguagem.
+
+Se você acha que faltou algum detalhe ou tem outras referências legais, bota aí nos comentários! =)
