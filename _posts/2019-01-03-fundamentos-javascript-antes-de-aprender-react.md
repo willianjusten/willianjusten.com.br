@@ -31,7 +31,7 @@ Se você já trabalha com React ou já sabe bem as novas sintaxes de ES6 assim c
 
 Vários dos conceitos abordados e principalmente a parte de ES6, eu tenho um [curso sobre isso na Udemy](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=SEGUIDORBLOG) que talvez possa te interessar.
 
-Enquanto escrevo, vou ouvindo uma banda recomendada pelo meu amigo [Jonas Mendes](https://nipher.io/), que também é programador. A banda em questão se chama [Solar Fields](https://open.spotify.com/artist/7GyhmlEy51sGUE09A5AWzc?si=P3-T0rYMQ7yyvOnDUDWTJg) e é da Suécia, terra onde meu amigo mora faz um tempinho. Eles tem uma pegada instrumental ambiente, bem relaxante também.
+Enquanto escrevo, vou ouvindo [Solar Fields](https://open.spotify.com/artist/7GyhmlEy51sGUE09A5AWzc?si=P3-T0rYMQ7yyvOnDUDWTJg) que é um DJ Sueco criador da trilha sonora de Mirror's Edge Catalyst e várias outras coisas legais. Dessa vez, foi uma recomendação do meu amigo [Jonas Mendes](https://nipher.io/), que também é programador.
 
 Bom, vamos lá, vou separar os tópicos aqui, para facilitar um pouquinho:
 
