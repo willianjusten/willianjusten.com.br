@@ -186,7 +186,7 @@ getName() {
 
 ## Arrow Functions
 
-Outra coisa que veio com o ES6, mas ainda causa confusão para os iniciantes são as arrow functions. Isso muito acontece pois tem momentos que as chaves são necessárias, outros momentos que o `return` e necessário e vezes que ambos podem ser omitidos. Abaixo seguem os exemplos:
+Outra coisa que veio com o ES6, mas ainda causa confusão para os iniciantes são as arrow functions. Isso muito acontece pois tem momentos que as chaves são necessárias, outros momentos que o `return` é necessário e vezes que ambos podem ser omitidos. Abaixo seguem os exemplos:
 
 ```js
 // Função em ES5
@@ -210,9 +210,9 @@ Se você tem um método de uma linha só, as chaves e o return não se fazem nec
 
 O React usa o melhor dos diferentes paradigmas da programação. No lado da programação orientada a objeto, ele permite a criação dos `React class components`, que permitem herdar métodos da API do React, assim como propriedades, como o `this.state`. 
 
-Por outro lado, o React também possuir vários conceitos de programação funcional por trás. Permitindo a criação dos famosos `stateless components`, que são funções puras que definem componentes React.
+Por outro lado, o React também possui vários conceitos de programação funcional por trás. Permitindo a criação dos famosos `stateless components`, que são funções puras que definem componentes React.
 
-Os `stateless components` são bem mais simples, são basicamente funções que recebem parâmetros, que são os `props` e renderizam o elemento na tela. Eles não mexem em estados e nem possui todo o conjunto da API do React. Mesmo assim, eles são a forma preferida e mais performática de se criar componentes em React. Abaixo seguem formas possíveis de se criar um `stateless component`.
+Os `stateless components` são bem mais simples, são basicamente funções que recebem parâmetros, que são os `props` e renderizam o elemento na tela. Eles não mexem em estados e nem possuem todo o conjunto da API do React. Mesmo assim, eles são a forma preferida e mais performática de se criar componentes em React. Abaixo seguem formas possíveis de se criar um `stateless component`.
 
 ```jsx
 // Função normal
@@ -232,7 +232,7 @@ const Greeting = (props) =>
 
 ## Sintaxe do React Class Component
 
-As formas de definir componentes no React estão sempre evoluindo. No início era possível ver o uso do método `React.createClass`, mas com a chegada do ES6, passamos a ver mais o uso como mostrado acima, estendendo `Component` do pacote do `react.
+As formas de definir componentes no React estão sempre evoluindo. No início era possível ver o uso do método `React.createClass`, mas com a chegada do ES6, passamos a ver mais o uso como mostrado acima, estendendo `Component` do pacote do `react`.
 
 E exatamente por essa constante evolução, é possível que você veja diferentes formas de se fazer a mesma coisa. Uma das formas de trabalhar com estados (`states`) e métodos é assim:
 
@@ -568,7 +568,7 @@ collection.map(person => `${person} Developer`);
 // Output: ["Willian Developer", "Jonas Developer", "Marcio Developer"]
 ```
 
-Repare que nós temos uma função que é o `map` e ela recebe como parâmetro uma outra função, e esta função usada de parâmetro que irá trabalhar em cima dos dados. Esse tipo de conceito nos permite abstrair melhor as ações, fazendo com que elas sejam de diversas formas, inclusive uma função pode servir para criar outra função maior ou até mesmo criar recursões.
+Repare que nós temos uma função que é o `map` e ela recebe como parâmetro uma outra função, é esta função usada de parâmetro que irá trabalhar em cima dos dados. Esse tipo de conceito nos permite abstrair melhor as ações, fazendo com que elas sejam de diversas formas, inclusive uma função pode servir para criar outra função maior ou até mesmo criar recursões.
 
 Para entender ainda melhor desse conceito, aconselho dar uma lida [nesse capítulo do Eloquente JavaScript](http://braziljs.github.io/eloquente-javascript/chapters/funcoes-de-ordem-superior/) que mostra vários exemplos bem interessantes.
 
@@ -604,7 +604,7 @@ Dessa forma, a string `Whatever` é passada para a função acima que transforma
 
 Isso pode parecer meio "inútil" e embolado, mas facilita e muito em abstrações maiores. Um grande exemplo que usa HOC é o Redux, que usa o `connect` para passar valores da `store` para os componentes.
 
-Outro coisa útil é que extraindo funções em high-order functions para fora do componente React pode auxiliar para testar estados em isolamento também. Um exemplo abaixo:
+Outra coisa útil é que extraindo funções em high-order functions para fora do componente React pode auxiliar para testar estados em isolamento também. Um exemplo abaixo:
 
 ```jsx
 export const doIncrement = state =>
@@ -643,7 +643,7 @@ Repare que temos os métodos `doIncrement` e `doDecrement` fora do componente e 
 
 ## Destructuring e Spread Operators
 
-Um pouco acima tinha um tal de `...props` que é usado para caramba no React, e isso é mais uma das maravilhas que vieram com o ES6. É muito comum se querer acessar várias propriedades de um `state` ou do `props` do componente, ao invés de assinalar variáveis um a um, podemos usar o destructuring para isso.
+Um pouco acima tinha um tal de `...props`, que é usado para caramba no React, e isso é mais uma das maravilhas que vieram com o ES6. É muito comum se querer acessar várias propriedades de um `state` ou do `props` do componente, ao invés de assinalar variáveis um a um, podemos usar o destructuring para isso.
 
 ```js
 // sem destructuring
@@ -674,7 +674,7 @@ E quanto aos pontinhos? Bom, esse é o `spread operator`, ele permite separar pa
 const { users, ...rest } = this.state
 ```
 
-Ali nós teremos a propriedade `users` separada e o resto ficara no objeto `rest`. No nosso exemplo acima, nós queríamos o valor de `children` separado e para não perder nenhuma outra propriedade, nós mantivemos o resto do objeto `props`, usando o spread operator.
+Ali nós teremos a propriedade `users` separada e o resto ficará no objeto `rest`. No nosso exemplo acima, nós queríamos o valor de `children` separado e para não perder nenhuma outra propriedade, nós mantivemos o resto do objeto `props`, usando o spread operator.
 
 ## Conclusão
 
