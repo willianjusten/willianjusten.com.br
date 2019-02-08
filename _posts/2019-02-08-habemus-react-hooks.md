@@ -432,11 +432,11 @@ Então, como o React sabe qual estado corresponde a qual chamada do `useState`? 
 // ------------
 useState('Mary')           // 1. Inicializa a variável "name" como 'Mary'
 useEffect(persistForm)     // 2. Adiciona um effect para persistir o form
-useState('Poppins')        // 3. Inicializa a variável "surname" with 'Poppins'
+useState('Poppins')        // 3. Inicializa a variável "surname" com 'Poppins'
 useEffect(updateTitle)     // 4. Adiciona um effect para atualizar o título
 
 // -------------
-// Second render
+// Segunda renderização
 // -------------
 useState('Mary')           // 1. Lê a variável "name" (o argumento é ignorado)
 useEffect(persistForm)     // 2. Recoloca o efeito para persistir o form
@@ -499,7 +499,7 @@ function FriendStatus(props) {
 }
 ```
 
-Agora, vamos dizer que na nossa aplicação também possuímos um contact list que renderiza os nomes dos usuários online com uma cor verde. Nós poderíamos copiar a lógica feito no `FriendStatus` e passaríamos para o nosso novo `FriendListItem`, mas isso não seria muito o ideal né, olhe abaixo:
+Agora, vamos dizer que na nossa aplicação também possuímos um contact list que renderiza os nomes dos usuários online com uma cor verde. Nós poderíamos copiar a lógica feito no `FriendStatus` e passaríamos para o nosso novo `FriendListItem`, mas isso não seria o ideal, olhe abaixo:
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -526,7 +526,7 @@ function FriendListItem(props) {
 }
 ```
 
-Repare que é praticamente tudo igual, a única diferença é na parte da renderização, mas os hooks são os mesmos. Para corrigir esse problema de duplicação, nós poderíamos ter 2 formas de compartilhar essa lógica, ou faríamos através do [render props](https://reactjs.org/docs/render-props.html) ou usando [higher-order components](https://reactjs.org/docs/higher-order-components.html).
+Repare que é praticamente tudo igual, a única diferença é na parte da renderização, mas os hooks são os mesmos. Para corrigir esse problema de duplicação, nós poderíamos ter 2 formas de compartilhar essa lógica, através do [render props](https://reactjs.org/docs/render-props.html) ou usando [higher-order components](https://reactjs.org/docs/higher-order-components.html).
 
 Agora vamos ver como podemos solucionar esse problema utilizando hooks sem a necessidade de criar mais componentes.
 
@@ -559,7 +559,7 @@ function useFriendStatus(friendID) {
 
 Repare que não há nada de novo nessa função, nós basicamente copiamos a lógica dos componentes acima.
 
-Diferente de um componente React, um hook customizado não precisa de assinatura específica. Nós decidimos o que ele irá receber como argumentos e também o que iremos retornar e se vamos retornar algo. Em outras palavras, é basicamente uma função normal em JavaScript, só precisa ser iniciado com a palavra `use` para seguir as regras de hooks mencionadas anteriormente.
+Diferente de um componente React, um hook customizado não precisa de assinatura específica. Nós decidimos o que ele irá receber como argumentos e também o que iremos retornar se precisarmos retornar algo. Em outras palavras, é basicamente uma função normal em JavaScript, só precisa ser iniciado com a palavra `use` para seguir as regras de hooks mencionadas anteriormente.
 
 #### Usando um hook customizado
 
