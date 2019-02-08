@@ -201,7 +201,7 @@ Agora que sabemos como o `useState` funciona, as coisas vão fazer mais sentido.
 const [count, setCount] = useState(0);
 ```
 
-Ali nós declaramos a variável `count`, que vai ter `0` como seu valor inicial e nós criamos o método `setCount` que vai ser responsável por fazer a atualização do `count`.
+Ali nós declaramos a variável `count`, que vai ter `0` como seu valor inicial e criamos o método `setCount` que vai ser responsável por fazer a atualização do `count`.
 
 #### Lendo a variável de estado
 

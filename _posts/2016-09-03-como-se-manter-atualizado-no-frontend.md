@@ -68,7 +68,6 @@ Mas se você for ainda mais preguiçoso e não quer ficar acessando o feedly, ex
 Outra parada genial, que segue um pouco na linha do Feedly, para armazenar links de blogs/sites é o [Panda](http://usepanda.com/app/). Com o Panda, você consegue criar várias áreas para seguir e mostrar os blogs que você desejar, o legal que ele pode ser instalado no seu browser e funcionar sempre quando você abrir uma aba nova, então ao invés de sua nova aba ser branca ou inútil, tu já tem ali um monte de conteúdo maneiro! Eu uso muiiito para ver os novos sites da Awwwards já em miniaturas e também o Dribble. Vale muiito a pena!
 
 - [Panda News Chrome](https://chrome.google.com/webstore/detail/panda-hacker-news-dribbbl/jhiocdmmaannaccoofjfmjpbfkogmnap)
-- [Panda News Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/panda-daily-news/)
 
 <h3 id="pocket">Pocket</h3>
 
@@ -179,7 +178,7 @@ O [Meetup](https://www.meetup.com) é definitivamente o mais famoso site/app par
 
 E claro, nossa comunidade não poderia ficar de fora! Idealizado pela galera do [FrontendBr](https://github.com/frontendbr/) lá do Github, eu e uns amigos ajudamos a criar uma plataforma para que todo mundo também pudesse cadastrar os eventos que estão acontecendo pelo nosso Brasilzão =D
 
-Só acessar lá o [FrontendBR Eventos](https://frontendbr.github.io/eventos/) para ver o que está para acontecer e claro, ajudar a anunciar os eventos. Todo o código está no [Github](https://github.com/frontendbr/eventos) e toda ajuda é sempre bem vinda!
+Só acessar lá o [FrontendBR Eventos](https://eventos.frontendbr.com.br/) para ver o que está para acontecer e claro, ajudar a anunciar os eventos. Todo o código está no [Github](https://github.com/frontendbr/eventos) e toda ajuda é sempre bem vinda!
 
 <h2 id="follow">Seguindo pessoas boas</h2>
 

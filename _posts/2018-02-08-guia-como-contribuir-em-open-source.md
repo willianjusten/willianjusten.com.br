@@ -51,7 +51,6 @@ tags:
     - [Faça seu dever de casa antes](#fa%C3%A7a-seu-dever-de-casa-antes)
     - [Faça seus pedidos de forma curta e direta](#fa%C3%A7a-seus-pedidos-de-forma-curta-e-direta)
     - [Mantenha toda comunicação pública](#mantenha-toda-comunica%C3%A7%C3%A3o-p%C3%BAblica)
-    - [É ok fazer perguntas (mas seja paciente!)](#%C3%A9-ok-fazer-perguntas-mas-seja-paciente)
     - [Respeite as decisões do projeto](#respeite-as-decis%C3%B5es-do-projeto)
   - [Abrindo uma Issue](#abrindo-uma-issue)
   - [Abrindo um Pull Request](#abrindo-um-pull-request)
