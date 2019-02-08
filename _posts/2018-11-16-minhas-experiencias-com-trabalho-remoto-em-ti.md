@@ -23,7 +23,6 @@ categories:
 ---
 ## Índice
 
-- [- "Trabalhar no exterior, remoto, viagens, etc."](#%22trabalhar-no-exterior-remoto-viagens-etc%22)
 - [Índice](#%C3%ADndice)
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-hist%C3%B3ria)
@@ -46,7 +45,6 @@ categories:
     - [Como manter-se animado a programar em um trabalho remoto?](#como-manter-se-animado-a-programar-em-um-trabalho-remoto)
     - [Iniciei ontem a trabalhar remotamente, fico receoso de não estar 100% do tempo à disposição. Como dizer não?](#iniciei-ontem-a-trabalhar-remotamente-fico-receoso-de-n%C3%A3o-estar-100-do-tempo-%C3%A0-disposi%C3%A7%C3%A3o-como-dizer-n%C3%A3o)
     - [Como um iniciante em programação pode se organizar para adquirir conhecimento e conseguir trabalhar remoto?](#como-um-iniciante-em-programa%C3%A7%C3%A3o-pode-se-organizar-para-adquirir-conhecimento-e-conseguir-trabalhar-remoto)
-    - [É possível conseguir um trabalho remoto apenas com certificações e cursos online, isto é, sem curso superior?](#%C3%A9-poss%C3%ADvel-conseguir-um-trabalho-remoto-apenas-com-certifica%C3%A7%C3%B5es-e-cursos-online-isto-%C3%A9-sem-curso-superior)
     - [Qual a média de idade dos desenvolvedores fora do Brasil? Desenvolvedores mais velhos tem espaço na Europa?](#qual-a-m%C3%A9dia-de-idade-dos-desenvolvedores-fora-do-brasil-desenvolvedores-mais-velhos-tem-espa%C3%A7o-na-europa)
     - [No seu primeiro trabalho em inglês, como você julga seu nível de inglês pra falar com os colegas de trabalho? E para o exterior, como é?](#no-seu-primeiro-trabalho-em-ingl%C3%AAs-como-voc%C3%AA-julga-seu-n%C3%ADvel-de-ingl%C3%AAs-pra-falar-com-os-colegas-de-trabalho-e-para-o-exterior-como-%C3%A9)
   - [Perguntas sobre viagens e trabalho](#perguntas-sobre-viagens-e-trabalho)

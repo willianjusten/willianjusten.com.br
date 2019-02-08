@@ -25,11 +25,6 @@ image: '/assets/img/cursos/cursos-bg.png'
                         <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
                             <p class="description">{{ curso.introduction }}</p>
                         </a>
-                        <div class="tags">
-                            {% for tag in curso.tags %}
-                                <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
-                            {% endfor %}
-                        </div>
                     </div>
                 </div>
         </article>
@@ -48,8 +43,7 @@ image: '/assets/img/cursos/cursos-bg.png'
             "sameAs": [
                 "https://www.facebook.com/willjusten",
                 "https://www.instagram.com/will_justen/",
-                "https://www.linkedin.com/in/willianjusten/",
-                "https://plus.google.com/+WillianJustendeVasconcellos"
+                "https://www.linkedin.com/in/willianjusten/"
             ]
         },
         "description": "{{ site.description }}"

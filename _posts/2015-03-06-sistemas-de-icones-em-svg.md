@@ -63,7 +63,7 @@ Talvez seja o mais utilizado dos tipos. Consiste em criar um tipo de fonte conte
 * Maior número de requisições normalmente.
 * Enquanto não carrega a fonte, bug de aparecer um quadrado é bem comum.
 
-![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](http://i.stack.imgur.com/vZhku.png)
+![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](https://i.stack.imgur.com/vZhku.png)
 
 ### SVG icon
 
@@ -96,7 +96,7 @@ Basicamente existem 3 etapas a serem feitas para se utilizar SVG icons.
 * Adicionar o SVG inline na página em que será usada.
 * Chamar o ícone desejado.
 
-Como tudo na prática é melhor, vamos a ela. Vou utilizar o [IcoMoon](http://icomoon.io/) para obter meus ícones SVG.
+Como tudo na prática é melhor, vamos a ela. Vou utilizar o [IcoMoon](https://icomoon.io/) para obter meus ícones SVG.
 
 #### Passo 1.1
 

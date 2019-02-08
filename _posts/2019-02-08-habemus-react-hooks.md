@@ -23,7 +23,6 @@ tags:
 - [O que é? Onde vive? O que come?](#o-que-%C3%A9-onde-vive-o-que-come)
   - [O que são React Hooks?](#o-que-s%C3%A3o-react-hooks)
   - [Por que criaram isso?](#por-que-criaram-isso)
-    - [É difícil de reutilizar lógica de estados entre componentes](#%C3%A9-dif%C3%ADcil-de-reutilizar-l%C3%B3gica-de-estados-entre-componentes)
     - [Classes ainda confundem pessoas e máquinas](#classes-ainda-confundem-pessoas-e-m%C3%A1quinas)
   - [Preciso aprender tudo de novo?](#preciso-aprender-tudo-de-novo)
 - [Hooks e seus funcionamentos](#hooks-e-seus-funcionamentos)
@@ -186,7 +185,7 @@ Ele declara uma "state variable". Essa variável é chamada `count` para esse ex
 
 * O que nós passamos de argumento no `useState`?
 
-O `useState` aceita somente **um** argumento e ele é o estado inicial da variável. Diferente das classes, o estado não precisa ser um objeto nesse caso. Ele pode ser somente um número ou uma string, se é tudo que precisamos. No nosso exemplo, nós estamos alterando somente a quantidade de vezes que o usuário está clicando, então `0` é mais que suficiente.
+O `useState` aceita somente **um** argumento e ele é o estado inicial da variável. Diferente das classes, o estado não precisa ser um objeto nesse caso. Ele pode ser somente um número ou uma string, se é tudo que precisamos. No nosso exemplo, estamos alterando somente a quantidade de vezes que o usuário está clicando, então `0` é mais que suficiente.
 
 **Importante:** se precisamos guardar dois diferentes valores no estado, iremos utilizar o `useState` duas vezes.
 

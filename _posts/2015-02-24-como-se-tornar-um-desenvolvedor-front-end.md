@@ -182,7 +182,7 @@ Se você quer ser realmente um programador bom, vai ter que largar esse medo e c
 A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvolvedor precisa saber ao menos o básico de html, inclusive a galera de backend. Já para galera de frontend, temos que nos atentar a mais detalhes, como: acessibilidade e semântica.
 
 #### Básico
-- [Codecademy HTML](http://www.codecademy.com/pt-BR/tracks/web)
+- [Codecademy HTML](https://www.codecademy.com/catalog/language/html-css)
 - [Dash](https://dash.generalassemb.ly/)
 - [Teamtreehouse](http://teamtreehouse.com/library/topic:learn-html/type:course)
 - [CodeSchool](https://www.codeschool.com/paths/html-css)
@@ -267,11 +267,9 @@ Tome bastante cuidado ao querer tomar atalhos, como utilizar JQuery para tudo ou
 
 No início é comum utilizarmos plugins prontos para realizar ações específicas (sliders, lightbox), mas com o tempo vai se fazendo necessário criar soluções únicas e para isso que precisamos entender bem a linguagem.
 
-A Ju Goncalves fez um [post bem legal](http://jugoncalv.es/blog/javascript/how-to-start-with-javascript) aconselhando livros e outros detalhes legais, aconselho a leitura.
-
 O Vitor Britto também fez outro [incrível post](http://www.vitorbritto.com.br/blog/the-book-is-on-the-table/) falando sobre livros de JS.
 
-- [Codecademy - JS](http://www.codecademy.com/pt-BR/tracks/javascript)
+- [Codecademy - JS](https://www.codecademy.com/catalog/language/javascript)
 - [MDN - JS](https://developer.mozilla.org/en-US/Learn/JavaScript)
 - [How to Learn JS Properly](http://javascriptissexy.com/how-to-learn-javascript-properly/)
 

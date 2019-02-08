@@ -49,7 +49,7 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 
 <h2 id="intro">Introdução</h2>
 
-Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/22g5lp4mpz3qkneqipjafud6a/playlist/6fLTsHRyGMtOOF0oUtcCjW?si=ha-ZW1idT-ubl79Ea5e2QA), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
+Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/h36xa8q6jlmht02o8i7obn90y/playlist/1ko8oEe7Nhi8PzfWdypZbZ?si=L6g3IJv6Q0qltG4W4n3Vxg), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
 
 O post de hoje vai ser relacionado a uma metodologia CSS que eu não conhecia e passei a conhecer lá na HUGE. Confesso que a primeira, segunda, terceira e até a quarta vez que eu vi, achei bem ruinzinha. Mas há uns dias eu peguei para ler, fazer uns testes e até assistir uns vídeos e bom, fui convertido!
 

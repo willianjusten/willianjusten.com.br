@@ -80,14 +80,13 @@ Por último, mas não menos importante, eu utilizo o [Nighli.es](https://nightli
 
 ## Outras ferramentas
 
-Vocês podem falar: 
+Vocês podem falar:
 
 > Ahhh, mas eu num uso Ruby. Ruby é lento, Ruby é aquilo, Ruby num sei o que...
 
 Então tudo bem, existem várias ferramentas do gênero em várias linguagens e até mesmo para quem não sabe programar:
 
 - [Broken-link-checker em JS](https://github.com/stevenvachon/broken-link-checker)
-- [Como criar seu próprio checker em Go](https://codeburst.io/broken-link-checker-in-go-f78b4586e014)
 - [Um site para verificar os links para você](https://www.deadlinkchecker.com/)
 
 ## Conclusão
