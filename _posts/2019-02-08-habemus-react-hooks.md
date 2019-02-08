@@ -115,5 +115,22 @@ Como você pode reparar, nós temos um `this.state` no `constructor` para defini
 Agora segue abaixo, o mesmo código, porém feito com hooks:
 
 ```jsx
+import React, { useState } from 'react';
 
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
 ``` 
+
+Basicamente, a grande diferença é esse tal de `useState`, que é importado diretamente do pacote do `react` e depois usado para atribuir valor num array, usando o [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring). 
+
