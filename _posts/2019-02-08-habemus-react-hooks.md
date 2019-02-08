@@ -108,7 +108,7 @@ Eles inclusive encorajam que você não saia reescrevendo tudo do zero, mas que 
 
 ## Hooks e seus funcionamentos
 
-Existem alguns hooks e inclusive você pode criar os seus próprios! Eu vou mostrar inicialmente os mais importantes, fazendo comparações de antes e depois, ara ajudar a entender o funcionamento.
+Existem alguns hooks e inclusive você pode criar os seus próprios! Eu vou mostrar inicialmente os mais importantes, fazendo comparações de antes e depois, para ajudar a entender o funcionamento.
 
 ### Usando o Hook de estados (useState)
 
