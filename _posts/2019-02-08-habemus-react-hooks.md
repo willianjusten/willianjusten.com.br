@@ -211,7 +211,7 @@ Para ler o valor da variável, na classe nós utilizávamos assim:
 <p>You clicked {this.state.count} times</p>
 ```
 
-Ou seja, precisávamos buscar lá no nosso objeto `this.state` por cada variável. Nas funções com hooks podemos chamar a variável diretamente:
+Ou seja, precisávamos buscar no nosso objeto `this.state` por cada variável. Nas funções com hooks podemos chamar a variável diretamente:
 
 ```jsx
 <p>You clicked {count} times</p>
@@ -239,7 +239,7 @@ Se você ainda tem alguma dúvida nessa parte, recomendo ir [nessa parte da docu
 
 ### Usando o Hook de efeitos (useEffect)
 
-Acima nós vimos como trabalhar com o `useState` para definir nossos estados, mas e nos casos que precisamos encadear ações baseadas em outras mudanças, como fazíamos no `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`?
+Vimos acima como trabalhar com o `useState` para definir nossos estados, mas e nos casos que precisamos encadear ações baseadas em outras mudanças, como fazíamos no `componentDidMount`, `componentDidUpdate` e `componentWillUnmount`?
 
 Seguindo a mesma ideia de antes/depois, segue um exemplo onde atualizamos o `title` da página baseada no nosso `count`. Primeiro class based:
 
