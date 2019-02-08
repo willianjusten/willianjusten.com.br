@@ -187,7 +187,7 @@ Ele declara uma "state variable". Essa variável é chamada `count` para esse ex
 
 O `useState` aceita somente **um** argumento e ele é o estado inicial da variável. Diferente das classes, o estado não precisa ser um objeto nesse caso. Ele pode ser somente um número ou uma string, se é tudo que precisamos. No nosso exemplo, estamos alterando somente a quantidade de vezes que o usuário está clicando, então `0` é mais que suficiente.
 
-**Importante:** se precisamos guardar dois diferentes valores no estado, iremos utilizar o `useState` duas vezes.
+**Importante:** se precisarmos guardar dois diferentes valores no estado, iremos utilizar o `useState` duas vezes.
 
 * O que o `useState` retorna?
 
