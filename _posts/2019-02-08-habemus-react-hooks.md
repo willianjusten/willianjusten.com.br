@@ -23,8 +23,8 @@ tags:
 - [O que é? Onde vive? O que come?](#o-que-%C3%A9-onde-vive-o-que-come)
   - [O que são React Hooks?](#o-que-s%C3%A3o-react-hooks)
   - [Por que criaram isso?](#por-que-criaram-isso)
-  - [É difícil de reutilizar lógica de estados entre componentes](#%C3%A9-dif%C3%ADcil-de-reutilizar-l%C3%B3gica-de-estados-entre-componentes)
-  - [Classes ainda confundem pessoas e máquinas](#classes-ainda-confundem-pessoas-e-m%C3%A1quinas)
+    - [É difícil de reutilizar lógica de estados entre componentes](#%C3%A9-dif%C3%ADcil-de-reutilizar-l%C3%B3gica-de-estados-entre-componentes)
+    - [Classes ainda confundem pessoas e máquinas](#classes-ainda-confundem-pessoas-e-m%C3%A1quinas)
   - [Preciso aprender tudo de novo?](#preciso-aprender-tudo-de-novo)
 - [Hooks e seus funcionamentos](#hooks-e-seus-funcionamentos)
   - [Usando o Hook de estados (useState)](#usando-o-hook-de-estados-usestate)
@@ -82,13 +82,13 @@ Se você perceber, o código não ficou muito menor, mas as responsabilidades fi
 
 Existem outros vários motivos, mas vou pontuar os principais aqui:
 
-### É difícil de reutilizar lógica de estados entre componentes
+#### É difícil de reutilizar lógica de estados entre componentes
 
 A forma mais comum de compartilharmos comportamentos/funcionamentos entre componentes era através dos HOC's (Higher-order components) e das render props.
 
 O grande problema desses padrões é que você precisa modificar boa parte do código do componente para que o mesmo se adapte ao funcionamento compartilhado, aumentando sua verbosidade e perdendo boa parte do isolamento de responsabilidade, ou seja, você acaba perdendo qual parte do código faz o que.
 
-### Classes ainda confundem pessoas e máquinas
+#### Classes ainda confundem pessoas e máquinas
 
 Quando eu escrevi o post [Fundamentos JavaScript antes de aprender React](https://willianjusten.com.br/fundamentos-javascript-antes-de-aprender-react/), um dos primeiros conceitos que abordei lá, foi exatamente o uso de classes. 
 
