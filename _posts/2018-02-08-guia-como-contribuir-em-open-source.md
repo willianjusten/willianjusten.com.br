@@ -22,7 +22,6 @@ tags:
 
 ## Índice
 
-- [Índice](#%C3%ADndice)
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [O que é Open Source?](#o-que-%C3%A9-open-source)
   - [Livre redistribuição](#livre-redistribui%C3%A7%C3%A3o)

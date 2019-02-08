@@ -23,7 +23,6 @@ categories:
 ---
 ## Índice
 
-- [Índice](#%C3%ADndice)
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-hist%C3%B3ria)
 - [Minha rotina de trabalho remoto](#minha-rotina-de-trabalho-remoto)
@@ -51,7 +50,6 @@ categories:
     - [Você gasta bastante dinheiro para viajar? Como faz com hospedagem?](#voc%C3%AA-gasta-bastante-dinheiro-para-viajar-como-faz-com-hospedagem)
     - [Como você consegue trabalhar quando viaja?](#como-voc%C3%AA-consegue-trabalhar-quando-viaja)
     - [Como você tem achado os locais para trampar? Existe algum app que o ajuda nesta tarefa?](#como-voc%C3%AA-tem-achado-os-locais-para-trampar-existe-algum-app-que-o-ajuda-nesta-tarefa)
-    - [É tranquilo encontrar internet boa para trabalhar remoto viajando?](#%C3%A9-tranquilo-encontrar-internet-boa-para-trabalhar-remoto-viajando)
     - [Gostaria de saber como a mudança de lugares afeta sua rotina de produtividade e concentração.](#gostaria-de-saber-como-a-mudan%C3%A7a-de-lugares-afeta-sua-rotina-de-produtividade-e-concentra%C3%A7%C3%A3o)
     - [Como você cria seu roteiro para viagens? Utiliza algum app?](#como-voc%C3%AA-cria-seu-roteiro-para-viagens-utiliza-algum-app)
 - [Conclusão](#conclus%C3%A3o)
