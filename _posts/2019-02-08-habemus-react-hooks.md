@@ -45,13 +45,13 @@ tags:
 
 ## Introdução
 
-Faaaala pessoal! A ideia era ter escrito esse post bem no dia do [release dos hooks](https://github.com/facebook/react/blob/master/CHANGELOG.md#1680-february-6-2019), mas acabou que tive uns imprevistos, mas antes tarde do que nunca né? 
+Faaaala pessoal! A ideia era ter escrito esse post bem no dia do [release dos hooks](https://github.com/facebook/react/blob/master/CHANGELOG.md#1680-february-6-2019), mas acabou que tive uns imprevistos, mas antes tarde do que nunca né?
 
-Esse post vai beber basicamente da fonte [da documentação do React](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), vou tentar condensar alguns detalhes e fazer outros comentários, se você já leu tudo lá e já entendeu, talvez o post seja repetitivo, mas não vai embora ainda não, veja que belo gatinho.
+Esse post vai beber basicamente da fonte [da documentação do React](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), vou tentar condensar alguns detalhes e fazer outros comentários, se você já leu tudo lá e já entendeu, talvez o post seja repetitivo, mas não vá embora ainda não, veja que belo gatinho.
 
 ![Gatinho fofinho olhando com cara de pidão](/assets/img/cute-kitten.jpg)
 
-Bom, enquanto escrevo esse post, vou ouvindo a trilha sonora de um jogo incrível chamado [Gris](https://www.youtube.com/watch?v=XxM1SX35-GU), é composta basicamente por pianos, ótima para concentrar e para quem curte jogos, aconselho demais a dar uma olhada.
+Bom, enquanto escrevo esse post, vou ouvindo a trilha sonora de um jogo incrível chamado [Gris](https://www.youtube.com/watch?v=XxM1SX35-GU), é composta basicamente por pianos, ótima para concentrar e para quem curte jogos, aconselho demais a dar uma conferida.
 
 ## O que é? Onde vive? O que come?
 
@@ -65,7 +65,7 @@ Numa versão bem resumida:
 
 > Hooks permitem que você utilize `states` e outros métodos de `states` sem precisar criar uma classe. Você também pode criar seus próprios Hooks e compartilhar a lógica entre mais componentes.
 
-Ou seja, aqueles métodos como `componentDidMount` e `componentDidUpdate` que as vezes se tornavam complexos em componentes maiores, agora poderão ser simplificados na nova lógica dos hooks, além de poderem ser compartilhados agora.
+Ou seja, aqueles métodos como `componentDidMount` e `componentDidUpdate` que as vezes se tornavam complexos em componentes maiores, agora poderão ser simplificados na nova lógica dos hooks, além de poderem ser compartilhados.
 
 ### Por que criaram isso?
 
@@ -90,15 +90,15 @@ O grande problema desses padrões é que você precisa modificar boa parte do c�
 
 #### Classes ainda confundem pessoas e máquinas
 
-Quando eu escrevi o post [Fundamentos JavaScript antes de aprender React](https://willianjusten.com.br/fundamentos-javascript-antes-de-aprender-react/), um dos primeiros conceitos que abordei lá, foi exatamente o uso de classes. 
+Quando eu escrevi o post [Fundamentos JavaScript antes de aprender React](https://willianjusten.com.br/fundamentos-javascript-antes-de-aprender-react/), um dos primeiros conceitos que abordei lá, foi exatamente o uso de classes.
 
 A equipe do React notou que o uso de classes ainda é uma grande barreira para aprender React. Você precisa entender como o Javascript funciona, que é bem diferente da maioria das linguagens orientadas a objeto. Você precisa lembrar de fazer o `bind` dos eventos e também entender qual é o `this` para cada contexto, o que pode ser simples para uns, mas ainda muito complicado para muitos.
 
-Adicionalmente, o React é uma biblioteca que já está no mercado há aproximadamente 5 anos, mas eles querem que ela continue relevante por mais e mais anos. Para isso, eles já estão se preocupando com outras otimizações e eles notaram que o uso de classes pode permitir o uso de certas patterns que prejudicariam essa otimização, como uma não tão boa minificação e outros detalhes mais baixo nível.
+Adicionalmente, o React é uma biblioteca que já está no mercado há aproximadamente 5 anos, mas eles querem que ela continue relevante por mais e mais anos. Para isso, eles já estão se preocupando com outras otimizações e eles notaram que o uso de classes pode permitir o uso de certas patterns que prejudicariam essa otimização, como uma não tão boa minificação e outros detalhes de mais baixo nível.
 
 Para resolver esses problemas, os Hooks permitem que você utilize todas as features do React mas sem a necessidade de utilizar classes. Os componentes React sempre foram mais ligados a funções e os hooks vem para tornar isso ainda mais comum.
 
-### Preciso aprender tudo de novo? 
+### Preciso aprender tudo de novo?
 
 A resposta curta e grossa é **não**. Os Hooks são totalmente opcionais e você pode criar componentes novos utilizando essa nova estrutura e utilizar lado a lado com componentes antigos, tudo vai funcionar sem problemas. Mas se você não quiser ou não tiver tempo de ler sobre hooks, não há problema nenhum, você pode continuar a vida como está.
 
@@ -108,7 +108,7 @@ Eles inclusive encorajam que você não saia reescrevendo tudo do zero, mas que 
 
 ## Hooks e seus funcionamentos
 
-Existem alguns hooks e inclusive você pode criar os seus próprios! Eu vou mostrar inicialmente os mais importantes, fazendo comparações de antes e depois, para facilitar a entender o funcionamento.
+Existem alguns hooks e inclusive você pode criar os seus próprios! Eu vou mostrar inicialmente os mais importantes, fazendo comparações de antes e depois, ara ajudar a entender o funcionamento.
 
 ### Usando o Hook de estados (useState)
 
@@ -172,7 +172,7 @@ constructor(props) {
   };
 }
 ...
-``` 
+```
 
 Num `function component` ou antes chamado também de `stateless component` (antes não controlávamos estados em funções puras), nós não tínhamos o `this.state` para poder definir valores ou chamar valores. Mas agora, com o hooks, nós podemos chamar o `useState` diretamente do nosso componente:
 
@@ -180,7 +180,7 @@ Num `function component` ou antes chamado também de `stateless component` (ante
 const [count, setCount] = useState(0);
 ```
 
-* E o que o `useState` faz? 
+* E o que o `useState` faz?
 
 Ele declara uma "state variable". Essa variável é chamada `count` para esse exemplo, mas poderia se chamar qualquer coisa, como `fruit`. Essa é a maneira de "preservar" os valores entre as funções. O `useState` tem as mesmas habilidades que o `this.state` tem para a classe. Normalmente variáveis desaparecem depois que a função é executada, mas os estados são preservados no React e isso é o que vai ocorrer com as variáveis criadas pelo `useState`.
 
@@ -192,7 +192,7 @@ O `useState` aceita somente **um** argumento e ele é o estado inicial da variá
 
 * O que o `useState` retorna?
 
-Esse método retorna um par de valores: o estado atual e uma função que atualiza o mesmo. E é por isso que escrevemos `[count, setCount] = useState()`. 
+Esse método retorna um par de valores: o estado atual e uma função que atualiza o mesmo. E é por isso que escrevemos `[count, setCount] = useState()`.
 
 Essa forma de assinalar 2 valores ao mesmo tempo é utilizando o [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring), que é uma feature que veio no ES6, não é exclusiva do React.
 
@@ -352,7 +352,7 @@ class FriendStatus extends React.Component {
 }
 ```
 
-Repare que ao montar o componente nós fazemos um `subscribeToFriendStatus` e ao desmontar, fazemos exatamente o oposto com `unsubscribeFromFriendStatus`. 
+Repare que ao montar o componente nós fazemos um `subscribeToFriendStatus` e ao desmontar, fazemos exatamente o oposto com `unsubscribeFromFriendStatus`.
 
 Já utilizando o `useEffect` hook faremos assim:
 
@@ -527,7 +527,7 @@ function FriendListItem(props) {
 }
 ```
 
-Repare que é praticamente tudo igual, a única diferença é na parte da renderização, mas os hooks são os mesmos. Para corrigir esse problema de duplicação, nós poderíamos ter 2 formas de compartilhar essa lógica, ou faríamos através do [render props](https://reactjs.org/docs/render-props.html) ou usando [higher-order components](https://reactjs.org/docs/higher-order-components.html). 
+Repare que é praticamente tudo igual, a única diferença é na parte da renderização, mas os hooks são os mesmos. Para corrigir esse problema de duplicação, nós poderíamos ter 2 formas de compartilhar essa lógica, ou faríamos através do [render props](https://reactjs.org/docs/render-props.html) ou usando [higher-order components](https://reactjs.org/docs/higher-order-components.html).
 
 Agora vamos ver como podemos solucionar esse problema utilizando hooks sem a necessidade de criar mais componentes.
 
@@ -558,7 +558,7 @@ function useFriendStatus(friendID) {
 }
 ```
 
-Repare que não há nada de novo nessa função, nós basicamente copiamos a lógica dos componentes acima. 
+Repare que não há nada de novo nessa função, nós basicamente copiamos a lógica dos componentes acima.
 
 Diferente de um componente React, um hook customizado não precisa de assinatura específica. Nós decidimos o que ele irá receber como argumentos e também o que iremos retornar e se vamos retornar algo. Em outras palavras, é basicamente uma função normal em JavaScript, só precisa ser iniciado com a palavra `use` para seguir as regras de hooks mencionadas anteriormente.
 
@@ -603,4 +603,3 @@ Nossa, o post ficou bem grande, mas tem muitos outros detalhes legais que valem 
 ## Conclusão
 
 Bom pessoal, espero que esse post tenha sido útil e que pelo menos te faça querer dar uma olhada a mais sobre hooks, acredito que essa foi uma enorme adição ao ecossistema React e será o futuro dessa lib. Ainda pretendo escrever mais posts sobre esse assunto, então fique atento! =)
-
