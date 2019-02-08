@@ -392,7 +392,7 @@ Como já vimos, os Hooks são funções JavaScript, mas é necessário seguir du
 
 #### Somente chame os Hooks no Top Level
 
-Não chame Hooks dentro de loops, condicionais or funções aninhadas. Ao invés disso, sempre chame os Hooks na primeira camada da sua função React. Seguindo esta regra, você garante que os Hooks serão chamados na mesma ordem. Isso permite que o React preserve corretamente o estado dos Hooks quando usados múltiplos `useState` e `useEffect`.
+Não chame Hooks dentro de loops, condicionais ou funções aninhadas. Ao invés disso, sempre chame os Hooks na primeira camada da sua função React. Seguindo esta regra, você garante que os Hooks serão chamados na mesma ordem. Isso permite que o React preserve corretamente o estado dos Hooks quando usados múltiplos `useState` e `useEffect`.
 
 #### Somente chame os Hooks em funções React
 
