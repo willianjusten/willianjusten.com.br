@@ -312,7 +312,7 @@ Sim, por padrão ele vai rodar logo após ser renderizado e toda vez que for atu
 
 #### Efeitos com Cleanup
 
-No exemplo acima, nós estamos alterando somente um ponto e não estamos "vigiando" nenhuma mudança em nenhum outro canto. Mas em algumas ocasiões nossos componentes precisam "vigiar" enquanto estiverem na tela, mas depois precisamos limpar isso, para não correr o risco de ter memory leak e travar toda a aplicação. Usando classes, nós utilizamos o `componentWillUnmount` exatamente para fazer essa limpeza. Abaixo segue um exemplo onde trabalhamos com um módulo chamado `ChatAPI`:
+No exemplo acima, nós estamos alterando somente um ponto e não estamos "vigiando" nenhuma mudança em nenhum outro canto. Mas em algumas ocasiões nossos componentes precisam "vigiar" eventos enquanto estiverem na tela e depois precisamos limpar isso, para não correr o risco de ter memory leak e travar toda a aplicação. Usando classes, nós utilizamos o `componentWillUnmount` exatamente para fazer essa limpeza. Abaixo segue um exemplo onde trabalhamos com um módulo chamado `ChatAPI`:
 
 ```jsx
 class FriendStatus extends React.Component {
