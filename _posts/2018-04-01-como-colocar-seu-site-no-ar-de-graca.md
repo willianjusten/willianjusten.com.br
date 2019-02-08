@@ -9,6 +9,7 @@ color: '#637a91'
 tags:
   - hosting
   - performance
+  - netlify
 categories:
   - Performance Web
 twitter_text: Conheça e domine o Netlify para subir todos os seus projetos e freelas de um jeito fácil, rápido e otimizado.
