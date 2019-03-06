@@ -28,7 +28,7 @@ Tive uma demanda na Toptal para criação de um modal com vários comportamentos
 
 ## Videos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nrNvUDPKcBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="415" src="https://www.youtube.com/embed/nrNvUDPKcBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Você pode também assistir a playlist inteira, diretamente no [Youtube](https://www.youtube.com/watch?v=nrNvUDPKcBk&list=PLlAbYrWSYTiPR9DhcL9-22W-E-p8LmDOJ).
 
@@ -51,7 +51,7 @@ Sei que pode parecer um monstro de coisas, mas confesso que a maioria são coisa
 Para poder usar features novas do JS e poder depois transpilar para funcionar em todos os browsers, eu precisei do Babel e por isso instalei a versão mais nova que é a 7, abaixo segue o comando:
 
 ```
-yarn add --dev @babel/core@7.3.4 @babel/plugin-proposal-class-properties@7.3.4 @babel/preset-env@7.3.4 babel-eslint@10.0.1 babel-jest@24.1.0 babel-loader@8.0.5
+yarn add --dev @babel/core@7.3.4 @babel/plugin-proposal-class-properties@7.3.4 @babel/preset-env@7.3.4 babel-loader@8.0.5
 ```
 
 Depois disso, é só criar um arquivo `.babelrc` na raiz do projeto com o seguinte:
@@ -70,7 +70,7 @@ Lembrando que você pode utilizar o `npm install` se desejar.
 O Eslint e o StandardJS são fundamentais para manter o meu código padronizado, evitando formatações erradas, variáveis não utilizadas e outras coisas mais. Para tudo funcionar, precisei instalar os seguintes pacotes:
 
 ```
-yarn add --dev eslint@5.15.0 eslint-config-standard@12.0.0 eslint-plugin-import@2.16.0 eslint-plugin-node@8.0.1 eslint-plugin-promise@4.0.1 eslint-plugin-standard@4.0.0
+yarn add --dev babel-eslint@10.0.1 eslint@5.15.0 eslint-config-standard@12.0.0 eslint-plugin-import@2.16.0 eslint-plugin-node@8.0.1 eslint-plugin-promise@4.0.1 eslint-plugin-standard@4.0.0
 ```
 
 Depois de instalado é só criar um arquivo `.eslintrc.json` na raiz do sistema com o seguinte conteúdo:
