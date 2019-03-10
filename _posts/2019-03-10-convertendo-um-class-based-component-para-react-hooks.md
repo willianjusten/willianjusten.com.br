@@ -196,7 +196,7 @@ export default class Snakke extends Component {
 
   render () {
     return (
-      <div className='snakke-progress' style={{'--scroll': `${this.state.progress}%`, ...this.styles }}></div>
+      <div className='snakke-progress' style={'--scroll': `${this.state.progress}%`, ...this.styles }></div>
     )
   }
 }
@@ -242,7 +242,7 @@ export default function Snakke(props) {
     }
   }, [])
 
-  return <div className="snakke-progress" style={{ '--scroll': `${progress}%`, ...styles }} />
+  return <div className="snakke-progress" style={'--scroll': `${progress}%`, ...styles} />
 }
 
 Snakke.defaultProps = {
