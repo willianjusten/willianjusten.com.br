@@ -70,7 +70,7 @@ const styles = {
 
 Depois dessas duas mudanças, nós começamos a procurar locais onde tenham definições e mudanças de `state`.
 
-E no caso do código inicial, nós tínhamos a variável `progress` que possuía um valor inicial e também recebi uma atualização através do `this.setState`
+E no caso do código inicial, nós tínhamos a variável `progress` que possuía um valor inicial e também recebia uma atualização através do `this.setState`
 
 ```js
 state = {
@@ -121,11 +121,11 @@ useEffect(() => {
 
 Como funciona isso? No momento que o componente renderiza na tela, o `useEffect` é chamado e com ele, o listener é adicionado. O mesmo método possui um `cleanup` que é chamado sempre quando o componente desmonta e para indicar isso, basta que você retorne uma função, que é exatamente o que fazemos, dentro do nosso `return` nós passamos o `removeListener`, assim garantimos que o listener vai ser desmontado junto do componente, sem causar problemas de memory leak/performance.
 
-Um último detalhe do `useEffect` é que ele recebe como segundo parâmetro, um array, onde podemos indicar quais propriedades queremos ficar vigiando, para que o `useEffect` fique sendo chamado toda vez que essas propriedades sejam atualizadas. Se não passarmos nenhum array, o `useEffect` vai ser chamado em cada rerender, para evitar isso, já que só queremos adicionar o listener uma vez, nós passamos um array vazio `[]`, isso garante que o `useEffect` será chamado só quando for montado e o cleanup só quando desmontado.
+Um último detalhe do `useEffect` é que ele recebe como segundo parâmetro, um array, onde podemos indicar quais propriedades queremos ficar vigiando, para que o `useEffect` execute toda vez que essas propriedades sejam atualizadas. Se não passarmos nenhum array, o `useEffect` vai ser chamado em cada rerender, para evitar isso, já que só queremos adicionar o listener uma vez, nós passamos um array vazio `[]`, isso garante que o `useEffect` será chamado só quando for montado e o cleanup só quando desmontado.
 
 ### Substituir setState para o método criado no useState
 
-Vimos acima que nós criamos o método `setProgress` certo? Ele vai servir para atualizar o `progress` quando desejarmos, assim como o `setState` fazia. Então, para que tenha essa mudança de estado, falta chamar esse método no seu devido lugar, passando para qual o valor que desejamos mudar.
+Vimos acima que nós criamos o método `setProgress` certo? Ele vai servir para atualizar o `progress` quando desejarmos, assim como o `setState` fazia. Então, para que tenha essa mudança de estado, falta chamar esse método no seu devido lugar, passando o novo valor.
 
 ```js
 // antes
@@ -145,7 +145,7 @@ Viu só? Não é tão difícil fazer essa conversão não é mesmo? =D
 
 ### Antes/depois
 
-Vamos ver agora então, um antes/depois dos componentes inteiros. Abaixo segue o componente em classe que era antes:
+Vamos fazer uma comparação (antes e depois) dos componentes. Abaixo segue o componente utilizando classe (antes das nossas alterações):
 
 ```jsx
 import React, { Component } from 'react'
@@ -210,7 +210,7 @@ Snakke.defaultProps = {
 }
 ```
 
-E agora veja o mesmo componente, porém utilizando hooks:
+Veja abaixo o componente, já com as nossas alterações, utilizando hooks:
 
 ```jsx
 import React, { useState, useEffect } from 'react'
@@ -258,7 +258,7 @@ Snakke.defaultProps = {
 
 A mudança não é enorme, mas dá para ver que o código foi simplificado, não precisamos mais ficar preocupados em entender de onde o `this` tá vindo e para onde tá indo, qual o seu contexto. Podemos também diminuir métodos e ~~pelo menos para mim~~, o código ficou bem melhor.
 
-Lembrando que não é errado usar Classes para os componentes, a própria equipe do React diz para não querer sair convertendo tudo sem necessidade. A ideia do post é mais para mostrar como é o funcionamento de um e outro, para que caso você pegue um código em hooks, não se sinta perdido.
+Lembrando que não é errado usar Classes para os componentes, a própria equipe do React diz [para não sairmos convertendo tudo sem necessidade](https://reactjs.org/docs/hooks-faq.html#do-i-need-to-rewrite-all-my-class-components). A ideia do post é mais para mostrar como é o funcionamento de um e outro, para que caso você pegue um código em hooks, não se sinta perdido.
 
 Se você ficou com alguma dúvida, só falar nos comentários ou me mandar mensagem, que eu ajudo =)
 
