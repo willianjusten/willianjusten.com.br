@@ -1,9 +1,18 @@
 ---
 layout: post
-title: "Como colocar seu site no ar de graca"
-date: 2018-04-02 01:30:42
-image: '/assets/img/netlify/main.png'
-description: Calma, não é click-bait, é hospedagem grátis mesmo! Conheça e domine o Netlify para subir todos os seus projetos e freelas de um jeito fácil, rápido e otimizado.
+date: 2018-04-02T01:30:42.000Z
+image: /assets/img/netlify/main.png
+title: Como colocar seu site no ar de graca
+description: >-
+  Calma, não é click-bait, é hospedagem grátis mesmo! Conheça e domine o Netlify
+  para subir todos os seus projetos e freelas de um jeito fácil, rápido e
+  otimizado.
+introduction: >-
+  Calma, não é click-bait. Conheça e domine o Netlify para subir todos os seus
+  projetos e freelas de um jeito fácil, rápido e otimizado.
+twitter_text: >-
+  Conheça e domine o Netlify para subir todos os seus projetos e freelas de um
+  jeito fácil, rápido e otimizado.
 main-class: dev
 color: '#637a91'
 tags:
@@ -12,8 +21,6 @@ tags:
   - netlify
 categories:
   - Performance Web
-twitter_text: Conheça e domine o Netlify para subir todos os seus projetos e freelas de um jeito fácil, rápido e otimizado.
-introduction: Calma, não é click-bait. Conheça e domine o Netlify para subir todos os seus projetos e freelas de um jeito fácil, rápido e otimizado.
 ---
 
 ## Introdução
@@ -63,7 +70,7 @@ Se você quiser ver só os vídeos que te interessa ou até mesmo saber o que te
 1. [Otimizando assets](https://www.youtube.com/watch?v=W33UdPV5QDk)
 1. [Postprocessing](https://www.youtube.com/watch?v=LBgDKzePTtU)
 1. [Integrando um formulário](https://www.youtube.com/watch?v=Q62s0loSY9w)
-1. [Configurando página de sucesso](https://www.youtube.com/watch?v=EH31.T951V4M)
+1. [Configurando página de sucesso](https://www.youtube.com/watch?v=EH3-T951V4M)
 1. [Redirects](https://www.youtube.com/watch?v=IJH7HZECjNc)
 1. [Agradecimentos e Brinde](https://www.youtube.com/watch?v=6qgOrFP18M0)
 
