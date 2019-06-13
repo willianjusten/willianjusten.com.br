@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Willian Justen - Desenvolvedor Front End`,
+    title: `Willian Justen`,
+    position: 'Desenvolvedor Front End',
     description: `Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, atualmente trabalhando na Toptal e viajando o mundo.`,
     author: `@Willian_justen`
   },
