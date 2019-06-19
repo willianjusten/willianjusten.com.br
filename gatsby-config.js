@@ -8,31 +8,31 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
-    },
-    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static/assets/img`,
-        name: 'uploads',
-      },
+        name: 'uploads'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-        {
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
             resolve: 'gatsby-remark-relative-images',
             options: {
-              name: 'uploads',
-            },
+              name: 'uploads'
+            }
           },
           {
             resolve: 'gatsby-remark-images',
@@ -40,8 +40,8 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 1200,
-            },
+              maxWidth: 1200
+            }
           }
         ]
       }
@@ -59,7 +59,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -67,7 +66,7 @@ module.exports = {
         path: `${__dirname}/posts`
       }
     },
-    `gatsby-transformer-remark`
+    `gatsby-plugin-netlify-cms`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
