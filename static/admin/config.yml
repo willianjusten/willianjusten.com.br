@@ -4,8 +4,8 @@ backend:
   branch: new-blog-gatsby
   site_domain: willianjusten.com.br
 
-media_folder: assets/img
-public_folder: assets/
+media_folder: static/assets/img
+public_folder: static/assets/
 publish_mode: editorial_workflow
 
 collections:
