@@ -9,8 +9,8 @@ const IndexPage = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      {postList.edges.map(({ node }) => (
-        <Link to={node.fields.slug}>
+      {postList.edges.map(({ node }, i) => (
+        <Link to={node.fields.slug} key={i}>
           <div className="post-list">
             <h1>{node.frontmatter.title}</h1>
             <span>{node.frontmatter.date}</span>

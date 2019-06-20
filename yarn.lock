@@ -4741,6 +4741,12 @@ gatsby-remark-images@^3.0.16:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.0.1"
 
+gatsby-remark-lazy-load@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-lazy-load/-/gatsby-remark-lazy-load-1.0.1.tgz#c771c708eb76fa50ea9ba95ede7531f837d80648"
+  dependencies:
+    unist-util-visit-parents "^2.0.1"
+
 gatsby-remark-relative-images@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-0.2.2.tgz#f6bfa062ef203a6fb7baa4f48ff0f8494dca43cf"
@@ -6697,6 +6703,10 @@ latest-version@^3.0.0:
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-3.1.0.tgz#a205383fea322b33b5ae3b18abee0dc2f356ee15"
   dependencies:
     package-json "^4.0.0"
+
+lazysizes@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.1.0.tgz#a87d413aa3765dee03fcb2159f423ab84ed2f2e6"
 
 lcid@^1.0.0:
   version "1.0.0"

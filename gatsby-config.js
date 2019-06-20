@@ -35,7 +35,8 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 1200
             }
-          }
+          },
+          `gatsby-remark-lazy-load`
         ]
       }
     },
@@ -48,7 +49,7 @@ module.exports = {
         background_color: `#1C2938`,
         theme_color: `#1C2938`,
         display: `minimal-ui`,
-        icon: `src/images/willianjusten-icon.png`
+        icon: `static/assets/img/willianjusten-icon.png`
       }
     },
     `gatsby-plugin-styled-components`,

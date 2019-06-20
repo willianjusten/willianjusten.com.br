@@ -26,7 +26,7 @@ const ProfileDescription = styled.p`
 const Profile = ({ title, position, description }) => {
   return (
     <ProfileContainer>
-      {/* <Avatar /> */}
+      <Avatar />
       <ProfileAuthor>
         {title}
         <ProfilePosition>{position}</ProfilePosition>
