@@ -38,7 +38,9 @@ module.exports = {
             }
           },
           `gatsby-remark-lazy-load`,
-          `gatsby-remark-responsive-iframe`
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-external-links`,
+          `gatsby-remark-auto-headers`
         ]
       }
     },
