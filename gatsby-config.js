@@ -37,7 +37,8 @@ module.exports = {
               maxWidth: 1200
             }
           },
-          `gatsby-remark-lazy-load`
+          `gatsby-remark-lazy-load`,
+          `gatsby-remark-responsive-iframe`
         ]
       }
     },

@@ -20,6 +20,7 @@
     "gatsby-remark-images": "^3.0.16",
     "gatsby-remark-lazy-load": "^1.0.1",
     "gatsby-remark-relative-images": "^0.2.2",
+    "gatsby-remark-responsive-iframe": "^2.2.0",
     "gatsby-source-filesystem": "^2.0.39",
     "gatsby-transformer-remark": "^2.4.0",
     "gatsby-transformer-sharp": "^2.2.0",
