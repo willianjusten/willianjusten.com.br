@@ -38,8 +38,12 @@ const GIF_LIST = [
   'https://images.unsplash.com/gifs/weird/weird-16.gif'
 ]
 
+const randomGenerator = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
 const getGif = () => {
-  return GIF_LIST[Math.floor(Math.random() * GIF_LIST.length)]
+  return GIF_LIST[randomGenerator(0, GIF_LIST.length - 1)]
 }
 
 const Container = styled.section`
@@ -94,7 +98,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <Title>404</Title>
     <Text>Ihhh, deu ruim...</Text>
-    <Button>De volta ao blog!</Button>
+    <Button to="/">De volta ao blog!</Button>
   </Container>
 )
 
