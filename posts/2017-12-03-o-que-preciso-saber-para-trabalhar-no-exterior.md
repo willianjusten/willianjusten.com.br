@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "O que preciso saber para trabalhar no exterior?"
+title: 'O que preciso saber para trabalhar no exterior?'
 date: 2017-12-03 15:55:35
 image: '/assets/img/o-que-preciso-trabalhar-exterior/main.jpg'
-description: "Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto."
+description: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
 main-class: 'dev'
 color: '#637a91'
 tags:
-- experiencia
-- dicas
-- lifestyle
+  - experiencia
+  - dicas
+  - lifestyle
 categories:
-- "Trabalhar no exterior, remoto, viagens, etc."
-twitter_text: "Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto."
-introduction: "Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto."
+  - 'Trabalhar no exterior, remoto, viagens, etc.'
+twitter_text: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
+introduction: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
 ---
 
 ## Introdução
@@ -65,7 +65,6 @@ Tendo algumas ideias, saia perguntando para quem você conhece que já trabalhou
 Não poderia deixar de aparecer esse assunto quando falamos em exterior né? O Inglês é uma língua global e fundamental para quem está na área de desenvolvimento, mesmo que você sequer queira trabalhar fora ou se mudar de país. Um tempo atrás eu postei o seguinte no Twitter:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">A primeira linguagem que você precisa aprender para ser um bom programador é o Inglês =D (Abre portas para o um conhecimento ainda maior)</p>&mdash; Willian Justen (@Willian_justen) <a href="https://twitter.com/Willian_justen/status/890236982168866816?ref_src=twsrc%5Etfw">July 26, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Muita gente concordou, mas tiveram alguns poucos que não concordaram com a afirmação. Lembrando que eu não estava generalizando e dizendo que se você não sabe inglês, você não é um bom programador. Eu conheço programadores fantásticos, mas que não são tão bons no inglês, mas já estão correndo atrás pelo menos =p
 

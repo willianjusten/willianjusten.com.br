@@ -19,6 +19,7 @@ tags:
   - code
   - ti
 ---
+
 ## Introdução
 
 Faaaaala pessoal, como um objetivo de escrever mais nesse ano de 2019, vou começar com um post inspirado em um outro post. O post em questão é o [Things I don't know as of 2018](https://overreacted.io/things-i-dont-know-as-of-2018/) do [Dan Abramov](https://twitter.com/dan_abramov).
@@ -30,7 +31,6 @@ Só que uma coisa super normal é nós pensarmos que pessoas como ele, sabem de 
 Quando eu vi o post, fiz questão de ler e retweetar, pois sei que muitas pessoas acabam se sentindo mal por não saber X ou Y. E imaginei que um post desses poderia ajudar a refletirem. E aí nesse retweet, recebi o seguinte pedido:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Que maravilhoso isso mano. Seria legal se você e outros devs brasileiros se sentisse a vontade pra fazer um também. Ia rolar mais identificação ainda.<br>Serio ajudou muito ja esse post</p>&mdash; Rafael Camillo (@camillodev) <a href="https://twitter.com/camillodev/status/1080279481028366337?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Então, aqui estou eu, é claro que eu não sou mundialmente famoso igual ao Dan, mas já fiz uma coisa ou outra e tenho vários leitores, sendo um post em português, pode agregar mais um pouco também e ajudar nessa reflexão =)
 
@@ -89,7 +89,6 @@ A única coisa que fiz foram tutoriais, nunca fui além disso, por mais que seja
 O famoso "Nunca vi, nem comi, só ouço falar". Exatamente, eu nunca sequer fiz um tutorial ou li sobre. No meu trabalho eu nunca tive necessidade de aprender e na vida pessoal, meus projetos sempre foram com React ou JS puro. Como o [Lfeh](https://twitter.com/LFeh) diz e eu sigo a mesma filosofia:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Como sempre digo, ir aprendendo conforme necessidade ou conforme surge interesse é muito melhor do que estudar milhares de coisas ao mesmo tempo.</p>&mdash; felipe.d.ts (@LFeh) <a href="https://twitter.com/LFeh/status/1080475270023393280?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Conclusão
 
@@ -97,6 +96,6 @@ Enfim galera, como eu disse, poderia passar o dia inteiro escrevendo sobre coisa
 
 Não há problema nenhum em não saber todos os 1298319028 frameworks JavaScript ou todos os tipos de algoritmos do mundo. O importante é você saber o necessário para o seu trabalho e claro, querer sempre melhorar e aprender coisas novas, mas tudo a seu tempo.
 
-Não adianta querer aprender um milhão de coisas de uma vez só, no final você vai acabar se frustrando de não ter conseguido tudo que queria. Minha dica para o seu 2019 bem e feliz é que você defina um escopo pequeno de coisas pequenas e prioritárias e conforme for terminando, aí sim você pode adicionar outras coisas. 
+Não adianta querer aprender um milhão de coisas de uma vez só, no final você vai acabar se frustrando de não ter conseguido tudo que queria. Minha dica para o seu 2019 bem e feliz é que você defina um escopo pequeno de coisas pequenas e prioritárias e conforme for terminando, aí sim você pode adicionar outras coisas.
 
 A sensação de conquista ao finalizar várias coisas pequenas é bem melhor do que a sensação de ter feito várias coisas pela metade. Um Feliz 2019 para todo mundo, muito código e vamos que vamos!

@@ -19,6 +19,7 @@ tags:
   - js
   - hooks
 ---
+
 - [Introdução](#introdu%C3%A7%C3%A3o)
 - [O que é? Onde vive? O que come?](#o-que-%C3%A9-onde-vive-o-que-come)
   - [O que são React Hooks?](#o-que-s%C3%A3o-react-hooks)
@@ -75,7 +76,6 @@ O Dan Abramov fez uma palestra no ano passado explicando todos os conceitos e mo
 Uma outra fonte que eu acho super legal é esse Tweet abaixo:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How migration of a class to hooks look like and how much code it saves &amp; simplifies. <a href="https://twitter.com/hashtag/React?src=hash&amp;ref_src=twsrc%5Etfw">#React</a> <a href="https://t.co/E72sNfi4ZX">pic.twitter.com/E72sNfi4ZX</a></p>&mdash; Andreas Kull (@akullpp) <a href="https://twitter.com/akullpp/status/1093192074038513664?ref_src=twsrc%5Etfw">February 6, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Se você perceber, o código não ficou muito menor, mas as responsabilidades ficaram mais organizadas em seus devidos blocos, o que já facilita DEMAIS na escrita e leitura do código.
 
@@ -116,10 +116,10 @@ Seguindo a ideia de antes/depois, segue abaixo um Componente Class Based:
 ```jsx
 class Example extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       count: 0
-    };
+    }
   }
 
   render() {
@@ -130,7 +130,7 @@ class Example extends React.Component {
           Click me
         </button>
       </div>
-    );
+    )
   }
 }
 ```
@@ -138,21 +138,19 @@ class Example extends React.Component {
 Utilizando hooks, ficaria assim:
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 function Example() {
   // Declare a new state variable, which we'll call "count"
   // Declarando uma nova variável de estado, que chamamos de "count"
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
-  );
+  )
 }
 ```
 
@@ -176,20 +174,20 @@ constructor(props) {
 Num `function component` ou antes chamado também de `stateless component` (antes não controlávamos estados em funções puras), nós não tínhamos o `this.state` para poder definir valores ou chamar valores. Mas agora, com o hooks, nós podemos chamar o `useState` diretamente do nosso componente:
 
 ```jsx
-const [count, setCount] = useState(0);
+const [count, setCount] = useState(0)
 ```
 
-* E o que o `useState` faz?
+- E o que o `useState` faz?
 
 Ele declara uma "state variable". Essa variável é chamada `count` para esse exemplo, mas poderia se chamar qualquer coisa, como `fruit`. Essa é a maneira de "preservar" os valores entre as funções. O `useState` tem as mesmas habilidades que o `this.state` tem para a classe. Normalmente variáveis desaparecem depois que a função é executada, mas os estados são preservados no React e isso é o que vai ocorrer com as variáveis criadas pelo `useState`.
 
-* O que nós passamos de argumento no `useState`?
+- O que nós passamos de argumento no `useState`?
 
 O `useState` aceita somente **um** argumento e ele é o estado inicial da variável. Diferente das classes, o estado não precisa ser um objeto nesse caso. Ele pode ser somente um número ou uma string, se é tudo que precisamos. No nosso exemplo, estamos alterando somente a quantidade de vezes que o usuário está clicando, então `0` é mais que suficiente.
 
 **Importante:** se precisarmos guardar dois diferentes valores no estado, iremos utilizar o `useState` duas vezes.
 
-* O que o `useState` retorna?
+- O que o `useState` retorna?
 
 Esse método retorna um par de valores: o estado atual e uma função que atualiza o mesmo. E é por isso que escrevemos `[count, setCount] = useState()`.
 
@@ -198,7 +196,7 @@ Essa forma de assinalar 2 valores ao mesmo tempo é utilizando o [destructuring]
 Agora que sabemos como o `useState` funciona, as coisas vão fazer mais sentido.
 
 ```jsx
-const [count, setCount] = useState(0);
+const [count, setCount] = useState(0)
 ```
 
 Ali nós declaramos a variável `count`, que vai ter `0` como seu valor inicial e criamos o método `setCount` que vai ser responsável por fazer a atualização do `count`.
@@ -230,9 +228,7 @@ Na classe, nós precisávamos do método `this.setState()` para atualizar os val
 Na função com hooks, nós já definimos tanto o `setCount` quanto o `count`, então fica bem mais simples:
 
 ```jsx
-<button onClick={() => setCount(count + 1)}>
-  Click me
-</button>
+<button onClick={() => setCount(count + 1)}>Click me</button>
 ```
 
 Se você ainda tem alguma dúvida nessa parte, recomendo ir [nessa parte da documentação](https://reactjs.org/docs/hooks-state.html), onde tem mais alguns detalhes.
@@ -246,18 +242,18 @@ Seguindo a mesma ideia de antes/depois, segue um exemplo onde atualizamos o `tit
 ```jsx
 class Example extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       count: 0
-    };
+    }
   }
 
   componentDidMount() {
-    document.title = `You clicked ${this.state.count} times`;
+    document.title = `You clicked ${this.state.count} times`
   }
 
   componentDidUpdate() {
-    document.title = `You clicked ${this.state.count} times`;
+    document.title = `You clicked ${this.state.count} times`
   }
 
   render() {
@@ -268,7 +264,7 @@ class Example extends React.Component {
           Click me
         </button>
       </div>
-    );
+    )
   }
 }
 ```
@@ -278,35 +274,33 @@ Repare que temos código duplicado ali! Isso acontece pois precisamos realizar a
 Agora vejamos com o `useEffect` hook:
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function Example() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
+    document.title = `You clicked ${count} times`
+  })
 
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
-  );
+  )
 }
 ```
 
-* O que o `useEffect` faz?
+- O que o `useEffect` faz?
 
 Usando esse Hook, você diz ao React que o componente precisa fazer algo depois de renderizar. Desta forma, no momento que o componente renderizar, o React vai chamar o método e toda vez que atualizarmos, ele também irá chamar o método. Nós utilizamos para uma simples mudança de `document.title`, mas poderia ser utilizado para um fetch numa API, por exemplo.
 
-* Por que o `useEffect` é chamado dentro do componente?
+- Por que o `useEffect` é chamado dentro do componente?
 
 Colocando o `useEffect` dentro do componente nos permite acessar a variável de `count` ou qualquer `props` que precisarmos. Tendo já dentro da função, não precisamos de nenhuma API para ler, já está dentro do escopo da função.
 
-* O `useEffect` roda toda vez que renderiza?
+- O `useEffect` roda toda vez que renderiza?
 
 Sim, por padrão ele vai rodar logo após ser renderizado e toda vez que for atualizado. Mais para frente veremos que também podemos customizar isso.
 
@@ -317,36 +311,36 @@ No exemplo acima, nós estamos alterando somente um ponto e não estamos "vigian
 ```jsx
 class FriendStatus extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { isOnline: null };
-    this.handleStatusChange = this.handleStatusChange.bind(this);
+    super(props)
+    this.state = { isOnline: null }
+    this.handleStatusChange = this.handleStatusChange.bind(this)
   }
 
   componentDidMount() {
     ChatAPI.subscribeToFriendStatus(
       this.props.friend.id,
       this.handleStatusChange
-    );
+    )
   }
 
   componentWillUnmount() {
     ChatAPI.unsubscribeFromFriendStatus(
       this.props.friend.id,
       this.handleStatusChange
-    );
+    )
   }
 
   handleStatusChange(status) {
     this.setState({
       isOnline: status.isOnline
-    });
+    })
   }
 
   render() {
     if (this.state.isOnline === null) {
-      return 'Loading...';
+      return 'Loading...'
     }
-    return this.state.isOnline ? 'Online' : 'Offline';
+    return this.state.isOnline ? 'Online' : 'Offline'
   }
 }
 ```
@@ -356,27 +350,27 @@ Repare que ao montar o componente nós fazemos um `subscribeToFriendStatus` e ao
 Já utilizando o `useEffect` hook faremos assim:
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function FriendStatus(props) {
-  const [isOnline, setIsOnline] = useState(null);
+  const [isOnline, setIsOnline] = useState(null)
 
   function handleStatusChange(status) {
-    setIsOnline(status.isOnline);
+    setIsOnline(status.isOnline)
   }
 
   useEffect(() => {
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange)
     // Specify how to clean up after this effect:
     return function cleanup() {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-    };
-  });
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
+    }
+  })
 
   if (isOnline === null) {
-    return 'Loading...';
+    return 'Loading...'
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? 'Online' : 'Offline'
 }
 ```
 
@@ -405,20 +399,20 @@ Um mesmo componente pode ter múltiplos `useState` e `useEffect`. Como o exemplo
 ```jsx
 function Form() {
   // 1. Use a variável "name" no state
-  const [name, setName] = useState('Mary');
+  const [name, setName] = useState('Mary')
 
   // 2. Use um effect para persistir os dados do form
   useEffect(function persistForm() {
-    localStorage.setItem('formData', name);
-  });
+    localStorage.setItem('formData', name)
+  })
 
   // 3. Use a variável "surname" no state
-  const [surname, setSurname] = useState('Poppins');
+  const [surname, setSurname] = useState('Poppins')
 
   // 4. Use um effect para atualizar o título da página
   useEffect(function updateTitle() {
-    document.title = name + ' ' + surname;
-  });
+    document.title = name + ' ' + surname
+  })
 
   // ...
 }
@@ -430,18 +424,18 @@ Então, como o React sabe qual estado corresponde a qual chamada do `useState`? 
 // ------------
 // Primeira renderização
 // ------------
-useState('Mary')           // 1. Inicializa a variável "name" como 'Mary'
-useEffect(persistForm)     // 2. Adiciona um effect para persistir o form
-useState('Poppins')        // 3. Inicializa a variável "surname" com 'Poppins'
-useEffect(updateTitle)     // 4. Adiciona um effect para atualizar o título
+useState('Mary') // 1. Inicializa a variável "name" como 'Mary'
+useEffect(persistForm) // 2. Adiciona um effect para persistir o form
+useState('Poppins') // 3. Inicializa a variável "surname" com 'Poppins'
+useEffect(updateTitle) // 4. Adiciona um effect para atualizar o título
 
 // -------------
 // Segunda renderização
 // -------------
-useState('Mary')           // 1. Lê a variável "name" (o argumento é ignorado)
-useEffect(persistForm)     // 2. Recoloca o efeito para persistir o form
-useState('Poppins')        // 3. Lê a variável "surname" (o argumento é ignorado)
-useEffect(updateTitle)     // 4. Recoloca o efeito para atualizar o título
+useState('Mary') // 1. Lê a variável "name" (o argumento é ignorado)
+useEffect(persistForm) // 2. Recoloca o efeito para persistir o form
+useState('Poppins') // 3. Lê a variável "surname" (o argumento é ignorado)
+useEffect(updateTitle) // 4. Recoloca o efeito para atualizar o título
 // ...
 ```
 
@@ -449,20 +443,20 @@ Enquanto a ordem permanecer a mesma, não há problema nenhum, mas o que acontec
 
 ```jsx
 // 🔴 Estamos quebrando a primeira regra!
-  if (name !== '') {
-    useEffect(function persistForm() {
-      localStorage.setItem('formData', name);
-    });
-  }
+if (name !== '') {
+  useEffect(function persistForm() {
+    localStorage.setItem('formData', name)
+  })
+}
 ```
 
 A condição `name !== ''` é verdadeira na primeira renderização, então chamamos o Hook. Entretanto, na próxima renderização o usuário pode querer limpar o form, fazendo a condição ser `false`. E com isso, a ordem de execução do hook muda:
 
 ```jsx
-useState('Mary')           // 1. Lê a variável "name" (o argumento é ignorado)
+useState('Mary') // 1. Lê a variável "name" (o argumento é ignorado)
 // useEffect(persistForm)  // 🔴 Esse hook foi passado
-useState('Poppins')        // 🔴 2 (mas era 3). Falha para ler o "surname"
-useEffect(updateTitle)     // 🔴 3 (mas era 4). Falha para substituir o effect
+useState('Poppins') // 🔴 2 (mas era 3). Falha para ler o "surname"
+useEffect(updateTitle) // 🔴 3 (mas era 4). Falha para substituir o effect
 ```
 
 O React não saberia o que devolver para a segunda chamada do `useState`. Ele esperava receber o `useEffect` para persistir o form, assim como feito na renderização anterior, com isso todas as chamadas iriam "pular" uma etapa e isso levaria a vários bugs de estado.
@@ -476,26 +470,26 @@ Além dos hooks `useState` e `useEffect` que vimos, nós podemos criar nossos pr
 Mais acima, nós tínhamos o seguinte componente, que servia para indicar se um amigo estava online ou offline.
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function FriendStatus(props) {
-  const [isOnline, setIsOnline] = useState(null);
+  const [isOnline, setIsOnline] = useState(null)
 
   function handleStatusChange(status) {
-    setIsOnline(status.isOnline);
+    setIsOnline(status.isOnline)
   }
 
   useEffect(() => {
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange)
     return () => {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
-    };
-  });
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
+    }
+  })
 
   if (isOnline === null) {
-    return 'Loading...';
+    return 'Loading...'
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? 'Online' : 'Offline'
 }
 ```
 
@@ -537,23 +531,23 @@ Quando queremos compartilhar lógica entre duas funções, nós extraímos em um
 **Um hook customizado é uma função JavaScript que começa com a palavra "use" e pode chamar outros hooks.** Por exemplo, o `useFriendStatus` abaixo será nosso primeiro hook customizado.
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function useFriendStatus(friendID) {
-  const [isOnline, setIsOnline] = useState(null);
+  const [isOnline, setIsOnline] = useState(null)
 
   function handleStatusChange(status) {
-    setIsOnline(status.isOnline);
+    setIsOnline(status.isOnline)
   }
 
   useEffect(() => {
-    ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
+    ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange)
     return () => {
-      ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
-    };
-  });
+      ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange)
+    }
+  })
 
-  return isOnline;
+  return isOnline
 }
 ```
 
@@ -567,12 +561,12 @@ Agora que já extraímos a lógica para um hook separado, podemos simplesmente u
 
 ```jsx
 function FriendStatus(props) {
-  const isOnline = useFriendStatus(props.friend.id);
+  const isOnline = useFriendStatus(props.friend.id)
 
   if (isOnline === null) {
-    return 'Loading...';
+    return 'Loading...'
   }
-  return isOnline ? 'Online' : 'Offline';
+  return isOnline ? 'Online' : 'Offline'
 }
 ```
 

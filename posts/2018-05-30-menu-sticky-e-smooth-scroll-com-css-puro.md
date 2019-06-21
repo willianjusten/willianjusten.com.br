@@ -20,6 +20,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, como eu acho que fiquei parado muito tempo e o número de posts caiu muito, quero voltar a escrever mais. E por isso decidi que vou fazer vários posts bem simples, mas não menos importantes, sobre algumas propriedades do CSS que podemos usar a nosso favor, assim como alguns experimentos legais, que podem ser usados nos seus próximos trabalhos.
@@ -27,7 +28,6 @@ Fala pessoal, como eu acho que fiquei parado muito tempo e o número de posts ca
 Eu já tinha pensando em fazer esse post, mas o [LFeh](https://twitter.com/LFeh) acabou dando uma forcinha quando criou o seguinte Tweet:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">👉 position: sticky;<br><br>- Mistura \\`fixed\\` e \\`absolute\\`<br>- Só com CSS conseguimos um efeito que necessitava de JavaScript <br>- Suporte em todos os browsers modernos (bugs contornáveis)<br>- É legal pra caraleo<br><br>Vejam esse exemplo simplezão 😁<a href="https://t.co/fM22xYUMBV">https://t.co/fM22xYUMBV</a></p>&mdash; Felipe Fialho (@LFeh) <a href="https://twitter.com/LFeh/status/1001473242719277057?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Bom vamos lá, a trilha sonora que me acompanha hoje é um post-rock dos bons, a banda se chama [Tides from nebula](https://open.spotify.com/artist/1CzKORB9IN0EjPEyeKBIkf?si=A6YHiIyCSre7opSSu6a5Yw) e para mim é um som perfeito para se concentrar e programar.
 
@@ -53,18 +53,18 @@ Vamos lá, como foi feito o exemplo acima? Primeiro vendo o menu, temos o seguin
 
 ```html
 <body>
-    <header>
-        <h1>Scroll & Sticky!</h1>
-    </header>
+  <header>
+    <h1>Scroll & Sticky!</h1>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#hey">Hey!</a></li>
-            <li><a href="#cool">Cool</a></li>
-            <li><a href="#truth">Truth</a></li>
-            <li><a href="#all-css">All CSS</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#hey">Hey!</a></li>
+      <li><a href="#cool">Cool</a></li>
+      <li><a href="#truth">Truth</a></li>
+      <li><a href="#all-css">All CSS</a></li>
+    </ul>
+  </nav>
 </body>
 ```
 
@@ -72,12 +72,12 @@ Reparem que eu tenho 2 elementos filhos do `body`, que são o `header` e o `nav`
 
 ```css
 header {
-    height: 90vh;
+  height: 90vh;
 }
 
 nav {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 ```
 
@@ -97,16 +97,16 @@ Bom, vamos entender como esse funciona, primeiro, vamos ao markup:
 
 ```html
 <article class="container">
-    <section id="hey"></section>
-    <section id="cool"></section>
-    <section id="truth"></section>
-    <section id="all-css"></section>
+  <section id="hey"></section>
+  <section id="cool"></section>
+  <section id="truth"></section>
+  <section id="all-css"></section>
 
-    <img class="sticky" src="...">
+  <img class="sticky" src="..." />
 
-    <section></section>
+  <section></section>
 
-    <a class="link" href="http://slipsum.com/">Text by Samuel L. Ipsum</a>
+  <a class="link" href="http://slipsum.com/">Text by Samuel L. Ipsum</a>
 </article>
 ```
 
@@ -116,8 +116,8 @@ Agora então definindo o seguinte css:
 
 ```css
 .sticky {
-    position: sticky;
-    bottom: 50px;
+  position: sticky;
+  bottom: 50px;
 }
 ```
 
@@ -133,7 +133,7 @@ Por final, se você clicar em cada uma das âncoras, vai ver o efeito de `scroll
 
 ```css
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 ```
 

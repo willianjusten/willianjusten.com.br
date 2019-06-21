@@ -6,6 +6,7 @@ module.exports = {
     author: `@Willian_justen`
   },
   plugins: [
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-react-helmet`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support

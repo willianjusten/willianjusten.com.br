@@ -4718,6 +4718,12 @@ gatsby-plugin-styled-components@^3.0.7:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
+gatsby-plugin-twitter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.0.tgz#6d23b29a93f6816180b750fb1efc88ff550ecccd"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-react-router-scroll@^2.0.7:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.0.7.tgz#b9425e366d4be546036080d85664d60ae76e6c29"
