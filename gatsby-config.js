@@ -40,7 +40,12 @@ module.exports = {
           `gatsby-remark-lazy-load`,
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-external-links`,
-          `gatsby-remark-auto-headers`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false
+            }
+          },
           `gatsby-remark-prismjs`
         ]
       }
