@@ -4,55 +4,13 @@ import styled from 'styled-components'
 
 import SEO from '../components/seo'
 
-const GIF_LIST = [
-  'https://images.unsplash.com/gifs/fail/fail-1.gif',
-  'https://images.unsplash.com/gifs/fail/fail-2.gif',
-  'https://images.unsplash.com/gifs/fail/fail-3.gif',
-  'https://images.unsplash.com/gifs/fail/fail-5.gif',
-  'https://images.unsplash.com/gifs/fail/fail-6.gif',
-  'https://images.unsplash.com/gifs/fail/fail-7.gif',
-  'https://images.unsplash.com/gifs/fail/fail-9.gif',
-  'https://images.unsplash.com/gifs/fail/fail-11.gif',
-  'https://images.unsplash.com/gifs/fail/fail-12.gif',
-  'https://images.unsplash.com/gifs/fail/fail-13.gif',
-  'https://images.unsplash.com/gifs/fail/fail-14.gif',
-  'https://images.unsplash.com/gifs/fail/fail-15.gif',
-  'https://images.unsplash.com/gifs/fail/fail-16.gif',
-  'https://images.unsplash.com/gifs/fail/fail-17.gif',
-  'https://images.unsplash.com/gifs/fail/fail-18.gif',
-  'https://images.unsplash.com/gifs/fail/fail-20.gif',
-  'https://images.unsplash.com/gifs/fail/fail-21.gif',
-  'https://images.unsplash.com/gifs/fail/fail-22.gif',
-  'https://images.unsplash.com/gifs/weird/weird-1.gif',
-  'https://images.unsplash.com/gifs/weird/weird-3.gif',
-  'https://images.unsplash.com/gifs/weird/weird-4.gif',
-  'https://images.unsplash.com/gifs/weird/weird-6.gif',
-  'https://images.unsplash.com/gifs/weird/weird-8.gif',
-  'https://images.unsplash.com/gifs/weird/weird-9.gif',
-  'https://images.unsplash.com/gifs/weird/weird-10.gif',
-  'https://images.unsplash.com/gifs/weird/weird-11.gif',
-  'https://images.unsplash.com/gifs/weird/weird-12.gif',
-  'https://images.unsplash.com/gifs/weird/weird-13.gif',
-  'https://images.unsplash.com/gifs/weird/weird-14.gif',
-  'https://images.unsplash.com/gifs/weird/weird-15.gif',
-  'https://images.unsplash.com/gifs/weird/weird-16.gif'
-]
-
-const randomGenerator = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
-const getGif = () => {
-  return GIF_LIST[randomGenerator(0, GIF_LIST.length - 1)]
-}
-
 const Container = styled.section`
   align-items: center;
-  background-image: url(${getGif});
-  background-color: #111111;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
+  background-image: url('assets/img/john-404.gif');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  color: #111;
   display: flex;
   font-family: -apple-system, BlinkMacSystemFont, 'San Francisco',
     'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial,
@@ -60,36 +18,43 @@ const Container = styled.section`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+  padding: 0 20px;
   width: 100vw;
+
+  @media screen and (max-width: 768px) {
+    background-size: 280px;
+  }
 `
 
 const Title = styled.h1`
-  font-size: 80px;
+  background: white;
+  font-size: 120px;
   font-weight: bold;
   letter-spacing: 0.1em;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 `
 
 const Text = styled.p`
+  background: white;
   font-family: Courier, monospace;
 `
 
 const Button = styled(Link)`
-  border: 1px solid #fff;
+  background: white;
+  border: 1px solid #111;
   border-radius: 6px;
-  color: #fff;
+  color: #111;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.06em;
   line-height: 32px;
-  opacity: 0.6;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
   transition: opacity 0.4s;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.6;
   }
 `
 
@@ -97,7 +62,7 @@ const NotFoundPage = () => (
   <Container>
     <SEO title="404: Not found" />
     <Title>404</Title>
-    <Text>Ihhh, deu ruim...</Text>
+    <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
     <Button to="/">De volta ao blog!</Button>
   </Container>
 )
