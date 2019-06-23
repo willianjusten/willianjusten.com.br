@@ -16,23 +16,27 @@ const SeriesPage = props => {
     .map(({ node }) => node.frontmatter.categories[0])
     .filter(unique)
 
+  const slugifyCategory = category => slugify(category, { lower: true })
+
+  const getPostsByCategory = category =>
+    postList.filter(({ node }) => node.frontmatter.categories[0] === category)
+
   return (
     <Layout>
       <SEO title="Series" />
-      {categories.map((cat, i) => (
+      {categories.map((category, i) => (
         <section key={i}>
-          <h2 id={slugify(cat, { lower: true })}>{cat}</h2>
-          {postList
-            .filter(({ node }) => node.frontmatter.categories[0] === cat)
-            .map(({ node }) => (
-              <Link to={node.fields.slug} key={node.id}>
-                <div className="post-list">
-                  <h1>{node.frontmatter.title}</h1>
-                  <span>{node.frontmatter.date}</span>
-                  <p>{node.frontmatter.description}</p>
-                </div>
-              </Link>
-            ))}
+          <h2 id={slugifyCategory(category)}>{category}</h2>
+
+          {getPostsByCategory(category).map(({ node }) => (
+            <Link to={node.fields.slug} key={node.id}>
+              <div className="post-list">
+                <h1>{node.frontmatter.title}</h1>
+                <span>{node.frontmatter.date}</span>
+                <p>{node.frontmatter.description}</p>
+              </div>
+            </Link>
+          ))}
         </section>
       ))}
     </Layout>
