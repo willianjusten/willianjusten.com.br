@@ -6,7 +6,7 @@ import SEO from '../components/seo'
 
 const Container = styled.section`
   align-items: center;
-  background-image: url('assets/img/john-404.gif');
+  background-image: url('./assets/img/john-404.gif');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 800px;
