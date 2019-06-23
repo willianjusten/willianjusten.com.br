@@ -19,7 +19,7 @@ tags:
   - dicas
   - lifestyle
 categories:
-  - "Trabalhar no exterior, remoto, viagens, etc."
+  - "Trabalhar no exterior, remoto, viagens, etc"
 ---
 ## Índice
 

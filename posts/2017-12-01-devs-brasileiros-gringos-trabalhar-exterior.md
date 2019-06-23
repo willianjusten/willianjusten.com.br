@@ -11,7 +11,7 @@ tags:
 - dicas
 - lifestyle
 categories:
-- "Trabalhar no exterior, remoto, viagens, etc."
+- "Trabalhar no exterior, remoto, viagens, etc"
 twitter_text: 'Será que a diferença é tão grande assim?'
 introduction: 'Será que a diferença é tão grande assim? Vamos conversar um pouco sobre isso.'
 ---

@@ -11,7 +11,7 @@ tags:
   - dicas
   - lifestyle
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc.'
+  - 'Trabalhar no exterior, remoto, viagens, etc'
 twitter_text: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
 introduction: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
 ---

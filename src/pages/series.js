@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import slugify from 'slugify'
 
 import { unique } from '../utils/index'
 
@@ -20,7 +21,7 @@ const SeriesPage = props => {
       <SEO title="Series" />
       {categories.map((cat, i) => (
         <section key={i}>
-          <h2 id={cat}>{cat}</h2>
+          <h2 id={slugify(cat, { lower: true })}>{cat}</h2>
           {postList
             .filter(({ node }) => node.frontmatter.categories[0] === cat)
             .map(({ node }) => (
