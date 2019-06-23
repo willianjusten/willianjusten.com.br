@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import PostItem from '../Post'
+import Post from '../Post'
 
 const Hit = props => {
   const { hit } = props
 
   return (
-    <PostItem
+    <Post
       slug={hit.fields.slug}
       title={hit.title}
       date={hit.date}

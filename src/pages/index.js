@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import PostItem from '../components/Post'
+import Post from '../components/Post'
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -11,7 +11,7 @@ const IndexPage = props => {
     <Layout>
       <SEO title="Home" />
       {postList.edges.map(({ node }, i) => (
-        <PostItem
+        <Post
           key={i}
           slug={node.fields.slug}
           title={node.frontmatter.title}

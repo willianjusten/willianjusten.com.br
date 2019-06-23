@@ -6,7 +6,7 @@ import { unique } from '../utils/index'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import PostItem from '../components/Post'
+import Post from '../components/Post'
 
 const SeriesPage = props => {
   const postList = props.data.allMarkdownRemark.edges.filter(
@@ -30,7 +30,7 @@ const SeriesPage = props => {
           <h2 id={slugifyCategory(category)}>{category}</h2>
 
           {getPostsByCategory(category).map(({ node }) => (
-            <PostItem
+            <Post
               key={node.id}
               slug={node.fields.slug}
               title={node.frontmatter.title}

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const PostItem = ({ slug, date, title, description, main_class }) => {
+const Post = ({ slug, date, title, description, main_class }) => {
   return (
     <Link to={slug}>
       <div className="post-list">
@@ -15,11 +15,11 @@ const PostItem = ({ slug, date, title, description, main_class }) => {
   )
 }
 
-PostItem.propTypes = {
+Post.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   main_class: PropTypes.string.isRequired
 }
 
-export default PostItem
+export default Post
