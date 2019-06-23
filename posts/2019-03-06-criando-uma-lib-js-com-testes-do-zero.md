@@ -20,11 +20,12 @@ tags:
   - js
   - tdd
 ---
+
 ## Introdução
 
 Fala pessoal, o post de hoje é mais um link para o meu [Canal no Youtube](https://www.youtube.com/WillianJustenCursos). Eu fiz uma pequena série de vídeos exatamente com o mesmo título desse post.
 
-Tive uma demanda na Toptal para criação de um modal com vários comportamentos  e notei que eles poderiam ser desacoplados do componente e reutilizados onde quisesse. Para isso criei umas pequenas bibliotecas e vi que seria interessante mostrar para vocês o processo da criação de uma delas.
+Tive uma demanda na Toptal para criação de um modal com vários comportamentos e notei que eles poderiam ser desacoplados do componente e reutilizados onde quisesse. Para isso criei umas pequenas bibliotecas e vi que seria interessante mostrar para vocês o processo da criação de uma delas.
 
 ## Videos
 
@@ -50,13 +51,13 @@ Sei que pode parecer um monstro de coisas, mas confesso que a maioria são coisa
 
 Para poder usar features novas do JS e poder depois transpilar para funcionar em todos os browsers, eu precisei do Babel e por isso instalei a versão mais nova que é a 7, abaixo segue o comando:
 
-```
+```bash
 yarn add --dev @babel/core@7.3.4 @babel/plugin-proposal-class-properties@7.3.4 @babel/preset-env@7.3.4 babel-loader@8.0.5
 ```
 
 Depois disso, é só criar um arquivo `.babelrc` na raiz do projeto com o seguinte:
 
-```
+```json
 {
   "presets": ["@babel/preset-env"],
   "plugins": ["@babel/plugin-proposal-class-properties"]
@@ -69,13 +70,13 @@ Lembrando que você pode utilizar o `npm install` se desejar.
 
 O Eslint e o StandardJS são fundamentais para manter o meu código padronizado, evitando formatações erradas, variáveis não utilizadas e outras coisas mais. Para tudo funcionar, precisei instalar os seguintes pacotes:
 
-```
+```bash
 yarn add --dev babel-eslint@10.0.1 eslint@5.15.0 eslint-config-standard@12.0.0 eslint-plugin-import@2.16.0 eslint-plugin-node@8.0.1 eslint-plugin-promise@4.0.1 eslint-plugin-standard@4.0.0
 ```
 
 Depois de instalado é só criar um arquivo `.eslintrc.json` na raiz do sistema com o seguinte conteúdo:
 
-```
+```json
 {
   "parser": "babel-eslint",
   "env": {
@@ -94,7 +95,7 @@ Repare que eu sobrescrevo duas regras que são o espaço antes da função (não
 
 Depois do eslint+standardjs instalados, foi a vez do prettier:
 
-```
+```bash
 yarn add --dev prettier@1.16.4
 ```
 
@@ -104,7 +105,7 @@ Se você utilizar o VSCode como eu, é só configurar o `formatOnSave` e fica li
 
 Para rodar nossos testes, eu resolvi utilizar o Jest, que tá começando a me conquistar, apesar de eu ainda amar o Mocha+Chai. Para isso, também precisa instalar o `babel-jest` para ele entender tudo certinho e ler nosso `.babelrc`.
 
-```
+```bash
 yarn add --dev jest@24.1.0 babel-jest@24.1.0
 ```
 
@@ -112,7 +113,7 @@ yarn add --dev jest@24.1.0 babel-jest@24.1.0
 
 Para gerar a biblioteca e também a página de exemplo, eu utilizei o Webpack nas configurações mais simples, sem fazer quase nada na configuração, só instalei o necessário:
 
-```
+```bash
 yarn add --dev webpack@4.29.6 webpack-cli@3.2.3 webpack-dev-server@3.2.1
 ```
 
@@ -135,13 +136,13 @@ module.exports = {
       {
         loader: 'babel-loader',
         test: /\.js$/,
-        exclude: /node_modules/,
-      },
-    ],
+        exclude: /node_modules/
+      }
+    ]
   },
   devServer: {
-    contentBase: [path.join(__dirname, 'example'), path.join(__dirname, 'lib')],
-  },
+    contentBase: [path.join(__dirname, 'example'), path.join(__dirname, 'lib')]
+  }
 }
 ```
 
@@ -151,11 +152,10 @@ Bom, eu não vou colar todo o código aqui, até porque acho que seria legal voc
 
 Se você quiser utilizar em algum projeto, o [pacote está no npm](https://www.npmjs.com/package/on-leave-intent). E você pode instalar com:
 
-```
+```bash
 yarn add on-leave-intent
 ```
 
 ## Conclusão e Jabá
 
 Espero que vocês tenham curtido esses vídeos e se você tem interesse em entender um pouco mais da teoria e também outros tipos de testes, eu tenho um curso chamado [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=SEGUIDORBLOG) e se você usar esse link, vai com um super-hiper-mega desconto.
-

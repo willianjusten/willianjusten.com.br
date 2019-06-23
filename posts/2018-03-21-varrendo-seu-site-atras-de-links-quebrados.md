@@ -14,6 +14,7 @@ tags:
 categories:
   - Performance Web
 ---
+
 ## Introdução
 
 Mais um post da série sobre [Performance Web](https://willianjusten.com.br/series/#performance-web), esse hoje nem foi um post muito planejado, por isso vai ser bem rapidinho, mas é extremamente importante!
@@ -34,7 +35,7 @@ O [Html Proofer](https://github.com/gjtorikian/html-proofer) é o cara responsá
 
 Aqui abaixo fica o script simples que eu fiz com ele:
 
-```
+```bash
 #!/usr/bin/env bash
 set -e # halt script on error
 
@@ -51,13 +52,13 @@ O segundo carinha que utilizei foi o [Travis CI](https://travis-ci.org/). Ele é
 
 Eu criei um arquivo `.travis.yml` no meu repositório com o seguinte:
 
-```
+```yml
 language: ruby
 rvm:
-- 2.3.1
+  - 2.3.1
 
 before_script:
- - chmod +x testlinks.sh
+  - chmod +x testlinks.sh
 
 script: ./testlinks.sh
 
@@ -67,7 +68,7 @@ branches:
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 ```
 
 O `HtmlProofer` e o `Jekyll` são em Ruby, então por isso eu defini o ambiente como de ruby. O `before_script` serve para rodar coisas que são necessárias antes do meu teste principal. No caso eu mudo a permissão para execução do `testlinks.sh`, assim a máquina consegue rodar sem problemas.
