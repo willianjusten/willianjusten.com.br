@@ -3,7 +3,8 @@ module.exports = {
     title: `Willian Justen`,
     position: 'Desenvolvedor Front End',
     description: `Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, atualmente trabalhando na Toptal e viajando o mundo.`,
-    author: `@Willian_justen`
+    author: `@Willian_justen`,
+    siteUrl: 'https://willianjusten.com.br'
   },
   plugins: [
     `gatsby-plugin-twitter`,
@@ -76,6 +77,59 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cache',
       options: {
         cachePublic: true
+      }
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.frontmatter.description,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ 'content:encoded': edge.node.html }]
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        description
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Willian Justen Blog - RSS Feed'
+          }
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
