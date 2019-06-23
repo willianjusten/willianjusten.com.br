@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import slugify from 'slugify'
 
 import { unique } from '../utils/index'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import PostItem from '../components/Post'
 
 const SeriesPage = props => {
   const postList = props.data.allMarkdownRemark.edges.filter(
@@ -29,13 +30,14 @@ const SeriesPage = props => {
           <h2 id={slugifyCategory(category)}>{category}</h2>
 
           {getPostsByCategory(category).map(({ node }) => (
-            <Link to={node.fields.slug} key={node.id}>
-              <div className="post-list">
-                <h1>{node.frontmatter.title}</h1>
-                <span>{node.frontmatter.date}</span>
-                <p>{node.frontmatter.description}</p>
-              </div>
-            </Link>
+            <PostItem
+              key={node.id}
+              slug={node.fields.slug}
+              title={node.frontmatter.title}
+              date={node.frontmatter.date}
+              description={node.frontmatter.description}
+              main_class={node.frontmatter.main_class}
+            />
           ))}
         </section>
       ))}

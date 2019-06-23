@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import PostItem from '../components/Post'
 
 const IndexPage = props => {
   const postList = props.data.allMarkdownRemark
@@ -10,13 +11,14 @@ const IndexPage = props => {
     <Layout>
       <SEO title="Home" />
       {postList.edges.map(({ node }, i) => (
-        <Link to={node.fields.slug} key={i}>
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.frontmatter.description}</p>
-          </div>
-        </Link>
+        <PostItem
+          key={i}
+          slug={node.fields.slug}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          description={node.frontmatter.description}
+          main_class={node.frontmatter.main_class}
+        />
       ))}
     </Layout>
   )

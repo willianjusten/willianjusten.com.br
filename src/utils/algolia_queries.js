@@ -8,7 +8,8 @@ const postQuery = `{
         }
         frontmatter {
           title
-          date
+          date_timestamp: date
+          date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           description
           main_class
         }
@@ -20,10 +21,10 @@ const postQuery = `{
 
 const flatten = arr =>
   arr.map(({ node: { frontmatter, ...rest } }) => ({
-    title: frontmatter.title,
-    date: parseInt((new Date(frontmatter.date).getTime() / 1000).toFixed(0)),
-    description: frontmatter.description,
-    main_class: frontmatter.main_class,
+    ...frontmatter,
+    date_timestamp: parseInt(
+      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
+    ),
     ...rest
   }))
 const settings = { attributesToSnippet: [`excerpt:20`] }

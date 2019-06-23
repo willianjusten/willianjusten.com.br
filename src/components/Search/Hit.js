@@ -1,11 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+
+import PostItem from '../Post'
 
 const Hit = props => {
   const { hit } = props
 
-  return <Link to={hit.fields.slug}>{hit.title}</Link>
+  return (
+    <PostItem
+      slug={hit.fields.slug}
+      title={hit.title}
+      date={hit.date}
+      description={hit.description}
+      main_class={hit.main_class}
+    />
+  )
 }
 
 Hit.propTypes = {
