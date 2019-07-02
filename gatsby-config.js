@@ -139,7 +139,7 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
+            output: '/feed.xml',
             title: 'Willian Justen Blog - RSS Feed'
           }
         ]
