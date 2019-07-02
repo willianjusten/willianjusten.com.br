@@ -22,12 +22,12 @@ const Pagination = props => (
 )
 
 Pagination.propTypes = {
-  isFirst: propTypes.bool,
-  isLast: propTypes.bool,
+  isFirst: propTypes.bool.isRequired,
+  isLast: propTypes.bool.isRequired,
   currentPage: propTypes.number.isRequired,
   numPages: propTypes.number.isRequired,
-  prevPage: propTypes.number,
-  nextPage: propTypes.number
+  prevPage: propTypes.string.isRequired,
+  nextPage: propTypes.string.isRequired
 }
 
 export default Pagination
