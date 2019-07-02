@@ -1,9 +1,10 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Post from '../components/Post'
+import Pagination from '../components/Pagination'
 
 const BlogList = props => {
   const postList = props.data.allMarkdownRemark.edges
@@ -28,21 +29,14 @@ const BlogList = props => {
         />
       ))}
 
-      <div className="pagination">
-        {!isFirst && (
-          <Link to={prevPage} rel="prev">
-            ← Previous Page
-          </Link>
-        )}
-        <p>
-          {currentPage} de {numPages}
-        </p>
-        {!isLast && (
-          <Link to={nextPage} rel="next">
-            Next Page →
-          </Link>
-        )}
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        numPages={numPages}
+        isFirst={isFirst}
+        isLast={isLast}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
     </Layout>
   )
 }
