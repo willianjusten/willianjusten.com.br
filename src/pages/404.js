@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 
 const Container = styled.section`
   align-items: center;
