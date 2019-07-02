@@ -10,6 +10,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import Profile from './Profile'
+import MenuLinks from './MenuLinks/'
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
           description={site.siteMetadata.description}
         />
       </Link>
+      <MenuLinks />
       <main>{children}</main>
     </div>
   )
