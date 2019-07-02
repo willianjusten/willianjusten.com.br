@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 
 import Profile from './Profile'
-import MenuLinks from './MenuLinks/index'
+import MenuLinks from './MenuLinks/MenuLinks'
 import SocialLinks from './SocialLinks/SocialLinks'
 
 const Layout = ({ children }) => {
