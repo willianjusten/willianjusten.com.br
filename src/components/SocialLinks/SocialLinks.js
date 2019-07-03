@@ -12,7 +12,12 @@ const SocialLinks = () => (
 
       return (
         <li key={i}>
-          <a href={link.url} title={link.label}>
+          <a
+            href={link.url}
+            title={link.label}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <S.IconWrapper>
               <Icon />
             </S.IconWrapper>
