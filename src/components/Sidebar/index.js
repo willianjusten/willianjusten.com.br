@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import propTypes from 'prop-types'
 
 import Profile from '../Profile'
@@ -10,13 +9,11 @@ import * as S from './styled'
 
 const Sidebar = ({ site: { title, position, authorDescription } }) => (
   <S.SidebarContainer>
-    <Link to="/">
-      <Profile
-        title={title}
-        position={position}
-        authorDescription={authorDescription}
-      />
-    </Link>
+    <Profile
+      title={title}
+      position={position}
+      authorDescription={authorDescription}
+    />
     <SocialLinks />
     <MenuLinks />
   </S.SidebarContainer>

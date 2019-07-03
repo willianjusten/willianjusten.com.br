@@ -10,8 +10,17 @@ export const SidebarContainer = styled.aside`
   text-align: center;
   width: 320px;
 
+  p {
+    color: ${props => props.theme.texts};
+  }
+
   a {
     color: ${props => props.theme.texts};
     text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: ${props => props.theme.highlight};
+    }
   }
 `
