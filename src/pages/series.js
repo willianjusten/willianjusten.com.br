@@ -4,9 +4,19 @@ import slugify from 'slugify'
 
 import { unique } from '../utils/index'
 
+import styled from 'styled-components'
+
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
 import Post from '../components/Post'
+
+const SeriesTitle = styled.h2`
+  background: ${props => props.theme.borders};
+  color: ${props => props.theme.texts};
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 4.4rem;
+`
 
 const SeriesPage = props => {
   const postList = props.data.allMarkdownRemark.edges.filter(
@@ -27,7 +37,7 @@ const SeriesPage = props => {
       <SEO title="Series" />
       {categories.map((category, i) => (
         <section key={i}>
-          <h2 id={slugifyCategory(category)}>{category}</h2>
+          <SeriesTitle id={slugifyCategory(category)}># {category}</SeriesTitle>
 
           {getPostsByCategory(category).map(({ node }) => (
             <Post

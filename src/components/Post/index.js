@@ -7,7 +7,7 @@ const Post = ({ slug, date, title, description, main_class }) => {
   return (
     <S.PostLink to={slug}>
       <S.PostWrapper>
-        <S.PostTag>{main_class}</S.PostTag>
+        {main_class && <S.PostTag>{main_class}</S.PostTag>}
         <S.PostInfo>
           <S.PostDate>{date}</S.PostDate>
           <S.PostTitle>{title}</S.PostTitle>
@@ -22,7 +22,7 @@ Post.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  main_class: PropTypes.string.isRequired
+  main_class: PropTypes.string
 }
 
 export default Post
