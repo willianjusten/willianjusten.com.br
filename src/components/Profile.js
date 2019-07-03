@@ -23,7 +23,7 @@ const ProfileDescription = styled.p`
   font-size: 0.9rem;
 `
 
-const Profile = ({ title, position, description }) => {
+const Profile = ({ title, position, authorDescription }) => {
   return (
     <ProfileContainer>
       <Avatar />
@@ -31,7 +31,7 @@ const Profile = ({ title, position, description }) => {
         {title}
         <ProfilePosition>{position}</ProfilePosition>
       </ProfileAuthor>
-      <ProfileDescription>{description}</ProfileDescription>
+      <ProfileDescription>{authorDescription}</ProfileDescription>
     </ProfileContainer>
   )
 }
@@ -39,7 +39,7 @@ const Profile = ({ title, position, description }) => {
 Profile.propTypes = {
   title: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  authorDescription: PropTypes.string.isRequired
 }
 
 export default Profile

@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
             title
             position
             description
+            authorDescription
           }
         }
       }
