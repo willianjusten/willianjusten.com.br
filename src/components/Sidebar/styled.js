@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const SidebarContainer = styled.aside`
   align-items: center;
+  border-right: 1px solid ${props => props.theme.borders};
   background: ${props => props.theme.mediumBackground};
   display: flex;
   flex-direction: column;

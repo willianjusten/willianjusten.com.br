@@ -6,7 +6,7 @@ import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
 
 import { ThemeProvider } from 'styled-components'
-import { darkTheme } from '../../styles/theme'
+import { lightTheme, darkTheme } from '../../styles/theme'
 
 import * as S from './styled'
 
