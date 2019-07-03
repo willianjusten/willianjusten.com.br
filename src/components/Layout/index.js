@@ -17,7 +17,7 @@ import * as S from './styled'
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
     graphql`
-      query SiteTitleQuery {
+      query {
         site {
           siteMetadata {
             title
