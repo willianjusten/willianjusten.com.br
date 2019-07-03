@@ -26,11 +26,36 @@ export const PostTag = styled.div`
   border-radius: 50%;
   color: ${props => props.theme.white};
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  min-height: 90px;
   justify-content: center;
+  min-height: 90px;
   min-width: 90px;
+  text-transform: uppercase;
+
+  &.is-js {
+    background: #d6ba32;
+  }
+
+  &.is-misc {
+    background: #7aab13;
+  }
+
+  &.is-dev {
+    background: #637a91;
+  }
+
+  &.is-svg {
+    background: #7d669e;
+  }
+
+  &.is-css {
+    background: #2da0c3;
+  }
+
+  &.is-jekyll {
+    background: #b31917;
+  }
 `
 
 export const PostInfo = styled.div`

@@ -7,7 +7,9 @@ const Post = ({ slug, date, title, description, main_class }) => {
   return (
     <S.PostLink to={slug}>
       <S.PostWrapper>
-        {main_class && <S.PostTag>{main_class}</S.PostTag>}
+        {main_class && (
+          <S.PostTag className={`is-${main_class}`}>{main_class}</S.PostTag>
+        )}
         <S.PostInfo>
           <S.PostDate>{date}</S.PostDate>
           <S.PostTitle>{title}</S.PostTitle>
