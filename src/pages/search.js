@@ -14,7 +14,6 @@ const SearchPage = props => {
   return (
     <Layout>
       <SEO title="Search" />
-      <h1>Search!</h1>
       <Search algolia={algolia} />
     </Layout>
   )

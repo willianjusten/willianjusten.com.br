@@ -10,12 +10,13 @@ import {
 } from 'react-instantsearch-dom'
 
 import Hit from './Hit'
+import * as S from './styled'
 
 const Search = props => {
   const { algolia } = props
 
   return (
-    <div>
+    <S.SearchWrapper>
       {algolia && algolia.appId && (
         <InstantSearch
           appId={algolia.appId}
@@ -28,7 +29,7 @@ const Search = props => {
           <Hits hitComponent={Hit} />
         </InstantSearch>
       )}
-    </div>
+    </S.SearchWrapper>
   )
 }
 
