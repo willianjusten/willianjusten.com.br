@@ -3,8 +3,10 @@ import propTypes from 'prop-types'
 
 import { Link } from 'gatsby'
 
+import * as S from './styled'
+
 const Pagination = props => (
-  <div className="pagination">
+  <S.PaginationWrapper>
     {!props.isFirst && (
       <Link to={props.prevPage} rel="prev">
         ← Previous Page
@@ -18,7 +20,7 @@ const Pagination = props => (
         Next Page →
       </Link>
     )}
-  </div>
+  </S.PaginationWrapper>
 )
 
 Pagination.propTypes = {

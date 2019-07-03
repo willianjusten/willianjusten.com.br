@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
+
+import * as S from './styled'
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,12 +13,6 @@ import styled from 'styled-components'
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
-
-const AvatarImg = styled(Img)`
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-`
 
 const Avatar = () => (
   <StaticQuery
@@ -34,7 +28,7 @@ const Avatar = () => (
       }
     `}
     render={data => (
-      <AvatarImg fluid={data.placeholderImage.childImageSharp.fluid} />
+      <S.AvatarImg fluid={data.placeholderImage.childImageSharp.fluid} />
     )}
   />
 )

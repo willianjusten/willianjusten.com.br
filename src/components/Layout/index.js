@@ -9,9 +9,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import GlobalStyles from '../styles/global'
+import GlobalStyles from '../../styles/global'
+import Sidebar from '../Sidebar'
 
-import Sidebar from './Sidebar/Sidebar'
+import * as S from './styled'
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
@@ -30,7 +31,7 @@ const Layout = ({ children }) => {
   )
 
   return (
-    <>
+    <S.LayoutWrapper>
       <GlobalStyles />
       <Sidebar site={site.siteMetadata} />
       <div
@@ -43,7 +44,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-    </>
+    </S.LayoutWrapper>
   )
 }
 

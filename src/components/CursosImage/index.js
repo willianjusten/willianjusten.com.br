@@ -1,11 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
 
-const Image = styled(Img)`
-  width: 120px;
-`
+import * as S from './styled'
 
 const CursosImage = props => (
   <StaticQuery
@@ -37,7 +33,7 @@ const CursosImage = props => (
       }
 
       const imageSizes = image.node.childImageSharp.sizes
-      return <Image alt={props.alt} sizes={imageSizes} />
+      return <S.ImageWrapper alt={props.alt} sizes={imageSizes} />
     }}
   />
 )

@@ -4,7 +4,7 @@ import slugify from 'slugify'
 
 import { unique } from '../utils/index'
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
 import Post from '../components/Post'
 

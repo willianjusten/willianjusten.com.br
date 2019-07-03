@@ -3,7 +3,7 @@ import React from 'react'
 import links from './content'
 import Icons from './Icons'
 
-import * as S from './SocialLinks.styled'
+import * as S from './styled'
 
 const SocialLinks = () => (
   <ul>
