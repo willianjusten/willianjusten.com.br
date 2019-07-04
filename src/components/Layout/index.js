@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
     `
   )
 
-  const stored = localStorage.getItem('isLightMode')
+  const windowGlobal = typeof window !== 'undefined' && window
+  const stored = windowGlobal.localStorage.getItem('isLightMode')
 
   const [isLightMode, setIsLightMode] = useState(
     stored === 'true' ? true : false
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
 
   const setLightMode = () => {
     setIsLightMode(!isLightMode)
-    localStorage.setItem('isLightMode', !isLightMode)
+    windowGlobal.localStorage.setItem('isLightMode', !isLightMode)
   }
 
   return (
