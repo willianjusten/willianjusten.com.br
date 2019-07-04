@@ -16,6 +16,8 @@ export const LayoutMain = styled.main`
   height: 100vh;
 
   ${media.lessThan('large')`
-    margin-bottom: 48px;
+    overflow-y: auto;
+    /* removing the height of the two bars */
+    height: auto;
   `}
 `

@@ -31,10 +31,10 @@ const MenuBar = () => (
     </S.MenuBarGroup>
 
     <S.MenuBarGroup>
-      <S.MenuBarItem>
+      <S.MenuBarItem title="Mudar o Tema">
         <Light />
       </S.MenuBarItem>
-      <S.MenuBarItem onClick={() => window.scrollTo(0, 0)}>
+      <S.MenuBarItem title="Ir para o Topo">
         <Arrow />
       </S.MenuBarItem>
     </S.MenuBarGroup>
