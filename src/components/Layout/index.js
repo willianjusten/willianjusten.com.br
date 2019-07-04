@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
+import MenuBar from '../MenuBar'
 
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../../styles/theme'
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         <Sidebar site={site.siteMetadata} />
         <S.LayoutMain>{children}</S.LayoutMain>
+        <MenuBar />
       </S.LayoutWrapper>
     </ThemeProvider>
   )
