@@ -8,13 +8,13 @@ import * as S from './styled'
 const Profile = ({ title, position, authorDescription }) => {
   return (
     <S.ProfileContainer>
-      <Link to="/">
+      <S.ProfileLink to="/">
         <Avatar />
         <S.ProfileAuthor>
           {title}
           <S.ProfilePosition>{position}</S.ProfilePosition>
         </S.ProfileAuthor>
-      </Link>
+      </S.ProfileLink>
       <S.ProfileDescription>{authorDescription}</S.ProfileDescription>
     </S.ProfileContainer>
   )
