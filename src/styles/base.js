@@ -21,6 +21,7 @@ export const PostTitle = styled.h1`
 
   ${media.lessThan('large')`
     font-size: 2.8rem;
+    line-height: 1.1;
     padding: 0 1rem;
   `}
 `
@@ -32,6 +33,7 @@ export const PostDescription = styled.h2`
 
   ${media.lessThan('large')`
     font-size: 1.6rem;
+    line-height: 1.3;
     padding: 0 1rem;
   `}
 `
@@ -75,6 +77,7 @@ export const MainContent = styled.section`
 
     ${media.lessThan('large')`
       padding: 0 1rem;
+      word-break: break-word;
     `}
   }
 
@@ -121,6 +124,10 @@ export const MainContent = styled.section`
   iframe {
     padding: 0 1.6rem 1.6rem;
     width: 100%;
+
+    ${media.lessThan('large')`
+      padding: 0 1rem;
+    `}
   }
 
   blockquote {
@@ -151,15 +158,27 @@ export const MainContent = styled.section`
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+
+    ${media.lessThan('large')`
+      font-size: 1.875rem;
+    `}
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+
+    ${media.lessThan('large')`
+      font-size: 1.375rem;
+    `}
   }
 
   h3 {
     font-size: 1.6rem;
+
+    ${media.lessThan('large')`
+      font-size: 1.125rem;
+    `}
   }
 
   h4 {
@@ -172,6 +191,10 @@ export const MainContent = styled.section`
 
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
+
+    ${media.lessThan('large')`
+      padding: 0;
+    `}
   }
 
   a {
