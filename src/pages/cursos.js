@@ -2,9 +2,9 @@ import React from 'react'
 
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
-import CursosImage from '../components/CursosImage'
+import Course from '../components/Course'
 
-const cursosList = [
+const coursesList = [
   {
     title: 'Mini-curso de Netlify no Youtube',
     image: 'netlify.png',
@@ -72,14 +72,13 @@ const cursosList = [
 const CursosPage = () => (
   <Layout>
     <SEO title="Cursos" />
-    {cursosList.map((curso, i) => (
-      <a href={curso.link} key={i}>
-        <div className="post-list">
-          <CursosImage filename={curso.image} alt={curso.title} />
-          <h1>{curso.title}</h1>
-          <p>{curso.description}</p>
-        </div>
-      </a>
+    {coursesList.map(({ title, description, link, image }, i) => (
+      <Course
+        title={title}
+        description={description}
+        link={link}
+        image={image}
+      />
     ))}
   </Layout>
 )

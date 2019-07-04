@@ -24,7 +24,7 @@ const Search = props => {
           indexName={algolia.indexName}
         >
           <Configure hitsPerPage={200} distinct />
-          <SearchBox translations={{ placeholder: 'Search' }} />
+          <SearchBox translations={{ placeholder: 'Pesquisar...' }} />
           <Stats
             translations={{
               stats(nbHits, timeSpentMS) {

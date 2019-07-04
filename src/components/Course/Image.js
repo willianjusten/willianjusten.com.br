@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import * as S from './styled'
 
-const CursosImage = props => (
+const Image = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -15,7 +15,7 @@ const CursosImage = props => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 120) {
+                sizes(maxWidth: 240) {
                   ...GatsbyImageSharpSizes
                 }
               }
@@ -38,4 +38,4 @@ const CursosImage = props => (
   />
 )
 
-export default CursosImage
+export default Image
