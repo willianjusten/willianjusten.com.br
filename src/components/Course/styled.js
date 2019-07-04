@@ -1,12 +1,17 @@
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const ImageWrapper = styled(Img)`
   border-radius: 50%;
   display: flex;
-  width: 120px;
-  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+
+  ${media.lessThan('large')`
+    margin-bottom: 5px;
+  `}
 `
 
 export const CourseWrapper = styled.section`
@@ -15,6 +20,11 @@ export const CourseWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
+  ${media.lessThan('large')`
+    flex-direction: column;
+    padding: 2rem 1rem;
+  `}
 `
 
 export const CourseLink = styled(Link)`
@@ -32,6 +42,10 @@ export const CourseInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  ${media.lessThan('large')`
+    margin: 0;
+  `}
 `
 
 export const CourseTitle = styled.h1`
