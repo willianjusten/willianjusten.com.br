@@ -4,15 +4,27 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
 
+import {
+  PostHeader,
+  PostTitle,
+  PostDescription,
+  PostDate,
+  MainContent
+} from '../styles/base'
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <h1>{post.frontmatter.title}</h1>
-      <h2>{post.frontmatter.description}</h2>
-      <p>{post.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <PostHeader>
+        <PostDate>{post.frontmatter.date}</PostDate>
+        <PostTitle>{post.frontmatter.title}</PostTitle>
+        <PostDescription>{post.frontmatter.description}</PostDescription>
+      </PostHeader>
+      <MainContent>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </MainContent>
     </Layout>
   )
 }

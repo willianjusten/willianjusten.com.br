@@ -1,6 +1,7 @@
 export const darkTheme = {
   borders: '#38444d',
   texts: '#8899a6',
+  postColor: '#fff',
   highlight: '#1fa1f2',
   mediumBackground: '#192734',
   background: '#16202c',
@@ -10,6 +11,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   borders: '#dedede',
+  postColor: '#111',
   texts: '#555555',
   highlight: '#1fa1f2',
   mediumBackground: '#f0f0f3',
