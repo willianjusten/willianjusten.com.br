@@ -74,6 +74,7 @@ const CursosPage = () => (
     <SEO title="Cursos" />
     {coursesList.map(({ title, description, link, image }, i) => (
       <Course
+        key={i}
         title={title}
         description={description}
         link={link}

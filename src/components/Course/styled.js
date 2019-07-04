@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import media from 'styled-media-query'
@@ -27,7 +26,7 @@ export const CourseWrapper = styled.section`
   `}
 `
 
-export const CourseLink = styled(Link)`
+export const CourseLink = styled.a`
   color: ${props => props.theme.texts};
   display: flex;
   text-decoration: none;

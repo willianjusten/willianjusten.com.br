@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import { Home } from 'styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
@@ -11,25 +12,31 @@ import * as S from './styled'
 const MenuBar = () => (
   <S.MenuBarWrapper>
     <S.MenuBarGroup>
-      <S.MenuBarLink to="/" title="Voltar para Home">
-        <Home />
-      </S.MenuBarLink>
-      <S.MenuBarLink to="/search" title="Search">
-        <Search />
-      </S.MenuBarLink>
-      <S.MenuBarLink to="/cursos" title="Cursos">
-        <GraduationCap />
-        <S.MenuBarNotification />
-      </S.MenuBarLink>
+      <Link to="/" title="Voltar para Home">
+        <S.MenuBarItem>
+          <Home />
+        </S.MenuBarItem>
+      </Link>
+      <Link to="/search" title="Search">
+        <S.MenuBarItem>
+          <Search />
+        </S.MenuBarItem>
+      </Link>
+      <Link to="/cursos" title="Cursos">
+        <S.MenuBarItem>
+          <GraduationCap />
+          <S.MenuBarNotification />
+        </S.MenuBarItem>
+      </Link>
     </S.MenuBarGroup>
 
     <S.MenuBarGroup>
-      <S.MenuBarLink to="#top" title="Mudar de tema">
+      <S.MenuBarItem>
         <Light />
-      </S.MenuBarLink>
-      <S.MenuBarLink to="#top" title="Voltar para o topo">
+      </S.MenuBarItem>
+      <S.MenuBarItem onClick={() => window.scrollTo(0, 0)}>
         <Arrow />
-      </S.MenuBarLink>
+      </S.MenuBarItem>
     </S.MenuBarGroup>
   </S.MenuBarWrapper>
 )

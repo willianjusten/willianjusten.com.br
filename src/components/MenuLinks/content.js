@@ -14,10 +14,6 @@ const links = [
   {
     label: 'Séries',
     url: '/series/'
-  },
-  {
-    label: 'RSS',
-    url: '/feed.xml'
   }
 ]
 

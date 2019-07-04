@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import { Link } from 'gatsby'
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
@@ -31,8 +30,11 @@ export const MenuBarGroup = styled.div`
   `}
 `
 
-export const MenuBarLink = styled(Link)`
+export const MenuBarItem = styled.button`
+  background: none;
+  border: none;
   color: ${props => props.theme.texts};
+  cursor: pointer;
   display: block;
   height: 3.75rem;
   padding: 1.1rem;

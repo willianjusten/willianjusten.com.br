@@ -12,6 +12,9 @@ const MenuLinks = () => (
           <Link to={link.url}>{link.label}</Link>
         </S.MenuLinksItem>
       ))}
+      <S.MenuLinksItem>
+        <a href="/feed.rss">Feed RSS</a>
+      </S.MenuLinksItem>
     </S.MenuLinksList>
   </S.MenuLinksWrapper>
 )
