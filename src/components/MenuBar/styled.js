@@ -30,11 +30,8 @@ export const MenuBarGroup = styled.div`
   `}
 `
 
-export const MenuBarItem = styled.button`
-  background: none;
-  border: none;
+export const MenuBarItem = styled.span`
   color: ${props => props.theme.texts};
-  cursor: pointer;
   display: block;
   height: 3.75rem;
   padding: 1.1rem;
