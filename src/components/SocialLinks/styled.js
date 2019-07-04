@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;
-  width: 80%;
+  width: 100%;
 `
 
 export const SocialLinksList = styled.ul`
@@ -13,6 +13,6 @@ export const SocialLinksList = styled.ul`
 
 export const IconWrapper = styled.div`
   fill: #bbb;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 `

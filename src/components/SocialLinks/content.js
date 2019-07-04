@@ -12,6 +12,10 @@ const links = [
     url: 'https://www.youtube.com/WillianJustenCursos'
   },
   {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/will_justen/'
+  },
+  {
     label: 'Unsplash',
     url: 'https://unsplash.com/@willianjusten'
   }
