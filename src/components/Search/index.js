@@ -25,7 +25,13 @@ const Search = props => {
         >
           <Configure hitsPerPage={200} distinct />
           <SearchBox translations={{ placeholder: 'Search' }} />
-          <Stats />
+          <Stats
+            translations={{
+              stats(nbHits, timeSpentMS) {
+                return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+              }
+            }}
+          />
           <Hits hitComponent={Hit} />
         </InstantSearch>
       )}
