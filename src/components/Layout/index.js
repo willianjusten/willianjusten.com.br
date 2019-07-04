@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -27,13 +27,24 @@ const Layout = ({ children }) => {
     `
   )
 
+  const stored = localStorage.getItem('isLightMode')
+
+  const [isLightMode, setIsLightMode] = useState(
+    stored === 'true' ? true : false
+  )
+
+  const setLightMode = () => {
+    setIsLightMode(!isLightMode)
+    localStorage.setItem('isLightMode', !isLightMode)
+  }
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={isLightMode ? lightTheme : darkTheme}>
       <S.LayoutWrapper>
         <GlobalStyles />
         <Sidebar site={site.siteMetadata} />
         <S.LayoutMain>{children}</S.LayoutMain>
-        <MenuBar />
+        <MenuBar setLightMode={setLightMode} />
       </S.LayoutWrapper>
     </ThemeProvider>
   )
