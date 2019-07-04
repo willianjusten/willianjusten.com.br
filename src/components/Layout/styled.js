@@ -11,7 +11,9 @@ export const LayoutWrapper = styled.section`
 
 export const LayoutMain = styled.main`
   background: ${props => props.theme.background};
-  height: 100vh;
-  overflow-y: scroll;
   width: 100%;
+
+  ${media.lessThan('large')`
+    margin-bottom: 48px;
+  `}
 `
