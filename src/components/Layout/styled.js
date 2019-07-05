@@ -14,6 +14,7 @@ export const LayoutMain = styled.main`
   width: 100%;
   overflow-y: scroll;
   height: 100vh;
+  transition: background 0.5s, color 0.5s;
 
   ${media.lessThan('large')`
     overflow-y: auto;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -10,6 +10,8 @@ import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from '../../styles/theme'
 
 import * as S from './styled'
+
+import useLightMode from '../../utils/useLightmode'
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
@@ -27,16 +29,7 @@ const Layout = ({ children }) => {
     `
   )
 
-  const stored = typeof window !== 'undefined' && localStorage.getItem('isLightMode')
-
-  const [isLightMode, setIsLightMode] = useState(
-    stored === 'true' ? true : false
-  )
-
-  const setLightMode = () => {
-    setIsLightMode(!isLightMode)
-    typeof window !== 'undefined' &&  localStorage.setItem('isLightMode', !isLightMode)
-  }
+  const [isLightMode, setLightMode] = useLightMode()
 
   return (
     <ThemeProvider theme={isLightMode ? lightTheme : darkTheme}>
@@ -44,7 +37,7 @@ const Layout = ({ children }) => {
         <GlobalStyles />
         <Sidebar site={site.siteMetadata} />
         <S.LayoutMain>{children}</S.LayoutMain>
-        <MenuBar setLightMode={setLightMode} />
+        <MenuBar setLightMode={setLightMode} isLightMode={isLightMode} />
       </S.LayoutWrapper>
     </ThemeProvider>
   )

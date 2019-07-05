@@ -9,7 +9,7 @@ import { GraduationCap } from 'styled-icons/fa-solid/GraduationCap'
 
 import * as S from './styled'
 
-const MenuBar = ({ setLightMode }) => (
+const MenuBar = ({ setLightMode, isLightMode }) => (
   <S.MenuBarWrapper>
     <S.MenuBarGroup>
       <Link to="/" title="Voltar para Home">
@@ -31,7 +31,11 @@ const MenuBar = ({ setLightMode }) => (
     </S.MenuBarGroup>
 
     <S.MenuBarGroup>
-      <S.MenuBarItem title="Mudar o Tema" onClick={setLightMode}>
+      <S.MenuBarItem
+        title="Mudar o Tema"
+        onClick={setLightMode}
+        isLightMode={isLightMode}
+      >
         <Light />
       </S.MenuBarItem>
       <S.MenuBarItem title="Ir para o Topo">

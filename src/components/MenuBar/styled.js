@@ -31,7 +31,7 @@ export const MenuBarGroup = styled.div`
 `
 
 export const MenuBarItem = styled.span`
-  color: ${props => props.theme.texts};
+  color: ${props => (props.isLightMode ? '#eaea04' : props.theme.texts)};
   cursor: pointer;
   display: block;
   height: 3.75rem;
