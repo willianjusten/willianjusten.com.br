@@ -36,11 +36,8 @@ export default class HTML extends React.Component {
                     localStorage.setItem('theme', newTheme);
                   } catch (err) {}
                 }
-                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                darkQuery.addListener(function(e) {
-                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
-                });
-                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
+
+                setTheme(preferredTheme || 'dark');
               })();
             `
             }}
