@@ -55,11 +55,11 @@ export const PostTag = styled.div`
   }
 
   &.is-misc {
-    background: #7aab13;
+    background: #47650b;
   }
 
   &.is-dev {
-    background: #637a91;
+    background: #61728f;
   }
 
   &.is-svg {
@@ -67,7 +67,7 @@ export const PostTag = styled.div`
   }
 
   &.is-css {
-    background: #2da0c3;
+    background: #24809e;
   }
 
   &.is-jekyll {
