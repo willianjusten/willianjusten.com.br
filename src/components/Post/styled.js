@@ -51,6 +51,7 @@ export const PostTag = styled.div`
 
   &.is-js {
     background: #d6ba32;
+    color: #000;
   }
 
   &.is-misc {
