@@ -22,44 +22,44 @@ tags:
 
 ## Índice
 
-- [Introdução](#introdu%C3%A7%C3%A3o)
-- [O que é Open Source?](#o-que-%C3%A9-open-source)
-  - [Livre redistribuição](#livre-redistribui%C3%A7%C3%A3o)
+- [Introdução](#introducao)
+- [O que é Open Source?](#o-que-e-open-source)
+  - [Livre redistribuição](#livre-redistribuicao)
   - [Trabalhos derivados](#trabalhos-derivados)
-  - [Sem discriminação contra pessoas ou grupos](#sem-discrimina%C3%A7%C3%A3o-contra-pessoas-ou-grupos)
+  - [Sem discriminação contra pessoas ou grupos](#sem-discriminacao-contra-pessoas-ou-grupos)
 - [Por que contribuir?](#por-que-contribuir)
   - [Melhorar seus conhecimentos](#melhorar-seus-conhecimentos)
   - [Ensinar e aprender](#ensinar-e-aprender)
   - [Criar uma boa imagem e ajudar na carreira](#criar-uma-boa-imagem-e-ajudar-na-carreira)
 - [Como contribuir?](#como-contribuir)
-  - [Você gosta de design?](#voc%C3%AA-gosta-de-design)
-  - [Você gosta de planejar eventos?](#voc%C3%AA-gosta-de-planejar-eventos)
-  - [Você gosta de escrever?](#voc%C3%AA-gosta-de-escrever)
-  - [Você gosta de organização?](#voc%C3%AA-gosta-de-organiza%C3%A7%C3%A3o)
-  - [Você gosta de codar?](#voc%C3%AA-gosta-de-codar)
-  - [Você gosta de ajudar pessoas?](#voc%C3%AA-gosta-de-ajudar-pessoas)
-  - [Você pode simplesmente ajudar em outras coisas que não sejam código!](#voc%C3%AA-pode-simplesmente-ajudar-em-outras-coisas-que-n%C3%A3o-sejam-c%C3%B3digo)
+  - [Você gosta de design?](#voce-gosta-de-design)
+  - [Você gosta de planejar eventos?](#voce-gosta-de-planejar-eventos)
+  - [Você gosta de escrever?](#voce-gosta-de-escrever)
+  - [Você gosta de organização?](#voce-gosta-de-organizacao)
+  - [Você gosta de codar?](#voce-gosta-de-codar)
+  - [Você gosta de ajudar pessoas?](#voce-gosta-de-ajudar-pessoas)
+  - [Você pode simplesmente ajudar em outras coisas que não sejam código!](#voce-pode-simplesmente-ajudar-em-outras-coisas-que-nao-sejam-codigo)
 - [Orientando-se para um novo projeto](#orientando-se-para-um-novo-projeto)
-  - [Anatomia básica de um projeto open source](#anatomia-b%C3%A1sica-de-um-projeto-open-source)
+  - [Anatomia básica de um projeto open source](#anatomia-basica-de-um-projeto-open-source)
 - [Encontrando um projeto para contribuir](#encontrando-um-projeto-para-contribuir)
   - [Buscas diretas no Github](#buscas-diretas-no-github)
   - [Ferramentas para buscar projetos](#ferramentas-para-buscar-projetos)
 - [Uma checklist para antes de contribuir](#uma-checklist-para-antes-de-contribuir)
-- [Como submeter uma contribuição?](#como-submeter-uma-contribui%C3%A7%C3%A3o)
+- [Como submeter uma contribuição?](#como-submeter-uma-contribuicao)
   - [Comunique efetivamente](#comunique-efetivamente)
-    - [Faça seu dever de casa antes](#fa%C3%A7a-seu-dever-de-casa-antes)
-    - [Faça seus pedidos de forma curta e direta](#fa%C3%A7a-seus-pedidos-de-forma-curta-e-direta)
-    - [Mantenha toda comunicação pública](#mantenha-toda-comunica%C3%A7%C3%A3o-p%C3%BAblica)
-    - [Respeite as decisões do projeto](#respeite-as-decis%C3%B5es-do-projeto)
+    - [Faça seu dever de casa antes](#faça-seu-dever-de-casa-antes)
+    - [Faça seus pedidos de forma curta e direta](#faça-seus-pedidos-de-forma-curta-e-direta)
+    - [Mantenha toda comunicação pública](#mantenha-toda-comunicação-pública)
+    - [Respeite as decisões do projeto](#respeite-as-decisoes-do-projeto)
   - [Abrindo uma Issue](#abrindo-uma-issue)
   - [Abrindo um Pull Request](#abrindo-um-pull-request)
 - [O que acontece depois?](#o-que-acontece-depois)
-  - [Você não recebe uma resposta](#voc%C3%AA-n%C3%A3o-recebe-uma-resposta)
-  - [Respondem e pedem mudanças](#respondem-e-pedem-mudan%C3%A7as)
-  - [Sua contribuição não foi aceita](#sua-contribui%C3%A7%C3%A3o-n%C3%A3o-foi-aceita)
-  - [Sua contribuição foi aceita](#sua-contribui%C3%A7%C3%A3o-foi-aceita)
+  - [Você não recebe uma resposta](#voce-nao-recebe-uma-resposta)
+  - [Respondem e pedem mudanças](#respondem-e-pedem-mudancas)
+  - [Sua contribuição não foi aceita](#sua-contribuição-nao-foi-aceita)
+  - [Sua contribuição foi aceita](#sua-contribuiçao-foi-aceita)
 - [Mais alguns artigos que podem lhe ajudar](#mais-alguns-artigos-que-podem-lhe-ajudar)
-- [Conclusão](#conclus%C3%A3o)
+- [Conclusão](#conclusao)
 
 ## Introdução
 
@@ -181,7 +181,7 @@ Temos também a documentação, que tem seguido o seguinte padrão:
 
 - **LICENSE**: por definição, todo projeto open source precisa ter uma licença. Se ele não possui uma licença, ele não é open source. E essa licença que vai guiar as permissões diante daquele projeto.
 - **README**: é a documentação de "boas-vindas" do projeto, onde, em geral, explica um pouco sobre o projeto e como começar com ele.
-- **CONTRIBUTING**: enquanto o README ajuda as pessoas a *usarem* o projeto, o contributing ajuda as pessoas a *contribuirem* com o projeto. Ele explica o processo para contribuição e outros detalhes caso necessário. Enquanto nem todo projeto possui um arquivo de contributing, os projetos que o possuem já sinalizam que contribuições são bem vindas e aceitas.
+- **CONTRIBUTING**: enquanto o README ajuda as pessoas a _usarem_ o projeto, o contributing ajuda as pessoas a _contribuirem_ com o projeto. Ele explica o processo para contribuição e outros detalhes caso necessário. Enquanto nem todo projeto possui um arquivo de contributing, os projetos que o possuem já sinalizam que contribuições são bem vindas e aceitas.
 - **CODE_OF_CONDUCT**: o código de conduta serve para definir regras para o comportamento de todos os participantes, de forma a facilitar um ambiente amigável e acolhedor.
 
 E por último, nós temos as ferramentas que servem para organizar as dicussões:
@@ -246,7 +246,6 @@ Antes de abrir uma issue ou um Pull Request, tenha alguns pontos em mente.
 
 **Dê contexto**. Ajude os outros a entenderem rapidamente. Se você estiver com um erro, explique o que você está fazendo e como reproduzí-lo. Se você está sugerindo uma nova ideia, explique por que você acha que seria útil para o projeto (não apenas para você!).
 
-
 - **Bom**: "X não acontece quando eu faço Y"
 - **Ruim**: "X está quebrado! Por favor corrija!"
 
@@ -280,7 +279,7 @@ Todo mundo precisa de um tempo para pensar sobre a pergunta, as vezes nem mesmo 
 
 #### Respeite as decisões do projeto
 
-Sim, isso deveria ser básico, mas muita gente esquece... Já vi milhares de pessoas xingando porque o React Router fez isso, por que o Angular mudou completamente, bando de ****. Lembrem-se, por trás de todo projeto, existem pessoas assim como você. Você pode dar seu feedback, mas nunca seja agressivo.
+Sim, isso deveria ser básico, mas muita gente esquece... Já vi milhares de pessoas xingando porque o React Router fez isso, por que o Angular mudou completamente, bando de \*\*\*\*. Lembrem-se, por trás de todo projeto, existem pessoas assim como você. Você pode dar seu feedback, mas nunca seja agressivo.
 
 - **Bom**: Eu estou triste que você não tem como me ajudar no meu problema. Mas como você explicou, é um caso muito raro e eu entendo o porquê. Obrigado por me ouvir.
 - **Ruim**: Vocês destruiram o projeto inteiro, vou usar Y.
@@ -294,9 +293,9 @@ Você deve abrir uma issue nas seguintes situações:
 
 Dicas para se comunicar nas issues:
 
-- *Se você viu uma issue que você quer fazer*, comente na issue, faça com que a pessoa saiba que você está de olho nisso. Dessa forma vai evitar trabalho duplicado.
-- *Se uma issue foi aberta há muito tempo*, é possível que ela já tenha sido até solucionada por alguém, então pergunte para confirmar antes que comece a trabalhar.
-- *Se você abriu uma issue e depois descobriu a resposta sozinho*, comente na issue para que as pessoas saibam, de preferência responda sua própria pergunta e então feche a issue.
+- _Se você viu uma issue que você quer fazer_, comente na issue, faça com que a pessoa saiba que você está de olho nisso. Dessa forma vai evitar trabalho duplicado.
+- _Se uma issue foi aberta há muito tempo_, é possível que ela já tenha sido até solucionada por alguém, então pergunte para confirmar antes que comece a trabalhar.
+- _Se você abriu uma issue e depois descobriu a resposta sozinho_, comente na issue para que as pessoas saibam, de preferência responda sua própria pergunta e então feche a issue.
 
 ### Abrindo um Pull Request
 

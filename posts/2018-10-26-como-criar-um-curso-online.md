@@ -29,21 +29,21 @@ O post é grande, então provavelmente eu vou ouvir mais coisas, mas no momento 
 
 ## Índice
 
-- [Razões para criar um curso online](#razões-para-criar-um-curso-online)
-- [Princípios para um bom curso online](#princípios-para-um-bom-curso-online)
+- [Razões para criar um curso online](#razoes-para-criar-um-curso-online)
+- [Princípios para um bom curso online](#principios-para-um-bom-curso-online)
 - [Planejando o curso](#planejando-o-curso)
 - [Produzindo o curso](#produzindo-o-curso)
-    - [Detalhes técnicos e qualidade](#detalhes-técnicos-e-qualidade)
+    - [Detalhes técnicos e qualidade](#detalhes-tecnicos-e-qualidade)
     - [Entrega do Instrutor](#entrega-do-instrutor)
     - [Dicas de Softwares](#dicas-de-softwares)
     - [Meu passo-a-passo ao gravar um curso](#meu-passo-a-passo-ao-gravar-um-curso)
 - [Publicando o seu curso](#publicando-o-seu-curso)
     - [Self Hostings](#self-hostings)
     - [Marketplaces](#marketplaces)
-    - [Minha opinião](#minha-opinião)
-    - [Meu histórico](#meu-histórico)
+    - [Minha opinião](#minha-opiniao)
+    - [Meu histórico](#meu-historico)
 - [Sobre feedbacks](#sobre-feedbacks)
-- [Conclusão](#conclusão)
+- [Conclusão](#conclusao)
 
 ## Razões para criar um curso online
 
@@ -219,7 +219,7 @@ E para cada uma dessas opções, nós temos as vantagens e desvantagens.
 - Sua marca pode acabar sendo diluída
 - Sem acesso aos emails dos estudantes ou pouquíssimas informações
 
-### Minha opinião 
+### Minha opinião
 
 Os Marketplaces como a Udemy são bons para pessoas que não possuem nenhum pública, ou seja, estão começando do zero, pois lá eles já vão ter um alcance para a base da própria Marketplace. Outro ponto importante é que as pessoas não precisam de ter um capital inicial para começar, visto que já está tudo pronto e não é necessário pagar nada por isso.
 
@@ -255,4 +255,3 @@ Se você leu até aqui, tenho uma surpresa que acho que vai ser bem legal para v
 ## Conclusão
 
 Bom pessoal, espero que esse post seja interessante para vocês, mesmo que vocês não tenham interesse em criar um curso, mas para saberem como que funciona por trás. Existe muito trabalho até sair um curso fresquinho para vocês, mas é sempre um trabalho bem gratificante, quando a gente recebe mensagens de apoio e agradecimento.
-

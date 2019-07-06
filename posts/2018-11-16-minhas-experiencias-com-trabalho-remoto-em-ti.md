@@ -19,40 +19,41 @@ tags:
   - dicas
   - lifestyle
 categories:
-  - "Trabalhar no exterior, remoto, viagens, etc"
+  - 'Trabalhar no exterior, remoto, viagens, etc'
 ---
+
 ## Índice
 
-- [Introdução](#introdu%C3%A7%C3%A3o)
-- [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-hist%C3%B3ria)
+- [Introdução](#introducao)
+- [Do alocado ao remoto, minha breve história](#do-alocado-ao-remoto-minha-breve-historia)
 - [Minha rotina de trabalho remoto](#minha-rotina-de-trabalho-remoto)
-- [Você está preparado para a vida de Remoto?](#voc%C3%AA-est%C3%A1-preparado-para-a-vida-de-remoto)
-  - [Experiência](#experi%C3%AAncia)
+- [Você está preparado para a vida de Remoto?](#voce-esta-preparado-para-a-vida-de-remoto)
+  - [Experiência](#experiencia)
   - [Disciplina](#disciplina)
-  - [Comunicação](#comunica%C3%A7%C3%A3o)
+  - [Comunicação](#comunicacao)
   - [Local de trabalho e equipamentos](#local-de-trabalho-e-equipamentos)
   - [Personalidade](#personalidade)
 - [Perguntas e Respostas](#perguntas-e-respostas)
   - [Perguntas sobre trabalho remoto](#perguntas-sobre-trabalho-remoto)
-    - [Qual a vantagem e desvantagem de se trabalhar remotamente? Qual a maior dificuldade que você encontrou nesse tipo de trabalho?](#qual-a-vantagem-e-desvantagem-de-se-trabalhar-remotamente-qual-a-maior-dificuldade-que-voc%C3%AA-encontrou-nesse-tipo-de-trabalho)
-    - [Como são os projetos que você pega sendo do core team da Toptal e qual a diferença dos projetos de quem é freelancer?](#como-s%C3%A3o-os-projetos-que-voc%C3%AA-pega-sendo-do-core-team-da-toptal-e-qual-a-diferen%C3%A7a-dos-projetos-de-quem-%C3%A9-freelancer)
+    - [Qual a vantagem e desvantagem de se trabalhar remotamente? Qual a maior dificuldade que você encontrou nesse tipo de trabalho?](#qual-a-vantagem-e-desvantagem-de-se-trabalhar-remotamente-qual-a-maior-dificuldade-que-voce-encontrou-nesse-tipo-de-trabalho)
+    - [Como são os projetos que você pega sendo do core team da Toptal e qual a diferença dos projetos de quem é freelancer?](#como-sao-os-projetos-que-voce-pega-sendo-do-core-team-da-toptal-e-qual-a-diferenca-dos-projetos-de-quem-e-freelancer)
     - [Quais ferramentas utiliza para medir a sua produtividade?](#quais-ferramentas-utiliza-para-medir-a-sua-produtividade)
     - [Quais ferramentas utiliza para se organizar? E no trabalho?](#quais-ferramentas-utiliza-para-se-organizar-e-no-trabalho)
-    - [Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?](#at%C3%A9-hoje-s%C3%B3-ouvi-falar-sobre-ferramentas-de-pareamento-remoto-mas-nunca-vi-na-pr%C3%A1tica-quais-s%C3%A3o)
-    - [Qual stack você usa na Toptal?](#qual-stack-voc%C3%AA-usa-na-toptal)
-    - [Como você recebe seu pagamento? Existe CLT ou só PJ?](#como-voc%C3%AA-recebe-seu-pagamento-existe-clt-ou-s%C3%B3-pj)
+    - [Até hoje só ouvi falar sobre ferramentas de pareamento remoto mas nunca vi na prática. Quais são?](#ate-hoje-so-ouvi-falar-sobre-ferramentas-de-pareamento-remoto-mas-nunca-vi-na-pratica-quais-sao)
+    - [Qual stack você usa na Toptal?](#qual-stack-voce-usa-na-toptal)
+    - [Como você recebe seu pagamento? Existe CLT ou só PJ?](#como-voce-recebe-seu-pagamento-existe-clt-ou-so-pj)
     - [Como manter-se animado a programar em um trabalho remoto?](#como-manter-se-animado-a-programar-em-um-trabalho-remoto)
-    - [Iniciei ontem a trabalhar remotamente, fico receoso de não estar 100% do tempo à disposição. Como dizer não?](#iniciei-ontem-a-trabalhar-remotamente-fico-receoso-de-n%C3%A3o-estar-100-do-tempo-%C3%A0-disposi%C3%A7%C3%A3o-como-dizer-n%C3%A3o)
-    - [Como um iniciante em programação pode se organizar para adquirir conhecimento e conseguir trabalhar remoto?](#como-um-iniciante-em-programa%C3%A7%C3%A3o-pode-se-organizar-para-adquirir-conhecimento-e-conseguir-trabalhar-remoto)
-    - [Qual a média de idade dos desenvolvedores fora do Brasil? Desenvolvedores mais velhos tem espaço na Europa?](#qual-a-m%C3%A9dia-de-idade-dos-desenvolvedores-fora-do-brasil-desenvolvedores-mais-velhos-tem-espa%C3%A7o-na-europa)
-    - [No seu primeiro trabalho em inglês, como você julga seu nível de inglês pra falar com os colegas de trabalho? E para o exterior, como é?](#no-seu-primeiro-trabalho-em-ingl%C3%AAs-como-voc%C3%AA-julga-seu-n%C3%ADvel-de-ingl%C3%AAs-pra-falar-com-os-colegas-de-trabalho-e-para-o-exterior-como-%C3%A9)
+    - [Iniciei ontem a trabalhar remotamente, fico receoso de não estar 100% do tempo à disposição. Como dizer não?](#iniciei-ontem-a-trabalhar-remotamente-fico-receoso-de-nao-estar-100-do-tempo-a-disposicao-como-dizer-nao)
+    - [Como um iniciante em programação pode se organizar para adquirir conhecimento e conseguir trabalhar remoto?](#como-um-iniciante-em-programacao-pode-se-organizar-para-adquirir-conhecimento-e-conseguir-trabalhar-remoto)
+    - [Qual a média de idade dos desenvolvedores fora do Brasil? Desenvolvedores mais velhos tem espaço na Europa?](#qual-a-media-de-idade-dos-desenvolvedores-fora-do-brasil-desenvolvedores-mais-velhos-tem-espaco-na-europa)
+    - [No seu primeiro trabalho em inglês, como você julga seu nível de inglês pra falar com os colegas de trabalho? E para o exterior, como é?](#no-seu-primeiro-trabalho-em-ingles-como-voce-julga-seu-nivel-de-ingles-pra-falar-com-os-colegas-de-trabalho-e-para-o-exterior-como-e)
   - [Perguntas sobre viagens e trabalho](#perguntas-sobre-viagens-e-trabalho)
-    - [Você gasta bastante dinheiro para viajar? Como faz com hospedagem?](#voc%C3%AA-gasta-bastante-dinheiro-para-viajar-como-faz-com-hospedagem)
-    - [Como você consegue trabalhar quando viaja?](#como-voc%C3%AA-consegue-trabalhar-quando-viaja)
-    - [Como você tem achado os locais para trampar? Existe algum app que o ajuda nesta tarefa?](#como-voc%C3%AA-tem-achado-os-locais-para-trampar-existe-algum-app-que-o-ajuda-nesta-tarefa)
-    - [Gostaria de saber como a mudança de lugares afeta sua rotina de produtividade e concentração.](#gostaria-de-saber-como-a-mudan%C3%A7a-de-lugares-afeta-sua-rotina-de-produtividade-e-concentra%C3%A7%C3%A3o)
-    - [Como você cria seu roteiro para viagens? Utiliza algum app?](#como-voc%C3%AA-cria-seu-roteiro-para-viagens-utiliza-algum-app)
-- [Conclusão](#conclus%C3%A3o)
+    - [Você gasta bastante dinheiro para viajar? Como faz com hospedagem?](#voce-gasta-bastante-dinheiro-para-viajar-como-faz-com-hospedagem)
+    - [Como você consegue trabalhar quando viaja?](#como-voce-consegue-trabalhar-quando-viaja)
+    - [Como você tem achado os locais para trampar? Existe algum app que o ajuda nesta tarefa?](#como-voce-tem-achado-os-locais-para-trampar-existe-algum-app-que-o-ajuda-nesta-tarefa)
+    - [Gostaria de saber como a mudança de lugares afeta sua rotina de produtividade e concentração.](#gostaria-de-saber-como-a-mudanca-de-lugares-afeta-sua-rotina-de-produtividade-e-concentracao)
+    - [Como você cria seu roteiro para viagens? Utiliza algum app?](#como-voce-cria-seu-roteiro-para-viagens-utiliza-algum-app)
+- [Conclusão](#conclusao)
 
 ## Introdução
 
@@ -146,10 +147,10 @@ Mas é complicado dizer isso quando não se está realmente dentro de casa. Se v
 Se você morar com mãe/parceiro(a), um diálogo assim é super comum:
 
 > **Parceiro(a)/Mãe** - Vai ali no mercado para mim rapidinho? <br>
-**Você** - Não posso, estou trabalhando. <br>
-**Parceiro(a)/Mãe** - É rapidinho pow, preciso de massa de tomate para fazer o almoço. <br>
-**Você** - Já disse, estou trabalhando, não posso. <br>
-**Parceiro(a)/Mãe** - Você fica sentado aí o dia inteiro, tinha que ajudar mais.
+> **Você** - Não posso, estou trabalhando. <br>
+> **Parceiro(a)/Mãe** - É rapidinho pow, preciso de massa de tomate para fazer o almoço. <br>
+> **Você** - Já disse, estou trabalhando, não posso. <br>
+> **Parceiro(a)/Mãe** - Você fica sentado aí o dia inteiro, tinha que ajudar mais.
 
 É claro que com um parceiro(a)/mãe mais pacientes e com conversa, tudo se resolve, mas esteja preparado para essas distrações do dia a dia.
 
