@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const PostWrapper = styled.section`
   align-items: center;
@@ -16,7 +16,7 @@ export const PostWrapper = styled.section`
   `}
 `
 
-export const PostLink = styled(Link)`
+export const PostLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;

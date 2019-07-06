@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import ReactGA from 'react-ga'
 
 import { Home } from 'styled-icons/boxicons-solid/Home'
@@ -7,6 +7,8 @@ import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from 'styled-icons/boxicons-regular/UpArrowAlt'
 import { LightbulbOutline as Light } from 'styled-icons/material/LightbulbOutline'
 import { GraduationCap } from 'styled-icons/fa-solid/GraduationCap'
+
+import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
 
@@ -26,7 +28,7 @@ const courseClickTrack = () => {
   })
 }
 
-const themeClickTrack = (theme) => {
+const themeClickTrack = theme => {
   ReactGA.event({
     category: 'theme',
     action: 'click',
@@ -54,22 +56,45 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <Link to="/" title="Voltar para Home">
+        <AniLink
+          to="/"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          title="Voltar para Home"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
-        </Link>
-        <Link to="/search" title="Search" onClick={() => searchClickTrack()}>
+        </AniLink>
+        <AniLink
+          to="/search"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          title="Search"
+          onClick={() => searchClickTrack()}
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>
-        </Link>
-        <Link to="/cursos" title="Cursos" onClick={() => courseClickTrack()}>
+        </AniLink>
+        <AniLink
+          to="/cursos"
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          title="Cursos"
+          onClick={() => courseClickTrack()}
+        >
           <S.MenuBarItem>
             <GraduationCap />
             <S.MenuBarNotification />
           </S.MenuBarItem>
-        </Link>
+        </AniLink>
       </S.MenuBarGroup>
 
       <S.MenuBarGroup>

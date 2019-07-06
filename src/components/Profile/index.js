@@ -4,10 +4,18 @@ import PropTypes from 'prop-types'
 import Avatar from '../Avatar'
 import * as S from './styled'
 
+import getThemeColor from '../../utils/getThemeColor'
+
 const Profile = ({ title, position, authorDescription }) => {
   return (
     <S.ProfileContainer>
-      <S.ProfileLink to="/">
+      <S.ProfileLink
+        to="/"
+        cover
+        direction="left"
+        bg={getThemeColor()}
+        duration={0.6}
+      >
         <Avatar />
         <S.ProfileAuthor>
           {title}

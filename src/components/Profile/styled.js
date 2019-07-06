@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
@@ -7,7 +7,7 @@ export const ProfileContainer = styled.section`
   flex-direction: column;
 `
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(AniLink)`
   ${media.lessThan('large')`
     display: flex;
     text-align: left;

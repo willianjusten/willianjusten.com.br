@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import { TransitionPortal } from 'gatsby-plugin-transition-link'
+
 import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
@@ -27,9 +29,13 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <Sidebar site={site.siteMetadata} />
+      <TransitionPortal>
+        <Sidebar site={site.siteMetadata} />
+      </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
-      <MenuBar />
+      <TransitionPortal>
+        <MenuBar />
+      </TransitionPortal>
     </S.LayoutWrapper>
   )
 }
