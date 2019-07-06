@@ -51,9 +51,6 @@ const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  html {
-    scroll-behavior: smooth;
-  }
   body {
     background: var(--background);
     line-height: 1;

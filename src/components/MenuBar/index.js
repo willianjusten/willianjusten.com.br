@@ -51,7 +51,7 @@ const MenuBar = () => {
         </S.MenuBarItem>
         <S.MenuBarItem
           title="Ir para o Topo"
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={() => window.scroll({ top: 0, behavior: 'smooth' })}
         >
           <Arrow />
         </S.MenuBarItem>
