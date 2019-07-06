@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 export const SidebarContainer = styled.aside`
   align-items: center;
-  border-right: 1px solid ${props => props.theme.borders};
-  background: ${props => props.theme.mediumBackground};
+  border-right: 1px solid var(--borders);
+  background: var(--mediumBackground);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -21,16 +21,16 @@ export const SidebarContainer = styled.aside`
   `}
 
   p {
-    color: ${props => props.theme.texts};
+    color: var(--texts);
   }
 
   a {
-    color: ${props => props.theme.texts};
+    color: var(--texts);
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-      color: ${props => props.theme.highlight};
+      color: var(--highlight);
     }
   }
 `

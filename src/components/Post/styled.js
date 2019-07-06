@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export const PostWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid ${props => props.theme.borders};
+  border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
@@ -17,21 +17,21 @@ export const PostWrapper = styled.section`
 `
 
 export const PostLink = styled(Link)`
-  color: ${props => props.theme.texts};
+  color: var(--texts);
   display: flex;
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: ${props => props.theme.highlight};
+    color: var(--highlight);
   }
 `
 
 export const PostTag = styled.div`
   align-items: center;
-  background: ${props => props.theme.highlight};
+  background: var(--highlight);
   border-radius: 50%;
-  color: ${props => props.theme.white};
+  color: var(--white);
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;

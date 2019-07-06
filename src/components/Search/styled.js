@@ -20,21 +20,21 @@ export const SearchWrapper = styled.section`
   }
 
   .ais-Stats {
-    color: ${props => props.theme.texts};
+    color: var(--texts);
   }
 
   .ais-SearchBox-input {
     background: none;
     border: none;
-    border-bottom: 1px solid ${props => props.theme.borders};
-    color: ${props => props.theme.texts};
+    border-bottom: 1px solid var(--borders);
+    color: var(--texts);
     display: flex;
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
 
     &::placeholder {
-      color: ${props => props.theme.texts};
+      color: var(--texts);
     }
   }
 

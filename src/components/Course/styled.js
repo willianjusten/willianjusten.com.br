@@ -15,7 +15,7 @@ export const ImageWrapper = styled(Img)`
 
 export const CourseWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid ${props => props.theme.borders};
+  border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
@@ -27,13 +27,13 @@ export const CourseWrapper = styled.section`
 `
 
 export const CourseLink = styled.a`
-  color: ${props => props.theme.texts};
+  color: var(--texts);
   display: flex;
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: ${props => props.theme.highlight};
+    color: var(--highlight);
   }
 `
 

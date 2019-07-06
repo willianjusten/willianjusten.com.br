@@ -11,8 +11,8 @@ import SEO from '../components/Seo'
 import Post from '../components/Post'
 
 const SeriesTitle = styled.h2`
-  background: ${props => props.theme.borders};
-  color: ${props => props.theme.texts};
+  background: var(--borders);
+  color: var(--texts);
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem 4.4rem;

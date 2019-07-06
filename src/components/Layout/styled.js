@@ -10,7 +10,7 @@ export const LayoutWrapper = styled.section`
 `
 
 export const LayoutMain = styled.main`
-  background: ${props => props.theme.background};
+  background: var(--background);
   width: 100%;
   overflow-y: scroll;
   height: 100vh;

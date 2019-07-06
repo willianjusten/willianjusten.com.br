@@ -3,8 +3,8 @@ import media from 'styled-media-query'
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
-  background: ${props => props.theme.mediumBackground};
-  border-left: 1px solid ${props => props.theme.borders};
+  background: var(--mediumBackground);
+  border-left: 1px solid var(--borders);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -31,7 +31,7 @@ export const MenuBarGroup = styled.div`
 `
 
 export const MenuBarItem = styled.span`
-  color: ${props => (props.isLightMode ? '#eaea04' : props.theme.texts)};
+  color: ${props => (!props.isDarkMode ? 'var(--texts)' : '#eaea04')};
   cursor: pointer;
   display: block;
   height: 3.75rem;
@@ -41,7 +41,7 @@ export const MenuBarItem = styled.span`
   transition: color 0.5s;
 
   &:hover {
-    color: ${props => props.theme.highlight};
+    color: var(--highlight);
   }
 
   ${media.lessThan('large')`

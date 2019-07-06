@@ -6,12 +6,7 @@ import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
 
-import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme } from '../../styles/theme'
-
 import * as S from './styled'
-
-import useLightMode from '../../utils/useLightmode'
 
 const Layout = ({ children }) => {
   const { site } = useStaticQuery(
@@ -29,17 +24,13 @@ const Layout = ({ children }) => {
     `
   )
 
-  const [isLightMode, setLightMode] = useLightMode()
-
   return (
-    <ThemeProvider theme={isLightMode ? lightTheme : darkTheme}>
-      <S.LayoutWrapper>
-        <GlobalStyles />
-        <Sidebar site={site.siteMetadata} />
-        <S.LayoutMain>{children}</S.LayoutMain>
-        <MenuBar setLightMode={setLightMode} isLightMode={isLightMode} />
-      </S.LayoutWrapper>
-    </ThemeProvider>
+    <S.LayoutWrapper>
+      <GlobalStyles />
+      <Sidebar site={site.siteMetadata} />
+      <S.LayoutMain>{children}</S.LayoutMain>
+      <MenuBar />
+    </S.LayoutWrapper>
   )
 }
 
