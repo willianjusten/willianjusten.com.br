@@ -49,7 +49,10 @@ const MenuBar = () => {
         >
           <Light />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem
+          title="Ir para o Topo"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>

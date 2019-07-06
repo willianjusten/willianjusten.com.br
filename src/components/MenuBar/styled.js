@@ -10,6 +10,9 @@ export const MenuBarWrapper = styled.aside`
   height: 100vh;
   justify-content: space-between;
   padding: 0.8rem 0;
+  position: fixed;
+  right: 0;
+  width: 3.75rem;
 
   ${media.lessThan('large')`
     bottom: 0;

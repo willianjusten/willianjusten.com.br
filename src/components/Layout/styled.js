@@ -11,14 +11,11 @@ export const LayoutWrapper = styled.section`
 
 export const LayoutMain = styled.main`
   background: var(--background);
-  width: 100%;
-  overflow-y: scroll;
-  height: 100vh;
+  padding: 0 3.75rem 0 20rem;
   transition: background 0.5s, color 0.5s;
+  width: 100%;
 
   ${media.lessThan('large')`
-    overflow-y: auto;
-    /* removing the height of the two bars */
-    height: auto;
+    padding: 0 0 3rem 0;
   `}
 `

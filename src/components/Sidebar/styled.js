@@ -8,15 +8,16 @@ export const SidebarContainer = styled.aside`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-width: 320px;
+  position: fixed;
   padding: 2rem;
   text-align: center;
-  width: 320px;
+  width: 20rem;
 
   ${media.lessThan('large')`
     align-items: flex-start;
     height: auto;
     padding: 1rem;
+    position: inherit;
     width: 100%;
   `}
 
