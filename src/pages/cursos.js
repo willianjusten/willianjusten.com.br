@@ -71,7 +71,11 @@ const coursesList = [
 
 const CursosPage = () => (
   <Layout>
-    <SEO title="Cursos" />
+    <SEO
+      title="Cursos"
+      description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
+      image="https://willianjusten.com.br/assets/img/cursos/cursos-bg.png"
+    />
     {coursesList.map(({ title, description, link, image }, i) => (
       <Course
         key={i}

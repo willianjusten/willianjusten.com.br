@@ -34,7 +34,11 @@ const SeriesPage = props => {
 
   return (
     <Layout>
-      <SEO title="Series" />
+      <SEO
+        title="Series"
+        description="Aqui ficarão as series em que iremos abordar sobre determinados assuntos."
+        image="https://willianjusten.com.br/assets/img/series.png"
+      />
       {categories.map((category, i) => (
         <section key={i}>
           <SeriesTitle id={slugifyCategory(category)}># {category}</SeriesTitle>

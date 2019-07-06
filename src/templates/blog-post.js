@@ -16,7 +16,11 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={`https://willianjusten.com.br${post.frontmatter.image}`}
+      />
       <PostHeader>
         <PostDate>{post.frontmatter.date}</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
@@ -35,6 +39,7 @@ export const query = graphql`
       html
       frontmatter {
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        image
         description
         title
       }
