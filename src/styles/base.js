@@ -191,6 +191,15 @@ export const MainContent = styled.section`
 
   .gatsby-resp-image-image {
     box-shadow: none !important;
+    transition: opacity 0.2s;
+
+    &.lazyload {
+      opacity: 0;
+    }
+
+    &.lazyloaded {
+      opacity: 1;
+    }
   }
 
   .gatsby-highlight {
