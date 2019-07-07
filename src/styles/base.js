@@ -189,6 +189,10 @@ export const MainContent = styled.section`
     font-size: 1.2rem;
   }
 
+  .gatsby-resp-image-image {
+    box-shadow: none !important;
+  }
+
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
 
