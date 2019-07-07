@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { graphql } from 'gatsby'
 
 import { Disqus } from 'gatsby-plugin-disqus'
@@ -23,19 +23,6 @@ export default ({ data }) => {
     title: post.frontmatter.title
   }
 
-  var load_disqus = false
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 500
-      ) {
-        load_disqus = true
-      }
-    })
-  })
-
   return (
     <Layout>
       <SEO
@@ -51,7 +38,7 @@ export default ({ data }) => {
       <MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        {load_disqus && <Disqus config={disqusConfig} />}
+        <Disqus config={disqusConfig} />
       </MainContent>
     </Layout>
   )
