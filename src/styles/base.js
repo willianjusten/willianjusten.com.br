@@ -189,14 +189,6 @@ export const MainContent = styled.section`
     font-size: 1.2rem;
   }
 
-  iframe[src*='ads-iframe'] {
-    display: none;
-  }
-
-  #disqus_thread {
-    width: 100%;
-  }
-
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
 
