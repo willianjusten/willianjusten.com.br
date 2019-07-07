@@ -34,7 +34,7 @@ export const MenuBarGroup = styled.div`
 `
 
 export const MenuBarItem = styled.span`
-  color: ${props => (!props.isDarkMode ? 'var(--texts)' : '#eaea04')};
+  color: var(--texts);
   cursor: pointer;
   display: block;
   height: 3.75rem;
@@ -42,6 +42,10 @@ export const MenuBarItem = styled.span`
   position: relative;
   width: 3.75rem;
   transition: color 0.5s;
+
+  &.light {
+    color: #eaea04;
+  }
 
   &:hover {
     color: var(--highlight);

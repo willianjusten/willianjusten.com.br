@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import ReactGA from 'react-ga'
 
 import { Home } from 'styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
@@ -11,38 +10,7 @@ import { GraduationCap } from 'styled-icons/fa-solid/GraduationCap'
 import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
-
-const searchClickTrack = () => {
-  ReactGA.event({
-    category: 'search',
-    action: 'click',
-    label: 'Search na Menu Bar'
-  })
-}
-
-const courseClickTrack = () => {
-  ReactGA.event({
-    category: 'cursos',
-    action: 'click',
-    label: 'Link na Menu Bar'
-  })
-}
-
-const themeClickTrack = theme => {
-  ReactGA.event({
-    category: 'theme',
-    action: 'click',
-    label: `Usava ${theme} theme`
-  })
-}
-
-const topClickTrack = () => {
-  ReactGA.event({
-    category: 'top',
-    action: 'click',
-    label: `Top na Menu Bar`
-  })
-}
+import * as GA from './trackers'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
@@ -75,7 +43,7 @@ const MenuBar = () => {
           bg={getThemeColor()}
           duration={0.6}
           title="Search"
-          onClick={() => searchClickTrack()}
+          onClick={() => GA.searchClickTrack()}
         >
           <S.MenuBarItem>
             <Search />
@@ -88,7 +56,7 @@ const MenuBar = () => {
           bg={getThemeColor()}
           duration={0.6}
           title="Cursos"
-          onClick={() => courseClickTrack()}
+          onClick={() => GA.courseClickTrack()}
         >
           <S.MenuBarItem>
             <GraduationCap />
@@ -101,9 +69,10 @@ const MenuBar = () => {
         <S.MenuBarItem
           title="Mudar o Tema"
           onClick={() => {
-            themeClickTrack(theme)
+            GA.themeClickTrack(theme)
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}
+          className={theme}
           isDarkMode={isDarkMode}
         >
           <Light />
@@ -111,7 +80,7 @@ const MenuBar = () => {
         <S.MenuBarItem
           title="Ir para o Topo"
           onClick={() => {
-            topClickTrack()
+            GA.topClickTrack()
             window.scroll({ top: 0, behavior: 'smooth' })
           }}
         >
