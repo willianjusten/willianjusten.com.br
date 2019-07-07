@@ -2,6 +2,18 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const SearchWrapper = styled.section`
+  background: var(--background);
+  display: flex;
+  width: 100%;
+  transition: opacity 0.4s;
+
+  .ais-InstantSearch__root {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;

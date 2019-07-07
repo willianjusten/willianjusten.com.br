@@ -13,7 +13,10 @@ const algolia = {
 const SearchPage = props => {
   return (
     <Layout>
-      <SEO title="Search" description="Vai lá, não tenha medo. Busque por posts novos e bem antigos." />
+      <SEO
+        title="Search"
+        description="Vai lá, não tenha medo. Busque por posts novos e bem antigos."
+      />
       <Search algolia={algolia} />
     </Layout>
   )
