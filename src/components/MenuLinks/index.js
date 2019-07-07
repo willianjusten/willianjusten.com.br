@@ -25,7 +25,6 @@ const MenuLinks = () => {
               cover
               direction="left"
               bg={getThemeColor()}
-              duration={0.6}
               to={link.url}
               onClick={() => menuLinkClickTrack(link.label)}
             >

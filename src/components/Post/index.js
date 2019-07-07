@@ -7,7 +7,7 @@ import getThemeColor from '../../utils/getThemeColor'
 
 const Post = ({ slug, date, title, description, main_class }) => {
   return (
-    <S.PostLink to={slug} paintDrip hex={getThemeColor()} duration={0.6}>
+    <S.PostLink to={slug} cover direction="right" bg={getThemeColor()}>
       <S.PostWrapper>
         {main_class && (
           <S.PostTag className={`is-${main_class}`}>{main_class}</S.PostTag>

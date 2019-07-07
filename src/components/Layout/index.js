@@ -29,11 +29,11 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <TransitionPortal>
+      <TransitionPortal level="top">
         <Sidebar site={site.siteMetadata} />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal>
+      <TransitionPortal level="top">
         <MenuBar />
       </TransitionPortal>
     </S.LayoutWrapper>
