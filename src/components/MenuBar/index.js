@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import { Home } from 'styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
@@ -24,42 +23,43 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <AniLink
+        <S.MenuBarLink
           to="/"
           cover
           direction="right"
           bg={getThemeColor()}
           title="Voltar para Home"
+          activeClassName="active"
         >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
-        </AniLink>
-        <AniLink
+        </S.MenuBarLink>
+        <S.MenuBarLink
           to="/search"
           cover
           direction="right"
           bg={getThemeColor()}
           title="Search"
-          onClick={() => GA.searchClickTrack()}
+          activeClassName="active"
         >
-          <S.MenuBarItem>
+          <S.MenuBarItem onClick={() => GA.searchClickTrack()}>
             <Search />
           </S.MenuBarItem>
-        </AniLink>
-        <AniLink
+        </S.MenuBarLink>
+        <S.MenuBarLink
           to="/cursos"
           cover
           direction="right"
           bg={getThemeColor()}
           title="Cursos"
-          onClick={() => GA.courseClickTrack()}
+          activeClassName="active"
         >
-          <S.MenuBarItem>
+          <S.MenuBarItem onClick={() => GA.courseClickTrack()}>
             <GraduationCap />
             <S.MenuBarNotification />
           </S.MenuBarItem>
-        </AniLink>
+        </S.MenuBarLink>
       </S.MenuBarGroup>
 
       <S.MenuBarGroup>

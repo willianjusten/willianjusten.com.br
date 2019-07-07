@@ -27,6 +27,7 @@ const MenuLinks = () => {
               bg={getThemeColor()}
               to={link.url}
               onClick={() => menuLinkClickTrack(link.label)}
+              activeClassName="active"
             >
               {link.label}
             </AniLink>

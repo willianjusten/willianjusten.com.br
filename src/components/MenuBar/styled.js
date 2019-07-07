@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+
 export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: var(--mediumBackground);
@@ -33,6 +35,16 @@ export const MenuBarGroup = styled.div`
   `}
 `
 
+export const MenuBarLink = styled(AniLink)`
+  display: block;
+
+  &.active {
+    span {
+      color: var(--highlight);
+    }
+  }
+`
+
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
@@ -50,6 +62,13 @@ export const MenuBarItem = styled.span`
   &:hover {
     color: var(--highlight);
   }
+
+  ${media.lessThan('large')`
+    height: 3.2rem;
+    padding: .9rem;
+    position: relative;
+    width: 3.2rem;
+  `}
 `
 
 export const MenuBarNotification = styled.span`
