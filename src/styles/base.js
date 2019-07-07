@@ -189,6 +189,10 @@ export const MainContent = styled.section`
     font-size: 1.2rem;
   }
 
+  .gatsby-resp-image-background-image {
+    z-index: 2;
+  }
+
   .gatsby-resp-image-image {
     box-shadow: none !important;
     transition: opacity 0.2s;
@@ -199,6 +203,7 @@ export const MainContent = styled.section`
 
     &.lazyloaded {
       opacity: 1;
+      z-index: 3;
     }
   }
 
