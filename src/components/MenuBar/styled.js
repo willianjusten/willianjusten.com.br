@@ -50,14 +50,6 @@ export const MenuBarItem = styled.span`
   &:hover {
     color: var(--highlight);
   }
-
-  ${media.lessThan('large')`
-    height: 3rem;
-    padding: 1.1rem;
-    padding: .9rem;
-    position: relative;
-    width: 3rem;
-  `}
 `
 
 export const MenuBarNotification = styled.span`
