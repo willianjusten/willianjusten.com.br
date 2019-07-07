@@ -20,7 +20,7 @@ const RecommendedPosts = ({ next, previous }) => (
       <S.RecommendedLink
         to={previous.fields.slug}
         cover
-        direction="right"
+        direction="left"
         bg={getThemeColor()}
         className="previous"
         onClick={() => RecommendedClickTrack()}
