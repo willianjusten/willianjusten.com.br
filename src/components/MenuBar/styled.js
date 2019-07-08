@@ -17,6 +17,7 @@ export const MenuBarWrapper = styled.aside`
   width: 3.75rem;
 
   ${media.lessThan('large')`
+    border-top: 1px solid var(--borders);
     bottom: 0;
     flex-direction: row;
     height: auto;
