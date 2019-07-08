@@ -108,10 +108,6 @@ Para fazer funcionar, basta adicionar as seguintes linhas no head:
 <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
 ```
 
-#### E como faço para testar se eu não uso essa porcaria de windows 8?
-
-Tem [esse site](http://www.buildmypinnedsite.com/), que cria o tile e ainda mostra um preview para você.
-
 ## Conclusão
 
 Pequenos detalhes fazem grandes diferenças e passam de simples sites feitos por sobrinhos, para sites profissionais. Se liga, faz um trabalho legal e será recompensado.

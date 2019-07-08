@@ -86,9 +86,9 @@ A única coisa que fiz foram tutoriais, nunca fui além disso, por mais que seja
 
 ### Vue.JS e Angular Novo
 
-O famoso "Nunca vi, nem comi, só ouço falar". Exatamente, eu nunca sequer fiz um tutorial ou li sobre. No meu trabalho eu nunca tive necessidade de aprender e na vida pessoal, meus projetos sempre foram com React ou JS puro. Como o [Lfeh](https://twitter.com/LFeh) diz e eu sigo a mesma filosofia:
+O famoso "Nunca vi, nem comi, só ouço falar". Exatamente, eu nunca sequer fiz um tutorial ou li sobre. No meu trabalho eu nunca tive necessidade de aprender e na vida pessoal, meus projetos sempre foram com React ou JS puro. Como o [@felipefialho\_](https://twitter.com/felipefialho_) diz e eu sigo a mesma filosofia:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Como sempre digo, ir aprendendo conforme necessidade ou conforme surge interesse é muito melhor do que estudar milhares de coisas ao mesmo tempo.</p>&mdash; felipe.d.ts (@LFeh) <a href="https://twitter.com/LFeh/status/1080475270023393280?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Como sempre digo, ir aprendendo conforme necessidade ou conforme surge interesse é muito melhor do que estudar milhares de coisas ao mesmo tempo.</p>&mdash; felipe.d.ts (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1080475270023393280?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
 
 ## Conclusão
 

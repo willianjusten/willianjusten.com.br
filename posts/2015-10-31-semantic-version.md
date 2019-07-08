@@ -16,7 +16,7 @@ introduction: 'Como versionar corretamente o seu projeto e assim conseguir infor
 
 ## Introdução
 
-E aí pessoal, tenho ficado distante pacas, fazendo só posts dos links lidos na semana, mas hoje resolvi escrever alguma coisa, pouca e básica, mas não menos importante. Vou tentar fazer assim, para conseguir criar mais conteúdo e também me animar/agitar um pouco. Nesse exato momento estou ouvindo uma playlist chamada [Melancholia](https://open.spotify.com/user/spotify/playlist/1rg0arh9uWqGOYH7gEtQ6a), que tem músicas bem bacanas e que no momento está combinando um pouco comigo...
+E aí pessoal, tenho ficado distante pacas, fazendo só posts dos links lidos na semana, mas hoje resolvi escrever alguma coisa, pouca e básica, mas não menos importante. Vou tentar fazer assim, para conseguir criar mais conteúdo e também me animar/agitar um pouco. Nesse exato momento estou ouvindo uma playlist chamada [Melancholia](https://open.spotify.com/playlist/37i9dQZF1DWZrc3lwvImLj?si=T01Fdb5ASAa8yHHpnAUNJQ), que tem músicas bem bacanas e que no momento está combinando um pouco comigo...
 
 ## O que é versionar e por que versionar?
 

@@ -16,7 +16,7 @@ introduction: "Aprenda a criar os famosos botões deslizantes de on/off usados n
 
 ## Introdução
 
-Fala pessoal, para não deixar a peteca cair, resolvi escrever hoje também! Para me animar enquanto escrevo, estou uma playlist perfeita para a época, [Best of Star Wars](https://open.spotify.com/user/spotify/playlist/09H7xj3DbNhS8gbJg0biU0) <3
+Fala pessoal, para não deixar a peteca cair, resolvi escrever hoje também! Para me animar enquanto escrevo, estou uma playlist perfeita para a época, [Best of Star Wars](https://open.spotify.com/playlist/37i9dQZF1DXaUaRhCgtpCo?si=hA6xkhVFTGW0Tv8ekL817w) <3
 
 O post de hoje será bem simples, mas que eu precisei fazer há pouco tempo para um freela e achei que pudesse ser útil para mais pessoas, pois além de ser uma paradinha útil, também ajuda a entender mais conceitos de css e seletores.
 

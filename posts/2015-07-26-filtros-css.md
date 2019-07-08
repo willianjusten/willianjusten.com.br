@@ -18,7 +18,7 @@ introduction: "Transforme o seu browser no seu próprio photoshop e aplique filt
 
 Antes de mais nada, quero agradecer a todos que acessam meu blog, hoje eu alcancei a marca de **+200 mil acessos** em pouco mais de 6 meses que escrevo, isso pode não parecer nada, mas para mim é muito importante. Fico feliz de saber que tanta gente lê meu blog e que de vez em quando eu ajudo alguém =)
 
-Já que eu subi a serra ontem, hoje estou descendo e nada melhor que aproveitar esse tempo para escrever um post. Está fazendo um friozinho bacana e está super nublado aqui, para acompanhar esse tempo, continuo na vibe de jazz, ouvindo uma playlist chamada [Pure Mellow Jazz](https://open.spotify.com/user/spotify/playlist/06OhmUE4YvxCoEDn0KaDBX), muito boa.
+Já que eu subi a serra ontem, hoje estou descendo e nada melhor que aproveitar esse tempo para escrever um post. Está fazendo um friozinho bacana e está super nublado aqui, para acompanhar esse tempo, continuo na vibe de jazz, ouvindo uma playlist chamada [Pure Mellow Jazz](https://open.spotify.com/playlist/37i9dQZF1DWSBRKlyNxSuy?si=bEQu8_38Twq39uoRtABu_Q), muito boa.
 
 O post não pode ser muito extenso, até porque só tenho cerca de 1:30 de viagem, para isso resolvi falar sobre uma paradinha bem bacana que são os filtros CSS.
 

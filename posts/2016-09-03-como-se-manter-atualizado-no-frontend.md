@@ -77,7 +77,7 @@ E como fazer para ler tantos links legais? Bom, durante muito tempo, eu trabalhe
 
 <h3 id="links-blogs">Links dos Blogs</h3>
 
-Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar alguns aqui e aí conto com a ajuda de vocês para fazer a lista crescer com referências maneiras hein! Acabei me lembrando que o Lfeh fez uma [lista bem maneira de alguns blogs](https://github.com/LFeh/feed-list), vale a pena olhar também hein!
+Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar alguns aqui e aí conto com a ajuda de vocês para fazer a lista crescer com referências maneiras hein! Acabei me lembrando que o Lfeh fez uma [lista bem maneira de alguns blogs](https://github.com/felipefialho/feed-list), vale a pena olhar também hein!
 
 #### Em inglês
 
@@ -101,7 +101,7 @@ Existem vários blogs, tanto brasileiros como estrangeiros, eu vou colocar algun
 - [Blog do Maujor](http://www.maujor.com/blog/) - como não falar dessa lenda? Muito material bom lá.
 - [Felipe Fialho Blog](https://www.felipefialho.com/blog/) - blog de um parceirão que tá sempre ajudando a comunidade de desenvolvimento, mas que vou dar um apertão de orelha para escrever mais =p
 - [Da2k](http://blog.da2k.com.br/) - blog de outro amigão o Fernando Daciuk, com posts super completos de JS.
-- [Arquitetura de Informação](http://arquiteturadeinformacao.com/) - blog bem legal sobre usabilidade, user experience, design, tecnologia e comportamento.
+- [UX Collective](https://brasil.uxdesign.cc/) - blog bem legal sobre usabilidade, user experience, design, tecnologia e comportamento.
 - [UI Lab](http://www.uilab.com.br/) - blog com novidades e dicas sobre usabilidade, user experience, design e user interface.
 
 <h2 id="reddit">Reddit</h2>

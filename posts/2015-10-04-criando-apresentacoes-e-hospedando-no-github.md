@@ -18,7 +18,7 @@ introduction: "Um tutorial de como criar slides para suas apresentações com o 
 
 Caramba, como fazia tempo que eu não postava nada aqui. O mês passado foi muito apertado, participei de vários eventos, tanto palestrando como assistindo e por isso não conseguia muito tempo para escrever. Um pouco também foi devido a preguiça...pois é, vergonha né? =/
 
-Bom, para não perder o costume, hoje estou ouvindo uma playlist bem calminha e legal que se chama [Your favorite Coffeehouse](https://open.spotify.com/user/spotify/playlist/4BKT5olNFqLB1FAa8OtC8k), já tinha passado o olho nela, mas resolvi aproveitar o climinha de Petrópolis para ouvir.
+Bom, para não perder o costume, hoje estou ouvindo uma playlist bem calminha e legal que se chama [Your favorite Coffeehouse](https://open.spotify.com/playlist/37i9dQZF1DX6ziVCJnEm59?si=90_msHLtR3S1YBlx-2vlLA), já tinha passado o olho nela, mas resolvi aproveitar o climinha de Petrópolis para ouvir.
 
 O post de hoje será bem simples, mas que me salvou bastante nesse mês, que como eu disse, precisei fazer várias apresentações.
 

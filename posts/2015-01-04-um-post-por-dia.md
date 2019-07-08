@@ -41,7 +41,7 @@ E para vocês não falarem que eu fiz um post praticamente inútil, vai aqui um 
 
 #### Gringos
 * [Echo JS](http://www.echojs.com/rss) - posts sobre JS o dia inteiro
-* [A List Apart](http://alistapart.com/site/rss) - blog sobre desenvolvimento web
+* [A List Apart](https://alistapart.com/main/feed/) - blog sobre desenvolvimento web
 * [Codrops](http://feeds2.feedburner.com/tympanus) - blog mais lindo sobre desenvolvimento web e design
 * [Creative JS](http://creativejs.com/feed/) - Blog sobre JS e um pouco de curiosidades
 * [CSS-Tricks](http://feeds.feedburner.com/CssTricks) - Blog sobre desenvolvimento frontend

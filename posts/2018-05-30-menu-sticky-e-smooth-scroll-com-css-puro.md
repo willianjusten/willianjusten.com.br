@@ -25,9 +25,9 @@ categories:
 
 Fala pessoal, como eu acho que fiquei parado muito tempo e o número de posts caiu muito, quero voltar a escrever mais. E por isso decidi que vou fazer vários posts bem simples, mas não menos importantes, sobre algumas propriedades do CSS que podemos usar a nosso favor, assim como alguns experimentos legais, que podem ser usados nos seus próximos trabalhos.
 
-Eu já tinha pensando em fazer esse post, mas o [LFeh](https://twitter.com/LFeh) acabou dando uma forcinha quando criou o seguinte Tweet:
+Eu já tinha pensando em fazer esse post, mas o [@felipefialho_](https://twitter.com/felipefialho_) acabou dando uma forcinha quando criou o seguinte Tweet:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">👉 position: sticky;<br><br>- Mistura \\`fixed\\` e \\`absolute\\`<br>- Só com CSS conseguimos um efeito que necessitava de JavaScript <br>- Suporte em todos os browsers modernos (bugs contornáveis)<br>- É legal pra caraleo<br><br>Vejam esse exemplo simplezão 😁<a href="https://t.co/fM22xYUMBV">https://t.co/fM22xYUMBV</a></p>&mdash; Felipe Fialho (@LFeh) <a href="https://twitter.com/LFeh/status/1001473242719277057?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">👉 position: sticky;<br><br>- Mistura \\`fixed\\` e \\`absolute\\`<br>- Só com CSS conseguimos um efeito que necessitava de JavaScript <br>- Suporte em todos os browsers modernos (bugs contornáveis)<br>- É legal pra caraleo<br><br>Vejam esse exemplo simplezão 😁<a href="https://t.co/fM22xYUMBV">https://t.co/fM22xYUMBV</a></p>&mdash; Felipe Fialho (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1001473242719277057?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
 
 Bom vamos lá, a trilha sonora que me acompanha hoje é um post-rock dos bons, a banda se chama [Tides from nebula](https://open.spotify.com/artist/1CzKORB9IN0EjPEyeKBIkf?si=A6YHiIyCSre7opSSu6a5Yw) e para mim é um som perfeito para se concentrar e programar.
 

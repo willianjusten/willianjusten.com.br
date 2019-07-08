@@ -55,7 +55,7 @@ Pega lá um cafézinho e vem comigo, sei que você não gosta de teoria, mas é 
 
 Antes mesmo de começar a falar sobre Testes, precisamos voltar um pouco e falar sobre Qualidade de Software. A nossa preocupação por ter um sistema de qualidade, que nos fez pensar em métodos para garantir isso e daí nasceram os testes! =D
 
-Esse ano eu tive a oportunidade de palestrar na [Imasters DeveloperWeek 2015 - RJ](http://developerweek.imasters.com.br/rio-de-janeiro/) e falei sobre Qualidade de Software, você pode ver os [slides aqui](https://willianjusten.github.io/imasters-2015/#/). E como a palavra _qualidade_ é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
+Esse ano eu tive a oportunidade de palestrar na Imasters DeveloperWeek 2015 - RJ e falei sobre Qualidade de Software, você pode ver os [slides aqui](https://willianjusten.github.io/imasters-2015/#/). E como a palavra _qualidade_ é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
 
 <h3 id="qualidade-cliente">Qualidade para o cliente</h3>
 

@@ -26,10 +26,9 @@ Bom, vamos parar com a enrolação e vamos ao post!
 
 ## Um tweet inocente
 
-Meu amigo [Bernard de Luna](https://twitter.com/bernarddeluna) que vem fazendo um trabalho muito maneiro na [Bunee.io](https://bunee.io/) fez o seguinte tweet:
+Meu amigo [Bernard de Luna](https://twitter.com/bernarddeluna) que vem fazendo um trabalho muito maneiro na Bunee.io fez o seguinte tweet:
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">A cor roxa simboliza os talentos que aparentam serem bons, mas nao possuem um github ativo e relevante.<br><br>Entendem a importancia? <a href="https://t.co/ZY2OTnZjWp">pic.twitter.com/ZY2OTnZjWp</a></p>&mdash; Bernard De Luna (@bernarddeluna) <a href="https://twitter.com/bernarddeluna/status/893178227002355713">August 3, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 O que eu acho que ele quis dizer com esse Tweet é como o Github é importante e pode mudar a visão da empresa que está procurando gente para contratar. Ele marcou alguns potenciais bons desenvolvedores, mas que não possuiam um Github ativo, ele não os excluiu de forma alguma, simplesmente apontou a falta de um **diferencial** que esses desenvolvedores poderiam ter.
 

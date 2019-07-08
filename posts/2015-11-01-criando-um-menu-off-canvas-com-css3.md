@@ -17,7 +17,7 @@ introduction: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Tran
 
 ## Introdução
 
-Como eu disse no post anterior, vou tentar voltar a escrever um pouquinho mais e para isso escolhi uma coisa que há muito tempo já haviam me perguntado, que era, como criar um menu off canvas como eu uso nesse blog. A trilha sonora de hoje vai ser [Forever Alone](https://open.spotify.com/user/spotify/playlist/2U3mZqDktE7UJ1gE4eVoUv) (que minha namorada não leia isso =o).
+Como eu disse no post anterior, vou tentar voltar a escrever um pouquinho mais e para isso escolhi uma coisa que há muito tempo já haviam me perguntado, que era, como criar um menu off canvas como eu uso nesse blog. A trilha sonora de hoje vai ser [Forever Alone](https://open.spotify.com/playlist/5ngzYTyvT5UnRSoTj0rUPC?si=yZfinALfRiShVsb2cKKICQ) (que minha namorada não leia isso =o).
 
 ## Off Canvas
 

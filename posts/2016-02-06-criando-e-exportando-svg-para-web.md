@@ -187,10 +187,6 @@ A opção de `CSS Properties` é uma das mais importantes para a parte de desenv
 
 Quanto menor o número de casas decimais (`Decimal Places`), menor será o tamanho do SVG. Uma casa decimal já é o suficiente na maioria das vezes.
 
-Existem mais opções nesse painel, e o Michael Chaize escreveu um excelente artigo sobre todas essas opções:
-
-- [Export SVG for the web with Illustrator CC](http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/)
-
 Uma outra opção muito importante é **Use Artboards**, se você tem o costume de criar várias artboards para seus ícones, vai gostar dessa opção. Ela irá gerar múltiplos arquivos SVG, um para cada artboard.
 
 ![Use artboards](https://sarasoueidan.com/images/use-artboards.png)

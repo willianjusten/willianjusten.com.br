@@ -17,7 +17,7 @@ introduction: "FAQ: Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como 
 
 Desde a criação do meu blog e dos posts [making of - parte 1](https://willianjusten.com.br/making-of-parte-1/) e [making of - parte 2](https://willianjusten.com.br/making-of-parte-2/), apareceu um grande número de pessoas mais interessadas em Jekyll e o modelo de gerador estático.
 
-É claro que com esse interesse, surgiram várias dúvidas, que não puderam ser explicadas somente com os dois posts. Tiveram várias pessoas que vieram me perguntar alguns detalhes em particular e o [William Goulart](https://github.com/wgoulart) colocou [essa issue](https://github.com/LFeh/1-post-por-dia/issues/20) no nosso [repositório destinado a dúvidas e pedidos de posts](https://github.com/LFeh/1-post-por-dia/), que o grande [Luiz Felipe](https://github.com/LFeh) criou.
+É claro que com esse interesse, surgiram várias dúvidas, que não puderam ser explicadas somente com os dois posts. Tiveram várias pessoas que vieram me perguntar alguns detalhes em particular e o [William Goulart](https://github.com/wgoulart) colocou [essa issue](https://github.com/felipefialho/1-post-por-dia/issues/20) no nosso [repositório destinado a dúvidas e pedidos de posts](https://github.com/felipefialho/1-post-por-dia/), que o grande [Luiz Felipe](https://github.com/felipefialho) criou.
 
 Resolvi pegar todas essas perguntas e respondê-las aqui, assim todo mundo terá acesso a essas dúvidas comuns. <s>Esse post deu um trabalho do caramba, faça o favor de ler! =)</s>
 
@@ -185,7 +185,7 @@ Temos também a possibilidade de utilizar as condicionais `if`, `else if`, `else
 
 <h3 id="post">Como crio um post?</h3>
 
-Para criar um post, basta um arquivo dentro da pasta `_posts` na seguinte formatação `ANO-MES-DIA-titulo.MARKUP`. Onde o markup padrão é `.markdown` ou `.md`, podendo utilizar outros, caso desejar. Para facilitar essa criação, o [Vitor Britto](https://github.com/vitorbritto) criou um [script](https://github.com/vitorbritto/forcefiles/blob/master/scripts/initpost.sh) e um [post](http://www.vitorbritto.com.br/blog/novos-posts-com-estilo/) ensinando como usá-lo e como funciona.
+Para criar um post, basta um arquivo dentro da pasta `_posts` na seguinte formatação `ANO-MES-DIA-titulo.MARKUP`. Onde o markup padrão é `.markdown` ou `.md`, podendo utilizar outros, caso desejar.
 
 <h3 id="pagina">Como crio uma página?</h3>
 

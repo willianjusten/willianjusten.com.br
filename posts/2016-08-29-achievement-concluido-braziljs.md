@@ -52,7 +52,6 @@ A tarde teve uma coletiva lá no shopping e também deu para testar o projetor e
 Mas, como nem tudo são flores, eu precisava voltar para o Hotel e refazer todos os slides que estavam ruins (90%), só que o pessoal todo tinha combinado de sair e conhecer um pouquinho da cidade, mas eu sabia que se eu não ficasse refazendo, o dia seguinte ia ser um desastre. Falei para os meus amigos que não ia dar para sair, aí que o [Jonas Mendes](https://nipher.io/) e o [Márcio Ribeiro](http://shiz.co/) ficaram comigo no hotel ajudando a refazer e ainda dando opiniões do que podia mudar, ficamos até muito tarde fazendo isso, mas no final de tudo, já estávamos rindo e eu estava bem aliviado que aparentemente estava tudo bom.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Indo dormir 3h da manhã, mas tendo a certeza que tenho amigos dispostos a me ajudar sempre, isso já valeu o evento para mim <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a></p>&mdash; Willian Justen (@Willian_justen) <a href="https://twitter.com/Willian_justen/status/769051603043282945">August 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Durante
 
@@ -63,7 +62,6 @@ De repente, o Jaydson sobe no palco e me chama, nossa, ver a galera toda lá, ta
 Ter visto a galera rindo dos meus exemplos e das minhas piadas bobas foi só me dando mais confiança e o barulho que geral fez no final, foi INCRÍVEL! Para quem não estava lá, segue um amostra de como foi, mas multiplica o som e eco por umas 10x.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">final da palestra do <a href="https://twitter.com/Willian_justen">@Willian_justen</a> foi excelente 😁 <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a> <a href="https://t.co/aDLggwbhUd">pic.twitter.com/aDLggwbhUd</a></p>&mdash; yuri (@ybrntt) <a href="https://twitter.com/ybrntt/status/769259830305550340">August 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 E para assistir a apresentação inteira, só seguir [nesse link](https://youtu.be/tJ0XV9W4nHw?t=23396), já no tempo marcado. Os slides também [estão aqui](https://willianjusten.com.br/braziljs-16).
 
@@ -76,16 +74,10 @@ Sabe quando você sente que saiu um peso enorme das costas? Foi exatamente isso,
 Eu saí do palco com 10% de bateria no celular e com tantas notificações, que eu sabia que seria impossível ler tudo antes de acabar a bateria, consegui conectar rapidinho no Mac e fui lendo várias mensagens de carinho, tanto de amigos, como de pessoas que eu não conhecia, mas que gostaram da palestra. Tiveram fotos lindas e até tweet em espanhol! Separei alguns que curti <3
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">música e JavaScript na <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a> com o <a href="https://twitter.com/Willian_justen">@Willian_justen</a>. tá lindo demais! <a href="https://t.co/NKakPXcdIm">pic.twitter.com/NKakPXcdIm</a></p>&mdash; diéssica (@diessicode) <a href="https://twitter.com/diessicode/status/769244358231126017">August 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Entre lo que más me gustó hoy en <a href="https://twitter.com/hashtag/BrazilJS?src=hash">#BrazilJS</a> está la charla de música con JS de <a href="https://twitter.com/Willian_justen">@Willian_justen</a> , estuvo muy interesante!</p>&mdash; Werik (@erikfloresq) <a href="https://twitter.com/erikfloresq/status/769344861812195329">August 27, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr"><a href="https://twitter.com/Willian_justen">@Willian_justen</a> vc foi brilhante na sua talk, como sempre!! &lt;3 não esperava menos de vc!!! <a href="https://twitter.com/hashtag/birrlll?src=hash">#birrlll</a></p>&mdash; ⓖⓐⓑⓡⓘⓔⓛ ⓖⓡⓘⓟⓟ (@grippado) <a href="https://twitter.com/grippado/status/769246166651371520">August 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Amei a palestra do <a href="https://twitter.com/Willian_justen">@Willian_justen</a>!!!<br>Vontade de largar tudo e começar a mexer com trem de audioviz NOW! *_*</p>&mdash; Camila Carrera (@cscarrera) <a href="https://twitter.com/cscarrera/status/769246121633976320">August 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Além dos tweets, tiveram várias pessoas que me pararam para conversar e até mostrar seus projetos, uma coisa mais fantástica que a outra!
 

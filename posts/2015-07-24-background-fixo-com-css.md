@@ -16,7 +16,7 @@ introduction: "Como atrair usuários usando seções com backgrounds fixos usand
 
 ## Introdução
 
-Mais um post extra que venho fazendo enquanto subo a serra em direção a minha querida Petrópolis. No caminho, como não poderia deixar de ser, vou ouvindo uma incrível [playlist de jazz](https://open.spotify.com/user/spotifybrazilian/playlist/6UU6YKnGY1vhnOdjwdg7vA), que foi importante para criação desse mini mini mini tutorial.
+Mais um post extra que venho fazendo enquanto subo a serra em direção a minha querida Petrópolis. No caminho, como não poderia deixar de ser, vou ouvindo uma incrível [playlist de jazz](https://open.spotify.com/playlist/37i9dQZF1DWVqfgj8NZEp1?si=tc-jCV7WQ_C4xwda_ZEVaQ), que foi importante para criação desse mini mini mini tutorial.
 
 ## O que vamos fazer?
 

@@ -348,7 +348,6 @@ Wow! Eu sei, tem muita coisa para ser lida aqui, mas nunca é demais para ler ma
 
 - [Como escolher (e contribuir) no seu primeiro projeto open source (en)](https://github.com/collections/choosing-projects)
 - [Como achar seu primeiro bug para corrigir (en)](https://medium.freecodecamp.org/finding-your-first-open-source-project-or-bug-to-work-on-1712f651e5ba#.slc8i2h1l)
-- [Somente Primeira Vez (en)](https://medium.com/@kentcdodds/first-timers-only-78281ea47455)
 - [Traga bondade para o Open Source (en)](http://www.hanselman.com/blog/BringKindnessBackToOpenSource.aspx)
 - [Como contribuir com Open Source](https://opensource.guide/how-to-contribute/)
 - [Como achar um bug no seu código](https://8thlight.com/blog/doug-bradbury/2016/06/29/how-to-find-bug-in-your-code.html)

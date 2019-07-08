@@ -27,7 +27,7 @@ Vejo demais essa frase e é pura desculpa. Eu sou um péssimo desenhista e mesmo
 
 ![Uma tela do shutterstock para baixar](/assets/img/baixar-svg/imagens.png)
 
-As vezes você quer um background mais legal para a sua aplicação ou um desenho mais elaborado. Nesses bancos de imagens existem muitas imagens em `.png` e `.jpeg`, mas também existem as imagens vetoriais em `.ai`, que são imagens geradas no [Illustrator](http://www.adobe.com/br/products/illustrator.html). Essas imagens podem ser convertidas para SVG facilmente utilizando o próprio Illustrator. Segue esse [post bem legal](http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/), que ensina como exportar SVG no Illustrator.
+As vezes você quer um background mais legal para a sua aplicação ou um desenho mais elaborado. Nesses bancos de imagens existem muitas imagens em `.png` e `.jpeg`, mas também existem as imagens vetoriais em `.ai`, que são imagens geradas no [Illustrator](http://www.adobe.com/br/products/illustrator.html). Essas imagens podem ser convertidas para SVG facilmente utilizando o próprio Illustrator.
 
 #### Links
 

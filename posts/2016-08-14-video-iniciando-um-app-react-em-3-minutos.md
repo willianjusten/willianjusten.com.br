@@ -48,4 +48,4 @@ npm start
 
 ## Info
 
-Se você não quiser perder nenhum vídeo ou post meu, segue minha [página no Facebook](https://www.facebook.com/willian.justen.cursos/), [meu twitter](https://twitter.com/Willian_justen) ou então segue meu [RSS](https://willianjusten.com.br/feed.xml) no seu leitor favorito =)
+Se você não quiser perder nenhum vídeo ou post meu, segue [meu twitter](https://twitter.com/Willian_justen) ou então segue meu [RSS](https://willianjusten.com.br/feed.xml) no seu leitor favorito =)

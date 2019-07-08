@@ -23,7 +23,7 @@ Tenho escrito bastante sobre SVG que agora os links cresceram e ficar listando t
 
 ## Introdução
 
-Como de costume, a trilha sonora enquanto escrevo esse post é uma playlist chamada [Totally Stress Free](https://open.spotify.com/user/spotify/playlist/7jq9hVhkNUyFLN1XivhLvK), estou com uma puta sinusite e não consigo dormir, então umas músicas mais calmas para eu tentar relaxar e conseguir dormir. Por favor, ignorem os erros grotescos que puderem haver no post, ele vai ser bem pequeno até por isso também.
+Como de costume, a trilha sonora enquanto escrevo esse post é uma playlist chamada [Totally Stress Free](https://open.spotify.com/playlist/37i9dQZF1DWT7XSlwvR1ar?si=Msf4R5xgSxyBqfCxDb5rzQ), estou com uma puta sinusite e não consigo dormir, então umas músicas mais calmas para eu tentar relaxar e conseguir dormir. Por favor, ignorem os erros grotescos que puderem haver no post, ele vai ser bem pequeno até por isso também.
 
 
 O post de hoje será em forma de mini-tutorial, então já vou passando logo os exemplos que faremos hoje.
@@ -51,7 +51,7 @@ Se você quiser, tem o link de [onde baixar svg?](https://willianjusten.com.br/o
 
 ### Passo 2 - Limpando o vetor
 
-Como pode ter notado, o arquivo veio em `.AI`, para ser aberto no Illustrator. O que eu queria era somente o avião e seu rastro. Para isso selecionei somente esses dois elementos e os passei para um outro arquivo e o salvei como SVG. Existe um link [ensinando como exportar SVG no Illustrator](http://creativedroplets.com/export-svg-for-the-web-with-illustrator-cc/) se tiverem dúvida, mas é um processo simples de mandar salvar num formato diferente.
+Como pode ter notado, o arquivo veio em `.AI`, para ser aberto no Illustrator. O que eu queria era somente o avião e seu rastro. Para isso selecionei somente esses dois elementos e os passei para um outro arquivo e o salvei como SVG.
 
 ![Imagem do Illustrator](/assets/img/svg-animacoes-css/illustrator.png)
 

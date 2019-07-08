@@ -23,7 +23,7 @@ Fala pessoal, o post de hoje será para falar sobre uma notícia boa, uma notíc
 
 Mas não fique triste, resolvi usar meu próprio blog de cobaia para tentar uma solução, funciona muito bem e é bem fácil de fazer. Só ter paciência (eu num tenho nenhuma) de esperar o DNS propagar direitinho e seguir os passos certinhos.
 
-Vou ouvindo uma playlist que tem combinado um pouco com meus últimos dias, [Life Sucks](https://open.spotify.com/user/spotify/playlist/5eSMIpsnkXJhXEPyRQCTSc).
+Vou ouvindo uma playlist que tem combinado um pouco com meus últimos dias, [Life Sucks](https://open.spotify.com/playlist/37i9dQZF1DX3YSRoSdA634?si=1g34PdUdTIa-NX6TCxi3cQ).
 
 ## Por que usar HTTPS? Isso num era só para ecommerce?
 

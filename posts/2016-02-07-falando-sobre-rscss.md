@@ -77,7 +77,7 @@ O **RSCSS** é uma tentativa de fazer essas coisas terem sentido. Ele não é um
 
 O CSS pode parecer complicado, principalmente quando você escreve de qualquer maneira. Mas ele não precisa ser assim. Se você cria um padrão de escrita, que pode ser passado a outros do time e que você mesmo entenda como funciona, todo o resto acaba se tornando bem simples.
 
-Existem várias metodologias de escrita, temos a metodologia [BEM](https://en.bem.info/method/) que é bastante famosa, temos também o [OSCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/), [SMACSS](https://smacss.com/), [SuitCSS](https://suitcss.github.io/), dentre outras...
+Existem várias metodologias de escrita, temos a metodologia [BEM](https://en.bem.info/method/) que é bastante famosa, temos também o [OSCSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/), [SuitCSS](https://suitcss.github.io/), dentre outras...
 
 <h2 id="escrevendo">Escrevendo CSS</h2>
 

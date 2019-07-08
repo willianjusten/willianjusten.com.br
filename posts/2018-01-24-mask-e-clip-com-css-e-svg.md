@@ -19,7 +19,7 @@ introduction: "Dois efeitos simples que podem transformar seu site com estilo."
 
 ## Introdução
 
-Fala pessoal, faz tanto tempo que não escrevo um post mais técnico, então por que não escrever um post sobre `SVG` já que eu amo tanto. Enquanto escrevo esse post, vou ouvindo uma banda que já falei em outra oportunidade, mas que é sempre bom ouvir de novo, trata-se de [Ghost](https://www.youtube.com/watch?v=omFjjfo1qTM) e o link leva para um acústico muito bom.
+Fala pessoal, faz tanto tempo que não escrevo um post mais técnico, então por que não escrever um post sobre `SVG` já que eu amo tanto. Enquanto escrevo esse post, vou ouvindo uma banda que já falei em outra oportunidade, mas que é sempre bom ouvir de novo, trata-se de [Ghost](https://www.youtube.com/watch?v=neRhGoW3Kbc&list=RDneRhGoW3Kbc&start_radio=1&t=7) e o link leva para um acústico muito bom.
 
 ## Ideia do Post
 

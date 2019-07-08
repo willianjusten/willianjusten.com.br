@@ -223,7 +223,7 @@ No início era só um modo de deixar as páginas um pouquinhos mais bonitas, hoj
 
 #### Frameworks / Grids / Responsive
 
-- [Utilizando o bootstrap de forma consistente](https://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente/)
+- [Utilizando o bootstrap de forma consistente](https://www.felipefialho.com/blog/2014/utilizando-o-bootstrap-de-forma-consistente)
 - [Desenvolvendo com Bootstrap 3](http://thiagonasc.com/desenvolvimento-web/desenvolvendo-com-bootstrap-3-um-framework-front-end-que-vale-a-pena)
 - [Snippets para Bootstrap](http://bootsnipp.com/)
 - [Foundation 5 para iniciantes - video](http://dev.rbtech.info/zurb-foundation-5-iniciantes-aula-1/)
@@ -286,7 +286,6 @@ A maioria das empresas utiliza um desses dois para poder organizar melhor seu c�
 - [Try Git - Code School](https://try.github.io/levels/1/challenges/1)
 - [Guia prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 - [Introdução ao git e github - Vídeo](https://www.youtube.com/watch?v=yNwh0S0S0bU)
-- [SVN Conceitos, boas práticas e dicas de utilização](http://intentor.com.br/svn-conceitos-boas-praticas-dicas-de-utilizacao/)
 
 #### Intermediário/Avançado
 - [A web-focused git workflow](http://joemaller.com/990/a-web-focused-git-workflow/)

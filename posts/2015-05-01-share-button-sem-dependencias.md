@@ -43,8 +43,7 @@ O maior de todos os problemas desses botões é que eles carregam muitas coisas,
 Aqui abaixo coloco os links que as próprias redes sociais disponibilizam:
 
 * [Facebook](https://developers.facebook.com/docs/plugins/share-button)
-* [Twitter](https://about.twitter.com/resources/buttons)
-* [Google Plus](https://developers.google.com/+/web/share/?hl=pt-br)
+* [Twitter](https://publish.twitter.com/)
 
 Criando cada um desses botões e adicionando somentes eles em uma página, temos cerca de 41 requests, dentre arquivos `js`, `json`, `png`...
 
@@ -90,27 +89,6 @@ Exemplo de uso no meu blog:
   <a aria-label="Compartilhe no Facebook"href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook">
         <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
-    </a>
-```
-
-### Google Plus
-
-* URL: [https://plus.google.com/share](https://plus.google.com/share)
-* Parâmetros: `url`,
-* Ver mais em: [https://developers.google.com/+/web/share/#sharelink](https://developers.google.com/+/web/share/#sharelink)
-
-#### Modo de uso
-
-```html
-<a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url=seusite" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+">Compartilhe no Google+</a>
-```
-
-Exemplo de uso no meu blog:
-
-```html
-    <a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}"
-    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+">
-        <svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg>
     </a>
 ```
 

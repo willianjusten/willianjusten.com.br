@@ -18,7 +18,7 @@ introduction: "É muito comum usar funções anônimas o tempo todo, mas porque 
 
 Fala pessoal, vamos lá que esse será um post simplão, mas importante para evitar algumas más práticas em nosso código Javascript.
 
-Enquanto escrevo, vou ouvindo uma playlist chamada [Infinite Indie Folk](https://open.spotify.com/user/spotify/playlist/5mRQ1OKwXfOuTCXftFu62R), adoro esse estilo de música para relaxar e hoje, um sábado lindo e eu aqui na rede, tinha que ouvir algo assim.
+Enquanto escrevo, vou ouvindo uma playlist chamada [Infinite Indie Folk](https://open.spotify.com/playlist/37i9dQZF1DX2taNm7KfjOX?si=eixED2hNSI-krgGi6OSuzw), adoro esse estilo de música para relaxar e hoje, um sábado lindo e eu aqui na rede, tinha que ouvir algo assim.
 
 ## Como criar funções em JS?
 
