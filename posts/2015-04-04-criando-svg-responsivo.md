@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "#10 - Criando um SVG responsivo e adaptativo"
+title: '#10 - Criando um SVG responsivo e adaptativo'
 date: 2015-04-04 15:18:49
 image: '/assets/img/responsivo-svg/main.png'
-description: "Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela."
+description: 'Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Criando um SVG responsivo e adaptativo!"
-introduction: "Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela. Saiba como criar um SVG responsivo e adaptativo."
+  - 'O mundo mágico do SVG'
+twitter_text: 'Criando um SVG responsivo e adaptativo!'
+introduction: 'Hoje em dia com a variedade de telas que temos, o desafio é dar o melhor conteúdo para cada tipo de tela. Saiba como criar um SVG responsivo e adaptativo.'
 ---
 
 ## Índice da série
@@ -43,8 +43,13 @@ Antes de sair adicionando o SVG a torto e a direito, precisamos nos atentar para
 Se você determinar um tamanho dentro do elemento `svg`, que é o nosso "container", você estará bloqueando o tamanho e com isso perdendo a fluidez.
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 128" width="32" height="128">
-	<!-- tira aquele width e height ali!!! -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 128"
+  width="32"
+  height="128"
+>
+  <!-- tira aquele width e height ali!!! -->
 </svg>
 ```
 
@@ -58,7 +63,7 @@ Se nós optarmos por não definir a viewBox a imagem não será redimensionada e
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="...">
-	<!-- defina a viewBox bonitinha =) -->
+  <!-- defina a viewBox bonitinha =) -->
 </svg>
 ```
 
@@ -68,11 +73,11 @@ Se a `viewport` e `viewBox` não possuirem as mesmas dimensões de width e heigh
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-	<!-- se não tiver viewBox ou width e height -->
+  <!-- se não tiver viewBox ou width e height -->
 </svg>
 ```
 
-## Adicionando o  SVG
+## Adicionando o SVG
 
 Tendo feito essas especificações, basta inserir o seu SVG onde quiser. E como eu disse no post [Como usar SVG](https://willianjusten.com.br/como-usar-svg/), existem algumas maneiras de se utilizar SVG e em todas elas é possível criar um SVG fluido, uns são nativos e outros precisam de hack para IEca... Mas isso não é problema para nós!
 
@@ -82,19 +87,18 @@ Basta adicionar o svg como `src` e para assegurar que ele possua o tamanho máxi
 
 ```html
 <style>
-	img,
-	object,
-	embed {
-		width: 100%
-	}
+  img,
+  object,
+  embed {
+    width: 100%;
+  }
 </style>
-<img src="imagem.svg" alt="Minha linda imagem em SVG">
+<img src="imagem.svg" alt="Minha linda imagem em SVG" />
 <object data="imagem.svg" type="image/svg+xml"></object>
-<embed src="imagem.svg" type="image/svg+xml">
+<embed src="imagem.svg" type="image/svg+xml" />
 ```
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="PwvoXB" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PwvoXB/'>Using Fluid SVG as IMG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/PwvoXB/`
 
 Experimente mudar o tamanho do container para ver que a imagem continuará a mesma.
 
@@ -104,17 +108,15 @@ Nesses casos não há necessidade de nenhum hack, basta adicionar onde desejar e
 
 ```html
 <!-- como background -->
-.element {
-	background-image: url("imagem.svg");
-}
+.element { background-image: url("imagem.svg"); }
 
 <div class="element"></div>
 
 <!-- como inline -->
 <div class="container">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 128">
-		<!-- conteúdo do svg aqui -->
-	</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 128">
+    <!-- conteúdo do svg aqui -->
+  </svg>
 </div>
 ```
 
@@ -131,20 +133,25 @@ Para fazer essa mágica é bastante fácil, basta já termos definido como Respo
 Segue uma base de código de como fica:
 
 ```html
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 612 612">
-    <g class="shards">
-      <!-- aqui temos os cristais verde e amarelo -->
-    </g>
-    <g class="crystal">
-      <!-- aqui o cristal maior roxo -->
-    </g>
-    <g class="shadow">
-      <!-- aqui fica a sombra -->
-    </g>
-    <g class="text">
-      <!-- aqui fica o texto -->
-    </g>
-  </svg>
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 612 612"
+>
+  <g class="shards">
+    <!-- aqui temos os cristais verde e amarelo -->
+  </g>
+  <g class="crystal">
+    <!-- aqui o cristal maior roxo -->
+  </g>
+  <g class="shadow">
+    <!-- aqui fica a sombra -->
+  </g>
+  <g class="text">
+    <!-- aqui fica o texto -->
+  </g>
+</svg>
 ```
 
 De posse das classes dos elementos, basta pensarmos nos Steps que queremos e nos cortes da tela.
@@ -155,9 +162,9 @@ Para a primeira diferenciação, queremos retirar os cristais amarelo e verde, v
 
 ```css
 @media (min-width: 480px) and (max-width: 640px) {
-	.shards {
-		display: none;
-	}
+  .shards {
+    display: none;
+  }
 }
 ```
 
@@ -172,19 +179,18 @@ Para o corte 2, queremos retirar também o cristal grande e para que a logo perm
   }
 
   .text path {
-    fill: #BA27E4;
+    fill: #ba27e4;
   }
 
   .crystal {
-    display: none
+    display: none;
   }
 }
 ```
 
 Feito isso, seu componente já está responsivo e adaptativo!! Veja o experimento pronto abaixo:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="ZYVPep" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/ZYVPep/'>Logo SVG Responsive Example</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/ZYVPep/`
 
 Para ver os diferentes estados de uma forma mais fácil, [abra esse link](http://codepen.io/willianjusten/full/ZYVPep/) e faça resize da tela.
 

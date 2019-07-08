@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Alguns seletores css importantes para aprender"
+title: 'Alguns seletores css importantes para aprender'
 date: 2015-06-29 21:22:47
 image: '/assets/img/seletores-css/main.png'
 description: 'Porque CSS é muito mais do que só classes e ids. Aprenda alguns truques legais para facilitar nos seus layouts.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- frontend
-- tutorial
+  - css
+  - frontend
+  - tutorial
 categories:
-twitter_text: "Porque o CSS é muito mais do que só classes e ids."
-introduction: "Porque CSS é muito mais do que só classes e ids. Veja alguns truques legais para facilitar nos seus layouts."
+twitter_text: 'Porque o CSS é muito mais do que só classes e ids.'
+introduction: 'Porque CSS é muito mais do que só classes e ids. Veja alguns truques legais para facilitar nos seus layouts.'
 ---
 
 ## Introdução
@@ -27,31 +27,25 @@ Vai ser um post rapidinho, com alguns exemplos e caso tenham alguma dúvida, pod
 
 Chamado de seletor adjacente, serve para selecionar o elemento imediatamente depois do primeiro elemento.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="vOpvMR" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/vOpvMR/'>Seletor A+B</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/vOpvMR`
 
 Note que somente o elemento `p` seguinte de `a` é afetado pelo estilo.
-
 
 ## A > B
 
 O seletor descendente serve para editar todos os filhos diretos do primeiro elemento, não modificando os elementos mais internos.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="doJwEJ" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/doJwEJ/'>Seletor A > B</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/doJwEJ`
 
 Como pode-se notar, as tags `p` diretas de `.container` ganharam o estilo, enquanto a tag `p` mais interna não sofreu alteração.
-
 
 ## A ~ B
 
 Conhecido como elemento irmão, é bastante parecido com o seletor **A + B**, porém ele seleciona todos os elementos diretos de A e não somente o primeiro. É também importante não se confundir com o seletor **A > B**, visto que ele não é para elementos filhos e sim para elementos seguintes.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="YXYdoa" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/YXYdoa/'>Selector A ~ B</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/YXYdoa`
 
 Perceba que os elementos `p` no mesmo nível de `a` recebem o estilo, enquanto os elementos mais internos e fora do contexto não são afetados.
-
 
 ## A[contexto]
 
@@ -61,8 +55,7 @@ Acho que um dos seletores mais interessantes, de acordo com o que está definido
 
 Esse irá selecionar os elementos com o atributo `alt` definido.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="xGpMKr" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/xGpMKr/'>Selector A[contexto]</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/xGpMKr`
 
 Somente a imagem com o atributo `alt` recebeu o estilo. Útil para você rastrear se alguma imagem não recebeu o atributo `alt`, que é importante para a acessibilidade. Mas pode ser com qualquer tipo de atributo, como um `title`, por exemplo.
 
@@ -70,44 +63,37 @@ Somente a imagem com o atributo `alt` recebeu o estilo. Útil para você rastrea
 
 Irá editar só os links determinados.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="eNyxYz" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/eNyxYz/'>Seletor a[href='...']</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/eNyxYz`
 
 ### A[href*='trecho']
 
 Os links que possuírem pelo menos esse trecho serão estilizados.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="PqEVoX" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PqEVoX/'>Seletor a[href*='trecho']</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/PqEVoX`
 
 ### A[href^='inicio']
 
 Links iniciados com o trecho serão estilizados.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="WvdPNV" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/WvdPNV/'>Seletor A[hrefˆ='inicio']</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/WvdPNV`
 
 ### A[src$='final']
 
 Só trechos com o final igual irão receber o estilo.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="qdpgEP" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/qdpgEP/'>Selector A[src$='final']</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/qdpgEP`
 
 ## A:not(B)
 
 Quando você quer selecionar todos os elementos, exceto um elemento em particular.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="PqEVqV" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PqEVqV/'>Seletor A:not(B)</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
-
+`oembed: http://codepen.io/willianjusten/pen/PqEVqV`
 
 ## A:first-child | A:last-child
 
 Para selecionar o primeiro e o último filho de um elemento. Um dos pseudo-seletores mais úteis que eu conheço. Para remover aquela borda do último elemento, entre outras várias coisas.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="bdazdP" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bdazdP/'>Seletores A:first-child e A:last-child</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/bdazdP`
 
 ## A:checked
 
@@ -115,15 +101,13 @@ Seletor utilizado em inputs do tipo `radio` e `checkbox`, serve para várias coi
 
 E aqui um exemplo simples:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="NqXoGQ" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/NqXoGQ/'>Seletor A:checked</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/NqXoGQ`
 
 ## A:nth-child(n)
 
 Outro pseudo-seletor bastante bacana, serve para selecionar o elemento na posição indicada pelo argumento `n`. Por exemplo, se colocamos `:nth-child(2)` iremos selecionar o segundo elemento daquele conjunto. Mas podemos criar uma expressão `:nth-child(3n)`, onde todos os elementos múltiplos de 3 seriam selecionados (3,6,9...).
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="BNJMjE" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/BNJMjE/'>Seletor A:nth-child(n)</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/BNJMjE`
 
 ## Conclusão
 

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Criando um switch button com CSS"
+title: 'Criando um switch button com CSS'
 date: 2015-12-06 20:42:25
 image: '/assets/img/on-off/on-off-ios.jpg'
-description: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps."
+description: 'Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- tutorial
+  - css
+  - tutorial
 categories:
-twitter_text: "Aprenda a criar os famosos botões de on/off usados no iOS, Android e WebApps."
-introduction: "Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps. E deixe a usabilidade do seu sistema melhor."
+twitter_text: 'Aprenda a criar os famosos botões de on/off usados no iOS, Android e WebApps.'
+introduction: 'Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps. E deixe a usabilidade do seu sistema melhor.'
 ---
 
 ## Introdução
@@ -32,7 +32,7 @@ Primeiro de tudo, como vamos trabalhar com um `checkbox`, nada mais justo que cr
 
 ```html
 <div class="switch__container">
-  <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+  <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
   <label for="switch-shadow"></label>
 </div>
 ```
@@ -93,7 +93,7 @@ Depois, na própria label, iremos utilizar o seletor `:before`, que vai ser resp
   top: 1px;
   left: 1px;
   bottom: 1px;
-  content: "";
+  content: '';
 }
 .switch--shadow + label:before {
   right: 1px;
@@ -131,8 +131,7 @@ Esse é um truque bem legal e que serve para muitas coisas, existe um seletor no
 
 Verificando se o input foi marcado e caso tenha sido, mudar a cor e também mover a bolinha para o lado. E pronto! Seu switch botão no estilo iOS está criado! Se quiser, você pode brincar com o CSS e fazer outros estilos, como um flat ou qualquer outro. Segue abaixo uma Demo do que fizemos:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="jWOgVM" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/jWOgVM/'>jWOgVM</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/jWOgVM/`
 
 ## Atualização
 

@@ -216,6 +216,10 @@ export const MainContent = styled.section`
     `}
   }
 
+  .twitter-tweet {
+    margin: 1rem auto;
+  }
+
   .instagram-media {
     margin: 1rem auto !important;
   }

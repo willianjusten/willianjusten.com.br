@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Falando sobre RSCSS"
+title: 'Falando sobre RSCSS'
 date: 2016-02-07 18:48:16
 image: '/assets/img/rscss/rscss.png'
 description: 'Escrevendo CSS sem perder a sanidade. Aprenda uma metodologia que pode salvar muitas dores de cabeça.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- metodologia
-- frontend
+  - css
+  - metodologia
+  - frontend
 categories:
 twitter_text: 'Escrevendo CSS sem perder a sanidade.'
 introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico St. Cruz o criador chama a atenção de todos sobre uma metodologia melhor para se escrever CSS.'
@@ -24,28 +24,27 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 - [Tentando melhorar...](#tentando)
 - [E se existisse uma maneira de ter os dois limpos?](#e-se)
 - [Trabalhando com RSCSS](#trab-rscss)
-    + [1. Tudo é um componente ](#comp)
-        - [1.1 Nomeando Componentes](#comp-name)
-    + [2. Elementos](#elementos)
-        - [2.1 Nomeando elementos](#elementos-name)
-        - [2.2 Elementos seletores](#elementos-seletores)
-        - [2.3 Múltiplas palavras](#elementos-multiplas-palavras)
-        - [2.4 Evite usar tags como seletores](#elementos-evite-tags)
-    + [3. Variações](#variacoes)
-        - [3.1 Nomeando variações](#variacoes-name)
-        - [3.2 Variações nos elementos](#variacoes-elementos)
-        - [3.3 Por que usar prefixos com traço?](#variacoes-tracos)
-    + [4. Componentes aninhados (nested)](#componentes-nested)
-        - [4.1 Variações](#nested-variacoes)
-        - [4.2 Simplifique componentes internos](#nested-simplifique)
-    + [5. Layouts](#layouts)
-        - [5.1 Evite propriedades de posicionamento](#layouts-evite)
-        - [5.2 Defina posicionamento nos pais](#layouts-posicionamento)
-    + [6. Helpers](#helpers)
-    + [7. Estrutura CSS](#estrutura-css)
+  - [1. Tudo é um componente ](#comp)
+    - [1.1 Nomeando Componentes](#comp-name)
+  - [2. Elementos](#elementos)
+    - [2.1 Nomeando elementos](#elementos-name)
+    - [2.2 Elementos seletores](#elementos-seletores)
+    - [2.3 Múltiplas palavras](#elementos-multiplas-palavras)
+    - [2.4 Evite usar tags como seletores](#elementos-evite-tags)
+  - [3. Variações](#variacoes)
+    - [3.1 Nomeando variações](#variacoes-name)
+    - [3.2 Variações nos elementos](#variacoes-elementos)
+    - [3.3 Por que usar prefixos com traço?](#variacoes-tracos)
+  - [4. Componentes aninhados (nested)](#componentes-nested)
+    - [4.1 Variações](#nested-variacoes)
+    - [4.2 Simplifique componentes internos](#nested-simplifique)
+  - [5. Layouts](#layouts)
+    - [5.1 Evite propriedades de posicionamento](#layouts-evite)
+    - [5.2 Defina posicionamento nos pais](#layouts-posicionamento)
+  - [6. Helpers](#helpers)
+  - [7. Estrutura CSS](#estrutura-css)
 - [Exemplo](#exemplo)
 - [Conclusão](#conclusao)
-
 
 <h2 id="intro">Introdução</h2>
 
@@ -101,33 +100,35 @@ O problema de se fazer isso ali, é que quando temos um grande número de propri
 
 ```scss
 .nav {
-    width: 100%;
-    padding: 10px 25px;
-    position: fixed;
+  width: 100%;
+  padding: 10px 25px;
+  position: fixed;
 
-    ul {
-        max-width: 940px;
-        li {
-            display: inline-block;
-            border: 1px solid #ccc;
-            padding: 10px 50px;
+  ul {
+    max-width: 940px;
+    li {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 10px 50px;
 
-            a {
-                color: #333;
+      a {
+        color: #333;
 
-                &:hover {
-                    text-decoration: none;
-                }
-            }
+        &:hover {
+          text-decoration: none;
         }
+      }
     }
+  }
 }
 ```
 
 Sem contar a dificuldade de leitura daquilo ali, ainda estamos gerando um código assim:
 
 ```css
-.nav ul li a { ... }
+.nav ul li a {
+  ...;
+}
 ```
 
 Isso é horrível, pois aumenta bastante a especificidade e se eu num futuro quiser mudar um pouco das propriedades, vou ter que criar algo para sobrescrever isso, o que vai acabar sujando ainda mais o meu código.
@@ -201,8 +202,12 @@ Prefira usar o seletor filho `>` sempre que possível. Isso previne que a propri
 
 ```scss
 .article-card {
-    .title { /* bom */ }
-    > .author { /* melhor ainda */ }
+  .title {
+    /* bom */
+  }
+  > .author {
+    /* melhor ainda */
+  }
 }
 ```
 
@@ -212,9 +217,15 @@ Para aqueles elementos que precisam de uma ou mais palavras, concatene elas sem 
 
 ```scss
 .profile-box {
-  > .firstname { /* ... */ }
-  > .lastname { /* ... */ }
-  > .avatar { /* ... */ }
+  > .firstname {
+    /* ... */
+  }
+  > .lastname {
+    /* ... */
+  }
+  > .avatar {
+    /* ... */
+  }
 }
 ```
 
@@ -224,8 +235,12 @@ Use classe sempre que possível. Tags são ok, mas podem vir com uma pequena per
 
 ```scss
 .article-card {
-  > h3    { /* ✗ evite */ }
-  > .name { /* ✓ melhor */ }
+  > h3 {
+    /* ✗ evite */
+  }
+  > .name {
+    /* ✓ melhor */
+  }
 }
 ```
 
@@ -241,9 +256,15 @@ As classes de variações devem ser prefixadas por um traço. É legal pensar ni
 
 ```scss
 .like-button {
-  &.-wide { /* ... */ }
-  &.-short { /* ... */ }
-  &.-disabled { /* ... */ }
+  &.-wide {
+    /* ... */
+  }
+  &.-short {
+    /* ... */
+  }
+  &.-disabled {
+    /* ... */
+  }
 }
 ```
 
@@ -253,8 +274,12 @@ Assim como os componentes, podemos querer variar os elementos. Preste atenção,
 
 ```scss
 .shopping-card {
-  > .title { /* ... */ }
-  > .title.-small { /* ... */ }
+  > .title {
+    /* ... */
+  }
+  > .title.-small {
+    /* ... */
+  }
 }
 ```
 
@@ -271,12 +296,12 @@ Alguns dos motivos de se usar são:
 ![Componentes aninhados](/assets/img/rscss/component-nesting.png)
 
 ```html
-<div class='article-link'>
-  <div class='vote-box'>
+<div class="article-link">
+  <div class="vote-box">
     ...
   </div>
-  <h3 class='title'>...</h3>
-  <p class='meta'>...</p>
+  <h3 class="title">...</h3>
+  <p class="meta">...</p>
 </div>
 ```
 
@@ -288,15 +313,17 @@ Evite modificar o componente interno através do commponente principal.
 
 ```scss
 .article-header {
-  > .vote-box > .up { /* ✗ evite isso */ }
+  > .vote-box > .up {
+    /* ✗ evite isso */
+  }
 }
 ```
 
 Ao invés disso, prefira adicionar uma variação ao componente interno e aplicar a partir dele.
 
 ```html
-<div class='article-header'>
-  <div class='vote-box -highlight'>
+<div class="article-header">
+  <div class="vote-box -highlight">
     ...
   </div>
   ...
@@ -305,7 +332,9 @@ Ao invés disso, prefira adicionar uma variação ao componente interno e aplica
 
 ```scss
 .vote-box {
-  &.-highlight > .up { /* ... */ }
+  &.-highlight > .up {
+    /* ... */
+  }
 }
 ```
 
@@ -314,18 +343,18 @@ Ao invés disso, prefira adicionar uma variação ao componente interno e aplica
 As vezes, quando usando componentes aninhados, seu markup pode ficar um pouco sujo:
 
 ```html
-<div class='search-form'>
-  <input class='input' type='text'>
-  <button class='search-button -red -large'></button>
+<div class="search-form">
+  <input class="input" type="text" />
+  <button class="search-button -red -large"></button>
 </div>
 ```
 
 Você pode simplificar isso, utilizando a propriedade de `@extend` de seu pre-processador:
 
 ```html
-<div class='search-form'>
-  <input class='input' type='text'>
-  <button class='submit'></button>
+<div class="search-form">
+  <input class="input" type="text" />
+  <button class="submit"></button>
 </div>
 ```
 
@@ -352,7 +381,7 @@ Componentes devem ser criados de uma forma que possam ser reutilizados em difere
 - Posicionamento (position, top, left, right, bottom)
 - Floats (float, clear)
 - Margens (margin)
-- Dimensões fixas (width, height) * com exceção de elementos que precisam ter tamanhos fixos mesmo.
+- Dimensões fixas (width, height) \* com exceção de elementos que precisam ter tamanhos fixos mesmo.
 
 <h4 id="layouts-posicionamento">5.2 Defina posicionamento nos pais</h4>
 
@@ -371,10 +400,18 @@ Se você realmente precisa definir algum tipo de posicionamento no componente, f
 }
 
 .article-card {
-  & { /* ... */ }
-  > .image { /* ... */ }
-  > .title { /* ... */ }
-  > .category { /* ... */ }
+  & {
+    /* ... */
+  }
+  > .image {
+    /* ... */
+  }
+  > .title {
+    /* ... */
+  }
+  > .category {
+    /* ... */
+  }
 }
 ```
 
@@ -383,10 +420,18 @@ Se você realmente precisa definir algum tipo de posicionamento no componente, f
 Essas classes tem como uso principal, sobrescrever valores, coloque-as em arquivos separados e as nomeie com underscore. Essas classes, em geral, são marcadas com `!important`. Portanto, use com muita cautela e as evite o máximo possível.
 
 ```scss
-._unmargin { margin: 0 !important; }
-._center { text-align: center !important; }
-._pull-left { float: left !important; }
-._pull-right { float: right !important; }
+._unmargin {
+  margin: 0 !important;
+}
+._center {
+  text-align: center !important;
+}
+._pull-left {
+  float: left !important;
+}
+._pull-right {
+  float: right !important;
+}
 ```
 
 <h3 id="estrutura-css">7. Estrutura CSS</h3>
@@ -396,13 +441,23 @@ O RSCSS não tem uma premissa forte para estrutura não, tendo somente como úni
 ```scss
 /* css/components/search-form.scss */
 .search-form {
-  > .button { /* ... */ }
-  > .field { /* ... */ }
-  > .label { /* ... */ }
+  > .button {
+    /* ... */
+  }
+  > .field {
+    /* ... */
+  }
+  > .label {
+    /* ... */
+  }
 
   // variants
-  &.-small { /* ... */ }
-  &.-wide { /* ... */ }
+  &.-small {
+    /* ... */
+  }
+  &.-wide {
+    /* ... */
+  }
 }
 ```
 
@@ -416,8 +471,7 @@ E, então chamar esses componentes usando o glob matching:
 
 Para quem gosta de aprender com exemplo, segue abaixo o exemplo de um card implementado seguindo a metodologia do RSCSS:
 
-<p data-height="500" data-theme-id="11319" data-slug-hash="gPBJWq" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/gPBJWq/'>A simple use case of RSCSS</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`ombed: http://codepen.io/willianjusten/pen/gPBJWq/`
 
 Repare que o nesting de só até dois elementos foi respeitado, que o componente principal tem duas palavras (`photo-card`) e que os elementos possuem somente um nome.
 

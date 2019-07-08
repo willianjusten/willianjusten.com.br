@@ -37,14 +37,7 @@ Cada uma dessas formas tem suas utilidades, vantagens e desvantagens e eu irei e
 
 ### 1 - Como Imagem
 
-<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="willianjusten" data-slug-hash="emvYLJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Svg como imagem">
-  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/emvYLJ/">
-  Svg como imagem</a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-Para adicionar um SVG como imagem, basta colocá-lo dentro da `src` da tag `img`.
+`oembed: https://codepen.io/willianjusten/pen/emvYLJ/`
 
 ```html
 <img src="img/logo.svg" alt="Logo" />
@@ -54,8 +47,7 @@ A utilização desta forma impede o acesso dos elementos separados do SVG, poré
 
 ### 2 - Como Background-image
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="zxZYmK" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/zxZYmK/'>SVG Background-image</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/zxZYmK/`
 
 Para adicionar um SVG como background-image, basta criar um elemento com uma classe definida e então nesta classe, adicionar o SVG na propriedade de background-image.
 
@@ -69,8 +61,7 @@ Quando se deseja criar grandes cenários, um método bastante interessante é ut
 
 ### 3 - Inline SVG
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="ByWaqv" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/ByWaqv/'>Svg Inline</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/ByWaqv/`
 
 O SVG inline é a utilização da sua estrutura jogada diretamente no código html, como o SVG trabalha numa estrutura similar ao xml/html, ele acaba se encaixando sem problemas dentro do site. Uma dica é criar partials separadas, contendo todos esses elementos SVG e adicioná-los no seu código, assim evita de ver aquele código gigante que algumas imagens podem ter. As vantagens do inline é que você tem a manipulação total dos elementos e também tem um carregamento super veloz.
 

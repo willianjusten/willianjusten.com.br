@@ -12,7 +12,6 @@ module.exports = {
     siteUrl: 'https://willianjusten.com.br'
   },
   plugins: [
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     {
@@ -59,6 +58,24 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 960,
               linkImagesToOriginal: false
+            }
+          },
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              // defaults to false
+              usePrefix: true,
+              providers: {
+                include: ['Twitter', 'Instagram', 'Codepen'],
+                exclude: [
+                  'Reddit',
+                  'Flickr',
+                  'Youtube',
+                  'Twitch',
+                  'Vimeo',
+                  'SoundCloud'
+                ]
+              }
             }
           },
           {

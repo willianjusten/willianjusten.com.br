@@ -75,7 +75,7 @@ O Dan Abramov fez uma palestra no ano passado explicando todos os conceitos e mo
 
 Uma outra fonte que eu acho super legal é esse Tweet abaixo:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How migration of a class to hooks look like and how much code it saves &amp; simplifies. <a href="https://twitter.com/hashtag/React?src=hash&amp;ref_src=twsrc%5Etfw">#React</a> <a href="https://t.co/E72sNfi4ZX">pic.twitter.com/E72sNfi4ZX</a></p>&mdash; Andreas Kull (@akullpp) <a href="https://twitter.com/akullpp/status/1093192074038513664?ref_src=twsrc%5Etfw">February 6, 2019</a></blockquote>
+`oembed: https://twitter.com/akullpp/status/1093192074038513664?ref_src=twsrc%5Etfw`
 
 Se você perceber, o código não ficou muito menor, mas as responsabilidades ficaram mais organizadas em seus devidos blocos, o que já facilita DEMAIS na escrita e leitura do código.
 

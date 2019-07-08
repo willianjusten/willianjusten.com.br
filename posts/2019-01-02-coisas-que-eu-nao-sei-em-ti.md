@@ -30,7 +30,7 @@ Só que uma coisa super normal é nós pensarmos que pessoas como ele, sabem de 
 
 Quando eu vi o post, fiz questão de ler e retweetar, pois sei que muitas pessoas acabam se sentindo mal por não saber X ou Y. E imaginei que um post desses poderia ajudar a refletirem. E aí nesse retweet, recebi o seguinte pedido:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Que maravilhoso isso mano. Seria legal se você e outros devs brasileiros se sentisse a vontade pra fazer um também. Ia rolar mais identificação ainda.<br>Serio ajudou muito ja esse post</p>&mdash; Rafael Camillo (@camillodev) <a href="https://twitter.com/camillodev/status/1080279481028366337?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
+`oembed: https://twitter.com/camillodev/status/1080279481028366337?ref_src=twsrc%5Etfw`
 
 Então, aqui estou eu, é claro que eu não sou mundialmente famoso igual ao Dan, mas já fiz uma coisa ou outra e tenho vários leitores, sendo um post em português, pode agregar mais um pouco também e ajudar nessa reflexão =)
 
@@ -88,7 +88,7 @@ A única coisa que fiz foram tutoriais, nunca fui além disso, por mais que seja
 
 O famoso "Nunca vi, nem comi, só ouço falar". Exatamente, eu nunca sequer fiz um tutorial ou li sobre. No meu trabalho eu nunca tive necessidade de aprender e na vida pessoal, meus projetos sempre foram com React ou JS puro. Como o [@felipefialho\_](https://twitter.com/felipefialho_) diz e eu sigo a mesma filosofia:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Como sempre digo, ir aprendendo conforme necessidade ou conforme surge interesse é muito melhor do que estudar milhares de coisas ao mesmo tempo.</p>&mdash; felipe.d.ts (@felipefialho_) <a href="https://twitter.com/felipefialho_/status/1080475270023393280?ref_src=twsrc%5Etfw">January 2, 2019</a></blockquote>
+`oembed: https://twitter.com/felipefialho_/status/1080475270023393280?ref_src=twsrc%5Etfw`
 
 ## Conclusão
 

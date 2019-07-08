@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "A importância do Github para Desenvolvedores"
+title: 'A importância do Github para Desenvolvedores'
 date: 2017-08-04 12:04:36
 image: '/assets/img/github-importancia/importancia-git.jpg'
-description: "Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores."
+description: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
 main-class: 'dev'
 color: '#637a91'
 tags:
-- dev
-- dicas
+  - dev
+  - dicas
 categories:
-twitter_text: "Motivos do pq eu acho q o Github é importante para os devs."
-introduction: "Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores."
+twitter_text: 'Motivos do pq eu acho q o Github é importante para os devs.'
+introduction: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
 ---
 
 ## Introdução
@@ -28,7 +28,7 @@ Bom, vamos parar com a enrolação e vamos ao post!
 
 Meu amigo [Bernard de Luna](https://twitter.com/bernarddeluna) que vem fazendo um trabalho muito maneiro na Bunee.io fez o seguinte tweet:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">A cor roxa simboliza os talentos que aparentam serem bons, mas nao possuem um github ativo e relevante.<br><br>Entendem a importancia? <a href="https://t.co/ZY2OTnZjWp">pic.twitter.com/ZY2OTnZjWp</a></p>&mdash; Bernard De Luna (@bernarddeluna) <a href="https://twitter.com/bernarddeluna/status/893178227002355713">August 3, 2017</a></blockquote>
+`oembed: https://twitter.com/bernarddeluna/status/893178227002355713`
 
 O que eu acho que ele quis dizer com esse Tweet é como o Github é importante e pode mudar a visão da empresa que está procurando gente para contratar. Ele marcou alguns potenciais bons desenvolvedores, mas que não possuiam um Github ativo, ele não os excluiu de forma alguma, simplesmente apontou a falta de um **diferencial** que esses desenvolvedores poderiam ter.
 

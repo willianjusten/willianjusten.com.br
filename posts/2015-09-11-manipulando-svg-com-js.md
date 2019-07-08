@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "#14 - Manipulando SVG com JS"
+title: '#14 - Manipulando SVG com JS'
 date: 2015-09-11 21:14:39
 image: '/assets/img/manipulando-svg-com-js/main.png'
 description: 'Veja como manipular SVG com JS e algumas libs para brincar.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- js
-- tutorial
+  - svg
+  - js
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
+  - 'O mundo mágico do SVG'
 twitter_text: 'Veja como manipular SVG com JS e algumas libs para brincar.'
-introduction: "Veja como manipular SVG com JS e algumas libs para brincar."
+introduction: 'Veja como manipular SVG com JS e algumas libs para brincar.'
 ---
 
 ## Introdução
@@ -46,50 +46,51 @@ Como já sabemos, o SVG quando incorporado numa página de html5, se comporta co
 Vamos considerar o seguinte SVG:
 
 ```html
-<svg id='icone-lindao'>
-    <path id='curva' d='...' />
-    <path id='outra-curva' d='...' />
+<svg id="icone-lindao">
+  <path id="curva" d="..." />
+  <path id="outra-curva" d="..." />
 </svg>
 ```
 
 Através do javascript podemos fazer o seguinte:
 
 ```js
-var icone = document.getElementById('icone-lindao');
-var curva = document.getElementById('curva');
-var outraCurva = document.getElementById('outra-curva');
+var icone = document.getElementById('icone-lindao')
+var curva = document.getElementById('curva')
+var outraCurva = document.getElementById('outra-curva')
 ```
 
 Com isso, já teríamos todos os elementos selecionados, para ter certeza que selecionou mesmo o elemento, basta imprimir no console.
 
 ```js
-console.log(icone);
-console.log(curva);
-console.log(outraCurva);
+console.log(icone)
+console.log(curva)
+console.log(outraCurva)
 ```
 
 Sabendo disso, podemos aproveitar do nosso lindo javascript e manipular esse elemento como se ele fosse um outro qualquer do meu documento. Para estilizar, podemos usar o `elemento.style` e brincar com suas propriedades. Um exemplo seria mudar a cor do preenchimento (fill) do componente.
 
 ```js
-curva.style.fill = '#FAFAFA';
+curva.style.fill = '#FAFAFA'
 ```
 
 Além de adicionar estilos diretos, podemos adicionar uma classe/id ao elemento e deixar os estilos a cargo do próprio CSS. Para adicionar classes via JS, você pode usar de várias formas, aqui estou usando o `classList`, que acho bem fácil.
 
 ```html
 <style type="text/css">
-    .vermelhinho { fill: red; }
+  .vermelhinho {
+    fill: red;
+  }
 </style>
 
 <script type="text/javascript">
-    curva.classList.add('vermelhinho');
+  curva.classList.add('vermelhinho')
 </script>
 ```
 
 Segue um exemplo fazendo algumas interações com um SVG:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="NGGoQW" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/NGGoQW/'>SVG JS interaction</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/NGGoQW/`
 
 ### Criação e Manipulação de propriedades do SVG
 
@@ -101,7 +102,7 @@ Como dito no [post de estrutura](https://willianjusten.com.br/a-estrutura-do-svg
 E para criar elementos SVG, utilizamos o [createElementNS](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElementNS). A sintaxe é bastante simples:
 
 ```js
-var element = document.createElementNS(namespaceURI, qualifiedName);
+var element = document.createElementNS(namespaceURI, qualifiedName)
 ```
 
 Onde `namespaceURI` é o namespace do nosso SVG e o `qualifiedName` é o nome do elemento, por exemplo, se queremos criar um elemento `SVG` iremos usar esse nome, caso queiramos um círculo, vamos usar `circle`.
@@ -109,20 +110,18 @@ Onde `namespaceURI` é o namespace do nosso SVG e o `qualifiedName` é o nome do
 Após criado o elemento, precisamos definir atributos para o mesmo e para isso usamos o [setAtributeNS](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/setAttributeNS). Que tem a seguinte sintaxe:
 
 ```js
-element.setAttributeNS(namespace, name, value);
+element.setAttributeNS(namespace, name, value)
 ```
 
 O `namespace` aqui permanece o mesmo padrão para SVG. O `name` é o atributo que você quer definir, o raio de um círculo seria o `r`, por exemplo. E `value` é claro, é o valor dessa propriedade.
 
 Abaixo segue um exemplo de como criar um círculo usando esses simples métodos:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="GppemV" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/GppemV/'>Creating SVG with JS</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/GppemV/`
 
 Você consegue deixar algo mais interativo, editando alguma propriedade usando slides, eventos de botões, etc. Segue um exemplo movimentando um elemento num grid:
 
-<p data-height="450" data-theme-id="11319" data-slug-hash="meeoPg" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/meeoPg/'>Changing SVG properties with JS</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/meeoPg/`
 
 ## Bibliotecas de Manipulação
 
@@ -165,7 +164,6 @@ Outra biblioteca bem leve, mas que permite bastante coisa. Tem uma API bem simpl
 Essa não é uma biblioteca específica de SVG, mas ela é incrível com qualquer coisa e merecia estar aqui em destaque. Essa lib tem uma das melhores APIs para animação na web. Possuindo ótima documentação e bons exemplos, aconselho muito.
 
 [Link do GSAP](http://greensock.com/gsap)
-
 
 ## Conclusão
 

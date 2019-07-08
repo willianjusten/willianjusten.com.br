@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "#9 - Colorindo em SVG"
+title: '#9 - Colorindo em SVG'
 date: 2015-04-03 15:59:38
 image: '/assets/img/colorindo-svg/main.png'
-description: "Vamos voltar a ser crianças e colorir as coisas! Aprenda as técnicas para mudar as cores do SVG."
+description: 'Vamos voltar a ser crianças e colorir as coisas! Aprenda as técnicas para mudar as cores do SVG.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Colorindo em SVG. Vamos voltar a ser crianças e colorir as coisas!"
-introduction: "Vamos voltar a ser crianças e colorir as coisas! Aprenda como colorir o SVG usando classes, property-attributes e mais."
+  - 'O mundo mágico do SVG'
+twitter_text: 'Colorindo em SVG. Vamos voltar a ser crianças e colorir as coisas!'
+introduction: 'Vamos voltar a ser crianças e colorir as coisas! Aprenda como colorir o SVG usando classes, property-attributes e mais.'
 ---
 
 ## Índice da série
@@ -38,7 +38,7 @@ No post [Estilizando SVG com CSS - Parte 1](https://willianjusten.com.br/estiliz
 
 ### Mas e como funciona?
 
-Toda imagem SVG crua é dividida em várias partes, para quem está ambientado com ferramentas de edição, são as chamadas *Layers*. Cada uma dessas layers, são os nossos elementos. Nós podemos selecionar cada um desses elementos, criar classes e pintá-los da forma que desejarmos.
+Toda imagem SVG crua é dividida em várias partes, para quem está ambientado com ferramentas de edição, são as chamadas _Layers_. Cada uma dessas layers, são os nossos elementos. Nós podemos selecionar cada um desses elementos, criar classes e pintá-los da forma que desejarmos.
 
 Segue abaixo uma imagem de como funcionam as imagens em SVG.
 
@@ -48,15 +48,13 @@ Segue abaixo uma imagem de como funcionam as imagens em SVG.
 
 Após definirmos uma classe para cada elemento, basta pintarmos utilizando a propriedade `fill`. Segue abaixo um exemplo de como ficou, tente pintar de outras cores, se divirta =)
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="dPLByM" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/dPLByM/'>SVG Icon Colored</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/dPLByM/`
 
 #### Colorindo com Stroke
 
 Outra propriedade que também pode receber cor é o `stroke`, que nada mais é que o contorno do elemento. Também podemos utilizar a propriedade `stroke-width` para deixar o traço mais fino ou mais grosso. Veja o exemplo abaixo:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="vEMwbG" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/vEMwbG/'>SVG Colors</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/vEMwbG/`
 
 ### Logos com cores diferentes
 
@@ -78,8 +76,7 @@ A ideia é possuirmos um só componente reutilizável e independente, assim pode
 
 Segue abaixo um exemplo de como funciona essa técnica:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="JoVQWG" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/JoVQWG/'>Logo SVG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+`oembed: http://codepen.io/willianjusten/pen/JoVQWG/`
 
 ## Conclusão
 
