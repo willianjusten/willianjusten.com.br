@@ -4890,9 +4890,9 @@ gatsby-link@^2.1.1:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-plugin-algolia@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-algolia/-/gatsby-plugin-algolia-0.3.0.tgz#5f6b9954003f17bed6d871ccb335ef0b2fec7dea"
+gatsby-plugin-algolia-search@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-algolia-search/-/gatsby-plugin-algolia-search-0.5.0.tgz#b08b40cb63d037f847eb635a936b4716039cf002"
   dependencies:
     algoliasearch "^3.24.5"
     gatsby-cli "^1.1.58"

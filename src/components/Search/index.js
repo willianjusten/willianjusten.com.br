@@ -18,22 +18,31 @@ const Search = props => {
   return (
     <S.SearchWrapper>
       {algolia && algolia.appId && (
-        <InstantSearch
-          appId={algolia.appId}
-          apiKey={algolia.searchOnlyApiKey}
-          indexName={algolia.indexName}
-        >
-          <Configure hitsPerPage={200} distinct />
-          <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...' }} />
-          <Stats
-            translations={{
-              stats(nbHits, timeSpentMS) {
-                return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
-              }
-            }}
-          />
-          <Hits hitComponent={Hit} />
-        </InstantSearch>
+        <>
+          <InstantSearch
+            appId={algolia.appId}
+            apiKey={algolia.searchOnlyApiKey}
+            indexName={algolia.indexName}
+          >
+            <Configure hitsPerPage={200} distinct />
+            <SearchBox
+              autoFocus
+              translations={{ placeholder: 'Pesquisar...' }}
+            />
+            <Stats
+              translations={{
+                stats(nbHits, timeSpentMS) {
+                  return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+                }
+              }}
+            />
+            <Hits hitComponent={Hit} />
+          </InstantSearch>
+          <S.SearchTitle>
+            Powered by Algolia
+            <S.AlgoliaIcon />
+          </S.SearchTitle>
+        </>
       )}
     </S.SearchWrapper>
   )
