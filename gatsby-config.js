@@ -61,6 +61,12 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static/assets/img/'
+            }
+          },
           `gatsby-remark-lazy-load`,
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-external-links`,
