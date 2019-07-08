@@ -14,9 +14,10 @@ tags:
   - youtube
   - testes
 ---
+
 ## Introdução
 
-Fala pessoal, esse é mais outro post/vídeo, e como o título diz, a ideia será converter um componente para usar o novíssimo hooks. Se você é um leitor assíduo do post, já deve ter visto [meu post sobre hooks](https://willianjusten.com.br/habemus-react-hooks/), lá eu falo o que são, para que servem e outras coisas mais. 
+Fala pessoal, esse é mais outro post/vídeo, e como o título diz, a ideia será converter um componente para usar o novíssimo hooks. Se você é um leitor assíduo do post, já deve ter visto [meu post sobre hooks](https://willianjusten.com.br/habemus-react-hooks/), lá eu falo o que são, para que servem e outras coisas mais.
 
 O componente escolhido para converter foi o [React-Snakke](https://github.com/diogomoretti/react-snakke/) feito pelo [Diogo Moretti](https://twitter.com/diogomoretti_).
 
@@ -24,7 +25,7 @@ Você pode ver o código todo nesse link do [CodeSandbox](https://codesandbox.io
 
 ## Vídeo
 
-<iframe width="560" height="415" src="https://www.youtube.com/embed/hbRKpjgFwPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hbRKpjgFwPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Sobre o código e o refactor
 
@@ -44,7 +45,7 @@ export default function Snakke(props) { ... }
 
 ### Remover o this e usar as variáveis diretamente
 
-Feito isso, a outra coisa é que todos os lugares que tiverem referências ao `this`, ou seja, o objeto da classe, não existem mais e você precisa usar ou direto do `props` ou a variável direta se for o caso. E variáveis dentro das funções precisam ser assinaladas como tal, usando `let` ou `const`. 
+Feito isso, a outra coisa é que todos os lugares que tiverem referências ao `this`, ou seja, o objeto da classe, não existem mais e você precisa usar ou direto do `props` ou a variável direta se for o caso. E variáveis dentro das funções precisam ser assinaladas como tal, usando `let` ou `const`.
 
 ```js
 // antes
@@ -74,11 +75,11 @@ E no caso do código inicial, nós tínhamos a variável `progress` que possuía
 
 ```js
 state = {
-  progress: 0,
+  progress: 0
 }
 
 this.setState({
-  progress: total,
+  progress: total
 })
 ```
 
@@ -88,7 +89,7 @@ Dentro do React Hooks, para trabalhar com estados, nós temos o método [useStat
 import React, { useState } from 'react'
 
 const [progress, setProgress] = useState(0)
-``` 
+```
 
 Nós criamos um array que recebe 2 valores, o primeiro é a variável que queremos mexer com os valores dela (nosso estado) e o segundo parâmetro é o método que vai ser responsável por atualizar esse estado, no caso o `setProgress`.
 
@@ -139,7 +140,7 @@ this.setState({
 setProgress((window.scrollY / bodyHeight) * 100)
 ```
 
-Após ter feito essas mudanças, é possível que já esteja tudo funcionando certinho. Caso não esteja, verifique se todos os `this` foram removidos e se onde estava usando `state` já está atualizado para a variável escolhida. 
+Após ter feito essas mudanças, é possível que já esteja tudo funcionando certinho. Caso não esteja, verifique se todos os `this` foram removidos e se onde estava usando `state` já está atualizado para a variável escolhida.
 
 Viu só? Não é tão difícil fazer essa conversão não é mesmo? =D
 
@@ -261,4 +262,3 @@ A mudança não é enorme, mas dá para ver que o código foi simplificado, não
 Lembrando que não é errado usar Classes para os componentes, a própria equipe do React diz [para não sairmos convertendo tudo sem necessidade](https://reactjs.org/docs/hooks-faq.html#do-i-need-to-rewrite-all-my-class-components). A ideia do post é mais para mostrar como é o funcionamento de um e outro, para que caso você pegue um código em hooks, não se sinta perdido.
 
 Se você ficou com alguma dúvida, só falar nos comentários ou me mandar mensagem, que eu ajudo =)
-

@@ -29,7 +29,7 @@ Tive uma demanda na Toptal para criação de um modal com vários comportamentos
 
 ## Videos
 
-<iframe width="560" height="415" src="https://www.youtube.com/embed/nrNvUDPKcBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nrNvUDPKcBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Você pode também assistir a playlist inteira, diretamente no [Youtube](https://www.youtube.com/watch?v=nrNvUDPKcBk&list=PLlAbYrWSYTiPR9DhcL9-22W-E-p8LmDOJ).
 

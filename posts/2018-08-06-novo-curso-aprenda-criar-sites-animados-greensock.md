@@ -29,7 +29,7 @@ Se você tá apressado para conseguir seu cupom, [abre esse link e pegue o seu!]
 
 No vídeo abaixo eu mostro um pouco do que veremos no curso, mas teremos várias atualizações bem legais também!
 
-<iframe width="560" height="420" src="https://www.youtube.com/embed/mWKwZpSA5Rc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mWKwZpSA5Rc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos para o curso
 
@@ -45,4 +45,4 @@ Para tirar as dúvidas tem a plataforma da Udemy, mas também vocês podem tirar
 
 ## Preço e promoção
 
-O valor final do curso é de **R$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=SEGUIDORBLOG) que vai deixar o curso a **R$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://slack-willianjusten.herokuapp.com/).
+O valor final do curso é de **R\$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=SEGUIDORBLOG) que vai deixar o curso a **R\$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://slack-willianjusten.herokuapp.com/).
