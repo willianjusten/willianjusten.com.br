@@ -5,11 +5,11 @@ import ReactGA from 'react-ga'
 import Image from './Image'
 import * as S from './styled'
 
-const courseClickTrack = (course) => {
+const courseClickTrack = course => {
   ReactGA.event({
     category: 'cursos',
     action: 'click',
-    label: course
+    label: `Link Curso - ${course}`
   })
 }
 

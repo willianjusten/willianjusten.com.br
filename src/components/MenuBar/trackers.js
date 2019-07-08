@@ -12,7 +12,7 @@ export const courseClickTrack = () => {
   ReactGA.event({
     category: 'cursos',
     action: 'click',
-    label: 'Link na Menu Bar'
+    label: 'Link Curso na Menu Bar'
   })
 }
 

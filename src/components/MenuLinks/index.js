@@ -11,7 +11,7 @@ const menuLinkClickTrack = link => {
   ReactGA.event({
     category: 'menu link',
     action: 'click',
-    label: link
+    label: `Menu Link - ${link}`
   })
 }
 
