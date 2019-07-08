@@ -32,7 +32,7 @@ Para quem acessa o meu blog, sabe que fiz várias mudanças no meu blog e inclus
 
 Uma das maiores mudanças internas que eu fiz, foi passar o meu blog do Github Pages para o Netlify. Eu estava "namorando" o Netlify e suas possibilidades há um tempo e aproveitei que já ia fazer várias mudanças no meu blog para mudar o hosting também. O que acontece é que eu acabei realmente me apaixonando pelo serviço e já uso para um monte de coisas minhas. E devido a esse amor, eu fiz um singelo tweet:
 
-`oembed: https://twitter.com/Willian_justen/status/979729155276320769?ref_src=twsrc%5Etfw`
+<blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Deploy em 30s, SSL fácil e sem gambiarra, interface intuitiva, staging preview para commit/branch, test AB na palma da mão, custom header, redirects, cache invalidation, rollback em 1 click e mt mais. Como não amar o <a href="https://twitter.com/Netlify?ref_src=twsrc%5Etfw">@Netlify</a> &lt;3</p>&mdash; Willian Justen (@Willian_justen) <a href="https://twitter.com/Willian_justen/status/979729155276320769?ref_src=twsrc%5Etfw">March 30, 2018</a></blockquote>
 
 Logo após esse Tweet várias pessoas curtiram e comentaram e eu então decidi que eu queria fazer mais um teste.
 

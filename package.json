@@ -5,7 +5,6 @@
   "version": "2.0.0-alfa",
   "author": "Willian Justen <willianjustenqui@gmail.com>",
   "dependencies": {
-    "@raae/gatsby-remark-oembed": "^0.0.7",
     "babel-plugin-styled-components": "^1.10.0",
     "dotenv": "^8.0.0",
     "gatsby": "^2.9.0",

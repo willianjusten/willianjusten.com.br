@@ -40,7 +40,7 @@ Essa reescrita recebeu o nome de Fiber e você pode saber mais sobre ela [nesse 
 
 O Fiber é responsável pela maioria das novas features do React 16 como `error boundaries` e `fragments`. Eles também já estão trabalhando com `async rendering`, que você pode ter um preview de como funciona, logo abaixo:
 
-`oembed: https://twitter.com/acdlite/status/909926793536094209?ref_src=twsrc%5Etfw`
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Ever wonder what &quot;async rendering&quot; means? Here&#39;s a demo of how to coordinate an async React tree with non-React work <a href="https://t.co/3snoahB3uV">https://t.co/3snoahB3uV</a> <a href="https://t.co/egQ988gBjR">pic.twitter.com/egQ988gBjR</a></p>&mdash; Andrew Clark (@acdlite) <a href="https://twitter.com/acdlite/status/909926793536094209?ref_src=twsrc%5Etfw">September 18, 2017</a></blockquote>
 
 ### Novas features / Mudanças
 

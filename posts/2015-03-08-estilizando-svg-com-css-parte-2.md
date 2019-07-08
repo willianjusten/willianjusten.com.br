@@ -1,19 +1,19 @@
 ---
 layout: post
-title: '#8 - Estilizando SVG com CSS - Parte 2'
+title: "#8 - Estilizando SVG com CSS - Parte 2"
 date: 2015-03-08 12:58:00
 image: '/assets/img/estilizando-svg/main-2.png'
-description: 'Aprenda quais as propriedades que o SVG possui e como trabalhar com elas.'
+description: "Aprenda quais as propriedades que o SVG possui e como trabalhar com elas."
 main-class: 'svg'
 color: '#7D669E'
 tags:
-  - svg
-  - css
-  - tutorial
+- svg
+- css
+- tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Estilizando SVG com CSS - Parte 2'
-introduction: 'Aprenda algumas propriedades que o SVG e como trabalhar com elas.'
+- "O mundo mágico do SVG"
+twitter_text: "Estilizando SVG com CSS - Parte 2"
+introduction: "Aprenda algumas propriedades que o SVG e como trabalhar com elas."
 ---
 
 ## Índice da série
@@ -32,19 +32,22 @@ No [post anterior](https://willianjusten.com.br/estilizando-svg-com-css-parte-1/
 
 Como o nome diz, ela quem irá preencher a cor da forma selecionada. Uma das propriedades mais utilizadas e vai servir para dar aquele toque especial na imagem. A grande vantagem é poder preencher cada pedaço desejado da imagem.
 
-`oembed: http://codepen.io/willianjusten/pen/azaERB/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="azaERB" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/azaERB/'>Exemplo propriedade Fill</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Propriedade Fill-opacity
 
 Uma variável da propriedade `fill`, onde iremos só modificar a opacidade do preenchimento naquele elemento.
 
-`oembed: http://codepen.io/willianjusten/pen/pvOaNg/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="pvOaNg" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/pvOaNg/'>Exemplo propriedade fill-opacity</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Propriedade Stroke e Stroke-width
 
 Essa propriedade irá alterar a cor do contorno (`stroke`) e sua espessura (`stroke-width`). Por padrão, os elementos vem sem nenhum contorno.
 
-`oembed: http://codepen.io/willianjusten/pen/VYGQpB/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="VYGQpB" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/VYGQpB/'>Exemplo stroke e stroke-width</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Propriedade Stroke-dasharray
 
@@ -56,7 +59,8 @@ No exemplo abaixo, temos o primeiro círculo com a propriedade `stroke-dasharray
 
 Para mostrar que podemos brincar também com interatividade no SVG, adicionei um evento ao dar `hover` no segundo círculo, para que mude a propriedade `stroke-dasharray` do mesmo.
 
-`oembed: http://codepen.io/willianjusten/pen/KwxQqz/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="KwxQqz" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/KwxQqz/'>Exemplo do Stroke-dasharray</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Propriedade Stroke-linecap
 
@@ -64,21 +68,23 @@ O `stroke-linecap` define qual forma terá o final de um caminho aberto, seja el
 
 De acordo com o exemplo abaixo, podemos observar o seguinte:
 
-- `butt`: irá cortar a ponta exatamente na sua espessura, deixando a ponta quadrada.
-- `round`: irá deixar as pontas arredondas, acrescentando um "padding" nas pontas.
-- `square`: irá deixar a ponta quadrada, acrescentando um "padding" nas pontas.
+* `butt`: irá cortar a ponta exatamente na sua espessura, deixando a ponta quadrada.
+* `round`: irá deixar as pontas arredondas, acrescentando um "padding" nas pontas.
+* `square`: irá deixar a ponta quadrada, acrescentando um "padding" nas pontas.
 
-`oembed: http://codepen.io/willianjusten/pen/raZJYw/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="raZJYw" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/raZJYw/'>Exemplo stroke-linecap</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Propriedade Stroke-linejoin
 
 O `stroke-linejoin` define qual aparência os cantos dos contornos irão possuir nos caminhos e formas básicas.
 
-- `mitter`: terá o canto pontiagudo
-- `round`: terá o canto arrendondado
-- `bevel`: terá o canto chanfrado
+* `mitter`: terá o canto pontiagudo
+* `round`: terá o canto arrendondado
+* `bevel`: terá o canto chanfrado
 
-`oembed: http://codepen.io/willianjusten/pen/MYqQQp/`
+<p data-height="266" data-theme-id="11319" data-slug-hash="MYqQQp" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/MYqQQp/'>Exemplo stroke-linejoin</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Conclusão
 
