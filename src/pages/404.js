@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import SEO from '../components/Seo'
+import GlobalStyles from '../styles/global'
 
 const Container = styled.section`
   align-items: center;
@@ -27,7 +28,8 @@ const Container = styled.section`
 `
 
 const Title = styled.h1`
-  background: white;
+  background: var(--background);
+  color: var(--texts);
   font-size: 120px;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -35,19 +37,21 @@ const Title = styled.h1`
 `
 
 const Text = styled.p`
-  background: white;
+  background: var(--background);
+  color: var(--texts);
   font-family: Courier, monospace;
 `
 
 const Button = styled(Link)`
-  background: white;
-  border: 1px solid #111;
+  background: var(--background);
+  border: 1px solid var(--borders);
   border-radius: 6px;
-  color: #111;
+  color: var(--texts);
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.06em;
   line-height: 32px;
+  margin-top: 1rem;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -61,6 +65,7 @@ const Button = styled(Link)`
 const NotFoundPage = () => (
   <Container>
     <SEO title="404: Not found" />
+    <GlobalStyles />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
     <Button to="/">De volta ao blog!</Button>
