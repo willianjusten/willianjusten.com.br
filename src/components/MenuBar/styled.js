@@ -57,12 +57,14 @@ export const MenuBarItem = styled.span`
   transition: color 0.5s;
 
   &.light {
-    color: #eaea04;
+    color: #d4d400;
   }
 
-  &:hover {
-    color: var(--highlight);
-  }
+  ${media.greaterThan('large')`
+    &:hover {
+      color: var(--highlight);
+    }
+  `}
 
   ${media.lessThan('large')`
     height: 3.2rem;
