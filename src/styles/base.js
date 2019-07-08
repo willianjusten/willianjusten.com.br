@@ -143,7 +143,8 @@ export const MainContent = styled.section`
   }
 
   #twitter-widget-0,
-  .instagram-media .twitter-tweet {
+  .instagram-media,
+  .twitter-tweet {
     margin: 20px auto !important;
   }
 
