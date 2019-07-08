@@ -216,6 +216,10 @@ export const MainContent = styled.section`
     `}
   }
 
+  .instagram-media {
+    margin: 1rem auto !important;
+  }
+
   a {
     border-bottom: 1px dashed var(--highlight);
     color: var(--highlight);

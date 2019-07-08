@@ -73,26 +73,6 @@ Não adianta eu criar e não ter ninguém para assistir ou nenhum feedback. Assi
 
 Fale sobre o que você quer assistir, quais assuntos acha interessante, os cursos serão criados baseados nisso, não importa se você é iniciante ou avançado, só fale do que se interessa. E se for algo sinistrão, que eu também não sei, vou ter o maior prazer de aprender para poder ensinar =D
 
-### Doe
-
-Se você gostou da ideia e quer mais cursos e com mais frequência, me ajude a ter mais tempo para fazê-los. Você pode doar através do Pagseguro, Paypal e se quiser, pode também me mandar uma mensagem, só não deixe de ajudar se você quiser mesmo.
-
-<div class="container-donation">
-    <form class="form-button" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-        <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-        <input type="hidden" name="currency" value="BRL">
-        <input type="hidden" name="receiverEmail" value="willianjustenqui@gmail.com">
-        <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
-    </form>
-
-    <form class="form-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="A2ZASCVXE7X36">
-        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" alt="doe =)" width="1" height="1">
-    </form>
-</div>
-
 ## Um abraço e que comecem os estudos!!
 
 Vamos lá galera, todo mundo acessando, compartilhando, curtindo, comentando e sendo feliz!!!

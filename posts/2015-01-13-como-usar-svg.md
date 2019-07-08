@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "#2 - Como usar SVG"
+title: '#2 - Como usar SVG'
 date: 2015-01-13 02:20:24
 image: '/assets/img/como-usar-svg/como-usar-svg.png'
-description: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
+description: 'Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- tutorial
+  - svg
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Como usar o SVG?"
-introduction: "Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir."
+  - 'O mundo mágico do SVG'
+twitter_text: 'Como usar o SVG?'
+introduction: 'Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir.'
 ---
 
 ## Introdução
@@ -37,8 +37,12 @@ Cada uma dessas formas tem suas utilidades, vantagens e desvantagens e eu irei e
 
 ### 1 - Como Imagem
 
-<p data-height="268" data-theme-id="11319" data-slug-hash="emvYLJ" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/emvYLJ/'>Svg como imagem</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="willianjusten" data-slug-hash="emvYLJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Svg como imagem">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/emvYLJ/">
+  Svg como imagem</a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Para adicionar um SVG como imagem, basta colocá-lo dentro da `src` da tag `img`.
 
@@ -57,7 +61,7 @@ Para adicionar um SVG como background-image, basta criar um elemento com uma cla
 
 ```css
 .element {
-    background-image: url(/image/image.svg);
+  background-image: url(/image/image.svg);
 }
 ```
 
@@ -87,10 +91,9 @@ São métodos antigos, que eu já não aconselho a utilizar, visto que perdem pe
 Uma das últimas formas de se adicionar o SVG no nosso html é utilizando os Data URIs, que pode ser inserido como utf-8 ou convertido para base64 e adicionado na tag de `img` ou como propriedade de `background-image`.
 
 ```html
-<img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDo etc">
+<img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDo etc" />
 
-.base64 {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0i etc);
+.base64 { background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0i etc);
 }
 ```
 

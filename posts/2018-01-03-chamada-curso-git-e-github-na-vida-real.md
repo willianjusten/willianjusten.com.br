@@ -54,46 +54,7 @@ Você pode fazer no seu tempo, o curso é vitalício! Faça 1x, 2x, infinitas ve
 
 > Como posso saber quando o curso foi lançado?
 
-Todos os meus alunos serão avisados lá no [slack](https://slack-willianjusten.herokuapp.com) e também na plataforma da Udemy. Mas se você não for aluno meu, mas agora se interessou nesse curso, só se inscrever na minha newsletter. Deve ter aparecido um popup na parte inferior, mas se você fechou, não tem problema, segue o formulário aqui abaixo (nada de spam, eu garanto!)
-
-<!-- Begin MailChimp Signup Form -->
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-    .button { background: rgb(3, 89, 170) !important;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-
-       #mc_embed_signup form {text-align:center; padding:10px 0 10px 0;}
-        .mc-field-group { display: inline-block; } /* positions input field horizontally */
-        #mc_embed_signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; border: 1px solid #ABB0B2;  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #343434; background-color: #fff; box-sizing:border-box; height:32px; padding: 0px 0.4em; display: inline-block; margin: 0; width:350px; vertical-align:top;}
-        #mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
-        #mc_embed_signup .clear {display: inline-block;} /* positions button horizontally in line with input */
-        #mc_embed_signup .button {font-size: 13px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; letter-spacing: .03em; color: #fff; background-color: #aaa; box-sizing:border-box; height:32px; line-height:32px; padding:0 18px; display: inline-block; margin: 0; transition: all 0.23s ease-in-out 0s;}
-        #mc_embed_signup .button:hover {background-color:#777; cursor:pointer;}
-        #mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
-        #mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-        #mc_embed_signup #mce-error-response {display:none;}
-        #mc_embed_signup #mce-success-response {color:#529214; display:none;}
-        #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
-        @media (max-width: 768px) {
-            #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
-            #mc_embed_signup .clear {display: block; width: 100% }
-            #mc_embed_signup .button {width: 100%; margin:0; }
-        }
-</style>
-<div id="mc_embed_signup">
-<form action="https://willianjusten.us14.list-manage.com/subscribe/post?u=4697443522f6e465b6cf0d979&amp;id=aa8858c4f2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Inscreva-se para saber das novidades</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Endereço de email" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4697443522f6e465b6cf0d979_aa8858c4f2" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Inscreva-se" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
+Todos os meus alunos serão avisados lá no [slack](https://slack-willianjusten.herokuapp.com) e também na plataforma da Udemy. 
 
 ## Conclusão
 
