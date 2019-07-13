@@ -190,6 +190,10 @@ export const MainContent = styled.section`
     font-size: 1.2rem;
   }
 
+  strong {
+    font-weight: 700;
+  }
+
   .gatsby-resp-image-background-image {
     z-index: 2;
     opacity: 1 !important;
