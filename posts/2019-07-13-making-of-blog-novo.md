@@ -3,9 +3,15 @@ layout: post
 date: '2019-07-13 10:43:12'
 image: /assets/new-blog.png
 title: Making of - Blog Novo
-description: 'Coisas que usei por trás desse blog, escolhas de visual e outras coisas mais.'
-introduction: 'Coisas que usei por trás desse blog, escolhas de visual e outras coisas mais.'
-twitter_text: 'Coisas que usei por trás desse blog, escolhas de visual e outras coisas mais.'
+description: >-
+  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
+  outras coisas.
+introduction: >-
+  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
+  outras coisas.
+twitter_text: >-
+  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
+  outras coisas.
 main-class: js
 color: '#D6BA32'
 tags:
