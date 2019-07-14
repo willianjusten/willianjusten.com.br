@@ -179,15 +179,15 @@ Simples, no CMS, eu posso escrever rascunhos de forma mais fácil, deixar uma pi
 
 Abaixo segue alguns screenshots de como funcionam as interfaces:
 
-> Lista de Posts no CMS
+### Lista de Posts no CMS
 
 ![Lista de Posts no CMS](/assets/cms-posts.png)
 
-> Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar
+### Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar
 
 ![Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar](/assets/workflow-cms.png)
 
-> Preview do Post
+### Preview do Post
 
 ![Preview do Post](/assets/preview-cms.png)
 
