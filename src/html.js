@@ -43,6 +43,10 @@ export default class HTML extends React.Component {
             }}
           />
           {this.props.preBodyComponents}
+          <noscript>
+            This website requires JavaScript. Why the fuck are you using without
+            it? Go and enable it! =)
+          </noscript>
           <div
             key={`body`}
             id="___gatsby"
