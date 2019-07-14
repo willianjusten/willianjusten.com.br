@@ -19,6 +19,7 @@ tags:
   - gatsby
   - netlify
 ---
+
 ## Introdução
 
 Fala pessoal, faz muito tempo que não escrevo e já recebi até email de gente perguntando o que estava acontecendo e porque não tinha mais nenhum post novo! De fato, eu andei bem ocupado nos últimos tempos, principalmente pois eu estava trabalhando em certos projetos na [Toptal](https://www.toptal.com/) e também cuidando um pouco da minha saúde. E junto a isso, também tem aquela famosa preguiça né, se tivesse um título para a pessoa que mais procrastina, com toda certeza eu estaria no **top 10**.
@@ -29,7 +30,7 @@ Bom, a ideia nesse post é falar as tecnologias novas que usei e o porquê delas
 
 ## Visual e Mudanças
 
-Bom, se você ainda se lembra do blog antigo, ele tinha um menu hamburguer que acabava escondendo alguns dos links e com isso perdiam alguns cliques. O blog iniciava claro e então você poderia escolher para mudar para o Dark Mode e a lâmpada ficava sempre no bottom, as vezes escondendo um pouco do conteúdo atrás.  Eu coloquei um evento para identificar qual tema era mais utilizado (Dark ou Light) e com quase 80% o Dark mode ganhou, então, por isso eu decidi colocá-lo como padrão. Abaixo segue um screenshot do blog antigo:
+Bom, se você ainda se lembra do blog antigo, ele tinha um menu hamburguer que acabava escondendo alguns dos links e com isso perdiam alguns cliques. O blog iniciava claro e então você poderia escolher para mudar para o Dark Mode e a lâmpada ficava sempre no bottom, as vezes escondendo um pouco do conteúdo atrás. Eu coloquei um evento para identificar qual tema era mais utilizado (Dark ou Light) e com quase 80% o Dark mode ganhou, então, por isso eu decidi colocá-lo como padrão. Abaixo segue um screenshot do blog antigo:
 
 ![Screenshot da home antiga, tela branca e cards brancos. ](/assets/blog-antigo.png)
 
@@ -43,7 +44,7 @@ Já dentro dos posts, a mudança foi pouca, mais centralizada mesmo no header, a
 
 ## Sai Jekyll entra Gatsby
 
-Desde quando iniciei o meu blog, lá em [2015](https://willianjusten.com.br/making-of-parte-1/), eu utilizei um gerador estático, no caso o Jekyll. Ele sempre me serviu muito bem e ainda serve! Eu não mudei do Jekyll por achar ele ruim ou qualquer outra coisa, muito pelo contrário, adoro demais a simplicidade do Jekyll. 
+Desde quando iniciei o meu blog, lá em [2015](https://willianjusten.com.br/making-of-parte-1/), eu utilizei um gerador estático, no caso o Jekyll. Ele sempre me serviu muito bem e ainda serve! Eu não mudei do Jekyll por achar ele ruim ou qualquer outra coisa, muito pelo contrário, adoro demais a simplicidade do Jekyll.
 
 A minha mudança para o [Gatsby](https://www.gatsbyjs.org/) foi motivada somente pelo fato de ser em React e usar GraphQL, que são duas tecnologias que venho usando faz tempo e queria brincar e treinar um pouco meus conhecimentos. E como eu sempre digo:
 
@@ -61,7 +62,7 @@ Junto dele, eu utilizei o [styled-media-query](https://github.com/morajabi/style
 
 A estrutura, ficou mais ou menos assim:
 
-```sh
+```bash
 ├── components
 │   ├── Avatar
 │   │   ├── index.js
@@ -124,17 +125,17 @@ Nesse arquivo, eu crio e exporto minhas classes e então para utilizar, faço as
 import * as S from './styled'
 
 const Layout = ({ children }) => (
-    <S.LayoutWrapper>
-      <GlobalStyles />
-      <TransitionPortal level="top">
-        <Sidebar site={site.siteMetadata} />
-      </TransitionPortal>
-      <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal level="top">
-        <MenuBar />
-      </TransitionPortal>
-    </S.LayoutWrapper>
-  )
+  <S.LayoutWrapper>
+    <GlobalStyles />
+    <TransitionPortal level="top">
+      <Sidebar site={site.siteMetadata} />
+    </TransitionPortal>
+    <S.LayoutMain>{children}</S.LayoutMain>
+    <TransitionPortal level="top">
+      <MenuBar />
+    </TransitionPortal>
+  </S.LayoutWrapper>
+)
 ```
 
 Eu retirei alguns trechos não referentes ao `styled-components` para facilitar a leitura. Mas perceba que eu faço um import de tudo que tem em `./styled` como `S`. Assim os componentes que iniciam por `<S.` eu sei que são referentes a estilo e não a outros componentes externos.
@@ -167,7 +168,7 @@ Um detalhe **muito importante**, é que o plugin oficial do Algolia não trabalh
 
 ## Comentários com o Disqus
 
-Essa parte é uma das coisas que eu fiquei muito pensativo se usava ou não. O número de comentários diminuiu bastante nos últimos tempos (vi muitos comentando o mesmo, então creio ser algo "global"). 
+Essa parte é uma das coisas que eu fiquei muito pensativo se usava ou não. O número de comentários diminuiu bastante nos últimos tempos (vi muitos comentando o mesmo, então creio ser algo "global").
 
 Além disso, por ser um third-party script, ele acaba carregando coisas que prejudicam de leve a performance, mesmo que várias coisas sejam async. Estou utilizando o [react-disqus-comments](https://www.npmjs.com/package/react-disqus-comments), que foi a solução mais simples e leve que achei também.
 
@@ -177,7 +178,7 @@ Mas, como gosto de ver a participação das pessoas, resolvi colocar os comentá
 
 Se você já viu minha página de [cursos](https://willianjusten.com.br/cursos/), com toda certeza já viu meu [Mini curso de Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth). Eu sou extremamente fã do serviço deles, além de ser super simples, me dá várias vantagens, uma delas é poder ter preview/deploy de diferentes branches. E foi assim que eu consegui fazer testes fora do meu local, permitindo que outras pessoas também pudessem testar, além de eu analisar a performance (sim, sou o fissurado da performance).
 
-Junto do Netlify, tem também o Netlify CMS, que basicamente adiciona um CMS para o meu blog, sem esforço nenhum, bastando algumas linhas. 
+Junto do Netlify, tem também o Netlify CMS, que basicamente adiciona um CMS para o meu blog, sem esforço nenhum, bastando algumas linhas.
 
 E porque usar um CMS, se eu já subo tudo para o Github e eu sei ler Markdown sem problemas?
 
@@ -209,18 +210,12 @@ Para fazer essas transições, eu utilizei o [gatsby-plugin-transition-link
 ](https://transitionlink.tylerbarnes.ca/docs/). Ele é incrível e bastante simples! Fica abaixo um snippet de como faz funcionar:
 
 ```jsx
-<AniLink
-  cover
-  to="/"
-  direction="left"
-  duration={3}
-  bg="white"
->
-Home
+<AniLink cover to="/" direction="left" duration={3} bg="white">
+  Home
 </AniLink>
 ```
 
-Basta você passar qual tipo de animação que deseja (`fade`, `swipe`, `cover`, `paintDrip`) e alguns outros parâmetros como `direction` e `duration`. 
+Basta você passar qual tipo de animação que deseja (`fade`, `swipe`, `cover`, `paintDrip`) e alguns outros parâmetros como `direction` e `duration`.
 
 ### Highlight Code
 
