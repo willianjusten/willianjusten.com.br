@@ -155,7 +155,7 @@ Para corrigir isso, eu resolvi utilizar o [Algolia](algolia.com), eles são um s
 
 Ele possui vários planos, e o que eu uso é o Community, que é gratuito e já me permite 50 mil operações por mês, o que é bem suficiente para o tamanho do meu blog. Além disso, ele me dá alguns dados relacionados a que tipos de buscas foram feitas, isso me ajuda a saber o que as pessoas procuram e se eu não tiver nada do assunto, posso começar a escrever! Olha só a dica. Abaixo segue um screenshot sobre essa parte dos analytics:
 
-![Imagem mostrando uma lista das pesquisas mais feitas no site](/assets/algolia-search.png)
+![](/assets/algolia-search.png)
 
 Um detalhe **muito importante**, é que o plugin oficial do Algolia não trabalha com cache e partial updates, então toda vez que você faz um build, ele apaga todos os índices e refaz. Isso é péssimo, pois nós só temos 50 mil operações e oras, se eu num fiz nada novo, num faz sentido refazer. O legal é que existe um fork desse plugin que faz exatamente o que queremos, o plugin é o [gatsby-plugin-algolia-search](https://www.npmjs.com/package/gatsby-plugin-algolia-search), ele não muda em nada na configuração, somente essa parte de partial updates.
 
@@ -179,15 +179,15 @@ Simples, no CMS, eu posso escrever rascunhos de forma mais fácil, deixar uma pi
 
 Abaixo segue alguns screenshots de como funcionam as interfaces:
 
-> Lista de Posts no CMS
+### Lista de Posts no CMS
 
 ![Lista de Posts no CMS](/assets/cms-posts.png)
 
-> Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar
+### Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar
 
 ![Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar](/assets/workflow-cms.png)
 
-> Preview do Post
+### Preview do Post
 
 ![Preview do Post](/assets/preview-cms.png)
 
