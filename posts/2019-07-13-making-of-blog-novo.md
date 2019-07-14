@@ -157,6 +157,16 @@ Ele possui vários planos, e o que eu uso é o Community, que é gratuito e já 
 
 ![Imagem mostrando uma lista das pesquisas mais feitas no site](/assets/algolia-search.png)
 
+Um detalhe **muito importante**, é que o plugin oficial do Algolia não trabalha com cache e partial updates, então toda vez que você faz um build, ele apaga todos os índices e refaz. Isso é péssimo, pois nós só temos 50 mil operações e oras, se eu num fiz nada novo, num faz sentido refazer. O legal é que existe um fork desse plugin que faz exatamente o que queremos, o plugin é o [gatsby-plugin-algolia-search](https://www.npmjs.com/package/gatsby-plugin-algolia-search), ele não muda em nada na configuração, somente essa parte de partial updates.
+
+## Comentários com o Disqus
+
+Essa parte é uma das coisas que eu fiquei muito pensativo se usava ou não. O número de comentários diminuiu bastante nos últimos tempos (vi muitos comentando o mesmo, então creio ser algo "global"). 
+
+Além disso, por ser um third-party script, ele acaba carregando coisas que prejudicam de leve a performance, mesmo que várias coisas sejam async. Estou utilizando o [react-disqus-comments](https://www.npmjs.com/package/react-disqus-comments), que foi a solução mais simples e leve que achei também.
+
+Mas, como gosto de ver a participação das pessoas, resolvi colocar os comentários novamente. Vamos ver como vai ser, qualquer coisa eu removo no futuro.
+
 ## Netlify e Netlify CMS
 
 Se você já viu minha página de [cursos](https://willianjusten.com.br/cursos/), com toda certeza já viu meu [Mini curso de Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth). Eu sou extremamente fã do serviço deles, além de ser super simples, me dá várias vantagens, uma delas é poder ter preview/deploy de diferentes branches. E foi assim que eu consegui fazer testes fora do meu local, permitindo que outras pessoas também pudessem testar, além de eu analisar a performance (sim, sou o fissurado da performance).
@@ -185,4 +195,47 @@ Como pode ver, é uma interface super simples, mas super funcional! E o legal qu
 
 ## Extras
 
-Bom, tiveram outras várias coisas que utilizei no blog
+Bom, tiveram outras várias coisas que utilizei no blog também e que valem comentar, então seguem abaixo algumas delas:
+
+### Transições
+
+Para fazer essas transições, eu utilizei o [gatsby-plugin-transition-link
+](https://transitionlink.tylerbarnes.ca/docs/). Ele é incrível e bastante simples! Fica abaixo um snippet de como faz funcionar:
+
+```jsx
+<AniLink
+  cover
+  to="/"
+  direction="left"
+  duration={3}
+  bg="white"
+>
+Home
+</AniLink>
+```
+
+Basta você passar qual tipo de animação que deseja (`fade`, `swipe`, `cover`, `paintDrip`) e alguns outros parâmetros como `direction` e `duration`. 
+
+### Highlight Code
+
+Para mostrar o código do jeito estiloso acima, eu utilizo o [PrismJS](https://prismjs.com/). E no Gatsby fica ainda mais fácil, pois existe o [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/), que faz o parser do código que tá no Markdown e já estiliza para mim. Super simples de configurar e funciona bem fácil.
+
+### Lazy loading e otimização de imagem
+
+Se você reparou nas imagens do post, elas são carregadas só quando você se aproxima e além disso, para num ficar um espaço vazio e criar aqueles pulos, eu também carrego um thumb bem pequeno e com o tamanho final definido, isso ainda dá aquele efeito de blur, comum no Medium e outros sites. Outra coisa que também é feito, é que eu carrego diferentes tamanhos de imagem de acordo com a tela, melhorando muito a performance.
+
+Para fazer todas essas otimizações, eu utilizo o **incrível** [Gatsby Image](https://using-gatsby-image.gatsbyjs.org/), que usa o Sharp por debaixo dos panos para gerar as imagens para nós.
+
+### PWA
+
+Para fazer meu blog virar um PWA foi muito muito fácil. Sério mesmo, não tive nem que me preocupar com o que salvar no Service Worker ou se estava cacheando certo. Para isso, eu usei 2 plugins, um para criar o manifest, que é o [gatsby-plugin-manifest](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/) e o outro para fazer a criação do Service Worker e salvar minhas páginas, que é o [gatsby-plugin-offline](https://www.gatsbyjs.org/packages/gatsby-plugin-offline/). Esses dois pacotes são oficiais do Gatsby e já até vem inclusos em alguns starters.
+
+## Performance
+
+Como disse no início, o Gatsby faz várias otimizações no momento do build do site. Ele minifica tudo, separa o css para ter critical inline, faz renderização assíncrona, além de fazer preload dos links, para ter uma sensação de abertura instantânea quando clicamos. Com isso, se [medirmos a performance com o Lighthouse](https://willianjusten.com.br/medindo-performance-do-seu-site-com-lighthouse/), vamos ter notas super altas. Segue abaixo o meu:
+
+![Uma imagem mostrando notas 100 em todos os quesitos no lighthouse](/assets/ligthouse-perf-novo.png)
+
+## Conclusão
+
+Bom galera, espero que tenham curtido o visual novo e as escolhas que eu fiz. Se você acha que algo poderia ser diferente ou melhor, por favor, não deixe de compartilhar ali nos comentários ou então nas minhas redes sociais. E se você gostaria de um curso sobre o assunto, deixa nos comentários também, para eu saber o interesse =)
