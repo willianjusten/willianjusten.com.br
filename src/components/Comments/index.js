@@ -1,6 +1,7 @@
 import React from 'react'
-import ReactDisqusComments from 'react-disqus-comments'
 import PropTypes from 'prop-types'
+import ReactDisqusComments from 'react-disqus-comments'
+import LazyLoad from 'react-lazy-load'
 
 import * as S from './styled'
 
@@ -10,13 +11,14 @@ const Comments = ({ url, title }) => {
   return (
     <S.CommentsWrapper>
       <S.CommentsTitle>Comentários</S.CommentsTitle>
-      <ReactDisqusComments
-        className="lazyload"
-        shortname="willianjusten"
-        identifier={completeURL}
-        title={title}
-        url={completeURL}
-      />
+      <LazyLoad offsetTop={400}>
+        <ReactDisqusComments
+          shortname="willianjusten"
+          identifier={completeURL}
+          title={title}
+          url={completeURL}
+        />
+      </LazyLoad>
     </S.CommentsWrapper>
   )
 }
