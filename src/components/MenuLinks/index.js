@@ -34,7 +34,7 @@ const MenuLinks = () => {
           </S.MenuLinksItem>
         ))}
         <S.MenuLinksItem>
-          <a href="/feed.rss">Feed RSS</a>
+          <a href="/feed.xml">Feed RSS</a>
         </S.MenuLinksItem>
       </S.MenuLinksList>
     </S.MenuLinksWrapper>
