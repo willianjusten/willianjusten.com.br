@@ -158,7 +158,7 @@ Depois de instalar o plugin e configurar no arquivo `gatsby-config.js` (que é o
 
 O Search do blog anterior era um pouquinho simples, para num dizer burro mesmo. Eu basicamente tinha um JSON e percorria ele baseado na string que a pessoa digitava, além de não mostrar nenhum "preview" das coisas que poderiam ser buscadas. Com isso, muita gente acabava sem saber o que pesquisar, por onde começar e muitas vezes sequer achava o que gostaria (mesmo eu tenho posts do assunto!).
 
-Para corrigir isso, eu resolvi utilizar o [Algolia](algolia.com), eles são um sistema de busca extremamente rápido e inteligente. Possibilitando buscas por sinônimos, por conteúdos dentro do texto do post, além de ter um "typo correction", ou seja, se a pessoa errar uma letra ou outra, ele vai buscar pelo termo certo.
+Para corrigir isso, eu resolvi utilizar o [Algolia](https://algolia.com), eles são um sistema de busca extremamente rápido e inteligente. Possibilitando buscas por sinônimos, por conteúdos dentro do texto do post, além de ter um "typo correction", ou seja, se a pessoa errar uma letra ou outra, ele vai buscar pelo termo certo.
 
 Ele possui vários planos, e o que eu uso é o Community, que é gratuito e já me permite 50 mil operações por mês, o que é bem suficiente para o tamanho do meu blog. Além disso, ele me dá alguns dados relacionados a que tipos de buscas foram feitas, isso me ajuda a saber o que as pessoas procuram e se eu não tiver nada do assunto, posso começar a escrever! Olha só a dica. Abaixo segue um screenshot sobre essa parte dos analytics:
 
