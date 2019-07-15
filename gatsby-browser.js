@@ -11,8 +11,7 @@ if (typeof window !== 'undefined') {
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
-    `This application has been updated. ` +
-      `Reload to display the latest version?`
+    `Esse site foi atualizado. Deseja atualizar para ver a nova versão?`
   )
 
   if (answer === true) {
