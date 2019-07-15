@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2019-07-13 10:43:12'
-image: /assets/new-blog.png
+image: /assets/img/new-blog.png
 title: Making of - Blog Novo
 description: >-
   Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
