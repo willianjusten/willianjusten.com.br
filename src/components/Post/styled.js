@@ -11,6 +11,7 @@ export const PostWrapper = styled.section`
 
   body#card & {
     border: none;
+    padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
   }

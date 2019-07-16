@@ -5,7 +5,7 @@ import * as S from './styled'
 
 import getThemeColor from '../../utils/getThemeColor'
 
-const Post = ({ slug, date, title, description, main_class }) => {
+const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
   return (
     <S.PostLink to={slug} cover direction="right" bg={getThemeColor()}>
       <S.PostWrapper>
@@ -13,7 +13,9 @@ const Post = ({ slug, date, title, description, main_class }) => {
           <S.PostTag className={`is-${main_class}`}>{main_class}</S.PostTag>
         )}
         <S.PostInfo>
-          <S.PostDate>{date}</S.PostDate>
+          <S.PostDate>
+            {date} {timeToRead && ` • ${timeToRead} min de leitura`}
+          </S.PostDate>
           <S.PostTitle>{title}</S.PostTitle>
           <S.PostDescription>{description}</S.PostDescription>
         </S.PostInfo>
@@ -25,6 +27,8 @@ const Post = ({ slug, date, title, description, main_class }) => {
 Post.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  timeToRead: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   main_class: PropTypes.string
 }

@@ -6,6 +6,6 @@ export const ListWrapper = styled.section`
     display: grid;
     grid-area: card;
     grid-gap: 1px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
 `

@@ -27,7 +27,9 @@ export default props => {
         image={`https://willianjusten.com.br${post.frontmatter.image}`}
       />
       <PostHeader>
-        <PostDate>{post.frontmatter.date}</PostDate>
+        <PostDate>
+          {post.frontmatter.date} • {post.timeToRead} min de leitura
+        </PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
@@ -53,6 +55,7 @@ export const query = graphql`
         description
         title
       }
+      timeToRead
     }
   }
 `

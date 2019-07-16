@@ -26,6 +26,7 @@ const BlogList = props => {
             key={i}
             slug={node.fields.slug}
             title={node.frontmatter.title}
+            timeToRead={node.timeToRead}
             date={node.frontmatter.date}
             description={node.frontmatter.description}
             main_class={node.frontmatter.main_class}
@@ -65,6 +66,7 @@ export const PostListQuery = graphql`
             main_class
             title
           }
+          timeToRead
         }
       }
     }
