@@ -20,8 +20,10 @@ const MenuBar = () => {
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
 
-  GA.themeTracker(theme)
-  GA.displayTracker(display)
+  if (theme !== undefined && display !== undefined) {
+    GA.themeTracker(theme)
+    GA.displayTracker(display)
+  }
 
   useEffect(() => {
     setTheme(window.__theme)
