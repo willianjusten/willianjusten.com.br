@@ -71,7 +71,7 @@ export const MainContent = styled.section`
     color: var(--postColor);
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.7;
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;
 
