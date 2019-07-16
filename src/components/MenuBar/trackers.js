@@ -16,11 +16,21 @@ export const courseClickTrack = () => {
   })
 }
 
-export const themeClickTrack = theme => {
+export const themeTracker = theme => {
   ReactGA.event({
     category: 'theme',
-    action: 'click',
-    label: `Usava ${theme} theme`
+    action: 'view',
+    label: `Usa ${theme} theme`,
+    nonInteraction: true
+  })
+}
+
+export const displayTracker = display => {
+  ReactGA.event({
+    category: 'display',
+    action: 'view',
+    label: `Usa ${display} view`,
+    nonInteraction: true
   })
 }
 

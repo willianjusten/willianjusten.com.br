@@ -20,6 +20,9 @@ const MenuBar = () => {
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
 
+  GA.themeTracker(theme)
+  GA.displayTracker(display)
+
   useEffect(() => {
     setTheme(window.__theme)
     setDisplay(window.__display)
@@ -74,7 +77,6 @@ const MenuBar = () => {
         <S.MenuBarItem
           title="Mudar o Tema"
           onClick={() => {
-            GA.themeClickTrack(theme)
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
           }}
           className={theme}
