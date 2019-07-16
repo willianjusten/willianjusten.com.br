@@ -9,6 +9,12 @@ export const PostWrapper = styled.section`
   padding: 2rem 3rem;
   width: 100%;
 
+  body#card & {
+    border: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   ${media.lessThan('large')`
     align-items: flex-start;
     flex-direction: column;
@@ -21,6 +27,10 @@ export const PostLink = styled(AniLink)`
   display: flex;
   text-decoration: none;
   transition: color 0.5s;
+
+  body#card & {
+    background-color: var(--background);
+  }
 
   &:hover {
     color: var(--highlight);
@@ -39,6 +49,10 @@ export const PostTag = styled.div`
   min-height: 90px;
   min-width: 90px;
   text-transform: uppercase;
+
+  body#card & {
+    margin-bottom: 1.5rem;
+  }
 
   ${media.lessThan('large')`
     border-radius: 0;

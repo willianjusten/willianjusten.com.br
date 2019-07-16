@@ -60,6 +60,12 @@ export const MenuBarItem = styled.span`
     color: #d4d400;
   }
 
+  &.display {
+    ${media.lessThan('large')`
+      display: none;
+    `}
+  }
+
   ${media.greaterThan('large')`
     &:hover {
       color: var(--highlight);

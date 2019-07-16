@@ -38,14 +38,33 @@ export default class HTML extends React.Component {
                 }
 
                 setTheme(preferredTheme || 'dark');
+
+                window.__onDisplayChange = function() {};
+                function setDisplay(newDisplay) {
+                  window.__display = newDisplay;
+                  preferredDisplay = newDisplay;
+                  document.body.id = newDisplay;
+                  window.__onDisplayChange(newDisplay);
+                }
+                var preferredDisplay;
+                try {
+                  preferredDisplay = localStorage.getItem('display');
+                } catch (err) { }
+                window.__setPreferredDisplay = function(newDisplay) {
+                  setDisplay(newDisplay);
+                  try {
+                    localStorage.setItem('display', newDisplay);
+                  } catch (err) {}
+                }
+
+                setDisplay(preferredDisplay || 'list');
               })();
             `
             }}
           />
           {this.props.preBodyComponents}
           <noscript>
-            This website requires JavaScript. Why the fuck are you using without
-            it? Go and enable it! =)
+            Esse site não funciona sem JavaScript, seja legal e habilite =)
           </noscript>
           <div
             key={`body`}
