@@ -21,7 +21,7 @@ Fala pessoal, uma coisa que pediam muito enquanto eu estava meio parado, eram di
 
 A dica de hoje é extremamente simples, mas bem interessante, nós vamos aprender a criar um efeito que é usado em vários sites famosos, que é o chamado fullpage scroll ou onepage scroll. Ele nada mais é que uma adaptação do scroll, que faz com que ao você dar scroll, ele "mova uma tela inteira de uma vez só".
 
-Bom, enquanto escrevo esse post, eu vou ouvindo o [Unplugged MTV do Alice in Chains](https://open.spotify.com/album/5PdgIAHzwDvTZRjIGSQGtN?si=FA3a1dtIQnmRZH_c50E0Xg), na minha opinião, é um dos melhores que Unplugged que já ouvi, e olha que existem muitos bons.
+Bom, enquanto escrevo esse post, eu vou ouvindo o [Unplugged MTV do Alice in Chains](https://open.spotify.com/album/5PdgIAHzwDvTZRjIGSQGtN?si=FA3a1dtIQnmRZH_c50E0Xg), na minha opinião, é um dos melhores Unplugged que já ouvi, e olha que existem muitos bons.
 
 ## Demo
 
@@ -37,13 +37,13 @@ Abaixo segue um gif do exemplo vertical, para você já entender o que faremos.
 
 ## Plugins famosos e sites que usam
 
-Como disse, vários sites fazem essa técnica, mas eles acabam caindo em plugins JS. Que são os casos do:
+Como disse, vários sites usam essa técnica, mas eles acabam caindo em plugins JS. Que são os casos do:
 
 - [FullPage](https://alvarotrigo.com/fullPage/)
 - [One Page Scroll](http://www.thepetedesign.com/demos/onepage_scroll_demo.html)
 - [RevealJS](https://revealjs.com/#/)
 
-E aí, eu separei alguns sites aqui bem legais que usam:
+E aí, eu separei alguns sites bem legais que usam:
 
 - [BBC - Partition of India Article](https://www.bbc.co.uk/news/resources/idt-d88680d1-26f2-4863-be95-83298fd01e02)
 - [One Month Off - Indonesia](https://readymag.com/repponen/20907/10/)
@@ -53,13 +53,13 @@ E quanto ao [RevealJS](https://revealjs.com/#/), existem várias apresentações
 
 ## Mas e como fazer isso só com CSS?
 
-Existe um conjunto de propriedades chamadas [CSS Scroll snap](https://caniuse.com/#feat=css-snappoints), que já é até bem antigo, mas vem ganhando compatibilidade com os browsers aos poucos. E algumas dessas propriedades, que é o caso do [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) já é bastante compatível e já faz o efeito que precisamos.
+Existe um conjunto de propriedades chamadas [CSS Scroll Snap](https://caniuse.com/#feat=css-snappoints), que já é até bem antigo, mas vem ganhando compatibilidade com os browsers aos poucos. E algumas dessas propriedades, que é o caso do [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) já é bastante compatível e já faz o efeito que precisamos.
 
 A sintaxe mudou um pouco e agora está ainda mais simples de usar, então vamos ver como que faz.
 
 ### Criando o Markup
 
-Basicamente precisamos criar um `container` e então as `sections`, que irão ocupar toda a página e para ter as imagens, utilizaremos diferentes `backgrounds`, então a forma mais simples fica assim:
+Basicamente precisamos criar um `.container` e então as `sections`, que irão ocupar toda a página e para ter as imagens, utilizaremos diferentes `backgrounds`, então a forma mais simples fica assim:
 
 ```html
 <div class="container">
@@ -111,9 +111,7 @@ Cada `section` tem uma classe específica, assim conseguimos adicionar diferente
 
 ### Criando o CSS base para as sections
 
-Antes de fazer o scroll funcionar, vamos criar os estilos para as seções ficarem fullscreen. Para isso vamos utilizar as propriedades `vw` e `vh`, que são unidades de viewport, eu falo [mais sobre elas aqui](https://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/).
-
-E também os outros estilos para a `.description` e as fotos em si:
+Antes de fazer o scroll funcionar, vamos criar os estilos para as seções ficarem fullscreen e a caixa da descrição da foto. Para ocupar a tela inteira vamos utilizar as propriedades `vw` e `vh`, que são unidades de viewport, eu falo [mais sobre elas aqui](https://willianjusten.com.br/como-criar-secoes-fullscreen-com-css/). Segue abaixo o css:
 
 ```css
 section {
@@ -154,7 +152,7 @@ section {
 
 ### Agora a mágica do CSS
 
-Basicamente precisamos dizer ao nosso `container`, que ele vai ter esse controle de scroll, utilizando a propriedade `scroll-snap-type`. Ela recebe 2 parâmetros que podem ser `scroll-snap-type: x|y|both mandatory|proximity`.
+Basicamente precisamos dizer ao nosso `.container`, que ele vai ter esse controle de scroll, utilizando a propriedade `scroll-snap-type`. Ela recebe 2 parâmetros que podem ser `scroll-snap-type: x|y|both mandatory|proximity`.
 
 O primeiro parâmetro indica para onde será o scroll, `x` para o scroll horizontal, `y` para scroll vertical e `both` se for para os dois eixos. Já o segundo parâmetro indica como funcionará o scroll.
 
