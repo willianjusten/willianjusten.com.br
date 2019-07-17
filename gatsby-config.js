@@ -137,7 +137,8 @@ const pluginConfig = [
       ]
     }
   },
-  `gatsby-plugin-offline`
+  `gatsby-plugin-offline`,
+  `gatsby-plugin-sitemap`
 ]
 
 if (process.env.CONTEXT === 'production') {
