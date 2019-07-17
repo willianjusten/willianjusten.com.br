@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
 import Course from '../components/Course'
+import * as S from '../components/ListWrapper'
 
 const coursesList = [
   {
@@ -76,15 +77,17 @@ const CursosPage = () => (
       description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
       image="https://willianjusten.com.br/assets/img/cursos/cursos-bg.png"
     />
-    {coursesList.map(({ title, description, link, image }, i) => (
-      <Course
-        key={i}
-        title={title}
-        description={description}
-        link={link}
-        image={image}
-      />
-    ))}
+    <S.ListWrapper>
+      {coursesList.map(({ title, description, link, image }, i) => (
+        <Course
+          key={i}
+          title={title}
+          description={description}
+          link={link}
+          image={image}
+        />
+      ))}
+    </S.ListWrapper>
   </Layout>
 )
 
