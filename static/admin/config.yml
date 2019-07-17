@@ -1,11 +1,11 @@
 backend:
   name: github
   repo: willianjusten/willianjusten.com.br
-  branch: new-blog-gatsby
+  branch: master
   site_domain: willianjusten.com.br
 
 media_folder: static/assets/img
-public_folder: assets
+public_folder: assets/img
 publish_mode: editorial_workflow
 
 collections:
