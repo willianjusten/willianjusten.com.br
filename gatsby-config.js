@@ -140,18 +140,18 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
+                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
                   edges {
                     node {
-                      html
-                      fields { slug }
+                      fields {
+                        slug
+                      }
                       frontmatter {
                         title
                         description
                         date
                       }
+                      excerpt(truncate: true, pruneLength: 500, format: HTML)
                     }
                   }
                 }
