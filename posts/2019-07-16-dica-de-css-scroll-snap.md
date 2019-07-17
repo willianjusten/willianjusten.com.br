@@ -30,6 +30,10 @@ Se você quiser ver logo o negócio funcionando, seguem aqui as 3 diferentes dem
 * [Horizontal](https://labs.willianjusten.com.br/scroll-snap/horizontal)
 * [Proximity](https://labs.willianjusten.com.br/scroll-snap/proximity)
 
+Abaixo segue um gif do exemplo vertical, para você já entender o que faremos.
+
+![Fotos de paisagens na Austria sendo scrolladas verticalmente](/assets/scroll-snap.gif)
+
 ## Plugins famosos e sites que usam
 
 Como disse, vários sites fazem essa técnica, mas eles acabam caindo em plugins JS. Que são os casos do:
@@ -50,9 +54,7 @@ E quanto ao [RevealJS](https://revealjs.com/#/), existem várias apresentações
 
 Existe um conjunto de propriedades chamadas [CSS Scroll snap](https://caniuse.com/#feat=css-snappoints), que já é até bem antigo, mas vem ganhando compatibilidade com os browsers aos poucos. E algumas dessas propriedades, que é o caso do [scroll-snap-type](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) já é bastante compatível e já faz o efeito que precisamos.
 
-A sintaxe mudou um pouco e agora está ainda mais simples de usar, então vamos ver como que faz. Abaixo segue um gif do exemplo [Vertical](https://labs.willianjusten.com.br/scroll-snap/vertical), para você já entender o que faremos.
-
-![Fotos de paisagens na Austria sendo scrolladas verticalmente](/assets/scroll-snap.gif)
+A sintaxe mudou um pouco e agora está ainda mais simples de usar, então vamos ver como que faz. 
 
 ### Criando o Markup
 
