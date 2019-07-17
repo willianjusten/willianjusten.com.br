@@ -108,6 +108,11 @@ export const PostTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  body#card & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `
 
 export const PostDescription = styled.h2`
