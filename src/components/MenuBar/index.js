@@ -20,7 +20,7 @@ const MenuBar = () => {
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
 
-  if (theme !== undefined && display !== undefined) {
+  if (theme !== null && display !== null) {
     GA.themeTracker(theme)
     GA.displayTracker(display)
   }
