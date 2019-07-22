@@ -61,7 +61,7 @@ const MenuBar = () => {
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
-          to="/cursos"
+          to="/cursos/"
           cover
           direction="right"
           bg={getThemeColor()}
