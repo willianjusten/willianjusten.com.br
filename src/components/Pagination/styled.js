@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transition';
+import transitions from '../../styles/transitions';
 
 export const PaginationWrapper = styled.section`
   align-items: center;
