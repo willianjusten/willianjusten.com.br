@@ -3,6 +3,8 @@ import media from 'styled-media-query'
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
+import transitions from '../../styles/transitions'
+
 export const MenuBarWrapper = styled.aside`
   align-items: center;
   background: var(--mediumBackground);
@@ -15,6 +17,7 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
+  transition: ${transitions.DEFAULT};
 
   ${media.lessThan('large')`
     border-top: 1px solid var(--borders);
@@ -54,7 +57,7 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
-  transition: color 0.5s;
+  transition: ${transitions.COLOR};
 
   &.light {
     color: #d4d400;

@@ -2,6 +2,8 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import transitions from '../../styles/transitions';
+
 export const ImageWrapper = styled(Img)`
   border-radius: 50%;
   display: flex;
@@ -37,7 +39,7 @@ export const CourseLink = styled.a`
   color: var(--texts);
   display: flex;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: ${transitions.COLOR};
 
   body#card & {
     background-color: var(--background);

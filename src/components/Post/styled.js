@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
+import transitions from '../../styles/transitions';
+
 export const PostWrapper = styled.section`
   align-items: center;
   border-bottom: 1px solid var(--borders);
@@ -27,7 +29,7 @@ export const PostLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: ${transitions.COLOR};
 
   body#card & {
     background-color: var(--background);

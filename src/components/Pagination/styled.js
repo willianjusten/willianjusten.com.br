@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import transitions from '../../styles/transitions';
+
 export const PaginationWrapper = styled.section`
   align-items: center;
   border-top: 1px solid var(--borders);
@@ -17,7 +19,7 @@ export const PaginationWrapper = styled.section`
   a {
     color: var(--texts);
     text-decoration: none;
-    transition: color 0.5s;
+    transition: ${transitions.COLOR};
 
     &:hover {
       color: var(--highlight);

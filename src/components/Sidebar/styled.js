@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import transitions from '../../styles/transitions'
+
 export const SidebarContainer = styled.aside`
   align-items: center;
   border-right: 1px solid var(--borders);
@@ -13,6 +15,7 @@ export const SidebarContainer = styled.aside`
   text-align: center;
   width: 20rem;
   z-index: 9999;
+  transition: ${transitions.DEFAULT};
 
   ${media.lessThan('large')`
     align-items: flex-start;
@@ -29,7 +32,7 @@ export const SidebarContainer = styled.aside`
   a {
     color: var(--texts);
     text-decoration: none;
-    transition: color 0.5s;
+    transition: ${transitions.COLOR};
 
     &:hover {
       color: var(--highlight);
