@@ -21,9 +21,9 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, o post de hoje será sobre um assunto que eu gosto demais, **métricas!** Vira e mexe eu posto algumas coisinhas no meu [Twitter](https://twitter.com/Willian_justen) sobre estatísticas do blog e até mesmo em outros trabalhos, eu era vidrado em analisar dados. Sejam dados de performance, como acesso e outras coisinhas mais.
+Fala pessoal, o post de hoje será sobre um assunto que eu gosto demais, **métricas!** Vira e mexe eu posto algumas coisinhas no meu [Twitter](https://twitter.com/Willian_justen) sobre estatísticas do blog e até mesmo em outros trabalhos, eu era vidrado em analisar dados. Sejam dados de performance, acessos e outras coisinhas mais.
 
-Na maioria das vezes, eu faço essas métricas por curiosidade e elas não tem nenhum objetivo final. Mas essas métricas são extremamente importante, principalmente se você tem um negócio próprio e deseja medir sua performance de vendas, atração de novos usuários e etc. Então por isso que irei falar sobre isso =)
+Na maioria das vezes, eu faço essas métricas por curiosidade e elas não tem nenhum objetivo final. Mas essas métricas são extremamente importantes, principalmente se você tem um negócio próprio e deseja medir sua performance de vendas, atração de novos usuários e etc. Então por isso que irei falar sobre isso =)
 
 Enquanto eu escrevo esse post vou ouvindo um músico/youtuber que encontrei por acaso no Spotify, ele faz músicas instrumentais muito boas! Se curte rock instrumental, vai no [perfil dele no Spotify](https://open.spotify.com/artist/4vnQIQmsGTMXSQy3B5ElAw?si=INHTMGSZRsSjirgq7ohA6Q).
 
@@ -183,11 +183,11 @@ document.addEventListener('scroll', () => {
 Existe um plugin chamado [React GA](https://github.com/react-ga/react-ga), que já facilita com todas as configurações necessárias para mim. E aí no exemplo da minha página de cursos, basta eu fazer o seguinte código:
 
 ```jsx
-const courseClickTrack = course => {
+const courseClickTrack = title => {
   ReactGA.event({
     category: 'cursos',
     action: 'click',
-    label: `Link Curso - ${course}`
+    label: `Link Curso - ${title}`
   })
 }
 
