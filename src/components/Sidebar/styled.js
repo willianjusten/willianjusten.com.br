@@ -32,7 +32,7 @@ export const SidebarContainer = styled.aside`
   a {
     color: var(--texts);
     text-decoration: none;
-    transition: color 0.5s;
+    transition: ${transitions.COLOR};
 
     &:hover {
       color: var(--highlight);

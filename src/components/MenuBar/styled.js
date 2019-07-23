@@ -57,7 +57,7 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
-  transition: color 0.5s;
+  transition: ${transitions.COLOR};
 
   &.light {
     color: #d4d400;
