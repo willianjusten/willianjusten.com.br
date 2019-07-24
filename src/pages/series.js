@@ -51,6 +51,7 @@ const SeriesPage = props => {
               date={node.frontmatter.date}
               description={node.frontmatter.description}
               main_class={node.frontmatter.main_class}
+              disableCard={true}
             />
           ))}
         </section>
