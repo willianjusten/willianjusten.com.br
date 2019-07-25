@@ -95,11 +95,41 @@ Tudo no aeroporto de Santiago é caro, então o que nos salvou foram uns sanduí
 
 Depois de todo esse tempo, nós chegamos bem a noite em Puerto Montt e resolvemos pegar um Uber, já que não tinha mais ônibus e nós teríamos que pegar 2 para conseguir chegar no nosso destino, então saía mais barato pegar um Uber mesmo.
 
-Chegando lá, o quarto era **enorme**! Tinham 2 camas de solteiro, um sofá cama grande e uma cama de casal! Nós ficamos somente por essa noite e na época deu **R$ 78,00**, o que foi ótimo, já que o Airbnb ficava há apenas 5min da estação de ônibus, que era o nosso objetivo, já que a cidade que iríamos de fato era Puerto Montt.
+Chegando lá, o quarto era **enorme**! Tinham 2 camas de solteiro, um sofá cama grande e uma cama de casal! Nós ficamos somente por essa noite e na época deu **R$ 78,00**, o que foi ótimo, já que o Airbnb ficava há apenas 5min da estação de ônibus, que era o nosso objetivo, já que a cidade que iríamos de fato era Frutillar.
 
 ![Foto de um quarto espaçoso com 3 camas](/assets/img/puerto-montt-airbnb.png)
 
+Assim que acordamos no dia seguinte, nós nos arrumamos e fomos caminhando em direção a rodoviária, para pegar um ônibus para Frutillar, o ônibus para lá custa aproximadamente **R$5,00** e a viagem dura em torno de 1h.
+
 ## Frutillar (30/11 a 03/12)
 
-Ahh que cidade maravilhosa! Quando comecei a pesquisar um pouco sobre essa região dos lagos, muitas pessoas faziam um bate e volta nessa cidade, as vezes gastando apenas metade de uma tarde. Mas é uma cidade tão linda e tão fotogênica, que eu queria muito ficar mais dias lá. E sendo sincero? Não me arrependo nadinha, pude ir nos lugares com bastante calma e descansar bem (que era um grande objetivo da viagem).
+Ahh que cidade maravilhosa! Quando comecei a pesquisar um pouco sobre a região dos lagos, muitas pessoas faziam um bate e volta nessa cidade, as vezes gastando apenas metade de uma tarde. Mas é uma cidade tão linda e tão fotogênica, que eu queria muito ficar mais dias lá. E sendo sincero? Não me arrependo nadinha, pude ir nos lugares com bastante calma e descansar bem (que era um grande objetivo da viagem). 
+
+Frutillar foi fortemente influenciada pela colonização alemã, tanto é que tem placas em alemão e até escolas alemães por lá! E a comida típica mais famosa de lá, também é da Alemanha e se chama [Kuchen](https://www.portaldorancho.com.br/portal/kuche-cuca-um-bolo-alemao), que é tipo uma cuca, só que mais molhada e muito muito gostosa!
+
+Além das casinhas alemãs lindas, outra coisa que atrai bastante é o lindo lago Lhanquihue, que tem vista para enorme e maravilhoso vulcão de Osorno, esse que é tão fotogênico que qualquer coisa servia de moldura perfeita para ele.
+
+![Vulcão com um pico nevado ao fundo, um lago no meio e uma arvore florida organizada de forma a parecer uma moldura para o vulcão.](/assets/img/osorno-frutillar.jpg)
+
+O [nosso Airbnb](https://www.airbnb.com.br/rooms/17367212), para continuar no clima, foi um chalé bem legal e também bastante barato! Ele tinha uma vista legal do vulcão, um jardim agradável e ainda tinha um cachorro super fofo que nos apegamos. Dividindo por 2, nós pagamos aproximadamente **R$ 62,00/dia**
+
+![4 fotos: superior esquerda é um chalé. superior direita um cachorro pequeno e uma bola. Inferior esquerda é a vista do vulcão pela sacada do chalé, inferior direita é uma casa tipicamente alemã.](/assets/img/frutillar-collage.jpg)
+
+Lá em Frutillar, nós visitamos o [Museo Colonial Alemán](https://www.ruta-patagonia.com/Destino-Detalle-Descripcion.php?N=Museo-colonial-frutillar.php), também fomos no belíssimo Teatro del Lago e tentamos visitar uma fazenda de lavanda. Só que chegando, tinha um aviso de fechado mas com o portão aberto. Nós pensamos:
+
+> Se o portão está aberto, deve poder entrar né?
+
+Nós "invadimos" a fazenda e acabamos descobrindo que estava tendo um casamento lá, tiramos algumas fotos na encolha e fomos embora xD
+
+![4 fotos: Superior Esquerda: uma foto de lavanda. Superior Direita: o museu colonial alemão. Inferior esquerda: um quadro falando sobre o casamento. Inferior direta: uma foto do Teatro Del Lago por cima.](/assets/img/frutillar-collage-2.jpg)
+
+Outra viagem de bate e volta que fizemos, foi o passeio ao Parque Saltos de Petrohue, pegamos um ônibus em Frutillar e fomos até lá sozinhos, a passagem custava **R$5,00** para cada um.
+
+Para entrar nesse parque são **6 dólares**, mas no dia era comemoração de alguma coisa e nós não pagamos! O parque é muito bonito e as águas extremamente verdes azuladas, além de ter uma vista incrível para o vulcão de Osorno.
+
+![Um rio muito bonito com  a imagem de um vulcão enorme atrás.](/assets/img/petrohue.jpg)
+
+Se quiser ver mais fotos e vídeos da viagem, eu criei um [album de Frutillar](https://photos.app.goo.gl/zAW6RNMrfiSQhq6cA) com coisas que eu costumei ir compartilhando via [Instagram](https://www.instagram.com/will_justen/).
+
+## Púcon (03/12 a 09/12)
 
