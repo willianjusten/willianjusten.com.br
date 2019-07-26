@@ -13,11 +13,9 @@ tags:
   - remoto
   - exterior
 categories:
-  - Trabalhar no exterior
-  - remoto
-  - viagens
-  - etc
+  - 'Trabalhar no exterior, remoto, viagens, etc'
 ---
+
 ## Introdução
 
 Eu fiz essa viagem tem um tempinho, foi no período de **19 de Novembro** a **15 de Dezembro**, mas vira e mexe eu recebo perguntas sobre, principalmente no meu [Instagram](https://www.instagram.com/will_justen/), por este motivo, compartilharei com vocês como fora minha experiência.
@@ -40,34 +38,34 @@ E não poderia ter sido uma companhia melhor, nós rimos e zoamos desde o primei
 
 ## Roteiro
 
-No início nós pensávamos em fazer o extremo sul da Patagônia, indo para as Torres del Paine e Ushuaia,  mas percebemos que para a maioria desses lugares, seria melhor fazer de carro, e como nenhum de nós dois tinha habilitação ~~shame~~, acabamos deixando isso para depois. Foi bom, porque agora nós dois tiramos habilitação e aí vai facilitar em futuras viagens.
+No início nós pensávamos em fazer o extremo sul da Patagônia, indo para as Torres del Paine e Ushuaia, mas percebemos que para a maioria desses lugares, seria melhor fazer de carro, e como nenhum de nós dois tinha habilitação ~~shame~~, acabamos deixando isso para depois. Foi bom, porque agora nós dois tiramos habilitação e aí vai facilitar em futuras viagens.
 
 Sabendo que não rolava a Patagônia, não desistimos de procurar lugares com mais natureza e que nos permitisse fazer trilhas, quem me conhece sabe que sou apaixonado por isso. Nessas pesquisas, encontramos lugares muito bonitos e nem tão distantes, numa área chamada de **Região dos Lagos** e a partir desse ponto, nós começamos a definir as outras partes.
 
 Então, em resumo, os pontos foram:
 
-* **29 de Novembro**: Voo Rio de Janeiro - Santiago e Santiago - Puerto Montt
-* **30 de Novembro até 3 de Dezembro**: Frutillar e arredores
-* **3 de Dezembro até 9 de Dezembro**: Púcon e arredores
-* **10 de Dezembro até 12 de Dezembro**: Valparaíso / Viña del Mar
-* **12 de Dezembro até 15 de Dezembro**: Santiago
+- **29 de Novembro**: Voo Rio de Janeiro - Santiago e Santiago - Puerto Montt
+- **30 de Novembro até 3 de Dezembro**: Frutillar e arredores
+- **3 de Dezembro até 9 de Dezembro**: Púcon e arredores
+- **10 de Dezembro até 12 de Dezembro**: Valparaíso / Viña del Mar
+- **12 de Dezembro até 15 de Dezembro**: Santiago
 
 Fizemos alguns passeios bate e volta que eu irei falar nos dias/tópicos abaixo.
 
-Outra coisa importante a pontuar sobre a viagem, ela não foi uma viagem fancy de gente rica gastando em todos os cantos, mas também não foi uma viagem extremamente apertada, que só podíamos comer miojo. Foi uma viagem tranquila, onde comemos alguns dias fora, outros dias só fizemos sanduíches e nos hospedamos em lugares baratos, mas também sem precisar dividir o quarto com 20 cabeças (btw, eu já to velho para isso). 
+Outra coisa importante a pontuar sobre a viagem, ela não foi uma viagem fancy de gente rica gastando em todos os cantos, mas também não foi uma viagem extremamente apertada, que só podíamos comer miojo. Foi uma viagem tranquila, onde comemos alguns dias fora, outros dias só fizemos sanduíches e nos hospedamos em lugares baratos, mas também sem precisar dividir o quarto com 20 cabeças (btw, eu já to velho para isso).
 
 ## Curiosidades e Informações pertinentes
 
-* A comida no Chile é realmente muito cara!
-* Fique atento se a casa tem água filtrada, muitos lugares são extremamente secos e a água é fundamental.
-* Assim como no Peru, sempre tente negociar as coisas e passeios, todos dão desconto.
-* Chilenos só tomam Nescafé ou outro café horrível! Não tome café em lugar nenhum, você irá se decepcionar. 
-* Vinhos são realmente muito baratos, antes de voltar para o Brasil, vá no Supermercado Jumbo no Shopping Costanera Center em Santiago e compre lá, tem os melhores preços e vários tipos.
-* Fica ciente que os hotéis famosos de Huilo Huilo estão bem descuidados e você não pode sequer entrar.  Se for fazer o passeio só por isso, eu não recomendo.
-* A trilha para o vulcão villarica não é extremamente difícil, mas se você não tiver um bom condicionamento físico, é possível que você sofra bastante.
-* Existem vulcões em tudo que é canto e você sempre se surpreende com a beleza deles.
-* O 4G pega bem em quase todos os lugares, só não compre chip da Virgin (dizem que tu ganha 2Gb, mas são 2Gb por ano!). Nós compramos um chip da Claro e funcionou muito bem.
-* As viagens de ônibus funcionam muito bem, mesmo as mais demoradas.
+- A comida no Chile é realmente muito cara!
+- Fique atento se a casa tem água filtrada, muitos lugares são extremamente secos e a água é fundamental.
+- Assim como no Peru, sempre tente negociar as coisas e passeios, todos dão desconto.
+- Chilenos só tomam Nescafé ou outro café horrível! Não tome café em lugar nenhum, você irá se decepcionar.
+- Vinhos são realmente muito baratos, antes de voltar para o Brasil, vá no Supermercado Jumbo no Shopping Costanera Center em Santiago e compre lá, tem os melhores preços e vários tipos.
+- Fica ciente que os hotéis famosos de Huilo Huilo estão bem descuidados e você não pode sequer entrar. Se for fazer o passeio só por isso, eu não recomendo.
+- A trilha para o vulcão villarica não é extremamente difícil, mas se você não tiver um bom condicionamento físico, é possível que você sofra bastante.
+- Existem vulcões em tudo que é canto e você sempre se surpreende com a beleza deles.
+- O 4G pega bem em quase todos os lugares, só não compre chip da Virgin (dizem que tu ganha 2Gb, mas são 2Gb por ano!). Nós compramos um chip da Claro e funcionou muito bem.
+- As viagens de ônibus funcionam muito bem, mesmo as mais demoradas.
 
 ## Companhia aérea - Sky Airlines
 
@@ -95,15 +93,15 @@ Tudo no aeroporto de Santiago é caro, o que nos salvou foram uns sanduíches e 
 
 Depois de todo esse tempo, chegamos bem a noite em Puerto Montt e resolvemos pegar um Uber, uma vez que já não havia mais ônibus e teríamos que embarcar em dois para conseguir chegar ao nosso destino, neste caso, fora mais barato/acessível pegar um Uber.
 
-Chegando lá, o quarto era **enorme**! Tinham 2 camas de solteiro, um sofá cama grande e uma cama de casal! Nós ficamos somente por essa noite e na época o custo foi **R$ 78,00**, o que foi ótimo, já que o Airbnb ficava há apenas 5min da estação de ônibus, que era o nosso objetivo, visto que a cidade que iríamos era Frutillar.
+Chegando lá, o quarto era **enorme**! Tinham 2 camas de solteiro, um sofá cama grande e uma cama de casal! Nós ficamos somente por essa noite e na época o custo foi **R\$ 78,00**, o que foi ótimo, já que o Airbnb ficava há apenas 5min da estação de ônibus, que era o nosso objetivo, visto que a cidade que iríamos era Frutillar.
 
 ![Foto de um quarto espaçoso com 3 camas](/assets/img/puerto-montt-airbnb.png)
 
-Assim que acordamos no dia seguinte, nos arrumamos e fomos caminhando em direção a rodoviária, embarcar em onibus com destino a Frutillar, o custo com este foi aproximadamente R$ 5,00 e a viagem durou em torno de 1h.
+Assim que acordamos no dia seguinte, nos arrumamos e fomos caminhando em direção a rodoviária, embarcar em onibus com destino a Frutillar, o custo com este foi aproximadamente R\$ 5,00 e a viagem durou em torno de 1h.
 
 ## Frutillar (30/11 a 03/12)
 
-Ahh que cidade maravilhosa! Quando comecei a pesquisar sobre a região dos lagos, muitas pessoas faziam um bate e volta nessa cidade, as vezes gastando apenas metade de uma tarde. Mas é uma cidade tão linda e tão fotogênica, que eu queria muito ficar mais dias lá. E sendo sincero? Não me arrependo nadinha, pude ir nos lugares com bastante calma e descansar bem (que era um grande objetivo da viagem). 
+Ahh que cidade maravilhosa! Quando comecei a pesquisar sobre a região dos lagos, muitas pessoas faziam um bate e volta nessa cidade, as vezes gastando apenas metade de uma tarde. Mas é uma cidade tão linda e tão fotogênica, que eu queria muito ficar mais dias lá. E sendo sincero? Não me arrependo nadinha, pude ir nos lugares com bastante calma e descansar bem (que era um grande objetivo da viagem).
 
 Frutillar foi fortemente influenciada pela colonização alemã, tanto é que tem placas em alemão e até escolas alemães por lá! E a comida típica mais famosa de lá, também é da Alemanha e se chama [Kuchen](https://www.portaldorancho.com.br/portal/kuche-cuca-um-bolo-alemao), que é tipo uma cuca, só que mais molhada e muito muito gostosa! Aconselho demais a [cafeteria Duesdes del Lago](https://goo.gl/maps/taju3hwUarRiBubu5), lá o preço é okay e tem a melhor Kuchen de toda a cidade!
 
@@ -111,7 +109,7 @@ Além das casinhas alemãs lindas, outra coisa que atrai bastante é o lindo lag
 
 ![Vulcão com um pico nevado ao fundo, um lago no meio e uma arvore florida organizada de forma a parecer uma moldura para o vulcão.](/assets/img/osorno-frutillar.jpg)
 
-O [nosso Airbnb](https://www.airbnb.com.br/rooms/17367212), para continuar no clima, foi um chalé bem legal e também bastante barato! Ele tinha uma vista legal do vulcão, um jardim agradável e ainda tinha um cachorro super fofo que nos apegamos. Dividindo por 2, nós pagamos aproximadamente **R$ 62,00/dia**
+O [nosso Airbnb](https://www.airbnb.com.br/rooms/17367212), para continuar no clima, foi um chalé bem legal e também bastante barato! Ele tinha uma vista legal do vulcão, um jardim agradável e ainda tinha um cachorro super fofo que nos apegamos. Dividindo por 2, nós pagamos aproximadamente **R\$ 62,00/dia**
 
 ![4 fotos: superior esquerda é um chalé. superior direita um cachorro pequeno e uma bola. Inferior esquerda é a vista do vulcão pela sacada do chalé, inferior direita é uma casa tipicamente alemã.](/assets/img/frutillar-collage.jpg)
 
@@ -123,13 +121,13 @@ Nós "invadimos" a fazenda e acabamos descobrindo que estava acontecendo um casa
 
 ![4 fotos: Superior Esquerda: uma foto de lavanda. Superior Direita: o museu colonial alemão. Inferior esquerda: um quadro falando sobre o casamento. Inferior direta: uma foto do Teatro Del Lago por cima.](/assets/img/frutillar-collage-2.jpg)
 
-Outra viagem de bate e volta que fizemos, foi o passeio ao Parque Saltos de Petrohue, embarcamos num ônibus em Frutillar e fomos até lá sozinhos, a passagem custava **R$ 5,00** para cada um e pode pegar em qualquer ponto de Frutillar que esteja indo em direção a Puerto Varas, fale com os motoristas, eles sempre ajudam.
+Outra viagem de bate e volta que fizemos, foi o passeio ao Parque Saltos de Petrohue, embarcamos num ônibus em Frutillar e fomos até lá sozinhos, a passagem custava **R\$ 5,00** para cada um e pode pegar em qualquer ponto de Frutillar que esteja indo em direção a Puerto Varas, fale com os motoristas, eles sempre ajudam.
 
-Para entrar nesse parque foram **$ 6 (seis dólares)**, mas no dia era comemoração de alguma coisa e nós não pagamos! O parque é muito bonito e as águas extremamente verdes azuladas, além de ter uma vista incrível para o vulcão de Osorno.
+Para entrar nesse parque foram **\$ 6 (seis dólares)**, mas no dia era comemoração de alguma coisa e nós não pagamos! O parque é muito bonito e as águas extremamente verdes azuladas, além de ter uma vista incrível para o vulcão de Osorno.
 
 ![Um rio muito bonito com  a imagem de um vulcão enorme atrás.](/assets/img/petrohue.jpg)
 
-Depois desses dias em Frutillar, nós pegamos um ônibus para Puerto Varas por **R$ 5,00** e de lá pegamos outro ônibus para Púcon, numa viagem um pouco maior, e com isso a passagem custou **R$ 48,00**. Vocês podem entrar neste ônibus na rodoviária de Puerto Varas, se estiver vindo de Frutillar, basta pedir para o motorista e ele te deixa do lado.
+Depois desses dias em Frutillar, nós pegamos um ônibus para Puerto Varas por **R\$ 5,00** e de lá pegamos outro ônibus para Púcon, numa viagem um pouco maior, e com isso a passagem custou **R\$ 48,00**. Vocês podem entrar neste ônibus na rodoviária de Puerto Varas, se estiver vindo de Frutillar, basta pedir para o motorista e ele te deixa do lado.
 
 Como nós perdemos o primeiro ônibus, acabamos chegando tarde demais em Puerto Varas e com isso tivemos que esperar horas até que tivesse um novo ônibus. O que fizemos? Dormimos no banco da praça, num calor horrível, mas é a vida. Pelo menos a vista era bonita xD
 
@@ -163,7 +161,7 @@ Chegamos ao maior objetivo dessa minha viagem, era escalar o Vulcão Villarica, 
 
 Infelizmente eu não consegui chegar até o final e isso me frustrou bastante... Eu estava já bastante cansado dos outros dias (não façam Huilo Huilo antes desse dia!), além de ter passado mal por alguma coisa que comi, também havia sido um ano difícil em relação a minha saúde. Enfim, foram várias as razões para eu não ter conseguido, mas ainda pretendo retornar a ele e alcançar o topo!
 
-Nesse mesmo dia do vulcão, a minha amiga Julia passou o dia passeando pelo centro da cidade e quando eu retornei, ela me convenceu a ir numa das termas que ela já havia planejado, que era a Indômito. Essa é uma terma mais fancy (não pelo preço, mas pelo visual) e foi até bem revigorante. 
+Nesse mesmo dia do vulcão, a minha amiga Julia passou o dia passeando pelo centro da cidade e quando eu retornei, ela me convenceu a ir numa das termas que ela já havia planejado, que era a Indômito. Essa é uma terma mais fancy (não pelo preço, mas pelo visual) e foi até bem revigorante.
 
 ![Foto de uma mão segurando uma cerveja em frente a uma piscina coberta e cadeiras para descansar.](/assets/img/indomito.jpg)
 
@@ -185,7 +183,7 @@ Após dar uma passada lá, também fomos em algumas lojinhas de artesanato numas
 
 ## Valparaíso - Viña del Mar (10/12 - 12/12)
 
-Depois de todos os dias na região dos Lagos e consequentemente em cidades bem frias, nós fomos em direção a Valparaíso, que fica na costa e é bastante quente! Para isso, nós pegamos um ônibus de Púcon, indo diretamente para Valparaíso, uma viagem de 12h! Pois é, essas viagens de ônibus são tensas, se você não é daqueles que desmaia logo ao entrar no ônibus, leve algum joguinho ou algo para se distrair, pois é um loooongo percurso. Esse ônibus por ter um percurso bem maior, custava **R$ 98,00** e fomos pela JAC.
+Depois de todos os dias na região dos Lagos e consequentemente em cidades bem frias, nós fomos em direção a Valparaíso, que fica na costa e é bastante quente! Para isso, nós pegamos um ônibus de Púcon, indo diretamente para Valparaíso, uma viagem de 12h! Pois é, essas viagens de ônibus são tensas, se você não é daqueles que desmaia logo ao entrar no ônibus, leve algum joguinho ou algo para se distrair, pois é um loooongo percurso. Esse ônibus por ter um percurso bem maior, custava **R\$ 98,00** e fomos pela JAC.
 
 Em Valparaíso ficamos num [Airbnb incrível](https://www.airbnb.com.br/rooms/16815053), que tinha 2 quartos enormes e o mesmo preço dos outros lugares que ficamos, onde nós dividíamos o quarto.
 
@@ -201,7 +199,7 @@ E num dos dias que estávamos em Valparaíso, nós fomos até Viña del Mar, que
 
 Essa era a cidade que menos ficamos, até porque é uma capital e eu sou mais o cara das cidades pequenas e charmosas. Mas foi uma pena, já que Santiago se mostrou uma cidade bem legal e com bastante coisa para fazer, até mesmo nos arredores.
 
-Uma vez lá, basicamente focamos em fazer uma visitação na mais antiga vinícula do Chile, que é a [Cousiño Macul](https://www.cousinomacul.com/). Muita gente costuma ir na Concha y Toro, mas lá além de mais caro, é mais lotada e tem menos história. A Cousiño foi construída em 1856 e até hoje é controlada pela mesma família! Para visitar, basta fazer a reserva no site que coloquei ali acima e ir. Nós fizemos a visitação e degustação, saí de lá bêbado e conhecendo um pouco  mais de vinhos e queijos.
+Uma vez lá, basicamente focamos em fazer uma visitação na mais antiga vinícula do Chile, que é a [Cousiño Macul](https://www.cousinomacul.com/). Muita gente costuma ir na Concha y Toro, mas lá além de mais caro, é mais lotada e tem menos história. A Cousiño foi construída em 1856 e até hoje é controlada pela mesma família! Para visitar, basta fazer a reserva no site que coloquei ali acima e ir. Nós fizemos a visitação e degustação, saí de lá bêbado e conhecendo um pouco mais de vinhos e queijos.
 
 Outro passeio que fomos +ou-, foi ir na maior torre da américa latina, que é o Costanera Center. O motivo de ter usado o +/-, é que nós chegamos muito tarde lá e já estava fechado para subir no mais alto andar, que tem um panorama de 360 graus da cidade. Minha dica é que se você for de metrô, vá cedo, demora para o metrô passar e também dependendo de onde você está, demora para chegar até lá.
 
