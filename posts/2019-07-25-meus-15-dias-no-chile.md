@@ -218,3 +218,7 @@ Eu tenho fotos melhores e em alta resolução no meu [Unsplash](https://unsplash
 Eu também separei muitas das fotos, vídeos e stories que fiz, no meu [Google Photos](https://photos.app.goo.gl/QNxJs3WSZyvZwZS76), lá as fotos são zoadas e os vídeos também, mas dá para ter mais noção do dia a dia que tivemos.
 
 O post ficou enorme, nem é relacionado a TI, mas como tem gente que perguntou e como adoro viajar, achei que valia a pena esse post, até para eu ter salvo para o futuro.
+
+## Agradecimento
+
+Gostaria de agradecer ao [Ademílson F. Tonato](https://twitter.com/ftonato), ele sempre me ajuda nas revisões e para esse post fez uma [issue gigantesca](https://github.com/willianjusten/willianjusten.com.br/issues/114) corrigindo cada detalhe, agradeçam muito a ele, senão esse post sairia cheio de erros.
