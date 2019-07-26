@@ -169,7 +169,7 @@ Nesse mesmo dia do vulcão, a minha amiga Julia passou o dia passeando pelo cent
 
 ### Termas Geométricas
 
-Um outro passeio muito esperado era o das termas geométricas, que são um conjunto de piscinas termais em meio a natureza. É linda demaaaaaais e vale muito a pena ir!
+Um outro passeio muito esperado era o das termas geométricas, que são um conjunto de piscinas termais em meio à natureza. É linda demaaaaaais e vale muito a pena ir!
 
 O passeio dessas termas são sempre de metade do dia, então escolhemos ir a tarde, para aproveitar um pouquinho do Sol e valeu bem a pena, apesar de ter bastante gente, são muitas piscinas e eu não me senti incomodado em nenhum momento. Para acessar as piscinas, você anda em umas pequenas pontes/caminhos de madeira vermelho, deixa o lugar super fotogênico e ao final de tudo, ainda é agraciado por uma cachoeira!
 
