@@ -61,7 +61,7 @@ Outra coisa importante a pontuar sobre a viagem, ela não foi uma viagem fancy d
 * A comida no Chile é realmente cara para caramba!
 * Fique atento se a casa tem água filtrada, muitos lugares são extremamente secos e a água é fundamental.
 * Assim como no Peru, sempre tente negociar as coisas e passeios, todos dão desconto.
-* Chilenos só tomam Nescafé ou outro café horrível! Não tome café em lugar nenhum, você irá se decepcionar.
+* Chilenos só tomam Nescafé ou outro café horrível! Não tome café em lugar nenhum, você irá se decepcionar. 
 * Vinhos são realmente muito baratos, antes de voltar para o Brasil, vá no Supermercado Jumbo no Shopping Costanera Center em Santiago e compre lá, tem os melhores preços e vários tipos.
 * Fica ciente que os hotéis famosos de Huilo Huilo estão bem descuidados e você não pode sequer entrar. Se for fazer o passeio só por isso, nem vá.
 * A trilha para o vulcão villarica não é extremamente difícil, mas se você não tiver um bom condicionamento físico, é possível que você sofra bastante.
@@ -105,7 +105,7 @@ Assim que acordamos no dia seguinte, nós nos arrumamos e fomos caminhando em di
 
 Ahh que cidade maravilhosa! Quando comecei a pesquisar um pouco sobre a região dos lagos, muitas pessoas faziam um bate e volta nessa cidade, as vezes gastando apenas metade de uma tarde. Mas é uma cidade tão linda e tão fotogênica, que eu queria muito ficar mais dias lá. E sendo sincero? Não me arrependo nadinha, pude ir nos lugares com bastante calma e descansar bem (que era um grande objetivo da viagem). 
 
-Frutillar foi fortemente influenciada pela colonização alemã, tanto é que tem placas em alemão e até escolas alemães por lá! E a comida típica mais famosa de lá, também é da Alemanha e se chama [Kuchen](https://www.portaldorancho.com.br/portal/kuche-cuca-um-bolo-alemao), que é tipo uma cuca, só que mais molhada e muito muito gostosa!
+Frutillar foi fortemente influenciada pela colonização alemã, tanto é que tem placas em alemão e até escolas alemães por lá! E a comida típica mais famosa de lá, também é da Alemanha e se chama [Kuchen](https://www.portaldorancho.com.br/portal/kuche-cuca-um-bolo-alemao), que é tipo uma cuca, só que mais molhada e muito muito gostosa! Aconselho demais a [cafeteria Duesdes del Lago](https://goo.gl/maps/taju3hwUarRiBubu5), lá o preço é okay e tem a melhor Kuchen de toda a cidade!
 
 Além das casinhas alemãs lindas, outra coisa que atrai bastante é o lindo lago Lhanquihue, que tem vista para enorme e maravilhoso vulcão de Osorno, esse que é tão fotogênico que qualquer coisa servia de moldura perfeita para ele.
 
@@ -115,7 +115,7 @@ O [nosso Airbnb](https://www.airbnb.com.br/rooms/17367212), para continuar no cl
 
 ![4 fotos: superior esquerda é um chalé. superior direita um cachorro pequeno e uma bola. Inferior esquerda é a vista do vulcão pela sacada do chalé, inferior direita é uma casa tipicamente alemã.](/assets/img/frutillar-collage.jpg)
 
-Lá em Frutillar, nós visitamos o [Museo Colonial Alemán](https://www.ruta-patagonia.com/Destino-Detalle-Descripcion.php?N=Museo-colonial-frutillar.php), também fomos no belíssimo Teatro del Lago e tentamos visitar uma fazenda de lavanda. Só que chegando, tinha um aviso de fechado mas com o portão aberto. Nós pensamos:
+Lá em Frutillar, nós visitamos o [Museo Colonial Alemán](https://www.ruta-patagonia.com/Destino-Detalle-Descripcion.php?N=Museo-colonial-frutillar.php), fomos no belíssimo Teatro del Lago e tentamos visitar uma fazenda de lavanda. Só que chegando lá, havia um aviso de fechado, porém com o portão aberto. Nós pensamos:
 
 > Se o portão está aberto, deve poder entrar né?
 
@@ -123,13 +123,99 @@ Nós "invadimos" a fazenda e acabamos descobrindo que estava tendo um casamento 
 
 ![4 fotos: Superior Esquerda: uma foto de lavanda. Superior Direita: o museu colonial alemão. Inferior esquerda: um quadro falando sobre o casamento. Inferior direta: uma foto do Teatro Del Lago por cima.](/assets/img/frutillar-collage-2.jpg)
 
-Outra viagem de bate e volta que fizemos, foi o passeio ao Parque Saltos de Petrohue, pegamos um ônibus em Frutillar e fomos até lá sozinhos, a passagem custava **R$5,00** para cada um.
+Outra viagem de bate e volta que fizemos, foi o passeio ao Parque Saltos de Petrohue, pegamos um ônibus em Frutillar e fomos até lá sozinhos, a passagem custava **R$5,00** para cada um e pode pegar em qualquer ponto de Frutillar que esteja indo em direção a Puerto Varas, fale com os motoristas, eles sempre ajudam.
 
 Para entrar nesse parque são **6 dólares**, mas no dia era comemoração de alguma coisa e nós não pagamos! O parque é muito bonito e as águas extremamente verdes azuladas, além de ter uma vista incrível para o vulcão de Osorno.
 
 ![Um rio muito bonito com  a imagem de um vulcão enorme atrás.](/assets/img/petrohue.jpg)
 
-Se quiser ver mais fotos e vídeos da viagem, eu criei um [album de Frutillar](https://photos.app.goo.gl/zAW6RNMrfiSQhq6cA) com coisas que eu costumei ir compartilhando via [Instagram](https://www.instagram.com/will_justen/).
+Depois desses dias em Frutillar, nós pegamos um ônibus para Puerto Varas por **R$5,00** e de lá pegamos outro ônibus para Púcon, numa viagem um pouco maior, e com isso a passagem custou **R$48,00**. Esse ônibus você pega na rodoviária de Puerto Varas, se estiver vindo de Frutillar, basta pedir para o motorista e ele te deixa do lado.
+
+Como nós perdemos o primeiro ônibus, acabamos chegando tarde demais em Puerto Varas e com isso tivemos que esperar horas até que tivesse um novo ônibus. O que fizemos? Dormimos no banco da praça, num calor horrível, mas é a vida. Pelo menos a vista era bonita xD
+
+![Duas fotos: Superior: dois vulcões e um lago azul. Inferior: minha amiga julia dormindo num banco de praça.](/assets/img/puerto-varas.jpg)
 
 ## Púcon (03/12 a 09/12)
+
+Essa era a cidade com o maior número de atrações e por isso a cidade escolhida para passar a maior parte do tempo. [Púcon](https://pt.wikipedia.org/wiki/Puc%C3%B3n) é outra cidade fortemente influenciada pela colonização alemã. Pela grande proximidade com o Vulcão Villarica e alguns outros menores, a cidade também é cheia de termas, tendo as Termas Geométricas, como a mais famosa.
+
+O local que ficamos foi uma pensão chamada [Hostal Carmen](https://www.booking.com/hotel/cl/hostal-carmen.pt-br.html?aid=304142;label=postbooking_confemail;sid=eb2862ff82345c900bda06316c84df23;dist=0&keep_landing=1&sb_price_type=total&type=total&), a Dona Carmen inclusive vai ficar no coração, que senhora amorosa e simpática! Ela chegou até a beber cerveja com a gente a noite. Lá na casa também existia um gato gordo **gigantesco**, sério, nunca tinha visto tão grande!
+
+![Um gato negro próximo a umas flores rosas](/assets/img/chacho.jpg)
+
+No dia seguinte a chegada em Púcon, nós começamos a saga para arrumar o preço dos passeios que gostaríamos de fazer. E depois de ter ido em mais de 40 lugares, acabamos gostando de um lugar onde fomos muito bem atendidos e os preços eram bem legais, o nome da agência é [Amulenko](https://www.facebook.com/people/Amulenko-Pucon/100008235699316).
+
+### Huilo Huilo
+
+Nosso primeiro passeio foi o de Huilo Huilo, que era um lugar que parecia super bonito nas fotos, com 2 hotéis feitos quase que nas árvores e com um visual incrível! Além disso, ainda ia numa cachoeira e num lugar para ver veados.
+
+Sobre o passeio, ele é extremamente cansativo, foram quase que 9-10h, onde muitos trechos são dentro da van, para poder chegar nos locais e sair deles. Outra coisa é que os hotéis estavam super descuidados e mal dava para ver a forma que víamos em fotos antigas, sem contar que não podia entrar sequer no saguão deles, o que nos deixou bem frustrados.
+
+O que salvou demais na minha opinião, foi a cachoeira, que é extremamente bonita e deu uma foto que gosto bastante, que está abaixo:
+
+![Uma linda cachoeira em volta de bastante verde.](/assets/img/salto-huilo-huilo.jpg)
+
+### Vulcão Villarica e Indômito
+
+Bom, o maior objetivo dessa minha viagem, era escalar o Vulcão Villarica, que é um dos vulcões mais ativos do mundo, podendo ser possível lava! Essa é uma trilha de aproximadamente 6h, saindo bem cedinho de van até a base e de lá, uma grande caminhada até o topo.
+
+![Foto do vulcão villarica](/assets/img/viagem-chile.jpg)
+
+Infelizmente eu não consegui chegar até o final e isso me frustrou bastante... Eu estava já bastante cansado dos outros dias (não façam Huilo Huilo antes desse dia!), além de ter passado mal por alguma coisa que comi, também havia sido um ano difícil em relação a minha saúde. Enfim, foram várias as razões para eu não ter conseguido, mas ainda irei retornar lá e chegar até o final!
+
+Nesse mesmo dia do vulcão, a minha amiga Julia passou o dia passeando pelo centro da cidade e quando eu retornei, ela me convenceu a ir numa das termas que ela já ia, que era a Indômito. Essa é uma terma mais fancy (não pelo preço, mas pelo visual) e foi até bem revigorante. 
+
+![Foto de uma mão segurando uma cerveja em frente a uma piscina coberta e cadeiras para descansar.](/assets/img/indomito.jpg)
+
+### Termas Geométricas
+
+Um outro passeio muito esperado era o das termas geométricas, que são um conjunto de piscinas termais em meio a natureza. É linda demaaaaaais e vale muito a pena ir!
+
+O passeio dessas termas são sempre de metade do dia, então escolhemos ir a tarde, para aproveitar um pouquinho do Sol e valeu bem a pena, apesar de ter bastante gente, são muitas piscinas e eu não me senti incomodado em nenhum momento. Para acessar as piscinas, você anda em umas pequenas pontes/caminhos de madeira vermelho, deixa o lugar super fotogênico e ao final de tudo, ainda tem uma cachoeira!
+
+![Duas fotos: lado esquerdo: uma cachoeira, lado direito: uma ponte de madeira vermelha com bastante vegetação ao redor.](/assets/img/geometricas.jpg)
+
+### Playa Negra
+
+Em Púcon mesmo, tem um lago de areia preta, devido aos restos vulcânicos. Os chilenos acabam chamando de playa negra e também é um lugar bonito para dar uma caminhada, nós aproveitamos que tínhamos vários dias na cidade e resolvemos ir lá e também nos arredores. Tem uns hotéis bonitos na orla e bastante gente se diverte com kayak por ali.
+
+Após dar uma passada lá, também fomos em algumas lojinhas de artesanato numas feirinhas que tem por ali.
+
+![Duas fotos. A esquerda, foto aérea de metade o lago e metade a areia negra. A direita, foto de uma pessoa de kayak no lago, vista por um drone.](/assets/img/playa-negra.jpg)
+
+## Valparaíso - Viña del Mar (10/12 - 12/12)
+
+Depois de todos os dias na região dos Lagos e consequentemente em cidades bem frias, nós fomos em direção a Valparaíso, que fica na costa e é bastante quente! Para isso, nós pegamos um ônibus de Púcon, indo diretamente para Valparaíso, uma viagem de 12h! Pois é, essas viagens de ônibus são tensas, se você não é daqueles que desmaia logo ao entrar no ônibus, leve algum joguinho ou algo para se distrair, pois é um loooongo percurso. Esse ônibus por ter um percurso bem maior, custava **R$98,00** e fomos pela JAC.
+
+Lá em Valparaíso ficamos num [Airbnb incrível](https://www.airbnb.com.br/rooms/16815053), que tinha 2 quartos enormes e o mesmo preço dos outros lugares que ficamos, onde nós dividíamos o quarto.
+
+Valparaíso é famosa por ser uma cidade super colorida e é completamente verdade, existem milhares de grafites aonde quer que você vá, além das próprias casas já serem coloridas. Outra coisa que Valparaíso é famosa são os seus morros e olha, bota morro nisso! Tem uns que tu até se inclina para subir de tão tensos que são. Existem uns funiculares, mas a graça é ir andando e conhecendo.
+
+![4 Fotos. Destaque na esquerda: um grafite da famosa pintura de girasois de Van Gogh. Superior Direita: uma casa toda colorida e florida. Centro Direita: uma escada com grafite formando teclas de piano. Inferior direita: uma janela azul numa parede amarela.](/assets/img/valparaiso.jpg)
+
+E num dos dias que estávamos em Valparaíso, nós fomos até Viña del Mar, que é famosa pelos leões marinhos e o relógio das flores (a quem estou querendo enganar, estava lá só pelos leões marinhos!).
+
+![3 fotos: Esquerda em destaque: uma foca olhando para a câmera do drone. Superior direita: várias focas juntas numa pedra. Inferior direita: relógio formado por flores.](/assets/img/vina-del-mar.jpg)
+
+## Santiago (13/12 - 15/12)
+
+Bom, essa era a cidade que menos ficamos, até porque é uma capital e eu sou mais o cara das cidades pequenas e charmosas. Mas foi uma pena, já que Santiago se mostrou uma cidade bem legal e com bastante coisa para fazer, até mesmo nos arredores.
+
+Lá nós basicamente focamos em fazer uma visitação na mais antiga vinícula do Chile, que é a [Cousiño Macul](https://www.cousinomacul.com/). Muita gente costuma ir na Concha y Toro, mas lá além de mais caro, é mais lotada e tem menos história. A Cousiño foi construída em 1856 e até hoje é controlada pela mesma família! Para visitar, basta fazer a reserva no site que coloquei ali acima e ir. Nós fizemos a visitação e degustação, saí de lá bêbado e conhecendo um pouco  mais de vinhos e queijos.
+
+Outro passeio que fomos +ou-, foi ir na maior torre da américa latina, que é o Costanera Center. E porque do +ou-, é que nós chegamos muito tarde lá e já estava fechado para subir no mais alto andar, que tem um panorama de 360 graus da cidade. Minha dica é que se você for de metrô, vá bem mais cedo, demora para o metrô passar e também dependendo de onde você está, demora para chegar até lá.
+
+Por fim nós compramos vinho e outras coisinhas no mercado Jumbo dentro do Costanera mesmo e nós despedimos de Santiago no dia seguinte, bem cedinho.
+
+## Resumo, mais fotos, vídeos, etc...
+
+Bom, num resumo, a viagem foi incrivelmente boa! Essa parte do Chile é bem menos falada que a Patagônia ou as pistas de ski perto de Santiago, e sendo sincero, não poderia ter escolhido lugares melhores.
+
+Se você gosta de natureza, caminhar bastante e estar sempre com vistas incríveis de lagos e vulcões. Então essa parte é perfeita para você!
+
+Eu tenho fotos melhores e em alta resolução no meu [Unsplash](https://unsplash.com/collections/3812967/my-adventures-in-chile), então se você quiser usar alguma para wallpaper ou qualquer outra coisa, lá está disponível para download.
+
+Eu também separei muitas das fotos, vídeos e stories que fiz, no meu [Google Photos](https://photos.app.goo.gl/QNxJs3WSZyvZwZS76), lá as fotos são zoadas e os vídeos também, mas dá para ter mais noção do dia a dia que tivemos.
+
+O post ficou enorme, nem é relacionado a TI, mas como tem gente que perguntou e bom, eu adoro viajar, achei que valia a pena esse post, até para eu ter salvo para o futuro.
 
