@@ -74,7 +74,7 @@ Inclusive, deixo aqui agradecimento ao [Gabriel Ramos](https://github.com/gabrie
 
 Ao [Ademílson Tonato](https://github.com/ftonato), que está sempre revisando meus posts, sem ele, meus posts estariam cheios de erros xD
 
-## Conclusão e mais links
+## Conclusão
 
 Enfim, existem várias razões para você ter sua própria plataforma, seja para aprender, crescer sua imagem na web, ou até mesmo ajudar os outros e ganhar colaborações.
 
