@@ -44,7 +44,7 @@ Eu compartilharei somente algumas das razões e isso é altamente opinativo, voc
 
 ### 1. Ownership do Projeto
 
-Já parou para reparar que as pessoas normalmente falam "Você viu aquele post do Medium?" ao invés de falar "Você viu aquele post do fulano?". A descredibilização começa por aí. Os posts deixam de ser seus e sim do Medium, por mais que tenha sua fotinha lá e diga que você é o autor, já perdeu a relavância.
+Já parou para reparar que as pessoas normalmente falam "Você viu aquele post do Medium?" ao invés de falar "Você viu aquele post do fulano?". A descredibilização começa por aí. Os posts deixam de ser seus e sim do Medium, por mais que tenha sua fotinha lá e diga que você é o autor, já perdeu a relevância.
 
 Ter um blog pessoal, marca sua presença na web, as pessoas te identificam e identificam o seu conteúdo. Por mais que o Medium tenha um alcance bem grande e você ache que está ganhando notoriedade com isso, a sua imagem é pulverizada e às vezes o retorno é até menor do que se fosse em seu próprio blog.
 
@@ -74,7 +74,7 @@ Inclusive, deixo aqui agradecimento ao [Gabriel Ramos](https://github.com/gabrie
 
 Ao [Ademílson Tonato](https://github.com/ftonato), que está sempre revisando meus posts, sem ele, meus posts estariam cheios de erros xD
 
-## Conclusão e mais links
+## Conclusão
 
 Enfim, existem várias razões para você ter sua própria plataforma, seja para aprender, crescer sua imagem na web, ou até mesmo ajudar os outros e ganhar colaborações.
 
