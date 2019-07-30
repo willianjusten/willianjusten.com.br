@@ -20,13 +20,13 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, o post de hoje é sobre um assunto que eu já abordo faz um tempo, criei vários tweets uma época, mas agora reparei que nunca tinha escrito um post sobre isso. Provavelmente será um post curto, mas a ideia é que ele seja usado para referência e discussão.
+Fala pessoal, o post de hoje é sobre um assunto que eu já abordo faz um tempo, criei vários tweets uma época, mas agora reparei que nunca tinha escrito um post sobre isso. Provavelmente será um post curto e a ideia é que ele seja usado como referência em discussão.
 
-Enquanto escrevo esse post, vou ouvindo uma banda de post-rock que eu amo demaaais, que é a [Explosions in the Sky](https://open.spotify.com/artist/1uQWmt1OhuHGRKmZ2ZcL6p?si=6Cdmq6BERceYUJSTEi9svQ). Na minha opinião, uma das melhores bandas para se ouvir enquanto está trabalhando.
+Enquanto escrevo esse post, vou ouvindo uma banda de post-rock que eu amo demaaais, que é a [Explosions in the Sky](https://open.spotify.com/artist/1uQWmt1OhuHGRKmZ2ZcL6p?si=6Cdmq6BERceYUJSTEi9svQ). Na minha opinião, uma das melhores bandas para se ouvir enquanto se está trabalhando.
 
 ## O que a web é hoje e como deveria ser?
 
-Existe um site bem bacaninha que trouxe esse assunto a um tempo atrás, que foi o [alwaysonyourplatform.com](https://www.alwaysownyourplatform.com/). Basicamente, ele lembra que antes tínhamos o RSS, cada um tinha o seu próprio blog e apesar de parecer "mais difícil", todo mundo se achava.
+Existe um site bem bacaninha que trouxe esse assunto há um tempo, que foi o [alwaysonyourplatform.com](https://www.alwaysownyourplatform.com/). Basicamente, ele lembra que antes tínhamos o RSS, cada um tinha o seu próprio blog e apesar de parecer "mais difícil", todo mundo se achava.
 
 A ideia da web é ser livre e descentralizada, mas por causa de monopólios como Facebook, Google, Medium, está tudo centralizado na mão de poucos. E o que acontece com isso? Nós perdemos a nossa liberdade! 
 
@@ -40,13 +40,13 @@ E quais seriam as outras razões para se ter a própria plataforma ao invés de 
 
 ## Razões para ter sua própria plataforma
 
-Eu vou colocar somente algumas das razões e isso é altamente opinativo, você pode não concordar com tudo e é por isso que eu gostaria muito que você comentasse na seção de comentários, participe =D
+Eu compartilharei somente algumas das razões e isso é altamente opinativo, você pode não concordar com tudo e é por isso que eu gostaria muito que você comentasse na seção de comentários, participe =D
 
 ### 1. Ownership do Projeto
 
-Já parou para reparar que as pessoas normalmente falam "Você viu aquele post do Medium?" ao invés de falar "Você viu aquele post do fulano?". Já começa aí a sua descredibilização. Os posts deixam de ser seus e sim do Medium, por mais que tenha sua fotinha lá e diga que você é o autor, já perdeu a importância.
+Já parou para reparar que as pessoas normalmente falam "Você viu aquele post do Medium?" ao invés de falar "Você viu aquele post do fulano?". A descredibilização começa por aí. Os posts deixam de ser seus e sim do Medium, por mais que tenha sua fotinha lá e diga que você é o autor, já perdeu a relavância.
 
-Ter um blog pessoal, marca sua presença na web, as pessoas te identificam e identificam o seu conteúdo. Por mais que o Medium tenha um alcance bem grande e você ache que está ganhando notoriedade com isso, a sua imagem é pulverizada e as vezes o retorno é até menor do que se fosse no seu próprio blog.
+Ter um blog pessoal, marca sua presença na web, as pessoas te identificam e identificam o seu conteúdo. Por mais que o Medium tenha um alcance bem grande e você ache que está ganhando notoriedade com isso, a sua imagem é pulverizada e às vezes o retorno é até menor do que se fosse em seu próprio blog.
 
 ### 2. Medium é uma empresa!
 
@@ -60,7 +60,7 @@ Pode parecer bobeira, mas as vezes você quer um widget específico ou o código
 
 ### 4. Aprendizado
 
-Quando você crie seu próprio blog, você aprende **MUITO** no processo. Você aprende a usar as ferramentas, aprende como publicar seu site, usar um domínio próprio, coisinhas de DNS. E além de todas as coisas técnicas, você também aprende um pouco de marketing, para conseguir aumentar seu alcance e atrair mais gente. E bom, todo aprendizado é útil e importante.
+Quando você cria seu blog pessoal, você aprende **MUITO** no processo. Você aprende a usar as ferramentas, aprende como publicar seu site, usar um domínio próprio, coisinhas de DNS. E além de todas as coisas técnicas, você também aprende um pouco de marketing, para conseguir aumentar seu alcance e atrair mais gente. E bom, todo aprendizado é útil e importante.
 
 ### 5. UI/UX confusa
 
@@ -68,7 +68,7 @@ Existe um post bem legal explicando [vários problemas de UI/UX](https://medium.
 
 ### 6. Aberto a colaboração
 
-Isso mesmo, a plataforma é sua e você decide o que quiser nela! E isso inclui deixá-la opensource e receber ajuda de outras pessoas! Uma coisa que eu tenho dado bastante ênfase desde que refiz o novo layout do blog, é pedir a colaboração da galera, fazer com as pessoas se sintam parte do meu blog, não só como leitores. As vezes é difícil saber por onde começar a contribuir no Github, e ter um lugar onde você pode contribuir com uma revisão de texto ou até mesmo mudar estilos e parte do código, é bem legal.
+Isso mesmo, a plataforma é sua e você decide o que quiser nela! E isso inclui deixá-la opensource e receber ajuda de outras pessoas! Uma coisa que eu tenho dado bastante ênfase desde que refiz o novo layout do blog, é pedir a colaboração da galera, fazer com que as pessoas se sintam parte do meu blog, não só como leitores. Às vezes é difícil saber por onde começar a contribuir no Github, e ter um lugar onde você pode contribuir com uma revisão de texto ou até mesmo mudar estilos e parte do código, é bem legal.
 
 Inclusive, deixo aqui agradecimento ao [Gabriel Ramos](https://github.com/gabrieluizramos) que [submeteu um PR](https://github.com/willianjusten/willianjusten.com.br/pull/112) melhorando as transições do blog.
 
@@ -76,7 +76,7 @@ Ao [Ademílson Tonato](https://github.com/ftonato), que está sempre revisando m
 
 ## Conclusão e mais links
 
-Enfim, existem várias razões para você ter sua própria plataforma, seja para aprender, seja para crescer sua imagem na web, seja para ajudar os outros e ganhar colaborações. 
+Enfim, existem várias razões para você ter sua própria plataforma, seja para aprender, crescer sua imagem na web, ou até mesmo ajudar os outros e ganhar colaborações.
 
 Não deixe que a web seja dominada por poucos! Faça com que a internet seja como ela sempre foi planejada para ser, livre e descentralizada!
 
