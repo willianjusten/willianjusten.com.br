@@ -80,7 +80,7 @@ Enfim, existem várias razões para você ter sua própria plataforma, seja para
 
 Não deixe que a web seja dominada por poucos! Faça com que a internet seja como ela sempre foi planejada para ser, livre e descentralizada!
 
-```sh
+```bash
 (•_•)
 <)    )╯Always
 /    \
