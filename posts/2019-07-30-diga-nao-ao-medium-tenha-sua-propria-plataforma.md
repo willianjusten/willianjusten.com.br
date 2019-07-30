@@ -2,7 +2,7 @@
 layout: post
 date: '2019-07-30 11:11:25'
 image: /assets/img/own-your-platform.jpeg
-title: 'Diga nao ao Medium: tenha sua propria plataforma'
+title: 'Diga não ao Medium: tenha sua própria plataforma'
 description: >-
   Algumas razões para você ter sua própria plataforma ao invés de soluções como
   o Medium.
