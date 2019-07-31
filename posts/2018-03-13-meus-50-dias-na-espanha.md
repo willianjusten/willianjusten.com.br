@@ -12,7 +12,10 @@ tags:
   - travel
   - remoto
   - experiencia
+categories:
+  - 'Trabalhar no exterior, remoto, viagens, etc'
 ---
+
 ## Introdução
 
 Eu sei, você já deve estar pensando, qual é, isso é um blog de tecnologia ou um blog de viagens? Bom, na realidade, esse blog nunca foi **só** de tecnologia, é um espacinho que eu uso para escrever de tudo e como eu sou da área de TI, acabo escrevendo muito sobre isso. Mas, como eu agora tenho focado em outras coisas como viagens e fotografia, achei que talvez fosse interessante falar sobre isso também. E bom, seguindo a filosofia da minha mãe:
@@ -81,8 +84,8 @@ Tirando essas duas reuniões, a gente precisa sempre estar disponível para pare
 
 Acordava cedo (por volta de 7-8h da manhã), eu sei, isso nem é tão cedo, mas fala isso para o meu corpo... Toda a manhã eu pegava para passear pela cidade até umas 14h e então ia almoçar. Caso o restaurante fosse silencioso, eu fazia a daily dali mesmo com meu celular. Depois da daily, eu dava mais uma volta até +ou- 16:30, que era quando estava escurecendo (winter is coming) e então eu fazia uma escolha:
 
-* Ia para um café (se eu quisesse ver gente e estivesse me sentindo muito solitário)
-* Trabalhava do Airbnb (quando precisava me concentrar bastante e/ou precisasse de um internet estável)
+- Ia para um café (se eu quisesse ver gente e estivesse me sentindo muito solitário)
+- Trabalhava do Airbnb (quando precisava me concentrar bastante e/ou precisasse de um internet estável)
 
 Sobre as locomoções de cidade para outra, eu sempre avisava meu time e aí nesses dias eu não passeava, assim que chegava na cidade destino, eu ia logo para o Airbnb e trabalhava. Se tivesse um espaço, eu passeava a noite, até mesmo para poder jantar.
 
@@ -114,25 +117,25 @@ Eu peguei um vôo do Rio para Madrid e lá eu fiquei num [Airbnb](https://www.ai
 
 ### Impressões
 
-* Tem turista para caramba, mas não chega nem perto do caos de Barcelona, então ponto positivo!
-* A cidade é bem barata para os padrões de Europa e ainda mais por ser uma capital. Eu conseguia achar o famoso Menu (entrada, prato principal, vinho, sobremesa ou café) por cerca de **8-14 euros**.
-* Fui bem atendido em todos os lugares, mas te falar que era difícil achar lugar vazio (espanhol come fora demais!)
-* O metrô é super fácil, mas não muito barato, ainda mais que precisa comprar o cartão primeiro.
+- Tem turista para caramba, mas não chega nem perto do caos de Barcelona, então ponto positivo!
+- A cidade é bem barata para os padrões de Europa e ainda mais por ser uma capital. Eu conseguia achar o famoso Menu (entrada, prato principal, vinho, sobremesa ou café) por cerca de **8-14 euros**.
+- Fui bem atendido em todos os lugares, mas te falar que era difícil achar lugar vazio (espanhol come fora demais!)
+- O metrô é super fácil, mas não muito barato, ainda mais que precisa comprar o cartão primeiro.
 
 De Madrid eu fui para Sevilla de trem, esse foi carinho (**53 euros**), mas como a Toptal tava pagando né xD
 
 ## Sevilla - Niebla - Huelva (26/10 - 02/11)
 
-Lá em Sevilla já estava com toda a galera da Toptal e pegamos um bus particular para Niebla, onde era a casa. Durante esse tempo todo eu não gastei um centavo, uma coisa maravilhosa!  Abaixo uma foto nossa em Sevilla, num sábado que fomos passear lá.
+Lá em Sevilla já estava com toda a galera da Toptal e pegamos um bus particular para Niebla, onde era a casa. Durante esse tempo todo eu não gastei um centavo, uma coisa maravilhosa! Abaixo uma foto nossa em Sevilla, num sábado que fomos passear lá.
 
 ![Foto da Equipe da Toptal](/assets/img/toptal-team.jpg)
 
 ### Impressões
 
-* Niebla é um ovo e meh, não tem muita coisa não. Mas a casa que ficamos era demais.
-* Huelva é bem mais bonita que Niebla, mas também não é tãaao grandiosa assim.
-* Demos sorte que um dia estava tendo um festival no Castelo de Niebla, isso foi bem legal!
-* Sevilla é quente para caraaaaaamba e tem uma horda imensa de turistas! Muitas cenas de GoT foram filmadas ali, então já viu né...
+- Niebla é um ovo e meh, não tem muita coisa não. Mas a casa que ficamos era demais.
+- Huelva é bem mais bonita que Niebla, mas também não é tãaao grandiosa assim.
+- Demos sorte que um dia estava tendo um festival no Castelo de Niebla, isso foi bem legal!
+- Sevilla é quente para caraaaaaamba e tem uma horda imensa de turistas! Muitas cenas de GoT foram filmadas ali, então já viu né...
 
 ## Sevilla (02/11 - 03/11)
 
@@ -148,9 +151,9 @@ Uma cidade super pequinina, mas que tem uma ponte muito legal que liga uma parte
 
 ### Impressões
 
-* Cidade muito bonita, com uma vista linda e que mistura natureza/trilha e belas construções
-* Pessoas muito atenciosas e comida excelente! Paguei pelo menu coisa de 5 euros e vinha comida demais!
-* Um número considerável de turistas na ponte e só. Nas trilhas era bem vazio e bom.
+- Cidade muito bonita, com uma vista linda e que mistura natureza/trilha e belas construções
+- Pessoas muito atenciosas e comida excelente! Paguei pelo menu coisa de 5 euros e vinha comida demais!
+- Um número considerável de turistas na ponte e só. Nas trilhas era bem vazio e bom.
 
 De Ronda eu segui para Málaga novamente de BlaBlaCar, dessa vez fui com um casal meio estranho, mas foi baratinho, só **5 euros**. Eu dormi a viagem toda, mas no final a mulher viu que eu tava sem cinto e me avisou para não esquecer de botar, porque é obrigatório colocar o cinto senão eu quem pago a multa (não o motorista), mais para frente eu conto isso...
 
@@ -162,12 +165,12 @@ Essa cidade é fantástica, extremamente fotogênica e eu diria que consegui uma
 
 ### Impressões
 
-* Já disse que a cidade é linda?
-* Primeira cidade com praias bonitas pelo caminho
-* Tem um castelo legal e ruínas!
-* As pessoas não são tão legais quanto nas cidades anteriores
-* Todo mundo fala inglês (a maioria é britânico mesmo)
-* O menu era relativamente mais caro, sempre por volta de **10-15 euros**
+- Já disse que a cidade é linda?
+- Primeira cidade com praias bonitas pelo caminho
+- Tem um castelo legal e ruínas!
+- As pessoas não são tão legais quanto nas cidades anteriores
+- Todo mundo fala inglês (a maioria é britânico mesmo)
+- O menu era relativamente mais caro, sempre por volta de **10-15 euros**
 
 De Málaga eu fui para Granada de BlaBlaCar e custou **8,50 euros**.
 
@@ -179,9 +182,9 @@ Uma cidade histórica e com influência árabe extremamente forte, devido ao dom
 
 ### Impressões
 
-* Nem parece que você está na Europa aqui de tão forte a influência árabe (isso foi super legal)
-* O Alhambra é enorme e você vai perder um dia inteiro lá
-* Comida barata de novo! Menu por **4-5 euros** e as famosas tapas (um petisco + cerveja) por **1-2 euros**.
+- Nem parece que você está na Europa aqui de tão forte a influência árabe (isso foi super legal)
+- O Alhambra é enorme e você vai perder um dia inteiro lá
+- Comida barata de novo! Menu por **4-5 euros** e as famosas tapas (um petisco + cerveja) por **1-2 euros**.
 
 De Granada eu peguei um BlaBlaCar para Torrevieja, esse já foi mais carinho por duas razões, era o único que tinha e bom, é longe para caramba né. Fui com um casal de Russos que moram na Espanha e custou **22 euros**. Eu de novo esqueci de colocar cinto de segurança e imagina o que aconteceu? Isso mesmo! A polícia parou a gente logo no início da viagem e eu tive que pagar **100 euros** em multa! Depois desse dia eu já entrava no carro botando o cinto no primeiro segundo!
 
@@ -193,10 +196,10 @@ A cidade do lago rosa, do lago verde e do oceano super azul! Sim, essa é a melh
 
 ### Impressões
 
-* É uma cidade incrível e super limpa
-* Tem um lago rosa cara!
-* Eu não falei uma palavra em Espanhol nessa cidade
-* O menu era mais carinho **10-15 euros**
+- É uma cidade incrível e super limpa
+- Tem um lago rosa cara!
+- Eu não falei uma palavra em Espanhol nessa cidade
+- O menu era mais carinho **10-15 euros**
 
 De Torrevieja fui para Valência de BlaBlaCar por **13 euros**.
 
@@ -208,10 +211,10 @@ Tem a Cidade das Artes e Ciências, já justifica você ir! É um conjunto com v
 
 ### Impressões
 
-* A Cidade das Artes e Ciências é mais linda ainda de perto
-* Que cidade limpa! =o
-* Que comida deliciosa! Era cara **15-20 euros**, mas comi igual rei!
-* Falam espanhol rápido para caramba, mas todos tem paciência.
+- A Cidade das Artes e Ciências é mais linda ainda de perto
+- Que cidade limpa! =o
+- Que comida deliciosa! Era cara **15-20 euros**, mas comi igual rei!
+- Falam espanhol rápido para caramba, mas todos tem paciência.
 
 De Valencia eu fui para Bilbao de BlaBlaCar, sim, é longe para caraaaaamba! Saí as 6h da manhã e fiquei a manhã toda no carro para a Espanha até o norte. Foi carinho, só que mais barato que qualquer trem e mais rápido. Custou **35 euros**.
 
@@ -225,9 +228,9 @@ A vantagem é que ficava do lado de um CoWorking incrível e de graça, então p
 
 ### Impressões
 
-* Um lugar bem diferente da Espanha
-* Pessoas frias (mais "europeias" e menos "latinas" como o resto da Espanha)
-* O Guggenhein vale a pena por fora, por dentro é um museu bem chato
+- Um lugar bem diferente da Espanha
+- Pessoas frias (mais "europeias" e menos "latinas" como o resto da Espanha)
+- O Guggenhein vale a pena por fora, por dentro é um museu bem chato
 
 Em Bilbao teve um dia que eu fui para um lugar próximo de nome bem difícil **Gaztelugatxe**, e por que eu fui lá? Porque é a Pedra do Dragão de Game of Thrones!! Foi um passeio super demais! Altas trilhas, aproveitei demais esse dia!
 
@@ -240,12 +243,13 @@ De Bilbao fui para Santander de BlaBlaCar e me custou **7 euros**.
 ![Cabo de Faro Mayor](https://source.unsplash.com/HCvTsYtqOpc/1600x900)
 
 Santander é bem famosa no verão pelas suas praias, eu nem sabia muiito da cidade, mas eu resolvi parar nela porque se aproximava dos Picos de Europa que era onde eu realmente queria ir. Que felicidade que eu parei em Santander! Cidade linda demais, com umas paisagens épicas, tirei tantas fotos de drone nessa cidade que tenho fotos para postar até o ano que vem! Vai lá no meu [Unsplash](https://unsplash.com/collections/1589714/my-adventures-in-spain) e veja algumas fotos.
+
 ### Impressões
 
-* Pessoas muito simpáticas e que adoram conversar
-* Muitos lugares para comer e baratos, **5-8 euros** para um menu
-* Eles deixam a garrafa inteira de vinho na mesa e você não paga mais por isso! Eu me assustei pensando que ia morrer numa grana xD
-* Lindas paisagens no Faro de Cabo Mayor
+- Pessoas muito simpáticas e que adoram conversar
+- Muitos lugares para comer e baratos, **5-8 euros** para um menu
+- Eles deixam a garrafa inteira de vinho na mesa e você não paga mais por isso! Eu me assustei pensando que ia morrer numa grana xD
+- Lindas paisagens no Faro de Cabo Mayor
 
 De Santander eu fui para uma cidade chamada Canga de Onís, que é uma cidade próxima a Covadonga e os Picos de Europa. Tive que ir de bus que era a única alternativa e paguei **13 euros**.
 
@@ -269,9 +273,9 @@ Lá eu fiquei no [Airbnb mais bonito e organizado](https://www.airbnb.com.br/roo
 
 ### Impressões
 
-* A cidade é movimentada pela galera que faz o El Camino de Santiago
-* Mochileiros em todos os cantos
-* Comida barata e boa! Achei menu por **3 euros** e bom!
+- A cidade é movimentada pela galera que faz o El Camino de Santiago
+- Mochileiros em todos os cantos
+- Comida barata e boa! Achei menu por **3 euros** e bom!
 
 De Santiago fui para Vigo, última cidade da viagem, peguei um BlaBlaCar que deu **9 euros**.
 
@@ -281,9 +285,9 @@ Eu já estava bem cansado de pular de cidade em cidade e já tinha visto tudo qu
 
 ### Impressões
 
-* É uma cidade sem muitos atrativos turisticos
-* Fuja dessa cidade em Dezembro, chove todos os dias
-* Comida por um preço razoável, **6-10 euros**
+- É uma cidade sem muitos atrativos turisticos
+- Fuja dessa cidade em Dezembro, chove todos os dias
+- Comida por um preço razoável, **6-10 euros**
 
 ## Conclusão
 

@@ -11,11 +11,13 @@ export const PostWrapper = styled.section`
   padding: 2rem 3rem;
   width: 100%;
 
-  body#card & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: center;
+  &:not(.disableCard) {
+    body#card & {
+      border: none;
+      padding: 2rem 1rem;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   ${media.lessThan('large')`

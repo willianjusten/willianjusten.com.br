@@ -55,7 +55,7 @@ const Button = styled(Link)`
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: opacity 0.4s;
+  transition: opacity 0.5s;
 
   &:hover {
     opacity: 0.6;
