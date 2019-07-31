@@ -37,7 +37,7 @@ tags:
     - [Somente chame os Hooks no Top Level](#somente-chame-os-hooks-no-top-level)
     - [Somente chame os Hooks em funções React](#somente-chame-os-hooks-em-funcoes-react)
     - [Explicação](#explicacao)
-  - [Criando seus próprios Hooks](#criando-seus-prpprios-hooks)
+  - [Criando seus próprios Hooks](#criando-seus-proprios-hooks)
     - [Extraindo um Hook customizado](#extraindo-um-hook-customizado)
     - [Usando um hook customizado](#usando-um-hook-customizado)
 - [Links interessantes](#links-interessantes)
