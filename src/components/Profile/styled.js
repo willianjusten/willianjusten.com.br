@@ -2,12 +2,23 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import transitions from '../../styles/transitions'
+
 export const ProfileContainer = styled.section`
+  color: var(--texts);
   display: flex;
   flex-direction: column;
 `
 
 export const ProfileLink = styled(AniLink)`
+  color: var(--texts);
+  text-decoration: none;
+  transition: ${transitions.COLOR};
+
+  &:hover {
+    color: var(--highlight);
+  }
+
   ${media.lessThan('large')`
     display: flex;
     text-align: left;
