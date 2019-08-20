@@ -31,7 +31,7 @@ Mas bom, vamos logo ao post!
 7. Verifique se o seu site é amigável para mobiles, desde o visual até a performance. [53% das visitas são abandonadas se o site mobile demora mais de 3s para carregar](https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/).
 8. [Revise os erros mais comuns que desenvolvedores cometem quando criam um site mobile](https://developers.google.com/search/mobile-sites/mobile-seo/common-mistakes).
 9. Diga para os mecanismos de pesquisa qual URL usar. A Moz descreve que isso (criar canonical links) é a [maneira de previnir problemas causados por conteúdos iguais ou "duplicados" de aparecerem em múltiplas URLs](https://moz.com/learn/seo/canonicalization).
-10. Use `https`: [desde 2015, Gary Illyes da Google diz que se as páginas forem identificadas como iguais, o sistema irá priorizar sempre o http, indicando um domínio seguro](https://www.bruceclay.com/blog/gary-illyes-interview/). 
+10. Use `https`: [desde 2015, Gary Illyes da Google diz que se as páginas forem identificadas como iguais, o sistema irá priorizar sempre o https, indicando um domínio seguro](https://www.bruceclay.com/blog/gary-illyes-interview/). 
 11. Identifique suas images usando o `alt`. Os sistemas de busca não enxergam imagens sem um texto que consiga descrevê-las. Sem contar que isso é **extremamente importante para acessibilidade**.
 12. Crie URLs amigáveis. Nada de urls gigantescas, com números e letras desordenadas. Isso só vai prejudicar com que as pessoas tentem acessar.
 13. Se seu site possuir uma pesquisa [tente instalar o search box no seu site para que seja possível pesquisar através do Google](https://developers.google.com/search/docs/data-types/sitelinks-searchbox).
