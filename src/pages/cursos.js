@@ -7,6 +7,14 @@ import * as S from '../components/ListWrapper'
 
 const coursesList = [
   {
+    title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
+    image: 'curso-gatsby.jpg',
+    link:
+      'https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG',
+    description:
+      'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
+  },
+  {
     title: 'Mini-curso de Netlify no Youtube',
     image: 'netlify.png',
     link:
