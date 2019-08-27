@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2019-08-26 11:00:00'
+date: '2019-08-27 11:00:00'
 image: /assets/img/cover-gatsby-course.png
 title: 'Novo Curso - GatsbyJS: Crie um site PWA com React, GraphQL e Netlify CMS'
 description: Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.
