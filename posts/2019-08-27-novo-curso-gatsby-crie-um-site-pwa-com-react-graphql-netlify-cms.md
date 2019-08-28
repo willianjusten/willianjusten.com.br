@@ -16,9 +16,9 @@ tags:
 
 ## Introdução
 
-Olá pessoal, hoje é um dia muito feliz para mim, pois estou lançando mais um curso! Dessa vez é um curso bem especial, pois nele ensino a fazer um blog igualzinho o meu. Isso mesmo, nós não iremos fazer um projetinho de `bar`, `foo` e inacabado. Nós iremos fazer um blog totalmente funcional e isso inclui um **CMS inteirinho** para poder criar os posts.
+Olá pessoal, hoje é um dia muito feliz para mim, pois estou lançando mais um curso! Dessa vez é um curso bem especial, nele ensino a fazer um blog igualzinho o meu. Isso mesmo, nós não iremos fazer um projetinhos inacabado com exemplos usando `bar` ou/e `foo`. Nós iremos fazer um blog totalmente funcional e isso inclui um **CMS inteirinho** para poder criar os artigos.
 
-Se você está apressado para logo adquirir o curso, saiba que ele vai custar **R$ 249,99**, mas para os seguidores do blog, to fazendo um cupom de desconto por **R$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG).
+Se você está apressado para adquirir o curso, saiba que ele vai custar **R$ 249,99**, mas para os seguidores do blog, to fazendo um cupom de desconto por **R$ 49,99**, então aproveite e compre já o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG).
 
 ## Apresentação do projeto
 
@@ -28,9 +28,9 @@ Abaixo segue um vídeo mostrando os detalhes do projeto:
 
 ## Ementa do Curso
 
-O curso possui **13 módulos** separados em **83 aulas**, tudo isso totalizando **9 horas de curso**! Para aqueles que caçam certificado, **sim, esse curso vai disponibilizar certificado**, mas ó, precisa terminar todas as aulas hein =p
+O curso possui **13 módulos** separados em **83 aulas**, totalizando **9 horas**! Para aqueles que caçam certificado, **sim, esse curso vai disponibilizar certificado**, mas ó, precisa terminar todas as aulas hein =p
 
-Abaixo seguem os módulos do curso:
+Segue abaixo os módulos:
 
 - Introdução
 - Gatsby e sua estrutura
@@ -51,16 +51,16 @@ Como podem ver, tem coisa para caramba e o legal é que os conceitos abordados n
 
 ## Requisitos para o curso
 
-Tudo que é necessário são conhecimentos básicos de HTML/CSS/JS e Git para subir o projeto no final. **Não é necessário ser fodão de React**, tudo que veremos eu irei explicar em detalhes. Tirando isso, o mais importante é vontade de aprender, já que se você tiver qualquer dúvida, eu poderei sempre ajudar.
+Tudo que é necessário são conhecimentos básicos de HTML/CSS/JS e Git para subir o projeto no final. **Não é necessário ser fodão de React**, todo conteúdo que veremos eu irei explicar em detalhes. Tirando isso, o mais importante é vontade de aprender, já que se você tiver qualquer dúvida, eu poderei sempre ajudar.
 
 ## Site, código e Slack
 
-Todo o código do curso é disponibilizado no [Github](https://github.com/willianjusten/gatsby-course) e inclusive, cada vídeo/projeto é separado por commit, então fica super fácil de se encontrar e estudar por lá, inclusive se você quiser copiar para algum projeto depois, também fica bem fácil!
+Todo o código do curso está disponível no [Github](https://github.com/willianjusten/gatsby-course) e inclusive, cada vídeo/projeto é separado por commit, então fica super fácil de se encontrar e estudar por lá, inclusive se você quiser copiar para algum projeto depois, também fica bem fácil!
 
-Para tirar as dúvidas tem a plataforma da Udemy, mas também vocês podem tirar todas as dúvidas comigo e com os alunos diretamente no [Slack](https://slack-willianjusten.herokuapp.com/) do curso =)
+Para esclarecer as dúvidas, vocês podem utilizar a plataforma da Udemy ou falar diretamente comigo e com os outros alunos diretamente no [Slack](https://slack-willianjusten.herokuapp.com/) do curso =)
 
 ## Preço e promoção
 
-Como disse lá no início, o curso custa **R$ 249,99**, mas para os seguidores do blog, to fazendo um cupom de desconto por **R$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG).
+Como disse lá no início, o curso custa **R$ 249,99**, mas para os seguidores do blog, estou fazendo um cupom de desconto por **R$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG).
 
 Espero vocês no curso e no [Slack](https://slack-willianjusten.herokuapp.com/) também!
