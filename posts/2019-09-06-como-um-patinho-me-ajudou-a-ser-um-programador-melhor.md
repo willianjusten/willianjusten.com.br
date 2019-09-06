@@ -32,7 +32,7 @@ Bom, já falei demais, vamos ao que importa!
 
 ## Qual é desse pato afinal?
 
-A primeira vez que eu ouvi sobre essa técnica foi no meu livro favorito de programação ~~se você achava que era o Clean Code, erroooou~~, que é o [The Pragmatic Programmer](https://www.amazon.com.br/Pragmatic-Programmer-Journeyman-Master/dp/020161622X), inclusive já escrevi um post com [65 dicas para ser um programador melhor](https://willianjusten.com.br/65-dicas-para-ser-um-programador-melhor/) que foram também retiradas do livro.
+A primeira vez que eu ouvi sobre essa técnica foi no meu livro favorito de programação, ~~se você achava que era o Clean Code, erroooou~~, que é o [The Pragmatic Programmer](https://www.amazon.com.br/Pragmatic-Programmer-Journeyman-Master/dp/020161622X), inclusive já escrevi um post com [65 dicas para ser um programador melhor](https://willianjusten.com.br/65-dicas-para-ser-um-programador-melhor/) que foram também retiradas do livro.
 
 Esse pato tem a ver com uma técnica bem famosa que se chama [Rubber Duck Debugging](https://rubberduckdebugging.com/) que consiste em você explicar o seu processo/código para um patinho de borracha (pode ser qualquer outra coisa também).
 
@@ -40,7 +40,7 @@ Esse pato tem a ver com uma técnica bem famosa que se chama [Rubber Duck Debugg
 
 Os computadores são máquinas muito eficazes, mas elas são "burras" e só seguem processos. E o seu código não é diferente disso, você escreve comandos que possuem um fluxo com intuito de obter um resultado desejado.
 
-O que muitas vezes acontece é que esquecemos ou fazemos alguma coisa errada nesse processo e aparece o famoso **bug**. Nesse momento entra o desespero e a pergunta mais famosa:
+O que muitas vezes acontece é que esquecemos ou fazemos algo errado durrante o processo e aparece o famoso **bug**. Nesse momento entra o desespero e a pergunta mais famosa:
 
 > Mas o que há de errado? Estava funcionando ainda pouquinho!
 
