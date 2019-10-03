@@ -17,7 +17,7 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
-  transition: ${transitions.DEFAULT};
+  transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
     border-top: 1px solid var(--borders);
