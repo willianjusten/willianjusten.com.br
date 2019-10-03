@@ -16,7 +16,7 @@ const Pagination = props => (
         direction="left"
         bg={getThemeColor()}
       >
-        ← Previous Page
+        ← Página Anterior
       </AniLink>
     )}
     <p>
@@ -30,7 +30,7 @@ const Pagination = props => (
         direction="right"
         bg={getThemeColor()}
       >
-        Next Page →
+        Próxima Página →
       </AniLink>
     )}
   </S.PaginationWrapper>

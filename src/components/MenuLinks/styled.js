@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
+import transitions from '../../styles/transitions'
+
 export const MenuLinksWrapper = styled.nav`
   ${media.lessThan('large')`
     display: none;
@@ -17,5 +19,15 @@ export const MenuLinksItem = styled.li`
 
   .active {
     color: var(--highlight);
+  }
+
+  a {
+    color: var(--texts);
+    text-decoration: none;
+    transition: ${transitions.COLOR};
+
+    &:hover {
+      color: var(--highlight);
+    }
   }
 `
