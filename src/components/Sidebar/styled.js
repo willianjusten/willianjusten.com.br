@@ -14,7 +14,6 @@ export const SidebarContainer = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 20rem;
-  z-index: 9999;
   transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
@@ -24,18 +23,4 @@ export const SidebarContainer = styled.aside`
     position: inherit;
     width: 100%;
   `}
-
-  p {
-    color: var(--texts);
-  }
-
-  a {
-    color: var(--texts);
-    text-decoration: none;
-    transition: ${transitions.COLOR};
-
-    &:hover {
-      color: var(--highlight);
-    }
-  }
 `
