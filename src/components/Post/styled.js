@@ -10,6 +10,7 @@ export const PostWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+  transition: ${transitions.ALL};
 
   &:not(.disableCard) {
     body#card & {

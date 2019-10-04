@@ -14,7 +14,7 @@ export const SidebarContainer = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 20rem;
-  transition: ${transitions.DEFAULT};
+  transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
     align-items: flex-start;
