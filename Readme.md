@@ -2,4 +2,14 @@
 
 # Willian Justen - Blog
 
-Personal website/blog
+Personal website/blog.
+
+Currently using:
+
+- [Gatsby](https://www.gatsbyjs.org)
+- [React](https://reactjs.org)
+- [GraphQL](https://graphql.org)
+- [Netlify](https://www.netlify.com)
+
+
+If you're interested on learn these technologies, check the [Udemy Course using the discount coupon](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOBLOG).
