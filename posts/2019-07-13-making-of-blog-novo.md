@@ -156,7 +156,7 @@ Depois de instalar o plugin e configurar no arquivo `gatsby-config.js` (que é o
 
 ## Search usando o Algolia
 
-O Search do blog anterior era um pouquinho simples, para num dizer burro mesmo. Eu basicamente tinha um JSON e percorria ele baseado na string que a pessoa digitava, além de não mostrar nenhum "preview" das coisas que poderiam ser buscadas. Com isso, muita gente acabava sem saber o que pesquisar, por onde começar e muitas vezes sequer achava o que gostaria (mesmo eu tenho posts do assunto!).
+O Search do blog anterior era um pouquinho simples, para num dizer burro mesmo. Eu basicamente tinha um JSON e percorria ele baseado na string que a pessoa digitava, além de não mostrar nenhum "preview" das coisas que poderiam ser buscadas. Com isso, muita gente acabava sem saber o que pesquisar, por onde começar e muitas vezes sequer achava o que gostaria (mesmo eu tendo posts do assunto!).
 
 Para corrigir isso, eu resolvi utilizar o [Algolia](https://algolia.com), eles são um sistema de busca extremamente rápido e inteligente. Possibilitando buscas por sinônimos, por conteúdos dentro do texto do post, além de ter um "typo correction", ou seja, se a pessoa errar uma letra ou outra, ele vai buscar pelo termo certo.
 
