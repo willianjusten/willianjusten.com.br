@@ -39,6 +39,11 @@ export const RecommendedLink = styled(AniLink)`
     justify-content: flex-end;
   }
 
+  &.next:only-child {
+    margin-left: auto;
+    border-left: 1px solid var(--borders);
+  }
+
   &.previous:before {
     content: '\\2190';
     margin-right: 0.5rem;
