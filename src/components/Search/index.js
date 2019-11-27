@@ -32,7 +32,9 @@ const Search = props => {
             <Stats
               translations={{
                 stats(nbHits, timeSpentMS) {
-                  return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+                  return nbHits === 1
+              ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
+              : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
                 }
               }}
             />
