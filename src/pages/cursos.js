@@ -10,7 +10,7 @@ const coursesList = [
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
     link:
-      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=BLACKFRIDAY',
+      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOFINALDOANO',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
@@ -26,7 +26,7 @@ const coursesList = [
     title: 'Aprenda a criar sites animados com Greensock',
     image: 'curso-greensock.png',
     link:
-      'https://www.udemy.com/course/aprenda-a-criar-sites-animados-com-greensock/?couponCode=BLACKFRIDAY',
+      'https://www.udemy.com/course/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOFINALDOANO',
     description:
       'Aprenda a criar animações complexas de um jeito muito fácil e divertido!'
   },
@@ -34,31 +34,23 @@ const coursesList = [
     title: 'Git e Github na Vida Real',
     image: 'git-real-life.png',
     link:
-      'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=BLACKFRIDAY',
+      'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOFINALDOANO',
     description:
       'Aprenda Workflows usados em empresa e domine o git para nunca mais ter problema nenhum!'
   },
   {
-    title: 'Curso JS com TDD na Prática (inclui JS Moderno)',
+    title: 'Curso JS com TDD na Prática',
     image: 'js-tdd.png',
     link:
-      'https://www.udemy.com/course/js-com-tdd-na-pratica/?couponCode=BLACKFRIDAY',
+      'https://www.udemy.com/course/js-com-tdd-na-pratica/?couponCode=PROMOFINALDOANO',
     description:
       'Aprenda testes na prática e garanta um currículo melhor para o mercado.'
-  },
-  {
-    title: 'Curso Completo de JavaScript Moderno - ES6',
-    image: 'curso-es6.png',
-    link:
-      'https://www.udemy.com/course/curso-completo-de-javascript-moderno-es6/?couponCode=BLACKFRIDAY',
-    description:
-      'O JavaScript evoluiu bastante e agora é muito mais fácil de escrever, aprenda todos os novos truques dessa grande atualização.'
   },
   {
     title: 'Aprendendo SVG do início ao avançado',
     image: 'curso-svg.png',
     link:
-      'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=BLACKFRIDAY',
+      'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOFINALDOANO',
     description:
       'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
   },
@@ -68,13 +60,6 @@ const coursesList = [
     link: 'https://www.udemy.com/git-e-github-para-iniciantes/',
     description:
       'Tudo que você precisa para começar a versionar seus arquivos e contribuir com a comunidade opensource.'
-  },
-  {
-    title: 'Criando sites estáticos com Jekyll',
-    image: 'curso-jekyll.png',
-    link: 'https://www.udemy.com/criando-sites-estaticos-com-jekyll/',
-    description:
-      'Aprenda a criar sites estáticos com o Jekyll e hospedar diretamente no Github Pages.'
   }
 ]
 
