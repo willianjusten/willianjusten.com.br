@@ -90,8 +90,7 @@ function SEO({ description, lang, meta, title, image }) {
 SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
-  description: ``,
-  defaultImage: 'https://willianjusten.com.br/assets/img/blog-image.png'
+  description: ``
 }
 
 SEO.propTypes = {
