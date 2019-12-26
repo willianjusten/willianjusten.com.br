@@ -24,7 +24,7 @@ tags:
 
 Fala pessoal, lá em 2015 eu dei início ~~e nem fiz direito~~ uma [série de posts](https://willianjusten.com.br/series/#aprendendo-reactjs) sobre React. Os posts são super acessados até hoje, mas já são bem defasados. Com isso, gostaria de voltar a escrever sobre o assunto, até para dar uma atualizada nesse conteúdo e também ajudar as pessoas que estão começando a estudar por agora.
 
-O [primeiro post](https://willianjusten.com.br/comecando-com-react/) da série eu falo sobre a biblioteca e seus conceitos, então se você quiser ler hoje, ainda vai funcionar e ser eficaz. Mas antes disso, acho que é necessários saber alguns pequenos conceitos para não se perder na hora de estudar o React em si.
+No [primeiro post](https://willianjusten.com.br/comecando-com-react/) da série eu falo sobre a biblioteca e seus conceitos, então se você quiser ler hoje, ainda vai funcionar e ser eficaz. Mas antes disso, acho que é necessários saber alguns pequenos conceitos para não se perder na hora de estudar o React em si.
 
 O que eu mais vejo são pessoas com dificuldades não no React, mas em coisas básicas como a sintaxe do ES6, high-order functions e até operadores ternários. Esse post vai ser baseado [num outro post em inglês](https://www.robinwieruch.de/javascript-fundamentals-react-requirements) que também fala bastante disso.
 
