@@ -10,7 +10,7 @@ const coursesList = [
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
     link:
-      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOFINALDOANO',
+      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJAN20',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
@@ -26,7 +26,7 @@ const coursesList = [
     title: 'Aprenda a criar sites animados com Greensock',
     image: 'curso-greensock.png',
     link:
-      'https://www.udemy.com/course/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOFINALDOANO',
+      'https://www.udemy.com/course/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOJAN20',
     description:
       'Aprenda a criar animações complexas de um jeito muito fácil e divertido!'
   },
@@ -34,7 +34,7 @@ const coursesList = [
     title: 'Git e Github na Vida Real',
     image: 'git-real-life.png',
     link:
-      'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOFINALDOANO',
+      'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOJAN20',
     description:
       'Aprenda Workflows usados em empresa e domine o git para nunca mais ter problema nenhum!'
   },
@@ -42,7 +42,7 @@ const coursesList = [
     title: 'Curso JS com TDD na Prática',
     image: 'js-tdd.png',
     link:
-      'https://www.udemy.com/course/js-com-tdd-na-pratica/?couponCode=PROMOFINALDOANO',
+      'https://www.udemy.com/course/js-com-tdd-na-pratica/?couponCode=PROMOJAN20',
     description:
       'Aprenda testes na prática e garanta um currículo melhor para o mercado.'
   },
@@ -50,7 +50,7 @@ const coursesList = [
     title: 'Aprendendo SVG do início ao avançado',
     image: 'curso-svg.png',
     link:
-      'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOFINALDOANO',
+      'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOJAN20',
     description:
       'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
   },
