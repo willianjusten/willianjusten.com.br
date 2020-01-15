@@ -83,7 +83,7 @@ Como sabem, meu blog é feito em Jekyll desde o primeiro dia e eu escrevi como f
 - Post.css (necessário para a página de posts)
 - Minimal.css (necessário para as páginas de about/tags/series)
 
-Se você utilizar o Sass padrão no Jekyll, também é bem simples, basta criar os arquivos separados e importar os partials, que são iniciados com o `_` como `_cards.sass`. O importante é que você precisa mandar gerar os arquivos css finais dentro da pasta `includes`, pois assim, você consegue incluir o css como se fosse um arquivo de texto comum, ou seja, um inline css. Você pode olhar minha [pasta de includes](https://github.com/willianjusten/willianjusten.com.br/tree/master/_includes) do blog, que verá os arquivos de css lá.
+Se você utilizar o Sass padrão no Jekyll, também é bem simples, basta criar os arquivos separados e importar os partials, que são iniciados com o `_` como `_cards.sass`. O importante é que você precisa mandar gerar os arquivos css finais dentro da pasta `includes`, pois assim, você consegue incluir o css como se fosse um arquivo de texto comum, ou seja, um inline css. Você pode olhar minha [pasta de includes](https://github.com/willianjusten/willianjusten.com.br/tree/ecde3bd2481c24889932e1abaa5900a68cdc7769/_includes) do blog, que verá os arquivos de css lá.
 
 Depois dos arquivos já no `includes`, você vai adicionar o css nos templates, exemplo:
 
@@ -96,7 +96,7 @@ Depois dos arquivos já no `includes`, você vai adicionar o css nos templates, 
 </style>
 ```
 
-Você pode ver o [exemplo do meu blog aqui](https://github.com/willianjusten/willianjusten.com.br/blob/master/_layouts/default.html#L10-L12). Com isso, a página irá ter somente o css de forma `inline`, além de evitar um block rendering, você vai evitar uma requisição extra, yey!
+Você pode ver o [exemplo do meu blog aqui](https://github.com/willianjusten/willianjusten.com.br/blob/ecde3bd2481c24889932e1abaa5900a68cdc7769/_layouts/default.html#L10-L12). Com isso, a página irá ter somente o css de forma `inline`, além de evitar um block rendering, você vai evitar uma requisição extra, yey!
 
 ## Conclusão
 
