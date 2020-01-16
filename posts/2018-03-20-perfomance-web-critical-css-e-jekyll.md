@@ -96,7 +96,7 @@ Depois dos arquivos já no `includes`, você vai adicionar o css nos templates, 
 </style>
 ```
 
-Você pode ver o [exemplo do meu blog aqui](https://github.com/willianjusten/willianjusten.com.br/blob/master/_layouts/default.html#L10-L12). Com isso, a página irá ter somente o css de forma `inline`, além de evitar um block rendering, você vai evitar uma requisição extra, yey!
+Você pode ver o [exemplo do meu blog aqui](https://github.com/willianjusten/willianjusten.com.br/blob/ecde3bd2481c24889932e1abaa5900a68cdc7769/_layouts/default.html#L10-L12). Com isso, a página irá ter somente o css de forma `inline`, além de evitar um block rendering, você vai evitar uma requisição extra, yey!
 
 ## Conclusão
 
