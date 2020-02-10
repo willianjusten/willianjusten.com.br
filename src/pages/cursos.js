@@ -7,6 +7,12 @@ import * as S from '../components/ListWrapper'
 
 const coursesList = [
   {
+    title: 'Criando um ambiente de Desenvolvimento no Windows',
+    image: 'curso-windows.png',
+    link: 'https://www.udemy.com/course/criando-um-ambiente-de-desenvolvimento-no-windows/',
+    description: 'Comece a desenvolver no Windows do jeito certo e sem erros!'
+  },
+  {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
     link:
