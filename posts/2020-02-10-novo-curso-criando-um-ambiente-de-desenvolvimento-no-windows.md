@@ -67,6 +67,13 @@ Enfim, vamos ao que interessa, segue abaixo a ementa:
 
 Como podem ver, são passos bem simples, todos em vídeo bem pequenos para que vocês possam usar até mesmo como vídeos de apoio para no futuro. 
 
+## Links para o curso
+
+Os links estão ali em cima, mas caso você não tenha visto, seguem os links aqui:
+
+- [Udemy](https://www.udemy.com/course/criando-um-ambiente-de-desenvolvimento-no-windows)
+- [Playlist do Youtube](https://www.youtube.com/watch?v=YcR8pKvjx44&list=PLlAbYrWSYTiOpefWtd6uvwgKT1R-94Zfd)
+
 ## Conclusão
 
 Espero que aproveitem bastante o curso, espalhem ele para os seus amigos que tem interesse em começar a aprender programação e ainda não utilizam Linux/MacOS. E mesmo que você já seja programador, dê uma chance, as vezes tem uma dica ou outra legal que você não sabia =)
