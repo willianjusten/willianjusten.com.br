@@ -16,6 +16,8 @@ introduction: "Essa é uma pergunta bastante comum de nós desenvolvedores, e po
 
 ## Introdução
 
+**Se você veio pelo post sobre o Corona Virus, o cupom para os cursos é ESTUDOESAUDE**
+
 E aí meu povo, com o intuito de voltar a postar com mais frequência, estou eu aqui para falar de um assunto não técnico novamente, mas que julgo bem importante e ligado a nossa área.
 
 E para seguir na vibe desse meu post, já vai abrindo essa playlist chamada [Zen Focus](https://open.spotify.com/user/spotify/playlist/70X9CPfVWXmFqX5ObjSvOP), vários acústicos bem relaxantes e bons de se ouvir. Altamente recomendado se você precisar de foco para trabalhar numa tarefa estressante =)
