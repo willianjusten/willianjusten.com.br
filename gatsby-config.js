@@ -169,8 +169,8 @@ module.exports = {
   siteMetadata: {
     title: `Willian Justen`,
     position: 'Desenvolvedor Front End',
-    description: `Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, atualmente trabalhando na Toptal e viajando o mundo.`,
-    authorDescription: `Membro do Core Team da Toptal, escrevo sobre o mundo front end, viagens, vida pessoal e mais.`,
+    description: `Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo.`,
+    authorDescription: `Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.`,
     author: `@Willian_justen`,
     siteUrl: 'https://willianjusten.com.br'
   },
