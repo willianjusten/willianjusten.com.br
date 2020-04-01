@@ -33,6 +33,14 @@ const AboutPage = () => (
 
       <p>
         Já passei por empresas como{' '}
+         <a
+          href="http://www.toptal.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Toptal
+        </a>
+        ,{' '}
         <a
           href="http://www.hugeinc.com/"
           target="_blank"
