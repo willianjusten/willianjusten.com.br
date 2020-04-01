@@ -16,9 +16,9 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>
         Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e
-        atualmente sou Frontend Developer no core da{' '}
-        <a href="https://toptal.com" target="_blank" rel="noopener noreferrer">
-          Toptal
+        sou instrutor na {' '}
+        <a href="https://www.udemy.com/user/willian-justen-de-vasconcellos/" target="_blank" rel="noopener noreferrer">
+          Udemy
         </a>
         , além de ser um nômade digital e tirar{' '}
         <a
