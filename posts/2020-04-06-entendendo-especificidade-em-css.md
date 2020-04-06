@@ -32,20 +32,20 @@ Enquanto escrevo, vou ouvindo o albúm [Triumph & Disaster](https://open.spotify
 
 Eu tenho um [post sobre seletores CSS](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/) onde explico cada um em detalhes. Mas aqui vamos falar só dos tipos que existem, que são:
 
-* `Seletores de Tipo`: onde marcamos diretamente as tags que queremos selecionar, exemplo `p` para selecionar todo `<p>`.
-* `Pseudo-elementos`: como o nome diz, eles não elementos em si, mas servem para selecionar parte do html relativo a outro seletor. Por exemplo, `p::first-letter`.
-* `Seletores de Classe`: um dos que mais utilizamos, podemos atribuir classes para diferentes elementos e então selecionar essas classes. Exemplo: `<p class="text">" pode ser selecionado com`.text`.
-* `Seletores de atributo`: selecionamos elementos com um tipo específico de atributo. Por exemplo, `input[type='number']`. Aqui estamos selecionando todos os inputs que tiverem `type=number` como atributo.
-* `Pseudo-classes`: selecionamos elementos baseados em seus estados CSS. Por exemplo `:hover`, `:active`, `:checked` e outros.
-* `Seletores de Id`: selecionamos um elemento pela sua Id única. Só pode existir um único elemento para cada id. Exemplo: `<h1 id="header">` seria selecionado com `#header`.
-* `Estilos inline`: são estilos aplicados diretamente ao elemento, através do atributo `style`. Por exemplo, `<h1 style="font-size: 16px">`
+* **Seletores de Tipo**: onde marcamos diretamente as tags que queremos selecionar, exemplo `p` para selecionar todo `<p>`.
+* **Pseudo-elementos**: como o nome diz, eles não elementos em si, mas servem para selecionar parte do html relativo a outro seletor. Por exemplo, `p::first-letter`.
+* **Seletores de Classe**: um dos que mais utilizamos, podemos atribuir classes para diferentes elementos e então selecionar essas classes. Exemplo: `<p class="text">" pode ser selecionado com`.text`.
+* **Seletores de atributo**: selecionamos elementos com um tipo específico de atributo. Por exemplo, `input[type='number']`. Aqui estamos selecionando todos os inputs que tiverem `type=number` como atributo.
+* **Pseudo-classes**: selecionamos elementos baseados em seus estados CSS. Por exemplo `:hover`, `:active`, `:checked` e outros.
+* **Seletores de Id**: selecionamos um elemento pela sua Id única. Só pode existir um único elemento para cada id. Exemplo: `<h1 id="header">` seria selecionado com `#header`.
+* **Estilos inline**: são estilos aplicados diretamente ao elemento, através do atributo `style`. Por exemplo, `<h1 style="font-size: 16px">`
 
 ### Os pesos de cada seletor
 
-* `Peso mais baixo`: seletores de tipo e pseudo-elementos
-* `Peso baixo`: classe, atributo e pseudo-classes
-* `Peso medio`: seletores de id
-* `Peso alto`: estilos inline
+* **Peso mais baixo**: seletores de tipo e pseudo-elementos
+* **Peso baixo**: classe, atributo e pseudo-classes
+* **Peso médio**: seletores de id
+* **Peso alto**: estilos inline
 
 ### Regras de estilo aplicados
 
@@ -147,7 +147,7 @@ Como eu falei, a ideia do post foi devido a umas perguntas disso no questionári
 
 **Pergunta 1**
 
-![Qual vai ser a cor final do background? <rect fill="red" style="fill: blue; color: green" /> Opções: black, green, blue, red](/assets/img/css-question-1.jpeg)
+![Qual vai ser a cor final do background? rect fill="red" style="fill: blue; color: green" Opções: black, green, blue, red](/assets/img/css-question-1.jpeg)
 
 **Pergunta 2**
 
