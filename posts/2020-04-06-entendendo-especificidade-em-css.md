@@ -114,7 +114,7 @@ p {
 <h1 id="title" style="color: red">Eu terei a cor Azul =)</h1>
 ```
 
-Por favor, **~não use~ evite usar** !important. A única maneira de sobrepor uma regra com _important_ é adicionando ainda mais especificidade somado a outro `!important`, o que torna o código ainda mais dificil de sobreescrever e complexo durante a manutenção.
+Por favor, **~~não use~~ evite usar** !important. A única maneira de sobrepor uma regra com _important_ é adicionando ainda mais especificidade somado a outro `!important`, o que torna o código ainda mais dificil de sobreescrever e complexo durante a manutenção.
 
 Caso tenha algum estilo sobreescrevendo o seu, dê uma olhada no nível de especificidade e suba um, seja através do `id` ou uma classe a mais. Mas evite o `!important` o máximo que puder.
 
