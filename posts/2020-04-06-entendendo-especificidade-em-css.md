@@ -33,8 +33,8 @@ Enquanto escrevo, vou ouvindo o albúm [Triumph & Disaster](https://open.spotify
 Eu tenho um [post sobre seletores CSS](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/) onde explico cada um em detalhes. Mas aqui vamos falar só dos tipos que existem, que são:
 
 * **Seletores de Tipo**: onde marcamos diretamente as tags que queremos selecionar, exemplo `p` para selecionar todo `<p>`.
-* **Pseudo-elementos**: como o nome diz, eles não elementos em si, mas servem para selecionar parte do html relativo a outro seletor. Por exemplo, `p::first-letter`.
-* **Seletores de Classe**: um dos que mais utilizamos, podemos atribuir classes para diferentes elementos e então selecionar essas classes. Exemplo: `<p class="text">" pode ser selecionado com`.text`.
+* **Pseudo-elementos**: como o nome diz, eles não são elementos em si, mas servem para selecionar parte do html relativo a outro seletor. Por exemplo, `p::first-letter`.
+* **Seletores de Classe**: um dos que mais utilizamos, podemos atribuir classes para diferentes elementos e então selecionar essas classes. Exemplo: `<p class="text">` pode ser selecionado com `.text`.
 * **Seletores de atributo**: selecionamos elementos com um tipo específico de atributo. Por exemplo, `input[type='number']`. Aqui estamos selecionando todos os inputs que tiverem `type=number` como atributo.
 * **Pseudo-classes**: selecionamos elementos baseados em seus estados CSS. Por exemplo `:hover`, `:active`, `:checked` e outros.
 * **Seletores de Id**: selecionamos um elemento pela sua Id única. Só pode existir um único elemento para cada id. Exemplo: `<h1 id="header">` seria selecionado com `#header`.
