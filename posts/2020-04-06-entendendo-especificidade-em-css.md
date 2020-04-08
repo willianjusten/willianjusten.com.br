@@ -107,7 +107,7 @@ Exemplo com inline:
   color: green;
 }
 
-p {
+h1 {
   color: blue !important;
 }
 
