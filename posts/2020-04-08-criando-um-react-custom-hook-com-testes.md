@@ -19,6 +19,8 @@ Fala pessoal, o post de hoje vem com vídeo, espero fazer mais alguns assim, vam
 
 O vídeo ficou meio longo (~30min), então dá uma paradinha, vai lá pegar um café, avisa no Whatsapp que vai assistir um vídeo importante e segue junto =)
 
+~~Como eu falo devagar, bota em 2x que melhora~~
+
 ## Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EvR4RPBsHfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -36,23 +38,3 @@ Você pode ler mais sobre o Konami Code [neste link](https://pt.wikipedia.org/wi
 ## Conclusão
 
 Espero que tenham gostado do vídeo e se gostaram, por favor se inscrevam lá no [canal do YouTube](https://www.youtube.com/WillianJustenCursos), compartilhem e comentem! 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
