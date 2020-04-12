@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Criando um menu Off Canvas com CSS3"
+title: 'Criando um menu Off Canvas com CSS3'
 date: 2015-11-01 13:01:02
 image: '/assets/img/off-canvas/main.png'
 description: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- frontend
-- tutorial
+  - css
+  - frontend
+  - tutorial
 categories:
 twitter_text: 'Aprenda a criar um menu off canvas usando CSS3.'
 introduction: 'Aprenda a criar um menu off canvas usando CSS3 Transitions e Transforms e um pouquinho de javascript.'
@@ -41,7 +41,7 @@ Em seu primeiro momento, teremos o menu totalmente fora do `wrapper` e o canvas 
 
 Para que o menu apareça na tela, o que fazemos é deslocar tudo para o lado direito, ou seja, no `eixo X` e assim o menu passa a aparecer e um pedaço do nosso canvas sai da tela, conforme imagem abaixo:
 
- ![Menu Off Canvas do lado de dentro](/assets/img/off-canvas/layer-2.png)
+![Menu Off Canvas do lado de dentro](/assets/img/off-canvas/layer-2.png)
 
 ## HTML
 
@@ -49,11 +49,11 @@ Bom, vamos começar a mão na massa, porque isso é tão fácil de fazer e já e
 
 ```html
 <body>
-    <div class="wrapper">
-        <div class="canvas">
-            <div class="menu"></div>
-        </div>
+  <div class="wrapper">
+    <div class="canvas">
+      <div class="menu"></div>
     </div>
+  </div>
 </body>
 ```
 
@@ -61,26 +61,32 @@ Dentro dessas camadas, vamos colocar algum conteúdo, só para não ficar muito 
 
 ```html
 <body>
-    <div class="wrapper">
-        <div class="canvas">
-            <!-- Aqui fica o menu escondido -->
-            <div class="menu">
-                <a href="#" class="toggle-menu btn">Fechar o menu</a>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </div>
-            <!-- Aqui fica o conteúdo do site -->
-            <div class="conteudo">
-                <a href="#" class="toggle-menu">Abrir o menu</a>
-                <h1>Menu Off Canvas!!</h1>
-                <p>Uma simples demo mostrando como funciona o menu off canvas.</p>
-                <p>Tutorial em <a href="https://willianjusten.com.br/criando-um-menu-off-canvas-com-css3/">willianjusten.com.br</a></p>
-            </div>
-        </div>
+  <div class="wrapper">
+    <div class="canvas">
+      <!-- Aqui fica o menu escondido -->
+      <div class="menu">
+        <a href="#" class="toggle-menu btn">Fechar o menu</a>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+      <!-- Aqui fica o conteúdo do site -->
+      <div class="conteudo">
+        <a href="#" class="toggle-menu">Abrir o menu</a>
+        <h1>Menu Off Canvas!!</h1>
+        <p>Uma simples demo mostrando como funciona o menu off canvas.</p>
+        <p>
+          Tutorial em
+          <a
+            href="https://willianjusten.com.br/criando-um-menu-off-canvas-com-css3/"
+            >willianjusten.com.br</a
+          >
+        </p>
+      </div>
     </div>
+  </div>
 </body>
 ```
 
@@ -94,10 +100,10 @@ Depois de montada a estrutura, precisamos deixar um pouco bonitinho e fazer a m�
 
 ```css
 .wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 3000px; /* só para deixar a página grande*/
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 3000px; /* só para deixar a página grande*/
 }
 ```
 
@@ -107,11 +113,11 @@ O canvas nada mais é que nossa tela e que será responsável por se mover pelas
 
 ```css
 .canvas {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform: translateX(0);
-    transition: .3s ease all;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateX(0);
+  transition: 0.3s ease all;
 }
 ```
 
@@ -121,12 +127,12 @@ Nosso menu inicialmente precisa estar do lado de fora do wrapper e para isso ter
 
 ```css
 .menu {
-    height: 100%;
-    position: absolute;
-    transform: translateX(-300px);
-    width: 300px;
-    background: #BF0000;
-    padding: 5rem;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-300px);
+  width: 300px;
+  background: #bf0000;
+  padding: 5rem;
 }
 ```
 
@@ -136,7 +142,7 @@ Depois de feitas essas adições de CSS, nosso menu já se encontra do lado de f
 
 ```css
 .wrapper.show-menu .canvas {
-    transform: translateX(300px);
+  transform: translateX(300px);
 }
 ```
 
@@ -147,21 +153,20 @@ Para funcionar o menu, só falta criarmos alguma trigger que será responsável 
 ```js
 // elementos auxiliares
 var toogleMenu = document.querySelectorAll('.toggle-menu'),
-    wrapper    = document.querySelector('.wrapper');
+  wrapper = document.querySelector('.wrapper')
 
 // criando evento de click para abrir o menu
-for (var i = 0; i < toogleMenu.length; i++){
-    toogleMenu[i].addEventListener('click', menuAction);
+for (var i = 0; i < toogleMenu.length; i++) {
+  toogleMenu[i].addEventListener('click', menuAction)
 }
 
 // função auxiliar que abre e fecha o menu
 function menuAction() {
-    if(wrapper.classList.contains('show-menu')){
-        wrapper.classList.remove('show-menu');
-    }
-    else {
-        wrapper.classList.add('show-menu');
-    }
+  if (wrapper.classList.contains('show-menu')) {
+    wrapper.classList.remove('show-menu')
+  } else {
+    wrapper.classList.add('show-menu')
+  }
 }
 ```
 
@@ -169,8 +174,7 @@ O código acima usa o `classList` para verificar se já existe a classe e adicio
 
 E o resultado fica assim:
 
-<p data-height="400" data-theme-id="11319" data-slug-hash="RWJmoB" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/RWJmoB/'>Menu off canvas</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/RWJmoB/
 
 ## Melhorias
 
@@ -194,7 +198,6 @@ Um truque bem famoso que podemos usar para otimizar a animação é forçar o us
 .show-menu .canvas {
   transform: translate3d(300px, 0, 0);
 }
-
 ```
 
 ### Fechar o menu com a tecla ESC
@@ -203,13 +206,13 @@ Uma coisa que já é quase intuitivo é fechar as coisas usando a tecla `ESC`, e
 
 ```js
 // Adicionando evento para fechar o menu ao pressionar a tecla ESC
-document.addEventListener('keyup', function(e){
-    if(e.keyCode == 27) {
-        if(wrapper.classList.contains('show-menu')){
-            menuAction();
-        }
+document.addEventListener('keyup', function(e) {
+  if (e.keyCode == 27) {
+    if (wrapper.classList.contains('show-menu')) {
+      menuAction()
     }
-});
+  }
+})
 ```
 
 ## Conclusão

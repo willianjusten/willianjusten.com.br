@@ -1,25 +1,25 @@
 ---
 layout: post
-title: "#4 - A estrutura do SVG"
+title: '#4 - A estrutura do SVG'
 date: 2015-01-20 13:01:39
 image: '/assets/img/estrutura-do-svg/estrutura-do-svg.png'
-description: "Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho."
+description: 'Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- tutorial
+  - svg
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Estrutura do SVG - Saiba melhor como funciona."
-introduction: "Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho."
+  - 'O mundo mágico do SVG'
+twitter_text: 'Estrutura do SVG - Saiba melhor como funciona.'
+introduction: 'Saiba como o SVG funciona de verdade, seus elementos, alguns de seus atributos e alguns atalhos para facilitarem nosso trabalho.'
 ---
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
-* [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
+- [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+- [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
+- [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
 
 ## Introdução
 
@@ -58,8 +58,7 @@ O SVG é tem algumas formas básicas, que permitem fazer os lindos desenhos que 
 
 ### O elemento rect
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="PwmEag" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/PwmEag/'>Exemplo do elemento Rect</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/PwmEag/
 
 ```xml
 <svg>
@@ -69,17 +68,16 @@ O SVG é tem algumas formas básicas, que permitem fazer os lindos desenhos que 
 
 Esse elemento permite criar um retângulo e tem os seguintes atributos:
 
-* `x` : desloca o elemento ao longo do eixo x (horizontal) de acordo com o espaço do svg (opcional)
-* `y` : desloca o elemento ao longo do eixo y (vertical) de acordo com o espaço do svg (opcional)
-* `width` : define a largura do elemento
-* `height` : define a altura do elemento
-* `fill` : define a cor do preenchimento (opcional)
-* `rx` : define um curva nos cantos do retângulo (opcional)
+- `x` : desloca o elemento ao longo do eixo x (horizontal) de acordo com o espaço do svg (opcional)
+- `y` : desloca o elemento ao longo do eixo y (vertical) de acordo com o espaço do svg (opcional)
+- `width` : define a largura do elemento
+- `height` : define a altura do elemento
+- `fill` : define a cor do preenchimento (opcional)
+- `rx` : define um curva nos cantos do retângulo (opcional)
 
 ### O elemento circle
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="YPVYOO" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/YPVYOO/'>Exemplo do elemento circle</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/YPVYOO/
 
 ```xml
 <svg>
@@ -89,15 +87,14 @@ Esse elemento permite criar um retângulo e tem os seguintes atributos:
 
 Esse elemento permite criar um círculo e tem os seguintes atributos:
 
-* `cx` : determina em qual local do eixo x irá ficar o centro do círculo
-* `cy` : determina em qual local do eixo y irá ficar o centro do círculo
-* `r` : define o raio do círculo
-* `fill` : define a cor do preenchimento (opcional)
+- `cx` : determina em qual local do eixo x irá ficar o centro do círculo
+- `cy` : determina em qual local do eixo y irá ficar o centro do círculo
+- `r` : define o raio do círculo
+- `fill` : define a cor do preenchimento (opcional)
 
 ### O elemento ellipse
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="bNWaZN" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bNWaZN/'>Exemplo do elemento ellipse</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/bNWaZN/
 
 ```xml
 <svg>
@@ -107,16 +104,15 @@ Esse elemento permite criar um círculo e tem os seguintes atributos:
 
 Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 
-* `cx` : determina em qual local do eixo x irá ficar o centro da ellipse
-* `cy` : determina em qual local do eixo y irá ficar o centro da ellipse
-* `rx` : define o raio da ellipse no eixo x
-* `ry` : define o raio da ellipse no eixo y
-* `fill` : define a cor do preenchimento (opcional)
+- `cx` : determina em qual local do eixo x irá ficar o centro da ellipse
+- `cy` : determina em qual local do eixo y irá ficar o centro da ellipse
+- `rx` : define o raio da ellipse no eixo x
+- `ry` : define o raio da ellipse no eixo y
+- `fill` : define a cor do preenchimento (opcional)
 
 ### O elemento line
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="pvPpmE" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/pvPpmE/'>Exemplo do elemento line</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/pvPpmE/
 
 ```xml
 <svg>
@@ -126,17 +122,16 @@ Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 
 Esse elemento permite criar uma linha e tem os seguintes atributos:
 
-* `x1` : determina a posição no eixo x do primeiro ponto da linha
-* `y1` : determina a posição no eixo y do primeiro ponto da linha
-* `x2` : determina a posição no eixo x do segundo ponto da linha
-* `y2` : determina a posição no eixo y do segundo ponto da linha
-* `stroke` : define a cor do contorno da linha (opcional)
-* `stroke-width` : define a largura da linha (opcional)
+- `x1` : determina a posição no eixo x do primeiro ponto da linha
+- `y1` : determina a posição no eixo y do primeiro ponto da linha
+- `x2` : determina a posição no eixo x do segundo ponto da linha
+- `y2` : determina a posição no eixo y do segundo ponto da linha
+- `stroke` : define a cor do contorno da linha (opcional)
+- `stroke-width` : define a largura da linha (opcional)
 
 ### O elemento polyline
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="NPjXZG" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/NPjXZG/'>NPjXZG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/NPjXZG/
 
 ```xml
 <svg>
@@ -146,15 +141,14 @@ Esse elemento permite criar uma linha e tem os seguintes atributos:
 
 Esse elemento permite criar uma polyline e tem os seguintes atributos:
 
-* `points` : define os pares ordenados (x,y) para cada ponto do elemento
-* `fill` : define o preenchimento interno do elemento
-* `stroke` : define a cor do contorno do elemento (opcional)
-* `stroke-width` : define a largura do contorno (opcional)
+- `points` : define os pares ordenados (x,y) para cada ponto do elemento
+- `fill` : define o preenchimento interno do elemento
+- `stroke` : define a cor do contorno do elemento (opcional)
+- `stroke-width` : define a largura do contorno (opcional)
 
 ### O elemento polygon
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="bNWaXd" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/bNWaXd/'>Exemplo do elemento polygon</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/bNWaXd/
 
 ```xml
 <svg>
@@ -164,32 +158,30 @@ Esse elemento permite criar uma polyline e tem os seguintes atributos:
 
 Esse elemento permite criar um polígono e tem os seguintes atributos:
 
-* `points` : define os pares ordenados (x,y) para cada ponto do elemento
-* `fill` : define o preenchimento interno do elemento
-* `stroke` : define a cor do contorno do elemento (opcional)
-* `stroke-width` : define a largura do contorno (opcional)
+- `points` : define os pares ordenados (x,y) para cada ponto do elemento
+- `fill` : define o preenchimento interno do elemento
+- `stroke` : define a cor do contorno do elemento (opcional)
+- `stroke-width` : define a largura do contorno (opcional)
 
 ### O elemento path
 
-<p data-height="500" data-theme-id="11319" data-slug-hash="dPWdbQ" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/dPWdbQ/'>Svg-path: curvas</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/dPWdbQ/
 
 O elemento Path é um dos mais complexos e também mais importantes para o SVG. A partir dele, conseguimos criar qualquer forma e com isso gerar os belos desenhos existentes.
 
 Existem 5 tipos de paths:
 
-* Curveto (C,c)
-* Smooth Curveto (Curveto Suave) (S,s)
-* Curva Quadrática de Bézier (Q,q)
-* Curva Quadrática de Bézier Suave (T,t)
-* Arco Elíptico (A,a)
+- Curveto (C,c)
+- Smooth Curveto (Curveto Suave) (S,s)
+- Curva Quadrática de Bézier (Q,q)
+- Curva Quadrática de Bézier Suave (T,t)
+- Arco Elíptico (A,a)
 
 A letra **maiúscula** utiliza coordenadas **absolutas** para criar a forma, enquanto a letra **minúscula** utiliza coordenadas **relativas**.
 
 ## Conclusão
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="qEmxNJ" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/qEmxNJ/'>Simple ipad made with SVG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/qEmxNJ/
 
 A partir de formas básicas podemos até brincar um pouquinho de fazer alguns desenhos bobinhos, ou se você for um Mestre Jedi, até fazer coisas incríveis. Você consegue saber as formas usadas na imagem acima? Teve ideia para fazer algum desenho legal? Faz no [codepen](http://codepen.io/) e manda para cá nos comentários =)
 

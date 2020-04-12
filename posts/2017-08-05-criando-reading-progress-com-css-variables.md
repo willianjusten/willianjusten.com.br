@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Criando Reading Progress com CSS Variables"
+title: 'Criando Reading Progress com CSS Variables'
 date: 2017-08-05 13:02:18
 image: '/assets/img/reading-progress/css-variables.png'
-description: "Uma forma fácil de implementar uma barra de reading progress em poucas linhas."
+description: 'Uma forma fácil de implementar uma barra de reading progress em poucas linhas.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- frontend
+  - css
+  - frontend
 categories:
-twitter_text: "Criando Reading Progress com CSS Variables."
-introduction: "Uma forma fácil de implementar uma barra de reading progress em poucas linhas."
+twitter_text: 'Criando Reading Progress com CSS Variables.'
+introduction: 'Uma forma fácil de implementar uma barra de reading progress em poucas linhas.'
 ---
 
 ## Introdução
@@ -70,10 +70,10 @@ Bastante intuitivo né? Mas vamos as explicações de como funciona. Para você 
 
 ```css
 :root {
-  --font-stack: "Open Sans";
+  --font-stack: 'Open Sans';
 }
 body {
-  font-family: var(--font-stack, "Arial");
+  font-family: var(--font-stack, 'Arial');
 }
 ```
 
@@ -117,15 +117,15 @@ Para fazer o cálculo do scroll e identificar o progresso, vamos utilizar algums
 Tendo esses métodos em mente, fica fácil criar a seguinte função:
 
 ```js
-const progress = document.querySelector('.progress');
-const body = document.body;
-const page = document.documentElement;
-let scroll;
+const progress = document.querySelector('.progress')
+const body = document.body
+const page = document.documentElement
+let scroll
 
 document.addEventListener('scroll', function() {
-  scroll = body.scrollTop / (body.scrollHeight - page.clientHeight) * 100;
-  progress.style.setProperty('--scroll', scroll + '%');
-});
+  scroll = (body.scrollTop / (body.scrollHeight - page.clientHeight)) * 100
+  progress.style.setProperty('--scroll', scroll + '%')
+})
 ```
 
 Primeiro eu verifico a altura do topo da página até o topo do meu elemento (body.scrollTop) e então divido pelo tamanho total do meu elemento menos a altura do browser, isso multiplicado por 100, para poder obter a porcentagem do quanto eu já desci na tela.
@@ -134,8 +134,7 @@ Tendo esse valor fica fácil, basta definir esse valor dentro de `progress`, par
 
 Abaixo você pode ver esse exemplo rodando:
 
-<p data-height="300" data-theme-id="11319" data-slug-hash="XapJQX" data-default-tab="result" data-user="willianjusten" data-embed-version="2" data-pen-title="Scroll Progress with CSS Variables" class="codepen">See the Pen <a href="https://codepen.io/willianjusten/pen/XapJQX/">Scroll Progress with CSS Variables</a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/willianjusten/pen/XapJQX/
 
 ## Conclusão
 

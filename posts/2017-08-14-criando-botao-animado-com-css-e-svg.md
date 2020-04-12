@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Criando botao animado com CSS e SVG"
+title: 'Criando botao animado com CSS e SVG'
 date: 2017-08-14 18:14:48
 image: '/assets/img/loader-button/main.png'
-description: "Aprenda a criar uma interação mais bonita para os botões de sua aplicação."
+description: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- svg
-- frontend
+  - css
+  - svg
+  - frontend
 categories:
-twitter_text: "Aprenda a criar uma interação mais bonita para os botões de sua aplicação."
-introduction: "Aprenda a criar uma interação mais bonita para os botões de sua aplicação."
+twitter_text: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
+introduction: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
 ---
 
 ## Introdução
@@ -27,8 +27,7 @@ Enquanto vou escrevendo esse post, eu vou ouvindo a trilha sonora de [Hellblade 
 
 Para quem gosta de ver o exemplo já funcionando antes, já vou deixando aqui embaixo a demo do Codepen.
 
-<p data-height="300" data-theme-id="11319" data-slug-hash="RaYvrr" data-default-tab="result" data-user="willianjusten" data-embed-version="2" data-pen-title="Submit Button Pulse" class="codepen">See the Pen <a href="https://codepen.io/willianjusten/pen/RaYvrr/">Submit Button Pulse</a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/willianjusten/pen/RaYvrr/
 
 A ideia desse botão é basicamente para processos em que nós enviamos uma chamada para alguma API e esperamos um resultado para jogar um feedback para o usuário. No exemplo, eu vou colocar só o feedback de `success`, mas vocês estão mais do que livres de criar o `error`, `warning` e o que mais desejarem.
 
@@ -48,7 +47,7 @@ Já estou adicionando o `id` pois ele será utilizado futuramente em nosso Javas
 .send {
   background: none;
   color: white;
-  border: 1px solid #45981B;
+  border: 1px solid #45981b;
   border-radius: 70px;
   cursor: pointer;
   font-size: 20px;
@@ -108,11 +107,11 @@ Como aqui já temos dois estados o `normal` e o `is-loading` eu vou adicionar j�
 Para isso é bem simples, vou buscar o elemento e usar o `addEventListener` para verificar o `click` e usarei o `classList.add` para adicionar a nossa classe, ficando assim:
 
 ```js
-const btn = document.getElementById('send');
+const btn = document.getElementById('send')
 
 btn.addEventListener('click', () => {
-  btn.classList.add('is-loading');
-});
+  btn.classList.add('is-loading')
+})
 ```
 
 Feito isso, já podemos clicar no botão e veremos a animação simples de diminuir. Agora vamos fazer o pulse!
@@ -135,14 +134,14 @@ Para fazer esse efeito, iremos utilizar o `animation` com o `keyframes`. Precisa
 // nossa animacao
 @keyframes pulse {
   0% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 50px rgba(69, 152, 27, 0);
   }
   100% {
-    transform: scale(.9);
+    transform: scale(0.9);
     box-shadow: 0 0 0 0 rgba(69, 152, 27, 0);
   }
 }
@@ -155,17 +154,17 @@ Eu adicionei no estado `0%` que é o `.send` puro um `box-shadow` sem mover nenh
 Como aqui é só exemplo, para que a gente possa simular um `success` vamos utilizar o `setTimeout` que vai adicionar a classe `is-success` e remover a `is-loading` depois de um tempo. Ficando assim:
 
 ```js
-const btn = document.getElementById('send');
+const btn = document.getElementById('send')
 
 btn.addEventListener('click', () => {
-  btn.classList.add('is-loading');
+  btn.classList.add('is-loading')
 
   // fake API call
-  setTimeout( () => {
-    btn.classList.add('is-success');
-    btn.classList.remove('is-loading');
-  }, 4000);
-});
+  setTimeout(() => {
+    btn.classList.add('is-success')
+    btn.classList.remove('is-loading')
+  }, 4000)
+})
 ```
 
 Reparem que com esse código, ao final de `4s` ou `4000ms`, o botão vai voltar ao estado inicial, pois estaremos removendo a classe `is-loading` e ainda não temos estilos para o `is-sucess`, vamos fazê-lo então.
@@ -181,7 +180,7 @@ Para finalizar nosso botão, a classe `is-success` vai mudar o `background` para
 }
 
 .send.is-success {
-  background: #45981B;
+  background: #45981b;
   padding: 15px 17px;
 }
 
@@ -232,14 +231,13 @@ Agora está faltando só fazer o efeito de desenhar, para isso, já temos uma cl
 }
 
 .is-success .check {
-  stroke-dashoffset : 0px;
+  stroke-dashoffset: 0px;
 }
 ```
 
 Reparem que inicialmente eu to movendo o meu desenho todo para fora de visão e no `.is-success .check` eu retorno para o zero, através de uma `transition`, criando o efeito final que queríamos, que é o símbolo ser desenhado na tela. Segue então nosso resultado final:
 
-<p data-height="300" data-theme-id="11319" data-slug-hash="RaYvrr" data-default-tab="result" data-user="willianjusten" data-embed-version="2" data-pen-title="Submit Button Pulse" class="codepen">See the Pen <a href="https://codepen.io/willianjusten/pen/RaYvrr/">Submit Button Pulse</a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/willianjusten/pen/RaYvrr/
 
 ## Conclusão
 

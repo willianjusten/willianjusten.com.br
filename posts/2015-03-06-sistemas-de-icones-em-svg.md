@@ -1,35 +1,34 @@
 ---
 layout: post
-title: "#6 - Sistemas de Ícones em SVG"
+title: '#6 - Sistemas de Ícones em SVG'
 date: 2015-03-06 19:33:23
 image: '/assets/img/svg-icons/main.png'
-description: "Como usar ícones em SVG e por que ele é bem melhor que outras alternativas?"
+description: 'Como usar ícones em SVG e por que ele é bem melhor que outras alternativas?'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- icons
-- tutorial
+  - svg
+  - icons
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Como usar ícones em SVG e por que ele é bem melhor que outras alternativas? "
+  - 'O mundo mágico do SVG'
+twitter_text: 'Como usar ícones em SVG e por que ele é bem melhor que outras alternativas? '
 introduction: "Como dizem 'Uma imagem vale mais que mil palavras' e isso é um fato. Muitas vezes conseguimos simbolizar uma ação apenas com uma imagem. Então vamos aprender a usar ícones em SVG."
 ---
 
 ## Índice da série
 
-* [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
-* [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
-* [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
-* [#4 - A Estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/)
-* [#5 - Atomic Design no SVG - g, use, defs, symbol](https://willianjusten.com.br/atomic-design-no-svg/)
+- [#1 - Por que usar SVG?](https://willianjusten.com.br/por-que-usar-svg/)
+- [#2 - Como usar SVG](https://willianjusten.com.br/como-usar-svg/)
+- [#3 - Onde Baixar SVG](https://willianjusten.com.br/onde-baixar-svg/)
+- [#4 - A Estrutura do SVG](https://willianjusten.com.br/a-estrutura-do-svg/)
+- [#5 - Atomic Design no SVG - g, use, defs, symbol](https://willianjusten.com.br/atomic-design-no-svg/)
 
 ## Introdução
 
 Como dizem "Uma imagem vale mais que mil palavras" e isso é um fato. Muitas vezes conseguimos simbolizar uma ação apenas com uma imagem. Pensando nisso, os designers desde o início da criação de interfaces resolveram utilizar símbolos para isto e na web não iria ser diferente. Muito provavelmente você já se pegou vendo um ícone de X para fechar alguma coisa ou até ícones mais "modernos", como o famoso `Hamburguer Menu`.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="Alayb" data-default-tab="result" data-user="kyleHenwood" class='codepen'>See the Pen <a href='https://codepen.io/kyleHenwood/pen/Alayb/'>SVG CSS3 Menu / Burger Button</a> by Kyle Henwood (<a href='http://codepen.io/kyleHenwood'>@kyleHenwood</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+https://codepen.io/kyleHenwood/pen/Alayb/
 
 ## Por que usar SVG e não outros tipos?
 
@@ -41,13 +40,13 @@ Seria um conjunto de imagens dentro de um mesmo arquivo, sendo cada imagem ident
 
 **Vantagens**
 
-* Permite uso de imagens coloridas
+- Permite uso de imagens coloridas
 
 **Desvantagens**
 
-* Não é escalável
-* Não há opção de mudar cores
-* Peso em Kb considerável
+- Não é escalável
+- Não há opção de mudar cores
+- Peso em Kb considerável
 
 ### Font Icons
 
@@ -55,13 +54,13 @@ Talvez seja o mais utilizado dos tipos. Consiste em criar um tipo de fonte conte
 
 **Vantagens**
 
-* Escalável
-* Permite modificar cor (somente uma cor por vez! Ainda é monocromático)
+- Escalável
+- Permite modificar cor (somente uma cor por vez! Ainda é monocromático)
 
 **Desvantagens**
 
-* Maior número de requisições normalmente.
-* Enquanto não carrega a fonte, bug de aparecer um quadrado é bem comum.
+- Maior número de requisições normalmente.
+- Enquanto não carrega a fonte, bug de aparecer um quadrado é bem comum.
 
 ![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](https://i.stack.imgur.com/vZhku.png)
 
@@ -75,16 +74,16 @@ Beleza campeão, mas com SVG você pode fazer o mesmo e até melhor, se quiser, 
 
 **Vantagens**
 
-* Escalável
-* Múltiplas Cores
-* Mais leve de todos (inline com gzip)
-* Acessibilidade
-* Melhor controle via CSS
-* Mais semântico
+- Escalável
+- Múltiplas Cores
+- Mais leve de todos (inline com gzip)
+- Acessibilidade
+- Melhor controle via CSS
+- Mais semântico
 
 **Desvantagens**
 
-* Certa incompatibilidade com IE8- (pode usar fallback! \o/)
+- Certa incompatibilidade com IE8- (pode usar fallback! \o/)
 
 Bom, vendo essa lista, fica claro que ícones em SVG são bem melhores e mais funcionais, está esperando o quê para mudar os ícones nos seus sites e sistemas? Como fazer? Então vamos nessa =)
 
@@ -92,9 +91,9 @@ Bom, vendo essa lista, fica claro que ícones em SVG são bem melhores e mais fu
 
 Basicamente existem 3 etapas a serem feitas para se utilizar SVG icons.
 
-* Obter os ícones SVG seja através de um sistema de ícones ou os arquivos feitos por algum designer.
-* Adicionar o SVG inline na página em que será usada.
-* Chamar o ícone desejado.
+- Obter os ícones SVG seja através de um sistema de ícones ou os arquivos feitos por algum designer.
+- Adicionar o SVG inline na página em que será usada.
+- Chamar o ícone desejado.
 
 Como tudo na prática é melhor, vamos a ela. Vou utilizar o [IcoMoon](https://icomoon.io/) para obter meus ícones SVG.
 
@@ -128,8 +127,11 @@ Abaixo segue um dos ícones separados na nossa `defs`:
 
 ```html
 <symbol id="icon-paperplane" viewBox="0 0 1024 1024">
-	<title>paperplane</title>
-	<path class="path1" d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"></path>
+  <title>paperplane</title>
+  <path
+    class="path1"
+    d="M1009.376 5.12c-5.312-3.424-11.36-5.12-17.376-5.12-6.176 0-12.384 1.76-17.76 5.376l-960 640c-9.888 6.56-15.328 18.112-14.048 29.952 1.216 11.808 8.896 22.016 19.936 26.368l250.368 100.192 117.728 206.016c5.632 9.888 16.096 16 27.424 16.128 0.128 0 0.224 0 0.352 0 11.232 0 21.664-5.952 27.424-15.552l66.464-110.816 310.24 124.064c3.808 1.536 7.808 2.272 11.872 2.272 5.44 0 10.816-1.376 15.68-4.128 8.448-4.736 14.24-13.056 15.872-22.624l160-960c2.080-12.576-3.488-25.184-14.176-32.128zM100.352 664.864l741.6-494.432-539.2 577.184c-2.848-1.696-5.376-3.936-8.512-5.184l-193.888-77.568zM326.048 770.112c-0.064-0.128-0.16-0.192-0.224-0.32l606.176-648.8-516.768 805.184-89.184-156.064zM806.944 947.488l-273.312-109.312c-6.496-2.56-13.248-3.424-19.936-3.808l420.864-652.416-127.616 765.536z"
+  ></path>
 </symbol>
 ```
 
@@ -139,7 +141,7 @@ Após definidos os ícones, basta chamá-los onde deseja, a partir do elemento `
 
 ```html
 <svg class="icon icon-paperplane">
-	<use xlink:href="#icon-paperplane"></use>
+  <use xlink:href="#icon-paperplane"></use>
 </svg>
 ```
 
@@ -147,8 +149,7 @@ A classe dentro da tag `svg` irá servir para auxiliar e modificar propriedades 
 
 Segue abaixo o nosso exemplo, bastante fácil e prático.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="qEMqVK" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/qEMqVK/'>SVG Icon Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/qEMqVK/
 
 Espero que todos tenham entendido, é um processo bem simples, mas que faz todo diferença no trabalho final, vamos sempre lembrar que quanto mais qualidade o nosso projeto tiver, melhor! =)
 
