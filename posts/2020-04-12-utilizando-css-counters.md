@@ -21,11 +21,11 @@ Fala pessoal, o post de hoje é mais um [daqueles super simples de CSS](https://
 
 Enquanto escrevo, vou ouvindo uma banda de metalcore muito boa chamada [Architects](https://open.spotify.com/artist/3ZztVuWxHzNpl0THurTFCv?si=Fgce72yKQvq8RqjPzUx5wQ). Se nunca ouviu e curte um som mais pesado, pode ouvir que você vai curtir.
 
-Mas chega de papo furado e vamos direto ao assunto.
+Chega de papo furado e vamos direto ao assunto.
 
 ## O que são CSS Counters?
 
-São propriedades do CSS que permitem gerar um conteúdo número para elementos, baseados na localização deles no html.
+São propriedades do CSS que permitem gerar um conteúdo numérico para elementos, baseados na localização deles no html.
 
 ### Como assim?
 
