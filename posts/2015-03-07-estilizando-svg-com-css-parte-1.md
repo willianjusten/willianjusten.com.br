@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "#7 - Estilizando SVG com CSS - Parte 1"
+title: '#7 - Estilizando SVG com CSS - Parte 1'
 date: 2015-03-07 14:58:45
 image: '/assets/img/estilizando-svg/main.png'
-description: "Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS."
+description: 'Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS.'
 main-class: 'svg'
 color: '#7D669E'
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Estilizando SVG com CSS - Parte 1"
-introduction: "Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS, mude suas cores, contornos e mais."
+  - 'O mundo mágico do SVG'
+twitter_text: 'Estilizando SVG com CSS - Parte 1'
+introduction: 'Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS, mude suas cores, contornos e mais.'
 ---
 
 ## Índice da série
@@ -44,7 +44,7 @@ Se quiser saber melhor de todas as propriedades tem esse [artigo da W3C sobre SV
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
-  <polygon points="..." style="fill:#0562DC; stroke: #000; stroke-width: 5;"/>
+  <polygon points="..." style="fill:#0562DC; stroke: #000; stroke-width: 5;" />
 </svg>
 ```
 
@@ -54,14 +54,14 @@ Note que eu adiciono um `style` dentro elemento que eu desejo modificar, as veze
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
-	<style type="text/css">
-		polygon {
-			fill:#0562DC;
-			stroke: #000;
-			stroke-width: 5;
-		}
-	</style>
-	<polygon points="..." />
+  <style type="text/css">
+    polygon {
+      fill: #0562dc;
+      stroke: #000;
+      stroke-width: 5;
+    }
+  </style>
+  <polygon points="..." />
 </svg>
 ```
 
@@ -70,21 +70,20 @@ Bastante útil quando se deseja componentizar um elemento SVG, visto que sua est
 ### Estilo fora do SVG
 
 ```html
-
 <!DOCTYPE html>
 <html>
-...
-<style type="text/css">
-	polygon {
-		fill:#0562DC;
-		stroke: #000;
-		stroke-width: 5;
-	}
-</style>
+  ...
+  <style type="text/css">
+    polygon {
+      fill: #0562dc;
+      stroke: #000;
+      stroke-width: 5;
+    }
+  </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
-	<polygon points="..." />
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 300 300">
+    <polygon points="..." />
+  </svg>
 </html>
 ```
 
@@ -96,8 +95,14 @@ Não é um método muito utilizado, visto que caso aquele SVG não fique mais na
 <?xml version="1.0" standalone="no"?>
 <?xml-stylesheet type="text/css" href="styles.css"?>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px" viewBox="0 0 300 300">
-    <!-- Conteúdo do SVG -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  version="1.1"
+  width="300px"
+  height="300px"
+  viewBox="0 0 300 300"
+>
+  <!-- Conteúdo do SVG -->
 </svg>
 ```
 
@@ -109,8 +114,7 @@ Quando você quiser separar totalmente a estrutura do estilo, você pode criar u
 
 Na imagem acima os elementos na parte inferior sobreescrevem os elementos anteriores, ou seja, um estilo inline irá sobreescrever um estilo em um arquivo externo. Vamos a um exemplo para entedermos melhor:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="VYGzZK" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/VYGzZK/'>Exemplo CSS no SVG</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/VYGzZK/
 
 Como podemos notar no exemplo acima, a estrela ficou com a cor amarela, mesmo tendo outras cores atribuídas. Mas por que disso? A cor amarela está sendo atribuída como estilo inline: `style="fill:yellow"`, que possui o maior peso, depois nós temos o estilo no documento: `<style>polygon {fill: blue}</style>`, depois a cor vermelha atribuída no arquivo css externo: `polygon {fill: red;}` e por último temos o estilo de apresentação na cor preta: `fill="black"`. Continuou sem entender? Vai lá no [pen](http://codepen.io/willianjusten/pen/VYGzZK) e tenta ir apagando uma propriedade de cada vez para notar quem vai ser priorizado, vai ser bem mais didático do que eu falando aqui =)
 

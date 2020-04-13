@@ -21,6 +21,13 @@ const pluginConfig = [
     options: {
       plugins: [
         {
+          resolve: '@weknow/gatsby-remark-codepen',
+          options: {
+            theme: 'dark',
+            height: 400
+          }
+        },
+        {
           resolve: 'gatsby-remark-relative-images',
           options: {
             name: 'uploads'

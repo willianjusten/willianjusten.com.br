@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "#3 - O básico da API do ReactJS"
+title: '#3 - O básico da API do ReactJS'
 date: 2015-07-17 00:18:37
 image: '/assets/img/react-3/main.png'
-description: "Aprenda um pouco mais sobre a API do React e como começar a brincar."
+description: 'Aprenda um pouco mais sobre a API do React e como começar a brincar.'
 main-class: 'js'
 color: '#D6BA32'
 tags:
-- react
-- js
-- tutorial
+  - react
+  - js
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Aprenda um pouco mais sobre os principais métodos do ReactJS."
-introduction: "Aprenda um pouco mais sobre a API do React e como começar a brincar."
+  - 'Aprendendo ReactJS'
+twitter_text: 'Aprenda um pouco mais sobre os principais métodos do ReactJS.'
+introduction: 'Aprenda um pouco mais sobre a API do React e como começar a brincar.'
 ---
 
 ## Introdução
@@ -52,9 +52,9 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/1-render-getting-star
 
 ```jsx
 ReactDOM.render(
-    React.createElement('h1', null, "Hello World!"),
-    document.getElementById("content")
-);
+  React.createElement('h1', null, 'Hello World!'),
+  document.getElementById('content')
+)
 ```
 
 Sem o JSX, não temos como adicionar tags html dentro do nosso render, portanto, precisamos criar esses elementos na mão. Para criar, utilizamos o método `createElement`, que recebe 3 parâmetros também. O primeiro parâmetro é a tag html, o segundo é um objeto, que fica responsável pelo conjunto de informações, que podem ser classes, ids, data, estilos, etc.
@@ -64,10 +64,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), fal
 ### Render com JSX
 
 ```jsx
-ReactDOM.render(
-    <h1>Hello World!</h1>,
-    document.getElementById("content")
-);
+ReactDOM.render(<h1>Hello World!</h1>, document.getElementById('content'))
 ```
 
 Para o render com o JSX, basta criamos o elemento com as tags do próprio html e ligarmos a um container.
@@ -82,17 +79,12 @@ Serve para criar um componente dada uma especificação. Um componente implement
 
 ```jsx
 var Hello = createReactClass({
-    render: function() {
-      return (
-        <h1>Hello World!</h1>
-      );
-    }
-});
+  render: function() {
+    return <h1>Hello World!</h1>
+  }
+})
 
-ReactDOM.render(
-    <Hello />,
-    document.getElementById("content")
-);
+ReactDOM.render(<Hello />, document.getElementById('content'))
 ```
 
 Como podemos notar, com a utilização do `createReactClass`, habilitamos um componente com o nome da variável determinada, no nosso caso `Hello` e então podemos chamá-lo em diversos lugares como `<Hello />`, conforme indicado na linha `10`.
@@ -105,25 +97,19 @@ No ES6, nós ganhamos classes para o nosso lindo javascript e, com isso, consegu
 
 ```jsx
 class Hello extends React.Component {
-    render(){
-        return (
-            <h1>Hello World!</h1>
-        )
-    }
+  render() {
+    return <h1>Hello World!</h1>
+  }
 }
 
-ReactDOM.render(
-    <Hello />,
-    document.getElementById("content")
-)
+ReactDOM.render(<Hello />, document.getElementById('content'))
 ```
 
 ### Exemplos
 
 Seguem os exemplos rodando no Codepen:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="JdBMya" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/JdBMya/'>React Render Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/JdBMya/
 
 Repare que eu criei diferentes containers para que cada elemento fosse renderizado em um desses espaços.
 
@@ -132,22 +118,19 @@ Repare que eu criei diferentes containers para que cada elemento fosse renderiza
 Já que é tudo JS, podemos usar o próprio JS para brincar dentro do render, como, por exemplo, receber um array e iterar nele para poder renderizar uma lista.
 
 ```jsx
-var frutas = ['Banana', 'Maçã', 'Uva'];
+var frutas = ['Banana', 'Maçã', 'Uva']
 
 ReactDOM.render(
   <div>
-  {
-    frutas.map(function (fruta) {
+    {frutas.map(function(fruta) {
       return <li>{fruta}</li>
-    })
-  }
+    })}
   </div>,
   document.getElementById('compras')
-);
+)
 ```
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="waxpmW" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/waxpmW/'>React Render Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/waxpmW/
 
 No exemplo, eu tenho um array `frutas` e através do comando `map`, eu itero e mando retornar fruta por fruta dentro de uma lista com o id `compras`.
 
@@ -157,20 +140,17 @@ Quando utilizamos nossos componentes no React, nós podemos adicionar atributos 
 
 ```jsx
 var Hello = createReactClass({
-    render: function () {
-        return (
-            <h1>Hello { this.props.name }!</h1>
-        );
-    }
+  render: function() {
+    return <h1>Hello {this.props.name}!</h1>
+  }
 })
 
-ReactDOM.render(<Hello name='Willian' />, document.getElementById('hello'));
+ReactDOM.render(<Hello name="Willian" />, document.getElementById('hello'))
 ```
 
 Olhando no exemplo, notamos que ele recebe o nome da variável `name` e consegue renderizar o nome corretamente.
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="qdypxL" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/qdypxL/'>React Render Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/qdypxL/
 
 ## Especificações, Ciclos de Vida e Estado
 
@@ -194,10 +174,10 @@ O objeto de `propTypes` permite validar as propriedades que estão sendo passada
 
 O método de `render` é responsável por pegar as informações e renderizar na tela, mas existem outros ciclos que podem existir dentro dessa renderização, que são:
 
-* `componentWillMount`: chamado uma vez só, tanto do lado client quando do server antes da renderização acontecer.
-* `componentDidMount`: chamado uma vez só, só na parte do cliente, depois da renderização.
-* `shouldComponentUpdate`: chamado depois da renderização quando as propriedades e o estado está sendo definido. Ele retorna `true` ou `false` para dizer se o elemento deve atualizar.
-* `componentWillUnmount`: chamado quando desejamos desmontar o componente.
+- `componentWillMount`: chamado uma vez só, tanto do lado client quando do server antes da renderização acontecer.
+- `componentDidMount`: chamado uma vez só, só na parte do cliente, depois da renderização.
+- `shouldComponentUpdate`: chamado depois da renderização quando as propriedades e o estado está sendo definido. Ele retorna `true` ou `false` para dizer se o elemento deve atualizar.
+- `componentWillUnmount`: chamado quando desejamos desmontar o componente.
 
 Existem mais métodos na API, basta dar uma [olhada aqui](https://facebook.github.io/react/docs/component-specs.html).
 
@@ -207,38 +187,35 @@ Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o códig
 
 ```jsx
 var Timer = createReactClass({
+  getInitialState: function() {
+    return { elapsed: 0 }
+  },
 
-    getInitialState: function(){
-        return { elapsed: 0 };
-    },
+  componentDidMount: function() {
+    this.timer = setInterval(this.tick, 50)
+  },
 
-    componentDidMount: function(){
-        this.timer = setInterval(this.tick, 50);
-    },
+  componentWillUnmount: function() {
+    clearInterval(this.timer)
+  },
 
-    componentWillUnmount: function(){
-        clearInterval(this.timer);
-    },
+  tick: function() {
+    this.setState({ elapsed: new Date() - this.props.start })
+  },
 
-    tick: function(){
-      this.setState({elapsed: new Date() - this.props.start});
-    },
+  render: function() {
+    var elapsed = Math.round(this.state.elapsed / 100)
+    var seconds = (elapsed / 10).toFixed(1)
 
-    render: function() {
+    return (
+      <p>
+        Já se passaram <b>{seconds}</b> segundos.
+      </p>
+    )
+  }
+})
 
-        var elapsed = Math.round(this.state.elapsed / 100);
-        var seconds = (elapsed / 10).toFixed(1);
-
-        return (
-            <p>Já se passaram <b>{seconds}</b> segundos.</p>
-        );
-    }
-});
-
-ReactDOM.render(
-    <Timer start={Date.now()} />,
-    document.getElementById('timer')
-);
+ReactDOM.render(<Timer start={Date.now()} />, document.getElementById('timer'))
 ```
 
 Na linha `3`, usamos o método `getInitialState` para poder definir que o estado inicial é quando `elapsed` vale 0, ou seja, não passou o tempo ainda.
@@ -255,8 +232,7 @@ Por fim, na linha `31` estamos chamando o nosso componente `Timer` e passando a 
 
 Segue um exemplo live no Codepen:
 
-<p data-height="266" data-theme-id="11319" data-slug-hash="MwBrBr" data-default-tab="result" data-user="willianjusten" class='codepen'>See the Pen <a href='http://codepen.io/willianjusten/pen/MwBrBr/'>React Render Examples</a> by Willian Justen de Vasconcellos (<a href='http://codepen.io/willianjusten'>@willianjusten</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/MwBrBr/
 
 O legal é que o React irá modificar somente o elemento que está com estado sendo modificado, ou seja, somente o que está dentro de `<b>{seconds}</b>`, o resto da frase permanecerá intacta, com isso, impacta menos o DOM.
 

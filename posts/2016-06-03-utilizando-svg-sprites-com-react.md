@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Utilizando SVG Sprites com React"
+title: 'Utilizando SVG Sprites com React'
 date: 2016-06-03 20:30:39
 image: '/assets/img/react-svg/main.png'
 description: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil com Stateless Functions.'
 main-class: 'js'
 color: '#D6BA32'
 tags:
-- react
-- js
-- tutorial
+  - react
+  - js
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
+  - 'Aprendendo ReactJS'
 twitter_text: 'Aprenda a utilizar ícones SVG dentro do React de forma fácil.'
 introduction: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil.'
 ---
@@ -34,9 +34,9 @@ Um exemplo de sprite svg seria:
 
 ```html
 <svg>
-    <symbol id="icon-lamp" viewBox="0 0 57 64">...</symbol>
-    <symbol id="icon-globe" viewBox="0 0 57 64">...</symbol>
-    <symbol id="icon-chemistry" viewBox="0 0 57 64">...</symbol>
+  <symbol id="icon-lamp" viewBox="0 0 57 64">...</symbol>
+  <symbol id="icon-globe" viewBox="0 0 57 64">...</symbol>
+  <symbol id="icon-chemistry" viewBox="0 0 57 64">...</symbol>
 </svg>
 ```
 
@@ -46,7 +46,7 @@ Se você reparar, cada ícone tem o seu próprio `symbol` e também sua própria
 
 ```html
 <svg>
-    <use xlink:href="#icon-lamp" />
+  <use xlink:href="#icon-lamp" />
 </svg>
 ```
 
@@ -54,7 +54,9 @@ No lugar do `xlink:href`, você passa o id do ícone que você deseja. Para cham
 
 ```html
 <svg>
-    <use xlink:href="https://willianjusten.com.br/assets/img/react-svg/sprite.svg#icon-lamp" />
+  <use
+    xlink:href="https://willianjusten.com.br/assets/img/react-svg/sprite.svg#icon-lamp"
+  />
 </svg>
 ```
 
@@ -74,9 +76,9 @@ No React você pode definir seus componentes como funções puras do Javascript,
 
 ```jsx
 function HelloMessage(props) {
-    return <div>Hello {props.name}</div>;
+  return <div>Hello {props.name}</div>
 }
-ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
+ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'))
 ```
 
 Reparem, eu criei uma função chamada `helloMessage`, que recebe um parâmetro `props`. Essa funciona me retorna uma div com um texto dentro escrito "Hello Willian", isso acontece, pois eu estou passando a propriedade `name`, que fica dentro de `props`.
@@ -84,8 +86,8 @@ Reparem, eu criei uma função chamada `helloMessage`, que recebe um parâmetro 
 Reescrevendo o código acima em ES6, ficaria assim:
 
 ```jsx
-const HelloMessage = (props) => <div>Hello {props.name}</div>;
-ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
+const HelloMessage = props => <div>Hello {props.name}</div>
+ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'))
 ```
 
 Ali utilizo `const` e a `fat arrow` do ES6 para diminuir minha escrita e ficar ainda mais bonito meu JS.
@@ -98,25 +100,26 @@ Essa forma simplificada é destinada para se criar componentes que não vão ter
 
 ```jsx
 // Definimos a url onde se encontra o sprite
-const url = 'https://willianjusten.com.br/assets/img/react-svg/sprite.svg';
+const url = 'https://willianjusten.com.br/assets/img/react-svg/sprite.svg'
 
 // Aqui criamos um componente
 // que irá gerar nosso ícone SVG
-const Icon = (props) => (
-  <svg viewBox='0 0 16 16' className={`icon icon-${props.icon}`}>
+const Icon = props => (
+  <svg viewBox="0 0 16 16" className={`icon icon-${props.icon}`}>
     <use xlinkHref={`${url}#icon-${props.icon}`} />
   </svg>
-);
+)
 
 // Aqui chamamos nossos ícones
 // passando a propriedade "icon"
 ReactDOM.render(
   <div class="icons">
-    <Icon icon='globe' />
-    <Icon icon='chemistry' />
-    <Icon icon='lamp' />
+    <Icon icon="globe" />
+    <Icon icon="chemistry" />
+    <Icon icon="lamp" />
   </div>,
-  document.getElementById('app'));
+  document.getElementById('app')
+)
 ```
 
 Definimos a url do nosso sprite, nesse caso, estou chamando um sprite do meu blog mesmo. Depois criamos nossa `stateless function` e ali temos alguns pulos do gato.
@@ -126,8 +129,7 @@ Definimos a url do nosso sprite, nesse caso, estou chamando um sprite do meu blo
 
 Segue o exemplo funcional:
 
-<p data-height="300" data-theme-id="11319" data-slug-hash="bedoLV" data-default-tab="result" data-user="willianjusten" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/willianjusten/pen/bedoLV/">SVG Sprites with React</a> by Willian Justen de Vasconcellos (<a href="http://codepen.io/willianjusten">@willianjusten</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script src="//assets.codepen.io/assets/embed/ei.js"></script>
+http://codepen.io/willianjusten/pen/bedoLV/
 
 Se você estiver com dúvidas no ES6, como funciona esse tal de `const`, `fat arrow` e agora esse tal de `template string`, aconselho o [Blog do Nipher](https://nipher.io/series), onde ele explica isso muito bem.
 
