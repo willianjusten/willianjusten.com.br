@@ -34,6 +34,7 @@ Você pode ver a demo de hoje [nest link](https://labs.willianjusten.com.br/typi
 
 ## Video
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hFsscx2U5bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Conclusão
 
