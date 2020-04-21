@@ -17,6 +17,8 @@ color: '#2DA0C3'
 tags:
   - css
   - videos
+categories:
+  - Dicas de CSS
 ---
 ## Introdução
 
