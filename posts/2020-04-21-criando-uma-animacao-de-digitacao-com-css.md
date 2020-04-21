@@ -20,6 +20,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, hoje vou começar uma série de vídeos curtos ~~ou nem tanto~~, onde vou ensinar pequenas dicas de animações ou efeitos legais com CSS.
