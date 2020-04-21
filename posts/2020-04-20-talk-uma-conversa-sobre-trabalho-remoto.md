@@ -18,11 +18,9 @@ tags:
   - remoto
   - dicas
 categories:
-  - Trabalhar no exterior
-  - remoto
-  - viagens
-  - etc
+  - 'Trabalhar no exterior, remoto, viagens, etc'
 ---
+
 ## Introdução
 
 Fala pessoal, semana passada eu fui convidado pelo pessoal do [Meetup Frontend SP](https://www.meetup.com/pt-BR/Frontend-Dev-SP-Meetup/) para palestrar sobre qualquer assunto e eu escolhi **Uma conversa sobre Trabalho Remoto**, que eu acho bem interessante e importante para os momentos atuais e do qual eu já tenho experiência há alguns anos.
@@ -41,7 +39,7 @@ Como eu falei no vídeo, iria responder as perguntas que não deu tempo de respo
 
 > Já tenho um bom portifólio no github, currículo bem feito, posts no LinkedIn e perfil em inglês também. Já dá pra aplicar pra vagas remotas e júnior ou falta algo?
 
-Pelo que você falou, eu diria que já pode aplicar sem problemas. A única coisa que eu fiquei meio apreensivo foi quando você falou "júnior". Eu não recomendo trabalho remoto para Jr. 
+Pelo que você falou, eu diria que já pode aplicar sem problemas. A única coisa que eu fiquei meio apreensivo foi quando você falou "júnior". Eu não recomendo trabalho remoto para Jr.
 
 Acho que um ambiente alocado nos primeiros anos de carreira é essencial para se aprender mais sobre como é um desenvolvimento de software em geral, além do trabalho em equipe. E até mesmo para poder evoluir vários pontos que julgo essenciais na vida de remoto, que é a comunicação e disciplina.
 
@@ -55,10 +53,10 @@ Mas também precisar ver outra questão, "Quero vagas para fora no momento?" Se 
 
 > Quem é de outro ramo, dá para mudar?
 
-Sim, é mais do que possível mudar! Eu tenho um post [falando da minha trajetória](https://willianjusten.com.br/minha-trajetoria-ate-ser-desenvolvedor/). Eu fazia Química Industrial e mudei completamente! Claro que não é uma transição super rápida ou fácil, mas é sim possível. 
+Sim, é mais do que possível mudar! Eu tenho um post [falando da minha trajetória](https://willianjusten.com.br/minha-trajetoria-ate-ser-desenvolvedor/). Eu fazia Química Industrial e mudei completamente! Claro que não é uma transição super rápida ou fácil, mas é sim possível.
 
 > O que é Síndrome do Impostor?
- 
+
 Eu tenho um post que se chama [Será que sou bom o suficiente?](https://willianjusten.com.br/sou-bom-o-suficiente/), que aborda exatamente sobre esse tema, vale a pena dar uma lida lá, mas respondendo de forma mais direta.
 
 A síndrome do impostor (também conhecida como fenômeno de impostor ou síndrome de fraude) é um conceito que descreve indivíduos de alto desempenho que são marcados por uma incapacidade de internalizar suas realizações e um medo persistente de serem expostos como uma "fraude".
@@ -67,6 +65,6 @@ A síndrome do impostor (também conhecida como fenômeno de impostor ou síndro
 
 Isso varia de empresa para empresa, é muito difícil de afirmar qualquer coisa, mas é importante verificar bem com a empresa em qual modelo de contratação será o trabalho, visto que se for PJ (Pessoa Jurídica), o salário precisa ser maior para que você possa bancar os gastos extras que você terá e também a falta de benefícios como férias, 13 salário, INSS e outros.
 
-## Conclusão 
+## Conclusão
 
 Espero que vocês tenham curtido a palestra, e se você quiser, eu tenho [uma série de posts sobre trabalho remoto](https://willianjusten.com.br/series/#trabalhar-no-exterior-remoto-viagens-etc) que você pode dar uma olhada, se está procurando saber mais do assunto.
