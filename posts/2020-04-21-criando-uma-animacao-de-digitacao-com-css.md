@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2020-04-22 06:04:15'
+date: '2020-04-21 06:04:15'
 image: /assets/img/typing-cover.png
 title: Criando uma animação de digitação com CSS
 description: >-
