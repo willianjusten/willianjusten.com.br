@@ -49,6 +49,10 @@ export const MenuBarLink = styled(AniLink)`
   }
 `
 
+export const MenuBarExternalLink = styled.a`
+  display: block;
+`
+
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;

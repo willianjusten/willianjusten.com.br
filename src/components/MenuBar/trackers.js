@@ -41,3 +41,11 @@ export const topClickTrack = () => {
     label: `Top na Menu Bar`
   })
 }
+
+export const youTubeClickTrack = () => {
+  ReactGA.event({
+    category: 'youtube',
+    action: 'click',
+    label: 'Link YouTube na Menu Bar'
+  })
+}
