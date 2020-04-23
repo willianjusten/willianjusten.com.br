@@ -58,7 +58,7 @@ const Button = styled(Link)`
   transition: opacity 0.5s;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 `
 
