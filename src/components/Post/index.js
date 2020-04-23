@@ -36,7 +36,7 @@ Post.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.string.isRequired,
+  timeToRead: PropTypes.string,
   description: PropTypes.string.isRequired,
   main_class: PropTypes.string,
   disableCard: PropTypes.bool

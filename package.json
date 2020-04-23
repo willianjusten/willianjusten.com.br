@@ -6,6 +6,7 @@
   "author": "Willian Justen <willianjustenqui@gmail.com>",
   "dependencies": {
     "@weknow/gatsby-remark-codepen": "^0.1.0",
+    "algoliasearch": "^4.2.0",
     "babel-plugin-styled-components": "^1.10.7",
     "dotenv": "^8.2.0",
     "gatsby": "^2.20.4",
