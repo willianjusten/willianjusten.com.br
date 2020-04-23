@@ -1,6 +1,6 @@
 ---
 layout: post
-date: '2020-04-22 06:04:15'
+date: '2020-04-23 12:04:15'
 image: /assets/img/gradient-cover.png
 title: Criando um background com gradiente animado com CSS Puro
 description: >-
