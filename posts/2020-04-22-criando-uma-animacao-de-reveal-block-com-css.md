@@ -22,7 +22,7 @@ categories:
 ---
 ## Introdução
 
-Fala pessoal, continuando com os vídeos de dicas de CSS, hoje vai mais um vídeo bem simples, mas de uma técnica super famosa e utilizada em diversos sites.
+Fala pessoal, continuando com os [vídeos de dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), hoje vai mais um vídeo bem simples, mas de uma técnica super famosa e utilizada em diversos sites.
 
 Você pode ver a demo de hoje [nest link](https://labs.willianjusten.com.br/reveal-effect/) e o [código está lá no Github](https://github.com/willianjusten/labs/blob/gh-pages/reveal-effect/index.html)
 
