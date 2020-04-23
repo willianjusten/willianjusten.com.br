@@ -85,12 +85,7 @@ const pluginConfig = [
   },
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-netlify`,
-  {
-    resolve: 'gatsby-plugin-netlify-cache',
-    options: {
-      cachePublic: true
-    }
-  },
+  `gatsby-plugin-netlify-cache`,
   {
     resolve: `gatsby-plugin-feed`,
     options: {
@@ -109,7 +104,7 @@ const pluginConfig = [
       feeds: [
         {
           serialize: ({ query: { site, allMarkdownRemark } }) => {
-            return allMarkdownRemark.edges.map((edge) => {
+            return allMarkdownRemark.edges.map(edge => {
               return Object.assign({}, edge.node.frontmatter, {
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
