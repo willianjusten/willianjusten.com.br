@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Making of - Parte 1"
+title: 'Making of - Parte 1'
 date: 2015-01-03 05:54:23
-description: "Quais ferramentas foram utilizadas para montar esse blog e o porquê de ter escolhido cada uma delas."
+description: 'Quais ferramentas foram utilizadas para montar esse blog e o porquê de ter escolhido cada uma delas.'
 main-class: 'jekyll'
 color: '#B31917'
 tags:
-- jekyll
-- gulp
-- stylus
-- svg
-twitter_text: "Making of parte 1"
-introduction: "Uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido elas para a criação desse meu lindo blog."
+  - jekyll
+  - gulp
+  - stylus
+  - svg
+twitter_text: 'Making of parte 1'
+introduction: 'Uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido elas para a criação desse meu lindo blog.'
 ---
 
 Existe uma continuação desse post em [Making of - parte 2](https://willianjusten.com.br/making-of-parte-2/).
@@ -29,14 +29,14 @@ Eu pretendo escrever o máximo que der e sobre tudo, desde o avançado até dica
 
 Eu sou um cara muito curioso e gosto sempre de coisas novas, então eu utilizei:
 
-* [Jekyll](http://jekyllrb.com/) - como a base de todo o blog, sendo meu gerador de páginas estáticas.
-* [GulpJS](http://gulpjs.com/) - meu automatizador favorito, que utilizo para basicamente todas as tarefas tediosas do frontend.
-* [SVG](http://pt.wikipedia.org/wiki/SVG) - ícones escaláveis, fáceis de utilizar e muito leves.
-* [Stylus](http://learnboost.github.io/stylus/) - tem pre-processador css mais bonito que stylus? Totalmente flexível, completo e o mais importante, totalmente em Javascript =)
-* [Jeet](http://jeet.gs) - sistema de grid feito em stylus.
-* [Kouto Swiss](http://kouto-swiss.io/) - um framework para stylus.
-* [Rupture](http://jescalan.github.io/rupture/) - uma ferramenta para facilitar o trabalho com media queries no stylus.
-* [Github Pages](https://pages.github.com/) - onde está hospedado esse lindo blog (se você não achou bonito, se retire! Brincadeira, pode continuar, só me manda um feedback do que não gostou).
+- [Jekyll](http://jekyllrb.com/) - como a base de todo o blog, sendo meu gerador de páginas estáticas.
+- [GulpJS](http://gulpjs.com/) - meu automatizador favorito, que utilizo para basicamente todas as tarefas tediosas do frontend.
+- [SVG](http://pt.wikipedia.org/wiki/SVG) - ícones escaláveis, fáceis de utilizar e muito leves.
+- [Stylus](http://learnboost.github.io/stylus/) - tem pre-processador css mais bonito que stylus? Totalmente flexível, completo e o mais importante, totalmente em Javascript =)
+- [Jeet](http://jeet.gs) - sistema de grid feito em stylus.
+- [Kouto Swiss](http://kouto-swiss.io/) - um framework para stylus.
+- [Rupture](http://jescalan.github.io/rupture/) - uma ferramenta para facilitar o trabalho com media queries no stylus.
+- [Github Pages](https://pages.github.com/) - onde está hospedado esse lindo blog (se você não achou bonito, se retire! Brincadeira, pode continuar, só me manda um feedback do que não gostou).
 
 ### Por que de cada uma dessas tecnologias?
 
@@ -50,18 +50,17 @@ E para iniciar o blog, basta ter o ruby instalado na máquina, se você é usuá
 
 Durante a criação desse blog, eu cheguei a falar sobre ele para alguns amigos, quando disse que estava utilizando Jekyll, alguns me pediram dicas de como usar e outras coisas mais. Então eu vou criar um post mais completo, explicando não só o passo a passo para instalar, mas como ele funciona, ferramentas para se trabalhar melhor com ele e outras coisinhas mais. Se você tem interesse em saber mais sobre o Jekyll, aguarda que logo logo tem post sobre ele.
 
-
 #### GulpJS
 
 Definitivamente meu automatizador favorito, seja pela velocidade, seja pela facilidade com que é de se escrever para ele. Junto com ele utilizei os seguintes plugins:
 
-* [Browser Sync](https://browsersync.io/docs/gulp) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading, depois que conheci essa ferramenta me apaixonei, se você não conhece, corre para olhar, é fantástica.
-* [Gulp-stylus](https://www.npmjs.com/package/gulp-stylus) - para compilar meu lindo Stylus
-* [Gulp-uglify](https://www.npmjs.com/package/gulp-uglify) - minificar o js
-* [Gulp-concat](https://www.npmjs.com/package/gulp-concat) - concatenar os arquivos
-* [Gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin) - minificar todas as minhas imagens
+- [Browser Sync](https://browsersync.io/docs/gulp) - permite sincronizar todos os meus aparelhos e ainda fazer livereloading, depois que conheci essa ferramenta me apaixonei, se você não conhece, corre para olhar, é fantástica.
+- [Gulp-stylus](https://www.npmjs.com/package/gulp-stylus) - para compilar meu lindo Stylus
+- [Gulp-uglify](https://www.npmjs.com/package/gulp-uglify) - minificar o js
+- [Gulp-concat](https://www.npmjs.com/package/gulp-concat) - concatenar os arquivos
+- [Gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin) - minificar todas as minhas imagens
 
-Se quiser entender melhor como eu fiz toda essa bagunça funcionar, só abrir o meu [Gulpfile.js](https://github.com/willianjusten/willianjusten.github.io/blob/master/gulpfile.js)
+Se quiser entender melhor como eu fiz toda essa bagunça funcionar, só abrir o meu [Gulpfile.js](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/gulpfile.js)
 
 #### SVG
 
@@ -75,16 +74,15 @@ Para esse blog, eu não poderia deixar de usar SVG, sendo assim, todos os ícone
 
 Eu poderia ficar um post inteiro explicando os motivos de se utilizar SVG, mas os motivos para utilizar SVG no blog foram:
 
-1- Mais leve, segue o arquivo SVG minificado utilizado, tendo somente 6.52kb, [svg-icons.html](https://github.com/willianjusten/willianjusten.github.io/blob/master/_includes/svg-icons.html)
+1- Mais leve, segue o arquivo SVG minificado utilizado, tendo somente 6.52kb, [svg-icons.html](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/_includes/svg-icons.html)
 
 2- [Funciona bem na maioria dos navegadores](http://caniuse.com/#search=svg) (ao menos os que desejo alcançar) e não tem erros bizarros quando demora para carregar, como os font-icons. Segue uma imagem com um bug bem comum dos font-icons.
 
 ![Imagem mostrando o Bug que o font-icon tem quando demora a carregar ou não é compatível](https://i.stack.imgur.com/vZhku.png)
 
-
 #### Stylus
 
-Praticamente o pre-processador mais desconhecido entre os grandes e na minha opinião o melhor deles também. Versátil, com centenas de opções e ainda fácil para quem já escreve seguindo indentação, como feito em Python, Ruby, Jade. Fui conhecer essa belezura ano passado através de um post da [Ju Gonçalves](http://jugoncalv.es/), ela se não me engano foi uma primeiras pessoas que eu vi falando sobre Stylus no Brasil, aqui fica meu obrigado por ter me mostrado <3
+Praticamente o pre-processador mais desconhecido entre os grandes e na minha opinião o melhor deles também. Versátil, com centenas de opções e ainda fácil para quem já escreve seguindo indentação, como feito em Python, Ruby, Jade. Fui conhecer essa belezura ano passado através de um post da Ju Gonçalves, ela se não me engano foi uma primeiras pessoas que eu vi falando sobre Stylus no Brasil, aqui fica meu obrigado por ter me mostrado <3
 
 Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em cima. O Jeet por ser um grid semântico (lê-se nada de col-md-xs-lg-motherfucker). O Rupture, para evitar de escrever @media direto e o Kouto Swiss, que possui várias e várias funções bem legais para trabalhar. Segue abaixo um exemplo de um trecho utilizando o poder desses 3 em conjunto:
 
@@ -125,4 +123,4 @@ O Pages te dá duas opções, criar páginas pessoais, a partir de um repositór
 
 ## Concluindo essa primeira parte
 
-Bom, essa foi uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido, é importante lembrar que foram escolhas minhas e dentro de um projeto específico. Não vá pensando que essa é a combinação perfeita para tudo, porque não é. Se tiverem alguma dúvida quanto a algo que eu falei, só mandar um comentário aqui embaixo ou se estiver muito tímido, pode mandar uma DM no meu twitter [@willian_justen](https://twitter.com/willian_justen) ou um email para [willianjustenqui@gmail.com](mailto:willianjustenqui@gmail.com). Na segunda parte eu irei falar um pouco das técnicas que utilizei e até algumas descobertas que fiz pelo caminho. Se não quiser perder nenhum post, só assinar o [RSS](https://willianjusten.com.br/feed.xml).
+Bom, essa foi uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido, é importante lembrar que foram escolhas minhas e dentro de um projeto específico. Não vá pensando que essa é a combinação perfeita para tudo, porque não é. Se tiverem alguma dúvida quanto a algo que eu falei, só mandar um comentário aqui embaixo ou se estiver muito tímido, pode mandar uma DM no meu twitter [@willian_justen](https://twitter.com/willian_justen) ou um email para [willianjustenqui@gmail.com](mailto:willianjustenqui@gmail.com). Na segunda parte eu irei falar um pouco das técnicas que utilizei e até algumas descobertas que fiz pelo caminho. Se não quiser perder nenhum post, só assinar o [RSS](https://willianjusten.com.br/sitemap.xml).

@@ -87,7 +87,6 @@ As vezes você não quer seguir a risca nenhum desses métodos, mas quer parar d
 
 * [Write Code Every Day](http://ejohn.org/blog/write-code-every-day/) - John Resig diz como resolveu programar um pouco a cada dia.
 * [How I finally learned to build stuff with Rails](https://medium.com/@mackenziechild/how-i-finally-learned-rails-95e9b832675b) - Mackenzie Child dá algumas dicas de como fez para aprender Rails
-* [Sahayalkabov](http://sahatyalkabov.com/) - esse programador relata todas as semanas que passou na NYC Hacker School e tudo que aprendeu (O cara tem mais de 400 dias seguindo contribuindo no Github!!!)
 * [Jennifer Dewalt](http://blog.jenniferdewalt.com/) - essa programadora mostra a sua experiência de fazer 1 site por dia durante 180 dias!
 
 ### Conclusão

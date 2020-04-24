@@ -19,7 +19,7 @@ introduction: "Uma continuação sobre a criação do meu blog, mostrando um pas
 
 Na primeira parte eu passei as tecnologias que eu utilizei e o porquê delas, nessa segunda parte eu vou mostrar o passo a passo para montar o ambiente e criar o seu projeto a partir do zero.
 
-Se você quiser pular todo o blá blá blá e ver só o [código fonte](https://github.com/willianjusten/willianjusten.github.io)
+Se você quiser pular todo o blá blá blá e ver só o [código fonte](https://github.com/willianjusten/will-jekyll-template/)
 
 **Aviso! Este post é bastante extenso, vai lá pegar seu café esperto e volta!**
 
