@@ -7230,7 +7230,7 @@ gatsby-transformer-sqip@^2.2.6:
     p-queue "^2.4.2"
     sqip "^0.3.3"
 
-gatsby@^2.20.4:
+gatsby@^2.20.29:
   version "2.20.29"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.20.29.tgz#6f19309e911684599577dc6924961e058d123909"
   integrity sha512-Bk0HPaxQGSC8RHykg2i6ypKCsTQzKnzpQ+lkz56TMSggcifdQDwZbJtYwI/qr4Se4RJHQmEIjJq6kN79qQcOvQ==
