@@ -85,7 +85,6 @@ const pluginConfig = [
   },
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-netlify`,
-  `gatsby-plugin-netlify-cache`,
   {
     resolve: `gatsby-plugin-feed`,
     options: {
