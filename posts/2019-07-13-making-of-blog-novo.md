@@ -1,7 +1,7 @@
 ---
 layout: post
 date: '2019-07-13 10:43:12'
-image: /assets/img/new-blog.png
+image: /assets/img/img/new-blog.png
 title: Making of - Blog Novo
 description: >-
   Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
@@ -32,11 +32,11 @@ Bom, a ideia nesse post é falar as tecnologias novas que usei e o porquê delas
 
 Bom, se você ainda se lembra do blog antigo, ele tinha um menu hamburguer que acabava escondendo alguns dos links e com isso perdiam alguns cliques. O blog iniciava claro e então você poderia escolher para mudar para o Dark Mode e a lâmpada ficava sempre no bottom, as vezes escondendo um pouco do conteúdo atrás. Eu coloquei um evento para identificar qual tema era mais utilizado (Dark ou Light) e com quase 80% o Dark mode ganhou, então, por isso eu decidi colocá-lo como padrão. Abaixo segue um screenshot do blog antigo:
 
-![Screenshot da home antiga, tela branca e cards brancos. ](/assets/blog-antigo.png)
+![Screenshot da home antiga, tela branca e cards brancos. ](/assets/img/blog-antigo.png)
 
 No blog novo, meu objetivo era trazer alguns links meus já para o primeiro olhar da pessoa, por isso adicionei as minhas redes sociais, onde não pude deixar de incluir o [Unsplash](https://unsplash.com/@willianjusten), que é onde boto as minhas fotos de viagem, que são uma grande paixão que tenho atualmente. Além desses links, também já deixei aparente os links para [cursos](https://willianjusten.com.br/cursos/) e [séries](https://willianjusten.com.br/series/), que são partes bastante importantes no blog para mim. Se você entrou por esse post e num viu a home, fica abaixo um screenshot dela:
 
-![Screenshot do blog novo, com interface escura e os posts em lista.](/assets/blogo-novo.png)
+![Screenshot do blog novo, com interface escura e os posts em lista.](/assets/img/blogo-novo.png)
 
 Outra grande mudança na estrutura, foi a adição dessa barra de ações na lateral, assim fica mais fácil de usar a busca, mudar o tema e uma feature que há muito me pediam também (de ir para o topo, já que meus posts são imensos).
 
@@ -152,7 +152,7 @@ Mas como fazer isso funcionar no Gatsby? Quando eu li pela primeira vez, eu vi q
 
 Depois de instalar o plugin e configurar no arquivo `gatsby-config.js` (que é o arquivo onde todos os plugins e configurações são feitas), bastou subir o servidor e eu podia ver todos os dados lá no `http://localhost:8000/___graphql`. Abaixo fica uma imagem de como isso fica:
 
-![Screenshot da interface do GraphQLi, onde eu tenho uma query buscando por vários dados de todos os posts](/assets/gatsby-graphql-remark.png)
+![Screenshot da interface do GraphQLi, onde eu tenho uma query buscando por vários dados de todos os posts](/assets/img/gatsby-graphql-remark.png)
 
 ## Search usando o Algolia
 
@@ -162,7 +162,7 @@ Para corrigir isso, eu resolvi utilizar o [Algolia](https://algolia.com), eles s
 
 Ele possui vários planos, e o que eu uso é o Community, que é gratuito e já me permite 50 mil operações por mês, o que é bem suficiente para o tamanho do meu blog. Além disso, ele me dá alguns dados relacionados a que tipos de buscas foram feitas, isso me ajuda a saber o que as pessoas procuram e se eu não tiver nada do assunto, posso começar a escrever! Olha só a dica. Abaixo segue um screenshot sobre essa parte dos analytics:
 
-![Imagem mostrando o analytics do algolia](/assets/algolia-search.png)
+![Imagem mostrando o analytics do algolia](/assets/img/algolia-search.png)
 
 Um detalhe **muito importante**, é que o plugin oficial do Algolia não trabalha com cache e partial updates, então toda vez que você faz um build, ele apaga todos os índices e refaz. Isso é péssimo, pois nós só temos 50 mil operações e oras, se eu num fiz nada novo, num faz sentido refazer. O legal é que existe um fork desse plugin que faz exatamente o que queremos, o plugin é o [gatsby-plugin-algolia-search](https://www.npmjs.com/package/gatsby-plugin-algolia-search), ele não muda em nada na configuração, somente essa parte de partial updates.
 
@@ -188,15 +188,15 @@ Abaixo segue alguns screenshots de como funcionam as interfaces:
 
 ### Lista de Posts no CMS
 
-![Lista de Posts no CMS](/assets/cms-posts.png)
+![Lista de Posts no CMS](/assets/img/cms-posts.png)
 
 ### Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar
 
-![Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar](/assets/workflow-cms.png)
+![Parte de Workflow, para definir os rascunhos, revisando e prontos para lançar](/assets/img/workflow-cms.png)
 
 ### Preview do Post
 
-![Preview do Post](/assets/preview-cms.png)
+![Preview do Post](/assets/img/preview-cms.png)
 
 Como pode ver, é uma interface super simples, mas super funcional! E o legal que dá para extender, criar seus próprios componentes e tudo!
 
@@ -235,7 +235,7 @@ Para fazer meu blog virar um PWA foi muito muito fácil. Sério mesmo, não tive
 
 Como disse no início, o Gatsby faz várias otimizações no momento do build do site. Ele minifica tudo, separa o css para ter critical inline, faz renderização assíncrona, além de fazer preload dos links, para ter uma sensação de abertura instantânea quando clicamos. Com isso, se [medirmos a performance com o Lighthouse](https://willianjusten.com.br/medindo-performance-do-seu-site-com-lighthouse/), vamos ter notas super altas. Segue abaixo o meu:
 
-![Uma imagem mostrando notas 100 em todos os quesitos no lighthouse](/assets/ligthouse-perf-novo.png)
+![Uma imagem mostrando notas 100 em todos os quesitos no lighthouse](/assets/img/ligthouse-perf-novo.png)
 
 ## Conclusão
 
