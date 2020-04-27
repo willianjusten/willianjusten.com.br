@@ -6,8 +6,6 @@ import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube'
 import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
 import { GraduationCap } from '@styled-icons/fa-solid/GraduationCap'
-import { ThList } from '@styled-icons/typicons/ThList'
-import { Grid } from '@styled-icons/boxicons-solid/Grid'
 
 import getThemeColor from '../../utils/getThemeColor'
 
@@ -16,22 +14,17 @@ import * as GA from './trackers'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
-  const [display, setDisplay] = useState(null)
 
   const isDarkMode = theme === 'dark'
-  const isListMode = display === 'list'
 
-  if (theme !== null && display !== null) {
+  if (theme !== null) {
     GA.themeTracker(theme)
-    GA.displayTracker(display)
   }
 
   useEffect(() => {
     setTheme(window.__theme)
-    setDisplay(window.__display)
 
     window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
   return (
@@ -106,15 +99,6 @@ const MenuBar = () => {
           isDarkMode={isDarkMode}
         >
           <Light />
-        </S.MenuBarItem>
-        <S.MenuBarItem
-          title="Mudar visualização"
-          onClick={() => {
-            window.__setPreferredDisplay(isListMode ? 'card' : 'list')
-          }}
-          className="display"
-        >
-          {!isListMode ? <ThList /> : <Grid />}
         </S.MenuBarItem>
         <S.MenuBarItem
           title="Ir para o Topo"

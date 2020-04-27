@@ -25,15 +25,6 @@ export const themeTracker = theme => {
   })
 }
 
-export const displayTracker = display => {
-  ReactGA.event({
-    category: 'display',
-    action: 'view',
-    label: `Usa ${display} view`,
-    nonInteraction: true
-  })
-}
-
 export const topClickTrack = () => {
   ReactGA.event({
     category: 'top',

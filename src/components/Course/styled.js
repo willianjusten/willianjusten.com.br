@@ -2,7 +2,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions';
+import transitions from '../../styles/transitions'
 
 export const ImageWrapper = styled(Img)`
   border-radius: 50%;
@@ -22,13 +22,6 @@ export const CourseWrapper = styled.section`
   padding: 2rem 3rem;
   width: 100%;
 
-  body#card & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   ${media.lessThan('large')`
     flex-direction: column;
     padding: 2rem 1rem;
@@ -40,10 +33,6 @@ export const CourseLink = styled.a`
   display: flex;
   text-decoration: none;
   transition: ${transitions.COLOR};
-
-  body#card & {
-    background-color: var(--background);
-  }
 
   &:hover {
     color: var(--highlight);

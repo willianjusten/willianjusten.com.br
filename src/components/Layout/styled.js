@@ -19,12 +19,6 @@ export const LayoutMain = styled.main`
   transition: ${transitions.DEFAULT};
   width: 100%;
 
-  body#card & {
-    grid-template-areas:
-      'cards'
-      'pagination';
-  }
-
   ${media.lessThan('large')`
     padding: 0 0 3rem 0;
   `}
