@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-04-28 02:38:15
-image: assets/img/responsive-text-cover.png
+image: /assets/img/responsive-text-cover.png
 title: Criando Textos Responsivos com CSS
 description: Aprenda a deixar seus textos responsivos e fluidos em qualquer tela
   com viewport units e funções min-max do CSS.
@@ -10,7 +10,7 @@ introduction: Aprenda a deixar seus textos responsivos e fluidos em qualquer
 twitter_text: Aprenda a deixar seus textos responsivos e fluidos em qualquer
   tela com viewport units e funções min-max do CSS.
 main-class: css
-color: "#2DA0C3"
+color: '#2DA0C3'
 tags:
   - css
   - videos
@@ -18,6 +18,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal! Continuando as nossas [Dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), hoje iremos aprender sobre um tema extremamente importante! Os famososo **textos responsivos**!
@@ -32,7 +33,7 @@ Você pode ver [a demo do vídeo aqui](https://labs.willianjusten.com.br/respons
 
 ## Vídeo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FDWmTsL8URA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FDWmTsL8URA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Conclusão
 
