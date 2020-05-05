@@ -6,13 +6,14 @@ import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube'
 import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
 import { GraduationCap } from '@styled-icons/fa-solid/GraduationCap'
+import { Menu } from '@styled-icons/boxicons-regular/Menu'
 
 import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
 import * as GA from './trackers'
 
-const MenuBar = () => {
+const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   const [theme, setTheme] = useState(null)
 
   const isDarkMode = theme === 'dark'
@@ -26,6 +27,11 @@ const MenuBar = () => {
 
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
+
+  const openMenu = () => {
+    GA.menuTracker()
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
     <S.MenuBarWrapper>
@@ -54,32 +60,42 @@ const MenuBar = () => {
             <Search />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink
-          to="/cursos/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          title="Cursos"
-          activeClassName="active"
-        >
-          <S.MenuBarItem onClick={() => GA.courseClickTrack()}>
-            <GraduationCap />
-            <S.MenuBarNotification />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-        <S.MenuBarExternalLink
-          title="YouTube Videos"
-          href="https://www.youtube.com/WillianJustenCursos/"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => GA.youTubeClickTrack()}
-        >
-          <S.MenuBarItem>
-            <Youtube />
-            <S.MenuBarNotification />
-          </S.MenuBarItem>
-        </S.MenuBarExternalLink>
+        <S.MenuBarGroupDesktop>
+          <S.MenuBarLink
+            to="/cursos/"
+            cover
+            direction="right"
+            bg={getThemeColor()}
+            title="Cursos"
+            activeClassName="active"
+          >
+            <S.MenuBarItem onClick={() => GA.courseClickTrack()}>
+              <GraduationCap />
+              <S.MenuBarNotification />
+            </S.MenuBarItem>
+          </S.MenuBarLink>
+          <S.MenuBarExternalLink
+            title="YouTube Videos"
+            href="https://www.youtube.com/WillianJustenCursos/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => GA.youTubeClickTrack()}
+          >
+            <S.MenuBarItem>
+              <Youtube />
+              <S.MenuBarNotification />
+            </S.MenuBarItem>
+          </S.MenuBarExternalLink>
+        </S.MenuBarGroupDesktop>
       </S.MenuBarGroup>
+
+      <S.MenuBarGroupMobile>
+        <S.MenuBarGroup>
+          <S.MenuBarItem title="Abrir Menu" onClick={openMenu}>
+            <Menu />
+          </S.MenuBarItem>
+        </S.MenuBarGroup>
+      </S.MenuBarGroupMobile>
 
       <S.MenuBarGroup>
         <S.MenuBarItem

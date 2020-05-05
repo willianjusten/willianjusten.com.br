@@ -6,9 +6,9 @@ import * as S from './styled'
 
 import getThemeColor from '../../utils/getThemeColor'
 
-const Profile = ({ title, position, authorDescription }) => {
+const Profile = ({ title, position, authorDescription, isMobileHeader }) => {
   return (
-    <S.ProfileContainer>
+    <S.ProfileContainer isMobileHeader={isMobileHeader}>
       <S.ProfileLink
         to="/"
         cover

@@ -18,9 +18,19 @@ export const SidebarContainer = styled.aside`
 
   ${media.lessThan('large')`
     align-items: flex-start;
-    height: auto;
-    padding: 1rem;
+    border: 0;
+    height: calc(100% - 50px);
+    padding: 0;
     position: inherit;
     width: 100%;
+    transform: ${props =>
+      props.isMenuOpen ? 'translateX(0)' : 'translateX(-100vw)'};
   `}
+`
+
+export const SidebarLinksContainer = styled.section`
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
 `

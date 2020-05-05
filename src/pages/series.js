@@ -5,6 +5,7 @@ import slugify from 'slugify'
 import { unique } from '../utils/index'
 
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
@@ -16,6 +17,11 @@ const SeriesTitle = styled.h2`
   font-size: 2rem;
   font-weight: 700;
   padding: 1rem 4.4rem;
+
+  ${media.lessThan('large')`
+    font-size: 1.5rem;
+    padding: 1rem;
+  `}
 `
 
 const SeriesPage = props => {

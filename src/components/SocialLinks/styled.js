@@ -8,7 +8,8 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   ${media.lessThan('large')`
-    display: none;
+    order: 2;
+    margin: 0 0 1rem;
   `}
 `
 

@@ -7,15 +7,22 @@ import MenuLinks from '../MenuLinks'
 
 import * as S from './styled'
 
-const Sidebar = ({ site: { title, position, authorDescription } }) => (
-  <S.SidebarContainer>
+const Sidebar = ({
+  site: { title, position, authorDescription },
+  isMenuOpen,
+  setIsMenuOpen
+}) => (
+  <S.SidebarContainer isMenuOpen={isMenuOpen}>
     <Profile
       title={title}
       position={position}
       authorDescription={authorDescription}
+      isMobileHeader={false}
     />
-    <SocialLinks />
-    <MenuLinks />
+    <S.SidebarLinksContainer>
+      <SocialLinks />
+      <MenuLinks setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+    </S.SidebarLinksContainer>
   </S.SidebarContainer>
 )
 

@@ -25,6 +25,14 @@ export const themeTracker = theme => {
   })
 }
 
+export const menuTracker = () => {
+  ReactGA.event({
+    category: 'menu',
+    action: 'click',
+    label: 'Link Menu na Menu Bar'
+  })
+}
+
 export const topClickTrack = () => {
   ReactGA.event({
     category: 'top',
