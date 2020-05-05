@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Como se tornar um desenvolvedor Front End"
+title: 'Como se tornar um desenvolvedor Front End'
 date: 2015-02-24 15:46:24
 image: '/assets/img/quero-ser-desenvolvedor-frontend/main.png'
-description: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade."
+description: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade.'
 main-class: 'dev'
 color: '#637a91'
 tags:
-- frontend
-- css
-- js
-- tutorial
+  - frontend
+  - css
+  - js
+  - tutorial
 categories:
-twitter_text: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade."
-introduction: "Aprenda os caminhos para virar um desenvolvedor Front End de qualidade, seguindo desde o básico, ao intermediário e avançado. Vendo desde o HTML, CSS e JS até Ferramentas de automação e Performance."
+twitter_text: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade.'
+introduction: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade, seguindo desde o básico, ao intermediário e avançado. Vendo desde o HTML, CSS e JS até Ferramentas de automação e Performance.'
 ---
 
 ## Índice
@@ -36,7 +36,6 @@ introduction: "Aprenda os caminhos para virar um desenvolvedor Front End de qual
 - [Automação de Tarefas](#task)
 - [Mantenha-se Atualizado](#update)
 - [Dicas](#dicas)
-
 
 <h2 id="intro">Introdução</h2>
 
@@ -80,7 +79,7 @@ Acho que uma imagem já fala mais que mil palavras né? A busca por desenvolvedo
 
 Olha, definir níveis de conhecimento, seja para qualquer profissão é algo bastante complicado, porque depende do que você vai se especializar. Eu meio que fiz uma separação mais ou menos de alguns assuntos que julgo necessários para cada nível de desenvolvedor. Terão alguns **extras**, que são assuntos interessantes, mas não fundamentais para aquele nível. Lembrando que os níveis mais altos compreendem tudo dos níveis anteriores.
 
->Lembre-se: essas informações podem variar bastante de lugar para lugar.
+> Lembre-se: essas informações podem variar bastante de lugar para lugar.
 
 ### Iniciante Básico
 
@@ -132,7 +131,7 @@ Vou separar aqui as principais áreas que precisamos estudar, o porquê delas e 
 
 Sim, uma das coisas mais importantes para se tornar um bom desenvolvedor é saber inglês. É claro que eu não estou falando que você precisa ser fluente como um americano legítimo de início, mas saber ler e assistir vídeos vai te ajudar muito, visto que a maioria do material vai estar em inglês, você querendo ou não. Não fique mendigando informações só na sua língua, saia do comodismo e vá aprender inglês, vai por mim, vai ser o melhor investimento que você pode fazer. Sobre como aprender inglês, existem vários métodos, desde os cursos tradicionais até programinhas para te ensinar. Dependendo do seu nível, eu recomendo fortemente um professor particular, pois ele poderá focar exatamente nas suas deficiências e você conseguirá evoluir bem rápido. Aqui vão alguns links legais falando do assunto:
 
-- [Como aprender inglês](http://leandrooriente.com/como-aprender-ingles/)
+- [Como aprender inglês](https://carlosschults.net/pt/como-aprender-ingles-parte-1/)
 - [Será que realmente o profissional de TI deve aprender inglês?](http://www.adamsilva.com.br/carreira/sera-que-realmente-o-profissional-de-ti-deve-aprender-ingles/)
 
 ---
@@ -182,6 +181,7 @@ Se você quer ser realmente um programador bom, vai ter que largar esse medo e c
 A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvolvedor precisa saber ao menos o básico de html, inclusive a galera de backend. Já para galera de frontend, temos que nos atentar a mais detalhes, como: acessibilidade e semântica.
 
 #### Básico
+
 - [Codecademy HTML](https://www.codecademy.com/catalog/language/html-css)
 - [Dash](https://dash.generalassemb.ly/)
 - [Teamtreehouse](http://teamtreehouse.com/library/topic:learn-html/type:course)
@@ -192,11 +192,13 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [Dive into Html5 em Português](https://diveintohtml5.com.br/)
 
 #### Semântica
+
 - [Use Html5 sectioning elements](http://blog.teamtreehouse.com/use-html5-sectioning-elements)
 - [SEO, Semântica e Html5](http://www.slideshare.net/fabioflat/seo-semantica-e-html5-12901651)
 - [A semântica do HTML](https://speakerdeck.com/diegoeis/a-semantica-do-html)
 
 ### Acessibilidade
+
 - [Slides de Acessibilidade na web](https://tableless.com.br/slides-para-devs-9-acessibilidade-na-web/)
 - [WebAIM](http://webaim.org/intro/)
 
@@ -282,12 +284,14 @@ Quantas vezes você já se pegou fazendo 1000 backups só para não perder certa
 A maioria das empresas utiliza um desses dois para poder organizar melhor seu código, além de poder versionar, o git permite um controle dos colaboradores, controle de flow, separação em branches e muito mais.
 
 #### Básico
+
 - [Meu curso de Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
 - [Try Git - Code School](https://try.github.io/levels/1/challenges/1)
 - [Guia prático](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 - [Introdução ao git e github - Vídeo](https://www.youtube.com/watch?v=yNwh0S0S0bU)
 
 #### Intermediário/Avançado
+
 - [A web-focused git workflow](http://joemaller.com/990/a-web-focused-git-workflow/)
 - [Deploy web applications easily with svn](http://taylorjasko.com/deploy-web-applications-easily-with-svn/)
 
@@ -377,7 +381,7 @@ Para quem está começando é sempre um pouquinho complicado saber por onde come
 - Vai com calma, estude no seu tempo, aprecie um tempo de estudo, mas também seu lazer. O mundo não vai acabar se você não conseguir estudar tudo que quer.
 - Se afobar para querer o aprendizado a todo custo é uma péssima ideia. Aprenda na medida do possível, respeitando o seu limite e praticando sempre que puder.
 - Pegue as coisas que você gosta, separe, estude a base daquilo e faça pequenos experimentos, porque a prática leva a perfeição. E se puder, passe adiante o que aprendeu, que será ainda mais recompensado.
--Na programação: a leitura vale prata e a prática vale ouro.
+  -Na programação: a leitura vale prata e a prática vale ouro.
 
 ---
 
