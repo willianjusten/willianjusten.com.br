@@ -2,7 +2,7 @@
 layout: post
 date: 2020-05-06 09:25:35
 image: /assets/img/iphone-area-cover.jpg
-title: Trabalhando com a tela util do iPhone
+title: Trabalhando com a tela útil do iPhone
 description: Como lidar com o notch no topo e a navegação sem botões na parte
   inferior do iPhone num Web App.
 introduction: Como lidar com o notch no topo e a navegação sem botões na parte
@@ -10,11 +10,12 @@ introduction: Como lidar com o notch no topo e a navegação sem botões na part
 twitter_text: Como lidar com o notch no topo e a navegação sem botões na parte
   inferior do iPhone num Web App.
 main-class: dev
-color: "#637a91"
+color: '#637a91'
 tags:
   - iphone
   - webview
 ---
+
 ## Introdução
 
 Fala pessoal, o post de hoje é sobre uma coisa bem interessante que eu não tinha a menor ideia e acabei de descobrir! Espero que também seja novidade para vocês, se num for, ~~finjam que é~~ tudo bem xD
@@ -27,7 +28,7 @@ Um aluno [escreveu um tweet](https://twitter.com/brenonovelli/status/12576788900
 
 Aproveitei que estava com tempo livre e resolvi fazer. Se você nunca viu meu site no celular, segue abaixo um gif do antes/depois:
 
-![Um gif mostrando um site com uma barra inferior antes possuindo vários icones e agora com menos e um menu abrindo e fechando, vindo da lateral.](/assets/img/menubar-before-after.gif "Um gif mostrando um site com uma barra inferior antes possuindo vários icones e agora com menos e um menu abrindo e fechando, vindo da lateral.")
+![Menubar antes/depois com mais e menos ícones e uma sidebar vindo da lateral](/assets/img/menubar-before-after.gif)
 
 ## Problema do iPhone X
 
@@ -42,7 +43,7 @@ Antes mesmo o site já tinha problemas com isso, mas ninguém nunca havia me rep
 Para resolver esse problema é bem fácil até. A primeira coisa que precisamos fazer é identificar essa área útil e alterar o valor da `viewport` para identificar e ocupar toda a área, isso é feito adicionando o `viewport-fit=cover` na tag que utilizamos no nosso `head`:
 
 ```html
-<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 ```
 
 Depois disso, nós precisamos respeitar as chamadas `safe areas` do iphone, abaixo segue uma imagem explicando:
@@ -55,7 +56,7 @@ Sabendo qual variável precisamos trabalhar, é só escrever o css da seguinte f
 
 ```css
 .menu-bar {
-    padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 ```
 
