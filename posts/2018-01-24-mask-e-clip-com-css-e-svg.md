@@ -45,7 +45,7 @@ Já entendendo a teoria, vamos logo para prática, porque é o que importa. É p
 
 Uma das formas disponíveis é o [Clip-path do CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path), mas que a [compatibilidade](https://caniuse.com/#feat=css-clip-path) ainda é um pouco baixa. Segue abaixo um exemplo:
 
-https://codepen.io/willianjusten/pen/bayPyB/
+https://codepen.io/willianjusten/pen/bayPyB
 
 Como você pode ver, eu utilizei duas classes com a propriedade `clip-path`:
 
@@ -67,7 +67,7 @@ Para o `.circle`, o primeiro valor é o tamanho do Raio e o segundo é a coorden
 
 Enquanto o `clip-path` do CSS não é compatível em tudo, usando SVG você alcança a compatibilidade em tudo, visto que ele usa SVG por natureza, que segue a seguinte [compatibilidade](https://caniuse.com/#feat=svg).
 
-https://codepen.io/willianjusten/pen/vpwodK/
+https://codepen.io/willianjusten/pen/vpwodK
 
 Para fazer funcionar, é extremamente similar ao feito com o CSS, mas a diferença é que a forma é criada no SVG, segue abaixo o código:
 
@@ -99,13 +99,13 @@ Diferente do `clip-path` que definimos as "bordas" de onde queremos ter a imagem
 
 Para criar as máscaras, nós utilizamos o `<mask>` do SVG e a propriedade `mask` do css. Segue abaixo um exemplo:
 
-https://codepen.io/willianjusten/pen/rpENJY/
+https://codepen.io/willianjusten/pen/rpENJY
 
 Como podemos ver no exemplo, possuímos `3 componentes`, o primeiro elemento é a imagem `.background`, depois temos o retângulo `.base` que é o cara que fica por cima da imagem e onde iremos aplicar a `#mask`, que é o que faz a mágica acontecer. Dentro da `#mask` nós temos o `.alpha` que é responsável por criar a transparência da máscara, quanto mais próximo de `#000` (preto) fica mais transparente e quanto mais próximo de `#fff` (branco), mais opaco fica e o nosso texto, que convenientemente usamos o `<text>` do SVG. E para tudo funcionar, é só usar `mask: url(#mask);`.
 
 O legal é que as máscaras funcionam não só com imagens estáticas, mas podem ter animações e até vídeos! Segue abaixo um exemplo onde o fundo é um gradiente sendo animado:
 
-https://codepen.io/willianjusten/pen/xpobbm/
+https://codepen.io/willianjusten/pen/xpobbm
 
 Repare que no exemplo acima, a base é a mesma, possuímos um `<mask>` no SVG que contém o texto e essa máscara é aplicada em outro elemento usando `mask: url('#mask');`.
 
@@ -115,7 +115,7 @@ Ou seja, a base sempre será a mesma, tenha um svg com `<mask>` e assinale essa 
 
 E por último, você pode ter também o `mask-image`, onde você determina no css a forma base que vai compôr com a imagem, lembra bastante o `clip-path`. Abaixo segue um exemplo:
 
-https://codepen.io/willianjusten/pen/jYjEXp/
+https://codepen.io/willianjusten/pen/jYjEXp
 
 Como você pode ver, nós temos a `img` que vai conter a imagem que nós queremos mostrar e no css nós definimos o `mask-image` que é a forma/ícone onde vamos inserir a imagem. Temos as seguintes linhas de código:
 
