@@ -56,6 +56,15 @@ No seu arquivo `netlify.toml` na raiz do projeto, adicione o seguinte:
   package = "netlify-plugin-gatsby-cache"
 ```
 
+E instale o `netlify-plugin-gatsby-cache` no seu projeto com o comando:
+
+```bash
+npm install netlify-plugin-gatsby-cache
+
+// ou se usar yarn
+yarn add netlify-plugin-gatsby-cache
+```
+
 ### Passo 4 - Adicione a flag para habilitar o Gatsby incremental builds
 
 Atualize o comando de `build` no seu `package.json` para incluir a seguinte flag:
