@@ -26,6 +26,7 @@ export const MenuBarWrapper = styled.aside`
     flex-direction: row;
     height: auto;
     padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     position: fixed;
     width: 100%;
   `}
