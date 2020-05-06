@@ -117,6 +117,7 @@ export const MainContent = styled.section`
 
   img {
     display: block;
+    width: auto;
     max-width: 100%;
     margin: 1.875rem auto;
   }
