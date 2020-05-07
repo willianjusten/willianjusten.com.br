@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-07 06:17:19
+date: 2020-05-07T06:17:19.000Z
 image: /assets/img/dracula-cover.png
 title: "Um tema para todos os lugares: Dracula PRO"
 description: Deixe seu editor, terminal e muito mais com seu tema favorito.
@@ -36,7 +36,7 @@ Para o Dracula PRO, ele fez um estudo mais profundo na teoria de cores, para esc
 
 Além disso, ele escolheu 4 fontes que funcionassem perfeitamente com o tema e que dessem suporte a ligatures, você pode ver no vídeo abaixo o que é:
 
-<video width="480" height="320" controls="false">
+<video autoplay muted loop styled="display: block; margin: auto">
   <source src="https://draculatheme.com/static/video/ligatures.mp4" type="video/mp4">
 </video>
 
