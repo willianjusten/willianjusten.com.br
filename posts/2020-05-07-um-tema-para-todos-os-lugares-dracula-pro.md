@@ -36,7 +36,7 @@ Para o Dracula PRO, ele fez um estudo mais profundo na teoria de cores, para esc
 
 Além disso, ele escolheu 4 fontes que funcionassem perfeitamente com o tema e que dessem suporte a ligatures, você pode ver no vídeo abaixo o que é:
 
-<video autoplay muted loop styled="display: block; margin: auto">
+<video autoplay muted loop style="display: block; margin: 20px auto; max-width: 80%">
   <source src="https://draculatheme.com/static/video/ligatures.mp4" type="video/mp4">
 </video>
 
