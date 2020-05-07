@@ -23,6 +23,8 @@ Fala pessoal! Continuando as nossas [Dicas de CSS](https://willianjusten.com.br/
 
 E para criar nossa interação, nós vamos utilizar o `clip-path`, se você nunca utilizou, não se preocupe, no vídeo vamos aprender. Fica aqui também, [um post completo](https://willianjusten.com.br/mask-e-clip-com-css-e-svg/) explicando como utilizar o `clip-path` com CSS e também SVG.
 
+Você pode ver todo o [código da demo aqui](https://github.com/willianjusten/labs/blob/gh-pages/tooltip-clip-path/index.html) e pode ver [a demo rodando aqui](https://labs.willianjusten.com.br/tooltip-clip-path/).
+
 ## Vídeo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g0qr8ZGAtMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
