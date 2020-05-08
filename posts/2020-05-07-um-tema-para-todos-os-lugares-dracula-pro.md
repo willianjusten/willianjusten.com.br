@@ -1,20 +1,21 @@
 ---
 layout: post
 date: 2020-05-08 03:17:19
-image: /assets/img/dracula-cover.png
-title: "Um tema para todos os lugares: Dracula PRO"
+image: /assets/img/dracula-pro-cover.png
+title: 'Um tema para todos os lugares: Dracula PRO'
 description: Deixe seu editor, terminal e muito mais com seu tema favorito.
 introduction: Deixe seu editor, terminal e muito mais com seu tema favorito.
 twitter_text: Deixe seu editor, terminal e muito mais com seu tema favorito.
 main-class: dev
-color: "#637a91"
+color: '#637a91'
 tags:
   - vscode
   - dicas
 ---
+
 ## Introdução
 
-*Deixando claro que esse não é um post patrocinado e eu não ganho nada por isso. É somente para divulgar esse belo trabalho do Zeno Rocha.*
+_Deixando claro que esse não é um post patrocinado e eu não ganho nada por isso. É somente para divulgar esse belo trabalho do Zeno Rocha._
 
 Já tem um certo tempo que eu resolvi migrar para o Windows/Linux e utilizar um desktop ao invés do meu Macbook Pro. Inclusive fiz [um curso sobre ambiente de Desenvolvimento no Windows](https://www.youtube.com/watch?v=YcR8pKvjx44&list=PLlAbYrWSYTiOpefWtd6uvwgKT1R-94Zfd) e falei um pouquinho sobre isso [nest post](https://willianjusten.com.br/novo-curso-criando-um-ambiente-de-desenvolvimento-no-windows/).
 
@@ -24,7 +25,7 @@ Sem mais delongas, vamos lá, enquanto escrevo esse post vou ouvindo uma [cantor
 
 ## Conhecendo o Dracula
 
-O [Dracula Theme](https://draculatheme.com/) foi criado pelo [Zeno Rocha](https://zenorocha.com/) em 2013 quando ele teve o seu laptop roubado e ele precisou reconfigurar tudo. 
+O [Dracula Theme](https://draculatheme.com/) foi criado pelo [Zeno Rocha](https://zenorocha.com/) em 2013 quando ele teve o seu laptop roubado e ele precisou reconfigurar tudo.
 
 Desde então, esse é um dos temas mais utilizados de todos, tem mais de **12 mil stars no Github** e o tema foi portado para mais de **100 aplicações**! Indo desde o Sublime Text, VS Code, até mesmo o Telegram!
 
@@ -40,7 +41,7 @@ Além disso, ele escolheu 4 fontes que funcionassem perfeitamente com o tema e q
   <source src="https://draculatheme.com/static/video/ligatures.mp4" type="video/mp4">
 </video>
 
-Além disso, ainda o pacote vem com um ebook sobre produtividade, um screencast sobre produtividade usando o Alfred, wallpapers e outras coisinhas mais. 
+Além disso, ainda o pacote vem com um ebook sobre produtividade, um screencast sobre produtividade usando o Alfred, wallpapers e outras coisinhas mais.
 
 E claro, com a vantagem que você poderá ter todas as suas aplicações utilizando o mesmo sistema de cores, diminuindo muito a fricção ao mudar de janela.
 
