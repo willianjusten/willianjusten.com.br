@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-08 03:17:19
+date: 2020-05-08 07:17:19
 image: /assets/img/dracula-pro-cover.png
 title: 'Um tema para todos os lugares: Dracula PRO'
 description: Deixe seu editor, terminal e muito mais com seu tema favorito.
