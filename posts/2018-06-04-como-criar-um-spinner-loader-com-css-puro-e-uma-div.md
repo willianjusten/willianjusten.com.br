@@ -51,7 +51,7 @@ Para fazer esse loader, vamos utilizar só a `div.spinner` e iremos usar o `bord
 Como podem ver, ainda temos o `animation` ali, que vai ser o responsável por criar a animação, que é basicamente um `keyframes` fazendo uma rotação de 360 graus infinitamente:
 
 ```css
-@keyframes {
+@keyframes spin {
   to { transform: rotate(360deg); }
 }
 ```
