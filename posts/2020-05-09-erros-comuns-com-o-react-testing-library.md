@@ -324,7 +324,7 @@ const submitButton = await waitFor(() =>
 const submitButton = await screen.findByRole('button', {name: /submit/i})
 ```
 
-Essa duas pequenas partes de código são basicamente equivalentes (`find*` usa o `waitFor` embaixo dos panos), mas o segundo é mais simples e a mensagem de erro que você vai encontrar será melhor.
+Essas duas pequenas partes de código são basicamente equivalentes (`find*` usa o `waitFor` embaixo dos panos), mas o segundo é mais simples e a mensagem de erro que você vai encontrar será melhor.
 
 **Dica: use `find*` sempre que você quiser buscar por algo que talvez não esteja disponível logo de início.**
 
