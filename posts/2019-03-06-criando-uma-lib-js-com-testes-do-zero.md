@@ -23,7 +23,7 @@ tags:
 
 ## Introdução
 
-Fala pessoal, o post de hoje é mais um link para o meu [Canal no Youtube](https://www.youtube.com/WillianJustenCursos). Eu fiz uma pequena série de vídeos exatamente com o mesmo título desse post.
+Fala pessoal, o post de hoje é mais um link para o meu [Canal no Youtube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1). Eu fiz uma pequena série de vídeos exatamente com o mesmo título desse post.
 
 Tive uma demanda na Toptal para criação de um modal com vários comportamentos e notei que eles poderiam ser desacoplados do componente e reutilizados onde quisesse. Para isso criei umas pequenas bibliotecas e vi que seria interessante mostrar para vocês o processo da criação de uma delas.
 

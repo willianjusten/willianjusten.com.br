@@ -20,6 +20,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, continuando com os [vídeos de dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), hoje vai mais um vídeo bem simples, mas de uma técnica super famosa e utilizada em diversos sites.
@@ -32,4 +33,4 @@ Você pode ver a demo de hoje [nest link](https://labs.willianjusten.com.br/reve
 
 ## Conclusão
 
-Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!
+Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!

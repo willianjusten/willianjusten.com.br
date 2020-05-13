@@ -21,6 +21,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, como o [ultimo post](https://willianjusten.com.br/menu-sticky-e-smooth-scroll-com-css-puro/) que eu escrevi teve uma recepção muito legal, resolvi dar continuidade e ensinar coisinhas úteis com css, que podem ser interessantes e utilizadas no seu dia-a-dia de trabalho.
@@ -53,13 +54,13 @@ E o código que temos na aula por enquanto é, primeiro o markup html:
 
 ```html
 <body>
-    <input id="menu-hamburguer" type="checkbox">
+  <input id="menu-hamburguer" type="checkbox" />
 
-    <label for="menu-hamburguer">
-        <div class="menu">
-            <span class="hamburguer"></span>
-        </div>
-    </label>
+  <label for="menu-hamburguer">
+    <div class="menu">
+      <span class="hamburguer"></span>
+    </div>
+  </label>
 </body>
 ```
 
@@ -69,80 +70,80 @@ O nosso CSS dessa primeira parte ficou assim:
 
 ```css
 *,
-    *:before,
-    *:after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-        background: #81ecec;
-    }
+body {
+  background: #81ecec;
+}
 
-    .menu {
-        background: #fff;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-    }
+.menu {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
 
-    .hamburguer {
-        position: relative;
-        display: block;
-        background: #000;
-        width: 30px;
-        height: 2px;
-        top: 29px;
-        left: 15px;
-        transition: .5s ease-in-out;
-    }
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
 
-    .hamburguer:before,
-    .hamburguer:after {
-        background: #000;
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        transition: .5s ease-in-out;
-    }
+.hamburguer:before,
+.hamburguer:after {
+  background: #000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
 
-    .hamburguer:before {
-        top: -10px;
-    }
+.hamburguer:before {
+  top: -10px;
+}
 
-    .hamburguer:after {
-        bottom: -10px;
-    }
+.hamburguer:after {
+  bottom: -10px;
+}
 
-    input {
-        display: none;
-    }
+input {
+  display: none;
+}
 
-    input:checked ~ label .hamburguer {
-        transform: rotate(45deg);
-    }
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
 
-    input:checked ~ label .hamburguer:before {
-        transform: rotate(90deg);
-        top: 0;
-    }
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
 
-    input:checked ~ label .hamburguer:after {
-        transform: rotate(90deg);
-        bottom: 0;
-    }
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
 ```
 
 Tem ali também um "reset default", que sempre uso nesses experimentos básicos e também as `transitions` e `transforms` que foram necessários para rotacionar os elementos e criar a animação necessária.
 
 ## Conclusão
 
-Bom pessoal, espero que tenham gostado do post/vídeo, é uma nova modalidade que eu quero estar testando. E se você curtiu, não deixe de se inscrever lá no [Canal do YouTube](https://www.youtube.com/WillianJustenCursos) e também compartilhar com a galera.
+Bom pessoal, espero que tenham gostado do post/vídeo, é uma nova modalidade que eu quero estar testando. E se você curtiu, não deixe de se inscrever lá no [Canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1) e também compartilhar com a galera.
 
 Lembrando que amanhã (se você estiver lendo no dia que lancei), vai ter a segunda parte, onde eu ensino a criar o menu. Se esse dia já passou, vai ter o link aqui direitinho para o próximo post/vídeo.

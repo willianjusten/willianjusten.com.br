@@ -2,7 +2,7 @@
 layout: post
 date: 2020-05-07 10:19:46
 image: /assets/img/tooltip-clip-path.png
-title: "Criando um tooltip animado com CSS clip-path "
+title: 'Criando um tooltip animado com CSS clip-path '
 description: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
   toda a diferença no seu layout.
 introduction: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
@@ -10,13 +10,14 @@ introduction: Aprenda a fazer uma micro interação bem sútil, mas que vai faze
 twitter_text: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
   toda a diferença no seu layout.
 main-class: css
-color: "#2DA0C3"
+color: '#2DA0C3'
 tags:
   - css
   - video
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal! Continuando as nossas [Dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), hoje vamos aprender a fazer uma micro interação bem legal ao criar um tooltip.
@@ -31,4 +32,4 @@ Você pode ver todo o [código da demo aqui](https://github.com/willianjusten/la
 
 ## Conclusão
 
-Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo esses pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos/), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!
+Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo esses pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!

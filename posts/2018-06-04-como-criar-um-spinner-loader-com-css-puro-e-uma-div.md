@@ -21,6 +21,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, seguindo a mesma onda dos outros posts, eu acabei criando uma nova série chamada [Dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), que é onde eu vou estar jogando esses posts com dicas simples, porém utéis para a gente.
@@ -39,12 +40,12 @@ Para fazer esse loader, vamos utilizar só a `div.spinner` e iremos usar o `bord
 
 ```css
 .spinner {
-    border: 8px solid rgba(0, 0, 0, 0.1);
-    border-left-color: #22a6b3;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #22a6b3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 ```
 
@@ -52,7 +53,9 @@ Como podem ver, ainda temos o `animation` ali, que vai ser o responsável por cr
 
 ```css
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 ```
 
@@ -60,4 +63,4 @@ Se você quiser, o código também está lá no [Github](https://github.com/will
 
 ## Conclusão
 
-Espero que tenham curtido esse post/vídeo e lembrando, por favor, compartilhem em todas as redes sociais que puderem, manda naquele slack/telegram que vocês participam, quanto mais gente seguinte lá no [YouTube](https://www.youtube.com/WillianJustenCursos), melhor! =)
+Espero que tenham curtido esse post/vídeo e lembrando, por favor, compartilhem em todas as redes sociais que puderem, manda naquele slack/telegram que vocês participam, quanto mais gente seguinte lá no [YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), melhor! =)

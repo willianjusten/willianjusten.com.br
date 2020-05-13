@@ -12,11 +12,12 @@ tags:
   - windows
   - terminal
 ---
+
 ## Introdução
 
 Fala pessoal! Para começar bem o ano, nada melhor que um curso novo né? E sabe o que é melhor? É de graça!
 
-Esse ano eu quero fazer mais conteúdos em vídeos, até para alimentar [meu canal do YouTube](https://www.youtube.com/WillianJustenCursos), então resolvi postar o curso nos 2 lugares:
+Esse ano eu quero fazer mais conteúdos em vídeos, até para alimentar [meu canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), então resolvi postar o curso nos 2 lugares:
 
 - [Udemy](https://www.udemy.com/course/criando-um-ambiente-de-desenvolvimento-no-windows)
 - [Playlist do Youtube](https://www.youtube.com/watch?v=YcR8pKvjx44&list=PLlAbYrWSYTiOpefWtd6uvwgKT1R-94Zfd)
@@ -35,7 +36,7 @@ Eu tenho muitos alunos iniciantes e vários dos erros são problemas de paths, c
 
 Alguns vão se virando e acabam conseguindo fazer funcionar, mas vários outros travam e alguns acabam até desistindo de aprender.
 
-Esse curso tem o intuito de ajudar essas pessoas a não travarem mais e estudarem o que realmente importa. 
+Esse curso tem o intuito de ajudar essas pessoas a não travarem mais e estudarem o que realmente importa.
 
 ## Ementa
 
@@ -65,7 +66,7 @@ Enfim, vamos ao que interessa, segue abaixo a ementa:
 - Instalando o Yarn
 - Rodando um projeto NodeJS
 
-Como podem ver, são passos bem simples, todos em vídeo bem pequenos para que vocês possam usar até mesmo como vídeos de apoio para no futuro. 
+Como podem ver, são passos bem simples, todos em vídeo bem pequenos para que vocês possam usar até mesmo como vídeos de apoio para no futuro.
 
 ## Links para o curso
 
@@ -77,4 +78,3 @@ Os links estão ali em cima, mas caso você não tenha visto, seguem os links aq
 ## Conclusão
 
 Espero que aproveitem bastante o curso, espalhem ele para os seus amigos que tem interesse em começar a aprender programação e ainda não utilizam Linux/MacOS. E mesmo que você já seja programador, dê uma chance, as vezes tem uma dica ou outra legal que você não sabia =)
-

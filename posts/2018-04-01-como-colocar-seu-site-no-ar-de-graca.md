@@ -40,15 +40,11 @@ Logo após esse Tweet várias pessoas curtiram e comentaram e eu então decidi q
 
 Eu quero expandir meu conhecimento para mais canais, já tinha usado o YouTube para postar alguns vídeos, mas nunca de forma séria, até esse final de semana eu num tinha nem noção de como criava um canal! Pois bem, eu não só aprendi a criar um canal,como eu já tenho um canal e alguns inscritos!
 
-`<mendigo-mode>`
-<br/>
-Então venho aqui humildemente pedir para vocês se [inscreverem lá no canal](https://www.youtube.com/WillianJustenCursos), vou subir bastante coisa legal lá para vocês, inclusive aceito pedidos!
-<br/>
-`</mendigo-mode>`
+Então venho aqui humildemente pedir para vocês se [inscreverem lá no canal](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), vou subir bastante coisa legal lá para vocês, inclusive aceito pedidos!
 
 ## Curso de Netlify
 
-Como forma de inaugurar o [Canal do Youtube](https://www.youtube.com/WillianJustenCursos), eu aproveitei o momento que falava do Netlify e pensei, por que não criar uns vídeos sobre ele? Aí pensei logo no primeiro vídeo que eu queria fazer, dizendo [10 razões para utilizar o Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM). Só que eu acabei me empolgando e gravei **16 vídeos no total!**
+Como forma de inaugurar o [Canal do Youtube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), eu aproveitei o momento que falava do Netlify e pensei, por que não criar uns vídeos sobre ele? Aí pensei logo no primeiro vídeo que eu queria fazer, dizendo [10 razões para utilizar o Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM). Só que eu acabei me empolgando e gravei **16 vídeos no total!**
 
 Um resumo sobre o que é o <s>Netflix</s>: a [Netlify](https://www.netlify.com/) é uma plataforma de static hosting, ou seja, um servidor para arquivos estáticos, onde você tem diversas funcionalidades muito muito maneiras e o melhor, ela é **GRATUITA**. Existem planos pagos, mas você consegue fazer praticamente 95% das coisas no modo grátis, o que é bastante incrível!
 

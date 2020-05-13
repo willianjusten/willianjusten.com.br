@@ -21,6 +21,7 @@ tags:
 categories:
   - Dicas de CSS
 ---
+
 ## Introdução
 
 Fala pessoal, dando continuidade ao [experimento](https://willianjusten.com.br/labs/menu-fullscreen/) que fizemos no [post passado](https://willianjusten.com.br/criando-icone-menu-hamburguer-animado-com-css-puro/), hoje iremos aprender a criar a animação para o nosso menu fullscreen.
@@ -39,9 +40,9 @@ Primeiro segue o nosso html, que dessa vez não mudou muita coisa, só mesmo ten
 
 ```html
 <ul>
-    <li><a href='#'>Home</a></li>
-    <li><a href='#'>About</a></li>
-    <li><a href='#'>Work</a></li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Work</a></li>
 </ul>
 ```
 
@@ -53,43 +54,43 @@ O CSS feito nesse vídeo então, fica assim :
 
 ```css
 .menu {
-    cursor: pointer;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
-    transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .menu:hover {
-    box-shadow: 0 0 0 8px #FFF, 0 0 0 8px #FFF;
+  box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
 }
 
 // animação do menu
 input:checked ~ label .menu {
-    box-shadow: 0 0 0 130vw #FFF, 0 0 0 130vh #FFF;
+  box-shadow: 0 0 0 130vw #fff, 0 0 0 130vh #fff;
 }
 
 // só aparecer o menu ao clicar
 input:checked ~ ul {
-    opacity: 1;
+  opacity: 1;
 }
 
 // animação e estilo do menu
 ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    font-size: 45px;
-    opacity: 0;
-    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  font-size: 45px;
+  opacity: 0;
+  transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+  z-index: 2;
 }
 
 a {
-    color: #00cec9;
-    display: block;
-    margin-bottom: 1em;
-    text-decoration: none;
+  color: #00cec9;
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
 }
 ```
 
@@ -97,6 +98,6 @@ Se você quiser ver todo o código completo, só acessar [esse link do Github](h
 
 ## Conclusão
 
-Bom pessoal, espero que tenham gostado desse novo formato, com vídeo e post. Acho que fica mais dinâmico quando é para explicar esse tipo de coisa. Se vocês gostaram, por favor, não deixem de compartilhar e dar joinhas lá no [YouTube](https://www.youtube.com/WillianJustenCursos).
+Bom pessoal, espero que tenham gostado desse novo formato, com vídeo e post. Acho que fica mais dinâmico quando é para explicar esse tipo de coisa. Se vocês gostaram, por favor, não deixem de compartilhar e dar joinhas lá no [YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1).
 
 E se você achou uma merda, pode falar também, eu aceito críticas numa boa e isso ajuda muito a melhorar para os próximos vídeos. Espero vocês nos próximos posts e vídeos!

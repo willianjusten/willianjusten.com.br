@@ -13,6 +13,7 @@ tags:
   - js
   - tdd
 ---
+
 ## Introdução
 
 Fala pessoal, o post de hoje vem com vídeo, espero fazer mais alguns assim, vamos juntos na expectativa que vocês gostam. Para o assunto de hoje, eu resolvi falar sobre hooks em React, dessa vez como criar um do zero.
@@ -37,4 +38,4 @@ Você pode ler mais sobre o _Konami Code_ [neste link](https://pt.wikipedia.org/
 
 ## Conclusão
 
-Espero que tenham gostado do vídeo e se gostaram, por favor, se inscrevam no [meu canal do YouTube](https://www.youtube.com/WillianJustenCursos), compartilhem e comentem! 
+Espero que tenham gostado do vídeo e se gostaram, por favor, se inscrevam no [meu canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), compartilhem e comentem!

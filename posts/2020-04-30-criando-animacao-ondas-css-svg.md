@@ -28,4 +28,4 @@ Para gerar as ondas eu utilizei o site [getwaves.io](https://getwaves.io/) e voc
 
 ## Conclusão
 
-Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo esses pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos/), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!
+Novamente foi um post/vídeo bastante simples, mas que espero que seja útil para vocês irem aprendendo esses pequenos detalhes. Peço novamente que se puderem, compartilhem com seus amigos e não deixem de se [inscrever no canal do YouTube](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1), eu estou começando ainda, então é muito importante que vocês me ajudem nesse início!
