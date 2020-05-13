@@ -76,7 +76,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           </S.MenuBarLink>
           <S.MenuBarExternalLink
             title="YouTube Videos"
-            href="https://www.youtube.com/WillianJustenCursos/"
+            href="https://www.youtube.com/WillianJustenCursos/?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => GA.youTubeClickTrack()}
