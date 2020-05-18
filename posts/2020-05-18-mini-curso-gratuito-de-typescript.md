@@ -33,20 +33,12 @@ Então, lá vai o primeiro vídeo!
 
 ### 01. Introdução ao TypeScript
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mRixno_uE2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mRixno_uE2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 02. Mitos e Verdades
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KL1qNPQCz6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
-
-
-
-
-
-
-
-
-
-
-
-
