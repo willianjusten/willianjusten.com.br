@@ -39,6 +39,10 @@ Então, lá vai o primeiro vídeo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KL1qNPQCz6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### 03. Instalando o compilador e escrevendo primeiro código
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-4ZQk8fyCmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
