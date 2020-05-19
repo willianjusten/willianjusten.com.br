@@ -43,6 +43,10 @@ Então, lá vai o primeiro vídeo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-4ZQk8fyCmc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### 04. Criando e configurando o TSConfig
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-BKYrctVmmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
