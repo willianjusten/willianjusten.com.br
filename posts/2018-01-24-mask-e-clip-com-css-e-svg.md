@@ -132,7 +132,7 @@ Como podemos ver acima, esse `mask-image` lembra muito com as propriedades de um
 
 ## Momento Jabá
 
-Brincadeiras a parte, se você se embolou um pouquinho com SVG ou se interessou em saber mais sobre, meu [curso de SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOSITE) está com promo usando o cupom **PROMOSITE** por apenas **24 conto**, menos que um lanche no McDonald's, vai lá, pega o curso e dá um up no seu conhecimento =)
+Brincadeiras a parte, se você se embolou um pouquinho com SVG ou se interessou em saber mais sobre, meu [curso de SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=ESTUDEEMCASA) está com promo usando o cupom **ESTUDEEMCASA** por apenas **24 conto**, menos que um lanche no McDonald's, vai lá, pega o curso e dá um up no seu conhecimento =)
 
 ## Conclusão
 
