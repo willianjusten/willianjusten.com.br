@@ -51,6 +51,10 @@ Então, lá vai o primeiro vídeo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/voII0wn66k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### 06. Type Inference
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zyYjns2aYJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
