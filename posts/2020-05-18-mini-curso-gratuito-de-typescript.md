@@ -7,12 +7,13 @@ description: Aprenda o que é TypeScript, como funciona, por que usar e muito ma
 introduction: Aprenda o que é TypeScript, como funciona, por que usar e muito mais!
 twitter_text: Aprenda o que é TypeScript, como funciona, por que usar e muito mais!
 main-class: js
-color: "#D6BA32"
+color: '#D6BA32'
 tags:
   - typescript
   - ts
   - curso
 ---
+
 ## Introdução
 
 Fala pessoal! Tive uma conversa com meus alunos no [Slack dos alunos](https://slack-willianjusten.herokuapp.com/), onde fiz a seguinte pergunta:
@@ -54,6 +55,10 @@ Então, lá vai o primeiro vídeo!
 ### 06. Type Inference
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zyYjns2aYJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 07. Type Aliases e Union
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DqpBryBjs6Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Conclusão
 
