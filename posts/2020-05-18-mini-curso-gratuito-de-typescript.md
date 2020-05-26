@@ -60,6 +60,14 @@ Então, lá vai o primeiro vídeo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DqpBryBjs6Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### 08. Type Aliases e Intersection
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZkFLCA_exLI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 09. Classes
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rxpycPZnT6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
