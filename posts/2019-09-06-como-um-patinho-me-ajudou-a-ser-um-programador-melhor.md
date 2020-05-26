@@ -18,6 +18,7 @@ tags:
   - debug
   - code
 ---
+
 ## Introdução
 
 Olá pessoal, eu sei que esse título parece estranho demais e pode não fazer sentido mas prometo que será efetivo.
@@ -50,7 +51,7 @@ Nesse momento que o seu patinho de borracha entra em ação. Você vai falar pas
 
 ## Que bruxaria é essa?!
 
-Existe [toda uma psicologia de como isso funciona](https://www.thoughtfulcode.com/rubber-duck-debugging-psychology/), mas basicamente quando você fala em voz alta (por isso a importância), o seu cérebro  consegue processar melhor os detalhes e, com isso, sua atenção a detalhes/erros fica mais aguçada, consequentemente você acha os problemas mais rapidamente.
+Existe [toda uma psicologia de como isso funciona](https://www.thoughtfulcode.com/rubber-duck-debugging-psychology/), mas basicamente quando você fala em voz alta (por isso a importância), o seu cérebro consegue processar melhor os detalhes e, com isso, sua atenção a detalhes/erros fica mais aguçada, consequentemente você acha os problemas mais rapidamente.
 
 É aqui que você se pergunta:
 
@@ -68,4 +69,4 @@ Eu resolvi escrever esse post, exatamente pois quando o [Felipe Fialho estava fa
 
 Então, sempre que você puder, chame um amigo/colega ou fale com seu patinho de borracha, mas dê preferencia pelo patinho, assim estará evitando que seu amigo/colega atrapalhe-se e estará criando uma maior autonomia!
 
-E agora o momento _merchandising_, as coisas que o Felipe estava resolvendo eram de Gatsby e se você ainda não viu, eu lancei [um curso sobre GatsbyJS: crie um site PWA com React, GraphQL e Netlify](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=ESTUDEEMCASA), então aproveita esse cupom para pegar mais em conta!
+E agora o momento _merchandising_, as coisas que o Felipe estava resolvendo eram de Gatsby e se você ainda não viu, eu lancei [um curso sobre GatsbyJS: crie um site PWA com React, GraphQL e Netlify](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN20), então aproveita esse cupom para pegar mais em conta!

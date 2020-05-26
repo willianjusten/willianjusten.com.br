@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Caçada do Justen"
+title: 'Caçada do Justen'
 date: 2017-08-18 12:40:13
 image: '/assets/img/caca/caca-ao-tesouro.jpg'
-description: "Vamos jogar? O vencedor leva dois cursos FREE!"
+description: 'Vamos jogar? O vencedor leva dois cursos FREE!'
 main-class: 'misc'
 color: '#7AAB13'
 tags:
-- cacadadojusten
-- cursos
+  - cacadadojusten
+  - cursos
 categories:
-twitter_text: "Vamos jogar? O vencedor leva meus dois cursos FREE!"
-introduction: "Vamos jogar? O vencedor leva meus dois cursos FREE!"
+twitter_text: 'Vamos jogar? O vencedor leva meus dois cursos FREE!'
+introduction: 'Vamos jogar? O vencedor leva meus dois cursos FREE!'
 ---
 
 ## Caçada do Justen
@@ -22,9 +22,9 @@ Fala pessoal, ontem foi extremamente divertido ver a galera doida caçando o cup
 
 Muita gente ficou triste por não ter conseguido e eu fiquei triste porque queria brincar mais tempo, então o que eu pensei? Vamos fazer mais um jogo! \o/\o/
 
-Não sei com que *velocidade* vocês vão fazer esse joguinho, mas espero que demore um pouquinho mais que o outro pelo menos =o
+Não sei com que _velocidade_ vocês vão fazer esse joguinho, mas espero que demore um pouquinho mais que o outro pelo menos =o
 
-Nesse jogo teremos 1 cupom para o [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=ESTUDEEMCASA) e 1 cupom para o [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/learn/v4/?couponCode=ESTUDEEMCASA), o mais rápido vai ganhar =D
+Nesse jogo teremos 1 cupom para o [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN20) e 1 cupom para o [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/learn/v4/?couponCode=PROMOJUN20), o mais rápido vai ganhar =D
 
 E como começar a jogar? Bom, você já começou e só não sabe! Boa sorte!
 
@@ -32,7 +32,6 @@ E como começar a jogar? Bom, você já começou e só não sabe! Boa sorte!
 
 Vocês SEMPRE me surpreendendo, pensei que iria demorar, mas vocês são rápidos demais, fica até sem graça ahuhau
 Bom, vamos aqui a solução então:
-
 
 ### Passo 1
 
@@ -61,7 +60,6 @@ O número de alunos que estou comemorando é **10000** e se só **10** tipos pod
 Com isso os cupons usavam o código **10011100010000**
 
 Tiveram duas pessoas que terminaram praticamente no mesmo tempo, só que uma pegou o de SVG e a outra o de TDD, o que tornou a brincadeira muito mais legal! =D
-
 
 ## Conclusão
 

@@ -18,7 +18,7 @@ tags:
 
 Olá pessoal, hoje é um dia muito feliz para mim, pois estou lançando mais um curso! Dessa vez é um curso bem especial, nele ensino a fazer um blog igualzinho o meu. Isso mesmo, nós não iremos fazer um projetinhos inacabado com exemplos usando `bar` ou/e `foo`. Nós iremos fazer um blog totalmente funcional e isso inclui um **CMS inteirinho** para poder criar os artigos.
 
-Se você está apressado para adquirir o curso, saiba que ele vai custar **R$ 249,99**, mas para os seguidores do blog, to fazendo um cupom de desconto por **R$ 49,99**, então aproveite e compre já o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=ESTUDEEMCASA).
+Se você está apressado para adquirir o curso, saiba que ele vai custar **R\$ 249,99**, mas para os seguidores do blog, to fazendo um cupom de desconto por **R\$ 49,99**, então aproveite e compre já o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN20).
 
 ## Apresentação do projeto
 
@@ -48,7 +48,6 @@ Segue abaixo os módulos:
 
 Como podem ver, tem coisa para caramba e o legal é que os conceitos abordados nesse projeto podem ser usados em outros vários diferentes projetos.
 
-
 ## Requisitos para o curso
 
 Tudo que é necessário são conhecimentos básicos de HTML/CSS/JS e Git para subir o projeto no final. **Não é necessário ser fodão de React**, todo conteúdo que veremos eu irei explicar em detalhes. Tirando isso, o mais importante é vontade de aprender, já que se você tiver qualquer dúvida, eu poderei sempre ajudar.
@@ -61,6 +60,6 @@ Para esclarecer as dúvidas, vocês podem utilizar a plataforma da Udemy ou fala
 
 ## Preço e promoção
 
-Como disse lá no início, o curso custa **R$ 249,99**, mas para os seguidores do blog, estou fazendo um cupom de desconto por **R$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=ESTUDEEMCASA).
+Como disse lá no início, o curso custa **R\$ 249,99**, mas para os seguidores do blog, estou fazendo um cupom de desconto por **R\$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN20).
 
 Espero vocês no curso e no [Slack](https://slack-willianjusten.herokuapp.com/) também!

@@ -19,6 +19,7 @@ tags:
   - udemy
   - dev
 ---
+
 ## Introdução
 
 Fala pessoal, em comemoração a incrível marca de **mais de 50 mil alunos na Udemy**, eu resolvi fazer um post bem completo sobre esse assunto que pode ser bem interessante para quem também tem o desejo de passar seu conhecimento adiante.
@@ -33,15 +34,15 @@ O post é grande, então provavelmente eu vou ouvir mais coisas, mas no momento 
 - [Princípios para um bom curso online](#principios-para-um-bom-curso-online)
 - [Planejando o curso](#planejando-o-curso)
 - [Produzindo o curso](#produzindo-o-curso)
-    - [Detalhes técnicos e qualidade](#detalhes-tecnicos-e-qualidade)
-    - [Entrega do Instrutor](#entrega-do-instrutor)
-    - [Dicas de Softwares](#dicas-de-softwares)
-    - [Meu passo-a-passo ao gravar um curso](#meu-passo-a-passo-ao-gravar-um-curso)
+  - [Detalhes técnicos e qualidade](#detalhes-tecnicos-e-qualidade)
+  - [Entrega do Instrutor](#entrega-do-instrutor)
+  - [Dicas de Softwares](#dicas-de-softwares)
+  - [Meu passo-a-passo ao gravar um curso](#meu-passo-a-passo-ao-gravar-um-curso)
 - [Publicando o seu curso](#publicando-o-seu-curso)
-    - [Self Hostings](#self-hostings)
-    - [Marketplaces](#marketplaces)
-    - [Minha opinião](#minha-opiniao)
-    - [Meu histórico](#meu-historico)
+  - [Self Hostings](#self-hostings)
+  - [Marketplaces](#marketplaces)
+  - [Minha opinião](#minha-opiniao)
+  - [Meu histórico](#meu-historico)
 - [Sobre feedbacks](#sobre-feedbacks)
 - [Conclusão](#conclusao)
 
@@ -67,7 +68,7 @@ Então, como vimos acima, existem várias razões para se fazer um curso online 
 
 **Boa qualidade de vídeo e som**: muitas pessoas desistem do curso já de cara se ele possuir muitos ruídos ou imagem ruim. Num mundo onde temos TVs 4K e som digital de alta qualidade, é praticamente inaceitável que o curso tenha qualidade baixa. Mas também não se assuste nesse tópico, você não precisa também ter uma qualidade de estúdio bizarra de início, você pode ir melhorando aos poucos. Me usando como exemplo, meus primeiros cursos tem uma qualidade bem abaixo do que hoje, mas isso é até mesmo pois eu estava iniciando. Uma dica que pode servir de início, faça um mini-curso gratuito, até mesmo para testar sua audiência e ver se você está agradando e a partir daí, vá fazendo melhorias.
 
-**Bem organizado e num ritmo adequado**: ninguém quer fazer um curso onde o professor não explica de onde aquilo veio ou que simplesmente pula mil coisas já achando que você entende tudo. Um bom curso, é aquele que vai evoluindo gradativamente, num ritmo que dá para ser acompanhado e de uma forma que o aluno  veja sua própria evolução.
+**Bem organizado e num ritmo adequado**: ninguém quer fazer um curso onde o professor não explica de onde aquilo veio ou que simplesmente pula mil coisas já achando que você entende tudo. Um bom curso, é aquele que vai evoluindo gradativamente, num ritmo que dá para ser acompanhado e de uma forma que o aluno veja sua própria evolução.
 
 ## Planejando o curso
 
@@ -80,28 +81,28 @@ Essa talvez seja a parte mais "complicada" de todo o curso, mas se você consegu
 
 Vamos agora na prática, para ficar um pouquinho mais fácil de entender. Digamos que você quer fazer um curso chamado "Desenvolvimento Web para Iniciantes". Primeiro precisamos fazer a separação dos blocos maiores (módulos), que poderia ser algo como:
 
-* Introdução
-* HTML
-* CSS
-* JS
+- Introdução
+- HTML
+- CSS
+- JS
 
 Dentro de cada tópico, podemos ter aulas direto, por exemplo:
 
-* Introdução
-  * História sobre a Web
-  * Funcionamento dos protocolos
-  * ...
+- Introdução
+  - História sobre a Web
+  - Funcionamento dos protocolos
+  - ...
 
 Mas você também pode granularizar mais os tópicos também. Como, por exemplo:
 
-* HTML
-  * Elementos inline
-    * links
-    * imagens
-    * ...
-  * Elementos bloco
-    * div
-    * listas
+- HTML
+  - Elementos inline
+    - links
+    - imagens
+    - ...
+  - Elementos bloco
+    - div
+    - listas
 
 Ou seja, pegamos o tópico principal que é **HTML** e quebramos ele outras pequenas partes e dentro dessas, colocamos as aulas.
 
@@ -229,7 +230,7 @@ O Self-hosting é melhor para pessoas que já possuem um público ou que sejam e
 
 Eu cheguei a usar a Teachable que é uma plataforma de Self-hosting onde eu pagava bem menos taxas, mas após pedidos de muitos alunos, eu resolvi fazer a migração para a Udemy. Posso dizer com 100% de certeza que minhas taxas só aumentaram, hoje já tenho mais de 50 mil alunos e muito disso é graças ao marketing pesado que a Udemy faz.
 
-É claro que os preços são bem complicados e as vezes a gente se sente um pouco prostituído com isso, afinal de contas é algo que dá muito trabalho, mas acaba sendo vendido por R$ 19,99. Só que precisa se pensar em duas coisas:
+É claro que os preços são bem complicados e as vezes a gente se sente um pouco prostituído com isso, afinal de contas é algo que dá muito trabalho, mas acaba sendo vendido por R\$ 19,99. Só que precisa se pensar em duas coisas:
 
 - Sendo mais barato, seu conhecimento pode ser passado para mais e mais pessoas, inclusive aquelas que realmente necessitam e não teriam como pagar mais por isso.
 - A balança acaba se equilibrando, se você vende muitos cursos a um preço mais baixo, isso vai dar a mesma coisa ou até mais que vender poucos cursos a um preço mais alto.
@@ -247,10 +248,10 @@ Depois de publicado o curso, está na hora de vender os cursos e receber os feed
 
 Se você leu até aqui, tenho uma surpresa que acho que vai ser bem legal para você! Estarei liberando aqui **20 cupons** para cada curso meu, **totalmente grátis!** Se for rápido, é só clicar no curso desejado e pegar seu curso =)
 
-- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=ESTUDEEMCASA)
-- [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=ESTUDEEMCASA)
-- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=ESTUDEEMCASA)
-- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=ESTUDEEMCASA)
+- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOJUN20)
+- [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOJUN20)
+- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN20)
+- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOJUN20)
 
 ## Conclusão
 

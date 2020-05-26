@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Mais de 10 mil alunos na Udemy"
+title: 'Mais de 10 mil alunos na Udemy'
 date: 2017-08-17 17:02:17
 image: '/assets/img/udemy/main.jpg'
-description: "Um pouco sobre esse número, processo de criação de cursos e mais."
+description: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
 main-class: 'misc'
 color: '#7AAB13'
 tags:
-- cursos
-- udemy
+  - cursos
+  - udemy
 categories:
-twitter_text: "Um pouco sobre esse número, processo de criação de cursos e mais."
-introduction: "Um pouco sobre esse número, processo de criação de cursos e mais."
+twitter_text: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
+introduction: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
 ---
 
 ## Introdução
@@ -62,7 +62,7 @@ Com essa saída, eu consegui dar um boost e lancei o curso rapidamente. Foi um s
 
 <h2 id="brazil-js-lancamento">BrazilJS e lançamento de mais um novo curso</h2>
 
-Ano passado foi um ano hiper mega cheio, eu palestrei em diversos lugares hiper importantes. E um dos mais importantes, sem dúvida foi a [BrazilJS](https://braziljs.org/conf/). Eu aproveitei a deixa de estar palestrando nesse evento imenso e resolvi lançar a pré-venda o meu maior curso até então, que é o [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=ESTUDEEMCASA).
+Ano passado foi um ano hiper mega cheio, eu palestrei em diversos lugares hiper importantes. E um dos mais importantes, sem dúvida foi a [BrazilJS](https://braziljs.org/conf/). Eu aproveitei a deixa de estar palestrando nesse evento imenso e resolvi lançar a pré-venda o meu maior curso até então, que é o [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN20).
 
 Eu queria com esse curso, passar mais um outro assunto que não via tanto em cursos ou sendo falado, mas que é extremamente necessário para o mercado de trabalho. Para esse curso, eu ainda não tinha feito a ementa completa, basicamente tinha feito um [rascunho básico](https://business.facebook.com/willian.justen.cursos/photos/a.808763882559204.1073741828.787922347976691/841024392666486/?type=3&theater) do que estava em mente, mas mesmo assim resolvi lançar lá na BrazilJS.
 
@@ -124,7 +124,7 @@ No mesmo dia que eu completei **10 mil alunos**, eu recebi um aviso de um aluno 
 
 Bom, é claro que isso me entristece demais, como disse acima, o processo para criar cursos é demorado e muito trabalhoso. E descobrir que todo aquele seu trabalho tá sendo roubado é algo extremamente chato. Infelizmente as pessoas ainda não conseguem entender que propriedade intelectual vale bastante. O mais estranho é ver gente da nossa área fazendo, afinal de contas, nosso trabalho é todo intelectual. Creio que ninguém aqui ficaria feliz se o patrão pegasse nosso código e desse um pé na gente sem pagar.
 
-Uma desculpa que as pessoas acabam fazendo é *É tudo muito caro, então a gente pirateia.* Fazendo um paralelo a isso, eu não vejo ninguém entrar na loja da Apple e sair correndo com um Mac debaixo do braço só porque é *caro*. Se você acha o curso caro, vem conversar comigo, me explica seus motivos, me diz o quanto você poderia pagar. Eu sempre faço descontos hiper altos e mesmo assim, se a pessoa não consegue, eu dou um jeito. Eu confesso que preferia muito mais que a pessoa viesse conversar comigo sobre isso, do que ela simplesmente ir piratear o curso... Mas enfim, isso vai da cabeça de cada um. Só lembre de não reclamar da corrupção depois, pois isso é um tipo de corrupção também =)
+Uma desculpa que as pessoas acabam fazendo é _É tudo muito caro, então a gente pirateia._ Fazendo um paralelo a isso, eu não vejo ninguém entrar na loja da Apple e sair correndo com um Mac debaixo do braço só porque é _caro_. Se você acha o curso caro, vem conversar comigo, me explica seus motivos, me diz o quanto você poderia pagar. Eu sempre faço descontos hiper altos e mesmo assim, se a pessoa não consegue, eu dou um jeito. Eu confesso que preferia muito mais que a pessoa viesse conversar comigo sobre isso, do que ela simplesmente ir piratear o curso... Mas enfim, isso vai da cabeça de cada um. Só lembre de não reclamar da corrupção depois, pois isso é um tipo de corrupção também =)
 
 <h2 id="agradecimentos">Agradecimentos e bônus</h2>
 
@@ -136,8 +136,8 @@ Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse bl
 
 Mas lembrando que existem cupons de desconto, seguem eles:
 
-- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=ESTUDEEMCASA)
-- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=ESTUDEEMCASA)
-- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=ESTUDEEMCASA)
+- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOJUN20)
+- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=PROMOJUN20)
+- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN20)
 
 Abraços para vocês e que comece a caça ao cupom de **100%**!

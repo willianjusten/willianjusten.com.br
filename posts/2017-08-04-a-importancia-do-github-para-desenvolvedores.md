@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "A importância do Github para Desenvolvedores"
+title: 'A importância do Github para Desenvolvedores'
 date: 2017-08-04 12:04:36
 image: '/assets/img/github-importancia/importancia-git.jpg'
-description: "Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores."
+description: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
 main-class: 'dev'
 color: '#637a91'
 tags:
-- dev
-- dicas
+  - dev
+  - dicas
 categories:
-twitter_text: "Motivos do pq eu acho q o Github é importante para os devs."
-introduction: "Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores."
+twitter_text: 'Motivos do pq eu acho q o Github é importante para os devs.'
+introduction: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
 ---
 
 ## Introdução
@@ -20,7 +20,7 @@ Fala meus lindos, estou aqui com um post que pode ser polêmico ou não, vai dep
 
 Vou escrevendo enquanto vou ouvindo um album incrível da banda [The Last Sights of the Wind](https://open.spotify.com/album/6tIzZJUF8WPl2YiHWxk4TU), um instrumental muito muito bom, mistura guitarras muito melódicas com som atmosférico, perfeito para quem quer se concentrar em alguma tarefa importante. Aliás, se você curte música, entra no meu [grupo do Slack](http://slack-willianjusten.herokuapp.com/), tem um canal específico para quem curte um bom som! xD
 
-Aproveitando para fazer <s>um merchan</s> comunicado, ontem eu lancei meu [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=ESTUDEEMCASA) lá na Udemy, se você ainda não viu, dá um pulo lá.
+Aproveitando para fazer <s>um merchan</s> comunicado, ontem eu lancei meu [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN20) lá na Udemy, se você ainda não viu, dá um pulo lá.
 
 Bom, vamos parar com a enrolação e vamos ao post!
 
