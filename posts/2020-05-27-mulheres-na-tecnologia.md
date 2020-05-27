@@ -27,7 +27,7 @@ Nos últimos meses eu tive contato com várias alunas, algumas delas inclusive j
 
 - [Ilda Neta](https://ildaneta.netlify.app/)
 - [Luisa Bezerra](https://www.luisabezerra.com.br/)
-- [Ana Beatriz](https://anabneri.com.br/about/)
+- [Ana Beatriz](https://anabneri.com.br/)
 
 E ontem teve um [tweet da Mikaeri Ohana](https://twitter.com/mikaeriohana/status/1265438450997702656) que sei lá, me deixou muito feliz e eu resolvi fazer uma coisa maluca xD
 
