@@ -10,11 +10,12 @@ introduction: Nossa área é predominante masculina, mas não precisa ser
 twitter_text: Nossa área é predominante masculina, mas não precisa ser
   assim.Como um pequeno gesto pode ajudar.
 main-class: misc
-color: "#7AAB13"
+color: '#7AAB13'
 tags:
   - women
   - mulheres
 ---
+
 ## Introdução
 
 Fala pessoal, uffa, consegui um tempo para escrever esse post, até para explicar algumas coisas e acho que vai ser mais fácil também.
@@ -41,9 +42,9 @@ Algumas eram bem diretas e já mandavam só um "vi seu tweet, como faz?", outras
 
 Como fui dormir tarde, acordei ainda tarde e quando fui ver meu twitter, já tinham mais de **600 mensagens**! Eu não tinha planejado isso, não fiz bot para responder, além do mais eu queria sim responder uma a uma.
 
-Sem zoeira, até eu começar a escrever esse post, eu respondi mais de **500 mensagens** e o número de mensagens novas não parava! 
+Sem zoeira, até eu começar a escrever esse post, eu respondi mais de **500 mensagens** e o número de mensagens novas não parava!
 
-## Mais de R$ 25.000 doados em cursos!
+## Mais de R\$ 25.000 doados em cursos!
 
 Isso mesmo que você leu, no momento que eu comecei a escrever esse post, foram mais de **1000 cursos resgatados** e se botar na ponta do lápis, dá por aí.
 
@@ -53,7 +54,7 @@ E sendo sincero, não me arrependo nenhum pouquinho, para mim, foi uma das açõ
 
 Com as novas políticas da Udemy, eu só consigo criar 3 cupons por mês, então eu criei um cupom genérico para que todas as mulheres pudessem usar e estava indo extremamente bem, mas infelizmente, alguns homens começaram a aparecer pegando os cursos...
 
-De início, eu fiquei extremamente puto, confesso que a vontade era sair explanando o nome de todos. Mas isso poderia causar ainda mais confusão e até problemas futuros para mim. 
+De início, eu fiquei extremamente puto, confesso que a vontade era sair explanando o nome de todos. Mas isso poderia causar ainda mais confusão e até problemas futuros para mim.
 
 Então, devido a isso, tive que desligar o cupom. Peço desculpa as mulheres que não conseguiram pegar os cursos, infelizmente a ação de alguns, acabam estragando as coisas. Mas de qualquer forma, eu estou extremamente feliz pela movimentação e pelo alcance, foram muitas mulheres!
 
@@ -61,4 +62,4 @@ Então, devido a isso, tive que desligar o cupom. Peço desculpa as mulheres que
 
 Minha ideia foi de coração, mas confesso que desorganizada e mal estruturada, mas se num fosse assim, também nem aconteceria hahaha
 
-Eu fiz minha parte, mas você que está lendo, pode fazer sua parte também! Compre um curso (seja curso meu ou não!), um livro, ajude as mulheres a sua volta! Seja sua amiga da faculdade, colega de trabalho, uma mulher que você conhece e quer entrar na área, enfim, só ajude! Te garanto que você vai ficar muito feliz, assim como eu estou hoje!
+Eu fiz minha parte, mas você que está lendo, pode fazer sua parte também! Doe um curso (seja curso meu ou não!), um livro, ajude as mulheres a sua volta! Seja sua amiga da faculdade, colega de trabalho, uma mulher que você conhece e quer entrar na área, enfim, só ajude! Te garanto que você vai ficar muito feliz, assim como eu estou hoje!
