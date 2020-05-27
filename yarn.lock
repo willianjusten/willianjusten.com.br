@@ -11119,10 +11119,10 @@ netlify-identity-widget@^1.5.6:
   resolved "https://registry.yarnpkg.com/netlify-identity-widget/-/netlify-identity-widget-1.5.6.tgz#b841d4d469ad37bdc47e876d87cc2926aba2c302"
   integrity sha512-DvWVUGuswOd+IwexKjzIpYcqYMrghmnkmflNqCQc4lG4KX55zE3fFjfXziCTr6LibP7hvZp37s067j5N3kRuyw==
 
-netlify-plugin-gatsby-cache@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/netlify-plugin-gatsby-cache/-/netlify-plugin-gatsby-cache-0.2.1.tgz#22d8ef9a9b022909ac3e330734a3362d11bef1c6"
-  integrity sha512-y5gSjDXPWyj/Hdjp3WEGWjpeBH5nCnqztgF45JIK3/xVQBH4vwurOUsoK6C9500d7z2/CNH6I9k01crIA81pMw==
+netlify-plugin-gatsby-cache@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-gatsby-cache/-/netlify-plugin-gatsby-cache-0.2.2.tgz#9dc84cb8cc811cdcc25fb5245f69bcc58c3f644f"
+  integrity sha512-kgvL5nrawuXz+UaJuUta7Ovwp67Euc2kaiLcNxHIJE/MxYmqCEUvQ+N6NjeKn+eJpeWD7gW9A3Z6HmVKR2Yxfg==
 
 newline-regex@^0.2.0:
   version "0.2.1"
