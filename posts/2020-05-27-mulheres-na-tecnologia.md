@@ -3,12 +3,13 @@ layout: post
 date: 2020-05-27 12:47:47
 image: /assets/img/women-cover.jpg
 title: Mulheres na tecnologia
-description: Nossa área é predominante masculina, mas não precisa ser assim.Como
+description:
+  Nossa área é predominante masculina, mas não precisa ser assim. Como
   um pequeno gesto pode ajudar.
 introduction: Nossa área é predominante masculina, mas não precisa ser
-  assim.Como um pequeno gesto pode ajudar.
+  assim. Como um pequeno gesto pode ajudar.
 twitter_text: Nossa área é predominante masculina, mas não precisa ser
-  assim.Como um pequeno gesto pode ajudar.
+  assim. Como um pequeno gesto pode ajudar.
 main-class: misc
 color: '#7AAB13'
 tags:
