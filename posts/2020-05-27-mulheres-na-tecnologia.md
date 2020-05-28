@@ -45,11 +45,11 @@ Como fui dormir tarde, acordei ainda tarde e quando fui ver meu twitter, já tin
 
 Sem zoeira, até eu começar a escrever esse post, eu respondi mais de **500 mensagens** e o número de mensagens novas não parava!
 
-## Mais de R\$ 25.000 doados em cursos!
+## Mais de R$ 25.000 doados em cursos!
 
 Isso mesmo que você leu, no momento que eu comecei a escrever esse post, foram mais de **1000 cursos resgatados** e se botar na ponta do lápis, dá por aí.
 
-E sendo sincero, não me arrependo nenhum pouquinho, para mim, foi uma das ações mais legais que eu já fiz, desde quando comecei com meus cursos há 4 anos ou mais.
+E sendo sincero, não me arrependo nem um pouquinho, para mim, foi uma das ações mais legais que eu já fiz, desde quando comecei com meus cursos há 4 anos ou mais.
 
 ## Mas infelizmente, tem espertinhos...
 
