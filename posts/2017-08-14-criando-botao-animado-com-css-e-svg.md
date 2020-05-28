@@ -27,7 +27,7 @@ Enquanto vou escrevendo esse post, eu vou ouvindo a trilha sonora de [Hellblade 
 
 Para quem gosta de ver o exemplo já funcionando antes, já vou deixando aqui embaixo a demo do Codepen.
 
-https://codepen.io/willianjusten/pen/RaYvrr/
+https://codepen.io/willianjusten/pen/RaYvrr
 
 A ideia desse botão é basicamente para processos em que nós enviamos uma chamada para alguma API e esperamos um resultado para jogar um feedback para o usuário. No exemplo, eu vou colocar só o feedback de `success`, mas vocês estão mais do que livres de criar o `error`, `warning` e o que mais desejarem.
 
@@ -237,7 +237,7 @@ Agora está faltando só fazer o efeito de desenhar, para isso, já temos uma cl
 
 Reparem que inicialmente eu to movendo o meu desenho todo para fora de visão e no `.is-success .check` eu retorno para o zero, através de uma `transition`, criando o efeito final que queríamos, que é o símbolo ser desenhado na tela. Segue então nosso resultado final:
 
-https://codepen.io/willianjusten/pen/RaYvrr/
+https://codepen.io/willianjusten/pen/RaYvrr
 
 ## Conclusão
 
