@@ -68,6 +68,18 @@ Então, lá vai o primeiro vídeo!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rxpycPZnT6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### 10. Interfaces
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x-q7kGA_yp0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 11. Type Alias vs. Interfaces
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PMhd1ebCGl8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 12. Generics
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zjs7IJuhdaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Conclusão
 
 Espero que curtam os vídeos, nosso momento agora é de ficar em casa e estudar o máximo que pudermos =)
