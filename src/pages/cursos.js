@@ -6,6 +6,14 @@ import Course from '../components/Course'
 
 const coursesList = [
   {
+    title: 'Mini-curso de TypeScript',
+    image: 'ts-course.png',
+    link:
+      'https://www.youtube.com/watch?v=mRixno_uE2o&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_',
+    description:
+      'Aprenda o que é TypeScript, como funciona, por que usar e muito mais!'
+  },
+  {
     title: 'Criando um ambiente de Desenvolvimento no Windows',
     image: 'curso-windows.png',
     link:
