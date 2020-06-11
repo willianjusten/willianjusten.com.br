@@ -6,6 +6,12 @@ import Course from '../components/Course'
 
 const coursesList = [
   {
+    title: 'React Avançado',
+    image: 'react-avancado.png',
+    link: 'https://reactavancado.com.br/',
+    description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
+  },
+  {
     title: 'Mini-curso de TypeScript',
     image: 'ts-course.png',
     link:
