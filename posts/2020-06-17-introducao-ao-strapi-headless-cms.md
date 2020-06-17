@@ -27,7 +27,7 @@ O post de hoje é para falar sobre o [Strapi](https://strapi.io/), que é um Hea
 
 Primeiro precisamos saber o que é um CMS né? Um CMS (sigla para *Content Management System* — Sistema de Gerenciamento de conteúdo), é um software responsável por gerenciar o conteúdo, ou seja, permitir a criação, edição e organização de um determinado conteúdo.
 
-Eles são fundamentais, por permitem que pessoas não técnicas, consigam adicionar o conteúdo desejado, sem precisar mexer em nenhuma linha de código. O mais famoso de todos os CMS que existem por aí, é definitivamente o [Wordpress](https://br.wordpress.org/).
+Eles são fundamentais, por permitirem que pessoas não técnicas, consigam adicionar o conteúdo desejado, sem precisar mexer em nenhuma linha de código. O mais famoso de todos os CMS que existem por aí, é definitivamente o [Wordpress](https://br.wordpress.org/).
 
 ![Um fluxograma mostrando o cms tradicional a esquerda e o headless cms a direita. Explicações sobre no texto abaixo.](/assets/img/traditional-vs-headless-cms.png)
 
