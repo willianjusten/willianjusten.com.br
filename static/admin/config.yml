@@ -7,6 +7,9 @@ backend:
 media_folder: static/assets/img
 public_folder: /assets/img
 publish_mode: editorial_workflow
+slug:
+  encoding: 'ascii'
+  clean_accents: true
 
 collections:
   - name: posts # Used in routes, e.g. /admin/collections/blog
