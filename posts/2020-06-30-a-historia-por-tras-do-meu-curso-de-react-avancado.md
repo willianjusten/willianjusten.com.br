@@ -20,7 +20,7 @@ E hoje nós estamos finalmente lançando o **módulo 1** do curso! E como assim 
 
 No [site do curso](https://reactavancado.com.br/) nós falamos sobre todos os módulos e eu também [gravei um vídeo](https://youtu.be/zrx9kTHU-8Y) explicando ainda mais sobre todos os detalhes.
 
-Enfim, se você já sabia e já estava interessado, [só clicar nesse link e comprar](https://www.udemy.com/course/react-avancado/?couponCode=MODULO1)!
+Enfim, se você já sabia e já estava interessado, [só clicar nesse link e comprar com descontão](https://www.udemy.com/course/react-avancado/?couponCode=MODULO1)!
 
 Se você estiver interessado na criação do curso e os altos rolês que aconteceram, segue comigo aqui embaixo. Enquanto lê, aconselho a ouvir o novo [album do Tycho](https://open.spotify.com/album/3uqx22ScaYQujWq2lBvXuQ?si=CMvxg3p-SQqADx4ffbPw_Q), é um som chillwave perfeito para relaxar, programar e tudo mais que puder imaginar, eu sou apaixonado demais pela sonoridade!
 
@@ -97,6 +97,3 @@ Agora eles estão demorando horrores para aprovar o curso, o que me chateia aind
 Eu gostaria de agradecer ao apoio de todos, desde quando eu comentei sobre o desejo de fazer esse curso, vários vieram me incentivar e dizer o quanto gostam do meu conteúdo e o quanto confiam no sucesso desse novo curso.
 
 Cada retweet, mensagem, like, inscrito em algum canto, já é uma mensagem para continuar me encorajando a criar conteúdo, que é o que mais gosto de fazer, então fica aqui, meu muito obrigado!
-
-
-
