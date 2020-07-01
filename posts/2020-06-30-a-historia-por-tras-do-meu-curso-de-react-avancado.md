@@ -18,9 +18,7 @@ Fala pessoal, há algum tempo eu venho falando sobre um novo curso que eu estava
 
 E hoje nós estamos finalmente lançando o **módulo 1** do curso! E como assim só o módulo 1? Bom, a ideia é que seja um curso mais vivo, com mais participação dos alunos e também um curso bem maior do que os outros.
 
-No [site do curso](https://reactavancado.com.br/) nós falamos sobre todos os módulos e eu também [gravei um vídeo](https://youtu.be/zrx9kTHU-8Y) explicando ainda mais sobre todos os detalhes.
-
-Enfim, se você já sabia e já estava interessado, [só clicar nesse link e comprar com descontão](https://www.udemy.com/course/react-avancado/?couponCode=MODULO1)!
+No [site do curso](https://reactavancado.com.br/) nós falamos sobre todos os módulos e eu também [gravei um vídeo](https://youtu.be/zrx9kTHU-8Y) explicando ainda mais sobre todos os detalhes. Aproveita e vai lá no [site do curso](https://reactavancado.com.br/) que tem descontão!
 
 Se você estiver interessado na criação do curso e os altos rolês que aconteceram, segue comigo aqui embaixo. Enquanto lê, aconselho a ouvir o novo [album do Tycho](https://open.spotify.com/album/3uqx22ScaYQujWq2lBvXuQ?si=CMvxg3p-SQqADx4ffbPw_Q), é um som chillwave perfeito para relaxar, programar e tudo mais que puder imaginar, eu sou apaixonado demais pela sonoridade!
 
@@ -91,6 +89,18 @@ Venho me decepcionando com a Udemy já tem tempo, primeiro eles prejudicaram os 
 Também fizeram uma mudança nos cupons, onde só posso criar 3 cupons por mês e os mesmos ainda tem regras bem idiotas e limites diários, o que dificulta qualquer tipo de estratégia própria (claro né, se eles venderem por eles, ganham 50% de comissão...).
 
 Agora eles estão demorando horrores para aprovar o curso, o que me chateia ainda mais e provoca minha ansiedade. Particularmente, esse vai ser o último curso que irei disponibilizar na Udemy. É um absurdo como eles tem largado de mão os criadores de conteúdo, que deveriam ser os mais importantes, afinal, sem quem cria o conteúdo, eles não tem nada.
+
+## Mais crises de ansiedade e inseguranças
+
+Já tem tempo que eu crio cursos, mas esse é o primeiro curso que eu faço com um escopo tão grande e com essa duração bem maior (lançando por módulos a cada mês e tudo).
+
+E por causa disso, já me bateram diversas crises. Fico direto me perguntando se vocês vão gostar, se num vai ser simples demais e vocês vão reclamar, se vai dar tudo certo, se eu vou cumprir todos os prazos direitinho.
+
+Direto eu me confidencio com alguns amigos que me apoiam e falam para eu ficar calmo, mas essas sensações de me [sentir um impostor](https://willianjusten.com.br/sou-bom-o-suficiente/) sempre aparecem. 
+
+Noite passada eu me senti péssimo por ter tido esse atraso de 1 dia da Udemy e era 4h da manhã e eu estava no suporte reclamando com eles (parece que deu certo né?). 
+
+Enfim, por essas várias coisas, eu considero esse como um dos cursos mais importantes para mim até hoje e eu espero que ele seja bastante legal e importante para todos vocês também.
 
 ## Agradecimentos
 
