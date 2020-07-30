@@ -1,4 +1,8 @@
 import 'lazysizes'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import SwUpdater from './src/components/SwUpdater'
+
 require('prismjs/themes/prism-tomorrow.css')
 
 if (typeof window !== 'undefined') {
@@ -9,12 +13,11 @@ if (typeof window !== 'undefined') {
   })
 }
 
-export const onServiceWorkerUpdateReady = () => {
-  const answer = window.confirm(
-    `Esse site tem uma atualização! ` +
-      `Deseja recarregar para ver a nova versão?`
-  )
-  if (answer === true) {
-    window.location.reload()
-  }
+function onServiceWorkerUpdateReady() {
+  const root = document.createElement('div')
+  document.body.appendChild(root)
+
+  ReactDOM.render(<SwUpdater />, root)
 }
+
+export { onServiceWorkerUpdateReady }
