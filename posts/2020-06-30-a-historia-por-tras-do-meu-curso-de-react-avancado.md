@@ -83,14 +83,6 @@ Mas o curso estava só começando a criação, faltava (ainda falta) coisa para 
 
 Foi daí que eu conversei de novo com o Guilherme e tivemos essa ideia de lançar o curso mesmo em andamento. Assim nós poderíamos ir criando o conteúdo, ao mesmo tempo que o pessoal vai consumindo. Confesso que preciso controlar minha ansiedade quase que todos os dias, e os próximos meses serem intensos, mas vamos que vamos.
 
-## Decepções com a Udemy
-
-Venho me decepcionando com a Udemy já tem tempo, primeiro eles prejudicaram os cursos gratuitos, removendo possibilidade dos alunos de tirarem dúvidas e limitando o curso a ter só 2h.
-
-Também fizeram uma mudança nos cupons, onde só posso criar 3 cupons por mês e os mesmos ainda tem regras bem idiotas e limites diários, o que dificulta qualquer tipo de estratégia própria (claro né, se eles venderem por eles, ganham 50% de comissão...).
-
-Agora eles estão demorando horrores para aprovar o curso, o que me chateia ainda mais e provoca minha ansiedade. Particularmente, esse vai ser o último curso que irei disponibilizar na Udemy. É um absurdo como eles tem largado de mão os criadores de conteúdo, que deveriam ser os mais importantes, afinal, sem quem cria o conteúdo, eles não tem nada.
-
 ## Mais crises de ansiedade e inseguranças
 
 Já tem tempo que eu crio cursos, mas esse é o primeiro curso que eu faço com um escopo tão grande e com essa duração bem maior (lançando por módulos a cada mês e tudo).
