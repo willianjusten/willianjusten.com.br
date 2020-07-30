@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Chamada Curso Git e Github na Vida Real"
+title: 'Chamada Curso Git e Github na Vida Real'
 date: 2018-01-03 18:22:28
 image: '/assets/img/git-vida-real/main.png'
-description: "Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!"
+description: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
 main-class: 'misc'
 color: '#7AAB13'
 tags:
-    - dev
-    - cursos
-    - git
-    - github
+  - dev
+  - cursos
+  - git
+  - github
 categories:
-twitter_text: "Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!"
-introduction: "Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!"
+twitter_text: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
+introduction: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
 ---
 
 ## Chamada
@@ -42,7 +42,7 @@ Sim, o curso terá certificado liberado através da Udemy para todos aqueles que
 
 > Qual o preço do curso?
 
-Para garantir que a Udemy vai gerar certificado para todos (ele limita em cursos gratuitos), esse curso será pago, mas pretendo lançá-lo no valor mínimo **20-25 reais**, o objetivo é que quanto mais pessoas façam o curso melhor! Outra coisa legal, eu irei liberar vários cursos gratuitos lá no [slack dos meus alunos](https://slack-willianjusten.herokuapp.com), então se quiser pegar um curso na faixa, só entrar lá =)
+Para garantir que a Udemy vai gerar certificado para todos (ele limita em cursos gratuitos), esse curso será pago, mas pretendo lançá-lo no valor mínimo **20-25 reais**, o objetivo é que quanto mais pessoas façam o curso melhor! Outra coisa legal, eu irei liberar vários cursos gratuitos lá no [slack dos meus alunos](https://bit.ly/will-slack), então se quiser pegar um curso na faixa, só entrar lá =)
 
 > O que preciso saber para fazer o curso?
 
@@ -54,7 +54,7 @@ Você pode fazer no seu tempo, o curso é vitalício! Faça 1x, 2x, infinitas ve
 
 > Como posso saber quando o curso foi lançado?
 
-Todos os meus alunos serão avisados lá no [slack](https://slack-willianjusten.herokuapp.com) e também na plataforma da Udemy. 
+Todos os meus alunos serão avisados lá no [slack](https://bit.ly/will-slack) e também na plataforma da Udemy.
 
 ## Conclusão
 

@@ -41,8 +41,8 @@ Todo o código do curso é disponibilizado no [Github](https://github.com/willia
 
 Os experimentos do curso estão [online](https://greensock-course.willianjusten.com.br/), então você também pode dar uma olhada em tudo que vai ser feito e ainda teremos vídeos analisando sites famosos no [Awwwards](https://www.awwwards.com/websites/gsap-animation/), mostrando casos da vida real =)
 
-Para tirar as dúvidas tem a plataforma da Udemy, mas também vocês podem tirar todas as dúvidas comigo e com os alunos diretamente no [Slack](https://slack-willianjusten.herokuapp.com/) do curso =)
+Para tirar as dúvidas tem a plataforma da Udemy, mas também vocês podem tirar todas as dúvidas comigo e com os alunos diretamente no [Slack](https://bit.ly/will-slack/) do curso =)
 
 ## Preço e promoção
 
-O valor final do curso é de **R\$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOAGO20) que vai deixar o curso a **R\$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://slack-willianjusten.herokuapp.com/).
+O valor final do curso é de **R\$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOAGO20) que vai deixar o curso a **R\$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://bit.ly/will-slack/).

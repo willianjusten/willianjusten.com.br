@@ -26,4 +26,4 @@ Eu vou deixar um vídeo aqui embaixo explicando tudo que vai ter no curso, assim
 
 ## Conclusão
 
-Bom é isso galera, espero que aproveitem muito do curso, ele tem muiita coisa maneira e claro, vocês podem falar comigo em todos os canais disponíveis. Lembrando que temos um [Slack](http://slack-willianjusten.herokuapp.com/), se cadastra lá =D
+Bom é isso galera, espero que aproveitem muito do curso, ele tem muiita coisa maneira e claro, vocês podem falar comigo em todos os canais disponíveis. Lembrando que temos um [Slack](https://bit.ly/will-slack), se cadastra lá =D

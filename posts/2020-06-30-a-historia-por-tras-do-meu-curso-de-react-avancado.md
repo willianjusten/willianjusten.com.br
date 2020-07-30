@@ -7,11 +7,12 @@ description: As primeiras ideias do curso, desistências, saída da Toptal e rei
 introduction: As primeiras ideias do curso, desistências, saída da Toptal e reinicio de tudo!
 twitter_text: As primeiras ideias do curso, desistências, saída da Toptal e reinicio de tudo!
 main-class: misc
-color: "#7AAB13"
+color: '#7AAB13'
 tags:
   - react
   - curso
 ---
+
 ## Introdução
 
 Fala pessoal, há algum tempo eu venho falando sobre um novo curso que eu estava preparando junto com meu amigo [Guilherme Louro](https://twitter.com/guilhermelouro) e design do [Marcos Oliveira](https://twitter.com/vmaarcosp).
@@ -24,7 +25,7 @@ Se você estiver interessado na criação do curso e os altos rolês que acontec
 
 ## Prelúdio do curso
 
-A ideia de criar esse curso vem desde quando criei o curso de GatsbyJS, ou seja, por volta de Agosto/Setembro de 2019 eu já estava pensando e querendo fazer esse curso. 
+A ideia de criar esse curso vem desde quando criei o curso de GatsbyJS, ou seja, por volta de Agosto/Setembro de 2019 eu já estava pensando e querendo fazer esse curso.
 
 No curso de Gatsby, eu ensinei a fazer um blog como o meu e a colocar ele em produção. Desde então tiveram muiiiitos novos blogs surgindo por aí, alguns sem quase nenhuma modificação, outros completamente diferentes. Mas o mais importante, o povo estava feliz de **estar colocando algo em produção**
 
@@ -32,7 +33,7 @@ No curso de Gatsby, eu ensinei a fazer um blog como o meu e a colocar ele em pro
 
 Assim como todo mundo, eu também consumo vários cursos e livros, em todos os cantos possíveis. E uma das coisas que sempre me frustrou foi ver cursos interessantes, mas que sempre me davam a sensação de terem "acabado pela metade" ou não serem parecidos com os cenários reais.
 
-Muitos não ensinam com **testes**, outros não ensinam como criar o **código para produção**, outros não ensinam como fazer o **deploy** de fato. E, com isso, por mais que fossem cursos muito bons, acabavam criando essa sensação de "falta alguma coisa". 
+Muitos não ensinam com **testes**, outros não ensinam como criar o **código para produção**, outros não ensinam como fazer o **deploy** de fato. E, com isso, por mais que fossem cursos muito bons, acabavam criando essa sensação de "falta alguma coisa".
 
 Foi aí que eu pensei em fazer um curso que fosse realmente de ponta a ponta. Desde a escolha das ferramentas, onde aprendemos para que serve e o porquê de escolhermos, até criação do código para produção, com boas práticas, testes e tudo mais que fosse necessário. E por fim, o deploy também, porque nada mais frustrante do que criar algo e não saber como colocar isso para que os outros vejam.
 
@@ -48,13 +49,13 @@ Foi aí que eu tive que fazer uma viagem pela Toptal para a Espanha e consequent
 
 Durante os meses de Janeiro e Fevereiro eu estava em alguns projetos da Toptal, mas estava bastante desanimado, não eram projetos que eu estava muito feliz e eu queria criar meus cursos, meus posts para o blog.
 
-Conversei com meu gestor dizendo que estava desanimado e já querendo sair mesmo, ele disse para me acalmar, pensar melhor e me ofereceu um outro time/projeto para eu participar. Fiquei o mês inteiro de Março nesse novo projeto, que tinha um prazo absurdo, mas com ajuda de todo o time, nós conseguimos entregar exatamente no prazo, foi bom ter essa sensação de dever cumprido, mas ao mesmo tempo eu já não queria mesmo trabalhar para ninguém, pelo menos por um tempo. Foi aí que no dia 1 de Abril, eu saí da Toptal (e nem era de mentira!). 
+Conversei com meu gestor dizendo que estava desanimado e já querendo sair mesmo, ele disse para me acalmar, pensar melhor e me ofereceu um outro time/projeto para eu participar. Fiquei o mês inteiro de Março nesse novo projeto, que tinha um prazo absurdo, mas com ajuda de todo o time, nós conseguimos entregar exatamente no prazo, foi bom ter essa sensação de dever cumprido, mas ao mesmo tempo eu já não queria mesmo trabalhar para ninguém, pelo menos por um tempo. Foi aí que no dia 1 de Abril, eu saí da Toptal (e nem era de mentira!).
 
 ## Foco total e novo integrante!
 
-Assim que eu saí da Toptal, eu decidi que iria voltar a criar mais coisas, mais conteúdo e sim, eu iria fazer um curso legal! 
+Assim que eu saí da Toptal, eu decidi que iria voltar a criar mais coisas, mais conteúdo e sim, eu iria fazer um curso legal!
 
-Uma das primeiras coisas que eu fiz, foi "renascer" o meu [canal do YouTube](https://www.youtube.com/WillianJustenCursos) para começar a testar novos estilos de vídeo e conteúdo. Passei a conversar muito mais no [Slack dos Alunos](https://slack-willianjusten.herokuapp.com/) e até brincava sobre a Toptal estar atrapalhando o meu trabalho. Fiz até aposta com aluno (Alô Bruno Melo, tá pago?)
+Uma das primeiras coisas que eu fiz, foi "renascer" o meu [canal do YouTube](https://www.youtube.com/WillianJustenCursos) para começar a testar novos estilos de vídeo e conteúdo. Passei a conversar muito mais no [Slack dos Alunos](https://bit.ly/will-slack/) e até brincava sobre a Toptal estar atrapalhando o meu trabalho. Fiz até aposta com aluno (Alô Bruno Melo, tá pago?)
 
 E, claro, eu comecei a repensar no curso e a ideia de fazer um Ecommerce de jogos veio quase que na hora! Faz pouco tempo eu comprei um PC e passei a usar a Epic Games (que apesar de bonita é horrível) e também a Steam (que apesar de funcional é feia que dói).
 
@@ -78,13 +79,13 @@ O Marcos começou a fazer as mágicas dele lá, enquanto eu e o Guilherme fomos 
 
 Eu estava extremamente ansioso e já queria logo falar para os alunos do projeto! E fui logo dizer as boas novas no Slack, mas ao fazer isso, eu acabei criando uma cadeia de ansiedade nos outros também!
 
-Mas o curso estava só começando a criação, faltava (ainda falta) coisa para caramba! E então eu fiquei pensando, o que eu faço agora? Não posso simplesmente dizer que só vou lançar daqui 5-6 meses, pessoal vai ficar triste/desacreditado. 
+Mas o curso estava só começando a criação, faltava (ainda falta) coisa para caramba! E então eu fiquei pensando, o que eu faço agora? Não posso simplesmente dizer que só vou lançar daqui 5-6 meses, pessoal vai ficar triste/desacreditado.
 
 Foi daí que eu conversei de novo com o Guilherme e tivemos essa ideia de lançar o curso mesmo em andamento. Assim nós poderíamos ir criando o conteúdo, ao mesmo tempo que o pessoal vai consumindo. Confesso que preciso controlar minha ansiedade quase que todos os dias, e os próximos meses serem intensos, mas vamos que vamos.
 
 ## Decepções com a Udemy
 
-Venho me decepcionando com a Udemy já tem tempo, primeiro eles prejudicaram os cursos gratuitos, removendo possibilidade dos alunos de tirarem dúvidas e limitando o curso a ter só 2h. 
+Venho me decepcionando com a Udemy já tem tempo, primeiro eles prejudicaram os cursos gratuitos, removendo possibilidade dos alunos de tirarem dúvidas e limitando o curso a ter só 2h.
 
 Também fizeram uma mudança nos cupons, onde só posso criar 3 cupons por mês e os mesmos ainda tem regras bem idiotas e limites diários, o que dificulta qualquer tipo de estratégia própria (claro né, se eles venderem por eles, ganham 50% de comissão...).
 
@@ -96,9 +97,9 @@ Já tem tempo que eu crio cursos, mas esse é o primeiro curso que eu faço com 
 
 E por causa disso, já me bateram diversas crises. Fico direto me perguntando se vocês vão gostar, se num vai ser simples demais e vocês vão reclamar, se vai dar tudo certo, se eu vou cumprir todos os prazos direitinho.
 
-Direto eu me confidencio com alguns amigos que me apoiam e falam para eu ficar calmo, mas essas sensações de me [sentir um impostor](https://willianjusten.com.br/sou-bom-o-suficiente/) sempre aparecem. 
+Direto eu me confidencio com alguns amigos que me apoiam e falam para eu ficar calmo, mas essas sensações de me [sentir um impostor](https://willianjusten.com.br/sou-bom-o-suficiente/) sempre aparecem.
 
-Noite passada eu me senti péssimo por ter tido esse atraso de 1 dia da Udemy e era 4h da manhã e eu estava no suporte reclamando com eles (parece que deu certo né?). 
+Noite passada eu me senti péssimo por ter tido esse atraso de 1 dia da Udemy e era 4h da manhã e eu estava no suporte reclamando com eles (parece que deu certo né?).
 
 Enfim, por essas várias coisas, eu considero esse como um dos cursos mais importantes para mim até hoje e eu espero que ele seja bastante legal e importante para todos vocês também.
 
