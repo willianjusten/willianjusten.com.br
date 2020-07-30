@@ -18,7 +18,7 @@ introduction: 'Um curso direto ao ponto, aprenda workflows e comandos realmente 
 
 ## Lançamento do Curso
 
-Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOJUL20). Se você clicou no link, já deve ter achado o cupom **PROMOSITE**, que deixa o curso por **R\$ 24,99**, sim, é o lançamento do curso, mas ele já está em promoção, e assim sempre será!
+Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOAGO20). Se você clicou no link, já deve ter achado o cupom **PROMOSITE**, que deixa o curso por **R\$ 24,99**, sim, é o lançamento do curso, mas ele já está em promoção, e assim sempre será!
 
 ## Por que de lançar esse curso?
 
@@ -45,10 +45,10 @@ Boa pergunta! Nesse curso eu tenho intenção de fazer atualizações periódica
 
 ## Mais barato que um McDonalds e um Abadá de Carnaval!
 
-Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOJUL20), viu que o curso vai sair por **R\$ 24,99**!
+Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOAGO20), viu que o curso vai sair por **R\$ 24,99**!
 
 > Ué, mas o curso não está sendo lançado agora? Vai botar um preço tão baixo assim?
 
-Sim e assim sempre será! O cupom **PROMOJUL20** vai sempre existir e sempre será esse preço. Quanto mais pessoas conseguirem fazer o curso e aprenderem, mais eu vou ficar feliz. Os motivos de colocar o curso como pago é que assim eu garanto que a Udemy vai gerar certificado para todos (no curso gratuito muita gente não conseguia gerar) e isso também irá me ajudar a continuar [viajando e fotografando o mundo](https://unsplash.com/@willianjusten), que tem sido uma grande paixão minha.
+Sim e assim sempre será! O cupom **PROMOAGO20** vai sempre existir e sempre será esse preço. Quanto mais pessoas conseguirem fazer o curso e aprenderem, mais eu vou ficar feliz. Os motivos de colocar o curso como pago é que assim eu garanto que a Udemy vai gerar certificado para todos (no curso gratuito muita gente não conseguia gerar) e isso também irá me ajudar a continuar [viajando e fotografando o mundo](https://unsplash.com/@willianjusten), que tem sido uma grande paixão minha.
 
 Então aproveite o **CARNAGIT** e estude muito nesse feriadão!
