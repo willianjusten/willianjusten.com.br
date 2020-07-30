@@ -15,9 +15,13 @@ const AboutPage = () => (
     <MainContent>
       <h1>Sobre mim</h1>
       <p>
-        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e
-        sou instrutor na {' '}
-        <a href="https://www.udemy.com/user/willian-justen-de-vasconcellos/" target="_blank" rel="noopener noreferrer">
+        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e sou
+        instrutor na{' '}
+        <a
+          href="https://www.udemy.com/user/willian-justen-de-vasconcellos/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Udemy
         </a>
         , além de ser um nômade digital e tirar{' '}
@@ -33,7 +37,7 @@ const AboutPage = () => (
 
       <p>
         Já passei por empresas como{' '}
-         <a
+        <a
           href="http://www.toptal.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -77,26 +81,6 @@ const AboutPage = () => (
         gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que
         por isso nasceu esse blog.
       </p>
-
-      <h2>Habilidades</h2>
-
-      <ul>
-        <li>HTML e Template Languages</li>
-        <li>Design Responsivo (Mobile First)</li>
-        <li>CSS (Stylus, Sass, Less, PostCSS)</li>
-        <li>Css Frameworks (Bootstrap, Foundation, Bulma)</li>
-        <li>Javascript (Design Patterns, Testes, ES6/7)</li>
-        <li>ReactJS / Redux / Flux</li>
-        <li>NodeJS</li>
-        <li>Automatizadores (Grunt, Gulp, Webpack, Parcel)</li>
-        <li>Git</li>
-        <li>Python</li>
-        <li>Ruby / Rails</li>
-        <li>MySQL - MongoDB</li>
-        <li>Scrum and Kanban</li>
-        <li>TDD e Continuous Integration</li>
-        <li>O que eu não sei, aprendo rápido =)</li>
-      </ul>
 
       <h2>Contato</h2>
 
