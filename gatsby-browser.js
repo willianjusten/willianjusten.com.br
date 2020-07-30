@@ -8,3 +8,13 @@ if (typeof window !== 'undefined') {
     offset: 66 // size of the header (sidebar) when mobile
   })
 }
+
+export const onServiceWorkerUpdateReady = () => {
+  const answer = window.confirm(
+    `Esse site tem uma atualização! ` +
+      `Deseja recarregar para ver a nova versão?`
+  )
+  if (answer === true) {
+    window.location.reload()
+  }
+}
