@@ -1,18 +1,17 @@
 ---
 layout: post
-title: "Criando componentes usando só ES6"
-date: 2017-07-07 13:09:11
-image: '/assets/img/componentes-es6/componentes.png'
-description: 'Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?'
-main-class: 'js'
-color: '#D6BA32'
+date: 2017-07-07T13:09:11.000Z
+image: /assets/img/componentes-es6/componentes.png
+title: Criando componentes usando só ES6
+description: Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?
+introduction: Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?
+twitter_text: Muita gente usa React, outros usam Vue, etc. Por que não só ES6?
+main-class: js
+color: "#D6BA32"
 tags:
-- js
-- es6
-twitter_text: 'Muita gente usa React, outros usam Vue, etc. Por que não só ES6?'
-introduction: 'Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?'
+  - js
+  - es6
 ---
-
 ## Introdução
 
 Faaaaala pessoal, hoje eu venho trazendo um post bem legal, que sempre acabo me perguntando. Será que precisamos usar React/Vue/Angular para criar componentes sempre? Se for algo simples, por que não usar ES6 puro?
@@ -261,5 +260,3 @@ Onde o meu `data` está sendo extraído da própria API do Spotify e alimentando
 ## Conclusão
 
 É isso galera, sei que o React/Vue/Angular fazem muito mais do que isso, mas as vezes nem precisamos deles se quisermos criar componentes básicos e as vezes até complexos xD
-
-Se você curtiu a ideia, deixa aí seu comentário. E lembrando, eu ensino sobre essa feature do ES6 e muitas outras no meu [Curso Completo de JavaScript Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=LANCAMENTO50), se gostou não perde o desconto =)
