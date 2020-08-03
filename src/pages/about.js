@@ -72,8 +72,9 @@ const AboutPage = () => (
         ano de 2014, mas curiosamente, essa não foi minha primeira faculdade, eu
         também fiz <strong>Química Industrial</strong> na Uff. Sim, você leu
         certo, eu realmente fiz Química… E por que eu trabalho com web agora?
-        Ah… porque web é incrível e a facilidade em aprender cada dia mais, me
-        deixa mais feliz com a escolha que fiz.
+        Ah… porque web é incrível, a facilidade em aprender cada dia mais e
+        ainda poder ajudar um grande número de pessoas me deixa feliz e
+        realizado todos os dias.
       </p>
 
       <p>
