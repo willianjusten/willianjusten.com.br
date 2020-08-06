@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-08-05 02:59:30
+date: 2020-08-05T02:59:30.000Z
 image: /assets/img/next-gatsby-cra-cover.png
 title: NextJS, Gatsby ou Create React App? Entendendo os conceitos de SSR, SSG e SPA.
 description: Antes de escolher um deles, é importante saber as diferenças e suas
@@ -18,7 +18,7 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, o post de hoje é para falar de um assunto bem importante e que causa muitas dúvidas, quando será que eu devo usar Gatsby ou Next ou Create React App? Mas antes mesmo dessa dúvida, é importante saber as diferenças e também entender as suas necessidades, só assim a gente consegue realmente escolher o que for melhor para nós.
+Fala pessoal, o post de hoje é para falar de um assunto bem importante e que causa muitas dúvidas como: "Quando será que eu devo usar Gatsby ou Next ou Create React App?". Mas antes mesmo dessa dúvida, é importante saber as diferenças e também entender as suas necessidades, só assim a gente consegue realmente escolher o que for melhor para nossa aplicação.
 
 Esse post será baseado em um dos vídeos que eu fiz para o meu curso [React Avançado](https://reactavancado.com.br/), no curso nós utilizamos o NextJS e por isso eu resolvi falar sobre os funcionamentos lá.
 
@@ -50,7 +50,7 @@ E obviamente, eu perguntei, mas por que de usar o Next? E a resposta foi:
 
 Um dos maiores erros de muitas pessoas/empresas é achar que se botar o Gatsby/Next vai ter um SEO melhor. Mas isso não é verdade e sabe por quê? Bem simples, tanto o Gatsby quanto o Next (usando SSG) vão gerar estáticos, que é exatamente "html/css/js" lá do início!
 
-> Ou seja, você vai reescrever tudo para o famoso trocar o 6 pela meia dúzia!
+> Ou seja, você vai reescrever tudo e, no fim, trocar o famoso 6 por meia duzia.
 
 É por isso que antes mesmo de escolher uma tecnologia/framework, é importante saber o que você precisa e o que você já tem. 
 
