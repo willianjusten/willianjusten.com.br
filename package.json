@@ -38,7 +38,7 @@
     "gatsby-transformer-sqip": "^2.2.6",
     "gsap": "^3.2.6",
     "lazysizes": "^5.2.0",
-    "netlify-cms-app": "^2.12.11",
+    "netlify-cms-app": "^2.12.19",
     "netlify-plugin-gatsby-cache": "^0.2.2",
     "prismjs": "^1.21.0",
     "prop-types": "^15.7.2",
