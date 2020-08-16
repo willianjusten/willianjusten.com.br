@@ -28,7 +28,7 @@ O mini-curso será postado no [meu canal do YouTube](https://www.youtube.com/Wil
 
 ## Playlist dos vídeos
 
-Conforme eu for lançando os vídeos, eu vou atualizando esse post também, para facilitar vocês a encontrem no blog depois também.
+Conforme eu for lançando os vídeos, eu vou atualizando esse post, para facilitar que vocês encontrem no blog depois.
 
 Então, lá vai o primeiro vídeo!
 
