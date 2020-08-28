@@ -20,19 +20,19 @@ const coursesList = [
       'Aprenda o que é TypeScript, como funciona, por que usar e muito mais!'
   },
   {
-    title: 'Criando um ambiente de Desenvolvimento no Windows',
-    image: 'curso-windows.png',
-    link:
-      'https://www.udemy.com/course/criando-um-ambiente-de-desenvolvimento-no-windows/',
-    description: 'Comece a desenvolver no Windows do jeito certo e sem erros!'
-  },
-  {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
     link:
       'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOAGO20',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
+  },
+  {
+    title: 'Criando um ambiente de Desenvolvimento no Windows',
+    image: 'curso-windows.png',
+    link:
+      'https://www.youtube.com/watch?v=YcR8pKvjx44&list=PLlAbYrWSYTiOpefWtd6uvwgKT1R-94Zfd',
+    description: 'Comece a desenvolver no Windows do jeito certo e sem erros!'
   },
   {
     title: 'Mini-curso de Netlify no Youtube',
@@ -77,7 +77,8 @@ const coursesList = [
   {
     title: 'Git e Github para Iniciantes',
     image: 'curso-git.jpg',
-    link: 'https://www.udemy.com/git-e-github-para-iniciantes/',
+    link:
+      'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPA2iEiQ2PF_A9j__C4hi0A',
     description:
       'Tudo que você precisa para começar a versionar seus arquivos e contribuir com a comunidade opensource.'
   }
