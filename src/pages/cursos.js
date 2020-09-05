@@ -23,7 +23,7 @@ const coursesList = [
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
     link:
-      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOSET20',
+      'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOSET20STAR',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
