@@ -158,7 +158,9 @@ if (process.env.CONTEXT === 'production') {
     resolve: `gatsby-plugin-google-analytics`,
     options: {
       trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
+      head: false,
+      anonymize: true,
+      respectDNT: true
     }
   }
 
