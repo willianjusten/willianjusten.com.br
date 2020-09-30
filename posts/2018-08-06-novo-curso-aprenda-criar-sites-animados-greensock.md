@@ -23,7 +23,7 @@ Olá pessoal! Hoje é um dia muito feliz para mim, pois finalmente meu novo curs
 
 Para quem nunca ouviu falar no Greensock, eu fiz uma [palestra no Front in BH](https://www.youtube.com/watch?v=UgCwgIdoujg) sobre a biblioteca, mas num resumo muito rápido, ela é uma biblioteca que facilita criar qualquer tipo de animação com um controle muito grande!
 
-Se você tá apressado para conseguir seu cupom, [abre esse link e pegue o seu!](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOSET20)
+Se você tá apressado para conseguir seu cupom, [abre esse link e pegue o seu!](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOOCT20)
 
 ## Sobre o curso
 
@@ -45,4 +45,4 @@ Para tirar as dúvidas tem a plataforma da Udemy, mas também vocês podem tirar
 
 ## Preço e promoção
 
-O valor final do curso é de **R\$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOSET20) que vai deixar o curso a **R\$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://bit.ly/will-slack/).
+O valor final do curso é de **R\$ 279,99**, e no momento **não terá promoção da Udemy**. Mas, é claro que eu sou legal com quem me segue e estou liberando [um cupom](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOOCT20) que vai deixar o curso a **R\$ 54,99** e você ainda pode **dividir em 3x**! Então não há desculpas para não fazer o curso hein! Espero vocês no curso e no [Slack](https://bit.ly/will-slack/).
