@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-10-31 02:47:09
+date: 2020-10-31T02:47:09.000Z
 image: /assets/img/halloween.jpg
 title: Happy Halloween! Caça ao tesouro!
 description: Tenha a chance de ganhar 1 curso de React Avançado de graça!
@@ -24,8 +24,6 @@ E você deve estar se perguntando:
 > Uai, mas como eu faço então?
 
 Bom, aí que está, só de acessar essa página **você já está participando!** Agora cabe a você, descobrir o resto das etapas =D
-
-E se você achar que não vai ganhar de jeito nenhum, aproveita [o cupom do curso](https://www.udemy.com/course/react-avancado/?couponCode=PROMONOV20)! 
 
 Boa sorte a todos!
 
