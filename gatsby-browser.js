@@ -22,3 +22,10 @@ function onServiceWorkerUpdateReady() {
 }
 
 export { onServiceWorkerUpdateReady }
+
+//// Happy Halloween
+console.log('🎃🎃🎃 Happy Halloween 🎃🎃🎃')
+console.log('Quer ganhar um curso na faixa??')
+console.log(
+  'Qual foi minha fantasia de Halloween do ano passado? Acerte e vá para https://${fantasia}Halloween.willianjusten.com.br"'
+)
