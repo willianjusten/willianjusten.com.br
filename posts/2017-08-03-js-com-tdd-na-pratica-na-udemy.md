@@ -16,9 +16,9 @@ introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha port
 
 ## Introdução
 
-Faaaala pessoal, hoje eu estou muito feliz de estar lançando meu curso de [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOOCT20) em sua totalidade na Udemy! O Curso tem mais de **140 vídeos** e mais de **14 horas de duração**, foi um curso bastante trabalhoso de se fazer, mas que estou bastante feliz com o resultado =D
+Faaaala pessoal, hoje eu estou muito feliz de estar lançando meu curso de [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMONOV20) em sua totalidade na Udemy! O Curso tem mais de **140 vídeos** e mais de **14 horas de duração**, foi um curso bastante trabalhoso de se fazer, mas que estou bastante feliz com o resultado =D
 
-Eu vou deixar um vídeo aqui embaixo explicando tudo que vai ter no curso, assim fica mais fácil de entender. A promoção de lançamento acabou e foi um sucesso, mas você sempre pode comprar com um desconto bem maneiro com o cupom **PROMOOCT20** ou clicando no [seguinte link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOOCT20), aproveite!
+Eu vou deixar um vídeo aqui embaixo explicando tudo que vai ter no curso, assim fica mais fácil de entender. A promoção de lançamento acabou e foi um sucesso, mas você sempre pode comprar com um desconto bem maneiro com o cupom **PROMONOV20** ou clicando no [seguinte link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMONOV20), aproveite!
 
 ## Vídeo
 
