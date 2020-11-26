@@ -24,7 +24,7 @@ Muita gente ficou triste por não ter conseguido e eu fiquei triste porque queri
 
 Não sei com que _velocidade_ vocês vão fazer esse joguinho, mas espero que demore um pouquinho mais que o outro pelo menos =o
 
-Nesse jogo teremos 1 cupom para o [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMONOV20) e 1 cupom para o [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/learn/v4/?couponCode=PROMONOV20), o mais rápido vai ganhar =D
+Nesse jogo teremos 1 cupom para o [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=BLACKFRIDAY) e 1 cupom para o [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/learn/v4/?couponCode=BLACKFRIDAY), o mais rápido vai ganhar =D
 
 E como começar a jogar? Bom, você já começou e só não sabe! Boa sorte!
 
