@@ -8,7 +8,7 @@ const coursesList = [
   {
     title: 'React Avançado',
     image: 'react-avancado.png',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=BLACKFRIDAYREACT',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=BLACKFRIDAY',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
