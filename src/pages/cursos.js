@@ -89,7 +89,7 @@ const CursosPage = () => (
     <SEO
       title="Cursos"
       description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
-      image="https://willianjusten.com.br/assets/img/cursos/cursos-bg.png"
+      image="https://willianjusten.com.br/assets/img/black-friday.png"
     />
     {coursesList.map(({ title, description, link, image }, i) => (
       <Course
