@@ -32,7 +32,7 @@ Vamos ver abaixo alguns exemplos na prática:
 const today = new Date(); // Thu Feb 18 2021 12:55:04 GMT-0300 (Brasilia Standard Time)
 
 // Para converter no formato mais simples do Brasil => 18/02/2021
-console.log(new Intl.DateTimeFormat('pt-BR).format(date));
+console.log(new Intl.DateTimeFormat('pt-BR').format(date));
 
 // Para converter em => 18 de fev. de 2021
 console.log(new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'short', year: 'numeric'} ).format(today));
