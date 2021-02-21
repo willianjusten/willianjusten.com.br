@@ -138,7 +138,7 @@ const pluginConfig = [
       ]
     }
   },
-  `gatsby-plugin-offline`,
+  `gatsby-plugin-remove-serviceworker`,
   `gatsby-plugin-sitemap`
 ]
 
