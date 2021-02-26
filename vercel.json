@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/places/:match*",
-      "destination": "https://places.willianjusten.com.br/:match*"
+      "source": "/places/*",
+      "destination": "https://places.willianjusten.com.br/:splat"
     }
   ]
 }
