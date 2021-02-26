@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/places/",
-      "destination": "https://places.willianjusten.com.br/"
+      "source": "/places/:match*",
+      "destination": "https://places.willianjusten.com.br/:match*"
     }
   ]
 }
