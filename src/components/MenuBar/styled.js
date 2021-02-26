@@ -110,7 +110,7 @@ export const MenuBarItem = styled.span`
 `
 
 export const MenuBarNotification = styled.span`
-  background: red;
+  background: var(--highlight);
   border-radius: 50%;
   display: block;
   height: 0.4rem;
