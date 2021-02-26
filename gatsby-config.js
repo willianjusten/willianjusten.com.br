@@ -176,5 +176,9 @@ module.exports = {
     author: `@Willian_justen`,
     siteUrl: 'https://willianjusten.com.br'
   },
-  plugins: pluginConfig
+  plugins: pluginConfig,
+  flags: {
+    DEV_SSR: false,
+    FAST_DEV: true
+  }
 }

@@ -13,7 +13,7 @@ import {
   MainContent
 } from '../styles/base'
 
-export default props => {
+const BlogPost = props => {
   const post = props.data.markdownRemark
   const next = props.pageContext.next
   const previous = props.pageContext.previous
@@ -39,6 +39,8 @@ export default props => {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query Post($slug: String!) {
