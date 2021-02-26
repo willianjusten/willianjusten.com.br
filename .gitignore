@@ -6,3 +6,5 @@ _drafts
 .vscode
 public
 .env
+
+.vercel
