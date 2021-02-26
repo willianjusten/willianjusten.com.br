@@ -4,24 +4,24 @@
     { "source": "/jekyll/", "destination": "https://willianjusten.com.br/" },
     { "source": "/svg/", "destination": "https://willianjusten.com.br/" },
     { "source": "/dev/", "destination": "https://willianjusten.com.br/" },
-    { "source": "/react/", "destination": "https://reactavancado.com.br/" },
-    { "source": "/reactjs/", "destination": "https://reactavancado.com.br/" },
+    { "source": "/react/:match*", "destination": "https://reactavancado.com.br/:match*" },
+    { "source": "/reactjs/", "destination": "https://reactavancado.com.br/:match*" },
     { "source": "/tags/", "destination": "https://willianjusten.com.br/" },
     {
       "source": "/making-of-blog-novo/",
       "destination": "https://willianjusten.com.br/making-of-blog-novo-gatsby-js"
     },
     {
-      "source": "/places",
-      "destination": "https://places.willianjusten.com.br/"
+      "source": "/places/:match*",
+      "destination": "https://places.willianjusten.com.br/:match*"
     },
     {
-      "source": "/japanese-words",
-      "destination": "https://japanese-words.willianjusten.com.br/"
+      "source": "/japanese-words/:match*",
+      "destination": "https://japanese-words.willianjusten.com.br/:match*"
     },
     {
-      "source": "/learn-japanese",
-      "destination": "https://learn-japanese.willianjusten.com.br/"
+      "source": "/learn-japanese/:match*",
+      "destination": "https://learn-japanese.willianjusten.com.br/:match*"
     }
   ]
 }
