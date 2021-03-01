@@ -6,6 +6,12 @@ import Course from '../components/Course'
 
 const coursesList = [
   {
+    title: 'NextJS na Prática!',
+    image: 'react-avancado.png',
+    link: 'https://nextjs.willianjusten.com.br',
+    description: 'Crie um mapa totalmente interativo com um CMS integrado em poucas horas!'
+  },
+  {
     title: 'React Avançado',
     image: 'react-avancado.png',
     link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOFEV21',
