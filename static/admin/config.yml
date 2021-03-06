@@ -6,7 +6,6 @@ backend:
 
 media_folder: static/assets/img
 public_folder: /assets/img
-publish_mode: editorial_workflow
 slug:
   encoding: 'ascii'
   clean_accents: true
@@ -23,7 +22,7 @@ collections:
           label: 'Date',
           name: 'date',
           widget: 'datetime',
-          format: 'YYYY-MM-DD hh:mm:ss',
+          format: 'YYYY-MM-DD hh:mm:ss'
         }
       - { label: 'Post Image', name: 'image', widget: 'image' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -34,7 +33,7 @@ collections:
           label: 'Main Class',
           name: 'main-class',
           widget: 'select',
-          options: ['jekyll', 'css', 'js', 'html', 'svg', 'dev', 'misc'],
+          options: ['jekyll', 'css', 'js', 'html', 'svg', 'dev', 'misc']
         }
       - {
           label: 'Color',
@@ -48,14 +47,14 @@ collections:
               { label: 'HTML', value: '#EB7728' },
               { label: 'SVG', value: '#7D669E' },
               { label: 'Dev', value: '#637a91' },
-              { label: 'Misc', value: '#7AAB13' },
-            ],
+              { label: 'Misc', value: '#7AAB13' }
+            ]
         }
       - { label: 'Tags', name: 'tags', widget: 'list', default: [''] }
       - {
           label: 'Category',
           name: 'categories',
           widget: 'list',
-          required: false,
+          required: false
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
