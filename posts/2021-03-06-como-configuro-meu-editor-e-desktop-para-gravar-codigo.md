@@ -9,8 +9,8 @@ introduction: São muitos anos gravando aulas, então aqui compartilho algumas
   coisas que descobri.
 twitter_text: São muitos anos gravando aulas, então aqui compartilho algumas
   coisas que descobri.
-main-class: dev
-color: "#637a91"
+main-class: misc
+color: "#7AAB13"
 tags:
   - Dicas
 categories:
