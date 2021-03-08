@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, image }) {
   const metaDescription = description || site.siteMetadata.description
 
   const ogImage =
-    image || 'https://willianjusten.com.br/assets/img/blog-image.png'
+    image || 'https://willianjusten.com.br/assets/img/blog-image-new.png'
 
   return (
     <Helmet
