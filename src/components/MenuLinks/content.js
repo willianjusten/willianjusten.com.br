@@ -14,6 +14,10 @@ const links = [
   {
     label: 'Séries',
     url: '/series/'
+  },
+  {
+    label: 'Viagens',
+    url: 'https://my-trips.willianjusten.com.br/'
   }
 ]
 
