@@ -14,6 +14,7 @@ const pluginConfig = [
       name: 'uploads'
     }
   },
+  `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   {

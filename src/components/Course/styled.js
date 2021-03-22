@@ -1,18 +1,19 @@
-import Img from 'gatsby-image'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
 import transitions from '../../styles/transitions'
 
-export const ImageWrapper = styled(Img)`
-  border-radius: 50%;
-  display: flex;
-  min-width: 120px;
-  min-height: 120px;
+export const ImageWrapper = styled.div`
+  .gatsby-image-wrapper {
+    border-radius: 50%;
+    display: flex;
+    max-width: 120px;
+    max-height: 120px;
 
-  ${media.lessThan('large')`
+    ${media.lessThan('large')`
     margin-bottom: 5px;
   `}
+  }
 `
 
 export const CourseWrapper = styled.section`

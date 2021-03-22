@@ -14,7 +14,7 @@ import {
 import Hit from './Hit'
 import * as S from './styled'
 
-const Search = (props) => {
+const Search = props => {
   const searchClient = algoliasearch(
     props.algolia.appId,
     props.algolia.searchOnlyApiKey
@@ -29,10 +29,7 @@ const Search = (props) => {
             indexName={props.algolia.indexName}
           >
             <Configure hitsPerPage={200} distinct />
-            <SearchBox
-              autoFocus
-              translations={{ placeholder: 'Pesquisar...' }}
-            />
+            <SearchBox translations={{ placeholder: 'Pesquisar...' }} />
             <Stats
               translations={{
                 stats(nbHits, timeSpentMS) {
