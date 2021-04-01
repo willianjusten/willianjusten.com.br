@@ -62,7 +62,7 @@ Com essa saída, eu consegui dar um boost e lancei o curso rapidamente. Foi um s
 
 <h2 id="brazil-js-lancamento">BrazilJS e lançamento de mais um novo curso</h2>
 
-Ano passado foi um ano hiper mega cheio, eu palestrei em diversos lugares hiper importantes. E um dos mais importantes, sem dúvida foi a [BrazilJS](https://braziljs.org/conf/). Eu aproveitei a deixa de estar palestrando nesse evento imenso e resolvi lançar a pré-venda o meu maior curso até então, que é o [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=BLACKFRIDAY).
+Ano passado foi um ano hiper mega cheio, eu palestrei em diversos lugares hiper importantes. E um dos mais importantes, sem dúvida foi a [BrazilJS](https://braziljs.org/conf/). Eu aproveitei a deixa de estar palestrando nesse evento imenso e resolvi lançar a pré-venda o meu maior curso até então, que é o [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOABRIL21).
 
 Eu queria com esse curso, passar mais um outro assunto que não via tanto em cursos ou sendo falado, mas que é extremamente necessário para o mercado de trabalho. Para esse curso, eu ainda não tinha feito a ementa completa, basicamente tinha feito um [rascunho básico](https://business.facebook.com/willian.justen.cursos/photos/a.808763882559204.1073741828.787922347976691/841024392666486/?type=3&theater) do que estava em mente, mas mesmo assim resolvi lançar lá na BrazilJS.
 
@@ -136,8 +136,8 @@ Para agradecer todo esse apoio, tanto dos meus alunos como dos leitores desse bl
 
 Mas lembrando que existem cupons de desconto, seguem eles:
 
-- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=BLACKFRIDAY)
-- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=BLACKFRIDAY)
-- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=BLACKFRIDAY)
+- [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOABRIL21)
+- [Curso de JS Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6?couponCode=PROMOABRIL21)
+- [Curso de JS com TDD na Prática (inclui JS Moderno)](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOABRIL21)
 
 Abraços para vocês e que comece a caça ao cupom de **100%**!
