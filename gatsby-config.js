@@ -107,7 +107,9 @@ const pluginConfig = [
               return Object.assign({}, edge.node.frontmatter, {
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
+                tags: edge.node.frontmatter.date.join(','),
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                link: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 custom_elements: [{ 'content:encoded': edge.node.html }]
               })
@@ -125,6 +127,7 @@ const pluginConfig = [
                       title
                       description
                       date
+                      tags
                     }
                     excerpt
                     html
