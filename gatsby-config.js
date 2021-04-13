@@ -127,6 +127,7 @@ const pluginConfig = [
                       date
                     }
                     excerpt
+                    html
                   }
                 }
               }
