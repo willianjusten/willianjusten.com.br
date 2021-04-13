@@ -10,7 +10,8 @@ import {
   PostTitle,
   PostDescription,
   PostDate,
-  MainContent
+  MainContent,
+  ButtonBack
 } from '../styles/base'
 
 const BlogPost = props => {
@@ -26,6 +27,15 @@ const BlogPost = props => {
         image={`https://willianjusten.com.br${post.frontmatter.image}`}
       />
       <PostHeader>
+        <ButtonBack
+          to="/"
+          cover
+          direction="left"
+          duration={0.8}
+        >
+          ← Voltar na listagem
+        </ButtonBack>
+
         <PostDate>
           {post.frontmatter.date} • {post.timeToRead} min de leitura
         </PostDate>
