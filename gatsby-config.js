@@ -107,7 +107,7 @@ const pluginConfig = [
               return Object.assign({}, edge.node.frontmatter, {
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
-                tags: edge.node.frontmatter.date.join(','),
+                tags: edge.node.frontmatter.tags.join(','),
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 link: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
