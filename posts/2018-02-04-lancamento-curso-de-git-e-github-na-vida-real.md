@@ -18,7 +18,7 @@ introduction: 'Um curso direto ao ponto, aprenda workflows e comandos realmente 
 
 ## Lançamento do Curso
 
-Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOABRIL21). Se você clicou no link, já deve ter achado o cupom **PROMOABRIL21**, que deixa o curso por **R\$ 27,99**, sim, é o lançamento do curso, mas ele já está em promoção, e assim sempre será!
+Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOMAI21). Se você clicou no link, já deve ter achado o cupom **PROMOMAI21**, que deixa o curso por **R\$ 27,99**, sim, é o lançamento do curso, mas ele já está em promoção, e assim sempre será!
 
 ## Por que de lançar esse curso?
 
@@ -45,7 +45,7 @@ Boa pergunta! Nesse curso eu tenho intenção de fazer atualizações periódica
 
 ## Mais barato que um McDonalds e um Abadá de Carnaval!
 
-Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOABRIL21), viu que o curso vai sair por **R\$ 24,99**!
+Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOMAI21), viu que o curso vai sair por **R\$ 24,99**!
 
 > Ué, mas o curso não está sendo lançado agora? Vai botar um preço tão baixo assim?
 

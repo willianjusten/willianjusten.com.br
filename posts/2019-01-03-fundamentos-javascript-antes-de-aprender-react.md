@@ -30,7 +30,7 @@ O que eu mais vejo são pessoas com dificuldades não no React, mas em coisas b�
 
 Se você já trabalha com React ou já sabe bem as novas sintaxes de ES6 assim como conceitos básicos de JavaScript, esse post provavelmente vai ser bem chato e repetitivo para ti, então se não quiser ler, não tem problema. Se você ainda nem começou com React e sente que ainda faltam coisas básicas, dá uma lidinha nesse post.
 
-Vários dos conceitos abordados e principalmente a parte de ES6, eu tenho um [curso sobre isso na Udemy](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOABRIL21) que talvez possa te interessar.
+Vários dos conceitos abordados e principalmente a parte de ES6, eu tenho um [curso sobre isso na Udemy](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAI21) que talvez possa te interessar.
 
 Enquanto escrevo, vou ouvindo [Solar Fields](https://open.spotify.com/artist/7GyhmlEy51sGUE09A5AWzc?si=P3-T0rYMQ7yyvOnDUDWTJg) que é um DJ Sueco criador da trilha sonora de Mirror's Edge Catalyst e várias outras coisas legais. Dessa vez, foi uma recomendação do meu amigo [Jonas Mendes](https://nipher.io/), que também é programador.
 
