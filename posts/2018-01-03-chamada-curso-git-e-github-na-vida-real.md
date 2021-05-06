@@ -42,7 +42,7 @@ Sim, o curso terá certificado liberado através da Udemy para todos aqueles que
 
 > Qual o preço do curso?
 
-Para garantir que a Udemy vai gerar certificado para todos (ele limita em cursos gratuitos), esse curso será pago, mas pretendo lançá-lo no valor mínimo **20-25 reais**, o objetivo é que quanto mais pessoas façam o curso melhor! Outra coisa legal, eu irei liberar vários cursos gratuitos lá no [slack dos meus alunos](https://bit.ly/will-slack), então se quiser pegar um curso na faixa, só entrar lá =)
+Para garantir que a Udemy vai gerar certificado para todos (ele limita em cursos gratuitos), esse curso será pago, mas pretendo lançá-lo no valor mínimo **20-25 reais**, o objetivo é que quanto mais pessoas façam o curso melhor! Outra coisa legal, eu irei liberar vários cursos gratuitos lá no [slack dos meus alunos](https://bit.ly/slack-will), então se quiser pegar um curso na faixa, só entrar lá =)
 
 > O que preciso saber para fazer o curso?
 
@@ -54,7 +54,7 @@ Você pode fazer no seu tempo, o curso é vitalício! Faça 1x, 2x, infinitas ve
 
 > Como posso saber quando o curso foi lançado?
 
-Todos os meus alunos serão avisados lá no [slack](https://bit.ly/will-slack) e também na plataforma da Udemy.
+Todos os meus alunos serão avisados lá no [slack](https://bit.ly/slack-will) e também na plataforma da Udemy.
 
 ## Conclusão
 

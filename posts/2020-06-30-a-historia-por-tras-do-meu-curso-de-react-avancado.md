@@ -55,7 +55,7 @@ Conversei com meu gestor dizendo que estava desanimado e já querendo sair mesmo
 
 Assim que eu saí da Toptal, eu decidi que iria voltar a criar mais coisas, mais conteúdo e sim, eu iria fazer um curso legal!
 
-Uma das primeiras coisas que eu fiz, foi "renascer" o meu [canal do YouTube](https://www.youtube.com/WillianJustenCursos) para começar a testar novos estilos de vídeo e conteúdo. Passei a conversar muito mais no [Slack dos Alunos](https://bit.ly/will-slack) e até brincava sobre a Toptal estar atrapalhando o meu trabalho. Fiz até aposta com aluno (Alô Bruno Melo, tá pago?)
+Uma das primeiras coisas que eu fiz, foi "renascer" o meu [canal do YouTube](https://www.youtube.com/WillianJustenCursos) para começar a testar novos estilos de vídeo e conteúdo. Passei a conversar muito mais no [Slack dos Alunos](https://bit.ly/slack-will) e até brincava sobre a Toptal estar atrapalhando o meu trabalho. Fiz até aposta com aluno (Alô Bruno Melo, tá pago?)
 
 E, claro, eu comecei a repensar no curso e a ideia de fazer um Ecommerce de jogos veio quase que na hora! Faz pouco tempo eu comprei um PC e passei a usar a Epic Games (que apesar de bonita é horrível) e também a Steam (que apesar de funcional é feia que dói).
 

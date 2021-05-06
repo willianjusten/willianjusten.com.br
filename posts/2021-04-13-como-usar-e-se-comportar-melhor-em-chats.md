@@ -62,5 +62,4 @@ Essa é a dica **mais importante de todas**. Lembre-se que existem pessoas reais
 
 Espero que tenham gostado das dicas e passem a fazer o mesmo nos ambientes de vocês, certeza que vai ser bem efetivo e terão resultados melhores.
 
-E se você quiser participar de uma comunidade super legal, saudável e que se ajuda bastante, entra no [Slack dos meus alunos](https://bit.ly/will-slack), eu estou sempre por lá também e é bem legal.
-
+E se você quiser participar de uma comunidade super legal, saudável e que se ajuda bastante, entra no [Slack dos meus alunos](https://bit.ly/slack-will), eu estou sempre por lá também e é bem legal.

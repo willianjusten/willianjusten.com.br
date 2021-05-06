@@ -18,7 +18,7 @@ introduction: 'Alguns motivos do porque eu acho que o Github é importante para 
 
 Fala meus lindos, estou aqui com um post que pode ser polêmico ou não, vai depender muito da interpretação de todos vocês. Peço que leiam atentamente todos os detalhes, a ideia não é gerar #treta ahuahua
 
-Vou escrevendo enquanto vou ouvindo um album incrível da banda [The Last Sights of the Wind](https://open.spotify.com/album/6tIzZJUF8WPl2YiHWxk4TU), um instrumental muito muito bom, mistura guitarras muito melódicas com som atmosférico, perfeito para quem quer se concentrar em alguma tarefa importante. Aliás, se você curte música, entra no meu [grupo do Slack](https://bit.ly/will-slack), tem um canal específico para quem curte um bom som! xD
+Vou escrevendo enquanto vou ouvindo um album incrível da banda [The Last Sights of the Wind](https://open.spotify.com/album/6tIzZJUF8WPl2YiHWxk4TU), um instrumental muito muito bom, mistura guitarras muito melódicas com som atmosférico, perfeito para quem quer se concentrar em alguma tarefa importante. Aliás, se você curte música, entra no meu [grupo do Slack](https://bit.ly/slack-will), tem um canal específico para quem curte um bom som! xD
 
 Aproveitando para fazer <s>um merchan</s> comunicado, ontem eu lancei meu [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAI21) lá na Udemy, se você ainda não viu, dá um pulo lá.
 
