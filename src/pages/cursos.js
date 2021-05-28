@@ -6,6 +6,13 @@ import Course from '../components/Course'
 
 const coursesList = [
   {
+    title: 'Aprenda Testes End to End na Prática com Cypress',
+    image: 'react-avancado.png',
+    link: 'https://www.udemy.com/course/cypress-na-pratica?couponCode=PROMOLANCAMENTO',
+    description:
+      'Como testar melhor suas aplicações e garantir mais qualidade ao projeto!'
+  },
+  {
     title: 'NextJS na Prática!',
     image: 'react-avancado.png',
     link: 'https://nextjs.willianjusten.com.br',
