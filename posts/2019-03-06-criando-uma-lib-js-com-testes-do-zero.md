@@ -158,4 +158,4 @@ yarn add on-leave-intent
 
 ## Conclusão e Jabá
 
-Espero que vocês tenham curtido esses vídeos e se você tem interesse em entender um pouco mais da teoria e também outros tipos de testes, eu tenho um curso chamado [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAI21) e se você usar esse link, vai com um super-hiper-mega desconto.
+Espero que vocês tenham curtido esses vídeos e se você tem interesse em entender um pouco mais da teoria e também outros tipos de testes, eu tenho um curso chamado [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJUN21) e se você usar esse link, vai com um super-hiper-mega desconto.
