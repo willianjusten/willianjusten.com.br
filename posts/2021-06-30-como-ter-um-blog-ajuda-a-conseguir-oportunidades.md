@@ -49,6 +49,16 @@ Quando você escreve um blog, as pessoas começam a ler e começam a compartilha
 Quanto mais pessoas te conhecem e mais pessoas você conhece, **mais oportunidades** aparecem. E esse era o objetivo inicial não? Viu só, não é mágica, é só lógica.
 
 
+## Aprendendo em público
+
+Pode não parecer, mas quando a gente tem um blog, a gente aprende muito e nós botamos isso em prática o tempo todo, seja falando sobre o que aprendemos, seja escrevendo os passos para caso vá precisar no futuro.
+
+Eu pensava que isso era uma coisa mais minha, mas depois eu fui ver que na realidade, isso é mais comum do que eu imaginava. Existe inclusive o termo `Learn in Public` que é exatamente isso, aprender em público. Existem alguns posts super interessantes que falam sobre o assunto que eu recomendo:
+
+- [Post Learn In Public - Swyx](https://www.swyx.io/learn-in-public/)
+- [Talk Learn In Public - Swyx](https://www.youtube.com/watch?v=znNxtSbuBjI)
+- [Learn in Public, It’s Great - Ali Abdal](https://aliabdaal.com/friendzone/learn-in-public-it-s-great-268305/)
+
 
 
 
