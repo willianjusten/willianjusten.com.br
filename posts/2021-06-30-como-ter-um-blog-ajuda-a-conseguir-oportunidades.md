@@ -74,13 +74,16 @@ Essa é uma prática chamada `Paywall`, onde só permite ler quem criar conta/pa
 
 ## Começando hoje mesmo com Hashnode
 
+
+[![Hashnode - Everything you need to start blogging as a developer](/assets/img/hashnode.jpg)](https://hashnode.com/@willianjusten/joinme)
+
 Nem sempre a gente quer criar um blog do zero, ou até mesmo tem muita gente que não sabe codar, mas ao invés de usar plataformas abomináveis como o Medium, eu venho aqui falar da [Hashnode](https://hashnode.com/@willianjusten/joinme).
 
 Eles são uma plataforma de blog super simples de usar e com várias funcionalidades **MUITO LEGAIS!** E não, não tô falando por ser patrocinado, quem me conhece sabe que eu só indico coisas das quais eu realmente gosto/acho legal. A primeira grande vantagem de usar a Hashnode é que você basicamente só vai precisar se preocupar em escrever o conteúdo, num vai ter preocupações com design/gatsby/next/jekyll/whatever, então se você é daqueles que sempre diz que não faz porque é difícil, **chega de desculpas!**
 
 Agora algumas outras vantagens que eu não conhecia da Hashnode e fui descobrindo e que nossa, achei ótimas!
 
-#### Você pode usar seu próprio domínio 
+#### Você pode usar seu próprio domínio
 
 Quando você tem o seu próprio domínio, as pessoas falam "O post do fulano", "O blog do fulano". Mas quando você não tem, vira "O post do Medium" e isso dilui demais sua marca. Podendo ter seu próprio nome, isso marca muito mais. Eu tenho uma amiga que se chama [Luisa Bezerra](https://luisarbezerra.com/) e o blog dela é lá na Hashnode e tudo. Hoje ela mora na Espanha e tudo, muito chique ela.
 
