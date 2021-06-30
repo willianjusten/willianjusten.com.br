@@ -105,6 +105,14 @@ Inclusive, eu vou começar a [migrar meus posts](https://willianjusten.hashnode.
 
 Dentro da Hashnode você pode habilitar a opção de ter uma newsletter, assim as pessoas podem assinar e receber aviso toda vez que um post novo for lançado, o que vai ajudar a ter leitores recorrentes, o que é muito importante para marcar sua presença.
 
+#### Muito mais e comparativos
+
+Eles tem muitas outras coisas, então fica até mais fácil você ver esses excelentes comparativos que eles mesmos dão:
+
+- [Hashnode vs Medium](https://hashnode.com/vs/medium)
+- [Hashnode vs Dev.to](https://hashnode.com/vs/devto)
+- [Hashnode vs Wordpress](https://hashnode.com/vs/wordpress)
+
 ## Conclusão
 
 Espero que vocês tenham entendido e visto as grandes vantagens de se criar um blog. E se vocês pensarem "Ah, mas eu não sei escrever", perca esse medo e simplesmente comece! Pense que o seu aprendizado pode ajudar muitos outros a aprender também. Os posts não precisam ser enormes, inovadores e mega complexos, o importante é você estar aprendendo e ajudando os outros, enquanto você também cresce a sua presença digital.
