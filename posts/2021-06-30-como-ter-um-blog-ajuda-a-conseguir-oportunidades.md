@@ -2,7 +2,7 @@
 layout: post
 date: 2021-06-30 01:02:12
 image: /assets/img/melhores-oportunidades.png
-title: Como ter um Blog ajuda a conseguir oportunidades
+title: Como ter um Blog ajuda a conseguir boas oportunidades
 description: Se você está procurando um emprego ou melhores oportunidades, ter
   um blog pode ajudar muito!
 introduction: Se você está procurando um emprego ou melhores oportunidades, ter
@@ -18,7 +18,7 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, o post de hoje é patrocinado pela [Hashnode](https://hashnode.com/@willianjusten/joinme), mas não sai daí! Não é um mero post para te vender algo, muito pelo contrário, a ideia desse post é te dar ideias e te ajudar a conseguir um emprego e/ou melhores oportunidades.
+Fala pessoal, o post de hoje é patrocinado pela [Hashnode](https://hashnode.com/@willianjusten/joinme), mas não saia daí! Não é um mero post para te vender algo, muito pelo contrário, o intuito desse post é te dar ideias e te ajudar a conseguir um emprego e/ou melhores oportunidades.
 
 Seguindo a tradição dos meus posts, enquanto eu escrevo, vou ouvindo uma banda chamada [Sleeping Pandora](https://open.spotify.com/artist/4PqIQknvBTor383DY4zJXb?si=KvYkbtb2SFqNsPHS0dz4hA&dl_branch=1), eles tocam um instrumental meio psicodélico, ótimo para estudar, ler, relaxar, super recomendo!
 
@@ -26,7 +26,7 @@ E como vai funcionar esse post? Eu vou falar um pouco sobre nossa área, como qu
 
 ## Então você quer arrumar um emprego?
 
-Se você está começando ou até mesmo está na área, deve saber que nosso mercado de TI está super aquecido e as vagas estão aparecendo em todos os cantos certo? Mas isso não quer dizer que estão contratando "qualquer um", junto com o crescimento do mercado, as demandas por gente mais qualificada também aumentaram. Pensando nisso, muitas empresas tem processos seletivos enormes que envolvem milhares de coisas como:
+Se você está começando ou até mesmo está na área, deve saber que nosso mercado de TI está super aquecido e as vagas estão aparecendo em todos os cantos, certo? Mas isso não quer dizer que estão contratando "qualquer um", junto com o crescimento do mercado, as demandas por gente mais qualificada também aumentaram. Pensando nisso, muitas empresas tem processos seletivos enormes que envolvem milhares de coisas como:
 
 * Entrevista com RH
 * Projeto de código para fazer no seu tempo
@@ -85,7 +85,7 @@ Agora algumas outras vantagens que eu não conhecia da Hashnode e fui descobrind
 
 #### Você pode usar seu próprio domínio
 
-Quando você tem o seu próprio domínio, as pessoas falam "O post do fulano", "O blog do fulano". Mas quando você não tem, vira "O post do Medium" e isso dilui demais sua marca. Podendo ter seu próprio nome, isso marca muito mais. Eu tenho uma amiga que se chama [Luisa Bezerra](https://luisarbezerra.com/) e o blog dela é lá na Hashnode e tudo. Hoje ela mora na Espanha e tudo, muito chique ela.
+Quando você tem o seu próprio domínio, as pessoas falam "O post do fulano", "O blog do fulano". Mas quando você não tem, vira "O post do Medium" e isso dilui demais sua marca. Podendo ter seu próprio nome, isso marca muito mais. Eu tenho uma amiga que se chama [Luisa Bezerra](https://luisarbezerra.com/) e o blog dela é lá na Hashnode. Hoje ela mora na Espanha e tudo, muito chique.
 
 #### Sem Paywall, sem propaganda, nada
 
@@ -93,7 +93,7 @@ Tudo que você quer é que a pessoa acesse seu post e leia. Esse negócio de ter
 
 #### Customização
 
-Uma coisa que eu gostei bastante até em relação ao [Dev.to](https://dev.to/) é que aqui você consegue editar o visual todo do seu blog, mudando sua logo, cores, posições. Além disso, você também consegue integrar diferentes ferramentas e até criar Widgets customizados que desejar.
+Uma coisa que eu gostei bastante na [Hashnode](https://hashnode.com/@willianjusten/joinme) em relação ao [Dev.to](https://dev.to/) é que aqui você consegue editar o visual todo do seu blog, mudando sua logo, cores, posições. Além disso, você também consegue integrar diferentes ferramentas e até criar Widgets customizados que desejar.
 
 #### Importar / Replicar
 
