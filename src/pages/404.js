@@ -41,11 +41,12 @@ const Text = styled.p`
   font-family: Courier, monospace;
 `
 
-const Button = styled(Link)`
+const Button = styled.a`
   background: var(--background);
   border: 1px solid var(--borders);
   border-radius: 6px;
   color: var(--texts);
+  cursor: pointer;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.06em;
@@ -67,7 +68,9 @@ const NotFoundPage = () => (
     <GlobalStyles />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
-    <Button href="/">De volta ao blog!</Button>
+    <Link href="/">
+      <Button>De volta ao blog!</Button>
+    </Link>
   </Container>
 )
 
