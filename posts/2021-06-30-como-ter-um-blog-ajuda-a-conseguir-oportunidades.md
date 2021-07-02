@@ -18,7 +18,7 @@ tags:
 ---
 ## Introdução
 
-Fala pessoal, o post de hoje é patrocinado pela [Hashnode](https://hashnode.com/@willianjusten/joinme), mas não saia daí! Não é um mero post para te vender algo, muito pelo contrário, o intuito desse post é te dar ideias e te ajudar a conseguir um emprego e/ou melhores oportunidades.
+Fala pessoal, o post de hoje é patrocinado pela [Hashnode](https://hashnode.com/?source=willian), mas não saia daí! Não é um mero post para te vender algo, muito pelo contrário, o intuito desse post é te dar ideias e te ajudar a conseguir um emprego e/ou melhores oportunidades.
 
 Seguindo a tradição dos meus posts, enquanto eu escrevo, vou ouvindo uma banda chamada [Sleeping Pandora](https://open.spotify.com/artist/4PqIQknvBTor383DY4zJXb?si=KvYkbtb2SFqNsPHS0dz4hA&dl_branch=1), eles tocam um instrumental meio psicodélico, ótimo para estudar, ler, relaxar, super recomendo!
 
@@ -75,9 +75,9 @@ Essa é uma prática chamada `Paywall`, onde só permite ler quem criar conta/pa
 ## Começando hoje mesmo com Hashnode
 
 
-[![Hashnode - Everything you need to start blogging as a developer](/assets/img/hashnode.jpg)](https://hashnode.com/@willianjusten/joinme)
+[![Hashnode - Everything you need to start blogging as a developer](/assets/img/hashnode.jpg)](https://hashnode.com/?source=willian)
 
-Nem sempre a gente quer criar um blog do zero, ou até mesmo tem muita gente que não sabe codar, mas ao invés de usar plataformas abomináveis como o Medium, eu venho aqui falar da [Hashnode](https://hashnode.com/@willianjusten/joinme).
+Nem sempre a gente quer criar um blog do zero, ou até mesmo tem muita gente que não sabe codar, mas ao invés de usar plataformas abomináveis como o Medium, eu venho aqui falar da [Hashnode](https://hashnode.com/?source=willian).
 
 Eles são uma plataforma de blog super simples de usar e com várias funcionalidades **MUITO LEGAIS!** E não, não tô falando por ser patrocinado, quem me conhece sabe que eu só indico coisas das quais eu realmente gosto/acho legal. A primeira grande vantagem de usar a Hashnode é que você basicamente só vai precisar se preocupar em escrever o conteúdo, num vai ter preocupações com design/gatsby/next/jekyll/whatever, então se você é daqueles que sempre diz que não faz porque é difícil, **chega de desculpas!**
 
@@ -93,7 +93,7 @@ Tudo que você quer é que a pessoa acesse seu post e leia. Esse negócio de ter
 
 #### Customização
 
-Uma coisa que eu gostei bastante na [Hashnode](https://hashnode.com/@willianjusten/joinme) em relação ao [Dev.to](https://dev.to/) é que aqui você consegue editar o visual todo do seu blog, mudando sua logo, cores, posições. Além disso, você também consegue integrar diferentes ferramentas e até criar Widgets customizados que desejar.
+Uma coisa que eu gostei bastante na [Hashnode](https://hashnode.com/?source=willian) em relação ao Dev.to é que aqui você consegue editar o visual todo do seu blog, mudando sua logo, cores, posições. Além disso, você também consegue integrar diferentes ferramentas e até criar Widgets customizados que desejar.
 
 #### Importar / Replicar
 
@@ -117,4 +117,4 @@ Eles tem muitas outras coisas, então fica até mais fácil você ver esses exce
 
 Espero que vocês tenham entendido e visto as grandes vantagens de se criar um blog. E se vocês pensarem "Ah, mas eu não sei escrever", perca esse medo e simplesmente comece! Pense que o seu aprendizado pode ajudar muitos outros a aprender também. Os posts não precisam ser enormes, inovadores e mega complexos, o importante é você estar aprendendo e ajudando os outros, enquanto você também cresce a sua presença digital.
 
-E se você nem sabe por onde começar, já começa [criando sua conta na Hashnode](https://hashnode.com/@willianjusten/joinme) e brincando com o painel, quando você menos perceber, estará publicando seu primeiro post!
+E se você nem sabe por onde começar, já começa [criando sua conta na Hashnode](https://hashnode.com/?source=willian) e brincando com o painel, quando você menos perceber, estará publicando seu primeiro post!
