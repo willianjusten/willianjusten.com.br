@@ -1,13 +1,13 @@
 export default {
-  title: 'Starter Blog',
+  title: 'Willian Justen',
+  position: 'Desenvolvedor Front End',
+  authorDescription:
+    'Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.',
   author: {
-    name: 'Willian Justen',
-    position: 'Desenvolvedor Front End',
-    description:
-      'Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.'
+    name: 'Willian Justen'
   },
-  description: 'A starter blog converting Gatsby -> Next.',
+
   social: {
-    twitter: 'leeerob'
+    twitter: 'Willian_justen'
   }
 }

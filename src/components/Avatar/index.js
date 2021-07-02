@@ -10,7 +10,7 @@ const Avatar = () => {
     <S.AvatarWrapper>
       <Image
         src={avatarImage}
-        alt="John Doe Avatar"
+        alt="Uma foto minha vestido com o uniforme da Grifinória do Harry Potter"
         width={400}
         height={400}
         placeholder="blur"
