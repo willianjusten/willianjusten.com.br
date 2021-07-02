@@ -22,7 +22,7 @@ const BlogList = ({ posts }) => {
           timeToRead={post.timeToRead}
           date={post.frontmatter.date}
           description={post.frontmatter.description}
-          main_class={post.frontmatter.main_class}
+          main_class={post.frontmatter['main-class']}
         />
       ))}
 
