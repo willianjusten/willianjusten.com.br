@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Link from 'next/link'
 import transitions from './transitions'
 
 export const PostHeader = styled.header`
@@ -40,7 +40,7 @@ export const PostDescription = styled.h2`
   `}
 `
 
-export const ButtonBack = styled(AniLink)`
+export const ButtonBack = styled(Link)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
@@ -211,33 +211,6 @@ export const MainContent = styled.section`
 
   strong {
     font-weight: 700;
-  }
-
-  .gatsby-resp-image-background-image {
-    z-index: 2;
-    opacity: 1 !important;
-  }
-
-  .gatsby-resp-image-image {
-    box-shadow: none !important;
-    transition: opacity 0.2s;
-
-    &.lazyload {
-      opacity: 0;
-    }
-
-    &.lazyloaded {
-      opacity: 1;
-      z-index: 3;
-    }
-  }
-
-  .gatsby-highlight {
-    padding: 0 1.6rem 1.6rem;
-
-    ${media.lessThan('large')`
-      padding: 0;
-    `}
   }
 
   .instagram-media {
