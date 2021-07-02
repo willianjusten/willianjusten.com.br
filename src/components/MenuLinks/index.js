@@ -1,11 +1,8 @@
-import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import Link from 'next/link'
 import ReactGA from 'react-ga'
 
 import links from './content'
 import * as S from './styled'
-
-import getThemeColor from '../../utils/getThemeColor'
 
 const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
   const menuLinkClickTrack = link => {
@@ -23,16 +20,9 @@ const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
       <S.MenuLinksList>
         {links.map((link, i) => (
           <S.MenuLinksItem key={i}>
-            <AniLink
-              cover
-              direction="left"
-              bg={getThemeColor()}
-              to={link.url}
-              onClick={() => menuLinkClickTrack(link.label)}
-              activeClassName="active"
-            >
-              {link.label}
-            </AniLink>
+            <Link href={link.url}>
+              <a>{link.label}</a>
+            </Link>
           </S.MenuLinksItem>
         ))}
       </S.MenuLinksList>
