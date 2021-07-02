@@ -132,6 +132,19 @@ export const MainContent = styled.section`
     }
   }
 
+  code {
+    background: #2d2d2d;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  }
+
+  pre > code {
+    white-space: pre;
+  }
+
   img {
     display: block;
     width: auto;

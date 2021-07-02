@@ -1,7 +1,18 @@
-function Index() {
-  return (
-    <h1>Hello World</h1>
-  )
+import { getAllPosts } from 'lib/blog'
+import BlogList from 'templates/blog-list'
+
+const Post = ({ posts }) => {
+  return <BlogList posts={posts} />
 }
 
-export default Index
+export async function getStaticProps() {
+  const posts = getAllPosts()
+
+  return {
+    props: {
+      posts
+    }
+  }
+}
+
+export default Post

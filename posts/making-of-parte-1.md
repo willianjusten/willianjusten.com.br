@@ -86,33 +86,27 @@ Praticamente o pre-processador mais desconhecido entre os grandes e na minha opi
 
 Junto ao Stylus eu utilizo o Jeet, Rupture e Kouto Swiss, como eu disse lá em cima. O Jeet por ser um grid semântico (lê-se nada de col-md-xs-lg-motherfucker). O Rupture, para evitar de escrever @media direto e o Kouto Swiss, que possui várias e várias funções bem legais para trabalhar. Segue abaixo um exemplo de um trecho utilizando o poder desses 3 em conjunto:
 
-```css
+```js
 .datetime
-  col(1/6)
-  text-align
-  center
-  + below(cut)
-  stack()
-  .day
-  mainFont(800)
-  color
-  main
-  font-size
-  rem(80px)
-  line-height
-  1.6
-  + below(cut)
-  stack()
-  .month-year
-  color
-  black
-  font-size
-  rem(18px)
-  .content
-  col(5/6)
-  + below
-  + below(cut)
-  stack();
+    col(1/6)
+    text-align center
+    +below(cut)
+        stack()
+    .day
+        mainFont(800)
+        color main
+        font-size rem(80px)
+        line-height 1.6
+        +below(cut)
+            stack()
+    .month-year
+        color black
+        font-size rem(18px)
+
+.content
+    col(5/6)
+    +below(cut)
+        stack()
 ```
 
 A linha `2` mostra um dos poderes do Jeet, onde eu defino que o elemento `.datetime` irá ocupar cerca `1/6` de todo o `container`. Se estivéssemos trabalhando com o bootstrap seria similar a classe `.col-md-2`, que representa `2` colunas num total de `12`. As linhas `5`, `12` e `20` também são do Jeet e esse `stack`, quer dizer que os elementos devem ser empilhados e o elemento que recebe essa função passa a receber um `width: 100%`.
