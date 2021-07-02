@@ -1,9 +1,8 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import Link from 'next/link'
 
 import Layout from '../components/Layout/'
 import SEO from '../components/Seo'
-import RecommendedPosts from '../components/RecommendedPosts'
+// import RecommendedPosts from '../components/RecommendedPosts'
 
 import {
   PostHeader,
@@ -14,10 +13,16 @@ import {
   ButtonBack
 } from '../styles/base'
 
-const BlogPost = props => {
-  const post = props.data.markdownRemark
-  const next = props.pageContext.next
-  const previous = props.pageContext.previous
+// a function to calculate reading time
+const timeToRead = text => {
+  const words = text.split(' ')
+  const minutes = Math.ceil(words.length / 200)
+  return `${minutes} min de leitura`
+}
+
+const BlogPost = ({ post }) => {
+  // const next = props.pageContext.next
+  // const previous = props.pageContext.previous
 
   return (
     <Layout>
@@ -27,45 +32,22 @@ const BlogPost = props => {
         image={`https://willianjusten.com.br${post.frontmatter.image}`}
       />
       <PostHeader>
-        <ButtonBack
-          to="/"
-          cover
-          direction="left"
-          duration={0.8}
-        >
-          ← Voltar na listagem
-        </ButtonBack>
+        <Link href="/" passHref>
+          <ButtonBack>← Voltar na listagem</ButtonBack>
+        </Link>
 
         <PostDate>
-          {post.frontmatter.date} • {post.timeToRead} min de leitura
+          {post.frontmatter.date} • {timeToRead(post.content)}
         </PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
       <MainContent>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
-      <RecommendedPosts next={next} previous={previous} />
+      {/* <RecommendedPosts next={next} previous={previous} /> */}
     </Layout>
   )
 }
 
 export default BlogPost
-
-export const query = graphql`
-  query Post($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      fields {
-        slug
-      }
-      frontmatter {
-        date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-        image
-        description
-        title
-      }
-      timeToRead
-    }
-  }
-`

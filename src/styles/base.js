@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import Link from 'next/link'
 import transitions from './transitions'
 
 export const PostHeader = styled.header`
@@ -40,7 +39,7 @@ export const PostDescription = styled.h2`
   `}
 `
 
-export const ButtonBack = styled(Link)`
+export const ButtonBack = styled.a`
   color: var(--texts);
   display: flex;
   text-decoration: none;

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import transitions from '../../styles/transitions'
 
@@ -19,7 +18,7 @@ export const PostWrapper = styled.section`
   `}
 `
 
-export const PostLink = styled(AniLink)`
+export const PostLink = styled.a`
   color: var(--texts);
   display: flex;
   text-decoration: none;

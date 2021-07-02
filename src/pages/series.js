@@ -1,5 +1,4 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import slugify from 'slugify'
 
 import { unique } from '../utils/index'
@@ -7,9 +6,9 @@ import { unique } from '../utils/index'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import Layout from '../components/Layout/'
-import SEO from '../components/Seo'
-import Post from '../components/Post'
+import Layout from 'components/Layout/'
+import SEO from 'components/Seo'
+import Post from 'components/Post'
 
 const SeriesTitle = styled.h2`
   background: var(--borders);
@@ -67,24 +66,3 @@ const SeriesPage = props => {
 }
 
 export default SeriesPage
-
-export const PostListQuery = graphql`
-  query SeriesListQuery {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-            title
-            description
-            categories
-          }
-        }
-      }
-    }
-  }
-`
