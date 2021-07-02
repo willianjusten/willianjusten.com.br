@@ -1,4 +1,4 @@
-import React from 'react'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 import Avatar from 'components/Avatar'
@@ -7,15 +7,15 @@ import * as S from './styled'
 const Profile = ({ title, position, authorDescription, isMobileHeader }) => {
   return (
     <S.ProfileContainer isMobileHeader={isMobileHeader}>
-      <S.ProfileLink href="/">
-        <a>
+      <Link href="/" passHref>
+        <S.ProfileLink>
           <Avatar />
           <S.ProfileAuthor>
             {title}
             <S.ProfilePosition>{position}</S.ProfilePosition>
           </S.ProfileAuthor>
-        </a>
-      </S.ProfileLink>
+        </S.ProfileLink>
+      </Link>
       <S.ProfileDescription>{authorDescription}</S.ProfileDescription>
     </S.ProfileContainer>
   )

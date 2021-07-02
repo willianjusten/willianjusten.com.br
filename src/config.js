@@ -4,7 +4,8 @@ export default {
   authorDescription:
     'Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.',
   author: {
-    name: 'Willian Justen'
+    name: 'Willian Justen',
+    position: 'Desenvolvedor Front End'
   },
 
   social: {

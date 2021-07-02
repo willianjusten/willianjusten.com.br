@@ -8,7 +8,6 @@ export const LayoutWrapper = styled.section`
 
   ${media.lessThan('large')`
     flex-direction: column;
-    padding-top: 4.125rem;
   `}
 `
 
