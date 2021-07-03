@@ -156,6 +156,10 @@ export const MainContent = styled.section`
     padding: 0 1.6rem 1.6rem;
     width: 100%;
 
+    ${media.greaterThan('large')`
+      height: 490px;
+    `}
+
     ${media.lessThan('large')`
       padding: 0 1rem;
     `}
