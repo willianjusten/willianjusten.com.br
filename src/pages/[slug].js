@@ -1,7 +1,7 @@
 import remark from 'remark'
 import html from 'remark-html'
 import BlogPost from 'templates/blog-post'
-import { getPostBySlug, getAllPosts } from '../lib/blog'
+import { getPostBySlug, getAllPosts } from 'lib/api'
 
 const Post = post => {
   return <BlogPost post={post} />

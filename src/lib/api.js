@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
 
-import { parseISO, format } from 'date-fns'
+import { format } from 'date-fns'
 import { pt } from 'date-fns/locale'
 
 import fs from 'fs'
