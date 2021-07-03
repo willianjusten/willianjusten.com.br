@@ -1,43 +1,27 @@
 import algoliasearch from 'algoliasearch/lite'
 
-import {
-  InstantSearch,
-  SearchBox,
-  Hits,
-  Stats,
-  Configure
-} from 'react-instantsearch-dom'
+import { SearchBox, Hits, Stats, Configure } from 'react-instantsearch-dom'
 
 import Hit from './Hit'
 import * as S from './styled'
 
 const Search = props => {
-  const searchClient = algoliasearch(
-    props.algolia.appId,
-    props.algolia.searchOnlyApiKey
-  )
-
   return (
     <S.SearchWrapper>
       {props.algolia && props.algolia.appId && (
         <>
-          <InstantSearch
-            searchClient={searchClient}
-            indexName={props.algolia.indexName}
-          >
-            <Configure hitsPerPage={200} distinct />
-            <SearchBox translations={{ placeholder: 'Pesquisar...' }} />
-            <Stats
-              translations={{
-                stats(nbHits, timeSpentMS) {
-                  return nbHits === 1
-                    ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
-                    : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
-                }
-              }}
-            />
-            <Hits hitComponent={Hit} />
-          </InstantSearch>
+          <Configure hitsPerPage={200} distinct />
+          <SearchBox translations={{ placeholder: 'Pesquisar...' }} />
+          <Stats
+            translations={{
+              stats(nbHits, timeSpentMS) {
+                return nbHits === 1
+                  ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
+                  : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+              }
+            }}
+          />
+          <Hits hitComponent={Hit} />
           <S.SearchTitle>
             Powered by Algolia
             <S.AlgoliaIcon />
