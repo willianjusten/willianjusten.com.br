@@ -15,6 +15,8 @@ export const ProfileContainer = styled.section`
     border-bottom: 1px solid var(--borders);
     padding: 1rem;
     width: 100vw;
+    position: fixed;
+    z-index: 10;
   `}
 `
 
