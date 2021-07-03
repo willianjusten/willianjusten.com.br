@@ -65,7 +65,7 @@ const NotFoundPage = () => (
     <NextSeo title="404: Not found" />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
-    <Link href="/">
+    <Link href="/" passHref>
       <Button>De volta ao blog!</Button>
     </Link>
   </Container>

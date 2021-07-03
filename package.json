@@ -26,6 +26,8 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
     "prettier": "^2.2.1"
   },
   "keywords": [
@@ -38,7 +40,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write src/**/*.{js,jsx}"
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
