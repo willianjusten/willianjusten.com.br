@@ -1,5 +1,3 @@
-import React from 'react'
-
 import links from './content'
 import Icons from './Icons'
 

@@ -1,4 +1,8 @@
-import React from 'react'
+import {
+  BLOG_AUTHOR,
+  BLOG_AUTHOR_DESCRIPTION,
+  BLOG_AUTHOR_POSITION
+} from 'lib/constants'
 
 import Profile from 'components/Profile'
 import SocialLinks from 'components/SocialLinks'
@@ -6,16 +10,12 @@ import MenuLinks from 'components/MenuLinks'
 
 import * as S from './styled'
 
-const Sidebar = ({
-  site: { title, position, authorDescription },
-  isMenuOpen,
-  setIsMenuOpen
-}) => (
+const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => (
   <S.SidebarContainer isMenuOpen={isMenuOpen}>
     <Profile
-      title={title}
-      position={position}
-      authorDescription={authorDescription}
+      title={BLOG_AUTHOR}
+      position={BLOG_AUTHOR_POSITION}
+      authorDescription={BLOG_AUTHOR_DESCRIPTION}
       isMobileHeader={false}
     />
     <S.SidebarLinksContainer>

@@ -1,6 +1,3 @@
-export const HOME_OG_IMAGE_URL =
-  '/assets/blog/ogimg/riccardo-codes-og-image.jpg'
-
 export const BLOG_TITLE = 'Willian Justen'
 
 export const BLOG_SUBTITLE =
@@ -13,3 +10,8 @@ export const BLOG_AUTHOR = 'Willian Justen'
 export const BLOG_AUTHOR_LINK = 'https://twitter.com/Willian_Justen'
 
 export const BLOG_URL = 'https://willianjusten.com.br'
+
+export const BLOG_AUTHOR_POSITION = 'Software Engineer'
+
+export const BLOG_AUTHOR_DESCRIPTION =
+  'Instrutor na Udemy, escrevo sobre o mundo front end, viagens, vida pessoal e mais.'
