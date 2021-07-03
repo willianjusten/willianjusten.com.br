@@ -6,7 +6,6 @@
   "author": "Willian Justen <willianjustenqui@gmail.com>",
   "dependencies": {
     "@babel/core": "^7.14.6",
-    "algoliasearch": "^4.8.6",
     "babel-plugin-styled-components": "^1.12.0",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
@@ -14,10 +13,8 @@
     "next-seo": "^4.26.0",
     "nextjs-progressbar": "^0.0.11",
     "prismjs": "^1.24.1",
-    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-instantsearch-dom": "^6.10.3",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "slugify": "^1.5.0",
