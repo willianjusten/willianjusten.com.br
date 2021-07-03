@@ -6,7 +6,7 @@ import { MainContent } from 'styles/base'
 const AboutPage = () => (
   <>
     <NextSeo
-      title="Sobre mim"
+      title="Sobre mim | Willian Justen"
       description="Saiba um pouco mais sobre o desenvolvedor por trás deste blog."
     />
     <MainContent>

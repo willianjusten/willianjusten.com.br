@@ -62,7 +62,7 @@ const Button = styled.a`
 
 const NotFoundPage = () => (
   <Container>
-    <NextSeo title="404: Not found" />
+    <NextSeo title="404: Not found | Willian Justen" />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
     <Link href="/" passHref>

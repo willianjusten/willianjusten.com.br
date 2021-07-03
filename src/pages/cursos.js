@@ -89,7 +89,7 @@ const coursesList = [
 const CursosPage = () => (
   <>
     <NextSeo
-      title="Cursos"
+      title="Cursos | Willian Justen"
       description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
       openGraph={{
         images: [

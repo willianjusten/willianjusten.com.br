@@ -16,7 +16,7 @@ const SearchPage = () => {
   return (
     <>
       <NextSeo
-        title="Search"
+        title="Search | Willian Justen"
         description="Vai lá, não tenha medo. Busque por posts novos e bem antigos."
       />
       <Search />
