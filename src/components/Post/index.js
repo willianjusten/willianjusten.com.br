@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
@@ -22,15 +21,6 @@ const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
       </S.PostLink>
     </Link>
   )
-}
-
-Post.propTypes = {
-  slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  timeToRead: PropTypes.number,
-  description: PropTypes.string.isRequired,
-  main_class: PropTypes.string
 }
 
 export default Post

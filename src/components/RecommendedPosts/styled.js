@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions'
+import transitions from 'styles/transitions'
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);

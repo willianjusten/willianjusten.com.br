@@ -1,4 +1,4 @@
-export default {
+const DefaultSEO = {
   title: 'Home | Willian Justen',
   description:
     'Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo.',
@@ -23,3 +23,5 @@ export default {
     cardType: 'summary_large_image'
   }
 }
+
+export default DefaultSEO

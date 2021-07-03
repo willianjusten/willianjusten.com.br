@@ -1,5 +1,4 @@
 import React from 'react'
-import propTypes from 'prop-types'
 
 import Profile from 'components/Profile'
 import SocialLinks from 'components/SocialLinks'
@@ -25,13 +24,5 @@ const Sidebar = ({
     </S.SidebarLinksContainer>
   </S.SidebarContainer>
 )
-
-Sidebar.propTypes = {
-  site: propTypes.shape({
-    title: propTypes.string.isRequired,
-    position: propTypes.string.isRequired,
-    authorDescription: propTypes.string.isRequired
-  })
-}
 
 export default Sidebar

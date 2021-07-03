@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import PropTypes from 'prop-types'
 
 import Avatar from 'components/Avatar'
 
@@ -20,12 +19,6 @@ const Profile = ({ title, position, authorDescription, isMobileHeader }) => {
       <S.ProfileDescription>{authorDescription}</S.ProfileDescription>
     </S.ProfileContainer>
   )
-}
-
-Profile.propTypes = {
-  title: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  authorDescription: PropTypes.string.isRequired
 }
 
 export default Profile

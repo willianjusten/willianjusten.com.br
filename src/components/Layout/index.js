@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import PropTypes from 'prop-types'
 
 import Profile from 'components/Profile'
 import Sidebar from 'components/Sidebar'
@@ -29,10 +28,6 @@ const Layout = ({ children }) => {
       <MenuBar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
     </S.LayoutWrapper>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
 }
 
 export default Layout

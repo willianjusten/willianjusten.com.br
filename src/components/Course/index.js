@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
@@ -23,13 +22,6 @@ const Course = ({ title, description, link, image }) => {
       </S.CourseWrapper>
     </S.CourseLink>
   )
-}
-
-Course.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
 }
 
 export default Course
