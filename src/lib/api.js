@@ -1,14 +1,15 @@
 import matter from 'gray-matter'
+import { join } from 'path'
+import fs from 'fs'
 
 import { format } from 'date-fns'
 import { pt } from 'date-fns/locale'
 
-import fs from 'fs'
-import { join } from 'path'
-
 const postsDirectory = join(process.cwd(), 'posts')
 
 export function getPostBySlug(slug) {
+  if (!slug) return null
+
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')

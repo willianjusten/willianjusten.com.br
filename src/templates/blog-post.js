@@ -1,6 +1,3 @@
-import { useEffect } from 'react'
-import Link from 'next/link'
-
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-tomorrow.css'
 import 'prismjs/components/prism-typescript'
@@ -9,10 +6,14 @@ import 'prismjs/components/prism-markdown'
 import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-yaml'
 
+import { useEffect } from 'react'
+import Link from 'next/link'
 import { NextSeo } from 'next-seo'
-// import RecommendedPosts from '../components/RecommendedPosts'
 
 import { timeToRead } from 'lib/utils'
+
+import RecommendedPosts from '../components/RecommendedPosts'
+
 import {
   PostHeader,
   PostTitle,
@@ -23,9 +24,6 @@ import {
 } from '../styles/base'
 
 const BlogPost = ({ post }) => {
-  // const next = props.pageContext.next
-  // const previous = props.pageContext.previous
-
   useEffect(() => {
     Prism.highlightAll()
   }, [])
@@ -61,7 +59,7 @@ const BlogPost = ({ post }) => {
       <MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
-      {/* <RecommendedPosts next={next} previous={previous} /> */}
+      <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
     </>
   )
 }
