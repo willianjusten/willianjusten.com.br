@@ -1,4 +1,12 @@
+import { useEffect } from 'react'
 import Link from 'next/link'
+
+import Prism from 'prismjs'
+import 'prismjs/themes/prism-tomorrow.css'
+import 'prismjs/components/prism-typescript'
+import 'prismjs/components/prism-markdown'
+import 'prismjs/components/prism-bash'
+import 'prismjs/components/prism-yaml'
 
 import SEO from 'components/Seo'
 // import RecommendedPosts from '../components/RecommendedPosts'
@@ -16,6 +24,10 @@ import {
 const BlogPost = ({ post }) => {
   // const next = props.pageContext.next
   // const previous = props.pageContext.previous
+
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [])
 
   return (
     <>
