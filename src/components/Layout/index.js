@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import GlobalStyles from 'styles/global'
 import Profile from 'components/Profile'
 import Sidebar from 'components/Sidebar'
 import MenuBar from 'components/MenuBar'
@@ -15,7 +14,6 @@ const Layout = ({ children }) => {
 
   return (
     <S.LayoutWrapper>
-      <GlobalStyles />
       <Profile
         title={config.author.name}
         position={config.author.position}

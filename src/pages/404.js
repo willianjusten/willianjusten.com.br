@@ -2,7 +2,6 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 import SEO from 'components/Seo'
-import GlobalStyles from 'styles/global'
 
 const Container = styled.section`
   align-items: center;
@@ -19,7 +18,7 @@ const Container = styled.section`
   height: 100vh;
   justify-content: center;
   padding: 0 20px;
-  width: 100vw;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     background-size: 280px;
@@ -65,7 +64,6 @@ const Button = styled.a`
 const NotFoundPage = () => (
   <Container>
     <SEO title="404: Not found" />
-    <GlobalStyles />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
     <Link href="/">

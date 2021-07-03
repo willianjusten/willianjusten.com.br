@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
-import Layout from '../components/Layout/'
-import SEO from '../components/Seo'
+import SEO from 'components/Seo'
 // import RecommendedPosts from '../components/RecommendedPosts'
 
 import {
@@ -25,7 +24,7 @@ const BlogPost = ({ post }) => {
   // const previous = props.pageContext.previous
 
   return (
-    <Layout>
+    <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -46,7 +45,7 @@ const BlogPost = ({ post }) => {
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
       {/* <RecommendedPosts next={next} previous={previous} /> */}
-    </Layout>
+    </>
   )
 }
 

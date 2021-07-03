@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Layout from 'components/Layout/'
 import SEO from 'components/Seo'
 import Post from 'components/Post'
 
@@ -12,7 +11,7 @@ const BlogList = ({ posts }) => {
   // const nextPage = `/page/${currentPage + 1}`
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       {posts.map((post, i) => (
         <Post
@@ -34,7 +33,7 @@ const BlogList = ({ posts }) => {
         prevPage={prevPage}
         nextPage={nextPage}
       /> */}
-    </Layout>
+    </>
   )
 }
 
