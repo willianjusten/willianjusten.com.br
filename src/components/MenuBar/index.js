@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 import { Home } from '@styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
@@ -8,19 +9,12 @@ import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
 import { GraduationCap } from '@styled-icons/fa-solid/GraduationCap'
 import { Menu } from '@styled-icons/boxicons-regular/Menu'
 
-import getThemeColor from '../../utils/getThemeColor'
-
 import * as S from './styled'
-import * as GA from './trackers'
 
 const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   const [theme, setTheme] = useState(null)
 
   const isDarkMode = theme === 'dark'
-
-  if (theme !== null) {
-    GA.themeTracker(theme)
-  }
 
   useEffect(() => {
     setTheme(window.__theme)
@@ -29,57 +23,43 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   }, [])
 
   const openMenu = () => {
-    GA.menuTracker()
     setIsMenuOpen(!isMenuOpen)
   }
 
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink
-          to="/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          title="Voltar para Home"
-          activeClassName="active"
-        >
-          <S.MenuBarItem>
-            <Home />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-        <S.MenuBarLink
-          to="/search"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          title="Search"
-          activeClassName="active"
-        >
-          <S.MenuBarItem onClick={() => GA.searchClickTrack()}>
-            <Search />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-        <S.MenuBarGroupDesktop>
-          <S.MenuBarLink
-            to="/cursos/"
-            cover
-            direction="right"
-            bg={getThemeColor()}
-            title="Cursos"
-            activeClassName="active"
-          >
-            <S.MenuBarItem onClick={() => GA.courseClickTrack()}>
-              <GraduationCap />
-              <S.MenuBarNotification />
+        <Link href="/" passHref>
+          <S.MenuBarLink title="Voltar para Home">
+            <S.MenuBarItem>
+              <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
+        </Link>
+
+        <Link href="/search" passHref>
+          <S.MenuBarLink title="Pesquisar no Blog">
+            <S.MenuBarItem>
+              <Search />
+            </S.MenuBarItem>
+          </S.MenuBarLink>
+        </Link>
+
+        <S.MenuBarGroupDesktop>
+          <Link href="/cursos/" passHref>
+            <S.MenuBarLink title="Ver cursos">
+              <S.MenuBarItem>
+                <GraduationCap />
+                <S.MenuBarNotification />
+              </S.MenuBarItem>
+            </S.MenuBarLink>
+          </Link>
+
           <S.MenuBarExternalLink
             title="YouTube Videos"
             href="https://www.youtube.com/WillianJustenCursos/?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => GA.youTubeClickTrack()}
           >
             <S.MenuBarItem>
               <Youtube />
@@ -102,14 +82,6 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
           title="Mudar o Tema"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
-
-            if (window.DISQUS !== undefined) {
-              window.setTimeout(() => {
-                window.DISQUS.reset({
-                  reload: true
-                })
-              }, 300)
-            }
           }}
           className={theme}
           isDarkMode={isDarkMode}
@@ -119,7 +91,6 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
         <S.MenuBarItem
           title="Ir para o Topo"
           onClick={() => {
-            GA.topClickTrack()
             window.scroll({ top: 0, behavior: 'smooth' })
           }}
         >

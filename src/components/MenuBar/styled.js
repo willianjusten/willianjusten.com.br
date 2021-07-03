@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions'
+import transitions from 'styles/transitions'
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
@@ -55,7 +55,7 @@ export const MenuBarGroup = styled.div`
   `}
 `
 
-export const MenuBarLink = styled.div`
+export const MenuBarLink = styled.a`
   display: block;
 
   &.active {
