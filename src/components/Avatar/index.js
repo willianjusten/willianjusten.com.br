@@ -1,6 +1,4 @@
-import React from 'react'
 import Image from 'next/image'
-
 import avatarImage from '../../../public/assets/img/profile-photo-harry.jpg'
 
 import * as S from './styled'
@@ -11,8 +9,8 @@ const Avatar = () => {
       <Image
         src={avatarImage}
         alt="Uma foto minha vestido com o uniforme da Grifinória do Harry Potter"
-        width={128}
-        height={128}
+        layout="responsive"
+        objectFit="cover"
         placeholder="blur"
       />
     </S.AvatarWrapper>

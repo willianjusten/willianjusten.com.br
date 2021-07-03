@@ -5,9 +5,11 @@ export const AvatarWrapper = styled.div`
   img {
     border-radius: 50%;
   }
-  height: 4rem;
+
   margin: auto;
+  height: 4rem;
   width: 4rem;
+  clip-path: circle(50% at 50% 50%);
 
   ${media.lessThan('large')`
     height: 2rem;
