@@ -79,7 +79,7 @@ Serve para criar um componente dada uma especificação. Um componente implement
 
 ```jsx
 var Hello = createReactClass({
-  render: function() {
+  render: function () {
     return <h1>Hello World!</h1>
   }
 })
@@ -109,7 +109,12 @@ ReactDOM.render(<Hello />, document.getElementById('content'))
 
 Seguem os exemplos rodando no Codepen:
 
-http://codepen.io/willianjusten/pen/JdBMya/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JdBMya" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/JdBMya">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Repare que eu criei diferentes containers para que cada elemento fosse renderizado em um desses espaços.
 
@@ -122,7 +127,7 @@ var frutas = ['Banana', 'Maçã', 'Uva']
 
 ReactDOM.render(
   <div>
-    {frutas.map(function(fruta) {
+    {frutas.map(function (fruta) {
       return <li>{fruta}</li>
     })}
   </div>,
@@ -130,7 +135,12 @@ ReactDOM.render(
 )
 ```
 
-http://codepen.io/willianjusten/pen/waxpmW/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="waxpmW" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/waxpmW">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 No exemplo, eu tenho um array `frutas` e através do comando `map`, eu itero e mando retornar fruta por fruta dentro de uma lista com o id `compras`.
 
@@ -140,7 +150,7 @@ Quando utilizamos nossos componentes no React, nós podemos adicionar atributos 
 
 ```jsx
 var Hello = createReactClass({
-  render: function() {
+  render: function () {
     return <h1>Hello {this.props.name}!</h1>
   }
 })
@@ -150,7 +160,12 @@ ReactDOM.render(<Hello name="Willian" />, document.getElementById('hello'))
 
 Olhando no exemplo, notamos que ele recebe o nome da variável `name` e consegue renderizar o nome corretamente.
 
-http://codepen.io/willianjusten/pen/qdypxL/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qdypxL" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/qdypxL">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Especificações, Ciclos de Vida e Estado
 
@@ -187,23 +202,23 @@ Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o códig
 
 ```jsx
 var Timer = createReactClass({
-  getInitialState: function() {
+  getInitialState: function () {
     return { elapsed: 0 }
   },
 
-  componentDidMount: function() {
+  componentDidMount: function () {
     this.timer = setInterval(this.tick, 50)
   },
 
-  componentWillUnmount: function() {
+  componentWillUnmount: function () {
     clearInterval(this.timer)
   },
 
-  tick: function() {
+  tick: function () {
     this.setState({ elapsed: new Date() - this.props.start })
   },
 
-  render: function() {
+  render: function () {
     var elapsed = Math.round(this.state.elapsed / 100)
     var seconds = (elapsed / 10).toFixed(1)
 
@@ -232,7 +247,12 @@ Por fim, na linha `31` estamos chamando o nosso componente `Timer` e passando a 
 
 Segue um exemplo live no Codepen:
 
-http://codepen.io/willianjusten/pen/MwBrBr/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MwBrBr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/MwBrBr">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 O legal é que o React irá modificar somente o elemento que está com estado sendo modificado, ou seja, somente o que está dentro de `<b>{seconds}</b>`, o resto da frase permanecerá intacta, com isso, impacta menos o DOM.
 

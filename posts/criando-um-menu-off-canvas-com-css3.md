@@ -174,7 +174,12 @@ O código acima usa o `classList` para verificar se já existe a classe e adicio
 
 E o resultado fica assim:
 
-http://codepen.io/willianjusten/pen/RWJmoB/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RWJmoB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RWJmoB">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Melhorias
 
@@ -206,7 +211,7 @@ Uma coisa que já é quase intuitivo é fechar as coisas usando a tecla `ESC`, e
 
 ```js
 // Adicionando evento para fechar o menu ao pressionar a tecla ESC
-document.addEventListener('keyup', function(e) {
+document.addEventListener('keyup', function (e) {
   if (e.keyCode == 27) {
     if (wrapper.classList.contains('show-menu')) {
       menuAction()

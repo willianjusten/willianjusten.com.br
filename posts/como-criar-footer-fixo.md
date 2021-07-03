@@ -67,7 +67,12 @@ body {
 
 Para que possamos definir um elemento qualquer da tela com altura máxima, precisamos primeiro definir que o `html` e o `body` tenham uma altura de `100%`. Depois temos ali nosso `wrapper` que vai ter obrigatoriamente ter uma altura mínima de `100%` e ali está a margem negativa, que representa a altura do rodapé. Segue abaixo um pen dessa técnica:
 
-http://codepen.io/chriscoyier/pen/VjZmGj/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VjZmGj" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/VjZmGj">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Margin-top negativa no footer
 
@@ -76,9 +81,7 @@ Essa técnica não necessita de um elemento `push`, mas ao invés disso, necessi
 ```html
 <body>
   <div class="content">
-    <div class="content-inside">
-      content
-    </div>
+    <div class="content-inside">content</div>
   </div>
   <footer class="footer"></footer>
 </body>
@@ -110,7 +113,12 @@ body {
 
 O visual ficará o mesmo:
 
-http://codepen.io/chriscoyier/pen/aZoBMb/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="aZoBMb" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/aZoBMb">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Usando calc() para calcular a altura certa
 
@@ -118,9 +126,7 @@ Esse método é bastante legal, pois você não vai precisar criar elementos ext
 
 ```html
 <body>
-  <div class="content">
-    content
-  </div>
+  <div class="content">content</div>
   <footer class="footer"></footer>
 </body>
 ```
@@ -139,7 +145,12 @@ E no css teremos:
 
 Repare que estamos diminuindo ao invés de um altura de `50px`, o valor de `70px`, isso está sendo feito, pois assumimos que o último elemento do `content` tenha uma margem para o rodapé. O valor de `100vh` fará com que o content tenha o tamanho todo da tela menos a altura que determinamos.
 
-http://codepen.io/chriscoyier/pen/jqRXBz/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jqRXBz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/jqRXBz">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Utilizando flexbox
 
@@ -147,9 +158,7 @@ Um grande problema das técnicas acima é que precisamos ter uma altura fixa par
 
 ```html
 <body>
-  <div class="content">
-    content
-  </div>
+  <div class="content">content</div>
   <footer class="footer"></footer>
 </body>
 ```
@@ -172,7 +181,12 @@ body {
 }
 ```
 
-http://codepen.io/chriscoyier/pen/RRbKrL/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RRbKrL" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RRbKrL">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Você pode até adicionar um header acima ou mais conteúdo abaixo, sem problemas. O truque é o seguinte:
 
@@ -186,9 +200,7 @@ A opção de Grid Layout é a opção mais nova de todas e ainda não tem um sup
 
 ```html
 <body>
-  <div class="content">
-    content
-  </div>
+  <div class="content">content</div>
   <footer class="footer"></footer>
 </body>
 ```
@@ -214,7 +226,12 @@ body {
 
 Essa demo irá funcionar no Chrome Canary e Firefox Developer Edition, então, muito provavelmente não vai estar funcionando no seu browser tá, mas já é uma forma de começar a ver essa nova tecnologia =)
 
-http://codepen.io/chriscoyier/pen/YWKNrE/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YWKNrE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/YWKNrE">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Conclusão
 

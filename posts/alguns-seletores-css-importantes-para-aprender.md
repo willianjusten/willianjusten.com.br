@@ -27,7 +27,12 @@ Vai ser um post rapidinho, com alguns exemplos e caso tenham alguma dúvida, pod
 
 Chamado de seletor adjacente, serve para selecionar o elemento imediatamente depois do primeiro elemento.
 
-http://codepen.io/willianjusten/pen/vOpvMR/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vOpvMR" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/vOpvMR">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Note que somente o elemento `p` seguinte de `a` é afetado pelo estilo.
 
@@ -35,7 +40,12 @@ Note que somente o elemento `p` seguinte de `a` é afetado pelo estilo.
 
 O seletor descendente serve para editar todos os filhos diretos do primeiro elemento, não modificando os elementos mais internos.
 
-http://codepen.io/willianjusten/pen/doJwEJ/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="doJwEJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/doJwEJ">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Como pode-se notar, as tags `p` diretas de `.container` ganharam o estilo, enquanto a tag `p` mais interna não sofreu alteração.
 
@@ -43,7 +53,12 @@ Como pode-se notar, as tags `p` diretas de `.container` ganharam o estilo, enqua
 
 Conhecido como elemento irmão, é bastante parecido com o seletor **A + B**, porém ele seleciona todos os elementos diretos de A e não somente o primeiro. É também importante não se confundir com o seletor **A > B**, visto que ele não é para elementos filhos e sim para elementos seguintes.
 
-http://codepen.io/willianjusten/pen/YXYdoa/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YXYdoa" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/YXYdoa">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Perceba que os elementos `p` no mesmo nível de `a` recebem o estilo, enquanto os elementos mais internos e fora do contexto não são afetados.
 
@@ -55,7 +70,12 @@ Acho que um dos seletores mais interessantes, de acordo com o que está definido
 
 Esse irá selecionar os elementos com o atributo `alt` definido.
 
-http://codepen.io/willianjusten/pen/xGpMKr/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xGpMKr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/xGpMKr">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Somente a imagem com o atributo `alt` recebeu o estilo. Útil para você rastrear se alguma imagem não recebeu o atributo `alt`, que é importante para a acessibilidade. Mas pode ser com qualquer tipo de atributo, como um `title`, por exemplo.
 
@@ -63,37 +83,67 @@ Somente a imagem com o atributo `alt` recebeu o estilo. Útil para você rastrea
 
 Irá editar só os links determinados.
 
-http://codepen.io/willianjusten/pen/eNyxYz/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eNyxYz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/eNyxYz">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### A[href*='trecho']
 
 Os links que possuírem pelo menos esse trecho serão estilizados.
 
-http://codepen.io/willianjusten/pen/PqEVoX/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PqEVoX" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/PqEVoX">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### A[href^='inicio']
 
 Links iniciados com o trecho serão estilizados.
 
-http://codepen.io/willianjusten/pen/WvdPNV/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WvdPNV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/WvdPNV">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### A[src$='final']
 
 Só trechos com o final igual irão receber o estilo.
 
-http://codepen.io/willianjusten/pen/qdpgEP/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qdpgEP" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/qdpgEP">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## A:not(B)
 
 Quando você quer selecionar todos os elementos, exceto um elemento em particular.
 
-http://codepen.io/willianjusten/pen/PqEVqV/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PqEVqV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/PqEVqV">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## A:first-child | A:last-child
 
 Para selecionar o primeiro e o último filho de um elemento. Um dos pseudo-seletores mais úteis que eu conheço. Para remover aquela borda do último elemento, entre outras várias coisas.
 
-http://codepen.io/willianjusten/pen/bdazdP/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bdazdP" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/bdazdP">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## A:checked
 
@@ -101,13 +151,23 @@ Seletor utilizado em inputs do tipo `radio` e `checkbox`, serve para várias coi
 
 E aqui um exemplo simples:
 
-http://codepen.io/willianjusten/pen/NqXoGQ/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NqXoGQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/NqXoGQ">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## A:nth-child(n)
 
 Outro pseudo-seletor bastante bacana, serve para selecionar o elemento na posição indicada pelo argumento `n`. Por exemplo, se colocamos `:nth-child(2)` iremos selecionar o segundo elemento daquele conjunto. Mas podemos criar uma expressão `:nth-child(3n)`, onde todos os elementos múltiplos de 3 seriam selecionados (3,6,9...).
 
-http://codepen.io/willianjusten/pen/BNJMjE/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BNJMjE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BNJMjE">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Conclusão
 

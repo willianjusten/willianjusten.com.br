@@ -122,7 +122,7 @@ const body = document.body
 const page = document.documentElement
 let scroll
 
-document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function () {
   scroll = (body.scrollTop / (body.scrollHeight - page.clientHeight)) * 100
   progress.style.setProperty('--scroll', scroll + '%')
 })
@@ -134,7 +134,12 @@ Tendo esse valor fica fácil, basta definir esse valor dentro de `progress`, par
 
 Abaixo você pode ver esse exemplo rodando:
 
-https://codepen.io/willianjusten/pen/XapJQX/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="XapJQX" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/XapJQX">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Conclusão
 

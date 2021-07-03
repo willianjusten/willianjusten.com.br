@@ -297,9 +297,7 @@ Alguns dos motivos de se usar são:
 
 ```html
 <div class="article-link">
-  <div class="vote-box">
-    ...
-  </div>
+  <div class="vote-box">...</div>
   <h3 class="title">...</h3>
   <p class="meta">...</p>
 </div>
@@ -323,9 +321,7 @@ Ao invés disso, prefira adicionar uma variação ao componente interno e aplica
 
 ```html
 <div class="article-header">
-  <div class="vote-box -highlight">
-    ...
-  </div>
+  <div class="vote-box -highlight">...</div>
   ...
 </div>
 ```
@@ -471,7 +467,12 @@ E, então chamar esses componentes usando o glob matching:
 
 Para quem gosta de aprender com exemplo, segue abaixo o exemplo de um card implementado seguindo a metodologia do RSCSS:
 
-http://codepen.io/willianjusten/pen/gPBJWq/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gPBJWq" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/gPBJWq">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Repare que o nesting de só até dois elementos foi respeitado, que o componente principal tem duas palavras (`photo-card`) e que os elementos possuem somente um nome.
 

@@ -114,7 +114,12 @@ Quando você quiser separar totalmente a estrutura do estilo, você pode criar u
 
 Na imagem acima os elementos na parte inferior sobreescrevem os elementos anteriores, ou seja, um estilo inline irá sobreescrever um estilo em um arquivo externo. Vamos a um exemplo para entedermos melhor:
 
-http://codepen.io/willianjusten/pen/VYGzZK/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYGzZK" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/VYGzZK">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Como podemos notar no exemplo acima, a estrela ficou com a cor amarela, mesmo tendo outras cores atribuídas. Mas por que disso? A cor amarela está sendo atribuída como estilo inline: `style="fill:yellow"`, que possui o maior peso, depois nós temos o estilo no documento: `<style>polygon {fill: blue}</style>`, depois a cor vermelha atribuída no arquivo css externo: `polygon {fill: red;}` e por último temos o estilo de apresentação na cor preta: `fill="black"`. Continuou sem entender? Vai lá no [pen](http://codepen.io/willianjusten/pen/VYGzZK) e tenta ir apagando uma propriedade de cada vez para notar quem vai ser priorizado, vai ser bem mais didático do que eu falando aqui =)
 

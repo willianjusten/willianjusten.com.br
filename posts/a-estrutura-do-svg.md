@@ -58,7 +58,12 @@ O SVG é tem algumas formas básicas, que permitem fazer os lindos desenhos que 
 
 ### O elemento rect
 
-http://codepen.io/willianjusten/pen/PwmEag/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PwmEag" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/PwmEag/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -77,7 +82,12 @@ Esse elemento permite criar um retângulo e tem os seguintes atributos:
 
 ### O elemento circle
 
-http://codepen.io/willianjusten/pen/YPVYOO/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YPVYOO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/YPVYOO/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -94,7 +104,12 @@ Esse elemento permite criar um círculo e tem os seguintes atributos:
 
 ### O elemento ellipse
 
-http://codepen.io/willianjusten/pen/bNWaZN/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNWaZN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/bNWaZN/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -112,7 +127,12 @@ Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 
 ### O elemento line
 
-http://codepen.io/willianjusten/pen/pvPpmE/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvPpmE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/pvPpmE/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -131,7 +151,12 @@ Esse elemento permite criar uma linha e tem os seguintes atributos:
 
 ### O elemento polyline
 
-http://codepen.io/willianjusten/pen/NPjXZG/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NPjXZG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/NPjXZG/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -148,7 +173,12 @@ Esse elemento permite criar uma polyline e tem os seguintes atributos:
 
 ### O elemento polygon
 
-http://codepen.io/willianjusten/pen/bNWaXd/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNWaXd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/bNWaXd/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```xml
 <svg>
@@ -165,7 +195,12 @@ Esse elemento permite criar um polígono e tem os seguintes atributos:
 
 ### O elemento path
 
-http://codepen.io/willianjusten/pen/dPWdbQ/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPWdbQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/dPWdbQ/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 O elemento Path é um dos mais complexos e também mais importantes para o SVG. A partir dele, conseguimos criar qualquer forma e com isso gerar os belos desenhos existentes.
 
@@ -181,7 +216,12 @@ A letra **maiúscula** utiliza coordenadas **absolutas** para criar a forma, enq
 
 ## Conclusão
 
-http://codepen.io/willianjusten/pen/qEmxNJ/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEmxNJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="http://codepen.io/willianjusten/pen/qEmxNJ/">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 A partir de formas básicas podemos até brincar um pouquinho de fazer alguns desenhos bobinhos, ou se você for um Mestre Jedi, até fazer coisas incríveis. Você consegue saber as formas usadas na imagem acima? Teve ideia para fazer algum desenho legal? Faz no [codepen](http://codepen.io/) e manda para cá nos comentários =)
 

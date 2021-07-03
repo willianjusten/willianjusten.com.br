@@ -149,13 +149,23 @@ Feito isso, basta definirmos essa animação lá na nossa classe `hello`:
 
 Prontinho, temos nossa animação feita!! Segue abaixo o exemplo criado, para ver a animação é só clicar em "Rerun" ali no canto inferior direito:
 
-http://codepen.io/willianjusten/pen/jbELOQ/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jbELOQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/jbELOQ">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Desenhando e preenchendo
 
 Junto a essa brincadeira de desenhar, podemos além de só desenhar o contorno, podemos também pintar as coisas. Segue um exemplo simples feito com a logo do Python, que baixei no [SVG Porn](http://svgporn.com/). Lembre de clicar no "Rerun" caso a animação já tenha acontecido:
 
-http://codepen.io/willianjusten/pen/epvovO/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="epvovO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/epvovO">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Para esse exemplo, utilizei 3 pontos no `keyframe` para poder pintar somente ao finalizar os traços, deixando como se fosse um efeito de montar a logo. Para que desse uma suavizada das cores, eu usei a propriedade `fill-opacity`, que é bastante similar a propriedade `opacity` do css, porém que funciona só nos preenchimentos.
 
@@ -165,7 +175,12 @@ Outro efeito legal é fazer o desenho ser criado ao scrollar a tela. Para isso p
 
 Segue um exemplo:
 
-http://codepen.io/willianjusten/pen/BoWEwP/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BoWEwP" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BoWEwP">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Vamos prestar atenção a certos trechos do código. Primeiro precisamos verificar qual o tamanho do elemento e então definir seu `stroke-dasharray` e o `stroke-dashoffset` igual nos outros exemplos.
 
@@ -188,7 +203,7 @@ Depois nós precisamos criar um evento de `scroll` e de acordo com ele, ir dimin
 
 ```js
 // Adiciona o evento de Scroll
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function (e) {
   // determina a porcentagem do quanto o usuário já scrollou na tela
   var scrollPercentage =
     (document.documentElement.scrollTop + document.body.scrollTop) /

@@ -98,7 +98,12 @@ Basta adicionar o svg como `src` e para assegurar que ele possua o tamanho máxi
 <embed src="imagem.svg" type="image/svg+xml" />
 ```
 
-http://codepen.io/willianjusten/pen/PwvoXB/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PwvoXB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/PwvoXB">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Experimente mudar o tamanho do container para ver que a imagem continuará a mesma.
 
@@ -190,7 +195,12 @@ Para o corte 2, queremos retirar também o cristal grande e para que a logo perm
 
 Feito isso, seu componente já está responsivo e adaptativo!! Veja o experimento pronto abaixo:
 
-http://codepen.io/willianjusten/pen/ZYVPep/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZYVPep" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/ZYVPep">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Para ver os diferentes estados de uma forma mais fácil, [abra esse link](http://codepen.io/willianjusten/full/ZYVPep/) e faça resize da tela.
 

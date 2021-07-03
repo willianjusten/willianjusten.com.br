@@ -107,7 +107,12 @@ Um outro detalhe muito importante é que para cada `animate` só podemos animar 
 
 ### Exemplo
 
-http://codepen.io/willianjusten/pen/BNOJjg/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BNOJjg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BNOJjg">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ```html
 <svg width="500" height="100">
@@ -129,7 +134,12 @@ No exemplo acima, determinamos que vamos alterar o atributo `cx` do círculo, ou
 
 Segue abaixo um exemplo da mudança de posição e de cor, note que utilizamos 2 `animate`:
 
-http://codepen.io/willianjusten/pen/vOzpGV/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vOzpGV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/vOzpGV">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Controlando animações com keyTimes e values
 
@@ -141,7 +151,12 @@ Segue um exemplo utilizando:
 values="50; 490; 350; 450" keyTimes="0; 0.5; 0.8; 1"
 ```
 
-http://codepen.io/willianjusten/pen/bdxaWN/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bdxaWN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/bdxaWN">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Como pode perceber, no tempo `0` o círculo está na posição `50`, aos `0.5` é onde ele vai mais longe, `490`, depois ele retorna para `350` e então avança para `450`, exatamente como os valores informados. Sempre obedecendo a proporção de uma mudança para um tempo.
 
@@ -151,17 +166,32 @@ Como disse no início do post, a vantagem do SMIL é poder manipular propriedade
 
 Vamos pensar num primeiro exemplo, onde queremos transformar um quadrado em um círculo.
 
-http://codepen.io/willianjusten/pen/mJGpMg/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mJGpMg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/mJGpMg">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Nós iremos trabalhar no `attributeName=d`, que é onde desenhamos a path e teremos 2 passos, `from`, que contém a forma de um quadrado e o `to`, que contém a forma de um círculo, definimos um tempo para a animação ocorrer e pronto, a mágica acontece.
 
 Agora vamos pensar numa situação em que eu tenho um quadrado virando um triângulo e este virando um círculo, ou seja, 3 etapas. Para trabalhar com mais de uma etapa, basta definir mais valores dentro de `values` e casos queiramos mudar o tempo de acordo com a mudança, podemos usar o `keyTimes`. Segue um exemplo dessa transição:
 
-http://codepen.io/willianjusten/pen/RPYxLd/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RPYxLd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RPYxLd">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Mas e se eu quisesse além de mudar os 3 visuais, também quisesse mudar de cor? Basta adicionar mais um animate, passando os `values` do `attributeName=fill`. Segue um exemplo colorido:
 
-http://codepen.io/willianjusten/pen/rVZppG/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rVZppG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/rVZppG">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Aplicação prática em UX
 
@@ -169,7 +199,12 @@ Pow Willian, isso tudo aí é muito legal, muito maneiro, mas não vejo utilidad
 
 Podemos, por exemplo, aplicar uma mudança de um ícone para dar um feedback para o usuário. Segue um botão seguindo esse tipo de interação:
 
-https://codepen.io/willianjusten/pen/BNOJON/
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BNOJON" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BNOJON">
+  </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 As animações realizadas para o botão acima ficam separadas em:
 
