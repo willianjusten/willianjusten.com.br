@@ -1,17 +1,18 @@
 ---
 layout: post
-date: 2021-04-13 10:50:09
+date: '2021-04-13 10:50:09'
 image: /assets/img/chat-comportamento.png
 title: Como usar e se comportar melhor em chats
 description: 10 dicas para você tirar o melhor do Slack, Discord, etc.
 introduction: 10 dicas para você tirar o melhor do Slack, Discord, etc.
 twitter_text: 10 dicas para você tirar o melhor do Slack, Discord, etc.
 main-class: misc
-color: "#7AAB13"
+color: '#7AAB13'
 tags:
   - chat
   - dicas
 ---
+
 ## Introdução
 
 Fala pessoal, ontem eu lancei um vídeo no meu [canal do YouTube](https://www.youtube.com/watch?v=KBJiXB48lrE) dando algumas dicas que considero essenciais para que tenhamos um bom convívio em aplicativos de mensagens como o Slack, Discord, etc.
