@@ -1,4 +1,4 @@
-import SEO from 'components/Seo'
+import { NextSeo } from 'next-seo'
 import Search from 'components/Search'
 
 const algolia = {
@@ -10,7 +10,7 @@ const algolia = {
 const SearchPage = () => {
   return (
     <>
-      <SEO
+      <NextSeo
         title="Search"
         description="Vai lá, não tenha medo. Busque por posts novos e bem antigos."
       />

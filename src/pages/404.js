@@ -1,7 +1,6 @@
+import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import styled from 'styled-components'
-
-import SEO from 'components/Seo'
 
 const Container = styled.section`
   align-items: center;
@@ -63,7 +62,7 @@ const Button = styled.a`
 
 const NotFoundPage = () => (
   <Container>
-    <SEO title="404: Not found" />
+    <NextSeo title="404: Not found" />
     <Title>404</Title>
     <Text>Ué? Cadê? Parece que não tem o que você procura.</Text>
     <Link href="/">

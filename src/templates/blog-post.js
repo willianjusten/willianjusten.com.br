@@ -9,7 +9,7 @@ import 'prismjs/components/prism-markdown'
 import 'prismjs/components/prism-bash'
 import 'prismjs/components/prism-yaml'
 
-import SEO from 'components/Seo'
+import { NextSeo } from 'next-seo'
 // import RecommendedPosts from '../components/RecommendedPosts'
 
 import { timeToRead } from 'lib/utils'
@@ -32,10 +32,20 @@ const BlogPost = ({ post }) => {
 
   return (
     <>
-      <SEO
-        title={post.frontmatter.title}
+      <NextSeo
+        title={`${post.frontmatter.title} - Willian Justen`}
         description={post.frontmatter.description}
-        image={`https://willianjusten.com.br${post.frontmatter.image}`}
+        openGraph={{
+          url: `https://willianjusten.com.br/${post.slug}`,
+          title: `${post.frontmatter.title} - Willian Justen`,
+          description: post.frontmatter.description,
+          images: [
+            {
+              url: `https://willianjusten.com.br${post.frontmatter.image}`,
+              alt: `${post.frontmatter.title}`
+            }
+          ]
+        }}
       />
       <PostHeader>
         <Link href="/" passHref>

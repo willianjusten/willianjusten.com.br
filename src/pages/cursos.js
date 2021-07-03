@@ -1,5 +1,5 @@
-import SEO from 'components/Seo'
 import Course from 'components/Course'
+import { NextSeo } from 'next-seo'
 
 const coursesList = [
   {
@@ -88,10 +88,19 @@ const coursesList = [
 
 const CursosPage = () => (
   <>
-    <SEO
+    <NextSeo
       title="Cursos"
       description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
-      image="https://willianjusten.com.br/assets/img/cursos/cursos-bg.png"
+      openGraph={{
+        images: [
+          {
+            url: 'https://willianjusten.com.br/assets/img/cursos/cursos-bg.png',
+            width: 600,
+            height: 315,
+            alt: 'Willian Justen Cursos'
+          }
+        ]
+      }}
     />
     {coursesList.map(({ title, description, link, image }, i) => (
       <Course

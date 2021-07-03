@@ -1,23 +1,33 @@
 import Head from 'next/head'
-import Layout from 'components/Layout'
-
-import GlobalStyles from 'styles/global'
 import NextNProgress from 'nextjs-progressbar'
+
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo.config'
+
+import Layout from 'components/Layout'
+import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>Willian Justen</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="shortcut icon" href="/assets/img/willianjusten-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/img/willianjusten-icon.png"
+        />
         <meta name="theme-color" content="#06092B" />
         <meta
+          name="google-site-verification"
+          content="8kDtWUmUQEh7QXoj_shRaxcgYAVpHs_YQ7TeniN0kmI"
+        />
+        <meta
           name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+          content="Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React e novas tecnologias. Nômade Digital, instrutor na Udemy e viajando o mundo."
         />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <Layout>
         <NextNProgress

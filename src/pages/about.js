@@ -1,11 +1,11 @@
-import SEO from 'components/Seo'
+import { NextSeo } from 'next-seo'
 import SocialLinks from 'components/SocialLinks'
 
 import { MainContent } from 'styles/base'
 
 const AboutPage = () => (
   <>
-    <SEO
+    <NextSeo
       title="Sobre mim"
       description="Saiba um pouco mais sobre o desenvolvedor por trás deste blog."
     />

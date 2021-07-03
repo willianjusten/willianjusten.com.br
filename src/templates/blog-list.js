@@ -1,4 +1,3 @@
-import SEO from 'components/Seo'
 import Post from 'components/Post'
 
 const BlogList = ({ posts }) => {
@@ -10,7 +9,6 @@ const BlogList = ({ posts }) => {
 
   return (
     <>
-      <SEO title="Home" />
       {posts.map((post, i) => (
         <Post
           key={i}
