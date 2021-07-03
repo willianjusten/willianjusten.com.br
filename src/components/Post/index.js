@@ -1,22 +1,13 @@
-import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const Post = ({
-  slug,
-  date,
-  timeToRead,
-  title,
-  description,
-  main_class,
-  disableCard
-}) => {
+const Post = ({ slug, date, timeToRead, title, description, main_class }) => {
   return (
     <Link href={slug} passHref>
       <S.PostLink>
-        <S.PostWrapper className={disableCard ? 'disableCard' : ''}>
+        <S.PostWrapper>
           {main_class && (
             <S.PostTag className={`is-${main_class}`}>{main_class}</S.PostTag>
           )}
@@ -39,8 +30,7 @@ Post.propTypes = {
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number,
   description: PropTypes.string.isRequired,
-  main_class: PropTypes.string,
-  disableCard: PropTypes.bool
+  main_class: PropTypes.string
 }
 
 export default Post

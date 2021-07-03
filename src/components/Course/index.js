@@ -1,20 +1,11 @@
 import Image from 'next/image'
 import PropTypes from 'prop-types'
-import ReactGA from 'react-ga'
 
 import * as S from './styled'
 
-const courseClickTrack = course => {
-  ReactGA.event({
-    category: 'cursos',
-    action: 'click',
-    label: `Link Curso - ${course}`
-  })
-}
-
 const Course = ({ title, description, link, image }) => {
   return (
-    <S.CourseLink href={link} onClick={() => courseClickTrack(title)}>
+    <S.CourseLink href={link}>
       <S.CourseWrapper>
         <S.ImageWrapper>
           <Image

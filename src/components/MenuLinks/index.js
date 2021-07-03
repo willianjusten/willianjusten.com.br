@@ -1,10 +1,11 @@
 import Link from 'next/link'
 
 import links from './content'
+
 import * as S from './styled'
 
 const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
-  const menuLinkClick = link => {
+  const menuLinkClick = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 

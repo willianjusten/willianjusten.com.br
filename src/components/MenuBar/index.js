@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 import { Home } from '@styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
@@ -18,7 +18,6 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
 
   useEffect(() => {
     setTheme(window.__theme)
-
     window.__onThemeChange = () => setTheme(window.__theme)
   }, [])
 

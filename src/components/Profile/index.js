@@ -2,6 +2,7 @@ import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 import Avatar from 'components/Avatar'
+
 import * as S from './styled'
 
 const Profile = ({ title, position, authorDescription, isMobileHeader }) => {

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import SEO from 'components/Seo'
 // import RecommendedPosts from '../components/RecommendedPosts'
 
+import { timeToRead } from 'lib/utils'
 import {
   PostHeader,
   PostTitle,
@@ -11,13 +12,6 @@ import {
   MainContent,
   ButtonBack
 } from '../styles/base'
-
-// a function to calculate reading time
-const timeToRead = text => {
-  const words = text.split(' ')
-  const minutes = Math.ceil(words.length / 200)
-  return `${minutes} min de leitura`
-}
 
 const BlogPost = ({ post }) => {
   // const next = props.pageContext.next

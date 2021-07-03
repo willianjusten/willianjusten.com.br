@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <Profile
         title={config.author.name}
         position={config.author.position}
-        authorDescription={config.author.description}
+        authorDescription={config.authorDescription}
         isMobileHeader={true}
       />
       <Sidebar
