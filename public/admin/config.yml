@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: willianjusten/willianjusten.com.br
-  base_url: https://willianjusten.com.br
-  auth_endpoint: api/auth
+  repo: willianjusten/willianjusten.com.br # Path to your Github/Gitlab
+  repository branch: master # Branch to update
+  base_url: https://netlify-cms.adrianub.vercel.app
 
 media_folder: static/assets/img
 public_folder: /assets/img
