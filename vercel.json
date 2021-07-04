@@ -8,7 +8,8 @@
     {
       "source": "/making-of-blog-novo/",
       "destination": "https://willianjusten.com.br/making-of-blog-novo-gatsby-js"
-    }
+    },
+    { "source": "/page/:slug*", "destination": "https://willianjusten.com.br/" }
   ],
   "redirects": [
     {
