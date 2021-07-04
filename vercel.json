@@ -1,5 +1,4 @@
 {
-  "trailingSlash": true,
   "rewrites": [
     { "source": "/js/", "destination": "https://willianjusten.com.br/" },
     { "source": "/jekyll/", "destination": "https://willianjusten.com.br/" },
