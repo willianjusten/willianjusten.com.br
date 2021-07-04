@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import transitions from './transitions'
 
 export const PostHeader = styled.header`
@@ -40,7 +39,7 @@ export const PostDescription = styled.h2`
   `}
 `
 
-export const ButtonBack = styled(AniLink)`
+export const ButtonBack = styled.a`
   color: var(--texts);
   display: flex;
   text-decoration: none;
@@ -133,6 +132,19 @@ export const MainContent = styled.section`
     }
   }
 
+  code {
+    background: #2d2d2d;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    white-space: normal;
+    overflow-wrap: break-word;
+    font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  }
+
+  pre > code {
+    white-space: pre;
+  }
+
   img {
     display: block;
     width: auto;
@@ -143,6 +155,10 @@ export const MainContent = styled.section`
   iframe {
     padding: 0 1.6rem 1.6rem;
     width: 100%;
+
+    ${media.greaterThan('large')`
+      height: 490px;
+    `}
 
     ${media.lessThan('large')`
       padding: 0 1rem;
@@ -211,33 +227,6 @@ export const MainContent = styled.section`
 
   strong {
     font-weight: 700;
-  }
-
-  .gatsby-resp-image-background-image {
-    z-index: 2;
-    opacity: 1 !important;
-  }
-
-  .gatsby-resp-image-image {
-    box-shadow: none !important;
-    transition: opacity 0.2s;
-
-    &.lazyload {
-      opacity: 0;
-    }
-
-    &.lazyloaded {
-      opacity: 1;
-      z-index: 3;
-    }
-  }
-
-  .gatsby-highlight {
-    padding: 0 1.6rem 1.6rem;
-
-    ${media.lessThan('large')`
-      padding: 0;
-    `}
   }
 
   .instagram-media {

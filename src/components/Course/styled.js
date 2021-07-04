@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions'
+import transitions from 'styles/transitions'
 
 export const ImageWrapper = styled.div`
-  .gatsby-image-wrapper {
+  img {
     border-radius: 50%;
     display: flex;
     max-width: 120px;

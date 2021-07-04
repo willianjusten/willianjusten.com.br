@@ -1,60 +1,33 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useState } from 'react'
 
-import { TransitionPortal } from 'gatsby-plugin-transition-link'
+import {
+  BLOG_AUTHOR,
+  BLOG_AUTHOR_DESCRIPTION,
+  BLOG_AUTHOR_POSITION
+} from 'lib/constants'
 
-import GlobalStyles from '../../styles/global'
-import Profile from '../Profile'
-import Sidebar from '../Sidebar'
-import MenuBar from '../MenuBar'
+import Profile from 'components/Profile'
+import Sidebar from 'components/Sidebar'
+import MenuBar from 'components/MenuBar'
 
 import * as S from './styled'
 
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            position
-            description
-            authorDescription
-          }
-        }
-      }
-    `
-  )
-
   return (
     <S.LayoutWrapper>
-      <GlobalStyles />
-      <TransitionPortal level="top">
-        <Profile
-          title={site.siteMetadata.title}
-          position={site.siteMetadata.position}
-          authorDescription={site.siteMetadata.authorDescription}
-          isMobileHeader={true}
-        />
-        <Sidebar
-          site={site.siteMetadata}
-          setIsMenuOpen={setIsMenuOpen}
-          isMenuOpen={isMenuOpen}
-        />
-      </TransitionPortal>
+      <Profile
+        title={BLOG_AUTHOR}
+        position={BLOG_AUTHOR_POSITION}
+        authorDescription={BLOG_AUTHOR_DESCRIPTION}
+        isMobileHeader={true}
+      />
+      <Sidebar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal level="top">
-        <MenuBar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-      </TransitionPortal>
+      <MenuBar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
     </S.LayoutWrapper>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
 }
 
 export default Layout

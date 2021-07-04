@@ -1,7 +1,4 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-import Post from '../Post'
+import Post from 'components/Post'
 
 const Hit = props => {
   const { hit } = props
@@ -15,10 +12,6 @@ const Hit = props => {
       main_class={hit.main_class}
     />
   )
-}
-
-Hit.propTypes = {
-  hit: PropTypes.object.isRequired
 }
 
 export default Hit

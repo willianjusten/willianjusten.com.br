@@ -1,22 +1,21 @@
-import React from 'react'
-import propTypes from 'prop-types'
+import {
+  BLOG_AUTHOR,
+  BLOG_AUTHOR_DESCRIPTION,
+  BLOG_AUTHOR_POSITION
+} from 'lib/constants'
 
-import Profile from '../Profile'
-import SocialLinks from '../SocialLinks'
-import MenuLinks from '../MenuLinks'
+import Profile from 'components/Profile'
+import SocialLinks from 'components/SocialLinks'
+import MenuLinks from 'components/MenuLinks'
 
 import * as S from './styled'
 
-const Sidebar = ({
-  site: { title, position, authorDescription },
-  isMenuOpen,
-  setIsMenuOpen
-}) => (
+const Sidebar = ({ isMenuOpen, setIsMenuOpen }) => (
   <S.SidebarContainer isMenuOpen={isMenuOpen}>
     <Profile
-      title={title}
-      position={position}
-      authorDescription={authorDescription}
+      title={BLOG_AUTHOR}
+      position={BLOG_AUTHOR_POSITION}
+      authorDescription={BLOG_AUTHOR_DESCRIPTION}
       isMobileHeader={false}
     />
     <S.SidebarLinksContainer>
@@ -25,13 +24,5 @@ const Sidebar = ({
     </S.SidebarLinksContainer>
   </S.SidebarContainer>
 )
-
-Sidebar.propTypes = {
-  site: propTypes.shape({
-    title: propTypes.string.isRequired,
-    position: propTypes.string.isRequired,
-    authorDescription: propTypes.string.isRequired
-  })
-}
 
 export default Sidebar

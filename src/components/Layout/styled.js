@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions'
+import transitions from 'styles/transitions'
 
 export const LayoutWrapper = styled.section`
   display: flex;
 
   ${media.lessThan('large')`
     flex-direction: column;
-    padding-top: 4.125rem;
   `}
 `
 
@@ -20,6 +19,6 @@ export const LayoutMain = styled.main`
   width: 100%;
 
   ${media.lessThan('large')`
-    padding: 0 0 3rem 0;
+    padding: 4rem 0 3rem 0;
   `}
 `

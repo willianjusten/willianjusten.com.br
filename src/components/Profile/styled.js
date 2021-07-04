@@ -1,4 +1,3 @@
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
@@ -16,10 +15,12 @@ export const ProfileContainer = styled.section`
     border-bottom: 1px solid var(--borders);
     padding: 1rem;
     width: 100vw;
+    position: fixed;
+    z-index: 10;
   `}
 `
 
-export const ProfileLink = styled(AniLink)`
+export const ProfileLink = styled.a`
   color: var(--texts);
   text-decoration: none;
   transition: ${transitions.COLOR};

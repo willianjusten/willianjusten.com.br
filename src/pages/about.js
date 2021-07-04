@@ -1,15 +1,12 @@
-import React from 'react'
+import { NextSeo } from 'next-seo'
+import SocialLinks from 'components/SocialLinks'
 
-import Layout from '../components/Layout/'
-import SEO from '../components/Seo'
-import SocialLinks from '../components/SocialLinks'
-
-import { MainContent } from '../styles/base'
+import { MainContent } from 'styles/base'
 
 const AboutPage = () => (
-  <Layout>
-    <SEO
-      title="Sobre mim"
+  <>
+    <NextSeo
+      title="Sobre mim | Willian Justen"
       description="Saiba um pouco mais sobre o desenvolvedor por trás deste blog."
     />
     <MainContent>
@@ -92,7 +89,7 @@ const AboutPage = () => (
 
       <SocialLinks hideStyle />
     </MainContent>
-  </Layout>
+  </>
 )
 
 export default AboutPage

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import transitions from '../../styles/transitions'
+import transitions from 'styles/transitions'
 
 export const SocialLinksWrapper = styled.nav`
   margin: 2rem auto;

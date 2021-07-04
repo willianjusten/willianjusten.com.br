@@ -1,15 +1,17 @@
-import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import Image from 'next/image'
+import avatarImage from '../../../public/assets/img/profile-photo-harry.jpg'
 
 import * as S from './styled'
 
 const Avatar = () => {
   return (
     <S.AvatarWrapper>
-      <StaticImage
-        src="../../../static/assets/img/profile-photo-harry.jpg"
-        alt="John Doe Avatar"
-        placeholder="blurred"
+      <Image
+        src={avatarImage}
+        alt="Uma foto minha vestido com o uniforme da Grifinória do Harry Potter"
+        width={64}
+        height={64}
+        placeholder="blur"
       />
     </S.AvatarWrapper>
   )

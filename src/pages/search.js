@@ -1,25 +1,30 @@
-import React from 'react'
+import { NextSeo } from 'next-seo'
+import algoliasearch from 'algoliasearch/lite'
+import { withInstantSearch } from 'next-instantsearch'
 
-import Layout from '../components/Layout/'
-import SEO from '../components/Seo'
-import Search from '../components/Search'
+import Search from 'components/Search'
 
 const algolia = {
-  appId: process.env.GATSBY_ALGOLIA_APP_ID,
-  searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_ONLY_KEY,
-  indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME
+  appId: process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
+  searchOnlyApiKey: process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_ONLY_KEY,
+  indexName: process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME
 }
 
-const SearchPage = props => {
+const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey)
+
+const SearchPage = () => {
   return (
-    <Layout>
-      <SEO
-        title="Search"
+    <>
+      <NextSeo
+        title="Search | Willian Justen"
         description="Vai lá, não tenha medo. Busque por posts novos e bem antigos."
       />
-      <Search algolia={algolia} />
-    </Layout>
+      <Search />
+    </>
   )
 }
 
-export default SearchPage
+export default withInstantSearch({
+  indexName: algolia.indexName,
+  searchClient
+})(SearchPage)
