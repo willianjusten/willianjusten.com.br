@@ -9,8 +9,8 @@ const Avatar = () => {
       <Image
         src={avatarImage}
         alt="Uma foto minha vestido com o uniforme da Grifinória do Harry Potter"
-        layout="responsive"
-        objectFit="cover"
+        width={64}
+        height={64}
         placeholder="blur"
       />
     </S.AvatarWrapper>
