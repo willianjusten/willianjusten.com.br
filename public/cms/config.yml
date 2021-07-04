@@ -25,11 +25,9 @@ collections:
           widget: 'datetime',
           format: 'YYYY-MM-DD hh:mm:ss'
         }
-      - { label: 'Post Image', name: 'image', widget: 'image' }
+      - { label: 'Post Image', name: 'image', widget: 'image', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Introduction', name: 'introduction', widget: 'string' }
-      - { label: 'Twitter text', name: 'twitter_text', widget: 'string' }
       - {
           label: 'Main Class',
           name: 'main-class',
