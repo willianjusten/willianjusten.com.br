@@ -26,7 +26,7 @@ import {
 const BlogPost = ({ post }) => {
   useEffect(() => {
     Prism.highlightAll()
-  }, [])
+  }, [post])
 
   return (
     <>
