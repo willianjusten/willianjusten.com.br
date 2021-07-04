@@ -8,6 +8,21 @@ const AboutPage = () => (
     <NextSeo
       title="Sobre mim | Willian Justen"
       description="Saiba um pouco mais sobre o desenvolvedor por trás deste blog."
+      openGraph={{
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://willianjusten.com.br',
+        site_name: 'Willian Justen',
+        title: 'Willian Justen',
+        images: [
+          {
+            url: 'https://willianjusten.com.br/assets/img/blog-cover.png',
+            width: 1200,
+            height: 630,
+            alt: 'Willian Justen Blog'
+          }
+        ]
+      }}
     />
     <MainContent>
       <h1>Sobre mim</h1>
