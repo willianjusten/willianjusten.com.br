@@ -8,7 +8,7 @@ const fs = require('fs')
 // pages that should not be in the sitemap
 const blocklist = ['/404']
 
-async function generateSitemap(posts) {
+export async function generateSitemap(posts) {
   if (process.env.NODE_ENV === 'development') {
     return
   }
@@ -50,5 +50,3 @@ async function generateSitemap(posts) {
 
   fs.writeFileSync('./public/sitemap.xml', xml)
 }
-
-export default generateSitemap

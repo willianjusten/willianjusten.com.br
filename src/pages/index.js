@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { getAllPosts } from 'lib/api'
-import { generateRss } from 'lib/rss'
-import generateSitemap from 'lib/sitemap'
+import { generateRss } from 'lib/generateRSS'
+import { generateSitemap } from 'lib/generateSitemap'
 
 import BlogList from 'templates/blog-list'
 

@@ -1,8 +1,12 @@
+import { BLOG_URL } from './constants'
+
 const chrome = require('chrome-aws-lambda')
 const { createHash } = require('crypto')
 const fs = require('fs')
 
 const isDev = process.env.NODE_ENV === 'development'
+
+// Chrome exe path on Mac OS
 const exePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 async function getOgImage(
@@ -17,7 +21,7 @@ async function getOgImage(
   const hash = createHash('md5').update(url).digest('hex')
   const ogImageDir = `./public/images/og`
   const imagePath = `${ogImageDir}/${hash}.png`
-  const publicPath = `https://willianjusten.com.br/images/og/${hash}.png`
+  const publicPath = `${BLOG_URL}/images/og/${hash}.png`
 
   const browser = await chrome.puppeteer.launch({
     args: chrome.args,
