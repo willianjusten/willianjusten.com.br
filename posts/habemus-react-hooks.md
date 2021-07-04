@@ -20,28 +20,28 @@ tags:
   - hooks
 ---
 
-- [Introdução](#introducao)
-- [O que é? Onde vive? O que come?](#o-que-e-onde-vive-o-que-come)
+- [Introdução](#introdução)
+- [O que é? Onde vive? O que come?](#o-que-é-onde-vive-o-que-come)
   - [O que são React Hooks?](#o-que-sao-react-hooks)
   - [Por que criaram isso?](#por-que-criaram-isso)
-    - [Classes ainda confundem pessoas e máquinas](#classes-ainda-confundem-pessoas-e-maquinas)
+    - [Classes ainda confundem pessoas e máquinas](#classes-ainda-confundem-pessoas-e-máquinas)
   - [Preciso aprender tudo de novo?](#preciso-aprender-tudo-de-novo)
 - [Hooks e seus funcionamentos](#hooks-e-seus-funcionamentos)
   - [Usando o Hook de estados (useState)](#usando-o-hook-de-estados-usestate)
     - [Declarando a variável de estado](#declarando-a-variavel-de-estado)
-    - [Lendo a variável de estado](#lendo-a-variavel-de-estado)
-    - [Atualizando a variável de estado](#atualizando-a-variavel-de-estado)
+    - [Lendo a variável de estado](#lendo-a-variável-de-estado)
+    - [Atualizando a variável de estado](#atualizando-a-variável-de-estado)
   - [Usando o Hook de efeitos (useEffect)](#usando-o-hook-de-efeitos-useeffect)
     - [Efeitos com Cleanup](#efeitos-com-cleanup)
   - [Regras para os Hooks](#regras-para-os-hooks)
     - [Somente chame os Hooks no Top Level](#somente-chame-os-hooks-no-top-level)
-    - [Somente chame os Hooks em funções React](#somente-chame-os-hooks-em-funcoes-react)
-    - [Explicação](#explicacao)
-  - [Criando seus próprios Hooks](#criando-seus-proprios-hooks)
+    - [Somente chame os Hooks em funções React](#somente-chame-os-hooks-em-funções-react)
+    - [Explicação](#explicação)
+  - [Criando seus próprios Hooks](#criando-seus-próprios-hooks)
     - [Extraindo um Hook customizado](#extraindo-um-hook-customizado)
     - [Usando um hook customizado](#usando-um-hook-customizado)
 - [Links interessantes](#links-interessantes)
-- [Conclusão](#conclusao)
+- [Conclusão](#conclusão)
 
 ## Introdução
 

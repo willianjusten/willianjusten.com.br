@@ -30,21 +30,21 @@ O post é grande, então provavelmente eu vou ouvir mais coisas, mas no momento 
 
 ## Índice
 
-- [Razões para criar um curso online](#razoes-para-criar-um-curso-online)
-- [Princípios para um bom curso online](#principios-para-um-bom-curso-online)
+- [Razões para criar um curso online](#razões-para-criar-um-curso-online)
+- [Princípios para um bom curso online](#princípios-para-um-bom-curso-online)
 - [Planejando o curso](#planejando-o-curso)
 - [Produzindo o curso](#produzindo-o-curso)
-  - [Detalhes técnicos e qualidade](#detalhes-tecnicos-e-qualidade)
+  - [Detalhes técnicos e qualidade](#detalhes-técnicos-e-qualidade)
   - [Entrega do Instrutor](#entrega-do-instrutor)
   - [Dicas de Softwares](#dicas-de-softwares)
   - [Meu passo-a-passo ao gravar um curso](#meu-passo-a-passo-ao-gravar-um-curso)
 - [Publicando o seu curso](#publicando-o-seu-curso)
   - [Self Hostings](#self-hostings)
   - [Marketplaces](#marketplaces)
-  - [Minha opinião](#minha-opiniao)
-  - [Meu histórico](#meu-historico)
+  - [Minha opinião](#minha-opinião)
+  - [Meu histórico](#meu-histórico)
 - [Sobre feedbacks](#sobre-feedbacks)
-- [Conclusão](#conclusao)
+- [Conclusão](#conclusão)
 
 ## Razões para criar um curso online
 

@@ -22,9 +22,9 @@ tags:
 
 ## Índice
 
-- [Introdução](#introducao)
-- [O que é Open Source?](#o-que-e-open-source)
-  - [Livre redistribuição](#livre-redistribuicao)
+- [Introdução](#introducão)
+- [O que é Open Source?](#o-que-é-open-source)
+  - [Livre redistribuição](#livre-redistribuição)
   - [Trabalhos derivados](#trabalhos-derivados)
   - [Sem discriminação contra pessoas ou grupos](#sem-discriminacao-contra-pessoas-ou-grupos)
 - [Por que contribuir?](#por-que-contribuir)
@@ -35,10 +35,10 @@ tags:
   - [Você gosta de design?](#voce-gosta-de-design)
   - [Você gosta de planejar eventos?](#voce-gosta-de-planejar-eventos)
   - [Você gosta de escrever?](#voce-gosta-de-escrever)
-  - [Você gosta de organização?](#voce-gosta-de-organizacao)
+  - [Você gosta de organização?](#voce-gosta-de-organização)
   - [Você gosta de codar?](#voce-gosta-de-codar)
   - [Você gosta de ajudar pessoas?](#voce-gosta-de-ajudar-pessoas)
-  - [Você pode simplesmente ajudar em outras coisas que não sejam código!](#voce-pode-simplesmente-ajudar-em-outras-coisas-que-nao-sejam-codigo)
+  - [Você pode simplesmente ajudar em outras coisas que não sejam código!](#voce-pode-simplesmente-ajudar-em-outras-coisas-que-nao-sejam-código)
 - [Orientando-se para um novo projeto](#orientando-se-para-um-novo-projeto)
   - [Anatomia básica de um projeto open source](#anatomia-basica-de-um-projeto-open-source)
 - [Encontrando um projeto para contribuir](#encontrando-um-projeto-para-contribuir)
@@ -59,7 +59,7 @@ tags:
   - [Sua contribuição não foi aceita](#sua-contribuição-nao-foi-aceita)
   - [Sua contribuição foi aceita](#sua-contribuiçao-foi-aceita)
 - [Mais alguns artigos que podem lhe ajudar](#mais-alguns-artigos-que-podem-lhe-ajudar)
-- [Conclusão](#conclusao)
+- [Conclusão](#conclusão)
 
 ## Introdução
 

@@ -40,15 +40,15 @@ Bom, vamos lá, vou separar os tópicos aqui, para facilitar um pouquinho:
 - [React e Classes no JavaScript](#react-e-classes-no-javascript)
 - [Template Literals](#template-literals)
 - [Arrow Functions](#arrow-functions)
-- [Funções como componentes no React](#funcoes-como-componentes-no-react)
+- [Funções como componentes no React](#funções-como-componentes-no-react)
 - [Sintaxe do React Class Component](#sintaxe-do-react-class-component)
 - [Map, Reduce e Filter no React](#map-reduce-e-filter-no-react)
-- [Operador Ternário no React](#operador-ternario-no-react)
+- [Operador Ternário no React](#operador-ternário-no-react)
 - [Importando e Exportando no React](#importando-e-exportando-no-react)
-- [Funções de Ordem Superior](#funcoes-de-ordem-superior)
-- [Funções de Ordem Superior no React](#funcoes-de-ordem-superior-no-react)
+- [Funções de Ordem Superior](#funções-de-ordem-superior)
+- [Funções de Ordem Superior no React](#funções-de-ordem-superior-no-react)
 - [Destructuring e Spread Operators](#destructuring-e-spread-operators)
-- [Conclusão](#conclusao)
+- [Conclusão](#conclusão)
 
 ## Primeiro contato com React
 
