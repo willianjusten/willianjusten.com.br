@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: willianjusten/willianjusten.com.br
-  base_url: https://willianjusten.com.br
-  auth_endpoint: api/auth
+  base_url: https://willianjusten.com.br/
+  auth_endpoint: api/auth/
 
 media_folder: static/assets/img
 public_folder: /assets/img

@@ -1,18 +1,5 @@
 {
-  "trailingSlash": true,
   "rewrites": [
-    {
-      "source": "/admin/",
-      "destination": "https://willianjusten.com.br/admin/index.html"
-    },
-    {
-      "source": "/api/auth/",
-      "destination": "https://willianjusten.com.br/api/auth/"
-    },
-    {
-      "source": "/api/callback/",
-      "destination": "https://willianjusten.com.br/api/callback/"
-    },
     { "source": "/js/", "destination": "https://willianjusten.com.br/" },
     { "source": "/jekyll/", "destination": "https://willianjusten.com.br/" },
     { "source": "/svg/", "destination": "https://willianjusten.com.br/" },
