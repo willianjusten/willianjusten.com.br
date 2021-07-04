@@ -39,7 +39,7 @@ const BlogPost = ({ post }) => {
           description: post.frontmatter.description,
           images: [
             {
-              url: `https://willianjusten.com.br${post.frontmatter.image}`,
+              url: post.ogImage,
               alt: `${post.frontmatter.title}`
             }
           ]
