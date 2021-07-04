@@ -32,8 +32,10 @@
     "chrome-aws-lambda": "^10.0.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
+    "globby": "^11.0.4",
     "prettier": "^2.2.1",
-    "puppeteer-core": "^10.1.0"
+    "puppeteer-core": "^10.1.0",
+    "sitemap": "^7.0.0"
   },
   "keywords": [
     "nextjs",
