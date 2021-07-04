@@ -5,6 +5,7 @@ import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo.config'
 
 import Layout from 'components/Layout'
+import Analytics from 'components/Analytics'
 import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }) {
@@ -38,6 +39,7 @@ function App({ Component, pageProps }) {
           showSpinner={false}
         />
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   )
