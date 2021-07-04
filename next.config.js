@@ -1,4 +1,16 @@
 module.exports = {
+  webpack: (config, { dev, isServer }) => {
+    // Replace React with Preact only in client production build
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat'
+      })
+    }
+
+    return config
+  },
   async rewrites() {
     return [
       { source: '/js/', destination: 'https://willianjusten.com.br/' },
@@ -18,15 +30,18 @@ module.exports = {
     return [
       {
         source: '/my-trips/',
-        destination: 'https://my-trips.willianjusten.com.br/'
+        destination: 'https://my-trips.willianjusten.com.br/',
+        permanent: true
       },
       {
         source: '/japanese-words/',
-        destination: 'https://japanese-words.willianjusten.com.br/'
+        destination: 'https://japanese-words.willianjusten.com.br/',
+        permanent: true
       },
       {
         source: '/learn-japanese/',
-        destination: 'https://learn-japanese.willianjusten.com.br/'
+        destination: 'https://learn-japanese.willianjusten.com.br/',
+        permanent: true
       }
     ]
   }

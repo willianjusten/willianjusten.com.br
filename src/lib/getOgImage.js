@@ -5,6 +5,7 @@ const { createHash } = require('crypto')
 const fs = require('fs')
 
 const isDev = process.env.NODE_ENV === 'development'
+const isLocal = process.env.IS_LOCAL === 'local'
 
 // Chrome exe path on Mac OS
 const exePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
@@ -13,7 +14,7 @@ async function getOgImage(
   path,
   baseUrl = 'https://og-image.willianjusten.com.br'
 ) {
-  if (isDev) {
+  if (isDev || isLocal) {
     return 'og image will be generated in production'
   }
 
