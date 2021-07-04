@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 
 import { Home } from '@styled-icons/boxicons-solid/Home'
@@ -12,6 +13,7 @@ import { Menu } from '@styled-icons/boxicons-regular/Menu'
 import * as S from './styled'
 
 const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
+  const router = useRouter()
   const [theme, setTheme] = useState(null)
 
   const isDarkMode = theme === 'dark'
@@ -29,7 +31,10 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
         <Link href="/" passHref>
-          <S.MenuBarLink title="Voltar para Home">
+          <S.MenuBarLink
+            title="Voltar para Home"
+            className={router.pathname === '/' ? 'active' : ''}
+          >
             <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
@@ -37,7 +42,10 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
         </Link>
 
         <Link href="/search" passHref>
-          <S.MenuBarLink title="Pesquisar no Blog">
+          <S.MenuBarLink
+            title="Pesquisar no Blog"
+            className={router.pathname === '/search' ? 'active' : ''}
+          >
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
@@ -46,7 +54,10 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
 
         <S.MenuBarGroupDesktop>
           <Link href="/cursos/" passHref>
-            <S.MenuBarLink title="Ver cursos">
+            <S.MenuBarLink
+              className={router.pathname === '/cursos' ? 'active' : ''}
+              title="Ver cursos"
+            >
               <S.MenuBarItem>
                 <GraduationCap />
                 <S.MenuBarNotification />

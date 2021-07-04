@@ -5,15 +5,15 @@ const links = [
   },
   {
     label: 'Sobre Mim',
-    url: '/about/'
+    url: '/about'
   },
   {
     label: 'Cursos',
-    url: '/cursos/'
+    url: '/cursos'
   },
   {
     label: 'Séries',
-    url: '/series/'
+    url: '/series'
   },
   {
     label: 'Viagens',
