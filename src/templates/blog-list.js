@@ -1,15 +1,45 @@
+import { useState } from 'react'
+import InfiniteScroll from 'react-infinite-scroll-component'
+
 import Post from 'components/Post'
 
 const BlogList = ({ posts }) => {
-  // const { currentPage, numPages } = props.pageContext
-  // const isFirst = currentPage === 1
-  // const isLast = currentPage === numPages
-  // const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
-  // const nextPage = `/page/${currentPage + 1}`
+  const sortedPosts = posts.sort((post1, post2) =>
+    new Date(post1.date) > new Date(post2.date) ? -1 : 1
+  )
+
+  const [count, setCount] = useState({
+    prev: 0,
+    next: 10
+  })
+  const [hasMore, setHasMore] = useState(true)
+  const [current, setCurrent] = useState(
+    sortedPosts.slice(count.prev, count.next)
+  )
+
+  const getMoreData = () => {
+    if (current.length === sortedPosts.length) {
+      setHasMore(false)
+      return
+    }
+
+    setCurrent(
+      current.concat(sortedPosts.slice(count.prev + 10, count.next + 10))
+    )
+
+    setCount(prevState => ({
+      prev: prevState.prev + 10,
+      next: prevState.next + 10
+    }))
+  }
 
   return (
-    <>
-      {posts.map((post, i) => (
+    <InfiniteScroll
+      dataLength={current.length}
+      next={getMoreData}
+      hasMore={hasMore}
+    >
+      {current.map((post, i) => (
         <Post
           key={i}
           slug={post.slug}
@@ -20,16 +50,7 @@ const BlogList = ({ posts }) => {
           main_class={post.frontmatter['main-class']}
         />
       ))}
-
-      {/* <Pagination
-        currentPage={currentPage}
-        numPages={numPages}
-        isFirst={isFirst}
-        isLast={isLast}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      /> */}
-    </>
+    </InfiniteScroll>
   )
 }
 
