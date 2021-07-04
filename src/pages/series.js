@@ -42,9 +42,9 @@ const SeriesPage = ({ posts }) => {
         openGraph={{
           images: [
             {
-              url: 'https://willianjusten.com.br/assets/img/series.png',
-              width: 600,
-              height: 315,
+              url: 'https://willianjusten.com.br/assets/img/series-cover.png',
+              width: 1200,
+              height: 630,
               alt: 'Willian Justen Series'
             }
           ]

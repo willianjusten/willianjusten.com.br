@@ -10,9 +10,9 @@ const DefaultSEO = {
     title: 'Willian Justen',
     images: [
       {
-        url: 'https://willianjusten.com.br/assets/img/blog-image-new.png',
-        width: 1280,
-        height: 720,
+        url: 'https://willianjusten.com.br/assets/img/blog-cover.png',
+        width: 1200,
+        height: 630,
         alt: 'Willian Justen Blog'
       }
     ]

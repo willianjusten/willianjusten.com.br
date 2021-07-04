@@ -94,9 +94,9 @@ const CursosPage = () => (
       openGraph={{
         images: [
           {
-            url: 'https://willianjusten.com.br/assets/img/cursos/cursos-bg.png',
-            width: 600,
-            height: 315,
+            url: 'https://willianjusten.com.br/assets/img/cursos-cover.png',
+            width: 1200,
+            height: 630,
             alt: 'Willian Justen Cursos'
           }
         ]
