@@ -35,7 +35,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             title="Voltar para Home"
             className={router.pathname === '/' ? 'active' : ''}
           >
-            <S.MenuBarItem>
+            <S.MenuBarItem onClick={openMenu}>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
@@ -46,7 +46,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             title="Pesquisar no Blog"
             className={router.pathname === '/search' ? 'active' : ''}
           >
-            <S.MenuBarItem>
+            <S.MenuBarItem onClick={openMenu}>
               <Search />
             </S.MenuBarItem>
           </S.MenuBarLink>
@@ -58,7 +58,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
               className={router.pathname === '/cursos' ? 'active' : ''}
               title="Ver cursos"
             >
-              <S.MenuBarItem>
+              <S.MenuBarItem onClick={openMenu}>
                 <GraduationCap />
                 <S.MenuBarNotification />
               </S.MenuBarItem>

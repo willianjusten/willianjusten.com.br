@@ -20,7 +20,7 @@ export const SidebarContainer = styled.aside`
   ${media.lessThan('large')`
     align-items: flex-start;
     border: 0;
-    height: calc(100% - 50px);
+    height: calc(100% - 49px);
     padding: 0;
     width: 100%;
     transform: ${props =>
