@@ -73,8 +73,8 @@ No Gatsby você tem um arquivo [html.js](https://github.com/willianjusten/gatsby
 
 Já no Next você possui 2 arquivos, que são:
 
-- [pages/_document](https://github.com/willianjusten/willianjusten.com.br/blob/master/src/pages/_document.js) - esse é o arquivo mais externo de todos e roda **somente** no build e/ou server side, ele serve mais para extendermos o html em si, adicionando tags de verificação, meta tags comuns a todas as páginas e mais. Você pode ler [mais aqui](https://nextjs.org/docs/advanced-features/custom-document).
-- [pages/_app](https://github.com/willianjusten/willianjusten.com.br/blob/master/src/pages/_app.js) - esse arquivo encapsula todas as páginas, mas ele roda no server e no client. É mais escolhido para persistirmos layouts, temas, estilos, etc.
+- `pages/_document` - esse é o arquivo mais externo de todos e roda **somente** no build e/ou server side, ele serve mais para extendermos o html em si, adicionando tags de verificação, meta tags comuns a todas as páginas e mais. Você pode ler [mais aqui](https://nextjs.org/docs/advanced-features/custom-document).
+- `pages/_app` - esse arquivo encapsula todas as páginas, mas ele roda no server e no client. É mais escolhido para persistirmos layouts, temas, estilos, etc.
 
 ### Links
 
@@ -108,8 +108,85 @@ Como você pode ver, no Gatsby, o próprio `Link` já se comporta como um `a` e 
 
 No Gatsby para trabalhar com `styled-components` você tem advinha o quê? Isso mesmo, um plugin! Já no Next, para fazer funcionar, você precisa de 2 detalhes:
 
-- [Configurar o babel](https://github.com/willianjusten/willianjusten.com.br/blob/master/.babelrc#L3-L24)
-- [Gerar os estilos no _document](https://github.com/willianjusten/willianjusten.com.br/blob/master/src/pages/_document.js#L5-L28)
+#### Configurar o Babel
+
+Você precisa instalar o `babel-styled-components` e também configurar o `.babelrc` com:
+
+```json
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "ssr": false,
+            "displayName": false
+          }
+        ]
+      ]
+    }
+  }
+}
+
+```
+
+E depois disso, você precisa também alterar o `_document` para gerar os estilos no server.
+
+```jsx
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
+
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        )
+      }
+    } finally {
+      sheet.seal()
+    }
+  }
+
+  render() {
+    return (
+      <Html lang="pt-BR">
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+```
+
 
 Se você não fizer essas duas etapas, o blog pode "piscar" começando sem estilo e ganhando os estilos, o que não é legal.
 
@@ -119,7 +196,7 @@ No Gatsby, toda a criação é gerenciada através do arquivo [gatsby-node](http
 
 Já no Next, a criação das páginas de feita diretamente na pasta `pages` e vai caber a você definir a estrutura dessas páginas/slugs. Exemplo, para os posts do blog, eu criei um arquivo `[slug].js` que entende que terão várias páginas dinâmicas, onde a url será aquele `slug`. Isso para mim é bem mais fácil de achar e claro de como funciona. Outra questão é que você pode usar diferentes coisas para diferentes páginas sem problemas. Quer gerar as páginas de posts através de markdown? Vai lá. Quer criar páginas de outros assuntos usando GraphQL no mesmo projeto? Pode também. Enfim, você é livre para trabalhar como desejar. 
 
-O objetivo desse post não é ensinar como fazer isso, então eu deixo o [repositório](https://github.com/willianjusten/willianjusten.com.br/) para você ter uma ideia das coisas que eu fiz, e fica ligado que terão outros posts explicando possivelmente coisas diferentes que eu fiz.
+Em um outro post vou mostrar detalhadamente como se faz tanto com markdown quanto com uma API.
 
 ### Componente de Imagem
 
