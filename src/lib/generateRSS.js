@@ -7,8 +7,8 @@ export async function generateRssItem(post) {
   return `
     <item>
       <guid>${BLOG_URL}/posts/${post.slug}</guid>
-      <title>${post.title}</title>
-      <description>${post.excerpt}</description>
+      <title>${post.frontmatter.title}</title>
+      <description>${post.frontmatter.description}</description>
       <link>${BLOG_URL}/posts/${post.slug}</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       <content:encoded><![CDATA[${content}]]></content:encoded>
