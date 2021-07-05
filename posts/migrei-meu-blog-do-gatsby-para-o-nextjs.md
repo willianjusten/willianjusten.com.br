@@ -4,13 +4,14 @@ date: 2021-07-04 01:46:26
 title: Migrei meu blog do Gatsby para o NextJS
 description: Um pouco da razão da mudança, coisas que fiz e minhas impressões.
 main-class: js
-color: "#D6BA32"
+color: '#D6BA32'
 tags:
   - nextjs
   - gatsby
   - blog
 categories: []
 ---
+
 ## Introdução
 
 Fala pessoal! Alguns dias atrás eu resolvi migrar meu blog do [GatsbyJS](https://www.gatsbyjs.com/) para o [NextJS](https://nextjs.org/) e postei até no meu Twitter, alguns posts [sobre isso](https://twitter.com/Willian_justen/status/1411029194566418433), [aqui](https://twitter.com/Willian_justen/status/1411091307884421123) e [aqui também](https://twitter.com/Willian_justen/status/1411097667434856449).
@@ -39,7 +40,7 @@ Aliás, foi a primeira vez que eu codei com a ajuda do [GitHub Copilot](https://
 
 ## Meu processo
 
-Eu demorei em torno de 2-3 dias e foi bastante divertido! Eu usei bastante a [técnica do Pomodoro](https://willianjusten.com.br/tecnicas-de-aprendizado) junto com o site/app [Pomofocus.io](https://pomofocus.io/). 
+Eu demorei em torno de 2-3 dias e foi bastante divertido! Eu usei bastante a [técnica do Pomodoro](https://willianjusten.com.br/tecnicas-de-aprendizado) junto com o site/app [Pomofocus.io](https://pomofocus.io/).
 
 Lá eu meio que fui definindo as tarefas que precisava fazer e ia iniciando os ciclos de 25min, fluiu super bem!
 
@@ -51,7 +52,7 @@ A vantagem do Gatsby é que ele tem um [ecossistema enorme de plugins](https://w
 
 O Next, por outro lado, tenta ser o mais próximo possível do Javascript/React puro, então, todas as pequenas diferenças que ele tem, são em formas de funções e não arquivos de configuração. Outra grande vantagem do Next ao meu ver, é que ele permite diferentes tipos de desenvolvimento, seja um estático (SSG), um estático incremental (ISR) ou até mesmo server side rendering (SSR), o que te deixa bastante livre na hora de desenvolver.
 
-Se você não sabe nada sobre essas siglas, recomendo fortemente [esse vídeo](https://www.youtube.com/watch?v=X3W-YFe2_io). 
+Se você não sabe nada sobre essas siglas, recomendo fortemente [esse vídeo](https://www.youtube.com/watch?v=X3W-YFe2_io).
 
 ## Minhas impressões da migração
 
@@ -138,7 +139,6 @@ Você precisa instalar o `babel-styled-components` e também configurar o `.babe
     }
   }
 }
-
 ```
 
 E depois disso, você precisa também alterar o `_document` para gerar os estilos no server.
@@ -187,20 +187,19 @@ export default class MyDocument extends Document {
 }
 ```
 
-
 Se você não fizer essas duas etapas, o blog pode "piscar" começando sem estilo e ganhando os estilos, o que não é legal.
 
 ### Criação de páginas/posts
 
 No Gatsby, toda a criação é gerenciada através do arquivo [gatsby-node](https://github.com/willianjusten/gatsby-course/blob/master/gatsby-node.js#L39-L110), onde você vai trabalhar com uma source de dados, que pode ser desde um conjunto de markdown, até uma API de algum CMS. Mas é importante se atentar que aqui a interface de conexão vai ser sempre em GraphQL no final.
 
-Já no Next, a criação das páginas de feita diretamente na pasta `pages` e vai caber a você definir a estrutura dessas páginas/slugs. Exemplo, para os posts do blog, eu criei um arquivo `[slug].js` que entende que terão várias páginas dinâmicas, onde a url será aquele `slug`. Isso para mim é bem mais fácil de achar e claro de como funciona. Outra questão é que você pode usar diferentes coisas para diferentes páginas sem problemas. Quer gerar as páginas de posts através de markdown? Vai lá. Quer criar páginas de outros assuntos usando GraphQL no mesmo projeto? Pode também. Enfim, você é livre para trabalhar como desejar. 
+Já no Next, a criação das páginas é feita diretamente na pasta `pages` e vai caber a você definir a estrutura dessas páginas/slugs. Exemplo, para os posts do blog, eu criei um arquivo `[slug].js` que entende que terão várias páginas dinâmicas, onde a url será aquele `slug`. Isso para mim é bem mais fácil de achar e claro de como funciona. Outra questão é que você pode usar diferentes coisas para diferentes páginas sem problemas. Quer gerar as páginas de posts através de markdown? Vai lá. Quer criar páginas de outros assuntos usando GraphQL no mesmo projeto? Pode também. Enfim, você é livre para trabalhar como desejar.
 
 Em um outro post vou mostrar detalhadamente como se faz tanto com markdown quanto com uma API.
 
 ### Componente de Imagem
 
-O grande trunfo que o Gatsby tinha para mim, era o componente de `gatsby-image` que fazia tratamentos, lazy-loadings, blur, etc. O NextJS na época que eu criei o blog sequer tinha um componente para trabalhar com imagens, mas desde a v10 eles criaram um componente e evoluíram super rápido! 
+O grande trunfo que o Gatsby tinha para mim, era o componente de `gatsby-image` que fazia tratamentos, lazy-loadings, blur, etc. O NextJS na época que eu criei o blog sequer tinha um componente para trabalhar com imagens, mas desde a v10 eles criaram um componente e evoluíram super rápido!
 
 Você pode ver a [documentação do componente](https://nextjs.org/docs/api-reference/next/image), mas um exemplo simples de uso:
 
@@ -209,12 +208,12 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-      <Image
-        src="/image.png"
-        alt="A text explaining the image"
-        width={500}
-        height={500}
-      />
+    <Image
+      src="/image.png"
+      alt="A text explaining the image"
+      width={500}
+      height={500}
+    />
   )
 }
 ```

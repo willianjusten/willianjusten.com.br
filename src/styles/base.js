@@ -134,6 +134,7 @@ export const MainContent = styled.section`
 
   code {
     background: #2d2d2d;
+    color: white;
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
