@@ -5,7 +5,7 @@ backend:
   auth_endpoint: api/auth/
 
 media_folder: public/assets/img
-public_folder: /assets/img
+public_folder: public/assets/img
 publish_mode: editorial_workflow
 slug:
   encoding: 'ascii'
