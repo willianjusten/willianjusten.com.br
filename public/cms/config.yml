@@ -4,7 +4,7 @@ backend:
   base_url: https://willianjusten.com.br/
   auth_endpoint: api/auth/
 
-media_folder: static/assets/img
+media_folder: public/assets/img
 public_folder: /assets/img
 publish_mode: editorial_workflow
 slug:
