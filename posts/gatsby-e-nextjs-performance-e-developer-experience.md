@@ -1,16 +1,17 @@
 ---
 layout: post
 date: 2021-07-06 12:27:07
-image: ""
-title: "Gatsby e NextJS: Performance e Developer Experience"
+image: ''
+title: 'Gatsby e NextJS: Performance e Developer Experience'
 description: Uma breve comparação entre os frameworks e a experiência de desenvolvimento.
 main-class: js
-color: "#D6BA32"
+color: '#D6BA32'
 tags:
   - nextjs
   - gatsby
   - blog
 ---
+
 ## Introdução
 
 Fala pessoal! No [post passado](https://willianjusten.com.br/migrei-meu-blog-do-gatsby-para-o-nextjs) eu falei da migração desse blog do Gatsby para o NextJS e disse a razão disso, que basicamente foi "Porque eu quis". Mas nessa migração, pude notar vários detalhes interessantes, estes relacionados a performance e uma coisa não muito falada ainda (mas que vai crescer muito), que é a Developer Experience ou Experiência para desenvolver falando em linguas tupiniquis.
@@ -23,11 +24,11 @@ Ao você entrar nesse post hoje, você deve ter notado como carregou super rápi
 
 Segue aqui as notas do meu blog usando o **Gatsby**:
 
-![Indica Nota 99 - 1.64 FCP e 1.74 LCP](public/assets/img/gatsby-perf.png)
+![Indica Nota 99 - 1.64 FCP e 1.74 LCP](/assets/img/gatsby-perf.png)
 
 Agora segue a nota do blog atual com **NextJS:**
 
-![Nota 100: 1.48 FCP e 1.49 LCP](public/assets/img/next-perf.png)
+![Nota 100: 1.48 FCP e 1.49 LCP](/assets/img/next-perf.png)
 
 Como dá para notar, eles praticamente tem a mesma performance, com o NextJS ganhando por muito pouquinho. Mas já me aconteceu o contrário em outros casos, onde o Gatsby era pouco melhor, ou seja, nesse ponto, os 2 são bons demais e você terá uma performance ótima de qualquer forma!
 
@@ -52,11 +53,11 @@ E quanto as informações de conteúdo, eu tenho cerca 190 páginas somando post
 
 Ignorem o formato do log do build e se atentem ao **tempo de build**. Segue primeiro o do Gatsby:
 
-![Tempo de build: 98.23s](public/assets/img/gatsby-build.jpeg)
+![Tempo de build: 98.23s](/assets/img/gatsby-build.jpeg)
 
 E agora o build do NextJS com exatamente o mesmo conteúdo e mesmo layout.
 
-![Tempo de build 3.93s](public/assets/img/next-build.jpeg)
+![Tempo de build 3.93s](/assets/img/next-build.jpeg)
 
 Sim! É isso mesmo que você está vendo, enquanto no Gatsby demorou `98.23s`, no NextJS durou apenas `3.93s`. Enquanto num eu posso ir pegar um cafézinho, no outro eu mal consigo piscar e tá pronto! Já pensou quantos cafés estou deixando de tomar agora? Meu estômago agradece!
 
@@ -66,7 +67,7 @@ Mas talvez você venha e fale:
 
 Pois então, segue aqui o tempo de build, consegue adivinhar qual é qual?
 
-![Um dos builds teve 3min e outro teve 58s](public/assets/img/build-vercel.png)
+![Um dos builds teve 3min e outro teve 58s](/assets/img/build-vercel.png)
 
 Pois é, o NextJS é muito mais rápido no build, tanto localmente numa boa máquina (até nas ruinzinhas) quanto no servidor final. E isso pode parecer bobeira, mas se somar o tempo que perde com builds, você já poderia estar programando outra coisa.
 
@@ -80,7 +81,6 @@ E confesso que eu fiz esse post todo só para poder falar dessa parte aqui, que 
 - [NextJS 11](https://nextjs.org/blog/next-11) - outra major version, incluindo mais melhorias na análise de código, com linter próprio, novo componente de script, melhorias em e imagem e mais. **Nenhuma breaking change**
 
 E agora vamos falar do Gatsby:
-
 
 - [Gatsby v2 para v3](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/) - demorou mais de 1 ano para fazer uma grande atualização. **Uma página gigante de breaking changes e mil mudancinhas para fazer**.
 
