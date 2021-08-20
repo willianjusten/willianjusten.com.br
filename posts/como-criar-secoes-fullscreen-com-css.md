@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Como criar seções fullscreen com CSS"
+title: 'Como criar seções fullscreen com CSS'
 date: 2015-07-19 13:44:01
 image: '/assets/img/header-full/main.png'
-description: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer também."
+description: 'Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer também.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- tutorial
+  - css
+  - tutorial
 categories:
-twitter_text: "Como criar seções fullscreen com CSS e chamar atenção dos usuários."
-introduction: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units."
+twitter_text: 'Como criar seções fullscreen com CSS e chamar atenção dos usuários.'
+introduction: 'Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units.'
 ---
 
 ## Introdução
@@ -22,13 +22,12 @@ O post de hoje é extra, ele não era esperado, mas recebi um email de mais uma 
 
 Se você quiser pular já para o resultado está aqui:
 
-* [Usando CSS simples](https://willianjusten.com.br/labs/full-screen-sections/height-100.html)
-* [Usando Viewport Units](https://willianjusten.com.br/labs/full-screen-sections/viewport.html)
+- [Usando CSS simples](https://labs.willianjusten.com.br/full-screen-sections/height-100.html)
+- [Usando Viewport Units](https://labs.willianjusten.com.br/full-screen-sections/viewport.html)
 
 ## Dúvida
 
 > Willian tem uma tecnica que vi no seu blog e gostei muito...dai fui procurar como fazer mais não consegui encontrar nada parecido, até consegui mas não era como eu queria.. sou muito perfecionista.. XD. O efeito que me refiro é o que faz com que a div quer vem os titulos dos posts a "header-post" ela ocupa sempre a tela completa do usuario.. sei que é uma duvida bem simples, mas agradeço se puder me dar help. Abraços!
-
 
 ## Contexto
 
@@ -49,11 +48,9 @@ Seguem alguns exemplos de sites que utilizam dessa técnica:
 ![Pen & Quill](/assets/img/header-full/header-3.png)
 [Pen & Quill](http://penandquill.net/)
 
-
 ## Problema
 
 Nós estamos muito acostumados a trabalhar com a largura dos elementos e deixamos as alturas fluidas e no máximo conseguimos definir um `min-height`.Isso acontece pois, em geral, trabalhamos com o scroll do próprio browser, se definirmos uma altura, podemos acabar cortando alguma coisa que não queremos, então fica mais fácil deixar seguir sem problemas. Mas e se quisermos criar uma grande seção com uma altura pegando a tela toda?
-
 
 ## Solução 1
 
@@ -61,24 +58,25 @@ A primeira solução e mais simples é criar uma forma do elemento que desejamos
 
 ```html
 <html>
-    <!-- outras informações -->
-    <body>
-        <header>
-            <div class="container">
-                <h1>Header Full Screen com CSS!!</h1>
-                <h2>Dá para brincar e chamar atenção dos usuários! =)</h2>
-            </div>
-        </header>
-    </body>
+  <!-- outras informações -->
+  <body>
+    <header>
+      <div class="container">
+        <h1>Header Full Screen com CSS!!</h1>
+        <h2>Dá para brincar e chamar atenção dos usuários! =)</h2>
+      </div>
+    </header>
+  </body>
 </html>
 ```
 
 Os elementos mais externos que envolvem o `header` são o `html` e o `body`, dessa forma, podemos determinar que ambos devem conter em todo o espaço da tela:
 
 ```css
-html,body{
-    width: 100%;
-    height:100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -86,11 +84,11 @@ Depois disso, basta definirmos a altura em porcentagem que queremos que o `heade
 
 ```css
 header {
-    height: 100%;
+  height: 100%;
 }
 ```
 
-Segue um [exemplo](https://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
+Segue um [exemplo](https://labs.willianjusten.com.br/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
 
 Se você se perguntar, mas como centralizou o texto, tem um [site irado](http://howtocenterincss.com/) que ajuda como centralizar qualquer coisa só com CSS.
 
@@ -103,11 +101,11 @@ Como nem tudo são flores, essas unidades não são compatíveis com todos os br
 Então, para a nossa situação, vamos imaginar o seguinte markup:
 
 ```html
- <section class="height-80">
-    <div class="content">
-        <h1>Viewport Units são demais!</h1>
-        <p>Essa div foi setada para ter 80vh, ocupando 80% da tela =)</p>
-    </div>
+<section class="height-80">
+  <div class="content">
+    <h1>Viewport Units são demais!</h1>
+    <p>Essa div foi setada para ter 80vh, ocupando 80% da tela =)</p>
+  </div>
 </section>
 ```
 
@@ -115,11 +113,11 @@ Para termos uma altura de 80% da tela usando o viewport units é bastante simple
 
 ```css
 .height-80 {
-    height: 80vh;
+  height: 80vh;
 }
 ```
 
-Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](https://willianjusten.com.br/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
+Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](https://labs.willianjusten.com.br/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
 
 ## Conclusão
 
