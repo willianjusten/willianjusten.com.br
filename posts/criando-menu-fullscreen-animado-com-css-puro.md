@@ -24,7 +24,7 @@ categories:
 
 ## Introdução
 
-Fala pessoal, dando continuidade ao [experimento](https://willianjusten.com.br/labs/menu-fullscreen/) que fizemos no [post passado](https://willianjusten.com.br/criando-icone-menu-hamburguer-animado-com-css-puro/), hoje iremos aprender a criar a animação para o nosso menu fullscreen.
+Fala pessoal, dando continuidade ao [experimento](https://labs.willianjusten.com.br/menu-fullscreen/) que fizemos no [post passado](https://willianjusten.com.br/criando-icone-menu-hamburguer-animado-com-css-puro/), hoje iremos aprender a criar a animação para o nosso menu fullscreen.
 
 Como já disse, a ideia é fazer vários tipos de vídeos lá no Youtube sobre coisinhas técnicas que podemos usar no nosso dia-a-dia e também, pretendo fazer alguns outros vídeos sobre carreira, trabalho remoto e outras coisas mais, que sempre me perguntam e que não daria para se fazer como um curso, mas cabe muito bem num vídeo.
 

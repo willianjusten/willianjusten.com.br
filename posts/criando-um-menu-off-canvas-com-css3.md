@@ -23,7 +23,7 @@ Como eu disse no post anterior, vou tentar voltar a escrever um pouquinho mais e
 
 Esse menu passou a ser mais famoso com o uso de dispositivos mobile, onde não possuímos tanto espaço em tela para poder ter um menu lateral. Então nada melhor do que esconder e mostrar só quando necessário né?
 
-Se você é daqueles que gosta de ver funcionando primeiro, segue a [DEMO](https://willianjusten.com.br/labs/menu-off-canvas/#).
+Se você é daqueles que gosta de ver funcionando primeiro, segue a [DEMO](https://labs.willianjusten.com.br/menu-off-canvas/#).
 
 **O exemplo mostrado aqui abaixo está bem simplificado sem o uso de prefixos para os browsers e pode ser instável em certas versões. Por favor, utilize um auto-prefixer para que tudo fique correto =)**
 

@@ -32,7 +32,7 @@ A proposta desses vídeos é fazer algo bem "cru", sem edições, assim você va
 
 ## Demo live
 
-Você pode ver o exemplo final através [desse link](https://willianjusten.com.br/labs/menu-fullscreen/) e se reparar, eu resolvi separar esse post e vídeo em duas partes, que serão:
+Você pode ver o exemplo final através [desse link](https://labs.willianjusten.com.br/menu-fullscreen/) e se reparar, eu resolvi separar esse post e vídeo em duas partes, que serão:
 
 - Como criar o ícone hamburguer animado
 - Como criar o menu fullscreen animado

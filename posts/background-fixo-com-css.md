@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Background fixo com CSS"
+title: 'Background fixo com CSS'
 date: 2015-07-24 00:50:02
 image: '/assets/img/reveal-bg/main-2.png'
 description: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- tutorial
+  - css
+  - tutorial
 categories:
 twitter_text: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
-introduction: "Como atrair usuários usando seções com backgrounds fixos usando só css, também conhecidos como Paralax."
+introduction: 'Como atrair usuários usando seções com backgrounds fixos usando só css, também conhecidos como Paralax.'
 ---
 
 ## Introdução
@@ -26,7 +26,7 @@ Seguindo um pouco daquele post sobre [Seções em Fullscreen](https://willianjus
 
 Para quem gosta de ver o resultado antes mesmo de começar <s>apressadinho =p</s>, segue aqui o link do experimento:
 
-* [DEMO](https://willianjusten.com.br/labs/background-fixo-css/)
+- [DEMO](https://labs.willianjusten.com.br/background-fixo-css/)
 
 ## Montando o Markup
 
@@ -39,22 +39,25 @@ Para cada frase eu criei uma seção e de acordo com os pesos que eu desejava pa
 
 <section class="vh100">
   <blockquote cite="Friedrich Nietzsche">
-      <h3>"Without music, life would be a mistake."</h3>
-      <p>Friedrich Nietzsche</p>
+    <h3>"Without music, life would be a mistake."</h3>
+    <p>Friedrich Nietzsche</p>
   </blockquote>
 </section>
 
 <section class="vh100">
   <blockquote cite="John Green">
-      <h1>"Some people have lives; some people have music."</h1>
-      <p>John Green</p>
+    <h1>"Some people have lives; some people have music."</h1>
+    <p>John Green</p>
   </blockquote>
 </section>
 
 <section class="vh100">
   <blockquote cite="Victor Hugo">
-      <h4>"Music expresses that which cannot be said and on which it is impossible to be silent."</h4>
-      <p>Victor Hugo</p>
+    <h4>
+      "Music expresses that which cannot be said and on which it is impossible
+      to be silent."
+    </h4>
+    <p>Victor Hugo</p>
   </blockquote>
 </section>
 
@@ -62,7 +65,6 @@ Para cada frase eu criei uma seção e de acordo com os pesos que eu desejava pa
   <h1>Where words leave off, music begins.</h1>
 </section>
 ```
-
 
 ## Brincadeiras no CSS
 
@@ -72,23 +74,23 @@ Primeiro, para ter seções ocupando 100% da viewport, vou fazer o mesmo trabalh
 
 ```css
 section {
-    height: 100vh;
-    padding: 2vw;
-    font-size: 4vw;
+  height: 100vh;
+  padding: 2vw;
+  font-size: 4vw;
 }
 ```
 
 ### Textos centralizados verticalmente
 
-Para centralizar os textos, também resolvi brincar dessa vez com Flexbox, se quiser aprender sobre tem esse [artigo fodão](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) que ensina tudo. Primeiro defino o `display: flex` para informar que vou usar esse modelo de layout.  Depois defino que quero organizar o layout com `flex-direction: column`, que no caso irá organizar de de cima para baixo. E então uso `align-itens: center` para ter meu texto centralizado verticalmente.
+Para centralizar os textos, também resolvi brincar dessa vez com Flexbox, se quiser aprender sobre tem esse [artigo fodão](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) que ensina tudo. Primeiro defino o `display: flex` para informar que vou usar esse modelo de layout. Depois defino que quero organizar o layout com `flex-direction: column`, que no caso irá organizar de de cima para baixo. E então uso `align-itens: center` para ter meu texto centralizado verticalmente.
 
 ```css
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 ```
 
@@ -96,8 +98,8 @@ Para a primeira seção o seu título precisava de um destaque maior, resolvi us
 
 ```css
 section:first-of-type {
-    text-transform: uppercase;
-    font-size: 7vw;
+  text-transform: uppercase;
+  font-size: 7vw;
 }
 ```
 
@@ -107,8 +109,8 @@ Para dar o toque final, primeiro vamos inserir um background que cubra a área t
 
 ```css
 section {
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 ```
 
@@ -118,18 +120,18 @@ Como são vários backgrounds diferentes, resolvi brincar com outro pseudo-selet
 
 ```css
 section:nth-of-type(odd) {
-    color: #fff;
-    background-color: #000;
-    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+  color: #fff;
+  background-color: #000;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 section:nth-child(1) {
-    background-image: url(../img/guitar.jpg);
+  background-image: url(../img/guitar.jpg);
 }
 section:nth-child(3) {
-    background-image: url(../img/bass.jpg);
+  background-image: url(../img/bass.jpg);
 }
 section:nth-child(5) {
-    background-image: url(../img/drums.jpg);
+  background-image: url(../img/drums.jpg);
 }
 ```
 
@@ -147,19 +149,13 @@ E bom, é isso, algo bem simples, mas bonito e apresentável =)
 
 Como sabemos as viewport units não são totalmente compatíveis em todos os browsers e por isso, podemos usar algum polyfill para poder garantir uma melhor compatibilidade. Algumas pessoas me mandaram algumas dúvidas relacionadas a isso. Então estou adicionando aqui o link de um polyfill que achei excelente como se utiliza.
 
-* [VUnit](http://joaocunha.github.io/vunit/)
+- [VUnit](http://joaocunha.github.io/vunit/)
 
 Para utilizar é bem simples, basta inserir a chamada do script e seu inicializador:
 
 ```html
 <script type="text/javascript" src="js/vunit.js"></script>
-new vUnit({
-    CSSMap: {
-        '.vh': {
-            property: 'height',
-            reference: 'vh'
-        }
-    }
+new vUnit({ CSSMap: { '.vh': { property: 'height', reference: 'vh' } }
 }).init();
 ```
 
@@ -170,8 +166,8 @@ No markup ficaria assim:
 ```html
 <section class="vh100">
   <blockquote cite="Friedrich Nietzsche">
-      <h3>"Without music, life would be a mistake."</h3>
-      <p>Friedrich Nietzsche</p>
+    <h3>"Without music, life would be a mistake."</h3>
+    <p>Friedrich Nietzsche</p>
   </blockquote>
 </section>
 ```

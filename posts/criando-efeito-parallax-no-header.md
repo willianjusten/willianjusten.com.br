@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Criando efeito parallax no header"
+title: 'Criando efeito parallax no header'
 date: 2016-04-16 10:39:03
 image: '/assets/img/header-parallax/header-parallax.png'
-description: "Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito."
+description: 'Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- frontend
-- parallax
+  - css
+  - frontend
+  - parallax
 categories:
-twitter_text: "Aprenda a fazer esse efeito e deixe seu site ainda mais bonito."
-introduction: "Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito."
+twitter_text: 'Aprenda a fazer esse efeito e deixe seu site ainda mais bonito.'
+introduction: 'Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito.'
 ---
 
 ## Introdução
@@ -29,7 +29,7 @@ Quando eu fui tirar screenshots do meu blog, notei que todas acabavam ficando co
 
 Foi aí que um amigo falou que gostava muito do header do [blog do Invision](http://blog.invisionapp.com/designtalk-a-license-for-creative-advocacy/), eu olhei e pensei, pow isso aí é simplão, dá para fazer com css rapidinho e o detalhe do scroll com js puro. Acabou que eu fiz um para mim...
 
-Se você quiser ver a demo feita para esse post, [clique aqui](https://willianjusten.com.br/labs/header-parallax/).
+Se você quiser ver a demo feita para esse post, [clique aqui](https://labs.willianjusten.com.br/header-parallax/).
 
 ## Parte do CSS
 
@@ -39,11 +39,11 @@ Nosso header então vai ter as seguintes propriedades:
 
 ```css
 .header-paralax {
-    background-image: url('img/header.jpg');
-    background-size: cover;
-    width: 100%;
-    position: fixed;
-    height: 600px;
+  background-image: url('img/header.jpg');
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  height: 600px;
 }
 ```
 
@@ -55,13 +55,12 @@ As propriedades do nosso exemplo vão ficar assim:
 
 ```css
 main {
-    background: #E7E3DA;
-    position: relative;
-    top: 600px;
-    font-family: 'Raleway', sans-serif;
+  background: #e7e3da;
+  position: relative;
+  top: 600px;
+  font-family: 'Raleway', sans-serif;
 }
 ```
-
 
 Pronto! O efeito de sobrepôr já está feito! Se você quiser, já pode parar por aí =)
 
@@ -75,17 +74,17 @@ Vou separar bastante para todo mundo, mesmo que não saiba muito de JS, entenda 
 
 ```js
 function scrollBanner() {
-  var scrollPos;
-  var headerText = document.querySelector('.header-paralax h1');
-  scrollPos = window.scrollY;
+  var scrollPos
+  var headerText = document.querySelector('.header-paralax h1')
+  scrollPos = window.scrollY
 
   if (scrollPos <= 600) {
-      headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
-      headerText.style.opacity = 1 - (scrollPos/600);
+    headerText.style.transform = 'translateY(' + -scrollPos / 3 + 'px' + ')'
+    headerText.style.opacity = 1 - scrollPos / 600
   }
 }
 
-window.addEventListener('scroll', scrollBanner);
+window.addEventListener('scroll', scrollBanner)
 ```
 
 Criamos uma função scrollBanner que vai ser a responsável pela mágica. E então criamos um `addEventListener`, que serve para ficar vigiando se houve `scroll` ou não ná página. Se houver um scroll, a função é chamada.
@@ -94,7 +93,7 @@ Depois disso, precisamos pegar o valor da posição do scroll, que pode ser capt
 
 Para não ficar chamando a função o tempo todo, mesmo depois do header sumir, verificamos se o valor de `scrollPos` é menor que a altura do nosso header. Se for menor, nós aplicamos o `translateY` para subir um pouquinho o título e também diminuímos a `opacity`, causando o efeito desejado. Os cálculos ali acima foram feitos só para a transição ser mais suave e ajustados no olho mesmo. Queremos uma `opacity` de zero quando o scroll for total (600), então `600 - (600/600)` vai se encarregar disso. E a movimentação do título precisa ser mais devagar para dar o efeito de parallax, então divido o valor do scroll por 3.
 
-Se você não clicou ainda, o [demo está aqui](https://willianjusten.com.br/labs/header-parallax/).
+Se você não clicou ainda, o [demo está aqui](https://labs.willianjusten.com.br/header-parallax/).
 
 ## Conclusão
 

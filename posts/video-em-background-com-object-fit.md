@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Video em Background com Object-fit"
+title: 'Video em Background com Object-fit'
 date: 2016-06-13 13:01:32
 image: '/assets/img/video-bg/main-video.png'
 description: 'Como criar os famosos heros com vídeos full em background usando o object-fit.'
 main-class: 'css'
 color: '#2DA0C3'
 tags:
-- css
-- frontend
+  - css
+  - frontend
 categories:
 twitter_text: 'Como criar os famosos heros com vídeos usando o object-fit.'
 introduction: 'Como criar os famosos heros com vídeos full em background usando o object-fit.'
@@ -22,7 +22,7 @@ Enquanto vou escrevendo esse post, vou ouvindo uma das bandas brasileiras que ma
 
 ## Demo
 
-Se você quer pular tudo e só quer ver como a Demo ficou, só abrir [esse link aqui](https://willianjusten.com.br/labs/video-background/).
+Se você quer pular tudo e só quer ver como a Demo ficou, só abrir [esse link aqui](https://labs.willianjusten.com.br/video-background/).
 
 ## Técnica com Object-fit
 
@@ -34,9 +34,9 @@ Primeiro criaremos nosso markup, bem simples, contendo só o `wrapper` que é on
 
 ```html
 <div class="wrapper">
-    <video autoplay loop poster="img/bg-course.png">
-        <source src="video-full.mp4">
-    </video>
+  <video autoplay loop poster="img/bg-course.png">
+    <source src="video-full.mp4" />
+  </video>
 </div>
 ```
 
@@ -46,9 +46,9 @@ Depois de criado o markup, vamos definir nossos estilos. Criamos um `wrapper` on
 
 ```css
 .wrapper {
-    width:100%;
-    height:100vh;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 ```
 
@@ -56,9 +56,9 @@ E aí para o vídeo, para que ele ocupe toda a tela, vamos colocar:
 
 ```css
 .wrapper video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -66,11 +66,8 @@ O `object-fit: cover` fará com que o vídeo preencha a tela sem perder o seu as
 
 Feito isso, podemos criar outras coisas, como um conteúdo na parte inferior, colocar chamadas na frente do vídeo, filtros, enfim, aí vai da sua criatividade =)
 
-Se ainda não viu a [demo](https://willianjusten.com.br/labs/video-background/)
+Se ainda não viu a [demo](https://labs.willianjusten.com.br/video-background/)
 
 ## Conclusão
 
 Post bem curtinho, mas mostrando uma tendência bastante utilizada, espero que tenham gostado. Você já fez algum site com esse tipo de ideia? Coloca nos comentários aí. Tem alguma dúvida? Manda aqui também. E se puder compartilhe ali abaixo, ajuda bastante =D
-
-
-
