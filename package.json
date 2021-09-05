@@ -47,7 +47,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:local": "IS_LOCAL=local next build",
     "start": "next start",
     "lint": "next lint"
   },
