@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { getAllPosts } from 'lib/api'
+import { buildAlgoliaIndexes } from 'lib/buildAlgoliaIndexes'
 import { generateRss } from 'lib/generateRSS'
 import { generateSitemap } from 'lib/generateSitemap'
 
@@ -16,6 +17,8 @@ export async function getStaticProps() {
 
   const rss = await generateRss(posts)
   fs.writeFileSync('./public/feed.xml', rss)
+
+  await buildAlgoliaIndexes(posts)
 
   return {
     props: {
