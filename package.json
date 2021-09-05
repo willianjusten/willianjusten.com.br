@@ -9,7 +9,6 @@
     "@openlab/vercel-netlify-cms-github": "^1.1.0",
     "algoliasearch": "^4.10.2",
     "babel-plugin-styled-components": "^1.12.0",
-    "crypto": "^1.0.1",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
     "next": "^11.0.1",
@@ -33,12 +32,10 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
-    "chrome-aws-lambda": "^10.0.0",
     "eslint": "^7.30.0",
     "eslint-config-next": "^11.0.1",
     "globby": "^11.0.4",
     "prettier": "^2.2.1",
-    "puppeteer-core": "^10.1.0",
     "sitemap": "^7.0.0"
   },
   "keywords": [

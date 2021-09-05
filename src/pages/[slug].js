@@ -1,7 +1,6 @@
 import BlogPost from 'templates/blog-post'
 import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
-import getOgImage from 'lib/getOgImage'
 
 const Post = post => {
   return <BlogPost post={post} />
@@ -13,9 +12,6 @@ export async function getStaticProps({ params }) {
   const slug = params.slug
   const post = getPostBySlug(slug)
   const content = await markdownToHtml(post.content || '')
-  const ogImage = await getOgImage(
-    `/willianjusten.com.br/post?title=${post.frontmatter.title}&url=https://willianjusten.com.br/${slug}`
-  )
 
   // get prev/next posts
   const allPosts = getAllPosts()
@@ -26,7 +22,6 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       ...post,
-      ogImage,
       content,
       nextPost,
       prevPost
