@@ -49,8 +49,7 @@
     "build": "next build",
     "build:local": "IS_LOCAL=local next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "node node_modules/puppeteer-core/install.js"
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
