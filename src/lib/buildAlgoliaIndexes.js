@@ -20,6 +20,8 @@ function transformPostsToSearchObjects(posts) {
 }
 
 export async function buildAlgoliaIndexes(posts) {
+  if (process.env.NODE_ENV === 'development') return
+
   try {
     const transformedPosts = transformPostsToSearchObjects(posts)
 

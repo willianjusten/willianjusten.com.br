@@ -7,7 +7,12 @@ export default async function markdownToHtml(markdown) {
   const result = await remark()
     .use(html)
     .use(slug)
-    .use(headings)
+    .use(headings, {
+      behavior: 'wrap',
+      linkProperties: {
+        className: 'anchor'
+      }
+    })
     .process(markdown)
 
   return result.toString()

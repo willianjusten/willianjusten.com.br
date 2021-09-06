@@ -13,12 +13,14 @@ const Post = ({ posts }) => {
 export async function getStaticProps() {
   const posts = getAllPosts()
 
-  await generateSitemap(posts)
+  if (process.env.NODE_ENV !== 'development') {
+    await generateSitemap(posts)
 
-  const rss = await generateRss(posts)
-  fs.writeFileSync('./public/feed.xml', rss)
+    const rss = await generateRss(posts)
+    fs.writeFileSync('./public/feed.xml', rss)
 
-  await buildAlgoliaIndexes(posts)
+    await buildAlgoliaIndexes(posts)
+  }
 
   return {
     props: {

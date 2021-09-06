@@ -248,4 +248,22 @@ export const MainContent = styled.section`
       opacity: 0.8;
     }
   }
+
+  .anchor {
+    position: relative;
+    border: 0;
+    color: var(--postColor);
+    text-decoration: none;
+
+    &:before {
+      content: '#';
+      position: absolute;
+      left: -35px;
+      opacity: 0;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
 `
