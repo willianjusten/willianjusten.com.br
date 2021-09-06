@@ -7,17 +7,15 @@ const Analytics = () => (
       strategy="lazyOnload"
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     />
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <Script strategy="lazyOnload">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', '${GA_TRACKING_ID}');
-          `
-      }}
-    />
+        gtag('config', '${GA_TRACKING_ID}');
+      `}
+    </Script>
   </>
 )
 
