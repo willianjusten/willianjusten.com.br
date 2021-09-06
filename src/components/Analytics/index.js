@@ -4,7 +4,7 @@ import { GA_TRACKING_ID } from 'lib/gtag'
 const Analytics = () => (
   <>
     <Script
-      async
+      strategy="lazyOnload"
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     />
     <script
