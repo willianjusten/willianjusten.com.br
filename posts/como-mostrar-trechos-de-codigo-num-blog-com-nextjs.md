@@ -59,12 +59,13 @@ useEffect(() => {
 }, [post]) // note que eu atualizo sempre que o post muda já que meu layout é fixo
 ```
 
-E aí sempre que for escrever um bloco de código, só lembrar de usar a sintaxe padrão do markdown que é usar 3 vezes o símbolo de crase seguido da linguagem que vai escrever:
+E aí sempre que for escrever um bloco de código, só lembrar de usar a sintaxe padrão do markdown que é usar 3 vezes o símbolo de crase seguido da linguagem que vai escrever e fechando com as mesmas 3 crases:
 
 ```markdown
 
-```js
-```
+` ` `js
+
+` ` `
 
 ```
 
