@@ -1112,6 +1112,11 @@ axobject-query@^2.2.0:
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
   integrity sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==
 
+babel-plugin-prismjs@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-prismjs/-/babel-plugin-prismjs-2.1.0.tgz#ade627896106326ad04d6d77fba92877618de571"
+  integrity sha512-ehzSKYfeAz4U78zi/sfwsjDPlq0LvDKxNefcZTJ/iKBu+plsHsLqZhUeGf1+82LAcA35UZGbU6ksEx2Utphc/g==
+
 "babel-plugin-styled-components@>= 1.12.0", babel-plugin-styled-components@^1.12.0:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.13.1.tgz#5ecd28b207627c2a26ef8d5da401e9644065095a"
