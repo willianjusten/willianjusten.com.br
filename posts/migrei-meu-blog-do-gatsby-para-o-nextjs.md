@@ -9,7 +9,8 @@ tags:
   - nextjs
   - gatsby
   - blog
-categories: []
+categories:
+  - 'NextJS'
 ---
 
 ## Introdução

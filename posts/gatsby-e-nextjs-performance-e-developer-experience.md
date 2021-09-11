@@ -10,6 +10,8 @@ tags:
   - nextjs
   - gatsby
   - blog
+categories:
+  - 'NextJS'
 ---
 
 ## Introdução
