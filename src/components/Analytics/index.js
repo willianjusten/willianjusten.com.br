@@ -4,10 +4,10 @@ import { GA_TRACKING_ID } from 'lib/gtag'
 const Analytics = () => (
   <>
     <Script
-      strategy="lazyOnload"
+      strategy="afterInteractive"
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     />
-    <Script strategy="lazyOnload">
+    <Script strategy="afterInteractive">
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
