@@ -24,7 +24,7 @@ Como a arquitetura do M1 é diferente, no início muita coisa não tinha suporte
 
 Por mais que você nem vá programar no Xcode ou coisas mobile é super importante instalar o xcode / command line tools no Mac, pois várias outras ferramentas utilizam de alguns pacotes dali de dentro. Para instalar, basta rodar no terminal:
 
-```sh
+```bash
 xcode-select --install
 ```
 
@@ -32,7 +32,7 @@ xcode-select --install
 
 Com essa mudança de arquitetura, assim como aconteceu dos Powerbook para Intel, a Apple lançou o Rosetta 2, que é uma espécie de emulador do x86 para o Arm. Então caso algo não rode nativamente, você vai precisar ter o Rosetta para te ajudar. Para instalar é bem simples, basta abrir o terminal e digitar:
 
-```sh
+```bash
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 ```
 
@@ -42,7 +42,7 @@ Outra ferramenta quase que obrigatória no Mac para quem programa é o [Homebrew
 
 Para instalar, só rodar no terminal:
 
-```sh
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -54,7 +54,7 @@ A primeira ferramenta não poderia deixar de ser um terminal melhorado e na minh
 
 Como já temos o brew instalado, basta rodar:
 
-```sh
+```bash
 brew install --cask iterm2
 ```
 
@@ -80,7 +80,7 @@ Continuando com as configurações do terminal, vamos instalar agora o Oh my Zsh
 
 Para instalar, é só rodar:
 
-```sh
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -90,7 +90,7 @@ Depois disso, eu costumo configurar alguns plugins, novamente, isso não é obri
 
 Esse plugin serve para o terminal identificar os comandos e colorir facilitando a leitura de tudo. Para isso, rode primeiro:
 
-```sh
+```bash
 # Aqui é a pasta onde devem estar seus plugins
 cd $HOME/.oh-my-zsh/plugins
 
@@ -103,7 +103,7 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 Para garantir que o plugin vai funcionar, você também deve adicionar na lista de plugins no arquivo `.zshrc`, procure pela linha de plugins e adicione:
 
-```sh
+```bash
 plugins=(
   zsh-syntax-highlighting
 )
@@ -113,13 +113,13 @@ plugins=(
 
 Esse plugin é perfeito para quem esquece sempre como se escreve aquele comando X, que já usou mil vezes, mas ainda assim esquece. O terminal vai auto completar as coisas baseado no seu histórico, o que é super útil. Para instalar, basta rodar:
 
-```sh
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 E depois, assim como no plugin acima, precisa editar o arquivo `.zshrc`:
 
-```sh
+```bash
 plugins=( 
   zsh-autosuggestions
 )
@@ -129,13 +129,13 @@ plugins=(
 
 Para quem trabalha com frontend, uma outra ferramenta indispensável é o `nvm` que permite instalar diferentes versões do Node sem dificuldades. E aqui já tem um **detalhe importante**, se você tentar instalar via Homebrew, ele vai ficar demorando infinitos e não vai funcionar. Para evitar esse problema, vamos instalar com o comando dado por eles no repositório oficial:
 
-```sh
+```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 ```
 
 Depois de instalado, vamos adicionar as seguintes linhas ao **final** do `.zshrc`:
 
-```sh
+```bash
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
@@ -144,7 +144,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 Com tudo instalado, falta só nosso querido editor né? Eu utilizo o VsCode, para instalar via Homebrew é só rodar:
 
-```sh
+```bash
 brew install --cask visual-studio-code
 ```
 
