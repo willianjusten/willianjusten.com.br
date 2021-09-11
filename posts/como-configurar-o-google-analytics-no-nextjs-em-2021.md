@@ -7,6 +7,8 @@ main-class: js
 color: "#D6BA32"
 tags:
   - nextjs
+categories:
+  - NextJS
 ---
 ## Introdução
 
