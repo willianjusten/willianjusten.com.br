@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2021-09-11 10:47:09
+date: 2021-09-13 09:46:46
 title: Configurando o Macbook M1 para Desenvolvimento Web
 description: Alguns passos dicas de como configurar o seu Macbook M1 para
   desenvolver na web.
