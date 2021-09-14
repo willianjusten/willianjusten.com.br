@@ -106,7 +106,7 @@ Mas só fazendo isso, ainda não vai funcionar, nós precisamos informar ao Git 
   path = .gitconfig-github
 [includeIf "gitdir:~/Development/zapt/"]
   path = .gitconfig-zapt
-``
+```
 
 Note que eu tenho coisas globais ainda, como meu nome e o branch inicial quando criar. Mas utilizo um `includeIf` exatamente para quando cair numa opção ou outra, ele adicionar meus dados específicos. Só de fazer isso, se eu criar um commit na Zapt, já ficaria com o commit assim:
 
