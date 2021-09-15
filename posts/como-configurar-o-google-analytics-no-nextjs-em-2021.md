@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2021-09-11 01:13:57
+date: 2021-09-15 10:40:01
 title: Como configurar o Google Analytics no NextJS em 2021
 description: Como configurar corretamente o Google Analytics no NextJS com o next/Script
 main-class: js
