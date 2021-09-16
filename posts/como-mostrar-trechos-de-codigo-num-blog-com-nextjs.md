@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2021-09-11 02:58:11
+date: 2021-09-16 11:16:42
 title: Como mostrar trechos de código num blog com NextJS
 description: Aprenda a usar um syntax highlighter para mostrar trechos de código
   mais bonitos no seu blog
