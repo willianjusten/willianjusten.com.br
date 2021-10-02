@@ -19,7 +19,7 @@ categories:
 
 ## Introdução
 
-Dando uma leve pausa dos [vídeos de dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), o post de hoje vai ser rapidinho, mas foi extremamente útil para mim e tenho certeza que será super útil para todos aqueles que já fizeram o meu [Curso de Gatsby: Crie um Site PWA com React, GraphQL e Netlify CMS](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOSET2120).
+Dando uma leve pausa dos [vídeos de dicas de CSS](https://willianjusten.com.br/series/#dicas-de-css), o post de hoje vai ser rapidinho, mas foi extremamente útil para mim e tenho certeza que será super útil para todos aqueles que já fizeram o meu [Curso de Gatsby: Crie um Site PWA com React, GraphQL e Netlify CMS](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOOUT2120).
 
 Ontem o Gatsby lançou essa nova feature chamada de [Experimental Page Build Optimizations for Incremental Data Changes](https://www.gatsbyjs.org/docs/page-build-optimizations-for-incremental-data-changes/), onde eles criam um cache e fazem o build somente do que é necessário, fazendo com que certos builds que demoravam **~10min** passem a demorar **~1min**!
 
@@ -88,4 +88,4 @@ Na segunda vez que você rodar, prepare-se para um build bem mais rápido!
 
 É isso aí galera, foi um post rapidinho, mas que espero que seja útil para todos vocês, eu amo a dupla Gatsby+Netlify e eles estão cada vez mais se superando!
 
-E se você não chegou a fazer meu curso de Gatsby, aproveita esse [lindo cupom de desconto](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOSET2120) e corre logo para estudar!
+E se você não chegou a fazer meu curso de Gatsby, aproveita esse [lindo cupom de desconto](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOOUT2120) e corre logo para estudar!
