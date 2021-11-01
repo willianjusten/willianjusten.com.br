@@ -18,7 +18,7 @@ introduction: 'Aprenda a criar um loader com uma animação única em SVG com ap
 
 ## Introdução
 
-Faaaaaala pessoal, quanto tempo não escrevo aqui e hoje eu venho trazer um post um pouco diferente para vocês, com um vídeo do meu [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOOUT21). Nesse vídeo eu explico como fazer uma das coisas mais legais do SVG, que é trabalhar com as propriedades de `stroke` do SVG. Mas também mostro um pouquinho sobre como construir uma forma geométrica e outras coisinhas mais que temos no SVG.
+Faaaaaala pessoal, quanto tempo não escrevo aqui e hoje eu venho trazer um post um pouco diferente para vocês, com um vídeo do meu [Curso de SVG do Início ao Avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMONOV21). Nesse vídeo eu explico como fazer uma das coisas mais legais do SVG, que é trabalhar com as propriedades de `stroke` do SVG. Mas também mostro um pouquinho sobre como construir uma forma geométrica e outras coisinhas mais que temos no SVG.
 
 ## Vídeo
 
@@ -88,4 +88,4 @@ E fazer a animação dele utilizando a opacidade para que ele fique piscando.
 
 ## Conclusão
 
-Bom galera, é só isso! Bem simples de fazer uma animação utilizando o SVG e você consegue um efeito que não veria usando só CSS/JS. Se você gostou do vídeo e da explicação, aproveita que fiz uma promoção na [Udemy com o cupom BLACKFRIDAY](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOOUT21), onde o curso está saindo de **R\$200** por apenas **R\$25**, mas se liga, a promoção vai só até dia **18/06/17 (Domingo)**, não perde tempo e aproveita! =D
+Bom galera, é só isso! Bem simples de fazer uma animação utilizando o SVG e você consegue um efeito que não veria usando só CSS/JS. Se você gostou do vídeo e da explicação, aproveita que fiz uma promoção na [Udemy com o cupom BLACKFRIDAY](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMONOV21), onde o curso está saindo de **R\$200** por apenas **R\$25**, mas se liga, a promoção vai só até dia **18/06/17 (Domingo)**, não perde tempo e aproveita! =D
