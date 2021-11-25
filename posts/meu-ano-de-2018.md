@@ -60,13 +60,13 @@ Os posts mais acessadas do ano foram:
 
 ## Cursos
 
-Eu nem lembrava, mas eu lancei o meu curso de [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMONOV21) no início desse ano. Fiz esse curso depois de vários pedidos por alguma coisa mais real e com workflows de empresas que eu já tivesse trabalhado, visto que o meu curso de [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/) era muito simples.
+Eu nem lembrava, mas eu lancei o meu curso de [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=BLACKFRIDAY21) no início desse ano. Fiz esse curso depois de vários pedidos por alguma coisa mais real e com workflows de empresas que eu já tivesse trabalhado, visto que o meu curso de [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/) era muito simples.
 
 Depois disso, eu resolvi lançar um mini-curso gratuito e como eu achava muito simples para passar por todo o processo da Udemy, resolvi me aventurar pelo Youtube e criei um [canal](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1).
 
 Lá eu criei um [curso simples sobre Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth), onde eu falo sobre a ferramenta e como usá-la do início ao fim. Achei bem legal pois quase ninguém conhecia e váaaaarios vieram me agradecer depois por ter apresentado. O mais legal foi quando um dos designers do Netlify que é português veio conversar comigo e agradecer pelo conteúdo xD
 
-E por último, eu lancei em parceria com meu amigo [Guilherme Louro](https://github.com/guilouro), o curso [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMONOV21), onde falamos sobre essa biblioteca fantástica que poucas pessoas conhecem.
+E por último, eu lancei em parceria com meu amigo [Guilherme Louro](https://github.com/guilouro), o curso [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=BLACKFRIDAY21), onde falamos sobre essa biblioteca fantástica que poucas pessoas conhecem.
 
 Esse ano eu alcancei a incrível marca de **mais de 60 mil alunos!** O que só me motiva ainda mais =)
 
