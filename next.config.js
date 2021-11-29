@@ -44,5 +44,6 @@ module.exports = {
         permanent: true
       }
     ]
-  }
+  },
+  images: { domains: ['pbs.twimg.com'] }
 }
