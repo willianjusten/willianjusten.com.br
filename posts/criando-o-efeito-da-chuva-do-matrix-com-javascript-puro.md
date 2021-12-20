@@ -65,6 +65,7 @@ Nosso código inicial ficará da seguinte forma então:
   // Definindo o seu contexto
   const ctx = c.getContext("2d");
 </script>
+```
 
 ### Pintando algo na tela
 
