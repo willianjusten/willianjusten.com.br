@@ -200,13 +200,15 @@ const columns = c.width / fontSize;
 const drops = new Array(Math.floor(columns)).fill(1);
 ```
 
-Só com o texto acima não teremos absolutamente nada pintado na tela ainda. E para isso, iremos criar uma função `draw`, onde primeiro eu irei pintar nosso fundo de tela e também irei preencher a nossa primeira linha com as letras do Matrix.
+Só com o código acima não teremos absolutamente nada pintado na tela ainda. Para isso, iremos criar uma função `draw`, onde primeiro eu irei pintar nosso fundo de tela e também irei preencher a nossa primeira linha com as letras do Matrix.
 
 ```js
 function draw() {
   // preenchendo a tela toda de preto com opacidade
   // esse truque da opacidade será útil para o efeito 
   // das letras sumindo aos poucos
+  // como teremos muitos quadros sobre quadros
+  // o preto que no início é quase transparente ficará bem opaco
   ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
   ctx.fillRect(0, 0, c.width, c.height);
 
