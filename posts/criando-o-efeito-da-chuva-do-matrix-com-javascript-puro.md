@@ -25,7 +25,6 @@ Antes de começarmos o projeto, precisamos falar sobre o que é né? Bom, se voc
 
 Se você nunca viu esse efeito, [segue a demo do projeto](https://labs.willianjusten.com.br/matrix-rain).
 
-
 ## Inicializando o projeto
 
 Nesse projeto não utilizaremos React, Next, SVG, nada nada, será um bom e velho `index.html` e um pouquinho de JavaScript. Então segue abaixo o esqueleto base:
@@ -80,6 +79,8 @@ ctx.fillRect(0, 0, 100, 100)
 
 Nós teremos um quadrado de 100x100 no canto superior da tela! 
 
+![Pequeno quadrado preto na tela](/assets/img/small-square.png)
+
 E se quisermos pintar o canvas inteirinho? Podemos fazer o seguinte código:
 
 ```js
@@ -87,6 +88,8 @@ ctx.fillRect(0, 0, c.width, c.height);
 ```
 
 Note que `c` é o nosso elemento do canvas definido logo acima, então estaremos pegando sua largura e altura para pintar o retângulo, mas se você reparar, preencheu apenas um pedaço da tela! 
+
+![Um retangulo preto na tela](/assets/img/all-canvas-without-size.png)
 
 ### Definindo o canvas para o tamanho todo da tela
 
@@ -100,6 +103,8 @@ c.width = window.innerWidth;
 
 Agora o seu canvas já se comporta com o tamanho todo da tela e se você tiver pintado o retângulo todo de preto, a tela deve estar "quase" toda preta, mas ainda ficaram umas bordas!
 
+![Tela quase toda preta mas com bordas brancas](/assets/img/fullscreen-canvas.png)
+
 ### Resetando margins e paddings
 
 Essas margens brancas que estamos vendo nada mais são que definições padrões do browser. Para removê-las, nós precisamos fazer uma coisa que chamamos de `Reset CSS`, onde removemos de qualquer elemento `*` as margins e paddings. Além disso também vou definir o `display: block` do nosso canvas, assim ele não correrá risco de vazar a tela e criar scrolls laterais. Vou então colocar o seguinte trecho no nosso `index.html` acima do body:
@@ -109,14 +114,20 @@ Essas margens brancas que estamos vendo nada mais são que definições padrões
   * {
     margin: 0;
     padding: 0;
-    border-box: box-sizing;
+    box-sizing: border-box;
   }
 
   canvas {
     display: block;
   }
 </style>
-``` 
+```
+
+E agora, pode reparar que a tela ficou completamente ocupada pelo canvas.
+
+
+
+![Tela completamente preta](/assets/img/with-reset.png)
 
 ### Escrevendo no Canvas
 
@@ -132,6 +143,8 @@ ctx.fillText("Matrix Rain", 0, 60);
 
 Com isso, você ter visto o texto "Matrix Rain" escrito bem grande começando na pontinha da tela. Se você não viu e está tudo preto, é porque tanto o retângulo desenhado quanto o texto estão em preto, remova o retângulo que criamos por um momento e veja o texto. 
 
+![Matrix rain escrito em preto na tela](/assets/img/matrix-rain-black-text.png)
+
 Mas note uma coisa! Eu não comecei na posição `0,0`, mas sim na posição `0,60`, isso acontece pois se eu iniciar o eixo Y como `0`, o texto iria ficar para cima e sequer apareceria na tela, então eu preciso mover o mesmo tamanho da fonte, para que o texto de fato apareça na tela, lembre-se desse detalhe, é fundamental.
 
 ### Colorindo as formas e textos
@@ -146,7 +159,13 @@ ctx.font = `60px arial`;
 ctx.fillText("Matrix Rain", 0, 60);
 ```
 
-Nós iremos ver nosso texto finalmente em verde na tela! Agora você já sabe o suficiente para poder criar o nosso projetinho! **Fim da introdução**, vamos para diversão!
+Nós iremos ver nosso texto finalmente em verde na tela! 
+
+![Matrix rain texto escrito em verde](/assets/img/matrix-rain-green-text.png)
+
+
+
+Agora você já sabe o suficiente para poder criar o nosso projetinho! **Fim da introdução**, vamos para diversão!
 
 ### Pegando os símbolos do Matrix
 
@@ -233,6 +252,10 @@ Repare que eu fiz um loop iniciando com `i=0`, isso significa que nossa primeira
 
 Se você continuar iterando de cabeça, fazendo `i=1,2,3,por aí vai`, verá que eu estarei sempre movendo as letras no eixo x até preencher toda a primeira linha.
 
+
+
+![Tela com primeira linha impressa](/assets/img/first-line-matrix.png)
+
 ### Animando quadro a quadro
 
 Até agora sempre estávamos criando imagens estáticas, mas nosso projeto necessita de uma animação para fazer as gotas caírem. Para isso, irei alterar nossa função `draw` acrescentando alguns detalhes.
@@ -267,7 +290,11 @@ function draw() {
 draw()
 ```
 
-Ao fazer isso, você vai ver que a primeira linha vai ficar se redesenhando, com as letras umas em cima das outras. Isso está ocorrendo pois eu não estou mudando as letras no eixo y, para isso, lá nosso `for`, eu vou adicionar ao final, um contador para o `drops[i]`, assim ele vai crescer conforme o loop e fará as letras descerem.
+Ao fazer isso, você vai ver que a primeira linha vai ficar se redesenhando, com as letras umas em cima das outras. 
+
+![Letras se sobrepondo](/assets/img/overlap-letters.gif)
+
+Isso está ocorrendo pois eu não estou mudando as letras no eixo y, para isso, lá nosso `for`, eu vou adicionar ao final, um contador para o `drops[i]`, assim ele vai crescer conforme o loop e fará as letras descerem.
 
 ```js
 function draw() {
@@ -300,23 +327,35 @@ function draw() {
 draw()
 ```
 
-Com isso feito, as letras já descem certinhas, mas depois de chegarem ao fim, elas simplesmente não retornam e aí é como se a chuva tivesse "acabado". Para fazer com que as gotas fiquem caindo infinitamente, o que eu farei é sempre que elas chegarem no ponto final da tela (altura máxima) que elas resetem para posição inicial. Para isso, no nosso `for` loop colocarei o seguinte:
+Com isso feito, as letras já descem certinhas, mas depois de chegarem ao fim, elas simplesmente não retornam e aí é como se a chuva tivesse "acabado". 
+
+![Chuva uma unica vez](/assets/img/rain-without-loop.gif)
+
+Para fazer com que as gotas fiquem caindo infinitamente, o que eu farei é sempre que elas chegarem no ponto final da tela (altura máxima) que elas resetem para posição inicial. Para isso, no nosso `for` loop colocarei o seguinte:
 
 ```js
 if (drops[i] * fontSize > c.height) {
   drops[i] = 0;
 }
-``` 
+```
 
-Ao fazer isso, temos um loop certinho, onde a gota começa do topo e vai caindo. Mas ainda não está legal, já que a chuva fica sempre sincronizada e sem graça. Para tornar as gotas mais randomicas, eu vou adicionar mais uma regra nesse `if`, só dizendo que além da questão da altura, também quero que respeite uma comparação com um número randômico qualquer:
+Ao fazer isso, temos um loop certinho, onde a gota começa do topo e vai caindo. Mas ainda não está legal, já que a chuva fica sempre sincronizada e sem graça. 
+
+
+
+![](/assets/img/rain-uniform-loop.gif)
+
+Para tornar as gotas mais randomicas, eu vou adicionar mais uma regra nesse `if`, só dizendo que além da questão da altura, também quero que respeite uma comparação com um número randômico qualquer:
 
 ```js
 if (drops[i] * fontSize > c.height && Math.random > 0.95) {
   drops[i] = 0;
 }
-``` 
+```
 
 Eu cheguei nesse `0.95` testando para ver como as gotas caíam, se o número era abaixo de `0.5` significa que pelo 50% das gotas de chuva iriam respeitar a regra e com isso ainda parecia algo muito "sincronizado", então botei um número bem grande, fazendo com que se tornasse algo realmente bem variado.
+
+![Chuva da Matrix](/assets/img/final-rain.gif)
 
 E pronto! Sua chuva da Matrix está feitinha! Segue o código inteiro:
 
