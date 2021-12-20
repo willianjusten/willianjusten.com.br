@@ -348,7 +348,7 @@ Ao fazer isso, temos um loop certinho, onde a gota começa do topo e vai caindo.
 Para tornar as gotas mais randomicas, eu vou adicionar mais uma regra nesse `if`, só dizendo que além da questão da altura, também quero que respeite uma comparação com um número randômico qualquer:
 
 ```js
-if (drops[i] * fontSize > c.height && Math.random > 0.95) {
+if (drops[i] * fontSize > c.height && Math.random() > 0.95) {
   drops[i] = 0;
 }
 ```
@@ -401,7 +401,7 @@ function draw() {
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
     // resetando a posição da gota ao chegar no fim
-    if (drops[i] * fontSize > c.height && Math.random > 0.95) {
+    if (drops[i] * fontSize > c.height && Math.random() > 0.95) {
       drops[i] = 0;
     }
 
