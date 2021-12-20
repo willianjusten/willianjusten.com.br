@@ -21,7 +21,7 @@ E claro, para continuar com a tradição das músicas nos posts, eu estou ouvind
 
 ## Como é a chuva do Matrix e Demo
 
-Antes de começarmos o projeto, precisamos falar sobre o que é né? Bom, se você nunca viu Matrix ~~pode se retirar~~, eles basicamente brincam com a ideia de que o mundo em que vivemos nada mais é que um código de computador. Em alguns momentos do filme, eles mostram esses "códigos", que muito depois foi descoberto que [eram receitas de Sushi](https://nerdist.com/article/the-matrix-code-sushi-recipe/) usando hiragana, katakana, kanjis e alguns outros símbolos. Esses símbolos por sua vez vão caindo pela tela, fazendo o famoso efeito da "chuva do Matrix". 
+Antes de começarmos o projeto, precisamos falar sobre o que é né? Bom, se você nunca viu Matrix <del>pode se retirar</del>, eles basicamente brincam com a ideia de que o mundo em que vivemos nada mais é que um código de computador. Em alguns momentos do filme, eles mostram esses "códigos", que muito depois foi descoberto que [eram receitas de Sushi](https://nerdist.com/article/the-matrix-code-sushi-recipe/) usando hiragana, katakana, kanjis e alguns outros símbolos. Esses símbolos por sua vez vão caindo pela tela, fazendo o famoso efeito da "chuva do Matrix". 
 
 Se você nunca viu esse efeito, [segue a demo do projeto](https://labs.willianjusten.com.br/matrix-rain).
 
