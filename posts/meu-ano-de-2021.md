@@ -104,6 +104,12 @@ Eu fiquei 16 dias em NY, andei cerca de **16km por dia**, vi praticamente tudo q
 
 Lá eu comprei uma câmera nova e também comecei a treinar um tipo de fotografia que eu nem sabia que iria gostar tanto, que é Street Photography. Eu tirei mais de **10 mil fotos** de tudo que é tipo de coisa e de muitas pessoas! Pessoas andando na rua, comendo, lendo, bebendo café, pensando na vida, usando celular, rindo, chorando, enfrentando vento, chuva, vento e chuva ao mesmo tempo, enfim, foi uma ótima experiência também. Se quiser ver algumas das fotos, [tem nos highlights do meu IG](https://www.instagram.com/will_justen/) e também pretendo colocar no meu [Unsplash](https://unsplash.com/@willianjusten) assim que eu parar para editar.
 
+## Assistir a NBA de perto
+
+Para quem me conhece e até quem não me conhece, mas me segue no twitter e afins, eu sou vidrado em basquete! Eu gosto muito mesmo, de assistir os jogos do meu time e dos outros times, pelo simples fato de amar o esporte. Então, como todo fã, antes mesmo de ir para NY, a primeira coisa que eu fiz foi ver quais jogos que teriam quando eu estivesse lá. E para minha super felicidade, o meu time do coração, que é o Golden State Warriors iria jogar contra o Brooklyn Nets! Antes que me chame de modinha, torço desde quando o time num ganhava nem de peso morto, então ver meu time ganhando tudo anos atrás foi demais! Aí tiveram os 2 anos passados bem ruim e esse ano tá com todo de novo, então eu precisava ver de perto.
+
+Em resumo, eu fiz meu amigo [Davidson](https://twitter.com/davidsonfellipe) e sua esposa [Juliana](https://www.instagram.com/julianamaltablog/) comparem ingresso para ir assistir comigo. E ainda de forma super aleatória, o [Fernando](https://twitter.com/FernandoCruz_21) disse que estaria em NY na mesma época e ele como ex-jogador de basquete nem precisei insistir muito para ele aceitar e ir também. O jogo foi um sonho do início ao fim, meu time ganhou bonito, mas mesmo que tivesse perdido de lavada, teria sido incrível igual.
+
 ## Vancouver e um irmão "mais novo"
 
 Como falei, a ideia toda da viagem era na real visitar o Marcus. Portanto, logo após NY eu fui para Vancouver. A primeira coisa que eu quero dizer é que eu até sou bom com mapas e sabia sim que ficava na outra costa e talz, mas orra, num sabia que eram fucking 8h de voo!
