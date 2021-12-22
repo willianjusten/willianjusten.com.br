@@ -11,7 +11,7 @@ tags:
 ---
 ## Introdução
 
-Como todo ano eu faço, esse post aqui serve para eu revisitar um pouco de como foi meu ano e até mesmo para analisar minha evolução de acordo com os anos anteriores. Esse é um post sempre com muito teor pessoal, esse ano mais do que nunca, então se você só se interesse por partes mais "técnicas", veja só a primeira parte dos números do blog/youtube e depois pode sair. Se você quiser comparar também, seguem aqui os posts dos outros anos:
+Como todo ano eu faço, esse post aqui serve para eu revisitar um pouco de como foi meu ano e até mesmo para analisar minha evolução de acordo com os anos anteriores. Esse é um post sempre com muito teor pessoal, esse ano mais do que nunca, então se você só se interessa por partes mais "técnicas", veja só a primeira parte dos números do blog/youtube e depois pode sair. Se você quiser comparar também, seguem aqui os posts dos outros anos:
 
 * [Meu ano de 2015](https://willianjusten.com.br/meu-ano-de-2015/)
 * [Meu ano de 2016](https://willianjusten.com.br/meu-ano-de-2016/)
@@ -46,7 +46,7 @@ Eu tinha uma meta humilde de alcançar os 15k inscritos e agora estou com pouco 
 
 ![Grafico indicando que 2020 o crescimento foi maior que 2021](/assets/img/youtube-2021.png)
 
-Diria que o grande problema que impactou o crescimento é a falta de consistência nas postagens. Para crescer no YouTube é muito importante que você movimente a rede pelo menos 1x por semana e bom, meu [último vídeo](https://youtu.be/FaVz3ULk1N8)
+Diria que o grande problema que impactou o crescimento é a falta de consistência nas postagens. Para crescer no YouTube é muito importante que você movimente a rede pelo menos 1x por semana e bom, meu [último vídeo](https://youtu.be/FaVz3ULk1N8) foi em Setembro e antes também não tinha nenhuma consistência, tendo posts seguidos numa semana e depois semanas sem nada.
 
 ## Finalização do curso React Avançado
 
