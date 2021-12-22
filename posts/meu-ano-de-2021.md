@@ -52,7 +52,7 @@ Diria que o grande problema que impactou o crescimento é a falta de consistênc
 
 Em 2020 eu comecei a empreitada do [curso de React Avançado](https://reactavancado.com.br/), que foi definitivamente o maior curso que já fiz na vida. E o curso foi tão ambicioso e grande, que além de metade de 2020 eu ainda fiquei os 5 primeiros meses de 2021 trabalhando nele sem parar.
 
-Tenho muito orgulho do que eu consegui nesse curso. Além de ter trabalhado muito com o [Guilherme Louro](https://github.com/guilouro) na criação do curso e do [Marcos Oliveira](https://twitter.com/vmaarcosp) no design do projeto, ainda tiveram participações em alguns espaços, como ajuda do [Gabriel Ramos](https://gabrieluizramos.com.br/) e também do [Adeonir Kohl](https://github.com/adeonir), que foi um ex-aluno.
+Tenho muito orgulho do que eu consegui nesse curso. Além de ter trabalhado muito com o [Guilherme Louro](https://github.com/guilouro) na criação do curso e o [Marcos Oliveira](https://twitter.com/vmaarcosp) no design do projeto, ainda tiveram participações em alguns espaços, como a ajuda do [Gabriel Ramos](https://gabrieluizramos.com.br/) e também do [Adeonir Kohl](https://github.com/adeonir), que foi um ex-aluno.
 
 Mesmo antes de ter finalizado o curso, vários alunos já vinham relatando que haviam conseguido boas posições no mercado de trabalho, seja indo para uma nova empresa ou até mesmo recebendo promoção. E para mim, esse é o maior objetivo que um educador deve ter, que é ver o sucesso dos seus alunos.
 
@@ -90,7 +90,7 @@ Logo que voltei da minha mini-viagem tive um outro baque, que foi o término do 
 
 ![Eu perguntando se o convite para Vancouver ainda estava de pe e ele dizendo que sim](/assets/img/mensagem-marcus.png)
 
-E foi assim que em algumas semanas eu estava preparando mala e indo viajar para NY e Vancouver. Como o Marcus ainda estava para se mudar, arrumar as coisas e ainda iria ter que fazer 14 dias de quarentena porque tomou CoronaVac, eu resolvi dar uma parada em NY, que também era uma cidade que eu sempre fui interessado de visitar.
+E foi assim que em algumas semanas eu estava preparando mala e indo viajar para NY e Vancouver. Como o Marcus ainda estava para se mudar, arrumar as coisas e ainda iria ter que fazer 14 dias de quarentena porque tomou CoronaVac, eu resolvi dar uma parada em NY, que também era uma cidade que eu sempre tive interesse de visitar.
 
 ## Viagem para NY
 
