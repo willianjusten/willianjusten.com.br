@@ -52,7 +52,7 @@ Diria que o grande problema que impactou o crescimento foi a falta de consistên
 
 Em 2020 eu comecei a empreitada do [curso de React Avançado](https://reactavancado.com.br/), que foi definitivamente o maior curso que já fiz na vida. E o curso foi tão ambicioso e grande que, além de metade de 2020, eu ainda fiquei os 5 primeiros meses de 2021 trabalhando nele sem parar.
 
-Tenho muito orgulho do que eu consegui nesse curso. Além de ter trabalhado muito com o [Guilherme Louro](https://github.com/guilouro) na criação do curso e ter o [Marcos Oliveira](https://twitter.com/vmaarcosp) no design do projeto, ainda tiveram participações em alguns espaços, como ajuda do [Gabriel Ramos](https://gabrieluizramos.com.br/) e também do [Adeonir Kohl](https://github.com/adeonir), que foi um ex-aluno.
+Tenho muito orgulho do que eu consegui nesse curso. Além de ter trabalhado muito com o [Guilherme Louro](https://github.com/guilouro) na criação do curso e ter o [Marcos Oliveira](https://twitter.com/vmaarcosp) no design do projeto, ainda tiveram participações em alguns espaços, como ajuda do [Gabriel Ramos](https://gabrieluizramos.com.br/) e também do [Adeonir Kohl](https://twitter.com/adeonir), que é um aluno dos meus cursos.
 
 Mesmo antes de ter finalizado o curso, vários alunos já vinham relatando que haviam conseguido boas posições no mercado de trabalho, seja indo para uma nova empresa ou até mesmo, recebendo promoção. E para mim, esse é o maior objetivo que um educador deve ter: ver o sucesso dos seus alunos.
 
