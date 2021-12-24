@@ -50,25 +50,11 @@ const coursesList = [
       'Aprenda a botar seus projetos no ar de forma fácil e gratuita!'
   },
   {
-    title: 'Aprenda a criar sites animados com Greensock',
-    image: 'curso-greensock.png',
-    link: 'https://www.udemy.com/course/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMODEZ21',
-    description:
-      'Aprenda a criar animações complexas de um jeito muito fácil e divertido!'
-  },
-  {
     title: 'Git e Github na Vida Real',
     image: 'git-real-life.png',
     link: 'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMODEZ21',
     description:
       'Aprenda Workflows usados em empresa e domine o git para nunca mais ter problema nenhum!'
-  },
-  {
-    title: 'Curso JS com TDD na Prática',
-    image: 'js-tdd.png',
-    link: 'https://www.udemy.com/course/js-com-tdd-na-pratica/?couponCode=PROMODEZ21',
-    description:
-      'Aprenda testes na prática e garanta um currículo melhor para o mercado.'
   },
   {
     title: 'Aprendendo SVG do início ao avançado',
