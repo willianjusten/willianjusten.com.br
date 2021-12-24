@@ -61,7 +61,7 @@ Fala pessoal! Primeiro de tudo, mil desculpas, mas o post é imenso! Foram vári
 
 Eu já escrevi uns posts na série [Trabalhar no exterior, remoto, viagens, etc](https://willianjusten.com.br/series/#trabalhar-no-exterior-remoto-viagens-etc), mas nenhum falando especificamente sobre trabalho remoto ainda, pois eu estava querendo pegar o maior número de perguntas e também me sentir confortável para ter experiência para falar. Hoje já tenho mais de 2 anos trabalhando remoto, então acho que já dá né? xD
 
-O post vai ser composto por partes onde falarei sobre minhas experiências e também para responder as diversas perguntas que a galera me fez, seja no meu [Twitter](https://twitter.com/Willian_justen), no [Slack dos meus cursos](https://bit.ly/slack-will/) e também tinha liberado um [Typeform](https://willianjusten.typeform.com/to/MtDdfi) para fazerem perguntas.
+O post vai ser composto por partes onde falarei sobre minhas experiências e também para responder as diversas perguntas que a galera me fez, seja no meu [Twitter](https://twitter.com/Willian_justen), no [Slack dos meus cursos](https://bit.ly/slack-will) e também tinha liberado um [Typeform](https://willianjusten.typeform.com/to/MtDdfi) para fazerem perguntas.
 
 Enquanto vou escrevendo, vou ouvindo uma banda chamada [Zola Blood](https://open.spotify.com/artist/3oxkIoEAyXXQlLTZXlffLJ?si=edMwa_3oQV2r-geAzntcdw), não saberia dizer o gênero deles, mas é um som que mistura um pouco de eletrônico, ambiente e é uma maravilha para concentrar e escrever =D
 

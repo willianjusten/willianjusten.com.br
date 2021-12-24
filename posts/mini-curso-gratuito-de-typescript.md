@@ -16,7 +16,7 @@ tags:
 
 ## Introdução
 
-Fala pessoal! Tive uma conversa com meus alunos no [Slack dos alunos](https://bit.ly/slack-will/), onde fiz a seguinte pergunta:
+Fala pessoal! Tive uma conversa com meus alunos no [Slack dos alunos](https://bit.ly/slack-will), onde fiz a seguinte pergunta:
 
 ![Fala pessoal, para o próximo curso, o que vocês preferem? TypeScript ou só JS mesmo? Typescript ganhou com 63 votos contra 13.](/assets/img/slack-question.png)
 

@@ -103,7 +103,7 @@ Sobre fotos, você pode ver [algumas das minhas fotos favoritas no Unsplash](htt
 
 Chegou o dia 23 de Outubro e minha mãe e namorada me levaram no Aeroporto do Galeão, só que eu acabei entrando na área de embarque muito cedo e com isso fiquei meio ocioso (esse dia eu pedi folga na Toptal para pegar meu vôo). Aí pensei, por que não fazer alguma brincadeira para minha namorada? E aí tive a ideia de criar o [Volta Mozão](https://willianjusten.com.br/volta-mozao/), que era um site com um countdown dos 50 dias e onde eu ia botar uma foto por dia para ela.
 
-Foi ali no aeroporto mesmo que comecei a montar e eu queria ser rápido para montar antes de pegar o avião, porque senão já ia ter passado o dia. Brinquei no [Slack dos meus alunos](https://bit.ly/slack-will/) mostrando um print e ganhei até feedbacks durante a construção! E foi assim que em 50 minutos nasceu o projeto. No link ali você consegue acessar e ver todas as fotos, mas já não tem o countdown, abaixo fica a tela de como era durante a brincadeira.
+Foi ali no aeroporto mesmo que comecei a montar e eu queria ser rápido para montar antes de pegar o avião, porque senão já ia ter passado o dia. Brinquei no [Slack dos meus alunos](https://bit.ly/slack-will) mostrando um print e ganhei até feedbacks durante a construção! E foi assim que em 50 minutos nasceu o projeto. No link ali você consegue acessar e ver todas as fotos, mas já não tem o countdown, abaixo fica a tela de como era durante a brincadeira.
 
 ![Imagem da tela do Volta Mozão faltando 50 dias](/assets/img/volta-mozao.png)
 

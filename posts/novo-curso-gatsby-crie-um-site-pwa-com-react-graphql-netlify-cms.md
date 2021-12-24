@@ -56,10 +56,10 @@ Tudo que é necessário são conhecimentos básicos de HTML/CSS/JS e Git para su
 
 Todo o código do curso está disponível no [Github](https://github.com/willianjusten/gatsby-course) e inclusive, cada vídeo/projeto é separado por commit, então fica super fácil de se encontrar e estudar por lá, inclusive se você quiser copiar para algum projeto depois, também fica bem fácil!
 
-Para esclarecer as dúvidas, vocês podem utilizar a plataforma da Udemy ou falar diretamente comigo e com os outros alunos diretamente no [Slack](https://bit.ly/slack-will/) do curso =)
+Para esclarecer as dúvidas, vocês podem utilizar a plataforma da Udemy ou falar diretamente comigo e com os outros alunos diretamente no [Slack](https://bit.ly/slack-will) do curso =)
 
 ## Preço e promoção
 
 Como disse lá no início, o curso custa **R\$ 249,99**, mas para os seguidores do blog, estou fazendo um cupom de desconto por **R\$ 49,99**, então aproveite e já compre logo o seu, [usando o maravilhoso cupom aqui](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMODEZ21).
 
-Espero vocês no curso e no [Slack](https://bit.ly/slack-will/) também!
+Espero vocês no curso e no [Slack](https://bit.ly/slack-will) também!
