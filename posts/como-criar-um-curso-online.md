@@ -248,10 +248,10 @@ Depois de publicado o curso, está na hora de vender os cursos e receber os feed
 
 Se você leu até aqui, tenho uma surpresa que acho que vai ser bem legal para você! Estarei liberando aqui **20 cupons** para cada curso meu, **totalmente grátis!** Se for rápido, é só clicar no curso desejado e pegar seu curso =)
 
-- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOJAN22)
-- [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOJAN22)
-- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOJAN22)
-- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOJAN22)
+- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOFEV22)
+- [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOFEV22)
+- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOFEV22)
+- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOFEV22)
 
 ## Conclusão
 
