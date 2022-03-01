@@ -5,7 +5,7 @@ const coursesList = [
   {
     title: 'Aprenda Testes End to End na Prática com Cypress',
     image: 'react-avancado.png',
-    link: 'https://www.udemy.com/course/cypress-na-pratica?couponCode=PROMOFEV22',
+    link: 'https://www.udemy.com/course/cypress-na-pratica?couponCode=PROMOMAR22',
     description:
       'Como testar melhor suas aplicações e garantir mais qualidade ao projeto!'
   },
@@ -19,7 +19,7 @@ const coursesList = [
   {
     title: 'React Avançado',
     image: 'react-avancado.png',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOFEV22',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOMAR22',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
@@ -32,7 +32,7 @@ const coursesList = [
   {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
-    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOFEV22',
+    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAR22',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
@@ -52,14 +52,14 @@ const coursesList = [
   {
     title: 'Git e Github na Vida Real',
     image: 'git-real-life.png',
-    link: 'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOFEV22',
+    link: 'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOMAR22',
     description:
       'Aprenda Workflows usados em empresa e domine o git para nunca mais ter problema nenhum!'
   },
   {
     title: 'Aprendendo SVG do início ao avançado',
     image: 'curso-svg.png',
-    link: 'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOFEV22',
+    link: 'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOMAR22',
     description:
       'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
   },
