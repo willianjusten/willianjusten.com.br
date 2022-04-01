@@ -54,7 +54,7 @@ Quando eu voltei para minha cidade, eu precisava arrumar um emprego, porque não
 
 Dentro da faculdade de TI, eu resolvi criar esse blog, meu **segundo projeto paralelo** de grande importância. Meu amigo [Guilherme Louro](http://guilhermelouro.com.br/) ficava me sacaneando para eu criar logo um site e foi assim que eu criei. Nesse blog, eu me dediquei a sempre passar conteúdo que eu achava importante e também para eu fixar melhor algum assunto. Foi através desse blog que eu comecei a ficar mais ativo na comunidade, acabei conhecendo várias e várias pessoas da área, comecei a palestrar, fui trabalhar na [globo.com](http://www.globo.com/) e depois na [HUGE](http://www.hugeinc.com/).
 
-E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](https://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOMAR22).
+E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](https://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOABR22).
 
 Isso é um pouquinho da minha história, sempre fui meio maluco de meter as caras, mudei bastante através dos meus projetos paralelos e continuo mudando. E reparei que a cada projeto paralelo, uma grande mudança veio junto.
 
@@ -96,9 +96,9 @@ Além desse novo rumo que estarei tomando para minha vida, também pretendo cria
 
 E se você leu esse post, ~~ou só desceu até aqui~~, seguem aqui cupons dos meus cursos com promoção **destruidora** com todos os preços no mínimo! Clique nos links abaixo ou então use o código **BLACKFRIDAYJA**.
 
-- [Curso de JS com TDD + ES6](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAR22)
-- [Curso de ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=PROMOMAR22)
-- [Curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOMAR22)
+- [Curso de JS com TDD + ES6](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOABR22)
+- [Curso de ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=PROMOABR22)
+- [Curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOABR22)
 
 <h2 id="conclusao">Conclusão</h2>
 
