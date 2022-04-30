@@ -45,5 +45,5 @@ module.exports = {
       }
     ]
   },
-  images: { domains: ['pbs.twimg.com'] }
+  images: { domains: ['pbs.twimg.com', 'avatars.githubusercontent.com'] }
 }
