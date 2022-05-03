@@ -97,11 +97,11 @@ Logo após eu lançar meu blog usando o Gatsby, eu tive um pedido massivo para f
 
 Eu decidi ensinar a fazer um blog igualzinho ao meu, pois assim era um projeto real e que já estava no ar, ao invés de só ensinar "foo/bar" que acho meio vazio e que não ensina tanto na real.
 
-[O curso](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOABR2220) se mostrou um sucesso e tem uma das mais altas classificações lá na Udemy, com vários reviews muito legais!
+[O curso](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAI2220) se mostrou um sucesso e tem uma das mais altas classificações lá na Udemy, com vários reviews muito legais!
 
 ![Alguns reviews do curso de Gatsby tendo 5 estrelas e com ótimos elogios.](/assets/img/reviews-gatsby.png)
 
-Se você não tem o curso, aproveita e usa [esse cupom de BLACKFRIDAY](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOABR2220) que deixa com um desconto maneirão =)
+Se você não tem o curso, aproveita e usa [esse cupom de BLACKFRIDAY](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAI2220) que deixa com um desconto maneirão =)
 
 ## Encontros da Toptal
 
