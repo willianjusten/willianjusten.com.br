@@ -59,7 +59,7 @@ const coursesList = [
   {
     title: 'Aprendendo SVG do início ao avançado',
     image: 'curso-svg.png',
-    link: 'https://www.udemy.com/course/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOMAI22',
+    link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiOufRJOeP73o4GR9N1afQdP',
     description:
       'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
   },
