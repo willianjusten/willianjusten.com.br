@@ -52,7 +52,7 @@ const coursesList = [
   {
     title: 'Git e Github na Vida Real',
     image: 'git-real-life.png',
-    link: 'https://www.udemy.com/course/git-e-github-na-vida-real/?couponCode=PROMOMAI22',
+    link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg',
     description:
       'Aprenda Workflows usados em empresa e domine o git para nunca mais ter problema nenhum!'
   },
