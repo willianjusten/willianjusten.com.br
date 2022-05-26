@@ -60,7 +60,7 @@ Os posts mais acessadas do ano foram:
 
 ## Cursos
 
-Eu nem lembrava, mas eu lancei o meu curso de [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOMAI22) no início desse ano. Fiz esse curso depois de vários pedidos por alguma coisa mais real e com workflows de empresas que eu já tivesse trabalhado, visto que o meu curso de [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/) era muito simples.
+Eu nem lembrava, mas eu lancei o meu curso de [Git e Github na Vida Real](https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg) no início desse ano. Fiz esse curso depois de vários pedidos por alguma coisa mais real e com workflows de empresas que eu já tivesse trabalhado, visto que o meu curso de [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/) era muito simples.
 
 Depois disso, eu resolvi lançar um mini-curso gratuito e como eu achava muito simples para passar por todo o processo da Udemy, resolvi me aventurar pelo Youtube e criei um [canal](https://www.youtube.com/WillianJustenCursos?sub_confirmation=1).
 

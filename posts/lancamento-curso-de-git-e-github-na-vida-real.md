@@ -18,7 +18,7 @@ introduction: 'Um curso direto ao ponto, aprenda workflows e comandos realmente 
 
 ## Lançamento do Curso
 
-Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOMAI22). Se você clicou no link, já deve ter achado o cupom **PROMOMAI22**, que deixa o curso por **R\$ 27,99**, sim, é o lançamento do curso, mas ele já está em promoção, e assim sempre será!
+Fala pessoal, estou aqui finalmente para anunciar o lançamento do meu mais novo curso! Que é o [Git e Github na Vida Real](https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg). Que está **totalmente gratuito** no YouTube a partir de agora!
 
 ## Por que de lançar esse curso?
 
@@ -42,13 +42,3 @@ Todo o curso nós estaremos editando um template e no final iremos colocar no ar
 > Poxa, mas só isso? E aquele "assunto maneiro lá", vai falar não?
 
 Boa pergunta! Nesse curso eu tenho intenção de fazer atualizações periódicas, seja adicionando um vídeo sobre um comando legal, seja um módulo de algum assunto muito pedido. Então se você quiser algo a mais, manda mensagem para mim! Quem sabe você não vê esse conteúdo antes do que imagina?
-
-## Mais barato que um McDonalds e um Abadá de Carnaval!
-
-Sim galera, é isso mesmo, se você já clicou [no cupom acima](https://www.udemy.com/git-e-github-na-vida-real/?couponCode=PROMOMAI22), viu que o curso vai sair por **R\$ 24,99**!
-
-> Ué, mas o curso não está sendo lançado agora? Vai botar um preço tão baixo assim?
-
-Sim e assim sempre será! O cupom **BLACKFRIDAY** vai sempre existir e sempre será esse preço. Quanto mais pessoas conseguirem fazer o curso e aprenderem, mais eu vou ficar feliz. Os motivos de colocar o curso como pago é que assim eu garanto que a Udemy vai gerar certificado para todos (no curso gratuito muita gente não conseguia gerar) e isso também irá me ajudar a continuar [viajando e fotografando o mundo](https://unsplash.com/@willianjusten), que tem sido uma grande paixão minha.
-
-Então aproveite o **CARNAGIT** e estude muito nesse feriadão!
