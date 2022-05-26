@@ -26,31 +26,35 @@ Se você estiver tendo problemas de visualizar o vídeo acima completo, tente [e
 
 ## Transcrição Livre
 
-Ninguém diz isso para os iniciantes. Eu desejava que alguém tivesse me dito.
+<blockquote>
+  <p>
+    Ninguém diz isso para os iniciantes. Eu desejava que alguém tivesse me dito. <br />
 
-Todos nós que fazemos trabalhos criativos, entramos nisso porque temos bom gosto.
+    Todos nós que fazemos trabalhos criativos, entramos nisso porque temos bom gosto. <br />
 
-Mas existe uma lacuna.
+    Mas existe uma lacuna. <br />
 
-Nos nossos primeiros anos que fazemos coisas, elas não são tão boas. Elas tentam ser boas, tem potencial, mas elas não.
+    Nos nossos primeiros anos que fazemos coisas, elas não são tão boas. Elas tentam ser boas, tem potencial, mas elas não. <br />
 
-Mas o seu bom gosto, a coisa que fez você entrar nesse jogo, ainda é matador.
+    Mas o seu bom gosto, a coisa que fez você entrar nesse jogo, ainda é matador. <br />
 
-E o seu bom gosto é o que faz o seu trabalho te desapontar.
+    E o seu bom gosto é o que faz o seu trabalho te desapontar. <br />
 
-Várias pessoas nunca passam dessa fase, elas desistem. Várias pessoas que eu sei que fazem trabalhos criativos e interessantes passaram por anos disto.
+    Várias pessoas nunca passam dessa fase, elas desistem. Várias pessoas que eu sei que fazem trabalhos criativos e interessantes passaram por anos disto. <br />
 
-Nós sabemos que nosso trabalho não tem aquela coisa especial que gostaríamos que tivesse.
+    Nós sabemos que nosso trabalho não tem aquela coisa especial que gostaríamos que tivesse. <br />
 
-Todos nós passamos por isso.
+    Todos nós passamos por isso. <br />
 
-E se você está apenas começando ou ainda está nessa fase, você precisa saber que isso é normal e a coisa mais importante que você precisa fazer é um monte de trabalhos.
+    E se você está apenas começando ou ainda está nessa fase, você precisa saber que isso é normal e a coisa mais importante que você precisa fazer é um monte de trabalhos. <br />
 
-Coloque uma meta para você e toda semana você vai terminar um projeto. Só passando por um grande volume de trabalho que você irá diminuir essa lacuna e o seu trabalho vai ser tão bom quanto suas ambições.
+    Coloque uma meta para você e toda semana você vai terminar um projeto. Só passando por um grande volume de trabalho que você irá diminuir essa lacuna e o seu trabalho vai ser tão bom quanto suas ambições. <br />
 
-E eu levei mais tempo para descobrir como fazer isso do que qualquer um que eu já conheci.
+    E eu levei mais tempo para descobrir como fazer isso do que qualquer um que eu já conheci. <br />
 
-Vai demorar. É normal que demore. Você só tem que lutar contra seu caminho.
+    Vai demorar. É normal que demore. Você só tem que lutar contra seu caminho.
+  </p>
+</blockquote>
 
 ## Análise e Introspecção
 
