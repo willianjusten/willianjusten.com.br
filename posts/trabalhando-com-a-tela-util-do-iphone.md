@@ -24,7 +24,7 @@ Como hoje não tem vídeo, não posso deixar de postar uma playlist né? Para ho
 
 ## Atualização da barra do site
 
-Um aluno [escreveu um tweet](https://twitter.com/brenonovelli/status/1257678890069307392) sobre um projeto que ele criou através do meu [Curso de Gatsby](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAI2220). E eu notei que ele criou uma sidebar off-canvas no mobile que eu já estava há muito tempo para fazer no meu blog e sempre enrolava.
+Um aluno [escreveu um tweet](https://twitter.com/brenonovelli/status/1257678890069307392) sobre um projeto que ele criou através do meu [Curso de Gatsby](https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN2220). E eu notei que ele criou uma sidebar off-canvas no mobile que eu já estava há muito tempo para fazer no meu blog e sempre enrolava.
 
 Aproveitei que estava com tempo livre e resolvi fazer. Se você nunca viu meu site no celular, segue abaixo um gif do antes/depois:
 

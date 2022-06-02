@@ -66,7 +66,7 @@ Depois disso, eu resolvi lançar um mini-curso gratuito e como eu achava muito s
 
 Lá eu criei um [curso simples sobre Netlify](https://www.youtube.com/watch?v=a1cIjP1bueM&list=PLlAbYrWSYTiMGMxQf9JSoZUU1rgVpGPth), onde eu falo sobre a ferramenta e como usá-la do início ao fim. Achei bem legal pois quase ninguém conhecia e váaaaarios vieram me agradecer depois por ter apresentado. O mais legal foi quando um dos designers do Netlify que é português veio conversar comigo e agradecer pelo conteúdo xD
 
-E por último, eu lancei em parceria com meu amigo [Guilherme Louro](https://github.com/guilouro), o curso [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOMAI22), onde falamos sobre essa biblioteca fantástica que poucas pessoas conhecem.
+E por último, eu lancei em parceria com meu amigo [Guilherme Louro](https://github.com/guilouro), o curso `Aprenda a criar sites animados com Greensock`, onde falamos sobre essa biblioteca fantástica que poucas pessoas conhecem.
 
 Esse ano eu alcancei a incrível marca de **mais de 60 mil alunos!** O que só me motiva ainda mais =)
 

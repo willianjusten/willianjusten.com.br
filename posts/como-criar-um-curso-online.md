@@ -244,15 +244,6 @@ Depois de publicado o curso, está na hora de vender os cursos e receber os feed
 - `Só críticas, mas construtivas`: a pessoa não gostou nada do curso, mas deu vários pontos para isso. Sei que você vai ficar triste, pois a gente sempre quer fazer o melhor, mas as vezes isso acontece. Pegue essas críticas e se possível, tente melhorar e atualizar no curso mesmo, caso seja inviável, já deixe anotado para não repetir num próximo curso.
 - `Mil xingamentos e reclamações infundadas`: nesses casos, a gente costuma ficar é puto ao invés de triste. O cara está reclamando coisas que não fazem sentido, muitas vezes a pessoa sequer viu o restante do curso. Nesses casos, tente se acalmar e então vá conversar educadamente com o aluno, muitas das vezes eles mesmos se arrependem do que disseram e mudam seus reviews.
 
-## Presente Surpresa!!
-
-Se você leu até aqui, tenho uma surpresa que acho que vai ser bem legal para você! Estarei liberando aqui **20 cupons** para cada curso meu, **totalmente grátis!** Se for rápido, é só clicar no curso desejado e pegar seu curso =)
-
-- [Aprenda a criar sites animados com Greensock](https://www.udemy.com/aprenda-a-criar-sites-animados-com-greensock/?couponCode=PROMOMAI22)
-- [Git e Github na Vida Real](https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg)
-- [JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAI22)
-- [Aprendendo SVG do início ao avançado](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMOMAI22)
-
 ## Conclusão
 
 Bom pessoal, espero que esse post seja interessante para vocês, mesmo que vocês não tenham interesse em criar um curso, mas para saberem como que funciona por trás. Existe muito trabalho até sair um curso fresquinho para vocês, mas é sempre um trabalho bem gratificante, quando a gente recebe mensagens de apoio e agradecimento.

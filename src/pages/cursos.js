@@ -3,13 +3,6 @@ import { NextSeo } from 'next-seo'
 
 const coursesList = [
   {
-    title: 'Aprenda Testes End to End na Prática com Cypress',
-    image: 'react-avancado.png',
-    link: 'https://www.udemy.com/course/cypress-na-pratica?couponCode=PROMOMAI22',
-    description:
-      'Como testar melhor suas aplicações e garantir mais qualidade ao projeto!'
-  },
-  {
     title: 'NextJS na Prática!',
     image: 'react-avancado.png',
     link: 'https://nextjs.willianjusten.com.br',
@@ -19,7 +12,7 @@ const coursesList = [
   {
     title: 'React Avançado',
     image: 'react-avancado.png',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOMAI22',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOJUN22',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
@@ -32,7 +25,7 @@ const coursesList = [
   {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
     image: 'curso-gatsby.jpg',
-    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAI22',
+    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN22',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },

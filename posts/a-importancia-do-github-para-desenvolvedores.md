@@ -20,8 +20,6 @@ Fala meus lindos, estou aqui com um post que pode ser polêmico ou não, vai dep
 
 Vou escrevendo enquanto vou ouvindo um album incrível da banda [The Last Sights of the Wind](https://open.spotify.com/album/6tIzZJUF8WPl2YiHWxk4TU), um instrumental muito muito bom, mistura guitarras muito melódicas com som atmosférico, perfeito para quem quer se concentrar em alguma tarefa importante. Aliás, se você curte música, entra no meu [grupo do Slack](https://bit.ly/slack-will), tem um canal específico para quem curte um bom som! xD
 
-Aproveitando para fazer <s>um merchan</s> comunicado, ontem eu lancei meu [Curso de JS com TDD na Prática](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMOMAI22) lá na Udemy, se você ainda não viu, dá um pulo lá.
-
 Bom, vamos parar com a enrolação e vamos ao post!
 
 ## Um tweet inocente

@@ -68,5 +68,3 @@ Muitos de nós já fazemos isso sem perceber, ou já não lembra das vezes que v
 Eu resolvi escrever esse post, exatamente pois quando o [Felipe Fialho estava fazendo o novo blog dele](https://www.felipefialho.com/blog/como-foi-desenvolver-meu-novo-blog-usando-o-gatsbyjs/) ele me chamou para ajudar com alguns problemas do Gatsby e por várias vezes, eram coisas bobinhas, que só de falar/mostrar, já ia se resolvendo.
 
 Então, sempre que você puder, chame um amigo/colega ou fale com seu patinho de borracha, mas dê preferencia pelo patinho, assim estará evitando que seu amigo/colega atrapalhe-se e estará criando uma maior autonomia!
-
-E agora o momento _merchandising_, as coisas que o Felipe estava resolvendo eram de Gatsby e se você ainda não viu, eu lancei [um curso sobre GatsbyJS: crie um site PWA com React, GraphQL e Netlify](https://www.udemy.com/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOMAI22), então aproveita esse cupom para pegar mais em conta!
