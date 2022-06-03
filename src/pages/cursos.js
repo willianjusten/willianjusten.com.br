@@ -16,6 +16,12 @@ const coursesList = [
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
+    title: 'JS Moderno (ES6)',
+    image: 'js-moderno.png',
+    link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi',
+    description: 'Aprenda as novas features do JS moderno em vídeos rápidos e diretos!'
+  },
+  {
     title: 'Mini-curso de TypeScript',
     image: 'ts-course.png',
     link: 'https://www.youtube.com/watch?v=mRixno_uE2o&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_',
