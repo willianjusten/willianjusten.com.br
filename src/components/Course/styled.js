@@ -3,19 +3,6 @@ import media from 'styled-media-query'
 
 import transitions from 'styles/transitions'
 
-export const ImageWrapper = styled.div`
-  img {
-    border-radius: 50%;
-    display: flex;
-    max-width: 120px;
-    max-height: 120px;
-
-    ${media.lessThan('large')`
-    margin-bottom: 5px;
-  `}
-  }
-`
-
 export const CourseWrapper = styled.section`
   align-items: center;
   border-bottom: 1px solid var(--borders);
