@@ -28,7 +28,7 @@ introduction: "Como dizem 'Uma imagem vale mais que mil palavras' e isso é um f
 
 Como dizem "Uma imagem vale mais que mil palavras" e isso é um fato. Muitas vezes conseguimos simbolizar uma ação apenas com uma imagem. Pensando nisso, os designers desde o início da criação de interfaces resolveram utilizar símbolos para isto e na web não iria ser diferente. Muito provavelmente você já se pegou vendo um ícone de X para fechar alguma coisa ou até ícones mais "modernos", como o famoso `Hamburguer Menu`.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="Alayb" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="Alayb" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/Alayb">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -154,7 +154,7 @@ A classe dentro da tag `svg` irá servir para auxiliar e modificar propriedades 
 
 Segue abaixo o nosso exemplo, bastante fácil e prático.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEMqVK" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="qEMqVK" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/qEMqVK">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

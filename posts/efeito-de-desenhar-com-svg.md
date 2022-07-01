@@ -149,7 +149,7 @@ Feito isso, basta definirmos essa animação lá na nossa classe `hello`:
 
 Prontinho, temos nossa animação feita!! Segue abaixo o exemplo criado, para ver a animação é só clicar em "Rerun" ali no canto inferior direito:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jbELOQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="jbELOQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/jbELOQ">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -160,7 +160,7 @@ Prontinho, temos nossa animação feita!! Segue abaixo o exemplo criado, para ve
 
 Junto a essa brincadeira de desenhar, podemos além de só desenhar o contorno, podemos também pintar as coisas. Segue um exemplo simples feito com a logo do Python, que baixei no [SVG Porn](http://svgporn.com/). Lembre de clicar no "Rerun" caso a animação já tenha acontecido:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="epvovO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="epvovO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/epvovO">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -175,7 +175,7 @@ Outro efeito legal é fazer o desenho ser criado ao scrollar a tela. Para isso p
 
 Segue um exemplo:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BoWEwP" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="BoWEwP" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BoWEwP">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

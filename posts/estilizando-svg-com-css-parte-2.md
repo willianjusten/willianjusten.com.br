@@ -32,7 +32,7 @@ No [post anterior](https://willianjusten.com.br/estilizando-svg-com-css-parte-1/
 
 Como o nome diz, ela quem irá preencher a cor da forma selecionada. Uma das propriedades mais utilizadas e vai servir para dar aquele toque especial na imagem. A grande vantagem é poder preencher cada pedaço desejado da imagem.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="azaERB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="azaERB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/azaERB">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -43,7 +43,7 @@ Como o nome diz, ela quem irá preencher a cor da forma selecionada. Uma das pro
 
 Uma variável da propriedade `fill`, onde iremos só modificar a opacidade do preenchimento naquele elemento.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvOaNg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="pvOaNg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/pvOaNg">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -54,7 +54,7 @@ Uma variável da propriedade `fill`, onde iremos só modificar a opacidade do pr
 
 Essa propriedade irá alterar a cor do contorno (`stroke`) e sua espessura (`stroke-width`). Por padrão, os elementos vem sem nenhum contorno.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VYGQpB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="VYGQpB" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/VYGQpB">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -71,7 +71,7 @@ No exemplo abaixo, temos o primeiro círculo com a propriedade `stroke-dasharray
 
 Para mostrar que podemos brincar também com interatividade no SVG, adicionei um evento ao dar `hover` no segundo círculo, para que mude a propriedade `stroke-dasharray` do mesmo.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KwxQqz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="KwxQqz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/KwxQqz">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -88,7 +88,7 @@ De acordo com o exemplo abaixo, podemos observar o seguinte:
 - `round`: irá deixar as pontas arredondas, acrescentando um "padding" nas pontas.
 - `square`: irá deixar a ponta quadrada, acrescentando um "padding" nas pontas.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="raZJYw" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="raZJYw" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/raZJYw">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -103,7 +103,7 @@ O `stroke-linejoin` define qual aparência os cantos dos contornos irão possuir
 - `round`: terá o canto arrendondado
 - `bevel`: terá o canto chanfrado
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MYqQQp" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="MYqQQp" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/MYqQQp">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

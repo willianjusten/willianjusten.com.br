@@ -76,7 +76,7 @@ h2:before {
 
 Aí adicionando um pouquinho de estilo, já podemos ter a nossa numeração dinâmica com CSS:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWjbvpG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="QWjbvpG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/QWjbvpG">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -136,7 +136,7 @@ Para termos uma lista tendo `1` e sub-níveis como `1.1`, podemos fazer o css da
 
 Segue abaixo o exemplo pronto:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ZEbGKya" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="ZEbGKya" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/ZEbGKya">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

@@ -37,7 +37,7 @@ Cada uma dessas formas tem suas utilidades, vantagens e desvantagens e eu irei e
 
 ### 1 - Como Imagem
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="emvYLJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="emvYLJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/emvYLJ">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -54,7 +54,7 @@ A utilização desta forma impede o acesso dos elementos separados do SVG, poré
 
 ### 2 - Como Background-image
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="zxZYmK" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="zxZYmK" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/zxZYmK">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -73,7 +73,7 @@ Quando se deseja criar grandes cenários, um método bastante interessante é ut
 
 ### 3 - Inline SVG
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ByWaqv" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="ByWaqv" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/ByWaqv">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

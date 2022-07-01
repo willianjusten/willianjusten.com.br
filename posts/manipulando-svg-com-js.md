@@ -90,7 +90,7 @@ Além de adicionar estilos diretos, podemos adicionar uma classe/id ao elemento 
 
 Segue um exemplo fazendo algumas interações com um SVG:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NGGoQW" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="NGGoQW" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/NGGoQW">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -122,7 +122,7 @@ O `namespace` aqui permanece o mesmo padrão para SVG. O `name` é o atributo qu
 
 Abaixo segue um exemplo de como criar um círculo usando esses simples métodos:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GppemV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="GppemV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/GppemV">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -131,7 +131,7 @@ Abaixo segue um exemplo de como criar um círculo usando esses simples métodos:
 
 Você consegue deixar algo mais interativo, editando alguma propriedade usando slides, eventos de botões, etc. Segue um exemplo movimentando um elemento num grid:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="meeoPg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="meeoPg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/meeoPg">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

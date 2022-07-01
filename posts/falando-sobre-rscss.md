@@ -467,7 +467,7 @@ E, então chamar esses componentes usando o glob matching:
 
 Para quem gosta de aprender com exemplo, segue abaixo o exemplo de um card implementado seguindo a metodologia do RSCSS:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gPBJWq" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="gPBJWq" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/gPBJWq">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

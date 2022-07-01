@@ -67,7 +67,7 @@ body {
 
 Para que possamos definir um elemento qualquer da tela com altura máxima, precisamos primeiro definir que o `html` e o `body` tenham uma altura de `100%`. Depois temos ali nosso `wrapper` que vai ter obrigatoriamente ter uma altura mínima de `100%` e ali está a margem negativa, que representa a altura do rodapé. Segue abaixo um pen dessa técnica:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VjZmGj" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="VjZmGj" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/VjZmGj">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -113,7 +113,7 @@ body {
 
 O visual ficará o mesmo:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="aZoBMb" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="aZoBMb" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/aZoBMb">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -145,7 +145,7 @@ E no css teremos:
 
 Repare que estamos diminuindo ao invés de um altura de `50px`, o valor de `70px`, isso está sendo feito, pois assumimos que o último elemento do `content` tenha uma margem para o rodapé. O valor de `100vh` fará com que o content tenha o tamanho todo da tela menos a altura que determinamos.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jqRXBz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="jqRXBz" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/jqRXBz">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -181,7 +181,7 @@ body {
 }
 ```
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RRbKrL" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="RRbKrL" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RRbKrL">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -226,7 +226,7 @@ body {
 
 Essa demo irá funcionar no Chrome Canary e Firefox Developer Edition, então, muito provavelmente não vai estar funcionando no seu browser tá, mas já é uma forma de começar a ver essa nova tecnologia =)
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YWKNrE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="YWKNrE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/YWKNrE">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

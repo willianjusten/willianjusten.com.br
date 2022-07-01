@@ -48,7 +48,7 @@ Segue abaixo uma imagem de como funcionam as imagens em SVG.
 
 Após definirmos uma classe para cada elemento, basta pintarmos utilizando a propriedade `fill`. Segue abaixo um exemplo de como ficou, tente pintar de outras cores, se divirta =)
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPLByM" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="dPLByM" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/dPLByM">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -59,7 +59,7 @@ Após definirmos uma classe para cada elemento, basta pintarmos utilizando a pro
 
 Outra propriedade que também pode receber cor é o `stroke`, que nada mais é que o contorno do elemento. Também podemos utilizar a propriedade `stroke-width` para deixar o traço mais fino ou mais grosso. Veja o exemplo abaixo:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vEMwbG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="vEMwbG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/vEMwbG">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -86,7 +86,7 @@ A ideia é possuirmos um só componente reutilizável e independente, assim pode
 
 Segue abaixo um exemplo de como funciona essa técnica:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JoVQWG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="JoVQWG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/JoVQWG">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

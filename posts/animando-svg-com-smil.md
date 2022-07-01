@@ -107,7 +107,7 @@ Um outro detalhe muito importante é que para cada `animate` só podemos animar 
 
 ### Exemplo
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BNOJjg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="BNOJjg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BNOJjg">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -134,7 +134,7 @@ No exemplo acima, determinamos que vamos alterar o atributo `cx` do círculo, ou
 
 Segue abaixo um exemplo da mudança de posição e de cor, note que utilizamos 2 `animate`:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vOzpGV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="vOzpGV" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/vOzpGV">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -151,7 +151,7 @@ Segue um exemplo utilizando:
 values="50; 490; 350; 450" keyTimes="0; 0.5; 0.8; 1"
 ```
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bdxaWN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="bdxaWN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/bdxaWN">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -166,7 +166,7 @@ Como disse no início do post, a vantagem do SMIL é poder manipular propriedade
 
 Vamos pensar num primeiro exemplo, onde queremos transformar um quadrado em um círculo.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="mJGpMg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="mJGpMg" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/mJGpMg">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -177,7 +177,7 @@ Nós iremos trabalhar no `attributeName=d`, que é onde desenhamos a path e tere
 
 Agora vamos pensar numa situação em que eu tenho um quadrado virando um triângulo e este virando um círculo, ou seja, 3 etapas. Para trabalhar com mais de uma etapa, basta definir mais valores dentro de `values` e casos queiramos mudar o tempo de acordo com a mudança, podemos usar o `keyTimes`. Segue um exemplo dessa transição:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RPYxLd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="RPYxLd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RPYxLd">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -186,7 +186,7 @@ Agora vamos pensar numa situação em que eu tenho um quadrado virando um triân
 
 Mas e se eu quisesse além de mudar os 3 visuais, também quisesse mudar de cor? Basta adicionar mais um animate, passando os `values` do `attributeName=fill`. Segue um exemplo colorido:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rVZppG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="rVZppG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/rVZppG">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -199,7 +199,7 @@ Pow Willian, isso tudo aí é muito legal, muito maneiro, mas não vejo utilidad
 
 Podemos, por exemplo, aplicar uma mudança de um ícone para dar um feedback para o usuário. Segue um botão seguindo esse tipo de interação:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BNOJON" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="BNOJON" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/BNOJON">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

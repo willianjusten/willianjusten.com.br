@@ -131,7 +131,7 @@ Esse é um truque bem legal e que serve para muitas coisas, existe um seletor no
 
 Verificando se o input foi marcado e caso tenha sido, mudar a cor e também mover a bolinha para o lado. E pronto! Seu switch botão no estilo iOS está criado! Se quiser, você pode brincar com o CSS e fazer outros estilos, como um flat ou qualquer outro. Segue abaixo uma Demo do que fizemos:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jWOgVM" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="jWOgVM" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/jWOgVM">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

@@ -27,7 +27,7 @@ Enquanto vou escrevendo esse post, eu vou ouvindo a trilha sonora de [Hellblade 
 
 Para quem gosta de ver o exemplo já funcionando antes, já vou deixando aqui embaixo a demo do Codepen.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RaYvrr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="RaYvrr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RaYvrr">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -242,7 +242,7 @@ Agora está faltando só fazer o efeito de desenhar, para isso, já temos uma cl
 
 Reparem que inicialmente eu to movendo o meu desenho todo para fora de visão e no `.is-success .check` eu retorno para o zero, através de uma `transition`, criando o efeito final que queríamos, que é o símbolo ser desenhado na tela. Segue então nosso resultado final:
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RaYvrr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="RaYvrr" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/RaYvrr">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

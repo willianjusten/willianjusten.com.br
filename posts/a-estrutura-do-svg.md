@@ -58,7 +58,7 @@ O SVG é tem algumas formas básicas, que permitem fazer os lindos desenhos que 
 
 ### O elemento rect
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="PwmEag" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="PwmEag" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/PwmEag/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -82,7 +82,7 @@ Esse elemento permite criar um retângulo e tem os seguintes atributos:
 
 ### O elemento circle
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YPVYOO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="YPVYOO" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/YPVYOO/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -104,7 +104,7 @@ Esse elemento permite criar um círculo e tem os seguintes atributos:
 
 ### O elemento ellipse
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNWaZN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="bNWaZN" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/bNWaZN/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -127,7 +127,7 @@ Esse elemento permite criar uma ellipse e tem os seguintes atributos:
 
 ### O elemento line
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="pvPpmE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="pvPpmE" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/pvPpmE/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -151,7 +151,7 @@ Esse elemento permite criar uma linha e tem os seguintes atributos:
 
 ### O elemento polyline
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="NPjXZG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="NPjXZG" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/NPjXZG/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -173,7 +173,7 @@ Esse elemento permite criar uma polyline e tem os seguintes atributos:
 
 ### O elemento polygon
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNWaXd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="bNWaXd" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/bNWaXd/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -195,7 +195,7 @@ Esse elemento permite criar um polígono e tem os seguintes atributos:
 
 ### O elemento path
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dPWdbQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="dPWdbQ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/dPWdbQ/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
@@ -216,7 +216,7 @@ A letra **maiúscula** utiliza coordenadas **absolutas** para criar a forma, enq
 
 ## Conclusão
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="qEmxNJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="qEmxNJ" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="http://codepen.io/willianjusten/pen/qEmxNJ/">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>

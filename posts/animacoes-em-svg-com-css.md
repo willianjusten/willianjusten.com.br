@@ -60,7 +60,7 @@ Em geral, esses vetores obtidos da internet vem muito sujos e com muita coisa es
 
 Já tendo o nosso código otimizado, podemos nomear os elementos dos quais queremos estilizar e animar.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="KpQdGo" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen remark-oembed-inline" data-oembed data-height="300" data-default-tab="html,result" data-slug-hash="KpQdGo" data-user="willianjusten" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/willianjusten/pen/KpQdGo">
   </a> by Willian Justen de Vasconcellos (<a href="https://codepen.io/willianjusten">@willianjusten</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
