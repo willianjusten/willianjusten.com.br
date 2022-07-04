@@ -10,13 +10,14 @@ const coursesList = [
   },
   {
     title: 'React Avançado',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOJUN22',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOJULHO22',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
     title: 'JS Moderno (ES6)',
     link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi',
-    description: 'Aprenda as novas features do JS moderno em vídeos rápidos e diretos!'
+    description:
+      'Aprenda as novas features do JS moderno em vídeos rápidos e diretos!'
   },
   {
     title: 'Mini-curso de TypeScript',
@@ -26,7 +27,7 @@ const coursesList = [
   },
   {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
-    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJUN22',
+    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJULHO22',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
@@ -78,12 +79,7 @@ const CursosPage = () => (
       }}
     />
     {coursesList.map(({ title, description, link }, i) => (
-      <Course
-        key={i}
-        title={title}
-        description={description}
-        link={link}
-      />
+      <Course key={i} title={title} description={description} link={link} />
     ))}
   </>
 )
