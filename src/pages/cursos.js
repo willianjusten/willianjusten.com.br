@@ -10,7 +10,7 @@ const coursesList = [
   },
   {
     title: 'React Avançado',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOJULHO22',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMOAGO22',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
@@ -27,7 +27,7 @@ const coursesList = [
   },
   {
     title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
-    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOJULHO22',
+    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMOAGO22',
     description:
       'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
