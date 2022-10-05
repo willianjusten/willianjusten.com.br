@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo'
 const coursesList = [
   {
     title: 'NextJS na Prática!',
-    link: 'https://nextjs.willianjusten.com.br',
+    link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPlXj6USip_lCPzONUATJbE',
     description:
       'Crie um mapa totalmente interativo com um CMS integrado em poucas horas!'
   },
