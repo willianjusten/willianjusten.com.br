@@ -42,6 +42,22 @@ module.exports = {
         source: '/learn-japanese/',
         destination: 'https://learn-japanese.willianjusten.com.br/',
         permanent: true
+      },
+      {
+        source: '/js-com-tdd-na-pratica-na-udemy/',
+        destination: 'https://www.youtube.com/@WillianJustenCursos',
+        permanent: true
+      },
+      {
+        source: '/novo-curso-aprenda-criar-sites-animados-greensock/',
+        destination: 'https://willianjusten.com.br',
+        permanent: true
+      },
+      {
+        source:
+          '/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/',
+        destination: 'https://willianjusten.com.br',
+        permanent: true
       }
     ]
   },

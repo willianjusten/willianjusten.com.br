@@ -10,7 +10,7 @@ const coursesList = [
   },
   {
     title: 'React Avançado',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMONOV22',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=PROMODEZ22',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
@@ -24,12 +24,6 @@ const coursesList = [
     link: 'https://www.youtube.com/watch?v=mRixno_uE2o&list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_',
     description:
       'Aprenda o que é TypeScript, como funciona, por que usar e muito mais!'
-  },
-  {
-    title: 'Gatsby: Crie um site PWA com React, GraphQL e Netlify CMS',
-    link: 'https://www.udemy.com/course/gatsby-crie-um-site-pwa-com-react-graphql-e-netlify-cms/?couponCode=PROMONOV22',
-    description:
-      'Crie e coloque no ar um site extremamente rápido, utilizando boas práticas e as ferramentas mais utilizadas no mercado.'
   },
   {
     title: 'Criando um ambiente de Desenvolvimento no Windows',

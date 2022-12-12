@@ -54,7 +54,7 @@ Quando eu voltei para minha cidade, eu precisava arrumar um emprego, porque não
 
 Dentro da faculdade de TI, eu resolvi criar esse blog, meu **segundo projeto paralelo** de grande importância. Meu amigo [Guilherme Louro](http://guilhermelouro.com.br/) ficava me sacaneando para eu criar logo um site e foi assim que eu criei. Nesse blog, eu me dediquei a sempre passar conteúdo que eu achava importante e também para eu fixar melhor algum assunto. Foi através desse blog que eu comecei a ficar mais ativo na comunidade, acabei conhecendo várias e várias pessoas da área, comecei a palestrar, fui trabalhar na [globo.com](http://www.globo.com/) e depois na [HUGE](http://www.hugeinc.com/).
 
-E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu [curso sobre criação de sites estáticos com Jekyll](https://willianjusten.com.br/um-novo-projeto-um-novo-desafio/), logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMONOV22).
+E agora, eu diria que comecei meu grande **terceiro projeto paralelo**, que é a criação dos meus cursos. Hoje completam 2 meses que lancei meu curso sobre criação de sites estáticos com Jekyll, logo depois criei um [curso sobre Git e Github](https://www.udemy.com/git-e-github-para-iniciantes/) e agora estou fazendo a [pré-venda do meu curso de SVG - update: já lançado no YouTube](https://www.youtube.com/playlist?list=PLlAbYrWSYTiOufRJOeP73o4GR9N1afQdP).
 
 Isso é um pouquinho da minha história, sempre fui meio maluco de meter as caras, mudei bastante através dos meus projetos paralelos e continuo mudando. E reparei que a cada projeto paralelo, uma grande mudança veio junto.
 
@@ -91,14 +91,6 @@ E para conseguir essa grande mudança, eu venho me planejando já há algum temp
 <h2 id="novos-projetos">Novos Projetos</h2>
 
 Além desse novo rumo que estarei tomando para minha vida, também pretendo criar novos projetos, tudo sempre em prol de ajudar a comunidade e retornar a ajuda que vocês me derem para esse meu sonho. Pretendo sim criar novos cursos de diversos assuntos que vocês tem me pedido e algumas coisas bastante novas que nunca vi sendo feito por aqui. Espero que gostem das surpresas que tem por vir =D
-
-## Black Friday
-
-E se você leu esse post, ~~ou só desceu até aqui~~, seguem aqui cupons dos meus cursos com promoção **destruidora** com todos os preços no mínimo! Clique nos links abaixo ou então use o código **BLACKFRIDAYJA**.
-
-- [Curso de JS com TDD + ES6](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=PROMONOV22)
-- [Curso de ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=PROMONOV22)
-- [Curso de SVG](https://www.udemy.com/aprendendo-svg-do-inicio-ao-avancado/?couponCode=PROMONOV22)
 
 <h2 id="conclusao">Conclusão</h2>
 
