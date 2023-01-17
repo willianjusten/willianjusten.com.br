@@ -7,6 +7,7 @@ import { NextSeo } from 'next-seo'
 import { timeToRead } from 'lib/utils'
 
 import RecommendedPosts from 'components/RecommendedPosts'
+import Comments from 'components/Comments'
 
 import {
   PostHeader,
@@ -33,7 +34,9 @@ const BlogPost = ({ post }) => {
           description: post.frontmatter.description,
           images: [
             {
-              url: `https://og-image-service.willianjusten.com.br/${encodeURIComponent(post.frontmatter.title)}.png`,
+              url: `https://og-image-service.willianjusten.com.br/${encodeURIComponent(
+                post.frontmatter.title
+              )}.png`,
               alt: `${post.frontmatter.title}`
             }
           ]
@@ -54,6 +57,7 @@ const BlogPost = ({ post }) => {
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
       <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
+      <Comments />
     </>
   )
 }
