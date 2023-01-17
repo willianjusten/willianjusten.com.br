@@ -57,7 +57,7 @@ const BlogPost = ({ post }) => {
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
       </MainContent>
       <RecommendedPosts next={post.nextPost} previous={post.prevPost} />
-      <Comments />
+      <Comments title={post.frontmatter.title} />
     </>
   )
 }
