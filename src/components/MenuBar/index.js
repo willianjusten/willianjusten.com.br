@@ -46,7 +46,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             title="Pesquisar no Blog"
             className={router.pathname === '/search' ? 'active' : ''}
           >
-            <S.MenuBarItem onClick={openMenu}>
+            <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
           </S.MenuBarLink>
