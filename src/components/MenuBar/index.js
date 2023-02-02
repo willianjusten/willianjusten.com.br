@@ -35,7 +35,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
             title="Voltar para Home"
             className={router.pathname === '/' ? 'active' : ''}
           >
-            <S.MenuBarItem onClick={openMenu}>
+            <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
@@ -58,7 +58,7 @@ const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
               className={router.pathname === '/cursos' ? 'active' : ''}
               title="Ver cursos"
             >
-              <S.MenuBarItem onClick={openMenu}>
+              <S.MenuBarItem>
                 <GraduationCap />
                 <S.MenuBarNotification />
               </S.MenuBarItem>
