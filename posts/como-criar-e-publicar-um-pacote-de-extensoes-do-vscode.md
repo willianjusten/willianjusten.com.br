@@ -7,10 +7,11 @@ description: Um jeito ainda mais fácil de compartilhar seus plugins com os outr
 introduction: Um jeito ainda mais fácil de compartilhar seus plugins com os outros.
 twitter_text: Um jeito ainda mais fácil de compartilhar seus plugins com os outros.
 main-class: dev
-color: "#637a91"
+color: '#637a91'
 tags:
   - vscode
 ---
+
 ## Introdução
 
 Fala pessoal, o post de hoje vai ser bem simples, mas eu achei super legal de fazer. Tem uns 3 anos que [migrei para o VS Code](https://willianjusten.com.br/migrei-para-o-vscode-e-estou-feliz/) vindo do Sublime e posso dizer que cada dia estou mais feliz com ele.
@@ -31,7 +32,7 @@ Mas chega de papo furado, vamos ao que interessa.
 
 ## Inicializando a estrutura do projeto
 
-O VS Code tem na [documentação explicando](https://code.visualstudio.com/blogs/2017/03/07/extension-pack-roundup) mais ou menos como fazer e eu segui basicamente os passos de lá, com umas pequenas diferenças. 
+O VS Code tem na [documentação explicando](https://code.visualstudio.com/blogs/2017/03/07/extension-pack-roundup) mais ou menos como fazer e eu segui basicamente os passos de lá, com umas pequenas diferenças.
 
 Ele recomenda usar o [Yeoman](https://yeoman.io/) para iniciar a estrutura, então primeiro de tudo, você precisa instalar na sua máquina.
 
@@ -163,4 +164,4 @@ E aí você pode instalar seja pelo botão de `Install` ali no site ou pesquisan
 
 Espero que tenham gostado do post e agora criem seus próprios e/ou outras extensões também. O processo vai ser muito similar ao que fizemos.
 
-E, momento de jabá, se você se interessou pelo curso e quer um desconto na faixa, [aproveite esse cupom](https://www.udemy.com/course/react-avancado/?couponCode=MODULO1), mas fica ligado, ele só vai até o final do mês! Então aproveite o preço mais barato possível agora!
+E, momento de jabá, se você se interessou pelo curso e quer um desconto na faixa, [aproveite esse cupom](https://www.udemy.com/course/react-avancado/?couponCode=57A9D9C50F35F921463C), mas fica ligado, ele só vai até o final do mês! Então aproveite o preço mais barato possível agora!

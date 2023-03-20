@@ -16,8 +16,6 @@ tags:
 
 Faaaaala pessoal, hoje eu venho trazendo um post bem legal, que sempre acabo me perguntando. Será que precisamos usar React/Vue/Angular para criar componentes sempre? Se for algo simples, por que não usar ES6 puro?
 
-Esse post está sendo feito para comemorar o lançamento do meu mais novo curso que é o [Curso Completo de JavaScript Moderno - ES6](https://www.udemy.com/curso-completo-de-javascript-moderno-es6/?couponCode=LANCAMENTO50), aproveite que ele tá com um cupom de desconto que deixa o valor final em **R$ 50,00**! Basta clicar no link ali, mas seja rápido, os cupons já estão acabando! =D
-
 Nesse post irei falar sobre uma propriedade do ES6 que curto muito que é a [Template Strings](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings).
 
 E durante esse post eu vou ouvindo a trilha sonora de um dos mais belos jogos desse ano [Horizon Zero Dawn](https://open.spotify.com/album/5ZAaYcFudS0BtKhWJqeMCH), o jogo é incrível e a trilha sonora é ainda melhor, bota para ouvir, garanto que não vai se decepcionar!
