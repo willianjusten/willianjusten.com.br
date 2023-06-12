@@ -10,7 +10,7 @@ const coursesList = [
   },
   {
     title: 'React Avançado',
-    link: 'https://www.udemy.com/course/react-avancado/?couponCode=57A9D9C50F35F921463C',
+    link: 'https://www.udemy.com/course/react-avancado/?couponCode=9E454F41636A280AF968',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
