@@ -27,8 +27,9 @@ const AboutPage = () => (
     <MainContent>
       <h1>Sobre mim</h1>
       <p>
-        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e sou
-        instrutor na{' '}
+        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ,
+        trabalho como Staff Engineer na{' '}
+        <a href="https://appcues.com">Appcues</a> e sou instrutor na{' '}
         <a
           href="https://www.udemy.com/user/willian-justen-de-vasconcellos/"
           target="_blank"
