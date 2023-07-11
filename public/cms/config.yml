@@ -1,5 +1,6 @@
 backend:
   name: github
+  branch: main
   repo: willianjusten/willianjusten.com.br
   base_url: https://willianjusten.com.br/
   auth_endpoint: api/auth/
