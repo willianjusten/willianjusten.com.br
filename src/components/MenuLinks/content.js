@@ -18,6 +18,10 @@ const links = [
   {
     label: 'Viagens',
     url: 'https://my-trips.willianjusten.com.br/'
+  },
+  {
+    label: 'Fotografia',
+    url: 'https://photos.willianjusten.com.br'
   }
 ]
 
