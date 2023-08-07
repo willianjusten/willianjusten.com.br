@@ -12,7 +12,7 @@ tags:
 
 ## Introdução
 
-Quase não escrevo mais no blog e quando resolvo escrever, não é algo técnico, mas é isso, o blog é meu né, escrevo o que gosto e no momento gosto dessas reflexões. Vai ser um post super rapidinho, mais para te fazer esse lembre que você não precisa estar a 220v o tempo todo.
+Quase não escrevo mais no blog e quando resolvo escrever, não é algo técnico, mas é isso, o blog é meu né, escrevo o que gosto e no momento gosto dessas reflexões. Vai ser um post super rapidinho, mais para te fazer esse lembrete que você não precisa estar a 220v o tempo todo.
 
 Esse post foi motivado após uma conversa com minha mãe, como estou em SP e ela em Petrópolis, a gente sempre manda mensagem de bom dia (não, ela não me manda Gifs de velho), e ela estava reclamando que já era praticamente meio-dia e ela não tinha feito nada. Mas assim, é um Domingo, por que essa pressão de ter que fazer algo?
 
