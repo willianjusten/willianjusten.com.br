@@ -46,4 +46,4 @@ Acho que é nisso que também pecamos, as vezes é bom a gente simplesmente apro
 
 Confesso que maioria dos meus posts eu escrevo para mim, mas espero que seja útil para você que estiver lendo, que é raro nos dias de hoje!
 
-E fica aqui o lembrete, não se cobre/puna se você tiver um diazinho mais lento, esse é só um sinal do seu corpo pedingo para você descansar e você merece!
+E fica aqui o lembrete, não se cobre/puna se você tiver um diazinho mais lento, esse é só um sinal do seu corpo pedindo para você descansar e você merece!
