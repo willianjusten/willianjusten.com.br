@@ -41,7 +41,9 @@ Por favor não confunda mudar rotina com "ser desorganizado", pois são coisas t
 Tem uma música da Fresno chamada [Essa coisa (Acorda - Trabalha - Repete - Mantém)](https://open.spotify.com/track/2IlMh7ELuEi4ptCB2dtwHb?si=3fcbb8a538a34320) que fala o seguinte:
 
 > Acorda, trabalha, repete, mantém
+>
 > Deixa para viver depois
+>
 > Até o que eu amo, não mais me entretém
 
 E é esse tipo de rotina que eu estou dizendo para você fugir. Não deixe para viver depois, viva agora, faça as coisas agora, não deixe para depois, pois depois pode ser tarde demais.
@@ -51,8 +53,11 @@ E é esse tipo de rotina que eu estou dizendo para você fugir. Não deixe para 
 Usando esse pedaço do poema:
 
 > Mude
+>
 > Mas comece devagar,
+>
 > porque a direção é mais importante
+>
 > que a velocidade.
 
 Acho que a maior dificuldade que temos quando queremos mudar algo é achar que temos que mudar tudo de uma vez. E isso é um erro, pois quando você tenta mudar tudo de uma vez, você acaba não mudando nada.
@@ -72,7 +77,9 @@ Os melhores devs que já trabalhei eram aqueles que tinham uma visão mais ampla
 Mude também nos hobbies, nas conversas, nas interações, como programadores, costumamos ficar focados e centrados somente em programação.
 
 > Nosso hobby? Programar.
+>
 > Nossas conversas? Algo de programação.
+>
 > Amigos? Quase sempre só da área.
 
 Mudar um pouco isso vai tornar a própria programação mais prazerosa, pois quando só fazemos a mesma coisa 24h por dia, uma hora cansa também, por mais que se ame.
