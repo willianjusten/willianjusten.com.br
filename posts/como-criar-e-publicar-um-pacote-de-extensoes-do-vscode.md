@@ -164,4 +164,4 @@ E aí você pode instalar seja pelo botão de `Install` ali no site ou pesquisan
 
 Espero que tenham gostado do post e agora criem seus próprios e/ou outras extensões também. O processo vai ser muito similar ao que fizemos.
 
-E, momento de jabá, se você se interessou pelo curso e quer um desconto na faixa, [aproveite esse cupom](https://www.udemy.com/course/react-avancado/?couponCode=57A9D9C50F35F921463C), mas fica ligado, ele só vai até o final do mês! Então aproveite o preço mais barato possível agora!
+E, momento de jabá, se você se interessou pelo curso e quer um desconto na faixa, [aproveite esse cupom](https://www.udemy.com/course/react-avancado/?couponCode=2C411EA38BFBEE2145C1), mas fica ligado, ele só vai até o final do mês! Então aproveite o preço mais barato possível agora!
