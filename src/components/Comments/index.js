@@ -4,7 +4,7 @@ const Comments = ({ title }) => {
   const commentBox = useRef(null)
 
   useEffect(() => {
-    const theme = localStorage.getItem('theme')
+    const theme = localStorage.getItem('theme') || 'dark'
     const utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light'
 
     const watchThemeSwitch = new MutationObserver((mutations) => {
