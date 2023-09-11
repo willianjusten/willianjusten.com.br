@@ -66,7 +66,7 @@ A mudança é um processo, é algo que vai acontecendo aos poucos, e você tem q
 
 ## Um paralelo com a programação
 
-> Achou que num ia ter nada de programação no post? Achou errado otário! haha
+> Achou que não ia ter nada de programação no post? Achou errado, otário! haha
 
 Esse post também é um convite para você aprender uma nova linguagem, um novo framework, um novo paradigma, por que não uma outra área (front fazendo back, back fazendo front)? Isso vai te ajudar a expandir a sua visão, a pensar maior nos projetos, a entender melhor como processos funcionam e entender mais do produto que você trabalha.
 
