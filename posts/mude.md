@@ -30,7 +30,7 @@ Sempre que a gente fala sobre mudança, a primeira coisa que vem na cabeça é m
 
 Você pode vir e falar:
 
-> Ah Willian, mas eu só funciono com rotina, sem rotina eu num sou ninguém.
+> Ah, Willian, mas eu só funciono com rotina, sem rotina eu não sou ninguém.
 
 Ter uma rotina nos ajuda a não gastar tanta energia para saber o que fazer, mas a rotina também nos deixa preso em um ciclo vicioso, que nos faz fazer as coisas sem pensar. E isso é muito perigoso, pois quando você faz as coisas sem pensar, você não sabe o porquê está fazendo aquilo, e quando você não sabe o porquê, você não sabe se aquilo é bom ou ruim para você.
 
