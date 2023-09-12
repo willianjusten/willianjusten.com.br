@@ -30,7 +30,7 @@ Sempre que a gente fala sobre mudança, a primeira coisa que vem na cabeça é m
 
 Você pode vir e falar:
 
-> Ah Willian, mas eu só funciono com rotina, sem rotina eu num sou ninguém.
+> Ah, Willian, mas eu só funciono com rotina, sem rotina eu não sou ninguém.
 
 Ter uma rotina nos ajuda a não gastar tanta energia para saber o que fazer, mas a rotina também nos deixa preso em um ciclo vicioso, que nos faz fazer as coisas sem pensar. E isso é muito perigoso, pois quando você faz as coisas sem pensar, você não sabe o porquê está fazendo aquilo, e quando você não sabe o porquê, você não sabe se aquilo é bom ou ruim para você.
 
@@ -66,7 +66,7 @@ A mudança é um processo, é algo que vai acontecendo aos poucos, e você tem q
 
 ## Um paralelo com a programação
 
-> Achou que num ia ter nada de programação no post? Achou errado otário! haha
+> Achou que não ia ter nada de programação no post? Achou errado, otário! haha
 
 Esse post também é um convite para você aprender uma nova linguagem, um novo framework, um novo paradigma, por que não uma outra área (front fazendo back, back fazendo front)? Isso vai te ajudar a expandir a sua visão, a pensar maior nos projetos, a entender melhor como processos funcionam e entender mais do produto que você trabalha.
 
