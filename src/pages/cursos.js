@@ -3,15 +3,15 @@ import { NextSeo } from 'next-seo'
 
 const coursesList = [
   {
+    title: 'React Avançado',
+    link: 'https://reactavancado.com.br/',
+    description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
+  },
+  {
     title: 'NextJS na Prática!',
     link: 'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPlXj6USip_lCPzONUATJbE',
     description:
       'Crie um mapa totalmente interativo com um CMS integrado em poucas horas!'
-  },
-  {
-    title: 'React Avançado',
-    link: 'https://reactavancado.com.br/',
-    description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
   },
   {
     title: 'JS Moderno (ES6)',
