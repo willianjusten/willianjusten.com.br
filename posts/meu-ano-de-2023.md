@@ -102,9 +102,13 @@ Foi assim que aproveitamos tanto Seattle quanto LA. Em Seattle eu ainda pude ver
 
 Seattle é uma cidade incrível, gostei de cada detalhezinho e foi ainda mais incrível que fizemos várias montagens entre fotos do jogo e os lugares de verdade. Sempre achei esses vídeos comparativos mó legais e dessa vez era eu fazendo! Ainda tive oportunidade de assistir um jogo de futebol americano do Seattle Seahawks e nossa, que experiência incrível, o estádio é gigantesco! Até mesmo quem não conhece as regras, consegue se divertir bastante.
 
+Você pode ver mais das minhas fotos de Seattle no meu [Unsplash](https://unsplash.com/collections/-TIivX5Mug8/my-adventures-in-seattle).
+
 Depois de Seattle, ainda aproveitamos 3 dias em LA, eu gostei da cidade e claro que o ponto mais alto para mim foi a ida em Venice Beach. Mas também teve a ida na Universal Studios para o Parque do Mario! Quem me conhece sabe que eu não sou grande fã de parques, mas esse foi diferente e bem divertido. Te falar que queria ter passado até mais tempo lá para ver todas as coisas com mais detalhes.
 
 Além disso, pude assistir uma premiere no Teatro Chinês, meu Deus, que cinema meus amigos, que cinema! Eu nunca tinha visto um cinema tão grande e tão bonito, foi uma experiência incrível.
+
+Você pode ver mais das minhas fotos de LA no meu [Unsplash](https://unsplash.com/collections/50RZQWP5DSo/my-adventures-in-la).
 
 ## Desafios e exaustão
 
