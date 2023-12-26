@@ -27,7 +27,7 @@ Se quiser ver minha evolução ao longo de tantos anos, ficam aqui os posts ante
 E outra tradição que sempre faço, é falar sobre música em todos os posts, então seguem algumas bandas que ouvi bastante no ano:
 
 - [Post Malone - Austin](https://open.spotify.com/album/1F9LY06gadScF4g3g3BrDC?si=t0tBCVupSfi49SH3CSKWMg), não é surpresa que eu escuto bastante, mas como ele lançou album novo, eu escutei ainda mais.
-- [Trilha sonora do Spider-Man: Across the Spider-Verse](https://open.spotify.com/album/1bwbZJ6khPJyVpOaqgKsoZ?si=89Rny3rFSqWTBWNpAQEHxg)
+- [Trilha sonora do Spider-Man - Across the Spider-Verse](https://open.spotify.com/album/1bwbZJ6khPJyVpOaqgKsoZ?si=89Rny3rFSqWTBWNpAQEHxg)
 - [Stromae](https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR?si=CDQclAX9Qu64SSmLOoxW0Q) - como vai ver, eu estive na França, então escutei bastante Stromae, que é um cantor belga, mas que canta em francês.
 
 ## Blog
