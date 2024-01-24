@@ -118,4 +118,4 @@ Agora no último trimestre do ano, tive desafios bem grandes na Appcues, que me 
 
 Todo ano eu traço alguns objetivos, esses ficam só para mim, mas espero que eu consiga realizar boa parte deles.
 
-E vocês? Tiveram um bom 2023? O que aconteceu de mais legal para vocˆes? Me contem nos comentários!
+E vocês? Tiveram um bom 2023? O que aconteceu de mais legal para vocês? Me contem nos comentários!
