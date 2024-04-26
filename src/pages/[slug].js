@@ -25,7 +25,8 @@ export async function getStaticProps({ params }) {
       content,
       nextPost,
       prevPost
-    }
+    },
+    revalidate: false
   }
 }
 
