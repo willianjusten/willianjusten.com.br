@@ -4,13 +4,16 @@ import rehype from "remark-rehype";
 import headings from "rehype-autolink-headings";
 import slug from "rehype-slug";
 import stringify from "rehype-stringify";
-import rehypeShiki from "@shikijs/rehype";
+import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
+import { getHighlighterInstance } from "./highlighter";
 
 export default async function markdownToHtml(markdown: string) {
+  const highlighter = await getHighlighterInstance();
+
   const result = await unified()
     .use(parse)
     .use(rehype)
-    .use(rehypeShiki, {
+    .use(rehypeShikiFromHighlighter, highlighter, {
       theme: "one-dark-pro",
     })
     .use(slug)
