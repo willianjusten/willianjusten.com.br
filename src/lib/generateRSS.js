@@ -2,8 +2,6 @@ import { BLOG_URL, BLOG_TITLE, BLOG_SUBTITLE } from 'lib/constants'
 import markdownToHtml from 'lib/markdownToHtml'
 
 export async function generateRssItem(post) {
-  const content = await markdownToHtml(post.content || '')
-
   return `
     <item>
       <guid>${BLOG_URL}/${post.slug}</guid>
@@ -11,7 +9,9 @@ export async function generateRssItem(post) {
       <description>${post.frontmatter.description}</description>
       <link>${BLOG_URL}/${post.slug}</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <content:encoded><![CDATA[${content}]]></content:encoded>
+      <content:encoded><![CDATA[${
+        post.frontmatter.description
+      }]]></content:encoded>
     </item>
   `
 }
