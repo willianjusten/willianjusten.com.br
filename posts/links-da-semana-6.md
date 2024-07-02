@@ -1,19 +1,16 @@
 ---
 layout: post
+date: 2015-10-25T21:19:17.000Z
 title: "Links da semana #6"
-date: 2015-10-25 19:19:17
-image: '/assets/img/links-da-semana/main.png'
-description: 'Links da semana #6 - Links sobre coisas interessantes que fui vendo pela semana.'
-main-class: 'misc'
-color: '#7AAB13'
+description: "Links da semana #6 - Links sobre coisas interessantes que fui
+  vendo pela semana."
+main-class: misc
 tags:
-- dev
-- js
-- css
+  - dev
+  - js
+  - css
 categories:
-- Links da Semana
-twitter_text: 'Alguns links legais vistos na semana'
-introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e acho que todos deveriam ler."
+  - Links da Semana
 ---
 
 ## Introdução

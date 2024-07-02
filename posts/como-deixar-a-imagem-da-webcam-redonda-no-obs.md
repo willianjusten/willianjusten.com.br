@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2021-03-06 11:15:30
-image: /assets/img/obs-mask.png
+date: 2021-03-06T14:15:30.000Z
 title: Como deixar a imagem da webcam redonda no OBS
 description: Como utilizar filtro e máscara para ter seu vídeo mais legal
-introduction: Como utilizar filtro e máscara para ter seu vídeo mais legal
-twitter_text: Como utilizar filtro e máscara para ter seu vídeo mais legal
 main-class: misc
-color: "#7AAB13"
 tags:
   - dicas
 categories:

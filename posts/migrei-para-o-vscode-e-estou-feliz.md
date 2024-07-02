@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Migrei para o Visual Studio Code e estou feliz!"
-date: 2017-07-27 19:08:41
-image: '/assets/img/vscode/vscode.png'
-description: "Um pouco da minha experiência com esse editor que me fez aposentar o Sublime e plugins que uso."
-main-class: 'dev'
-color: '#637a91'
+date: 2017-07-27T22:08:41.000Z
+title: Migrei para o Visual Studio Code e estou feliz!
+description: Um pouco da minha experiência com esse editor que me fez aposentar
+  o Sublime e plugins que uso.
+main-class: dev
 tags:
-    - workflow
-    - dev
-categories:
-twitter_text: "Minha experiência com esse editor que me fez aposentar o Sublime!"
-introduction: "Um pouco da minha experiência com esse editor que me fez aposentar o Sublime e plugins que uso."
+  - workflow
+  - dev
+categories: null
 ---
 
 ## Introdução

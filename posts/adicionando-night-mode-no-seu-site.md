@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Adicionando Night Mode no seu site'
-date: 2018-03-27 00:35:52
-image: '/assets/img/night-mode.png'
-description: 'Aprenda como criar um botão para mudar as cores do seu site com JS puro.'
-main-class: 'js'
-color: '#D6BA32'
+date: 2018-03-27T03:35:52.000Z
+title: Adicionando Night Mode no seu site
+description: Aprenda como criar um botão para mudar as cores do seu site com JS puro.
+main-class: js
 tags:
   - js
   - theme
-categories:
-twitter_text: 'Aprenda como criar um botão para mudar as cores do seu site com JS puro.'
-introduction: 'Aprenda como criar um botão para mudar as cores do seu site com JS puro.'
+categories: null
 ---
 
 ## Introdução

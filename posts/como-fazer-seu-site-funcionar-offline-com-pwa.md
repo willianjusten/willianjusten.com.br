@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2018-03-26 03:20:50'
-image: /assets/img/offline.png
+date: 2018-03-26T06:20:50.000Z
 title: Como fazer seu site funcionar offline com PWA
 description: O passo-a-passo de como criar um site PWA que funciona até offline.
-introduction: O passo-a-passo de como criar um site PWA que funciona até offline.
-twitter_text: O passo-a-passo de como criar um site PWA que funciona até offline.
 main-class: dev
-color: '#637a91'
 tags:
   - performance
   - pwa

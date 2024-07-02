@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Theme Color Android Lollipop"
-date: 2015-02-10 21:08:04
-image: '/assets/img/theme-color/main.png'
-description: 'Como fazer a barra de notificações do android ficar com a cor do seu site.'
-main-class: 'dev'
-color: '#637a91'
+date: 2015-02-10T23:08:04.000Z
+title: Theme Color Android Lollipop
+description: Como fazer a barra de notificações do android ficar com a cor do seu site.
+main-class: dev
 tags:
-- android
-- theme
-- tutorial
-categories:
-twitter_text: 'Como fazer a barra de notificações do android ficar com a cor do seu site.'
-introduction: "Como fazer a barra de notificações do android ficar com a cor do seu site em uma linha só de código."
+  - android
+  - theme
+  - tutorial
+categories: null
 ---
 
 Fala galera, vim trazer mais uma **#dicarapida**, essa é bem rápida mesmo. Um amigo estava navegando meu blog no celular dele e notou que tudo ficou com a cor do meu site e me perguntou como fazia, já que o intuito do blog é passar conhecimento, mesmo que seja bem pequeno e simples, resolvi mandar essa dica aqui =)

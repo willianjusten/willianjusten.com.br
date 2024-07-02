@@ -1,11 +1,10 @@
 ---
 layout: post
-date: 2023-07-11 12:27:13
+date: 2023-07-11T15:27:13.000Z
 title: Feito é melhor que perfeito
 description: Já se sentiu tão travado que não conseguiu entregar algo? Talvez
   esse post seja útil.
 main-class: misc
-color: "#7AAB13"
 tags:
   - dev
   - lifestyle

@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "HTTPS no Github Pages com Custom Domain"
-date: 2016-06-11 16:07:32
-image: '/assets/img/https/main.png'
-description: "Aprenda a colocar a sua página do Github Pages com Custom Domain e HTTPS"
-main-class: 'dev'
-color: '#637a91'
+date: 2016-06-11T19:07:32.000Z
+title: HTTPS no Github Pages com Custom Domain
+description: Aprenda a colocar a sua página do Github Pages com Custom Domain e HTTPS
+main-class: dev
 tags:
-- github pages
-- tutorial
-- https
-categories:
-twitter_text: "Tenha https no seu domínio próprio dentro do Github Pages"
-introduction: "Aprenda a colocar a sua página do Github Pages com Custom Domain e HTTPS"
+  - github pages
+  - tutorial
+  - https
+categories: null
 ---
 
 ## Introdução

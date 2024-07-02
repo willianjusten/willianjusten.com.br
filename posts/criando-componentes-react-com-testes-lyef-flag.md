@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Criando Componentes React com Testes - Lyef-flag"
-date: 2017-08-22 17:36:07
-image: '/assets/img/lyef-flags/main.png'
-description: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
-main-class: 'js'
-color: '#D6BA32'
+date: 2017-08-22T20:36:07.000Z
+title: Criando Componentes React com Testes - Lyef-flag
+description: Como escrever um componente React com Mocha, Chai, Enzyme e Storybook.
+main-class: js
 tags:
-- react
-- js
+  - react
+  - js
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
-introduction: "Como escrever um componente React com Mocha, Chai, Enzyme e Storybook."
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

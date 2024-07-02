@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Curso JS com TDD na Prática e Novidades"
-date: 2016-09-10 12:53:11
-image: '/assets/img/cursos/js-tdd.png'
-description: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
-main-class: 'js'
-color: '#D6BA32'
+date: 2016-09-10T15:53:11.000Z
+title: Curso JS com TDD na Prática e Novidades
+description: Aprenda uma das melhores culturas de desenvolvimento e tenha portas
+  abertas no mercado.
+main-class: js
 tags:
-- js
-- tdd
-categories:
-twitter_text: 'Aprenda testes na prática!'
-introduction: 'Aprenda uma das melhores culturas de desenvolvimento e tenha portas abertas no mercado.'
+  - js
+  - tdd
+categories: null
 ---
 
 ## Índice

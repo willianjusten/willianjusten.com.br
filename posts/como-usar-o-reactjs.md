@@ -1,19 +1,15 @@
 ---
 layout: post
+date: 2015-07-14T15:16:16.000Z
 title: "#2 - Como usar o ReactJS"
-date: 2015-07-14 12:16:16
-image: '/assets/img/react-2/main.png'
-description: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
-main-class: 'js'
-color: '#D6BA32'
+description: As diferentes formas de se usar e se iniciar um projeto com ReactJS.
+main-class: js
 tags:
-- react
-- js
-- tutorial
+  - react
+  - js
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
-introduction: "As diferentes formas de se usar e se iniciar um projeto com ReactJS. Veja usando o famoso JSX, sem ele e alguns boilerplates famosos."
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

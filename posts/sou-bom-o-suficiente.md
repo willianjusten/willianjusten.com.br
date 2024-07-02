@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Será que sou bom o suficiente?"
-date: 2016-12-29 23:12:28
-image: '/assets/img/sindrome-do-impostor/good-enough.jpeg'
-description: "Essa é uma pergunta bastante comum de nós desenvolvedores, e por que será isso?"
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-12-30T01:12:28.000Z
+title: Será que sou bom o suficiente?
+description: Essa é uma pergunta bastante comum de nós desenvolvedores, e por que será isso?
+main-class: misc
 tags:
-- sindromedoimpostor
-- life
-categories:
-twitter_text: "Sou bom o suficiente? Saiba pq essa pergunta é tão comum p/ devs"
-introduction: "Essa é uma pergunta bastante comum de nós desenvolvedores, e por que será isso?"
+  - sindromedoimpostor
+  - life
+categories: null
 ---
 
 ## Introdução

@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2023-08-14 5:00:40
+date: 2023-08-14T08:00:40.000Z
 title: Mude!
 description: Mude, mas comece devagar, porque a direção é mais importante que a velocidade.
 main-class: misc
-color: '#7AAB13'
 tags:
   - vida
   - reflexão

@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Versionando seu projeto"
-date: 2015-10-31 21:36:09
-image: '/assets/img/semver/main.png'
-description: 'Como versionar corretamente o seu projeto e assim conseguir informar rapidamente que tipo de mudança ocorreu.'
-main-class: 'dev'
-color: '#637a91'
+date: 2015-10-31T23:36:09.000Z
+title: Versionando seu projeto
+description: Como versionar corretamente o seu projeto e assim conseguir
+  informar rapidamente que tipo de mudança ocorreu.
+main-class: dev
 tags:
-- projetos
-- semver
-categories:
-twitter_text: 'Como versionar corretamente o seu projeto usando o SemVer.'
-introduction: 'Como versionar corretamente o seu projeto e assim conseguir informar rapidamente que tipo de mudança ocorreu.'
+  - projetos
+  - semver
+categories: null
 ---
 
 ## Introdução

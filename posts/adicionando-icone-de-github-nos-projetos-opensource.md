@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-02-21 05:55:59
-image: /assets/img/github-corners.png
+date: 2021-02-21T08:55:59.000Z
 title: Adicionando ícone de GitHub nos projetos opensource
 description: Já pensou como o pessoal sempre usa aquele ícone bonitinho no
   canto? Agora vai saber!
-introduction: Já pensou como o pessoal sempre usa aquele ícone bonitinho no
-  canto? Agora vai saber!
-twitter_text: Já pensou como o pessoal sempre usa aquele ícone bonitinho no
-  canto? Agora vai saber!
 main-class: misc
-color: "#7AAB13"
 tags:
   - dica
 categories:

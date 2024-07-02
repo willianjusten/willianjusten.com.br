@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2021-02-18 12:49:00
-image: /assets/img/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-loading-e-transicao-de-paginas-no-nextjs-2-.png
+date: 2021-02-18T15:49:00.000Z
 title: Formatando datas com JS puro
 description: Nem sempre precisamos de bibliotecas enormes para resolver um problema simples.
-introduction: Nem sempre precisamos de bibliotecas enormes para resolver um problema simples.
-twitter_text: Nem sempre precisamos de bibliotecas enormes para resolver um problema simples.
 main-class: js
-color: "#D6BA32"
 tags:
   - dicas
 categories:

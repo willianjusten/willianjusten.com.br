@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2020-04-28 02:38:15
-image: /assets/img/responsive-text-cover.png
+date: 2020-04-28T05:38:15.000Z
 title: Criando Textos Responsivos com CSS
 description: Aprenda a deixar seus textos responsivos e fluidos em qualquer tela
   com viewport units e funções min-max do CSS.
-introduction: Aprenda a deixar seus textos responsivos e fluidos em qualquer
-  tela com viewport units e funções min-max do CSS.
-twitter_text: Aprenda a deixar seus textos responsivos e fluidos em qualquer
-  tela com viewport units e funções min-max do CSS.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - videos

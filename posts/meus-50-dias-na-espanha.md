@@ -1,19 +1,15 @@
 ---
 layout: post
 date: 2018-03-13T21:01:03.000Z
-image: /assets/img/willian-justen-de-vasconcellos-567357-unsplash.jpg
 title: Meus 50 dias na Espanha
-description: 'Um pouco sobre como me locomovi, hospedagem, gastos e meu trabalho remoto. '
-introduction: 'Um pouco sobre como me locomovi, hospedagem, gastos e meu trabalho remoto.'
-twitter_text: 'Um pouco sobre como me locomovi, hospedagem, gastos e meu trabalho remoto.'
+description: "Um pouco sobre como me locomovi, hospedagem, gastos e meu trabalho remoto. "
 main-class: misc
-color: '#7AAB13'
 tags:
   - travel
   - remoto
   - experiencia
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

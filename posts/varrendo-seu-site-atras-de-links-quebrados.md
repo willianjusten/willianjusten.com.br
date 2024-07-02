@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2018-03-21 07:52:41'
-image: /assets/img/broken-link.png
+date: 2018-03-21T10:52:41.000Z
 title: Varrendo seu site atrás de links quebrados
 description: Não perca a credibilidade do seu site com imagens ou links quebrados.
-introduction: Não perca a credibilidade do seu site com imagens ou links quebrados.
-twitter_text: Não perca a credibilidade do seu site com imagens ou links quebrados.
 main-class: dev
-color: '#637a91'
 tags:
   - performance
   - tools

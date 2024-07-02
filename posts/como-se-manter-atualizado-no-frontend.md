@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Como se manter atualizado no Frontend"
-date: 2016-09-03 15:06:13
-image: '/assets/img/up-to-date/folder.png'
-description: 'O mundo do Frontend muda muito o tempo todo e fica difícil de acompanhar toda essa mudança, aqui vão umas dicas para ajudar bastante nisso.'
-main-class: 'dev'
-color: '#637a91'
+date: 2016-09-03T18:06:13.000Z
+title: Como se manter atualizado no Frontend
+description: O mundo do Frontend muda muito o tempo todo e fica difícil de
+  acompanhar toda essa mudança, aqui vão umas dicas para ajudar bastante nisso.
+main-class: dev
 tags:
-- frontend
-- tip
-- eventos
-categories:
-twitter_text: 'Se mantendo atualizado na bagunça que é o frontend'
-introduction: 'O mundo do Frontend muda muito o tempo todo e fica difícil de acompanhar toda essa mudança, aqui vão umas dicas para ajudar bastante nisso.'
+  - frontend
+  - tip
+  - eventos
+categories: null
 ---
 
 ## Índice

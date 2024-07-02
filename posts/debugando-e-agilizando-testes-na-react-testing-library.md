@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-02-18 12:09:30
-image: /assets/img/testing-library-tip.png
+date: 2021-02-18T15:09:30.000Z
 title: Debugando e agilizando testes na React Testing Library
 description: Como um método tão simples pode te ajudar a acelerar os seus testes
   e também descobrir erros escondidos.
-introduction: Como um método tão simples pode te ajudar a acelerar os seus
-  testes e também descobrir erros escondidos.
-twitter_text: Como um método tão simples pode te ajudar a acelerar os seus
-  testes e também descobrir erros escondidos.
 main-class: js
-color: "#D6BA32"
 tags:
   - js
   - react

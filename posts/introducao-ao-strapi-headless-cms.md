@@ -1,13 +1,9 @@
 ---
 layout: post
 date: 2020-06-17T10:56:41.000Z
-image: /assets/img/strapi-intro.png
 title: Introdução ao Strapi - Headless CMS
 description: O que é um Headless CMS, quais as vantagens do Strapi e como ele funciona.
-introduction: O que é um Headless CMS, quais as vantagens do Strapi e como ele funciona.
-twitter_text: O que é um Headless CMS, quais as vantagens do Strapi e como ele funciona.
 main-class: dev
-color: "#637a91"
 tags:
   - strapi
   - cms

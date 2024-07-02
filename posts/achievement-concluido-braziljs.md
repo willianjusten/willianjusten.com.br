@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Achievement concluído - BrazilJS"
-date: 2016-08-29 13:35:49
-image: '/assets/img/brazil-js-16/folder.png'
-description: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-08-29T16:35:49.000Z
+title: Achievement concluído - BrazilJS
+description: Tudo que me aconteceu antes, durante e depois desse que foi meu
+  maior evento de desenvolvimento.
+main-class: misc
 tags:
-    - dev
-    - eventos
-    - braziljs
-categories:
-twitter_text: "Tudo que me aconteceu antes, durante e depois."
-introduction: "Tudo que me aconteceu antes, durante e depois desse que foi meu maior evento de desenvolvimento."
+  - dev
+  - eventos
+  - braziljs
+categories: null
 ---
 
 ## Introdução

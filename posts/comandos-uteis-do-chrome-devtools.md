@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Comandos úteis do Chrome DevTools"
-date: 2017-01-24 22:30:59
-image: '/assets/img/dev-tools/main.png'
-description: "Aumente sua produtividade em poucos minutos aprendendo esses comandos."
-main-class: 'dev'
-color: '#637a91'
+date: 2017-01-25T00:30:59.000Z
+title: Comandos úteis do Chrome DevTools
+description: Aumente sua produtividade em poucos minutos aprendendo esses comandos.
+main-class: dev
 tags:
-- frontend
-- tip
-- devtools
-categories:
-twitter_text: "Aumente sua produtividade em minutos."
-introduction: "Aumente sua produtividade em poucos minutos aprendendo esses comandos."
+  - frontend
+  - tip
+  - devtools
+categories: null
 ---
 
 ## Introdução

@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Background fixo com CSS'
-date: 2015-07-24 00:50:02
-image: '/assets/img/reveal-bg/main-2.png'
-description: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2015-07-24T03:50:02.000Z
+title: Background fixo com CSS
+description: Como atrair usuários usando seções com backgrounds fixos usando só css.
+main-class: css
 tags:
   - css
   - tutorial
-categories:
-twitter_text: 'Como atrair usuários usando seções com backgrounds fixos usando só css.'
-introduction: 'Como atrair usuários usando seções com backgrounds fixos usando só css, também conhecidos como Paralax.'
+categories: null
 ---
 
 ## Introdução

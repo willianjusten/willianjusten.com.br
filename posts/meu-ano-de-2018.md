@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-12-27 02:46:00'
-image: /assets/img/meu-ano-2018.jpg
+date: 2018-12-27T04:46:00.000Z
 title: Meu ano de 2018
-description: >-
-  Cursos novos, canal no Youtube, foco em saúde e um pouco mais. Um pouquinho
-  desse meu ano e algumas metas para o ano que vem.
-introduction: >-
-  Cursos novos, canal no Youtube, foco em saúde e um pouco mais. Um pouquinho
-  desse meu ano e algumas metas para o ano que vem.
-twitter_text: >-
-  Cursos novos, canal no Youtube, foco em saúde e um pouco mais. Um pouquinho
-  desse meu ano e algumas metas para o ano que vem.
+description: Cursos novos, canal no Youtube, foco em saúde e um pouco mais. Um
+  pouquinho desse meu ano e algumas metas para o ano que vem.
 main-class: misc
-color: '#7AAB13'
 tags:
   - dev
   - remoto

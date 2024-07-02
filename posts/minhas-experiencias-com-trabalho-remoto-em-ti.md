@@ -1,25 +1,16 @@
 ---
 layout: post
-date: '2018-11-19 04:13:33'
-image: /assets/img/remote-work.jpg
+date: 2018-11-19T06:13:33.000Z
 title: Minhas experiências com Trabalho Remoto em TI
-description: >-
-  Após mais de 2 anos trabalhando remoto, venho compartilhar algumas das minhas
-  experiências e também responder muitas perguntas
-introduction: >-
-  Após mais de 2 anos trabalhando remoto, venho compartilhar algumas das minhas
-  experiências e também responder muitas perguntas
-twitter_text: >-
-  Após mais de 2 anos trabalhando remoto, venho compartilhar algumas das minhas
-  experiências e também responder muitas perguntas
+description: Após mais de 2 anos trabalhando remoto, venho compartilhar algumas
+  das minhas experiências e também responder muitas perguntas
 main-class: dev
-color: '#637a91'
 tags:
   - experiencia
   - dicas
   - lifestyle
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Índice

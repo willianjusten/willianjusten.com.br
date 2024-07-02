@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Novo curso de Git e Github para iniciantes"
-date: 2016-04-03 11:21:20
-image: '/assets/img/git-course/screen.png'
-description: 'Aprenda como funciona o git e o github em vídeos curtos e práticos.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-04-03T14:21:20.000Z
+title: Novo curso de Git e Github para iniciantes
+description: Aprenda como funciona o git e o github em vídeos curtos e práticos.
+main-class: misc
 tags:
-    - dev
-    - cursos
-    - git
-    - github
-twitter_text: 'Novo curso de Git e Github para iniciantes!'
-introduction: 'Aprenda como funciona o git e o github em vídeos curtos e práticos.'
+  - dev
+  - cursos
+  - git
+  - github
 ---
 
 ## Introdução

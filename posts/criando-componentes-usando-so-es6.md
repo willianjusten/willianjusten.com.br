@@ -1,13 +1,9 @@
 ---
 layout: post
 date: 2017-07-07T13:09:11.000Z
-image: /assets/img/componentes-es6/componentes.png
 title: Criando componentes usando só ES6
 description: Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?
-introduction: Muita gente usa React, outros usam Vue e outros Angular. Por que não só ES6?
-twitter_text: Muita gente usa React, outros usam Vue, etc. Por que não só ES6?
 main-class: js
-color: "#D6BA32"
 tags:
   - js
   - es6

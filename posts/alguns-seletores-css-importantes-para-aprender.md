@@ -1,18 +1,15 @@
 ---
 layout: post
-title: 'Alguns seletores css importantes para aprender'
-date: 2015-06-29 21:22:47
-image: '/assets/img/seletores-css/main.png'
-description: 'Porque CSS é muito mais do que só classes e ids. Aprenda alguns truques legais para facilitar nos seus layouts.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2015-06-30T00:22:47.000Z
+title: Alguns seletores css importantes para aprender
+description: Porque CSS é muito mais do que só classes e ids. Aprenda alguns
+  truques legais para facilitar nos seus layouts.
+main-class: css
 tags:
   - css
   - frontend
   - tutorial
-categories:
-twitter_text: 'Porque o CSS é muito mais do que só classes e ids.'
-introduction: 'Porque CSS é muito mais do que só classes e ids. Veja alguns truques legais para facilitar nos seus layouts.'
+categories: null
 ---
 
 ## Introdução

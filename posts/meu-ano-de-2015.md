@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Meu ano de 2015"
-date: 2015-12-29 18:35:04
-image: '/assets/img/meu-2015/amigos.jpg'
-description: 'Foi um ano ruim? Definitivamente NÃO, pelo menos para mim. Aqui vou falar sobre algumas das experiências e coisas que aprendi no ano.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2015-12-29T20:35:04.000Z
+title: Meu ano de 2015
+description: Foi um ano ruim? Definitivamente NÃO, pelo menos para mim. Aqui vou
+  falar sobre algumas das experiências e coisas que aprendi no ano.
+main-class: misc
 tags:
-- dev
-- review
-categories:
-twitter_text: 'Foi um ano ruim? Definitivamente NÃO! Meu review de 2015.'
-introduction: 'Foi um ano ruim? Definitivamente NÃO, pelo menos para mim. Aqui vou falar sobre algumas das experiências e coisas que aprendi no ano.'
+  - dev
+  - review
+categories: null
 ---
 
 ## Introdução

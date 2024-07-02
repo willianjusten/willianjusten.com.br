@@ -1,20 +1,14 @@
 ---
 layout: post
-date: '2020-04-24 12:34:33'
-image: /assets/img/netlify/main.png
+date: 2020-04-24T15:34:33.000Z
 title: Como habilitar builds incrementais do Gatsby no Netlify
-description: >-
-  Tenha builds muito mais rápidos com a nova atualização do Gatsby Incremental Build.
-introduction: >-
-  Tenha builds muito mais rápidos com a nova atualização do Gatsby Incremental Build.
-twitter_text: >-
-  Tenha builds muito mais rápidos com a nova atualização do Gatsby Incremental Build.
+description: Tenha builds muito mais rápidos com a nova atualização do Gatsby
+  Incremental Build.
 main-class: dev
-color: '#637a91'
 tags:
   - netlify
   - blog
-categories:
+categories: null
 ---
 
 ## Introdução

@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2019-07-17 07:39:23'
-image: /assets/img/fullpage-cover.png
-title: 'Dica de CSS: Scroll Snap'
+date: 2019-07-17T10:39:23.000Z
+title: "Dica de CSS: Scroll Snap"
 description: Criando fullpage scroll com simples linhas de CSS.
-introduction: Criando fullpage scroll com simples linhas de CSS.
-twitter_text: Criando fullpage scroll com simples linhas de CSS.
 main-class: css
-color: '#2DA0C3'
 tags:
   - CSS
   - Dicas

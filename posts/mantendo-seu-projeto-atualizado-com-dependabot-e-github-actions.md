@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2020-08-08 05:46:44
-image: /assets/img/dependabot-gh-actions-cover.png
+date: 2020-08-08T08:46:44.000Z
 title: Mantendo seu projeto atualizado com Dependabot e Github Actions
 description: Atualizar dependências é algo bem chato e demorado, mas não precisa ser.
-introduction: Atualizar dependências é algo bem chato e demorado, mas não precisa ser.
-twitter_text: Atualizar dependências é algo bem chato e demorado, mas não precisa ser.
 main-class: dev
-color: "#637a91"
 tags:
   - github
   - boas praticas

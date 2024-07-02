@@ -1,19 +1,16 @@
 ---
 layout: post
-title: "Um novo projeto, um novo desafio"
-date: 2016-03-19 02:57:56
-image: '/assets/img/cursos/aprenda.png'
-description: 'Já que eu escrevo, por que não fazer vídeos também? Hoje começa mais um desafio pessoal meu, criar cursos sobre desenvolvimento web em geral.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-03-19T05:57:56.000Z
+title: Um novo projeto, um novo desafio
+description: Já que eu escrevo, por que não fazer vídeos também? Hoje começa
+  mais um desafio pessoal meu, criar cursos sobre desenvolvimento web em geral.
+main-class: misc
 tags:
-- frontend
-- dev
-- cursos
-- jekyll
-categories:
-twitter_text: 'Aprenda de um jeito fácil!'
-introduction: 'Já que eu escrevo, por que não fazer vídeos também? Hoje começa mais um desafio pessoal meu, criar cursos sobre desenvolvimento web em geral.'
+  - frontend
+  - dev
+  - cursos
+  - jekyll
+categories: null
 ---
 
 ## Introdução

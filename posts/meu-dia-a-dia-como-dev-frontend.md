@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Meu dia a dia como dev frontend"
-date: 2015-01-15 18:17:11
-description: "Um pouco do meu dia a dia como dev frontend. Minha máquina, meus programas, arquivos, configurações."
-main-class: 'misc'
-color: '#7AAB13'
+date: 2015-01-15T20:17:11.000Z
+title: Meu dia a dia como dev frontend
+description: Um pouco do meu dia a dia como dev frontend. Minha máquina, meus
+  programas, arquivos, configurações.
+main-class: misc
 tags:
-- frontend
-categories:
-twitter_text: "Meu dia a dia como dev frontend."
-introduction: "Um pouco do meu dia a dia como dev frontend. Minha máquina, meus programas, arquivos, configurações."
+  - frontend
+categories: null
 ---
 
 Como alguns devem saber o [Luiz Felipe Tartarotti Fialho](https://github.com/felipefialho) criou um [repositório](https://github.com/felipefialho/1-post-por-dia) no github bastante legal, para que pessoas possam pedir alguns temas.

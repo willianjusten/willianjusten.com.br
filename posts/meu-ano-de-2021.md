@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2021-12-21 05:00:40
+date: 2021-12-21T08:00:40.000Z
 title: Meu ano de 2021
 description: Ano passado já foi complicado para mim, mas esse ano foi ainda mais.
 main-class: misc
-color: "#7AAB13"
 tags:
   - retrospectiva
   - ano

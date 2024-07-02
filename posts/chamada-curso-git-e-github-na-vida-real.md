@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'Chamada Curso Git e Github na Vida Real'
-date: 2018-01-03 18:22:28
-image: '/assets/img/git-vida-real/main.png'
-description: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2018-01-03T20:22:28.000Z
+title: Chamada Curso Git e Github na Vida Real
+description: Vamos dominar o Git e não ficar mais desesperado com conflitos e
+  arquivos perdidos!
+main-class: misc
 tags:
   - dev
   - cursos
   - git
   - github
-categories:
-twitter_text: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
-introduction: 'Vamos dominar o Git e não ficar mais desesperado com conflitos e arquivos perdidos!'
+categories: null
 ---
 
 ## Chamada

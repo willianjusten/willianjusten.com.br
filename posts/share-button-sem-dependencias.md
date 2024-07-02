@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Share Buttons sem dependências"
-date: 2015-05-01 10:57:03
-image: '/assets/img/share-buttons/main.png'
-description: "Ser social é muito importante, então nada melhor do que fazer com que o seu usuário consiga compartilhar mais fácil seu conteúdo."
-main-class: 'dev'
-color: '#637a91'
+date: 2015-05-01T13:57:03.000Z
+title: Share Buttons sem dependências
+description: Ser social é muito importante, então nada melhor do que fazer com
+  que o seu usuário consiga compartilhar mais fácil seu conteúdo.
+main-class: dev
 tags:
-- social
-- tutorial
-categories:
-twitter_text: "Aprenda a criar social share buttons sem dependências para o seu site."
-introduction: "Ser social é muito importante, então nada melhor do que fazer com que o seu usuário consiga compartilhar mais fácil seu conteúdo. Saiba como criar botões de share sem dependências."
+  - social
+  - tutorial
+categories: null
 ---
 
 ## Introdução

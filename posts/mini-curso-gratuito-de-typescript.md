@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2020-05-18 10:31:55
-image: /assets/img/typescript-cover.png
+date: 2020-05-18T13:31:55.000Z
 title: Mini Curso gratuito de TypeScript
 description: Aprenda o que é TypeScript, como funciona, por que usar e muito mais!
-introduction: Aprenda o que é TypeScript, como funciona, por que usar e muito mais!
-twitter_text: Aprenda o que é TypeScript, como funciona, por que usar e muito mais!
 main-class: js
-color: '#D6BA32'
 tags:
   - typescript
   - ts

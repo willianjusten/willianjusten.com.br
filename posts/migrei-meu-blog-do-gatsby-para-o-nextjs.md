@@ -1,16 +1,15 @@
 ---
 layout: post
-date: 2021-07-04 01:46:26
+date: 2021-07-04T04:46:26.000Z
 title: Migrei meu blog do Gatsby para o NextJS
 description: Um pouco da razão da mudança, coisas que fiz e minhas impressões.
 main-class: js
-color: '#D6BA32'
 tags:
   - nextjs
   - gatsby
   - blog
 categories:
-  - 'NextJS'
+  - NextJS
 ---
 
 ## Introdução

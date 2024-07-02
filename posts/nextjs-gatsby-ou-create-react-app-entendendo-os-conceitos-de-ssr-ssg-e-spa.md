@@ -1,16 +1,10 @@
 ---
 layout: post
 date: 2020-08-05T02:59:30.000Z
-image: /assets/img/next-gatsby-cra-cover.png
 title: NextJS, Gatsby ou Create React App? Entendendo os conceitos de SSR, SSG e SPA.
 description: Antes de escolher um deles, é importante saber as diferenças e suas
   necessidades.
-introduction: Antes de escolher um deles, é importante saber as diferenças e
-  suas necessidades.
-twitter_text: Antes de escolher um deles, é importante saber as diferenças e
-  suas necessidades.
 main-class: js
-color: "#D6BA32"
 tags:
   - js
   - next

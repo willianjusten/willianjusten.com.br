@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "3 meses de globo.com"
-date: 2015-06-28 17:36:52
-image: '/assets/img/3-meses-globocom/main.png'
-description: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia."
-main-class: 'dev'
-color: '#637a91'
+date: 2015-06-28T20:36:52.000Z
+title: 3 meses de globo.com
+description: Um pouco do que passei desde o primeiro contato, processo seletivo,
+  contratação, minha mudança e o dia-a-dia.
+main-class: dev
 tags:
-- trabalho
-- globo
-categories:
-twitter_text: "Um pouco do que passei até chegar na gcom."
-introduction: "Um pouco do que passei desde o primeiro contato, processo seletivo, contratação, minha mudança e o dia-a-dia na globo.com"
+  - trabalho
+  - globo
+categories: null
 ---
 
 ## Introdução

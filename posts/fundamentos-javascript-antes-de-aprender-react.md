@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-01-04 02:26:13'
-image: /assets/img/fundamentos-pre-react.jpg
+date: 2019-01-04T04:26:13.000Z
 title: Fundamentos JavaScript antes de aprender React
-description: >-
-  Na necessidade você pode ir direto para o React sem saber alguns conceitos e
-  se complicar ainda mais. Esse post pode te ajudar nisso.
-introduction: >-
-  Na necessidade você pode ir direto para o React sem saber alguns conceitos e
-  se complicar ainda mais. Esse post pode te ajudar nisso.
-twitter_text: >-
-  Na necessidade você pode ir direto para o React sem saber alguns conceitos e
-  se complicar ainda mais. Esse post pode te ajudar nisso.
+description: Na necessidade você pode ir direto para o React sem saber alguns
+  conceitos e se complicar ainda mais. Esse post pode te ajudar nisso.
 main-class: js
-color: '#D6BA32'
 tags:
   - react
   - js

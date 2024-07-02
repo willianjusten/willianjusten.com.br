@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-01-02 04:02:08'
-image: /assets/img/coisas-que-nao-sei.jpg
+date: 2019-01-02T06:02:08.000Z
 title: Coisas que eu não sei em TI
-description: >-
-  Eu faço bastante coisa, mas existem outras mil coisas que eu não sei e não tem
-  problema nisso.
-introduction: >-
-  Eu faço bastante coisa, mas existem outras mil coisas que eu não sei e não tem
-  problema nisso.
-twitter_text: >-
-  Eu faço bastante coisa, mas existem outras mil coisas que eu não sei e não tem
-  problema nisso.
+description: Eu faço bastante coisa, mas existem outras mil coisas que eu não
+  sei e não tem problema nisso.
 main-class: misc
-color: '#7AAB13'
 tags:
   - dev
   - code

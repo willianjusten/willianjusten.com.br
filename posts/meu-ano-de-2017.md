@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Meu ano de 2017"
-date: 2017-12-22 15:02:58
-image: '/assets/img/meu-ano-2017/main.png'
-description: "Muitos países e cidades visitadas, nova plataforma de cursos e recordes de alunos!"
-main-class: 'misc'
-color: '#7AAB13'
+date: 2017-12-22T17:02:58.000Z
+title: Meu ano de 2017
+description: Muitos países e cidades visitadas, nova plataforma de cursos e
+  recordes de alunos!
+main-class: misc
 tags:
-- dev
-- review
-categories:
-twitter_text: "Muitos países e cidades visitadas, nova plataforma de cursos e recordes de alunos!"
-introduction: "Muitos países e cidades visitadas, nova plataforma de cursos e recordes de alunos!"
+  - dev
+  - review
+categories: null
 ---
 
 ## Introdução

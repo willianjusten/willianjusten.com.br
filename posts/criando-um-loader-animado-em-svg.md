@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'Criando um loader animado em SVG'
-date: 2017-06-15 19:59:34
-image: '/assets/img/loader-svg/loader-svg.png'
-description: 'Aprenda a criar um loader com uma animação única em SVG com apenas poucas linhas.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2017-06-15T22:59:34.000Z
+title: Criando um loader animado em SVG
+description: Aprenda a criar um loader com uma animação única em SVG com apenas
+  poucas linhas.
+main-class: svg
 tags:
   - svg
   - animacao
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Aprenda a criar um loader animado em SVG com apenas poucas linhas.'
-introduction: 'Aprenda a criar um loader com uma animação única em SVG com apenas poucas linhas.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

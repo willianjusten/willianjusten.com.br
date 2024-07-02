@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2020-04-13 04:28:10'
-image: /assets/img/css-counter.jpg
+date: 2020-04-13T07:28:10.000Z
 title: Utilizando CSS Counters
 description: Vamos aprender a fazer o CSS contar!
-introduction: Vamos aprender a fazer o CSS contar!
-twitter_text: Vamos aprender a fazer o CSS contar!
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - dev

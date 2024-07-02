@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2021-10-06 12:52:58
+date: 2021-10-06T15:52:58.000Z
 title: Usando Netlify CMS com NextJS, Vercel e GitHub
 description: Como utilizar um CMS super simples como criar Pull Requests no GitHub
 main-class: js
-color: "#D6BA32"
 tags:
   - cms
   - netlify

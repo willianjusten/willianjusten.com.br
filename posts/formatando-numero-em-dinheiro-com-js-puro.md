@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-02-18 12:35:11
-image: /assets/img/copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-copy-of-loading-e-transicao-de-paginas-no-nextjs-1-.png
+date: 2021-02-18T15:35:11.000Z
 title: Formatando número em dinheiro com JS puro
 description: Evite usar bibliotecas externas para coisas simples como formatar
   números em dinheiro.
-introduction: Evite usar bibliotecas externas para coisas simples como formatar
-  números em dinheiro.
-twitter_text: Evite usar bibliotecas externas para coisas simples como formatar
-  números em dinheiro.
 main-class: js
-color: "#D6BA32"
 tags:
   - dicas
 categories:

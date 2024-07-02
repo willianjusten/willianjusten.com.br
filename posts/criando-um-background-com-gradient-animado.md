@@ -1,16 +1,10 @@
 ---
 layout: post
-date: '2020-04-23 12:04:15'
-image: /assets/img/gradient-cover.png
+date: 2020-04-23T15:04:15.000Z
 title: Criando um background com gradiente animado com CSS Puro
-description: >-
-  Aprenda a criar um background animado para os seus sites e acaba com a monotonia dos fundos estáticos.
-introduction: >-
-  Aprenda a criar um background animado para os seus sites e acaba com a monotonia dos fundos estáticos.
-twitter_text: >-
-  Aprenda a criar um background animado para os seus sites e acaba com a monotonia dos fundos estáticos.
+description: Aprenda a criar um background animado para os seus sites e acaba
+  com a monotonia dos fundos estáticos.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - videos

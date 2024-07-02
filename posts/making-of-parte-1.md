@@ -1,17 +1,15 @@
 ---
 layout: post
-title: 'Making of - Parte 1'
-date: 2015-01-03 05:54:23
-description: 'Quais ferramentas foram utilizadas para montar esse blog e o porquê de ter escolhido cada uma delas.'
-main-class: 'jekyll'
-color: '#B31917'
+date: 2015-01-03T07:54:23.000Z
+title: Making of - Parte 1
+description: Quais ferramentas foram utilizadas para montar esse blog e o porquê
+  de ter escolhido cada uma delas.
+main-class: jekyll
 tags:
   - jekyll
   - gulp
   - stylus
   - svg
-twitter_text: 'Making of parte 1'
-introduction: 'Uma explicação básica de cada uma das tecnologias empregadas e os motivos de ter escolhido elas para a criação desse meu lindo blog.'
 ---
 
 Existe uma continuação desse post em [Making of - parte 2](https://willianjusten.com.br/making-of-parte-2/).

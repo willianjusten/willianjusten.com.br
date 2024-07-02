@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'O que preciso saber para trabalhar no exterior?'
-date: 2017-12-03 15:55:35
-image: '/assets/img/o-que-preciso-trabalhar-exterior/main.jpg'
-description: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
-main-class: 'dev'
-color: '#637a91'
+date: 2017-12-03T17:55:35.000Z
+title: O que preciso saber para trabalhar no exterior?
+description: Algumas coisinhas que você precisa saber para poder conseguir um
+  trabalho no exterior e/ou remoto.
+main-class: dev
 tags:
   - experiencia
   - dicas
   - lifestyle
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
-twitter_text: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
-introduction: 'Algumas coisinhas que você precisa saber para poder conseguir um trabalho no exterior e/ou remoto.'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

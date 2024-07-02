@@ -1,19 +1,15 @@
 ---
 layout: post
-title: '#14 - Manipulando SVG com JS'
-date: 2015-09-11 21:14:39
-image: '/assets/img/manipulando-svg-com-js/main.png'
-description: 'Veja como manipular SVG com JS e algumas libs para brincar.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-09-12T00:14:39.000Z
+title: "#14 - Manipulando SVG com JS"
+description: Veja como manipular SVG com JS e algumas libs para brincar.
+main-class: svg
 tags:
   - svg
   - js
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Veja como manipular SVG com JS e algumas libs para brincar.'
-introduction: 'Veja como manipular SVG com JS e algumas libs para brincar.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

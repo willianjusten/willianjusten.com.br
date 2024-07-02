@@ -1,25 +1,16 @@
 ---
 layout: post
-date: '2018-05-14 05:11:28'
-image: /assets/img/peru-cover.png
+date: 2018-05-14T08:11:28.000Z
 title: Meus 20 dias no Peru
-description: >-
-  Um pouco do roteiro que fiz, lugares que me hospedei, trilhas que fiz, meus
-  equipamentos e mais.
-introduction: >-
-  Um pouco do roteiro que fiz, lugares que me hospedei, trilhas que fiz, meus
-  equipamentos e mais.
-twitter_text: >-
-  Um pouco do roteiro que fiz, lugares que me hospedei, trilhas que fiz, meus
-  equipamentos e mais.
+description: Um pouco do roteiro que fiz, lugares que me hospedei, trilhas que
+  fiz, meus equipamentos e mais.
 main-class: misc
-color: '#7AAB13'
 tags:
   - travel
   - ferias
   - airbnb
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

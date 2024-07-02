@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2021-12-20 11:16:50
+date: 2021-12-20T14:16:50.000Z
 title: Criando o efeito da chuva do Matrix com JavaScript puro
 description: Aprenda como criar esse efeito em poucas linhas manipulando o Canvas
 main-class: js
-color: "#D6BA32"
 tags:
   - js
   - canvas

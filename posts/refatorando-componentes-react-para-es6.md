@@ -1,19 +1,15 @@
 ---
 layout: post
-title: "Refatorando componentes React de ES5 para ES6"
-date: 2016-07-30 03:10:26
-image: '/assets/img/react-es5-es6/main.png'
-description: "Aproveite a nova sintaxe e entenda a diferença entre os códigos."
-main-class: 'js'
-color: '#D6BA32'
+date: 2016-07-30T06:10:26.000Z
+title: Refatorando componentes React de ES5 para ES6
+description: Aproveite a nova sintaxe e entenda a diferença entre os códigos.
+main-class: js
 tags:
-- react
-- js
-- tutorial
+  - react
+  - js
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Aproveite a nova sintaxe e entenda a diferença entre os códigos."
-introduction: "Aproveite a nova sintaxe e entenda a diferença entre os códigos."
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

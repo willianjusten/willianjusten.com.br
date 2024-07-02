@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'Utilizando SVG Sprites com React'
-date: 2016-06-03 20:30:39
-image: '/assets/img/react-svg/main.png'
-description: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil com Stateless Functions.'
-main-class: 'js'
-color: '#D6BA32'
+date: 2016-06-03T23:30:39.000Z
+title: Utilizando SVG Sprites com React
+description: Aprenda a utilizar os famosos ícones SVG dentro do React de forma
+  bem fácil com Stateless Functions.
+main-class: js
 tags:
   - react
   - js
   - tutorial
 categories:
-  - 'Aprendendo ReactJS'
-twitter_text: 'Aprenda a utilizar ícones SVG dentro do React de forma fácil.'
-introduction: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil.'
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

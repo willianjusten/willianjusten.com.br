@@ -1,18 +1,14 @@
 ---
 layout: post
-title: 'Criando botao animado com CSS e SVG'
-date: 2017-08-14 18:14:48
-image: '/assets/img/loader-button/main.png'
-description: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2017-08-14T21:14:48.000Z
+title: Criando botao animado com CSS e SVG
+description: Aprenda a criar uma interação mais bonita para os botões de sua aplicação.
+main-class: css
 tags:
   - css
   - svg
   - frontend
-categories:
-twitter_text: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
-introduction: 'Aprenda a criar uma interação mais bonita para os botões de sua aplicação.'
+categories: null
 ---
 
 ## Introdução

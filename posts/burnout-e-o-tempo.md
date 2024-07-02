@@ -1,10 +1,10 @@
 ---
 layout: post
-date: 2023-09-08 5:00:40
+date: 2023-09-08T08:00:40.000Z
 title: Burnout dura mais que você imagina!
-description: A gente pensa que aparece do nada e depois vai melhorar rápido e não é bem assim.
+description: A gente pensa que aparece do nada e depois vai melhorar rápido e
+  não é bem assim.
 main-class: misc
-color: '#7AAB13'
 tags:
   - vida
   - reflexão

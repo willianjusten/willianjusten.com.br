@@ -1,19 +1,15 @@
 ---
 layout: post
-title: '#8 - Estilizando SVG com CSS - Parte 2'
-date: 2015-03-08 12:58:00
-image: '/assets/img/estilizando-svg/main-2.png'
-description: 'Aprenda quais as propriedades que o SVG possui e como trabalhar com elas.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-03-08T15:58:00.000Z
+title: "#8 - Estilizando SVG com CSS - Parte 2"
+description: Aprenda quais as propriedades que o SVG possui e como trabalhar com elas.
+main-class: svg
 tags:
   - svg
   - css
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Estilizando SVG com CSS - Parte 2'
-introduction: 'Aprenda algumas propriedades que o SVG e como trabalhar com elas.'
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

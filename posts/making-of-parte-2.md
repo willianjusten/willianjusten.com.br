@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Making of Parte 2"
-date: 2015-01-04 22:21:31
-description: "Aqui vou mostrar o passo a passo de como criei o blog em Jekyll, usando Gulp e Stylus e coloquei para funcionar no Github Pages."
-image: "/assets/img/making-of-parte-2/imagem-principal.png"
-main-class: 'jekyll'
-color: '#B31917'
+date: 2015-01-05T00:21:31.000Z
+title: Making of Parte 2
+description: Aqui vou mostrar o passo a passo de como criei o blog em Jekyll,
+  usando Gulp e Stylus e coloquei para funcionar no Github Pages.
+main-class: jekyll
 tags:
-- jekyll
-- gulp
-- stylus
-- github pages
-twitter_text: "Making of parte 2"
-introduction: "Uma continuação sobre a criação do meu blog, mostrando um passo a passo de como criar um blog em Jekyll usando Gulp e Stylus e fazendo funcionar no Github Pages."
+  - jekyll
+  - gulp
+  - stylus
+  - github pages
 ---
 
 ## Introdução

@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Criando Reading Progress com CSS Variables'
-date: 2017-08-05 13:02:18
-image: '/assets/img/reading-progress/css-variables.png'
-description: 'Uma forma fácil de implementar uma barra de reading progress em poucas linhas.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2017-08-05T16:02:18.000Z
+title: Criando Reading Progress com CSS Variables
+description: Uma forma fácil de implementar uma barra de reading progress em poucas linhas.
+main-class: css
 tags:
   - css
   - frontend
-categories:
-twitter_text: 'Criando Reading Progress com CSS Variables.'
-introduction: 'Uma forma fácil de implementar uma barra de reading progress em poucas linhas.'
+categories: null
 ---
 
 ## Introdução

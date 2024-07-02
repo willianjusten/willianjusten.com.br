@@ -1,19 +1,11 @@
 ---
 layout: post
-date: '2018-06-01 01:09:38'
-image: /assets/img/menu-animado-cover.png
+date: 2018-06-01T04:09:38.000Z
 title: Criando Menu Fullscreen animado com CSS puro
-description: >-
-  Nesse post/video eu vou ensinar a segunda do nosso experimento, onde vamos
-  criar um menu fullscreen animado e aprender um pouco de cubic bezier.
-introduction: >-
-  Nesse post/video eu vou ensinar a segunda do nosso experimento, onde vamos
-  criar um menu fullscreen animado e aprender um pouco de cubic bezier.
-twitter_text: >-
-  Nesse post/video eu vou ensinar a segunda do nosso experimento, onde vamos
-  criar um menu fullscreen animado e aprender um pouco de cubic bezier.
+description: Nesse post/video eu vou ensinar a segunda do nosso experimento,
+  onde vamos criar um menu fullscreen animado e aprender um pouco de cubic
+  bezier.
 main-class: css
-color: '#2DA0C3'
 tags:
   - video
   - css

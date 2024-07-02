@@ -1,24 +1,15 @@
 ---
 layout: post
-date: '2020-04-20 12:34:33'
-image: /assets/img/remoto-cover.png
-title: 'Talk: Uma conversa sobre Trabalho Remoto'
-description: >-
-  Será que remoto é para todo mundo? Quais os desafios? Quais os ganhos? Por
-  onde começar?
-introduction: >-
-  Será que remoto é para todo mundo? Quais os desafios? Quais os ganhos? Por
-  onde começar?
-twitter_text: >-
-  Será que remoto é para todo mundo? Quais os desafios? Quais os ganhos? Por
-  onde começar?
+date: 2020-04-20T15:34:33.000Z
+title: "Talk: Uma conversa sobre Trabalho Remoto"
+description: Será que remoto é para todo mundo? Quais os desafios? Quais os
+  ganhos? Por onde começar?
 main-class: dev
-color: '#637a91'
 tags:
   - remoto
   - dicas
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

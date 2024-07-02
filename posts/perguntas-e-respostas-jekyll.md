@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Perguntas e Respostas - Jekyll"
-date: 2015-01-21 06:15:41
-image: '/assets/img/perguntas-jekyll/perguntas-jekyll.png'
-description: "Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funciona esse gerador estático."
-main-class: 'jekyll'
-color: '#B31917'
+date: 2015-01-21T08:15:41.000Z
+title: Perguntas e Respostas - Jekyll
+description: Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funciona
+  esse gerador estático.
+main-class: jekyll
 tags:
-- jekyll
-categories:
-twitter_text: "Perguntas e Respostas sobre Jekyll"
-introduction: "FAQ: Algumas dúvidas comuns sobre o Jekyll. Entenda melhor como funciona esse gerador estático e já saia usando."
+  - jekyll
+categories: null
 ---
 
 ## Introdução

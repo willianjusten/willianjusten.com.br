@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-02-21 04:12:03
-image: /assets/img/merge-array.png
+date: 2021-02-21T07:12:03.000Z
 title: Juntando arrays e objetos com Spread syntax no JavaScript
 description: Evite usar bibliotecas externas para coisas simples como fazer
   merge de objetos e arrays.
-introduction: Evite usar bibliotecas externas para coisas simples como fazer
-  merge de objetos e arrays.
-twitter_text: Evite usar bibliotecas externas para coisas simples como fazer
-  merge de objetos e arrays.
 main-class: js
-color: "#D6BA32"
 tags:
   - dicas
 categories:

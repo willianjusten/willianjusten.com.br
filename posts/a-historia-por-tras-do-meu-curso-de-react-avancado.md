@@ -1,13 +1,9 @@
 ---
 layout: post
 date: 2020-06-30T08:36:52.000Z
-image: /assets/img/react-avancado-cover.png
 title: A história por trás do meu curso de React Avançado
 description: As primeiras ideias do curso, desistências, saída da Toptal e reinicio de tudo!
-introduction: As primeiras ideias do curso, desistências, saída da Toptal e reinicio de tudo!
-twitter_text: As primeiras ideias do curso, desistências, saída da Toptal e reinicio de tudo!
 main-class: misc
-color: '#7AAB13'
 tags:
   - react
   - curso

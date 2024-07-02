@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2020-02-10 11:05:15'
-image: /assets/img/curso-windows-cover.png
-title: 'Novo Curso: Criando um ambiente de Desenvolvimento no Windows'
-description: 'Aprenda a ter um terminal bom, node e muito mais dentro do Windows'
-introduction: 'Aprenda a ter um terminal bom, node e muito mais dentro do Windows'
-twitter_text: 'Aprenda a ter um terminal bom, node e muito mais dentro do Windows'
+date: 2020-02-10T14:05:15.000Z
+title: "Novo Curso: Criando um ambiente de Desenvolvimento no Windows"
+description: Aprenda a ter um terminal bom, node e muito mais dentro do Windows
 main-class: dev
-color: '#637a91'
 tags:
   - windows
   - terminal

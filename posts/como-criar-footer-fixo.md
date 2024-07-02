@@ -1,17 +1,14 @@
 ---
 layout: post
-title: 'Como criar footer fixo'
-date: 2016-06-01 14:43:06
-image: '/assets/img/footer-fixo/main.png'
-description: 'Aprenda a criar um footer fixo e evite aqueles saltos feios quando se tem pouco conteúdo na tela.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-06-01T17:43:06.000Z
+title: Como criar footer fixo
+description: Aprenda a criar um footer fixo e evite aqueles saltos feios quando
+  se tem pouco conteúdo na tela.
+main-class: css
 tags:
   - css
   - frontend
-categories:
-twitter_text: 'Aprenda a criar um footer fixo e evite aqueles saltos feios na tela.'
-introduction: 'Aprenda a criar um footer fixo e evite aqueles saltos feios quando se tem pouco conteúdo na tela.'
+categories: null
 ---
 
 ## Introdução

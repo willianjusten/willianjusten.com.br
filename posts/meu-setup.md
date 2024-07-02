@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2018-10-19 04:03:08'
-image: /assets/img/my-setup.jpg
+date: 2018-10-19T07:03:08.000Z
 title: Meu Setup
-description: 'Quais ferramentas eu tenho, que programas eu uso e outras coisinhas mais.'
-introduction: 'Quais ferramentas eu tenho, que programas eu uso e outras coisinhas mais.'
-twitter_text: 'Quais ferramentas eu tenho, que programas eu uso e outras coisinhas mais.'
+description: Quais ferramentas eu tenho, que programas eu uso e outras coisinhas mais.
 main-class: misc
-color: '#7AAB13'
 tags:
   - setup
   - code

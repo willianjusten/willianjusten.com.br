@@ -1,11 +1,10 @@
 ---
 layout: post
-date: 2021-09-14 10:31:30
+date: 2021-09-14T13:31:30.000Z
 title: Configurando 2 contas de Git no mesmo computador
 description: Aprenda como configurar uma conta pessoal e uma conta da empresa no
   Git, incluindo chaves SSH e emails.
 main-class: dev
-color: "#637a91"
 tags:
   - git
   - dev

@@ -1,19 +1,15 @@
 ---
 layout: post
-date: '2019-07-25 07:17:49'
-image: /assets/img/viagem-chile.jpg
+date: 2019-07-25T10:17:49.000Z
 title: Meus 15 dias no Chile
-description: 'Meu roteiro, lugares que me hospedei, passeios que fiz e outras curiosidades.'
-introduction: 'Meu roteiro, lugares que me hospedei, passeios que fiz e outras curiosidades.'
-twitter_text: 'Meu roteiro, lugares que me hospedei, passeios que fiz e outras curiosidades.'
+description: Meu roteiro, lugares que me hospedei, passeios que fiz e outras curiosidades.
 main-class: misc
-color: '#7AAB13'
 tags:
   - viagem
   - remoto
   - exterior
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

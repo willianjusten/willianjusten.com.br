@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Como melhorar meu SEO?"
-date: 2015-01-09 21:21:53
-description: "Algumas dicas para fazer com que seu site ou blog seja melhor indexado pelos buscadores."
-image: "/assets/img/seo/seo.jpg"
-main-class: 'dev'
-color: '#637a91'
+date: 2015-01-09T23:21:53.000Z
+title: Como melhorar meu SEO?
+description: Algumas dicas para fazer com que seu site ou blog seja melhor
+  indexado pelos buscadores.
+main-class: dev
 tags:
-- seo
-- tutorial
-twitter_text: "Como melhorar meu SEO?"
-introduction: "Quer aparecer entre os primeiros do Google? Quer vender mais e ter mais acessos? Aprenda algumas técnicas de SEO para ser melhor indexado."
+  - seo
+  - tutorial
 ---
 
 ![SEO](/assets/img/seo/seo.jpg)

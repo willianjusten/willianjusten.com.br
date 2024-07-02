@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Trabalhando com Git Hooks de forma fácil"
-date: 2016-07-10 12:37:37
-image: '/assets/img/git-hooks/main.png'
-description: "Evite que código sujo ou não testado suba para o repositório remoto."
-main-class: 'dev'
-color: '#637a91'
+date: 2016-07-10T15:37:37.000Z
+title: Trabalhando com Git Hooks de forma fácil
+description: Evite que código sujo ou não testado suba para o repositório remoto.
+main-class: dev
 tags:
-- git
-- tutorial
-categories:
-twitter_text: "Evite que código sujo ou não testado suba para o repositório remoto."
-introduction: "Garanta a qualidade e evite que código sujo ou não testado suba para o repositório remoto."
+  - git
+  - tutorial
+categories: null
 ---
 
 ## Introdução

@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Video em Background com Object-fit'
-date: 2016-06-13 13:01:32
-image: '/assets/img/video-bg/main-video.png'
-description: 'Como criar os famosos heros com vídeos full em background usando o object-fit.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-06-13T16:01:32.000Z
+title: Video em Background com Object-fit
+description: Como criar os famosos heros com vídeos full em background usando o object-fit.
+main-class: css
 tags:
   - css
   - frontend
-categories:
-twitter_text: 'Como criar os famosos heros com vídeos usando o object-fit.'
-introduction: 'Como criar os famosos heros com vídeos full em background usando o object-fit.'
+categories: null
 ---
 
 ## Introdução

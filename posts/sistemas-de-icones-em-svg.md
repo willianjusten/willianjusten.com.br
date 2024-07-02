@@ -1,19 +1,15 @@
 ---
 layout: post
-title: '#6 - Sistemas de Ícones em SVG'
-date: 2015-03-06 19:33:23
-image: '/assets/img/svg-icons/main.png'
-description: 'Como usar ícones em SVG e por que ele é bem melhor que outras alternativas?'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-03-06T22:33:23.000Z
+title: "#6 - Sistemas de Ícones em SVG"
+description: Como usar ícones em SVG e por que ele é bem melhor que outras alternativas?
+main-class: svg
 tags:
   - svg
   - icons
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Como usar ícones em SVG e por que ele é bem melhor que outras alternativas? '
-introduction: "Como dizem 'Uma imagem vale mais que mil palavras' e isso é um fato. Muitas vezes conseguimos simbolizar uma ação apenas com uma imagem. Então vamos aprender a usar ícones em SVG."
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

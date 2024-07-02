@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-02-08 03:37:19'
-image: /assets/img/captain-hook.jpg
+date: 2019-02-08T05:37:19.000Z
 title: Habemus React Hooks
-description: >-
-  Uma das features mais interessantes do React foi finalmente lançada, o famoso
-  Hooks! Por que é tão legal assim?
-introduction: >-
-  Uma das features mais interessantes do React foi finalmente lançada, o famoso
-  Hooks! Por que é tão legal assim?
-twitter_text: >-
-  Uma das features mais interessantes do React foi finalmente lançada, o famoso
-  Hooks! Por que é tão legal assim?
+description: Uma das features mais interessantes do React foi finalmente
+  lançada, o famoso Hooks! Por que é tão legal assim?
 main-class: js
-color: '#D6BA32'
 tags:
   - react
   - js

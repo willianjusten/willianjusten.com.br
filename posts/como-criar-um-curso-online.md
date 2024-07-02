@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-10-29 02:55:18'
-image: /assets/img/criar-curso-online.jpg
+date: 2018-10-29T05:55:18.000Z
 title: Como criar um Curso Online
-description: >-
-  Algumas dicas de como dividir seu curso, materiais de apoio, softwares que
-  utilizo e outras coisas mais.
-introduction: >-
-  Algumas dicas de como dividir seu curso, materiais de apoio, softwares que
-  utilizo e outras coisas mais, desde que iniciei essa minha vida com cursos.
-twitter_text: >-
-  Algumas dicas de como dividir seu curso, materiais de apoio, softwares que
-  utilizo e outras coisas mais.
+description: Algumas dicas de como dividir seu curso, materiais de apoio,
+  softwares que utilizo e outras coisas mais.
 main-class: misc
-color: '#7AAB13'
 tags:
   - courses
   - udemy

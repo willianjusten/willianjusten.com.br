@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2020-05-14 03:44:15
-image: /assets/img/card-animation-cover.png
+date: 2020-05-14T06:44:15.000Z
 title: Criando uma animacao de Card com Hover
 description: Aprenda a fazer uma animação bem legal utilizar os pseudo-seletores
   :after e :before
-introduction: Aprenda a fazer uma animação bem legal utilizar os
-  pseudo-seletores :after e :before
-twitter_text: Aprenda a fazer uma animação bem legal utilizar os
-  pseudo-seletores :after e :before
 main-class: css
-color: "#2DA0C3"
 tags:
   - css
   - videos

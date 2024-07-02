@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2021-02-18 12:20:55
-image: /assets/img/codigo-bonito.png
+date: 2021-02-18T15:20:55.000Z
 title: Criando imagens bonitas de código
 description: Já viu blocos de código bonitos no Twitter e sempre quis fazer? Chegou sua vez!
-introduction: Já viu blocos de código bonitos no Twitter e sempre quis fazer? Chegou sua vez!
-twitter_text: Já viu blocos de código bonitos no Twitter e sempre quis fazer? Chegou sua vez!
 main-class: misc
-color: "#7AAB13"
 tags:
   - dica
 categories:

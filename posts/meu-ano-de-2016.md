@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Meu ano de 2016"
-date: 2016-12-22 23:21:04
-image: '/assets/img/meu-ano-2016/main.png'
-description: 'Um ano super cheio, com vários eventos, projetos, mudanças e muito mais.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-12-23T01:21:04.000Z
+title: Meu ano de 2016
+description: Um ano super cheio, com vários eventos, projetos, mudanças e muito mais.
+main-class: misc
 tags:
-- dev
-- review
-categories:
-twitter_text: 'E foi um ano bem cheio hein! Muito aprendizado e conquistas.'
-introduction: 'Um ano super cheio, com vários eventos, projetos, mudanças e muito mais.'
+  - dev
+  - review
+categories: null
 ---
 
 ## Introdução

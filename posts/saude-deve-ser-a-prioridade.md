@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2018-07-24 09:19:43'
-image: /assets/img/saude.jpg
-title: 'Nem React, nem VueJs. Saúde deve ser uma prioridade'
+date: 2018-07-24T12:19:43.000Z
+title: Nem React, nem VueJs. Saúde deve ser uma prioridade
 description: Uma conversa séria de um dev que se arrepende de algumas escolhas.
-introduction: Uma conversa séria de um dev que se arrepende de algumas escolhas.
-twitter_text: Uma conversa séria de um dev que se arrepende de algumas escolhas.
 main-class: misc
-color: '#7AAB13'
 tags:
   - saude
   - lifestyle

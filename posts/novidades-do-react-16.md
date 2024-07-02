@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "Novidades do React 16"
-date: 2017-09-28 17:59:22
-image: '/assets/img/react-16/main.png'
-description: "Veja o que tem de novo com o novo lançamento do React."
-main-class: 'js'
-color: '#D6BA32'
+date: 2017-09-28T20:59:22.000Z
+title: Novidades do React 16
+description: Veja o que tem de novo com o novo lançamento do React.
+main-class: js
 tags:
-- react
-- js
-categories:
-twitter_text: "Veja o que tem de novo com o novo lançamento do React."
-introduction: "Veja o que tem de novo com o novo lançamento do React."
+  - react
+  - js
+categories: null
 ---
 
 ## Introdução

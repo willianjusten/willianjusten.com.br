@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Novo projeto Awesome Audio Viz"
-date: 2016-03-27 00:24:29
-image: '/assets/img/audio/awesome-audio-visualization.png'
-main-class: 'dev'
-color: '#637a91'
-description: "Quem já acessou esse blog uma vez na vida já viu como eu amo música, por que não um projeto usando música?"
+date: 2016-03-27T03:24:29.000Z
+title: Novo projeto Awesome Audio Viz
+description: Quem já acessou esse blog uma vez na vida já viu como eu amo
+  música, por que não um projeto usando música?
+main-class: dev
 tags:
-    - dev
-    - audio
-    - creative
-categories:
-twitter_text: "Junte Música + Web + JS e você tem o paraíso!"
-introduction: "Quem já acessou esse blog uma vez na vida já viu como eu amo música, por que não um projeto usando música?"
+  - dev
+  - audio
+  - creative
+categories: null
 ---
 
 ## Introdução

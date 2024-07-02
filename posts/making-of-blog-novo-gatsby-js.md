@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-07-13 10:43:12'
-image: /assets/img/img/new-blog.png
+date: 2019-07-13T13:43:12.000Z
 title: Making of - Criando meu Blog Novo com GatsbyJS
-description: >-
-  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
-  outras coisas.
-introduction: >-
-  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
-  outras coisas.
-twitter_text: >-
-  Coisas que usei por trás desse blog, escolhas de visual, performance e muitas
-  outras coisas.
+description: Coisas que usei por trás desse blog, escolhas de visual,
+  performance e muitas outras coisas.
 main-class: js
-color: '#D6BA32'
 tags:
   - js
   - gatsby

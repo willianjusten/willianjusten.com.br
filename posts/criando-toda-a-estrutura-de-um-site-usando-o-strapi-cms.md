@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-03-06 11:57:17
-image: /assets/img/strapi-estrutura.png
+date: 2021-03-06T14:57:17.000Z
 title: Criando toda a estrutura de um site usando o Strapi CMS
 description: Nessa aula eu mostro como penso e monto o backend de um site
   institucional simples.
-introduction: Nessa aula eu mostro como penso e monto o backend de um site
-  institucional simples.
-twitter_text: Nessa aula eu mostro como penso e monto o backend de um site
-  institucional simples.
 main-class: dev
-color: "#637a91"
 tags:
   - dicas
   - strapi

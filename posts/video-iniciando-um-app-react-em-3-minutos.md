@@ -1,20 +1,16 @@
 ---
 layout: post
+date: 2016-08-14T22:29:39.000Z
 title: "Vídeo: Iniciando um app React em 3 minutos"
-date: 2016-08-14 19:29:39
-image: '/assets/img/create-react-app/create-react-app.png'
-description: "Iniciar um projeto React não precisa e nem deve ser muito trabalhoso."
-main-class: 'js'
-color: '#D6BA32'
+description: Iniciar um projeto React não precisa e nem deve ser muito trabalhoso.
+main-class: js
 tags:
-- react
-- js
-- video
-- tutorial
+  - react
+  - js
+  - video
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Iniciando um app React em 3 minutos."
-introduction: "Iniciar um projeto React não precisa e nem deve ser muito trabalhoso. Vamos aprender como mudar isso =D"
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

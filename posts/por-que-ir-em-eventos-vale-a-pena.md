@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Por que ir em eventos vale a pena?"
-date: 2015-03-29 11:35:14
-image: '/assets/img/eventos/main.png'
-description: "Alguns dos motivos que fazem os eventos serem tão sensacionais e que todos deveríamos ir."
-main-class: 'misc'
-color: '#7AAB13'
+date: 2015-03-29T14:35:14.000Z
+title: Por que ir em eventos vale a pena?
+description: Alguns dos motivos que fazem os eventos serem tão sensacionais e
+  que todos deveríamos ir.
+main-class: misc
 tags:
-- eventos
-- frontend
-categories:
-twitter_text: "Alguns dos motivos que fazem os eventos serem tão sensacionais!"
-introduction: "Alguns dos motivos que fazem os eventos de desenvolvimento serem tão sensacionais e que todos deveríamos ir."
+  - eventos
+  - frontend
+categories: null
 ---
 
 ## Introdução

@@ -1,13 +1,9 @@
 ---
 layout: post
 date: 2020-12-28T02:53:47.000Z
-image: /assets/img/meu-ano-2020.png
 title: Meu ano de 2020
 description: Um ano complicado, mas com boas vitórias também.
-introduction: Um ano complicado, mas com boas vitórias também.
-twitter_text: Um ano complicado, mas com boas vitórias também.
 main-class: misc
-color: "#7AAB13"
 tags:
   - retrospectiva
 ---

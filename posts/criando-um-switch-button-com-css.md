@@ -1,17 +1,14 @@
 ---
 layout: post
-title: 'Criando um switch button com CSS'
-date: 2015-12-06 20:42:25
-image: '/assets/img/on-off/on-off-ios.jpg'
-description: 'Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2015-12-06T22:42:25.000Z
+title: Criando um switch button com CSS
+description: Aprenda a criar os famosos botões deslizantes de on/off usados no
+  iOS, Android e WebApps.
+main-class: css
 tags:
   - css
   - tutorial
-categories:
-twitter_text: 'Aprenda a criar os famosos botões de on/off usados no iOS, Android e WebApps.'
-introduction: 'Aprenda a criar os famosos botões deslizantes de on/off usados no iOS, Android e WebApps. E deixe a usabilidade do seu sistema melhor.'
+categories: null
 ---
 
 ## Introdução

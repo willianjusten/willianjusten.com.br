@@ -1,19 +1,16 @@
 ---
 layout: post
+date: 2016-04-21T21:15:10.000Z
 title: "Pre-venda: Curso de SVG"
-date: 2016-04-21 18:15:10
-image: '/assets/img/pre-venda-svg/pre-venda-svg.png'
-description: 'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
-main-class: 'svg'
-color: '#7D669E'
+description: Se adiante e adquira um dos cursos mais completos de SVG totalmente
+  em português.
+main-class: svg
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: 'Se adiante e adquira um dos cursos mais completos de SVG.'
-introduction: 'Se adiante e adquira um dos cursos mais completos de SVG totalmente em português.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-03-06 04:23:39'
-image: /assets/img/lib-js-testes.jpg
+date: 2019-03-06T07:23:39.000Z
 title: Criando uma lib JS com testes do Zero
-description: >-
-  Uma mini-série de vídeos no Youtube onde eu ensino a criar uma lib JS simples
-  usando testes do zero.
-introduction: >-
-  Uma mini-série de vídeos no Youtube onde eu ensino a criar uma lib JS simples
-  usando testes do zero.
-twitter_text: >-
-  Uma mini-série de vídeos no Youtube onde eu ensino a criar uma lib JS simples
-  usando testes do zero.
+description: Uma mini-série de vídeos no Youtube onde eu ensino a criar uma lib
+  JS simples usando testes do zero.
 main-class: js
-color: '#D6BA32'
 tags:
   - youtube
   - testes

@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-07-30 11:11:25'
-image: /assets/img/own-your-platform.jpeg
-title: 'Diga não ao Medium: tenha sua própria plataforma'
-description: >-
-  Algumas razões para você ter sua própria plataforma ao invés de soluções como
-  o Medium.
-introduction: >-
-  Algumas razões para você ter sua própria plataforma ao invés de soluções como
-  o Medium.
-twitter_text: >-
-  Algumas razões para você ter sua própria plataforma ao invés de soluções como
-  o Medium.
+date: 2019-07-30T14:11:25.000Z
+title: "Diga não ao Medium: tenha sua própria plataforma"
+description: Algumas razões para você ter sua própria plataforma ao invés de
+  soluções como o Medium.
 main-class: misc
-color: '#7AAB13'
 tags:
   - blog
   - medium

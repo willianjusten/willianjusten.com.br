@@ -1,17 +1,14 @@
 ---
 layout: post
+date: 2015-01-16T16:51:33.000Z
 title: "#3 - Onde baixar SVG?"
-date: 2015-01-16 14:51:33
-image: '/assets/img/baixar-svg/baixar-svg.png'
-description: "Eu sou programador e não designer, como é que vou fazer essas coisas aí? Aqui vou mostrar que não precisa ser designer para poder usar SVG."
-main-class: 'svg'
-color: '#7D669E'
+description: Eu sou programador e não designer, como é que vou fazer essas
+  coisas aí? Aqui vou mostrar que não precisa ser designer para poder usar SVG.
+main-class: svg
 tags:
-- svg
+  - svg
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Onde baixar SVG?"
-introduction: "Eu sou programador e não designer, como é que vou fazer essas coisas aí? Aqui vou mostrar que não precisa ser designer para poder usar SVG. Vários links para baixar SVG de vários sites."
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

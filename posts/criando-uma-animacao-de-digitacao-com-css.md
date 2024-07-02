@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2020-04-21 06:04:15'
-image: /assets/img/typing-cover.png
+date: 2020-04-21T09:04:15.000Z
 title: Criando uma animação de digitação com CSS
-description: >-
-  Como fazer um efeito parecido com uma máquina de escrever digitando na tela
-  somente só CSS.
-introduction: >-
-  Como fazer um efeito parecido com uma máquina de escrever digitando na tela
-  somente só CSS.
-twitter_text: >-
-  Como fazer um efeito parecido com uma máquina de escrever digitando na tela
-  somente só CSS.
+description: Como fazer um efeito parecido com uma máquina de escrever digitando
+  na tela somente só CSS.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - videos

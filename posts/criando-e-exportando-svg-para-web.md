@@ -1,19 +1,16 @@
 ---
 layout: post
+date: 2016-02-06T15:29:04.000Z
 title: "#16 - Criando e Exportando SVG para Web"
-date: 2016-02-06 13:29:04
-image: '/assets/img/svg-export/google-svg-logos.png'
-description: 'Aprenda como otimizar seu SVG para ter a melhor entrega para web. Se você é designer ajude seu amigo dev.'
-main-class: 'svg'
-color: '#7D669E'
+description: Aprenda como otimizar seu SVG para ter a melhor entrega para web.
+  Se você é designer ajude seu amigo dev.
+main-class: svg
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: 'Aprenda como otimizar seu SVG para ter a melhor entrega para web'
-introduction: 'Aprenda como otimizar seu SVG para ter a melhor entrega para web. Se você é designer ajude seu amigo dev.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

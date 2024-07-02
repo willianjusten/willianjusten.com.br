@@ -1,19 +1,16 @@
 ---
 layout: post
+date: 2015-05-24T18:25:53.000Z
 title: "#11 - Usando SVG Sprites"
-date: 2015-05-24 15:25:53
-image: '/assets/img/svg-sprites/main.png'
-description: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda a utilizar essa técnica com SVG de várias formas."
-main-class: 'svg'
-color: '#7D669E'
+description: Já foi provado que o SVG substitui icon fonts, mas e Sprites?
+  Aprenda a utilizar essa técnica com SVG de várias formas.
+main-class: svg
 tags:
-- svg
-- css
-- tutorial
+  - svg
+  - css
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda as técnicas de como usar."
-introduction: "Já foi provado que o SVG substitui icon fonts, mas e Sprites? Aprenda como utilizar essa técnica com SVG de várias formas."
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

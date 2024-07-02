@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-06-30 01:02:12
-image: /assets/img/melhores-oportunidades.png
+date: 2021-06-30T04:02:12.000Z
 title: Como ter um Blog ajuda a conseguir melhores oportunidades
 description: Se você está procurando um emprego ou melhores oportunidades, ter
   um blog pode ajudar muito!
-introduction: Se você está procurando um emprego ou melhores oportunidades, ter
-  um blog pode ajudar muito!
-twitter_text: Se você está procurando um emprego ou melhores oportunidades, ter
-  um blog pode ajudar muito!
 main-class: dev
-color: "#637a91"
 tags:
   - blog
   - code

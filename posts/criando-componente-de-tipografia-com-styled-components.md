@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2021-03-06 10:50:06
-image: /assets/img/maxresdefault.jpg
+date: 2021-03-06T13:50:06.000Z
 title: Criando componente de Tipografia com styled-components
 description: Utilizando o poder do polymorphic no styled-components
-introduction: Utilizando o poder do polymorphic no styled-components
-twitter_text: Utilizando o poder do polymorphic no styled-components
 main-class: js
-color: "#D6BA32"
 tags:
   - dicas
 categories:

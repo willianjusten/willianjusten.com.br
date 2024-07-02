@@ -1,17 +1,13 @@
 ---
 layout: post
-title: 'Mais de 10 mil alunos na Udemy'
-date: 2017-08-17 17:02:17
-image: '/assets/img/udemy/main.jpg'
-description: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2017-08-17T20:02:17.000Z
+title: Mais de 10 mil alunos na Udemy
+description: Um pouco sobre esse número, processo de criação de cursos e mais.
+main-class: misc
 tags:
   - cursos
   - udemy
-categories:
-twitter_text: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
-introduction: 'Um pouco sobre esse número, processo de criação de cursos e mais.'
+categories: null
 ---
 
 ## Introdução

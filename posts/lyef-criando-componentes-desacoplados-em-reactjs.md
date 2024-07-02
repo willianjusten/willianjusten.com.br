@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Lyef - Criando componentes desacoplados em ReactJS"
-date: 2017-08-19 15:31:42
-image: '/assets/img/lyef-1/main.png'
-description: "Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS"
-main-class: 'js'
-color: '#D6BA32'
+date: 2017-08-19T18:31:42.000Z
+title: Lyef - Criando componentes desacoplados em ReactJS
+description: Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS
+main-class: js
 tags:
-- react
-- js
+  - react
+  - js
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS"
-introduction: "Um boilerplate para criar componentes reutilizáveis e desacoplados em ReactJS"
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

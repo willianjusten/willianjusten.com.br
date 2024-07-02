@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Minha trajetoria até me tornar Desenvolvedor"
-date: 2017-06-21 19:49:40
-image: '/assets/img/external/hate-programming.png'
-description: 'Uma pequena entrevista onde falo sobre meus primeiros trabalhos, desafios e meu futuro.'
-main-class: 'dev'
-color: '#637a91'
+date: 2017-06-21T22:49:40.000Z
+title: Minha trajetoria até me tornar Desenvolvedor
+description: Uma pequena entrevista onde falo sobre meus primeiros trabalhos,
+  desafios e meu futuro.
+main-class: dev
 tags:
-- dev
-- remoto
-categories:
-twitter_text: 'Uma entrevista onde falo sobre meus primeiros trabalhos, desafios e mais'
-introduction: 'Uma pequena entrevista onde falo sobre meus primeiros trabalhos, desafios e meu futuro.'
+  - dev
+  - remoto
+categories: null
 ---
 
 ## Introdução

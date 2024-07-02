@@ -1,19 +1,15 @@
 ---
 layout: post
-title: '#3 - O básico da API do ReactJS'
-date: 2015-07-17 00:18:37
-image: '/assets/img/react-3/main.png'
-description: 'Aprenda um pouco mais sobre a API do React e como começar a brincar.'
-main-class: 'js'
-color: '#D6BA32'
+date: 2015-07-17T03:18:37.000Z
+title: "#3 - O básico da API do ReactJS"
+description: Aprenda um pouco mais sobre a API do React e como começar a brincar.
+main-class: js
 tags:
   - react
   - js
   - tutorial
 categories:
-  - 'Aprendendo ReactJS'
-twitter_text: 'Aprenda um pouco mais sobre os principais métodos do ReactJS.'
-introduction: 'Aprenda um pouco mais sobre a API do React e como começar a brincar.'
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

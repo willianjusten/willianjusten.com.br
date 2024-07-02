@@ -1,20 +1,16 @@
 ---
 layout: post
-title: 'Mask e Clip com CSS e SVG'
-date: 2018-01-24 19:31:00
-image: '/assets/img/mask-svg/main.png'
-description: 'Dois efeitos simples que podem transformar seu site com estilo.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2018-01-24T21:31:00.000Z
+title: Mask e Clip com CSS e SVG
+description: Dois efeitos simples que podem transformar seu site com estilo.
+main-class: svg
 tags:
   - svg
   - css
   - mask
   - clip
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Dois efeitos simples que podem transformar seu site com estilo.'
-introduction: 'Dois efeitos simples que podem transformar seu site com estilo.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

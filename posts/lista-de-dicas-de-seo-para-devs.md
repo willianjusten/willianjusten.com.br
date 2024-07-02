@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2019-08-20 11:36:57'
-image: /assets/img/lista-dicas-seo.jpg
+date: 2019-08-20T14:36:57.000Z
 title: Lista de dicas de SEO para Devs
 description: Algumas dicas que podem ajudar o seu site se destacar nas pesquisas do Google.
-introduction: Algumas dicas que podem ajudar o seu site se destacar nas pesquisas do Google.
-twitter_text: Algumas dicas que podem ajudar o seu site se destacar nas pesquisas do Google.
 main-class: dev
-color: '#637a91'
 tags:
   - seo
   - frontend

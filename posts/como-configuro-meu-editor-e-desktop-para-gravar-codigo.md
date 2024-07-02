@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-03-06 11:30:49
-image: /assets/img/editor-de-codigo.png
+date: 2021-03-06T14:30:49.000Z
 title: Como configuro meu editor e desktop para gravar código
 description: São muitos anos gravando aulas, então aqui compartilho algumas
   coisas que descobri.
-introduction: São muitos anos gravando aulas, então aqui compartilho algumas
-  coisas que descobri.
-twitter_text: São muitos anos gravando aulas, então aqui compartilho algumas
-  coisas que descobri.
 main-class: misc
-color: "#7AAB13"
 tags:
   - Dicas
 categories:

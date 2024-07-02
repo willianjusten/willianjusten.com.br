@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-05-29 08:10:42'
-image: /assets/img/web-perf-html-cover.jpg
-title: 'Performance Web: Evite escrever HTML demais'
-description: >-
-  Calma, HTML ainda é importante, mas é legal ficarmos atentos a quantidade de
-  nós criados.
-introduction: >-
-  Calma, HTML ainda é importante, mas é legal ficarmos atentos a quantidade de
-  nós criados.
-twitter_text: >-
-  Calma, HTML ainda é importante, mas é legal ficarmos atentos a quantidade de
-  nós criados.
+date: 2018-05-29T11:10:42.000Z
+title: "Performance Web: Evite escrever HTML demais"
+description: Calma, HTML ainda é importante, mas é legal ficarmos atentos a
+  quantidade de nós criados.
 main-class: dev
-color: '#637a91'
 tags:
   - performance
   - seo

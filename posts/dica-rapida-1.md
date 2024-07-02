@@ -1,14 +1,12 @@
 ---
 layout: post
-title: 'Dica rápida #1'
-date: 2015-01-07 21:31:05
-description: 'Detalhes fazem a diferença, vamos falar sobre Favicons, Touch Icons e Tile Icons e como eles fazem a diferença.'
-main-class: 'dev'
-color: '#637a91'
+date: 2015-01-07T23:31:05.000Z
+title: "Dica rápida #1"
+description: Detalhes fazem a diferença, vamos falar sobre Favicons, Touch Icons
+  e Tile Icons e como eles fazem a diferença.
+main-class: dev
 tags:
-  - 'dicarapida'
-twitter_text: 'Favicons, touch icons e tile icons...'
-introduction: 'Qual a importância dos favicons, touch icons e tile icons. Como criá-los automáticamente e como usá-los em seu site.'
+  - dicarapida
 ---
 
 Já que estou participando da campanha do [Fernando Daciuk](http://blog.da2k.com.br/) que é o **#1postperday**, resolvi criar uma outra hashtag, que será a **#dicarapida**. Como o próprio nome diz, serão dicas rápidas, mas que as vezes a gente não faz ou esquece ou ninguém falou por ser "bobo".

@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "O que ninguém diz para os iniciantes"
-date: 2016-03-26 10:38:25
-image: '/assets/img/beginners/beginners.png'
-description: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes e o processo criativo."
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-03-26T13:38:25.000Z
+title: O que ninguém diz para os iniciantes
+description: Análise de uma famosa entrevista com Ira Glass sobre iniciantes e o
+  processo criativo.
+main-class: misc
 tags:
-    - dev
-    - creative
-categories:
-twitter_text: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes."
-introduction: "Análise de uma famosa entrevista com Ira Glass sobre iniciantes e o processo criativo."
+  - dev
+  - creative
+categories: null
 ---
 
 ## Introdução

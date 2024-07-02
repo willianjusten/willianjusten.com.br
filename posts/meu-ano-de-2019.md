@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2019-12-27 12:30:11'
-image: /assets/img/willian-justen-de-vasconcellos-q1tvymwgwpw-unsplash.jpg
+date: 2019-12-27T15:30:11.000Z
 title: Meu ano de 2019
-description: 'Um ano movimentado na Toptal, blog novo, curso novo e viagens como sempre.'
-introduction: 'Um ano movimentado na Toptal, blog novo, curso novo e viagens como sempre.'
-twitter_text: 'Um ano movimentado na Toptal, blog novo, curso novo e viagens como sempre.'
+description: Um ano movimentado na Toptal, blog novo, curso novo e viagens como sempre.
 main-class: misc
-color: '#7AAB13'
 tags:
   - cursos
   - blog

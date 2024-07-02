@@ -1,19 +1,16 @@
 ---
 layout: post
-title: "Ano novo, blog novo"
-date: 2016-01-01 14:00:59
-image: '/assets/img/blog-novo/home-new.png'
-description: 'Nada melhor que começar o ano com novidades né? Para isso, preparei um novo visual para blog, espero que gostem e todo feedback é bem vindo!'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2016-01-01T16:00:59.000Z
+title: Ano novo, blog novo
+description: Nada melhor que começar o ano com novidades né? Para isso, preparei
+  um novo visual para blog, espero que gostem e todo feedback é bem vindo!
+main-class: misc
 tags:
-- frontend
-- dev
-- theme
-- jekyll
-categories:
-twitter_text: 'Ano novo, blog novo! Veja o que achou do novo visual!'
-introduction: 'Nada melhor que começar o ano com novidades né? Para isso, preparei um novo visual para blog, espero que gostem e todo feedback é bem vindo!'
+  - frontend
+  - dev
+  - theme
+  - jekyll
+categories: null
 ---
 
 ## Introdução

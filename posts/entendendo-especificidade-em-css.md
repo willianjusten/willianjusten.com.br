@@ -1,22 +1,13 @@
 ---
 layout: post
-date: '2020-04-06 02:43:00'
-image: /assets/img/css-rules.jpg
+date: 2020-04-06T05:43:00.000Z
 title: Entendendo especificidade em CSS
-description: >-
-  O CSS não é difícil, mas é fundamental entender suas regras para não ficar
-  tentando as coisas na sorte.
-introduction: >-
-  O CSS não é difícil, mas é fundamental entender suas regras para não ficar
-  tentando as coisas na sorte.
-twitter_text: >-
-  O CSS não é difícil, mas é fundamental entender suas regras para não ficar
-  tentando as coisas na sorte.
+description: O CSS não é difícil, mas é fundamental entender suas regras para
+  não ficar tentando as coisas na sorte.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
-  - ''
+  - ""
 ---
 ## Introdução
 

@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2020-05-08 07:17:19
-image: /assets/img/dracula-pro-cover.png
-title: 'Um tema para todos os lugares: Dracula PRO'
+date: 2020-05-08T10:17:19.000Z
+title: "Um tema para todos os lugares: Dracula PRO"
 description: Deixe seu editor, terminal e muito mais com seu tema favorito.
-introduction: Deixe seu editor, terminal e muito mais com seu tema favorito.
-twitter_text: Deixe seu editor, terminal e muito mais com seu tema favorito.
 main-class: dev
-color: '#637a91'
 tags:
   - vscode
   - dicas

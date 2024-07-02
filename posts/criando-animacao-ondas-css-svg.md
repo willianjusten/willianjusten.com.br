@@ -1,13 +1,10 @@
 ---
 layout: post
-date: 2020-04-30 18:38:15
-image: /assets/img/wave-animation-cover.png
+date: 2020-04-30T21:38:15.000Z
 title: Criando uma animação de ondas com CSS e SVG
-description: Aprenda a animar ondas feitas em SVG somente com CSS puro e cria um hero muito mais criativo e bonito.
-introduction: Aprenda a animar ondas feitas em SVG somente com CSS puro e cria um hero muito mais criativo e bonito.
-twitter_text: Aprenda a animar ondas feitas em SVG somente com CSS puro e cria um hero muito mais criativo e bonito.
+description: Aprenda a animar ondas feitas em SVG somente com CSS puro e cria um
+  hero muito mais criativo e bonito.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - videos

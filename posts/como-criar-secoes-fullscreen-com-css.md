@@ -1,17 +1,14 @@
 ---
 layout: post
-title: 'Como criar seções fullscreen com CSS'
-date: 2015-07-19 13:44:01
-image: '/assets/img/header-full/main.png'
-description: 'Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer também.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2015-07-19T16:44:01.000Z
+title: Como criar seções fullscreen com CSS
+description: Vários sites famosos criam divisões grandes na tela que chamam
+  bastante atenção, vamos aprender a fazer também.
+main-class: css
 tags:
   - css
   - tutorial
-categories:
-twitter_text: 'Como criar seções fullscreen com CSS e chamar atenção dos usuários.'
-introduction: 'Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units.'
+categories: null
 ---
 
 ## Introdução

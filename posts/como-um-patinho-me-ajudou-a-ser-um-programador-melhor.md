@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-09-06 10:06:02'
-image: /assets/img/rubber-duck.jpg
+date: 2019-09-06T13:06:02.000Z
 title: Como um patinho me ajudou a ser um programador melhor
-description: >-
-  Sim, é isso mesmo, um patinho de borracha pode ajudar demais a você encontrar
-  seus bugs.
-introduction: >-
-  Sim, é isso mesmo, um patinho de borracha pode ajudar demais a você encontrar
-  seus bugs.
-twitter_text: >-
-  Sim, é isso mesmo, um patinho de borracha pode ajudar demais a você encontrar
-  seus bugs.
+description: Sim, é isso mesmo, um patinho de borracha pode ajudar demais a você
+  encontrar seus bugs.
 main-class: dev
-color: '#637a91'
 tags:
   - debug
   - code

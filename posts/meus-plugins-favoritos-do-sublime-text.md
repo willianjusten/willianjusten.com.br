@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Meus plugins favoritos do Sublime Text"
-date: 2016-03-21 18:48:36
-image: '/assets/img/sublime-plugins/sublime-tema.png'
-description: "Confesso que o Sublime é meu amorzinho, nele eu consigo ser produtivo e fazer muitas coisas. Veja o que eu uso no meu workflow."
-main-class: 'dev'
-color: '#637a91'
+date: 2016-03-21T21:48:36.000Z
+title: Meus plugins favoritos do Sublime Text
+description: Confesso que o Sublime é meu amorzinho, nele eu consigo ser
+  produtivo e fazer muitas coisas. Veja o que eu uso no meu workflow.
+main-class: dev
 tags:
-    - workflow
-    - dev
-categories:
-twitter_text: "Veja os plugins que eu utilizo e me ajuda bastante no meu workflow."
-introduction: "Confesso que o Sublime é meu amorzinho, nele eu consigo ser produtivo e fazer muitas coisas. Veja o que eu uso no meu workflow."
+  - workflow
+  - dev
+categories: null
 ---
 
 ## Introdução

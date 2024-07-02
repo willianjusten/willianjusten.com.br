@@ -1,17 +1,13 @@
 ---
 layout: post
-title: "65 dicas para ser um programador melhor"
-date: 2017-06-27 13:14:42
-image: '/assets/img/65-tips/main.png'
-description: 'Algumas dicas que podem ajudar muito a sua maneira de programar e pensar.'
-main-class: 'dev'
-color: '#637a91'
+date: 2017-06-27T16:14:42.000Z
+title: 65 dicas para ser um programador melhor
+description: Algumas dicas que podem ajudar muito a sua maneira de programar e pensar.
+main-class: dev
 tags:
-- dev
-- dicas
-categories:
-twitter_text: 'Algumas dicas que podem ajudar muito a sua maneira de programar e pensar.'
-introduction: 'Algumas dicas que podem ajudar muito a sua maneira de programar e pensar.'
+  - dev
+  - dicas
+categories: null
 ---
 
 ## Introdução

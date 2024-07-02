@@ -1,16 +1,13 @@
 ---
 layout: post
-title: "Atualizações"
-date: 2015-01-11 18:34:00
-image: '/assets/img/atualizacoes/atualizacoes.png'
-description: 'O blog cresceu um pouquinho e algumas modificações foram inevitáveis. Vou mostrar um pouco do que mudou.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2015-01-11T20:34:00.000Z
+title: Atualizações
+description: O blog cresceu um pouquinho e algumas modificações foram
+  inevitáveis. Vou mostrar um pouco do que mudou.
+main-class: misc
 tags:
-- jekyll
-categories:
-twitter_text: 'Atualizações no blog!'
-introduction: "O blog cresceu um pouquinho e algumas modificações foram inevitáveis. Vou mostrar um pouco do que mudou, como uma nova busca e um menu para facilitar o acesso."
+  - jekyll
+categories: null
 ---
 
 ![Acessos no Brasil](/assets/img/atualizacoes/brasil.png)

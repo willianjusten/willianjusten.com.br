@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2020-05-06 09:25:35
-image: /assets/img/iphone-area-cover.jpg
+date: 2020-05-06T12:25:35.000Z
 title: Trabalhando com a tela útil do iPhone
 description: Como lidar com o notch no topo e a navegação sem botões na parte
   inferior do iPhone num Web App.
-introduction: Como lidar com o notch no topo e a navegação sem botões na parte
-  inferior do iPhone num Web App.
-twitter_text: Como lidar com o notch no topo e a navegação sem botões na parte
-  inferior do iPhone num Web App.
 main-class: dev
-color: '#637a91'
 tags:
   - iphone
   - webview

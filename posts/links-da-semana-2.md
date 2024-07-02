@@ -1,17 +1,14 @@
 ---
 layout: post
+date: 2015-02-08T15:49:52.000Z
 title: "Links da semana #2"
-date: 2015-02-08 13:49:52
-image: '/assets/img/links-semana-2/main.png'
-description: 'Links da semana #2 - Links sobre coisas interessantes que fui vendo pela semana.'
-main-class: 'misc'
-color: '#7AAB13'
+description: "Links da semana #2 - Links sobre coisas interessantes que fui
+  vendo pela semana."
+main-class: misc
 tags:
-- linksdasemana
+  - linksdasemana
 categories:
-- Links da Semana
-twitter_text: 'Alguns links legais vistos na semana'
-introduction: "Alguns links sobre coisas importantes que fui vendo pela semana e acho que todos deveriam ler."
+  - Links da Semana
 ---
 
 Sem mais delongas, aqui vão os links mais legais que vi na semana.

@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Devo fazer faculdade?"
-date: 2015-02-07 10:47:02
-image: '/assets/img/fazer-faculdade/face-img.png'
-description: 'Essa dúvida sempre acontece, principalmente para quem trabalha com programação. Vamos conversar mais sobre o assunto.'
-main-class: 'dev'
-color: '#7AAB13'
+date: 2015-02-07T12:47:02.000Z
+title: Devo fazer faculdade?
+description: Essa dúvida sempre acontece, principalmente para quem trabalha com
+  programação. Vamos conversar mais sobre o assunto.
+main-class: dev
 tags:
-- faculdade
-- programação
-categories:
-twitter_text: 'Devo fazer faculdade? Desmistificando algumas dúvidas.'
-introduction: "Será que faculdade é importante para quem faz programação? Essa dúvida sempre acontece e nesse post iremos conversar um pouco mais sobre."
+  - faculdade
+  - programação
+categories: null
 ---
 
 ## Introdução

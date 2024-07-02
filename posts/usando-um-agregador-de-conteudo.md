@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2019-07-18 10:15:00'
-image: /assets/img/feedly-512.png
+date: 2019-07-18T13:15:00.000Z
 title: Usando um agregador de conteúdo
 description: Como não perder nenhum post dos seus blogs favoritos.
-introduction: Como não perder nenhum post dos seus blogs favoritos.
-twitter_text: Como não perder nenhum post dos seus blogs favoritos.
 main-class: misc
-color: '#7AAB13'
 tags:
   - blogs
   - rss

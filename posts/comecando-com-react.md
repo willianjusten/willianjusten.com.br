@@ -1,15 +1,9 @@
 ---
 layout: post
 date: 2015-07-10T22:04:05.000Z
-image: /assets/img/react-1/main.png
-title: '#1 - Começando com ReactJS'
+title: "#1 - Começando com ReactJS"
 description: Tentando entender o que é? Para que serve? Por onde começar?
-introduction: >-
-  O ReactJS é a onda do momento! Vamos entender o que é? Para que serve? Por
-  onde começar?
-twitter_text: ReactJS - Tentando entender o que é? Para que serve? Por onde começar?
 main-class: js
-color: '#D6BA32'
 tags:
   - react
   - js

@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2023-08-07 5:00:40
+date: 2023-08-07T08:00:40.000Z
 title: Está tudo bem não fazer nada
 description: Vivemos numa corrida sem fim e isso é cansativo! Dê seu tempo!
 main-class: misc
-color: '#7AAB13'
 tags:
   - vida
   - reflexão

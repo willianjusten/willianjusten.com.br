@@ -1,17 +1,14 @@
 ---
 layout: post
-title: 'A importância do Github para Desenvolvedores'
-date: 2017-08-04 12:04:36
-image: '/assets/img/github-importancia/importancia-git.jpg'
-description: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
-main-class: 'dev'
-color: '#637a91'
+date: 2017-08-04T15:04:36.000Z
+title: A importância do Github para Desenvolvedores
+description: Alguns motivos do porque eu acho que o Github é importante para os
+  desenvolvedores.
+main-class: dev
 tags:
   - dev
   - dicas
-categories:
-twitter_text: 'Motivos do pq eu acho q o Github é importante para os devs.'
-introduction: 'Alguns motivos do porque eu acho que o Github é importante para os desenvolvedores.'
+categories: null
 ---
 
 ## Introdução

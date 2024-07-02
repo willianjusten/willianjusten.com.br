@@ -1,20 +1,10 @@
 ---
 layout: post
 date: 2015-12-12T13:49:42.000Z
-image: /assets/img/testes/visao-programador.png
 title: Entendendo Testes de Software
-description: >-
-  Para que servem os testes? O que eu ganho com eles? Que tipos de testes
-  existem? O que fazer e o que não fazer.
-introduction: >-
-  Para que servem os testes? O que eu ganho com eles? Que tipos de testes
-  existem? O que fazer e o que não fazer. Algumas dúvidas importantes para
-  começarmos a brincar nesse mundo dos testes e TDD.
-twitter_text: >-
-  Para que servem os testes? O que eu ganho com eles? O que fazer e o que não
-  fazer?
+description: Para que servem os testes? O que eu ganho com eles? Que tipos de
+  testes existem? O que fazer e o que não fazer.
 main-class: dev
-color: '#637a91'
 tags:
   - tdd
   - dev

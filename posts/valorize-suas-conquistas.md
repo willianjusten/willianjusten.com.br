@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2023-01-18 5:00:40
+date: 2023-01-18T08:00:40.000Z
 title: Valorize suas conquistas
 description: O poder que valorizar nossas conquistas tem sobre nós.
 main-class: misc
-color: '#7AAB13'
 tags:
   - vida
   - reflexão

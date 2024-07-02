@@ -1,18 +1,15 @@
 ---
 layout: post
-title: '#2 - Como usar SVG'
-date: 2015-01-13 02:20:24
-image: '/assets/img/como-usar-svg/como-usar-svg.png'
-description: 'Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-01-13T04:20:24.000Z
+title: "#2 - Como usar SVG"
+description: Aqui irei explicar as diferentes formas de se inserir um SVG na sua
+  página web. Um breve início da grandiosidade que se está por vir.
+main-class: svg
 tags:
   - svg
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Como usar o SVG?'
-introduction: 'Aqui irei explicar as diferentes formas de se inserir um SVG na sua página web. Um breve início da grandiosidade que se está por vir.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

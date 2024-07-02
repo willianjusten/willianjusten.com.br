@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2018-05-28 03:20:42'
-image: /assets/img/cover.png
+date: 2018-05-28T06:20:42.000Z
 title: Criando um Codepen simples em poucas linhas
 description: Aprenda a criar um live editor na web com poucas linhas de código.
-introduction: Aprenda a criar um live editor na web com poucas linhas de código.
-twitter_text: Aprenda a criar um live editor na web com poucas linhas de código.
 main-class: js
-color: '#D6BA32'
 tags:
   - editor
   - js

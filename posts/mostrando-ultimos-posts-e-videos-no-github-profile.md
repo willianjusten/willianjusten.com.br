@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2020-08-10 08:44:05
-image: /assets/img/github-profile-cover.png
+date: 2020-08-10T11:44:05.000Z
 title: Mostrando últimos posts e vídeos no Github Profile
 description: Como utilizar o Github Actions para manter seu profile atualizado e bonito.
-introduction: Como utilizar o Github Actions para manter seu profile atualizado e bonito.
-twitter_text: Como utilizar o Github Actions para manter seu profile atualizado e bonito.
 main-class: misc
-color: "#7AAB13"
 tags:
   - git
   - github

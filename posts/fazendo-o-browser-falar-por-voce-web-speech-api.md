@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2021-02-21 05:18:25
-image: /assets/img/browser-falar.png
+date: 2021-02-21T08:18:25.000Z
 title: Fazendo o browser falar por você - Web Speech API
 description: Nesse post eu vou mostrar como utilizei a Web Speech API para meu
   projeto Japanese Words.
-introduction: Nesse post eu vou mostrar como utilizei a Web Speech API para meu
-  projeto Japanese Words.
-twitter_text: Nesse post eu vou mostrar como utilizei a Web Speech API para meu
-  projeto Japanese Words.
 main-class: js
-color: "#D6BA32"
 tags:
   - Dica
 categories:

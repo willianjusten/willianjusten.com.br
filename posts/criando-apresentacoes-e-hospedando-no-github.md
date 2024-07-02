@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Criando apresentações e hospedando no github"
-date: 2015-10-04 18:36:35
-image: '/assets/img/reveal/main.png'
-description: "Aprenda a criar slides para suas apresentações e hospedá-las online no github pages."
-main-class: 'dev'
-color: '#637a91'
+date: 2015-10-04T21:36:35.000Z
+title: Criando apresentações e hospedando no github
+description: Aprenda a criar slides para suas apresentações e hospedá-las online
+  no github pages.
+main-class: dev
 tags:
-- js
-- github
-categories:
-twitter_text: "Aprenda a criar slides para suas apresentações e hospedá-las online no github."
-introduction: "Um tutorial de como criar slides para suas apresentações com o RevealJS e hospedá-las online no github pages."
+  - js
+  - github
+categories: null
 ---
 
 ## Introdução

@@ -1,19 +1,10 @@
 ---
 layout: post
 date: 2018-02-08T21:01:03.000Z
-image: /assets/img/git-guide/main.jpg
-title: 'Guia: Como contribuir em Open Source'
-description: >-
-  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
-  pequeno guia pode te ajudar.
-introduction: >-
-  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
-  pequeno guia pode te ajudar.
-twitter_text: >-
-  Quer contribuir em open source e não sabe como e nem por onde começar? Esse
-  pequeno guia pode te ajudar.
+title: "Guia: Como contribuir em Open Source"
+description: Quer contribuir em open source e não sabe como e nem por onde
+  começar? Esse pequeno guia pode te ajudar.
 main-class: dev
-color: '#637a91'
 tags:
   - opensource
   - git

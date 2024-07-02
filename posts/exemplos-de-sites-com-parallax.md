@@ -1,18 +1,14 @@
 ---
 layout: post
-title: "Exemplos de sites com Parallax"
-date: 2016-05-08 10:16:24
-image: '/assets/img/parallax-sites/health.png'
-description: "Se inspire com alguns sites feitos usando a técnica do parallax."
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-05-08T13:16:24.000Z
+title: Exemplos de sites com Parallax
+description: Se inspire com alguns sites feitos usando a técnica do parallax.
+main-class: css
 tags:
-- css
-- frontend
-- parallax
-categories:
-twitter_text: "Se inspire com alguns sites feitos usando parallax."
-introduction: "Se inspire com alguns sites feitos usando a técnica do parallax."
+  - css
+  - frontend
+  - parallax
+categories: null
 ---
 
 ## Introdução

@@ -1,16 +1,10 @@
 ---
 layout: post
-date: 2020-05-07 10:19:46
-image: /assets/img/tooltip-clip-path.png
-title: 'Criando um tooltip animado com CSS clip-path '
+date: 2020-05-07T13:19:46.000Z
+title: "Criando um tooltip animado com CSS clip-path "
 description: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
   toda a diferença no seu layout.
-introduction: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
-  toda a diferença no seu layout.
-twitter_text: Aprenda a fazer uma micro interação bem sútil, mas que vai fazer
-  toda a diferença no seu layout.
 main-class: css
-color: '#2DA0C3'
 tags:
   - css
   - video

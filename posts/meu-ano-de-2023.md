@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2023-12-26 05:00:40
+date: 2023-12-26T08:00:40.000Z
 title: Meu ano de 2023
 description: Retornando os posts de retrospectiva
 main-class: misc
-color: '#7AAB13'
 tags:
   - retrospectiva
   - ano

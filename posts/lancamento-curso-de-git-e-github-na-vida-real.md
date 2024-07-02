@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'Lançamento Curso de Git e Github na Vida Real'
-date: 2018-02-04 23:23:11
-image: '/assets/img/cursos/git-real-life.png'
-description: 'Um curso direto ao ponto, aprenda workflows e comandos realmente úteis do dia-a-dia no Git.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2018-02-05T01:23:11.000Z
+title: Lançamento Curso de Git e Github na Vida Real
+description: Um curso direto ao ponto, aprenda workflows e comandos realmente
+  úteis do dia-a-dia no Git.
+main-class: misc
 tags:
   - dev
   - cursos
   - git
   - github
-categories:
-twitter_text: 'Um curso direto ao ponto, aprenda workflows e comandos realmente úteis do dia-a-dia no Git.'
-introduction: 'Um curso direto ao ponto, aprenda workflows e comandos realmente úteis do dia-a-dia no Git.'
+categories: null
 ---
 
 ## Lançamento do Curso

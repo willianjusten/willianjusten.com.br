@@ -1,13 +1,9 @@
 ---
 layout: post
-date: 2020-07-08 11:26:49
-image: /assets/img/jesse-ramirez-yisd-1ej_1g-unsplash.jpg
+date: 2020-07-08T14:26:49.000Z
 title: Como criar e publicar um pacote de extensões do VSCode
 description: Um jeito ainda mais fácil de compartilhar seus plugins com os outros.
-introduction: Um jeito ainda mais fácil de compartilhar seus plugins com os outros.
-twitter_text: Um jeito ainda mais fácil de compartilhar seus plugins com os outros.
 main-class: dev
-color: '#637a91'
 tags:
   - vscode
 ---

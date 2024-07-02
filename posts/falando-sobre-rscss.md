@@ -1,18 +1,15 @@
 ---
 layout: post
-title: 'Falando sobre RSCSS'
-date: 2016-02-07 18:48:16
-image: '/assets/img/rscss/rscss.png'
-description: 'Escrevendo CSS sem perder a sanidade. Aprenda uma metodologia que pode salvar muitas dores de cabeça.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-02-07T20:48:16.000Z
+title: Falando sobre RSCSS
+description: Escrevendo CSS sem perder a sanidade. Aprenda uma metodologia que
+  pode salvar muitas dores de cabeça.
+main-class: css
 tags:
   - css
   - metodologia
   - frontend
-categories:
-twitter_text: 'Escrevendo CSS sem perder a sanidade.'
-introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico St. Cruz o criador chama a atenção de todos sobre uma metodologia melhor para se escrever CSS.'
+categories: null
 ---
 
 ## Índice

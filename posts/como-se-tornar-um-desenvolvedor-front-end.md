@@ -1,19 +1,15 @@
 ---
 layout: post
-title: 'Como se tornar um desenvolvedor Front End'
-date: 2015-02-24 15:46:24
-image: '/assets/img/quero-ser-desenvolvedor-frontend/main.png'
-description: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade.'
-main-class: 'dev'
-color: '#637a91'
+date: 2015-02-24T18:46:24.000Z
+title: Como se tornar um desenvolvedor Front End
+description: Aprenda os caminhos para virar um desenvolvedor Front End de qualidade.
+main-class: dev
 tags:
   - frontend
   - css
   - js
   - tutorial
-categories:
-twitter_text: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade.'
-introduction: 'Aprenda os caminhos para virar um desenvolvedor Front End de qualidade, seguindo desde o básico, ao intermediário e avançado. Vendo desde o HTML, CSS e JS até Ferramentas de automação e Performance.'
+categories: null
 ---
 
 ## Índice

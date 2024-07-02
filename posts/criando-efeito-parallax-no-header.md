@@ -1,18 +1,14 @@
 ---
 layout: post
-title: 'Criando efeito parallax no header'
-date: 2016-04-16 10:39:03
-image: '/assets/img/header-parallax/header-parallax.png'
-description: 'Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-04-16T13:39:03.000Z
+title: Criando efeito parallax no header
+description: Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito.
+main-class: css
 tags:
   - css
   - frontend
   - parallax
-categories:
-twitter_text: 'Aprenda a fazer esse efeito e deixe seu site ainda mais bonito.'
-introduction: 'Aprenda a fazer esse efeito simples que pode deixar seu site ainda mais bonito.'
+categories: null
 ---
 
 ## Introdução

@@ -1,20 +1,11 @@
 ---
 layout: post
 date: 2018-04-02T01:30:42.000Z
-image: /assets/img/netlify/main.png
 title: Como colocar seu site no ar de graca
-description: >-
-  Calma, não é click-bait, é hospedagem grátis mesmo! Conheça e domine o Netlify
-  para subir todos os seus projetos e freelas de um jeito fácil, rápido e
-  otimizado.
-introduction: >-
-  Calma, não é click-bait. Conheça e domine o Netlify para subir todos os seus
-  projetos e freelas de um jeito fácil, rápido e otimizado.
-twitter_text: >-
-  Conheça e domine o Netlify para subir todos os seus projetos e freelas de um
-  jeito fácil, rápido e otimizado.
+description: Calma, não é click-bait, é hospedagem grátis mesmo! Conheça e
+  domine o Netlify para subir todos os seus projetos e freelas de um jeito
+  fácil, rápido e otimizado.
 main-class: dev
-color: '#637a91'
 tags:
   - hosting
   - performance

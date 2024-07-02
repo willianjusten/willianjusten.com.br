@@ -1,20 +1,17 @@
 ---
 layout: post
+date: 2015-01-08T10:39:47.000Z
 title: "#1 - Por que usar SVG?"
-date: 2015-01-08 08:39:47
-description: "O SVG finalmente começa dar o ar das graças e você vai saber aqui o porquê disso."
-main-class: 'svg'
-color: '#7D669E'
+description: O SVG finalmente começa dar o ar das graças e você vai saber aqui o
+  porquê disso.
+main-class: svg
 tags:
-- svg
-- frontend
-- trend
-- "dicarapida"
-image: "/assets/img/por-que-usar-svg/coloridos.jpg"
+  - svg
+  - frontend
+  - trend
+  - dicarapida
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Por que você deveria estar usando SVG?"
-introduction: "Alguns motivos para se usar SVG no seu workflow e alguns exemplos bem bacanas de como outros já utilizam."
+  - O mundo mágico do SVG
 ---
 
 ## Meu histórico

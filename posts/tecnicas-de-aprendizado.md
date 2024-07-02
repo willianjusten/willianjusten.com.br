@@ -1,16 +1,14 @@
 ---
 layout: post
-title: "Técnicas de aprendizado"
-date: 2015-01-06 08:21:26
-description: "Se você tem costume de procrastinar, tem dificuldade de aprender algo rápido. Aprenda técnicas que te permitem aprender melhor e aumentar sua produtividade."
-image: "/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png"
-main-class: 'misc'
-color: '#7AAB13'
+date: 2015-01-06T10:21:26.000Z
+title: Técnicas de aprendizado
+description: Se você tem costume de procrastinar, tem dificuldade de aprender
+  algo rápido. Aprenda técnicas que te permitem aprender melhor e aumentar sua
+  produtividade.
+main-class: misc
 tags:
-- estudo
-- produtividade
-twitter_text: "Tecnicas de aprendizado"
-introduction: "Se você tem costume de procrastinar, tem dificuldade de aprender algo rápido. Aprenda técnicas que te permitam aprender melhor e aumentar sua produtividade."
+  - estudo
+  - produtividade
 ---
 
 ![Tirinha da Mafalda: Garoto fala: As pessoas esperam que o ano que está começando seja melhor que o anterior. Mafalda responde: Aposto que o ano que está começando espera que as pessoas é que sejam melhores](/assets/img/tecnicas-de-aprendizado/mafalda-ano-procrastinando.png)

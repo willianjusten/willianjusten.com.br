@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Meu processo para a Toptal"
-date: 2017-07-21 17:20:15
-image: '/assets/img/toptal/toptal-logo.png'
-description: 'Algumas coisas que aconteceram até eu entrar na Toptal e algumas das dúvidas comuns.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2017-07-21T20:20:15.000Z
+title: Meu processo para a Toptal
+description: Algumas coisas que aconteceram até eu entrar na Toptal e algumas
+  das dúvidas comuns.
+main-class: misc
 tags:
-- remoto
-- toptal
-categories:
-twitter_text: 'Meu processo para a Toptal e algumas das dúvidas comuns.'
-introduction: 'Algumas coisas que aconteceram até eu entrar na Toptal e algumas das dúvidas comuns.'
+  - remoto
+  - toptal
+categories: null
 ---
 
 ## Introdução

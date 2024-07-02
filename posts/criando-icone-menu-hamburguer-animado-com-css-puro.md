@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-05-31 01:18:14'
-image: /assets/img/hamburguer-icon-cover.png
+date: 2018-05-31T04:18:14.000Z
 title: Criando ícone menu hamburguer animado com CSS puro
-description: >-
-  Nesse post/vídeo eu ensino como criar esse ícone animado para na segunda parte
-  integrar a um menu real e bem legal.
-introduction: >-
-  Nesse post/vídeo eu ensino como criar esse ícone animado para na segunda parte
-  integrar a um menu real e bem legal.
-twitter_text: >-
-  Nesse post/vídeo eu ensino como criar esse ícone animado para na segunda parte
-  integrar a um menu real e bem legal.
+description: Nesse post/vídeo eu ensino como criar esse ícone animado para na
+  segunda parte integrar a um menu real e bem legal.
 main-class: css
-color: '#2DA0C3'
 tags:
   - video
   - css

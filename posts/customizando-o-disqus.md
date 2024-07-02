@@ -1,17 +1,13 @@
 ---
 layout: post
-date: '2018-03-28 04:49:06'
-image: /assets/img/disqus.png
+date: 2018-03-28T07:49:06.000Z
 title: Customizando o Disqus
 description: Como adaptar esse sistema de comentários para funcionar melhor no seu site.
-introduction: Como adaptar esse sistema de comentários para funcionar melhor no seu site.
-twitter_text: Como adaptar esse sistema de comentários para funcionar melhor no seu site.
 main-class: jekyll
-color: '#B31917'
 tags:
   - disqus
   - jekyll
-categories:
+categories: null
 ---
 ## Introdução
 

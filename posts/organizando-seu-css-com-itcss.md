@@ -1,18 +1,15 @@
 ---
 layout: post
-title: "Organizando seu CSS com ITCSS"
-date: 2016-02-09 14:08:54
-image: '/assets/img/itcss/itcss-cover.png'
-description: 'Organizar CSS em larga escala é difícil, mas não precisa ser tão assim. Aprenda uma arquitetura para te auxiliar nisso.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2016-02-09T16:08:54.000Z
+title: Organizando seu CSS com ITCSS
+description: Organizar CSS em larga escala é difícil, mas não precisa ser tão
+  assim. Aprenda uma arquitetura para te auxiliar nisso.
+main-class: css
 tags:
-- css
-- metodologia
-- frontend
-categories:
-twitter_text: 'Aprenda a organizar seu CSS de uma forma fácil e prática'
-introduction: 'Organizar CSS em larga escala é difícil, mas não precisa ser tão assim. Aprenda uma arquitetura para te auxiliar nisso.'
+  - css
+  - metodologia
+  - frontend
+categories: null
 ---
 
 ## Introdução

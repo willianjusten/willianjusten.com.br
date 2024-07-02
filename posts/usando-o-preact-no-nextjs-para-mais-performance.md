@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2021-09-17 01:40:37
+date: 2021-09-17T04:40:37.000Z
 title: Usando o Preact no NextJS para mais performance
 description: Diminua ainda mais o bundle do seu projeto NextJS usando o Preact
 main-class: js
-color: "#D6BA32"
 tags:
   - nextjs
   - performance

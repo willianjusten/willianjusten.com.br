@@ -1,19 +1,15 @@
 ---
 layout: post
-title: "Devs Brasileiros, Gringos e trabalhar no exterior"
-date: 2017-12-01 15:34:06
-image: '/assets/img/br-gringos/main.jpg'
-description: 'Será que a diferença é tão grande assim? Vamos conversar um pouco sobre isso.'
-main-class: 'dev'
-color: '#637a91'
+date: 2017-12-01T17:34:06.000Z
+title: Devs Brasileiros, Gringos e trabalhar no exterior
+description: Será que a diferença é tão grande assim? Vamos conversar um pouco sobre isso.
+main-class: dev
 tags:
-- experiencia
-- dicas
-- lifestyle
+  - experiencia
+  - dicas
+  - lifestyle
 categories:
-- "Trabalhar no exterior, remoto, viagens, etc"
-twitter_text: 'Será que a diferença é tão grande assim?'
-introduction: 'Será que a diferença é tão grande assim? Vamos conversar um pouco sobre isso.'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

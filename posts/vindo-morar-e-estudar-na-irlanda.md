@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 'Vindo morar e estudar na Irlanda'
-date: 2017-01-08 19:51:20
-image: '/assets/img/morar-irlanda/main.jpg'
-description: 'Algumas coisas que eu passei e você precisa saber se deseja vir morar e/ou estudar aqui também.'
-main-class: 'misc'
-color: '#7AAB13'
+date: 2017-01-08T21:51:20.000Z
+title: Vindo morar e estudar na Irlanda
+description: Algumas coisas que eu passei e você precisa saber se deseja vir
+  morar e/ou estudar aqui também.
+main-class: misc
 tags:
   - trip
   - ireland
   - exchange
 categories:
-  - 'Trabalhar no exterior, remoto, viagens, etc'
-twitter_text: 'Algumas coisas sobre como vir para Irlanda.'
-introduction: 'Algumas coisas que eu passei e você precisa saber se deseja vir morar e/ou estudar aqui também.'
+  - Trabalhar no exterior, remoto, viagens, etc
 ---
 
 ## Introdução

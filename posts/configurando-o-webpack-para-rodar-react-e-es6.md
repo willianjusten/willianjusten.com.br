@@ -1,19 +1,16 @@
 ---
 layout: post
-title: "Configurando o Webpack para rodar React e ES6"
-date: 2016-06-19 3:00:46
-image: '/assets/img/webpack/webpack.png'
-description: "Aprenda como utilizar esse module bundler para facilitar sua vida nos projetos com ES6 e React."
-main-class: 'js'
-color: '#D6BA32'
+date: 2016-06-19T06:00:46.000Z
+title: Configurando o Webpack para rodar React e ES6
+description: Aprenda como utilizar esse module bundler para facilitar sua vida
+  nos projetos com ES6 e React.
+main-class: js
 tags:
-- react
-- es6
-- tutorial
+  - react
+  - es6
+  - tutorial
 categories:
-- "Aprendendo ReactJS"
-twitter_text: "Facilite sua vida com esse module bundler."
-introduction: "Aprenda como utilizar esse module bundler para facilitar sua vida nos projetos com ES6 e React."
+  - Aprendendo ReactJS
 ---
 
 ## Introdução

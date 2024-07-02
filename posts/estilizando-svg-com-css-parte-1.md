@@ -1,19 +1,15 @@
 ---
 layout: post
-title: '#7 - Estilizando SVG com CSS - Parte 1'
-date: 2015-03-07 14:58:45
-image: '/assets/img/estilizando-svg/main.png'
-description: 'Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-03-07T17:58:45.000Z
+title: "#7 - Estilizando SVG com CSS - Parte 1"
+description: Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS.
+main-class: svg
 tags:
   - svg
   - css
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Estilizando SVG com CSS - Parte 1'
-introduction: 'Aprenda as diferentes formas de mudar o estilo de um SVG somente com CSS, mude suas cores, contornos e mais.'
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

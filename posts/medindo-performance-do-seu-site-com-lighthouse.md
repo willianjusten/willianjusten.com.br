@@ -1,19 +1,15 @@
 ---
 layout: post
-date: '2018-03-16 11:42:05'
-image: /assets/img/willian-justen-de-vasconcellos-441777-unsplash.jpg
+date: 2018-03-16T14:42:05.000Z
 title: Medindo a performance do seu site com Lighthouse
 description: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
-introduction: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
-twitter_text: Uma ferramenta perfeita para dizer tudo que está bom e ruim no seu site.
 main-class: dev
-color: '#637a91'
 tags:
   - performance
   - pwa
   - seo
 categories:
-  - "Performance Web"
+  - Performance Web
 ---
 ## Introdução
 

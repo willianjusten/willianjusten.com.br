@@ -1,19 +1,16 @@
 ---
 layout: post
-title: '#12 - Animações em SVG com CSS'
-date: 2015-07-01 04:22:29
-image: '/assets/img/svg-animacoes-css/main.png'
-description: 'Aprenda como criar animações para o SVG usando só CSS e tenha um site leve e bonito.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-07-01T07:22:29.000Z
+title: "#12 - Animações em SVG com CSS"
+description: Aprenda como criar animações para o SVG usando só CSS e tenha um
+  site leve e bonito.
+main-class: svg
 tags:
   - svg
   - css
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Como criar animações para o SVG usando só CSS.'
-introduction: 'Veja como criar diferentes animações para o SVG usando só CSS3. E já saia criando loaders e outras coisas mais.'
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

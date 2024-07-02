@@ -1,18 +1,15 @@
 ---
 layout: post
+date: 2015-01-22T12:00:00.000Z
 title: "#5 - Atomic Design no SVG - g, use, defs, symbol"
-date: 2015-01-22 10:00:00
-image: '/assets/img/atomic-svg/atomic-svg.png'
-description: "Neste artigo iremos saber mais sobre a estruturação de um SVG, seus elementos, suas vantagens e um pouco de Atomic Design."
-main-class: 'svg'
-color: '#7D669E'
+description: Neste artigo iremos saber mais sobre a estruturação de um SVG, seus
+  elementos, suas vantagens e um pouco de Atomic Design.
+main-class: svg
 tags:
-- svg
-- tutorial
+  - svg
+  - tutorial
 categories:
-- "O mundo mágico do SVG"
-twitter_text: "Atomic Design no SVG! Entendendo o conceito."
-introduction: "Neste artigo iremos saber mais sobre a estruturação de um SVG, como usar groups, <use>, <defs> e mais para organizar os elementos, as vantagens disso e um pouco de Atomic Design."
+  - O mundo mágico do SVG
 ---
 
 ## Índice da série

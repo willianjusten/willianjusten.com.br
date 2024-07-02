@@ -1,17 +1,14 @@
 ---
 layout: post
-title: "Filtros CSS"
-date: 2015-07-26 17:30:23
-image: '/assets/img/filtros-css/main.png'
-description: 'Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css.'
-main-class: 'css'
-color: '#2DA0C3'
+date: 2015-07-26T20:30:23.000Z
+title: Filtros CSS
+description: Transforme o seu browser no seu próprio photoshop e aplique filtros
+  somente com css.
+main-class: css
 tags:
-- css
-- tutorial
-categories:
-twitter_text: "Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css."
-introduction: "Transforme o seu browser no seu próprio photoshop e aplique filtros somente com css."
+  - css
+  - tutorial
+categories: null
 ---
 
 ## Introdução

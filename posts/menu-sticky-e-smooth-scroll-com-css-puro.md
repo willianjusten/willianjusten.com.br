@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-05-30 01:37:00'
-image: /assets/img/scroll-sticky-cover.png
-title: 'Menu Sticky e Smooth Scroll com CSS puro '
-description: >-
-  Aprenda algumas propriedades bem interessantes do CSS e já saia brincando por
-  aí.
-introduction: >-
-  Aprenda algumas propriedades bem interessantes do CSS e já saia brincando por
-  aí.
-twitter_text: >-
-  Aprenda algumas propriedades bem interessantes do CSS e já saia brincando por
-  aí.
+date: 2018-05-30T04:37:00.000Z
+title: "Menu Sticky e Smooth Scroll com CSS puro "
+description: Aprenda algumas propriedades bem interessantes do CSS e já saia
+  brincando por aí.
 main-class: css
-color: '#2DA0C3'
 tags:
   - frontend
   - css

@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-03-21 04:55:37'
-image: /assets/img/cover-critical.jpg
-title: 'Perfomance Web: Critical CSS e Jekyll'
-description: >-
-  A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica simples
-  para melhorar seus sites.
-introduction: >-
-  A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica simples
-  para melhorar seus sites.
-twitter_text: >-
-  A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica simples
-  para melhorar seus sites.
+date: 2018-03-21T07:55:37.000Z
+title: "Perfomance Web: Critical CSS e Jekyll"
+description: A web é lenta, mas sempre podemos deixar mais rápido, mais uma dica
+  simples para melhorar seus sites.
 main-class: dev
-color: '#637a91'
 tags:
   - performance
   - css

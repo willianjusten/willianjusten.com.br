@@ -1,19 +1,16 @@
 ---
 layout: post
-title: '#15 - Criando o efeito de desenhar com SVG'
-date: 2015-10-05 18:41:21
-image: '/assets/img/draw-svg/main.png'
-description: 'Um tutorial de como fazer aquele efeito legal de desenhar elementos na tela com SVG.'
-main-class: 'svg'
-color: '#7D669E'
+date: 2015-10-05T21:41:21.000Z
+title: "#15 - Criando o efeito de desenhar com SVG"
+description: Um tutorial de como fazer aquele efeito legal de desenhar elementos
+  na tela com SVG.
+main-class: svg
 tags:
   - svg
   - css
   - tutorial
 categories:
-  - 'O mundo mágico do SVG'
-twitter_text: 'Aprenda como desenhar na tela usando SVG.'
-introduction: 'Um tutorial de como fazer aquele efeito legal de desenhar elementos na tela com SVG e CSS3.'
+  - O mundo mágico do SVG
 ---
 
 ## Introdução

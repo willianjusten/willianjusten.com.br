@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2018-06-04 10:00:00'
-image: /assets/img/spinner-loader-cover.png
+date: 2018-06-04T13:00:00.000Z
 title: Como criar um loader com CSS puro e uma div
-description: >-
-  Todos nós já tivemos que usar um loader na vida, aprenda a criar o seu do zero
-  com pouquíssimas linhas de código.
-introduction: >-
-  Todos nós já tivemos que usar um loader na vida, aprenda a criar o seu do zero
-  com pouquíssimas linhas de código.
-twitter_text: >-
-  Todos nós já tivemos que usar um loader na vida, aprenda a criar o seu do zero
-  com pouquíssimas linhas de código.
+description: Todos nós já tivemos que usar um loader na vida, aprenda a criar o
+  seu do zero com pouquíssimas linhas de código.
 main-class: css
-color: '#2DA0C3'
 tags:
   - video
   - css

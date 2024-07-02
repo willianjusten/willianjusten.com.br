@@ -1,13 +1,9 @@
 ---
 layout: post
-date: '2020-04-09 09:08:32'
-image: /assets/img/react-custom-hook.png
+date: 2020-04-09T12:08:32.000Z
 title: Criando um React Custom Hook com Testes
 description: Aprenda como criar um react hook de Konami Code a partir do zero com TDD.
-introduction: Aprenda como criar um react hook de Konami Code  a partir do zero com TDD.
-twitter_text: Aprenda como criar um react hook de Konami Code a partir do zero com TDD.
 main-class: js
-color: '#D6BA32'
 tags:
   - react
   - js

@@ -1,19 +1,10 @@
 ---
 layout: post
-date: '2019-07-23 06:50:10'
-image: /assets/img/gabriel-ramos-unsplash-analytics.jpg
+date: 2019-07-23T09:50:10.000Z
 title: Como usar o Google Analytics Events Tracker?
-description: >-
-  Qual a importância de rastrear eventos no seu site e como fazer isso de forma
-  simples.
-introduction: >-
-  Qual a importância de rastrear eventos no seu site e como fazer isso de forma
-  simples.
-twitter_text: >-
-  Qual a importância de rastrear eventos no seu site e como fazer isso de forma
-  simples.
+description: Qual a importância de rastrear eventos no seu site e como fazer
+  isso de forma simples.
 main-class: dev
-color: '#637a91'
 tags:
   - google analytics
   - javascript
