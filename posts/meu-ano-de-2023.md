@@ -21,7 +21,7 @@ Se quiser ver minha evolução ao longo de tantos anos, ficam aqui os posts ante
 - [Meu ano de 2018](https://willianjusten.com.br/meu-ano-de-2018/)
 - [Meu ano de 2019](https://willianjusten.com.br/meu-ano-de-2019/)
 - [Meu ano de 2020](https://willianjusten.com.br/meu-ano-de-2020/)
-- [Meu ano de 2021](https://willianjusten.com.br/meu-ano-de-2020/)
+- [Meu ano de 2021](https://willianjusten.com.br/meu-ano-de-2021/)
 
 E outra tradição que sempre faço, é falar sobre música em todos os posts, então seguem algumas bandas que ouvi bastante no ano:
 
