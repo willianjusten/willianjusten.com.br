@@ -49,7 +49,7 @@ Aí uma métrica para quem tem interesse em ganhos, um canal sem absolutamente n
 
 Eu continuo trabalhando na [Appcues](https://appcues.com/mobile), meu time passou por uma reestruturação, onde agora além de trabalharmos com a parte de in-app messaging para Mobile, nós ainda passamos a trabalhar com [Behavioral Emails](https://www.appcues.com/product/email) e também [Mobile Push Notifications](https://www.appcues.com/product/push-notifications).
 
-Tem sido um trabalho bem desafiador, pois precisamos alinhar muito mais detalhes com diferentes times, além de termos que trabalhar em mais outro codebase, esse no já mais estabelecido, com certos legados que precisamos conviver e melhorar conforme podemos.
+Tem sido um trabalho bem desafiador, pois precisamos alinhar muito mais detalhes com diferentes times, além de termos que trabalhar em mais outro codebase, esse já mais estabelecido, com certos legados que precisamos conviver e melhorar conforme podemos.
 
 Além disso, também participei dos hackathons semestrais da empresa e ganhamos tanto em Junho quanto em Dezembro em diferentes categorias! 🎉🎉🎉
 
@@ -71,13 +71,13 @@ Eu tive oportunidade de fazer os clássicos como ir no Masp, Jardim Botânico, P
 
 ## Viagens
 
-Eu comecei o ano literalmente viajando, onde pude passar a virada em Santiago/Chile com a minha namorada. Foi nossa primeira viagem juntos e apesar de já conhecer Santiago, foi muito legal poder conhecer novos lugares ao lado dela, sem contar que ajudou demais nossa conexão, afinal foram 9 dias sem se separar.
+Eu comecei o ano literalmente viajando, onde pude passar a virada em Santiago/Chile com a minha namorada. Foi nossa primeira viagem juntos e apesar de já conhecer Santiago, foi muito legal poder conhecer novos lugares ao lado dela, sem contar que ajudou demais na nossa conexão, afinal foram 9 dias sem se separar.
 
 ![Santiago/Chile -24](/assets/img/santiago-chile-24.jpg)
 
 Pouco depois eu fui para Porto Rico para um encontro da empresa, foi uma viagem super rápida de apenas 3 dias, mas foi bacana rever pessoas que trabalho diariamente mas nunca vejo pessoalmente.
 
-E então veio **a viagem**! Eu fui para Chicago e passei 10 dias por lá, foram 10 dias incríveis. Essa viagem foi meio que "aleatória", já que foi escolhida inicialmente porque era o que as milhas podiam pagar, mas logo foi se transformando um super destino que eu queria ir. Muito por ser uma cidade incrível para fotografia de arquitetura e também por uma série chamada [The Bear](https://www.imdb.com/title/tt14452776/), que é uma das minhas séries favoritas de todas.
+E então veio **a viagem**! Eu fui para Chicago e passei 10 dias por lá, foram 10 dias incríveis. Essa viagem foi meio que "aleatória", já que foi escolhida inicialmente porque era o que as milhas podiam pagar, mas logo foi se transformando em um super destino que eu queria ir. Muito por ser uma cidade incrível para fotografia de arquitetura e também por uma série chamada [The Bear](https://www.imdb.com/title/tt14452776/), que é uma das minhas séries favoritas de todas.
 
 Lá eu fiz de um absolutamente tudo! Eu fui nos dois maiores arranha-céus da cidade, fiz passeio de barco aprendendo sobre toda a história e arquitetura da cidade, conheci cafeteria com estrela Michelin que apareceu na série e claro, fui na lanchonete que originou tudo.
 
