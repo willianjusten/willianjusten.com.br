@@ -37,7 +37,9 @@ const BlogPost = ({ post }) => {
               url: `https://og-image-service.willianjusten.com.br/${encodeURIComponent(
                 post.frontmatter.title
               )}.png`,
-              alt: `${post.frontmatter.title}`
+              alt: `${post.frontmatter.title}`,
+              width: 2048,
+              height: 1170
             }
           ]
         }}
