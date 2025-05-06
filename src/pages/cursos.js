@@ -3,6 +3,11 @@ import { NextSeo } from 'next-seo'
 
 const coursesList = [
   {
+    title: 'Games in JS',
+    link: 'https://games.willianjusten.com.br/',
+    description: 'Suba de nível criando jogos em JavaScript!'
+  },
+  {
     title: 'React Avançado',
     link: 'https://reactavancado.com.br/',
     description: 'Crie aplicações reais com NextJS, Strapi, GraphQL e mais!'
