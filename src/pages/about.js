@@ -27,9 +27,16 @@ const AboutPage = () => (
     <MainContent>
       <h1>Sobre mim</h1>
       <p>
-        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ,
-        trabalho como Staff Engineer na{' '}
-        <a href="https://appcues.com">Appcues</a> e sou instrutor na{' '}
+        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e
+        trabalho como Staff Product Engineer na{' '}
+        <a href="https://spoke.com" target="_blank" rel="noopener noreferrer">
+          Spoke
+        </a>
+        , construindo produtos web com React, Next.js e TypeScript.
+      </p>
+
+      <p>
+        Também sou instrutor na{' '}
         <a
           href="https://www.udemy.com/user/willian-justen-de-vasconcellos/"
           target="_blank"
@@ -37,19 +44,29 @@ const AboutPage = () => (
         >
           Udemy
         </a>
-        , além de ser um nômade digital e tirar{' '}
+        , onde ensino desenvolvimento web para mais de 250 mil alunos, com
+        cursos sobre Git e GitHub, React e outros temas. Pelo trabalho com a
+        comunidade, fui reconhecido como GitHub Star (Top Teacher em 2021) e{' '}
         <a
-          href="https://unsplash.com/@willianjusten"
+          href="https://mvp.microsoft.com/en-us/mvp/Willian%20%20Justen%20de%20Vasconcellos-5004209"
           target="_blank"
           rel="noopener noreferrer"
         >
-          algumas fotos
-        </a>{' '}
-        por onde vou.
+          Microsoft MVP
+        </a>
+        .
       </p>
 
       <p>
         Já passei por empresas como{' '}
+        <a
+          href="https://www.appcues.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Appcues
+        </a>
+        ,{' '}
         <a
           href="http://www.toptal.com/"
           target="_blank"
@@ -81,19 +98,28 @@ const AboutPage = () => (
         >
           Queremos
         </a>{' '}
-        e outras mais. Cursei Tecnologia da Informação na Faeterj-Petrópolis no
-        ano de 2014, mas curiosamente, essa não foi minha primeira faculdade, eu
-        também fiz <strong>Química Industrial</strong> na Uff. Sim, você leu
-        certo, eu realmente fiz Química… E por que eu trabalho com web agora?
-        Ah… porque web é incrível, a facilidade em aprender cada dia mais e
-        ainda poder ajudar um grande número de pessoas me deixa feliz e
-        realizado todos os dias.
+        e outras mais.
       </p>
 
       <p>
-        Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
-        gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que
-        por isso nasceu esse blog.
+        Cursei Tecnologia da Informação na Faeterj-Petrópolis, mas antes disso
+        fiz <strong>Química Industrial</strong> na UFF. Sim, Química mesmo.
+        Migrei para a web porque é uma área em que sempre tem algo novo para
+        aprender e onde consigo ajudar muita gente, e é isso que me mantém
+        animado até hoje.
+      </p>
+
+      <p>
+        Gosto de trabalhar em equipe e de ensinar o que aprendo, e foi daí que
+        nasceu esse blog. No tempo livre, viajo e tiro{' '}
+        <a
+          href="https://unsplash.com/@willianjusten"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          algumas fotos
+        </a>{' '}
+        por onde passo.
       </p>
 
       <h2>Contato</h2>
