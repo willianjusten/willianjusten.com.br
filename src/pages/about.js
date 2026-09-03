@@ -46,15 +46,8 @@ const AboutPage = () => (
         </a>
         , onde ensino desenvolvimento web para mais de 250 mil alunos, com
         cursos sobre Git e GitHub, React e outros temas. Pelo trabalho com a
-        comunidade, fui reconhecido como GitHub Star (Top Teacher em 2021) e{' '}
-        <a
-          href="https://mvp.microsoft.com/en-us/mvp/Willian%20%20Justen%20de%20Vasconcellos-5004209"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Microsoft MVP
-        </a>
-        .
+        comunidade, fui reconhecido como GitHub Star (Top Teacher em 2021) e
+        Microsoft MVP.
       </p>
 
       <p>
