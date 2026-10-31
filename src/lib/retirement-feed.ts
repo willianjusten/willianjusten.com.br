@@ -1,4 +1,5 @@
-const SITE_URL = "https://willianjusten.com.br";
+import { SITE_URL } from "./site";
+
 const FAREWELL_PUBLISHED_AT = new Date("2026-11-01T12:00:00Z");
 
 /** Builds the permanent RSS feed: a single item announcing the blog retirement. */
