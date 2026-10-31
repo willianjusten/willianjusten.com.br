@@ -1,9 +1,11 @@
 import { Gamepad2, MapPin, Music } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
+import { games } from "@/content/games";
 import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
+import { GamesShelf } from "./games/games-shelf";
 import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
 import { SectionShell } from "./section-shell";
@@ -49,6 +51,16 @@ export async function PlacesSection() {
 
 export async function GamesSection() {
   const t = await getTranslations("Sections.games");
+  const locale = await getLocale();
+  const shelfEntries = games.map(({ slug, title, platform, list, year, note, tone }) => ({
+    slug,
+    title,
+    platform,
+    list,
+    year,
+    note: note[locale === "pt" ? "pt" : "en"],
+    tone,
+  }));
   return (
     <SectionShell
       id="games"
@@ -56,7 +68,47 @@ export async function GamesSection() {
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
-    />
+    >
+      <GamesShelf
+        games={shelfEntries}
+        labels={{
+          tabsLabel: t("shelf.tabsLabel"),
+          platformsLabel: t("shelf.platformsLabel"),
+          all: t("shelf.all"),
+          tabs: {
+            playing: t("shelf.tabs.playing"),
+            played: t("shelf.tabs.played"),
+            wishlist: t("shelf.tabs.wishlist"),
+            recommended: t("shelf.tabs.recommended"),
+          },
+          status: {
+            playing: t("shelf.status.playing"),
+            played: t("shelf.status.played"),
+            wishlist: t("shelf.status.wishlist"),
+            recommended: t("shelf.status.recommended"),
+          },
+          reaction: {
+            playing: t("shelf.reaction.playing"),
+            played: t("shelf.reaction.played"),
+            wishlist: t("shelf.reaction.wishlist"),
+            recommended: t("shelf.reaction.recommended"),
+          },
+          reactionError: t("shelf.reactionError"),
+          stageLabel: t("shelf.stageLabel"),
+          previous: t("shelf.previous"),
+          next: t("shelf.next"),
+          showGame: t.raw("shelf.showGame"),
+          counterHint: t("shelf.counterHint"),
+          soon: t("shelf.soon"),
+          emptyRecommendedTitle: t("shelf.emptyRecommendedTitle"),
+          emptyRecommendedNote: t("shelf.emptyRecommendedNote"),
+          emptyTitle: t("shelf.emptyTitle"),
+          emptyNote: t("shelf.emptyNote"),
+          recommendLike: t("shelf.recommendLike"),
+          setup: t("shelf.setup"),
+        }}
+      />
+    </SectionShell>
   );
 }
 

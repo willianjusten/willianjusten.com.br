@@ -8,6 +8,7 @@ import { localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
 import "../music.css";
+import "../games.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
