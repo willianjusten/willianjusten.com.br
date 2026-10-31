@@ -25,7 +25,7 @@ export async function Header() {
       </a>
       <nav
         aria-label={t("navigationLabel")}
-        className="order-3 flex basis-full flex-wrap gap-x-7 text-ui font-medium [text-shadow:0_1px_12px_rgba(0,0,0,0.6)] min-[900px]:order-none min-[900px]:basis-auto"
+        className="order-3 flex basis-full flex-wrap gap-x-7 text-ui font-medium [text-shadow:0_1px_12px_rgba(0,0,0,0.6)] min-[900px]:order-none min-[900px]:ml-auto min-[900px]:basis-auto"
       >
         {navigationLinks.map(({ key, href }) => (
           <a
