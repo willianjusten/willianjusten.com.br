@@ -3,6 +3,11 @@
     "title": "Willian Justen",
     "description": "Descrição provisória. O texto final chega com o ticket de SEO."
   },
+  "FarewellBanner": {
+    "label": "Aviso sobre o fim do blog",
+    "message": "Obrigado por acompanhar o blog todos esses anos. Ele foi aposentado, e este site agora é a minha casa para lugares, games, NBA e música.",
+    "dismiss": "Dispensar aviso"
+  },
   "Header": {
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu",

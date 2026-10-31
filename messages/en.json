@@ -3,6 +3,11 @@
     "title": "Willian Justen",
     "description": "Placeholder description. The real copy lands with the SEO ticket."
   },
+  "FarewellBanner": {
+    "label": "Blog retirement notice",
+    "message": "Thank you for following the blog all these years. It is retired now, and this site is my home for places, games, NBA and music.",
+    "dismiss": "Dismiss notice"
+  },
   "Header": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
