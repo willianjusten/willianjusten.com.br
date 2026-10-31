@@ -23,7 +23,8 @@ describe("content registry", () => {
 
 describe("places content module", () => {
   const placesModule = contentModules.find((contentModule) => contentModule.name === "places");
-  const seededPlaces = (placesModule?.data as { places: Record<string, unknown>[] }).places;
+  const seededPlaces =
+    (placesModule?.data as { places: Record<string, unknown>[] } | undefined)?.places ?? [];
 
   it("is registered and seeds exactly one home place", () => {
     expect(placesModule).toBeDefined();
