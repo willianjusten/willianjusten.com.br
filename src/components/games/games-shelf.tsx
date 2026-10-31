@@ -8,17 +8,24 @@ import type { PointerEvent } from "react";
 import { GAME_PLATFORMS } from "@/content/games";
 import type { GameList } from "@/content/games";
 import { clampIndex, formatCounter, indexAfterDrag, indexAfterKey } from "@/lib/games/coverflow";
+import { buildRecommendationNote } from "@/lib/games/recommendations";
+import type { NoteLabels, RecommendationView } from "@/lib/games/recommendations";
 import { countByList, countByPlatform, filterShelf } from "@/lib/games/shelf";
 import type { PlatformFilter } from "@/lib/games/shelf";
 import { GameCase } from "./game-case";
 import { PLATFORM_STYLES } from "./platform-style";
-import type { ShelfEntry } from "./types";
+import { RecommendForm } from "./recommend-form";
+import type { RecommendFormLabels } from "./recommend-form";
+import type { CaseEntry, ShelfEntry } from "./types";
 import { useGameReactions } from "./use-game-reactions";
+import { useGameRecommendations } from "./use-game-recommendations";
+import type { RecommendationSubmission } from "./use-game-recommendations";
 
 type ShelfList = GameList | "recommended";
 
 const TAB_ORDER: ShelfList[] = ["playing", "played", "wishlist", "recommended"];
 const PLATFORM_FILTERS: PlatformFilter[] = ["all", ...GAME_PLATFORMS];
+const FOCUS_DELAY_IN_MILLISECONDS = 50;
 const STAGE_HEIGHT_CLASS = "h-[430px]";
 const NAV_BUTTON_CLASS =
   "absolute top-1/2 z-[500] flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover";
@@ -31,6 +38,14 @@ export type GamesShelfLabels = {
   status: Record<ShelfList, string>;
   reaction: Record<ShelfList, string>;
   reactionError: string;
+  voteRateLimited: string;
+  /** Shown on the Recommended tab once this browser has recommended the game. */
+  reactionPressedRecommended: string;
+  /** Contains `{count}`. */
+  sticker: string;
+  pendingSticker: string;
+  pendingNote: string;
+  note: NoteLabels;
   stageLabel: string;
   previous: string;
   next: string;
@@ -44,6 +59,20 @@ export type GamesShelfLabels = {
   emptyNote: string;
   recommendLike: string;
   setup: string;
+  form: RecommendFormLabels;
+};
+
+/** Everything the details strip and a case need about one game on the active tab. */
+type ShelfCase = {
+  key: string;
+  entry: CaseEntry;
+  year: number | string | null;
+  badgeText: string;
+  note: string;
+  showLabel: string;
+  reaction: { pressed: boolean; count: number; isEnabled: boolean; toggle: () => void };
+  /** Slug of the played or playing game the "like this" link refers to. */
+  similarSlug: string | null;
 };
 
 type GamesShelfProps = {
@@ -51,28 +80,83 @@ type GamesShelfProps = {
   labels: GamesShelfLabels;
 };
 
+function describeRecommendation(
+  recommendation: RecommendationView,
+  games: ShelfEntry[],
+  labels: GamesShelfLabels,
+): string {
+  if (recommendation.status === "pending") {
+    return labels.pendingNote;
+  }
+  const likedTitle = games.find((game) => game.slug === recommendation.becauseSlug)?.title;
+  return buildRecommendationNote(recommendation, likedTitle, labels.note);
+}
+
 export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");
   const [rawIndex, setRawIndex] = useState(0);
   const { counts: reactionCounts, mine, hasError, toggle } = useGameReactions();
+  const { recommendations, voteError, submit, toggleVote } = useGameRecommendations();
+  const likeOptions = games.filter((game) => game.list === "played" || game.list === "playing");
+  const [becauseSlug, setBecauseSlug] = useState(likeOptions[0]?.slug ?? "");
   const dragStartX = useRef<number | undefined>(undefined);
   const hasDragged = useRef(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const tabsRef = useRef<HTMLDivElement>(null);
 
-  // Recommendations arrive with their own ticket; until then that shelf is empty.
-  const recommendedGames: ShelfEntry[] = [];
-  const listCounts = { ...countByList(games), recommended: recommendedGames.length };
+  const listCounts = { ...countByList(games), recommended: recommendations.length };
   const platformCounts =
     activeList === "recommended"
       ? countByPlatform([], "playing")
       : countByPlatform(games, activeList);
-  const entries =
-    activeList === "recommended" ? recommendedGames : filterShelf(games, activeList, platform);
-  const hasEntries = entries.length > 0;
-  const activeIndex = clampIndex(rawIndex, entries.length);
-  const activeEntry = hasEntries ? entries[activeIndex] : null;
 
-  const goTo = (index: number) => setRawIndex(clampIndex(index, entries.length));
+  const cases: ShelfCase[] =
+    activeList === "recommended"
+      ? recommendations.map((recommendation) => ({
+          key: `recommendation-${recommendation.id}`,
+          entry: {
+            title: recommendation.title,
+            platform: recommendation.platform,
+            tone: "var(--surface-hover)",
+            coverUrl: recommendation.coverUrl,
+            sticker:
+              recommendation.status === "pending"
+                ? labels.pendingSticker
+                : labels.sticker.replace("{count}", String(recommendation.count)),
+          },
+          year: recommendation.year,
+          badgeText: `×${recommendation.count}`,
+          note: describeRecommendation(recommendation, games, labels),
+          showLabel: labels.showGame.replace("{title}", recommendation.title),
+          reaction: {
+            pressed: recommendation.mine,
+            count: recommendation.count,
+            isEnabled: recommendation.status === "approved",
+            toggle: () => toggleVote(recommendation.id),
+          },
+          similarSlug: null,
+        }))
+      : filterShelf(games, activeList, platform).map((game) => ({
+          key: game.slug,
+          entry: game,
+          year: game.year,
+          badgeText: game.list === "wishlist" ? labels.soon : String(game.year),
+          note: game.note,
+          showLabel: labels.showGame.replace("{title}", game.title),
+          reaction: {
+            pressed: mine.has(game.slug),
+            count: reactionCounts[game.slug] ?? 0,
+            isEnabled: true,
+            toggle: () => toggle(game.slug),
+          },
+          similarSlug: game.list === "wishlist" ? null : game.slug,
+        }));
+  const hasEntries = cases.length > 0;
+  const activeIndex = clampIndex(rawIndex, cases.length);
+  const activeCase = hasEntries ? cases[activeIndex] : null;
+
+  const goTo = (index: number) => setRawIndex(clampIndex(index, cases.length));
 
   function chooseList(list: ShelfList) {
     setActiveList(list);
@@ -82,6 +166,27 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
   function choosePlatform(nextPlatform: PlatformFilter) {
     setPlatform(nextPlatform);
     setRawIndex(0);
+  }
+
+  function openRecommended() {
+    chooseList("recommended");
+    tabsRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function recommendSimilar(likedSlug: string) {
+    setBecauseSlug(likedSlug);
+    setTimeout(() => searchInputRef.current?.focus(), FOCUS_DELAY_IN_MILLISECONDS);
+  }
+
+  async function submitRecommendation(submission: RecommendationSubmission) {
+    const outcome = await submit(submission);
+    const saved = outcome.kind === "saved" ? outcome.recommendation : null;
+    if (outcome.kind === "saved" && saved) {
+      setActiveList("recommended");
+      setPlatform("all");
+      setRawIndex(outcome.recommendations.findIndex((item) => item.id === saved.id));
+    }
+    return outcome;
   }
 
   function handlePointerDown(event: PointerEvent<HTMLDivElement>) {
@@ -99,11 +204,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
     if (dragStartX.current === undefined) {
       return;
     }
-    const nextIndex = indexAfterDrag(
-      activeIndex,
-      event.clientX - dragStartX.current,
-      entries.length,
-    );
+    const nextIndex = indexAfterDrag(activeIndex, event.clientX - dragStartX.current, cases.length);
     dragStartX.current = undefined;
     setRawIndex(nextIndex);
     // Clears after the click that follows pointerup, so a drag never selects a case.
@@ -121,14 +222,29 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
   const emptyTitle =
     activeList === "recommended" ? labels.emptyRecommendedTitle : labels.emptyTitle;
   const emptyNote = activeList === "recommended" ? labels.emptyRecommendedNote : labels.emptyNote;
-  const isReacted = activeEntry ? mine.has(activeEntry.slug) : false;
+  const reaction = activeCase?.reaction;
+  const isReacted = reaction?.pressed ?? false;
   const reactionLabel = labels.reaction[activeList];
-  const reactionCount = activeEntry ? (reactionCounts[activeEntry.slug] ?? 0) : 0;
-  const canRecommendSimilar = activeEntry !== null && activeList !== "wishlist";
+  const pressedReactionLabel =
+    activeList === "recommended"
+      ? labels.reactionPressedRecommended
+      : `${reactionLabel} · ${reaction?.count ?? 0}`;
+  const similarSlug = activeCase?.similarSlug ?? null;
+  const reactionErrorText =
+    voteError === "rate_limited"
+      ? labels.voteRateLimited
+      : voteError || hasError
+        ? labels.reactionError
+        : null;
 
   return (
     <div className="mt-10">
-      <div role="group" aria-label={labels.tabsLabel} className="mb-6 flex flex-wrap gap-2">
+      <div
+        ref={tabsRef}
+        role="group"
+        aria-label={labels.tabsLabel}
+        className="mb-6 flex scroll-mt-24 flex-wrap gap-2"
+      >
         {TAB_ORDER.map((list) => {
           const isActive = list === activeList;
           return (
@@ -186,7 +302,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           aria-label={labels.stageLabel}
           tabIndex={0}
           onKeyDown={(event) => {
-            const nextIndex = indexAfterKey(activeIndex, event.key, entries.length);
+            const nextIndex = indexAfterKey(activeIndex, event.key, cases.length);
             if (nextIndex !== undefined) {
               event.preventDefault();
               setRawIndex(nextIndex);
@@ -202,15 +318,15 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           <div className="games-floor pointer-events-none absolute inset-x-0 bottom-0 h-[120px]" />
           <div className="absolute top-[70px] left-1/2 size-0 [transform-style:preserve-3d]">
             {hasEntries ? (
-              entries.map((entry, index) => (
+              cases.map((shelfCase, index) => (
                 <GameCase
-                  key={entry.slug}
-                  entry={entry}
+                  key={shelfCase.key}
+                  entry={shelfCase.entry}
                   index={index}
                   activeIndex={activeIndex}
-                  badgeText={entry.list === "wishlist" ? labels.soon : String(entry.year)}
+                  badgeText={shelfCase.badgeText}
                   emptyTitle={emptyTitle}
-                  showLabel={labels.showGame.replace("{title}", entry.title)}
+                  showLabel={shelfCase.showLabel}
                   onSelect={selectCase}
                 />
               ))
@@ -240,7 +356,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           <button
             type="button"
             aria-label={labels.next}
-            disabled={activeIndex >= entries.length - 1}
+            disabled={activeIndex >= cases.length - 1}
             onPointerDown={(event) => event.stopPropagation()}
             onClick={() => goTo(activeIndex + 1)}
             className={`${NAV_BUTTON_CLASS} right-4 disabled:opacity-40`}
@@ -249,29 +365,33 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           </button>
 
           <p className="pointer-events-none absolute inset-x-0 bottom-3 m-0 text-center font-mono text-xs text-text-faint">
-            {formatCounter(activeIndex, entries.length)} · {labels.counterHint}
+            {formatCounter(activeIndex, cases.length)} · {labels.counterHint}
           </p>
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-line px-7 pt-5 pb-6">
           <div aria-live="polite" className="flex min-w-0 flex-[1_1_340px] flex-col gap-1.5">
             <p className="m-0 font-mono text-xs text-accent">
-              {labels.status[activeList]}
-              {activeEntry
-                ? ` · ${PLATFORM_STYLES[activeEntry.platform].name} · ${activeEntry.year}`
-                : null}
+              {[
+                labels.status[activeList],
+                ...(activeCase
+                  ? [PLATFORM_STYLES[activeCase.entry.platform].name, activeCase.year]
+                  : []),
+              ]
+                .filter((part) => part !== null)
+                .join(" · ")}
             </p>
             <h3 className="m-0 font-display text-[30px] leading-none font-extrabold tracking-[-0.02em]">
-              {activeEntry?.title ?? emptyTitle}
+              {activeCase?.entry.title ?? emptyTitle}
             </h3>
-            <p className="m-0 text-[15px] text-text-2">{activeEntry?.note ?? emptyNote}</p>
+            <p className="m-0 text-[15px] text-text-2">{activeCase?.note ?? emptyNote}</p>
           </div>
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
               aria-pressed={isReacted}
-              disabled={!activeEntry}
-              onClick={() => activeEntry && toggle(activeEntry.slug)}
+              disabled={!reaction?.isEnabled}
+              onClick={reaction?.toggle}
               className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-[18px] text-sm transition-colors disabled:cursor-default disabled:opacity-40 ${
                 isReacted
                   ? "border-accent bg-accent/15 text-white"
@@ -279,13 +399,12 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               }`}
             >
               <Heart size={16} aria-hidden="true" fill={isReacted ? "currentColor" : "none"} />
-              {isReacted && reactionCount > 0
-                ? `${reactionLabel} · ${reactionCount}`
-                : reactionLabel}
+              {isReacted ? pressedReactionLabel : reactionLabel}
             </button>
-            {canRecommendSimilar ? (
+            {similarSlug ? (
               <a
                 href="#recommend"
+                onClick={() => recommendSimilar(similarSlug)}
                 className="inline-flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-[18px] text-sm text-text no-underline transition-colors hover:border-line-hover"
               >
                 {labels.recommendLike}
@@ -293,13 +412,24 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               </a>
             ) : null}
           </div>
-          {hasError ? (
+          {reactionErrorText ? (
             <p role="alert" className="m-0 basis-full text-sm text-text-muted">
-              {labels.reactionError}
+              {reactionErrorText}
             </p>
           ) : null}
         </div>
       </div>
+
+      <RecommendForm
+        labels={labels.form}
+        likeOptions={likeOptions}
+        becauseSlug={becauseSlug}
+        onBecauseChange={setBecauseSlug}
+        searchInputRef={searchInputRef}
+        recommendedCount={recommendations.length}
+        onOpenRecommended={openRecommended}
+        onSubmit={submitRecommendation}
+      />
 
       <p className="mt-6 mb-0 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-text-muted">
         {labels.setup}

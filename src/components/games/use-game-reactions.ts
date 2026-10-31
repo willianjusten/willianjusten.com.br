@@ -1,20 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { readBrowserId } from "./browser-id";
 
-const BROWSER_ID_STORAGE_KEY = "wj-browser-id";
 const REACTIONS_ENDPOINT = "/api/games/reactions";
-
-/** A random id kept in this browser; it is how "one reaction per game per browser" is enforced. */
-function readBrowserId(): string {
-  const stored = window.localStorage.getItem(BROWSER_ID_STORAGE_KEY);
-  if (stored) {
-    return stored;
-  }
-  const created = crypto.randomUUID();
-  window.localStorage.setItem(BROWSER_ID_STORAGE_KEY, created);
-  return created;
-}
 
 export function useGameReactions() {
   const [counts, setCounts] = useState<Record<string, number>>({});

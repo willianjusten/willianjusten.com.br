@@ -1,14 +1,15 @@
 import { Gamepad2 } from "lucide-react";
+import Image from "next/image";
 import { getCasePose } from "@/lib/games/coverflow";
 import { PLATFORM_STYLES } from "./platform-style";
-import type { ShelfEntry } from "./types";
+import type { CaseEntry } from "./types";
 
 const WATERMARK_SIZE_IN_PIXELS = 170;
 const WATERMARK_STROKE_WIDTH = 1.3;
 
 type GameCaseProps = {
   /** Null renders the dashed empty case. */
-  entry: ShelfEntry | null;
+  entry: CaseEntry | null;
   index: number;
   activeIndex: number;
   /** Replaces the year in the band badge, e.g. "SOON" on the wishlist. */
@@ -69,10 +70,30 @@ export function GameCase({
           strokeWidth={WATERMARK_STROKE_WIDTH}
           className="absolute top-[52px] -right-6 text-white/10"
         />
-        <div className="absolute right-3.5 bottom-3.5 left-3.5 flex flex-col gap-1.5">
-          <span className="game-title font-display text-[26px] leading-[0.95] font-extrabold tracking-[-0.02em] text-white">
-            {title}
+        {entry?.coverUrl ? (
+          <span className="absolute inset-x-0 top-7 bottom-0">
+            <Image
+              src={entry.coverUrl}
+              alt=""
+              fill
+              unoptimized
+              draggable={false}
+              sizes="200px"
+              className="object-cover"
+            />
           </span>
+        ) : null}
+        <div className="absolute right-3.5 bottom-3.5 left-3.5 flex flex-col gap-1.5">
+          {entry?.sticker ? (
+            <span className="-rotate-3 self-start rounded-pill bg-text px-2 py-[3px] font-mono text-[9px] text-on-accent">
+              {entry.sticker}
+            </span>
+          ) : null}
+          {entry?.coverUrl ? null : (
+            <span className="game-title font-display text-[26px] leading-[0.95] font-extrabold tracking-[-0.02em] text-white">
+              {title}
+            </span>
+          )}
         </div>
         <div className="game-case-gloss pointer-events-none absolute inset-0" />
         {entry && pose.interactive ? (
