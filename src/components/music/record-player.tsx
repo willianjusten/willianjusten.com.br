@@ -43,8 +43,25 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
       frameId = requestAnimationFrame(renderFrame);
     }
 
-    frameId = requestAnimationFrame(renderFrame);
-    return () => cancelAnimationFrame(frameId);
+    function stopLoop() {
+      cancelAnimationFrame(frameId);
+      frameId = 0;
+    }
+
+    // The loop only runs while the record is on screen.
+    const visibilityObserver = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        if (!frameId) frameId = requestAnimationFrame(renderFrame);
+      } else {
+        stopLoop();
+      }
+    });
+    if (stackRef.current) visibilityObserver.observe(stackRef.current);
+
+    return () => {
+      visibilityObserver.disconnect();
+      stopLoop();
+    };
   }, []);
 
   function pointerAngleOnDisc(event: PointerEvent<HTMLDivElement>): number {
