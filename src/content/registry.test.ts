@@ -66,3 +66,34 @@ describe("profile content module", () => {
     expect(parsed?.success).toBe(false);
   });
 });
+
+describe("music content module", () => {
+  const musicModule = contentModules.find((contentModule) => contentModule.name === "music");
+  const musicData = musicModule?.data as { songOfTheMoment: string; tracks: { id: string }[] };
+
+  it("is registered", () => {
+    expect(musicModule).toBeDefined();
+  });
+
+  it("rejects a song of the moment that is not a listed track", () => {
+    const parsed = musicModule?.schema.safeParse({ ...musicData, songOfTheMoment: "missing" });
+    expect(parsed?.success).toBe(false);
+  });
+
+  it("rejects duplicate track ids", () => {
+    const parsed = musicModule?.schema.safeParse({
+      ...musicData,
+      tracks: [...musicData.tracks, musicData.tracks[0]],
+    });
+    expect(parsed?.success).toBe(false);
+  });
+
+  it("rejects a streaming link that is not a URL", () => {
+    const [firstTrack, ...otherTracks] = musicData.tracks;
+    const parsed = musicModule?.schema.safeParse({
+      ...musicData,
+      tracks: [{ ...firstTrack, spotifyUrl: "nope" }, ...otherTracks],
+    });
+    expect(parsed?.success).toBe(false);
+  });
+});

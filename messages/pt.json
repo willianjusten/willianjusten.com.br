@@ -1,7 +1,13 @@
 {
   "Metadata": {
-    "title": "Willian Justen",
-    "description": "Descrição provisória. O texto final chega com o ticket de SEO."
+    "title": "Willian Justen | Engenheiro de produto",
+    "description": "Engenheiro de produto na Spoke. Levo produtos do problema nebuloso até a entrega, e passo o resto do tempo atrás de uma câmera, de um controle ou de um cartão de embarque.",
+    "tagline": "Engenheiro de produto. Fotos, games, NBA e viagens."
+  },
+  "FarewellBanner": {
+    "label": "Aviso sobre o fim do blog",
+    "message": "Obrigado por acompanhar o blog todos esses anos. Ele foi aposentado, e este site agora é a minha casa para lugares, games, NBA e música.",
+    "dismiss": "Dispensar aviso"
   },
   "Header": {
     "openMenu": "Abrir menu",
@@ -65,7 +71,21 @@
     "music": {
       "eyebrow": "04 · Músicas",
       "title": "Todo post terminava com uma música.",
-      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes."
+      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes.",
+      "songOfTheMoment": "Música do momento",
+      "record": "Disco girando. Arraste para fazer scratch.",
+      "play": "Tocar prévia",
+      "pause": "Pausar prévia",
+      "previewUnavailable": "Sem prévia disponível",
+      "hint": "incline · arraste o disco para fazer scratch",
+      "listenOn": "Ouvir no",
+      "youtubeMusic": "YouTube Music",
+      "spotify": "Spotify",
+      "appleMusic": "Apple Music",
+      "credit": "Prévias cortesia do Apple Music",
+      "previously": "Antes no repeat",
+      "previewTrack": "Ouvir prévia de {title}",
+      "pauseTrack": "Pausar {title}"
     }
   },
   "Footer": {

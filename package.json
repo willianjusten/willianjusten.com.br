@@ -14,7 +14,8 @@
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "music:previews": "node scripts/music-previews/run.ts"
   },
   "dependencies": {
     "lucide-react": "^1.66.0",

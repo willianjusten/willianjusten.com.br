@@ -1,7 +1,13 @@
 {
   "Metadata": {
-    "title": "Willian Justen",
-    "description": "Placeholder description. The real copy lands with the SEO ticket."
+    "title": "Willian Justen | Product engineer",
+    "description": "Product engineer at Spoke. I take products from the fuzzy problem to the shipped thing, and spend the rest of my time behind a camera, a controller, or a boarding pass.",
+    "tagline": "Product engineer. Photos, games, the NBA and trips."
+  },
+  "FarewellBanner": {
+    "label": "Blog retirement notice",
+    "message": "Thank you for following the blog all these years. It is retired now, and this site is my home for places, games, NBA and music.",
+    "dismiss": "Dismiss notice"
   },
   "Header": {
     "openMenu": "Open menu",
@@ -65,7 +71,21 @@
     "music": {
       "eyebrow": "04 · Music",
       "title": "Every post ended with a song.",
-      "intro": "The posts are gone. The songs stay. Here's what's on repeat right now, and what came before it."
+      "intro": "The posts are gone. The songs stay. Here's what's on repeat right now, and what came before it.",
+      "songOfTheMoment": "Song of the moment",
+      "record": "Spinning record. Drag it to scratch.",
+      "play": "Play preview",
+      "pause": "Pause preview",
+      "previewUnavailable": "No preview available",
+      "hint": "tilt it · drag the record to scratch",
+      "listenOn": "Listen on",
+      "youtubeMusic": "YouTube Music",
+      "spotify": "Spotify",
+      "appleMusic": "Apple Music",
+      "credit": "Previews courtesy of Apple Music",
+      "previously": "Previously on repeat",
+      "previewTrack": "Preview {title}",
+      "pauseTrack": "Pause {title}"
     }
   },
   "Footer": {
