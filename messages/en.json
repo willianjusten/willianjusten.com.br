@@ -4,6 +4,8 @@
     "description": "Placeholder description. The real copy lands with the SEO ticket."
   },
   "Header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "backToTop": "Willian Justen, back to top",
     "navigationLabel": "Sections",
     "places": "Places",

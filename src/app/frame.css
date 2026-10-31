@@ -60,6 +60,20 @@
   }
 }
 
+/* Mobile menu panel drops in below the header. */
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-menu-panel {
+    animation: mobile-menu-drop var(--dur-fast) ease-out;
+  }
+}
+
+@keyframes mobile-menu-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
 /* Header links: underline grows left to right on hover and focus, retracts to the right. */
 .nav-link-label {
   position: relative;

@@ -19,9 +19,7 @@ export function HeaderFrame({ children }: { children: ReactNode }) {
 
   return (
     <header className="site-header" data-scrolled={isScrolled}>
-      <div className="mx-auto flex max-w-page flex-wrap items-center justify-between gap-x-6 gap-y-1 px-8">
-        {children}
-      </div>
+      <div className="mx-auto flex max-w-page items-center gap-x-6 px-8">{children}</div>
     </header>
   );
 }
