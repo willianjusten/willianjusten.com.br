@@ -1,7 +1,6 @@
 import { ArrowUpRight, Briefcase, Camera, GitBranch, Mail, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { isPlaceholder, profile } from "@/content/profile";
-import { LocaleToggle } from "./locale-toggle";
 
 const chipClassName =
   "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-(--glass-chip) px-5 no-underline";
@@ -69,10 +68,7 @@ export async function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-line pt-6 text-small text-text-muted">
           <span>{t("retiredBlog")}</span>
-          <span className="flex flex-wrap items-center gap-4">
-            <LocaleToggle />
-            <span className="font-mono text-eyebrow">{t("copyright")}</span>
-          </span>
+          <span className="font-mono text-eyebrow">{t("copyright")}</span>
         </div>
       </div>
     </footer>
