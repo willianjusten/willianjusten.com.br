@@ -61,7 +61,43 @@
     "games": {
       "eyebrow": "02 · Games",
       "title": "Press start.",
-      "intro": "What I'm playing, what I've finished and what's next on the list. Got a game I should try? Tell me."
+      "intro": "What I'm playing, what I've finished and what's next on the list. Got a game I should try? Tell me.",
+      "shelf": {
+        "tabsLabel": "Game lists",
+        "platformsLabel": "Filter by platform",
+        "all": "All",
+        "tabs": {
+          "playing": "Playing",
+          "played": "Played",
+          "wishlist": "Wishlist",
+          "recommended": "Recommended"
+        },
+        "status": {
+          "playing": "Playing now",
+          "played": "Finished",
+          "wishlist": "On the wishlist",
+          "recommended": "Recommended to me"
+        },
+        "reaction": {
+          "playing": "Playing it too",
+          "played": "Played it too",
+          "wishlist": "Want it too",
+          "recommended": "Recommend this too"
+        },
+        "reactionError": "Could not save your reaction. Try again in a bit.",
+        "stageLabel": "Games shelf. Use the left and right arrow keys to browse.",
+        "previous": "Previous game",
+        "next": "Next game",
+        "showGame": "Show {title}",
+        "counterHint": "drag or click a case",
+        "soon": "SOON",
+        "emptyRecommendedTitle": "Your pick here",
+        "emptyRecommendedNote": "Nothing recommended yet. Search for a game below and put the first one on this shelf.",
+        "emptyTitle": "Nothing here",
+        "emptyNote": "No games on this platform in this list yet.",
+        "recommendLike": "Recommend something like this",
+        "setup": "My setup"
+      }
     },
     "nba": {
       "eyebrow": "03 · NBA",
