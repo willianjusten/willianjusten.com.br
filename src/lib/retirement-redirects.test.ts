@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import oldPostSlugs from "../../data/legacy/old-post-slugs.json";
-import { buildRetirementRedirects } from "./retirement-redirects";
+import { KEPT_REDIRECTS, buildRetirementRedirects } from "./retirement-redirects";
 
 const rules = buildRetirementRedirects(oldPostSlugs);
 
@@ -40,5 +40,15 @@ describe("blog retirement redirects", () => {
     expect(sources.some((source) => /\.\w+$/.test(source))).toBe(false);
     expect(sources).not.toContain("/:slug");
     expect(sources).not.toContain("/:path*");
+  });
+
+  it("sends the old my-trips page to the Portuguese places section", () => {
+    for (const source of ["/my-trips", "/my-trips/"]) {
+      expect(KEPT_REDIRECTS).toContainEqual({
+        source,
+        destination: "/pt#places",
+        statusCode: 301,
+      });
+    }
   });
 });
