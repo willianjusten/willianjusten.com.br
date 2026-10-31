@@ -46,14 +46,23 @@ const PLACEHOLDER_WHY = { en: "[Why it is on the list]", pt: "[Por que está na 
 
 type GameInput = z.input<typeof gameSchema>;
 
-function placeholderGame(
-  slug: string,
-  platform: GamePlatform,
-  list: GameList,
-  tone: string,
-  note: GameInput["note"],
-): GameInput {
-  return { slug, title: "[Game title]", platform, list, year: "[year]", note, tone };
+type PlaceholderGameOptions = {
+  slug: string;
+  platform: GamePlatform;
+  list: GameList;
+  /** Stand-in cover colour until the IGDB cover is wired. */
+  coverTone: string;
+  note: GameInput["note"];
+};
+
+function placeholderGame({
+  slug,
+  platform,
+  list,
+  coverTone,
+  note,
+}: PlaceholderGameOptions): GameInput {
+  return { slug, title: "[Game title]", platform, list, year: "[year]", note, tone: coverTone };
 }
 
 export const gamesData: z.input<typeof gamesSchema> = {
@@ -67,11 +76,23 @@ export const gamesData: z.input<typeof gamesSchema> = {
       note: PLACEHOLDER_NOTE,
       tone: "#5A2A1E",
     },
-    placeholderGame("playing-rog", "rog", "playing", "#1E3A52", {
-      en: "The couch and travel game of the month.",
-      pt: "O jogo de sofá e de viagem do mês.",
+    placeholderGame({
+      slug: "playing-rog",
+      platform: "rog",
+      list: "playing",
+      coverTone: "#1E3A52",
+      note: {
+        en: "The couch and travel game of the month.",
+        pt: "O jogo de sofá e de viagem do mês.",
+      },
     }),
-    placeholderGame("playing-switch2", "switch2", "playing", "#4A2A24", PLACEHOLDER_NOTE),
+    placeholderGame({
+      slug: "playing-switch2",
+      platform: "switch2",
+      list: "playing",
+      coverTone: "#4A2A24",
+      note: PLACEHOLDER_NOTE,
+    }),
     {
       slug: "alan-wake-2",
       title: "Alan Wake 2",
@@ -81,16 +102,76 @@ export const gamesData: z.input<typeof gamesSchema> = {
       note: PLACEHOLDER_VERDICT,
       tone: "#1E3434",
     },
-    placeholderGame("played-ps5-a", "ps5", "played", "#3A2C52", PLACEHOLDER_VERDICT),
-    placeholderGame("played-xbox-a", "xbox", "played", "#4A3A1E", PLACEHOLDER_VERDICT),
-    placeholderGame("played-switch2-a", "switch2", "played", "#52203A", PLACEHOLDER_VERDICT),
-    placeholderGame("played-rog-a", "rog", "played", "#20384A", PLACEHOLDER_VERDICT),
-    placeholderGame("played-ps5-b", "ps5", "played", "#2E4A24", PLACEHOLDER_VERDICT),
-    placeholderGame("played-xbox-b", "xbox", "played", "#2A2E4A", PLACEHOLDER_VERDICT),
-    placeholderGame("played-switch2-b", "switch2", "played", "#33304A", PLACEHOLDER_VERDICT),
-    placeholderGame("wishlist-ps5", "ps5", "wishlist", "#36402A", PLACEHOLDER_WHY),
-    placeholderGame("wishlist-switch2", "switch2", "wishlist", "#4A2840", PLACEHOLDER_WHY),
-    placeholderGame("wishlist-xbox", "xbox", "wishlist", "#1E3A52", PLACEHOLDER_WHY),
+    placeholderGame({
+      slug: "played-ps5-a",
+      platform: "ps5",
+      list: "played",
+      coverTone: "#3A2C52",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-xbox-a",
+      platform: "xbox",
+      list: "played",
+      coverTone: "#4A3A1E",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-switch2-a",
+      platform: "switch2",
+      list: "played",
+      coverTone: "#52203A",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-rog-a",
+      platform: "rog",
+      list: "played",
+      coverTone: "#20384A",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-ps5-b",
+      platform: "ps5",
+      list: "played",
+      coverTone: "#2E4A24",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-xbox-b",
+      platform: "xbox",
+      list: "played",
+      coverTone: "#2A2E4A",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "played-switch2-b",
+      platform: "switch2",
+      list: "played",
+      coverTone: "#33304A",
+      note: PLACEHOLDER_VERDICT,
+    }),
+    placeholderGame({
+      slug: "wishlist-ps5",
+      platform: "ps5",
+      list: "wishlist",
+      coverTone: "#36402A",
+      note: PLACEHOLDER_WHY,
+    }),
+    placeholderGame({
+      slug: "wishlist-switch2",
+      platform: "switch2",
+      list: "wishlist",
+      coverTone: "#4A2840",
+      note: PLACEHOLDER_WHY,
+    }),
+    placeholderGame({
+      slug: "wishlist-xbox",
+      platform: "xbox",
+      list: "wishlist",
+      coverTone: "#1E3A52",
+      note: PLACEHOLDER_WHY,
+    }),
   ],
 };
 

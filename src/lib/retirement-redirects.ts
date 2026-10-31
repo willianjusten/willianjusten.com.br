@@ -4,6 +4,26 @@ export type RedirectRule = {
   statusCode: 301;
 };
 
+/** Old URLs that still have a home. The my-trips audience was Portuguese, so it lands on /pt. */
+export const KEPT_REDIRECTS = [
+  { source: "/my-trips/", destination: "/pt#places" },
+  { source: "/my-trips", destination: "/pt#places" },
+  { source: "/japanese-words/", destination: "https://japanese-words.willianjusten.com.br/" },
+  { source: "/learn-japanese/", destination: "https://learn-japanese.willianjusten.com.br/" },
+  {
+    source: "/js-com-tdd-na-pratica-na-udemy/",
+    destination: "https://www.youtube.com/@WillianJustenCursos",
+  },
+  {
+    source: "/novo-curso-aprenda-criar-sites-animados-greensock/",
+    destination: "https://willianjusten.com.br",
+  },
+  {
+    source: "/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/",
+    destination: "https://willianjusten.com.br",
+  },
+].map((rule) => ({ ...rule, statusCode: 301 as const }));
+
 const POST_DESTINATION = "/pt?from=blog";
 const HOME_DESTINATION = "/";
 

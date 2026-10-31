@@ -11,16 +11,16 @@ export function buildRetirementFeed(): string {
   <channel>
     <title>Willian Justen</title>
     <link>${SITE_URL}/</link>
-    <description>The blog is retired. Thank you for reading all these years.</description>
-    <language>en</language>
+    <description>O blog foi aposentado. Obrigado por ler todos esses anos.</description>
+    <language>pt-BR</language>
     <lastBuildDate>${publishedAt}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Thank you, and goodbye</title>
+      <title>Obrigado, e até logo</title>
       <link>${SITE_URL}/</link>
       <guid isPermaLink="false">blog-retirement</guid>
       <pubDate>${publishedAt}</pubDate>
-      <description>Thank you for following the blog all these years. It is retired now, and willianjusten.com.br is my home for places, games, NBA and music. Obrigado por acompanhar o blog todos esses anos.</description>
+      <description>Obrigado por acompanhar o blog todos esses anos. Ele foi aposentado, e willianjusten.com.br agora é a minha casa para lugares, jogos, NBA e música. Thank you for following the blog all these years.</description>
     </item>
   </channel>
 </rss>

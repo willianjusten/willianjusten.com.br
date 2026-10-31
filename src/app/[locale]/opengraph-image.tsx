@@ -2,20 +2,10 @@ import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
+import { palette, withAlpha } from "@/lib/palette";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-
-// next/og cannot read CSS variables, so the design tokens are mirrored here.
-const colors = {
-  background: "#0e0e10",
-  text: "#edede8",
-  muted: "#9a9a94",
-  accent: "#ff6b35",
-  accentHigh: "#ff9461",
-  accentLow: "#d9501c",
-  onAccent: "#0e0e10",
-};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -33,8 +23,8 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
         display: "flex",
         position: "relative",
         overflow: "hidden",
-        background: colors.background,
-        color: colors.text,
+        background: palette.background,
+        color: palette.text,
       }}
     >
       <div
@@ -44,8 +34,7 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
           left: 0,
           width: "100%",
           height: "100%",
-          background:
-            "radial-gradient(circle at 78% 18%, rgba(255, 107, 53, 0.38), rgba(255, 107, 53, 0) 45%)",
+          background: `radial-gradient(circle at 78% 18%, ${withAlpha(palette.accent, 0.38)}, ${withAlpha(palette.accent, 0)} 45%)`,
         }}
       />
       <div
@@ -66,8 +55,8 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
             width: 96,
             height: 96,
             borderRadius: 16,
-            background: `linear-gradient(135deg, ${colors.accentHigh}, ${colors.accent} 45%, ${colors.accentLow})`,
-            color: colors.onAccent,
+            background: `linear-gradient(135deg, ${palette.accentHigh}, ${palette.accent} 45%, ${palette.accentLow})`,
+            color: palette.onAccent,
             fontSize: 52,
             fontWeight: 800,
           }}
@@ -78,7 +67,7 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
           <div style={{ fontSize: 112, fontWeight: 800, letterSpacing: -3, lineHeight: 1 }}>
             Willian Justen
           </div>
-          <div style={{ marginTop: 28, fontSize: 38, color: colors.muted, maxWidth: 1040 }}>
+          <div style={{ marginTop: 28, fontSize: 38, color: palette.textMuted, maxWidth: 1040 }}>
             {t("tagline")}
           </div>
         </div>

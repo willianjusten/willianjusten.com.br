@@ -6,6 +6,7 @@ import {
   RECOMMENDATION_RATE_LIMIT,
   VOTE_RATE_LIMIT,
 } from "./recommendation-routes";
+import { REACTION_RATE_LIMIT } from "./reaction-route";
 import type { RecommendationView } from "./recommendations";
 
 const BROWSER_ID = "3f1c2d4e-5a6b-4c7d-8e9f-0a1b2c3d4e5f";
@@ -82,25 +83,30 @@ describe("recommendations route", () => {
   });
 
   it("drops honeypot submissions without saving anything", async () => {
-    const { route, submissions } = buildRecommendationRoute();
+    const { route, submissions, rules } = buildRecommendationRoute();
     const response = await route.POST(post({ ...VALID_SUBMISSION, website: "http://spam" }));
     expect(response.status).toBe(200);
     expect(await response.json()).toEqual({ recommendation: null });
     expect(submissions).toEqual([]);
+    expect(rules).toEqual([]);
   });
 
   it("rejects bad bodies, unknown likes and unknown IGDB games", async () => {
-    const { route, submissions } = buildRecommendationRoute();
+    const { route, submissions, rules } = buildRecommendationRoute();
     const bodies = [
       "not json",
       {},
       { ...VALID_SUBMISSION, browserId: "nope" },
       { ...VALID_SUBMISSION, becauseSlug: "made-up" },
-      { ...VALID_SUBMISSION, igdbId: 1 },
     ];
     for (const body of bodies) {
       expect((await route.POST(post(body))).status).toBe(400);
     }
+    expect(rules).toEqual([]);
+
+    // An unknown IGDB id needs the IGDB lookup, so it is checked after the rate limit.
+    expect((await route.POST(post({ ...VALID_SUBMISSION, igdbId: 1 }))).status).toBe(400);
+    expect(rules).toEqual([RECOMMENDATION_RATE_LIMIT.routeKey]);
     expect(submissions).toEqual([]);
   });
 
@@ -168,6 +174,11 @@ describe("votes route", () => {
     const open = buildVoteRoute();
     expect((await open.route.POST(post({ browserId: BROWSER_ID, voted: true }))).status).toBe(400);
     expect(open.calls).toEqual([]);
+    expect(open.rules).toEqual([]);
+  });
+
+  it("shares one hourly budget with game reactions", () => {
+    expect(VOTE_RATE_LIMIT).toEqual(REACTION_RATE_LIMIT);
   });
 });
 

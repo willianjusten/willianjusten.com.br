@@ -1,8 +1,7 @@
+import { palette, withAlpha } from "../palette";
 import { MAX_SHOT_SPEED, type Ball, type ShotGeometry, type Velocity } from "./shot-physics";
 
-/** Canvas 2D drawing for the shot game. Canvas cannot read CSS variables, so the palette mirrors the tokens. */
-const ACCENT = "#ff6b35";
-const TEXT_2 = "#cfcfc8";
+/** Canvas 2D drawing for the shot game. Brand colours come from the shared palette; the court scene colours are local art. */
 const GRAVITY_FOR_GUIDE = 0.35;
 const GUIDE_STEPS = 44;
 const MESSAGE_FRAMES = 80;
@@ -27,13 +26,13 @@ export type SceneState = {
 };
 
 const BOKEH: [number, number, number, string][] = [
-  [0.08, 0.18, 26, "rgba(255,107,53,.07)"],
+  [0.08, 0.18, 26, withAlpha(palette.accent, 0.07)],
   [0.22, 0.32, 18, "rgba(255,255,255,.05)"],
   [0.35, 0.12, 30, "rgba(255,138,61,.06)"],
   [0.5, 0.28, 16, "rgba(255,255,255,.05)"],
   [0.6, 0.1, 22, "rgba(255,194,122,.06)"],
   [0.15, 0.5, 14, "rgba(255,255,255,.04)"],
-  [0.44, 0.48, 20, "rgba(255,107,53,.05)"],
+  [0.44, 0.48, 20, withAlpha(palette.accent, 0.05)],
 ];
 
 function drawBackdrop(ctx: CanvasRenderingContext2D, g: ShotGeometry) {
@@ -88,7 +87,7 @@ function drawFloor(ctx: CanvasRenderingContext2D, g: ShotGeometry) {
     ctx.stroke();
   }
 
-  ctx.fillStyle = "rgba(255,107,53,.28)";
+  ctx.fillStyle = withAlpha(palette.accent, 0.28);
   ctx.fillRect(g.hoopX - 120, g.floorY, g.boardX + 60 - (g.hoopX - 120), g.height - g.floorY);
   ctx.fillStyle = "rgba(255,255,255,.75)";
   ctx.fillRect(g.hoopX - 122, g.floorY, 3, g.height - g.floorY);
@@ -139,7 +138,7 @@ function drawStanchion(ctx: CanvasRenderingContext2D, g: ShotGeometry) {
   ctx.lineTo(left + padWidth, g.floorY);
   ctx.closePath();
   ctx.fill();
-  ctx.fillStyle = ACCENT;
+  ctx.fillStyle = palette.accent;
   ctx.fillRect(left, padY + 16, padWidth, 7);
   ctx.fillStyle = "rgba(255,255,255,.08)";
   ctx.fillRect(left + 4, padY + 3, padWidth - 8, 3);
@@ -208,7 +207,7 @@ function drawRim(ctx: CanvasRenderingContext2D, g: ShotGeometry, half: "back" | 
     ctx.stroke();
     return;
   }
-  ctx.strokeStyle = ACCENT;
+  ctx.strokeStyle = palette.accent;
   ctx.lineWidth = 4;
   ctx.ellipse(g.hoopX, g.rimY, g.halfRim + 3, 7, 0, 0, Math.PI);
   ctx.stroke();
@@ -291,14 +290,14 @@ function drawAimGuide(ctx: CanvasRenderingContext2D, g: ShotGeometry, velocity: 
     x += velocity.vx;
     y += vy;
     if (step % 2 === 1) {
-      ctx.fillStyle = "rgba(237,237,232,.55)";
+      ctx.fillStyle = withAlpha(palette.text, 0.55);
       ctx.beginPath();
       ctx.arc(x, y, 2.4 * (1 - step / 56), 0, Math.PI * 2);
       ctx.fill();
     }
   }
   const power = Math.min(1, Math.hypot(velocity.vx, velocity.vy) / MAX_SHOT_SPEED);
-  ctx.strokeStyle = ACCENT;
+  ctx.strokeStyle = palette.accent;
   ctx.lineWidth = 3;
   ctx.lineCap = "round";
   ctx.beginPath();
@@ -391,7 +390,7 @@ function drawMessage(
   ctx.textAlign = "center";
   const fill = ctx.createLinearGradient(g.hoopX - 260, 0, g.hoopX, 0);
   fill.addColorStop(0, "#ffffff");
-  fill.addColorStop(1, ACCENT);
+  fill.addColorStop(1, palette.accent);
   ctx.fillStyle = fill;
   ctx.fillText(message.text, Math.max(140, g.hoopX - 220), g.rimY - 40 - elapsed * 0.5);
   ctx.restore();
@@ -399,7 +398,7 @@ function drawMessage(
 
 function drawHints(ctx: CanvasRenderingContext2D, g: ShotGeometry, scene: SceneState) {
   ctx.font = `500 12px ${scene.fonts.mono}`;
-  ctx.fillStyle = TEXT_2;
+  ctx.fillStyle = palette.textSecondary;
   ctx.textAlign = "left";
   if (scene.keyboardAngleInDegrees !== null) {
     const labelY = g.startY + 46 > g.floorY + 40 ? g.startY - 36 : g.startY + 46;

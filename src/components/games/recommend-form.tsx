@@ -6,6 +6,7 @@ import { Search, X } from "lucide-react";
 import { useId, useState } from "react";
 import type { ChangeEvent, FormEvent, KeyboardEvent, Ref } from "react";
 import { flushSync } from "react-dom";
+import { pickPrimaryPlatform } from "@/lib/games/igdb";
 import type { IgdbSearchResult } from "@/lib/games/igdb";
 import { MAX_NAME_LENGTH } from "@/lib/games/recommendations";
 import { CoverThumb } from "./cover-thumb";
@@ -218,7 +219,7 @@ export function RecommendForm({
                 >
                   <CoverThumb
                     coverUrl={result.coverUrl}
-                    platform={result.platforms[0]}
+                    platform={pickPrimaryPlatform(result.platforms)}
                     sizeClass="h-11 w-[34px]"
                     bandClass="h-2"
                   />
@@ -266,7 +267,7 @@ export function RecommendForm({
             <div className="flex items-center gap-3.5 rounded-lg border border-line-strong bg-bg p-3">
               <CoverThumb
                 coverUrl={picked.coverUrl}
-                platform={picked.platforms[0]}
+                platform={pickPrimaryPlatform(picked.platforms)}
                 sizeClass="h-[66px] w-[52px] shadow-(--shadow-1)"
                 bandClass="h-3"
               />

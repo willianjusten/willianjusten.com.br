@@ -1,6 +1,13 @@
 import { z } from "zod";
-import type { RateLimitResult, RateLimitRule } from "@/lib/db/rate-limit";
+import type { RateLimitRule } from "@/lib/db/rate-limit";
+import {
+  consumeRateLimit,
+  invalidBodyResponse,
+  NO_STORE,
+  type RateLimitGuardDependencies,
+} from "@/lib/db/rate-limit-guard";
 import type { IgdbGame, IgdbSearchResult } from "./igdb";
+import { REACTION_RATE_LIMIT } from "./reaction-route";
 import { sanitizeName } from "./recommendations";
 import type { RecommendationView } from "./recommendations";
 import type { VoteOutcome } from "./recommendation-stats";
@@ -11,13 +18,9 @@ export const RECOMMENDATION_RATE_LIMIT: RateLimitRule = {
   windowInSeconds: 60 * 60,
 };
 
-export const VOTE_RATE_LIMIT: RateLimitRule = {
-  routeKey: "game-recommendation-votes",
-  maxHits: 20,
-  windowInSeconds: 60 * 60,
-};
+/** Counts against the same hourly budget as game reactions. */
+export const VOTE_RATE_LIMIT: RateLimitRule = REACTION_RATE_LIMIT;
 
-const NO_STORE = { "Cache-Control": "no-store" };
 const SEARCH_CACHE_HEADERS = { "Cache-Control": "public, s-maxage=3600, max-age=300" };
 
 const browserIdSchema = z.uuid();
@@ -38,22 +41,6 @@ const voteSchema = z.object({
   recommendationId: z.number().int().positive(),
   voted: z.boolean(),
 });
-
-type RateLimitDependencies = {
-  hashClientIp: (headers: Headers) => string;
-  checkRateLimit: (ipHash: string, rule: RateLimitRule) => Promise<RateLimitResult>;
-};
-
-function rateLimitedResponse(limit: RateLimitResult): Response {
-  return Response.json(
-    { error: "rate_limited" },
-    { status: 429, headers: { ...NO_STORE, "Retry-After": String(limit.retryAfterInSeconds) } },
-  );
-}
-
-function invalidBodyResponse(): Response {
-  return Response.json({ error: "invalid_body" }, { status: 400, headers: NO_STORE });
-}
 
 export type SearchRouteDependencies = {
   searchGames: (text: string) => Promise<IgdbSearchResult[]>;
@@ -77,7 +64,7 @@ export function createSearchRoute(dependencies: SearchRouteDependencies) {
   };
 }
 
-export type RecommendationRouteDependencies = RateLimitDependencies & {
+export type RecommendationRouteDependencies = RateLimitGuardDependencies & {
   /** Fetches the game from IGDB by id so the browser never supplies title or cover. */
   getGame: (igdbId: number) => Promise<IgdbGame | undefined>;
   isLikeableGame: (slug: string) => boolean;
@@ -102,18 +89,17 @@ export function createRecommendationRoute(dependencies: RecommendationRouteDepen
     },
 
     async POST(request: Request): Promise<Response> {
-      const ipHash = dependencies.hashClientIp(request.headers);
-      const limit = await dependencies.checkRateLimit(ipHash, RECOMMENDATION_RATE_LIMIT);
-      if (!limit.allowed) {
-        return rateLimitedResponse(limit);
-      }
-
       const body = submissionSchema.safeParse(await request.json().catch(() => null));
       if (!body.success || !dependencies.isLikeableGame(body.data.becauseSlug)) {
         return invalidBodyResponse();
       }
       if (body.data.website) {
         return Response.json({ recommendation: null }, { headers: NO_STORE });
+      }
+
+      const rejection = await consumeRateLimit(dependencies, request, RECOMMENDATION_RATE_LIMIT);
+      if (rejection) {
+        return rejection;
       }
 
       const game = await dependencies.getGame(body.data.igdbId).catch(() => undefined);
@@ -131,7 +117,7 @@ export function createRecommendationRoute(dependencies: RecommendationRouteDepen
   };
 }
 
-export type VoteRouteDependencies = RateLimitDependencies & {
+export type VoteRouteDependencies = RateLimitGuardDependencies & {
   setRecommendationVote: (
     recommendationId: number,
     browserId: string,
@@ -142,16 +128,16 @@ export type VoteRouteDependencies = RateLimitDependencies & {
 export function createVoteRoute(dependencies: VoteRouteDependencies) {
   return {
     async POST(request: Request): Promise<Response> {
-      const ipHash = dependencies.hashClientIp(request.headers);
-      const limit = await dependencies.checkRateLimit(ipHash, VOTE_RATE_LIMIT);
-      if (!limit.allowed) {
-        return rateLimitedResponse(limit);
-      }
-
       const body = voteSchema.safeParse(await request.json().catch(() => null));
       if (!body.success) {
         return invalidBodyResponse();
       }
+
+      const rejection = await consumeRateLimit(dependencies, request, VOTE_RATE_LIMIT);
+      if (rejection) {
+        return rejection;
+      }
+
       const { recommendationId, browserId, voted } = body.data;
       const outcome = await dependencies.setRecommendationVote(recommendationId, browserId, voted);
       if (outcome.kind === "not_approved") {

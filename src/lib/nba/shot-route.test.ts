@@ -4,22 +4,26 @@ import { createShotRoute, SHOT_RATE_LIMIT } from "./shot-route";
 function buildRoute(overrides: { allowed?: boolean } = {}) {
   const recorded: boolean[] = [];
   const hashedWith: Headers[] = [];
+  const rateLimitChecks: string[] = [];
   const route = createShotRoute({
     hashClientIp: (headers) => {
       hashedWith.push(headers);
       return "hashed-visitor";
     },
-    checkRateLimit: async () => ({
-      allowed: overrides.allowed ?? true,
-      retryAfterInSeconds: 12,
-    }),
+    checkRateLimit: async (_ipHash, rule) => {
+      rateLimitChecks.push(rule.routeKey);
+      return {
+        allowed: overrides.allowed ?? true,
+        retryAfterInSeconds: 12,
+      };
+    },
     recordShot: async (made) => {
       recorded.push(made);
       return { shots: recorded.length, makes: recorded.filter(Boolean).length };
     },
     readTotals: async () => ({ shots: 5, makes: 2 }),
   });
-  return { route, recorded };
+  return { route, recorded, rateLimitChecks };
 }
 
 function postShot(body: unknown) {
@@ -39,12 +43,13 @@ describe("shots route", () => {
   });
 
   it("rejects bodies that are not { made: boolean }", async () => {
-    const { route, recorded } = buildRoute();
+    const { route, recorded, rateLimitChecks } = buildRoute();
     for (const body of [{ made: "yes" }, {}, "not json", true]) {
       const response = await route.POST(postShot(body));
       expect(response.status).toBe(400);
     }
     expect(recorded).toEqual([]);
+    expect(rateLimitChecks).toEqual([]);
   });
 
   it("answers 429 with Retry-After and records nothing when rate limited", async () => {
