@@ -96,7 +96,45 @@
         "emptyTitle": "Nada por aqui",
         "emptyNote": "Ainda não há jogos nesta plataforma nesta lista.",
         "recommendLike": "Recomendar algo parecido",
-        "setup": "Meu setup"
+        "setup": "Meu setup",
+        "voteRateLimited": "São muitas recomendações por enquanto. Tente de novo daqui a pouco.",
+        "reactionPressedRecommended": "Você também recomendou",
+        "sticker": "recomendado ×{count}",
+        "pendingSticker": "aguardando OK",
+        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este.",
+        "note": {
+          "oneVisitor": "Uma pessoa",
+          "visitors": "{count} pessoas",
+          "namesAndMore": "{names} e mais {count}",
+          "and": " e ",
+          "recommends": "{who} recomenda",
+          "recommend": "{who} recomendam",
+          "because": ", porque eu gostei de {game}."
+        }
+      },
+      "form": {
+        "title": "Me recomende um jogo",
+        "subtitle": "Busque qualquer jogo. Os mais recomendados vão para o topo da minha pilha.",
+        "searchLabel": "Buscar jogos",
+        "searchPlaceholder": "Buscar jogos…",
+        "resultsLabel": "Resultados da busca",
+        "searching": "Buscando…",
+        "noResults": "Nenhum jogo encontrado. Tente outro nome.",
+        "searchError": "A busca está fora do ar agora. Tente de novo daqui a pouco.",
+        "credit": "Dados de jogos por IGDB",
+        "chooseAnother": "Escolher outro jogo",
+        "because": "Porque você gostou de",
+        "nameLabel": "Seu nome",
+        "nameOptional": "(opcional)",
+        "namePlaceholder": "Para eu saber quem agradecer",
+        "honeypotLabel": "Deixe este campo vazio",
+        "submit": "Recomendar {title}",
+        "submitting": "Enviando…",
+        "doneApproved": "Valeu! {title} está na minha prateleira de Recomendados.",
+        "donePending": "Valeu! {title} está aguardando meu OK. Até lá, só você vê na prateleira de Recomendados.",
+        "rateLimited": "São muitas recomendações por enquanto. Tente de novo daqui a pouco.",
+        "failed": "Não foi possível enviar sua recomendação. Tente de novo daqui a pouco.",
+        "seeAll": "Ver todos os {count} na prateleira de Recomendados"
       }
     },
     "nba": {
