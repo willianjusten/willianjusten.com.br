@@ -15,6 +15,13 @@
       "when": 1793483270628,
       "tag": "0001_robust_killer_shrike",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793483615071,
+      "tag": "0002_game_recommendations",
+      "breakpoints": true
     }
   ]
 }
