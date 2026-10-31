@@ -4,6 +4,11 @@
     "description": "Product engineer at Spoke. I take products from the fuzzy problem to the shipped thing, and spend the rest of my time behind a camera, a controller, or a boarding pass.",
     "tagline": "Product engineer. Photos, games, the NBA and trips."
   },
+  "FarewellBanner": {
+    "label": "Blog retirement notice",
+    "message": "Thank you for following the blog all these years. It is retired now, and this site is my home for places, games, NBA and music.",
+    "dismiss": "Dismiss notice"
+  },
   "Header": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
