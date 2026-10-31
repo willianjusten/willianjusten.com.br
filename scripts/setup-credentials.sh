@@ -223,7 +223,7 @@ vercel_env() {
 
 run_wizard() {
 
-TOTAL_STAGES=6
+TOTAL_STAGES=5
 
 banner "willianjusten.com.br credentials"
 
@@ -341,33 +341,6 @@ fi
 vercel_env CLOUDINARY_CLOUD_NAME "$CLOUDINARY_CLOUD_NAME" production preview
 vercel_env CLOUDINARY_API_KEY "$CLOUDINARY_API_KEY" production preview
 vercel_env CLOUDINARY_API_SECRET "$CLOUDINARY_API_SECRET" production preview
-pause
-
-# ── 6. Odesli ──────────────────────────────────────────────────────────────
-stage "Odesli (song.link): optional API key"
-say "Odesli turns one song link into YouTube Music, Spotify and Apple Music links."
-note "Testing the free endpoint without a key..."
-odesli_status=$(curl -s -o /dev/null -w '%{http_code}' \
-  "https://api.song.link/v1-alpha.1/links?url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F4PTPZeJlK1rYlYr6bf11hk&userCountry=BR" || true)
-if [[ "$odesli_status" == "200" ]]; then
-  printf '  %s✓ Works without a key (about 10 requests per minute)%s\n' "$GREEN" "$RESET"
-  if confirm "Do you already have an Odesli key you want to store anyway?"; then
-    ask_secret ODESLI_API_KEY "Paste the Odesli API key:"
-    write_env ODESLI_API_KEY "$ODESLI_API_KEY"
-    vercel_env ODESLI_API_KEY "$ODESLI_API_KEY" production preview
-  fi
-else
-  warn "The keyless endpoint returned HTTP $odesli_status, so a key is needed."
-  if confirm "Do you already have an Odesli key?"; then
-    ask_secret ODESLI_API_KEY "Paste the Odesli API key:"
-    write_env ODESLI_API_KEY "$ODESLI_API_KEY"
-    vercel_env ODESLI_API_KEY "$ODESLI_API_KEY" production preview
-  else
-    step "Opening an email draft to request a key. Send it, then re-run this wizard when it arrives."
-    open_url "mailto:developers@song.link?subject=API%20key%20request&body=Hi%2C%20I%27d%20like%20an%20Odesli%20API%20key%20for%20my%20personal%2C%20non-commercial%20site%20willianjusten.com.br%20to%20resolve%20song%20links%20for%20a%20small%20curated%20list.%20Thanks!"
-    SKIPPED+=("Odesli API key: requested by email; re-run the wizard to store it")
-  fi
-fi
 pause
 
 finish
