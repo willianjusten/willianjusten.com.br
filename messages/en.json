@@ -3,8 +3,68 @@
     "title": "Willian Justen",
     "description": "Placeholder description. The real copy lands with the SEO ticket."
   },
-  "Home": {
-    "heading": "Willian Justen, coming soon",
-    "subheading": "A new home is being built here."
+  "Header": {
+    "backToTop": "Willian Justen, back to top",
+    "navigationLabel": "Sections",
+    "places": "Places",
+    "games": "Games",
+    "nba": "NBA",
+    "music": "Music"
+  },
+  "LocaleToggle": {
+    "label": "Language",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "Hero": {
+    "name": "Willian Justen",
+    "clock": "São Paulo, BR · <time>--:--</time> local",
+    "lead": "Product engineer at <strong>Spoke</strong>. I take products from the fuzzy problem to the shipped thing, and spend the rest of my time behind a camera, a controller, or a boarding pass.",
+    "building": {
+      "label": "Building",
+      "value": "Product at {company}",
+      "sub": "More on LinkedIn"
+    },
+    "playing": {
+      "label": "Playing",
+      "sub": "{platform} · {hours} in"
+    },
+    "onRepeat": {
+      "label": "On repeat"
+    },
+    "lastSeen": {
+      "label": "Last seen"
+    }
+  },
+  "Sections": {
+    "places": {
+      "eyebrow": "01 · Places & photos",
+      "title": "Where the camera's been.",
+      "intro": "Every pin is a place I've been, holding the photos I brought back. Most of them also live on Unsplash and Pexels, free to use."
+    },
+    "games": {
+      "eyebrow": "02 · Games",
+      "title": "Press start.",
+      "intro": "What I'm playing, what I've finished and what's next on the list. Got a game I should try? Tell me."
+    },
+    "nba": {
+      "eyebrow": "03 · NBA",
+      "title": "Courtside.",
+      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings and playoffs, without the noise."
+    },
+    "music": {
+      "eyebrow": "04 · Music",
+      "title": "Every post ended with a song.",
+      "intro": "The posts are gone. The songs stay. Here's what's on repeat right now, and what came before it."
+    }
+  },
+  "Footer": {
+    "headline": "Say <accent>hi.</accent>",
+    "navigationLabel": "Elsewhere",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "retiredBlog": "Looking for an old post? The blog is retired. Old links land here.",
+    "copyright": "© 2026 Willian Justen"
   }
 }

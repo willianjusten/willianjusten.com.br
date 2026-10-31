@@ -3,8 +3,68 @@
     "title": "Willian Justen",
     "description": "Descrição provisória. O texto final chega com o ticket de SEO."
   },
-  "Home": {
-    "heading": "Willian Justen, em breve",
-    "subheading": "Uma casa nova está sendo construída aqui."
+  "Header": {
+    "backToTop": "Willian Justen, voltar ao topo",
+    "navigationLabel": "Seções",
+    "places": "Lugares",
+    "games": "Games",
+    "nba": "NBA",
+    "music": "Músicas"
+  },
+  "LocaleToggle": {
+    "label": "Idioma",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "Hero": {
+    "name": "Willian Justen",
+    "clock": "São Paulo, BR · <time>--:--</time> (horário local)",
+    "lead": "Product engineer na <strong>Spoke</strong>. Eu levo produto do problema nebuloso até a coisa no ar, e passo o resto do tempo atrás de uma câmera, de um controle ou de um cartão de embarque.",
+    "building": {
+      "label": "Construindo",
+      "value": "Produto na {company}",
+      "sub": "Mais no LinkedIn"
+    },
+    "playing": {
+      "label": "Jogando",
+      "sub": "{platform} · {hours} de jogo"
+    },
+    "onRepeat": {
+      "label": "No repeat"
+    },
+    "lastSeen": {
+      "label": "Última parada"
+    }
+  },
+  "Sections": {
+    "places": {
+      "eyebrow": "01 · Lugares e fotos",
+      "title": "Por onde a câmera andou.",
+      "intro": "Cada pin é um lugar onde eu já estive, com as fotos que eu trouxe de lá. A maioria também está no Unsplash e no Pexels, de graça pra usar."
+    },
+    "games": {
+      "eyebrow": "02 · Games",
+      "title": "Aperta o start.",
+      "intro": "O que eu estou jogando, o que já zerei e o que vem por aí. Tem algum jogo que eu preciso testar? Me conta."
+    },
+    "nba": {
+      "eyebrow": "03 · NBA",
+      "title": "Courtside.",
+      "intro": "Eu assisto basquete demais, então fiz o app de NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem o barulho."
+    },
+    "music": {
+      "eyebrow": "04 · Músicas",
+      "title": "Todo post terminava com uma música.",
+      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes."
+    }
+  },
+  "Footer": {
+    "headline": "Diz <accent>oi.</accent>",
+    "navigationLabel": "Em outros lugares",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "retiredBlog": "Procurando um post antigo? O blog foi aposentado. Os links antigos caem aqui.",
+    "copyright": "© 2026 Willian Justen"
   }
 }
