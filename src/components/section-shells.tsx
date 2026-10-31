@@ -1,5 +1,7 @@
 import { Gamepad2, MapPin, Music } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { places } from "@/content/places";
+import { LazyGlobe } from "./globe/lazy-globe";
 import { SectionShell } from "./section-shell";
 
 const ICON_SIZE_IN_PIXELS = 20;
@@ -33,7 +35,29 @@ export async function PlacesSection() {
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
-    />
+    >
+      <div className="mt-10">
+        <LazyGlobe
+          places={places.map(({ slug, name, country, lat, lon, isHome, color }) => ({
+            slug,
+            name,
+            country,
+            lat,
+            lon,
+            isHome,
+            color,
+          }))}
+          labels={{
+            description: t("globe.description"),
+            zoomIn: t("globe.zoomIn"),
+            zoomOut: t("globe.zoomOut"),
+            reset: t("globe.reset"),
+            hint: t("globe.hint"),
+            clusterOf: t("globe.clusterOf"),
+          }}
+        />
+      </div>
+    </SectionShell>
   );
 }
 

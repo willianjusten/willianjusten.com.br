@@ -42,7 +42,15 @@
     "places": {
       "eyebrow": "01 · Places & photos",
       "title": "Where the camera's been.",
-      "intro": "Every pin is a place I've been, holding the photos I brought back. Most of them also live on Unsplash and Pexels, free to use."
+      "intro": "Every pin is a place I've been, holding the photos I brought back. Most of them also live on Unsplash and Pexels, free to use.",
+      "globe": {
+        "description": "A 3D dotted globe you can spin, with photo pins on the places I've been. Use the arrow keys to rotate it.",
+        "zoomIn": "Zoom in",
+        "zoomOut": "Zoom out",
+        "reset": "Back to the whole globe",
+        "hint": "drag to spin · open a pin",
+        "clusterOf": "Group of"
+      }
     },
     "games": {
       "eyebrow": "02 · Games",

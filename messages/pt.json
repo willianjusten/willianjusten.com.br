@@ -42,7 +42,15 @@
     "places": {
       "eyebrow": "01 · Lugares e fotos",
       "title": "Por onde a câmera andou.",
-      "intro": "Cada pin é um lugar onde eu já estive, com as fotos que eu trouxe de lá. A maioria também está no Unsplash e no Pexels, de graça pra usar."
+      "intro": "Cada pin é um lugar onde eu já estive, com as fotos que eu trouxe de lá. A maioria também está no Unsplash e no Pexels, de graça pra usar.",
+      "globe": {
+        "description": "Um globo 3D de pontos que você pode girar, com pins de fotos nos lugares onde eu já estive. Use as setas do teclado para girar.",
+        "zoomIn": "Aproximar",
+        "zoomOut": "Afastar",
+        "reset": "Voltar ao globo inteiro",
+        "hint": "arraste para girar · abra um pin",
+        "clusterOf": "Grupo de"
+      }
     },
     "games": {
       "eyebrow": "02 · Games",
