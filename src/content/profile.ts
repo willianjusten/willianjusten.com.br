@@ -38,7 +38,11 @@ export const profileSchema = z.object({
     }),
     lastSeen: z.object({ place: z.string().min(1), when: localizedText }),
   }),
-  nba: z.object({ rootingTeam: textOrPlaceholder }),
+  nba: z.object({
+    rootingTeam: textOrPlaceholder,
+    /** Who Courtside was built with, in the order they are credited. */
+    builtWith: z.array(textOrPlaceholder).min(1),
+  }),
 });
 
 export type Profile = z.output<typeof profileSchema>;
@@ -60,7 +64,7 @@ export const profileData: z.input<typeof profileSchema> = {
       when: { en: "October 2026", pt: "Outubro de 2026" },
     },
   },
-  nba: { rootingTeam: "[Team]" },
+  nba: { rootingTeam: "[Team]", builtWith: ["[Collaborator one]", "[Collaborator two]"] },
 };
 
 export const profile: Profile = profileSchema.parse(profileData);

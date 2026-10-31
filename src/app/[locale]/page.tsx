@@ -4,7 +4,8 @@ import { FarewellBanner } from "@/components/farewell-banner";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { GamesSection, MusicSection, NbaSection, PlacesSection } from "@/components/section-shells";
+import { NbaSection } from "@/components/nba-section";
+import { GamesSection, MusicSection, PlacesSection } from "@/components/section-shells";
 import { resolveLocale } from "@/i18n/resolve-locale";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {

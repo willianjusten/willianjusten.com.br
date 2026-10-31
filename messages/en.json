@@ -58,7 +58,27 @@
     "nba": {
       "eyebrow": "03 · NBA",
       "title": "Courtside.",
-      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings and playoffs, without the noise."
+      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings and playoffs, without the noise.",
+      "tags": ["Live scoreboard", "Standings", "Playoffs", "League leaders", "My teams"],
+      "open": "Open Courtside",
+      "builtWith": "Built with {names}",
+      "rootingFor": "Rooting for · {team}",
+      "and": " & ",
+      "game": {
+        "title": "Take a shot",
+        "hint": "Drag the ball back, aim, let go.",
+        "onFireHint": "You're on fire. Keep it going.",
+        "you": "You",
+        "streak": "Streak",
+        "best": "Best",
+        "allVisitors": "All visitors",
+        "canvasDescription": "Basketball mini game: drag the ball back and let go to shoot at the hoop. With the keyboard, hold Space to build power, use the up and down arrows to change the angle, and let go to shoot.",
+        "firstTimeHint": "← drag the ball back, let go to shoot",
+        "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, let go of Space to shoot",
+        "swish": "Swish!",
+        "bucket": "Bucket!",
+        "onFire": "You're on fire!"
+      }
     },
     "music": {
       "eyebrow": "04 · Music",

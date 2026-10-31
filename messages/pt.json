@@ -58,7 +58,27 @@
     "nba": {
       "eyebrow": "03 · NBA",
       "title": "Courtside.",
-      "intro": "Eu assisto basquete demais, então fiz o app de NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem o barulho."
+      "intro": "Eu assisto basquete demais, então fiz o app de NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem o barulho.",
+      "tags": ["Placar ao vivo", "Classificação", "Playoffs", "Líderes da liga", "Meus times"],
+      "open": "Abrir o Courtside",
+      "builtWith": "Feito com {names}",
+      "rootingFor": "Torcendo para · {team}",
+      "and": " e ",
+      "game": {
+        "title": "Dê um arremesso",
+        "hint": "Puxe a bola para trás, mire, solte.",
+        "onFireHint": "Você está pegando fogo. Continue assim.",
+        "you": "Você",
+        "streak": "Sequência",
+        "best": "Recorde",
+        "allVisitors": "Todos os visitantes",
+        "canvasDescription": "Minijogo de basquete: puxe a bola para trás e solte para arremessar na cesta. Com o teclado, segure Espaço para ganhar força, use as setas para cima e para baixo para mudar o ângulo e solte para arremessar.",
+        "firstTimeHint": "← puxe a bola para trás, solte para arremessar",
+        "keyboardAim": "ângulo {angle}°  ·  ↑↓ para mirar, solte o Espaço para arremessar",
+        "swish": "Só rede!",
+        "bucket": "Cesta!",
+        "onFire": "Você está pegando fogo!"
+      }
     },
     "music": {
       "eyebrow": "04 · Músicas",
