@@ -21,7 +21,7 @@ export function FarewellBanner({ label, message, dismissLabel }: FarewellBannerP
     <div className="mx-auto mt-24 max-w-page px-8">
       <aside
         aria-label={label}
-        className="flex items-center gap-x-4 rounded-md border border-line-strong bg-surface px-5 py-2 text-small text-text-2"
+        className="farewell-banner flex items-center gap-x-4 rounded-lg border border-line-strong bg-surface px-5 py-2 text-ui text-text-2 shadow-[var(--shadow-2)]"
       >
         <p className="flex-1">{message}</p>
         <button
