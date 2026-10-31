@@ -20,7 +20,7 @@ const KEPT_REDIRECTS = [
     source: "/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/",
     destination: "https://willianjusten.com.br",
   },
-].map((rule) => ({ ...rule, permanent: true }));
+].map((rule) => ({ ...rule, statusCode: 301 }));
 
 const nextConfig: NextConfig = {
   async redirects() {

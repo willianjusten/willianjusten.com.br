@@ -16,7 +16,7 @@ describe("blog retirement redirects", () => {
         expect(ruleFor(source)).toEqual({
           source,
           destination: "/pt?from=blog",
-          permanent: true,
+          statusCode: 301,
         });
       }
     }
@@ -31,7 +31,7 @@ describe("blog retirement redirects", () => {
       "/series",
       "/search",
     ]) {
-      expect(ruleFor(source)).toMatchObject({ destination: "/", permanent: true });
+      expect(ruleFor(source)).toMatchObject({ destination: "/", statusCode: 301 });
     }
   });
 

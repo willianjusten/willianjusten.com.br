@@ -1,7 +1,7 @@
 export type RedirectRule = {
   source: string;
   destination: string;
-  permanent: true;
+  statusCode: 301;
 };
 
 const POST_DESTINATION = "/pt?from=blog";
@@ -28,13 +28,13 @@ const OLD_ROUTE_SOURCES = [
 /** Turns the committed list of old post slugs into permanent redirect rules. */
 export function buildRetirementRedirects(oldPostSlugs: readonly string[]): RedirectRule[] {
   const postRules = oldPostSlugs.flatMap((slug) => [
-    { source: `/${slug}`, destination: POST_DESTINATION, permanent: true as const },
-    { source: `/${slug}/`, destination: POST_DESTINATION, permanent: true as const },
+    { source: `/${slug}`, destination: POST_DESTINATION, statusCode: 301 as const },
+    { source: `/${slug}/`, destination: POST_DESTINATION, statusCode: 301 as const },
   ]);
   const routeRules = OLD_ROUTE_SOURCES.map((source) => ({
     source,
     destination: HOME_DESTINATION,
-    permanent: true as const,
+    statusCode: 301 as const,
   }));
 
   return [...postRules, ...routeRules];
