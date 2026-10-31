@@ -28,7 +28,7 @@
 
 /* Header */
 .site-header {
-  position: absolute;
+  position: fixed;
   inset: 0 0 auto;
   z-index: 100;
   pointer-events: none;
@@ -52,12 +52,6 @@
 
 .site-header > * > * {
   pointer-events: auto;
-}
-
-@media (min-width: 900px) {
-  .site-header {
-    position: fixed;
-  }
 }
 
 /* Mobile menu panel drops in below the header. */
