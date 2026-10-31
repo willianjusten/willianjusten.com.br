@@ -1,4 +1,5 @@
 import type { z } from "zod";
+import { gamesData, gamesSchema } from "./games";
 import { placesData, placesSchema } from "./places";
 import { musicData, musicSchema } from "./music";
 import { profileData, profileSchema } from "./profile";
@@ -19,5 +20,6 @@ export function defineContentModule<Schema extends z.ZodType>(
 export const contentModules: readonly ContentModule[] = [
   defineContentModule({ name: "profile", schema: profileSchema, data: profileData }),
   defineContentModule({ name: "places", schema: placesSchema, data: placesData }),
+  defineContentModule({ name: "games", schema: gamesSchema, data: gamesData }),
   defineContentModule({ name: "music", schema: musicSchema, data: musicData }),
 ];

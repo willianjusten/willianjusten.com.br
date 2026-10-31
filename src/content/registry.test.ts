@@ -97,3 +97,26 @@ describe("music content module", () => {
     expect(parsed?.success).toBe(false);
   });
 });
+
+describe("games content module", () => {
+  const gamesModule = contentModules.find((contentModule) => contentModule.name === "games");
+  const seededGames = (gamesModule?.data as { games: Record<string, unknown>[] }).games;
+
+  it("is registered with the real entries", () => {
+    const titles = seededGames.map((game) => game.title);
+    expect(titles).toContain("Crimson Desert");
+    expect(titles).toContain("Alan Wake 2");
+  });
+
+  it("rejects duplicate slugs", () => {
+    const parsed = gamesModule?.schema.safeParse({ games: [...seededGames, seededGames[0]] });
+    expect(parsed?.success).toBe(false);
+  });
+
+  it("rejects an unknown platform and a year that is not a [placeholder]", () => {
+    const unknownPlatform = { games: [{ ...seededGames[0], platform: "gameboy" }] };
+    const looseYear = { games: [{ ...seededGames[0], year: "TBD" }] };
+    expect(gamesModule?.schema.safeParse(unknownPlatform).success).toBe(false);
+    expect(gamesModule?.schema.safeParse(looseYear).success).toBe(false);
+  });
+});
