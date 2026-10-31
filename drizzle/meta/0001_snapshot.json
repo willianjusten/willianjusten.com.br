@@ -33,10 +33,7 @@
       "compositePrimaryKeys": {
         "game_reactions_game_slug_browser_id_pk": {
           "name": "game_reactions_game_slug_browser_id_pk",
-          "columns": [
-            "game_slug",
-            "browser_id"
-          ]
+          "columns": ["game_slug", "browser_id"]
         }
       },
       "uniqueConstraints": {},
@@ -113,11 +110,7 @@
       "compositePrimaryKeys": {
         "rate_limits_route_key_ip_hash_window_start_pk": {
           "name": "rate_limits_route_key_ip_hash_window_start_pk",
-          "columns": [
-            "route_key",
-            "ip_hash",
-            "window_start"
-          ]
+          "columns": ["route_key", "ip_hash", "window_start"]
         }
       },
       "uniqueConstraints": {},

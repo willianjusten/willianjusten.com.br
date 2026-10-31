@@ -20,7 +20,11 @@ export type ReactionRouteDependencies = {
   hashClientIp: (headers: Headers) => string;
   checkRateLimit: (ipHash: string, rule: RateLimitRule) => Promise<RateLimitResult>;
   isKnownGame: (gameSlug: string) => boolean;
-  setReaction: (gameSlug: string, browserId: string, reacted: boolean) => Promise<{ count: number }>;
+  setReaction: (
+    gameSlug: string,
+    browserId: string,
+    reacted: boolean,
+  ) => Promise<{ count: number }>;
   readReactions: (browserId: string | undefined) => Promise<ReactionSnapshot>;
 };
 

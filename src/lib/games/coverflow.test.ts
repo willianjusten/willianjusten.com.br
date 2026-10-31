@@ -1,11 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  clampIndex,
-  formatCounter,
-  getCasePose,
-  indexAfterDrag,
-  indexAfterKey,
-} from "./coverflow";
+import { clampIndex, formatCounter, getCasePose, indexAfterDrag, indexAfterKey } from "./coverflow";
 
 describe("clampIndex", () => {
   it("keeps the index inside the list", () => {

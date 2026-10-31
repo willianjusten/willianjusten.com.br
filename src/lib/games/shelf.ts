@@ -1,9 +1,12 @@
 import { GAME_LISTS, GAME_PLATFORMS } from "@/content/games";
-import type { Game, GameList, GamePlatform } from "@/content/games";
+import type { GameList, GamePlatform } from "@/content/games";
 
 export type PlatformFilter = GamePlatform | "all";
 
-export function countByList(games: readonly Game[]): Record<GameList, number> {
+/** The slice of a game the shelf needs to count and filter. */
+export type ShelfItem = { list: GameList; platform: GamePlatform };
+
+export function countByList(games: readonly ShelfItem[]): Record<GameList, number> {
   const counts = Object.fromEntries(GAME_LISTS.map((list) => [list, 0])) as Record<
     GameList,
     number
@@ -16,12 +19,13 @@ export function countByList(games: readonly Game[]): Record<GameList, number> {
 
 /** Counts for the platform chips, scoped to the active tab. */
 export function countByPlatform(
-  games: readonly Game[],
+  games: readonly ShelfItem[],
   list: GameList,
 ): Record<PlatformFilter, number> {
-  const counts = Object.fromEntries(
-    GAME_PLATFORMS.map((platform) => [platform, 0]),
-  ) as Record<GamePlatform, number>;
+  const counts = Object.fromEntries(GAME_PLATFORMS.map((platform) => [platform, 0])) as Record<
+    GamePlatform,
+    number
+  >;
   let all = 0;
   for (const game of games) {
     if (game.list === list) {
@@ -32,11 +36,11 @@ export function countByPlatform(
   return { all, ...counts };
 }
 
-export function filterShelf(
-  games: readonly Game[],
+export function filterShelf<T extends ShelfItem>(
+  games: readonly T[],
   list: GameList,
   platform: PlatformFilter,
-): Game[] {
+): T[] {
   return games.filter(
     (game) => game.list === list && (platform === "all" || game.platform === platform),
   );

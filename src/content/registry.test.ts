@@ -100,7 +100,8 @@ describe("music content module", () => {
 
 describe("games content module", () => {
   const gamesModule = contentModules.find((contentModule) => contentModule.name === "games");
-  const seededGames = (gamesModule?.data as { games: Record<string, unknown>[] }).games;
+  const seededGames =
+    (gamesModule?.data as { games: Record<string, unknown>[] } | undefined)?.games ?? [];
 
   it("is registered with the real entries", () => {
     const titles = seededGames.map((game) => game.title);
