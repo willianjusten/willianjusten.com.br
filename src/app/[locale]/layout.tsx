@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import "../frame.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -46,10 +48,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       className={`${bricolage.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body>
-        <div className="page">
-          <div className="grain" aria-hidden="true" />
-          {children}
-        </div>
+        <NextIntlClientProvider>
+          <div className="page">
+            <div className="grain" aria-hidden="true" />
+            {children}
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
