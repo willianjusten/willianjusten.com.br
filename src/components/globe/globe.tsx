@@ -22,6 +22,7 @@ import {
   type PinCluster,
 } from "@/lib/globe/globe-math";
 import { decodeLandDots } from "@/lib/globe/land-dots";
+import { withAlpha } from "@/lib/palette";
 
 export type GlobePlace = {
   slug: string;
@@ -67,14 +68,6 @@ type GlobeState = {
   drag: { lastX: number; lastY: number } | null;
   clustersByLead: Map<string, PinCluster>;
 };
-
-function withAlpha(hexColor: string, alpha: number): string {
-  const value = hexColor.trim().replace("#", "");
-  const red = parseInt(value.slice(0, 2), 16);
-  const green = parseInt(value.slice(2, 4), 16);
-  const blue = parseInt(value.slice(4, 6), 16);
-  return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
-}
 
 export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeLabels }) {
   const frameRef = useRef<HTMLDivElement>(null);
