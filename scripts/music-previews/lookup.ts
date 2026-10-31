@@ -52,7 +52,8 @@ async function lookupItunes(
   )) as { results?: ItunesResult[] };
 
   const result = body.results?.find(
-    (candidate) => candidate.previewUrl && isMatch(track, candidate.trackName, candidate.artistName),
+    (candidate) =>
+      candidate.previewUrl && isMatch(track, candidate.trackName, candidate.artistName),
   );
   if (!result?.previewUrl) return null;
 

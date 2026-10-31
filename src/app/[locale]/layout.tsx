@@ -6,6 +6,7 @@ import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import "../frame.css";
+import "../music.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],

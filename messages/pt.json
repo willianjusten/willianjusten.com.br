@@ -57,7 +57,21 @@
     "music": {
       "eyebrow": "04 · Músicas",
       "title": "Todo post terminava com uma música.",
-      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes."
+      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes.",
+      "songOfTheMoment": "Música do momento",
+      "record": "Disco girando. Arraste para fazer scratch.",
+      "play": "Tocar prévia",
+      "pause": "Pausar prévia",
+      "previewUnavailable": "Sem prévia disponível",
+      "hint": "incline · arraste o disco para fazer scratch",
+      "listenOn": "Ouvir no",
+      "youtubeMusic": "YouTube Music",
+      "spotify": "Spotify",
+      "appleMusic": "Apple Music",
+      "credit": "Prévias cortesia do Apple Music",
+      "previously": "Antes no repeat",
+      "previewTrack": "Ouvir prévia de {title}",
+      "pauseTrack": "Pausar {title}"
     }
   },
   "Footer": {
