@@ -387,3 +387,17 @@ a:focus-visible > .wiggle {
     transform: none;
   }
 }
+
+/* Farewell banner enters with a short fade and rise. */
+@media (prefers-reduced-motion: no-preference) {
+  .farewell-banner {
+    animation: farewell-banner-in 350ms var(--ease-out) both;
+  }
+}
+
+@keyframes farewell-banner-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}

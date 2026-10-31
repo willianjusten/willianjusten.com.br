@@ -1,0 +1,121 @@
+/* Music section: record player states and list row hover. */
+
+.record-stack {
+  transform: rotateX(14deg) rotateY(-12deg);
+  transition: transform 250ms ease-out;
+}
+
+.record-glow {
+  opacity: 0;
+  transition: opacity 600ms;
+}
+
+.record-stack[data-playing="true"] .record-glow {
+  opacity: 0.6;
+  animation: record-glow-spin 6s linear infinite;
+}
+
+.record-arm {
+  transform: rotate(-6deg);
+  transition: transform 900ms var(--ease-spring);
+}
+
+.record-stack[data-playing="true"] .record-arm {
+  transform: rotate(26deg);
+}
+
+/* Resting bar heights while paused. */
+.record-eq span:nth-child(1) {
+  transform: scaleY(0.3);
+}
+.record-eq span:nth-child(2) {
+  transform: scaleY(0.6);
+}
+.record-eq span:nth-child(3) {
+  transform: scaleY(0.4);
+}
+.record-eq span:nth-child(4) {
+  transform: scaleY(0.8);
+}
+.record-eq span:nth-child(5) {
+  transform: scaleY(0.5);
+}
+
+.record-eq span {
+  transform-origin: bottom;
+}
+
+.record-eq[data-playing="true"] span {
+  animation: record-eq-bounce 900ms ease-in-out infinite;
+}
+.record-eq[data-playing="true"] span:nth-child(2) {
+  animation-delay: -300ms;
+}
+.record-eq[data-playing="true"] span:nth-child(3) {
+  animation-delay: -600ms;
+}
+.record-eq[data-playing="true"] span:nth-child(4) {
+  animation-delay: -150ms;
+}
+.record-eq[data-playing="true"] span:nth-child(5) {
+  animation-delay: -450ms;
+}
+
+@keyframes record-eq-bounce {
+  0%,
+  100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes record-glow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Past rows: the play button appears on hover, focus, while playing, and always on touch. */
+.song {
+  transition:
+    background var(--dur-fast) ease,
+    padding var(--dur-fast) ease;
+}
+
+.song-play > span {
+  opacity: 0;
+  transform: scale(0.6);
+  transition:
+    opacity var(--dur-fast),
+    transform var(--dur-fast) var(--ease-spring);
+}
+
+.song:hover .song-play > span,
+.song:focus-within .song-play > span,
+.song[data-playing="true"] .song-play > span {
+  opacity: 1;
+  transform: none;
+}
+
+@media (hover: none) {
+  .song-play > span {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .record-glow,
+  .record-eq span {
+    animation: none !important;
+  }
+
+  .record-arm,
+  .record-stack,
+  .song,
+  .song-play > span {
+    transition: none;
+  }
+}

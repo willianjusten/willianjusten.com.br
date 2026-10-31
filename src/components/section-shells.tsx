@@ -1,5 +1,9 @@
 import { Gamepad2, MapPin, Music } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { music } from "@/content/music";
+import { buildMusicBoard } from "@/content/music-board";
+import { musicPreviews } from "@/content/music-previews";
+import { MusicBoard } from "./music/music-board";
 import { SectionShell } from "./section-shell";
 
 const ICON_SIZE_IN_PIXELS = 20;
@@ -34,6 +38,9 @@ export async function GamesSection() {
 
 export async function MusicSection() {
   const t = await getTranslations("Sections.music");
+  const locale = await getLocale();
+  const { songOfTheMoment, pastTracks } = buildMusicBoard(music, musicPreviews);
+
   return (
     <SectionShell
       id="music"
@@ -41,6 +48,28 @@ export async function MusicSection() {
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
-    />
+    >
+      <MusicBoard
+        locale={locale}
+        songOfTheMoment={songOfTheMoment}
+        pastTracks={pastTracks}
+        labels={{
+          songOfTheMoment: t("songOfTheMoment"),
+          record: t("record"),
+          play: t("play"),
+          pause: t("pause"),
+          previewUnavailable: t("previewUnavailable"),
+          hint: t("hint"),
+          listenOn: t("listenOn"),
+          youtubeMusic: t("youtubeMusic"),
+          spotify: t("spotify"),
+          appleMusic: t("appleMusic"),
+          credit: t("credit"),
+          previously: t("previously"),
+          previewTrack: t.raw("previewTrack"),
+          pauseTrack: t.raw("pauseTrack"),
+        }}
+      />
+    </SectionShell>
   );
 }

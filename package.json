@@ -16,7 +16,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "node --env-file=.env.local node_modules/drizzle-kit/bin.cjs migrate"
+    "db:migrate": "node --env-file=.env.local node_modules/drizzle-kit/bin.cjs migrate",
+    "music:previews": "node scripts/music-previews/run.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",
