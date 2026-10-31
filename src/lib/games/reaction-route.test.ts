@@ -4,10 +4,14 @@ import { createReactionRoute, REACTION_RATE_LIMIT } from "./reaction-route";
 const BROWSER_ID = "3f1c2d4e-5a6b-4c7d-8e9f-0a1b2c3d4e5f";
 
 function buildRoute(overrides: { allowed?: boolean } = {}) {
+  const rateLimitChecks: string[] = [];
   const calls: { gameSlug: string; browserId: string; reacted: boolean }[] = [];
   const route = createReactionRoute({
     hashClientIp: () => "hashed-visitor",
-    checkRateLimit: async () => ({ allowed: overrides.allowed ?? true, retryAfterInSeconds: 30 }),
+    checkRateLimit: async (_ipHash, rule) => {
+      rateLimitChecks.push(rule.routeKey);
+      return { allowed: overrides.allowed ?? true, retryAfterInSeconds: 30 };
+    },
     isKnownGame: (gameSlug) => gameSlug === "alan-wake-2",
     setReaction: async (gameSlug, browserId, reacted) => {
       calls.push({ gameSlug, browserId, reacted });
@@ -18,7 +22,7 @@ function buildRoute(overrides: { allowed?: boolean } = {}) {
       mine: browserId ? ["alan-wake-2"] : [],
     }),
   });
-  return { route, calls };
+  return { route, calls, rateLimitChecks };
 }
 
 function postReaction(body: unknown) {
@@ -40,7 +44,7 @@ describe("reactions route", () => {
   });
 
   it("rejects malformed bodies, bad browser ids and unknown games", async () => {
-    const { route, calls } = buildRoute();
+    const { route, calls, rateLimitChecks } = buildRoute();
     const bodies = [
       "not json",
       {},
@@ -52,6 +56,7 @@ describe("reactions route", () => {
       expect((await route.POST(postReaction(body))).status).toBe(400);
     }
     expect(calls).toEqual([]);
+    expect(rateLimitChecks).toEqual([]);
   });
 
   it("answers 429 with Retry-After and stores nothing when rate limited", async () => {

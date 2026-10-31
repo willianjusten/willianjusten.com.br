@@ -1,5 +1,11 @@
 import { z } from "zod";
-import type { RateLimitResult, RateLimitRule } from "@/lib/db/rate-limit";
+import type { RateLimitRule } from "@/lib/db/rate-limit";
+import {
+  consumeRateLimit,
+  invalidBodyResponse,
+  NO_STORE,
+  type RateLimitGuardDependencies,
+} from "@/lib/db/rate-limit-guard";
 import type { ShotTotals } from "./shot-stats";
 
 export const SHOT_RATE_LIMIT: RateLimitRule = {
@@ -10,14 +16,10 @@ export const SHOT_RATE_LIMIT: RateLimitRule = {
 
 const shotBodySchema = z.object({ made: z.boolean() });
 
-export type ShotRouteDependencies = {
-  hashClientIp: (headers: Headers) => string;
-  checkRateLimit: (ipHash: string, rule: RateLimitRule) => Promise<RateLimitResult>;
+export type ShotRouteDependencies = RateLimitGuardDependencies & {
   recordShot: (made: boolean) => Promise<ShotTotals>;
   readTotals: () => Promise<ShotTotals>;
 };
-
-const NO_STORE = { "Cache-Control": "no-store" };
 
 /** Request logic kept free of Next and Neon so the route file stays a thin wiring layer. */
 export function createShotRoute(dependencies: ShotRouteDependencies) {
@@ -27,21 +29,14 @@ export function createShotRoute(dependencies: ShotRouteDependencies) {
     },
 
     async POST(request: Request): Promise<Response> {
-      const ipHash = dependencies.hashClientIp(request.headers);
-      const limit = await dependencies.checkRateLimit(ipHash, SHOT_RATE_LIMIT);
-      if (!limit.allowed) {
-        return Response.json(
-          { error: "rate_limited" },
-          {
-            status: 429,
-            headers: { ...NO_STORE, "Retry-After": String(limit.retryAfterInSeconds) },
-          },
-        );
-      }
-
       const body = shotBodySchema.safeParse(await request.json().catch(() => null));
       if (!body.success) {
-        return Response.json({ error: "invalid_body" }, { status: 400, headers: NO_STORE });
+        return invalidBodyResponse();
+      }
+
+      const rejection = await consumeRateLimit(dependencies, request, SHOT_RATE_LIMIT);
+      if (rejection) {
+        return rejection;
       }
 
       return Response.json(await dependencies.recordShot(body.data.made), { headers: NO_STORE });
