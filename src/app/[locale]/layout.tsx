@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
+import { localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
 import "../music.css";
@@ -37,7 +38,24 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  return { title: t("title"), description: t("description") };
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: localeUrl(locale),
+      languages: Object.fromEntries(routing.locales.map((entry) => [entry, localeUrl(entry)])),
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: localeUrl(locale),
+      siteName: "Willian Justen",
+      locale: locale === "pt" ? "pt_BR" : "en_US",
+      type: "website",
+    },
+    twitter: { card: "summary_large_image", title: t("title"), description: t("description") },
+  };
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps<"/[locale]">) {
