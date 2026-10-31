@@ -3,6 +3,8 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
+import { places } from "@/content/places";
+import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
 import { SectionShell } from "./section-shell";
 
@@ -19,7 +21,29 @@ export async function PlacesSection() {
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
-    />
+    >
+      <div className="mt-10">
+        <LazyGlobe
+          places={places.map(({ slug, name, country, lat, lon, isHome, color }) => ({
+            slug,
+            name,
+            country,
+            lat,
+            lon,
+            isHome,
+            color,
+          }))}
+          labels={{
+            description: t("globe.description"),
+            zoomIn: t("globe.zoomIn"),
+            zoomOut: t("globe.zoomOut"),
+            reset: t("globe.reset"),
+            hint: t("globe.hint"),
+            clusterOf: t("globe.clusterOf"),
+          }}
+        />
+      </div>
+    </SectionShell>
   );
 }
 
