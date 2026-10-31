@@ -113,7 +113,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
   const hasPreview = Boolean(track.previewUrl);
 
   return (
-    <div className="reveal box-border flex max-w-full flex-[0_0_280px] flex-col items-center gap-5 rounded-xl border border-[#26262b] bg-[linear-gradient(180deg,#19191d,#131316)] px-6 py-7">
+    <div className="reveal box-border flex max-w-full basis-(--record-panel-width) grow-0 shrink-0 flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7">
       <div
         onPointerMove={tiltTowardPointer}
         onPointerLeave={resetTilt}
@@ -124,8 +124,8 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
           data-playing={isPlaying}
           className="record-stack relative h-[184px] w-[204px] [transform-style:preserve-3d]"
         >
-          <div className="record-glow absolute top-2 left-0 size-[168px] rounded-pill bg-[conic-gradient(from_0deg,var(--accent),var(--accent-hi),var(--accent-lo),var(--accent))] blur-[26px]" />
-          <div className="absolute top-2 left-0 size-[168px] rounded-pill bg-black shadow-[0_24px_40px_rgba(0,0,0,0.6)] [transform:translateZ(-10px)]" />
+          <div className="record-glow absolute top-2 left-0 size-(--record-size) rounded-pill bg-[conic-gradient(from_0deg,var(--accent),var(--accent-hi),var(--accent-lo),var(--accent))] blur-[26px]" />
+          <div className="absolute top-2 left-0 size-(--record-size) rounded-pill bg-black shadow-disc [transform:translateZ(-10px)]" />
           <div
             ref={discRef}
             // A div, not an img: it is a draggable control that spins.
@@ -136,7 +136,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
             onPointerMove={scratch}
             onPointerUp={endScratch}
             onPointerCancel={endScratch}
-            className="record-disc absolute top-2 left-0 flex size-[168px] cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
+            className="record-disc absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
           >
             <div className="relative flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
               <span
@@ -148,7 +148,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
               <div className="aspect-square w-[16%] rounded-pill bg-bg" />
             </div>
           </div>
-          <div className="pointer-events-none absolute top-2 left-0 size-[168px] rounded-pill bg-[conic-gradient(from_20deg,transparent_0_8%,rgba(255,255,255,0.13)_13%,transparent_20%_52%,rgba(255,255,255,0.09)_61%,transparent_68%)]" />
+          <div className="pointer-events-none absolute top-2 left-0 size-(--record-size) rounded-pill record-sheen" />
           <div className="record-arm pointer-events-none absolute top-0 right-2 flex h-[118px] w-3.5 origin-[50%_7px] flex-col items-center">
             <span className="box-border size-3.5 rounded-pill border-2 border-text-2 bg-line-input" />
             <span className="w-1 flex-auto rounded-xs bg-[linear-gradient(var(--text-2),var(--text-faint))]" />

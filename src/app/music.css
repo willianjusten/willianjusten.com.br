@@ -5,12 +5,34 @@
   transition: transform 250ms ease-out;
 }
 
+.record-sheen {
+  background: conic-gradient(
+    from 20deg,
+    transparent 0 8%,
+    color-mix(in srgb, white 13%, transparent) 13%,
+    transparent 20% 52%,
+    color-mix(in srgb, white 9%, transparent) 61%,
+    transparent 68%
+  );
+}
+
 .record-glow {
   opacity: 0;
   transition: opacity 600ms;
 }
 
-.record-stack[data-playing="true"] .record-glow {
+.record-stack[data-playing="true"] .record-sheen {
+  background: conic-gradient(
+    from 20deg,
+    transparent 0 8%,
+    color-mix(in srgb, white 13%, transparent) 13%,
+    transparent 20% 52%,
+    color-mix(in srgb, white 9%, transparent) 61%,
+    transparent 68%
+  );
+}
+
+.record-glow {
   opacity: 0.6;
   animation: record-glow-spin 6s linear infinite;
 }

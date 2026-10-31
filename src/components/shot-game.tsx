@@ -336,7 +336,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
 
   return (
     <div className="reveal min-w-0 flex-[999_1_560px] overflow-hidden rounded-xl border border-line-strong bg-bg-sunken shadow-3">
-      <div className="flex flex-wrap border-b border-line bg-[linear-gradient(180deg,#16161a,#0e0e11)]">
+      <div className="flex flex-wrap border-b border-line bg-(image:--stage-gradient)">
         <div className="flex flex-[2_1_200px] flex-col justify-center gap-0.5 px-5 py-3">
           <span className="flex items-center gap-2 text-body font-semibold">
             <svg
