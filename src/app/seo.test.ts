@@ -14,6 +14,7 @@ describe("sitemap", () => {
       expect(entry.alternates?.languages).toEqual({
         en: "https://willianjusten.com.br",
         pt: "https://willianjusten.com.br/pt",
+        "x-default": "https://willianjusten.com.br",
       });
     }
   });

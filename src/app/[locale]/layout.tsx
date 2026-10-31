@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
-import { localeUrl, SITE_URL } from "@/lib/site";
+import { hreflangAlternates, localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
 import "../music.css";
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     description: t("description"),
     alternates: {
       canonical: localeUrl(locale),
-      languages: Object.fromEntries(routing.locales.map((entry) => [entry, localeUrl(entry)])),
+      languages: hreflangAlternates(routing.locales),
     },
     openGraph: {
       title: t("title"),
