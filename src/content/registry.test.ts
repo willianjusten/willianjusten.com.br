@@ -21,6 +21,23 @@ describe("content registry", () => {
   });
 });
 
+describe("places content module", () => {
+  const placesModule = contentModules.find((contentModule) => contentModule.name === "places");
+  const seededPlaces = (placesModule?.data as { places: Record<string, unknown>[] }).places;
+
+  it("is registered and seeds exactly one home place", () => {
+    expect(placesModule).toBeDefined();
+    expect(seededPlaces.filter((place) => place.isHome)).toHaveLength(1);
+  });
+
+  it("rejects a latitude outside the globe", () => {
+    const parsed = placesModule?.schema.safeParse({
+      places: [{ ...seededPlaces[0], lat: 120 }],
+    });
+    expect(parsed?.success).toBe(false);
+  });
+});
+
 describe("profile content module", () => {
   const profileModule = contentModules.find((contentModule) => contentModule.name === "profile");
   const profileData = profileModule?.data as {
