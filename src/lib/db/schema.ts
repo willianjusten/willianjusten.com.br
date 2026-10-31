@@ -7,6 +7,17 @@ export const nbaShotStats = pgTable("nba_shot_stats", {
   makes: integer("makes").notNull().default(0),
 });
 
+/** One row per browser per game: the "played it too" style reaction. Toggling off deletes the row. */
+export const gameReactions = pgTable(
+  "game_reactions",
+  {
+    gameSlug: text("game_slug").notNull(),
+    browserId: text("browser_id").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [primaryKey({ columns: [table.gameSlug, table.browserId] })],
+);
+
 /** One counter per route, hashed visitor and time window. Only the HMAC of the IP is stored. */
 export const rateLimits = pgTable(
   "rate_limits",
