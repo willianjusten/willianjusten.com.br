@@ -1,4 +1,5 @@
 import type { z } from "zod";
+import { profileData, profileSchema } from "./profile";
 
 export type ContentModule<Schema extends z.ZodType = z.ZodType> = {
   name: string;
@@ -13,4 +14,6 @@ export function defineContentModule<Schema extends z.ZodType>(
 }
 
 /** Add each typed content module here; the registry test parses all of them. */
-export const contentModules: readonly ContentModule[] = [];
+export const contentModules: readonly ContentModule[] = [
+  defineContentModule({ name: "profile", schema: profileSchema, data: profileData }),
+];

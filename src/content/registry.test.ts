@@ -20,3 +20,31 @@ describe("content registry", () => {
     expect(invalidModule.schema.safeParse(invalidModule.data).success).toBe(false);
   });
 });
+
+describe("profile content module", () => {
+  const profileModule = contentModules.find((contentModule) => contentModule.name === "profile");
+  const profileData = profileModule?.data as {
+    links: object;
+    now: { playing: object };
+  };
+
+  it("is registered", () => {
+    expect(profileModule).toBeDefined();
+  });
+
+  it("rejects a link whose href is not a URL", () => {
+    const parsed = profileModule?.schema.safeParse({
+      ...profileData,
+      links: { ...profileData.links, github: { href: "nope" } },
+    });
+    expect(parsed?.success).toBe(false);
+  });
+
+  it("rejects an unknown value that is not written as a [placeholder]", () => {
+    const parsed = profileModule?.schema.safeParse({
+      ...profileData,
+      now: { ...profileData.now, playing: { ...profileData.now.playing, hours: "TBD" } },
+    });
+    expect(parsed?.success).toBe(false);
+  });
+});
