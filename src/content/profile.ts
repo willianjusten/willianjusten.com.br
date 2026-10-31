@@ -36,7 +36,6 @@ export const profileSchema = z.object({
       platform: z.string().min(1),
       hours: z.union([z.number().int().positive(), placeholderText]),
     }),
-    onRepeat: z.object({ title: textOrPlaceholder, artist: textOrPlaceholder }),
     lastSeen: z.object({ place: z.string().min(1), when: localizedText }),
   }),
   nba: z.object({ rootingTeam: textOrPlaceholder }),
@@ -56,7 +55,6 @@ export const profileData: z.input<typeof profileSchema> = {
   now: {
     building: { company: "Spoke" },
     playing: { title: "Crimson Desert", platform: "PC", hours: "[hours]" },
-    onRepeat: { title: "[Track title]", artist: "[Artist]" },
     lastSeen: {
       place: "Amsterdam, NL",
       when: { en: "October 2026", pt: "Outubro de 2026" },

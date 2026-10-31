@@ -1,6 +1,7 @@
 import { Code, Gamepad2, Music, Plane } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { CSSProperties } from "react";
+import { music } from "@/content/music";
 import { profile } from "@/content/profile";
 import { HeroSpotlight } from "./hero-spotlight";
 import { LocalTime } from "./local-time";
@@ -21,6 +22,7 @@ export async function Hero() {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
   const { links, now } = profile;
+  const songOfTheMoment = music.tracks.find((track) => track.id === music.songOfTheMoment)!;
   const playingHours =
     typeof now.playing.hours === "number" ? `${now.playing.hours}h` : now.playing.hours;
 
@@ -117,8 +119,8 @@ export async function Hero() {
             href="#music"
             icon={Music}
             label={t("onRepeat.label")}
-            value={now.onRepeat.title}
-            sub={now.onRepeat.artist}
+            value={songOfTheMoment.title}
+            sub={songOfTheMoment.artist}
           />
           <StatusTile
             href="#places"

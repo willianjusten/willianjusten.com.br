@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
+import "../music.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
