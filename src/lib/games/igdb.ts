@@ -52,9 +52,7 @@ export function pickPrimaryPlatform(platforms: readonly GamePlatform[]): GamePla
 
 /** Returns undefined for games that are on none of the shelf platforms. */
 export function translateIgdbGame(raw: RawIgdbGame): IgdbGame | undefined {
-  const mapped = new Set(
-    (raw.platforms ?? []).flatMap((id) => PLATFORM_BY_IGDB_ID[id] ?? []),
-  );
+  const mapped = new Set((raw.platforms ?? []).flatMap((id) => PLATFORM_BY_IGDB_ID[id] ?? []));
   const platforms = PLATFORM_PRIORITY.filter((platform) => mapped.has(platform));
   if (platforms.length === 0) {
     return undefined;

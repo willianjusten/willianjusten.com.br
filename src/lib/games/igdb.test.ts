@@ -65,7 +65,11 @@ describe("translateIgdbGame", () => {
 describe("IGDB client", () => {
   it("returns portrait covers and reuses the cached token and results", async () => {
     const { fetchImplementation, requests } = buildFakeNetwork();
-    const client = createIgdbClient({ clientId: "id", clientSecret: "secret", fetchImplementation });
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
 
     const first = await client.searchGames("Alan Wake");
     await client.searchGames("alan wake");
@@ -80,12 +84,21 @@ describe("IGDB client", () => {
 
   it("refreshes the token once when IGDB answers 401", async () => {
     const { fetchImplementation, requests } = buildFakeNetwork(["token-1"]);
-    const client = createIgdbClient({ clientId: "id", clientSecret: "secret", fetchImplementation });
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
 
     const results = await client.searchGames("alan wake");
 
     expect(results).toHaveLength(1);
-    expect(requests.map((request) => request.token)).toEqual([undefined, "token-1", undefined, "token-2"]);
+    expect(requests.map((request) => request.token)).toEqual([
+      undefined,
+      "token-1",
+      undefined,
+      "token-2",
+    ]);
   });
 
   it("requests a new token after the old one expires", async () => {
@@ -107,7 +120,11 @@ describe("IGDB client", () => {
 
   it("strips quotes from the search text so it cannot break out of the query", async () => {
     const { fetchImplementation, requests } = buildFakeNetwork();
-    const client = createIgdbClient({ clientId: "id", clientSecret: "secret", fetchImplementation });
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
 
     await client.searchGames('a"; fields *; "b');
 
