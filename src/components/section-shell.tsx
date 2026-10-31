@@ -11,6 +11,8 @@ type SectionShellProps = {
   badgeClassName?: string;
   /** Section body, filled in by the section tickets. */
   children?: ReactNode;
+  /** Optional right-hand column; the header and children then sit in a left column beside it. */
+  aside?: ReactNode;
 };
 
 export function SectionShell({
@@ -21,29 +23,48 @@ export function SectionShell({
   intro,
   badgeClassName = "",
   children,
+  aside,
 }: SectionShellProps) {
   const headingId = `${id}-heading`;
+
+  const header = (
+    <>
+      <p className="mb-4 flex items-center gap-3.5 font-mono text-eyebrow text-accent">
+        <span
+          aria-hidden="true"
+          className={`wiggle flex size-10 items-center justify-center rounded-md bg-(image:--ball-light) text-on-accent shadow-(--badge-glow) ${badgeClassName}`}
+        >
+          {icon}
+        </span>
+        {eyebrow}
+      </p>
+      <h2
+        id={headingId}
+        className="reveal m-0 font-display text-h2 leading-[1.02] font-bold tracking-[-0.025em]"
+      >
+        {title}
+      </h2>
+      <p className="mt-4 mb-0 max-w-[560px] text-body-lg text-text-2">{intro}</p>
+    </>
+  );
 
   return (
     <section id={id} aria-labelledby={headingId} className="border-t border-line">
       <div className="mx-auto max-w-page px-8 py-24">
-        <p className="mb-4 flex items-center gap-3.5 font-mono text-eyebrow text-accent">
-          <span
-            aria-hidden="true"
-            className={`wiggle flex size-10 items-center justify-center rounded-md bg-(image:--ball-light) text-on-accent shadow-(--badge-glow) ${badgeClassName}`}
-          >
-            {icon}
-          </span>
-          {eyebrow}
-        </p>
-        <h2
-          id={headingId}
-          className="reveal m-0 font-display text-h2 leading-[1.02] font-bold tracking-[-0.025em]"
-        >
-          {title}
-        </h2>
-        <p className="mt-4 mb-0 max-w-[560px] text-body-lg text-text-2">{intro}</p>
-        {children}
+        {aside ? (
+          <div className="flex flex-wrap gap-x-16 gap-y-12">
+            <div className="flex min-w-0 flex-[1_1_340px] flex-col">
+              {header}
+              {children}
+            </div>
+            {aside}
+          </div>
+        ) : (
+          <>
+            {header}
+            {children}
+          </>
+        )}
       </div>
     </section>
   );
