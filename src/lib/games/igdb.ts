@@ -11,7 +11,6 @@ const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
   508: "switch2",
   6: "pc",
 };
-const SHELF_IGDB_PLATFORM_IDS = Object.keys(PLATFORM_BY_IGDB_ID).join(",");
 
 /** Order used to pick the platform shown on a recommended case. */
 const PLATFORM_PRIORITY: GamePlatform[] = ["ps5", "xbox", "switch2", "rog", "pc"];
@@ -27,7 +26,7 @@ export type IgdbGame = {
   igdbId: number;
   title: string;
   year: number | null;
-  /** Shelf platforms the game is on, in platform priority order. Never empty. */
+  /** Shelf platforms the game is on, in priority order. Informational, and empty for other consoles. */
   platforms: GamePlatform[];
   coverImageId: string | null;
 };
@@ -46,17 +45,16 @@ export function buildCoverUrl(coverImageId: string): string {
   return `${COVER_URL_BASE}/${coverImageId}.jpg`;
 }
 
-export function pickPrimaryPlatform(platforms: readonly GamePlatform[]): GamePlatform | undefined {
-  return PLATFORM_PRIORITY.find((platform) => platforms.includes(platform));
+/** Games on none of the shelf platforms get a generic PC case. */
+const FALLBACK_PLATFORM: GamePlatform = "pc";
+
+export function pickPrimaryPlatform(platforms: readonly GamePlatform[]): GamePlatform {
+  return PLATFORM_PRIORITY.find((platform) => platforms.includes(platform)) ?? FALLBACK_PLATFORM;
 }
 
-/** Returns undefined for games that are on none of the shelf platforms. */
-export function translateIgdbGame(raw: RawIgdbGame): IgdbGame | undefined {
+export function translateIgdbGame(raw: RawIgdbGame): IgdbGame {
   const mapped = new Set((raw.platforms ?? []).flatMap((id) => PLATFORM_BY_IGDB_ID[id] ?? []));
   const platforms = PLATFORM_PRIORITY.filter((platform) => mapped.has(platform));
-  if (platforms.length === 0) {
-    return undefined;
-  }
   return {
     igdbId: raw.id,
     title: raw.name,
@@ -149,7 +147,7 @@ export function createIgdbClient({
   }
 
   return {
-    /** Games on the shelf platforms matching the text, base games only. */
+    /** Any game matching the text, base games only (no editions or versions). */
     async searchGames(text: string): Promise<IgdbSearchResult[]> {
       const cacheKey = text.trim().toLowerCase();
       const cached = searchCache.get(cacheKey);
@@ -158,9 +156,9 @@ export function createIgdbClient({
       }
       const escapedText = cacheKey.replaceAll("\\", " ").replaceAll('"', " ");
       const rawGames = await queryGames(
-        `search "${escapedText}"; fields name,first_release_date,platforms,cover.image_id; where platforms = (${SHELF_IGDB_PLATFORM_IDS}) & version_parent = null; limit ${SEARCH_RESULT_LIMIT};`,
+        `search "${escapedText}"; fields name,first_release_date,platforms,cover.image_id; where version_parent = null; limit ${SEARCH_RESULT_LIMIT};`,
       );
-      const results = rawGames.flatMap((raw) => translateIgdbGame(raw) ?? []).map(withCover);
+      const results = rawGames.map(translateIgdbGame).map(withCover);
       if (searchCache.size >= SEARCH_CACHE_MAX_ENTRIES) {
         searchCache.clear();
       }

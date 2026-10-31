@@ -132,9 +132,6 @@ export async function submitRecommendation(
   { game, browserId, name, becauseSlug }: NewRecommendation,
 ): Promise<RecommendationView | undefined> {
   const platform = pickPrimaryPlatform(game.platforms);
-  if (!platform) {
-    return undefined;
-  }
   await database
     .insert(gameRecommendations)
     .values({

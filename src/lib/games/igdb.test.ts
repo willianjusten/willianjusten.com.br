@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { createIgdbClient, translateIgdbGame } from "./igdb";
+import { createIgdbClient, pickPrimaryPlatform, translateIgdbGame } from "./igdb";
 
 const ALAN_WAKE_2 = {
   id: 185246,
@@ -49,8 +49,17 @@ describe("translateIgdbGame", () => {
     });
   });
 
-  it("drops games that are on none of the shelf platforms", () => {
-    expect(translateIgdbGame({ id: 1, name: "Old", platforms: [12] })).toBeUndefined();
+  it("keeps games that are on none of the shelf platforms, with no platforms listed", () => {
+    expect(translateIgdbGame({ id: 1, name: "Old", platforms: [12] })).toMatchObject({
+      igdbId: 1,
+      title: "Old",
+      platforms: [],
+    });
+  });
+
+  it("falls back to a generic platform for the case when no shelf platform matches", () => {
+    expect(pickPrimaryPlatform([])).toBe("pc");
+    expect(pickPrimaryPlatform(["xbox", "pc"])).toBe("xbox");
   });
 
   it("allows a missing year and cover", () => {
@@ -130,5 +139,20 @@ describe("IGDB client", () => {
 
     const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
     expect(query.startsWith('search "a ; fields *;  b";')).toBe(true);
+  });
+
+  it("does not filter by platform so any game can be recommended, but skips editions", async () => {
+    const { fetchImplementation, requests } = buildFakeNetwork();
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
+
+    await client.searchGames("zelda");
+
+    const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
+    expect(query).not.toContain("platforms =");
+    expect(query).toContain("version_parent = null");
   });
 });
