@@ -6,7 +6,6 @@ export type ShotTotals = { shots: number; makes: number };
 
 const TOTALS_ROW_ID = 1;
 
-/** Atomic increment of the single totals row, created on first use. */
 export async function recordShot(database: Database, made: boolean): Promise<ShotTotals> {
   const makeIncrement = made ? 1 : 0;
   const [row] = await database

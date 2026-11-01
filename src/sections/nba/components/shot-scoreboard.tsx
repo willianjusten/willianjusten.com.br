@@ -18,7 +18,6 @@ export type ShotScoreboardLabels = {
 type ShotScoreboardProps = {
   labels: ShotScoreboardLabels;
   personalStats: PersonalStats;
-  /** Null until the all-visitors totals load. */
   totals: ShotTotals | null;
   isOnFire: boolean;
 };
@@ -29,7 +28,6 @@ function formatMakesOfShots(makes: number, shots: number): string {
   return `${formatShotCount(makes)}/${formatShotCount(shots)}`;
 }
 
-/** The bar above the court: title and hint, then this visitor's stats beside everyone's. */
 export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: ShotScoreboardProps) {
   const statCells: StatCell[] = [
     {

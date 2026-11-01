@@ -31,7 +31,6 @@ type ShotInputOptions = {
   shoot: (velocity: Velocity) => void;
 };
 
-/** Slingshot drag and hold-to-power keyboard aiming on the canvas. Returns the cleanup. */
 export function attachShotInput(
   canvas: HTMLCanvasElement,
   { aim, getGeometry, isBallInFlight, shoot }: ShotInputOptions,

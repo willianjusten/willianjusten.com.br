@@ -10,7 +10,6 @@ export type PersonalStats = z.infer<typeof personalStatsSchema>;
 
 export const EMPTY_PERSONAL_STATS: PersonalStats = { shots: 0, makes: 0, streak: 0, best: 0 };
 
-/** Tolerates missing, corrupt or tampered storage by falling back to empty stats. */
 export function parsePersonalStats(rawValue: string | null): PersonalStats {
   if (!rawValue) return EMPTY_PERSONAL_STATS;
   try {
