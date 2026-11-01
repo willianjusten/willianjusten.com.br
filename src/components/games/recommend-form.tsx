@@ -237,12 +237,12 @@ export function RecommendForm({
               ) : null}
             </ul>
           ) : null}
-          <p className="mt-2 mb-0 text-xs text-text-faint">
+          <p className="mt-1.5 mb-0 text-right text-micro text-text-faint">
             <a
               href="https://www.igdb.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-text-2"
+              className="no-underline opacity-70 transition-opacity hover:opacity-100"
             >
               {labels.credit}
             </a>
