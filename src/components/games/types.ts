@@ -8,6 +8,8 @@ export type ShelfEntry = {
   list: GameList;
   year: number | string;
   note: string;
+  /** Stars for a played game, absent until it is rated. */
+  rating?: number;
   tone: string;
   /** Portrait IGDB cover, or null to show the tone and title instead. */
   coverUrl: string | null;

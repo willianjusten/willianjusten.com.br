@@ -123,6 +123,7 @@ export async function GamesSection() {
           sticker: t.raw("shelf.sticker"),
           pendingSticker: t("shelf.pendingSticker"),
           pendingNote: t("shelf.pendingNote"),
+          rating: t.raw("shelf.rating"),
           stageLabel: t("shelf.stageLabel"),
           previous: t("shelf.previous"),
           next: t("shelf.next"),

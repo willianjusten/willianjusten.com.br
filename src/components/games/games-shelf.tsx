@@ -13,6 +13,7 @@ import type { PlatformFilter } from "@/lib/games/shelf";
 import { GameCase } from "./game-case";
 import { PLATFORM_STYLES } from "./platform-style";
 import { RecommendForm } from "./recommend-form";
+import { StarRating } from "./star-rating";
 import type { RecommendFormLabels } from "./recommend-form";
 import type { CaseEntry, ShelfEntry } from "./types";
 import { useGameReactions } from "./use-game-reactions";
@@ -43,6 +44,8 @@ export type GamesShelfLabels = {
   sticker: string;
   pendingSticker: string;
   pendingNote: string;
+  /** Contains `{rating}` and `{max}`. */
+  rating: string;
   stageLabel: string;
   previous: string;
   next: string;
@@ -66,6 +69,7 @@ type ShelfCase = {
   year: number | string | null;
   badgeText: string;
   note: string;
+  rating: number | null;
   showLabel: string;
   reaction: { pressed: boolean; count: number; isEnabled: boolean; toggle: () => void };
   /** Slug of the played or playing game the "like this" link refers to. */
@@ -111,6 +115,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           year: recommendation.year,
           badgeText: `×${recommendation.count}`,
           note: recommendation.status === "pending" ? labels.pendingNote : "",
+          rating: null,
           showLabel: labels.showGame.replace("{title}", recommendation.title),
           reaction: {
             pressed: recommendation.mine,
@@ -126,6 +131,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           year: game.year,
           badgeText: game.list === "wishlist" ? labels.soon : String(game.year),
           note: game.note,
+          rating: game.list === "played" ? (game.rating ?? null) : null,
           showLabel: labels.showGame.replace("{title}", game.title),
           reaction: {
             pressed: mine.has(game.slug),
@@ -366,6 +372,9 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
             <h3 className="m-0 font-display text-[30px] leading-none font-extrabold tracking-[-0.02em]">
               {activeCase?.entry.title ?? emptyTitle}
             </h3>
+            {activeCase?.rating ? (
+              <StarRating rating={activeCase.rating} label={labels.rating} />
+            ) : null}
             {(activeCase?.note ?? emptyNote) !== "" ? (
               <p className="m-0 text-ui text-text-2">{activeCase?.note ?? emptyNote}</p>
             ) : null}

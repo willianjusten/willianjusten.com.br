@@ -101,7 +101,8 @@
         "reactionPressedRecommended": "Você também recomendou",
         "sticker": "recomendado ×{count}",
         "pendingSticker": "aguardando OK",
-        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este."
+        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este.",
+        "rating": "{rating} de {max} estrelas"
       },
       "form": {
         "title": "Me recomende um jogo",

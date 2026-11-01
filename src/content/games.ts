@@ -9,6 +9,9 @@ const colorHex = z.string().regex(/^#[0-9a-fA-F]{6}$/);
 export const GAME_PLATFORMS = ["ps5", "xbox", "switch2", "rog", "pc"] as const;
 export const GAME_LISTS = ["playing", "played", "wishlist"] as const;
 
+/** Played games are rated out of this many stars. */
+export const MAX_RATING = 5;
+
 export type GamePlatform = (typeof GAME_PLATFORMS)[number];
 export type GameList = (typeof GAME_LISTS)[number];
 
@@ -26,6 +29,8 @@ const gameSchema = z.object({
    * (or none). Usually left out.
    */
   igdbId: z.number().int().positive().optional(),
+  /** Stars out of `MAX_RATING` for a played game; the shelf shows none until it is set. */
+  rating: z.number().int().min(1).max(MAX_RATING).optional(),
   /** Case colour while there is no IGDB cover, and behind the cover while it loads. */
   tone: colorHex,
 });
@@ -38,7 +43,6 @@ export const gamesSchema = z
 
 export type Game = z.output<typeof gameSchema>;
 
-const PLACEHOLDER_VERDICT = { en: "[Your verdict in one line]", pt: "[Seu veredito em uma linha]" };
 const PLACEHOLDER_WHY = { en: "[Why it is on the list]", pt: "[Por que está na lista]" };
 
 type GameInput = z.input<typeof gameSchema>;
@@ -98,7 +102,6 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "pc",
       list: "played",
       year: "[year]",
-      note: PLACEHOLDER_VERDICT,
       tone: "#1E3434",
     },
     placeholderGame({
@@ -106,49 +109,42 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "ps5",
       list: "played",
       coverTone: "#3A2C52",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-xbox-a",
       platform: "xbox",
       list: "played",
       coverTone: "#4A3A1E",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-switch2-a",
       platform: "switch2",
       list: "played",
       coverTone: "#52203A",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-rog-a",
       platform: "rog",
       list: "played",
       coverTone: "#20384A",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-ps5-b",
       platform: "ps5",
       list: "played",
       coverTone: "#2E4A24",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-xbox-b",
       platform: "xbox",
       list: "played",
       coverTone: "#2A2E4A",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "played-switch2-b",
       platform: "switch2",
       list: "played",
       coverTone: "#33304A",
-      note: PLACEHOLDER_VERDICT,
     }),
     placeholderGame({
       slug: "wishlist-ps5",

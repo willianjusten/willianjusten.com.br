@@ -101,7 +101,8 @@
         "reactionPressedRecommended": "You recommended this too",
         "sticker": "recommended ×{count}",
         "pendingSticker": "pending approval",
-        "pendingNote": "Pending my approval. Only you can see this for now."
+        "pendingNote": "Pending my approval. Only you can see this for now.",
+        "rating": "{rating} out of {max} stars"
       },
       "form": {
         "title": "Recommend me a game",
