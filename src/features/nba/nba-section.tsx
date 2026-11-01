@@ -2,8 +2,8 @@ import { ArrowUpRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { profile } from "@/content/profile";
 import { COURTSIDE_URL } from "@/lib/site";
-import { ExternalLink } from "@/shared/components/external-link";
-import { SectionShell } from "@/shared/components/section-shell";
+import { ExternalLink } from "@/components/external-link";
+import { SectionShell } from "@/components/section-shell";
 import { BasketballIcon } from "./components/basketball-icon";
 import { ShotGameLoader } from "./components/shot-game-loader";
 

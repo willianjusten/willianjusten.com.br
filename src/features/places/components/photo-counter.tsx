@@ -1,4 +1,4 @@
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 
 type PhotoCounterProps = {
   photoIndex: number;

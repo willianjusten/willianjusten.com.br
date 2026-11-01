@@ -1,6 +1,6 @@
 import { Pause, Play } from "lucide-react";
 import type { PlayableTrack } from "../lib/music-board";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 import type { MusicLabels } from "./music-board";
 
 type PastTracksProps = {

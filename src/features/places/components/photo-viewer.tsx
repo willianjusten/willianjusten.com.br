@@ -6,7 +6,7 @@
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, type KeyboardEvent, type PointerEvent } from "react";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 import type { AlbumPhoto } from "../lib/places-board";
 import { PhotoCaption } from "./photo-caption";
 import { PhotoCounter } from "./photo-counter";

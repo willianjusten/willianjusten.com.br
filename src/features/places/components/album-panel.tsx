@@ -6,8 +6,8 @@
 import { ArrowUpRight, ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import Image from "next/image";
 import type { KeyboardEvent, Ref } from "react";
-import { ExternalLink } from "@/shared/components/external-link";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { ExternalLink } from "@/components/external-link";
+import { fillTemplate } from "@/lib/fill-template";
 import { stepPhotoIndex, type GlobePlace } from "../lib/places-board";
 import { AlbumThumbnails } from "./album-thumbnails";
 import { PhotoCaption } from "./photo-caption";

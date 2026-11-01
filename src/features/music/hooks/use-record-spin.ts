@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type PointerEvent } from "react";
-import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
+import { reducedMotionQuery, runWhileVisible } from "@/lib/animation-loop";
 
 /** 180 degrees a second, which is 3 degrees per frame at 60fps. */
 const SPIN_DEGREES_PER_MILLISECOND = 0.18;

@@ -2,7 +2,7 @@ import { Music } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { music } from "@/content/music";
 import { musicPreviews } from "@/content/music-previews";
-import { SectionShell } from "@/shared/components/section-shell";
+import { SectionShell } from "@/components/section-shell";
 import { MusicBoard } from "./components/music-board";
 import { buildMusicBoard } from "./lib/music-board";
 

@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import type { ComponentProps, Ref } from "react";
-import { useNearViewport } from "@/shared/hooks/use-near-viewport";
+import { useNearViewport } from "@/hooks/use-near-viewport";
 import { GLOBE_FRAME_CLASS } from "./globe-frame";
 
 const GlobePlaceholder = ({ elementRef }: { elementRef?: Ref<HTMLDivElement> }) => (

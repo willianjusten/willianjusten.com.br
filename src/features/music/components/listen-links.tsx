@@ -1,6 +1,6 @@
 import { ExternalLink as ExternalLinkIcon } from "lucide-react";
 import type { PlayableTrack } from "../lib/music-board";
-import { ExternalLink } from "@/shared/components/external-link";
+import { ExternalLink } from "@/components/external-link";
 import type { MusicLabels } from "./music-board";
 
 type ListenLinksProps = {

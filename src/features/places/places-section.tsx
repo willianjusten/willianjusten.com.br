@@ -4,8 +4,8 @@ import type { ReactNode } from "react";
 import { places } from "@/content/places";
 import { profile } from "@/content/profile";
 import { tripPhotos } from "@/content/trip-photos";
-import { ExternalLink } from "@/shared/components/external-link";
-import { SectionShell } from "@/shared/components/section-shell";
+import { ExternalLink } from "@/components/external-link";
+import { SectionShell } from "@/components/section-shell";
 import { LazyGlobe } from "./components/lazy-globe";
 import { buildGlobePlaces } from "./lib/places-board";
 

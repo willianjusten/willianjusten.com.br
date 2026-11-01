@@ -6,7 +6,7 @@ import { music } from "@/content/music";
 import { profile } from "@/content/profile";
 import { PLATFORM_STYLES } from "@/features/games/lib/platforms";
 import { findSongOfTheMoment } from "@/features/music/lib/music-board";
-import { Floodlight } from "@/shared/components/floodlight";
+import { Floodlight } from "@/components/floodlight";
 import { HeroSpotlight } from "./components/hero-spotlight";
 import { LocalTime } from "./components/local-time";
 import { StatusTile } from "./components/status-tile";

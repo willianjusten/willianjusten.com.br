@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { fetchJson, postJson } from "@/shared/lib/fetch-json";
+import { fetchJson, postJson } from "@/lib/fetch-json";
 import type { ReactionSnapshot } from "../server/reaction-stats";
 import { readBrowserId } from "../lib/browser-id";
 

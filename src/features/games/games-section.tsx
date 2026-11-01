@@ -2,7 +2,7 @@ import { Gamepad2 } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { gameCovers } from "@/content/game-covers";
 import { games } from "@/content/games";
-import { SectionShell } from "@/shared/components/section-shell";
+import { SectionShell } from "@/components/section-shell";
 import { GamesShelf } from "./components/games-shelf";
 import { buildShelfEntries } from "./lib/games-board";
 

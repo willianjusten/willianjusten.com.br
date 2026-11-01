@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fillTemplate } from "../lib/fill-template";
+import { fillTemplate } from "../fill-template";
 
 describe("fillTemplate", () => {
   it("fills every placeholder it has a value for", () => {

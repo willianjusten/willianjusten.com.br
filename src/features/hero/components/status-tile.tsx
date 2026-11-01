@@ -1,5 +1,5 @@
 import { ArrowUpRight, type LucideIcon } from "lucide-react";
-import { ExternalLink } from "@/shared/components/external-link";
+import { ExternalLink } from "@/components/external-link";
 
 type StatusTileProps = {
   href: string;

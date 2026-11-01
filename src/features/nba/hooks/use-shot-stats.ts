@@ -6,7 +6,7 @@ import {
   type PersonalStats,
 } from "../lib/personal-stats";
 import type { ShotTotals } from "../server/shot-stats";
-import { fetchJson, postJson } from "@/shared/lib/fetch-json";
+import { fetchJson, postJson } from "@/lib/fetch-json";
 
 const SHOTS_ENDPOINT = "/api/nba/shots";
 

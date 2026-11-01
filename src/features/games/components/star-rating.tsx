@@ -1,7 +1,7 @@
 import { Star } from "lucide-react";
 import { useLocale } from "next-intl";
 import { MAX_RATING } from "@/content/games";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 
 const STAR_SIZE_IN_PIXELS = 18;
 const STAR_STROKE_WIDTH = 1.8;

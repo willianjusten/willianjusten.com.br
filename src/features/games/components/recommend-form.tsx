@@ -2,7 +2,7 @@
 
 import { useRef, useState, type FormEvent, type RefObject } from "react";
 import { flushSync } from "react-dom";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 import type { RecommendationSubmission, SubmitOutcome } from "../hooks/use-game-recommendations";
 import type { IgdbSearchResult } from "../lib/igdb";
 import { GameSearchCombobox, type GameSearchLabels } from "./game-search-combobox";

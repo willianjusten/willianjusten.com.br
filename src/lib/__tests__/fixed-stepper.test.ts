@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { createFixedStepper } from "../lib/animation-loop";
+import { createFixedStepper } from "../animation-loop";
 
 const SIXTY_HERTZ_FRAME = 1000 / 60;
 

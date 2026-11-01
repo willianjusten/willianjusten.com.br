@@ -1,8 +1,8 @@
 import { ArrowUpRight, Briefcase, Camera, GitBranch, Mail, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { isPlaceholder, profile } from "@/content/profile";
-import { ExternalLink } from "@/shared/components/external-link";
-import { Floodlight } from "@/shared/components/floodlight";
+import { ExternalLink } from "@/components/external-link";
+import { Floodlight } from "@/components/floodlight";
 
 const chipClassName =
   "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-glass-chip px-5 no-underline";

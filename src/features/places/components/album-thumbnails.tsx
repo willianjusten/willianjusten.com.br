@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 import type { AlbumPhoto } from "../lib/places-board";
 
 type AlbumThumbnailsProps = {

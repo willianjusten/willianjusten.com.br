@@ -4,7 +4,7 @@
 
 import { Search } from "lucide-react";
 import { useId, useState, type KeyboardEvent, type Ref } from "react";
-import { ExternalLink } from "@/shared/components/external-link";
+import { ExternalLink } from "@/components/external-link";
 import { useGameSearch } from "../hooks/use-game-search";
 import type { IgdbSearchResult } from "../lib/igdb";
 import { SearchResultOption } from "./search-result-option";

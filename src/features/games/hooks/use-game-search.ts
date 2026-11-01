@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchJson, isAbortError } from "@/shared/lib/fetch-json";
+import { fetchJson, isAbortError } from "@/lib/fetch-json";
 import type { IgdbSearchResult } from "../lib/igdb";
 
 const SEARCH_ENDPOINT = "/api/games/search";

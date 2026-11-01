@@ -1,5 +1,5 @@
 import type { GameList, GamePlatform } from "@/content/games";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { fillTemplate } from "@/lib/fill-template";
 import type { ShelfGame } from "./games-board";
 import type { RecommendationView } from "./recommendations";
 import { filterShelf, type PlatformFilter } from "./shelf";

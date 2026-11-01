@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { fetchJson, HttpError, postJson } from "@/shared/lib/fetch-json";
+import { fetchJson, HttpError, postJson } from "@/lib/fetch-json";
 import { readBrowserId } from "../lib/browser-id";
 import { sortRecommendations, type RecommendationView } from "../lib/recommendations";
 

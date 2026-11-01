@@ -15,9 +15,9 @@ import { ON_FIRE_STREAK } from "../lib/personal-stats";
 import { createSceneRenderer } from "../lib/renderer/scene";
 import { attachShotInput, getAimVelocity } from "../lib/shot-input";
 import { getShotGeometry } from "../lib/shot-physics";
-import { createFixedStepper, runWhileVisible } from "@/shared/lib/animation-loop";
-import { fitCanvas, getCanvasPixelRatio } from "@/shared/lib/canvas";
-import { fillTemplate } from "@/shared/lib/fill-template";
+import { createFixedStepper, runWhileVisible } from "@/lib/animation-loop";
+import { fitCanvas, getCanvasPixelRatio } from "@/lib/canvas";
+import { fillTemplate } from "@/lib/fill-template";
 import { COURT_HEIGHT_CLASS, SHOT_GAME_FRAME_CLASS } from "./shot-game-frame";
 import { ShotScoreboard, type ShotScoreboardLabels } from "./shot-scoreboard";
 

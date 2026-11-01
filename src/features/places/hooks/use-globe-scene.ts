@@ -1,12 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, type RefObject } from "react";
-import {
-  createFixedStepper,
-  reducedMotionQuery,
-  runWhileVisible,
-} from "@/shared/lib/animation-loop";
-import { fitCanvas } from "@/shared/lib/canvas";
+import { createFixedStepper, reducedMotionQuery, runWhileVisible } from "@/lib/animation-loop";
+import { fitCanvas } from "@/lib/canvas";
 import { writePinLayout, type GlobePinElements } from "../components/globe-pin";
 import type { PinCluster } from "../lib/globe-math";
 import {

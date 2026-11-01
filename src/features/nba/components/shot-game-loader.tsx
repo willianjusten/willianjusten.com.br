@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 import type { Ref } from "react";
 import type { ShotGameLabels } from "./shot-game";
-import { useNearViewport } from "@/shared/hooks/use-near-viewport";
+import { useNearViewport } from "@/hooks/use-near-viewport";
 import { COURT_HEIGHT_CLASS, SHOT_GAME_FRAME_CLASS } from "./shot-game-frame";
 
 const ShotGamePlaceholder = ({ elementRef }: { elementRef?: Ref<HTMLDivElement> }) => (
