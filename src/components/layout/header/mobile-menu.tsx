@@ -1,0 +1,84 @@
+"use client";
+
+import { Menu, X } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
+
+/** Mirrors `--breakpoint-nav` in src/styles/tokens.css. */
+const DESKTOP_BREAKPOINT_QUERY = "(min-width: 900px)";
+
+type MobileMenuProps = {
+  links: ReadonlyArray<{ href: string; label: string }>;
+  navigationLabel: string;
+  openLabel: string;
+  closeLabel: string;
+};
+
+export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: MobileMenuProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const panelId = useId();
+  const toggleButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function closeOnEscape(event: KeyboardEvent) {
+      if (event.key !== "Escape") return;
+      setIsOpen(false);
+      toggleButtonRef.current?.focus();
+    }
+
+    const desktopQuery = window.matchMedia(DESKTOP_BREAKPOINT_QUERY);
+    function closeOnDesktop(event: MediaQueryListEvent) {
+      if (event.matches) setIsOpen(false);
+    }
+
+    document.addEventListener("keydown", closeOnEscape);
+    desktopQuery.addEventListener("change", closeOnDesktop);
+    return () => {
+      document.removeEventListener("keydown", closeOnEscape);
+      desktopQuery.removeEventListener("change", closeOnDesktop);
+    };
+  }, [isOpen]);
+
+  return (
+    <div className="nav:hidden">
+      <button
+        ref={toggleButtonRef}
+        type="button"
+        aria-expanded={isOpen}
+        aria-controls={panelId}
+        aria-label={isOpen ? closeLabel : openLabel}
+        onClick={() => setIsOpen((wasOpen) => !wasOpen)}
+        className="pill-outline inline-flex size-9 items-center justify-center bg-glass-chip text-text sm:size-11"
+      >
+        {isOpen ? (
+          <X size={18} strokeWidth={1.8} aria-hidden="true" />
+        ) : (
+          <Menu size={18} strokeWidth={1.8} aria-hidden="true" />
+        )}
+      </button>
+
+      {isOpen && (
+        <nav
+          id={panelId}
+          aria-label={navigationLabel}
+          className="absolute inset-x-4 top-full mt-2 rounded-xl border border-line-strong bg-glass p-2 shadow-2 backdrop-blur-lg motion-safe:animate-menu-drop"
+        >
+          <ul className="flex flex-col">
+            {links.map(({ href, label }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className="flex min-h-12 items-center rounded-md px-4 font-display text-menu font-bold text-text no-underline transition-colors hover:bg-surface-hover"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </div>
+  );
+}

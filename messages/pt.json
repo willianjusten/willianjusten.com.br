@@ -1,0 +1,210 @@
+{
+  "Metadata": {
+    "title": "Willian Justen | Product Engineer",
+    "description": "Product Engineer na Spoke, fotógrafo amador, amante de jogos e basquete.",
+    "tagline": "Product Engineer na Spoke. Fotos, games, NBA e música."
+  },
+  "FarewellBanner": {
+    "label": "Aviso sobre o fim do blog",
+    "message": "Obrigado por acompanhar o blog todos esses anos. Ele foi aposentado, e este site agora é a minha casa para lugares, games, NBA e música.",
+    "dismiss": "Dispensar aviso"
+  },
+  "Header": {
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "backToTop": "wj, Willian Justen, voltar ao topo",
+    "navigationLabel": "Seções",
+    "places": "Lugares",
+    "games": "Games",
+    "nba": "NBA",
+    "music": "Músicas",
+    "skipToContent": "Pular para o conteúdo"
+  },
+  "LocaleToggle": {
+    "label": "Idioma",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "Hero": {
+    "name": "Willian Justen",
+    "clock": "São Paulo, BR · <time>--:--</time> (horário local)",
+    "lead": "Product Engineer na <strong>Spoke</strong>, fotógrafo amador, amante de jogos e basquete.",
+    "building": {
+      "label": "Construindo",
+      "value": "Spoke Connect",
+      "sub": "Ver mais"
+    },
+    "playing": {
+      "label": "Jogando"
+    },
+    "onRepeat": {
+      "label": "Tocando"
+    },
+    "lastSeen": {
+      "label": "Última parada"
+    }
+  },
+  "Sections": {
+    "places": {
+      "eyebrow": "01 · Lugares e fotos",
+      "title": "Por onde a câmera andou.",
+      "intro": "Cada pin é um lugar onde eu já estive, com as fotos que eu trouxe de lá. A maioria também está no <unsplash>Unsplash</unsplash> e no <pexels>Pexels</pexels>, de graça pra usar.",
+      "globe": {
+        "description": "Um globo 3D de pontos que você pode girar, com pins de fotos nos lugares onde eu já estive. Use as setas do teclado para girar.",
+        "zoomIn": "Aproximar",
+        "zoomOut": "Afastar",
+        "reset": "Voltar ao globo inteiro",
+        "hint": "arraste para girar · clique para abrir um pin",
+        "clusterOf": "Grupo de"
+      },
+      "album": {
+        "label": "Álbum: {place}",
+        "home": "Casa",
+        "previous": "Foto anterior",
+        "next": "Próxima foto",
+        "close": "Fechar álbum",
+        "closeViewer": "Fechar foto ampliada",
+        "expand": "Ampliar foto",
+        "counter": "Foto {index} de {total}",
+        "thumbnails": "Fotos",
+        "showPhoto": "Mostrar foto {index} de {total}",
+        "moreFrom": "Mais de {place} no Unsplash"
+      },
+      "tour": {
+        "play": "Ver as viagens",
+        "stop": "Parar a viagem"
+      }
+    },
+    "games": {
+      "eyebrow": "02 · Games",
+      "title": "Aperte o start.",
+      "intro": "O que eu estou jogando, o que já zerei e o que vem por aí. Tem algum jogo que eu preciso testar? Me conta.",
+      "shelf": {
+        "tabsLabel": "Listas de jogos",
+        "platformsLabel": "Filtrar por plataforma",
+        "all": "Todos",
+        "tabs": {
+          "playing": "Jogando",
+          "played": "Zerados",
+          "wishlist": "Lista de desejos",
+          "recommended": "Recomendados"
+        },
+        "status": {
+          "playing": "Jogando agora",
+          "played": "Zerado",
+          "wishlist": "Na lista de desejos",
+          "recommended": "Recomendado para mim"
+        },
+        "reaction": {
+          "playing": "Também estou jogando",
+          "played": "Também joguei",
+          "wishlist": "Também quero",
+          "recommended": "Também recomendo"
+        },
+        "reactionError": "Não deu para salvar sua reação. Tente de novo daqui a pouco.",
+        "stageLabel": "Estante de jogos. Use as setas esquerda e direita para navegar.",
+        "previous": "Jogo anterior",
+        "next": "Próximo jogo",
+        "showGame": "Mostrar {title}",
+        "counterHint": "arraste ou clique numa caixa",
+        "soon": "EM BREVE",
+        "emptyRecommendedTitle": "Sua indicação aqui",
+        "emptyRecommendedNote": "Ninguém recomendou nada ainda. Busque um jogo aqui embaixo e coloque o primeiro nesta estante.",
+        "emptyTitle": "Nada por aqui",
+        "emptyNote": "Ainda não há jogos nesta plataforma nesta lista.",
+        "recommendLike": "Recomendar algo parecido",
+        "voteRateLimited": "São muitas recomendações por enquanto. Tente de novo daqui a pouco.",
+        "reactionPressedRecommended": "Você também recomendou",
+        "sticker": "recomendado ×{count}",
+        "pendingSticker": "aguardando OK",
+        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este.",
+        "rating": "{rating} de {max} estrelas"
+      },
+      "form": {
+        "title": "Me recomende um jogo",
+        "subtitle": "Busque qualquer jogo. Os mais recomendados vão para o topo da minha pilha.",
+        "searchLabel": "Buscar jogos",
+        "searchPlaceholder": "Buscar jogos…",
+        "resultsLabel": "Resultados da busca",
+        "searching": "Buscando…",
+        "noResults": "Nenhum jogo encontrado. Tente outro nome.",
+        "searchError": "A busca está fora do ar agora. Tente de novo daqui a pouco.",
+        "credit": "Dados de jogos por IGDB",
+        "chooseAnother": "Escolher outro jogo",
+        "honeypotLabel": "Deixe este campo vazio",
+        "submit": "Recomendar {title}",
+        "submitting": "Enviando…",
+        "doneApproved": "Valeu! {title} está na minha prateleira de Recomendados.",
+        "donePending": "Valeu! {title} está aguardando meu OK. Até lá, só você vê na prateleira de Recomendados.",
+        "rateLimited": "São muitas recomendações por enquanto. Tente de novo daqui a pouco.",
+        "failed": "Não foi possível enviar sua recomendação. Tente de novo daqui a pouco.",
+        "seeAll": "Ver todos os {count} na prateleira de Recomendados"
+      }
+    },
+    "nba": {
+      "eyebrow": "03 · NBA",
+      "title": "Courtside.",
+      "intro": "Eu assisto basquete demais, então fiz o app da NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem propagandas chatas e nada mais que o necessário.",
+      "tags": ["Placar ao vivo", "Classificação", "Playoffs", "Líderes da liga", "Meus times"],
+      "open": "Abrir o Courtside",
+      "builtWith": "Feito com {names}",
+      "and": " e ",
+      "game": {
+        "title": "Dê um arremesso",
+        "hint": "Puxe a bola para trás, mire, solte.",
+        "onFireHint": "Você está pegando fogo. Continue assim.",
+        "you": "Você",
+        "streak": "Sequência",
+        "best": "Recorde",
+        "allVisitors": "Todos os visitantes",
+        "canvasDescription": "Minijogo de basquete: puxe a bola para trás e solte para arremessar na cesta. Com o teclado, segure Espaço para ganhar força, use as setas para cima e para baixo para mudar o ângulo e solte para arremessar.",
+        "keyboardAim": "ângulo {angle}°  ·  ↑↓ para mirar, solte o Espaço para arremessar",
+        "swish": "Só rede!",
+        "bucket": "Cesta!",
+        "onFire": "Você está pegando fogo!"
+      }
+    },
+    "music": {
+      "eyebrow": "04 · Músicas",
+      "title": "Todo post começava com uma música.",
+      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda tocando agora, e o que veio antes.",
+      "songOfTheMoment": "Música do momento",
+      "record": "Disco girando. Arraste para fazer scratch.",
+      "play": "Tocar prévia",
+      "pause": "Pausar prévia",
+      "previewUnavailable": "Sem prévia disponível",
+      "hint": "incline · arraste o disco para fazer scratch",
+      "listenOn": "Ouvir no",
+      "youtubeMusic": "YouTube Music",
+      "spotify": "Spotify",
+      "appleMusic": "Apple Music",
+      "credit": "Prévias cortesia do Apple Music",
+      "onTheTurntable": "No toca-discos",
+      "previously": "Antes tocando",
+      "previewTrack": "Ouvir prévia de {title}",
+      "pauseTrack": "Pausar {title}"
+    }
+  },
+  "Footer": {
+    "headline": "Manda um <accent>oi.</accent>",
+    "navigationLabel": "Em outros lugares",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "copyright": "© 2026 Willian Justen"
+  },
+  "NotFound": {
+    "metaTitle": "Página não encontrada",
+    "homeLogo": "wj, Willian Justen, voltar ao início",
+    "eyebrow": "Erro 404 · página não encontrada",
+    "canvasDescription": "O número 404 desenhado com partículas laranjas que se espalham quando você toca nelas",
+    "hint": "Passe o mouse pra empurrar. Arrasta rápido ou clica pra quebrar.",
+    "touchHint": "Arraste rápido ou toque pra quebrar.",
+    "damage": "Estrago",
+    "broken": "Quebrou tudo. Pra ser justo, já estava quebrado.",
+    "rebuild": "Reconstruir",
+    "title": "Essa página saiu da quadra.",
+    "lead": "O link quebrou ou a página mudou de lugar. Já que você está aqui, pode quebrar o número mais um pouco.",
+    "home": "Voltar pro início"
+  }
+}

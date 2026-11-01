@@ -1,0 +1,99 @@
+@theme {
+  --animate-letter-rise: letter-rise 900ms var(--ease-out) both;
+
+  @keyframes letter-rise {
+    from {
+      opacity: 0;
+      transform: translateY(70%) rotate(8deg);
+    }
+  }
+}
+
+@property --spin-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.letter-hover {
+  display: inline-block;
+  transition:
+    transform var(--dur-base) var(--ease-bounce),
+    color 300ms;
+}
+
+.letter-hover:hover {
+  transform: translateY(-12%) rotate(-6deg);
+  color: var(--accent);
+}
+
+.status-tile {
+  position: relative;
+  transition:
+    transform var(--dur-base) var(--ease-spring),
+    background var(--dur-base),
+    border-color var(--dur-base);
+}
+
+.status-tile::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--spin-angle),
+    transparent 0 62%,
+    color-mix(in srgb, var(--accent) 30%, transparent) 72%,
+    var(--accent) 84%,
+    transparent 92%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--dur-base);
+  pointer-events: none;
+}
+
+.status-tile:hover,
+.status-tile:focus-visible {
+  transform: translateY(-4px);
+  background: var(--tile-hover);
+  border-color: var(--line-hover);
+}
+
+.status-tile:hover::before,
+.status-tile:focus-visible::before {
+  opacity: 1;
+  animation: tile-sweep 2.4s linear infinite;
+}
+
+@keyframes tile-sweep {
+  to {
+    --spin-angle: 360deg;
+  }
+}
+
+.tile-icon {
+  transition: transform 400ms var(--ease-bounce);
+}
+
+.status-tile:hover .tile-icon,
+.status-tile:focus-visible .tile-icon {
+  transform: rotate(-10deg) scale(1.15);
+}
+
+.status-tile:hover .nudge-arrow,
+.status-tile:focus-visible .nudge-arrow {
+  transform: translate(3px, -3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-tile:hover::before,
+  .status-tile:focus-visible::before {
+    animation: none;
+  }
+}

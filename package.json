@@ -1,62 +1,51 @@
 {
-  "name": "willianjusten-blog",
+  "name": "willianjusten.com.br",
+  "version": "2.0.0",
   "private": true,
-  "description": "My personal blog on willianjusten.com.br",
-  "version": "3.0.0-alfa",
-  "author": "Willian Justen <willianjustenqui@gmail.com>",
+  "description": "Willian Justen personal site",
+  "license": "ISC",
+  "author": "Willian Justen",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node --env-file=.env.local node_modules/drizzle-kit/bin.cjs migrate",
+    "music:previews": "node scripts/music-previews/run.ts",
+    "games:covers": "node --env-file=.env.local scripts/game-covers/run.ts",
+    "places:photos": "node --env-file=.env.local scripts/trip-photos/run.ts"
+  },
   "dependencies": {
-    "@babel/core": "^7.14.6",
-    "@openlab/vercel-netlify-cms-github": "^1.1.0",
-    "algoliasearch": "^4.10.2",
-    "babel-plugin-prismjs": "^2.1.0",
-    "babel-plugin-styled-components": "^1.12.0",
-    "date-fns": "^2.22.1",
-    "gray-matter": "^4.0.3",
-    "next": "^11.0.1",
-    "next-instantsearch": "^0.3.15",
-    "next-seo": "^4.26.0",
-    "nextjs-progressbar": "^0.0.11",
-    "preact": "^10.5.14",
-    "preact-render-to-string": "^5.1.19",
-    "prismjs": "^1.24.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-infinite-scroll-component": "^6.1.0",
-    "react-instantsearch-dom": "^6.11.2",
-    "remark": "^13.0.0",
-    "remark-autolink-headings": "^6.0.1",
-    "remark-html": "^13.0.1",
-    "remark-oembed": "^1.2.2",
-    "remark-slug": "^6.0.0",
-    "slugify": "^1.5.3",
-    "styled-components": "5.3.0",
-    "styled-icons": "^10.30.0",
-    "styled-media-query": "^2.1.2"
+    "@neondatabase/serverless": "^1.2.0",
+    "drizzle-orm": "^0.45.4",
+    "lucide-react": "^1.66.0",
+    "next": "^16.4.3",
+    "next-intl": "^4.14.9",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "eslint": "^7.30.0",
-    "eslint-config-next": "^11.0.1",
-    "globby": "^11.0.4",
-    "prettier": "^2.2.1",
-    "sitemap": "^7.0.0"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "oxfmt": "0.75.0",
+    "oxlint": "^1.90.0",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
   },
-  "keywords": [
-    "nextjs",
-    "frontend",
-    "blog"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "dev": "NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build",
-    "start": "NODE_OPTIONS='--openssl-legacy-provider' next start",
-    "lint": "next lint"
+  "engines": {
+    "node": ">=24"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/willianjusten/willianjusten.com.br"
-  },
-  "bugs": {
-    "url": "https://github.com/willianjusten/willianjusten.com.br"
-  }
+  "packageManager": "pnpm@10.33.0"
 }

@@ -1,0 +1,84 @@
+@theme {
+  --animate-record-glow-spin: record-glow-spin 6s linear infinite;
+  --animate-eq-bounce: eq-bounce 900ms ease-in-out infinite;
+  --animate-record-swap: record-swap-in 700ms var(--ease-spring) both;
+  --animate-record-info: record-info-in 400ms var(--ease-out) both;
+
+  @keyframes record-glow-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes eq-bounce {
+    0%,
+    100% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+
+  /* A new record slides onto the platter, spinning down as it lands. */
+  @keyframes record-swap-in {
+    from {
+      opacity: 0;
+      transform: translateX(-70%) rotate(-200deg) scale(0.85);
+    }
+  }
+
+  @keyframes record-info-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+}
+
+.record-sheen {
+  background: conic-gradient(
+    from 20deg,
+    transparent 0 8%,
+    color-mix(in srgb, var(--white) 13%, transparent) 13%,
+    transparent 20% 52%,
+    color-mix(in srgb, var(--white) 9%, transparent) 61%,
+    transparent 68%
+  );
+}
+
+/* Past rows: the play button appears on hover, focus, while playing, and always on touch. */
+.song {
+  transition:
+    background var(--dur-fast) ease,
+    padding var(--dur-fast) ease;
+}
+
+.song-play > span {
+  opacity: 0;
+  transform: scale(0.6);
+  transition:
+    opacity var(--dur-fast),
+    transform var(--dur-fast) var(--ease-spring);
+}
+
+.song:hover .song-play > span,
+.song:focus-within .song-play > span,
+.song[data-playing="true"] .song-play > span {
+  opacity: 1;
+  transform: none;
+}
+
+@media (hover: none) {
+  .song-play > span {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .song,
+  .song-play > span {
+    transition: none;
+  }
+}

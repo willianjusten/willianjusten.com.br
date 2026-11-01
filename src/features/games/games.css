@@ -1,0 +1,96 @@
+.games-stage {
+  perspective: 1400px;
+  perspective-origin: 50% 40%;
+  background:
+    radial-gradient(
+      ellipse 60% 55% at 50% 100%,
+      color-mix(in srgb, var(--accent) 16%, transparent),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+}
+
+/* Touch devices get each case as one flat plane, the way Swiper's coverflow slides are: a
+   preserve-3d stack of faces with a reflection made every scrolled frame expensive on Android GPUs.
+   Mouse and trackpad devices get the full 3D case below. The spine and back are display: none
+   on touch so they leave the compositor entirely. */
+.game-case {
+  transition:
+    transform 700ms var(--ease-out),
+    opacity 500ms,
+    visibility 500ms;
+}
+
+.game-case-back,
+.game-case-spine {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .game-case {
+    transform-style: preserve-3d;
+  }
+
+  .game-case-back {
+    display: block;
+    transform: translateZ(-8px);
+    box-shadow: 0 40px 60px color-mix(in srgb, black 60%, transparent);
+  }
+
+  .game-case-spine {
+    display: block;
+    left: -8px;
+    width: 16px;
+    transform: rotateY(-90deg);
+    background: linear-gradient(90deg, var(--surface-raised), var(--surface-hover));
+  }
+
+  .game-case-front {
+    transform: translateZ(8px);
+    -webkit-box-reflect: below 10px
+      linear-gradient(transparent 70%, color-mix(in srgb, white 18%, transparent));
+  }
+
+  /* Filter goes on the front face: a filter on .game-case would flatten its preserve-3d stack. */
+  .game-case:hover .game-case-front {
+    filter: brightness(1.08);
+  }
+
+  .game-case-shade {
+    display: none;
+  }
+}
+
+.game-case-empty {
+  background: repeating-linear-gradient(
+    135deg,
+    var(--surface-raised) 0 10px,
+    var(--surface-hover) 10px 20px
+  );
+  border: 2px dashed var(--line-hover);
+}
+
+.game-case-gloss {
+  background: linear-gradient(
+    115deg,
+    color-mix(in srgb, white 16%, transparent) 0%,
+    transparent 35%,
+    transparent 70%,
+    color-mix(in srgb, white 6%, transparent) 100%
+  );
+}
+
+.dot-all {
+  background: conic-gradient(
+    var(--ps5-dot) 0 25%,
+    var(--xbox-dot) 0 50%,
+    var(--switch-dot) 0 75%,
+    var(--rog-dot) 0
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-case {
+    transition: none;
+  }
+}

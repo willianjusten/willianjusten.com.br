@@ -1,0 +1,158 @@
+{
+  "crimson-desert": {
+    "igdbId": 125633,
+    "igdbTitle": "Crimson Desert Enhanced",
+    "coverImageId": "cocyjx",
+    "fetchedAt": "2026-11-01T00:28:56.700Z"
+  },
+  "control-resonant": {
+    "igdbId": 225582,
+    "igdbTitle": "Control Resonant",
+    "coverImageId": "coc64f",
+    "fetchedAt": "2026-11-01T02:37:19.514Z"
+  },
+  "yooka-replaylee": {
+    "igdbId": 304740,
+    "igdbTitle": "Yooka-Replaylee",
+    "coverImageId": "coc722",
+    "fetchedAt": "2026-11-01T02:37:20.370Z"
+  },
+  "onimusha-way-of-the-sword": {
+    "igdbId": 325602,
+    "igdbTitle": "Onimusha: Way of the Sword",
+    "coverImageId": "cocdt3",
+    "fetchedAt": "2026-11-01T02:37:20.889Z"
+  },
+  "resonance-a-plague-tale-legacy": {
+    "igdbId": 348168,
+    "igdbTitle": "Resonance: A Plague Tale Legacy",
+    "coverImageId": "coc79u",
+    "fetchedAt": "2026-11-01T02:37:21.396Z"
+  },
+  "brotato": {
+    "igdbId": 199116,
+    "igdbTitle": "Brotato",
+    "coverImageId": "coaauv",
+    "fetchedAt": "2026-11-01T02:37:22.249Z"
+  },
+  "ninja-gaiden-4": {
+    "igdbId": 329130,
+    "igdbTitle": "Ninja Gaiden 4",
+    "coverImageId": "co9b3p",
+    "fetchedAt": "2026-11-01T02:37:22.759Z"
+  },
+  "donkey-kong-bananza": {
+    "igdbId": 338106,
+    "igdbTitle": "Donkey Kong Bananza",
+    "coverImageId": "cobd1q",
+    "fetchedAt": "2026-11-01T02:37:23.258Z"
+  },
+  "metroid-prime-4-beyond": {
+    "igdbId": 37136,
+    "igdbTitle": "Metroid Prime 4: Beyond",
+    "coverImageId": "cob9xh",
+    "fetchedAt": "2026-11-01T02:37:23.757Z"
+  },
+  "ball-x-pit": {
+    "igdbId": 346035,
+    "igdbTitle": "Ball x Pit",
+    "coverImageId": "co9xid",
+    "fetchedAt": "2026-11-01T02:37:24.414Z"
+  },
+  "pragmata": {
+    "igdbId": 134612,
+    "igdbTitle": "Pragmata",
+    "coverImageId": "cobxnx",
+    "fetchedAt": "2026-11-01T02:37:24.915Z"
+  },
+  "saros": {
+    "igdbId": 331215,
+    "igdbTitle": "Saros",
+    "coverImageId": "coajye",
+    "fetchedAt": "2026-11-01T02:37:25.766Z"
+  },
+  "resident-evil-requiem": {
+    "igdbId": 347668,
+    "igdbTitle": "Resident Evil Requiem",
+    "coverImageId": "cobmj0",
+    "fetchedAt": "2026-11-01T02:37:26.307Z"
+  },
+  "phantom-blade-zero": {
+    "igdbId": 250618,
+    "igdbTitle": "Phantom Blade Zero",
+    "coverImageId": "cococe",
+    "fetchedAt": "2026-11-01T02:45:22.091Z"
+  },
+  "the-blood-of-dawnwalker": {
+    "igdbId": 282831,
+    "igdbTitle": "The Blood of Dawnwalker",
+    "coverImageId": "cob7ym",
+    "fetchedAt": "2026-11-01T02:45:22.601Z"
+  },
+  "007-first-light": {
+    "igdbId": 141114,
+    "igdbTitle": "007 First Light",
+    "coverImageId": "coaoiz",
+    "fetchedAt": "2026-11-01T02:45:23.268Z"
+  },
+  "the-midnight-walk": {
+    "igdbId": 317621,
+    "igdbTitle": "The Midnight Walk",
+    "coverImageId": "co8ur3",
+    "fetchedAt": "2026-11-01T02:45:23.773Z"
+  },
+  "star-wars-galactic-racer": {
+    "igdbId": 381248,
+    "igdbTitle": "Star Wars: Galactic Racer",
+    "coverImageId": "cobihx",
+    "fetchedAt": "2026-11-01T02:45:24.381Z"
+  },
+  "the-witcher-3-songs-of-the-past": {
+    "igdbId": 403150,
+    "igdbTitle": "The Witcher 3: Wild Hunt - Songs of the Past",
+    "coverImageId": "coc4hk",
+    "fetchedAt": "2026-11-01T02:45:24.898Z"
+  },
+  "castlevania-belmonts-curse": {
+    "igdbId": 389434,
+    "igdbTitle": "Castlevania: Belmont's Curse",
+    "coverImageId": "cod5fk",
+    "fetchedAt": "2026-11-01T02:45:25.531Z"
+  },
+  "gears-of-war-e-day": {
+    "igdbId": 305160,
+    "igdbTitle": "Gears of War: E-Day",
+    "coverImageId": "coc77n",
+    "fetchedAt": "2026-11-01T02:45:26.140Z"
+  },
+  "valor-mortis": {
+    "igdbId": 361833,
+    "igdbTitle": "Valor Mortis",
+    "coverImageId": "coaazc",
+    "fetchedAt": "2026-11-01T02:45:27.000Z"
+  },
+  "grand-theft-auto-vi": {
+    "igdbId": 52189,
+    "igdbTitle": "Grand Theft Auto VI",
+    "coverImageId": "cocv1v",
+    "fetchedAt": "2026-11-01T02:45:27.505Z"
+  },
+  "the-legend-of-zelda-ocarina-of-time": {
+    "igdbId": 405460,
+    "igdbTitle": "The Legend of Zelda: Ocarina of Time",
+    "coverImageId": "cocv5r",
+    "fetchedAt": "2026-11-01T02:45:28.005Z"
+  },
+  "splatoon-raiders": {
+    "igdbId": 348977,
+    "igdbTitle": "Splatoon Raiders",
+    "coverImageId": "cobyho",
+    "fetchedAt": "2026-11-01T02:45:28.514Z"
+  },
+  "moonlighter-2": {
+    "igdbId": 324570,
+    "igdbTitle": "Moonlighter 2: The Endless Vault",
+    "coverImageId": "co94bw",
+    "fetchedAt": "2026-11-01T02:56:51.563Z"
+  }
+}

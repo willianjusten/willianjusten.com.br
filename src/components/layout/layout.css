@@ -1,0 +1,41 @@
+@theme {
+  --animate-menu-drop: menu-drop var(--dur-fast) ease-out;
+  --animate-banner-in: banner-in 350ms var(--ease-out) both;
+
+  @keyframes menu-drop {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes banner-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+}
+
+/* Header links: underline grows left to right on hover and focus, retracts to the right. */
+.nav-link-label {
+  position: relative;
+}
+
+.nav-link-label::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -4px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--dur-base) ease;
+}
+
+.nav-link:hover .nav-link-label::after,
+.nav-link:focus-visible .nav-link-label::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

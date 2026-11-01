@@ -1,0 +1,210 @@
+{
+  "Metadata": {
+    "title": "Willian Justen | Product Engineer",
+    "description": "Product Engineer at Spoke, hobbyist photographer, gamer, and basketball fanatic.",
+    "tagline": "Product Engineer at Spoke. Photos, games, NBA, and music."
+  },
+  "FarewellBanner": {
+    "label": "Blog retirement notice",
+    "message": "Thanks for following the blog all these years. It's been retired, and this site is now my home for places, games, NBA, and music.",
+    "dismiss": "Dismiss notice"
+  },
+  "Header": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "backToTop": "wj, Willian Justen, back to top",
+    "navigationLabel": "Sections",
+    "places": "Places",
+    "games": "Games",
+    "nba": "NBA",
+    "music": "Music",
+    "skipToContent": "Skip to content"
+  },
+  "LocaleToggle": {
+    "label": "Language",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "Hero": {
+    "name": "Willian Justen",
+    "clock": "São Paulo, BR · <time>--:--</time> (local time)",
+    "lead": "Product Engineer at <strong>Spoke</strong>, hobbyist photographer, gamer, and basketball fanatic.",
+    "building": {
+      "label": "Building",
+      "value": "Spoke Connect",
+      "sub": "See more"
+    },
+    "playing": {
+      "label": "Playing"
+    },
+    "onRepeat": {
+      "label": "Now playing"
+    },
+    "lastSeen": {
+      "label": "Last stop"
+    }
+  },
+  "Sections": {
+    "places": {
+      "eyebrow": "01 · Places and photos",
+      "title": "Where the camera has been.",
+      "intro": "Every pin is a place I've visited, alongside the photos I brought back. Most are also available on <unsplash>Unsplash</unsplash> and <pexels>Pexels</pexels>, free to use.",
+      "globe": {
+        "description": "A 3D dotted globe you can rotate, featuring photo pins of places I've visited. Use the arrow keys to rotate.",
+        "zoomIn": "Zoom in",
+        "zoomOut": "Zoom out",
+        "reset": "Reset to full globe",
+        "hint": "drag to rotate · click to open a pin",
+        "clusterOf": "Group of"
+      },
+      "album": {
+        "label": "Album: {place}",
+        "home": "Home",
+        "previous": "Previous photo",
+        "next": "Next photo",
+        "close": "Close album",
+        "closeViewer": "Close expanded photo",
+        "expand": "Expand photo",
+        "counter": "Photo {index} of {total}",
+        "thumbnails": "Photos",
+        "showPhoto": "Show photo {index} of {total}",
+        "moreFrom": "More from {place} on Unsplash"
+      },
+      "tour": {
+        "play": "Play the trips",
+        "stop": "Stop the trip"
+      }
+    },
+    "games": {
+      "eyebrow": "02 · Games",
+      "title": "Press start.",
+      "intro": "What I'm playing, what I've beaten, and what's next. Got a game recommendation for me? Let me know.",
+      "shelf": {
+        "tabsLabel": "Game lists",
+        "platformsLabel": "Filter by platform",
+        "all": "All",
+        "tabs": {
+          "playing": "Playing",
+          "played": "Beaten",
+          "wishlist": "Wishlist",
+          "recommended": "Recommended"
+        },
+        "status": {
+          "playing": "Playing now",
+          "played": "Beaten",
+          "wishlist": "On wishlist",
+          "recommended": "Recommended to me"
+        },
+        "reaction": {
+          "playing": "I'm playing this too",
+          "played": "I've beaten this too",
+          "wishlist": "I want this too",
+          "recommended": "I recommend this too"
+        },
+        "reactionError": "Couldn't save your reaction. Try again in a bit.",
+        "stageLabel": "Game shelf. Use left and right arrow keys to navigate.",
+        "previous": "Previous game",
+        "next": "Next game",
+        "showGame": "Show {title}",
+        "counterHint": "drag or click a box",
+        "soon": "COMING SOON",
+        "emptyRecommendedTitle": "Your recommendation here",
+        "emptyRecommendedNote": "Nobody has recommended anything yet. Search for a game below and add the first one to this shelf.",
+        "emptyTitle": "Nothing here",
+        "emptyNote": "No games for this platform in this list yet.",
+        "recommendLike": "Recommend something similar",
+        "voteRateLimited": "Too many recommendations for now. Try again in a bit.",
+        "reactionPressedRecommended": "You recommended this too",
+        "sticker": "recommended ×{count}",
+        "pendingSticker": "pending approval",
+        "pendingNote": "Pending my approval. Only you can see this for now.",
+        "rating": "{rating} out of {max} stars"
+      },
+      "form": {
+        "title": "Recommend me a game",
+        "subtitle": "Search for any game. The most recommended ones go to the top of my stack.",
+        "searchLabel": "Search games",
+        "searchPlaceholder": "Search games…",
+        "resultsLabel": "Search results",
+        "searching": "Searching…",
+        "noResults": "No games found. Try another name.",
+        "searchError": "Search is currently down. Try again in a bit.",
+        "credit": "Game data by IGDB",
+        "chooseAnother": "Choose another game",
+        "honeypotLabel": "Leave this field empty",
+        "submit": "Recommend {title}",
+        "submitting": "Submitting…",
+        "doneApproved": "Thanks! {title} is now on my Recommended shelf.",
+        "donePending": "Thanks! {title} is awaiting my approval. Until then, only you can see it on the Recommended shelf.",
+        "rateLimited": "Too many recommendations for now. Try again in a bit.",
+        "failed": "Couldn't send your recommendation. Try again in a bit.",
+        "seeAll": "See all {count} on the Recommended shelf"
+      }
+    },
+    "nba": {
+      "eyebrow": "03 · NBA",
+      "title": "Courtside.",
+      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings, and playoffs, with no annoying ads and nothing more than what's needed.",
+      "tags": ["Live scores", "Standings", "Playoffs", "League leaders", "My teams"],
+      "open": "Open Courtside",
+      "builtWith": "Built with {names}",
+      "and": " and ",
+      "game": {
+        "title": "Take a shot",
+        "hint": "Pull the ball back, aim, release.",
+        "onFireHint": "You're on fire. Keep it up.",
+        "you": "You",
+        "streak": "Streak",
+        "best": "Best",
+        "allVisitors": "All visitors",
+        "canvasDescription": "Basketball mini-game: pull the ball back and release to shoot. On keyboard, hold Space to build power, use up and down arrow keys to change angle, and release Space to shoot.",
+        "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, release Space to shoot",
+        "swish": "Swish!",
+        "bucket": "Bucket!",
+        "onFire": "You're on fire!"
+      }
+    },
+    "music": {
+      "eyebrow": "04 · Music",
+      "title": "Every post started with a song.",
+      "intro": "The posts are gone. The music remains. Here's what's playing right now, and what came before.",
+      "songOfTheMoment": "Song of the moment",
+      "record": "Spinning vinyl. Drag to scratch.",
+      "play": "Play preview",
+      "pause": "Pause preview",
+      "previewUnavailable": "Preview unavailable",
+      "hint": "tilt · drag record to scratch",
+      "listenOn": "Listen on",
+      "youtubeMusic": "YouTube Music",
+      "spotify": "Spotify",
+      "appleMusic": "Apple Music",
+      "credit": "Previews courtesy of Apple Music",
+      "onTheTurntable": "On the turntable",
+      "previously": "Previously playing",
+      "previewTrack": "Play preview for {title}",
+      "pauseTrack": "Pause {title}"
+    }
+  },
+  "Footer": {
+    "headline": "Say <accent>hi.</accent>",
+    "navigationLabel": "Elsewhere",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "copyright": "© 2026 Willian Justen"
+  },
+  "NotFound": {
+    "metaTitle": "Page not found",
+    "homeLogo": "wj, Willian Justen, back to home",
+    "eyebrow": "Error 404 · page not found",
+    "canvasDescription": "The number 404 drawn in orange particles that scatter when you touch them",
+    "hint": "Hover to nudge it. Swipe fast or click to break it.",
+    "touchHint": "Swipe fast or tap to break it.",
+    "damage": "Damage",
+    "broken": "Fully broken. To be fair, it already was.",
+    "rebuild": "Rebuild",
+    "title": "This page went out of bounds.",
+    "lead": "The link is broken or the page moved on. Since you are here, feel free to break the number some more.",
+    "home": "Take me home"
+  }
+}

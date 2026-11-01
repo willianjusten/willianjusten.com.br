@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793482617222,
+      "tag": "0000_nba_shot_stats_and_rate_limits",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793483270628,
+      "tag": "0001_robust_killer_shrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793483615071,
+      "tag": "0002_game_recommendations",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793486464145,
+      "tag": "0003_drop_recommendation_name_and_because",
+      "breakpoints": true
+    }
+  ]
+}

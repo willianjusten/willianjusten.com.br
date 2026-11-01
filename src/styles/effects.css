@@ -1,0 +1,151 @@
+@theme {
+  --animate-drift-1: drift-1 16s ease-in-out infinite alternate;
+  --animate-drift-2: drift-2 21s ease-in-out infinite alternate;
+  --animate-drift-3: drift-3 25s ease-in-out infinite alternate;
+  --animate-fade-in: fade-in 1s 700ms ease both;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
+
+  @keyframes drift-1 {
+    to {
+      transform: translate(140px, 80px) scale(1.2);
+    }
+  }
+
+  @keyframes drift-2 {
+    to {
+      transform: translate(-160px, 60px) scale(0.85);
+    }
+  }
+
+  @keyframes drift-3 {
+    to {
+      transform: translate(80px, -90px) scale(1.15);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* An 8px dot growing a 10px ring: 28 / 8 = 3.5. Scale and opacity stay on the compositor. */
+  @keyframes pulse-ring {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: scale(3.5);
+    }
+  }
+}
+
+.wiggle {
+  transition: transform 500ms var(--ease-bounce);
+}
+
+.wiggle:hover,
+a:focus-visible > .wiggle {
+  transform: rotate(-12deg) scale(1.08);
+}
+
+/* The flip-in lives on the wrapper so the hover spin on the tile never replays it. */
+.flip-in {
+  display: inline-flex;
+  animation: flip-in 700ms var(--ease-spring) both;
+  animation-delay: var(--flip-delay);
+}
+
+.flip-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.74em;
+  height: 0.98em;
+  border-radius: 0.06em;
+  font-family: var(--font-mono);
+  font-size: 0.62em;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--flap-tile);
+  text-shadow: 0 0 0.3em color-mix(in srgb, var(--accent) 55%, transparent);
+  box-shadow:
+    0 0.04em 0 var(--flap-edge),
+    0 0 0.6em color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.flip-tile:hover {
+  animation: flip-spin 500ms ease;
+}
+
+@keyframes flip-in {
+  0% {
+    transform: rotateX(-100deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes flip-spin {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(-360deg);
+  }
+}
+
+.nudge-arrow {
+  transition: transform 250ms ease;
+}
+
+.chip-link:hover .nudge-arrow,
+.chip-link:focus-visible .nudge-arrow {
+  transform: translate(3px, -3px);
+}
+
+.chip-link {
+  transition: border-color var(--dur-fast);
+}
+
+.chip-link:hover {
+  border-color: var(--line-hover);
+}
+
+/* Scroll-driven reveal. Backwards fill only, so hover transforms still work afterwards. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-rise linear backwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 55%;
+  }
+}
+
+@keyframes reveal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(48px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip-in,
+  .flip-tile:hover,
+  .reveal {
+    animation: none;
+  }
+}

@@ -1,0 +1,38 @@
+"use client";
+
+import type { PointerEvent, RefObject } from "react";
+import { baseRadiusOf, dragTo, endDrag, startDrag, type GlobeMotion } from "../lib/globe-motion";
+
+export function useGlobeDrag(
+  motionRef: RefObject<GlobeMotion>,
+  canvasRef: RefObject<HTMLCanvasElement | null>,
+  onDragStart: () => void,
+  onTap: () => void,
+) {
+  const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    onDragStart();
+    startDrag(motionRef.current, event.clientX, event.clientY);
+    event.currentTarget.setPointerCapture(event.pointerId);
+    event.currentTarget.style.cursor = "grabbing";
+  };
+
+  const onPointerMove = (event: PointerEvent<HTMLDivElement>) => {
+    const canvas = canvasRef.current;
+    if (!canvas || !motionRef.current.drag) return;
+    const baseRadius = baseRadiusOf(canvas.clientWidth, canvas.clientHeight);
+    dragTo(motionRef.current, event.clientX, event.clientY, baseRadius);
+  };
+
+  const onPointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    const { wasTap } = endDrag(motionRef.current);
+    event.currentTarget.style.cursor = "";
+    if (wasTap) onTap();
+  };
+
+  const onPointerCancel = (event: PointerEvent<HTMLDivElement>) => {
+    endDrag(motionRef.current);
+    event.currentTarget.style.cursor = "";
+  };
+
+  return { onPointerDown, onPointerMove, onPointerUp, onPointerCancel };
+}
