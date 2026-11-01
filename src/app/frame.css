@@ -219,6 +219,14 @@ a:focus-visible > .wiggle {
   animation: flip-spin 500ms ease;
 }
 
+/* Places header counters: a 30x42 tile around a 26px digit. */
+.flip-tile.is-counter {
+  width: 1.15em;
+  height: 1.6em;
+  border-radius: 0.12em;
+  font-size: var(--fs-h3);
+}
+
 @keyframes flip-in {
   0% {
     transform: rotateX(-100deg);
