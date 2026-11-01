@@ -89,7 +89,6 @@ Open http://localhost:3000 (English) or http://localhost:3000/pt (Portuguese).
 | `pnpm db:migrate`                   | Apply pending migrations to the database in `DATABASE_URL`                     |
 | `pnpm music:previews`               | Fetch preview URLs and Apple Music links for the music content                 |
 | `pnpm games:covers`                 | Fetch IGDB covers for the games content                                        |
-| `pnpm icons`                        | Render the favicon and touch icon from the wj mark                             |
 
 ## Editing content
 

@@ -18,8 +18,7 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "node --env-file=.env.local node_modules/drizzle-kit/bin.cjs migrate",
     "music:previews": "node scripts/music-previews/run.ts",
-    "games:covers": "node --env-file=.env.local scripts/game-covers/run.ts",
-    "icons": "node scripts/brand-icons.ts"
+    "games:covers": "node --env-file=.env.local scripts/game-covers/run.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.2.0",
