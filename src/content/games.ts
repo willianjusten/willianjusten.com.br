@@ -11,6 +11,7 @@ export const GAME_LISTS = ["playing", "played", "wishlist"] as const;
 
 /** Played games are rated out of this many stars. */
 export const MAX_RATING = 5;
+const RATING_STEP = 0.5;
 
 export type GamePlatform = (typeof GAME_PLATFORMS)[number];
 export type GameList = (typeof GAME_LISTS)[number];
@@ -29,8 +30,8 @@ const gameSchema = z.object({
    * (or none). Usually left out.
    */
   igdbId: z.number().int().positive().optional(),
-  /** Stars out of `MAX_RATING` for a played game; the shelf shows none until it is set. */
-  rating: z.number().int().min(1).max(MAX_RATING).optional(),
+  /** Stars out of `MAX_RATING`, in half steps, for a played game; none shows until it is set. */
+  rating: z.number().min(RATING_STEP).max(MAX_RATING).multipleOf(RATING_STEP).optional(),
   /** Case colour while there is no IGDB cover, and behind the cover while it loads. */
   tone: colorHex,
 });

@@ -121,10 +121,12 @@ describe("games content module", () => {
     expect(gamesModule?.schema.safeParse(looseYear).success).toBe(false);
   });
 
-  it("accepts a whole-star rating from 1 to 5 and rejects anything else", () => {
+  it("accepts a rating up to 5 in half-star steps and rejects anything else", () => {
     const withRating = (rating: number) => ({ games: [{ ...seededGames[0], rating }] });
-    expect(gamesModule?.schema.safeParse(withRating(4)).success).toBe(true);
-    for (const rating of [0, 6, 3.5]) {
+    for (const rating of [4, 3.5]) {
+      expect(gamesModule?.schema.safeParse(withRating(rating)).success).toBe(true);
+    }
+    for (const rating of [0, 6, 3.3]) {
       expect(gamesModule?.schema.safeParse(withRating(rating)).success).toBe(false);
     }
   });
