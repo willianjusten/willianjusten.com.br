@@ -13,12 +13,22 @@ const EQ_BAR_COUNT = 5;
 
 type RecordPlayerProps = {
   track: PlayableTrack;
+  heading: string;
   labels: MusicLabels;
   isPlaying: boolean;
+  /** Plays the record swap animation whenever the track changes. */
+  animateSwap: boolean;
   onToggle: (trackId: string, previewUrl: string) => void;
 };
 
-export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlayerProps) {
+export function RecordPlayer({
+  track,
+  heading,
+  labels,
+  isPlaying,
+  animateSwap,
+  onToggle,
+}: RecordPlayerProps) {
   const discRef = useRef<HTMLDivElement>(null);
   const stackRef = useRef<HTMLDivElement>(null);
   const discAngleRef = useRef(0);
@@ -127,26 +137,31 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
           <div className="record-glow absolute top-2 left-0 size-(--record-size) rounded-pill bg-[conic-gradient(from_0deg,var(--accent),var(--accent-hi),var(--accent-lo),var(--accent))] blur-[26px]" />
           <div className="absolute top-2 left-0 size-(--record-size) rounded-pill bg-black shadow-disc [transform:translateZ(-10px)]" />
           <div
-            ref={discRef}
-            // A div, not an img: it is a draggable control that spins.
-            // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
-            role="img"
-            aria-label={labels.record}
-            title={labels.hint}
-            onPointerDown={startScratch}
-            onPointerMove={scratch}
-            onPointerUp={endScratch}
-            onPointerCancel={endScratch}
-            className="record-disc absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
+            key={track.id}
+            className={`absolute inset-0 [transform-style:preserve-3d] ${animateSwap ? "record-swap" : ""}`}
           >
-            <div className="relative flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
-              <span
-                aria-hidden="true"
-                className="absolute top-[18%] font-mono text-[6px] tracking-[1px] text-on-accent"
-              >
-                WJ · SIDE A
-              </span>
-              <div className="aspect-square w-[16%] rounded-pill bg-bg" />
+            <div
+              ref={discRef}
+              // A div, not an img: it is a draggable control that spins.
+              // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
+              role="img"
+              aria-label={labels.record}
+              title={labels.hint}
+              onPointerDown={startScratch}
+              onPointerMove={scratch}
+              onPointerUp={endScratch}
+              onPointerCancel={endScratch}
+              className="record-disc absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
+            >
+              <div className="relative flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
+                <span
+                  aria-hidden="true"
+                  className="absolute top-[18%] font-mono text-[6px] tracking-[1px] text-on-accent"
+                >
+                  WJ · SIDE A
+                </span>
+                <div className="aspect-square w-[16%] rounded-pill bg-bg" />
+              </div>
             </div>
           </div>
           <div className="pointer-events-none absolute top-2 left-0 size-(--record-size) rounded-pill record-sheen" />
@@ -174,9 +189,12 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
             <Play size={18} fill="currentColor" aria-hidden="true" />
           )}
         </button>
-        <div className="flex min-w-0 flex-col gap-0.5">
+        <div
+          key={track.id}
+          className={`flex min-w-0 flex-col gap-0.5 ${animateSwap ? "record-info-swap" : ""}`}
+        >
           <span className="flex items-center gap-2 font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
-            {labels.songOfTheMoment}
+            {heading}
             <span
               data-playing={isPlaying}
               aria-hidden="true"

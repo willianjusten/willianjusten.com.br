@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import type { PlayableTrack } from "@/content/music-board";
 import { PastTracks } from "./past-tracks";
 import { RecordPlayer } from "./record-player";
@@ -18,6 +19,7 @@ export type MusicLabels = {
   appleMusic: string;
   credit: string;
   previously: string;
+  onTheTurntable: string;
   /** Contains `{title}`. */
   previewTrack: string;
   /** Contains `{title}`. */
@@ -33,21 +35,39 @@ type MusicBoardProps = {
 
 export function MusicBoard({ locale, songOfTheMoment, pastTracks, labels }: MusicBoardProps) {
   const { playingTrackId, toggle } = usePreviewPlayer();
+  const [loadedTrack, setLoadedTrack] = useState(songOfTheMoment);
+  // Stays false until the first swap, so the record does not animate in on page load.
+  const [hasSwappedRecord, setHasSwappedRecord] = useState(false);
+
+  const listedTracks = [songOfTheMoment, ...pastTracks];
+
+  function playListedTrack(trackId: string, previewUrl: string) {
+    const track = listedTracks.find((listedTrack) => listedTrack.id === trackId);
+    if (track && track.id !== loadedTrack.id) {
+      setLoadedTrack(track);
+      setHasSwappedRecord(true);
+    }
+    toggle(trackId, previewUrl);
+  }
+
+  const isSongOfTheMomentLoaded = loadedTrack.id === songOfTheMoment.id;
 
   return (
     <div className="mt-10 flex flex-wrap items-stretch gap-x-10 gap-y-8">
       <RecordPlayer
-        track={songOfTheMoment}
+        track={loadedTrack}
+        heading={isSongOfTheMomentLoaded ? labels.songOfTheMoment : labels.onTheTurntable}
         labels={labels}
-        isPlaying={playingTrackId === songOfTheMoment.id}
+        isPlaying={playingTrackId === loadedTrack.id}
+        animateSwap={hasSwappedRecord}
         onToggle={toggle}
       />
       <PastTracks
         locale={locale}
-        tracks={pastTracks}
+        tracks={listedTracks}
         labels={labels}
         playingTrackId={playingTrackId}
-        onToggle={toggle}
+        onToggle={playListedTrack}
       />
     </div>
   );

@@ -161,6 +161,7 @@ export async function MusicSection() {
           appleMusic: t("appleMusic"),
           credit: t("credit"),
           previously: t("previously"),
+          onTheTurntable: t("onTheTurntable"),
           previewTrack: t.raw("previewTrack"),
           pauseTrack: t.raw("pauseTrack"),
         }}

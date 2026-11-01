@@ -107,6 +107,29 @@
   }
 }
 
+/* A new record slides onto the platter, spinning down as it lands. */
+.record-swap {
+  animation: record-swap-in 700ms var(--ease-spring) both;
+}
+
+.record-info-swap {
+  animation: record-info-in 400ms var(--ease-out) both;
+}
+
+@keyframes record-swap-in {
+  from {
+    opacity: 0;
+    transform: translateX(-70%) rotate(-200deg) scale(0.85);
+  }
+}
+
+@keyframes record-info-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
 /* Past rows: the play button appears on hover, focus, while playing, and always on touch. */
 .song {
   transition:
@@ -138,7 +161,9 @@
 
 @media (prefers-reduced-motion: reduce) {
   .record-glow,
-  .record-eq span {
+  .record-eq span,
+  .record-swap,
+  .record-info-swap {
     animation: none !important;
   }
 

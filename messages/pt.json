@@ -163,6 +163,7 @@
       "spotify": "Spotify",
       "appleMusic": "Apple Music",
       "credit": "Prévias cortesia do Apple Music",
+      "onTheTurntable": "No toca-discos",
       "previously": "Antes tocando",
       "previewTrack": "Ouvir prévia de {title}",
       "pauseTrack": "Pausar {title}"
