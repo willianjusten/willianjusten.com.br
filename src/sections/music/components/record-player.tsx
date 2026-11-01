@@ -18,7 +18,6 @@ type RecordPlayerProps = {
   heading: string;
   labels: MusicLabels;
   isPlaying: boolean;
-  /** Plays the record swap animation whenever the track changes. */
   animateSwap: boolean;
   onToggle: (trackId: string, previewUrl: string) => void;
 };
@@ -123,7 +122,6 @@ export function RecordPlayer({
           >
             <div
               ref={discRef}
-              // A div, not an img: it is a draggable control that spins.
               // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
               role="img"
               aria-label={labels.record}

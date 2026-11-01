@@ -10,7 +10,6 @@ type FarewellBannerProps = {
   dismissLabel: string;
 };
 
-/** Slim thank-you strip shown only to readers arriving from an old blog URL (`?from=blog`). */
 export function FarewellBanner({ label, message, dismissLabel }: FarewellBannerProps) {
   const searchParams = useSearchParams();
   const [isDismissed, setIsDismissed] = useState(false);

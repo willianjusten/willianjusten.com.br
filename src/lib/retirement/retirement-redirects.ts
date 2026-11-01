@@ -45,7 +45,6 @@ const OLD_ROUTE_SOURCES = [
   "/dev/",
 ];
 
-/** Turns the committed list of old post slugs into permanent redirect rules. */
 export function buildRetirementRedirects(oldPostSlugs: readonly string[]): RedirectRule[] {
   const postRules = oldPostSlugs.flatMap((slug) => [
     { source: `/${slug}`, destination: POST_DESTINATION, statusCode: 301 as const },

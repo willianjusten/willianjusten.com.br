@@ -14,7 +14,6 @@ const RICH_TEXT_LINK_URLS: Record<string, string> = {
   pexels: profile.links.pexels.href,
 };
 
-/** Turns rich-text link tags into Markdown links, or plain text when the tag has no URL. */
 function toMarkdown(richText: string): string {
   return richText.replace(RICH_TEXT_LINK_PATTERN, (_tag, name: string, label: string) => {
     const url = RICH_TEXT_LINK_URLS[name];

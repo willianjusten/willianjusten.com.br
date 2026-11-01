@@ -20,9 +20,7 @@ export type MusicLabels = {
   credit: string;
   previously: string;
   onTheTurntable: string;
-  /** Contains `{title}`. */
   previewTrack: string;
-  /** Contains `{title}`. */
   pauseTrack: string;
 };
 

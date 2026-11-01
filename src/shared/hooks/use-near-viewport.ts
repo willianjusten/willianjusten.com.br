@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-/** Start loading a section this far before it scrolls into view. */
 export const NEAR_VIEWPORT_ROOT_MARGIN = "400px 0px";
 
 /**

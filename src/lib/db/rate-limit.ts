@@ -3,7 +3,6 @@ import type { Database } from "./client";
 import { rateLimits } from "./schema";
 
 export type RateLimitRule = {
-  /** Identifies the route, so limits are counted separately per route. */
   routeKey: string;
   maxHits: number;
   windowInSeconds: number;
@@ -14,13 +13,11 @@ export type RateLimitResult = {
   retryAfterInSeconds: number;
 };
 
-/** Start of the fixed window that contains `now`. */
 export function getWindowStart(now: Date, windowInSeconds: number): Date {
   const windowInMilliseconds = windowInSeconds * 1000;
   return new Date(Math.floor(now.getTime() / windowInMilliseconds) * windowInMilliseconds);
 }
 
-/** Decide from the hit count after this request. Pure, so it is testable without a database. */
 export function evaluateRateLimit(
   hitsIncludingThisRequest: number,
   rule: RateLimitRule,

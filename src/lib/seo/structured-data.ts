@@ -19,7 +19,6 @@ export function realProfileUrls(): string[] {
     .map((link) => link.href);
 }
 
-/** schema.org graph for the home page: the site, this locale's profile page and Will. */
 export function buildStructuredData(locale: Locale, copy: PageCopy) {
   const pageUrl = localeUrl(locale);
   const home = places.find((place) => place.isHome);

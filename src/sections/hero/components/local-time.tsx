@@ -6,7 +6,6 @@ import { formatSaoPauloTime } from "../lib/sao-paulo-time";
 const REFRESH_INTERVAL_IN_MILLISECONDS = 30_000;
 const TIME_PLACEHOLDER = "--:--";
 
-/** Live São Paulo clock. Renders a placeholder on the server and fills in after mount. */
 export function LocalTime() {
   const [formattedTime, setFormattedTime] = useState(TIME_PLACEHOLDER);
 

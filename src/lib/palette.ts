@@ -15,7 +15,6 @@ export const palette = {
   black: "#000000",
 } as const;
 
-/** `#rrggbb` plus an opacity from 0 to 1, as a CSS `rgba()` string. */
 export function withAlpha(hexColor: string, alpha: number): string {
   const value = hexColor.trim().replace("#", "");
   const red = parseInt(value.slice(0, 2), 16);

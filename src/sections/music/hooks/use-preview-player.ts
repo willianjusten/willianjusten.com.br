@@ -2,10 +2,6 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-/**
- * One shared audio element for the whole music section, so starting any preview
- * stops whichever one was playing.
- */
 export function usePreviewPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playingTrackId, setPlayingTrackId] = useState<string | null>(null);

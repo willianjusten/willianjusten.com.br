@@ -4,7 +4,6 @@ import type { PreviewEntry } from "@/content/music-preview-schema";
 export type PlayableTrack = MusicTrack & {
   /** The curated link, or a YouTube Music search for the track when none is curated. */
   youtubeMusicUrl: string;
-  /** Absent when no provider had a preview; the play control is then disabled. */
   previewUrl?: string;
   appleMusicUrl?: string;
 };
@@ -31,7 +30,6 @@ export function findSongOfTheMoment<Track extends MusicTrack>(
   return track;
 }
 
-/** Joins the curated tracks with the generated preview data and splits current from past. */
 export function buildMusicBoard(music: Music, previews: Record<string, PreviewEntry>): MusicBoard {
   const playableTracks: PlayableTrack[] = music.tracks.map((track) => ({
     ...track,

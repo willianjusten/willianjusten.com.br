@@ -5,14 +5,12 @@ export class HttpError extends Error {
   }
 }
 
-/** Fetches and parses JSON, throwing `HttpError` on a non-2xx status. */
 export async function fetchJson<Body>(url: string, init?: RequestInit): Promise<Body> {
   const response = await fetch(url, init);
   if (!response.ok) throw new HttpError(response.status);
   return response.json();
 }
 
-/** POSTs `payload` as JSON and parses the JSON answer. */
 export function postJson<Body>(url: string, payload: unknown, init?: RequestInit): Promise<Body> {
   return fetchJson<Body>(url, {
     ...init,

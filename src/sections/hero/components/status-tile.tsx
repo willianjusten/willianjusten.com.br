@@ -7,7 +7,6 @@ type StatusTileProps = {
   label: string;
   value: string;
   sub: string;
-  /** Opens in a new tab, for off-site profiles. */
   isExternal?: boolean;
 };
 

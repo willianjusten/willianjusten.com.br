@@ -1,4 +1,3 @@
-/* Stylesheet entry point. Tokens first, then shared layers, then one file per page area. */
 @import "tailwindcss";
 @import "../styles/tokens.css";
 @import "../styles/base.css";

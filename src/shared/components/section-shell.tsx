@@ -3,17 +3,14 @@ import type { ComponentType, ReactNode } from "react";
 const ICON_SIZE_IN_PIXELS = 20;
 const ICON_STROKE_WIDTH = 1.8;
 
-/** Lucide icons and the hand-drawn section icons both take this shape. */
 export type SectionIcon = ComponentType<{ size?: number; strokeWidth?: number }>;
 
 type SectionShellProps = {
-  /** Anchor id, targeted by the header navigation. */
   id: string;
   icon: SectionIcon;
   eyebrow: string;
   title: string;
   intro: ReactNode;
-  /** Extra classes on the icon badge, e.g. the NBA ball bounce. */
   badgeClassName?: string;
   children?: ReactNode;
   /** Optional right-hand column; the header and children then sit in a left column beside it. */
@@ -22,7 +19,6 @@ type SectionShellProps = {
   headerAside?: ReactNode;
 };
 
-/** The frame every home page section shares: icon eyebrow, heading, intro and body. */
 export function SectionShell({
   id,
   icon: Icon,

@@ -13,7 +13,6 @@ type MobileMenuProps = {
   closeLabel: string;
 };
 
-/** Burger button and dropdown panel holding the section links below 900px. */
 export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const panelId = useId();

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-/** Cursor-following glow. Writes the pointer position onto the hero section as CSS variables. */
 export function HeroSpotlight() {
   const spotlightRef = useRef<HTMLDivElement>(null);
 

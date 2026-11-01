@@ -4,7 +4,6 @@ import { useEffect, useState, type ReactNode } from "react";
 
 const SCROLLED_THRESHOLD_IN_PIXELS = 40;
 
-/** Header chrome: transparent over the hero, a slimmer translucent bar once scrolled past 40px. */
 export function HeaderFrame({ children }: { children: ReactNode }) {
   const [isScrolled, setIsScrolled] = useState(false);
 

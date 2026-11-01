@@ -4,7 +4,6 @@ import { routing } from "@/i18n/routing";
 
 const localeShortLabels = { en: "EN", pt: "PT" } as const;
 
-/** EN / PT switch. Each option links to the home page in that locale and keeps the scroll position. */
 export async function LocaleToggle() {
   const activeLocale = await getLocale();
   const t = await getTranslations("LocaleToggle");
