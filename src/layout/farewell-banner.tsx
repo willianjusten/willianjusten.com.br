@@ -17,7 +17,7 @@ export function FarewellBanner({ label, message, dismissLabel }: FarewellBannerP
   if (searchParams.get("from") !== "blog" || isDismissed) return null;
 
   return (
-    <div className="mx-auto mt-24 max-w-page px-8">
+    <div className="mx-auto max-w-page px-8 pt-24">
       <aside
         aria-label={label}
         className="flex items-center gap-x-4 rounded-lg border border-line-strong bg-surface px-5 py-2 text-ui text-text-2 shadow-2 motion-safe:animate-banner-in"
