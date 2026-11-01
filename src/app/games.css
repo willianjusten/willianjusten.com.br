@@ -36,7 +36,8 @@
     opacity 500ms;
 }
 
-.game-case:hover {
+/* Filter goes on the front face: a filter on .game-case would flatten its preserve-3d stack. */
+.game-case:hover .game-case-front {
   filter: brightness(1.08);
 }
 
