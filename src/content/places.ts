@@ -58,7 +58,8 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -22.51,
       lon: -43.18,
       cloudinaryFolders: ["trips/2016-petropolis"],
-      unsplashUrl: UNSPLASH_PROFILE_URL,
+      unsplashUrl:
+        "https://unsplash.com/collections/4717455/my-home-sweet-home---petr%C3%B3polis-%2F-brazil",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#2C3A24",
     },
@@ -234,7 +235,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -22.97,
       lon: -42.03,
       cloudinaryFolders: ["trips/2021-arraial-do-cabo"],
-      unsplashUrl: UNSPLASH_PROFILE_URL,
+      unsplashUrl: "https://unsplash.com/collections/b03DqownXhY/regi%C3%A3o-dos-lagos---rj",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#2B3B26",
     },
