@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useGameReactions } from "../hooks/use-game-reactions";
 import {
   useGameRecommendations,
@@ -75,6 +75,8 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
         ? labels.reactionError
         : null;
 
+  const focusStage = useCallback(() => stageRef.current?.focus({ preventScroll: true }), []);
+
   function chooseList(list: ShelfList) {
     setActiveList(list);
     setRawIndex(0);
@@ -131,7 +133,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           emptyTitle={isRecommendedTab ? labels.emptyRecommendedTitle : labels.emptyTitle}
           stageRef={stageRef}
           onChangeIndex={setRawIndex}
-          onFocusStage={() => stageRef.current?.focus({ preventScroll: true })}
+          onFocusStage={focusStage}
         />
         <ShelfDetails
           labels={labels}

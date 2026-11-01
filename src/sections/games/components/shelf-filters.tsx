@@ -5,7 +5,7 @@
 import { SlidersHorizontal } from "lucide-react";
 import { useId, useState, type Ref } from "react";
 import { GAME_PLATFORMS } from "@/content/games";
-import { PLATFORM_STYLES } from "../lib/platforms";
+import { PLATFORM_STYLES, platformDotClass } from "../lib/platforms";
 import type { PlatformFilter } from "../lib/shelf";
 import { SHELF_LISTS, type ShelfList } from "../lib/shelf-cases";
 
@@ -92,7 +92,7 @@ export function ShelfFilters({
           {platform !== "all" && !isPlatformFilterOff ? (
             <span
               aria-hidden="true"
-              className={`absolute top-1.5 right-1.5 size-2 rounded-full dot-${platform}`}
+              className={`absolute top-1.5 right-1.5 size-2 rounded-full ${platformDotClass(platform)}`}
             />
           ) : null}
         </button>
@@ -123,7 +123,10 @@ export function ShelfFilters({
                   : "border-line bg-transparent text-text-2 hover:border-line-hover"
               } ${isDimmed ? "opacity-45" : ""}`}
             >
-              <span aria-hidden="true" className={`size-2.5 rounded-full dot-${filter}`} />
+              <span
+                aria-hidden="true"
+                className={`size-2.5 rounded-full ${platformDotClass(filter)}`}
+              />
               {filter === "all" ? labels.all : PLATFORM_STYLES[filter].name}
               <span className="font-mono text-[11px] opacity-60">{count}</span>
             </button>

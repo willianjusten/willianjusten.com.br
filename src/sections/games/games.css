@@ -17,11 +17,6 @@
   cursor: grabbing;
 }
 
-.games-floor {
-  background: linear-gradient(180deg, transparent, color-mix(in srgb, white 2.5%, transparent));
-  border-top: 1px solid color-mix(in srgb, white 4%, transparent);
-}
-
 /* Touch devices get each case as one flat plane, the way Swiper's coverflow slides are: a
    preserve-3d stack of faces with a reflection made every scrolled frame expensive on Android GPUs.
    Mouse and trackpad devices get the full 3D case below. The spine and back are display: none
@@ -41,19 +36,6 @@
 .game-case-back,
 .game-case-spine {
   display: none;
-}
-
-.game-case-front {
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, white 12%, transparent);
-}
-
-/* Darkens the edge turned away from the viewer on side cases. */
-.game-case-shade-left {
-  background: linear-gradient(to left, transparent, color-mix(in srgb, black 55%, transparent));
-}
-
-.game-case-shade-right {
-  background: linear-gradient(to right, transparent, color-mix(in srgb, black 55%, transparent));
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -110,43 +92,6 @@
   );
 }
 
-.game-title {
-  text-shadow: 0 2px 12px color-mix(in srgb, black 40%, transparent);
-}
-
-.band-ps5 {
-  background: var(--ps5);
-  color: var(--color-white);
-}
-.band-xbox {
-  background: var(--xbox);
-  color: var(--color-white);
-}
-.band-switch2 {
-  background: var(--switch);
-  color: var(--color-white);
-}
-.band-rog {
-  background: var(--rog);
-  color: var(--color-white);
-}
-.band-empty {
-  background: var(--line-strong);
-  color: var(--text-faint);
-}
-
-.dot-ps5 {
-  background: var(--ps5-dot);
-}
-.dot-xbox {
-  background: var(--xbox-dot);
-}
-.dot-switch2 {
-  background: var(--switch-dot);
-}
-.dot-rog {
-  background: var(--rog-dot);
-}
 .dot-all {
   background: conic-gradient(
     var(--ps5-dot) 0 25%,

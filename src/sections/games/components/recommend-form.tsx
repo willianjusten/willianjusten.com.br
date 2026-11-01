@@ -210,7 +210,7 @@ export function RecommendForm({
                     coverUrl={result.coverUrl}
                     platform={pickPrimaryPlatform(result.platforms)}
                     sizeClass="h-11 w-[34px]"
-                    bandClass="h-2"
+                    bandHeightClass="h-2"
                   />
                   <span className="flex min-w-0 flex-col gap-1">
                     <span className="truncate text-sm font-semibold text-text">
@@ -223,7 +223,7 @@ export function RecommendForm({
                       {result.platforms.map((platform) => (
                         <span
                           key={platform}
-                          className={`rounded-xs px-1.5 py-px font-mono text-[9px] tracking-[0.5px] band-${platform}`}
+                          className={`rounded-xs px-1.5 py-px font-mono text-[9px] tracking-[0.5px] ${PLATFORM_STYLES[platform].bandClass}`}
                         >
                           {PLATFORM_STYLES[platform].bandText}
                         </span>
@@ -256,7 +256,7 @@ export function RecommendForm({
                 coverUrl={picked.coverUrl}
                 platform={pickPrimaryPlatform(picked.platforms)}
                 sizeClass="h-[66px] w-[52px] shadow-(--shadow-1)"
-                bandClass="h-3"
+                bandHeightClass="h-3"
               />
               <div className="flex min-w-0 flex-1 flex-col gap-1">
                 <span className="truncate text-base font-bold">{picked.title}</span>
