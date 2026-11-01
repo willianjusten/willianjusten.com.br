@@ -13,10 +13,15 @@ export function HeroSpotlight() {
     let frameId = 0;
     let pointerX = 0;
     let pointerY = 0;
+    // Re-measured after anything that can move the hero: scrolling, resizing, or the pointer re-entering.
+    let cachedBounds: DOMRect | null = null;
+    const forgetBounds = () => {
+      cachedBounds = null;
+    };
 
     const paintSpotlight = () => {
       frameId = 0;
-      const bounds = spotlight.getBoundingClientRect();
+      const bounds = (cachedBounds ??= spotlight.getBoundingClientRect());
       spotlight.style.setProperty("--pointer-x", `${pointerX - bounds.left}px`);
       spotlight.style.setProperty("--pointer-y", `${pointerY - bounds.top}px`);
     };
@@ -28,8 +33,14 @@ export function HeroSpotlight() {
     }
 
     heroSection.addEventListener("pointermove", followPointer, { passive: true });
+    heroSection.addEventListener("pointerenter", forgetBounds);
+    window.addEventListener("scroll", forgetBounds, { passive: true });
+    window.addEventListener("resize", forgetBounds, { passive: true });
     return () => {
       heroSection.removeEventListener("pointermove", followPointer);
+      heroSection.removeEventListener("pointerenter", forgetBounds);
+      window.removeEventListener("scroll", forgetBounds);
+      window.removeEventListener("resize", forgetBounds);
       cancelAnimationFrame(frameId);
     };
   }, []);
