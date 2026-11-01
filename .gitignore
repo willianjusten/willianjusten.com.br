@@ -10,3 +10,6 @@ next-env.d.ts
 !.env.example
 npm-debug.log*
 pnpm-debug.log*
+
+# Local Claude Code state (agent worktrees, local settings)
+/.claude/
