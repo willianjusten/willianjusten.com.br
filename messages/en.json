@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Willian Justen | Product Engineer",
-    "description": "Product Engineer at Spoke, amateur photographer, gamer, and basketball enthusiast.",
+    "description": "Product Engineer at Spoke, hobbyist photographer, gamer, and basketball fanatic.",
     "tagline": "Product Engineer at Spoke. Photos, games, NBA, and music."
   },
   "FarewellBanner": {
@@ -27,7 +27,7 @@
   "Hero": {
     "name": "Willian Justen",
     "clock": "São Paulo, BR · <time>--:--</time> (local time)",
-    "lead": "Product Engineer at <strong>Spoke</strong>, amateur photographer, gamer, and basketball enthusiast.",
+    "lead": "Product Engineer at <strong>Spoke</strong>, hobbyist photographer, gamer, and basketball fanatic",
     "building": {
       "label": "Building",
       "value": "Spoke Connect",
@@ -38,7 +38,7 @@
       "sub": "{platform} · {hours} played"
     },
     "onRepeat": {
-      "label": "On repeat"
+      "label": "Now playing"
     },
     "lastSeen": {
       "label": "Last stop"
