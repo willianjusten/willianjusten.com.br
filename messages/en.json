@@ -35,8 +35,7 @@
       "sub": "See more"
     },
     "playing": {
-      "label": "Playing",
-      "sub": "{platform} · {hours} played"
+      "label": "Playing"
     },
     "onRepeat": {
       "label": "Now playing"

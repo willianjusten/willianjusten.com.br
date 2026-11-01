@@ -61,7 +61,7 @@ describe("profile content module", () => {
   it("rejects an unknown value that is not written as a [placeholder]", () => {
     const parsed = profileModule?.schema.safeParse({
       ...profileData,
-      now: { ...profileData.now, playing: { ...profileData.now.playing, hours: "TBD" } },
+      links: { ...profileData.links, email: { address: "TBD" } },
     });
     expect(parsed?.success).toBe(false);
   });

@@ -35,8 +35,7 @@
       "sub": "Ver mais"
     },
     "playing": {
-      "label": "Jogando",
-      "sub": "{platform} · {hours} de jogo"
+      "label": "Jogando"
     },
     "onRepeat": {
       "label": "Tocando"

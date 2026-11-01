@@ -23,8 +23,6 @@ export async function Hero() {
   const t = await getTranslations("Hero");
   const { now } = profile;
   const songOfTheMoment = music.tracks.find((track) => track.id === music.songOfTheMoment)!;
-  const playingHours =
-    typeof now.playing.hours === "number" ? `${now.playing.hours}h` : now.playing.hours;
 
   return (
     <section id="top" className="relative isolate">
@@ -111,7 +109,7 @@ export async function Hero() {
             icon={Gamepad2}
             label={t("playing.label")}
             value={now.playing.title}
-            sub={t("playing.sub", { platform: now.playing.platform, hours: playingHours })}
+            sub={now.playing.platform}
           />
           <StatusTile
             href="#music"

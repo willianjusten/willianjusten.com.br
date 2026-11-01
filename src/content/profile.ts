@@ -35,7 +35,6 @@ export const profileSchema = z.object({
     playing: z.object({
       title: z.string().min(1),
       platform: z.string().min(1),
-      hours: z.union([z.number().int().positive(), placeholderText]),
     }),
     lastSeen: z.object({ place: z.string().min(1), when: localizedText }),
   }),
@@ -64,7 +63,7 @@ export const profileData: z.input<typeof profileSchema> = {
   },
   now: {
     building: { company: "Spoke", link: "https://spoke.com/connect" },
-    playing: { title: "Crimson Desert", platform: "PC", hours: "[hours]" },
+    playing: { title: "Crimson Desert", platform: "PC" },
     lastSeen: {
       place: "Amsterdam, NL",
       when: { en: "October 2026", pt: "Outubro de 2026" },
