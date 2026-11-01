@@ -121,6 +121,17 @@
   --text-shadow-nav: 0 1px 12px rgba(0, 0, 0, 0.6);
   /* Header switches from the burger menu to inline links; mirrored in src/layout/header/mobile-menu.tsx. */
   --breakpoint-nav: 900px;
+  --animate-bounce-ball: bounce-ball 1.6s cubic-bezier(0.3, 0, 0.6, 1) infinite;
+
+  @keyframes bounce-ball {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }
 
 /* CSS-first Tailwind theme, mapped onto the :root tokens above. */

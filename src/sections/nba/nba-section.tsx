@@ -30,7 +30,7 @@ export async function NbaSection() {
     <SectionShell
       id="nba"
       icon={BasketballIcon}
-      badgeClassName="bounce-ball"
+      badgeClassName="motion-safe:animate-bounce-ball"
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
