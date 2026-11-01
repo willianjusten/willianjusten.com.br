@@ -22,7 +22,8 @@ import {
   type Ball,
   type Velocity,
 } from "../lib/shot-physics";
-import { drawScene, RESULT_MESSAGE_FRAMES, type SceneState } from "../lib/shot-renderer";
+import { RESULT_MESSAGE_FRAMES } from "../lib/renderer/overlay";
+import { drawScene, type SceneState } from "../lib/renderer/scene";
 import type { ShotTotals } from "../server/shot-stats";
 import { runWhileVisible } from "@/shared/lib/animation-loop";
 import { fetchJson, postJson } from "@/shared/lib/fetch-json";
