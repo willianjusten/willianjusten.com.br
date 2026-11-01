@@ -119,7 +119,8 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
       }
       selectPlace(place.slug);
       openAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex: 0 } : null);
-      flyTo(motion, place, place.isHome ? HOME_ZOOM : PLACE_ZOOM);
+      // Never zoom out to open a place: a cluster that only split near full zoom would merge again.
+      flyTo(motion, place, place.isHome ? HOME_ZOOM : Math.max(PLACE_ZOOM, motion.zoomGoal));
     },
     [clustersByLeadRef, openAlbum, selectPlace, stopTour],
   );
