@@ -19,7 +19,6 @@ export const RECOMMENDATION_RATE_LIMIT: RateLimitRule = {
   windowInSeconds: 60 * 60,
 };
 
-/** Counts against the same hourly budget as game reactions. */
 export const VOTE_RATE_LIMIT: RateLimitRule = REACTION_RATE_LIMIT;
 
 const SEARCH_CACHE_HEADERS = { "Cache-Control": "public, s-maxage=3600, max-age=300" };

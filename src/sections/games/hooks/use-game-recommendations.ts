@@ -20,7 +20,6 @@ export type SubmitOutcome =
   | {
       kind: "saved";
       recommendation: RecommendationView | null;
-      /** The shelf order after the new game was merged in. */
       recommendations: RecommendationView[];
     }
   | { kind: "rate_limited" }
@@ -32,7 +31,6 @@ function isRateLimited(error: unknown): boolean {
   return error instanceof HttpError && error.status === RATE_LIMITED_STATUS;
 }
 
-/** The visitors' recommendations: loading, submitting new ones and +1 votes on approved ones. */
 export function useGameRecommendations() {
   const [recommendations, setRecommendations] = useState<RecommendationView[]>([]);
   const [voteError, setVoteError] = useState<VoteError | null>(null);

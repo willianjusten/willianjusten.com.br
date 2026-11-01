@@ -3,7 +3,6 @@ import type { GameList, GamePlatform } from "@/content/games";
 
 export type PlatformFilter = GamePlatform | "all";
 
-/** The slice of a game the shelf needs to count and filter. */
 export type ShelfItem = { list: GameList; platform: GamePlatform };
 
 export function countByList(games: readonly ShelfItem[]): Record<GameList, number> {
@@ -17,7 +16,6 @@ export function countByList(games: readonly ShelfItem[]): Record<GameList, numbe
   return counts;
 }
 
-/** Counts for the platform chips, scoped to the active tab. */
 export function countByPlatform(
   games: readonly ShelfItem[],
   list: GameList,

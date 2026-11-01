@@ -25,7 +25,6 @@ type ShelfStageProps = {
   labels: ShelfStageLabels;
   cases: readonly ShelfCase[];
   activeIndex: number;
-  /** Title on the dashed case shown when the tab is empty. */
   emptyTitle: string;
   stageRef: Ref<HTMLDivElement>;
   onChangeIndex: (index: number) => void;
@@ -33,7 +32,6 @@ type ShelfStageProps = {
   onFocusStage: () => void;
 };
 
-/** The 3D coverflow: drag, arrow keys, the side buttons or a click on a case move it. */
 export function ShelfStage({
   labels,
   cases,

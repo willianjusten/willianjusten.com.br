@@ -41,7 +41,6 @@ type GamesShelfProps = {
   labels: GamesShelfLabels;
 };
 
-/** The Games section body: list tabs, the coverflow, the details strip and the recommend form. */
 export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");

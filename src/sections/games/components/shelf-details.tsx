@@ -16,7 +16,6 @@ export type ShelfDetailsLabels = {
 type ShelfDetailsProps = {
   labels: ShelfDetailsLabels;
   activeList: ShelfList;
-  /** Null while the tab is empty; the empty title and note show instead. */
   activeCase: ShelfCase | null;
   emptyTitle: string;
   emptyNote: string;
@@ -25,7 +24,6 @@ type ShelfDetailsProps = {
   onRecommendSimilar: () => void;
 };
 
-/** The strip under the stage: what the active game is, its rating and note, and the reaction button. */
 export function ShelfDetails({
   labels,
   activeList,

@@ -1,6 +1,6 @@
 import type { GamePlatform } from "@/content/games";
 
-/** A recommendation as the browser sees it. Pending ones are only ever sent to their submitter. */
+/** Pending ones are only ever sent to their submitter. */
 export type RecommendationView = {
   id: number;
   title: string;

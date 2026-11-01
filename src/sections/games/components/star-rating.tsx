@@ -13,12 +13,10 @@ type StarRatingProps = {
   label: string;
 };
 
-/** How much of the star at `index` is filled: 1, 0.5 or 0. */
 function starFill(rating: number, index: number): number {
   return Math.min(1, Math.max(0, rating - index));
 }
 
-/** Filled stars up to the rating, a half-filled one for a .5, outlines for the rest. */
 export function StarRating({ rating, label }: StarRatingProps) {
   const locale = useLocale();
   const accessibleLabel = fillTemplate(label, {

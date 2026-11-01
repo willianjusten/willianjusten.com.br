@@ -10,7 +10,6 @@ export type ShelfGame = Omit<Game, "note" | "igdbId"> & {
   coverUrl: string | null;
 };
 
-/** Joins the curated games with their fetched IGDB covers and picks the note for the locale. */
 export function buildShelfEntries(
   games: readonly Game[],
   covers: Record<string, GameCoverEntry>,

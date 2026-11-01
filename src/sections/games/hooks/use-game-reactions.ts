@@ -14,7 +14,6 @@ function withReaction(reactions: ReadonlySet<string>, gameSlug: string, isReacte
   return next;
 }
 
-/** Heart reactions on the curated games, applied optimistically and rolled back on failure. */
 export function useGameReactions() {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [mine, setMine] = useState<ReadonlySet<string>>(new Set());

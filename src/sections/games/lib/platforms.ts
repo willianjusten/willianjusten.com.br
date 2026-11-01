@@ -1,9 +1,7 @@
 import type { GamePlatform } from "@/content/games";
 
 export type PlatformStyle = {
-  /** Full console name, used in chips, the setup line and the details meta. */
   name: string;
-  /** Text on the cover band. */
   bandText: string;
 };
 

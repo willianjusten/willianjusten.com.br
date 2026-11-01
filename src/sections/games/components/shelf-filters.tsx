@@ -32,7 +32,6 @@ type ShelfFiltersProps = {
   onChoosePlatform: (platform: PlatformFilter) => void;
 };
 
-/** List tabs, plus platform chips that fold behind a toggle on phones. Recommendations have no platform filter. */
 export function ShelfFilters({
   labels,
   activeList,
