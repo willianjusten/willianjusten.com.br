@@ -92,7 +92,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -34.6,
       lon: -58.38,
       cloudinaryFolders: ["trips/2017-buenos-aires"],
-      unsplashUrl: UNSPLASH_PROFILE_URL,
+      unsplashUrl: "https://unsplash.com/collections/1923682/my-adventures-in-buenos-aires",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3A2A30",
     },
