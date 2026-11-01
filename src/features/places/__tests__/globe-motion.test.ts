@@ -5,6 +5,7 @@ import {
   createGlobeMotion,
   dragTo,
   easeCenterX,
+  endDrag,
   flyTo,
   nudgeByArrowKey,
   startDrag,
@@ -57,6 +58,19 @@ describe("globe motion", () => {
 
     expect(motion.view.lon).toBeGreaterThan(INITIAL_VIEW.lon);
     expect(motion.velocity.lon).toBeGreaterThan(0);
+  });
+
+  it("tells a tap on the globe apart from a drag when the pointer is released", () => {
+    const tapped = createGlobeMotion();
+    startDrag(tapped, 100, 100);
+    dragTo(tapped, 102, 101, 200);
+    expect(endDrag(tapped)).toEqual({ wasTap: true });
+
+    const dragged = createGlobeMotion();
+    startDrag(dragged, 100, 100);
+    dragTo(dragged, 102, 101, 200);
+    dragTo(dragged, 140, 100, 200);
+    expect(endDrag(dragged)).toEqual({ wasTap: false });
   });
 
   it("turns arrow keys into spin and ignores other keys", () => {

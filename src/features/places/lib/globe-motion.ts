@@ -17,6 +17,8 @@ const IDLE_SPIN_DEGREES_PER_FRAME = 0.06;
 const IDLE_VELOCITY_LIMIT = 0.02;
 const ZOOM_EASING = 0.08;
 const KEY_ROTATE_IMPULSE = 1.5;
+/** How far a pointer may wander between press and release and still count as a tap, not a drag. */
+const TAP_SLOP_PIXELS = 6;
 /** While an album is open on a wide stage, the globe slides left so the place stays clear of the panel. */
 const ALBUM_CENTER_X_RATIO = 0.34;
 const ALBUM_SHIFT_MIN_WIDTH = 760;
@@ -36,7 +38,13 @@ export type GlobeMotion = {
   velocity: { lon: number; lat: number };
   flightTarget: FlightTarget | null;
   zoomGoal: number;
-  drag: { lastX: number; lastY: number } | null;
+  drag: {
+    startX: number;
+    startY: number;
+    lastX: number;
+    lastY: number;
+    hasLeftTapSlop: boolean;
+  } | null;
   /** Eased towards the stage centre, or towards the left while an album is open. */
   centerX: number | null;
 };
@@ -74,7 +82,7 @@ export function zoomOutToStart(motion: GlobeMotion) {
 
 export function startDrag(motion: GlobeMotion, x: number, y: number) {
   motion.flightTarget = null;
-  motion.drag = { lastX: x, lastY: y };
+  motion.drag = { startX: x, startY: y, lastX: x, lastY: y, hasLeftTapSlop: false };
 }
 
 export function dragTo(motion: GlobeMotion, x: number, y: number, baseRadius: number) {
@@ -90,11 +98,20 @@ export function dragTo(motion: GlobeMotion, x: number, y: number, baseRadius: nu
     lat: next.lat - motion.view.lat,
   };
   motion.view = next;
-  motion.drag = { lastX: x, lastY: y };
+  const { startX, startY, hasLeftTapSlop } = motion.drag;
+  motion.drag = {
+    startX,
+    startY,
+    lastX: x,
+    lastY: y,
+    hasLeftTapSlop: hasLeftTapSlop || Math.hypot(x - startX, y - startY) > TAP_SLOP_PIXELS,
+  };
 }
 
-export function endDrag(motion: GlobeMotion) {
+export function endDrag(motion: GlobeMotion): { wasTap: boolean } {
+  const wasTap = motion.drag !== null && !motion.drag.hasLeftTapSlop;
   motion.drag = null;
+  return { wasTap };
 }
 
 /** Adds an arrow key's spin to the globe. Returns false for any other key. */

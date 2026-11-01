@@ -62,7 +62,6 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     [openAlbum, selectPlace],
   );
   const { isTouring, startTour, stopTour, isTourRunning } = useGlobeTour(places, playTourStep);
-  const dragHandlers = useGlobeDrag(motionRef, canvasRef, stopTour);
   const { clustersByLeadRef, registerPinElement, focusPin } = useGlobeScene({
     frameRef,
     canvasRef,
@@ -92,6 +91,9 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     focusPin(album.slug);
     zoomOutToStart(motionRef.current);
   }, [album, clearSelection, focusPin]);
+
+  // Pins, controls and the album stop their own presses, so a tap here landed on the empty globe.
+  const dragHandlers = useGlobeDrag(motionRef, canvasRef, stopTour, closeAlbum);
 
   const showPhoto = useCallback(
     (photoIndex: number) => {

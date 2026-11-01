@@ -7,6 +7,7 @@ export function useGlobeDrag(
   motionRef: RefObject<GlobeMotion>,
   canvasRef: RefObject<HTMLCanvasElement | null>,
   onDragStart: () => void,
+  onTap: () => void,
 ) {
   const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
     onDragStart();
@@ -22,15 +23,16 @@ export function useGlobeDrag(
     dragTo(motionRef.current, event.clientX, event.clientY, baseRadius);
   };
 
-  const onPointerEnd = (event: PointerEvent<HTMLDivElement>) => {
+  const onPointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    const { wasTap } = endDrag(motionRef.current);
+    event.currentTarget.style.cursor = "";
+    if (wasTap) onTap();
+  };
+
+  const onPointerCancel = (event: PointerEvent<HTMLDivElement>) => {
     endDrag(motionRef.current);
     event.currentTarget.style.cursor = "";
   };
 
-  return {
-    onPointerDown,
-    onPointerMove,
-    onPointerUp: onPointerEnd,
-    onPointerCancel: onPointerEnd,
-  };
+  return { onPointerDown, onPointerMove, onPointerUp, onPointerCancel };
 }
