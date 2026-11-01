@@ -37,7 +37,8 @@ export function RecordPlayer({
   const hasPreview = Boolean(track.previewUrl);
 
   return (
-    <div className="reveal flex shrink-0 basis-full flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7 sm:basis-(--record-panel-width)">
+    // min-w-0 holds the panel to its basis: without it a long artist name widens the panel.
+    <div className="reveal flex min-w-0 shrink-0 basis-full flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7 sm:basis-(--record-panel-width)">
       <div {...tiltHandlers} className="p-2 perspective-[700px]">
         <div
           ref={stackRef}
