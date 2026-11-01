@@ -14,7 +14,10 @@ function jsonResponse(body: unknown, status = 200) {
 }
 
 /** Fake Twitch + IGDB. `rejectedTokens` are answered with a 401 from IGDB. */
-function buildFakeNetwork(rejectedTokens: string[] = []) {
+function buildFakeNetwork(
+  rejectedTokens: string[] = [],
+  games: unknown[] | ((query: string) => unknown[]) = [ALAN_WAKE_2],
+) {
   const requests: { url: string; token?: string; body?: string }[] = [];
   let tokensIssued = 0;
   const fetchImplementation: typeof fetch = async (input, init) => {
@@ -33,7 +36,7 @@ function buildFakeNetwork(rejectedTokens: string[] = []) {
     if (rejectedTokens.includes(token)) {
       return jsonResponse({}, 401);
     }
-    return jsonResponse([ALAN_WAKE_2]);
+    return jsonResponse(typeof games === "function" ? games(String(init?.body)) : games);
   };
   return { fetchImplementation, requests };
 }
@@ -88,7 +91,8 @@ describe("IGDB client", () => {
       "https://images.igdb.com/igdb/image/upload/t_cover_big/co6jar.jpg",
     );
     expect(requests.filter((request) => request.url.includes("oauth2"))).toHaveLength(1);
-    expect(requests.filter((request) => request.url.includes("api.igdb.com"))).toHaveLength(2);
+    // Two cached-miss searches, each a whole-word query plus a partial-word query.
+    expect(requests.filter((request) => request.url.includes("api.igdb.com"))).toHaveLength(4);
   });
 
   it("refreshes the token once when IGDB answers 401", async () => {
@@ -102,12 +106,12 @@ describe("IGDB client", () => {
     const results = await client.searchGames("alan wake");
 
     expect(results).toHaveLength(1);
-    expect(requests.map((request) => request.token)).toEqual([
-      undefined,
-      "token-1",
-      undefined,
-      "token-2",
-    ]);
+    const tokenRequests = requests.filter((request) => request.url.includes("oauth2"));
+    const retriedTokens = requests
+      .filter((request) => request.url.includes("api.igdb.com"))
+      .map((request) => request.token);
+    expect(tokenRequests).toHaveLength(2);
+    expect(retriedTokens).toEqual(["token-1", "token-1", "token-2", "token-2"]);
   });
 
   it("requests a new token after the old one expires", async () => {
@@ -138,7 +142,7 @@ describe("IGDB client", () => {
     await client.searchGames('a"; fields *; "b');
 
     const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
-    expect(query.startsWith('search "a ; fields *;  b";')).toBe(true);
+    expect(query.startsWith('search "a ; fields *; b";')).toBe(true);
   });
 
   it("does not filter by platform so any game can be recommended, but skips editions", async () => {
@@ -154,5 +158,128 @@ describe("IGDB client", () => {
     const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
     expect(query).not.toContain("platforms =");
     expect(query).toContain("version_parent = null");
+  });
+});
+
+describe("IGDB search ranking", () => {
+  /** Shaped like IGDB's real answer for "journey": its own order buries the classic. */
+  const journeyMatches = [
+    { id: 1, name: "The Sims 4: Journey to Batuu", game_type: 1, total_rating_count: 8 },
+    { id: 2, name: "Journey to the West: A Super Mario Bros. ROM Hack", game_type: 5 },
+    { id: 3, name: "AFK Journey", game_type: 0, total_rating_count: 19 },
+    { id: 4, name: "The Longest Journey", game_type: 0, total_rating_count: 203 },
+    { id: 5, name: "Journey", game_type: 0 },
+    { id: 6, name: "Journey", game_type: 0, total_rating_count: 1202 },
+    { id: 7, name: "Journey's Land", game_type: 0 },
+    { id: 8, name: "The Sims 4: Plus Journey to Batuu Bundle", game_type: 3 },
+    {
+      id: 9,
+      name: "Shin Megami Tensei: Strange Journey Redux",
+      game_type: 8,
+      total_rating_count: 17,
+    },
+  ];
+
+  async function searchJourney(text = "journey") {
+    const { fetchImplementation, requests } = buildFakeNetwork([], journeyMatches);
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
+    const results = await client.searchGames(text);
+    const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
+    return { titles: results.map((result) => `${result.igdbId} ${result.title}`), query };
+  }
+
+  it("puts exact title matches first, most rated first, then the rest by popularity", async () => {
+    const { titles } = await searchJourney();
+    expect(titles).toEqual([
+      "6 Journey",
+      "5 Journey",
+      "4 The Longest Journey",
+      "3 AFK Journey",
+      "9 Shin Megami Tensei: Strange Journey Redux",
+      "7 Journey's Land",
+    ]);
+  });
+
+  it("matches the exact title regardless of case, spacing and punctuation", async () => {
+    const { titles } = await searchJourney("  JOURNEY! ");
+    expect(titles[0]).toBe("6 Journey");
+  });
+
+  it("drops mods, DLC and bundles", async () => {
+    const { titles } = await searchJourney();
+    expect(titles.join()).not.toMatch(/Batuu|ROM Hack/);
+  });
+
+  it("asks IGDB for a wide pool to rank and returns at most ten", async () => {
+    const manyMatches = Array.from({ length: 30 }, (_, index) => ({
+      id: index,
+      name: `Journey ${index}`,
+      game_type: 0,
+    }));
+    const { fetchImplementation, requests } = buildFakeNetwork([], manyMatches);
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
+
+    const results = await client.searchGames("journey");
+
+    const query = requests.find((request) => request.url.includes("api.igdb.com"))?.body ?? "";
+    expect(query).toContain("limit 50;");
+    expect(query).toContain("game_type");
+    expect(query).toContain("total_rating_count");
+    expect(results).toHaveLength(10);
+  });
+});
+
+describe("IGDB search while typing", () => {
+  const BREATH_OF_THE_WILD = {
+    id: 7346,
+    name: "The Legend of Zelda: Breath of the Wild",
+    game_type: 0,
+    total_rating_count: 3027,
+  };
+
+  async function searchFor(text: string, answer: (query: string) => unknown[]) {
+    const { fetchImplementation, requests } = buildFakeNetwork([], answer);
+    const client = createIgdbClient({
+      clientId: "id",
+      clientSecret: "secret",
+      fetchImplementation,
+    });
+    const results = await client.searchGames(text);
+    const queries = requests
+      .filter((request) => request.url.includes("api.igdb.com"))
+      .map((request) => request.body ?? "");
+    return { titles: results.map((result) => result.title), queries };
+  }
+
+  it("finds a game while its last word is still half typed", async () => {
+    // IGDB's search only matches whole words, so "bre" alone matches nothing.
+    const { titles, queries } = await searchFor("zelda bre", (query) =>
+      query.includes('name ~ *"bre"*') ? [BREATH_OF_THE_WILD] : [],
+    );
+
+    expect(titles).toEqual(["The Legend of Zelda: Breath of the Wild"]);
+    expect(queries).toContainEqual(expect.stringMatching(/^search "zelda";.*name ~ \*"bre"\*/));
+  });
+
+  it("finds the most rated games containing a single half-typed word", async () => {
+    const { titles, queries } = await searchFor("zel", (query) =>
+      query.includes('name ~ *"zel"*') ? [BREATH_OF_THE_WILD] : [],
+    );
+
+    expect(titles).toEqual(["The Legend of Zelda: Breath of the Wild"]);
+    expect(queries).toContainEqual(expect.stringContaining("sort total_rating_count desc;"));
+  });
+
+  it("lists a game found by both queries only once", async () => {
+    const { titles } = await searchFor("zelda breath", () => [BREATH_OF_THE_WILD]);
+    expect(titles).toEqual(["The Legend of Zelda: Breath of the Wild"]);
   });
 });

@@ -21,7 +21,22 @@ const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
 
 const PLATFORM_PRIORITY: GamePlatform[] = ["ps5", "xbox", "switch2", "rog"];
 
-const SEARCH_RESULT_LIMIT = 6;
+const SEARCH_RESULT_LIMIT = 10;
+/**
+ * IGDB's own search order buries well-known games (Journey ranks 18th for "journey"), so a wide
+ * pool is fetched and re-ranked here.
+ */
+const SEARCH_CANDIDATE_LIMIT = 50;
+/** IGDB game types that are not a game someone would recommend on their own. */
+const UNRECOMMENDABLE_GAME_TYPES = new Set([
+  1, // DLC
+  3, // Bundle
+  5, // Mod, which includes ROM hacks
+  6, // Episode
+  7, // Season
+  13, // Pack / Addon
+  14, // Update
+]);
 const SEARCH_CACHE_TTL_IN_MILLISECONDS = 60 * 60 * 1000;
 const SEARCH_CACHE_MAX_ENTRIES = 200;
 /** Refresh slightly early so a token never expires mid-request. */
@@ -44,7 +59,53 @@ type RawIgdbGame = {
   first_release_date?: number;
   platforms?: number[];
   cover?: { image_id?: string };
+  game_type?: number;
+  total_rating_count?: number;
 };
+
+/** Lowercase letters and digits only, so "JOURNEY!" and "Journey" compare equal. */
+function normalizeTitle(title: string): string {
+  return title.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+}
+
+const SEARCH_FIELDS =
+  "fields name,first_release_date,platforms,cover.image_id,game_type,total_rating_count;";
+
+/**
+ * IGDB's `search` only matches whole words, so "zelda bre" finds nothing while the visitor is
+ * still typing. Alongside the whole-word search, a second query treats the last word as
+ * unfinished: it searches the finished words and keeps names containing the last one, or, for a
+ * single word, takes the most rated names containing it. Quotes are already stripped from `text`.
+ */
+function buildSearchQueries(text: string): string[] {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lastWord = words.at(-1) ?? "";
+  const finishedWords = words.slice(0, -1).join(" ");
+  const limit = `limit ${SEARCH_CANDIDATE_LIMIT};`;
+  const wholeWordQuery = `search "${words.join(" ")}"; ${SEARCH_FIELDS} where version_parent = null; ${limit}`;
+  const partialWordQuery = finishedWords
+    ? `search "${finishedWords}"; ${SEARCH_FIELDS} where version_parent = null & name ~ *"${lastWord}"*; ${limit}`
+    : `${SEARCH_FIELDS} where version_parent = null & name ~ *"${lastWord}"*; sort total_rating_count desc; ${limit}`;
+  return [wholeWordQuery, partialWordQuery];
+}
+
+/**
+ * Drops add-ons and mods, then puts exact title matches first and sorts each group by how many
+ * ratings the game has. Ties keep IGDB's order.
+ */
+function rankSearchMatches(rawGames: RawIgdbGame[], text: string): RawIgdbGame[] {
+  const normalizedText = normalizeTitle(text);
+  const isExactMatch = (game: RawIgdbGame) => normalizeTitle(game.name) === normalizedText;
+  const uniqueGames = [...new Map(rawGames.map((game) => [game.id, game])).values()];
+  return uniqueGames
+    .filter((game) => !UNRECOMMENDABLE_GAME_TYPES.has(game.game_type ?? 0))
+    .toSorted(
+      (first, second) =>
+        Number(isExactMatch(second)) - Number(isExactMatch(first)) ||
+        (second.total_rating_count ?? 0) - (first.total_rating_count ?? 0),
+    )
+    .slice(0, SEARCH_RESULT_LIMIT);
+}
 
 export function buildCoverUrl(coverImageId: string, size: CoverSize = "thumbnail"): string {
   return `${COVER_URL_BASE}/${COVER_SIZES[size]}/${coverImageId}.jpg`;
@@ -114,11 +175,17 @@ export function createIgdbClient({
     return cachedToken.accessToken;
   }
 
+  /** Searches send two queries at once, so concurrent callers share one token request. */
+  let pendingToken: Promise<string> | undefined;
+
   async function getToken(): Promise<string> {
     if (cachedToken && cachedToken.expiresAt > now()) {
       return cachedToken.accessToken;
     }
-    return requestToken();
+    pendingToken ??= requestToken().finally(() => {
+      pendingToken = undefined;
+    });
+    return pendingToken;
   }
 
   async function queryGames(query: string): Promise<RawIgdbGame[]> {
@@ -134,9 +201,12 @@ export function createIgdbClient({
       });
     }
 
-    let response = await send(await getToken());
+    const accessToken = await getToken();
+    let response = await send(accessToken);
     if (response.status === 401) {
-      response = await send(await requestToken());
+      // Only drop the token if a parallel query has not already replaced it.
+      if (cachedToken?.accessToken === accessToken) cachedToken = undefined;
+      response = await send(await getToken());
     }
     if (!response.ok) {
       throw new IgdbRequestError(`IGDB request failed with ${response.status}`);
@@ -160,10 +230,10 @@ export function createIgdbClient({
         return cached.results;
       }
       const escapedText = cacheKey.replaceAll("\\", " ").replaceAll('"', " ");
-      const rawGames = await queryGames(
-        `search "${escapedText}"; fields name,first_release_date,platforms,cover.image_id; where version_parent = null; limit ${SEARCH_RESULT_LIMIT};`,
-      );
-      const results = rawGames.map(translateIgdbGame).map(withCover);
+      const matchGroups = await Promise.all(buildSearchQueries(escapedText).map(queryGames));
+      const results = rankSearchMatches(matchGroups.flat(), cacheKey)
+        .map(translateIgdbGame)
+        .map(withCover);
       if (searchCache.size >= SEARCH_CACHE_MAX_ENTRIES) {
         searchCache.clear();
       }
