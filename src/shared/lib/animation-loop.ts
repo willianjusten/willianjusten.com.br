@@ -1,19 +1,26 @@
 /**
  * Calls `onFrame` on every animation frame while `element` is on screen and the tab is visible,
- * so offscreen canvases cost nothing. Returns the cleanup for a `useEffect`.
+ * so offscreen canvases cost nothing. `onFrame` gets the milliseconds since the previous frame,
+ * 0 on the first frame after a pause. Returns the cleanup for a `useEffect`.
  */
-export function runWhileVisible(element: Element, onFrame: () => void): () => void {
+export function runWhileVisible(
+  element: Element,
+  onFrame: (elapsedInMilliseconds: number) => void,
+): () => void {
   let frameId = 0;
+  let previousFrameTime: number | undefined;
   let isInViewport = false;
 
-  function loop() {
-    onFrame();
+  function loop(frameTime: number) {
+    onFrame(previousFrameTime === undefined ? 0 : frameTime - previousFrameTime);
+    previousFrameTime = frameTime;
     frameId = requestAnimationFrame(loop);
   }
 
   function stop() {
     cancelAnimationFrame(frameId);
     frameId = 0;
+    previousFrameTime = undefined;
   }
 
   function sync() {

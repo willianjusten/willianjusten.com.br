@@ -1,17 +1,19 @@
 "use client";
 
-import { ExternalLink as ExternalLinkIcon, Pause, Play } from "lucide-react";
-import { useEffect, useRef, type PointerEvent } from "react";
+import { Pause, Play } from "lucide-react";
+import { useRecordSpin } from "../hooks/use-record-spin";
 import type { PlayableTrack } from "../lib/music-board";
-import { ExternalLink } from "@/shared/components/external-link";
-import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
+import { ListenLinks } from "./listen-links";
 import type { MusicLabels } from "./music-board";
 
-/** 3 degrees per frame at 60fps is 180 degrees a second. */
-const SPIN_DEGREES_PER_FRAME = 3;
-/** Pointer at an edge tilts the record by half of this, so the maximum is 17 degrees. */
-const TILT_RANGE_IN_DEGREES = 34;
-const EQ_BAR_COUNT = 5;
+/** Resting height of each equaliser bar and its offset into the bounce, so the bars move out of step. */
+const EQ_BARS = [
+  { restingScale: 0.3, delay: "0ms" },
+  { restingScale: 0.6, delay: "-300ms" },
+  { restingScale: 0.4, delay: "-600ms" },
+  { restingScale: 0.8, delay: "-150ms" },
+  { restingScale: 0.5, delay: "-450ms" },
+];
 
 type RecordPlayerProps = {
   track: PlayableTrack;
@@ -30,95 +32,22 @@ export function RecordPlayer({
   animateSwap,
   onToggle,
 }: RecordPlayerProps) {
-  const discRef = useRef<HTMLDivElement>(null);
-  const stackRef = useRef<HTMLDivElement>(null);
-  const discAngleRef = useRef(0);
-  const dragRef = useRef<{ lastPointerAngle: number } | null>(null);
-  const isPlayingRef = useRef(isPlaying);
-
-  useEffect(() => {
-    isPlayingRef.current = isPlaying;
-  }, [isPlaying]);
-
-  useEffect(() => {
-    const stack = stackRef.current;
-    if (!stack) return;
-    const reducedMotion = reducedMotionQuery();
-    return runWhileVisible(stack, () => {
-      if (isPlayingRef.current && !dragRef.current && !reducedMotion.matches) {
-        discAngleRef.current += SPIN_DEGREES_PER_FRAME;
-      }
-      if (discRef.current) {
-        discRef.current.style.transform = `rotate(${discAngleRef.current.toFixed(2)}deg)`;
-      }
-    });
-  }, []);
-
-  function pointerAngleOnDisc(event: PointerEvent<HTMLDivElement>): number {
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const centerX = bounds.left + bounds.width / 2;
-    const centerY = bounds.top + bounds.height / 2;
-    return (Math.atan2(event.clientY - centerY, event.clientX - centerX) * 180) / Math.PI;
-  }
-
-  function startScratch(event: PointerEvent<HTMLDivElement>) {
-    event.currentTarget.setPointerCapture(event.pointerId);
-    dragRef.current = { lastPointerAngle: pointerAngleOnDisc(event) };
-  }
-
-  function scratch(event: PointerEvent<HTMLDivElement>) {
-    if (!dragRef.current) return;
-    const currentAngle = pointerAngleOnDisc(event);
-    // The +540 / -180 wraps the difference into -180..180 so crossing the 180 degree seam is smooth.
-    const angleChange = ((currentAngle - dragRef.current.lastPointerAngle + 540) % 360) - 180;
-    discAngleRef.current += angleChange;
-    dragRef.current.lastPointerAngle = currentAngle;
-  }
-
-  function endScratch() {
-    dragRef.current = null;
-  }
-
-  function tiltTowardPointer(event: PointerEvent<HTMLDivElement>) {
-    const stack = stackRef.current;
-    if (!stack) return;
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const horizontalRatio = (event.clientX - bounds.left) / bounds.width;
-    const verticalRatio = (event.clientY - bounds.top) / bounds.height;
-    const tiltX = (0.5 - verticalRatio) * TILT_RANGE_IN_DEGREES;
-    const tiltY = (horizontalRatio - 0.5) * TILT_RANGE_IN_DEGREES;
-    stack.style.transform = `rotateX(${tiltX.toFixed(1)}deg) rotateY(${tiltY.toFixed(1)}deg)`;
-  }
-
-  function resetTilt() {
-    if (stackRef.current) stackRef.current.style.transform = "";
-  }
-
-  const listenLinks = [
-    { label: labels.youtubeMusic, href: track.youtubeMusicUrl },
-    { label: labels.spotify, href: track.spotifyUrl },
-    { label: labels.appleMusic, href: track.appleMusicUrl },
-  ].filter((link): link is { label: string; href: string } => Boolean(link.href));
-
+  const { discRef, stackRef, scratchHandlers, tiltHandlers } = useRecordSpin(isPlaying);
   const hasPreview = Boolean(track.previewUrl);
 
   return (
-    <div className="reveal box-border flex w-full max-w-full shrink-0 grow-0 basis-full sm:w-(--record-panel-width) sm:basis-(--record-panel-width) flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7">
-      <div
-        onPointerMove={tiltTowardPointer}
-        onPointerLeave={resetTilt}
-        className="p-2 [perspective:700px]"
-      >
+    <div className="reveal flex shrink-0 basis-full flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7 sm:basis-(--record-panel-width)">
+      <div {...tiltHandlers} className="p-2 perspective-[700px]">
         <div
           ref={stackRef}
           data-playing={isPlaying}
-          className="record-stack relative h-[184px] w-[204px] [transform-style:preserve-3d]"
+          className="group/record relative h-46 w-51 transition-transform duration-250 ease-[ease-out] transform-3d [transform:rotateX(14deg)_rotateY(-12deg)] motion-reduce:transition-none"
         >
-          <div className="record-glow absolute top-2 left-0 size-(--record-size) rounded-pill bg-[conic-gradient(from_0deg,var(--accent),var(--accent-hi),var(--accent-lo),var(--accent))] blur-[26px]" />
+          <div className="absolute top-2 left-0 size-(--record-size) rounded-pill bg-[conic-gradient(from_0deg,var(--accent),var(--accent-hi),var(--accent-lo),var(--accent))] opacity-0 blur-[26px] transition-opacity duration-600 ease-[ease] group-data-[playing=true]/record:opacity-60 group-data-[playing=true]/record:motion-safe:animate-record-glow-spin" />
           <div className="absolute top-2 left-0 size-(--record-size) rounded-pill bg-black shadow-disc [transform:translateZ(-10px)]" />
           <div
             key={track.id}
-            className={`absolute inset-0 [transform-style:preserve-3d] ${animateSwap ? "record-swap" : ""}`}
+            className={`absolute inset-0 transform-3d ${animateSwap ? "motion-safe:animate-record-swap" : ""}`}
           >
             <div
               ref={discRef}
@@ -126,16 +55,13 @@ export function RecordPlayer({
               role="img"
               aria-label={labels.record}
               title={labels.hint}
-              onPointerDown={startScratch}
-              onPointerMove={scratch}
-              onPointerUp={endScratch}
-              onPointerCancel={endScratch}
-              className="record-disc absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
+              {...scratchHandlers}
+              className="absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
             >
               <div className="relative flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
                 <span
                   aria-hidden="true"
-                  className="absolute top-[18%] font-mono text-[6px] tracking-[1px] text-on-accent"
+                  className="absolute top-[18%] font-mono text-record-label tracking-[1px] text-on-accent"
                 >
                   WJ · SIDE A
                 </span>
@@ -143,11 +69,11 @@ export function RecordPlayer({
               </div>
             </div>
           </div>
-          <div className="pointer-events-none absolute top-2 left-0 size-(--record-size) rounded-pill record-sheen" />
-          <div className="record-arm pointer-events-none absolute top-0 right-2 flex h-[118px] w-3.5 origin-[50%_7px] flex-col items-center">
-            <span className="box-border size-3.5 rounded-pill border-2 border-text-2 bg-line-input" />
+          <div className="record-sheen pointer-events-none absolute top-2 left-0 size-(--record-size) rounded-pill" />
+          <div className="pointer-events-none absolute top-0 right-2 flex h-29.5 w-3.5 origin-[50%_7px] -rotate-6 flex-col items-center transition-transform duration-900 ease-spring group-data-[playing=true]/record:rotate-26 motion-reduce:transition-none">
+            <span className="size-3.5 rounded-pill border-2 border-text-2 bg-line-input" />
             <span className="w-1 flex-auto rounded-xs bg-[linear-gradient(var(--text-2),var(--text-faint))]" />
-            <span className="h-[18px] w-3 rounded-[3px] bg-text-2" />
+            <span className="h-4.5 w-3 rounded-[3px] bg-text-2" />
           </div>
         </div>
       </div>
@@ -170,17 +96,21 @@ export function RecordPlayer({
         </button>
         <div
           key={track.id}
-          className={`flex min-w-0 flex-col gap-0.5 ${animateSwap ? "record-info-swap" : ""}`}
+          className={`flex min-w-0 flex-col gap-0.5 ${animateSwap ? "motion-safe:animate-record-info" : ""}`}
         >
-          <span className="flex items-center gap-2 font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
+          <span className="flex items-center gap-2 font-mono text-caption tracking-[0.08em] text-text-muted uppercase">
             {heading}
             <span
               data-playing={isPlaying}
               aria-hidden="true"
-              className="record-eq flex h-2.5 items-end gap-0.5"
+              className="group/eq flex h-2.5 items-end gap-0.5 opacity-0 transition-opacity duration-300 ease-out data-[playing=true]:opacity-100"
             >
-              {Array.from({ length: EQ_BAR_COUNT }, (_, barIndex) => (
-                <span key={barIndex} className="w-0.5 self-stretch rounded-xs bg-accent" />
+              {EQ_BARS.map(({ restingScale, delay }) => (
+                <span
+                  key={delay}
+                  style={{ transform: `scaleY(${restingScale})`, animationDelay: delay }}
+                  className="w-0.5 origin-bottom self-stretch rounded-xs bg-accent group-data-[playing=true]/eq:motion-safe:animate-eq-bounce"
+                />
               ))}
             </span>
           </span>
@@ -192,30 +122,7 @@ export function RecordPlayer({
         </div>
       </div>
 
-      {listenLinks.length > 0 && (
-        <nav
-          aria-label={labels.listenOn}
-          className="flex w-full flex-col gap-1 border-t border-line pt-3"
-        >
-          <span className="font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
-            {labels.listenOn}
-          </span>
-          <ul className="m-0 -ml-2 flex list-none flex-wrap p-0">
-            {listenLinks.map((link) => (
-              <li key={link.label}>
-                <ExternalLink
-                  href={link.href}
-                  className="inline-flex min-h-11 items-center gap-1 px-2 text-small text-text-2 transition-colors hover:text-text"
-                >
-                  {link.label}
-                  <ExternalLinkIcon size={11} aria-hidden="true" className="text-text-faint" />
-                </ExternalLink>
-              </li>
-            ))}
-          </ul>
-          <p className="m-0 text-micro text-text-faint">{labels.credit}</p>
-        </nav>
-      )}
+      <ListenLinks track={track} labels={labels} />
     </div>
   );
 }

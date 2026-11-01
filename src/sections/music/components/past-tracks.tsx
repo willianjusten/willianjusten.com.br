@@ -45,7 +45,7 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
             >
               <time
                 dateTime={track.month}
-                className="w-[76px] shrink-0 font-mono whitespace-nowrap text-overline text-text-muted"
+                className="w-19 shrink-0 font-mono whitespace-nowrap text-overline text-text-muted"
               >
                 {formatMonth(track.month, locale)}
               </time>

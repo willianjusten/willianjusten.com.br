@@ -1,122 +1,50 @@
-/* Music section: record player states and list row hover. */
+@theme {
+  --animate-record-glow-spin: record-glow-spin 6s linear infinite;
+  --animate-eq-bounce: eq-bounce 900ms ease-in-out infinite;
+  --animate-record-swap: record-swap-in 700ms var(--ease-spring) both;
+  --animate-record-info: record-info-in 400ms var(--ease-out) both;
 
-.record-stack {
-  transform: rotateX(14deg) rotateY(-12deg);
-  transition: transform 250ms ease-out;
+  @keyframes record-glow-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes eq-bounce {
+    0%,
+    100% {
+      transform: scaleY(0.3);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+
+  /* A new record slides onto the platter, spinning down as it lands. */
+  @keyframes record-swap-in {
+    from {
+      opacity: 0;
+      transform: translateX(-70%) rotate(-200deg) scale(0.85);
+    }
+  }
+
+  @keyframes record-info-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
 }
 
 .record-sheen {
   background: conic-gradient(
     from 20deg,
     transparent 0 8%,
-    color-mix(in srgb, white 13%, transparent) 13%,
+    color-mix(in srgb, var(--white) 13%, transparent) 13%,
     transparent 20% 52%,
-    color-mix(in srgb, white 9%, transparent) 61%,
+    color-mix(in srgb, var(--white) 9%, transparent) 61%,
     transparent 68%
   );
-}
-
-.record-glow {
-  opacity: 0;
-  transition: opacity 600ms;
-}
-
-.record-stack[data-playing="true"] .record-glow {
-  opacity: 0.6;
-  animation: record-glow-spin 6s linear infinite;
-}
-
-.record-arm {
-  transform: rotate(-6deg);
-  transition: transform 900ms var(--ease-spring);
-}
-
-.record-stack[data-playing="true"] .record-arm {
-  transform: rotate(26deg);
-}
-
-/* Resting bar heights while paused. */
-.record-eq span:nth-child(1) {
-  transform: scaleY(0.3);
-}
-.record-eq span:nth-child(2) {
-  transform: scaleY(0.6);
-}
-.record-eq span:nth-child(3) {
-  transform: scaleY(0.4);
-}
-.record-eq span:nth-child(4) {
-  transform: scaleY(0.8);
-}
-.record-eq span:nth-child(5) {
-  transform: scaleY(0.5);
-}
-
-.record-eq {
-  opacity: 0;
-  transition: opacity 300ms var(--ease-out);
-}
-.record-eq[data-playing="true"] {
-  opacity: 1;
-}
-
-.record-eq span {
-  transform-origin: bottom;
-}
-
-.record-eq[data-playing="true"] span {
-  animation: record-eq-bounce 900ms ease-in-out infinite;
-}
-.record-eq[data-playing="true"] span:nth-child(2) {
-  animation-delay: -300ms;
-}
-.record-eq[data-playing="true"] span:nth-child(3) {
-  animation-delay: -600ms;
-}
-.record-eq[data-playing="true"] span:nth-child(4) {
-  animation-delay: -150ms;
-}
-.record-eq[data-playing="true"] span:nth-child(5) {
-  animation-delay: -450ms;
-}
-
-@keyframes record-eq-bounce {
-  0%,
-  100% {
-    transform: scaleY(0.3);
-  }
-  50% {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes record-glow-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* A new record slides onto the platter, spinning down as it lands. */
-.record-swap {
-  animation: record-swap-in 700ms var(--ease-spring) both;
-}
-
-.record-info-swap {
-  animation: record-info-in 400ms var(--ease-out) both;
-}
-
-@keyframes record-swap-in {
-  from {
-    opacity: 0;
-    transform: translateX(-70%) rotate(-200deg) scale(0.85);
-  }
-}
-
-@keyframes record-info-in {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
 }
 
 /* Past rows: the play button appears on hover, focus, while playing, and always on touch. */
@@ -149,15 +77,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .record-glow,
-  .record-eq span,
-  .record-swap,
-  .record-info-swap {
-    animation: none !important;
-  }
-
-  .record-arm,
-  .record-stack,
   .song,
   .song-play > span {
     transition: none;
