@@ -36,6 +36,17 @@
     0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Phones get a slimmer bar so the header does not eat the first screen. */
+@media (width < 40rem) {
+  .site-header {
+    padding: 12px 0;
+  }
+
+  .site-header[data-scrolled="true"] {
+    padding: 8px 0;
+  }
+}
+
 .site-header > * > * {
   pointer-events: auto;
 }

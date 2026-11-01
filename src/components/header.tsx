@@ -18,9 +18,9 @@ export async function Header() {
       <a
         href="#top"
         aria-label={t("backToTop")}
-        className="inline-flex min-h-11 min-w-11 items-center justify-center no-underline"
+        className="inline-flex min-h-10 min-w-10 items-center justify-start no-underline sm:min-h-11 sm:min-w-11 sm:justify-center"
       >
-        <span className="wiggle flex size-9 items-center justify-center rounded-sm bg-(image:--ball-light) font-display text-[17px] font-extrabold text-on-accent">
+        <span className="wiggle flex size-8 items-center sm:size-9 justify-center rounded-sm bg-(image:--ball-light) font-display text-[15px] font-extrabold sm:text-[17px] text-on-accent">
           wj
         </span>
       </a>
@@ -38,7 +38,7 @@ export async function Header() {
           </a>
         ))}
       </nav>
-      <div className="ml-auto flex items-center gap-3 nav:ml-0">
+      <div className="ml-auto flex items-center gap-2 sm:gap-3 nav:ml-0">
         <LocaleToggle />
         <MobileMenu
           links={navigationLinks.map(({ key, href }) => ({ href, label: t(key) }))}

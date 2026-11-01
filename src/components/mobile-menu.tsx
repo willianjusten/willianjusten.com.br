@@ -50,12 +50,12 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
         aria-controls={panelId}
         aria-label={isOpen ? closeLabel : openLabel}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
-        className="inline-flex size-11 items-center justify-center rounded-pill border border-line-strong bg-(--glass-chip) text-text transition-colors hover:border-line-hover"
+        className="inline-flex size-9 items-center justify-center rounded-pill sm:size-11 border border-line-strong bg-(--glass-chip) text-text transition-colors hover:border-line-hover"
       >
         {isOpen ? (
-          <X size={20} strokeWidth={1.8} aria-hidden="true" />
+          <X size={18} strokeWidth={1.8} aria-hidden="true" />
         ) : (
-          <Menu size={20} strokeWidth={1.8} aria-hidden="true" />
+          <Menu size={18} strokeWidth={1.8} aria-hidden="true" />
         )}
       </button>
 

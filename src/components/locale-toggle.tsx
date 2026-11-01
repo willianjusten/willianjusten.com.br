@@ -27,7 +27,7 @@ export async function LocaleToggle() {
             hrefLang={locale}
             aria-label={`${localeShortLabels[locale]}, ${localeNames[locale]}`}
             aria-current={isActive ? "true" : undefined}
-            className={`inline-flex min-h-10 min-w-11 items-center justify-center rounded-pill px-3 no-underline transition-colors ${
+            className={`inline-flex min-h-8 min-w-10 items-center justify-center rounded-pill px-2.5 no-underline sm:min-h-10 sm:min-w-11 sm:px-3 transition-colors ${
               isActive ? "bg-accent text-on-accent hover:text-on-accent" : "text-text-muted"
             }`}
           >
