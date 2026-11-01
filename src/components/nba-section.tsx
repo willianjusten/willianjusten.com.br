@@ -1,12 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { profile } from "@/content/profile";
+import { COURTSIDE_URL } from "@/lib/site";
 import { SectionShell } from "./section-shell";
 import { ShotGameLoader } from "./shot-game-loader";
 
 const ICON_SIZE_IN_PIXELS = 20;
 const ICON_STROKE_WIDTH = 1.8;
-const COURTSIDE_URL = "https://courtside.willianjusten.com.br/";
 
 function BasketballIcon({ size = ICON_SIZE_IN_PIXELS }: { size?: number }) {
   return (
