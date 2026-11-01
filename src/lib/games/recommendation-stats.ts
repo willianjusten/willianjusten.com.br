@@ -116,8 +116,15 @@ export type NewRecommendation = {
 };
 
 /**
- * Saves a game as `pending` the first time anyone recommends it, then records this browser's
- * vote. Idempotent per browser. Returns undefined when Will has hidden the game.
+ * Status a game gets the first time anyone recommends it. Recommendations go live right away;
+ * if they turn abusive, switch this to "pending" and approve each one in the Neon console.
+ * Setting a game to "hidden" there works either way.
+ */
+const NEW_RECOMMENDATION_STATUS = "approved";
+
+/**
+ * Saves a game the first time anyone recommends it, then records this browser's vote.
+ * Idempotent per browser. Returns undefined when Will has hidden the game.
  */
 export async function submitRecommendation(
   database: Database,
@@ -132,6 +139,7 @@ export async function submitRecommendation(
       year: game.year,
       platform,
       coverImageId: game.coverImageId,
+      status: NEW_RECOMMENDATION_STATUS,
     })
     .onConflictDoNothing({ target: gameRecommendations.igdbId });
   const [recommendation] = await database

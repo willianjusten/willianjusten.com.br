@@ -101,7 +101,9 @@ Content lives in `src/content/` and is checked against its schema by `pnpm test`
 
 ### Moderating recommendations
 
-New game recommendations are saved as `pending` and only the visitor who sent them can see them. To approve or hide one, open the `game_recommendations` table in the Neon console and set `status` to `approved` or `hidden`.
+New game recommendations go live for everyone right away. To take one down, open the `game_recommendations` table in the Neon console and set its `status` to `hidden`.
+
+If recommendations turn abusive, switch `NEW_RECOMMENDATION_STATUS` in `src/lib/games/recommendation-stats.ts` to `"pending"`. New ones are then visible only to the visitor who sent them until you set `status` to `approved`.
 
 ## Deploying
 
