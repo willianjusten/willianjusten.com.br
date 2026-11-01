@@ -3,7 +3,6 @@
 import type { PointerEvent, RefObject } from "react";
 import { baseRadiusOf, dragTo, endDrag, startDrag, type GlobeMotion } from "../lib/globe-motion";
 
-/** Pointer handlers that spin the globe under the finger and leave inertia on release. */
 export function useGlobeDrag(
   motionRef: RefObject<GlobeMotion>,
   canvasRef: RefObject<HTMLCanvasElement | null>,

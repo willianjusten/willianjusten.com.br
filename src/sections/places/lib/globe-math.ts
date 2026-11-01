@@ -6,9 +6,7 @@ export type GeoPoint = { lat: number; lon: number };
 export type GlobeView = GeoPoint & { zoom: number };
 
 export type ProjectedPoint = {
-  /** Pixels right of the globe centre. */
   x: number;
-  /** Pixels below the globe centre. */
   y: number;
   /** Cosine of the angle from the view centre: 1 facing the viewer, 0 on the rim, negative behind. */
   depth: number;
@@ -59,7 +57,6 @@ export function project(point: GeoPoint, view: GeoPoint, radiusInPixels: number)
   };
 }
 
-/** Great-circle distance between two points. */
 export function angularDistanceInDegrees(from: GeoPoint, to: GeoPoint): number {
   const fromLat = toRadians(from.lat);
   const toLat = toRadians(to.lat);
@@ -87,13 +84,9 @@ export function rotateByDrag(
 export type ClusterablePin = { id: string; geo: GeoPoint; x: number; y: number };
 
 export type PinCluster = {
-  /** Stable id built from the member ids, so React keys survive re-clustering. */
-  id: string;
   members: ClusterablePin[];
-  /** Mean screen position of the members. */
   x: number;
   y: number;
-  /** Mean position on the sphere of the members. */
   geo: GeoPoint;
 };
 
@@ -143,7 +136,6 @@ export function clusterPins(
   }
 
   return groups.map((members, index) => ({
-    id: members.map((member) => member.id).join("+"),
     members,
     x: centers[index].x,
     y: centers[index].y,

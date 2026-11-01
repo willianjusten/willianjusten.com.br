@@ -45,7 +45,6 @@ type GlobePinProps = {
   onPointerDown: (event: PointerEvent) => void;
 };
 
-/** A photo card on a stick for one place. Hidden until the frame loop places it. */
 export function GlobePin({
   place,
   isSelected,

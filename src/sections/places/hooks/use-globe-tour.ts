@@ -17,7 +17,6 @@ export function planTour(places: readonly GlobePlace[]): TourStep[] {
   );
 }
 
-/** Plays `onStep` for each tour stop on a timer, and stops after the last one. */
 export function useGlobeTour(places: readonly GlobePlace[], onStep: (step: TourStep) => void) {
   const tourTimerRef = useRef<number | null>(null);
   const [isTouring, setIsTouring] = useState(false);

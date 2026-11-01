@@ -24,7 +24,6 @@ type GlobeControlsProps = {
 /** A press on a control must not start a globe drag underneath it. */
 const stopDrag = (event: PointerEvent) => event.stopPropagation();
 
-/** Zoom and reset buttons in the top corner, the tour button and hint in the bottom one. */
 export function GlobeControls({
   labels,
   isTouring,

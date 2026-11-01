@@ -85,7 +85,6 @@ function drawBody(context: CanvasRenderingContext2D, frame: GlobeFrame, colors: 
   context.fill();
 }
 
-/** Projects every land dot on the visible hemisphere; nearer dots are larger and more opaque. */
 function drawLandDots(
   context: CanvasRenderingContext2D,
   frame: GlobeFrame,
@@ -130,7 +129,6 @@ function drawLandDots(
   context.globalAlpha = 1;
 }
 
-/** One frame of the dotted globe: accent halo, shaded body, then the land dots. */
 export function drawGlobe(
   context: CanvasRenderingContext2D,
   frame: GlobeFrame,

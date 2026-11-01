@@ -8,7 +8,6 @@ export type LandDots = {
   count: number;
 };
 
-/** Expands the packed land mask into per-dot trigonometry, computed once. */
 export function decodeLandDots(
   base64Mask: string = LAND_MASK_BASE64,
   stepInDegrees: number = LAND_MASK_STEP_IN_DEGREES,

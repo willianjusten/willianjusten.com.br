@@ -27,7 +27,6 @@ export type AlbumPhoto = {
   line: PhotoLine;
 };
 
-/** A place as the client globe sees it: copy picked for the visitor's locale and its album resolved. */
 export type GlobePlace = {
   slug: string;
   name: string;
@@ -70,7 +69,6 @@ export function countPlaces(
   };
 }
 
-/** Joins the curated places with their Cloudinary albums and picks the caption for the locale. */
 export function buildGlobePlaces(
   places: readonly Place[],
   tripPhotos: TripPhotosFile,

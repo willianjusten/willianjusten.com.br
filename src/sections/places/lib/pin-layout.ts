@@ -36,7 +36,6 @@ export type PinLayoutInput = {
   frame: GlobeFrame;
   view: GlobeView;
   selectedSlug: string | null;
-  /** Prefix of a merged pin's label, e.g. "Cluster of". */
   clusterLabel: string;
 };
 

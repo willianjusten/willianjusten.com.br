@@ -36,7 +36,7 @@ type AlbumPanelProps = {
 const OVERLAY_BUTTON_CLASS =
   "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border-0 bg-bg/70 text-text transition-colors hover:bg-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
-/** The album of one place, laid over the right side of the globe. Escape is handled by the globe frame. */
+/** Escape is handled by the globe frame. */
 export function AlbumPanel({
   place,
   photoIndex,
