@@ -39,7 +39,7 @@ function CaseFrame({
 
   return (
     <div
-      className="game-case"
+      className="game-case absolute top-0 left-[calc(var(--game-case-width)/-2)] h-(--game-case-height) w-(--game-case-width)"
       style={{
         transform: `translateX(${pose.translateX}px) translateZ(${pose.translateZ}px) rotateY(${pose.rotateY}deg)`,
         zIndex: pose.zIndex,

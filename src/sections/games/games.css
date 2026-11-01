@@ -1,9 +1,6 @@
 .games-stage {
   perspective: 1400px;
   perspective-origin: 50% 40%;
-  touch-action: pan-y;
-  user-select: none;
-  cursor: grab;
   background:
     radial-gradient(
       ellipse 60% 55% at 50% 100%,
@@ -13,20 +10,11 @@
     linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
 }
 
-.games-stage:active {
-  cursor: grabbing;
-}
-
 /* Touch devices get each case as one flat plane, the way Swiper's coverflow slides are: a
    preserve-3d stack of faces with a reflection made every scrolled frame expensive on Android GPUs.
    Mouse and trackpad devices get the full 3D case below. The spine and back are display: none
    on touch so they leave the compositor entirely. */
 .game-case {
-  position: absolute;
-  top: 0;
-  left: calc(var(--game-case-width) / -2);
-  width: var(--game-case-width);
-  height: var(--game-case-height);
   transition:
     transform 700ms var(--ease-out),
     opacity 500ms,
