@@ -1,6 +1,8 @@
 import { Gamepad2, MapPin, Music } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
+import { gameCovers } from "@/content/game-covers";
 import { games } from "@/content/games";
+import { buildShelfEntries } from "@/content/games-board";
 import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
@@ -52,15 +54,7 @@ export async function PlacesSection() {
 export async function GamesSection() {
   const t = await getTranslations("Sections.games");
   const locale = await getLocale();
-  const shelfEntries = games.map(({ slug, title, platform, list, year, note, tone }) => ({
-    slug,
-    title,
-    platform,
-    list,
-    year,
-    note: note[locale === "pt" ? "pt" : "en"],
-    tone,
-  }));
+  const shelfEntries = buildShelfEntries(games, gameCovers, locale === "pt" ? "pt" : "en");
   return (
     <SectionShell
       id="games"

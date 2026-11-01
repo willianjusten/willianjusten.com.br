@@ -9,6 +9,8 @@ export type ShelfEntry = {
   year: number | string;
   note: string;
   tone: string;
+  /** Portrait IGDB cover, or null to show the tone and title instead. */
+  coverUrl: string | null;
 };
 
 /** What a 3D case needs to draw itself; the cover art replaces the tone and the title text. */

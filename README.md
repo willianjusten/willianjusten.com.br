@@ -88,13 +88,14 @@ Open http://localhost:3000 (English) or http://localhost:3000/pt (Portuguese).
 | `pnpm db:generate`                  | Generate a migration after changing `src/lib/db/schema.ts`                     |
 | `pnpm db:migrate`                   | Apply pending migrations to the database in `DATABASE_URL`                     |
 | `pnpm music:previews`               | Fetch preview URLs and Apple Music links for the music content                 |
+| `pnpm games:covers`                 | Fetch IGDB covers for the games content                                        |
 
 ## Editing content
 
 Content lives in `src/content/` and is checked against its schema by `pnpm test`, so a typo fails the build instead of the page.
 
 - **Music**: add a track to `src/content/music.ts`, then run `pnpm music:previews`. It looks up each new track on iTunes (Deezer as fallback), writes `src/content/generated/music-previews.json` and skips tracks it already has (`--refresh` redoes them all).
-- **Games**: edit `src/content/games.ts`.
+- **Games**: edit `src/content/games.ts`, then run `pnpm games:covers`. It finds each new game on IGDB by exact title and writes its cover to `src/content/generated/game-covers.json` (`--refresh` redoes them all). When IGDB names a game differently (for example "Alan Wake II"), set `igdbId` on the game to pin it.
 - **Places**: edit `src/content/places.ts`.
 - **Copy**: edit `messages/en.json` and `messages/pt.json`, keeping the keys identical. No em dashes in either language.
 

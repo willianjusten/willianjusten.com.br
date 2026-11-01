@@ -20,12 +20,12 @@ const gameSchema = z.object({
   /** Release or play year, or a visible `[placeholder]` while unknown. */
   year: z.union([z.number().int().min(1970).max(2100), placeholderText]),
   note: localizedText,
-  /** IGDB image id of the cover (`co1abc`), resolved to a URL at render time. Absent until fetched. */
-  igdbCoverId: z
-    .string()
-    .regex(/^[a-z0-9]+$/)
-    .optional(),
-  /** Stand-in cover colour until the IGDB cover is wired. */
+  /**
+   * Pins the IGDB game for `pnpm games:covers` when the title search picks the wrong one
+   * (or none). Usually left out.
+   */
+  igdbId: z.number().int().positive().optional(),
+  /** Case colour while there is no IGDB cover, and behind the cover while it loads. */
   tone: colorHex,
 });
 
@@ -50,7 +50,7 @@ type PlaceholderGameOptions = {
   slug: string;
   platform: GamePlatform;
   list: GameList;
-  /** Stand-in cover colour until the IGDB cover is wired. */
+  /** Case colour while there is no IGDB cover. */
   coverTone: string;
   note: GameInput["note"];
 };
@@ -70,6 +70,8 @@ export const gamesData: z.input<typeof gamesSchema> = {
     {
       slug: "crimson-desert",
       title: "Crimson Desert",
+      // IGDB names the base game "Crimson Desert Enhanced".
+      igdbId: 125633,
       platform: "pc",
       list: "playing",
       year: 2026,
@@ -96,6 +98,8 @@ export const gamesData: z.input<typeof gamesSchema> = {
     {
       slug: "alan-wake-2",
       title: "Alan Wake 2",
+      // IGDB spells it "Alan Wake II".
+      igdbId: 185246,
       platform: "pc",
       list: "played",
       year: "[year]",
