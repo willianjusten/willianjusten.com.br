@@ -120,15 +120,17 @@ export function ShelfFilters({
               className={`inline-flex min-h-10 shrink-0 items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
                 isActive
                   ? "border-line-hover bg-surface-raised text-white"
-                  : "border-line text-text-2 hover:border-line-hover"
-              } ${isDimmed ? "opacity-45" : ""}`}
+                  : `border-line hover:border-line-hover ${isDimmed ? "text-text-faint" : "text-text-2"}`
+              }`}
             >
               <span
                 aria-hidden="true"
-                className={`size-2.5 rounded-full ${platformDotClass(filter)}`}
+                className={`size-2.5 rounded-full ${platformDotClass(filter)} ${isDimmed ? "opacity-45" : ""}`}
               />
               {filter === "all" ? labels.all : PLATFORM_STYLES[filter].name}
-              <span className="font-mono text-caption opacity-60">{count}</span>
+              <span className={`font-mono text-caption ${isDimmed ? "" : "opacity-60"}`}>
+                {count}
+              </span>
             </button>
           );
         })}
