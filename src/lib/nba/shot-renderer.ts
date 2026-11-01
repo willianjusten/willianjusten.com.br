@@ -18,11 +18,10 @@ export type SceneState = {
   isOnFire: boolean;
   netEnergy: number;
   message: { text: string; framesLeft: number } | null;
-  showFirstTimeHint: boolean;
   seconds: number;
   /** Resolved CSS font-family values; canvas text cannot read CSS variables. */
   fonts: { display: string; mono: string };
-  labels: { firstTimeHint: string; keyboardAim: (angle: number) => string };
+  labels: { keyboardAim: (angle: number) => string };
 };
 
 const BOKEH: [number, number, number, string][] = [
@@ -403,9 +402,6 @@ function drawHints(ctx: CanvasRenderingContext2D, g: ShotGeometry, scene: SceneS
   if (scene.keyboardAngleInDegrees !== null) {
     const labelY = g.startY + 46 > g.floorY + 40 ? g.startY - 36 : g.startY + 46;
     ctx.fillText(scene.labels.keyboardAim(scene.keyboardAngleInDegrees), g.startX - 40, labelY);
-  } else if (scene.showFirstTimeHint && !scene.aimVelocity) {
-    ctx.font = `500 13px ${scene.fonts.mono}`;
-    ctx.fillText(scene.labels.firstTimeHint, g.startX + 30, g.startY - 30);
   }
 }
 

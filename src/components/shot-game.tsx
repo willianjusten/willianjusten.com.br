@@ -36,7 +36,6 @@ export type ShotGameLabels = {
   best: string;
   allVisitors: string;
   canvasDescription: string;
-  firstTimeHint: string;
   /** Contains `{angle}`. */
   keyboardAim: string;
   swish: string;
@@ -59,7 +58,6 @@ type GameRuntime = {
   netEnergy: number;
   message: { text: string; framesLeft: number } | null;
   seconds: number;
-  hasShot: boolean;
   wasScoredThisShot: boolean;
 };
 
@@ -86,7 +84,6 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     netEnergy: 0,
     message: null,
     seconds: 0,
-    hasShot: storedStats.shots > 0,
     wasScoredThisShot: false,
   });
   const personalStatsRef = useRef<PersonalStats>(storedStats);
@@ -192,7 +189,6 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       if (runtime.ball || !isShootableSpeed(velocity)) return;
       runtime.ball = launchBall(getGeometry(), velocity);
       runtime.wasScoredThisShot = false;
-      runtime.hasShot = true;
     }
 
     function handleScore(outcome: "swish" | "bucket") {
@@ -237,11 +233,9 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
         isOnFire: stats.streak >= ON_FIRE_STREAK,
         netEnergy: runtime.netEnergy,
         message: runtime.message,
-        showFirstTimeHint: !runtime.hasShot,
         seconds: runtime.seconds,
         fonts,
         labels: {
-          firstTimeHint: labelsRef.current.firstTimeHint,
           keyboardAim: (angle) => labelsRef.current.keyboardAim.replace("{angle}", String(angle)),
         },
       };

@@ -162,7 +162,6 @@
         "best": "Recorde",
         "allVisitors": "Todos os visitantes",
         "canvasDescription": "Minijogo de basquete: puxe a bola para trás e solte para arremessar na cesta. Com o teclado, segure Espaço para ganhar força, use as setas para cima e para baixo para mudar o ângulo e solte para arremessar.",
-        "firstTimeHint": "← puxe a bola para trás, solte para arremessar",
         "keyboardAim": "ângulo {angle}°  ·  ↑↓ para mirar, solte o Espaço para arremessar",
         "swish": "Só rede!",
         "bucket": "Cesta!",

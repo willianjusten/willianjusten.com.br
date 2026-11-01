@@ -162,7 +162,6 @@
         "best": "Best",
         "allVisitors": "All visitors",
         "canvasDescription": "Basketball mini-game: pull the ball back and release to shoot. On keyboard, hold Space to build power, use up and down arrow keys to change angle, and release Space to shoot.",
-        "firstTimeHint": "← pull the ball back, release to shoot",
         "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, release Space to shoot",
         "swish": "Swish!",
         "bucket": "Bucket!",

@@ -39,7 +39,6 @@ export async function NbaSection() {
     best: t("game.best"),
     allVisitors: t("game.allVisitors"),
     canvasDescription: t("game.canvasDescription"),
-    firstTimeHint: t("game.firstTimeHint"),
     keyboardAim: t("game.keyboardAim", { angle: "{angle}" }),
     swish: t("game.swish"),
     bucket: t("game.bucket"),
