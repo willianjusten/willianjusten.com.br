@@ -4,8 +4,10 @@ import {
   consumeRateLimit,
   invalidBodyResponse,
   NO_STORE,
+  parseJsonBody,
   type RateLimitGuardDependencies,
 } from "@/lib/api/rate-limit-guard";
+import { browserIdSchema, readBrowserIdParam } from "./browser-id-param";
 import type { IgdbGame, IgdbSearchResult } from "../lib/igdb";
 import { REACTION_RATE_LIMIT } from "./reaction-route";
 import type { RecommendationView } from "../lib/recommendations";
@@ -21,8 +23,6 @@ export const RECOMMENDATION_RATE_LIMIT: RateLimitRule = {
 export const VOTE_RATE_LIMIT: RateLimitRule = REACTION_RATE_LIMIT;
 
 const SEARCH_CACHE_HEADERS = { "Cache-Control": "public, s-maxage=3600, max-age=300" };
-
-const browserIdSchema = z.uuid();
 
 const searchQuerySchema = z.string().trim().min(2).max(80);
 
@@ -74,16 +74,12 @@ export type RecommendationRouteDependencies = RateLimitGuardDependencies & {
 export function createRecommendationRoute(dependencies: RecommendationRouteDependencies) {
   return {
     async GET(request: Request): Promise<Response> {
-      const rawBrowserId = new URL(request.url).searchParams.get("browserId");
-      const browserId = browserIdSchema.safeParse(rawBrowserId);
-      const recommendations = await dependencies.readRecommendations(
-        browserId.success ? browserId.data : undefined,
-      );
+      const recommendations = await dependencies.readRecommendations(readBrowserIdParam(request));
       return Response.json({ recommendations }, { headers: NO_STORE });
     },
 
     async POST(request: Request): Promise<Response> {
-      const body = submissionSchema.safeParse(await request.json().catch(() => null));
+      const body = await parseJsonBody(request, submissionSchema);
       if (!body.success) {
         return invalidBodyResponse();
       }
@@ -120,7 +116,7 @@ export type VoteRouteDependencies = RateLimitGuardDependencies & {
 export function createVoteRoute(dependencies: VoteRouteDependencies) {
   return {
     async POST(request: Request): Promise<Response> {
-      const body = voteSchema.safeParse(await request.json().catch(() => null));
+      const body = await parseJsonBody(request, voteSchema);
       if (!body.success) {
         return invalidBodyResponse();
       }

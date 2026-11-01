@@ -1,7 +1,6 @@
 import { games } from "@/content/games";
+import { visitorRateLimitGuard } from "@/lib/api/visitor-rate-limit";
 import { getDatabase } from "@/lib/db/client";
-import { getClientIp, hashIp } from "@/lib/db/ip-hash";
-import { checkRateLimit } from "@/lib/db/rate-limit";
 import { createReactionRoute } from "@/sections/games/server/reaction-route";
 import { readReactions, setReaction } from "@/sections/games/server/reaction-stats";
 
@@ -10,8 +9,7 @@ export const dynamic = "force-dynamic";
 const knownSlugs = new Set(games.map((game) => game.slug));
 
 const reactionRoute = createReactionRoute({
-  hashClientIp: (headers) => hashIp(getClientIp(headers)),
-  checkRateLimit: (ipHash, rule) => checkRateLimit(getDatabase(), ipHash, rule),
+  ...visitorRateLimitGuard,
   isKnownGame: (gameSlug) => knownSlugs.has(gameSlug),
   setReaction: (gameSlug, browserId, reacted) =>
     setReaction(getDatabase(), gameSlug, browserId, reacted),

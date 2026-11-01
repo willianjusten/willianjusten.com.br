@@ -4,6 +4,7 @@ import {
   consumeRateLimit,
   invalidBodyResponse,
   NO_STORE,
+  parseJsonBody,
   type RateLimitGuardDependencies,
 } from "@/lib/api/rate-limit-guard";
 import type { ShotTotals } from "./shot-stats";
@@ -29,7 +30,7 @@ export function createShotRoute(dependencies: ShotRouteDependencies) {
     },
 
     async POST(request: Request): Promise<Response> {
-      const body = shotBodySchema.safeParse(await request.json().catch(() => null));
+      const body = await parseJsonBody(request, shotBodySchema);
       if (!body.success) {
         return invalidBodyResponse();
       }

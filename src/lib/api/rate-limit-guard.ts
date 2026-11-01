@@ -1,3 +1,4 @@
+import type { z } from "zod";
 import type { RateLimitResult, RateLimitRule } from "@/lib/db/rate-limit";
 
 export const NO_STORE = { "Cache-Control": "no-store" };
@@ -9,6 +10,14 @@ export type RateLimitGuardDependencies = {
 
 export function invalidBodyResponse(): Response {
   return Response.json({ error: "invalid_body" }, { status: 400, headers: NO_STORE });
+}
+
+/** Parses the JSON body against `schema`; a missing or malformed body fails the parse like bad fields do. */
+export async function parseJsonBody<Schema extends z.ZodType>(
+  request: Request,
+  schema: Schema,
+): Promise<z.ZodSafeParseResult<z.output<Schema>>> {
+  return schema.safeParse(await request.json().catch(() => null));
 }
 
 function rateLimitedResponse(limit: RateLimitResult): Response {
