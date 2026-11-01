@@ -19,6 +19,7 @@ export async function NbaSection() {
     streak: t("game.streak"),
     best: t("game.best"),
     allVisitors: t("game.allVisitors"),
+    allVisitorsDetail: t("game.allVisitorsDetail", { percent: "{percent}" }),
     canvasDescription: t("game.canvasDescription"),
     keyboardAim: t("game.keyboardAim", { angle: "{angle}" }),
     swish: t("game.swish"),

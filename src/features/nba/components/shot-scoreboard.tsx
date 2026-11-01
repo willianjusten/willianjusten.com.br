@@ -1,3 +1,4 @@
+import { fillTemplate } from "@/lib/fill-template";
 import { formatPercentage, formatShotCount, type PersonalStats } from "../lib/personal-stats";
 import type { ShotTotals } from "../server/shot-stats";
 import { BasketballIcon } from "./basketball-icon";
@@ -13,6 +14,8 @@ export type ShotScoreboardLabels = {
   streak: string;
   best: string;
   allVisitors: string;
+  /** Raw template with a `{percent}` placeholder. */
+  allVisitorsDetail: string;
 };
 
 type ShotScoreboardProps = {
@@ -40,7 +43,11 @@ export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: Shot
     {
       label: labels.allVisitors,
       value: totals ? formatMakesOfShots(totals.makes, totals.shots) : "-",
-      detail: totals ? `${formatPercentage(totals.makes, totals.shots)}%` : undefined,
+      detail: totals
+        ? fillTemplate(labels.allVisitorsDetail, {
+            percent: formatPercentage(totals.makes, totals.shots),
+          })
+        : undefined,
       isAccent: false,
     },
   ];
@@ -65,7 +72,7 @@ export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: Shot
               cellIndex % CELLS_PER_PHONE_ROW === 1 ? "border-l" : ""
             } ${cellIndex >= CELLS_PER_PHONE_ROW ? "border-t" : ""}`}
           >
-            <span className="font-mono text-micro tracking-[0.12em] whitespace-nowrap text-text-faint uppercase">
+            <span className="font-mono text-micro tracking-[0.12em] text-text-faint uppercase sm:whitespace-nowrap">
               {cell.label}
             </span>
             <span
@@ -76,7 +83,7 @@ export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: Shot
               {cell.value}
             </span>
             {cell.detail ? (
-              <span className="font-mono text-micro whitespace-nowrap text-text-muted tabular-nums">
+              <span className="font-mono text-micro text-text-muted tabular-nums sm:whitespace-nowrap">
                 {cell.detail}
               </span>
             ) : null}
