@@ -78,7 +78,7 @@
     "games": {
       "eyebrow": "02 · Games",
       "title": "Press start.",
-      "intro": "What I'm playing, what I've beaten, and what's next. Got a game recommendation for me? Let me know.",
+      "intro": "What I'm playing, the games I've beaten this year, and what's next. Got a game recommendation for me? Let me know.",
       "shelf": {
         "tabsLabel": "Game lists",
         "platformsLabel": "Filter by platform",
