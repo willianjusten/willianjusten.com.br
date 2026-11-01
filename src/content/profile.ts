@@ -55,7 +55,7 @@ export const profileData: z.input<typeof profileSchema> = {
     x: { href: "https://x.com/Willian_justen" },
     unsplash: { href: "https://unsplash.com/@willianjusten" },
     pexels: { href: "https://www.pexels.com/@willianjusten/" },
-    email: { address: "[your email]" },
+    email: { address: "willianjustenqui@gmail.com" },
   },
   now: {
     building: { company: "Spoke", link: "https://spoke.com/connect" },
