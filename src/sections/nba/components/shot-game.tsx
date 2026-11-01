@@ -2,8 +2,6 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
-  formatPercentage,
-  formatShotCount,
   ON_FIRE_STREAK,
   PERSONAL_STATS_STORAGE_KEY,
   parsePersonalStats,
@@ -26,15 +24,12 @@ import {
 } from "../lib/shot-physics";
 import { drawScene, RESULT_MESSAGE_FRAMES, type SceneState } from "../lib/shot-renderer";
 import type { ShotTotals } from "../server/shot-stats";
+import { runWhileVisible } from "@/shared/lib/animation-loop";
+import { fetchJson, postJson } from "@/shared/lib/fetch-json";
+import { fillTemplate } from "@/shared/lib/fill-template";
+import { ShotScoreboard, type ShotScoreboardLabels } from "./shot-scoreboard";
 
-export type ShotGameLabels = {
-  title: string;
-  hint: string;
-  onFireHint: string;
-  you: string;
-  streak: string;
-  best: string;
-  allVisitors: string;
+export type ShotGameLabels = ShotScoreboardLabels & {
   canvasDescription: string;
   /** Contains `{angle}`. */
   keyboardAim: string;
@@ -49,6 +44,7 @@ const NET_DECAY_PER_FRAME = 0.95;
 const MAX_DEVICE_PIXEL_RATIO = 2;
 const MILLISECONDS_PER_SECOND = 1000;
 const SHOT_KEYS = new Set([" ", "Enter"]);
+const SHOTS_ENDPOINT = "/api/nba/shots";
 
 type GameRuntime = {
   ball: Ball | null;
@@ -64,10 +60,6 @@ type GameRuntime = {
 function readFontFamily(element: HTMLElement, variableName: string, fallback: string): string {
   const resolved = getComputedStyle(element).getPropertyValue(variableName).trim();
   return resolved ? `${resolved}, ${fallback}` : fallback;
-}
-
-function formatMakesOfShots(makes: number, shots: number): string {
-  return `${formatShotCount(makes)}/${formatShotCount(shots)}`;
 }
 
 export function ShotGame({ labels }: { labels: ShotGameLabels }) {
@@ -101,9 +93,9 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/api/nba/shots", { signal: controller.signal })
-      .then((response) => (response.ok ? (response.json() as Promise<ShotTotals>) : null))
-      .then((loaded) => loaded && setTotals(loaded))
+    fetchJson<ShotTotals>(SHOTS_ENDPOINT, { signal: controller.signal })
+      .then(setTotals)
+      // The all-visitors cell keeps its dash; the game itself does not need the totals.
       .catch(() => undefined);
     return () => controller.abort();
   }, []);
@@ -137,22 +129,21 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       } catch {
         // Private mode or full storage: stats just do not persist.
       }
-      fetch("/api/nba/shots", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ made }),
-      })
-        .then((response) => (response.ok ? (response.json() as Promise<ShotTotals>) : null))
-        .then((updated) => updated && setTotals(updated))
+      postJson<ShotTotals>(SHOTS_ENDPOINT, { made })
+        .then(setTotals)
+        // A rate-limited or failed post leaves the last known totals on screen.
         .catch(() => undefined);
     },
     [playShotSound],
   );
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas?.getContext("2d");
-    if (!canvas || !context) return;
+    const mountedCanvas = canvasRef.current;
+    const mountedContext = mountedCanvas?.getContext("2d");
+    if (!mountedCanvas || !mountedContext) return;
+    // Rebound as non-null so the hoisted helpers below keep the narrowing.
+    const canvas: HTMLCanvasElement = mountedCanvas;
+    const context: CanvasRenderingContext2D = mountedContext;
     const runtime = runtimeRef.current;
 
     const fonts = {
@@ -161,18 +152,18 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     };
 
     function getGeometry() {
-      return getShotGeometry(canvas!.clientWidth, canvas!.clientHeight);
+      return getShotGeometry(canvas.clientWidth, canvas.clientHeight);
     }
 
     function resizeCanvas() {
       const ratio = Math.min(MAX_DEVICE_PIXEL_RATIO, window.devicePixelRatio || 1);
-      const width = Math.round(canvas!.clientWidth * ratio);
-      const height = Math.round(canvas!.clientHeight * ratio);
-      if (canvas!.width !== width || canvas!.height !== height) {
-        canvas!.width = width;
-        canvas!.height = height;
+      const width = Math.round(canvas.clientWidth * ratio);
+      const height = Math.round(canvas.clientHeight * ratio);
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width;
+        canvas.height = height;
       }
-      context!.setTransform(ratio, 0, 0, ratio, 0, 0);
+      context.setTransform(ratio, 0, 0, ratio, 0, 0);
     }
 
     function getAimVelocity(): Velocity | null {
@@ -236,42 +227,20 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
         seconds: runtime.seconds,
         fonts,
         labels: {
-          keyboardAim: (angle) => labelsRef.current.keyboardAim.replace("{angle}", String(angle)),
+          keyboardAim: (angle) => fillTemplate(labelsRef.current.keyboardAim, { angle }),
         },
       };
       drawScene(context!, geometry, scene);
     }
 
-    let animationFrame = 0;
-    function loop() {
+    const stopLoop = runWhileVisible(canvas, () => {
       resizeCanvas();
       advanceFrame();
       render();
-      animationFrame = requestAnimationFrame(loop);
-    }
-    function start() {
-      if (!animationFrame) animationFrame = requestAnimationFrame(loop);
-    }
-    function stop() {
-      cancelAnimationFrame(animationFrame);
-      animationFrame = 0;
-    }
-
-    // Pause the loop while the canvas is offscreen or the tab is hidden.
-    let isInViewport = false;
-    function syncLoop() {
-      if (isInViewport && !document.hidden) start();
-      else stop();
-    }
-    const observer = new IntersectionObserver(([entry]) => {
-      isInViewport = entry.isIntersecting;
-      syncLoop();
     });
-    observer.observe(canvas);
-    document.addEventListener("visibilitychange", syncLoop);
 
     function toCanvasPoint(event: PointerEvent) {
-      const bounds = canvas!.getBoundingClientRect();
+      const bounds = canvas.getBoundingClientRect();
       return { x: event.clientX - bounds.left, y: event.clientY - bounds.top };
     }
     function onPointerDown(event: PointerEvent) {
@@ -281,8 +250,8 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       const distance = Math.hypot(point.x - geometry.startX, point.y - geometry.startY);
       if (distance > POINTER_GRAB_RADIUS_IN_PIXELS) return;
       runtime.pointer = point;
-      canvas!.setPointerCapture(event.pointerId);
-      canvas!.style.cursor = "grabbing";
+      canvas.setPointerCapture(event.pointerId);
+      canvas.style.cursor = "grabbing";
     }
     function onPointerMove(event: PointerEvent) {
       if (runtime.pointer) runtime.pointer = toCanvasPoint(event);
@@ -291,9 +260,8 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       if (!runtime.pointer) return;
       if (shouldShoot) shoot(getDragVelocity(getGeometry(), toCanvasPoint(event)));
       runtime.pointer = null;
-      canvas!.style.cursor = "";
-      if (canvas!.hasPointerCapture(event.pointerId))
-        canvas!.releasePointerCapture(event.pointerId);
+      canvas.style.cursor = "";
+      if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
     }
     const onPointerUp = (event: PointerEvent) => releasePointer(event, true);
     const onPointerCancel = (event: PointerEvent) => releasePointer(event, false);
@@ -333,9 +301,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     canvas.addEventListener("blur", releaseKeyboardShot);
 
     return () => {
-      stop();
-      observer.disconnect();
-      document.removeEventListener("visibilitychange", syncLoop);
+      stopLoop();
       canvas.removeEventListener("pointerdown", onPointerDown);
       canvas.removeEventListener("pointermove", onPointerMove);
       canvas.removeEventListener("pointerup", onPointerUp);
@@ -346,77 +312,14 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     };
   }, [finishShot, playShotSound]);
 
-  const isOnFire = personalStats.streak >= ON_FIRE_STREAK;
-  const statCells = [
-    {
-      label: labels.you,
-      value: formatMakesOfShots(personalStats.makes, personalStats.shots),
-      isAccent: true,
-    },
-    { label: labels.streak, value: formatShotCount(personalStats.streak), isAccent: false },
-    { label: labels.best, value: formatShotCount(personalStats.best), isAccent: false },
-    {
-      label: labels.allVisitors,
-      value: totals ? formatMakesOfShots(totals.makes, totals.shots) : "-",
-      detail: totals ? `${formatPercentage(totals.makes, totals.shots)}%` : undefined,
-      isAccent: false,
-    },
-  ];
-
   return (
     <div className="reveal min-w-0 flex-[999_1_560px] overflow-hidden rounded-xl border border-line-strong bg-bg-sunken shadow-3">
-      <div className="flex flex-wrap border-b border-line bg-(image:--stage-gradient)">
-        <div className="flex basis-full flex-col justify-center gap-0.5 px-5 py-3 sm:flex-[2_1_200px]">
-          <span className="flex items-center gap-2 text-body font-semibold">
-            <svg
-              aria-hidden="true"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-accent"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2v20M2 12h20M4.9 4.9c3.1 3.1 3.1 11.1 0 14.2M19.1 4.9c-3.1 3.1-3.1 11.1 0 14.2" />
-            </svg>
-            {labels.title}
-          </span>
-          <span className="text-small text-text-muted">
-            {isOnFire ? labels.onFireHint : labels.hint}
-          </span>
-        </div>
-        {/* Phones: a 2x2 grid under the title. From sm up the wrapper dissolves into the row. */}
-        <div className="grid basis-full grid-cols-2 border-t border-line sm:contents">
-          {statCells.map((cell, cellIndex) => (
-            <div
-              key={cell.label}
-              className={`flex flex-col justify-center gap-0.5 border-line px-5 py-3 sm:flex-[1_1_90px] sm:border-t-0 sm:border-l sm:px-[18px] ${
-                cellIndex % 2 === 1 ? "border-l" : ""
-              } ${cellIndex >= 2 ? "border-t" : ""}`}
-            >
-              <span className="font-mono text-micro tracking-[0.12em] whitespace-nowrap text-text-faint uppercase">
-                {cell.label}
-              </span>
-              <span
-                className={`font-mono text-[22px] leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
-                  cell.isAccent ? "text-accent [text-shadow:0_0_14px_var(--accent)]" : "text-text"
-                }`}
-              >
-                {cell.value}
-              </span>
-              {cell.detail ? (
-                <span className="font-mono text-micro whitespace-nowrap text-text-muted tabular-nums">
-                  {cell.detail}
-                </span>
-              ) : null}
-            </div>
-          ))}
-        </div>
-      </div>
+      <ShotScoreboard
+        labels={labels}
+        personalStats={personalStats}
+        totals={totals}
+        isOnFire={personalStats.streak >= ON_FIRE_STREAK}
+      />
       {/* A canvas has no img equivalent; the role plus label is the required description. */}
       <canvas
         ref={canvasRef}
