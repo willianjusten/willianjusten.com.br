@@ -86,6 +86,8 @@ export async function PlacesSection() {
               previous: t("album.previous"),
               next: t("album.next"),
               close: t("album.close"),
+              closeViewer: t("album.closeViewer"),
+              expand: t("album.expand"),
               counter: t.raw("album.counter"),
               thumbnails: t("album.thumbnails"),
               showPhoto: t.raw("album.showPhoto"),

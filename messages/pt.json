@@ -69,6 +69,8 @@
         "previous": "Foto anterior",
         "next": "Próxima foto",
         "close": "Fechar álbum",
+        "closeViewer": "Fechar foto em tela cheia",
+        "expand": "Ver foto em tela cheia",
         "counter": "Foto {index} de {total}",
         "thumbnails": "Fotos",
         "showPhoto": "Mostrar foto {index} de {total}",
