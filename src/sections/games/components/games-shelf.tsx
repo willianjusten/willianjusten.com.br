@@ -89,7 +89,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
 
   function openRecommended() {
     chooseList("recommended");
-    tabsRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    tabsRef.current?.scrollIntoView({ block: "center" });
   }
 
   function focusRecommendForm() {

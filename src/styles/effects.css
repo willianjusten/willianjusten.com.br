@@ -144,6 +144,7 @@ a:focus-visible > .wiggle {
 
 @media (prefers-reduced-motion: reduce) {
   .flip-in,
+  .flip-tile:hover,
   .reveal {
     animation: none;
   }
