@@ -2,6 +2,7 @@ import { ArrowUpRight, Briefcase, Camera, GitBranch, Mail, type LucideIcon } fro
 import { getTranslations } from "next-intl/server";
 import { isPlaceholder, profile } from "@/content/profile";
 import { ExternalLink } from "@/shared/components/external-link";
+import { Floodlight } from "@/shared/components/floodlight";
 
 const chipClassName =
   "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-glass-chip px-5 no-underline";
@@ -30,14 +31,8 @@ export async function Footer() {
 
   return (
     <footer className="relative isolate overflow-hidden border-t border-line">
-      <div
-        aria-hidden="true"
-        className="floodlight drift-2 bottom-[-260px] left-[-160px] size-[520px] bg-[radial-gradient(circle,var(--glow-footer-orange),transparent_65%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="floodlight drift-1 right-[-140px] bottom-[-240px] size-[460px] bg-[radial-gradient(circle,var(--glow-footer-sand),transparent_65%)]"
-      />
+      <Floodlight className="-bottom-65 -left-40 size-130 bg-[radial-gradient(circle,var(--glow-footer-orange),transparent_65%)] motion-safe:animate-drift-2" />
+      <Floodlight className="-right-35 -bottom-60 size-115 bg-[radial-gradient(circle,var(--glow-footer-sand),transparent_65%)] motion-safe:animate-drift-1" />
 
       <div className="mx-auto flex max-w-page flex-col gap-12 px-8 pt-[72px] pb-12">
         <div className="flex flex-wrap items-end justify-between gap-8">

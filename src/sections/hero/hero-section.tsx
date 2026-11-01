@@ -6,6 +6,7 @@ import { music } from "@/content/music";
 import { profile } from "@/content/profile";
 import { PLATFORM_STYLES } from "@/sections/games/lib/platforms";
 import { findSongOfTheMoment } from "@/sections/music/lib/music-board";
+import { Floodlight } from "@/shared/components/floodlight";
 import { HeroSpotlight } from "./components/hero-spotlight";
 import { LocalTime } from "./components/local-time";
 import { StatusTile } from "./components/status-tile";
@@ -31,23 +32,14 @@ export async function HeroSection() {
   return (
     <section id="top" className="relative isolate">
       <HeroSpotlight />
-      <div
-        aria-hidden="true"
-        className="floodlight drift-1 top-[-120px] left-[48%] size-[520px] bg-[radial-gradient(circle,var(--glow-orange),transparent_65%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="floodlight drift-2 top-[120px] left-[68%] size-[460px] bg-[radial-gradient(circle,var(--glow-amber),transparent_65%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="floodlight drift-3 top-[260px] left-[30%] size-[420px] bg-[radial-gradient(circle,var(--glow-sand),transparent_65%)]"
-      />
+      <Floodlight className="-top-30 left-[48%] size-130 bg-[radial-gradient(circle,var(--glow-orange),transparent_65%)] motion-safe:animate-drift-1" />
+      <Floodlight className="top-30 left-[68%] size-115 bg-[radial-gradient(circle,var(--glow-amber),transparent_65%)] motion-safe:animate-drift-2" />
+      <Floodlight className="top-65 left-[30%] size-105 bg-[radial-gradient(circle,var(--glow-sand),transparent_65%)] motion-safe:animate-drift-3" />
 
       <div className="mx-auto max-w-page px-8 pt-[136px] pb-[72px]">
-        <p className="fade-in mb-7 flex items-center gap-2.5 font-mono text-eyebrow text-text-muted">
+        <p className="mb-7 motion-safe:animate-fade-in flex items-center gap-2.5 font-mono text-eyebrow text-text-muted">
           <span
-            className="pulse-dot inline-block size-2 rounded-full bg-accent"
+            className="relative inline-block size-2 rounded-full bg-accent after:absolute after:inset-0 after:rounded-full after:bg-accent/50 after:opacity-0 motion-safe:after:animate-pulse-ring"
             aria-hidden="true"
           />
           <span>{t.rich("clock", { time: () => <LocalTime /> })}</span>
@@ -93,7 +85,7 @@ export async function HeroSection() {
           </span>
         </h1>
 
-        <p className="fade-in mt-9 mb-0 max-w-[640px] text-lead leading-[1.45] text-text-2">
+        <p className="mt-9 motion-safe:animate-fade-in mb-0 max-w-[640px] text-lead leading-[1.45] text-text-2">
           {t.rich("lead", {
             strong: (spokeName) => <strong className="font-semibold text-text">{spokeName}</strong>,
           })}

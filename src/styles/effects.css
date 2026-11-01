@@ -1,6 +1,52 @@
-/* Effects shared across sections: badges, floodlights, reveals, flip tiles and link arrows. */
+@theme {
+  --animate-drift-1: drift-1 16s ease-in-out infinite alternate;
+  --animate-drift-2: drift-2 21s ease-in-out infinite alternate;
+  --animate-drift-3: drift-3 25s ease-in-out infinite alternate;
+  --animate-fade-in: fade-in 1s 700ms ease both;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
 
-/* Icon badges and the logo mark wiggle. */
+  @keyframes drift-1 {
+    to {
+      transform: translate(140px, 80px) scale(1.2);
+    }
+  }
+
+  @keyframes drift-2 {
+    to {
+      transform: translate(-160px, 60px) scale(0.85);
+    }
+  }
+
+  @keyframes drift-3 {
+    to {
+      transform: translate(80px, -90px) scale(1.15);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* An 8px dot growing a 10px ring: 28 / 8 = 3.5. Scale and opacity stay on the compositor. */
+  @keyframes pulse-ring {
+    from {
+      opacity: 1;
+      transform: none;
+    }
+    to {
+      opacity: 0;
+      transform: scale(3.5);
+    }
+  }
+}
+
 .wiggle {
   transition: transform 500ms var(--ease-bounce);
 }
@@ -8,69 +54,6 @@
 .wiggle:hover,
 a:focus-visible > .wiggle {
   transform: rotate(-12deg) scale(1.08);
-}
-
-/* Floodlights */
-.floodlight {
-  position: absolute;
-  z-index: -1;
-  border-radius: 50%;
-  filter: blur(90px);
-  pointer-events: none;
-}
-
-.drift-1 {
-  animation: drift-1 16s ease-in-out infinite alternate;
-}
-.drift-2 {
-  animation: drift-2 21s ease-in-out infinite alternate;
-}
-.drift-3 {
-  animation: drift-3 25s ease-in-out infinite alternate;
-}
-
-@keyframes drift-1 {
-  to {
-    transform: translate(140px, 80px) scale(1.2);
-  }
-}
-@keyframes drift-2 {
-  to {
-    transform: translate(-160px, 60px) scale(0.85);
-  }
-}
-@keyframes drift-3 {
-  to {
-    transform: translate(80px, -90px) scale(1.15);
-  }
-}
-
-.fade-in {
-  animation: fade-in 1s 700ms ease both;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.pulse-dot {
-  animation: pulse-dot 2s ease-out infinite;
-}
-
-@keyframes pulse-dot {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 0 10px rgba(255, 107, 53, 0);
-  }
 }
 
 /* The flip-in lives on the wrapper so the hover spin on the tile never replays it. */
@@ -92,10 +75,10 @@ a:focus-visible > .wiggle {
   font-weight: 700;
   color: var(--accent);
   background: var(--flap-tile);
-  text-shadow: 0 0 0.3em rgba(255, 107, 53, 0.55);
+  text-shadow: 0 0 0.3em color-mix(in srgb, var(--accent) 55%, transparent);
   box-shadow:
     0 0.04em 0 var(--flap-edge),
-    0 0 0.6em rgba(255, 107, 53, 0.12);
+    0 0 0.6em color-mix(in srgb, var(--accent) 12%, transparent);
 }
 
 .flip-tile:hover {
@@ -160,11 +143,6 @@ a:focus-visible > .wiggle {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .pulse-dot,
-  .drift-1,
-  .drift-2,
-  .drift-3,
-  .fade-in,
   .flip-in,
   .reveal {
     animation: none;
