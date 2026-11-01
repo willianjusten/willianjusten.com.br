@@ -32,7 +32,7 @@
   );
 }
 
-.record-glow {
+.record-stack[data-playing="true"] .record-glow {
   opacity: 0.6;
   animation: record-glow-spin 6s linear infinite;
 }
