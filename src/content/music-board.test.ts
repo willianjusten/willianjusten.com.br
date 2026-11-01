@@ -22,6 +22,31 @@ describe("music board", () => {
     expect(months).toEqual([...months].sort().reverse());
   });
 
+  it("falls back to a YouTube Music search when no YouTube Music link is curated", () => {
+    const trackWithoutLink = { ...music.tracks[0], youtubeMusicUrl: undefined };
+    const board = buildMusicBoard(
+      { songOfTheMoment: trackWithoutLink.id, tracks: [trackWithoutLink] },
+      {},
+    );
+    const searchUrl = new URL(board.songOfTheMoment.youtubeMusicUrl ?? "");
+
+    expect(searchUrl.origin + searchUrl.pathname).toBe("https://music.youtube.com/search");
+    expect(searchUrl.searchParams.get("q")).toBe(
+      `${trackWithoutLink.artist} ${trackWithoutLink.title}`,
+    );
+  });
+
+  it("keeps a curated YouTube Music link over the search fallback", () => {
+    const curatedUrl = "https://music.youtube.com/watch?v=curated";
+    const trackWithLink = { ...music.tracks[0], youtubeMusicUrl: curatedUrl };
+    const board = buildMusicBoard(
+      { songOfTheMoment: trackWithLink.id, tracks: [trackWithLink] },
+      {},
+    );
+
+    expect(board.songOfTheMoment.youtubeMusicUrl).toBe(curatedUrl);
+  });
+
   it("leaves the preview empty for a track the script found nothing for", () => {
     const board = buildMusicBoard(music, {});
 

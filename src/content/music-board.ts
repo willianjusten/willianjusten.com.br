@@ -2,6 +2,8 @@ import type { Music, MusicTrack } from "./music";
 import type { PreviewEntry } from "./music-preview-schema";
 
 export type PlayableTrack = MusicTrack & {
+  /** The curated link, or a YouTube Music search for the track when none is curated. */
+  youtubeMusicUrl: string;
   /** Absent when no provider had a preview; the play control is then disabled. */
   previewUrl?: string;
   appleMusicUrl?: string;
@@ -13,10 +15,17 @@ export type MusicBoard = {
   pastTracks: PlayableTrack[];
 };
 
+function youtubeMusicSearchUrl(track: MusicTrack): string {
+  const searchUrl = new URL("https://music.youtube.com/search");
+  searchUrl.searchParams.set("q", `${track.artist} ${track.title}`);
+  return searchUrl.toString();
+}
+
 /** Joins the curated tracks with the generated preview data and splits current from past. */
 export function buildMusicBoard(music: Music, previews: Record<string, PreviewEntry>): MusicBoard {
   const playableTracks: PlayableTrack[] = music.tracks.map((track) => ({
     ...track,
+    youtubeMusicUrl: track.youtubeMusicUrl ?? youtubeMusicSearchUrl(track),
     previewUrl: previews[track.id]?.previewUrl,
     appleMusicUrl: previews[track.id]?.appleMusicUrl,
   }));
