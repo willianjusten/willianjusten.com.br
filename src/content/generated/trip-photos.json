@@ -1,6 +1,38 @@
 {
   "cloudName": "willianjustenphoto",
   "albums": {
+    "trips/2026-sao-paulo": [
+      {
+        "publicId": "trips/2026-sao-paulo/DSC00638_pakbmw",
+        "width": 6000,
+        "height": 4000,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAAsAA8BiJbACdH8AGBra7syYAP7QvgVrIPp0WnMW2cWU85bi+lvpF8vZd0P7dvd6O4NxfQx6v8J6AAA="
+      },
+      {
+        "publicId": "trips/2026-sao-paulo/DSC00669_yybcf1",
+        "width": 3839,
+        "height": 5758,
+        "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoQABgAPwFsr0+rJiQiMAgBYCAJaAC7AB4Djmv5ub009AD6hAEcAlcDkGbTF8ACwXhEI94xNHImqZ7mmUMnxt8qIUCZXu19nK1YgH8W/MAAAA=="
+      },
+      {
+        "publicId": "trips/2026-sao-paulo/DSC00873-Enhanced-NR_wjjbi1",
+        "width": 2449,
+        "height": 3673,
+        "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoQABgAPwFsrU8rJiQiMAgBYCAJYgCdABqaA9/aH75mrAAA9wSSHfrAduf8i15cHa2dHVlk2NINka38eald14gkP4bk7eMlayfHT4AA"
+      },
+      {
+        "publicId": "trips/2026-sao-paulo/PXL_20240503_203528790.MP_glec7l",
+        "width": 4032,
+        "height": 2268,
+        "blurDataUrl": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABQAgCdASoQAAkAA8BiJZACdGuAt/8DYjBpvAAAzikVbl1gr5P6u8bXVws06rFX3pc54xvbwAA="
+      },
+      {
+        "publicId": "trips/2026-sao-paulo/PXL_20240517_202512850.RAW-02.ORIGINAL_srawhs",
+        "width": 2163,
+        "height": 3844,
+        "blurDataUrl": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwBACdASoQABwAPwFsr0+rJiQiMAgBYCAJbACdMoR3ACWSFlWF9xX929W8wAD+cNdBFdXiAco12prNnaTU25IskKp95Tc13lScKiBOh5kNwmDQMOMrPmhmgqp/x2dMv+sskipbOgAAAA=="
+      }
+    ],
     "trips/2016-petropolis": [
       {
         "publicId": "trips/2016-petropolis/willian-justen-de-vasconcellos-_MMP5j_fCqw-unsplash_xhzm9t",

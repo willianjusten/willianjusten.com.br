@@ -13,7 +13,7 @@ const placeSchema = z
     lat: z.number().min(-90).max(90),
     lon: z.number().min(-180).max(180),
     isHome: z.boolean().default(false),
-    /** One `trips/<year>-<slug>` folder per visit, merged into one album; absent for home. */
+    /** One `trips/<year>-<slug>` folder per visit, merged into one album; optional for home. */
     cloudinaryFolders: z.array(z.string().regex(TRIP_FOLDER_PATTERN)).min(1).optional(),
     unsplashUrl: z.url(),
     pexelsUrl: z.url(),
@@ -42,6 +42,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -23.55,
       lon: -46.63,
       isHome: true,
+      cloudinaryFolders: ["trips/2026-sao-paulo"],
       unsplashUrl: UNSPLASH_PROFILE_URL,
       pexelsUrl: PEXELS_PROFILE_URL,
       caption: {

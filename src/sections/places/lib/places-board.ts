@@ -32,7 +32,7 @@ export type GlobePlace = {
   slug: string;
   name: string;
   country: string;
-  /** Visit years in order; empty for home. */
+  /** Visit years in order; empty without an album. */
   years: number[];
   lat: number;
   lon: number;
@@ -41,7 +41,7 @@ export type GlobePlace = {
   color: string;
   caption?: string;
   unsplashUrl: string;
-  /** In album order; empty for home. */
+  /** In album order; empty without an album. */
   photos: AlbumPhoto[];
 };
 
