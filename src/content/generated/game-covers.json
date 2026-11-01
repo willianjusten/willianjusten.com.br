@@ -5,10 +5,76 @@
     "coverImageId": "cocyjx",
     "fetchedAt": "2026-11-01T00:28:56.700Z"
   },
-  "alan-wake-2": {
-    "igdbId": 185246,
-    "igdbTitle": "Alan Wake II",
-    "coverImageId": "co6jar",
-    "fetchedAt": "2026-11-01T00:28:57.214Z"
+  "control-resonant": {
+    "igdbId": 225582,
+    "igdbTitle": "Control Resonant",
+    "coverImageId": "coc64f",
+    "fetchedAt": "2026-11-01T02:37:19.514Z"
+  },
+  "yooka-replaylee": {
+    "igdbId": 304740,
+    "igdbTitle": "Yooka-Replaylee",
+    "coverImageId": "coc722",
+    "fetchedAt": "2026-11-01T02:37:20.370Z"
+  },
+  "onimusha-way-of-the-sword": {
+    "igdbId": 325602,
+    "igdbTitle": "Onimusha: Way of the Sword",
+    "coverImageId": "cocdt3",
+    "fetchedAt": "2026-11-01T02:37:20.889Z"
+  },
+  "resonance-a-plague-tale-legacy": {
+    "igdbId": 348168,
+    "igdbTitle": "Resonance: A Plague Tale Legacy",
+    "coverImageId": "coc79u",
+    "fetchedAt": "2026-11-01T02:37:21.396Z"
+  },
+  "brotato": {
+    "igdbId": 199116,
+    "igdbTitle": "Brotato",
+    "coverImageId": "coaauv",
+    "fetchedAt": "2026-11-01T02:37:22.249Z"
+  },
+  "ninja-gaiden-4": {
+    "igdbId": 329130,
+    "igdbTitle": "Ninja Gaiden 4",
+    "coverImageId": "co9b3p",
+    "fetchedAt": "2026-11-01T02:37:22.759Z"
+  },
+  "donkey-kong-bananza": {
+    "igdbId": 338106,
+    "igdbTitle": "Donkey Kong Bananza",
+    "coverImageId": "cobd1q",
+    "fetchedAt": "2026-11-01T02:37:23.258Z"
+  },
+  "metroid-prime-4-beyond": {
+    "igdbId": 37136,
+    "igdbTitle": "Metroid Prime 4: Beyond",
+    "coverImageId": "cob9xh",
+    "fetchedAt": "2026-11-01T02:37:23.757Z"
+  },
+  "ball-x-pit": {
+    "igdbId": 346035,
+    "igdbTitle": "Ball x Pit",
+    "coverImageId": "co9xid",
+    "fetchedAt": "2026-11-01T02:37:24.414Z"
+  },
+  "pragmata": {
+    "igdbId": 134612,
+    "igdbTitle": "Pragmata",
+    "coverImageId": "cobxnx",
+    "fetchedAt": "2026-11-01T02:37:24.915Z"
+  },
+  "saros": {
+    "igdbId": 331215,
+    "igdbTitle": "Saros",
+    "coverImageId": "coajye",
+    "fetchedAt": "2026-11-01T02:37:25.766Z"
+  },
+  "resident-evil-requiem": {
+    "igdbId": 347668,
+    "igdbTitle": "Resident Evil Requiem",
+    "coverImageId": "cobmj0",
+    "fetchedAt": "2026-11-01T02:37:26.307Z"
   }
 }

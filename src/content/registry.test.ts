@@ -106,7 +106,7 @@ describe("games content module", () => {
   it("is registered with the real entries", () => {
     const titles = seededGames.map((game) => game.title);
     expect(titles).toContain("Crimson Desert");
-    expect(titles).toContain("Alan Wake 2");
+    expect(titles).toContain("Resident Evil Requiem");
   });
 
   it("rejects duplicate slugs", () => {
