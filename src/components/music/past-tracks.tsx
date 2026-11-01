@@ -12,9 +12,15 @@ type PastTracksProps = {
 
 function formatMonth(month: string, locale: string): string {
   const [year, monthNumber] = month.split("-").map(Number);
-  return new Intl.DateTimeFormat(locale, { month: "short", year: "numeric", timeZone: "UTC" })
-    .format(new Date(Date.UTC(year, monthNumber - 1, 1)))
-    .replace(".", "");
+  const parts = new Intl.DateTimeFormat(locale, {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).formatToParts(new Date(Date.UTC(year, monthNumber - 1, 1)));
+  const partValue = (type: Intl.DateTimeFormatPartTypes) =>
+    parts.find((part) => part.type === type)?.value ?? "";
+
+  return `${partValue("month").replace(".", "")} ${partValue("year")}`;
 }
 
 export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }: PastTracksProps) {
@@ -39,7 +45,7 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
             >
               <time
                 dateTime={track.month}
-                className="w-[76px] shrink-0 font-mono text-overline text-text-muted"
+                className="w-[76px] shrink-0 font-mono whitespace-nowrap text-overline text-text-muted"
               >
                 {formatMonth(track.month, locale)}
               </time>
