@@ -123,7 +123,7 @@ export function RecordPlayer({
   const hasPreview = Boolean(track.previewUrl);
 
   return (
-    <div className="reveal box-border flex max-w-full basis-(--record-panel-width) grow-0 shrink-0 flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7">
+    <div className="reveal box-border flex w-(--record-panel-width) max-w-full basis-(--record-panel-width) grow-0 shrink-0 flex-col items-center gap-5 rounded-xl border border-line-strong bg-(image:--panel-gradient) px-6 py-7">
       <div
         onPointerMove={tiltTowardPointer}
         onPointerLeave={resetTilt}
