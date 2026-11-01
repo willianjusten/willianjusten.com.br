@@ -9,6 +9,7 @@ import type { KeyboardEvent, Ref } from "react";
 import { ExternalLink } from "@/shared/components/external-link";
 import { fillTemplate } from "@/shared/lib/fill-template";
 import type { GlobePlace } from "../lib/places-board";
+import { AlbumThumbnails } from "./album-thumbnails";
 
 export type AlbumLabels = {
   label: string;
@@ -146,37 +147,12 @@ export function AlbumPanel({
         ) : null}
 
         {total > 1 ? (
-          <ul aria-label={labels.thumbnails} className="flex flex-wrap gap-1.5">
-            {photos.map((thumbnail, thumbnailIndex) => {
-              const isCurrent = thumbnailIndex === photoIndex;
-              return (
-                <li key={thumbnail.src}>
-                  <button
-                    type="button"
-                    aria-label={fillTemplate(labels.showPhoto, {
-                      index: thumbnailIndex + 1,
-                      total,
-                    })}
-                    aria-pressed={isCurrent}
-                    onClick={() => onShowPhoto(thumbnailIndex)}
-                    className={`relative block size-11 cursor-pointer overflow-hidden rounded-xs border-2 bg-surface hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
-                      isCurrent ? "border-accent" : "border-transparent"
-                    }`}
-                  >
-                    <Image
-                      src={thumbnail.src}
-                      alt=""
-                      fill
-                      sizes="44px"
-                      placeholder="blur"
-                      blurDataURL={thumbnail.blurDataUrl}
-                      className="object-cover"
-                    />
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
+          <AlbumThumbnails
+            photos={photos}
+            currentIndex={photoIndex}
+            labels={labels}
+            onShowPhoto={onShowPhoto}
+          />
         ) : null}
 
         <ExternalLink
