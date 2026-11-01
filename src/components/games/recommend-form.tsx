@@ -8,7 +8,6 @@ import type { ChangeEvent, FormEvent, KeyboardEvent, Ref } from "react";
 import { flushSync } from "react-dom";
 import { pickPrimaryPlatform } from "@/lib/games/igdb";
 import type { IgdbSearchResult } from "@/lib/games/igdb";
-import { MAX_NAME_LENGTH } from "@/lib/games/recommendations";
 import { CoverThumb } from "./cover-thumb";
 import { PLATFORM_STYLES } from "./platform-style";
 import type { RecommendationSubmission, SubmitOutcome } from "./use-game-recommendations";
@@ -25,10 +24,6 @@ export type RecommendFormLabels = {
   searchError: string;
   credit: string;
   chooseAnother: string;
-  because: string;
-  nameLabel: string;
-  nameOptional: string;
-  namePlaceholder: string;
   honeypotLabel: string;
   /** Contains `{title}`. */
   submit: string;
@@ -43,13 +38,8 @@ export type RecommendFormLabels = {
   seeAll: string;
 };
 
-export type LikeOption = { slug: string; title: string };
-
 type RecommendFormProps = {
   labels: RecommendFormLabels;
-  likeOptions: LikeOption[];
-  becauseSlug: string;
-  onBecauseChange: (slug: string) => void;
   searchInputRef: Ref<HTMLInputElement>;
   recommendedCount: number;
   onOpenRecommended: () => void;
@@ -69,9 +59,6 @@ function formatMeta(result: Pick<IgdbSearchResult, "year" | "platforms">): strin
 
 export function RecommendForm({
   labels,
-  likeOptions,
-  becauseSlug,
-  onBecauseChange,
   searchInputRef,
   recommendedCount,
   onOpenRecommended,
@@ -81,7 +68,6 @@ export function RecommendForm({
   const [isListDismissed, setIsListDismissed] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(-1);
   const [picked, setPicked] = useState<IgdbSearchResult | null>(null);
-  const [name, setName] = useState("");
   const [website, setWebsite] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [feedback, setFeedback] = useState<Feedback>(null);
@@ -138,7 +124,7 @@ export function RecommendForm({
     }
     setIsSending(true);
     setFeedback(null);
-    const outcome = await onSubmit({ igdbId: picked.igdbId, becauseSlug, name, website });
+    const outcome = await onSubmit({ igdbId: picked.igdbId, website });
     setIsSending(false);
     if (outcome.kind === "saved") {
       const doneText =
@@ -146,7 +132,6 @@ export function RecommendForm({
       setFeedback({ tone: "success", text: doneText.replace("{title}", picked.title) });
       setPicked(null);
       setQuery("");
-      setName("");
     } else {
       setFeedback({
         tone: "error",
@@ -160,12 +145,14 @@ export function RecommendForm({
   return (
     <div
       id="recommend"
-      className="relative mt-6 scroll-mt-24 overflow-hidden rounded-2xl border border-line bg-surface"
+      className="relative mt-6 scroll-mt-24 rounded-2xl border border-line bg-surface"
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-[90px] -right-[90px] size-[260px] rounded-full bg-accent/20 blur-3xl"
-      />
+        className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl"
+      >
+        <div className="absolute -top-[90px] -right-[90px] size-[260px] rounded-full bg-accent/20 blur-3xl" />
+      </div>
       <form
         onSubmit={handleSubmit}
         className="relative flex max-w-[640px] flex-col gap-3.5 p-6 sm:p-8"
@@ -284,37 +271,6 @@ export function RecommendForm({
                 <X size={14} aria-hidden="true" />
               </button>
             </div>
-
-            <label className="flex flex-col gap-1.5 text-[13px] text-text-2">
-              {labels.because}
-              <select
-                autoFocus
-                value={becauseSlug}
-                onChange={(event) => onBecauseChange(event.target.value)}
-                className={`${FIELD_CLASS} min-h-11`}
-              >
-                {likeOptions.map((option) => (
-                  <option key={option.slug} value={option.slug}>
-                    {option.title}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label className="flex flex-col gap-1.5 text-[13px] text-text-2">
-              <span>
-                {labels.nameLabel} <span className="text-text-faint">{labels.nameOptional}</span>
-              </span>
-              <input
-                type="text"
-                value={name}
-                maxLength={MAX_NAME_LENGTH}
-                autoComplete="off"
-                placeholder={labels.namePlaceholder}
-                onChange={(event) => setName(event.target.value)}
-                className={`${FIELD_CLASS} min-h-11`}
-              />
-            </label>
 
             <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
               <label>

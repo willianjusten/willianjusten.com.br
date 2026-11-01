@@ -59,9 +59,6 @@ export const gameRecommendationVotes = pgTable(
       .notNull()
       .references(() => gameRecommendations.id, { onDelete: "cascade" }),
     browserId: text("browser_id").notNull(),
-    name: text("name"),
-    /** Slug of the played or playing game the visitor says this one is like. */
-    becauseSlug: text("because_slug"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (table) => [primaryKey({ columns: [table.recommendationId, table.browserId] })],

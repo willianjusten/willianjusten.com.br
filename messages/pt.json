@@ -101,16 +101,7 @@
         "reactionPressedRecommended": "Você também recomendou",
         "sticker": "recomendado ×{count}",
         "pendingSticker": "aguardando OK",
-        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este.",
-        "note": {
-          "oneVisitor": "Uma pessoa",
-          "visitors": "{count} pessoas",
-          "namesAndMore": "{names} e mais {count}",
-          "and": " e ",
-          "recommends": "{who} recomenda",
-          "recommend": "{who} recomendam",
-          "because": ", porque eu gostei de {game}."
-        }
+        "pendingNote": "Aguardando meu OK. Por enquanto só você vê este."
       },
       "form": {
         "title": "Me recomende um jogo",
@@ -123,10 +114,6 @@
         "searchError": "A busca está fora do ar agora. Tente de novo daqui a pouco.",
         "credit": "Dados de jogos por IGDB",
         "chooseAnother": "Escolher outro jogo",
-        "because": "Porque você gostou de",
-        "nameLabel": "Seu nome",
-        "nameOptional": "(opcional)",
-        "namePlaceholder": "Para eu saber quem agradecer",
         "honeypotLabel": "Deixe este campo vazio",
         "submit": "Recomendar {title}",
         "submitting": "Enviando…",

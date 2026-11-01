@@ -8,8 +8,6 @@ import type { PointerEvent } from "react";
 import { GAME_PLATFORMS } from "@/content/games";
 import type { GameList } from "@/content/games";
 import { clampIndex, formatCounter, indexAfterDrag, indexAfterKey } from "@/lib/games/coverflow";
-import { buildRecommendationNote } from "@/lib/games/recommendations";
-import type { NoteLabels, RecommendationView } from "@/lib/games/recommendations";
 import { countByList, countByPlatform, filterShelf } from "@/lib/games/shelf";
 import type { PlatformFilter } from "@/lib/games/shelf";
 import { GameCase } from "./game-case";
@@ -45,7 +43,6 @@ export type GamesShelfLabels = {
   sticker: string;
   pendingSticker: string;
   pendingNote: string;
-  note: NoteLabels;
   stageLabel: string;
   previous: string;
   next: string;
@@ -80,26 +77,12 @@ type GamesShelfProps = {
   labels: GamesShelfLabels;
 };
 
-function describeRecommendation(
-  recommendation: RecommendationView,
-  games: ShelfEntry[],
-  labels: GamesShelfLabels,
-): string {
-  if (recommendation.status === "pending") {
-    return labels.pendingNote;
-  }
-  const likedTitle = games.find((game) => game.slug === recommendation.becauseSlug)?.title;
-  return buildRecommendationNote(recommendation, likedTitle, labels.note);
-}
-
 export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");
   const [rawIndex, setRawIndex] = useState(0);
   const { counts: reactionCounts, mine, hasError, toggle } = useGameReactions();
   const { recommendations, voteError, submit, toggleVote } = useGameRecommendations();
-  const likeOptions = games.filter((game) => game.list === "played" || game.list === "playing");
-  const [becauseSlug, setBecauseSlug] = useState(likeOptions[0]?.slug ?? "");
   const dragStartX = useRef<number | undefined>(undefined);
   const hasDragged = useRef(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -127,7 +110,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           },
           year: recommendation.year,
           badgeText: `×${recommendation.count}`,
-          note: describeRecommendation(recommendation, games, labels),
+          note: recommendation.status === "pending" ? labels.pendingNote : "",
           showLabel: labels.showGame.replace("{title}", recommendation.title),
           reaction: {
             pressed: recommendation.mine,
@@ -173,8 +156,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
     tabsRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
-  function recommendSimilar(likedSlug: string) {
-    setBecauseSlug(likedSlug);
+  function focusRecommendForm() {
     setTimeout(() => searchInputRef.current?.focus(), FOCUS_DELAY_IN_MILLISECONDS);
   }
 
@@ -384,7 +366,9 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
             <h3 className="m-0 font-display text-[30px] leading-none font-extrabold tracking-[-0.02em]">
               {activeCase?.entry.title ?? emptyTitle}
             </h3>
-            <p className="m-0 text-[15px] text-text-2">{activeCase?.note ?? emptyNote}</p>
+            {(activeCase?.note ?? emptyNote) !== "" ? (
+              <p className="m-0 text-[15px] text-text-2">{activeCase?.note ?? emptyNote}</p>
+            ) : null}
           </div>
           <div className="flex flex-wrap gap-2">
             <button
@@ -404,7 +388,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
             {similarSlug ? (
               <a
                 href="#recommend"
-                onClick={() => recommendSimilar(similarSlug)}
+                onClick={focusRecommendForm}
                 className="inline-flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-[18px] text-sm text-text no-underline transition-colors hover:border-line-hover"
               >
                 {labels.recommendLike}
@@ -422,9 +406,6 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
 
       <RecommendForm
         labels={labels.form}
-        likeOptions={likeOptions}
-        becauseSlug={becauseSlug}
-        onBecauseChange={setBecauseSlug}
         searchInputRef={searchInputRef}
         recommendedCount={recommendations.length}
         onOpenRecommended={openRecommended}

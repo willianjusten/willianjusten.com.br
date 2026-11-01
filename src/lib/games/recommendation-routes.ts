@@ -8,7 +8,6 @@ import {
 } from "@/lib/db/rate-limit-guard";
 import type { IgdbGame, IgdbSearchResult } from "./igdb";
 import { REACTION_RATE_LIMIT } from "./reaction-route";
-import { sanitizeName } from "./recommendations";
 import type { RecommendationView } from "./recommendations";
 import type { VoteOutcome } from "./recommendation-stats";
 
@@ -30,8 +29,6 @@ const searchQuerySchema = z.string().trim().min(2).max(80);
 const submissionSchema = z.object({
   browserId: browserIdSchema,
   igdbId: z.number().int().positive(),
-  becauseSlug: z.string().min(1).max(80),
-  name: z.string().max(200).optional(),
   /** Honeypot: hidden from people, so only bots fill it. */
   website: z.string().optional(),
 });
@@ -67,12 +64,9 @@ export function createSearchRoute(dependencies: SearchRouteDependencies) {
 export type RecommendationRouteDependencies = RateLimitGuardDependencies & {
   /** Fetches the game from IGDB by id so the browser never supplies title or cover. */
   getGame: (igdbId: number) => Promise<IgdbGame | undefined>;
-  isLikeableGame: (slug: string) => boolean;
   submitRecommendation: (submission: {
     game: IgdbGame;
     browserId: string;
-    name: string | null;
-    becauseSlug: string;
   }) => Promise<RecommendationView | undefined>;
   readRecommendations: (browserId: string | undefined) => Promise<RecommendationView[]>;
 };
@@ -90,7 +84,7 @@ export function createRecommendationRoute(dependencies: RecommendationRouteDepen
 
     async POST(request: Request): Promise<Response> {
       const body = submissionSchema.safeParse(await request.json().catch(() => null));
-      if (!body.success || !dependencies.isLikeableGame(body.data.becauseSlug)) {
+      if (!body.success) {
         return invalidBodyResponse();
       }
       if (body.data.website) {
@@ -109,8 +103,6 @@ export function createRecommendationRoute(dependencies: RecommendationRouteDepen
       const recommendation = await dependencies.submitRecommendation({
         game,
         browserId: body.data.browserId,
-        name: sanitizeName(body.data.name),
-        becauseSlug: body.data.becauseSlug,
       });
       return Response.json({ recommendation: recommendation ?? null }, { headers: NO_STORE });
     },

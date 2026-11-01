@@ -27,8 +27,6 @@ const VIEW: RecommendationView = {
   coverUrl: null,
   status: "pending",
   count: 1,
-  names: [],
-  becauseSlug: "alan-wake-2",
   mine: true,
   createdAt: "2026-01-01T00:00:00.000Z",
 };
@@ -41,7 +39,7 @@ function post(body: unknown) {
 }
 
 function buildRecommendationRoute(options: { allowed?: boolean } = {}) {
-  const submissions: { name: string | null; becauseSlug: string }[] = [];
+  const submissions: { browserId: string; igdbId: number }[] = [];
   const rules: string[] = [];
   const route = createRecommendationRoute({
     hashClientIp: () => "hashed",
@@ -50,9 +48,8 @@ function buildRecommendationRoute(options: { allowed?: boolean } = {}) {
       return { allowed: options.allowed ?? true, retryAfterInSeconds: 60 };
     },
     getGame: async (igdbId) => (igdbId === GAME.igdbId ? GAME : undefined),
-    isLikeableGame: (slug) => slug === "alan-wake-2",
-    submitRecommendation: async ({ name, becauseSlug }) => {
-      submissions.push({ name, becauseSlug });
+    submitRecommendation: async ({ game, browserId }) => {
+      submissions.push({ browserId, igdbId: game.igdbId });
       return VIEW;
     },
     readRecommendations: async (browserId) => (browserId ? [VIEW] : []),
@@ -63,23 +60,16 @@ function buildRecommendationRoute(options: { allowed?: boolean } = {}) {
 const VALID_SUBMISSION = {
   browserId: BROWSER_ID,
   igdbId: GAME.igdbId,
-  becauseSlug: "alan-wake-2",
 };
 
 describe("recommendations route", () => {
-  it("saves a submission with a trimmed, capped name", async () => {
+  it("saves a submission for the game and ignores extra fields", async () => {
     const { route, submissions, rules } = buildRecommendationRoute();
-    const response = await route.POST(post({ ...VALID_SUBMISSION, name: `  ${"a".repeat(40)} ` }));
+    const response = await route.POST(post({ ...VALID_SUBMISSION, name: "Ana", becauseSlug: "x" }));
     expect(response.status).toBe(200);
     expect((await response.json()).recommendation.id).toBe(7);
-    expect(submissions).toEqual([{ name: "a".repeat(30), becauseSlug: "alan-wake-2" }]);
+    expect(submissions).toEqual([{ browserId: BROWSER_ID, igdbId: GAME.igdbId }]);
     expect(rules).toEqual([RECOMMENDATION_RATE_LIMIT.routeKey]);
-  });
-
-  it("drops a filtered name but keeps the recommendation", async () => {
-    const { route, submissions } = buildRecommendationRoute();
-    await route.POST(post({ ...VALID_SUBMISSION, name: "Seu Merda" }));
-    expect(submissions).toEqual([{ name: null, becauseSlug: "alan-wake-2" }]);
   });
 
   it("drops honeypot submissions without saving anything", async () => {
@@ -91,14 +81,9 @@ describe("recommendations route", () => {
     expect(rules).toEqual([]);
   });
 
-  it("rejects bad bodies, unknown likes and unknown IGDB games", async () => {
+  it("rejects bad bodies and unknown IGDB games", async () => {
     const { route, submissions, rules } = buildRecommendationRoute();
-    const bodies = [
-      "not json",
-      {},
-      { ...VALID_SUBMISSION, browserId: "nope" },
-      { ...VALID_SUBMISSION, becauseSlug: "made-up" },
-    ];
+    const bodies = ["not json", {}, { ...VALID_SUBMISSION, browserId: "nope" }];
     for (const body of bodies) {
       expect((await route.POST(post(body))).status).toBe(400);
     }

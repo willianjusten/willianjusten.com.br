@@ -10,8 +10,6 @@ const RATE_LIMITED_STATUS = 429;
 
 export type RecommendationSubmission = {
   igdbId: number;
-  becauseSlug: string;
-  name: string;
   /** Honeypot value; real visitors leave it empty. */
   website: string;
 };

@@ -5,13 +5,11 @@ import type { Database } from "@/lib/db/client";
 import { gameRecommendations, gameRecommendationVotes } from "@/lib/db/schema";
 import { buildCoverUrl, pickPrimaryPlatform } from "./igdb";
 import type { IgdbGame } from "./igdb";
-import { MAX_NAME_LENGTH, sortRecommendations } from "./recommendations";
+import { sortRecommendations } from "./recommendations";
 import type { RecommendationView } from "./recommendations";
 
 type RecommendationRow = typeof gameRecommendations.$inferSelect;
 type VoteRow = typeof gameRecommendationVotes.$inferSelect;
-
-const MAX_SHOWN_NAMES = 2;
 
 function isGamePlatform(value: string): value is GamePlatform {
   return (GAME_PLATFORMS as readonly string[]).includes(value);
@@ -34,10 +32,6 @@ export function buildRecommendationViews(
     if (newestFirst.length === 0) {
       return [];
     }
-    const names = newestFirst
-      .flatMap((vote) => vote.name ?? [])
-      .filter((name, position, all) => all.indexOf(name) === position)
-      .slice(0, MAX_SHOWN_NAMES);
     return [
       {
         id: recommendation.id,
@@ -47,8 +41,6 @@ export function buildRecommendationViews(
         coverUrl: recommendation.coverImageId ? buildCoverUrl(recommendation.coverImageId) : null,
         status: recommendation.status,
         count: newestFirst.length,
-        names,
-        becauseSlug: newestFirst.find((vote) => vote.becauseSlug)?.becauseSlug ?? null,
         mine: browserId !== undefined && newestFirst.some((vote) => vote.browserId === browserId),
         createdAt: recommendation.createdAt.toISOString(),
       },
@@ -119,8 +111,6 @@ async function readRecommendation(
 export type NewRecommendation = {
   game: IgdbGame;
   browserId: string;
-  name: string | null;
-  becauseSlug: string;
 };
 
 /**
@@ -129,7 +119,7 @@ export type NewRecommendation = {
  */
 export async function submitRecommendation(
   database: Database,
-  { game, browserId, name, becauseSlug }: NewRecommendation,
+  { game, browserId }: NewRecommendation,
 ): Promise<RecommendationView | undefined> {
   const platform = pickPrimaryPlatform(game.platforms);
   await database
@@ -154,8 +144,6 @@ export async function submitRecommendation(
     .values({
       recommendationId: recommendation.id,
       browserId,
-      name: name?.slice(0, MAX_NAME_LENGTH) ?? null,
-      becauseSlug,
     })
     .onConflictDoNothing();
   return readRecommendation(database, recommendation.id, browserId);
