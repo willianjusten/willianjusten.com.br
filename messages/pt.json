@@ -56,6 +56,27 @@
         "reset": "Voltar ao globo inteiro",
         "hint": "arraste para girar · clique para abrir um pin",
         "clusterOf": "Grupo de"
+      },
+      "counters": {
+        "label": "Lugares em números",
+        "countries": "países",
+        "cities": "cidades",
+        "photos": "fotos"
+      },
+      "album": {
+        "label": "Álbum: {place}",
+        "home": "Casa",
+        "previous": "Foto anterior",
+        "next": "Próxima foto",
+        "close": "Fechar álbum",
+        "counter": "Foto {index} de {total}",
+        "thumbnails": "Fotos",
+        "showPhoto": "Mostrar foto {index} de {total}",
+        "moreFrom": "Mais de {place} no Unsplash"
+      },
+      "tour": {
+        "play": "Ver as viagens",
+        "stop": "Parar a viagem"
       }
     },
     "games": {

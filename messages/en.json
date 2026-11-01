@@ -56,6 +56,27 @@
         "reset": "Reset to full globe",
         "hint": "drag to rotate · click to open a pin",
         "clusterOf": "Group of"
+      },
+      "counters": {
+        "label": "Places in numbers",
+        "countries": "countries",
+        "cities": "cities",
+        "photos": "photos"
+      },
+      "album": {
+        "label": "Album: {place}",
+        "home": "Home",
+        "previous": "Previous photo",
+        "next": "Next photo",
+        "close": "Close album",
+        "counter": "Photo {index} of {total}",
+        "thumbnails": "Photos",
+        "showPhoto": "Show photo {index} of {total}",
+        "moreFrom": "More from {place} on Unsplash"
+      },
+      "tour": {
+        "play": "Play the trips",
+        "stop": "Stop the trip"
       }
     },
     "games": {
