@@ -1,7 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
+  MAX_LATITUDE,
   MAX_ZOOM,
+  MIN_LATITUDE,
   angularDistanceInDegrees,
+  clampLatitude,
   clusterPins,
   project,
   rotateByDrag,
@@ -114,5 +117,13 @@ describe("zoom arc", () => {
     expect(hasArrived).toBe(true);
     expect(view.lat).toBeCloseTo(PARIS.lat, 0);
     expect(view.lon).toBeCloseTo(PARIS.lon, 0);
+  });
+});
+
+describe("clampLatitude", () => {
+  it("keeps the camera between the latitude limits", () => {
+    expect(clampLatitude(95)).toBe(MAX_LATITUDE);
+    expect(clampLatitude(-95)).toBe(MIN_LATITUDE);
+    expect(clampLatitude(12)).toBe(12);
   });
 });

@@ -1,14 +1,14 @@
 "use client";
 
-/* The frame is a keyboard-operable widget (arrow keys rotate it) and the canvas is a described image, as the ticket specifies. */
+/* The frame is a keyboard-operable widget (arrow keys rotate it) and the canvas is a described image. */
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
-import { Globe as GlobeIcon, Minus, Play, Plus, Square } from "lucide-react";
-import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { GlobePlace } from "../lib/places-board";
+import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
 import {
   CLUSTER_THRESHOLD_IN_PIXELS,
+  clampLatitude,
   clampZoom,
   clusterPins,
   project,
@@ -16,26 +16,21 @@ import {
   stepFlight,
   wrapLongitude,
   zoomToSplit,
-  MAX_LATITUDE,
-  MIN_LATITUDE,
   type FlightTarget,
   type GeoPoint,
   type GlobeView,
   type PinCluster,
 } from "../lib/globe-math";
+import { drawGlobe, type GlobeColors } from "../lib/globe-renderer";
 import { decodeLandDots } from "../lib/land-dots";
-import { withAlpha } from "@/lib/palette";
 import { AlbumPanel, type AlbumLabels } from "./album-panel";
+import { GlobeControls, type GlobeControlsLabels } from "./globe-controls";
+import { GlobePin, type GlobePinElements } from "./globe-pin";
 
-export type GlobeLabels = {
+export type GlobeLabels = GlobeControlsLabels & {
   description: string;
-  zoomIn: string;
-  zoomOut: string;
-  reset: string;
-  hint: string;
   clusterOf: string;
   album: AlbumLabels;
-  tour: { play: string; stop: string };
 };
 
 const INITIAL_VIEW: GlobeView = { lat: 18, lon: -25, zoom: 1 };
@@ -86,9 +81,7 @@ type GlobeState = {
 export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeLabels }) {
   const frameRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const pinRefs = useRef(new Map<string, HTMLButtonElement>());
-  const badgeRefs = useRef(new Map<string, HTMLSpanElement>());
-  const nameRefs = useRef(new Map<string, HTMLSpanElement>());
+  const pinElementsRef = useRef(new Map<string, Partial<GlobePinElements>>());
   const globeRef = useRef<GlobeState>({
     view: INITIAL_VIEW,
     velocity: { lon: 0, lat: 0 },
@@ -106,6 +99,11 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   const isAlbumOpenRef = useRef(false);
   const [isTouring, setIsTouring] = useState(false);
   const albumPlace = album ? places.find((place) => place.slug === album.slug) : undefined;
+
+  const registerPinElement = useCallback((slug: string, element: Partial<GlobePinElements>) => {
+    const pinElements = pinElementsRef.current;
+    pinElements.set(slug, { ...pinElements.get(slug), ...element });
+  }, []);
 
   const select = useCallback((slug: string | null) => {
     selectedSlugRef.current = slug;
@@ -130,7 +128,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     globe.velocity = { lon: 0, lat: 0 };
     globe.zoomGoal = clampZoom(zoom);
     globe.flightTarget = {
-      lat: Math.min(MAX_LATITUDE, Math.max(MIN_LATITUDE, point.lat)),
+      lat: clampLatitude(point.lat),
       lon: point.lon,
       zoom: globe.zoomGoal,
     };
@@ -159,7 +157,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     select(null);
     showAlbum(null);
     // Focus first: a pin's focus handler may start a flight, which the zoom-out below must override.
-    pinRefs.current.get(album.slug)?.focus();
+    pinElementsRef.current.get(album.slug)?.pin?.focus();
     const globe = globeRef.current;
     globe.flightTarget = null;
     globe.zoomGoal = INITIAL_VIEW.zoom;
@@ -231,11 +229,13 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
     const landDots = decodeLandDots();
     const styles = getComputedStyle(document.documentElement);
-    const accent = styles.getPropertyValue("--accent");
-    const dotColor = styles.getPropertyValue("--text-faint");
-    const bodyHighlight = styles.getPropertyValue("--surface-raised");
-    const bodyShade = styles.getPropertyValue("--bg-sunken");
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const colors: GlobeColors = {
+      accent: styles.getPropertyValue("--accent"),
+      dot: styles.getPropertyValue("--text-faint"),
+      bodyHighlight: styles.getPropertyValue("--surface-raised"),
+      bodyShade: styles.getPropertyValue("--bg-sunken"),
+    };
+    const reducedMotion = reducedMotionQuery();
 
     let width = 0;
     let height = 0;
@@ -250,78 +250,6 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(canvas);
     resize();
-
-    const drawGlobe = (view: GlobeView, centerX: number, centerY: number, radius: number) => {
-      context.clearRect(0, 0, width, height);
-
-      if (radius < Math.max(width, height) * 1.2) {
-        const halo = context.createRadialGradient(
-          centerX,
-          centerY,
-          radius * 0.9,
-          centerX,
-          centerY,
-          radius * 1.28,
-        );
-        halo.addColorStop(0, withAlpha(accent, 0.18));
-        halo.addColorStop(0.45, withAlpha(accent, 0.06));
-        halo.addColorStop(1, withAlpha(accent, 0));
-        context.fillStyle = halo;
-        context.beginPath();
-        context.arc(centerX, centerY, radius * 1.28, 0, Math.PI * 2);
-        context.fill();
-      }
-
-      const body = context.createRadialGradient(
-        centerX - radius * 0.35,
-        centerY - radius * 0.4,
-        radius * 0.1,
-        centerX,
-        centerY,
-        radius,
-      );
-      body.addColorStop(0, bodyHighlight);
-      body.addColorStop(1, bodyShade);
-      context.fillStyle = body;
-      context.beginPath();
-      context.arc(centerX, centerY, radius, 0, Math.PI * 2);
-      context.fill();
-
-      const yaw = (view.lon * Math.PI) / 180;
-      const pitch = (view.lat * Math.PI) / 180;
-      const cosPitch = Math.cos(pitch);
-      const sinPitch = Math.sin(pitch);
-      const baseDotSize = Math.max(1.3, radius * 0.0068);
-      context.fillStyle = dotColor;
-      for (let index = 0; index < landDots.count; index++) {
-        const longitudeOffset = landDots.lonRadians[index] - yaw;
-        const right = landDots.cosLat[index] * Math.sin(longitudeOffset);
-        const up = landDots.sinLat[index];
-        const toward = landDots.cosLat[index] * Math.cos(longitudeOffset);
-        const depth = up * sinPitch + toward * cosPitch;
-        if (depth <= 0) continue;
-        const screenX = centerX + right * radius;
-        const screenY = centerY - (up * cosPitch - toward * sinPitch) * radius;
-        if (
-          screenX < -baseDotSize ||
-          screenX > width + baseDotSize ||
-          screenY < -baseDotSize ||
-          screenY > height + baseDotSize
-        ) {
-          continue;
-        }
-        context.globalAlpha = 0.18 + 0.82 * depth;
-        const dotSize = baseDotSize * (0.55 + 0.45 * depth);
-        if (dotSize < 4) {
-          context.fillRect(screenX - dotSize / 2, screenY - dotSize / 2, dotSize, dotSize);
-        } else {
-          context.beginPath();
-          context.arc(screenX, screenY, dotSize / 2, 0, Math.PI * 2);
-          context.fill();
-        }
-      }
-      context.globalAlpha = 1;
-    };
 
     const placePins = (view: GlobeView, centerX: number, centerY: number, radius: number) => {
       const globe = globeRef.current;
@@ -355,7 +283,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
       }
 
       for (const { place, projected } of projections) {
-        const pin = pinRefs.current.get(place.slug);
+        const { pin, badge, name } = pinElementsRef.current.get(place.slug) ?? {};
         if (!pin) continue;
         const cluster = leadOf.get(place.slug);
         const isVisible = projected.depth > PIN_MIN_DEPTH && !hiddenMembers.has(place.slug);
@@ -371,12 +299,10 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         pin.tabIndex = hiddenMembers.has(place.slug) ? -1 : 0;
 
         const memberCount = cluster ? cluster.members.length : 1;
-        const badge = badgeRefs.current.get(place.slug);
         if (badge) {
           badge.style.display = memberCount > 1 ? "flex" : "none";
           badge.textContent = String(memberCount);
         }
-        const name = nameRefs.current.get(place.slug);
         if (name) {
           const showsName =
             memberCount === 1 && (view.zoom > LABEL_ZOOM || selected === place.slug);
@@ -405,7 +331,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
           globe.view = {
             ...globe.view,
             lon: wrapLongitude(globe.view.lon + velocity.lon),
-            lat: Math.min(MAX_LATITUDE, Math.max(MIN_LATITUDE, globe.view.lat + velocity.lat)),
+            lat: clampLatitude(globe.view.lat + velocity.lat),
             zoom: globe.view.zoom + (globe.zoomGoal - globe.view.zoom) * ZOOM_EASING,
           };
           velocity.lon *= INERTIA_DECAY;
@@ -444,33 +370,15 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
           : globe.centerX + (targetCenterX - globe.centerX) * CENTER_EASING;
       const { centerX } = globe;
       const centerY = height * CENTER_Y_RATIO;
-      drawGlobe(view, centerX, centerY, radius);
+      drawGlobe(context, { width, height, centerX, centerY, radius }, view, landDots, colors);
       placePins(view, centerX, centerY, radius);
     };
 
-    let animationFrame = 0;
-    const loop = () => {
-      paint();
-      animationFrame = requestAnimationFrame(loop);
-    };
-    const start = () => {
-      if (!animationFrame) animationFrame = requestAnimationFrame(loop);
-    };
-    const stop = () => {
-      cancelAnimationFrame(animationFrame);
-      animationFrame = 0;
-    };
-
-    const visibilityObserver = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) start();
-      else stop();
-    });
-    visibilityObserver.observe(frame);
     paint();
+    const stopLoop = runWhileVisible(frame, paint);
 
     return () => {
-      stop();
-      visibilityObserver.disconnect();
+      stopLoop();
       resizeObserver.disconnect();
     };
   }, [places, labels.clusterOf]);
@@ -536,10 +444,6 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     };
   };
 
-  const stopDrag = (event: React.PointerEvent) => event.stopPropagation();
-  const controlClassName =
-    "flex size-11 items-center justify-center rounded-md border border-line-strong bg-surface-raised text-text transition-colors hover:border-line-hover hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
-
   return (
     <div
       ref={frameRef}
@@ -560,123 +464,28 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         className="absolute inset-0 size-full"
       />
 
-      {places.map((place) => {
-        const isSelected = place.slug === selectedSlug;
-        const [cover] = place.photos;
-        return (
-          <button
-            key={place.slug}
-            type="button"
-            ref={(element) => {
-              if (element) pinRefs.current.set(place.slug, element);
-            }}
-            aria-pressed={isSelected}
-            onPointerDown={stopDrag}
-            onClick={() => activate(place)}
-            onFocus={() => {
-              const projected = project(place, globeRef.current.view, 1);
-              if (!projected.isFront) flyTo(place, globeRef.current.view.zoom);
-            }}
-            style={{ transformOrigin: "50% 100%" }}
-            className="absolute top-0 left-0 flex cursor-pointer flex-col items-center border-0 bg-transparent p-0 hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
-          >
-            <span
-              ref={(element) => {
-                if (element) nameRefs.current.set(place.slug, element);
-              }}
-              className="mb-1.5 hidden rounded-xs bg-bg/85 px-2 py-0.5 text-overline font-semibold whitespace-nowrap text-text"
-            >
-              {place.name}
-            </span>
-            <span className="relative">
-              <span
-                aria-hidden="true"
-                style={{ backgroundColor: place.color }}
-                className={`relative block overflow-hidden rounded-xs border-2 shadow-1 ${
-                  isSelected ? "h-11 w-15 border-accent" : "h-9 w-12 border-text"
-                }`}
-              >
-                {cover ? (
-                  <Image
-                    src={cover.src}
-                    alt=""
-                    fill
-                    sizes="60px"
-                    placeholder="blur"
-                    blurDataURL={cover.blurDataUrl}
-                    className="object-cover"
-                  />
-                ) : null}
-              </span>
-              <span
-                ref={(element) => {
-                  if (element) badgeRefs.current.set(place.slug, element);
-                }}
-                aria-hidden="true"
-                className="absolute -top-2.5 -right-2.5 hidden h-[22px] min-w-[22px] items-center justify-center rounded-pill bg-accent px-1.5 font-mono text-overline font-medium text-on-accent"
-              />
-            </span>
-            <span
-              aria-hidden="true"
-              className={`h-2.5 w-0.5 ${isSelected ? "bg-accent" : "bg-text"}`}
-            />
-            <span
-              aria-hidden="true"
-              className="-mt-px size-2 rounded-full bg-accent shadow-[0_0_0_3px_var(--bg),0_0_14px_var(--accent)]"
-            />
-          </button>
-        );
-      })}
+      {places.map((place) => (
+        <GlobePin
+          key={place.slug}
+          place={place}
+          isSelected={place.slug === selectedSlug}
+          onMount={registerPinElement}
+          onActivate={() => activate(place)}
+          onFocus={() => {
+            const projected = project(place, globeRef.current.view, 1);
+            if (!projected.isFront) flyTo(place, globeRef.current.view.zoom);
+          }}
+          onPointerDown={(event) => event.stopPropagation()}
+        />
+      ))}
 
-      <div className="absolute top-3 left-3 z-[200] flex flex-col gap-1.5">
-        <button
-          type="button"
-          aria-label={labels.zoomIn}
-          onPointerDown={stopDrag}
-          onClick={() => zoomBy(2)}
-          className={controlClassName}
-        >
-          <Plus size={18} strokeWidth={1.8} aria-hidden="true" />
-        </button>
-        <button
-          type="button"
-          aria-label={labels.zoomOut}
-          onPointerDown={stopDrag}
-          onClick={() => zoomBy(0.5)}
-          className={controlClassName}
-        >
-          <Minus size={18} strokeWidth={1.8} aria-hidden="true" />
-        </button>
-        <button
-          type="button"
-          aria-label={labels.reset}
-          onPointerDown={stopDrag}
-          onClick={resetView}
-          className={controlClassName}
-        >
-          <GlobeIcon size={18} strokeWidth={1.8} aria-hidden="true" />
-        </button>
-      </div>
-
-      <div className="absolute bottom-3 left-3 z-[200] flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          aria-pressed={isTouring}
-          onPointerDown={stopDrag}
-          onClick={isTouring ? stopTour : startTour}
-          className="flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border-0 bg-(image:--ball-light) px-5 text-small font-semibold text-on-accent transition-[filter] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          {isTouring ? (
-            <Square size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
-          ) : (
-            <Play size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
-          )}
-          {isTouring ? labels.tour.stop : labels.tour.play}
-        </button>
-        <p className="pointer-events-none m-0 font-mono text-overline text-text-faint">
-          {labels.hint}
-        </p>
-      </div>
+      <GlobeControls
+        labels={labels}
+        isTouring={isTouring}
+        onZoomBy={zoomBy}
+        onReset={resetView}
+        onToggleTour={isTouring ? stopTour : startTour}
+      />
 
       {album && albumPlace ? (
         <AlbumPanel

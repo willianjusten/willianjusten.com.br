@@ -210,3 +210,7 @@ export function stepFlight(
 export function clampZoom(zoom: number): number {
   return clamp(zoom, MIN_ZOOM, MAX_ZOOM);
 }
+
+export function clampLatitude(lat: number): number {
+  return clamp(lat, MIN_LATITUDE, MAX_LATITUDE);
+}
