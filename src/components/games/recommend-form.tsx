@@ -48,7 +48,7 @@ type RecommendFormProps = {
 
 const MAX_RESULTS_SHOWN = 6;
 const FIELD_CLASS =
-  "w-full rounded-md border border-line-input bg-bg px-3.5 text-[15px] text-text placeholder:text-text-faint";
+  "w-full rounded-md border border-line-input bg-bg px-3.5 text-ui text-text placeholder:text-text-faint";
 
 type Feedback = { tone: "success" | "error"; text: string } | null;
 
@@ -289,7 +289,7 @@ export function RecommendForm({
             <button
               type="submit"
               disabled={isSending}
-              className="min-h-12 cursor-pointer rounded-pill border-0 bg-(image:--ball-light) px-6 text-[15px] font-semibold text-on-accent transition-opacity hover:opacity-90 disabled:cursor-default disabled:opacity-60"
+              className="min-h-12 cursor-pointer rounded-pill border-0 bg-(image:--ball-light) px-6 text-ui font-semibold text-on-accent transition-opacity hover:opacity-90 disabled:cursor-default disabled:opacity-60"
             >
               {isSending ? labels.submitting : labels.submit.replace("{title}", picked.title)}
             </button>
@@ -297,7 +297,7 @@ export function RecommendForm({
         ) : null}
 
         <output
-          className={`m-0 text-[13px] ${feedback?.tone === "error" ? "text-text-2" : "text-accent"} ${feedback ? "" : "hidden"}`}
+          className={`m-0 text-eyebrow ${feedback?.tone === "error" ? "text-text-2" : "text-accent"} ${feedback ? "" : "hidden"}`}
         >
           {feedback?.text}
         </output>
@@ -306,7 +306,7 @@ export function RecommendForm({
           <button
             type="button"
             onClick={onOpenRecommended}
-            className="min-h-11 cursor-pointer self-start rounded-pill border border-line-strong bg-transparent px-4 text-[13px] text-text-2 transition-colors hover:border-line-hover"
+            className="min-h-11 cursor-pointer self-start rounded-pill border border-line-strong bg-transparent px-4 text-eyebrow text-text-2 transition-colors hover:border-line-hover"
           >
             {labels.seeAll.replace("{count}", String(recommendedCount))}
           </button>

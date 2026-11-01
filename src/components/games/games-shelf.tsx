@@ -235,7 +235,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               type="button"
               aria-pressed={isActive}
               onClick={() => chooseList(list)}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-5 text-[15px] font-medium transition-colors ${
+              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-5 text-ui font-medium transition-colors ${
                 isActive
                   ? "border-accent bg-accent text-on-accent"
                   : "border-line-strong bg-transparent text-text hover:border-line-hover"
@@ -260,7 +260,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               aria-pressed={isActive}
               disabled={activeList === "recommended"}
               onClick={() => choosePlatform(filter)}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-[13px] transition-colors ${
+              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow transition-colors ${
                 isActive
                   ? "border-line-hover bg-surface-raised text-white"
                   : "border-line bg-transparent text-text-2 hover:border-line-hover"
@@ -367,7 +367,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               {activeCase?.entry.title ?? emptyTitle}
             </h3>
             {(activeCase?.note ?? emptyNote) !== "" ? (
-              <p className="m-0 text-[15px] text-text-2">{activeCase?.note ?? emptyNote}</p>
+              <p className="m-0 text-ui text-text-2">{activeCase?.note ?? emptyNote}</p>
             ) : null}
           </div>
           <div className="flex flex-wrap gap-2">

@@ -13,7 +13,7 @@ export async function LocaleToggle() {
   return (
     <nav
       aria-label={t("label")}
-      className="inline-flex items-center rounded-pill border border-line-strong bg-(--glass-chip) p-0.5 font-mono text-[13px] font-medium"
+      className="inline-flex items-center rounded-pill border border-line-strong bg-(--glass-chip) p-0.5 font-mono text-eyebrow font-medium"
     >
       {routing.locales.map((locale) => {
         const isActive = locale === activeLocale;

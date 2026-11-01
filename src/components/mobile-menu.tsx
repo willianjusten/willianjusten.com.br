@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 
+/** Mirrors `--breakpoint-nav` in globals.css. */
 const DESKTOP_BREAKPOINT_QUERY = "(min-width: 900px)";
 
 type MobileMenuProps = {
@@ -41,7 +42,7 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
   }, [isOpen]);
 
   return (
-    <div className="min-[900px]:hidden">
+    <div className="nav:hidden">
       <button
         ref={toggleButtonRef}
         type="button"

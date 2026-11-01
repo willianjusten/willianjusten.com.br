@@ -26,7 +26,7 @@ export async function Header() {
       </a>
       <nav
         aria-label={t("navigationLabel")}
-        className="ml-auto hidden gap-x-7 text-ui font-medium [text-shadow:0_1px_12px_rgba(0,0,0,0.6)] min-[900px]:flex"
+        className="ml-auto hidden gap-x-7 text-ui font-medium text-shadow-nav nav:flex"
       >
         {navigationLinks.map(({ key, href }) => (
           <a
@@ -38,7 +38,7 @@ export async function Header() {
           </a>
         ))}
       </nav>
-      <div className="ml-auto flex items-center gap-3 min-[900px]:ml-0">
+      <div className="ml-auto flex items-center gap-3 nav:ml-0">
         <LocaleToggle />
         <MobileMenu
           links={navigationLinks.map(({ key, href }) => ({ href, label: t(key) }))}

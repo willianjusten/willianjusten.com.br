@@ -12,7 +12,7 @@
   --surface-hover: #24242a;
   --line: #222226;
   --line-strong: #2c2c30;
-  --line-input: #34343c;
+  --line-input: #64646c;
   --line-hover: #5a5a62;
   --text: #edede8;
   --text-2: #cfcfc8;
@@ -94,6 +94,20 @@
   --dur-fast: 200ms;
   --dur-base: 350ms;
   --dur-slow: 700ms;
+
+  /* Home board colours: floodlight glows, glass panels and frame details. */
+  --glow-orange: rgba(255, 107, 53, 0.38);
+  --glow-amber: rgba(255, 138, 61, 0.16);
+  --glow-sand: rgba(255, 194, 122, 0.1);
+  --glow-footer-orange: rgba(255, 107, 53, 0.28);
+  --glow-footer-sand: rgba(255, 194, 122, 0.22);
+  --glass: rgba(21, 21, 24, 0.75);
+  --glass-chip: rgba(21, 21, 24, 0.6);
+  --icon-well: #222228;
+  --tile-hover: #18181c;
+  --flap-edge: #050506;
+  --badge-glow: 0 8px 24px rgba(255, 138, 61, 0.25);
+  --ease-bounce: cubic-bezier(0.3, 1.6, 0.5, 1);
 }
 
 /* Tokens whose styleguide names already match Tailwind theme namespaces. */
@@ -107,6 +121,9 @@
   --shadow-disc: 0 24px 40px rgba(0, 0, 0, 0.6);
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
   --ease-spring: cubic-bezier(0.3, 1.4, 0.5, 1);
+  --text-shadow-nav: 0 1px 12px rgba(0, 0, 0, 0.6);
+  /* Header switches from the burger menu to inline links; mirrored in mobile-menu.tsx. */
+  --breakpoint-nav: 900px;
 }
 
 /* CSS-first Tailwind theme, mapped onto the :root tokens above. */

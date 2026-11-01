@@ -59,7 +59,7 @@ export function GameCase({
         }
       >
         <div
-          className={`flex h-7 items-center justify-between px-2.5 font-mono text-[10px] font-medium tracking-[1px] ${entry ? `band-${entry.platform}` : "band-empty"}`}
+          className={`flex h-7 items-center justify-between px-2.5 font-mono text-micro font-medium tracking-[1px] ${entry ? `band-${entry.platform}` : "band-empty"}`}
         >
           <span>{platformStyle?.bandText}</span>
           {entry ? <span>{badgeText}</span> : null}
