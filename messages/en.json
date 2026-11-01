@@ -192,5 +192,19 @@
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "copyright": "© 2026 Willian Justen"
+  },
+  "NotFound": {
+    "metaTitle": "Page not found",
+    "homeLogo": "wj, Willian Justen, back to home",
+    "eyebrow": "Error 404 · page not found",
+    "canvasDescription": "The number 404 drawn in orange particles that scatter when you touch them",
+    "hint": "Hover to nudge it. Swipe fast or click to break it.",
+    "touchHint": "Swipe fast or tap to break it.",
+    "damage": "Damage",
+    "broken": "Fully broken. To be fair, it already was.",
+    "rebuild": "Rebuild",
+    "title": "This page went out of bounds.",
+    "lead": "The link is broken or the page moved on. Since you are here, feel free to break the number some more.",
+    "home": "Take me home"
   }
 }
