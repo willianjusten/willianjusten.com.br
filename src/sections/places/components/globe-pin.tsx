@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { PointerEvent } from "react";
+import { memo, useCallback, type PointerEvent } from "react";
 import type { PinLayout } from "../lib/pin-layout";
 import type { GlobePlace } from "../lib/places-board";
 
@@ -40,37 +40,55 @@ type GlobePinProps = {
   place: GlobePlace;
   isSelected: boolean;
   onMount: (slug: string, element: Partial<GlobePinElements>) => void;
-  onActivate: () => void;
-  onFocus: () => void;
-  onPointerDown: (event: PointerEvent) => void;
+  onActivate: (place: GlobePlace) => void;
+  onFocus: (place: GlobePlace) => void;
 };
 
-export function GlobePin({
+/** Pins sit over a draggable globe, so pressing one must not start a drag. */
+function stopDragStart(event: PointerEvent) {
+  event.stopPropagation();
+}
+
+export const GlobePin = memo(function GlobePin({
   place,
   isSelected,
   onMount,
   onActivate,
   onFocus,
-  onPointerDown,
 }: GlobePinProps) {
   const [cover] = place.photos;
+  const { slug } = place;
+  const pinRef = useCallback(
+    (pin: HTMLButtonElement | null) => {
+      if (pin) onMount(slug, { pin });
+    },
+    [onMount, slug],
+  );
+  const nameRef = useCallback(
+    (name: HTMLSpanElement | null) => {
+      if (name) onMount(slug, { name });
+    },
+    [onMount, slug],
+  );
+  const badgeRef = useCallback(
+    (badge: HTMLSpanElement | null) => {
+      if (badge) onMount(slug, { badge });
+    },
+    [onMount, slug],
+  );
   return (
     <button
       type="button"
-      ref={(pin) => {
-        if (pin) onMount(place.slug, { pin });
-      }}
+      ref={pinRef}
       aria-pressed={isSelected}
-      onPointerDown={onPointerDown}
-      onClick={onActivate}
-      onFocus={onFocus}
+      onPointerDown={stopDragStart}
+      onClick={() => onActivate(place)}
+      onFocus={() => onFocus(place)}
       style={{ transformOrigin: "50% 100%" }}
       className="absolute top-0 left-0 flex flex-col items-center hover:brightness-125 focus-visible:outline-offset-4"
     >
       <span
-        ref={(name) => {
-          if (name) onMount(place.slug, { name });
-        }}
+        ref={nameRef}
         className="mb-1.5 hidden rounded-xs bg-bg/85 px-2 py-0.5 text-overline font-semibold whitespace-nowrap text-text"
       >
         {place.name}
@@ -96,9 +114,7 @@ export function GlobePin({
           ) : null}
         </span>
         <span
-          ref={(badge) => {
-            if (badge) onMount(place.slug, { badge });
-          }}
+          ref={badgeRef}
           aria-hidden="true"
           className="absolute -top-2.5 -right-2.5 hidden h-5.5 min-w-5.5 items-center justify-center rounded-pill bg-accent px-1.5 font-mono text-overline font-medium text-on-accent"
         />
@@ -110,4 +126,4 @@ export function GlobePin({
       />
     </button>
   );
-}
+});

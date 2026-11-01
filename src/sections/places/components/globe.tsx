@@ -96,23 +96,31 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     [showPhotoAt, stopTour],
   );
 
-  const activate = (place: GlobePlace) => {
-    stopTour();
+  const activate = useCallback(
+    (place: GlobePlace) => {
+      stopTour();
+      const motion = motionRef.current;
+      const cluster = clustersByLeadRef.current.get(place.slug);
+      const canvas = canvasRef.current;
+      if (cluster && cluster.members.length > 1 && canvas) {
+        const splitZoom = zoomToSplit(
+          cluster.members.map((member) => member.geo),
+          baseRadiusOf(canvas.clientWidth, canvas.clientHeight),
+        );
+        flyTo(motion, cluster.geo, Math.max(splitZoom, motion.view.zoom));
+        return;
+      }
+      selectPlace(place.slug);
+      openAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex: 0 } : null);
+      flyTo(motion, place, place.isHome ? HOME_ZOOM : PLACE_ZOOM);
+    },
+    [clustersByLeadRef, openAlbum, selectPlace, stopTour],
+  );
+
+  const bringPlaceToFront = useCallback((place: GlobePlace) => {
     const motion = motionRef.current;
-    const cluster = clustersByLeadRef.current.get(place.slug);
-    const canvas = canvasRef.current;
-    if (cluster && cluster.members.length > 1 && canvas) {
-      const splitZoom = zoomToSplit(
-        cluster.members.map((member) => member.geo),
-        baseRadiusOf(canvas.clientWidth, canvas.clientHeight),
-      );
-      flyTo(motion, cluster.geo, Math.max(splitZoom, motion.view.zoom));
-      return;
-    }
-    selectPlace(place.slug);
-    openAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex: 0 } : null);
-    flyTo(motion, place, place.isHome ? HOME_ZOOM : PLACE_ZOOM);
-  };
+    if (!project(place, motion.view, 1).isFront) flyTo(motion, place, motion.view.zoom);
+  }, []);
 
   const albumSlug = album?.slug;
   useEffect(() => {
@@ -154,12 +162,8 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
           place={place}
           isSelected={place.slug === selectedSlug}
           onMount={registerPinElement}
-          onActivate={() => activate(place)}
-          onFocus={() => {
-            const motion = motionRef.current;
-            if (!project(place, motion.view, 1).isFront) flyTo(motion, place, motion.view.zoom);
-          }}
-          onPointerDown={(event) => event.stopPropagation()}
+          onActivate={activate}
+          onFocus={bringPlaceToFront}
         />
       ))}
 
