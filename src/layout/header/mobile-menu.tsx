@@ -62,7 +62,7 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
         <nav
           id={panelId}
           aria-label={navigationLabel}
-          className="mobile-menu-panel absolute inset-x-4 top-full mt-2 rounded-xl border border-line-strong bg-glass p-2 shadow-2 backdrop-blur-lg"
+          className="absolute inset-x-4 top-full mt-2 rounded-xl border border-line-strong bg-glass p-2 shadow-2 backdrop-blur-lg motion-safe:animate-menu-drop"
         >
           <ul className="flex flex-col">
             {links.map(({ href, label }) => (

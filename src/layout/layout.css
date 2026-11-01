@@ -1,55 +1,19 @@
-/* Site chrome: the fixed header, its mobile menu and the farewell banner. */
+@theme {
+  --animate-menu-drop: menu-drop var(--dur-fast) ease-out;
+  --animate-banner-in: banner-in 350ms var(--ease-out) both;
 
-/* Header */
-.site-header {
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 100;
-  pointer-events: none;
-  padding: 24px 0;
-  transition:
-    background var(--dur-base) ease,
-    padding var(--dur-base) ease,
-    box-shadow var(--dur-base) ease,
-    backdrop-filter var(--dur-base) ease;
-}
-
-.site-header[data-scrolled="true"] {
-  padding: 12px 0;
-  background: rgba(14, 14, 16, 0.72);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  backdrop-filter: blur(16px) saturate(140%);
-  box-shadow:
-    0 1px 0 rgba(255, 255, 255, 0.06),
-    0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* Phones get a slimmer bar so the header does not eat the first screen. */
-@media (width < 40rem) {
-  .site-header {
-    padding: 12px 0;
+  @keyframes menu-drop {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
   }
 
-  .site-header[data-scrolled="true"] {
-    padding: 8px 0;
-  }
-}
-
-.site-header > * > * {
-  pointer-events: auto;
-}
-
-/* Mobile menu panel drops in below the header. */
-@media (prefers-reduced-motion: no-preference) {
-  .mobile-menu-panel {
-    animation: mobile-menu-drop var(--dur-fast) ease-out;
-  }
-}
-
-@keyframes mobile-menu-drop {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
+  @keyframes banner-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
   }
 }
 
@@ -74,18 +38,4 @@
 .nav-link:focus-visible .nav-link-label::after {
   transform: scaleX(1);
   transform-origin: left;
-}
-
-/* Farewell banner enters with a short fade and rise. */
-@media (prefers-reduced-motion: no-preference) {
-  .farewell-banner {
-    animation: farewell-banner-in 350ms var(--ease-out) both;
-  }
-}
-
-@keyframes farewell-banner-in {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
 }
