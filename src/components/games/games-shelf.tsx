@@ -91,6 +91,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
   const hasDragged = useRef(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const tabsRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
 
   const listCounts = { ...countByList(games), recommended: recommendations.length };
   const platformCounts =
@@ -201,9 +202,18 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
     }, 0);
   }
 
+  /**
+   * A case's button unmounts once the case drifts out of view, which would drop focus to the
+   * page and stop the arrow keys. Focus sits on the stage instead, which never unmounts.
+   */
+  function focusStage() {
+    stageRef.current?.focus({ preventScroll: true });
+  }
+
   function selectCase(index: number) {
     if (!hasDragged.current) {
       goTo(index);
+      focusStage();
     }
   }
 
@@ -288,12 +298,16 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           role="group"
           aria-roledescription="carousel"
           aria-label={labels.stageLabel}
+          ref={stageRef}
           tabIndex={0}
           onKeyDown={(event) => {
             const nextIndex = indexAfterKey(activeIndex, event.key, cases.length);
             if (nextIndex !== undefined) {
               event.preventDefault();
               setRawIndex(nextIndex);
+              if (event.target instanceof HTMLElement && event.target.closest(".game-case")) {
+                focusStage();
+              }
             }
           }}
           onPointerDown={handlePointerDown}
