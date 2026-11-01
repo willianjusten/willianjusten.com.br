@@ -42,6 +42,30 @@ export function runWhileVisible(
   };
 }
 
+const STEP_IN_MILLISECONDS = 1000 / 60;
+/** A frame this fraction of a step short still counts as a step; the shortfall carries over. */
+const STEP_TOLERANCE = 0.1;
+/** Past this, a long stall is dropped instead of replayed in one burst. */
+const MAX_STEPS_PER_FRAME = 4;
+
+/**
+ * Turns frame durations into fixed 60 Hz steps, so motion tuned per frame runs at the same speed
+ * on 120 Hz screens. One step is pending at the start, so the first frame advances.
+ */
+export function createFixedStepper(): (elapsedInMilliseconds: number) => number {
+  let pendingMilliseconds = STEP_IN_MILLISECONDS;
+  return (elapsedInMilliseconds) => {
+    pendingMilliseconds += elapsedInMilliseconds;
+    const steps = Math.floor(pendingMilliseconds / STEP_IN_MILLISECONDS + STEP_TOLERANCE);
+    if (steps > MAX_STEPS_PER_FRAME) {
+      pendingMilliseconds = 0;
+      return MAX_STEPS_PER_FRAME;
+    }
+    pendingMilliseconds -= steps * STEP_IN_MILLISECONDS;
+    return steps;
+  };
+}
+
 /** Read `.matches` per frame, so a mid-session settings change takes effect. */
 export function reducedMotionQuery(): MediaQueryList {
   return window.matchMedia("(prefers-reduced-motion: reduce)");

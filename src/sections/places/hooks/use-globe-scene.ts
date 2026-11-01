@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, type RefObject } from "react";
 import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
+import { fitCanvas } from "@/shared/lib/canvas";
 import { writePinLayout, type GlobePinElements } from "../components/globe-pin";
 import type { PinCluster } from "../lib/globe-math";
 import {
@@ -11,7 +12,7 @@ import {
   easeCenterX,
   type GlobeMotion,
 } from "../lib/globe-motion";
-import { drawGlobe, fitCanvas, readGlobeColors } from "../lib/globe-renderer";
+import { drawGlobe, readGlobeColors } from "../lib/globe-renderer";
 import { decodeLandDots } from "../lib/land-dots";
 import { layoutPins, type PinLayout } from "../lib/pin-layout";
 import type { GlobePlace } from "../lib/places-board";

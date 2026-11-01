@@ -18,8 +18,6 @@ export type GlobeFrame = {
   radius: number;
 };
 
-const MAX_PIXEL_RATIO = 2;
-
 export function readGlobeColors(): GlobeColors {
   const styles = getComputedStyle(document.documentElement);
   return {
@@ -28,17 +26,6 @@ export function readGlobeColors(): GlobeColors {
     bodyHighlight: styles.getPropertyValue("--surface-raised"),
     bodyShade: styles.getPropertyValue("--bg-sunken"),
   };
-}
-
-/** Sizes the backing store to the element at up to 2x density. Returns the size in CSS pixels. */
-export function fitCanvas(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D) {
-  const pixelRatio = Math.min(window.devicePixelRatio || 1, MAX_PIXEL_RATIO);
-  const width = canvas.clientWidth;
-  const height = canvas.clientHeight;
-  canvas.width = Math.round(width * pixelRatio);
-  canvas.height = Math.round(height * pixelRatio);
-  context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-  return { width, height };
 }
 
 /** The halo is skipped once the globe is zoomed well past the stage, where it would never show. */
