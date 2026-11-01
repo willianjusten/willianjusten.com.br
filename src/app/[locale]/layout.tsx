@@ -78,10 +78,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     >
       <body>
         <NextIntlClientProvider>
-          <div className="page">
-            <div className="grain" aria-hidden="true" />
-            {children}
-          </div>
+          <div className="page">{children}</div>
         </NextIntlClientProvider>
         <Analytics />
       </body>
