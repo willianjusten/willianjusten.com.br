@@ -8,8 +8,14 @@ type Counter = { key: string; value: string; label: string };
 const FIRST_COUNTER_DELAY_IN_SECONDS = 0.2;
 const COUNTER_DELAY_STEP_IN_SECONDS = 0.1;
 const DIGIT_DELAY_STEP_IN_SECONDS = 0.035;
+/* The shared flip tile, grown to a 30x42 tile around a 26px digit. Inline so it beats the unlayered .flip-tile rule. */
+const COUNTER_TILE_STYLE: CSSProperties = {
+  width: "1.15em",
+  height: "1.6em",
+  borderRadius: "0.12em",
+  fontSize: "var(--fs-h3)",
+};
 
-/** Flip tiles for the Places header; the digits flip in once the counters scroll into view. */
 export function PlaceCounters({ label, counters }: { label: string; counters: Counter[] }) {
   const { elementRef, isNearViewport: isInView } = useNearViewport<HTMLUListElement>("0px");
   return (
@@ -31,7 +37,9 @@ export function PlaceCounters({ label, counters }: { label: string; counters: Co
                   } as CSSProperties
                 }
               >
-                <span className="flip-tile is-counter">{digit}</span>
+                <span className="flip-tile" style={COUNTER_TILE_STYLE}>
+                  {digit}
+                </span>
               </span>
             ))}
           </span>

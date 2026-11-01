@@ -1,8 +1,0 @@
-/* Places: the header counters reuse the flip tile as a 30x42 tile around a 26px digit. */
-
-.flip-tile.is-counter {
-  width: 1.15em;
-  height: 1.6em;
-  border-radius: 0.12em;
-  font-size: var(--fs-h3);
-}
