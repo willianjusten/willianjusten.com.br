@@ -6,7 +6,7 @@ const placeholderText = z.string().regex(PLACEHOLDER_PATTERN);
 const localizedText = z.object({ en: z.string().min(1), pt: z.string().min(1) });
 const colorHex = z.string().regex(/^#[0-9a-fA-F]{6}$/);
 
-export const GAME_PLATFORMS = ["ps5", "xbox", "switch2", "rog", "pc"] as const;
+export const GAME_PLATFORMS = ["ps5", "xbox", "switch2", "rog"] as const;
 export const GAME_LISTS = ["playing", "played", "wishlist"] as const;
 
 /** Played games are rated out of this many stars. */

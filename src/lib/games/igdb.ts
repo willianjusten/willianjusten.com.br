@@ -11,16 +11,16 @@ const COVER_URL_BASE = "https://images.igdb.com/igdb/image/upload";
 const COVER_SIZES = { thumbnail: "t_cover_big", case: "t_cover_big_2x" } as const;
 export type CoverSize = keyof typeof COVER_SIZES;
 
-/** IGDB platform ids for the consoles on the shelf. The ROG Ally X is a PC, so it maps to `pc`. */
+/** IGDB platform ids for the consoles on the shelf. The ROG Ally X is Will's PC, so PC maps to it. */
 const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
   167: "ps5",
   169: "xbox",
   508: "switch2",
-  6: "pc",
+  6: "rog",
 };
 
 /** Order used to pick the platform shown on a recommended case. */
-const PLATFORM_PRIORITY: GamePlatform[] = ["ps5", "xbox", "switch2", "rog", "pc"];
+const PLATFORM_PRIORITY: GamePlatform[] = ["ps5", "xbox", "switch2", "rog"];
 
 const SEARCH_RESULT_LIMIT = 6;
 const SEARCH_CACHE_TTL_IN_MILLISECONDS = 60 * 60 * 1000;
@@ -52,8 +52,8 @@ export function buildCoverUrl(coverImageId: string, size: CoverSize = "thumbnail
   return `${COVER_URL_BASE}/${COVER_SIZES[size]}/${coverImageId}.jpg`;
 }
 
-/** Games on none of the shelf platforms get a generic PC case. */
-const FALLBACK_PLATFORM: GamePlatform = "pc";
+/** Games on none of the shelf platforms get a ROG Ally X case, the closest thing to a PC. */
+const FALLBACK_PLATFORM: GamePlatform = "rog";
 
 export function pickPrimaryPlatform(platforms: readonly GamePlatform[]): GamePlatform {
   return PLATFORM_PRIORITY.find((platform) => platforms.includes(platform)) ?? FALLBACK_PLATFORM;

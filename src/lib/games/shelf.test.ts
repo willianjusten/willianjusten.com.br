@@ -6,7 +6,7 @@ function buildGame(overrides: Partial<Game>): Game {
   return {
     slug: "a",
     title: "A",
-    platform: "pc",
+    platform: "rog",
     list: "playing",
     year: 2026,
     note: { en: "n", pt: "n" },
@@ -16,9 +16,9 @@ function buildGame(overrides: Partial<Game>): Game {
 }
 
 const games = [
-  buildGame({ slug: "a", list: "playing", platform: "pc" }),
+  buildGame({ slug: "a", list: "playing", platform: "rog" }),
   buildGame({ slug: "b", list: "played", platform: "ps5" }),
-  buildGame({ slug: "c", list: "played", platform: "pc" }),
+  buildGame({ slug: "c", list: "played", platform: "rog" }),
   buildGame({ slug: "d", list: "wishlist", platform: "switch2" }),
 ];
 
@@ -35,8 +35,7 @@ describe("countByPlatform", () => {
       ps5: 1,
       xbox: 0,
       switch2: 0,
-      rog: 0,
-      pc: 1,
+      rog: 1,
     });
   });
 });
@@ -47,7 +46,7 @@ describe("filterShelf", () => {
   });
 
   it("narrows by platform", () => {
-    expect(filterShelf(games, "played", "pc").map((game) => game.slug)).toEqual(["c"]);
-    expect(filterShelf(games, "wishlist", "pc")).toEqual([]);
+    expect(filterShelf(games, "played", "rog").map((game) => game.slug)).toEqual(["c"]);
+    expect(filterShelf(games, "wishlist", "rog")).toEqual([]);
   });
 });

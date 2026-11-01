@@ -99,10 +99,6 @@
   background: linear-gradient(90deg, var(--rog), var(--rog-deep));
   color: var(--rog-ink);
 }
-.band-pc {
-  background: var(--pc);
-  color: var(--color-white);
-}
 .band-empty {
   background: var(--line-strong);
   color: var(--text-faint);
@@ -120,15 +116,12 @@
 .dot-rog {
   background: var(--rog-ink);
 }
-.dot-pc {
-  background: var(--pc-dot);
-}
 .dot-all {
   background: conic-gradient(
     var(--ps5-dot) 0 25%,
     var(--xbox-dot) 0 50%,
     var(--switch-dot) 0 75%,
-    var(--pc-dot) 0
+    var(--rog-ink) 0
   );
 }
 

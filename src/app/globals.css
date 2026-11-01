@@ -43,8 +43,6 @@
   --rog: #141418;
   --rog-ink: #ff4d6d;
   --rog-deep: #3a0a18;
-  --pc: #3a3a44;
-  --pc-dot: #9a9aa6;
 
   /* type */
   --fs-display: clamp(64px, 11vw, 168px);
@@ -154,8 +152,6 @@
   --color-switch-dot: var(--switch-dot);
   --color-rog: var(--rog);
   --color-rog-ink: var(--rog-ink);
-  --color-pc: var(--pc);
-  --color-pc-dot: var(--pc-dot);
   --color-white: #ffffff;
   --color-black: #000000;
   --color-transparent: transparent;

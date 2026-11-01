@@ -12,5 +12,4 @@ export const PLATFORM_STYLES: Record<GamePlatform, PlatformStyle> = {
   xbox: { name: "Xbox Series X", bandText: "XBOX SERIES X" },
   switch2: { name: "Switch 2", bandText: "SWITCH 2" },
   rog: { name: "ROG Ally X", bandText: "ROG ALLY X" },
-  pc: { name: "PC", bandText: "PC" },
 };

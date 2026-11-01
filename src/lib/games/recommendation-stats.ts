@@ -11,8 +11,14 @@ import type { RecommendationView } from "./recommendations";
 type RecommendationRow = typeof gameRecommendations.$inferSelect;
 type VoteRow = typeof gameRecommendationVotes.$inferSelect;
 
-function isGamePlatform(value: string): value is GamePlatform {
-  return (GAME_PLATFORMS as readonly string[]).includes(value);
+/** Rows saved before PC was folded into the ROG Ally X still say `pc`. */
+const LEGACY_PLATFORMS: Record<string, GamePlatform> = { pc: "rog" };
+
+function toShelfPlatform(storedPlatform: string): GamePlatform | null {
+  if ((GAME_PLATFORMS as readonly string[]).includes(storedPlatform)) {
+    return storedPlatform as GamePlatform;
+  }
+  return LEGACY_PLATFORMS[storedPlatform] ?? null;
 }
 
 /** Pure: turns rows into what the browser may see. Hidden rows must be filtered out before. */
@@ -23,7 +29,8 @@ export function buildRecommendationViews(
 ): RecommendationView[] {
   const votesByRecommendation = Map.groupBy(votes, (vote) => vote.recommendationId);
   const views = recommendations.flatMap((recommendation): RecommendationView[] => {
-    if (recommendation.status === "hidden" || !isGamePlatform(recommendation.platform)) {
+    const platform = toShelfPlatform(recommendation.platform);
+    if (recommendation.status === "hidden" || platform === null) {
       return [];
     }
     const newestFirst = [...(votesByRecommendation.get(recommendation.id) ?? [])].sort(
@@ -37,7 +44,7 @@ export function buildRecommendationViews(
         id: recommendation.id,
         title: recommendation.title,
         year: recommendation.year,
-        platform: recommendation.platform,
+        platform,
         coverUrl: recommendation.coverImageId
           ? buildCoverUrl(recommendation.coverImageId, "case")
           : null,

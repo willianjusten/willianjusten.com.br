@@ -44,7 +44,7 @@ describe("translateIgdbGame", () => {
       igdbId: 185246,
       title: "Alan Wake II",
       year: 2023,
-      platforms: ["ps5", "xbox", "pc"],
+      platforms: ["ps5", "xbox", "rog"],
       coverImageId: "co6jar",
     });
   });
@@ -58,8 +58,8 @@ describe("translateIgdbGame", () => {
   });
 
   it("falls back to a generic platform for the case when no shelf platform matches", () => {
-    expect(pickPrimaryPlatform([])).toBe("pc");
-    expect(pickPrimaryPlatform(["xbox", "pc"])).toBe("xbox");
+    expect(pickPrimaryPlatform([])).toBe("rog");
+    expect(pickPrimaryPlatform(["xbox", "rog"])).toBe("xbox");
   });
 
   it("allows a missing year and cover", () => {
