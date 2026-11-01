@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent, type RefObject } from "react";
+import { useRef, useState, type FormEvent, type RefObject } from "react";
 import { flushSync } from "react-dom";
 import { fillTemplate } from "@/shared/lib/fill-template";
 import type { RecommendationSubmission, SubmitOutcome } from "../hooks/use-game-recommendations";
@@ -48,15 +48,20 @@ export function RecommendForm({
   const [website, setWebsite] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [feedback, setFeedback] = useState<Feedback>(null);
+  const submitButtonRef = useRef<HTMLButtonElement>(null);
 
   function changeQuery(nextQuery: string) {
     setQuery(nextQuery);
     setFeedback(null);
   }
 
+  // The search box hides once a game is picked, so focus moves on to the next action.
   function pick(result: IgdbSearchResult) {
-    setPicked(result);
-    setFeedback(null);
+    flushSync(() => {
+      setPicked(result);
+      setFeedback(null);
+    });
+    submitButtonRef.current?.focus();
   }
 
   function clearPick() {
@@ -76,9 +81,12 @@ export function RecommendForm({
     if (outcome.kind === "saved") {
       const doneText =
         outcome.recommendation?.status === "approved" ? labels.doneApproved : labels.donePending;
-      setFeedback({ tone: "success", text: fillTemplate(doneText, { title: picked.title }) });
-      setPicked(null);
-      setQuery("");
+      flushSync(() => {
+        setFeedback({ tone: "success", text: fillTemplate(doneText, { title: picked.title }) });
+        setPicked(null);
+        setQuery("");
+      });
+      searchInputRef.current?.focus();
     } else {
       setFeedback({
         tone: "error",
@@ -135,6 +143,7 @@ export function RecommendForm({
             </label>
 
             <button
+              ref={submitButtonRef}
               type="submit"
               disabled={isSending}
               className="min-h-12 pill-primary px-6 text-ui transition-opacity hover:opacity-90 disabled:opacity-60"
