@@ -16,11 +16,11 @@ export const KEPT_REDIRECTS = [
   },
   {
     source: "/novo-curso-aprenda-criar-sites-animados-greensock/",
-    destination: "https://willianjusten.com.br",
+    destination: "/",
   },
   {
     source: "/novo-curso-gatsby-crie-um-site-pwa-com-react-graphql-netlify-cms/",
-    destination: "https://willianjusten.com.br",
+    destination: "/",
   },
 ].map((rule) => ({ ...rule, statusCode: 301 as const }));
 
