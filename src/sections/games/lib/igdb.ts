@@ -9,7 +9,7 @@ const COVER_URL_BASE = "https://images.igdb.com/igdb/image/upload";
  * retina version, since a 200px game case needs about 400 device pixels on a 2x screen.
  */
 const COVER_SIZES = { thumbnail: "t_cover_big", case: "t_cover_big_2x" } as const;
-export type CoverSize = keyof typeof COVER_SIZES;
+type CoverSize = keyof typeof COVER_SIZES;
 
 /** IGDB platform ids for the consoles on the shelf. The ROG Ally X is Will's PC, so PC maps to it. */
 const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
@@ -72,7 +72,7 @@ export function translateIgdbGame(raw: RawIgdbGame): IgdbGame {
   };
 }
 
-export type IgdbClientOptions = {
+type IgdbClientOptions = {
   clientId: string;
   clientSecret: string;
   fetchImplementation?: typeof fetch;
@@ -81,7 +81,7 @@ export type IgdbClientOptions = {
 
 type CachedToken = { accessToken: string; expiresAt: number };
 
-export class IgdbRequestError extends Error {}
+class IgdbRequestError extends Error {}
 
 /**
  * Talks to IGDB with a Twitch app token that is cached until it expires and renewed once on a 401.

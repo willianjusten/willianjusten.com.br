@@ -57,7 +57,7 @@ export function drawAimGuide(
   ctx.stroke();
 }
 
-export type BallPose = { x: number; y: number; rotation: number };
+type BallPose = { x: number; y: number; rotation: number };
 
 export function drawBall(
   ctx: CanvasRenderingContext2D,

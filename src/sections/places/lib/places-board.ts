@@ -17,7 +17,7 @@ const EXIF_ORDER: (keyof PhotoExif)[] = [
 ];
 
 /** The photo title and its camera settings; the settings start with "· " only when a title precedes them. */
-export type PhotoLine = { title?: string; details?: string };
+type PhotoLine = { title?: string; details?: string };
 
 export type AlbumPhoto = {
   src: string;

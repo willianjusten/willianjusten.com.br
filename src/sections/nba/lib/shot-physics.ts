@@ -1,17 +1,17 @@
 /** Gravity added to vertical speed per frame, applied in two half-steps. */
 export const GRAVITY_PER_FRAME = 0.35;
-export const SUBSTEPS_PER_FRAME = 2;
+const SUBSTEPS_PER_FRAME = 2;
 export const MAX_SHOT_SPEED = 24;
-export const MIN_SHOT_ANGLE_IN_DEGREES = 30;
-export const MAX_SHOT_ANGLE_IN_DEGREES = 80;
+const MIN_SHOT_ANGLE_IN_DEGREES = 30;
+const MAX_SHOT_ANGLE_IN_DEGREES = 80;
 export const DEFAULT_SHOT_ANGLE_IN_DEGREES = 56;
 /** Drag distance (px) to launch speed. */
-export const DRAG_TO_SPEED_RATIO = 0.16;
-export const MIN_SHOT_SPEED = 2;
-export const KEYBOARD_MIN_SPEED = 6;
-export const KEYBOARD_MAX_SPEED = 24;
+const DRAG_TO_SPEED_RATIO = 0.16;
+const MIN_SHOT_SPEED = 2;
+const KEYBOARD_MIN_SPEED = 6;
+const KEYBOARD_MAX_SPEED = 24;
 /** Seconds for the keyboard power meter to go from empty to full. */
-export const KEYBOARD_SWEEP_SECONDS = 1.1;
+const KEYBOARD_SWEEP_SECONDS = 1.1;
 
 const FLOOR_BOUNCE = 0.55;
 const FLOOR_FRICTION = 0.82;

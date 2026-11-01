@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const previewEntrySchema = z.object({
+const previewEntrySchema = z.object({
   /** Which provider answered: iTunes first, Deezer as fallback. */
   source: z.enum(["itunes", "deezer"]),
   /** 30 second preview, streamed from the provider and never stored. */

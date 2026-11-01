@@ -3,7 +3,7 @@ import type { GlobeView } from "./globe-math";
 import type { LandDots } from "./land-dots";
 
 /** Read from the CSS tokens once per mount, since a canvas cannot use CSS variables. */
-export type GlobeColors = {
+type GlobeColors = {
   accent: string;
   dot: string;
   bodyHighlight: string;

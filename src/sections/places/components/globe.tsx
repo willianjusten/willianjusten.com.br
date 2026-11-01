@@ -24,7 +24,7 @@ import { GlobeControls, type GlobeControlsLabels } from "./globe-controls";
 import { GLOBE_FRAME_CLASS } from "./globe-frame";
 import { GlobePin } from "./globe-pin";
 
-export type GlobeLabels = GlobeControlsLabels & {
+type GlobeLabels = GlobeControlsLabels & {
   description: string;
   clusterOf: string;
   album: AlbumLabels;

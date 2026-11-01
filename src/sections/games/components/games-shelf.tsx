@@ -23,7 +23,7 @@ import { ShelfStage, type ShelfStageLabels } from "./shelf-stage";
 /** Lets the "like this" link scroll to the form before the search box takes focus. */
 const FOCUS_DELAY_IN_MILLISECONDS = 50;
 
-export type GamesShelfLabels = ShelfFiltersLabels &
+type GamesShelfLabels = ShelfFiltersLabels &
   ShelfStageLabels &
   ShelfDetailsLabels &
   ShelfCaseLabels & {

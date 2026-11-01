@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useState } from "react";
 
-export type Album = { slug: string; photoIndex: number };
+type Album = { slug: string; photoIndex: number };
 
 /**
  * The selected place and its open album. Each is mirrored in a ref so the frame loop can read the

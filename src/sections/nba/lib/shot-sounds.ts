@@ -1,6 +1,6 @@
 import { ON_FIRE_STREAK } from "./personal-stats";
 
-export const MISS_STREAK_FOR_TERRIBLE_SHOT = 3;
+const MISS_STREAK_FOR_TERRIBLE_SHOT = 3;
 
 export const SHOT_SOUND_FILES = {
   boomshakalaka: "/sounds/boomshakalaka.mp3",

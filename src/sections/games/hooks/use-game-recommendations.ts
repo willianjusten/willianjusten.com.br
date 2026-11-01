@@ -25,7 +25,7 @@ export type SubmitOutcome =
   | { kind: "rate_limited" }
   | { kind: "failed" };
 
-export type VoteError = "rate_limited" | "failed";
+type VoteError = "rate_limited" | "failed";
 
 function isRateLimited(error: unknown): boolean {
   return error instanceof HttpError && error.status === RATE_LIMITED_STATUS;

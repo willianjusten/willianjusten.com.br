@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export const NEAR_VIEWPORT_ROOT_MARGIN = "400px 0px";
+const NEAR_VIEWPORT_ROOT_MARGIN = "400px 0px";
 
 /**
  * Turns true once the element nears the viewport, and stays true. Lets a section hold back its

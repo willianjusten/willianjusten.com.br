@@ -4,7 +4,7 @@ import { drawCourt } from "./court";
 import { drawNet, drawRim } from "./hoop";
 import { drawKeyboardAimHint, drawMessage, type SceneFonts, type SceneMessage } from "./overlay";
 
-export type SceneState = {
+type SceneState = {
   ball: Ball | null;
   aimVelocity: Velocity | null;
   keyboardAngleInDegrees: number | null;

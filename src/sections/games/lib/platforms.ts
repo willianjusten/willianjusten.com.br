@@ -1,7 +1,7 @@
 import type { GamePlatform } from "@/content/games";
 import type { PlatformFilter } from "./shelf";
 
-export type PlatformStyle = {
+type PlatformStyle = {
   name: string;
   bandText: string;
   bandClass: string;

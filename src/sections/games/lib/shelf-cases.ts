@@ -17,7 +17,7 @@ export type CaseEntry = {
   sticker?: string;
 };
 
-export type ReactionTarget =
+type ReactionTarget =
   | { kind: "game"; gameSlug: string }
   | { kind: "recommendation"; recommendationId: number };
 

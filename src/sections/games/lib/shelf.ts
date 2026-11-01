@@ -3,7 +3,7 @@ import type { GameList, GamePlatform } from "@/content/games";
 
 export type PlatformFilter = GamePlatform | "all";
 
-export type ShelfItem = { list: GameList; platform: GamePlatform };
+type ShelfItem = { list: GameList; platform: GamePlatform };
 
 export function countByList(games: readonly ShelfItem[]): Record<GameList, number> {
   const counts = Object.fromEntries(GAME_LISTS.map((list) => [list, 0])) as Record<

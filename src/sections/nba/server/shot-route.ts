@@ -17,7 +17,7 @@ export const SHOT_RATE_LIMIT: RateLimitRule = {
 
 const shotBodySchema = z.object({ made: z.boolean() });
 
-export type ShotRouteDependencies = RateLimitGuardDependencies & {
+type ShotRouteDependencies = RateLimitGuardDependencies & {
   recordShot: (made: boolean) => Promise<ShotTotals>;
   readTotals: () => Promise<ShotTotals>;
 };

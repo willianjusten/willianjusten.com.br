@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const gameCoverEntrySchema = z.object({
+const gameCoverEntrySchema = z.object({
   igdbId: z.number().int().positive(),
   /** The IGDB name that matched, kept so a wrong match is easy to spot in review. */
   igdbTitle: z.string().min(1),

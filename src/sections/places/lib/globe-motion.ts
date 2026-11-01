@@ -10,7 +10,7 @@ import {
 } from "./globe-math";
 
 export const INITIAL_VIEW: GlobeView = { lat: 18, lon: -25, zoom: 1 };
-export const VIEW_RADIUS_RATIO = 0.42;
+const VIEW_RADIUS_RATIO = 0.42;
 export const CENTER_Y_RATIO = 0.52;
 const INERTIA_DECAY = 0.94;
 const IDLE_SPIN_DEGREES_PER_FRAME = 0.06;

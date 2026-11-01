@@ -23,7 +23,7 @@ const reactionBodySchema = z.object({
   reacted: z.boolean(),
 });
 
-export type ReactionRouteDependencies = RateLimitGuardDependencies & {
+type ReactionRouteDependencies = RateLimitGuardDependencies & {
   isKnownGame: (gameSlug: string) => boolean;
   setReaction: (
     gameSlug: string,

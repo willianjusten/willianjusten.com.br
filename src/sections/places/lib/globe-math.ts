@@ -5,7 +5,7 @@ export type GeoPoint = { lat: number; lon: number };
 /** Where the camera looks (the point at the centre of the disc) and how far it is zoomed in. */
 export type GlobeView = GeoPoint & { zoom: number };
 
-export type ProjectedPoint = {
+type ProjectedPoint = {
   x: number;
   y: number;
   /** Cosine of the angle from the view centre: 1 facing the viewer, 0 on the rim, negative behind. */
@@ -13,7 +13,7 @@ export type ProjectedPoint = {
   isFront: boolean;
 };
 
-export const MIN_ZOOM = 1;
+const MIN_ZOOM = 1;
 export const MAX_ZOOM = 16;
 export const MIN_LATITUDE = -70;
 export const MAX_LATITUDE = 80;
@@ -81,7 +81,7 @@ export function rotateByDrag(
   };
 }
 
-export type ClusterablePin = { id: string; geo: GeoPoint; x: number; y: number };
+type ClusterablePin = { id: string; geo: GeoPoint; x: number; y: number };
 
 export type PinCluster = {
   members: ClusterablePin[];

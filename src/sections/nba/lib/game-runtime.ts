@@ -15,7 +15,7 @@ import {
 
 const NET_DECAY_PER_FRAME = 0.95;
 
-export type GameRuntime = {
+type GameRuntime = {
   ball: Ball | null;
   aim: AimState;
   netEnergy: number;
@@ -31,7 +31,7 @@ export type RuntimeEvents = {
   onShotOver: (made: boolean) => void;
 };
 
-export type ScoreLabels = { swish: string; bucket: string; onFire: string };
+type ScoreLabels = { swish: string; bucket: string; onFire: string };
 
 export function createGameRuntime(): GameRuntime {
   return {

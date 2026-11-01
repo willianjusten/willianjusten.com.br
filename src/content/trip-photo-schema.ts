@@ -3,7 +3,7 @@ import { z } from "zod";
 const optionalText = z.string().min(1).optional();
 
 /** Camera settings read from the photo's EXIF, or typed by hand as Cloudinary context. Old photos have none. */
-export const photoExifSchema = z.object({
+const photoExifSchema = z.object({
   camera: optionalText,
   lens: optionalText,
   focalLength: optionalText,
@@ -13,7 +13,7 @@ export const photoExifSchema = z.object({
   year: optionalText,
 });
 
-export const tripPhotoSchema = z.object({
+const tripPhotoSchema = z.object({
   publicId: z.string().min(1),
   width: z.number().int().positive(),
   height: z.number().int().positive(),

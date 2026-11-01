@@ -3,7 +3,7 @@ import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/site";
 
 // The old photo albums and trips map now live in the Places section of the home page.
-export const RETIRED_HOSTS = ["photos.willianjusten.com.br", "my-trips.willianjusten.com.br"];
+const RETIRED_HOSTS = ["photos.willianjusten.com.br", "my-trips.willianjusten.com.br"];
 
 export function isRetiredHost(host: string): boolean {
   const hostname = host.split(":")[0].toLowerCase();

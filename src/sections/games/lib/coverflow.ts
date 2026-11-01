@@ -1,7 +1,7 @@
 /** Pixels of drag that must be exceeded before the shelf moves at all. */
-export const DRAG_THRESHOLD_IN_PIXELS = 40;
+const DRAG_THRESHOLD_IN_PIXELS = 40;
 /** Roughly this much drag moves the shelf by one case. */
-export const PIXELS_PER_CASE = 110;
+const PIXELS_PER_CASE = 110;
 /** Cases further than this from the active one fade out. */
 const MAX_VISIBLE_DISTANCE = 4;
 

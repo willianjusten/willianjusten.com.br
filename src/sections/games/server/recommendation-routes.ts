@@ -38,7 +38,7 @@ const voteSchema = z.object({
   voted: z.boolean(),
 });
 
-export type SearchRouteDependencies = {
+type SearchRouteDependencies = {
   searchGames: (text: string) => Promise<IgdbSearchResult[]>;
 };
 
@@ -60,7 +60,7 @@ export function createSearchRoute(dependencies: SearchRouteDependencies) {
   };
 }
 
-export type RecommendationRouteDependencies = RateLimitGuardDependencies & {
+type RecommendationRouteDependencies = RateLimitGuardDependencies & {
   /** Fetches the game from IGDB by id so the browser never supplies title or cover. */
   getGame: (igdbId: number) => Promise<IgdbGame | undefined>;
   submitRecommendation: (submission: {
@@ -104,7 +104,7 @@ export function createRecommendationRoute(dependencies: RecommendationRouteDepen
   };
 }
 
-export type VoteRouteDependencies = RateLimitGuardDependencies & {
+type VoteRouteDependencies = RateLimitGuardDependencies & {
   setRecommendationVote: (
     recommendationId: number,
     browserId: string,

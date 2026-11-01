@@ -115,7 +115,7 @@ async function readRecommendation(
   return buildRecommendationViews([row], votes, browserId)[0];
 }
 
-export type NewRecommendation = {
+type NewRecommendation = {
   game: IgdbGame;
   browserId: string;
 };

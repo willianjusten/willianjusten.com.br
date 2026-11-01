@@ -4,7 +4,7 @@ import { placesData, placesSchema } from "./places";
 import { musicData, musicSchema } from "./music";
 import { profileData, profileSchema } from "./profile";
 
-export type ContentModule<Schema extends z.ZodType = z.ZodType> = {
+type ContentModule<Schema extends z.ZodType = z.ZodType> = {
   name: string;
   schema: Schema;
   data: z.input<Schema>;

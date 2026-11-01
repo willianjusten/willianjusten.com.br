@@ -3,7 +3,7 @@ import type { ComponentType, ReactNode } from "react";
 const ICON_SIZE_IN_PIXELS = 20;
 const ICON_STROKE_WIDTH = 1.8;
 
-export type SectionIcon = ComponentType<{ size?: number; strokeWidth?: number }>;
+type SectionIcon = ComponentType<{ size?: number; strokeWidth?: number }>;
 
 type SectionShellProps = {
   id: string;

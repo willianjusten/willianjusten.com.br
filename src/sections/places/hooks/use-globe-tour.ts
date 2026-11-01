@@ -9,7 +9,7 @@ const TOUR_PHOTOS_PER_STOP = 2;
 export type TourStep = { place: GlobePlace; photoIndex: number };
 
 /** The tour visits the trips in content order, showing up to two photos at each stop. */
-export function planTour(places: readonly GlobePlace[]): TourStep[] {
+function planTour(places: readonly GlobePlace[]): TourStep[] {
   return places.flatMap((place) =>
     place.photos
       .slice(0, TOUR_PHOTOS_PER_STOP)
