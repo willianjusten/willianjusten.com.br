@@ -1,4 +1,4 @@
-import { Gamepad2, MapPin, Music } from "lucide-react";
+import { ArrowUpRight, Gamepad2, MapPin, Music } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
 import { gameCovers } from "@/content/game-covers";
@@ -8,10 +8,13 @@ import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
+import { buildGlobePlaces, countPlaces } from "@/content/places-board";
+import { tripPhotos } from "@/content/trip-photos";
 import { profile } from "@/content/profile";
 import { GamesShelf } from "./games/games-shelf";
 import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
+import { PlaceCounters } from "./place-counters";
 import { SectionShell } from "./section-shell";
 
 const ICON_SIZE_IN_PIXELS = 20;
@@ -28,9 +31,18 @@ function IntroLink({ href, children }: { href: string; children: ReactNode }) {
 }
 
 /** The Places, Games and Music sections of the home page, each wrapped in a `SectionShell`. */
+const PROFILE_CHIP_CLASS =
+  "chip-link flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-5 text-small text-text no-underline";
+
 export async function PlacesSection() {
   const t = await getTranslations("Sections.places");
   const locale = await getLocale();
+  const globePlaces = buildGlobePlaces(places, tripPhotos, locale === "pt" ? "pt" : "en");
+  const counters = countPlaces(globePlaces);
+  const profileChips = [
+    { key: "unsplash", label: "Unsplash", href: profile.links.unsplash.href },
+    { key: "pexels", label: "Pexels", href: profile.links.pexels.href },
+  ];
   return (
     <SectionShell
       id="places"
@@ -41,18 +53,41 @@ export async function PlacesSection() {
         unsplash: (label) => <IntroLink href={profile.links.unsplash.href}>{label}</IntroLink>,
         pexels: (label) => <IntroLink href={profile.links.pexels.href}>{label}</IntroLink>,
       })}
+      headerAside={
+        <div className="flex flex-col items-start gap-5">
+          <PlaceCounters
+            label={t("counters.label")}
+            counters={[
+              { key: "countries", value: counters.countries, label: t("counters.countries") },
+              { key: "cities", value: counters.cities, label: t("counters.cities") },
+              { key: "photos", value: counters.photos, label: t("counters.photos") },
+            ]}
+          />
+          <div className="flex flex-wrap gap-2">
+            {profileChips.map((chip) => (
+              <a
+                key={chip.key}
+                href={chip.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={PROFILE_CHIP_CLASS}
+              >
+                {chip.label}
+                <ArrowUpRight
+                  size={14}
+                  strokeWidth={1.8}
+                  aria-hidden="true"
+                  className="nudge-arrow"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      }
     >
       <div className="mt-10">
         <LazyGlobe
-          places={places.map(({ slug, name, country, lat, lon, isHome, color }) => ({
-            slug,
-            name,
-            country,
-            lat,
-            lon,
-            isHome,
-            color,
-          }))}
+          places={globePlaces}
           labels={{
             description: t("globe.description"),
             zoomIn: t("globe.zoomIn"),
@@ -60,6 +95,18 @@ export async function PlacesSection() {
             reset: t("globe.reset"),
             hint: t("globe.hint"),
             clusterOf: t("globe.clusterOf"),
+            album: {
+              label: t.raw("album.label"),
+              home: t("album.home"),
+              previous: t("album.previous"),
+              next: t("album.next"),
+              close: t("album.close"),
+              counter: t.raw("album.counter"),
+              thumbnails: t("album.thumbnails"),
+              showPhoto: t.raw("album.showPhoto"),
+              moreFrom: t.raw("album.moreFrom"),
+            },
+            tour: { play: t("tour.play"), stop: t("tour.stop") },
           }}
         />
         {/* The globe draws on a canvas, so crawlers without JavaScript get the places as text. */}

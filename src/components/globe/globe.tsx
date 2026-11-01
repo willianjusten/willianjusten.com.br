@@ -3,8 +3,10 @@
 /* The frame is a keyboard-operable widget (arrow keys rotate it) and the canvas is a described image, as the ticket specifies. */
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
-import { Globe as GlobeIcon, Minus, Plus } from "lucide-react";
+import { Globe as GlobeIcon, Minus, Play, Plus, Square } from "lucide-react";
+import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
+import type { GlobePlace } from "@/content/places-board";
 import {
   CLUSTER_THRESHOLD_IN_PIXELS,
   clampZoom,
@@ -23,17 +25,7 @@ import {
 } from "@/lib/globe/globe-math";
 import { decodeLandDots } from "@/lib/globe/land-dots";
 import { withAlpha } from "@/lib/palette";
-
-export type GlobePlace = {
-  slug: string;
-  name: string;
-  country: string;
-  lat: number;
-  lon: number;
-  isHome: boolean;
-  /** Stand-in pin card colour while the place has no album photo. */
-  color: string;
-};
+import { AlbumPanel, type AlbumLabels } from "./album-panel";
 
 export type GlobeLabels = {
   description: string;
@@ -42,6 +34,8 @@ export type GlobeLabels = {
   reset: string;
   hint: string;
   clusterOf: string;
+  album: AlbumLabels;
+  tour: { play: string; stop: string };
 };
 
 const INITIAL_VIEW: GlobeView = { lat: 18, lon: -25, zoom: 1 };
@@ -59,6 +53,24 @@ const LABEL_ZOOM = 2.5;
 /** Pins fade in between these depths so they dissolve at the rim instead of popping. */
 const PIN_MIN_DEPTH = 0.08;
 const PIN_FADE_RANGE = 4;
+/** While an album is open on a wide stage, the globe slides left so the place stays clear of the panel. */
+const ALBUM_CENTER_X_RATIO = 0.34;
+const ALBUM_SHIFT_MIN_WIDTH = 760;
+const CENTER_EASING = 0.08;
+const TOUR_STEP_IN_MS = 2800;
+const TOUR_PHOTOS_PER_STOP = 2;
+
+type Album = { slug: string; photoIndex: number };
+type TourStep = { place: GlobePlace; photoIndex: number };
+
+/** The tour visits the trips in content order, showing up to two photos at each stop. */
+function planTour(places: readonly GlobePlace[]): TourStep[] {
+  return places.flatMap((place) =>
+    place.photos
+      .slice(0, TOUR_PHOTOS_PER_STOP)
+      .map((_photo, photoIndex) => ({ place, photoIndex })),
+  );
+}
 
 type GlobeState = {
   view: GlobeView;
@@ -67,6 +79,8 @@ type GlobeState = {
   zoomGoal: number;
   drag: { lastX: number; lastY: number } | null;
   clustersByLead: Map<string, PinCluster>;
+  /** Eased towards the stage centre, or towards the left while an album is open. */
+  centerX: number | null;
 };
 
 export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeLabels }) {
@@ -82,14 +96,34 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     zoomGoal: INITIAL_VIEW.zoom,
     drag: null,
     clustersByLead: new Map(),
+    centerX: null,
   });
+  const panelRef = useRef<HTMLElement>(null);
+  const tourTimerRef = useRef<number | null>(null);
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const selectedSlugRef = useRef<string | null>(null);
+  const [album, setAlbum] = useState<Album | null>(null);
+  const isAlbumOpenRef = useRef(false);
+  const [isTouring, setIsTouring] = useState(false);
+  const albumPlace = album ? places.find((place) => place.slug === album.slug) : undefined;
 
   const select = useCallback((slug: string | null) => {
     selectedSlugRef.current = slug;
     setSelectedSlug(slug);
   }, []);
+
+  const showAlbum = useCallback((nextAlbum: Album | null) => {
+    isAlbumOpenRef.current = nextAlbum !== null;
+    setAlbum(nextAlbum);
+  }, []);
+
+  const stopTour = useCallback(() => {
+    if (tourTimerRef.current !== null) window.clearInterval(tourTimerRef.current);
+    tourTimerRef.current = null;
+    setIsTouring(false);
+  }, []);
+
+  useEffect(() => stopTour, [stopTour]);
 
   const flyTo = useCallback((point: GeoPoint, zoom: number) => {
     const globe = globeRef.current;
@@ -102,19 +136,66 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     };
   }, []);
 
-  const zoomBy = useCallback((factor: number) => {
-    const globe = globeRef.current;
-    globe.zoomGoal = clampZoom(globe.zoomGoal * factor);
-    if (globe.flightTarget) globe.flightTarget = { ...globe.flightTarget, zoom: globe.zoomGoal };
-  }, []);
+  const zoomBy = useCallback(
+    (factor: number) => {
+      stopTour();
+      const globe = globeRef.current;
+      globe.zoomGoal = clampZoom(globe.zoomGoal * factor);
+      if (globe.flightTarget) globe.flightTarget = { ...globe.flightTarget, zoom: globe.zoomGoal };
+    },
+    [stopTour],
+  );
 
   const resetView = useCallback(() => {
+    stopTour();
     select(null);
+    showAlbum(null);
     flyTo(INITIAL_VIEW, INITIAL_VIEW.zoom);
-  }, [flyTo, select]);
+  }, [flyTo, select, showAlbum, stopTour]);
+
+  const closeAlbum = useCallback(() => {
+    if (!album) return;
+    stopTour();
+    select(null);
+    showAlbum(null);
+    const globe = globeRef.current;
+    globe.flightTarget = null;
+    globe.zoomGoal = INITIAL_VIEW.zoom;
+    pinRefs.current.get(album.slug)?.focus();
+  }, [album, select, showAlbum, stopTour]);
+
+  const showPhoto = useCallback(
+    (photoIndex: number) => {
+      stopTour();
+      setAlbum((current) => (current ? { ...current, photoIndex } : current));
+    },
+    [stopTour],
+  );
+
+  const startTour = useCallback(() => {
+    const steps = planTour(places);
+    if (steps.length === 0) return;
+    let stepIndex = 0;
+    const playStep = () => {
+      const step = steps[stepIndex];
+      if (!step) {
+        stopTour();
+        return;
+      }
+      stepIndex++;
+      select(step.place.slug);
+      showAlbum({ slug: step.place.slug, photoIndex: step.photoIndex });
+      flyTo(step.place, PLACE_ZOOM);
+    };
+    stopTour();
+    setIsTouring(true);
+    playStep();
+    tourTimerRef.current = window.setInterval(playStep, TOUR_STEP_IN_MS);
+  }, [flyTo, places, select, showAlbum, stopTour]);
 
   const activate = useCallback(
     (place: GlobePlace) => {
+      stopTour();
       const cluster = globeRef.current.clustersByLead.get(place.slug);
       const canvas = canvasRef.current;
       if (cluster && cluster.members.length > 1 && canvas) {
@@ -130,10 +211,16 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         return;
       }
       select(place.slug);
+      showAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex: 0 } : null);
       flyTo(place, place.isHome ? HOME_ZOOM : PLACE_ZOOM);
     },
-    [flyTo, select],
+    [flyTo, select, showAlbum, stopTour],
   );
+
+  const albumSlug = album?.slug;
+  useEffect(() => {
+    if (albumSlug && tourTimerRef.current === null) panelRef.current?.focus();
+  }, [albumSlug]);
 
   useEffect(() => {
     const frame = frameRef.current;
@@ -343,9 +430,18 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
     const paint = () => {
       advance();
-      const { view } = globeRef.current;
+      const globe = globeRef.current;
+      const { view } = globe;
       const radius = Math.min(width, height) * VIEW_RADIUS_RATIO * view.zoom;
-      const centerX = width / 2;
+      const targetCenterX =
+        isAlbumOpenRef.current && width >= ALBUM_SHIFT_MIN_WIDTH
+          ? width * ALBUM_CENTER_X_RATIO
+          : width / 2;
+      globe.centerX =
+        globe.centerX === null
+          ? targetCenterX
+          : globe.centerX + (targetCenterX - globe.centerX) * CENTER_EASING;
+      const { centerX } = globe;
       const centerY = height * CENTER_Y_RATIO;
       drawGlobe(view, centerX, centerY, radius);
       placePins(view, centerX, centerY, radius);
@@ -379,6 +475,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   }, [places, labels.clusterOf]);
 
   const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
+    stopTour();
     const globe = globeRef.current;
     globe.flightTarget = null;
     globe.drag = { lastX: event.clientX, lastY: event.clientY };
@@ -413,6 +510,11 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   };
 
   const onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === "Escape" && album) {
+      event.preventDefault();
+      closeAlbum();
+      return;
+    }
     if (event.target !== event.currentTarget) return;
     const globe = globeRef.current;
     const impulse = KEY_ROTATE_IMPULSE / globe.view.zoom;
@@ -425,6 +527,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     const keyImpulse = impulses[event.key];
     if (!keyImpulse) return;
     event.preventDefault();
+    stopTour();
     globe.flightTarget = null;
     globe.velocity = {
       lon: globe.velocity.lon + keyImpulse[0],
@@ -458,6 +561,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
       {places.map((place) => {
         const isSelected = place.slug === selectedSlug;
+        const [cover] = place.photos;
         return (
           <button
             key={place.slug}
@@ -487,10 +591,22 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
               <span
                 aria-hidden="true"
                 style={{ backgroundColor: place.color }}
-                className={`block rounded-xs border-2 shadow-1 ${
+                className={`relative block overflow-hidden rounded-xs border-2 shadow-1 ${
                   isSelected ? "h-11 w-15 border-accent" : "h-9 w-12 border-text"
                 }`}
-              />
+              >
+                {cover ? (
+                  <Image
+                    src={cover.src}
+                    alt=""
+                    fill
+                    sizes="60px"
+                    placeholder="blur"
+                    blurDataURL={cover.blurDataUrl}
+                    className="object-cover"
+                  />
+                ) : null}
+              </span>
               <span
                 ref={(element) => {
                   if (element) badgeRefs.current.set(place.slug, element);
@@ -541,9 +657,36 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         </button>
       </div>
 
-      <p className="pointer-events-none absolute bottom-3 left-3 z-[200] m-0 font-mono text-overline text-text-faint">
-        {labels.hint}
-      </p>
+      <div className="absolute bottom-3 left-3 z-[200] flex flex-wrap items-center gap-3">
+        <button
+          type="button"
+          aria-pressed={isTouring}
+          onPointerDown={stopDrag}
+          onClick={isTouring ? stopTour : startTour}
+          className="flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border-0 bg-(image:--ball-light) px-5 text-small font-semibold text-on-accent transition-[filter] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          {isTouring ? (
+            <Square size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
+          ) : (
+            <Play size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
+          )}
+          {isTouring ? labels.tour.stop : labels.tour.play}
+        </button>
+        <p className="pointer-events-none m-0 font-mono text-overline text-text-faint">
+          {labels.hint}
+        </p>
+      </div>
+
+      {album && albumPlace ? (
+        <AlbumPanel
+          place={albumPlace}
+          photoIndex={album.photoIndex}
+          labels={labels.album}
+          panelRef={panelRef}
+          onShowPhoto={showPhoto}
+          onClose={closeAlbum}
+        />
+      ) : null}
     </div>
   );
 }
