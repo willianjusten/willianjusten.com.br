@@ -4,6 +4,7 @@ import { Pause, Play } from "lucide-react";
 import { useRecordSpin } from "../hooks/use-record-spin";
 import type { PlayableTrack } from "../lib/music-board";
 import { ListenLinks } from "./listen-links";
+import { RecordLabel } from "./record-label";
 import type { MusicLabels } from "./music-board";
 
 /** Resting height of each equaliser bar and its offset into the bounce, so the bars move out of step. */
@@ -58,9 +59,7 @@ export function RecordPlayer({
               {...scratchHandlers}
               className="absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
             >
-              <div className="flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
-                <div className="aspect-square w-[16%] rounded-pill bg-bg" />
-              </div>
+              <RecordLabel />
             </div>
           </div>
           <div className="record-sheen pointer-events-none absolute top-2 left-0 size-(--record-size) rounded-pill" />
