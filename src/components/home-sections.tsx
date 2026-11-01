@@ -182,7 +182,6 @@ export async function GamesSection() {
           emptyTitle: t("shelf.emptyTitle"),
           emptyNote: t("shelf.emptyNote"),
           recommendLike: t("shelf.recommendLike"),
-          setup: t("shelf.setup"),
           form: {
             title: t("form.title"),
             subtitle: t("form.subtitle"),

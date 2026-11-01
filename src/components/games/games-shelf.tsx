@@ -58,7 +58,6 @@ export type GamesShelfLabels = {
   emptyTitle: string;
   emptyNote: string;
   recommendLike: string;
-  setup: string;
   form: RecommendFormLabels;
 };
 
@@ -466,16 +465,6 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
         onOpenRecommended={openRecommended}
         onSubmit={submitRecommendation}
       />
-
-      <p className="mt-6 mb-0 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-text-muted">
-        {labels.setup}
-        {GAME_PLATFORMS.map((setupPlatform) => (
-          <span key={setupPlatform} className="inline-flex items-center gap-1.5">
-            <span aria-hidden="true" className={`size-2 rounded-full dot-${setupPlatform}`} />
-            {PLATFORM_STYLES[setupPlatform].name}
-          </span>
-        ))}
-      </p>
     </div>
   );
 }
