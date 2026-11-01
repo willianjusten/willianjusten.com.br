@@ -90,7 +90,7 @@ async function fetchBlurDataUrl(publicId: string): Promise<string> {
   return `data:image/webp;base64,${bytes.toString("base64")}`;
 }
 
-const folders = places.flatMap((place) => (place.cloudinaryFolder ? [place.cloudinaryFolder] : []));
+const folders = places.flatMap((place) => place.cloudinaryFolders ?? []);
 const albumsWithoutBlur = buildAlbums(folders, await searchFolders(folders));
 
 const albums: Record<string, TripPhoto[]> = {};

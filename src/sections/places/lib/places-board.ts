@@ -5,6 +5,7 @@ import type { PhotoExif, TripPhoto, TripPhotosFile } from "@/content/trip-photo-
 /** Caps the size next/image fetches from Cloudinary; the originals are up to 6000px wide. */
 const MAX_SOURCE_WIDTH_IN_PIXELS = 2400;
 const COUNTER_DIGITS = 2;
+const TRIP_FOLDER_PREFIX = "trips/";
 const LINE_SEPARATOR = " · ";
 const EXIF_ORDER: (keyof PhotoExif)[] = [
   "focalLength",
@@ -31,7 +32,8 @@ export type GlobePlace = {
   slug: string;
   name: string;
   country: string;
-  year?: number;
+  /** Visit years in order; empty for home. */
+  years: number[];
   lat: number;
   lon: number;
   isHome: boolean;
@@ -69,18 +71,23 @@ export function countPlaces(
   };
 }
 
+function readFolderYear(folder: string): number {
+  return Number(folder.slice(TRIP_FOLDER_PREFIX.length, TRIP_FOLDER_PREFIX.length + 4));
+}
+
 export function buildGlobePlaces(
   places: readonly Place[],
   tripPhotos: TripPhotosFile,
   locale: Locale,
 ): GlobePlace[] {
   return places.map((place) => {
-    const album = place.cloudinaryFolder ? (tripPhotos.albums[place.cloudinaryFolder] ?? []) : [];
+    const folders = place.cloudinaryFolders ?? [];
+    const album = folders.flatMap((folder) => tripPhotos.albums[folder] ?? []);
     return {
       slug: place.slug,
       name: place.name,
       country: place.country,
-      ...(place.year ? { year: place.year } : {}),
+      years: folders.map(readFolderYear),
       lat: place.lat,
       lon: place.lon,
       isHome: place.isHome,

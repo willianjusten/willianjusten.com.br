@@ -118,7 +118,7 @@ export function AlbumPanel({
         <div className="flex items-start justify-between gap-3">
           <div className="flex min-w-0 flex-col gap-0.5">
             <p className="font-mono text-overline text-accent">
-              {place.country} · {place.year ?? labels.home}
+              {place.country} · {place.isHome ? labels.home : place.years.join(", ")}
             </p>
             <h3 className="font-display text-h3 leading-[1.1] font-bold">{place.name}</h3>
           </div>
