@@ -403,7 +403,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-line px-7 pt-5 pb-6">
+        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-line px-5 pt-5 pb-6 sm:px-7">
           <div aria-live="polite" className="flex min-w-0 flex-[1_1_340px] flex-col gap-1.5">
             <p className="m-0 font-mono text-xs text-accent">
               {[
@@ -431,7 +431,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               aria-pressed={isReacted}
               disabled={!reaction?.isEnabled}
               onClick={reaction?.toggle}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-[18px] text-sm transition-colors disabled:cursor-default disabled:opacity-40 ${
+              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-4 text-sm whitespace-nowrap transition-colors sm:px-[18px] disabled:cursor-default disabled:opacity-40 ${
                 isReacted
                   ? "border-accent bg-accent/15 text-white"
                   : "border-line-strong bg-transparent text-text hover:border-line-hover"
@@ -444,7 +444,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               <a
                 href="#recommend"
                 onClick={focusRecommendForm}
-                className="inline-flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-[18px] text-sm text-text no-underline transition-colors hover:border-line-hover"
+                className="inline-flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-4 text-sm whitespace-nowrap text-text no-underline sm:px-[18px] transition-colors hover:border-line-hover"
               >
                 {labels.recommendLike}
                 <ArrowRight size={14} aria-hidden="true" />
