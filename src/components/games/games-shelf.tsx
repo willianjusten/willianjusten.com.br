@@ -2,8 +2,8 @@
 
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
-import { ArrowRight, ChevronLeft, ChevronRight, Heart } from "lucide-react";
-import { useRef, useState } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight, Heart, SlidersHorizontal } from "lucide-react";
+import { useId, useRef, useState } from "react";
 import type { PointerEvent } from "react";
 import { GAME_PLATFORMS } from "@/content/games";
 import type { GameList } from "@/content/games";
@@ -85,6 +85,8 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");
   const [rawIndex, setRawIndex] = useState(0);
+  const [isPlatformMenuOpen, setIsPlatformMenuOpen] = useState(false);
+  const platformGroupId = useId();
   const { counts: reactionCounts, mine, hasError, toggle } = useGameReactions();
   const { recommendations, voteError, submit, toggleVote } = useGameRecommendations();
   const dragStartX = useRef<number | undefined>(undefined);
@@ -237,34 +239,64 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
 
   return (
     <div className="mt-10">
-      <div
-        ref={tabsRef}
-        role="group"
-        aria-label={labels.tabsLabel}
-        className="mb-6 flex scroll-mt-24 flex-wrap gap-2"
-      >
-        {TAB_ORDER.map((list) => {
-          const isActive = list === activeList;
-          return (
-            <button
-              key={list}
-              type="button"
-              aria-pressed={isActive}
-              onClick={() => chooseList(list)}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-5 text-ui font-medium transition-colors ${
-                isActive
-                  ? "border-accent bg-accent text-on-accent"
-                  : "border-line-strong bg-transparent text-text hover:border-line-hover"
-              }`}
-            >
-              {labels.tabs[list]}
-              <span className="opacity-70">{listCounts[list]}</span>
-            </button>
-          );
-        })}
+      <div className="mb-3 flex items-center gap-2 sm:mb-6">
+        <div
+          ref={tabsRef}
+          role="group"
+          aria-label={labels.tabsLabel}
+          className="[scrollbar-width:none] -my-1 flex min-w-0 flex-1 scroll-mt-24 gap-2 overflow-x-auto py-1 [mask-image:linear-gradient(to_right,black_85%,transparent)] sm:flex-wrap sm:overflow-visible sm:[mask-image:none]"
+        >
+          {TAB_ORDER.map((list) => {
+            const isActive = list === activeList;
+            return (
+              <button
+                key={list}
+                type="button"
+                aria-pressed={isActive}
+                onClick={() => chooseList(list)}
+                className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-4 text-small font-medium whitespace-nowrap transition-colors sm:min-h-11 sm:px-5 sm:text-ui ${
+                  isActive
+                    ? "border-accent bg-accent text-on-accent"
+                    : "border-line-strong bg-transparent text-text hover:border-line-hover"
+                }`}
+              >
+                {labels.tabs[list]}
+                <span className="opacity-70">{listCounts[list]}</span>
+              </button>
+            );
+          })}
+        </div>
+        <button
+          type="button"
+          aria-label={labels.platformsLabel}
+          aria-expanded={isPlatformMenuOpen}
+          aria-controls={platformGroupId}
+          disabled={activeList === "recommended"}
+          onClick={() => setIsPlatformMenuOpen((wasOpen) => !wasOpen)}
+          className={`relative inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-pill border transition-colors disabled:cursor-default disabled:opacity-40 sm:hidden ${
+            isPlatformMenuOpen
+              ? "border-line-hover bg-surface-raised text-white"
+              : "border-line-strong bg-transparent text-text"
+          }`}
+        >
+          <SlidersHorizontal size={16} strokeWidth={1.8} aria-hidden="true" />
+          {platform !== "all" && activeList !== "recommended" ? (
+            <span
+              aria-hidden="true"
+              className={`absolute top-1.5 right-1.5 size-2 rounded-full dot-${platform}`}
+            />
+          ) : null}
+        </button>
       </div>
 
-      <div role="group" aria-label={labels.platformsLabel} className="mb-4 flex flex-wrap gap-2">
+      <div
+        id={platformGroupId}
+        role="group"
+        aria-label={labels.platformsLabel}
+        className={`[scrollbar-width:none] -my-1 mb-3 gap-2 overflow-x-auto py-1 [mask-image:linear-gradient(to_right,black_85%,transparent)] sm:mb-4 sm:flex sm:flex-wrap sm:overflow-visible sm:[mask-image:none] ${
+          isPlatformMenuOpen && activeList !== "recommended" ? "flex" : "hidden"
+        }`}
+      >
         {PLATFORM_FILTERS.map((filter) => {
           const isActive = filter === platform;
           const count = platformCounts[filter];
@@ -276,7 +308,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
               aria-pressed={isActive}
               disabled={activeList === "recommended"}
               onClick={() => choosePlatform(filter)}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow transition-colors ${
+              className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
                 isActive
                   ? "border-line-hover bg-surface-raised text-white"
                   : "border-line bg-transparent text-text-2 hover:border-line-hover"
