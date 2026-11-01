@@ -30,7 +30,7 @@ No 3D library: the globe and the shot game are Canvas 2D, and the game cases and
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | `src/app/`                | Routes and API handlers only: each file wires a section's logic to Next. `globals.css` is the stylesheet entry point    |
 | `src/features/<section>/` | One folder per home page section (`hero`, `places`, `games`, `nba`, `music`), see below                                 |
-| `src/layout/`             | Site chrome around the sections: header, footer, farewell banner, analytics                                             |
+| `src/components/layout/`  | Site chrome around the sections: header, footer, farewell banner, analytics                                             |
 | `src/shared/`             | Pieces more than one section reuses: `SectionShell`, `ExternalLink`, the near-viewport hook, fetch and template helpers |
 | `src/content/`            | Typed content modules (places, games, music, profile), each validated by a zod schema registered in `registry.ts`       |
 | `src/lib/`                | Site-wide logic: `db/` (Drizzle), `api/` (route guards), `seo/`, `retirement/` (old blog redirects), palette, site URLs |

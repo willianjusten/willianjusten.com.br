@@ -1,8 +1,8 @@
 import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
-import { FarewellBanner } from "@/layout/farewell-banner";
-import { Footer } from "@/layout/footer";
-import { Header } from "@/layout/header/header";
+import { FarewellBanner } from "@/components/layout/farewell-banner";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header/header";
 import { GamesSection } from "@/features/games/games-section";
 import { HeroSection } from "@/features/hero/hero-section";
 import { MusicSection } from "@/features/music/music-section";

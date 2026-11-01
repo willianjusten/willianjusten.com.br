@@ -2,7 +2,7 @@
 @import "../styles/tokens.css";
 @import "../styles/base.css";
 @import "../styles/effects.css";
-@import "../layout/layout.css";
+@import "../components/layout/layout.css";
 @import "../features/hero/hero.css";
 @import "../features/games/games.css";
 @import "../features/music/music.css";
