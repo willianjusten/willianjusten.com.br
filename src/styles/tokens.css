@@ -80,7 +80,7 @@
   --gutter: 32px;
   --touch: 44px;
   --record-size: 168px;
-  --record-panel-width: 280px;
+  --record-panel-width: 320px;
   /* Game case: a 28px platform band over a cover area in IGDB's 264x374 portrait ratio. */
   --game-case-width: 200px;
   --game-case-height: 311px;
