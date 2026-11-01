@@ -27,9 +27,9 @@
 .game-case {
   position: absolute;
   top: 0;
-  left: -100px;
-  width: 200px;
-  height: 252px;
+  left: calc(var(--game-case-width) / -2);
+  width: var(--game-case-width);
+  height: var(--game-case-height);
   transform-style: preserve-3d;
   transition:
     transform 700ms var(--ease-out),

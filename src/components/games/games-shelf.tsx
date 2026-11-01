@@ -24,7 +24,7 @@ type ShelfList = GameList | "recommended";
 const TAB_ORDER: ShelfList[] = ["playing", "played", "wishlist", "recommended"];
 const PLATFORM_FILTERS: PlatformFilter[] = ["all", ...GAME_PLATFORMS];
 const FOCUS_DELAY_IN_MILLISECONDS = 50;
-const STAGE_HEIGHT_CLASS = "h-[430px]";
+const STAGE_HEIGHT_CLASS = "h-[470px]";
 const NAV_BUTTON_CLASS =
   "absolute top-1/2 z-[500] flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover";
 
@@ -298,7 +298,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           className={`games-stage relative ${STAGE_HEIGHT_CLASS} overflow-hidden outline-offset-[-2px]`}
         >
           <div className="games-floor pointer-events-none absolute inset-x-0 bottom-0 h-[120px]" />
-          <div className="absolute top-[70px] left-1/2 size-0 [transform-style:preserve-3d]">
+          <div className="absolute top-12 left-1/2 size-0 [transform-style:preserve-3d]">
             {hasEntries ? (
               cases.map((shelfCase, index) => (
                 <GameCase

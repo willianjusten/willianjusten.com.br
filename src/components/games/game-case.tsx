@@ -45,7 +45,7 @@ export function GameCase({
       }}
     >
       <div className="game-case-back absolute inset-0 rounded-xs bg-bg-sunken" />
-      <div className="game-case-spine absolute top-0 h-[252px]">
+      <div className="game-case-spine absolute top-0 h-(--game-case-height)">
         <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-90 font-mono text-[8px] tracking-[1px] whitespace-nowrap text-text-muted">
           {title}
         </span>
