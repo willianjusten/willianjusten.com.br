@@ -34,11 +34,18 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         {tHeader("skipToContent")}
       </a>
       <Header />
-      <Suspense fallback={null}>
-        <FarewellBanner label={t("label")} message={t("message")} dismissLabel={t("dismiss")} />
-      </Suspense>
       <main id="main" tabIndex={-1} className="outline-none">
-        <HeroSection />
+        <HeroSection
+          banner={
+            <Suspense fallback={null}>
+              <FarewellBanner
+                label={t("label")}
+                message={t("message")}
+                dismissLabel={t("dismiss")}
+              />
+            </Suspense>
+          }
+        />
         <PlacesSection />
         <GamesSection />
         <NbaSection />

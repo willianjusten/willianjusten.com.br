@@ -1,6 +1,6 @@
 import { Code, Gamepad2, Music, Plane } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { currentlyPlaying, games } from "@/content/games";
 import { music } from "@/content/music";
 import { profile } from "@/content/profile";
@@ -22,7 +22,8 @@ function secondsAfter(start: number, step: number, index: number): string {
   return `${(start + step * index).toFixed(3)}s`;
 }
 
-export async function HeroSection() {
+/** `banner` renders inside the section so the hero background runs behind it. */
+export async function HeroSection({ banner }: { banner?: ReactNode }) {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
   const { now } = profile;
@@ -35,6 +36,7 @@ export async function HeroSection() {
       <Floodlight className="-top-30 left-[48%] size-130 bg-[radial-gradient(circle,var(--glow-orange),transparent_65%)] motion-safe:animate-drift-1" />
       <Floodlight className="top-30 left-[68%] size-115 bg-[radial-gradient(circle,var(--glow-amber),transparent_65%)] motion-safe:animate-drift-2" />
       <Floodlight className="top-65 left-[30%] size-105 bg-[radial-gradient(circle,var(--glow-sand),transparent_65%)] motion-safe:animate-drift-3" />
+      {banner}
 
       <div className="mx-auto max-w-page px-8 pt-34 pb-18">
         <p className="mb-7 flex items-center gap-2.5 font-mono text-eyebrow text-text-muted motion-safe:animate-fade-in">
