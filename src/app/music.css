@@ -63,6 +63,14 @@
   transform: scaleY(0.5);
 }
 
+.record-eq {
+  opacity: 0;
+  transition: opacity 300ms var(--ease-out);
+}
+.record-eq[data-playing="true"] {
+  opacity: 1;
+}
+
 .record-eq span {
   transform-origin: bottom;
 }

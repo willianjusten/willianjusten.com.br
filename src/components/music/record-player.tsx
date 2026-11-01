@@ -132,6 +132,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
             // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
             role="img"
             aria-label={labels.record}
+            title={labels.hint}
             onPointerDown={startScratch}
             onPointerMove={scratch}
             onPointerUp={endScratch}
@@ -157,7 +158,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
         </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex w-full items-center gap-4">
         <button
           type="button"
           aria-label={isPlaying ? labels.pause : labels.play}
@@ -165,7 +166,7 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
           disabled={!hasPreview}
           title={hasPreview ? undefined : labels.previewUnavailable}
           onClick={() => track.previewUrl && onToggle(track.id, track.previewUrl)}
-          className="flex size-12 cursor-pointer items-center justify-center rounded-pill border-0 bg-accent p-0 text-on-accent shadow-glow transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
+          className="flex size-12 shrink-0 cursor-pointer items-center justify-center rounded-pill border-0 bg-accent p-0 text-on-accent shadow-glow transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
         >
           {isPlaying ? (
             <Pause size={18} fill="currentColor" aria-hidden="true" />
@@ -173,53 +174,53 @@ export function RecordPlayer({ track, labels, isPlaying, onToggle }: RecordPlaye
             <Play size={18} fill="currentColor" aria-hidden="true" />
           )}
         </button>
-        <div
-          data-playing={isPlaying}
-          aria-hidden="true"
-          className="record-eq flex h-[22px] items-end gap-[3px]"
-        >
-          {Array.from({ length: EQ_BAR_COUNT }, (_, barIndex) => (
-            <span key={barIndex} className="w-[3px] self-stretch rounded-xs bg-text-2" />
-          ))}
+        <div className="flex min-w-0 flex-col gap-0.5">
+          <span className="flex items-center gap-2 font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
+            {labels.songOfTheMoment}
+            <span
+              data-playing={isPlaying}
+              aria-hidden="true"
+              className="record-eq flex h-2.5 items-end gap-0.5"
+            >
+              {Array.from({ length: EQ_BAR_COUNT }, (_, barIndex) => (
+                <span key={barIndex} className="w-0.5 self-stretch rounded-xs bg-accent" />
+              ))}
+            </span>
+          </span>
+          <span className="truncate font-display text-2xl leading-[1.15] font-bold">
+            {track.title}
+          </span>
+          <span className="truncate text-small text-text-2">{track.artist}</span>
+          <span className="truncate text-micro text-text-faint">{track.album}</span>
         </div>
       </div>
 
-      <p className="m-0 text-center font-mono text-[11px] text-text-faint">{labels.hint}</p>
-
-      <div className="flex flex-col gap-0.5 text-center">
-        <span className="font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
-          {labels.songOfTheMoment}
-        </span>
-        <span className="font-display text-2xl leading-[1.15] font-bold">{track.title}</span>
-        <span className="text-ui text-text-muted">
-          {track.artist} · {track.album}
-        </span>
-      </div>
-
       {listenLinks.length > 0 && (
-        <nav aria-label={labels.listenOn} className="flex flex-col items-center gap-1">
+        <nav
+          aria-label={labels.listenOn}
+          className="flex w-full flex-col gap-1 border-t border-line pt-3"
+        >
           <span className="font-mono text-[11px] tracking-[0.08em] text-text-muted uppercase">
             {labels.listenOn}
           </span>
-          <ul className="m-0 flex list-none flex-wrap justify-center gap-x-1 p-0">
+          <ul className="m-0 -ml-2 flex list-none flex-wrap p-0">
             {listenLinks.map((link) => (
               <li key={link.label}>
                 <a
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-11 items-center gap-1 px-2 text-small text-text-2"
+                  className="inline-flex min-h-11 items-center gap-1 px-2 text-small text-text-2 transition-colors hover:text-text"
                 >
                   {link.label}
-                  <ExternalLink size={12} aria-hidden="true" />
+                  <ExternalLink size={11} aria-hidden="true" className="text-text-faint" />
                 </a>
               </li>
             ))}
           </ul>
+          <p className="m-0 text-micro text-text-faint">{labels.credit}</p>
         </nav>
       )}
-
-      <p className="m-0 text-center text-micro text-text-faint">{labels.credit}</p>
     </div>
   );
 }
