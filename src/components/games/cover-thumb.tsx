@@ -19,7 +19,7 @@ export function CoverThumb({ coverUrl, platform, sizeClass, bandClass }: CoverTh
       className={`relative block shrink-0 overflow-hidden rounded-xs bg-surface-hover ${sizeClass}`}
     >
       {coverUrl ? (
-        <Image src={coverUrl} alt="" fill unoptimized sizes="52px" className="object-cover" />
+        <Image src={coverUrl} alt="" fill sizes="52px" className="object-cover" />
       ) : (
         <span
           className={`absolute inset-x-0 top-0 block ${bandClass} band-${platform}`}

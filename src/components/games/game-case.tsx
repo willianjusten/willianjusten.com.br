@@ -76,7 +76,6 @@ export function GameCase({
               src={entry.coverUrl}
               alt=""
               fill
-              unoptimized
               draggable={false}
               sizes="200px"
               className="object-cover"
