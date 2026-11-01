@@ -9,6 +9,7 @@ import {
   recordPersonalShot,
   type PersonalStats,
 } from "@/lib/nba/personal-stats";
+import { pickShotSound, SHOT_SOUND_FILES, type ShotSound } from "@/lib/nba/shot-sounds";
 import {
   clampAngle,
   DEFAULT_SHOT_ANGLE_IN_DEGREES,
@@ -90,6 +91,9 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     wasScoredThisShot: false,
   });
   const personalStatsRef = useRef<PersonalStats>(storedStats);
+  const missStreakRef = useRef(0);
+  const soundsRef = useRef<Partial<Record<ShotSound, HTMLAudioElement>>>({});
+  const playingSoundRef = useRef<HTMLAudioElement | null>(null);
   const labelsRef = useRef(labels);
   const [personalStats, setPersonalStats] = useState<PersonalStats>(storedStats);
   const [totals, setTotals] = useState<ShotTotals | null>(null);
@@ -108,24 +112,46 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     return () => controller.abort();
   }, []);
 
-  const finishShot = useCallback((made: boolean) => {
-    const next = recordPersonalShot(personalStatsRef.current, made);
-    personalStatsRef.current = next;
-    setPersonalStats(next);
-    try {
-      window.localStorage.setItem(PERSONAL_STATS_STORAGE_KEY, JSON.stringify(next));
-    } catch {
-      // Private mode or full storage: stats just do not persist.
-    }
-    fetch("/api/nba/shots", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ made }),
-    })
-      .then((response) => (response.ok ? (response.json() as Promise<ShotTotals>) : null))
-      .then((updated) => updated && setTotals(updated))
-      .catch(() => undefined);
+  const playShotSound = useCallback((sound: ShotSound | null) => {
+    if (!sound) return;
+    const audio = (soundsRef.current[sound] ??= new Audio(SHOT_SOUND_FILES[sound]));
+    const previous = playingSoundRef.current;
+    if (previous && previous !== audio) previous.pause();
+    audio.currentTime = 0;
+    playingSoundRef.current = audio;
+    // Autoplay can still be refused (for example on an unfocused tab); the game goes on silently.
+    audio.play().catch(() => undefined);
   }, []);
+
+  const finishShot = useCallback(
+    (made: boolean) => {
+      if (made) {
+        missStreakRef.current = 0;
+      } else {
+        missStreakRef.current += 1;
+        playShotSound(
+          pickShotSound({ made: false, makeStreak: 0, missStreak: missStreakRef.current }),
+        );
+      }
+      const next = recordPersonalShot(personalStatsRef.current, made);
+      personalStatsRef.current = next;
+      setPersonalStats(next);
+      try {
+        window.localStorage.setItem(PERSONAL_STATS_STORAGE_KEY, JSON.stringify(next));
+      } catch {
+        // Private mode or full storage: stats just do not persist.
+      }
+      fetch("/api/nba/shots", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ made }),
+      })
+        .then((response) => (response.ok ? (response.json() as Promise<ShotTotals>) : null))
+        .then((updated) => updated && setTotals(updated))
+        .catch(() => undefined);
+    },
+    [playShotSound],
+  );
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -182,6 +208,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       runtime.message = { text, framesLeft: RESULT_MESSAGE_FRAMES };
       runtime.wasScoredThisShot = true;
       setAnnouncement(text);
+      playShotSound(pickShotSound({ made: true, makeStreak: streakAfterMake, missStreak: 0 }));
     }
 
     function advanceFrame() {
@@ -324,7 +351,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       canvas.removeEventListener("keyup", onKeyUp);
       canvas.removeEventListener("blur", releaseKeyboardShot);
     };
-  }, [finishShot]);
+  }, [finishShot, playShotSound]);
 
   const isOnFire = personalStats.streak >= ON_FIRE_STREAK;
   const statCells = [
