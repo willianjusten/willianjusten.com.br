@@ -15,6 +15,18 @@
         "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoQABgAPwFsr0+rJiQiMAgBYCAJaAC7AB4Djmv5ub009AD6hAEcAlcDkGbTF8ACwXhEI94xNHImqZ7mmUMnxt8qIUCZXu19nK1YgH8W/MAAAA=="
       },
       {
+        "publicId": "trips/2026-sao-paulo/DSC00738_m0xj1a",
+        "width": 5543,
+        "height": 3695,
+        "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsAA8BiJQBOgCG0sSwUwAD7oUU4l5y5o+X4oQKEtC77famOj4zKIKM+rXun44fVsV4DbVgYaK8TLgyXr0DSCAA="
+      },
+      {
+        "publicId": "trips/2026-sao-paulo/DSC00739_elhs8q",
+        "width": 5862,
+        "height": 3908,
+        "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAsAA8BiJQBOgCIci2BAAP7OAZFrdtmdmA0Y0syfPhyJNxUhtgyK7u73C2UOLFbcf1vZfnF9+tdne6Ywc/qiAAA="
+      },
+      {
         "publicId": "trips/2026-sao-paulo/DSC00873-Enhanced-NR_wjjbi1",
         "width": 2449,
         "height": 3673,
@@ -139,6 +151,44 @@
         "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAgAA8BiJbACdAEedm6o8ZDoAP39Pbyzdy1NUwMoFVe7PG7+Qu7LQ+v2K2+cEcSIEJJ7+QN4BXDmCII9HX+n1s447TDohPNwAA=="
       }
     ],
+    "trips/2017-berlin": [
+      {
+        "publicId": "trips/2017-berlin/DJI_0034_pvetsx",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAwAA8BiJQBOgCHSn9ZoAPcsdPqGfNmUSys2C58HEpejqvxs1/OKLXtUODO79JJT0dmplS7UHxXwAAA="
+      },
+      {
+        "publicId": "trips/2017-berlin/DJI_0057_oviklm",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQAgCdASoQAAwAA8BiJYwCsAEVm+D7DnEA1AAA/q0meEYUA5doKvdFH4HoX6Tsxu7adkNnrkw/y9rSTrq2ikrS5ClZ4gfx1DWiE1IlZEMHAMFbg+LLWgshdaYMODqYAAA="
+      },
+      {
+        "publicId": "trips/2017-berlin/DJI_0061_pm9ppb",
+        "width": 3964,
+        "height": 2971,
+        "blurDataUrl": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAwAA8BiJbACdAEMLpikAM4R61n3HdScsGe2E0skvSgzEwOfBylIYE8oiKKgdR9FxM4lDot6mVJ9Kt03amgA"
+      },
+      {
+        "publicId": "trips/2017-berlin/DJI_0063_nyw1id",
+        "width": 3936,
+        "height": 2950,
+        "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAA8BiJZgCdADG0zEYW6bAAPwwXG4RVUUZROAVP1Rhgfukp8gh0rlStUYhVXzg+Q9yTI/jfhJ4++eCTtAa3pThRQTCc4HAAA=="
+      },
+      {
+        "publicId": "trips/2017-berlin/DJI_0066_br0yu4",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAwAA8BiJQBOgCHgB8qVOBgAAMtPAMEeQQvx8554kAV3VzG5W1t3IsCAXP/yEVIIJCOpUQc+aeQbpswcm0RYAAA="
+      },
+      {
+        "publicId": "trips/2017-berlin/DJI_0513_poeany",
+        "width": 3980,
+        "height": 2983,
+        "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAA8BiJbACdAEOgNGJegAA+pdUVgiN6qg4yoh7Nd0zmkhYSVCFMvz1o8FXnSxdFcdKjJl5MEXG0SjS+VWG5VIKPjxhyD+w4fIAAAA="
+      }
+    ],
     "trips/2017-buenos-aires": [
       {
         "publicId": "trips/2017-buenos-aires/willian-justen-de-vasconcellos-5H9Eh2funQI-unsplash_ppqulw",
@@ -219,6 +269,98 @@
         "width": 3992,
         "height": 2992,
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAgCdASoQAAwAA8BiJZQBTAA9USJ+nshYAAD+xgfUj8ujC1QXifv1b+4kB+FBUyNEb+LxGJ8cHwsc+FvvjXaixP65NtilgAA="
+      }
+    ],
+    "trips/2017-krakow": [
+      {
+        "publicId": "trips/2017-krakow/DJI_0116_fggkix",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwAA8BiJYgC/ODblNaCTAAA/U35qJ3rV85Prz4QWcxhFlANHw8m5IkdHFoq7B0YFAN2cdc5S126I7rAvAaUP/iVy7KpoAA="
+      },
+      {
+        "publicId": "trips/2017-krakow/DJI_0156_dwstg3",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAwAA8BiJYgCdAEI+jJAAMtMxmLZUtF7z3ZDR4TrgIl8/5c7mdS16V+i1GkVCH4IWR2Rgrc3ChKNEDsAAA=="
+      },
+      {
+        "publicId": "trips/2017-krakow/DJI_0157_hoplbq",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAwAA8BiJbACdAEUlZ8UdRgAAOIECtDQsXPVCMf0n85HnuYq+tgSdV+s5ezUDS/RFAQWbJ//+dnKPeF3CIATrLXldhyvoIAAAA=="
+      },
+      {
+        "publicId": "trips/2017-krakow/DJI_0172_ktddep",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAwAA8BiJbACdAEOPDzctCgA+OV4LUffxj34iyK/3vqmiffJjeKeI9jP+FtakkjhC1+tnfRMia5j7un4AA=="
+      }
+    ],
+    "trips/2017-prague": [
+      {
+        "publicId": "trips/2017-prague/DJI_0260_jueehf",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAwAA8BiJQBOgCKHCU/0AAD+1Eu4VhSUZjKdR6U8JrGhIsKnpar1H2nKjHLJ0aBLppSKuAA="
+      },
+      {
+        "publicId": "trips/2017-prague/DJI_0270_eqmwp5",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAwAA8BiJQBOgBJfJlAAAPu8V5Xv0v6aQOSenxfsvt2yK9IOMhLetG5+BR3XmS2vUDOfvQ24L+qqQ8BbCRtONg8Ns/OAqAA="
+      },
+      {
+        "publicId": "trips/2017-prague/DJI_0277_majdfg",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAwAA8BiJYwCdH8AGA3lgAAA/pG3w4c3FHI5e3DbHnVHqZzIFKO2tKToVjgj4unhDmAWEcCByYKbiLD3AAAA"
+      }
+    ],
+    "trips/2017-vienna": [
+      {
+        "publicId": "trips/2017-vienna/DJI_0230_ppyln3",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAwAA8BiJbACdAEJBUc0AP7i9B7J3frC2UOxSmvCIhjdzluBGlNu+kt8Jb9atLxzzQaTXgQAAA=="
+      },
+      {
+        "publicId": "trips/2017-vienna/DJI_0233_kxrdqs",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwAA8BiJbACdAEPLZYDdIAA/tkRq+LS+JMmbsc2nsFlNCx4bHACXdbnt6z9UI/G+l//fNZS8AAA"
+      },
+      {
+        "publicId": "trips/2017-vienna/DJI_0242_qrmnua",
+        "width": 3851,
+        "height": 2886,
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA8BiJZgCdADwdoRQ5ViAAP6UzLlu+Pmm6QJR3cO7Uuh7zsPt0XzxW+vqJlT2wcmp1SM3tBboow+Rs/Lc2ZwPZA4FchERyaMOGpT7wAAA"
+      },
+      {
+        "publicId": "trips/2017-vienna/DJI_0255_lllwww",
+        "width": 3866,
+        "height": 2898,
+        "blurDataUrl": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwAA8BiJbACdAEWxkUn3iAAzi6U9q7trE+p9G8FoI8USe2IgAB5SIgv3JVco1F4PFMFLLxSTQVhoR3TYQeREAAAAA=="
+      }
+    ],
+    "trips/2017-warsaw": [
+      {
+        "publicId": "trips/2017-warsaw/DJI_0085_fok305",
+        "width": 3888,
+        "height": 2914,
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwAA8BiJZAAIEAgTnarJMNu+AD5cmChA8OlKPszEYDJcfR7PSl1AQ3cj0ymZZ7lMIpjXTGjVwyKj4aAbfAHrReqBo34E/MOfu2975qYAAAA"
+      },
+      {
+        "publicId": "trips/2017-warsaw/DJI_0087_gqwyio",
+        "width": 3992,
+        "height": 2992,
+        "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwAA8BiJZACdAD50UYlEAD+xdCSaITh/XyCym4So5yphbSNjJ1QFxsK9pl2tps411mZKs0ODwcnya1YBXFjMVVwHo8AAAA="
+      },
+      {
+        "publicId": "trips/2017-warsaw/willian-justen-de-vasconcellos-KqpDuf1i83w-unsplash_kkavmj",
+        "width": 2913,
+        "height": 2809,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoQAA8AA8BiJaACdAD0itLxE7pgAP7r++woVehz7Cs+fl1MEtY4r4F0jelU1JJKwX6HFTATocunmmvk0AA="
       }
     ],
     "trips/2018-peru": [
@@ -1349,6 +1491,58 @@
         "blurDataUrl": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBACdASoQABgAPwFsrU8rJiQiMAgBYCAJbAC7IBgDA4YK9w+8vg/7IbiWIAD+6dJmikdCodd1yk8pUcfffbZbYuWlx1Ty07Oum6BN2aeS8rMx+zAsumlx9O1Jqr4tZvr9aHfjZJUvIpCLE5Ha3ZEferENbCMP/3iT0h44rzmdDkbmLOUa2cu7KNQ3kD1p3HKRqkkpnD23/AAAAAA="
       }
     ],
+    "trips/2023-paris": [
+      {
+        "publicId": "trips/2023-paris/IMG_0392_xge2yl",
+        "width": 2262,
+        "height": 4021,
+        "blurDataUrl": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoQABwAPwFqrU8rJaQiMAgBYCAJaQABHuqd8B69o0gXAAD++9oLh5DuNfLV38pEYmMN2uGOXsK3uBVIS5HQR/MjBajEKs//Xpe3LWTngAA="
+      },
+      {
+        "publicId": "trips/2023-paris/IMG_0430_iyqdr1",
+        "width": 2268,
+        "height": 4032,
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoQABwAPwFsrU8rJiQiMAgBYCAJYgC7IDZCGvvWTUssj838jAvjAADxve+2Kw6QlZH1uoQ2PGE24oCx42y/1YOnV1jhM7zr7iL5kg47O/7hq2oCyQoJrlV4EbaqWqU47QRvf5ablP45+UCBiXhCvEkhos2yGsHIAAA="
+      },
+      {
+        "publicId": "trips/2023-paris/IMG_0433_yckczg",
+        "width": 2163,
+        "height": 3846,
+        "blurDataUrl": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwAwCdASoQABwAPwFqrU8rJaQiMAgBYCAJYgC/OAyu9SM5gY0iAAD2FM41GQfN8nKN1QVz8/4fOfnSQJzHlhfO6Ejvpol6bSx59uOkHRXHw2z0ef8H3nYkjku2SlLTxNBMITqvj3MNLosSEr4FNxZJsAu9Csd0FjdLAlZMdGvIch5dlwbEAAAA"
+      },
+      {
+        "publicId": "trips/2023-paris/IMG_0459_aqtljw",
+        "width": 2943,
+        "height": 3924,
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoQABUAPwFsrU8rJiQiMAgBYCAJZACdACHW48+FfDXc3xZaAAD+dslinGKU17EU9OIbAlQeD7HJ9EPBIjgA+mNID6tfyKlSLqG/BpyvM3Ia2GZ2C9B71aEhPm2+G/orY8p3/rWSt++AAA=="
+      }
+    ],
+    "trips/2026-paris": [
+      {
+        "publicId": "trips/2026-paris/DSC00855_eoqbyy",
+        "width": 3648,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAwCdASoQABgALsWAwGAjqysrCwDES0gABc6r5P1NJ5I4CWAA/vQb/ap/VrT+o/D7hqX4ch+/ntbqnho2MQifo6/BFt9H04mEWQwX3SnUn3P2cUr9WdY/oAAAAA=="
+      },
+      {
+        "publicId": "trips/2026-paris/DSC00894_xo4j8m",
+        "width": 3548,
+        "height": 5322,
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoQABgAPwFqrU8rJaQiMAgBYCAJbAC2yB4ahdSz22LGWGwA/sIgZ6FjaVpBvcV3QrORVsxKFqWSbOKvIRt77jgkmK/J8N6GB5AoGdwatP3J2LpLW/KlZAFb5UGlR6ipkAYqqn1B260wLQQJvcC1qX8AAAA="
+      },
+      {
+        "publicId": "trips/2026-paris/DSC00905_gzd8kh",
+        "width": 5472,
+        "height": 3648,
+        "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsAA8BiJbACdAEUoTkWkAAAAPqT/pTm9y8Y6svsgduzOceRb6Ljj75f7LNyQbv39u3PO9cS4OW9Vf8zX4mFJeAvqyB9csAAAA=="
+      },
+      {
+        "publicId": "trips/2026-paris/DSC09797_cgs4vo",
+        "width": 2125,
+        "height": 3777,
+        "blurDataUrl": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQAwCdASoQABwAPwFsrk8rJaQiMAgBYCAJZACw7CGg3MzHMZSaxYAA/iFBN2ZzyCeh9A3Ep8qNEYfU/irymN1+x/0vR6JB6nthUVpLHXdbaLmdq0dpedGQHRgu/OPtCfWN2nHLdv3gWqn4XEEJvM+Ltbj+vp/DkLQIk2MXPEDUufQU+qZ/vn5x/DjUQAAA"
+      }
+    ],
     "trips/2023-seattle": [
       {
         "publicId": "trips/2023-seattle/willian-justen-de-vasconcellos-2HmJZo9eWss-unsplash_aoduza",
@@ -2025,6 +2219,234 @@
         "width": 6000,
         "height": 4000,
         "blurDataUrl": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAA8BiJZQC7AEMU0/sKAAA/u2yVgiw3gcgIu13o2t0h/qAxVjypdmA2aR/iC+4zHUJnuRdJCnES2kD+x4AAAA="
+      }
+    ],
+    "trips/2026-amsterdam": [
+      {
+        "publicId": "trips/2026-amsterdam/DSC02030_k4jnr0",
+        "width": 5472,
+        "height": 3648,
+        "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsAA8BiJbACdAEPLHVA9fgA9rhobXJuLu5pBhbtNyuiaSJyFLg/L0JPAijkP4drR2+2W4w//Ncr5rmnZVGbYlDcuF8ef3n9aqp5jA0AAA=="
+      },
+      {
+        "publicId": "trips/2026-amsterdam/DSC02068_d01j7c",
+        "width": 3648,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACQBACdASoQABgAPwFqrU8rJaQiMAgBYCAJZQCdH8I//FAADwqgRYWW6Rv5VUAA/uv8PmGK2uKipC+iSELsEu9LKe7Aa9pxiXAWmUZZoqaKTQreQylsOVa6c94/FatQflFnskNr8HypDwWnI5kLZmChaoAAAA=="
+      }
+    ],
+    "trips/2026-bordeaux": [
+      {
+        "publicId": "trips/2026-bordeaux/IMG-20260920-WA0076_pf2kb8",
+        "width": 1600,
+        "height": 720,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAwAgCdASoQAAcAA8BiJQBOkCc4AAnpKnKOQAD8Ae/GXdNl7mMGbHSvm9LVhaR5Ezc7fYf7d8J/DKAF5AUopULqAAA="
+      },
+      {
+        "publicId": "trips/2026-bordeaux/IMG20260920200924_z9ifgf",
+        "width": 5888,
+        "height": 3312,
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABwAgCdASoQAAkAA8BiJZACdEf/i1c6x0Bq7L8AAP3GkpGbH6gHAHCAljGlb14CHC3TDt0VdKjj948CMhPNjf5o3VTIPMOPGomsx9mgBDLxZ41vfLw41gS7kBrnfMw1wAA="
+      },
+      {
+        "publicId": "trips/2026-bordeaux/IMG20260922191905_y7ayld",
+        "width": 2289,
+        "height": 4037,
+        "blurDataUrl": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABwBACdASoQABwAPwFqrU8rJiQiMAgBYCAJbACdMoRwAdCgmQWr1hagiszZiAD+eQJY3/2k3krcC2/9auQhN9En8vIwaFihGstIw4MlXCQEWPcqeRcEKXzsuorBsLOvlPby+H3a5sMYQt+ZF0iiuxOX68gE+Bh5RS79iktHXpxG8K7paMO6DrTAs1FHXUUmGXyo9HgA"
+      }
+    ],
+    "trips/2026-bruge": [
+      {
+        "publicId": "trips/2026-bruge/DSC01416_hfh2p7",
+        "width": 3648,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwBACdASoQABgAPwFqrU8rJaQiMAgBYCAJZQDE2BVNc5m5IpW8zf9iRdwA/tx17+wNF0nS2SJzoT79ZXy2W3ZXYTL2lmPlXSDr12+gNx8WSD4tCR7fHDeHUtrGOJ5bZ10YWg6cuZ71I3LxhYj8IEOFLJvjnVZ3toyvV9rlFuBK6wlJAToI/sADNxZAAA=="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01432_g4hqoz",
+        "width": 3599,
+        "height": 5358,
+        "blurDataUrl": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBACdASoQABgAPwFqrU8rJaQiMAgBYCAJZQCdACBsdutMMO4BuU9eZS54AP7AQBKnvAQWo89ljeX4Nur57B6hGecuhLgz1vXohQX8vXdydyfoiy5FGQ2JXzOISgceYUmWqrF7VAfliRt0uXHYnsp4kFYiBmPxkT93JW+uH7Mq7f4c1bm9qsjFY825tDrIomJZPwAA"
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01436_mtm3tc",
+        "width": 3571,
+        "height": 5233,
+        "blurDataUrl": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoQABcAPwFsrU8rJiQiMAgBYCAJYwDKAYvC1UZp8xye+LBKD44dYAD+7A9Se9TfXbyVD+Jb2Z3fOFpJPGfo0HppMEQLRRDQEnHXSk9Ezo7P2PI6yLM+TQAa2TWUdN6Qj2rSQ51FrK3daYTT8XHNyk4ZYDfZa2W7hAXT8i8CbCDaT5PWEqWLyWj/vdqx9x+1HOSiRGDLw5GohRBVAAA="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01439_sysoyk",
+        "width": 3575,
+        "height": 5363,
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoQABgAPwFsrU8rJiQiMAgBYCAJYwDG9BjdH09TR599QAD9dUzo7CUP52f5MCZs8Ts5F7sGkK7LT7kCiBUy01zqgUS6AErZgLSyjK76xkxMHDaKDoGTlRBOF0fUaEuK4zdi7K0RIkAAAA=="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01443_xskp6p",
+        "width": 3046,
+        "height": 5413,
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABwAPwFqrU8rJiQiMAgBYCAJagCdAB03TaoXKBLuLrSjhbKgAPsa5Pfv8D+VG/BB7Hih8kBgRkea3RwtzJmZdR0gE6yFPPZciHDTNW4VEkOxxt4v29/3/ZfNzEa+L87eyc+w68PwAfrmRLMsp1AAXR2zRp3Wz+GBPBHckrbR+kiAAAA="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01522_pfesu1",
+        "width": 3078,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoQABwAPwFqrU8rJaQiMAgBYCAJQBdgAo3judqHldzsOQFSgAD+oj6LHCTEeA4ogP+fE6UBM0r/hTh9Jv/ami+jT1WwBLX+bvxGDlJkJF4Kww9l7UYsmx6fve6gsQUW+9lNfcG6NyEuV8ndXYmuvKGYe5jOackOM1S33XnOU1jUJ6w32pEFKGQAAAA="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01581_qpwnx6",
+        "width": 5261,
+        "height": 3443,
+        "blurDataUrl": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAoAA8BiJQBOgCFsD0g5pacAAPwthp5+Nxv+1DgJXYoxaEIYzxWCdSJvLdsZEx1xLXdK6iPcA4ttzmAUMqtJHJJs1HmJZGMJagAA"
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01631_h3z4l6",
+        "width": 3569,
+        "height": 5352,
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwAwCdASoQABgAPwFqrU8rJiQiMAgBYCAJaACdAA8Y/Od7TIgDYADK76GhwNYn2JbNPjGEf8muqZxCAiinRzs2e2+N0nBL59Ajag4Uj5Mimlo4HJTjTfex90HqrfZW3VoQFWYf0lYAH8YgAG1TtKyl8IAAAA=="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01653_hw3efu",
+        "width": 3648,
+        "height": 5336,
+        "blurDataUrl": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAAAwBACdASoQABcAPwFqrU8rJaQiMAgBYCAJZQCdACPfKuQ9eBQUxHrfk6AA/scptTAVPS/LfTTU4mM+Q0YyHPEaA47BKv5goZuuMpsGJ0BfcjhjrJLF2x4S1rurTI+KnLGAfP2Yo0GLuovmRu+0yS9C9rzroyWIAAA="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01668_qyfsyi",
+        "width": 3470,
+        "height": 5107,
+        "blurDataUrl": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAQBACdASoQABgAPwFsrU8rJiQiMAgBYCAJYgC2yB6rLhvmaN22N6jHgAD+1tjiGpU/ahNK0p5V40M6n4aQyT/5GSZ7o8fEyPD8IavjOCw/+jxlfDvhJXVgGDNPaiHf5DxqXw2I++l7dWhMH7ygIX4HDoAAAA=="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01704_fnbxcc",
+        "width": 3514,
+        "height": 5272,
+        "blurDataUrl": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoQABgAPwFqrU8rJaQiMAgBYCAJYgCdMoACtc4NqfIc9NpYgAD+5yVzNhkFoAhPnxxYd+4OAFxB7mvXKlSKwIsDNGG1t7eBkrokKQGl9MpbbHFdL/3ZecGkr+zeiKzmpm4kjTLehWUZ8WjLgYuKh60Iib9dAk/Z0X8AAA=="
+      },
+      {
+        "publicId": "trips/2026-bruge/DSC01728_teebbd",
+        "width": 3078,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoQABwAPwFusVArJiSisAgBYCAJYgCdAB6VYhOWK6W/G1ZYAPxcf/CI7kAzbBEmE1/Nv1h2IMANnVx4NKmqab7D3L9JfFwLjC04OGounqKNG6ps1POV78SnMqPwTzv5R7+jMWjrwJgvFmgXiWJ3aj5Q/LS2O0X4AAA="
+      }
+    ],
+    "trips/2026-brussels": [
+      {
+        "publicId": "trips/2026-brussels/DSC01416_abncrf",
+        "width": 3648,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwBACdASoQABgAPwFqrU8rJaQiMAgBYCAJZQDE2BVNc5m5IpW8zf9iRdwA/tx17+wNF0nS2SJzoT79ZXy2W3ZXYTL2lmPlXSDr12+gNx8WSD4tCR7fHDeHUtrGOJ5bZ10YWg6cuZ71I3LxhYj8IEOFLJvjnVZ3toyvV9rlFuBK6wlJAToI/sADNxZAAA=="
+      },
+      {
+        "publicId": "trips/2026-brussels/DSC01432_hzj6um",
+        "width": 3599,
+        "height": 5358,
+        "blurDataUrl": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAABQBACdASoQABgAPwFqrU8rJaQiMAgBYCAJZQCdACBsdutMMO4BuU9eZS54AP7AQBKnvAQWo89ljeX4Nur57B6hGecuhLgz1vXohQX8vXdydyfoiy5FGQ2JXzOISgceYUmWqrF7VAfliRt0uXHYnsp4kFYiBmPxkT93JW+uH7Mq7f4c1bm9qsjFY825tDrIomJZPwAA"
+      },
+      {
+        "publicId": "trips/2026-brussels/DSC01436_h3njpk",
+        "width": 3571,
+        "height": 5233,
+        "blurDataUrl": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoQABcAPwFsrU8rJiQiMAgBYCAJYwDKAYvC1UZp8xye+LBKD44dYAD+7A9Se9TfXbyVD+Jb2Z3fOFpJPGfo0HppMEQLRRDQEnHXSk9Ezo7P2PI6yLM+TQAa2TWUdN6Qj2rSQ51FrK3daYTT8XHNyk4ZYDfZa2W7hAXT8i8CbCDaT5PWEqWLyWj/vdqx9x+1HOSiRGDLw5GohRBVAAA="
+      },
+      {
+        "publicId": "trips/2026-brussels/DSC01439_hsia6c",
+        "width": 3575,
+        "height": 5363,
+        "blurDataUrl": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACwAwCdASoQABgAPwFsrU8rJiQiMAgBYCAJYwDG9BjdH09TR599QAD9dUzo7CUP52f5MCZs8Ts5F7sGkK7LT7kCiBUy01zqgUS6AErZgLSyjK76xkxMHDaKDoGTlRBOF0fUaEuK4zdi7K0RIkAAAA=="
+      },
+      {
+        "publicId": "trips/2026-brussels/DSC01443_seig1d",
+        "width": 3046,
+        "height": 5413,
+        "blurDataUrl": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABQBACdASoQABwAPwFqrU8rJiQiMAgBYCAJagCdAB03TaoXKBLuLrSjhbKgAPsa5Pfv8D+VG/BB7Hih8kBgRkea3RwtzJmZdR0gE6yFPPZciHDTNW4VEkOxxt4v29/3/ZfNzEa+L87eyc+w68PwAfrmRLMsp1AAXR2zRp3Wz+GBPBHckrbR+kiAAAA="
+      }
+    ],
+    "trips/2026-dinant": [
+      {
+        "publicId": "trips/2026-dinant/DSC01793_urkxpb",
+        "width": 5472,
+        "height": 3648,
+        "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoQAAsAA8BiJZgCdAEDwzgTSOAAAMyi+7jDkjjp0ajQHIeXqek0jAPYuid7MqSwvsHN/fwqWQuAnABpEkCqO8SAD8QwUw7RYZrG/E1rYJFQAA=="
+      },
+      {
+        "publicId": "trips/2026-dinant/DSC01795_pox7v2",
+        "width": 5472,
+        "height": 3648,
+        "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAsAA8BiJQBdgCDY7yoyAAD+W/lUiAc6foterXS5nGOGyrpAX3jNE+2MBtnzg7wYoPzY7/O8FvITWQRO24Ix5Th0a/xfvrqxBNKXWDw/CbotzAAAAA=="
+      },
+      {
+        "publicId": "trips/2026-dinant/DSC01844_hfjbk4",
+        "width": 5408,
+        "height": 3605,
+        "blurDataUrl": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAA8BiJZACdADvrVKYCIAAzGOYkXj0Md3gruBJ6xJIQYYpbgf/mBRwJabkYiz/4hPHO4wboZne31WH+oEIApNYVV6grSgAAA=="
+      },
+      {
+        "publicId": "trips/2026-dinant/DSC01858_dhw7nj",
+        "width": 3620,
+        "height": 5429,
+        "blurDataUrl": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABwAwCdASoQABgAPwFqrU8rJaQiMAgBYCAJQBXDhDvkjXACegAA/uMRbbwWnbIxW8uTGT8xd9EQYhljb5K0RwUt8da/wy8k7Rl0+XVXpoNkW24d+ps598AA"
+      },
+      {
+        "publicId": "trips/2026-dinant/DSC01862_g67qno",
+        "width": 3648,
+        "height": 5472,
+        "blurDataUrl": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwAwCdASoQABgAPwFsrU8rJiQiMAgBYCAJYwCdAAlbGBb03gAA/Y0URuXDhPtKVApf5fI/fhd/jSPZBzaggFWdODfc3uZaoc2JSkApjomG39jrT9iOdY7iMv2AP2J0KEpunTBKIfn3haxaESF5du6OMkBP2bxVUp2sdhbx/6Lv+uuX8AA="
+      }
+    ],
+    "trips/2026-maragogi": [
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260421183856_0053_D_pi3iy4",
+        "width": 4536,
+        "height": 8064,
+        "blurDataUrl": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoQABwAPwFsrk+rJiQiMAgBYCAJYgCw7B5AX2I3KCQgKkRkAAD+2fWs5g35iJHQE84DEZ6GSB4x2DWKTSYWul/q3d+p7ujtdxzEfzY5yqnnpcLGzZCVElZAn1cAAA=="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422153525_0094_D_t4linx",
+        "width": 8064,
+        "height": 4536,
+        "blurDataUrl": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkAA8BiJbACdLoAAiDj0AD+PDi69F+s9HCJgot3uxievfWr+b7tzIc+64x3WAAAAA=="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422154430_0115_D_qqvc2e",
+        "width": 8064,
+        "height": 4536,
+        "blurDataUrl": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoQAAkAA8BiJYgCdAEDnWlsYoAA8OlE63rnfcCdkwWSCClE7/QFDmAgAAA="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422155038_0125_D_gxtktj",
+        "width": 8064,
+        "height": 4536,
+        "blurDataUrl": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkAA8BiJbACdAECwbIs9mAA/uQmHszUyT2EmahjG4ewvOw89IQAD5aGpdaSfQq6KE27pokitOfnmAAAAA=="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422155917_0134_D_xnywgq",
+        "width": 6951,
+        "height": 4276,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAoAA8BiJZACdAELVXA9wAD+6V631ojSKM7ZxLwYRL9pjR82dKbSv80DPO4O96m7Ay9Z2zKKq8QAAAA="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422160048_0136_D_rkrlhw",
+        "width": 8064,
+        "height": 4536,
+        "blurDataUrl": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAkAA8BiJbACdADHztLRH4AA/tS4i1/Varb0wkOS0thbNiR1bHOpOpD4j5ATkPKSCMpRbPFRZuxwaKOuneR0hrmaus/efTxOd9jVTxAAAA=="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422161027_0150_D_nvvdjd",
+        "width": 8064,
+        "height": 4536,
+        "blurDataUrl": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkAA8BiJYgCdAEK6RrZakAA/sCIX1ExjGn5C8fUZF9PJsu7KS5PnN/fD8trHMeeS1y1y8aRh7ZmyecwAAAA"
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260422190402_0175_D_xa3gzh",
+        "width": 7980,
+        "height": 4394,
+        "blurDataUrl": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAkAA8BiJQBdgCLKGlO8isfAAP11j594krR+i9VyXTi7i1j5EraB6gCzWd+TDYt8/Tai2DlOK1BV/V+ADYkF7scNYxnPAAA="
+      },
+      {
+        "publicId": "trips/2026-maragogi/DJI_20260424122020_0221_D_twlrql",
+        "width": 3066,
+        "height": 4410,
+        "blurDataUrl": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAwCdASoQABcAPwFsrk+rJiQiMAgBYCAJYgCsACHfS2ns+XvcIAD+WcpxzkqjtTsmw5Nr7l7M+CNC0Iq5oXFUwAA="
       }
     ]
   }
