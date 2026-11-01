@@ -30,12 +30,19 @@ export function useRecordSpin(isPlaying: boolean) {
     const stack = stackRef.current;
     if (!stack) return;
     const reducedMotion = reducedMotionQuery();
+    let writtenDisc: HTMLDivElement | null = null;
+    let writtenTransform = "";
     return runWhileVisible(stack, (elapsedInMilliseconds) => {
       if (isPlayingRef.current && !dragRef.current && !reducedMotion.matches) {
         discAngleRef.current += SPIN_DEGREES_PER_MILLISECOND * elapsedInMilliseconds;
       }
-      if (discRef.current) {
-        discRef.current.style.transform = `rotate(${discAngleRef.current.toFixed(2)}deg)`;
+      const disc = discRef.current;
+      const transform = `rotate(${discAngleRef.current.toFixed(2)}deg)`;
+      // The disc remounts on a track change, so a new element always gets its first write.
+      if (disc && (disc !== writtenDisc || transform !== writtenTransform)) {
+        disc.style.transform = transform;
+        writtenDisc = disc;
+        writtenTransform = transform;
       }
     });
   }, []);
