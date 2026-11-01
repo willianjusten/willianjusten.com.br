@@ -7,6 +7,7 @@ import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
+import { isPlaceholder } from "@/content/profile";
 import { GamesShelf } from "./games/games-shelf";
 import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
@@ -18,6 +19,7 @@ const ICON_STROKE_WIDTH = 1.8;
 /** The four empty section shells. Later tickets fill each one through its `children`. */
 export async function PlacesSection() {
   const t = await getTranslations("Sections.places");
+  const locale = await getLocale();
   return (
     <SectionShell
       id="places"
@@ -46,6 +48,20 @@ export async function PlacesSection() {
             clusterOf: t("globe.clusterOf"),
           }}
         />
+        {/* The globe draws on a canvas, so crawlers without JavaScript get the places as text. */}
+        <noscript>
+          <ul>
+            {places.map((place) => {
+              const caption = place.caption[locale];
+              return (
+                <li key={place.slug}>
+                  {place.name}, {place.country}
+                  {isPlaceholder(caption) ? null : `: ${caption}`}
+                </li>
+              );
+            })}
+          </ul>
+        </noscript>
       </div>
     </SectionShell>
   );
