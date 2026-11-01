@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     alternates: {
       canonical: localeUrl(locale),
       languages: hreflangAlternates(routing.locales),
+      types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
     },
     openGraph: {
       title: t("title"),

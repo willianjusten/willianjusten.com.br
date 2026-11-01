@@ -6,6 +6,7 @@ import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
 import { palette, withAlpha } from "@/lib/palette";
 
+export const alt = "Willian Justen";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
