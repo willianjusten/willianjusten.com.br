@@ -27,6 +27,8 @@ type AlbumPanelProps = {
   panelRef: Ref<HTMLElement>;
   onShowPhoto: (photoIndex: number) => void;
   onClose: () => void;
+  /** Any press inside the panel; it never reaches the globe, so it would not start a drag. */
+  onPress: () => void;
 };
 
 const OVERLAY_BUTTON_CLASS =
@@ -44,6 +46,7 @@ export function AlbumPanel({
   panelRef,
   onShowPhoto,
   onClose,
+  onPress,
 }: AlbumPanelProps) {
   const { photos } = place;
   const photo = photos[photoIndex];
@@ -62,7 +65,10 @@ export function AlbumPanel({
       tabIndex={-1}
       aria-label={labels.label.replace("{place}", place.name)}
       onKeyDown={onKeyDown}
-      onPointerDown={(event) => event.stopPropagation()}
+      onPointerDown={(event) => {
+        event.stopPropagation();
+        onPress();
+      }}
       className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-(--glass-strong) shadow-2 backdrop-blur-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       <div className="relative aspect-[16/10] flex-none bg-surface">

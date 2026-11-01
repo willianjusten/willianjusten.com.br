@@ -158,10 +158,11 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     stopTour();
     select(null);
     showAlbum(null);
+    // Focus first: a pin's focus handler may start a flight, which the zoom-out below must override.
+    pinRefs.current.get(album.slug)?.focus();
     const globe = globeRef.current;
     globe.flightTarget = null;
     globe.zoomGoal = INITIAL_VIEW.zoom;
-    pinRefs.current.get(album.slug)?.focus();
   }, [album, select, showAlbum, stopTour]);
 
   const showPhoto = useCallback(
@@ -685,6 +686,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
           panelRef={panelRef}
           onShowPhoto={showPhoto}
           onClose={closeAlbum}
+          onPress={stopTour}
         />
       ) : null}
     </div>
