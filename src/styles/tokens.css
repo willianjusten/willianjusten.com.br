@@ -135,6 +135,14 @@
   /* Header switches from the burger menu to inline links; mirrored in src/layout/header/mobile-menu.tsx. */
   --breakpoint-nav: 900px;
   --animate-bounce-ball: bounce-ball 1.6s cubic-bezier(0.3, 0, 0.6, 1) infinite;
+  --animate-photo-expand: photo-expand 240ms cubic-bezier(0.2, 0, 0, 1);
+
+  @keyframes photo-expand {
+    from {
+      opacity: 0;
+      transform: scale(0.94);
+    }
+  }
 
   @keyframes bounce-ball {
     0%,

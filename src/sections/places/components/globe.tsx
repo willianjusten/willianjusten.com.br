@@ -3,7 +3,7 @@
 /* The frame is a keyboard-operable widget (arrow keys rotate it) and the canvas is a described image. */
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
-import { useCallback, useEffect, useRef, type KeyboardEvent } from "react";
+import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from "react";
 import { useGlobeAlbum } from "../hooks/use-globe-album";
 import { useGlobeDrag } from "../hooks/use-globe-drag";
 import { useGlobeScene } from "../hooks/use-globe-scene";
@@ -18,11 +18,12 @@ import {
   zoomBy,
   zoomOutToStart,
 } from "../lib/globe-motion";
-import type { GlobePlace } from "../lib/places-board";
+import { stepPhotoIndex, type GlobePlace } from "../lib/places-board";
 import { AlbumPanel, type AlbumLabels } from "./album-panel";
 import { GlobeControls, type GlobeControlsLabels } from "./globe-controls";
 import { GLOBE_FRAME_CLASS } from "./globe-frame";
 import { GlobePin } from "./globe-pin";
+import { PhotoViewer } from "./photo-viewer";
 
 type GlobeLabels = GlobeControlsLabels & {
   description: string;
@@ -37,6 +38,9 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   const frameRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const panelRef = useRef<HTMLElement>(null);
+  const expandButtonRef = useRef<HTMLButtonElement>(null);
+  const [isPhotoExpanded, setIsPhotoExpanded] = useState(false);
+  const shouldRefocusExpandRef = useRef(false);
   const motionRef = useRef(createGlobeMotion());
   const {
     selectedSlug,
@@ -71,6 +75,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
   const clearSelection = useCallback(() => {
     stopTour();
+    setIsPhotoExpanded(false);
     selectPlace(null);
     openAlbum(null);
   }, [openAlbum, selectPlace, stopTour]);
@@ -127,6 +132,23 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     if (albumSlug && !isTourRunning()) panelRef.current?.focus();
   }, [albumSlug, isTourRunning]);
 
+  const expandPhoto = useCallback(() => {
+    stopTour();
+    setIsPhotoExpanded(true);
+  }, [stopTour]);
+
+  const collapsePhoto = useCallback(() => {
+    shouldRefocusExpandRef.current = true;
+    setIsPhotoExpanded(false);
+  }, []);
+
+  // The expand button is inert while the viewer is open, so focus returns once it is interactive again.
+  useEffect(() => {
+    if (isPhotoExpanded || !shouldRefocusExpandRef.current) return;
+    shouldRefocusExpandRef.current = false;
+    expandButtonRef.current?.focus({ preventScroll: true });
+  }, [isPhotoExpanded]);
+
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "Escape" && album) {
       event.preventDefault();
@@ -156,37 +178,55 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         className="absolute inset-0 size-full"
       />
 
-      {places.map((place) => (
-        <GlobePin
-          key={place.slug}
-          place={place}
-          isSelected={place.slug === selectedSlug}
-          onMount={registerPinElement}
-          onActivate={activate}
-          onFocus={bringPlaceToFront}
+      <div inert={isPhotoExpanded} className="contents">
+        {places.map((place) => (
+          <GlobePin
+            key={place.slug}
+            place={place}
+            isSelected={place.slug === selectedSlug}
+            onMount={registerPinElement}
+            onActivate={activate}
+            onFocus={bringPlaceToFront}
+          />
+        ))}
+
+        <GlobeControls
+          labels={labels}
+          isTouring={isTouring}
+          onZoomBy={(factor) => {
+            stopTour();
+            zoomBy(motionRef.current, factor);
+          }}
+          onReset={resetView}
+          onToggleTour={isTouring ? stopTour : startTour}
         />
-      ))}
 
-      <GlobeControls
-        labels={labels}
-        isTouring={isTouring}
-        onZoomBy={(factor) => {
-          stopTour();
-          zoomBy(motionRef.current, factor);
-        }}
-        onReset={resetView}
-        onToggleTour={isTouring ? stopTour : startTour}
-      />
+        {album && albumPlace ? (
+          <AlbumPanel
+            place={albumPlace}
+            photoIndex={album.photoIndex}
+            labels={labels.album}
+            panelRef={panelRef}
+            expandButtonRef={expandButtonRef}
+            onExpand={expandPhoto}
+            onShowPhoto={showPhoto}
+            onClose={closeAlbum}
+            onPress={stopTour}
+          />
+        ) : null}
+      </div>
 
-      {album && albumPlace ? (
-        <AlbumPanel
-          place={albumPlace}
+      {isPhotoExpanded && album && albumPlace ? (
+        <PhotoViewer
+          photo={albumPlace.photos[album.photoIndex]}
           photoIndex={album.photoIndex}
+          total={albumPlace.photos.length}
           labels={labels.album}
-          panelRef={panelRef}
-          onShowPhoto={showPhoto}
-          onClose={closeAlbum}
-          onPress={stopTour}
+          onPrevious={() =>
+            showPhoto(stepPhotoIndex(album.photoIndex, -1, albumPlace.photos.length))
+          }
+          onNext={() => showPhoto(stepPhotoIndex(album.photoIndex, 1, albumPlace.photos.length))}
+          onClose={collapsePhoto}
         />
       ) : null}
     </div>

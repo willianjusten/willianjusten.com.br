@@ -75,6 +75,11 @@ function readFolderYear(folder: string): number {
   return Number(folder.slice(TRIP_FOLDER_PREFIX.length, TRIP_FOLDER_PREFIX.length + 4));
 }
 
+/** Moves through an album by `step` photos, wrapping at both ends. */
+export function stepPhotoIndex(photoIndex: number, step: number, total: number): number {
+  return (photoIndex + step + total) % total;
+}
+
 export function buildGlobePlaces(
   places: readonly Place[],
   tripPhotos: TripPhotosFile,

@@ -5,14 +5,14 @@
 
 import { ArrowUpRight, ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 import Image from "next/image";
-import { useRef, useState, type KeyboardEvent, type Ref } from "react";
+import type { KeyboardEvent, Ref } from "react";
 import { ExternalLink } from "@/shared/components/external-link";
 import { fillTemplate } from "@/shared/lib/fill-template";
-import type { GlobePlace } from "../lib/places-board";
+import { stepPhotoIndex, type GlobePlace } from "../lib/places-board";
 import { AlbumThumbnails } from "./album-thumbnails";
 import { PhotoCaption } from "./photo-caption";
 import { PhotoCounter } from "./photo-counter";
-import { PhotoViewer, type PhotoViewerLabels } from "./photo-viewer";
+import type { PhotoViewerLabels } from "./photo-viewer";
 
 export type AlbumLabels = PhotoViewerLabels & {
   label: string;
@@ -29,6 +29,8 @@ type AlbumPanelProps = {
   photoIndex: number;
   labels: AlbumLabels;
   panelRef: Ref<HTMLElement>;
+  expandButtonRef: Ref<HTMLButtonElement>;
+  onExpand: () => void;
   onShowPhoto: (photoIndex: number) => void;
   onClose: () => void;
   /** Any press inside the panel; it never reaches the globe, so it would not start a drag. */
@@ -44,6 +46,8 @@ export function AlbumPanel({
   photoIndex,
   labels,
   panelRef,
+  expandButtonRef,
+  onExpand,
   onShowPhoto,
   onClose,
   onPress,
@@ -51,14 +55,8 @@ export function AlbumPanel({
   const { photos } = place;
   const photo = photos[photoIndex];
   const total = photos.length;
-  const showPrevious = () => onShowPhoto((photoIndex - 1 + total) % total);
-  const showNext = () => onShowPhoto((photoIndex + 1) % total);
-  const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const expandButtonRef = useRef<HTMLButtonElement>(null);
-  const closeViewer = () => {
-    setIsViewerOpen(false);
-    expandButtonRef.current?.focus();
-  };
+  const showPrevious = () => onShowPhoto(stepPhotoIndex(photoIndex, -1, total));
+  const showNext = () => onShowPhoto(stepPhotoIndex(photoIndex, 1, total));
   const onKeyDown = (event: KeyboardEvent<HTMLElement>) => {
     if (event.target !== event.currentTarget) return;
     if (event.key === "ArrowLeft") showPrevious();
@@ -87,7 +85,7 @@ export function AlbumPanel({
           ref={expandButtonRef}
           type="button"
           aria-label={labels.expand}
-          onClick={() => setIsViewerOpen(true)}
+          onClick={onExpand}
           className="group absolute inset-0 cursor-zoom-in"
         >
           <Image
@@ -171,17 +169,6 @@ export function AlbumPanel({
           <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" className="nudge-arrow" />
         </ExternalLink>
       </div>
-      {isViewerOpen ? (
-        <PhotoViewer
-          photo={photo}
-          photoIndex={photoIndex}
-          total={total}
-          labels={labels}
-          onPrevious={showPrevious}
-          onNext={showNext}
-          onClose={closeViewer}
-        />
-      ) : null}
     </section>
   );
 }
