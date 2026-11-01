@@ -2,7 +2,14 @@ import type { GamePlatform } from "@/content/games";
 
 const TOKEN_URL = "https://id.twitch.tv/oauth2/token";
 const GAMES_URL = "https://api.igdb.com/v4/games";
-const COVER_URL_BASE = "https://images.igdb.com/igdb/image/upload/t_cover_big";
+const COVER_URL_BASE = "https://images.igdb.com/igdb/image/upload";
+
+/**
+ * IGDB cover sizes: `thumbnail` is 264px wide, enough for small previews; `case` is the 528px
+ * retina version, since a 200px game case needs about 400 device pixels on a 2x screen.
+ */
+const COVER_SIZES = { thumbnail: "t_cover_big", case: "t_cover_big_2x" } as const;
+export type CoverSize = keyof typeof COVER_SIZES;
 
 /** IGDB platform ids for the consoles on the shelf. The ROG Ally X is a PC, so it maps to `pc`. */
 const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
@@ -41,8 +48,8 @@ type RawIgdbGame = {
   cover?: { image_id?: string };
 };
 
-export function buildCoverUrl(coverImageId: string): string {
-  return `${COVER_URL_BASE}/${coverImageId}.jpg`;
+export function buildCoverUrl(coverImageId: string, size: CoverSize = "thumbnail"): string {
+  return `${COVER_URL_BASE}/${COVER_SIZES[size]}/${coverImageId}.jpg`;
 }
 
 /** Games on none of the shelf platforms get a generic PC case. */

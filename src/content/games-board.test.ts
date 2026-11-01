@@ -9,7 +9,7 @@ describe("games board", () => {
     const [entry] = buildShelfEntries([firstGame], { [firstGame.slug]: coverFor("co5vmg") }, "en");
 
     expect(entry.coverUrl).toBe(
-      "https://images.igdb.com/igdb/image/upload/t_cover_big/co5vmg.jpg",
+      "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5vmg.jpg",
     );
   });
 

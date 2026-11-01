@@ -20,7 +20,7 @@ export function buildShelfEntries(
     return {
       ...game,
       note: note[locale],
-      coverUrl: cover ? buildCoverUrl(cover.coverImageId) : null,
+      coverUrl: cover ? buildCoverUrl(cover.coverImageId, "case") : null,
     };
   });
 }

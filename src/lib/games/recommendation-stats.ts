@@ -38,7 +38,9 @@ export function buildRecommendationViews(
         title: recommendation.title,
         year: recommendation.year,
         platform: recommendation.platform,
-        coverUrl: recommendation.coverImageId ? buildCoverUrl(recommendation.coverImageId) : null,
+        coverUrl: recommendation.coverImageId
+          ? buildCoverUrl(recommendation.coverImageId, "case")
+          : null,
         status: recommendation.status,
         count: newestFirst.length,
         mine: browserId !== undefined && newestFirst.some((vote) => vote.browserId === browserId),
