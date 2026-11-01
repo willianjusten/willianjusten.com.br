@@ -10,6 +10,17 @@ const VERSAILLES = {
   lon: 2.13,
 };
 const TOKYO = { slug: "tokyo", name: "Tokyo", country: "Japan", lat: 35.68, lon: 139.69 };
+const KYOTO = { slug: "kyoto", name: "Kyoto", country: "Japan", lat: 35.01, lon: 135.77 };
+const OSAKA = { slug: "osaka", name: "Osaka", country: "Japan", lat: 34.69, lon: 135.5 };
+const NARA = { slug: "nara", name: "Nara", country: "Japan", lat: 34.69, lon: 135.8 };
+const PORTO = {
+  slug: "porto-de-galinhas",
+  name: "Porto de Galinhas",
+  country: "Brazil",
+  lat: -8.5,
+  lon: -35,
+};
+const MARAGOGI = { slug: "maragogi", name: "Maragogi", country: "Brazil", lat: -9.01, lon: -35.22 };
 
 function layout(overrides: Partial<PinLayoutInput> = {}) {
   return layoutPins({
@@ -24,6 +35,12 @@ function layout(overrides: Partial<PinLayoutInput> = {}) {
 
 const pinOf = (pins: ReturnType<typeof layout>["pins"], slug: string) =>
   pins.find((pin) => pin.slug === slug);
+
+function screenPointOf(pins: ReturnType<typeof layout>["pins"], slug: string) {
+  const [, x, y] =
+    pinOf(pins, slug)?.transform.match(/^translate\((-?[\d.]+)px, (-?[\d.]+)px\)/) ?? [];
+  return { x: Number(x), y: Number(y) };
+}
 
 describe("layoutPins", () => {
   it("merges nearby places into one pin led by the first member", () => {
@@ -67,6 +84,52 @@ describe("layoutPins", () => {
       ariaLabel: "Paris, France",
     });
     expect(pinOf(pins, "versailles")?.isInteractive).toBe(true);
+  });
+
+  it("fans out places still crowded at full zoom so each one can be opened, keeping their directions", () => {
+    const { pins, clustersByLead } = layout({
+      places: [KYOTO, OSAKA, NARA],
+      view: { lat: 34.8, lon: 135.69, zoom: 16 },
+      frame: { width: 800, height: 600, centerX: 400, centerY: 300, radius: 4_000 },
+    });
+
+    for (const slug of ["kyoto", "osaka", "nara"]) {
+      expect(pinOf(pins, slug)).toMatchObject({
+        memberCount: 1,
+        isInteractive: true,
+        showsName: true,
+      });
+    }
+    expect([...clustersByLead.values()].every((cluster) => cluster.members.length === 1)).toBe(
+      true,
+    );
+
+    const kyoto = screenPointOf(pins, "kyoto");
+    const osaka = screenPointOf(pins, "osaka");
+    const nara = screenPointOf(pins, "nara");
+    for (const [first, second] of [
+      [kyoto, osaka],
+      [kyoto, nara],
+      [osaka, nara],
+    ]) {
+      expect(Math.hypot(first.x - second.x, first.y - second.y)).toBeGreaterThanOrEqual(80);
+    }
+    expect(kyoto.y).toBeLessThan(osaka.y);
+    expect(kyoto.y).toBeLessThan(nara.y);
+    expect(osaka.x).toBeLessThan(nara.x);
+  });
+
+  it("also fans out pins that would overlap at full zoom without being close enough to merge", () => {
+    const { pins } = layout({
+      places: [PORTO, MARAGOGI],
+      view: { lat: -8.75, lon: -35.11, zoom: 14 },
+      frame: { width: 800, height: 600, centerX: 400, centerY: 300, radius: 4_000 },
+    });
+
+    const porto = screenPointOf(pins, "porto-de-galinhas");
+    const maragogi = screenPointOf(pins, "maragogi");
+    expect(Math.hypot(porto.x - maragogi.x, porto.y - maragogi.y)).toBeGreaterThanOrEqual(80);
+    expect(porto.y).toBeLessThan(maragogi.y);
   });
 
   it("anchors a pin's bottom centre on its screen position", () => {

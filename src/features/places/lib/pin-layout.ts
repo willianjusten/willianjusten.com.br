@@ -14,6 +14,13 @@ const PIN_MIN_DEPTH = 0.08;
 const PIN_FADE_RANGE = 4;
 const PIN_MIN_SCALE = 0.7;
 const PIN_DEPTH_SCALE = 0.3;
+/**
+ * Some places sit too close to split even at full zoom (Kyoto, Osaka and Nara), so from this zoom
+ * a crowded cluster fans its pins out in a ring instead of stacking them behind a count.
+ */
+const FAN_OUT_ZOOM = 12;
+/** Gap between neighbouring fanned pins, wide enough for a photo card and its name tag. */
+const FAN_SPACING_IN_PIXELS = 100;
 
 type PinPlace = Pick<GlobePlace, "slug" | "name" | "country" | "lat" | "lon">;
 
@@ -52,6 +59,7 @@ export function layoutPins({ places, frame, view, selectedSlug, clusterLabel }: 
     projected: project(place, view, frame.radius),
   }));
 
+  const isFannedOut = view.zoom >= FAN_OUT_ZOOM;
   const clusters = clusterPins(
     projections
       .filter(({ projected }) => projected.depth > PIN_MIN_DEPTH)
@@ -61,12 +69,15 @@ export function layoutPins({ places, frame, view, selectedSlug, clusterLabel }: 
         x: projected.x,
         y: projected.y,
       })),
-    CLUSTER_THRESHOLD_IN_PIXELS,
+    // Fanned pins must clear a whole card, so anything closer than that counts as crowded.
+    isFannedOut ? FAN_SPACING_IN_PIXELS : CLUSTER_THRESHOLD_IN_PIXELS,
   );
+
+  const laidOutClusters = isFannedOut ? clusters.flatMap(fanOut) : clusters;
 
   const clustersByLead = new Map<string, PinCluster>();
   const hiddenMembers = new Set<string>();
-  for (const cluster of clusters) {
+  for (const cluster of laidOutClusters) {
     const lead = cluster.members.find((member) => member.id === selectedSlug) ?? cluster.members[0];
     clustersByLead.set(lead.id, cluster);
     for (const member of cluster.members) {
@@ -104,4 +115,29 @@ export function layoutPins({ places, frame, view, selectedSlug, clusterLabel }: 
   });
 
   return { pins, clustersByLead };
+}
+
+/**
+ * Splits a cluster into one-place clusters spread evenly on a ring around its centre. The ring is
+ * turned so each place lands as close as it can to its real direction from the centre.
+ */
+function fanOut(cluster: PinCluster): PinCluster[] {
+  const { members } = cluster;
+  if (members.length < 2) return [cluster];
+  const slotAngle = (2 * Math.PI) / members.length;
+  const ringRadius = FAN_SPACING_IN_PIXELS / (2 * Math.sin(slotAngle / 2));
+  const membersByAngle = members
+    .map((member) => ({ member, angle: Math.atan2(member.y - cluster.y, member.x - cluster.x) }))
+    .sort((first, second) => first.angle - second.angle);
+  // Circular mean of how far each place sits from its slot: the ring turn that fits them best.
+  const turn = Math.atan2(
+    membersByAngle.reduce((sum, { angle }, index) => sum + Math.sin(angle - index * slotAngle), 0),
+    membersByAngle.reduce((sum, { angle }, index) => sum + Math.cos(angle - index * slotAngle), 0),
+  );
+  return membersByAngle.map(({ member }, index) => {
+    const angle = turn + index * slotAngle;
+    const x = cluster.x + ringRadius * Math.cos(angle);
+    const y = cluster.y + ringRadius * Math.sin(angle);
+    return { members: [{ ...member, x, y }], x, y, geo: member.geo };
+  });
 }
