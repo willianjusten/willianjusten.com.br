@@ -40,7 +40,7 @@ export async function Footer() {
 
       <div className="mx-auto flex max-w-page flex-col gap-12 px-8 pt-[72px] pb-12">
         <div className="flex flex-wrap items-end justify-between gap-8">
-          <h2 className="reveal m-0 pb-[0.06em] font-display text-[clamp(64px,12vw,176px)] leading-[0.9] font-extrabold tracking-[-0.045em] text-text">
+          <h2 className="reveal m-0 pb-[0.06em] font-display text-[clamp(48px,10vw,152px)] leading-[0.9] font-extrabold tracking-[-0.045em] text-text">
             {t.rich("headline", {
               accent: (accentWord) => <em className="text-accent not-italic">{accentWord}</em>,
             })}
@@ -67,7 +67,6 @@ export async function Footer() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-line pt-6 text-small text-text-muted">
-          <span>{t("retiredBlog")}</span>
           <span className="font-mono text-eyebrow">{t("copyright")}</span>
         </div>
       </div>

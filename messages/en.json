@@ -1,12 +1,12 @@
 {
   "Metadata": {
-    "title": "Willian Justen | Product engineer",
-    "description": "Product engineer at Spoke. I take products from the fuzzy problem to the shipped thing, and spend the rest of my time behind a camera, a controller, or a boarding pass.",
-    "tagline": "Product engineer at Spoke. Photos, games, NBA and music."
+    "title": "Willian Justen | Product Engineer",
+    "description": "Product Engineer at Spoke, amateur photographer, gamer, and basketball enthusiast.",
+    "tagline": "Product Engineer at Spoke. Photos, games, NBA, and music."
   },
   "FarewellBanner": {
     "label": "Blog retirement notice",
-    "message": "Thank you for following the blog all these years. It is retired now, and this site is my home for places, games, NBA and music.",
+    "message": "Thanks for following the blog all these years. It's been retired, and this site is now my home for places, games, NBA, and music.",
     "dismiss": "Dismiss notice"
   },
   "Header": {
@@ -26,124 +26,123 @@
   },
   "Hero": {
     "name": "Willian Justen",
-    "clock": "São Paulo, BR · <time>--:--</time> local",
-    "lead": "Product engineer at <strong>Spoke</strong>. I take products from the fuzzy problem to the shipped thing, and spend the rest of my time behind a camera, a controller, or a boarding pass.",
+    "clock": "São Paulo, BR · <time>--:--</time> (local time)",
+    "lead": "Product Engineer at <strong>Spoke</strong>, amateur photographer, gamer, and basketball enthusiast.",
     "building": {
       "label": "Building",
-      "value": "Product at {company}",
-      "sub": "More on LinkedIn"
+      "value": "Spoke Connect",
+      "sub": "See more"
     },
     "playing": {
       "label": "Playing",
-      "sub": "{platform} · {hours} in"
+      "sub": "{platform} · {hours} played"
     },
     "onRepeat": {
       "label": "On repeat"
     },
     "lastSeen": {
-      "label": "Last seen"
+      "label": "Last stop"
     }
   },
   "Sections": {
     "places": {
-      "eyebrow": "01 · Places & photos",
-      "title": "Where the camera's been.",
-      "intro": "Every pin is a place I've been, holding the photos I brought back. Most of them also live on Unsplash and Pexels, free to use.",
+      "eyebrow": "01 · Places and photos",
+      "title": "Where the camera has been.",
+      "intro": "Every pin is a place I've visited, alongside the photos I brought back. Most are also available on Unsplash and Pexels, free to use.",
       "globe": {
-        "description": "A 3D dotted globe you can spin, with photo pins on the places I've been. Use the arrow keys to rotate it.",
+        "description": "A 3D dotted globe you can rotate, featuring photo pins of places I've visited. Use the arrow keys to rotate.",
         "zoomIn": "Zoom in",
         "zoomOut": "Zoom out",
-        "reset": "Back to the whole globe",
-        "hint": "drag to spin · open a pin",
+        "reset": "Reset to full globe",
+        "hint": "drag to rotate · click to open a pin",
         "clusterOf": "Group of"
       }
     },
     "games": {
       "eyebrow": "02 · Games",
       "title": "Press start.",
-      "intro": "What I'm playing, what I've finished and what's next on the list. Got a game I should try? Tell me.",
+      "intro": "What I'm playing, what I've beaten, and what's next. Got a game recommendation for me? Let me know.",
       "shelf": {
         "tabsLabel": "Game lists",
         "platformsLabel": "Filter by platform",
         "all": "All",
         "tabs": {
           "playing": "Playing",
-          "played": "Played",
+          "played": "Beaten",
           "wishlist": "Wishlist",
           "recommended": "Recommended"
         },
         "status": {
           "playing": "Playing now",
-          "played": "Finished",
-          "wishlist": "On the wishlist",
+          "played": "Beaten",
+          "wishlist": "On wishlist",
           "recommended": "Recommended to me"
         },
         "reaction": {
-          "playing": "Playing it too",
-          "played": "Played it too",
-          "wishlist": "Want it too",
-          "recommended": "Recommend this too"
+          "playing": "I'm playing this too",
+          "played": "I've beaten this too",
+          "wishlist": "I want this too",
+          "recommended": "I recommend this too"
         },
-        "reactionError": "Could not save your reaction. Try again in a bit.",
-        "stageLabel": "Games shelf. Use the left and right arrow keys to browse.",
+        "reactionError": "Couldn't save your reaction. Try again in a bit.",
+        "stageLabel": "Game shelf. Use left and right arrow keys to navigate.",
         "previous": "Previous game",
         "next": "Next game",
         "showGame": "Show {title}",
-        "counterHint": "drag or click a case",
-        "soon": "SOON",
-        "emptyRecommendedTitle": "Your pick here",
-        "emptyRecommendedNote": "Nothing recommended yet. Search for a game below and put the first one on this shelf.",
+        "counterHint": "drag or click a box",
+        "soon": "COMING SOON",
+        "emptyRecommendedTitle": "Your recommendation here",
+        "emptyRecommendedNote": "Nobody has recommended anything yet. Search for a game below and add the first one to this shelf.",
         "emptyTitle": "Nothing here",
-        "emptyNote": "No games on this platform in this list yet.",
-        "recommendLike": "Recommend something like this",
+        "emptyNote": "No games for this platform in this list yet.",
+        "recommendLike": "Recommend something similar",
         "setup": "My setup",
-        "voteRateLimited": "That is a lot of recommendations for now. Try again in a bit.",
+        "voteRateLimited": "Too many recommendations for now. Try again in a bit.",
         "reactionPressedRecommended": "You recommended this too",
         "sticker": "recommended ×{count}",
-        "pendingSticker": "waiting for OK",
-        "pendingNote": "Waiting for my OK. Only you can see this one for now."
+        "pendingSticker": "pending approval",
+        "pendingNote": "Pending my approval. Only you can see this for now."
       },
       "form": {
         "title": "Recommend me a game",
-        "subtitle": "Search any game. The most recommended ones go to the top of my pile.",
+        "subtitle": "Search for any game. The most recommended ones go to the top of my stack.",
         "searchLabel": "Search games",
         "searchPlaceholder": "Search games…",
         "resultsLabel": "Search results",
         "searching": "Searching…",
         "noResults": "No games found. Try another name.",
-        "searchError": "Search is down right now. Try again in a bit.",
+        "searchError": "Search is currently down. Try again in a bit.",
         "credit": "Game data by IGDB",
         "chooseAnother": "Choose another game",
         "honeypotLabel": "Leave this field empty",
         "submit": "Recommend {title}",
-        "submitting": "Sending…",
-        "doneApproved": "Thanks! {title} is on my Recommended shelf.",
-        "donePending": "Thanks! {title} is waiting for my OK. Only you can see it on the Recommended shelf until then.",
-        "rateLimited": "That is a lot of recommendations for now. Try again in a bit.",
-        "failed": "Could not send your recommendation. Try again in a bit.",
+        "submitting": "Submitting…",
+        "doneApproved": "Thanks! {title} is now on my Recommended shelf.",
+        "donePending": "Thanks! {title} is awaiting my approval. Until then, only you can see it on the Recommended shelf.",
+        "rateLimited": "Too many recommendations for now. Try again in a bit.",
+        "failed": "Couldn't send your recommendation. Try again in a bit.",
         "seeAll": "See all {count} on the Recommended shelf"
       }
     },
     "nba": {
       "eyebrow": "03 · NBA",
       "title": "Courtside.",
-      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings and playoffs, without the noise.",
-      "tags": ["Live scoreboard", "Standings", "Playoffs", "League leaders", "My teams"],
+      "intro": "I watch way too much basketball, so I built the NBA app I wanted to open every night: scores, standings, and playoffs, with no annoying ads and nothing more than what's needed.",
+      "tags": ["Live scores", "Standings", "Playoffs", "League leaders", "My teams"],
       "open": "Open Courtside",
       "builtWith": "Built with {names}",
-      "rootingFor": "Rooting for · {team}",
-      "and": " & ",
+      "and": " and ",
       "game": {
         "title": "Take a shot",
-        "hint": "Drag the ball back, aim, let go.",
-        "onFireHint": "You're on fire. Keep it going.",
+        "hint": "Pull the ball back, aim, release.",
+        "onFireHint": "You're on fire. Keep it up.",
         "you": "You",
         "streak": "Streak",
         "best": "Best",
         "allVisitors": "All visitors",
-        "canvasDescription": "Basketball mini game: drag the ball back and let go to shoot at the hoop. With the keyboard, hold Space to build power, use the up and down arrows to change the angle, and let go to shoot.",
-        "firstTimeHint": "← drag the ball back, let go to shoot",
-        "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, let go of Space to shoot",
+        "canvasDescription": "Basketball mini-game: pull the ball back and release to shoot. On keyboard, hold Space to build power, use up and down arrow keys to change angle, and release Space to shoot.",
+        "firstTimeHint": "← pull the ball back, release to shoot",
+        "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, release Space to shoot",
         "swish": "Swish!",
         "bucket": "Bucket!",
         "onFire": "You're on fire!"
@@ -151,21 +150,21 @@
     },
     "music": {
       "eyebrow": "04 · Music",
-      "title": "Every post ended with a song.",
-      "intro": "The posts are gone. The songs stay. Here's what's on repeat right now, and what came before it.",
+      "title": "Every post started with a song.",
+      "intro": "The posts are gone. The music remains. Here's what's playing right now, and what came before.",
       "songOfTheMoment": "Song of the moment",
-      "record": "Spinning record. Drag it to scratch.",
+      "record": "Spinning vinyl. Drag to scratch.",
       "play": "Play preview",
       "pause": "Pause preview",
-      "previewUnavailable": "No preview available",
-      "hint": "tilt it · drag the record to scratch",
+      "previewUnavailable": "Preview unavailable",
+      "hint": "tilt · drag record to scratch",
       "listenOn": "Listen on",
       "youtubeMusic": "YouTube Music",
       "spotify": "Spotify",
       "appleMusic": "Apple Music",
       "credit": "Previews courtesy of Apple Music",
-      "previously": "Previously on repeat",
-      "previewTrack": "Preview {title}",
+      "previously": "Previously playing",
+      "previewTrack": "Play preview for {title}",
       "pauseTrack": "Pause {title}"
     }
   },
@@ -175,7 +174,6 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "retiredBlog": "Looking for an old post? The blog is retired. Old links land here.",
     "copyright": "© 2026 Willian Justen"
   }
 }

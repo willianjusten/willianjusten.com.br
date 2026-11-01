@@ -81,9 +81,6 @@ export async function NbaSection() {
         </a>
         <span className="text-small text-text-muted">{t("builtWith", { names })}</span>
       </div>
-      <p className="mt-4 mb-0 font-mono text-eyebrow text-text-muted">
-        {t("rootingFor", { team: profile.nba.rootingTeam })}
-      </p>
     </SectionShell>
   );
 }

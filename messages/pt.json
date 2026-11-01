@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "title": "Willian Justen | Engenheiro de produto",
-    "description": "Engenheiro de produto na Spoke. Levo produtos do problema nebuloso até a entrega, e passo o resto do tempo atrás de uma câmera, de um controle ou de um cartão de embarque.",
-    "tagline": "Engenheiro de produto na Spoke. Fotos, games, NBA e música."
+    "title": "Willian Justen | Product Engineer",
+    "description": "Product Engineer na Spoke, fotógrafo amador, amante de jogos e basquete.",
+    "tagline": "Product Engineer na Spoke. Fotos, games, NBA e música."
   },
   "FarewellBanner": {
     "label": "Aviso sobre o fim do blog",
@@ -27,18 +27,18 @@
   "Hero": {
     "name": "Willian Justen",
     "clock": "São Paulo, BR · <time>--:--</time> (horário local)",
-    "lead": "Product engineer na <strong>Spoke</strong>. Eu levo produto do problema nebuloso até a coisa no ar, e passo o resto do tempo atrás de uma câmera, de um controle ou de um cartão de embarque.",
+    "lead": "Product Engineer na <strong>Spoke</strong>, fotógrafo amador, amante de jogos e basquete.",
     "building": {
       "label": "Construindo",
-      "value": "Produto na {company}",
-      "sub": "Mais no LinkedIn"
+      "value": "Spoke Connect",
+      "sub": "Ver mais"
     },
     "playing": {
       "label": "Jogando",
       "sub": "{platform} · {hours} de jogo"
     },
     "onRepeat": {
-      "label": "No repeat"
+      "label": "Tocando"
     },
     "lastSeen": {
       "label": "Última parada"
@@ -54,13 +54,13 @@
         "zoomIn": "Aproximar",
         "zoomOut": "Afastar",
         "reset": "Voltar ao globo inteiro",
-        "hint": "arraste para girar · abra um pin",
+        "hint": "arraste para girar · clique para abrir um pin",
         "clusterOf": "Grupo de"
       }
     },
     "games": {
       "eyebrow": "02 · Games",
-      "title": "Aperta o start.",
+      "title": "Aperte o start.",
       "intro": "O que eu estou jogando, o que já zerei e o que vem por aí. Tem algum jogo que eu preciso testar? Me conta.",
       "shelf": {
         "tabsLabel": "Listas de jogos",
@@ -127,11 +127,10 @@
     "nba": {
       "eyebrow": "03 · NBA",
       "title": "Courtside.",
-      "intro": "Eu assisto basquete demais, então fiz o app de NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem o barulho.",
+      "intro": "Eu assisto basquete demais, então fiz o app da NBA que eu queria abrir toda noite: placares, classificação e playoffs, sem propagandas chatas e nada mais que o necessário.",
       "tags": ["Placar ao vivo", "Classificação", "Playoffs", "Líderes da liga", "Meus times"],
       "open": "Abrir o Courtside",
       "builtWith": "Feito com {names}",
-      "rootingFor": "Torcendo para · {team}",
       "and": " e ",
       "game": {
         "title": "Dê um arremesso",
@@ -151,8 +150,8 @@
     },
     "music": {
       "eyebrow": "04 · Músicas",
-      "title": "Todo post terminava com uma música.",
-      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda no repeat agora, e o que veio antes.",
+      "title": "Todo post começava com uma música.",
+      "intro": "Os posts se foram. As músicas ficam. Aqui está o que anda tocando agora, e o que veio antes.",
       "songOfTheMoment": "Música do momento",
       "record": "Disco girando. Arraste para fazer scratch.",
       "play": "Tocar prévia",
@@ -164,18 +163,17 @@
       "spotify": "Spotify",
       "appleMusic": "Apple Music",
       "credit": "Prévias cortesia do Apple Music",
-      "previously": "Antes no repeat",
+      "previously": "Antes tocando",
       "previewTrack": "Ouvir prévia de {title}",
       "pauseTrack": "Pausar {title}"
     }
   },
   "Footer": {
-    "headline": "Diz <accent>oi.</accent>",
+    "headline": "Manda um <accent>oi.</accent>",
     "navigationLabel": "Em outros lugares",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
-    "retiredBlog": "Procurando um post antigo? O blog foi aposentado. Os links antigos caem aqui.",
     "copyright": "© 2026 Willian Justen"
   }
 }

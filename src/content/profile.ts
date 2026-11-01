@@ -30,7 +30,7 @@ export const profileSchema = z.object({
     email: z.object({ address: z.union([z.email(), placeholderText]) }),
   }),
   now: z.object({
-    building: z.object({ company: z.string().min(1) }),
+    building: z.object({ company: z.string().min(1), link: z.url() }),
     playing: z.object({
       title: z.string().min(1),
       platform: z.string().min(1),
@@ -39,7 +39,6 @@ export const profileSchema = z.object({
     lastSeen: z.object({ place: z.string().min(1), when: localizedText }),
   }),
   nba: z.object({
-    rootingTeam: textOrPlaceholder,
     /** Who Courtside was built with, in the order they are credited. */
     builtWith: z.array(textOrPlaceholder).min(1),
   }),
@@ -57,14 +56,14 @@ export const profileData: z.input<typeof profileSchema> = {
     email: { address: "[your email]" },
   },
   now: {
-    building: { company: "Spoke" },
+    building: { company: "Spoke", link: "https://spoke.com/connect" },
     playing: { title: "Crimson Desert", platform: "PC", hours: "[hours]" },
     lastSeen: {
       place: "Amsterdam, NL",
       when: { en: "October 2026", pt: "Outubro de 2026" },
     },
   },
-  nba: { rootingTeam: "[Team]", builtWith: ["[Collaborator one]", "[Collaborator two]"] },
+  nba: { builtWith: ["Bruna Grassi", "Marcus Silva"] },
 };
 
 export const profile: Profile = profileSchema.parse(profileData);

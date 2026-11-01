@@ -21,7 +21,7 @@ function secondsAfter(start: number, step: number, index: number): string {
 export async function Hero() {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
-  const { links, now } = profile;
+  const { now } = profile;
   const songOfTheMoment = music.tracks.find((track) => track.id === music.songOfTheMoment)!;
   const playingHours =
     typeof now.playing.hours === "number" ? `${now.playing.hours}h` : now.playing.hours;
@@ -101,7 +101,7 @@ export async function Hero() {
 
         <div className="mt-14 grid grid-cols-[repeat(auto-fit,minmax(min(240px,100%),1fr))] gap-4">
           <StatusTile
-            href={links.linkedin.href}
+            href={now.building.link}
             isExternal
             icon={Code}
             label={t("building.label")}
