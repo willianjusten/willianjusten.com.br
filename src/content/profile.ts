@@ -24,6 +24,7 @@ export const profileSchema = z.object({
     github: link,
     linkedin: link,
     instagram: link,
+    x: link,
     unsplash: link,
     pexels: link,
     /** Either a real address or a `[placeholder]`; rendered as a mailto link only when real. */
@@ -46,13 +47,19 @@ export const profileSchema = z.object({
 
 export type Profile = z.output<typeof profileSchema>;
 
+/** The X handle, e.g. `@Willian_justen`, taken from the profile URL's last path segment. */
+export function xHandle(xProfileUrl: string): string {
+  return `@${new URL(xProfileUrl).pathname.replaceAll("/", "")}`;
+}
+
 export const profileData: z.input<typeof profileSchema> = {
   links: {
     github: { href: "https://github.com/willianjusten" },
-    linkedin: { href: "https://www.linkedin.com/", isPlaceholder: true },
-    instagram: { href: "https://www.instagram.com/", isPlaceholder: true },
-    unsplash: { href: "https://unsplash.com/", isPlaceholder: true },
-    pexels: { href: "https://www.pexels.com/", isPlaceholder: true },
+    linkedin: { href: "https://www.linkedin.com/in/willianjusten/" },
+    instagram: { href: "https://www.instagram.com/will_justen/" },
+    x: { href: "https://x.com/Willian_justen" },
+    unsplash: { href: "https://unsplash.com/@willianjusten" },
+    pexels: { href: "https://www.pexels.com/@willianjusten/" },
     email: { address: "[your email]" },
   },
   now: {

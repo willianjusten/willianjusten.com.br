@@ -29,12 +29,18 @@ describe("buildStructuredData", () => {
     });
   });
 
-  it("lists only real profile links in sameAs, never placeholder homepages", () => {
+  it("lists the real profile links in sameAs and leaves the email out", () => {
     const graph = buildStructuredData("en", copy)["@graph"] as Array<Record<string, unknown>>;
-    const sameAs = nodeOfType(graph, "Person")?.sameAs;
+    const sameAs = nodeOfType(graph, "Person")?.sameAs as string[];
 
-    expect(sameAs).toContain("https://github.com/willianjusten");
-    expect(sameAs).not.toContain("https://www.linkedin.com/");
+    expect(sameAs).toEqual(
+      expect.arrayContaining([
+        "https://github.com/willianjusten",
+        "https://www.linkedin.com/in/willianjusten/",
+        "https://x.com/Willian_justen",
+      ]),
+    );
+    expect(sameAs.some((url) => url.startsWith("mailto:"))).toBe(false);
   });
 });
 

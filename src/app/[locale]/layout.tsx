@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
+import { profile, xHandle } from "@/content/profile";
 import { hreflangAlternates, localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
@@ -56,7 +57,13 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
       locale: locale === "pt" ? "pt_BR" : "en_US",
       type: "website",
     },
-    twitter: { card: "summary_large_image", title: t("title"), description: t("description") },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      site: xHandle(profile.links.x.href),
+      creator: xHandle(profile.links.x.href),
+    },
   };
 }
 
