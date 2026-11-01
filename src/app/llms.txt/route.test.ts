@@ -18,5 +18,6 @@ describe("/llms.txt", () => {
 
     expect(body).not.toMatch(/\[[^\]]+\](?!\()/);
     expect(body).not.toContain("—");
+    expect(body).not.toMatch(/<\/?\w+>/);
   });
 });

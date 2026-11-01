@@ -5,6 +5,8 @@ import { COURTSIDE_URL, localeUrl, SITE_URL } from "./site";
 import { realProfileUrls } from "./structured-data";
 
 const SECTION_KEYS = ["places", "games", "nba", "music"] as const;
+/** Rich-text tags in the copy, such as `<unsplash>`, which plain text drops. */
+const RICH_TEXT_TAG_PATTERN = /<\/?\w+>/g;
 
 /**
  * Plain-text site summary for LLM crawlers (llmstxt.org). Built from the English copy and the
@@ -15,7 +17,8 @@ export function buildLlmsText(): string {
   const { now } = profile;
 
   const sectionLines = SECTION_KEYS.map(
-    (key) => `- [${Header[key]}](${SITE_URL}/#${key}): ${Sections[key].intro}`,
+    (key) =>
+      `- [${Header[key]}](${SITE_URL}/#${key}): ${Sections[key].intro.replace(RICH_TEXT_TAG_PATTERN, "")}`,
   );
   const placeLines = places.map((place) => {
     const location = place.name === place.country ? place.name : `${place.name}, ${place.country}`;

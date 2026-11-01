@@ -1,5 +1,6 @@
 import { Gamepad2, MapPin, Music } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
+import type { ReactNode } from "react";
 import { gameCovers } from "@/content/game-covers";
 import { games } from "@/content/games";
 import { buildShelfEntries } from "@/content/games-board";
@@ -7,7 +8,7 @@ import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
-import { isPlaceholder } from "@/content/profile";
+import { isPlaceholder, profile } from "@/content/profile";
 import { GamesShelf } from "./games/games-shelf";
 import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
@@ -15,6 +16,16 @@ import { SectionShell } from "./section-shell";
 
 const ICON_SIZE_IN_PIXELS = 20;
 const ICON_STROKE_WIDTH = 1.8;
+const INTRO_LINK_CLASS =
+  "font-medium text-accent no-underline underline-offset-4 hover:text-accent-hi hover:underline";
+
+function IntroLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={INTRO_LINK_CLASS}>
+      {children}
+    </a>
+  );
+}
 
 /** The Places, Games and Music sections of the home page, each wrapped in a `SectionShell`. */
 export async function PlacesSection() {
@@ -26,7 +37,10 @@ export async function PlacesSection() {
       icon={<MapPin size={ICON_SIZE_IN_PIXELS} strokeWidth={ICON_STROKE_WIDTH} />}
       eyebrow={t("eyebrow")}
       title={t("title")}
-      intro={t("intro")}
+      intro={t.rich("intro", {
+        unsplash: (label) => <IntroLink href={profile.links.unsplash.href}>{label}</IntroLink>,
+        pexels: (label) => <IntroLink href={profile.links.pexels.href}>{label}</IntroLink>,
+      })}
     >
       <div className="mt-10">
         <LazyGlobe

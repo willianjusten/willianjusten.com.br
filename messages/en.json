@@ -49,7 +49,7 @@
     "places": {
       "eyebrow": "01 · Places and photos",
       "title": "Where the camera has been.",
-      "intro": "Every pin is a place I've visited, alongside the photos I brought back. Most are also available on Unsplash and Pexels, free to use.",
+      "intro": "Every pin is a place I've visited, alongside the photos I brought back. Most are also available on <unsplash>Unsplash</unsplash> and <pexels>Pexels</pexels>, free to use.",
       "globe": {
         "description": "A 3D dotted globe you can rotate, featuring photo pins of places I've visited. Use the arrow keys to rotate.",
         "zoomIn": "Zoom in",

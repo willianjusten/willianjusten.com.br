@@ -6,7 +6,7 @@ type SectionShellProps = {
   icon: ReactNode;
   eyebrow: string;
   title: string;
-  intro: string;
+  intro: ReactNode;
   /** Extra classes on the icon badge, e.g. the NBA ball bounce. */
   badgeClassName?: string;
   /** Section body, filled in by the section tickets. */
