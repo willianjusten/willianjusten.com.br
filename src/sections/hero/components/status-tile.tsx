@@ -15,10 +15,10 @@ export function StatusTile({ href, icon: Icon, label, value, sub, isExternal }: 
   return (
     <Anchor
       href={href}
-      className="status-tile reveal flex min-h-11 flex-col gap-3.5 rounded-lg border border-line-strong bg-(--glass) p-5 no-underline backdrop-blur-[10px]"
+      className="status-tile reveal flex min-h-11 flex-col gap-3.5 rounded-lg border border-line-strong bg-glass p-5 no-underline backdrop-blur-[10px]"
     >
       <span className="flex items-center justify-between">
-        <span className="tile-icon flex size-10 items-center justify-center rounded-md bg-(--icon-well) text-accent">
+        <span className="tile-icon flex size-10 items-center justify-center rounded-md bg-icon-well text-accent">
           <Icon size={20} strokeWidth={1.8} aria-hidden="true" />
         </span>
         <ArrowUpRight

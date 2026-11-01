@@ -11,6 +11,7 @@
   --line-strong: #2c2c30;
   --line-input: #64646c;
   --line-hover: #5a5a62;
+  --white: #ffffff;
   --text: #edede8;
   --text-2: #cfcfc8;
   --text-muted: #9a9a94;
@@ -42,16 +43,21 @@
 
   /* type */
   --fs-display: clamp(64px, 11vw, 168px);
+  --fs-footer: clamp(48px, 10vw, 152px);
   --fs-h2: clamp(36px, 4.5vw, 56px);
   --fs-h3: 26px;
+  --fs-menu: 22px;
   --fs-lead: clamp(19px, 2vw, 23px);
   --fs-body-lg: 18px;
+  --fs-logo: 17px;
   --fs-body: 16px;
   --fs-ui: 15px;
   --fs-small: 14px;
   --fs-eyebrow: 13px;
   --fs-overline: 12px;
+  --fs-caption: 11px;
   --fs-micro: 10px;
+  --fs-record-label: 6px;
 
   /* space */
   --s-4: 4px;
@@ -66,6 +72,8 @@
   --s-64: 64px;
   --s-96: 96px;
   --container: 1200px;
+  --measure-lead: 640px;
+  --measure-intro: 560px;
   --gutter: 32px;
   --touch: 44px;
   --record-size: 168px;
@@ -99,6 +107,9 @@
   --glass-chip: rgba(21, 21, 24, 0.6);
   --glass-strong: rgba(21, 21, 24, 0.92);
   --icon-well: #222228;
+  --spotlight-glow: rgba(255, 255, 255, 0.07);
+  --header-glass: rgba(14, 14, 16, 0.72);
+  --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 0 10px 30px rgba(0, 0, 0, 0.25);
   --tile-hover: #18181c;
   --flap-edge: #050506;
   --badge-glow: 0 8px 24px rgba(255, 138, 61, 0.25);
@@ -152,6 +163,12 @@
   --color-accent-hi: var(--accent-hi);
   --color-accent-lo: var(--accent-lo);
   --color-on-accent: var(--on-accent);
+  --color-glass: var(--glass);
+  --color-glass-chip: var(--glass-chip);
+  --color-glass-strong: var(--glass-strong);
+  --color-icon-well: var(--icon-well);
+  --color-tile-hover: var(--tile-hover);
+  --color-header-glass: var(--header-glass);
   --color-ps5: var(--ps5);
   --color-ps5-dot: var(--ps5-dot);
   --color-xbox: var(--xbox);
@@ -160,12 +177,17 @@
   --color-switch-dot: var(--switch-dot);
   --color-rog: var(--rog);
   --color-rog-dot: var(--rog-dot);
-  --color-white: #ffffff;
+  --color-white: var(--white);
   --color-black: #000000;
   --color-transparent: transparent;
   --color-current: currentColor;
 
   --text-display: var(--fs-display);
+  --text-footer: var(--fs-footer);
+  --text-menu: var(--fs-menu);
+  --text-logo: var(--fs-logo);
+  --text-caption: var(--fs-caption);
+  --text-record-label: var(--fs-record-label);
   --text-h2: var(--fs-h2);
   --text-h3: var(--fs-h3);
   --text-lead: var(--fs-lead);
@@ -188,4 +210,6 @@
   --shadow-glow: var(--glow);
 
   --container-page: var(--container);
+  --container-lead: var(--measure-lead);
+  --container-intro: var(--measure-intro);
 }

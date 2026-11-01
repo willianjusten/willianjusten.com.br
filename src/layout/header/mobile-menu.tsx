@@ -49,7 +49,7 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
         aria-controls={panelId}
         aria-label={isOpen ? closeLabel : openLabel}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
-        className="inline-flex size-9 items-center justify-center rounded-pill sm:size-11 border border-line-strong bg-(--glass-chip) text-text transition-colors hover:border-line-hover"
+        className="pill-outline inline-flex size-9 items-center justify-center bg-glass-chip text-text sm:size-11"
       >
         {isOpen ? (
           <X size={18} strokeWidth={1.8} aria-hidden="true" />
@@ -62,7 +62,7 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
         <nav
           id={panelId}
           aria-label={navigationLabel}
-          className="mobile-menu-panel absolute inset-x-4 top-full mt-2 rounded-xl border border-line-strong bg-(--glass) p-2 shadow-2 backdrop-blur-lg"
+          className="mobile-menu-panel absolute inset-x-4 top-full mt-2 rounded-xl border border-line-strong bg-glass p-2 shadow-2 backdrop-blur-lg"
         >
           <ul className="flex flex-col">
             {links.map(({ href, label }) => (

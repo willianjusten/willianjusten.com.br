@@ -4,7 +4,7 @@ import { isPlaceholder, profile } from "@/content/profile";
 import { ExternalLink } from "@/shared/components/external-link";
 
 const chipClassName =
-  "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-(--glass-chip) px-5 no-underline";
+  "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-glass-chip px-5 no-underline";
 
 function ChipContent({ icon: Icon, label }: { icon: LucideIcon; label: string }) {
   return (
@@ -54,7 +54,7 @@ export async function Footer() {
             ))}
             <a
               href={emailHref}
-              className="chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-transparent bg-(image:--ball-light) px-5 font-semibold text-on-accent no-underline hover:text-on-accent"
+              className="chip-link pill-primary flex min-h-12 items-center gap-2.5 border border-transparent px-5"
             >
               <ChipContent icon={Mail} label={emailAddress} />
             </a>

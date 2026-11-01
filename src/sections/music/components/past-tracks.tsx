@@ -60,7 +60,7 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
                 disabled={!track.previewUrl}
                 title={track.previewUrl ? undefined : labels.previewUnavailable}
                 onClick={() => track.previewUrl && onToggle(track.id, track.previewUrl)}
-                className="song-play flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-pill border-0 bg-transparent p-0 after:absolute after:inset-0 after:rounded-sm after:content-[''] disabled:cursor-not-allowed disabled:opacity-40"
+                className="song-play flex size-11 shrink-0 items-center justify-center rounded-pill after:absolute after:inset-0 after:rounded-sm after:content-[''] disabled:cursor-not-allowed disabled:opacity-40"
               >
                 <span className="flex size-8 items-center justify-center rounded-pill bg-accent text-on-accent">
                   {isPlaying ? (

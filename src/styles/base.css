@@ -1,5 +1,3 @@
-/* Element defaults and the page wrapper. */
-
 @layer base {
   html {
     background: var(--bg);
@@ -19,7 +17,11 @@
   }
 
   a:hover {
-    color: #ffffff;
+    color: var(--white);
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
   }
 
   :focus-visible {
@@ -34,9 +36,25 @@
   }
 }
 
-/* Page wrapper: clips horizontal overflow. */
-.page {
-  position: relative;
-  overflow-x: clip;
-  min-height: 100vh;
+/* Shared pill buttons: the accent gradient call to action and the bordered secondary action. */
+@utility pill-primary {
+  border-radius: var(--r-pill);
+  background-image: var(--ball-light);
+  font-weight: 600;
+  color: var(--on-accent);
+  text-decoration: none;
+}
+
+@utility pill-outline {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-pill);
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--default-transition-duration);
+  transition-timing-function: var(--default-transition-timing-function);
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--line-hover);
+    }
+  }
 }

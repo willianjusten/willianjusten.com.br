@@ -75,7 +75,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
     >
       <body>
         <NextIntlClientProvider>
-          <div className="page">{children}</div>
+          <div className="relative min-h-screen overflow-x-clip">{children}</div>
         </NextIntlClientProvider>
         <Analytics />
       </body>

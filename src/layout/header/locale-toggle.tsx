@@ -12,7 +12,7 @@ export async function LocaleToggle() {
   return (
     <nav
       aria-label={t("label")}
-      className="inline-flex items-center rounded-pill border border-line-strong bg-(--glass-chip) p-0.5 font-mono text-eyebrow font-medium"
+      className="inline-flex items-center rounded-pill border border-line-strong bg-glass-chip p-0.5 font-mono text-eyebrow font-medium"
     >
       {routing.locales.map((locale) => {
         const isActive = locale === activeLocale;
@@ -27,7 +27,7 @@ export async function LocaleToggle() {
             aria-label={`${localeShortLabels[locale]}, ${localeNames[locale]}`}
             aria-current={isActive ? "true" : undefined}
             className={`inline-flex min-h-8 min-w-10 items-center justify-center rounded-pill px-2.5 no-underline sm:min-h-10 sm:min-w-11 sm:px-3 transition-colors ${
-              isActive ? "bg-accent text-on-accent hover:text-on-accent" : "text-text-muted"
+              isActive ? "bg-accent text-on-accent" : "text-text-muted"
             }`}
           >
             {localeShortLabels[locale]}

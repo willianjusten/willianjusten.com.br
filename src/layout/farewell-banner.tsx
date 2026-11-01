@@ -27,7 +27,7 @@ export function FarewellBanner({ label, message, dismissLabel }: FarewellBannerP
           type="button"
           aria-label={dismissLabel}
           onClick={() => setIsDismissed(true)}
-          className="inline-flex min-h-11 min-w-11 shrink-0 cursor-pointer items-center justify-center rounded-sm text-text-muted hover:text-text"
+          className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-sm text-text-muted hover:text-text"
         >
           <X size={18} strokeWidth={1.8} aria-hidden="true" />
         </button>

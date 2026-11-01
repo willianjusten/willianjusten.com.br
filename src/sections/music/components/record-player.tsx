@@ -160,7 +160,7 @@ export function RecordPlayer({
           disabled={!hasPreview}
           title={hasPreview ? undefined : labels.previewUnavailable}
           onClick={() => track.previewUrl && onToggle(track.id, track.previewUrl)}
-          className="flex size-12 shrink-0 cursor-pointer items-center justify-center rounded-pill border-0 bg-accent p-0 text-on-accent shadow-glow transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
+          className="flex size-12 shrink-0 items-center justify-center rounded-pill bg-accent text-on-accent shadow-glow transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-40"
         >
           {isPlaying ? (
             <Pause size={18} fill="currentColor" aria-hidden="true" />
