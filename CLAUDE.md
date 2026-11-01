@@ -27,10 +27,17 @@ Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, next-intl, zod, 
 
 CI runs lint, format check, type-check and tests on every PR.
 
+## Layout
+
+- `src/sections/<section>/` holds everything one home page section owns: `<section>-section.tsx` (the entry the page renders), `components/`, `hooks/`, `lib/` (pure, browser-safe), `server/` (route logic and queries), `<section>.css` and `__tests__/`.
+- `src/layout/` is the site chrome, `src/shared/` what two or more sections reuse, `src/lib/` site-wide logic (db, api guards, seo, retirement), `src/styles/` tokens, base and shared effects.
+- Route files in `src/app/` stay thin: they wire a section's `server/` logic to Next and the database.
+- Tests live in a `__tests__/` folder next to the code they cover. Inside one section (or one `src/lib/` folder) import relatively; across them use `@/`.
+
 ## Conventions
 
 - No em dashes in any site copy, English or Portuguese. Rewrite with a comma, period or colon.
-- Dark only (`color-scheme: dark`). Design tokens live in `src/app/globals.css` as CSS custom properties mapped into the Tailwind `@theme`; reuse them, never hard-code a colour, size or font.
+- Dark only (`color-scheme: dark`). Design tokens live in `src/styles/tokens.css` as CSS custom properties mapped into the Tailwind `@theme`; reuse them, never hard-code a colour, size or font.
 - Locales: `en` unprefixed at `/`, `pt` at `/pt`. All copy goes in `messages/en.json` and `messages/pt.json`; keep the keys identical. Pages call `resolveLocale` (`src/i18n/resolve-locale.ts`) so they render statically.
 - Typed content modules live in `src/content/`, each with a zod schema registered in `src/content/registry.ts`. The registry test parses every module.
 - `data/legacy/` holds the captured old blog data and `scripts/setup-credentials.sh` the credential setup; leave both alone.

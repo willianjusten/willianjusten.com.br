@@ -15,7 +15,7 @@ It replaces the Portuguese frontend blog that lived here for about 10 years. Eve
 ## Stack
 
 - Next.js 16 (App Router), React 19, TypeScript
-- Tailwind CSS v4, with design tokens in `src/app/globals.css`
+- Tailwind CSS v4, with design tokens in `src/styles/tokens.css`
 - next-intl: English at `/`, Portuguese at `/pt`
 - Neon Postgres with Drizzle ORM, for shot stats, reactions, recommendations and rate limits
 - zod for content schemas and request validation
@@ -26,16 +26,31 @@ No 3D library: the globe and the shot game are Canvas 2D, and the game cases and
 
 ## Project layout
 
-| Path              | What lives there                                                                                                  |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `src/app/`        | Routes, API handlers, global styles, sitemap, robots and feed                                                     |
-| `src/components/` | Page sections and their interactive pieces                                                                        |
-| `src/content/`    | Typed content modules (places, games, music, profile), each validated by a zod schema registered in `registry.ts` |
-| `src/lib/`        | Pure logic (globe math, shot physics, coverflow, redirects) and the database layer in `src/lib/db/`               |
-| `messages/`       | UI copy, `en.json` and `pt.json` with identical keys                                                              |
-| `drizzle/`        | Database migrations                                                                                               |
-| `scripts/`        | Credentials wizard and the music previews script                                                                  |
-| `data/legacy/`    | Data captured from the old blog (post slugs, song candidates)                                                     |
+| Path                      | What lives there                                                                                                        |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `src/app/`                | Routes and API handlers only: each file wires a section's logic to Next. `globals.css` is the stylesheet entry point    |
+| `src/sections/<section>/` | One folder per home page section (`hero`, `places`, `games`, `nba`, `music`), see below                                 |
+| `src/layout/`             | Site chrome around the sections: header, footer, farewell banner, analytics                                             |
+| `src/shared/`             | Pieces more than one section reuses: `SectionShell`, `ExternalLink`, the near-viewport hook, fetch and template helpers |
+| `src/content/`            | Typed content modules (places, games, music, profile), each validated by a zod schema registered in `registry.ts`       |
+| `src/lib/`                | Site-wide logic: `db/` (Drizzle), `api/` (route guards), `seo/`, `retirement/` (old blog redirects), palette, site URLs |
+| `src/styles/`             | Design tokens, element defaults and effects shared across sections                                                      |
+| `messages/`               | UI copy, `en.json` and `pt.json` with identical keys                                                                    |
+| `drizzle/`                | Database migrations                                                                                                     |
+| `scripts/`                | Credentials wizard and the content scripts (music previews, game covers, trip photos)                                   |
+| `data/legacy/`            | Data captured from the old blog (post slugs, song candidates)                                                           |
+
+Each section folder follows the same shape, so finding something means picking the section first:
+
+| Path                    | What lives there                                                            |
+| ----------------------- | --------------------------------------------------------------------------- |
+| `<section>-section.tsx` | The server component the page renders; it reads content and copy            |
+| `components/`           | Client and server components only that section uses                         |
+| `hooks/`                | React hooks for the section's client state and API calls                    |
+| `lib/`                  | Pure logic and view models, safe to import from the browser                 |
+| `server/`               | Route logic and database queries behind the section's API routes            |
+| `<section>.css`         | Keyframes and effects too stateful for utilities, imported by `globals.css` |
+| `__tests__/`            | Vitest specs for that section's `lib/` and `server/`                        |
 
 ## Running locally
 
@@ -104,7 +119,7 @@ Content lives in `src/content/` and is checked against its schema by `pnpm test`
 
 New game recommendations go live for everyone right away. To take one down, open the `game_recommendations` table in the Neon console and set its `status` to `hidden`.
 
-If recommendations turn abusive, switch `NEW_RECOMMENDATION_STATUS` in `src/lib/games/recommendation-stats.ts` to `"pending"`. New ones are then visible only to the visitor who sent them until you set `status` to `approved`.
+If recommendations turn abusive, switch `NEW_RECOMMENDATION_STATUS` in `src/sections/games/server/recommendation-stats.ts` to `"pending"`. New ones are then visible only to the visitor who sent them until you set `status` to `approved`.
 
 ## Deploying
 
