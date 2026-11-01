@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { NbaSection } from "@/components/nba-section";
-import { GamesSection, MusicSection, PlacesSection } from "@/components/section-shells";
+import { GamesSection, MusicSection, PlacesSection } from "@/components/home-sections";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { buildStructuredData, serializeJsonLd } from "@/lib/structured-data";
 

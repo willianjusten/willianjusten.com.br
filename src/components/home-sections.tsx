@@ -16,7 +16,7 @@ import { SectionShell } from "./section-shell";
 const ICON_SIZE_IN_PIXELS = 20;
 const ICON_STROKE_WIDTH = 1.8;
 
-/** The four empty section shells. Later tickets fill each one through its `children`. */
+/** The Places, Games and Music sections of the home page, each wrapped in a `SectionShell`. */
 export async function PlacesSection() {
   const t = await getTranslations("Sections.places");
   const locale = await getLocale();
