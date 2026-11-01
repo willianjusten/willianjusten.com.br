@@ -1,7 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, type RefObject } from "react";
-import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
+import {
+  createFixedStepper,
+  reducedMotionQuery,
+  runWhileVisible,
+} from "@/shared/lib/animation-loop";
 import { fitCanvas } from "@/shared/lib/canvas";
 import { writePinLayout, type GlobePinElements } from "../components/globe-pin";
 import type { PinCluster } from "../lib/globe-math";
@@ -70,15 +74,21 @@ export function useGlobeScene({
     });
     resizeObserver.observe(canvas);
 
-    const paint = () => {
+    const stepFrame = createFixedStepper();
+    const paint = (elapsedInMilliseconds = 0) => {
       const motion = motionRef.current;
-      advanceGlobe(motion, !selectedSlugRef.current && !reducedMotion.matches);
+      const { width, height } = size;
+      for (let step = stepFrame(elapsedInMilliseconds); step > 0; step--) {
+        advanceGlobe(motion, !selectedSlugRef.current && !reducedMotion.matches);
+        easeCenterX(motion, width, isAlbumOpenRef.current);
+      }
       const { view } = motion;
       const globeFrame = {
-        ...size,
-        centerX: easeCenterX(motion, size.width, isAlbumOpenRef.current),
-        centerY: size.height * CENTER_Y_RATIO,
-        radius: baseRadiusOf(size.width, size.height) * view.zoom,
+        width,
+        height,
+        centerX: motion.centerX ?? width / 2,
+        centerY: height * CENTER_Y_RATIO,
+        radius: baseRadiusOf(width, height) * view.zoom,
       };
       drawGlobe(context, globeFrame, view, landDots, colors);
 
