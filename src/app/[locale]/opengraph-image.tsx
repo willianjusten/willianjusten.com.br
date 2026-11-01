@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
 import { resolveLocale } from "@/i18n/resolve-locale";
@@ -7,6 +9,18 @@ import { palette, withAlpha } from "@/lib/palette";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+/**
+ * next/og has no bold built-in font, so the site's fonts are bundled: Bricolage Grotesque
+ * ExtraBold for the logo mark and name, Inter Regular for the tagline.
+ */
+const FONTS_DIRECTORY = join(process.cwd(), "src/app/[locale]/fonts");
+const DISPLAY_FONT = {
+  family: "Bricolage Grotesque",
+  weight: 800,
+  file: "BricolageGrotesque-ExtraBold.ttf",
+} as const;
+const BODY_FONT = { family: "Inter", weight: 400, file: "Inter-Regular.ttf" } as const;
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
@@ -14,6 +28,10 @@ export function generateStaticParams() {
 export default async function OpenGraphImage({ params }: { params: Promise<{ locale: string }> }) {
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const [displayFontData, bodyFontData] = await Promise.all([
+    readFile(join(FONTS_DIRECTORY, DISPLAY_FONT.file)),
+    readFile(join(FONTS_DIRECTORY, BODY_FONT.file)),
+  ]);
 
   return new ImageResponse(
     <div
@@ -58,21 +76,45 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ loc
             background: `linear-gradient(135deg, ${palette.accentHigh}, ${palette.accent} 45%, ${palette.accentLow})`,
             color: palette.onAccent,
             fontSize: 52,
-            fontWeight: 800,
+            fontFamily: DISPLAY_FONT.family,
+            fontWeight: DISPLAY_FONT.weight,
           }}
         >
           wj
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 112, fontWeight: 800, letterSpacing: -3, lineHeight: 1 }}>
+          <div
+            style={{
+              fontSize: 112,
+              fontFamily: DISPLAY_FONT.family,
+              fontWeight: DISPLAY_FONT.weight,
+              letterSpacing: -3,
+              lineHeight: 1,
+            }}
+          >
             Willian Justen
           </div>
-          <div style={{ marginTop: 28, fontSize: 38, color: palette.textMuted, maxWidth: 1040 }}>
+          <div
+            style={{
+              marginTop: 28,
+              fontSize: 34,
+              fontFamily: BODY_FONT.family,
+              fontWeight: BODY_FONT.weight,
+              color: palette.textMuted,
+              maxWidth: 1040,
+            }}
+          >
             {t("tagline")}
           </div>
         </div>
       </div>
     </div>,
-    size,
+    {
+      ...size,
+      fonts: [
+        { name: DISPLAY_FONT.family, data: displayFontData, weight: DISPLAY_FONT.weight },
+        { name: BODY_FONT.family, data: bodyFontData, weight: BODY_FONT.weight },
+      ],
+    },
   );
 }
