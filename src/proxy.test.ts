@@ -47,3 +47,43 @@ describe("locale routing", () => {
     expect(redirectPathname(response)).toBe("/");
   });
 });
+
+describe("retired photo subdomains", () => {
+  function visitHost(host: string, pathname: string, headers: Record<string, string> = {}) {
+    return proxy(new NextRequest(`https://${host}${pathname}`, { headers }));
+  }
+
+  it.each(["photos.willianjusten.com.br", "my-trips.willianjusten.com.br"])(
+    "sends %s to the English Places section with a 301",
+    (host) => {
+      const response = visitHost(host, "/", { "accept-language": "en-US,en;q=0.9" });
+
+      expect(response.status).toBe(301);
+      expect(response.headers.get("location")).toBe("https://willianjusten.com.br/#places");
+    },
+  );
+
+  it("sends any old path to the Places section", () => {
+    const response = visitHost("my-trips.willianjusten.com.br", "/place/paris/photo.jpg");
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("https://willianjusten.com.br/#places");
+  });
+
+  it("sends a browser that prefers Portuguese to the Portuguese Places section", () => {
+    const response = visitHost("photos.willianjusten.com.br", "/", {
+      "accept-language": "pt-BR,pt;q=0.9,en;q=0.8",
+    });
+
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("https://willianjusten.com.br/pt#places");
+  });
+
+  it("keeps English when Portuguese is only a fallback", () => {
+    const response = visitHost("photos.willianjusten.com.br", "/", {
+      "accept-language": "en-US,en;q=0.9,pt-BR;q=0.5",
+    });
+
+    expect(response.headers.get("location")).toBe("https://willianjusten.com.br/#places");
+  });
+});
