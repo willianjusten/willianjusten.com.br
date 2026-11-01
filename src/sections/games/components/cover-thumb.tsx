@@ -5,14 +5,11 @@ import { PLATFORM_STYLES } from "../lib/platforms";
 type CoverThumbProps = {
   coverUrl: string | null;
   platform: GamePlatform;
-  /** Size classes, e.g. `h-11 w-[34px]`. */
   sizeClass: string;
-  /** Band height class; the band shows the platform when there is no cover art. */
-  bandClass: string;
+  bandHeightClass: string;
 };
 
-/** Small portrait cover: IGDB art when there is one, a tinted block with the platform band if not. */
-export function CoverThumb({ coverUrl, platform, sizeClass, bandClass }: CoverThumbProps) {
+export function CoverThumb({ coverUrl, platform, sizeClass, bandHeightClass }: CoverThumbProps) {
   return (
     <span
       aria-hidden="true"
@@ -22,7 +19,7 @@ export function CoverThumb({ coverUrl, platform, sizeClass, bandClass }: CoverTh
         <Image src={coverUrl} alt="" fill sizes="52px" className="object-cover" />
       ) : (
         <span
-          className={`absolute inset-x-0 top-0 block ${bandClass} band-${platform}`}
+          className={`absolute inset-x-0 top-0 block ${bandHeightClass} ${PLATFORM_STYLES[platform].bandClass}`}
           title={PLATFORM_STYLES[platform].name}
         />
       )}

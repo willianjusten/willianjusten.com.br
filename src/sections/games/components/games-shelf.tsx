@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useGameReactions } from "../hooks/use-game-reactions";
 import {
   useGameRecommendations,
@@ -41,7 +41,6 @@ type GamesShelfProps = {
   labels: GamesShelfLabels;
 };
 
-/** The Games section body: list tabs, the coverflow, the details strip and the recommend form. */
 export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");
@@ -75,6 +74,8 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
       : voteError || reactions.hasError
         ? labels.reactionError
         : null;
+
+  const focusStage = useCallback(() => stageRef.current?.focus({ preventScroll: true }), []);
 
   function chooseList(list: ShelfList) {
     setActiveList(list);
@@ -132,7 +133,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
           emptyTitle={isRecommendedTab ? labels.emptyRecommendedTitle : labels.emptyTitle}
           stageRef={stageRef}
           onChangeIndex={setRawIndex}
-          onFocusStage={() => stageRef.current?.focus({ preventScroll: true })}
+          onFocusStage={focusStage}
         />
         <ShelfDetails
           labels={labels}

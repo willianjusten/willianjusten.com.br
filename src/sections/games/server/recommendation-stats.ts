@@ -21,7 +21,6 @@ function toShelfPlatform(storedPlatform: string): GamePlatform | null {
   return LEGACY_PLATFORMS[storedPlatform] ?? null;
 }
 
-/** Pure: turns rows into what the browser may see. Hidden rows must be filtered out before. */
 export function buildRecommendationViews(
   recommendations: readonly RecommendationRow[],
   votes: readonly VoteRow[],
@@ -68,7 +67,6 @@ async function readVotes(database: Database, recommendationIds: number[]): Promi
     .where(inArray(gameRecommendationVotes.recommendationId, recommendationIds));
 }
 
-/** Approved games for everyone, plus this browser's own pending ones. */
 export async function readRecommendations(
   database: Database,
   browserId: string | undefined,
@@ -129,10 +127,7 @@ export type NewRecommendation = {
  */
 const NEW_RECOMMENDATION_STATUS = "approved";
 
-/**
- * Saves a game the first time anyone recommends it, then records this browser's vote.
- * Idempotent per browser. Returns undefined when Will has hidden the game.
- */
+/** Idempotent per browser. Returns undefined when Will has hidden the game. */
 export async function submitRecommendation(
   database: Database,
   { game, browserId }: NewRecommendation,
@@ -168,7 +163,6 @@ export async function submitRecommendation(
 
 export type VoteOutcome = { kind: "ok"; count: number } | { kind: "not_approved" };
 
-/** +1 or undo on an approved game. Idempotent per browser. */
 export async function setRecommendationVote(
   database: Database,
   recommendationId: number,

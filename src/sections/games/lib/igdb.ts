@@ -19,7 +19,6 @@ const PLATFORM_BY_IGDB_ID: Record<number, GamePlatform> = {
   6: "rog",
 };
 
-/** Order used to pick the platform shown on a recommended case. */
 const PLATFORM_PRIORITY: GamePlatform[] = ["ps5", "xbox", "switch2", "rog"];
 
 const SEARCH_RESULT_LIMIT = 6;
@@ -28,7 +27,6 @@ const SEARCH_CACHE_MAX_ENTRIES = 200;
 /** Refresh slightly early so a token never expires mid-request. */
 const TOKEN_EXPIRY_MARGIN_IN_MILLISECONDS = 60 * 1000;
 
-/** A game as the rest of the app sees it, translated from the IGDB payload at this boundary. */
 export type IgdbGame = {
   igdbId: number;
   title: string;

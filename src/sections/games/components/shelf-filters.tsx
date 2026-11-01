@@ -5,7 +5,7 @@
 import { SlidersHorizontal } from "lucide-react";
 import { useId, useState, type Ref } from "react";
 import { GAME_PLATFORMS } from "@/content/games";
-import { PLATFORM_STYLES } from "../lib/platforms";
+import { PLATFORM_STYLES, platformDotClass } from "../lib/platforms";
 import type { PlatformFilter } from "../lib/shelf";
 import { SHELF_LISTS, type ShelfList } from "../lib/shelf-cases";
 
@@ -32,7 +32,6 @@ type ShelfFiltersProps = {
   onChoosePlatform: (platform: PlatformFilter) => void;
 };
 
-/** List tabs, plus platform chips that fold behind a toggle on phones. Recommendations have no platform filter. */
 export function ShelfFilters({
   labels,
   activeList,
@@ -67,7 +66,7 @@ export function ShelfFilters({
                 className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-4 text-small font-medium whitespace-nowrap transition-colors sm:min-h-11 sm:px-5 sm:text-ui ${
                   isActive
                     ? "border-accent bg-accent text-on-accent"
-                    : "border-line-strong bg-transparent text-text hover:border-line-hover"
+                    : "border-line-strong text-text hover:border-line-hover"
                 }`}
               >
                 {labels.tabs[list]}
@@ -86,14 +85,14 @@ export function ShelfFilters({
           className={`relative inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-pill border transition-colors disabled:cursor-default disabled:opacity-40 sm:hidden ${
             isPlatformMenuOpen
               ? "border-line-hover bg-surface-raised text-white"
-              : "border-line-strong bg-transparent text-text"
+              : "border-line-strong text-text"
           }`}
         >
           <SlidersHorizontal size={16} strokeWidth={1.8} aria-hidden="true" />
           {platform !== "all" && !isPlatformFilterOff ? (
             <span
               aria-hidden="true"
-              className={`absolute top-1.5 right-1.5 size-2 rounded-full dot-${platform}`}
+              className={`absolute top-1.5 right-1.5 size-2 rounded-full ${platformDotClass(platform)}`}
             />
           ) : null}
         </button>
@@ -121,10 +120,13 @@ export function ShelfFilters({
               className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
                 isActive
                   ? "border-line-hover bg-surface-raised text-white"
-                  : "border-line bg-transparent text-text-2 hover:border-line-hover"
+                  : "border-line text-text-2 hover:border-line-hover"
               } ${isDimmed ? "opacity-45" : ""}`}
             >
-              <span aria-hidden="true" className={`size-2.5 rounded-full dot-${filter}`} />
+              <span
+                aria-hidden="true"
+                className={`size-2.5 rounded-full ${platformDotClass(filter)}`}
+              />
               {filter === "all" ? labels.all : PLATFORM_STYLES[filter].name}
               <span className="font-mono text-[11px] opacity-60">{count}</span>
             </button>

@@ -4,10 +4,10 @@
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef, type PointerEvent, type Ref } from "react";
+import { useCallback, useRef, type PointerEvent, type Ref } from "react";
 import { clampIndex, formatCounter, indexAfterDrag, indexAfterKey } from "../lib/coverflow";
 import type { ShelfCase } from "../lib/shelf-cases";
-import { GameCase } from "./game-case";
+import { EmptyGameCase, GameCase } from "./game-case";
 
 /** Pointer travel that turns a press into a drag, so it no longer selects a case. */
 const DRAG_SLOP_IN_PIXELS = 8;
@@ -25,7 +25,6 @@ type ShelfStageProps = {
   labels: ShelfStageLabels;
   cases: readonly ShelfCase[];
   activeIndex: number;
-  /** Title on the dashed case shown when the tab is empty. */
   emptyTitle: string;
   stageRef: Ref<HTMLDivElement>;
   onChangeIndex: (index: number) => void;
@@ -33,7 +32,6 @@ type ShelfStageProps = {
   onFocusStage: () => void;
 };
 
-/** The 3D coverflow: drag, arrow keys, the side buttons or a click on a case move it. */
 export function ShelfStage({
   labels,
   cases,
@@ -71,11 +69,15 @@ export function ShelfStage({
     }, 0);
   }
 
-  function selectCase(index: number) {
-    if (hasDragged.current) return;
-    goTo(index);
-    onFocusStage();
-  }
+  const caseCount = cases.length;
+  const selectCase = useCallback(
+    (index: number) => {
+      if (hasDragged.current) return;
+      onChangeIndex(clampIndex(index, caseCount));
+      onFocusStage();
+    },
+    [caseCount, onChangeIndex, onFocusStage],
+  );
 
   return (
     <div
@@ -100,7 +102,7 @@ export function ShelfStage({
       onPointerLeave={handlePointerEnd}
       className="games-stage relative h-[470px] overflow-hidden outline-offset-[-2px]"
     >
-      <div className="games-floor pointer-events-none absolute inset-x-0 bottom-0 h-[120px]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[120px] border-t border-white/4 bg-linear-to-b/srgb from-transparent to-white/2.5" />
       <div className="absolute top-12 left-1/2 size-0 [transform-style:preserve-3d]">
         {cases.length > 0 ? (
           cases.map((shelfCase, index) => (
@@ -110,21 +112,12 @@ export function ShelfStage({
               index={index}
               activeIndex={activeIndex}
               badgeText={shelfCase.badgeText}
-              emptyTitle={emptyTitle}
               showLabel={shelfCase.showLabel}
               onSelect={selectCase}
             />
           ))
         ) : (
-          <GameCase
-            entry={null}
-            index={0}
-            activeIndex={0}
-            badgeText=""
-            emptyTitle={emptyTitle}
-            showLabel=""
-            onSelect={goTo}
-          />
+          <EmptyGameCase title={emptyTitle} />
         )}
       </div>
 

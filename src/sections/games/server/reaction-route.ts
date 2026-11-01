@@ -33,7 +33,6 @@ export type ReactionRouteDependencies = RateLimitGuardDependencies & {
   readReactions: (browserId: string | undefined) => Promise<ReactionSnapshot>;
 };
 
-/** Request logic kept free of Next and Neon so the route file stays a thin wiring layer. */
 export function createReactionRoute(dependencies: ReactionRouteDependencies) {
   return {
     async GET(request: Request): Promise<Response> {

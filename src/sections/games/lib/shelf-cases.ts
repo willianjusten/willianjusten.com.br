@@ -4,12 +4,10 @@ import type { ShelfGame } from "./games-board";
 import type { RecommendationView } from "./recommendations";
 import { filterShelf, type PlatformFilter } from "./shelf";
 
-/** The curated lists plus the visitors' recommendations. */
 export type ShelfList = GameList | "recommended";
 
 export const SHELF_LISTS: readonly ShelfList[] = ["playing", "played", "wishlist", "recommended"];
 
-/** What a 3D case needs to draw itself; the cover art replaces the tone and the title text. */
 export type CaseEntry = {
   title: string;
   platform: GamePlatform;
@@ -19,12 +17,10 @@ export type CaseEntry = {
   sticker?: string;
 };
 
-/** Which endpoint a case's heart button talks to. */
 export type ReactionTarget =
   | { kind: "game"; gameSlug: string }
   | { kind: "recommendation"; recommendationId: number };
 
-/** Everything the details strip and a case need about one game on the active tab. */
 export type ShelfCase = {
   key: string;
   entry: CaseEntry;
@@ -34,7 +30,6 @@ export type ShelfCase = {
   rating: number | null;
   showLabel: string;
   reaction: { pressed: boolean; count: number; isEnabled: boolean; target: ReactionTarget };
-  /** True when the "recommend something like this" link applies: played or playing games. */
   canRecommendSimilar: boolean;
 };
 
@@ -111,7 +106,6 @@ function gameCase(
   };
 }
 
-/** The cases on the active tab: recommendations as they come, curated games filtered by platform. */
 export function buildShelfCases(sources: ShelfCaseSources): ShelfCase[] {
   if (sources.list === "recommended") {
     return sources.recommendations.map((recommendation) =>

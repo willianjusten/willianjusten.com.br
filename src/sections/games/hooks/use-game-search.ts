@@ -10,7 +10,6 @@ const MIN_SEARCH_LENGTH = 2;
 
 type SearchResponse = { query: string; results: IgdbSearchResult[]; hasFailed: boolean };
 
-/** Debounced search through our own route; IGDB is never called from the browser. */
 export function useGameSearch(rawQuery: string) {
   const query = rawQuery.trim();
   const [response, setResponse] = useState<SearchResponse | null>(null);
