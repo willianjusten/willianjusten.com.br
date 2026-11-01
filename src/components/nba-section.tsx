@@ -69,6 +69,8 @@ export async function NbaSection() {
       <div className="mt-6 flex flex-wrap items-center gap-4">
         <a
           href={COURTSIDE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="group inline-flex min-h-12 items-center gap-2 rounded-pill bg-(image:--ball-light) px-6 font-semibold text-on-accent no-underline hover:text-on-accent"
         >
           <BasketballIcon size={18} />
