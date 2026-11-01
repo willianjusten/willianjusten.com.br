@@ -3,6 +3,7 @@ import { buildShelfEntries } from "./games-board";
 import { games } from "./games";
 
 const [firstGame] = games;
+const gameWithNote = games.find((game) => game.note !== undefined)!;
 
 describe("games board", () => {
   it("gives a game its IGDB cover when one was fetched", () => {
@@ -21,11 +22,17 @@ describe("games board", () => {
   });
 
   it("picks the note in the visitor's language", () => {
-    const [english] = buildShelfEntries([firstGame], {}, "en");
-    const [portuguese] = buildShelfEntries([firstGame], {}, "pt");
+    const [english] = buildShelfEntries([gameWithNote], {}, "en");
+    const [portuguese] = buildShelfEntries([gameWithNote], {}, "pt");
 
-    expect(english.note).toBe(firstGame.note.en);
-    expect(portuguese.note).toBe(firstGame.note.pt);
+    expect(english.note).toBe(gameWithNote.note?.en);
+    expect(portuguese.note).toBe(gameWithNote.note?.pt);
+  });
+
+  it("leaves the note empty for a game without one, so the shelf hides the line", () => {
+    const [entry] = buildShelfEntries([{ ...firstGame, note: undefined }], {}, "en");
+
+    expect(entry.note).toBe("");
   });
 });
 

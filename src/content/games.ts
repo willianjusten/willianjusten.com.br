@@ -19,7 +19,8 @@ const gameSchema = z.object({
   list: z.enum(GAME_LISTS),
   /** Release or play year, or a visible `[placeholder]` while unknown. */
   year: z.union([z.number().int().min(1970).max(2100), placeholderText]),
-  note: localizedText,
+  /** One line under the title on the shelf; left out when there is nothing to say. */
+  note: localizedText.optional(),
   /**
    * Pins the IGDB game for `pnpm games:covers` when the title search picks the wrong one
    * (or none). Usually left out.
@@ -37,10 +38,6 @@ export const gamesSchema = z
 
 export type Game = z.output<typeof gameSchema>;
 
-const PLACEHOLDER_NOTE = {
-  en: "[One line on how it is going]",
-  pt: "[Uma linha sobre como está indo]",
-};
 const PLACEHOLDER_VERDICT = { en: "[Your verdict in one line]", pt: "[Seu veredito em uma linha]" };
 const PLACEHOLDER_WHY = { en: "[Why it is on the list]", pt: "[Por que está na lista]" };
 
@@ -52,7 +49,7 @@ type PlaceholderGameOptions = {
   list: GameList;
   /** Case colour while there is no IGDB cover. */
   coverTone: string;
-  note: GameInput["note"];
+  note?: GameInput["note"];
 };
 
 function placeholderGame({
@@ -75,7 +72,6 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "pc",
       list: "playing",
       year: 2026,
-      note: PLACEHOLDER_NOTE,
       tone: "#5A2A1E",
     },
     placeholderGame({
@@ -93,7 +89,6 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "switch2",
       list: "playing",
       coverTone: "#4A2A24",
-      note: PLACEHOLDER_NOTE,
     }),
     {
       slug: "alan-wake-2",

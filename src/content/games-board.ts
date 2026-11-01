@@ -3,7 +3,7 @@ import type { GameCoverEntry } from "./game-cover-schema";
 import type { Game } from "./games";
 
 export type ShelfGame = Omit<Game, "note" | "igdbId"> & {
-  /** The note in the visitor's language. */
+  /** The note in the visitor's language, or empty when the game has none. */
   note: string;
   /** Portrait IGDB cover, or null to fall back to the tone. */
   coverUrl: string | null;
@@ -19,7 +19,7 @@ export function buildShelfEntries(
     const cover = covers[game.slug];
     return {
       ...game,
-      note: note[locale],
+      note: note?.[locale] ?? "",
       coverUrl: cover ? buildCoverUrl(cover.coverImageId, "case") : null,
     };
   });
