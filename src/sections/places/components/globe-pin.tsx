@@ -1,13 +1,40 @@
 import Image from "next/image";
 import type { PointerEvent } from "react";
+import type { PinLayout } from "../lib/pin-layout";
 import type { GlobePlace } from "../lib/places-board";
 
-/** The globe's frame loop positions the pin and writes its badge, name and label directly. */
 export type GlobePinElements = {
   pin: HTMLButtonElement;
   name: HTMLSpanElement;
   badge: HTMLSpanElement;
 };
+
+/**
+ * Writes a frame's layout straight to the pin's DOM, skipping every value that did not change since
+ * `previous`, so a still globe costs no style writes.
+ */
+export function writePinLayout(
+  { pin, badge, name }: Partial<GlobePinElements>,
+  layout: PinLayout,
+  previous: PinLayout | undefined,
+) {
+  if (!pin) return;
+  if (layout.transform !== previous?.transform) pin.style.transform = layout.transform;
+  if (layout.zIndex !== previous?.zIndex) pin.style.zIndex = layout.zIndex;
+  if (layout.opacity !== previous?.opacity) pin.style.opacity = layout.opacity;
+  if (layout.isInteractive !== previous?.isInteractive) {
+    pin.style.pointerEvents = layout.isInteractive ? "auto" : "none";
+  }
+  if (layout.isFocusable !== previous?.isFocusable) pin.tabIndex = layout.isFocusable ? 0 : -1;
+  if (layout.ariaLabel !== previous?.ariaLabel) pin.setAttribute("aria-label", layout.ariaLabel);
+  if (badge && layout.memberCount !== previous?.memberCount) {
+    badge.style.display = layout.memberCount > 1 ? "flex" : "none";
+    badge.textContent = String(layout.memberCount);
+  }
+  if (name && layout.showsName !== previous?.showsName) {
+    name.style.display = layout.showsName ? "block" : "none";
+  }
+}
 
 type GlobePinProps = {
   place: GlobePlace;
