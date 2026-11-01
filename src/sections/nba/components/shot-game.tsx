@@ -23,7 +23,7 @@ import {
   type Velocity,
 } from "../lib/shot-physics";
 import { RESULT_MESSAGE_FRAMES } from "../lib/renderer/overlay";
-import { drawScene, type SceneState } from "../lib/renderer/scene";
+import { createSceneRenderer, type SceneState } from "../lib/renderer/scene";
 import type { ShotTotals } from "../server/shot-stats";
 import { runWhileVisible } from "@/shared/lib/animation-loop";
 import { fetchJson, postJson } from "@/shared/lib/fetch-json";
@@ -146,6 +146,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
     const canvas: HTMLCanvasElement = mountedCanvas;
     const context: CanvasRenderingContext2D = mountedContext;
     const runtime = runtimeRef.current;
+    const drawScene = createSceneRenderer();
 
     const fonts = {
       display: readFontFamily(canvas, "--font-bricolage", "sans-serif"),
@@ -231,7 +232,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
           keyboardAim: (angle) => fillTemplate(labelsRef.current.keyboardAim, { angle }),
         },
       };
-      drawScene(context!, geometry, scene);
+      drawScene(context, geometry, scene);
     }
 
     const stopLoop = runWhileVisible(canvas, () => {
