@@ -29,10 +29,10 @@ CI runs lint, format check, type-check and tests on every PR.
 
 ## Layout
 
-- `src/sections/<section>/` holds everything one home page section owns: `<section>-section.tsx` (the entry the page renders), `components/`, `hooks/`, `lib/` (pure, browser-safe), `server/` (route logic and queries), `<section>.css` and `__tests__/`.
-- `src/layout/` is the site chrome, `src/shared/` what two or more sections reuse, `src/lib/` site-wide logic (db, api guards, seo, retirement), `src/styles/` tokens, base and shared effects.
-- Route files in `src/app/` stay thin: they wire a section's `server/` logic to Next and the database.
-- Tests live in a `__tests__/` folder next to the code they cover. Inside one section (or one `src/lib/` folder) import relatively; across them use `@/`.
+- `src/app/` holds routes only. Route files stay thin: they wire a feature's `server/` logic to Next and the database.
+- `src/features/<feature>/` holds everything one home page section owns (`hero`, `places`, `games`, `nba`, `music`): `<feature>-section.tsx` (the entry the page renders), `components/`, `hooks/`, `lib/` (pure, browser-safe), `server/` (route logic and queries), `<feature>.css` and `__tests__/`.
+- What two or more features reuse goes in `src/components/` (with the site chrome in `src/components/layout/`), `src/hooks/` and `src/lib/` (also site-wide logic: db, api guards, seo, retirement). `src/styles/` holds tokens, base and shared effects.
+- Tests live in a `__tests__/` folder next to the code they cover. Inside one feature (or one `src/lib/` folder) import relatively; across them use `@/`.
 
 ## Conventions
 
