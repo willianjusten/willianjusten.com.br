@@ -12,12 +12,13 @@
   "Header": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "backToTop": "Willian Justen, back to top",
+    "backToTop": "wj, Willian Justen, back to top",
     "navigationLabel": "Sections",
     "places": "Places",
     "games": "Games",
     "nba": "NBA",
-    "music": "Music"
+    "music": "Music",
+    "skipToContent": "Skip to content"
   },
   "LocaleToggle": {
     "label": "Language",

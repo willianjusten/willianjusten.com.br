@@ -51,10 +51,8 @@ export async function Hero() {
           <span>{t.rich("clock", { time: () => <LocalTime /> })}</span>
         </p>
 
-        <h1
-          aria-label={t("name")}
-          className="m-0 font-display text-display leading-[0.88] font-extrabold tracking-[-0.04em]"
-        >
+        <h1 className="m-0 font-display text-display leading-[0.88] font-extrabold tracking-[-0.04em]">
+          <span className="sr-only">{t("name")}</span>
           <span aria-hidden="true" className="block">
             {[...FIRST_NAME].map((letter, index) => (
               <span
