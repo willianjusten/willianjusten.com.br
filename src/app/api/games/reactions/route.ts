@@ -1,8 +1,8 @@
 import { games } from "@/content/games";
 import { visitorRateLimitGuard } from "@/lib/api/visitor-rate-limit";
 import { getDatabase } from "@/lib/db/client";
-import { createReactionRoute } from "@/sections/games/server/reaction-route";
-import { readReactions, setReaction } from "@/sections/games/server/reaction-stats";
+import { createReactionRoute } from "@/features/games/server/reaction-route";
+import { readReactions, setReaction } from "@/features/games/server/reaction-stats";
 
 export const dynamic = "force-dynamic";
 

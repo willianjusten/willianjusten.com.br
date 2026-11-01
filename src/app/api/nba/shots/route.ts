@@ -1,7 +1,7 @@
 import { visitorRateLimitGuard } from "@/lib/api/visitor-rate-limit";
 import { getDatabase } from "@/lib/db/client";
-import { createShotRoute } from "@/sections/nba/server/shot-route";
-import { readShotTotals, recordShot } from "@/sections/nba/server/shot-stats";
+import { createShotRoute } from "@/features/nba/server/shot-route";
+import { readShotTotals, recordShot } from "@/features/nba/server/shot-stats";
 
 export const dynamic = "force-dynamic";
 

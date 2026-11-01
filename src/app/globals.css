@@ -3,6 +3,6 @@
 @import "../styles/base.css";
 @import "../styles/effects.css";
 @import "../layout/layout.css";
-@import "../sections/hero/hero.css";
-@import "../sections/games/games.css";
-@import "../sections/music/music.css";
+@import "../features/hero/hero.css";
+@import "../features/games/games.css";
+@import "../features/music/music.css";

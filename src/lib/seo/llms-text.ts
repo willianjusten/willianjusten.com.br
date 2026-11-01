@@ -1,4 +1,4 @@
-import { PLATFORM_STYLES } from "@/sections/games/lib/platforms";
+import { PLATFORM_STYLES } from "@/features/games/lib/platforms";
 import { currentlyPlaying, games } from "@/content/games";
 import { places } from "@/content/places";
 import { profile } from "@/content/profile";

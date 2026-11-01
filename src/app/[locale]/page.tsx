@@ -3,11 +3,11 @@ import { getTranslations } from "next-intl/server";
 import { FarewellBanner } from "@/layout/farewell-banner";
 import { Footer } from "@/layout/footer";
 import { Header } from "@/layout/header/header";
-import { GamesSection } from "@/sections/games/games-section";
-import { HeroSection } from "@/sections/hero/hero-section";
-import { MusicSection } from "@/sections/music/music-section";
-import { NbaSection } from "@/sections/nba/nba-section";
-import { PlacesSection } from "@/sections/places/places-section";
+import { GamesSection } from "@/features/games/games-section";
+import { HeroSection } from "@/features/hero/hero-section";
+import { MusicSection } from "@/features/music/music-section";
+import { NbaSection } from "@/features/nba/nba-section";
+import { PlacesSection } from "@/features/places/places-section";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { buildStructuredData, serializeJsonLd } from "@/lib/seo/structured-data";
 

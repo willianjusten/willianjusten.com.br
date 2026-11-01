@@ -1,11 +1,11 @@
 import { visitorRateLimitGuard } from "@/lib/api/visitor-rate-limit";
 import { getDatabase } from "@/lib/db/client";
-import { getIgdbClient } from "@/sections/games/server/igdb-server";
-import { createRecommendationRoute } from "@/sections/games/server/recommendation-routes";
+import { getIgdbClient } from "@/features/games/server/igdb-server";
+import { createRecommendationRoute } from "@/features/games/server/recommendation-routes";
 import {
   readRecommendations,
   submitRecommendation,
-} from "@/sections/games/server/recommendation-stats";
+} from "@/features/games/server/recommendation-stats";
 
 export const dynamic = "force-dynamic";
 

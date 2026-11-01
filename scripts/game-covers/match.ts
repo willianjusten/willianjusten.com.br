@@ -1,4 +1,4 @@
-import type { IgdbGame } from "../../src/sections/games/lib/igdb.ts";
+import type { IgdbGame } from "../../src/features/games/lib/igdb.ts";
 
 function normalizeTitle(title: string): string {
   return title
