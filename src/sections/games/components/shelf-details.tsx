@@ -68,7 +68,7 @@ export function ShelfDetails({
           className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-4 text-sm whitespace-nowrap transition-colors sm:px-[18px] disabled:cursor-default disabled:opacity-40 ${
             isReacted
               ? "border-accent bg-accent/15 text-white"
-              : "border-line-strong bg-transparent text-text hover:border-line-hover"
+              : "border-line-strong text-text hover:border-line-hover"
           }`}
         >
           <Heart size={16} aria-hidden="true" fill={isReacted ? "currentColor" : "none"} />
