@@ -41,7 +41,7 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
             <li
               key={track.id}
               data-playing={isPlaying}
-              className="song group flex items-center gap-4 rounded-sm border-b border-line px-0 py-2 hover:bg-surface hover:px-3 focus-within:bg-surface focus-within:px-3 data-[playing=true]:bg-surface data-[playing=true]:px-3"
+              className="song group relative flex items-center gap-4 rounded-sm border-b border-line px-0 py-2 hover:bg-surface hover:px-3 focus-within:bg-surface focus-within:px-3 data-[playing=true]:bg-surface data-[playing=true]:px-3"
             >
               <time
                 dateTime={track.month}
@@ -60,7 +60,7 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
                 disabled={!track.previewUrl}
                 title={track.previewUrl ? undefined : labels.previewUnavailable}
                 onClick={() => track.previewUrl && onToggle(track.id, track.previewUrl)}
-                className="song-play flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-pill border-0 bg-transparent p-0 disabled:cursor-not-allowed disabled:opacity-40"
+                className="song-play flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-pill border-0 bg-transparent p-0 after:absolute after:inset-0 after:rounded-sm after:content-[''] disabled:cursor-not-allowed disabled:opacity-40"
               >
                 <span className="flex size-8 items-center justify-center rounded-pill bg-accent text-on-accent">
                   {isPlaying ? (
