@@ -1,5 +1,5 @@
 /**
- * The design tokens from `src/app/globals.css` as plain values. Canvas drawing and `next/og`
+ * The design tokens from `src/styles/tokens.css` as plain values. Canvas drawing and `next/og`
  * cannot read CSS variables, so they mirror them here; `palette.test.ts` keeps the two in step.
  */
 export const palette = {

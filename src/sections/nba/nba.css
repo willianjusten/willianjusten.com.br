@@ -1,0 +1,21 @@
+/* NBA: the section badge bounces like a dribbled ball. */
+
+.bounce-ball {
+  animation: bounce-ball 1.6s cubic-bezier(0.3, 0, 0.6, 1) infinite;
+}
+
+@keyframes bounce-ball {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bounce-ball {
+    animation: none;
+  }
+}

@@ -1,0 +1,125 @@
+/* Hero: cursor spotlight, the animated name and the status tiles. */
+
+@property --spin-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Cursor spotlight, driven by --pointer-x and --pointer-y on the hero. */
+.spotlight {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    520px circle at var(--pointer-x, 72%) var(--pointer-y, 30%),
+    rgba(255, 255, 255, 0.07),
+    transparent 60%
+  );
+}
+
+/* Hero name: letters rise in, tiles flip in. */
+.letter-rise {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(70%) rotate(8deg);
+  animation: letter-rise 900ms var(--ease-out) forwards;
+}
+
+.letter-hover {
+  display: inline-block;
+  transition:
+    transform var(--dur-base) var(--ease-bounce),
+    color 300ms;
+}
+
+.letter-hover:hover {
+  transform: translateY(-12%) rotate(-6deg);
+  color: var(--accent);
+}
+
+@keyframes letter-rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Status tiles */
+.status-tile {
+  position: relative;
+  transition:
+    transform var(--dur-base) var(--ease-spring),
+    background var(--dur-base),
+    border-color var(--dur-base);
+}
+
+.status-tile::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from var(--spin-angle),
+    transparent 0 62%,
+    rgba(255, 107, 53, 0.3) 72%,
+    var(--accent) 84%,
+    transparent 92%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity var(--dur-base);
+  pointer-events: none;
+}
+
+.status-tile:hover,
+.status-tile:focus-visible {
+  transform: translateY(-4px);
+  background: var(--tile-hover);
+  border-color: var(--line-hover);
+}
+
+.status-tile:hover::before,
+.status-tile:focus-visible::before {
+  opacity: 1;
+  animation: tile-sweep 2.4s linear infinite;
+}
+
+@keyframes tile-sweep {
+  to {
+    --spin-angle: 360deg;
+  }
+}
+
+.tile-icon {
+  transition: transform 400ms var(--ease-bounce);
+}
+
+.status-tile:hover .tile-icon,
+.status-tile:focus-visible .tile-icon {
+  transform: rotate(-10deg) scale(1.15);
+}
+
+.status-tile:hover .nudge-arrow,
+.status-tile:focus-visible .nudge-arrow {
+  transform: translate(3px, -3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-tile:hover::before,
+  .status-tile:focus-visible::before {
+    animation: none;
+  }
+
+  .letter-rise {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

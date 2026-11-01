@@ -3,7 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
 
-/** Mirrors `--breakpoint-nav` in globals.css. */
+/** Mirrors `--breakpoint-nav` in src/styles/tokens.css. */
 const DESKTOP_BREAKPOINT_QUERY = "(min-width: 900px)";
 
 type MobileMenuProps = {

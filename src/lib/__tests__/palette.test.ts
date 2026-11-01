@@ -2,14 +2,14 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { palette, withAlpha } from "../palette";
 
-const globalsCss = readFileSync("src/app/globals.css", "utf8");
+const tokensCss = readFileSync("src/styles/tokens.css", "utf8");
 
 function cssToken(name: string): string | undefined {
-  return globalsCss.match(new RegExp(`--${name}:\\s*(#[0-9a-fA-F]{6})`))?.[1];
+  return tokensCss.match(new RegExp(`--${name}:\\s*(#[0-9a-fA-F]{6})`))?.[1];
 }
 
 describe("palette", () => {
-  it("mirrors the colour tokens in globals.css", () => {
+  it("mirrors the colour tokens in tokens.css", () => {
     expect(palette).toMatchObject({
       background: cssToken("bg"),
       text: cssToken("text"),

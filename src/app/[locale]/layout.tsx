@@ -8,9 +8,6 @@ import { Analytics } from "@/layout/analytics";
 import { profile, xHandle } from "@/content/profile";
 import { hreflangAlternates, localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
-import "../frame.css";
-import "@/sections/music/music.css";
-import "@/sections/games/games.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
