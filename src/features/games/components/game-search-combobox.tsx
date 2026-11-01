@@ -3,13 +3,19 @@
 /* oxlint-disable jsx-a11y/no-noninteractive-element-to-interactive-role, jsx-a11y/prefer-tag-over-role */
 
 import { Search } from "lucide-react";
-import { useId, useState, type KeyboardEvent, type Ref } from "react";
+import {
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  type FocusEvent,
+  type KeyboardEvent,
+  type Ref,
+} from "react";
 import { ExternalLink } from "@/components/external-link";
 import { useGameSearch } from "../hooks/use-game-search";
 import type { IgdbSearchResult } from "../lib/igdb";
 import { SearchResultOption } from "./search-result-option";
-
-const MAX_RESULTS_SHOWN = 6;
 
 export type GameSearchLabels = {
   searchLabel: string;
@@ -45,8 +51,22 @@ export function GameSearchCombobox({
   const inputId = `${baseId}-search`;
   const optionId = (index: number) => `${baseId}-option-${index}`;
   const { isSearchable, isLoading, hasFailed, results } = useGameSearch(query);
-  const shownResults = results.slice(0, MAX_RESULTS_SHOWN);
   const isListOpen = isSearchable && !isHidden && !isListDismissed;
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isListOpen) return;
+    function dismissOnOutsidePress(event: PointerEvent) {
+      if (!containerRef.current?.contains(event.target as Node)) setIsListDismissed(true);
+    }
+    document.addEventListener("pointerdown", dismissOnOutsidePress);
+    return () => document.removeEventListener("pointerdown", dismissOnOutsidePress);
+  }, [isListOpen]);
+
+  /** Tabbing away closes the list; a click on an option moves no focus, so it is unaffected. */
+  function handleBlur(event: FocusEvent<HTMLInputElement>) {
+    if (event.relatedTarget) setIsListDismissed(true);
+  }
 
   function pick(result: IgdbSearchResult) {
     setHighlightedIndex(-1);
@@ -57,23 +77,21 @@ export function GameSearchCombobox({
     if (event.key === "Escape") {
       setIsListDismissed(true);
     } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
-      if (shownResults.length === 0) {
+      if (results.length === 0) {
         return;
       }
       event.preventDefault();
       setIsListDismissed(false);
       const step = event.key === "ArrowDown" ? 1 : -1;
-      setHighlightedIndex(
-        (current) => (current + step + shownResults.length) % shownResults.length,
-      );
+      setHighlightedIndex((current) => (current + step + results.length) % results.length);
     } else if (event.key === "Enter" && isListOpen && highlightedIndex >= 0) {
       event.preventDefault();
-      pick(shownResults[highlightedIndex]);
+      pick(results[highlightedIndex]);
     }
   }
 
   return (
-    <div className={`relative ${isHidden ? "hidden" : ""}`}>
+    <div ref={containerRef} onBlur={handleBlur} className={`relative ${isHidden ? "hidden" : ""}`}>
       <label htmlFor={inputId} className="sr-only">
         {labels.searchLabel}
       </label>
@@ -100,6 +118,8 @@ export function GameSearchCombobox({
           onQueryChange(event.target.value);
         }}
         onKeyDown={handleKeyDown}
+        onFocus={() => setIsListDismissed(false)}
+        onBlur={handleBlur}
         className="min-h-11.5 w-full rounded-md border border-line-input bg-bg pr-3.5 pl-10.5 text-ui text-text placeholder:text-text-faint"
       />
       {isListOpen ? (
@@ -109,7 +129,7 @@ export function GameSearchCombobox({
           aria-label={labels.resultsLabel}
           className="absolute inset-x-0 top-13 z-50 m-0 flex max-h-80 list-none flex-col gap-0.5 overflow-auto rounded-lg border border-line-strong bg-surface p-1.5 shadow-(--shadow-2)"
         >
-          {shownResults.map((result, index) => (
+          {results.map((result, index) => (
             <SearchResultOption
               key={result.igdbId}
               id={optionId(index)}
@@ -118,7 +138,7 @@ export function GameSearchCombobox({
               onPick={pick}
             />
           ))}
-          {shownResults.length === 0 ? (
+          {results.length === 0 ? (
             <li role="presentation" className="px-3 py-2.5 text-sm text-text-muted">
               {isLoading ? labels.searching : hasFailed ? labels.searchError : labels.noResults}
             </li>
