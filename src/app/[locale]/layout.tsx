@@ -37,19 +37,21 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Metadata" });
+  const title = t("title");
+  const description = t("description");
 
   return {
     metadataBase: new URL(SITE_URL),
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     alternates: {
       canonical: localeUrl(locale),
       languages: hreflangAlternates(routing.locales),
       types: { "application/rss+xml": `${SITE_URL}/feed.xml` },
     },
     openGraph: {
-      title: t("title"),
-      description: t("description"),
+      title,
+      description,
       url: localeUrl(locale),
       siteName: "Willian Justen",
       locale: locale === "pt" ? "pt_BR" : "en_US",
@@ -57,8 +59,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     },
     twitter: {
       card: "summary_large_image",
-      title: t("title"),
-      description: t("description"),
+      title,
+      description,
       site: xHandle(profile.links.x.href),
       creator: xHandle(profile.links.x.href),
     },
