@@ -47,16 +47,6 @@ export type Game = z.output<typeof gameSchema>;
 export const gamesData: z.input<typeof gamesSchema> = {
   games: [
     {
-      slug: "crimson-desert",
-      title: "Crimson Desert",
-      // IGDB names the base game "Crimson Desert Enhanced".
-      igdbId: 125633,
-      platform: "pc",
-      list: "playing",
-      year: 2026,
-      tone: "#5A2A1E",
-    },
-    {
       slug: "phantom-blade-zero",
       title: "Phantom Blade Zero",
       platform: "ps5",
@@ -79,6 +69,16 @@ export const gamesData: z.input<typeof gamesSchema> = {
       list: "playing",
       year: 2026,
       tone: "#3A3424",
+    },
+    {
+      slug: "crimson-desert",
+      title: "Crimson Desert",
+      // IGDB names the base game "Crimson Desert Enhanced".
+      igdbId: 125633,
+      platform: "rog",
+      list: "playing",
+      year: 2026,
+      tone: "#5A2A1E",
     },
     {
       slug: "control-resonant",
@@ -189,6 +189,20 @@ export const gamesData: z.input<typeof gamesSchema> = {
       tone: "#3A2A2A",
     },
     {
+      slug: "the-legend-of-zelda-ocarina-of-time",
+      title: "The Legend of Zelda: Ocarina of Time",
+      platform: "switch2",
+      list: "wishlist",
+      tone: "#24402A",
+    },
+    {
+      slug: "grand-theft-auto-vi",
+      title: "Grand Theft Auto VI",
+      platform: "ps5",
+      list: "wishlist",
+      tone: "#3A2452",
+    },
+    {
       slug: "the-midnight-walk",
       title: "The Midnight Walk",
       platform: "ps5",
@@ -229,20 +243,6 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "xbox",
       list: "wishlist",
       tone: "#24303A",
-    },
-    {
-      slug: "grand-theft-auto-vi",
-      title: "Grand Theft Auto VI",
-      platform: "ps5",
-      list: "wishlist",
-      tone: "#3A2452",
-    },
-    {
-      slug: "the-legend-of-zelda-ocarina-of-time",
-      title: "The Legend of Zelda: Ocarina of Time",
-      platform: "switch2",
-      list: "wishlist",
-      tone: "#24402A",
     },
     {
       slug: "splatoon-raiders",
