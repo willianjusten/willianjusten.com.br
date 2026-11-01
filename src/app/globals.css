@@ -40,9 +40,8 @@
   --xbox-dot: #2bb52b;
   --switch: #e60012;
   --switch-dot: #ff2e3e;
-  --rog: #141418;
-  --rog-ink: #ff4d6d;
-  --rog-deep: #3a0a18;
+  --rog: #6d28d9;
+  --rog-dot: #a78bfa;
 
   /* type */
   --fs-display: clamp(64px, 11vw, 168px);
@@ -151,7 +150,7 @@
   --color-switch: var(--switch);
   --color-switch-dot: var(--switch-dot);
   --color-rog: var(--rog);
-  --color-rog-ink: var(--rog-ink);
+  --color-rog-dot: var(--rog-dot);
   --color-white: #ffffff;
   --color-black: #000000;
   --color-transparent: transparent;
