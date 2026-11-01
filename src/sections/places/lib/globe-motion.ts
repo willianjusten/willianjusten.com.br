@@ -110,17 +110,27 @@ export function nudgeByArrowKey(motion: GlobeMotion, key: string): boolean {
   return true;
 }
 
-function easeZoom(motion: GlobeMotion) {
-  motion.view = {
-    ...motion.view,
-    zoom: motion.view.zoom + (motion.zoomGoal - motion.view.zoom) * ZOOM_EASING,
-  };
+function nextZoom(motion: GlobeMotion, reduceMotion: boolean): number {
+  if (reduceMotion) return motion.zoomGoal;
+  return motion.view.zoom + (motion.zoomGoal - motion.view.zoom) * ZOOM_EASING;
 }
 
+type AdvanceOptions = {
+  canIdleSpin: boolean;
+  /** Flights and zoom land in one frame instead of easing there; drag inertia is direct manipulation and stays. */
+  reduceMotion: boolean;
+};
+
 /** One frame of motion: a flight, or inertia plus an idle spin, or only zoom easing while dragged. */
-export function advanceGlobe(motion: GlobeMotion, canIdleSpin: boolean) {
+export function advanceGlobe(motion: GlobeMotion, { canIdleSpin, reduceMotion }: AdvanceOptions) {
   if (motion.drag) {
-    easeZoom(motion);
+    motion.view = { ...motion.view, zoom: nextZoom(motion, reduceMotion) };
+    return;
+  }
+  if (motion.flightTarget && reduceMotion) {
+    const { lat, lon, zoom } = motion.flightTarget;
+    motion.view = { lat, lon: wrapLongitude(lon), zoom };
+    motion.flightTarget = null;
     return;
   }
   if (motion.flightTarget) {
@@ -133,7 +143,7 @@ export function advanceGlobe(motion: GlobeMotion, canIdleSpin: boolean) {
   motion.view = {
     lon: wrapLongitude(motion.view.lon + velocity.lon),
     lat: clampLatitude(motion.view.lat + velocity.lat),
-    zoom: motion.view.zoom + (motion.zoomGoal - motion.view.zoom) * ZOOM_EASING,
+    zoom: nextZoom(motion, reduceMotion),
   };
   velocity.lon *= INERTIA_DECAY;
   velocity.lat *= INERTIA_DECAY;
@@ -145,11 +155,15 @@ export function advanceGlobe(motion: GlobeMotion, canIdleSpin: boolean) {
   }
 }
 
-export function easeCenterX(motion: GlobeMotion, width: number, isAlbumOpen: boolean): number {
+export function easeCenterX(
+  motion: GlobeMotion,
+  width: number,
+  { isAlbumOpen, reduceMotion }: { isAlbumOpen: boolean; reduceMotion: boolean },
+): number {
   const targetCenterX =
     isAlbumOpen && width >= ALBUM_SHIFT_MIN_WIDTH ? width * ALBUM_CENTER_X_RATIO : width / 2;
   motion.centerX =
-    motion.centerX === null
+    motion.centerX === null || reduceMotion
       ? targetCenterX
       : motion.centerX + (targetCenterX - motion.centerX) * CENTER_EASING;
   return motion.centerX;

@@ -79,8 +79,14 @@ export function useGlobeScene({
       const motion = motionRef.current;
       const { width, height } = size;
       for (let step = stepFrame(elapsedInMilliseconds); step > 0; step--) {
-        advanceGlobe(motion, !selectedSlugRef.current && !reducedMotion.matches);
-        easeCenterX(motion, width, isAlbumOpenRef.current);
+        advanceGlobe(motion, {
+          canIdleSpin: !selectedSlugRef.current && !reducedMotion.matches,
+          reduceMotion: reducedMotion.matches,
+        });
+        easeCenterX(motion, width, {
+          isAlbumOpen: isAlbumOpenRef.current,
+          reduceMotion: reducedMotion.matches,
+        });
       }
       const { view } = motion;
       const globeFrame = {
