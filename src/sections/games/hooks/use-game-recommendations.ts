@@ -1,11 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { sortRecommendations } from "../lib/recommendations";
-import type { RecommendationView } from "../lib/recommendations";
+import { fetchJson, HttpError, postJson } from "@/shared/lib/fetch-json";
 import { readBrowserId } from "../lib/browser-id";
+import { sortRecommendations, type RecommendationView } from "../lib/recommendations";
 
 const RECOMMENDATIONS_ENDPOINT = "/api/games/recommendations";
+const VOTES_ENDPOINT = `${RECOMMENDATIONS_ENDPOINT}/votes`;
 const RATE_LIMITED_STATUS = 429;
 
 export type RecommendationSubmission = {
@@ -27,10 +28,16 @@ export type SubmitOutcome =
 
 export type VoteError = "rate_limited" | "failed";
 
+function isRateLimited(error: unknown): boolean {
+  return error instanceof HttpError && error.status === RATE_LIMITED_STATUS;
+}
+
+/** The visitors' recommendations: loading, submitting new ones and +1 votes on approved ones. */
 export function useGameRecommendations() {
   const [recommendations, setRecommendations] = useState<RecommendationView[]>([]);
   const [voteError, setVoteError] = useState<VoteError | null>(null);
   const browserIdRef = useRef<string | undefined>(undefined);
+  // Mirrors the state so async handlers merge into the latest list, not the one they closed over.
   const recommendationsRef = useRef(recommendations);
 
   const replaceRecommendations = useCallback((next: RecommendationView[]) => {
@@ -39,45 +46,28 @@ export function useGameRecommendations() {
   }, []);
 
   useEffect(() => {
-    let isCurrent = true;
-    try {
-      browserIdRef.current = readBrowserId();
-    } catch {
-      return;
-    }
-    fetch(`${RECOMMENDATIONS_ENDPOINT}?browserId=${browserIdRef.current}`)
-      .then((response) => (response.ok ? response.json() : Promise.reject(response)))
-      .then((body: { recommendations: RecommendationView[] }) => {
-        if (isCurrent) {
-          replaceRecommendations(body.recommendations);
-        }
-      })
-      .catch(() => {});
-    return () => {
-      isCurrent = false;
-    };
+    const browserId = readBrowserId();
+    browserIdRef.current = browserId;
+    if (!browserId) return;
+    const controller = new AbortController();
+    fetchJson<{ recommendations: RecommendationView[] }>(
+      `${RECOMMENDATIONS_ENDPOINT}?browserId=${browserId}`,
+      { signal: controller.signal },
+    )
+      .then((body) => replaceRecommendations(body.recommendations))
+      // The Recommended tab then shows its empty state; submitting still works.
+      .catch(() => undefined);
+    return () => controller.abort();
   }, [replaceRecommendations]);
 
   const submit = useCallback(
     async (submission: RecommendationSubmission): Promise<SubmitOutcome> => {
       const browserId = browserIdRef.current;
-      if (!browserId) {
-        return { kind: "failed" };
-      }
+      if (!browserId) return { kind: "failed" };
       try {
-        const response = await fetch(RECOMMENDATIONS_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...submission, browserId }),
-        });
-        if (response.status === RATE_LIMITED_STATUS) {
-          return { kind: "rate_limited" };
-        }
-        if (!response.ok) {
-          return { kind: "failed" };
-        }
-        const body: { recommendation: RecommendationView | null } = await response.json();
-        const saved = body.recommendation;
+        const { recommendation: saved } = await postJson<{
+          recommendation: RecommendationView | null;
+        }>(RECOMMENDATIONS_ENDPOINT, { ...submission, browserId });
         const merged = saved
           ? sortRecommendations([
               ...recommendationsRef.current.filter((item) => item.id !== saved.id),
@@ -86,8 +76,8 @@ export function useGameRecommendations() {
           : recommendationsRef.current;
         replaceRecommendations(merged);
         return { kind: "saved", recommendation: saved, recommendations: merged };
-      } catch {
-        return { kind: "failed" };
+      } catch (error) {
+        return { kind: isRateLimited(error) ? "rate_limited" : "failed" };
       }
     },
     [replaceRecommendations],
@@ -112,20 +102,14 @@ export function useGameRecommendations() {
       setVoteError(null);
       patch({ mine: voted, count: Math.max(0, before.count + (voted ? 1 : -1)) });
       try {
-        const response = await fetch(`${RECOMMENDATIONS_ENDPOINT}/votes`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ recommendationId, browserId, voted }),
+        const saved = await postJson<{ count: number }>(VOTES_ENDPOINT, {
+          recommendationId,
+          browserId,
+          voted,
         });
-        if (!response.ok) {
-          setVoteError(response.status === RATE_LIMITED_STATUS ? "rate_limited" : "failed");
-          patch({ mine: before.mine, count: before.count });
-          return;
-        }
-        const saved: { count: number } = await response.json();
         patch({ count: saved.count });
-      } catch {
-        setVoteError("failed");
+      } catch (error) {
+        setVoteError(isRateLimited(error) ? "rate_limited" : "failed");
         patch({ mine: before.mine, count: before.count });
       }
     },

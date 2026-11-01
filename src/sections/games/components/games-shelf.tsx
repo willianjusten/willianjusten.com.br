@@ -1,95 +1,53 @@
 "use client";
 
-/* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
-
-import { ArrowRight, ChevronLeft, ChevronRight, Heart, SlidersHorizontal } from "lucide-react";
-import { useId, useRef, useState } from "react";
-import type { PointerEvent } from "react";
-import { GAME_PLATFORMS } from "@/content/games";
-import type { GameList } from "@/content/games";
-import { clampIndex, formatCounter, indexAfterDrag, indexAfterKey } from "../lib/coverflow";
-import { countByList, countByPlatform, filterShelf } from "../lib/shelf";
-import type { PlatformFilter } from "../lib/shelf";
-import { GameCase } from "./game-case";
-import { PLATFORM_STYLES } from "../lib/platforms";
-import { RecommendForm } from "./recommend-form";
-import { StarRating } from "./star-rating";
-import type { RecommendFormLabels } from "./recommend-form";
-import type { CaseEntry, ShelfEntry } from "../lib/shelf-cases";
+import { useRef, useState } from "react";
 import { useGameReactions } from "../hooks/use-game-reactions";
-import { useGameRecommendations } from "../hooks/use-game-recommendations";
-import type { RecommendationSubmission } from "../hooks/use-game-recommendations";
+import {
+  useGameRecommendations,
+  type RecommendationSubmission,
+} from "../hooks/use-game-recommendations";
+import { clampIndex } from "../lib/coverflow";
+import type { ShelfGame } from "../lib/games-board";
+import { countByList, countByPlatform, type PlatformFilter } from "../lib/shelf";
+import {
+  buildShelfCases,
+  type ShelfCase,
+  type ShelfCaseLabels,
+  type ShelfList,
+} from "../lib/shelf-cases";
+import { RecommendForm, type RecommendFormLabels } from "./recommend-form";
+import { ShelfDetails, type ShelfDetailsLabels } from "./shelf-details";
+import { ShelfFilters, type ShelfFiltersLabels } from "./shelf-filters";
+import { ShelfStage, type ShelfStageLabels } from "./shelf-stage";
 
-type ShelfList = GameList | "recommended";
-
-const TAB_ORDER: ShelfList[] = ["playing", "played", "wishlist", "recommended"];
-const PLATFORM_FILTERS: PlatformFilter[] = ["all", ...GAME_PLATFORMS];
+/** Lets the "like this" link scroll to the form before the search box takes focus. */
 const FOCUS_DELAY_IN_MILLISECONDS = 50;
-const STAGE_HEIGHT_CLASS = "h-[470px]";
-const NAV_BUTTON_CLASS =
-  "absolute top-1/2 z-[500] flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover";
 
-export type GamesShelfLabels = {
-  tabsLabel: string;
-  platformsLabel: string;
-  all: string;
-  tabs: Record<ShelfList, string>;
-  status: Record<ShelfList, string>;
-  reaction: Record<ShelfList, string>;
-  reactionError: string;
-  voteRateLimited: string;
-  /** Shown on the Recommended tab once this browser has recommended the game. */
-  reactionPressedRecommended: string;
-  /** Contains `{count}`. */
-  sticker: string;
-  pendingSticker: string;
-  pendingNote: string;
-  /** Contains `{rating}` and `{max}`. */
-  rating: string;
-  stageLabel: string;
-  previous: string;
-  next: string;
-  /** Contains `{title}`. */
-  showGame: string;
-  counterHint: string;
-  soon: string;
-  emptyRecommendedTitle: string;
-  emptyRecommendedNote: string;
-  emptyTitle: string;
-  emptyNote: string;
-  recommendLike: string;
-  form: RecommendFormLabels;
-};
-
-/** Everything the details strip and a case need about one game on the active tab. */
-type ShelfCase = {
-  key: string;
-  entry: CaseEntry;
-  year: number | string | null;
-  badgeText: string;
-  note: string;
-  rating: number | null;
-  showLabel: string;
-  reaction: { pressed: boolean; count: number; isEnabled: boolean; toggle: () => void };
-  /** Slug of the played or playing game the "like this" link refers to. */
-  similarSlug: string | null;
-};
+export type GamesShelfLabels = ShelfFiltersLabels &
+  ShelfStageLabels &
+  ShelfDetailsLabels &
+  ShelfCaseLabels & {
+    reactionError: string;
+    voteRateLimited: string;
+    emptyRecommendedTitle: string;
+    emptyRecommendedNote: string;
+    emptyTitle: string;
+    emptyNote: string;
+    form: RecommendFormLabels;
+  };
 
 type GamesShelfProps = {
-  games: ShelfEntry[];
+  games: ShelfGame[];
   labels: GamesShelfLabels;
 };
 
+/** The Games section body: list tabs, the coverflow, the details strip and the recommend form. */
 export function GamesShelf({ games, labels }: GamesShelfProps) {
   const [activeList, setActiveList] = useState<ShelfList>("playing");
   const [platform, setPlatform] = useState<PlatformFilter>("all");
   const [rawIndex, setRawIndex] = useState(0);
-  const [isPlatformMenuOpen, setIsPlatformMenuOpen] = useState(false);
-  const platformGroupId = useId();
-  const { counts: reactionCounts, mine, hasError, toggle } = useGameReactions();
+  const reactions = useGameReactions();
   const { recommendations, voteError, submit, toggleVote } = useGameRecommendations();
-  const dragStartX = useRef<number | undefined>(undefined);
-  const hasDragged = useRef(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const tabsRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
@@ -99,55 +57,24 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
     activeList === "recommended"
       ? countByPlatform([], "playing")
       : countByPlatform(games, activeList);
-
-  const cases: ShelfCase[] =
-    activeList === "recommended"
-      ? recommendations.map((recommendation) => ({
-          key: `recommendation-${recommendation.id}`,
-          entry: {
-            title: recommendation.title,
-            platform: recommendation.platform,
-            tone: "var(--surface-hover)",
-            coverUrl: recommendation.coverUrl,
-            sticker:
-              recommendation.status === "pending"
-                ? labels.pendingSticker
-                : labels.sticker.replace("{count}", String(recommendation.count)),
-          },
-          year: recommendation.year,
-          badgeText: `×${recommendation.count}`,
-          note: recommendation.status === "pending" ? labels.pendingNote : "",
-          rating: null,
-          showLabel: labels.showGame.replace("{title}", recommendation.title),
-          reaction: {
-            pressed: recommendation.mine,
-            count: recommendation.count,
-            isEnabled: recommendation.status === "approved",
-            toggle: () => toggleVote(recommendation.id),
-          },
-          similarSlug: null,
-        }))
-      : filterShelf(games, activeList, platform).map((game) => ({
-          key: game.slug,
-          entry: game,
-          year: game.year ?? null,
-          badgeText: game.list === "wishlist" ? labels.soon : String(game.year),
-          note: game.note,
-          rating: game.list === "played" ? (game.rating ?? null) : null,
-          showLabel: labels.showGame.replace("{title}", game.title),
-          reaction: {
-            pressed: mine.has(game.slug),
-            count: reactionCounts[game.slug] ?? 0,
-            isEnabled: true,
-            toggle: () => toggle(game.slug),
-          },
-          similarSlug: game.list === "wishlist" ? null : game.slug,
-        }));
-  const hasEntries = cases.length > 0;
+  const cases = buildShelfCases({
+    list: activeList,
+    platform,
+    games,
+    recommendations,
+    reactionCounts: reactions.counts,
+    myReactions: reactions.mine,
+    labels,
+  });
   const activeIndex = clampIndex(rawIndex, cases.length);
-  const activeCase = hasEntries ? cases[activeIndex] : null;
-
-  const goTo = (index: number) => setRawIndex(clampIndex(index, cases.length));
+  const activeCase = cases[activeIndex] ?? null;
+  const isRecommendedTab = activeList === "recommended";
+  const errorText =
+    voteError === "rate_limited"
+      ? labels.voteRateLimited
+      : voteError || reactions.hasError
+        ? labels.reactionError
+        : null;
 
   function chooseList(list: ShelfList) {
     setActiveList(list);
@@ -168,294 +95,55 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
     setTimeout(() => searchInputRef.current?.focus(), FOCUS_DELAY_IN_MILLISECONDS);
   }
 
+  function toggleReaction({ reaction }: ShelfCase) {
+    if (reaction.target.kind === "game") reactions.toggle(reaction.target.gameSlug);
+    else toggleVote(reaction.target.recommendationId);
+  }
+
   async function submitRecommendation(submission: RecommendationSubmission) {
     const outcome = await submit(submission);
-    const saved = outcome.kind === "saved" ? outcome.recommendation : null;
-    if (outcome.kind === "saved" && saved) {
+    if (outcome.kind === "saved" && outcome.recommendation) {
+      const savedId = outcome.recommendation.id;
       setActiveList("recommended");
       setPlatform("all");
-      setRawIndex(outcome.recommendations.findIndex((item) => item.id === saved.id));
+      setRawIndex(outcome.recommendations.findIndex((item) => item.id === savedId));
     }
     return outcome;
   }
 
-  function handlePointerDown(event: PointerEvent<HTMLDivElement>) {
-    dragStartX.current = event.clientX;
-    hasDragged.current = false;
-  }
-
-  function handlePointerMove(event: PointerEvent<HTMLDivElement>) {
-    if (dragStartX.current !== undefined && Math.abs(event.clientX - dragStartX.current) > 8) {
-      hasDragged.current = true;
-    }
-  }
-
-  function handlePointerEnd(event: PointerEvent<HTMLDivElement>) {
-    if (dragStartX.current === undefined) {
-      return;
-    }
-    const nextIndex = indexAfterDrag(activeIndex, event.clientX - dragStartX.current, cases.length);
-    dragStartX.current = undefined;
-    setRawIndex(nextIndex);
-    // Clears after the click that follows pointerup, so a drag never selects a case.
-    setTimeout(() => {
-      hasDragged.current = false;
-    }, 0);
-  }
-
-  /**
-   * A case's button unmounts once the case drifts out of view, which would drop focus to the
-   * page and stop the arrow keys. Focus sits on the stage instead, which never unmounts.
-   */
-  function focusStage() {
-    stageRef.current?.focus({ preventScroll: true });
-  }
-
-  function selectCase(index: number) {
-    if (!hasDragged.current) {
-      goTo(index);
-      focusStage();
-    }
-  }
-
-  const emptyTitle =
-    activeList === "recommended" ? labels.emptyRecommendedTitle : labels.emptyTitle;
-  const emptyNote = activeList === "recommended" ? labels.emptyRecommendedNote : labels.emptyNote;
-  const reaction = activeCase?.reaction;
-  const isReacted = reaction?.pressed ?? false;
-  const reactionLabel = labels.reaction[activeList];
-  const pressedReactionLabel =
-    activeList === "recommended"
-      ? labels.reactionPressedRecommended
-      : `${reactionLabel} · ${reaction?.count ?? 0}`;
-  const similarSlug = activeCase?.similarSlug ?? null;
-  const reactionErrorText =
-    voteError === "rate_limited"
-      ? labels.voteRateLimited
-      : voteError || hasError
-        ? labels.reactionError
-        : null;
-
   return (
     <div className="mt-10">
-      <div className="mb-3 flex items-center gap-2 sm:mb-6">
-        <div
-          ref={tabsRef}
-          role="group"
-          aria-label={labels.tabsLabel}
-          className="[scrollbar-width:none] -my-1 flex min-w-0 flex-1 scroll-mt-24 gap-2 overflow-x-auto py-1 [mask-image:linear-gradient(to_right,black_85%,transparent)] sm:flex-wrap sm:overflow-visible sm:[mask-image:none]"
-        >
-          {TAB_ORDER.map((list) => {
-            const isActive = list === activeList;
-            return (
-              <button
-                key={list}
-                type="button"
-                aria-pressed={isActive}
-                onClick={() => chooseList(list)}
-                className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-4 text-small font-medium whitespace-nowrap transition-colors sm:min-h-11 sm:px-5 sm:text-ui ${
-                  isActive
-                    ? "border-accent bg-accent text-on-accent"
-                    : "border-line-strong bg-transparent text-text hover:border-line-hover"
-                }`}
-              >
-                {labels.tabs[list]}
-                <span className="opacity-70">{listCounts[list]}</span>
-              </button>
-            );
-          })}
-        </div>
-        <button
-          type="button"
-          aria-label={labels.platformsLabel}
-          aria-expanded={isPlatformMenuOpen}
-          aria-controls={platformGroupId}
-          disabled={activeList === "recommended"}
-          onClick={() => setIsPlatformMenuOpen((wasOpen) => !wasOpen)}
-          className={`relative inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-pill border transition-colors disabled:cursor-default disabled:opacity-40 sm:hidden ${
-            isPlatformMenuOpen
-              ? "border-line-hover bg-surface-raised text-white"
-              : "border-line-strong bg-transparent text-text"
-          }`}
-        >
-          <SlidersHorizontal size={16} strokeWidth={1.8} aria-hidden="true" />
-          {platform !== "all" && activeList !== "recommended" ? (
-            <span
-              aria-hidden="true"
-              className={`absolute top-1.5 right-1.5 size-2 rounded-full dot-${platform}`}
-            />
-          ) : null}
-        </button>
-      </div>
-
-      <div
-        id={platformGroupId}
-        role="group"
-        aria-label={labels.platformsLabel}
-        className={`[scrollbar-width:none] -my-1 mb-3 gap-2 overflow-x-auto py-1 [mask-image:linear-gradient(to_right,black_85%,transparent)] sm:mb-4 sm:flex sm:flex-wrap sm:overflow-visible sm:[mask-image:none] ${
-          isPlatformMenuOpen && activeList !== "recommended" ? "flex" : "hidden"
-        }`}
-      >
-        {PLATFORM_FILTERS.map((filter) => {
-          const isActive = filter === platform;
-          const count = platformCounts[filter];
-          const isDimmed = filter !== "all" && count === 0;
-          return (
-            <button
-              key={filter}
-              type="button"
-              aria-pressed={isActive}
-              disabled={activeList === "recommended"}
-              onClick={() => choosePlatform(filter)}
-              className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
-                isActive
-                  ? "border-line-hover bg-surface-raised text-white"
-                  : "border-line bg-transparent text-text-2 hover:border-line-hover"
-              } ${isDimmed ? "opacity-45" : ""}`}
-            >
-              <span
-                aria-hidden="true"
-                className={`size-2.5 rounded-full dot-${filter === "all" ? "all" : filter}`}
-              />
-              {filter === "all" ? labels.all : PLATFORM_STYLES[filter].name}
-              <span className="font-mono text-[11px] opacity-60">{count}</span>
-            </button>
-          );
-        })}
-      </div>
+      <ShelfFilters
+        labels={labels}
+        activeList={activeList}
+        listCounts={listCounts}
+        platform={platform}
+        platformCounts={platformCounts}
+        tabsRef={tabsRef}
+        onChooseList={chooseList}
+        onChoosePlatform={choosePlatform}
+      />
 
       <div className="overflow-hidden rounded-2xl border border-line bg-surface">
-        <div
-          role="group"
-          aria-roledescription="carousel"
-          aria-label={labels.stageLabel}
-          ref={stageRef}
-          tabIndex={0}
-          onKeyDown={(event) => {
-            const nextIndex = indexAfterKey(activeIndex, event.key, cases.length);
-            if (nextIndex !== undefined) {
-              event.preventDefault();
-              setRawIndex(nextIndex);
-              if (event.target instanceof HTMLElement && event.target.closest(".game-case")) {
-                focusStage();
-              }
-            }
-          }}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerEnd}
-          onPointerCancel={handlePointerEnd}
-          onPointerLeave={handlePointerEnd}
-          className={`games-stage relative ${STAGE_HEIGHT_CLASS} overflow-hidden outline-offset-[-2px]`}
-        >
-          <div className="games-floor pointer-events-none absolute inset-x-0 bottom-0 h-[120px]" />
-          <div className="absolute top-12 left-1/2 size-0 [transform-style:preserve-3d]">
-            {hasEntries ? (
-              cases.map((shelfCase, index) => (
-                <GameCase
-                  key={shelfCase.key}
-                  entry={shelfCase.entry}
-                  index={index}
-                  activeIndex={activeIndex}
-                  badgeText={shelfCase.badgeText}
-                  emptyTitle={emptyTitle}
-                  showLabel={shelfCase.showLabel}
-                  onSelect={selectCase}
-                />
-              ))
-            ) : (
-              <GameCase
-                entry={null}
-                index={0}
-                activeIndex={0}
-                badgeText=""
-                emptyTitle={emptyTitle}
-                showLabel=""
-                onSelect={goTo}
-              />
-            )}
-          </div>
-
-          <button
-            type="button"
-            aria-label={labels.previous}
-            disabled={activeIndex === 0}
-            onPointerDown={(event) => event.stopPropagation()}
-            onClick={() => goTo(activeIndex - 1)}
-            className={`${NAV_BUTTON_CLASS} left-4 disabled:opacity-40`}
-          >
-            <ChevronLeft size={18} strokeWidth={2} aria-hidden="true" />
-          </button>
-          <button
-            type="button"
-            aria-label={labels.next}
-            disabled={activeIndex >= cases.length - 1}
-            onPointerDown={(event) => event.stopPropagation()}
-            onClick={() => goTo(activeIndex + 1)}
-            className={`${NAV_BUTTON_CLASS} right-4 disabled:opacity-40`}
-          >
-            <ChevronRight size={18} strokeWidth={2} aria-hidden="true" />
-          </button>
-
-          <p className="pointer-events-none absolute inset-x-0 bottom-3 m-0 text-center font-mono text-xs text-text-faint">
-            {formatCounter(activeIndex, cases.length)} · {labels.counterHint}
-          </p>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-line px-5 pt-5 pb-6 sm:px-7">
-          <div aria-live="polite" className="flex min-w-0 flex-[1_1_340px] flex-col gap-1.5">
-            <p className="m-0 font-mono text-xs text-accent">
-              {[
-                labels.status[activeList],
-                ...(activeCase
-                  ? [PLATFORM_STYLES[activeCase.entry.platform].name, activeCase.year]
-                  : []),
-              ]
-                .filter((part) => part !== null)
-                .join(" · ")}
-            </p>
-            <h3 className="m-0 font-display text-[30px] leading-none font-extrabold tracking-[-0.02em]">
-              {activeCase?.entry.title ?? emptyTitle}
-            </h3>
-            {activeCase?.rating ? (
-              <StarRating rating={activeCase.rating} label={labels.rating} />
-            ) : null}
-            {(activeCase?.note ?? emptyNote) !== "" ? (
-              <p className="m-0 text-ui text-text-2">{activeCase?.note ?? emptyNote}</p>
-            ) : null}
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              aria-pressed={isReacted}
-              disabled={!reaction?.isEnabled}
-              onClick={reaction?.toggle}
-              className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border px-4 text-sm whitespace-nowrap transition-colors sm:px-[18px] disabled:cursor-default disabled:opacity-40 ${
-                isReacted
-                  ? "border-accent bg-accent/15 text-white"
-                  : "border-line-strong bg-transparent text-text hover:border-line-hover"
-              }`}
-            >
-              <Heart size={16} aria-hidden="true" fill={isReacted ? "currentColor" : "none"} />
-              {isReacted ? pressedReactionLabel : reactionLabel}
-            </button>
-            {similarSlug ? (
-              <a
-                href="#recommend"
-                onClick={focusRecommendForm}
-                className="inline-flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-4 text-sm whitespace-nowrap text-text no-underline sm:px-[18px] transition-colors hover:border-line-hover"
-              >
-                {labels.recommendLike}
-                <ArrowRight size={14} aria-hidden="true" />
-              </a>
-            ) : null}
-          </div>
-          {reactionErrorText ? (
-            <p role="alert" className="m-0 basis-full text-sm text-text-muted">
-              {reactionErrorText}
-            </p>
-          ) : null}
-        </div>
+        <ShelfStage
+          labels={labels}
+          cases={cases}
+          activeIndex={activeIndex}
+          emptyTitle={isRecommendedTab ? labels.emptyRecommendedTitle : labels.emptyTitle}
+          stageRef={stageRef}
+          onChangeIndex={setRawIndex}
+          onFocusStage={() => stageRef.current?.focus({ preventScroll: true })}
+        />
+        <ShelfDetails
+          labels={labels}
+          activeList={activeList}
+          activeCase={activeCase}
+          emptyTitle={isRecommendedTab ? labels.emptyRecommendedTitle : labels.emptyTitle}
+          emptyNote={isRecommendedTab ? labels.emptyRecommendedNote : labels.emptyNote}
+          errorText={errorText}
+          onToggleReaction={toggleReaction}
+          onRecommendSimilar={focusRecommendForm}
+        />
       </div>
 
       <RecommendForm

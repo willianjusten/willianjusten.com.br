@@ -1,10 +1,20 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { fetchJson, postJson } from "@/shared/lib/fetch-json";
+import type { ReactionSnapshot } from "../server/reaction-stats";
 import { readBrowserId } from "../lib/browser-id";
 
 const REACTIONS_ENDPOINT = "/api/games/reactions";
 
+function withReaction(reactions: ReadonlySet<string>, gameSlug: string, isReacted: boolean) {
+  const next = new Set(reactions);
+  if (isReacted) next.add(gameSlug);
+  else next.delete(gameSlug);
+  return next;
+}
+
+/** Heart reactions on the curated games, applied optimistically and rolled back on failure. */
 export function useGameReactions() {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [mine, setMine] = useState<ReadonlySet<string>>(new Set());
@@ -12,24 +22,20 @@ export function useGameReactions() {
   const browserIdRef = useRef<string | undefined>(undefined);
 
   useEffect(() => {
-    let isCurrent = true;
-    try {
-      browserIdRef.current = readBrowserId();
-    } catch {
-      return;
-    }
-    fetch(`${REACTIONS_ENDPOINT}?browserId=${browserIdRef.current}`)
-      .then((response) => (response.ok ? response.json() : Promise.reject(response)))
-      .then((snapshot: { counts: Record<string, number>; mine: string[] }) => {
-        if (isCurrent) {
-          setCounts(snapshot.counts);
-          setMine(new Set(snapshot.mine));
-        }
+    const browserId = readBrowserId();
+    browserIdRef.current = browserId;
+    if (!browserId) return;
+    const controller = new AbortController();
+    fetchJson<ReactionSnapshot>(`${REACTIONS_ENDPOINT}?browserId=${browserId}`, {
+      signal: controller.signal,
+    })
+      .then((snapshot) => {
+        setCounts(snapshot.counts);
+        setMine(new Set(snapshot.mine));
       })
-      .catch(() => {});
-    return () => {
-      isCurrent = false;
-    };
+      // The shelf still works without the counts; the hearts just start at zero.
+      .catch(() => undefined);
+    return () => controller.abort();
   }, []);
 
   const toggle = useCallback(
@@ -41,38 +47,25 @@ export function useGameReactions() {
       }
       const wasReacted = mine.has(gameSlug);
       const reacted = !wasReacted;
-      const setReacted = (value: boolean) =>
-        setMine((previous) => {
-          const next = new Set(previous);
-          if (value) next.add(gameSlug);
-          else next.delete(gameSlug);
-          return next;
-        });
-
-      setHasError(false);
-      setReacted(reacted);
-      setCounts((previous) => ({
-        ...previous,
-        [gameSlug]: Math.max(0, (previous[gameSlug] ?? 0) + (reacted ? 1 : -1)),
-      }));
-
-      try {
-        const response = await fetch(REACTIONS_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ gameSlug, browserId, reacted }),
-        });
-        if (!response.ok) {
-          throw new Error(String(response.status));
-        }
-        const saved: { count: number } = await response.json();
-        setCounts((previous) => ({ ...previous, [gameSlug]: saved.count }));
-      } catch {
-        setReacted(wasReacted);
+      const applyReaction = (isReacted: boolean) => {
+        setMine((previous) => withReaction(previous, gameSlug, isReacted));
         setCounts((previous) => ({
           ...previous,
-          [gameSlug]: Math.max(0, (previous[gameSlug] ?? 0) + (reacted ? -1 : 1)),
+          [gameSlug]: Math.max(0, (previous[gameSlug] ?? 0) + (isReacted ? 1 : -1)),
         }));
+      };
+
+      setHasError(false);
+      applyReaction(reacted);
+      try {
+        const saved = await postJson<{ count: number }>(REACTIONS_ENDPOINT, {
+          gameSlug,
+          browserId,
+          reacted,
+        });
+        setCounts((previous) => ({ ...previous, [gameSlug]: saved.count }));
+      } catch {
+        applyReaction(wasReacted);
         setHasError(true);
       }
     },

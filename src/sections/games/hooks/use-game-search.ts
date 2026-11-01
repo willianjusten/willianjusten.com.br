@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { fetchJson, isAbortError } from "@/shared/lib/fetch-json";
 import type { IgdbSearchResult } from "../lib/igdb";
 
 const SEARCH_ENDPOINT = "/api/games/search";
 const SEARCH_DEBOUNCE_IN_MILLISECONDS = 300;
-export const MIN_SEARCH_LENGTH = 2;
+const MIN_SEARCH_LENGTH = 2;
 
 type SearchResponse = { query: string; results: IgdbSearchResult[]; hasFailed: boolean };
 
@@ -16,20 +17,16 @@ export function useGameSearch(rawQuery: string) {
   const isSearchable = query.length >= MIN_SEARCH_LENGTH;
 
   useEffect(() => {
-    if (!isSearchable) {
-      return;
-    }
+    if (!isSearchable) return;
     const controller = new AbortController();
     const timer = setTimeout(() => {
-      fetch(`${SEARCH_ENDPOINT}?q=${encodeURIComponent(query)}`, { signal: controller.signal })
-        .then((result) => (result.ok ? result.json() : Promise.reject(result)))
-        .then((body: { results: IgdbSearchResult[] }) =>
-          setResponse({ query, results: body.results, hasFailed: false }),
-        )
+      fetchJson<{ results: IgdbSearchResult[] }>(
+        `${SEARCH_ENDPOINT}?q=${encodeURIComponent(query)}`,
+        { signal: controller.signal },
+      )
+        .then((body) => setResponse({ query, results: body.results, hasFailed: false }))
         .catch((error: unknown) => {
-          if (!(error instanceof DOMException && error.name === "AbortError")) {
-            setResponse({ query, results: [], hasFailed: true });
-          }
+          if (!isAbortError(error)) setResponse({ query, results: [], hasFailed: true });
         });
     }, SEARCH_DEBOUNCE_IN_MILLISECONDS);
     return () => {
