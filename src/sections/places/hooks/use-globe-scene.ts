@@ -78,15 +78,13 @@ export function useGlobeScene({
     const paint = (elapsedInMilliseconds = 0) => {
       const motion = motionRef.current;
       const { width, height } = size;
+      const reduceMotion = reducedMotion.matches;
       for (let step = stepFrame(elapsedInMilliseconds); step > 0; step--) {
         advanceGlobe(motion, {
-          canIdleSpin: !selectedSlugRef.current && !reducedMotion.matches,
-          reduceMotion: reducedMotion.matches,
+          canIdleSpin: !selectedSlugRef.current && !reduceMotion,
+          reduceMotion,
         });
-        easeCenterX(motion, width, {
-          isAlbumOpen: isAlbumOpenRef.current,
-          reduceMotion: reducedMotion.matches,
-        });
+        easeCenterX(motion, width, { isAlbumOpen: isAlbumOpenRef.current, reduceMotion });
       }
       const { view } = motion;
       const globeFrame = {
