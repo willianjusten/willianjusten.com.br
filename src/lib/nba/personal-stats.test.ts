@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   EMPTY_PERSONAL_STATS,
   formatPercentage,
+  formatShotCount,
   parsePersonalStats,
   recordPersonalShot,
 } from "./personal-stats";
@@ -29,5 +30,17 @@ describe("personal stats", () => {
   it("formats a percentage without dividing by zero", () => {
     expect(formatPercentage(0, 0)).toBe(0);
     expect(formatPercentage(1, 3)).toBe(33);
+  });
+
+  it("keeps shot counts under a thousand as they are", () => {
+    expect(formatShotCount(0)).toBe("0");
+    expect(formatShotCount(999)).toBe("999");
+  });
+
+  it("shortens big shot counts so the scoreboard never wraps", () => {
+    expect(formatShotCount(1_000)).toBe("1K");
+    expect(formatShotCount(12_345)).toBe("12.3K");
+    expect(formatShotCount(999_949)).toBe("999.9K");
+    expect(formatShotCount(1_250_000)).toBe("1.3M");
   });
 });

@@ -31,6 +31,16 @@ export function recordPersonalShot(stats: PersonalStats, made: boolean): Persona
   };
 }
 
+const compactShotCountFormat = new Intl.NumberFormat("en-US", {
+  notation: "compact",
+  maximumFractionDigits: 1,
+});
+
+/** Short form for the scoreboard: 999 stays, 12,345 becomes 12.3K, so the cell never wraps. */
+export function formatShotCount(count: number): string {
+  return compactShotCountFormat.format(count);
+}
+
 export function formatPercentage(makes: number, shots: number): number {
   return shots === 0 ? 0 : Math.round((makes / shots) * 100);
 }

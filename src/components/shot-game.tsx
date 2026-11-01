@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   formatPercentage,
+  formatShotCount,
   ON_FIRE_STREAK,
   PERSONAL_STATS_STORAGE_KEY,
   parsePersonalStats,
@@ -67,10 +68,8 @@ function readFontFamily(element: HTMLElement, variableName: string, fallback: st
   return resolved ? `${resolved}, ${fallback}` : fallback;
 }
 
-function formatTotals(totals: ShotTotals | null): string {
-  if (!totals) return "-";
-  const percentage = formatPercentage(totals.makes, totals.shots);
-  return `${totals.makes.toLocaleString("en-US")}/${totals.shots.toLocaleString("en-US")} · ${percentage}%`;
+function formatMakesOfShots(makes: number, shots: number): string {
+  return `${formatShotCount(makes)}/${formatShotCount(shots)}`;
 }
 
 export function ShotGame({ labels }: { labels: ShotGameLabels }) {
@@ -355,10 +354,19 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
 
   const isOnFire = personalStats.streak >= ON_FIRE_STREAK;
   const statCells = [
-    { label: labels.you, value: `${personalStats.makes}/${personalStats.shots}`, isAccent: true },
-    { label: labels.streak, value: String(personalStats.streak), isAccent: false },
-    { label: labels.best, value: String(personalStats.best), isAccent: false },
-    { label: labels.allVisitors, value: formatTotals(totals), isAccent: false },
+    {
+      label: labels.you,
+      value: formatMakesOfShots(personalStats.makes, personalStats.shots),
+      isAccent: true,
+    },
+    { label: labels.streak, value: formatShotCount(personalStats.streak), isAccent: false },
+    { label: labels.best, value: formatShotCount(personalStats.best), isAccent: false },
+    {
+      label: labels.allVisitors,
+      value: totals ? formatMakesOfShots(totals.makes, totals.shots) : "-",
+      detail: totals ? `${formatPercentage(totals.makes, totals.shots)}%` : undefined,
+      isAccent: false,
+    },
   ];
 
   return (
@@ -392,16 +400,21 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
             key={cell.label}
             className="flex flex-[1_1_90px] flex-col justify-center gap-0.5 border-l border-line px-[18px] py-3"
           >
-            <span className="font-mono text-micro tracking-[0.12em] text-text-faint uppercase">
+            <span className="font-mono text-micro tracking-[0.12em] whitespace-nowrap text-text-faint uppercase">
               {cell.label}
             </span>
             <span
-              className={`font-mono text-[22px] leading-[1.1] font-medium ${
+              className={`font-mono text-[22px] leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
                 cell.isAccent ? "text-accent [text-shadow:0_0_14px_var(--accent)]" : "text-text"
               }`}
             >
               {cell.value}
             </span>
+            {cell.detail ? (
+              <span className="font-mono text-micro whitespace-nowrap text-text-muted tabular-nums">
+                {cell.detail}
+              </span>
+            ) : null}
           </div>
         ))}
       </div>
