@@ -56,14 +56,14 @@ describe("blog retirement redirects", () => {
     }
   });
 
-  it("strips any other trailing slash with a 301, only after every old URL rule has had its turn", () => {
+  it("strips any other trailing slash, keeping the request method, only after every old URL rule", () => {
     const siteRules = buildSiteRedirects(oldPostSlugs);
     const slashRuleIndex = siteRules.findIndex((rule) => rule.source === "/:path+/");
 
     expect(siteRules[slashRuleIndex]).toEqual({
       source: "/:path+/",
       destination: "/:path+",
-      statusCode: 301,
+      statusCode: 308,
     });
     expect(slashRuleIndex).toBe(siteRules.length - 1);
     expect(siteRules).toEqual(expect.arrayContaining([...KEPT_REDIRECTS, ...rules]));

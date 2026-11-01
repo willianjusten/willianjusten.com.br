@@ -1,7 +1,7 @@
 type RedirectRule = {
   source: string;
   destination: string;
-  statusCode: 301;
+  statusCode: 301 | 308;
 };
 
 /** Old URLs that still have a home. The my-trips audience was Portuguese, so it lands on /pt. */
@@ -60,14 +60,15 @@ export function buildRetirementRedirects(oldPostSlugs: readonly string[]): Redir
 }
 
 /**
- * Next's built-in slash redirect (a 308) runs before every custom rule, so old `/slug/` links
- * took two hops and slash-only rules never matched. next.config turns it off with
- * `skipTrailingSlashRedirect`, and this 301 takes its place after the old URL rules.
+ * Next's built-in slash redirect runs before every custom rule, so old `/slug/` links took two
+ * hops and slash-only rules never matched. next.config turns it off with
+ * `skipTrailingSlashRedirect`, and this rule takes its place after the old URL rules. It keeps
+ * Next's 308 so a POST to an API route with a stray slash stays a POST.
  */
 const TRAILING_SLASH_REDIRECT: RedirectRule = {
   source: "/:path+/",
   destination: "/:path+",
-  statusCode: 301,
+  statusCode: 308,
 };
 
 /** Every redirect the site serves, in match order: kept homes first, then old blog URLs. */
