@@ -2,11 +2,13 @@ import type { PreviewEntry } from "../../src/content/music-preview-schema";
 
 export type JsonFetcher = (url: string) => Promise<unknown>;
 
-type TrackQuery = { id: string; title: string; artist: string };
+type TrackQuery = { id: string; title: string; artist: string; album?: string };
 
 type ItunesResult = {
   trackName?: string;
   artistName?: string;
+  artistId?: number;
+  collectionName?: string;
   previewUrl?: string;
   trackViewUrl?: string;
   artworkUrl100?: string;
@@ -50,11 +52,13 @@ async function lookupItunes(
   const body = (await fetchJson(
     `https://itunes.apple.com/search?term=${term}&media=music&entity=song&limit=10`,
   )) as { results?: ItunesResult[] };
+  const searchResults = body.results ?? [];
 
-  const result = body.results?.find(
-    (candidate) =>
-      candidate.previewUrl && isMatch(track, candidate.trackName, candidate.artistName),
-  );
+  const result =
+    searchResults.find(
+      (candidate) =>
+        candidate.previewUrl && isMatch(track, candidate.trackName, candidate.artistName),
+    ) ?? (await findInArtistSongs(track, searchResults, fetchJson));
   if (!result?.previewUrl) return null;
 
   return {
@@ -64,6 +68,31 @@ async function lookupItunes(
     artworkUrl: result.artworkUrl100,
     fetchedAt,
   };
+}
+
+/** The store search skips some releases, such as POST HUMAN: NeX GEn, that the artist lookup still lists. */
+async function findInArtistSongs(
+  track: TrackQuery,
+  searchResults: ItunesResult[],
+  fetchJson: JsonFetcher,
+): Promise<ItunesResult | undefined> {
+  const artistId = searchResults.find(
+    (candidate) => candidate.artistId && isSameText(track.artist, candidate.artistName),
+  )?.artistId;
+  if (!artistId) return undefined;
+
+  const body = (await fetchJson(
+    `https://itunes.apple.com/lookup?id=${artistId}&entity=song&limit=200`,
+  )) as { results?: ItunesResult[] };
+  const songs = (body.results ?? []).filter(
+    (candidate) =>
+      candidate.previewUrl && isMatch(track, candidate.trackName, candidate.artistName),
+  );
+  const { album } = track;
+  const albumSong = album
+    ? songs.find((song) => isSameText(album, song.collectionName))
+    : undefined;
+  return albumSong ?? songs[0];
 }
 
 async function lookupDeezer(

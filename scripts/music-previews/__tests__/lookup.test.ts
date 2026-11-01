@@ -39,6 +39,38 @@ describe("findPreview", () => {
     });
   });
 
+  it("finds a track iTunes search misses through the artist songs, preferring its album", async () => {
+    const fetchJson = fetcherFor({
+      "itunes.apple.com/search": {
+        results: [{ trackName: "Invincible", artistName: "Tool", artistId: 7 }],
+      },
+      "itunes.apple.com/lookup?id=7": {
+        results: [
+          { wrapperType: "artist", artistName: "Tool" },
+          {
+            trackName: "Pneuma",
+            artistName: "Tool",
+            collectionName: "Pneuma - Single",
+            previewUrl: "https://audio.example/single.m4a",
+          },
+          {
+            trackName: "Pneuma",
+            artistName: "Tool",
+            collectionName: "Fear Inoculum",
+            previewUrl: "https://audio.example/album.m4a",
+            trackViewUrl: "https://music.apple.com/us/album/pneuma/3?i=4",
+          },
+        ],
+      },
+    });
+
+    const entry = await findPreview({ ...track, album: "Fear Inoculum" }, fetchJson, now);
+
+    expect(entry?.source).toBe("itunes");
+    expect(entry?.previewUrl).toBe("https://audio.example/album.m4a");
+    expect(entry?.appleMusicUrl).toBe("https://music.apple.com/us/album/pneuma/3?i=4");
+  });
+
   it("ignores iTunes results by a different artist and falls back to Deezer", async () => {
     const fetchJson = fetcherFor({
       "itunes.apple.com": {
