@@ -1,10 +1,10 @@
 {
-  "bmth-lost": {
+  "bmth-strangers": {
     "source": "itunes",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/47/ef/11/47ef113f-de78-f5d2-8d70-4713eac55920/mzaf_3609909276818164904.plus.aac.p.m4a",
-    "appleMusicUrl": "https://music.apple.com/us/album/lost-404-nll/1821917950?i=1821917960&uo=4",
-    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/84/1c/69/841c6944-21aa-8475-cf62-6abf22c92afb/196873287485.jpg/100x100bb.jpg",
-    "fetchedAt": "2026-10-31T21:38:18.479Z"
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/4e/9c/f74e9cc4-411a-d96d-0c4b-732508d8a241/mzaf_2689176122472003049.plus.aac.p.m4a",
+    "appleMusicUrl": "https://music.apple.com/us/album/strangers/1744406677?i=1744407390&uo=4",
+    "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/64/38/c264386e-c6e6-c7e0-fefc-39beffa0e5ec/196872087246.jpg/100x100bb.jpg",
+    "fetchedAt": "2026-11-01T15:00:55.344Z"
   },
   "post-malone-chemical": {
     "source": "itunes",

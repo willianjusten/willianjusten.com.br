@@ -38,14 +38,15 @@ export type Music = z.output<typeof musicSchema>;
  * Spotify links are the ones already used in the old posts (albums where no track link existed).
  */
 export const musicData: z.input<typeof musicSchema> = {
-  songOfTheMoment: "bmth-lost",
+  songOfTheMoment: "bmth-strangers",
   tracks: [
     {
-      id: "bmth-lost",
-      title: "LosT",
+      id: "bmth-strangers",
+      title: "sTraNgeRs",
       artist: "Bring Me The Horizon",
       album: "POST HUMAN: NeX GEn",
       month: "2024-12",
+      youtubeMusicUrl: "https://music.youtube.com/watch?v=XvxhZmJSa2Q",
       spotifyUrl: "https://open.spotify.com/album/1k7OXnGQPV4zF3seDwRroD",
     },
     {
