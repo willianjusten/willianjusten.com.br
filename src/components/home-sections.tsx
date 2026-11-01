@@ -8,7 +8,7 @@ import { music } from "@/content/music";
 import { buildMusicBoard } from "@/content/music-board";
 import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
-import { isPlaceholder, profile } from "@/content/profile";
+import { profile } from "@/content/profile";
 import { GamesShelf } from "./games/games-shelf";
 import { LazyGlobe } from "./globe/lazy-globe";
 import { MusicBoard } from "./music/music-board";
@@ -66,11 +66,11 @@ export async function PlacesSection() {
         <noscript>
           <ul>
             {places.map((place) => {
-              const caption = place.caption[locale];
+              const caption = place.caption?.[locale];
               return (
                 <li key={place.slug}>
                   {place.name}, {place.country}
-                  {isPlaceholder(caption) ? null : `: ${caption}`}
+                  {caption ? `: ${caption}` : null}
                 </li>
               );
             })}
