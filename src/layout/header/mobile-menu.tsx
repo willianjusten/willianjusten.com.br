@@ -70,7 +70,7 @@ export function MobileMenu({ links, navigationLabel, openLabel, closeLabel }: Mo
                 <a
                   href={href}
                   onClick={() => setIsOpen(false)}
-                  className="flex min-h-12 items-center rounded-md px-4 font-display text-[22px] font-bold text-text no-underline transition-colors hover:bg-surface-hover"
+                  className="flex min-h-12 items-center rounded-md px-4 font-display text-menu font-bold text-text no-underline transition-colors hover:bg-surface-hover"
                 >
                   {label}
                 </a>

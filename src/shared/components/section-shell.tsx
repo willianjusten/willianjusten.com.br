@@ -49,7 +49,7 @@ export function SectionShell({
       >
         {title}
       </h2>
-      <p className="mt-4 mb-0 max-w-[560px] text-body-lg text-text-2">{intro}</p>
+      <p className="mt-4 mb-0 max-w-intro text-body-lg text-text-2">{intro}</p>
     </>
   );
   const header = headerAside ? (

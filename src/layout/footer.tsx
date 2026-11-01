@@ -34,9 +34,9 @@ export async function Footer() {
       <Floodlight className="-bottom-65 -left-40 size-130 bg-[radial-gradient(circle,var(--glow-footer-orange),transparent_65%)] motion-safe:animate-drift-2" />
       <Floodlight className="-right-35 -bottom-60 size-115 bg-[radial-gradient(circle,var(--glow-footer-sand),transparent_65%)] motion-safe:animate-drift-1" />
 
-      <div className="mx-auto flex max-w-page flex-col gap-12 px-8 pt-[72px] pb-12">
+      <div className="mx-auto flex max-w-page flex-col gap-12 px-8 pt-18 pb-12">
         <div className="flex flex-wrap items-end justify-between gap-8">
-          <h2 className="reveal m-0 pb-[0.06em] font-display text-[clamp(48px,10vw,152px)] leading-[0.9] font-extrabold tracking-[-0.045em] text-text">
+          <h2 className="reveal m-0 pb-[0.06em] font-display text-footer leading-[0.9] font-extrabold tracking-[-0.045em] text-text">
             {t.rich("headline", {
               accent: (accentWord) => <em className="text-accent not-italic">{accentWord}</em>,
             })}

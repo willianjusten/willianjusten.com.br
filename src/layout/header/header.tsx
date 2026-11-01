@@ -20,7 +20,7 @@ export async function Header() {
         aria-label={t("backToTop")}
         className="inline-flex min-h-10 min-w-10 items-center justify-start no-underline sm:min-h-11 sm:min-w-11 sm:justify-center"
       >
-        <span className="wiggle flex size-8 items-center sm:size-9 justify-center rounded-sm bg-(image:--ball-light) font-display text-[15px] font-extrabold sm:text-[17px] text-on-accent">
+        <span className="wiggle flex size-8 items-center justify-center rounded-sm bg-(image:--ball-light) font-display text-ui font-extrabold text-on-accent sm:size-9 sm:text-logo">
           wj
         </span>
       </a>
