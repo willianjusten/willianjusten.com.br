@@ -7,7 +7,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { gameCoversFileSchema, type GameCoverEntry } from "../../src/content/game-cover-schema.ts";
 import { games } from "../../src/content/games.ts";
-import { createIgdbClient, type IgdbGame } from "../../src/lib/games/igdb.ts";
+import { createIgdbClient, type IgdbGame } from "../../src/sections/games/lib/igdb.ts";
 import { pickIgdbMatch } from "./match.ts";
 
 const OUTPUT_PATH = new URL("../../src/content/generated/game-covers.json", import.meta.url);

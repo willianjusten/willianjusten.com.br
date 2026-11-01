@@ -1,4 +1,4 @@
-import { buildLlmsText } from "@/lib/llms-text";
+import { buildLlmsText } from "@/lib/seo/llms-text";
 
 export const dynamic = "force-static";
 

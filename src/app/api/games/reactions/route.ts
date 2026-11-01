@@ -2,8 +2,8 @@ import { games } from "@/content/games";
 import { getDatabase } from "@/lib/db/client";
 import { getClientIp, hashIp } from "@/lib/db/ip-hash";
 import { checkRateLimit } from "@/lib/db/rate-limit";
-import { createReactionRoute } from "@/lib/games/reaction-route";
-import { readReactions, setReaction } from "@/lib/games/reaction-stats";
+import { createReactionRoute } from "@/sections/games/server/reaction-route";
+import { readReactions, setReaction } from "@/sections/games/server/reaction-stats";
 
 export const dynamic = "force-dynamic";
 

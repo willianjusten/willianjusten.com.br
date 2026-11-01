@@ -1,4 +1,4 @@
-import { buildRetirementFeed } from "@/lib/retirement-feed";
+import { buildRetirementFeed } from "@/lib/retirement/retirement-feed";
 
 export const dynamic = "force-static";
 

@@ -1,13 +1,13 @@
 import { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
-import { FarewellBanner } from "@/components/farewell-banner";
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { NbaSection } from "@/components/nba-section";
-import { GamesSection, MusicSection, PlacesSection } from "@/components/home-sections";
+import { FarewellBanner } from "@/layout/farewell-banner";
+import { Footer } from "@/layout/footer";
+import { Header } from "@/layout/header/header";
+import { Hero } from "@/sections/hero/hero-section";
+import { NbaSection } from "@/sections/nba/nba-section";
+import { GamesSection, MusicSection, PlacesSection } from "@/sections/places/places-section";
 import { resolveLocale } from "@/i18n/resolve-locale";
-import { buildStructuredData, serializeJsonLd } from "@/lib/structured-data";
+import { buildStructuredData, serializeJsonLd } from "@/lib/seo/structured-data";
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const locale = await resolveLocale(params);

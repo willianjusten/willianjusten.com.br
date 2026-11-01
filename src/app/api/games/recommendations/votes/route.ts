@@ -1,8 +1,8 @@
 import { getDatabase } from "@/lib/db/client";
 import { getClientIp, hashIp } from "@/lib/db/ip-hash";
 import { checkRateLimit } from "@/lib/db/rate-limit";
-import { createVoteRoute } from "@/lib/games/recommendation-routes";
-import { setRecommendationVote } from "@/lib/games/recommendation-stats";
+import { createVoteRoute } from "@/sections/games/server/recommendation-routes";
+import { setRecommendationVote } from "@/sections/games/server/recommendation-stats";
 
 export const dynamic = "force-dynamic";
 

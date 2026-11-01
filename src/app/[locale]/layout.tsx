@@ -4,13 +4,13 @@ import { getTranslations } from "next-intl/server";
 import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import { resolveLocale } from "@/i18n/resolve-locale";
 import { routing } from "@/i18n/routing";
-import { Analytics } from "@/components/analytics";
+import { Analytics } from "@/layout/analytics";
 import { profile, xHandle } from "@/content/profile";
 import { hreflangAlternates, localeUrl, SITE_URL } from "@/lib/site";
 import "../globals.css";
 import "../frame.css";
-import "../music.css";
-import "../games.css";
+import "@/sections/music/music.css";
+import "@/sections/games/games.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],

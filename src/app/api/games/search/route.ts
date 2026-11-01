@@ -1,5 +1,5 @@
-import { getIgdbClient } from "@/lib/games/igdb-server";
-import { createSearchRoute } from "@/lib/games/recommendation-routes";
+import { getIgdbClient } from "@/sections/games/server/igdb-server";
+import { createSearchRoute } from "@/sections/games/server/recommendation-routes";
 
 const searchRoute = createSearchRoute({
   searchGames: async (text) => getIgdbClient().searchGames(text),

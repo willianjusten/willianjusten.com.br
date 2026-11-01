@@ -1,9 +1,12 @@
 import { getDatabase } from "@/lib/db/client";
 import { getClientIp, hashIp } from "@/lib/db/ip-hash";
 import { checkRateLimit } from "@/lib/db/rate-limit";
-import { getIgdbClient } from "@/lib/games/igdb-server";
-import { createRecommendationRoute } from "@/lib/games/recommendation-routes";
-import { readRecommendations, submitRecommendation } from "@/lib/games/recommendation-stats";
+import { getIgdbClient } from "@/sections/games/server/igdb-server";
+import { createRecommendationRoute } from "@/sections/games/server/recommendation-routes";
+import {
+  readRecommendations,
+  submitRecommendation,
+} from "@/sections/games/server/recommendation-stats";
 
 export const dynamic = "force-dynamic";
 

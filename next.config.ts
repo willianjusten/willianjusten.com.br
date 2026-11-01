@@ -2,7 +2,10 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 import oldPostSlugs from "./data/legacy/old-post-slugs.json";
 import tripPhotos from "./src/content/generated/trip-photos.json";
-import { KEPT_REDIRECTS, buildRetirementRedirects } from "./src/lib/retirement-redirects";
+import {
+  KEPT_REDIRECTS,
+  buildRetirementRedirects,
+} from "./src/lib/retirement/retirement-redirects";
 
 const nextConfig: NextConfig = {
   images: {

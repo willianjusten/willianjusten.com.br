@@ -1,7 +1,7 @@
 import createMiddleware from "next-intl/middleware";
 import { NextResponse, type NextRequest } from "next/server";
-import { routing } from "./i18n/routing";
-import { isRetiredHost, retiredHostDestination } from "./lib/retired-hosts";
+import { routing } from "@/i18n/routing";
+import { isRetiredHost, retiredHostDestination } from "@/lib/retirement/retired-hosts";
 
 const handleLocaleRouting = createMiddleware(routing);
 

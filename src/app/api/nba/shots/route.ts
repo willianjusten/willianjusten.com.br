@@ -1,8 +1,8 @@
 import { getDatabase } from "@/lib/db/client";
 import { getClientIp, hashIp } from "@/lib/db/ip-hash";
 import { checkRateLimit } from "@/lib/db/rate-limit";
-import { createShotRoute } from "@/lib/nba/shot-route";
-import { readShotTotals, recordShot } from "@/lib/nba/shot-stats";
+import { createShotRoute } from "@/sections/nba/server/shot-route";
+import { readShotTotals, recordShot } from "@/sections/nba/server/shot-stats";
 
 export const dynamic = "force-dynamic";
 
