@@ -5,8 +5,20 @@ import { COURTSIDE_URL, localeUrl, SITE_URL } from "./site";
 import { realProfileUrls } from "./structured-data";
 
 const SECTION_KEYS = ["places", "games", "nba", "music"] as const;
-/** Rich-text tags in the copy, such as `<unsplash>`, which plain text drops. */
-const RICH_TEXT_TAG_PATTERN = /<\/?\w+>/g;
+/** Rich-text link tags in the copy, such as `<unsplash>Unsplash</unsplash>`. */
+const RICH_TEXT_LINK_PATTERN = /<(\w+)>(.*?)<\/\1>/g;
+const RICH_TEXT_LINK_URLS: Record<string, string> = {
+  unsplash: profile.links.unsplash.href,
+  pexels: profile.links.pexels.href,
+};
+
+/** Turns rich-text link tags into Markdown links, or plain text when the tag has no URL. */
+function toMarkdown(richText: string): string {
+  return richText.replace(RICH_TEXT_LINK_PATTERN, (_tag, name: string, label: string) => {
+    const url = RICH_TEXT_LINK_URLS[name];
+    return url ? `[${label}](${url})` : label;
+  });
+}
 
 /**
  * Plain-text site summary for LLM crawlers (llmstxt.org). Built from the English copy and the
@@ -17,8 +29,7 @@ export function buildLlmsText(): string {
   const { now } = profile;
 
   const sectionLines = SECTION_KEYS.map(
-    (key) =>
-      `- [${Header[key]}](${SITE_URL}/#${key}): ${Sections[key].intro.replace(RICH_TEXT_TAG_PATTERN, "")}`,
+    (key) => `- [${Header[key]}](${SITE_URL}/#${key}): ${toMarkdown(Sections[key].intro)}`,
   );
   const placeLines = places.map((place) => {
     const location = place.name === place.country ? place.name : `${place.name}, ${place.country}`;

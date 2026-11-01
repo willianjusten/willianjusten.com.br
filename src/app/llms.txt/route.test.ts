@@ -11,6 +11,8 @@ describe("/llms.txt", () => {
     expect(body).toContain("https://willianjusten.com.br/#games");
     expect(body).toContain("São Paulo, Brazil (home)");
     expect(body).toContain("https://github.com/willianjusten");
+    expect(body).toContain("[Unsplash](https://unsplash.com/@willianjusten)");
+    expect(body).toContain("[Pexels](https://www.pexels.com/@willianjusten/)");
   });
 
   it("never repeats a placeholder or an em dash", async () => {
