@@ -3,7 +3,7 @@ import type { PointerEvent } from "react";
 
 const ZOOM_STEP_FACTOR = 2;
 const CONTROL_CLASS =
-  "flex size-11 items-center justify-center rounded-md border border-line-strong bg-surface-raised text-text transition-colors hover:border-line-hover hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+  "flex size-11 items-center justify-center rounded-md border border-line-strong bg-surface-raised text-text transition-colors hover:border-line-hover hover:bg-surface-hover";
 
 export type GlobeControlsLabels = {
   zoomIn: string;
@@ -61,14 +61,12 @@ export function GlobeControls({
           aria-pressed={isTouring}
           onPointerDown={stopDrag}
           onClick={onToggleTour}
-          className="flex min-h-11 cursor-pointer items-center gap-2 rounded-pill border-0 bg-(image:--ball-light) px-5 text-small font-semibold text-on-accent transition-[filter] hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className="flex min-h-11 cursor-pointer items-center gap-2 rounded-pill bg-(image:--ball-light) px-5 text-small font-semibold text-on-accent transition-[filter] hover:brightness-110"
         >
           <TourIcon size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
           {isTouring ? labels.tour.stop : labels.tour.play}
         </button>
-        <p className="pointer-events-none m-0 font-mono text-overline text-text-faint">
-          {labels.hint}
-        </p>
+        <p className="pointer-events-none font-mono text-overline text-text-faint">{labels.hint}</p>
       </div>
     </>
   );

@@ -34,7 +34,7 @@ type AlbumPanelProps = {
 };
 
 const OVERLAY_BUTTON_CLASS =
-  "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border-0 bg-bg/70 text-text transition-colors hover:bg-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+  "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-bg/70 text-text transition-colors hover:bg-bg";
 
 /** Escape is handled by the globe frame. */
 export function AlbumPanel({
@@ -67,7 +67,7 @@ export function AlbumPanel({
         event.stopPropagation();
         onPress();
       }}
-      className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-(--glass-strong) shadow-2 backdrop-blur-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-(--glass-strong) shadow-2 backdrop-blur-md"
     >
       <div className="relative aspect-[16/10] flex-none bg-surface">
         <Image
@@ -82,7 +82,7 @@ export function AlbumPanel({
         />
         <p
           aria-live="polite"
-          className="absolute top-2.5 right-2.5 m-0 rounded-pill bg-bg/70 px-2.5 py-0.5 font-mono text-overline text-text"
+          className="absolute top-2.5 right-2.5 rounded-pill bg-bg/70 px-2.5 py-0.5 font-mono text-overline text-text"
         >
           <span aria-hidden="true">
             {photoIndex + 1} / {total}
@@ -116,25 +116,25 @@ export function AlbumPanel({
       <div className="flex min-h-0 flex-auto flex-col gap-2.5 overflow-auto px-4 pt-3.5 pb-4">
         <div className="flex items-start justify-between gap-3">
           <div className="flex min-w-0 flex-col gap-0.5">
-            <p className="m-0 font-mono text-overline text-accent">
+            <p className="font-mono text-overline text-accent">
               {place.country} · {place.year ?? labels.home}
             </p>
-            <h3 className="m-0 font-display text-h3 leading-[1.1] font-bold">{place.name}</h3>
+            <h3 className="font-display text-h3 leading-[1.1] font-bold">{place.name}</h3>
           </div>
           <button
             type="button"
             aria-label={labels.close}
             onClick={onClose}
-            className="flex size-11 flex-none cursor-pointer items-center justify-center rounded-full border border-line-strong bg-transparent text-text-2 transition-colors hover:border-line-hover hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="flex size-11 flex-none cursor-pointer items-center justify-center rounded-full border border-line-strong text-text-2 transition-colors hover:border-line-hover hover:text-text"
           >
             <X size={16} strokeWidth={2} aria-hidden="true" />
           </button>
         </div>
 
-        {place.caption ? <p className="m-0 text-small text-text-2">{place.caption}</p> : null}
+        {place.caption ? <p className="text-small text-text-2">{place.caption}</p> : null}
 
         {photo.line.title || photo.line.details ? (
-          <p className="m-0 text-small text-text-2">
+          <p className="text-small text-text-2">
             {photo.line.title}
             {photo.line.details ? (
               <span className="font-mono text-overline text-text-muted">
@@ -146,7 +146,7 @@ export function AlbumPanel({
         ) : null}
 
         {total > 1 ? (
-          <ul aria-label={labels.thumbnails} className="m-0 flex list-none flex-wrap gap-1.5 p-0">
+          <ul aria-label={labels.thumbnails} className="flex flex-wrap gap-1.5">
             {photos.map((thumbnail, thumbnailIndex) => {
               const isCurrent = thumbnailIndex === photoIndex;
               return (
@@ -159,7 +159,7 @@ export function AlbumPanel({
                     })}
                     aria-pressed={isCurrent}
                     onClick={() => onShowPhoto(thumbnailIndex)}
-                    className={`relative block size-11 cursor-pointer overflow-hidden rounded-xs border-2 bg-surface p-0 hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+                    className={`relative block size-11 cursor-pointer overflow-hidden rounded-xs border-2 bg-surface hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                       isCurrent ? "border-accent" : "border-transparent"
                     }`}
                   >

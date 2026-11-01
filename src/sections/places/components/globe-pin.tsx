@@ -65,7 +65,7 @@ export function GlobePin({
       onClick={onActivate}
       onFocus={onFocus}
       style={{ transformOrigin: "50% 100%" }}
-      className="absolute top-0 left-0 flex cursor-pointer flex-col items-center border-0 bg-transparent p-0 hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+      className="absolute top-0 left-0 flex cursor-pointer flex-col items-center hover:brightness-125 focus-visible:outline-offset-4"
     >
       <span
         ref={(name) => {
