@@ -57,7 +57,7 @@ The page renders without credentials, but the database and IGDB features need th
 | `DATABASE_URL`                                                         | Neon connection string (use the `dev` branch locally)                         |
 | `IP_HASH_SECRET`                                                       | Secret for hashing visitor IPs before rate limiting; raw IPs are never stored |
 | `IGDB_CLIENT_ID`, `IGDB_CLIENT_SECRET`                                 | Twitch app credentials for the IGDB game search                               |
-| `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET` | Photo albums (upcoming)                                                       |
+| `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET` | Photo albums, read by `pnpm places:photos`                                    |
 
 The easiest way to get them is the credentials wizard. It walks through Neon, IGDB and Cloudinary, writes `.env.local` and sets the same variables on Vercel:
 
@@ -89,6 +89,7 @@ Open http://localhost:3000 (English) or http://localhost:3000/pt (Portuguese).
 | `pnpm db:migrate`                   | Apply pending migrations to the database in `DATABASE_URL`                     |
 | `pnpm music:previews`               | Fetch preview URLs and Apple Music links for the music content                 |
 | `pnpm games:covers`                 | Fetch IGDB covers for the games content                                        |
+| `pnpm places:photos`                | Fetch the album photos of every place from Cloudinary                          |
 
 ## Editing content
 
@@ -96,7 +97,7 @@ Content lives in `src/content/` and is checked against its schema by `pnpm test`
 
 - **Music**: add a track to `src/content/music.ts`, then run `pnpm music:previews`. It looks up each new track on iTunes (Deezer as fallback), writes `src/content/generated/music-previews.json` and skips tracks it already has (`--refresh` redoes them all).
 - **Games**: edit `src/content/games.ts`, then run `pnpm games:covers`. It finds each new game on IGDB by exact title and writes its cover to `src/content/generated/game-covers.json` (`--refresh` redoes them all). When IGDB names a game differently (for example "Alan Wake II"), set `igdbId` on the game to pin it.
-- **Places**: edit `src/content/places.ts`.
+- **Places**: each trip is a Cloudinary folder named `trips/<year>-<place-slug>`. Add the place to `src/content/places.ts` with that `cloudinaryFolder`, then run `pnpm places:photos`. It reads every listed folder, writes `src/content/generated/trip-photos.json` and fails on a missing or empty folder. Albums follow filename order, so a numeric prefix (`01-eiffel.jpg`) sets it. Camera settings come from the photo's EXIF; when there is none, Cloudinary context keys `camera`, `lens`, `focalLength`, `aperture`, `shutter`, `iso` and `year` fill in, and `title` names the photo.
 - **Copy**: edit `messages/en.json` and `messages/pt.json`, keeping the keys identical. No em dashes in either language.
 
 ### Moderating recommendations

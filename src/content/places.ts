@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { profileData } from "./profile";
+import { profileData } from "./profile.ts";
 
 const localizedText = z.object({ en: z.string().min(1), pt: z.string().min(1) });
 const colorHex = z.string().regex(/^#[0-9a-fA-F]{6}$/);
