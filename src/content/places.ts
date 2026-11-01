@@ -158,7 +158,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -9.2,
       lon: -75,
       cloudinaryFolders: ["trips/2018-peru"],
-      unsplashUrl: UNSPLASH_PROFILE_URL,
+      unsplashUrl: "https://unsplash.com/collections/2048586/my-adventures-in-peru",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3E3424",
     },
