@@ -9,6 +9,7 @@ const WATERMARK_SIZE_IN_PIXELS = 170;
 const WATERMARK_STROKE_WIDTH = 1.3;
 const BAND_CLASS =
   "flex h-7 items-center justify-between px-2.5 font-mono text-micro font-medium tracking-[1px]";
+const CASE_FOOTER_CLASS = "absolute inset-x-3.5 bottom-3.5 flex flex-col gap-1.5";
 const TITLE_CLASS =
   "font-display text-h3 leading-[0.95] font-extrabold tracking-[-0.02em] text-white text-shadow-[0_2px_12px_rgb(0_0_0/40%)]";
 // Darkens the edge turned away from the viewer on side cases.
@@ -129,7 +130,7 @@ export const GameCase = memo(function GameCase({
       ) : (
         <Watermark />
       )}
-      <div className="absolute inset-x-3.5 bottom-3.5 flex flex-col gap-1.5">
+      <div className={CASE_FOOTER_CLASS}>
         {entry.sticker ? (
           <span className="-rotate-3 self-start rounded-pill bg-text px-2 py-0.75 font-mono text-tag text-on-accent">
             {entry.sticker}
@@ -157,7 +158,7 @@ export function EmptyGameCase({ title }: { title: string }) {
         <span />
       </div>
       <Watermark />
-      <div className="absolute inset-x-3.5 bottom-3.5 flex flex-col gap-1.5">
+      <div className={CASE_FOOTER_CLASS}>
         <span className={TITLE_CLASS}>{title}</span>
       </div>
     </CaseFrame>

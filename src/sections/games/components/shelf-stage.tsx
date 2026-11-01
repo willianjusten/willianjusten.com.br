@@ -12,7 +12,7 @@ import { EmptyGameCase, GameCase } from "./game-case";
 /** Pointer travel that turns a press into a drag, so it no longer selects a case. */
 const DRAG_SLOP_IN_PIXELS = 8;
 const NAV_BUTTON_CLASS =
-  "absolute top-1/2 z-[500] flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover disabled:opacity-40";
+  "absolute top-1/2 z-500 flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover disabled:opacity-40";
 
 export type ShelfStageLabels = {
   stageLabel: string;

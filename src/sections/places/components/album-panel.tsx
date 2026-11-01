@@ -68,9 +68,9 @@ export function AlbumPanel({
         event.stopPropagation();
         onPress();
       }}
-      className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-glass-strong shadow-2 backdrop-blur-md"
+      className="absolute top-3 right-3 bottom-3 z-300 flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-glass-strong shadow-2 backdrop-blur-md"
     >
-      <div className="relative aspect-[16/10] flex-none bg-surface">
+      <div className="relative aspect-16/10 shrink-0 bg-surface">
         <Image
           key={photo.src}
           src={photo.src}
@@ -126,7 +126,7 @@ export function AlbumPanel({
             type="button"
             aria-label={labels.close}
             onClick={onClose}
-            className="flex size-11 flex-none items-center justify-center rounded-full border border-line-strong text-text-2 transition-colors hover:border-line-hover hover:text-text"
+            className="flex size-11 shrink-0 items-center justify-center rounded-full border border-line-strong text-text-2 transition-colors hover:border-line-hover hover:text-text"
           >
             <X size={16} strokeWidth={2} aria-hidden="true" />
           </button>

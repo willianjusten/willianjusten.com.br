@@ -56,9 +56,9 @@ export async function Footer() {
           </nav>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-line pt-6 text-small text-text-muted">
-          <span className="font-mono text-eyebrow">{t("copyright")}</span>
-        </div>
+        <p className="border-t border-line pt-6 font-mono text-eyebrow text-text-muted">
+          {t("copyright")}
+        </p>
       </div>
     </footer>
   );

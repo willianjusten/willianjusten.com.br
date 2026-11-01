@@ -67,11 +67,11 @@ a:focus-visible > .wiggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 0.74em;
-  height: 0.98em;
-  border-radius: 0.06em;
+  width: var(--flip-tile-width, 0.74em);
+  height: var(--flip-tile-height, 0.98em);
+  border-radius: var(--flip-tile-radius, 0.06em);
   font-family: var(--font-mono);
-  font-size: 0.62em;
+  font-size: var(--flip-tile-font-size, 0.62em);
   font-weight: 700;
   color: var(--accent);
   background: var(--flap-tile);

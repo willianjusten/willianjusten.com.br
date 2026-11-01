@@ -40,7 +40,7 @@ export function GlobeControls({
 
   return (
     <>
-      <div className="absolute top-3 left-3 z-[200] flex flex-col gap-1.5">
+      <div className="absolute top-3 left-3 z-200 flex flex-col gap-1.5">
         {zoomButtons.map(({ label, icon: Icon, onClick }) => (
           <button
             key={label}
@@ -55,7 +55,7 @@ export function GlobeControls({
         ))}
       </div>
 
-      <div className="absolute bottom-3 left-3 z-[200] flex flex-wrap items-center gap-3">
+      <div className="absolute bottom-3 left-3 z-200 flex flex-wrap items-center gap-3">
         <button
           type="button"
           aria-pressed={isTouring}
