@@ -1,52 +1,43 @@
-import { ArrowUpRight, Gamepad2, MapPin, Music } from "lucide-react";
+import { ArrowUpRight, MapPin } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
-import { gameCovers } from "@/content/game-covers";
-import { games } from "@/content/games";
-import { buildShelfEntries } from "@/sections/games/lib/games-board";
-import { music } from "@/content/music";
-import { buildMusicBoard } from "@/sections/music/lib/music-board";
-import { musicPreviews } from "@/content/music-previews";
 import { places } from "@/content/places";
-import { buildGlobePlaces, countPlaces } from "./lib/places-board";
-import { tripPhotos } from "@/content/trip-photos";
 import { profile } from "@/content/profile";
-import { GamesShelf } from "@/sections/games/components/games-shelf";
-import { LazyGlobe } from "./components/lazy-globe";
-import { MusicBoard } from "@/sections/music/components/music-board";
-import { PlaceCounters } from "./components/place-counters";
+import { tripPhotos } from "@/content/trip-photos";
+import { ExternalLink } from "@/shared/components/external-link";
 import { SectionShell } from "@/shared/components/section-shell";
+import { LazyGlobe } from "./components/lazy-globe";
+import { PlaceCounters } from "./components/place-counters";
+import { buildGlobePlaces, countPlaces } from "./lib/places-board";
 
-const ICON_SIZE_IN_PIXELS = 20;
-const ICON_STROKE_WIDTH = 1.8;
-const INTRO_LINK_CLASS =
-  "font-medium text-accent no-underline underline-offset-4 hover:text-accent-hi hover:underline";
+const PROFILE_CHIP_CLASS =
+  "chip-link flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-5 text-small text-text no-underline";
 
 function IntroLink({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={INTRO_LINK_CLASS}>
+    <ExternalLink
+      href={href}
+      className="font-medium text-accent no-underline underline-offset-4 hover:text-accent-hi hover:underline"
+    >
       {children}
-    </a>
+    </ExternalLink>
   );
 }
-
-/** The Places, Games and Music sections of the home page, each wrapped in a `SectionShell`. */
-const PROFILE_CHIP_CLASS =
-  "chip-link flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-5 text-small text-text no-underline";
 
 export async function PlacesSection() {
   const t = await getTranslations("Sections.places");
   const locale = await getLocale();
-  const globePlaces = buildGlobePlaces(places, tripPhotos, locale === "pt" ? "pt" : "en");
+  const globePlaces = buildGlobePlaces(places, tripPhotos, locale);
   const counters = countPlaces(globePlaces);
   const profileChips = [
     { key: "unsplash", label: "Unsplash", href: profile.links.unsplash.href },
     { key: "pexels", label: "Pexels", href: profile.links.pexels.href },
   ];
+
   return (
     <SectionShell
       id="places"
-      icon={<MapPin size={ICON_SIZE_IN_PIXELS} strokeWidth={ICON_STROKE_WIDTH} />}
+      icon={MapPin}
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t.rich("intro", {
@@ -65,13 +56,7 @@ export async function PlacesSection() {
           />
           <div className="flex flex-wrap gap-2">
             {profileChips.map((chip) => (
-              <a
-                key={chip.key}
-                href={chip.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={PROFILE_CHIP_CLASS}
-              >
+              <ExternalLink key={chip.key} href={chip.href} className={PROFILE_CHIP_CLASS}>
                 {chip.label}
                 <ArrowUpRight
                   size={14}
@@ -79,7 +64,7 @@ export async function PlacesSection() {
                   aria-hidden="true"
                   className="nudge-arrow"
                 />
-              </a>
+              </ExternalLink>
             ))}
           </div>
         </div>
@@ -124,125 +109,6 @@ export async function PlacesSection() {
           </ul>
         </noscript>
       </div>
-    </SectionShell>
-  );
-}
-
-export async function GamesSection() {
-  const t = await getTranslations("Sections.games");
-  const locale = await getLocale();
-  const shelfEntries = buildShelfEntries(games, gameCovers, locale === "pt" ? "pt" : "en");
-  return (
-    <SectionShell
-      id="games"
-      icon={<Gamepad2 size={ICON_SIZE_IN_PIXELS} strokeWidth={ICON_STROKE_WIDTH} />}
-      eyebrow={t("eyebrow")}
-      title={t("title")}
-      intro={t("intro")}
-    >
-      <GamesShelf
-        games={shelfEntries}
-        labels={{
-          tabsLabel: t("shelf.tabsLabel"),
-          platformsLabel: t("shelf.platformsLabel"),
-          all: t("shelf.all"),
-          tabs: {
-            playing: t("shelf.tabs.playing"),
-            played: t("shelf.tabs.played"),
-            wishlist: t("shelf.tabs.wishlist"),
-            recommended: t("shelf.tabs.recommended"),
-          },
-          status: {
-            playing: t("shelf.status.playing"),
-            played: t("shelf.status.played"),
-            wishlist: t("shelf.status.wishlist"),
-            recommended: t("shelf.status.recommended"),
-          },
-          reaction: {
-            playing: t("shelf.reaction.playing"),
-            played: t("shelf.reaction.played"),
-            wishlist: t("shelf.reaction.wishlist"),
-            recommended: t("shelf.reaction.recommended"),
-          },
-          reactionError: t("shelf.reactionError"),
-          voteRateLimited: t("shelf.voteRateLimited"),
-          reactionPressedRecommended: t("shelf.reactionPressedRecommended"),
-          sticker: t.raw("shelf.sticker"),
-          pendingSticker: t("shelf.pendingSticker"),
-          pendingNote: t("shelf.pendingNote"),
-          rating: t.raw("shelf.rating"),
-          stageLabel: t("shelf.stageLabel"),
-          previous: t("shelf.previous"),
-          next: t("shelf.next"),
-          showGame: t.raw("shelf.showGame"),
-          counterHint: t("shelf.counterHint"),
-          soon: t("shelf.soon"),
-          emptyRecommendedTitle: t("shelf.emptyRecommendedTitle"),
-          emptyRecommendedNote: t("shelf.emptyRecommendedNote"),
-          emptyTitle: t("shelf.emptyTitle"),
-          emptyNote: t("shelf.emptyNote"),
-          recommendLike: t("shelf.recommendLike"),
-          form: {
-            title: t("form.title"),
-            subtitle: t("form.subtitle"),
-            searchLabel: t("form.searchLabel"),
-            searchPlaceholder: t("form.searchPlaceholder"),
-            resultsLabel: t("form.resultsLabel"),
-            searching: t("form.searching"),
-            noResults: t("form.noResults"),
-            searchError: t("form.searchError"),
-            credit: t("form.credit"),
-            chooseAnother: t("form.chooseAnother"),
-            honeypotLabel: t("form.honeypotLabel"),
-            submit: t.raw("form.submit"),
-            submitting: t("form.submitting"),
-            doneApproved: t.raw("form.doneApproved"),
-            donePending: t.raw("form.donePending"),
-            rateLimited: t("form.rateLimited"),
-            failed: t("form.failed"),
-            seeAll: t.raw("form.seeAll"),
-          },
-        }}
-      />
-    </SectionShell>
-  );
-}
-
-export async function MusicSection() {
-  const t = await getTranslations("Sections.music");
-  const locale = await getLocale();
-  const { songOfTheMoment, pastTracks } = buildMusicBoard(music, musicPreviews);
-
-  return (
-    <SectionShell
-      id="music"
-      icon={<Music size={ICON_SIZE_IN_PIXELS} strokeWidth={ICON_STROKE_WIDTH} />}
-      eyebrow={t("eyebrow")}
-      title={t("title")}
-      intro={t("intro")}
-    >
-      <MusicBoard
-        locale={locale}
-        songOfTheMoment={songOfTheMoment}
-        pastTracks={pastTracks}
-        labels={{
-          songOfTheMoment: t("songOfTheMoment"),
-          record: t("record"),
-          play: t("play"),
-          pause: t("pause"),
-          previewUnavailable: t("previewUnavailable"),
-          hint: t("hint"),
-          listenOn: t("listenOn"),
-          youtubeMusic: t("youtubeMusic"),
-          spotify: t("spotify"),
-          appleMusic: t("appleMusic"),
-          credit: t("credit"),
-          previously: t("previously"),
-          onTheTurntable: t("onTheTurntable"),
-          previewTrack: t.raw("previewTrack"),
-          pauseTrack: t.raw("pauseTrack"),
-        }}
-      />
     </SectionShell>
   );
 }

@@ -2,29 +2,10 @@ import { ArrowUpRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { profile } from "@/content/profile";
 import { COURTSIDE_URL } from "@/lib/site";
+import { ExternalLink } from "@/shared/components/external-link";
 import { SectionShell } from "@/shared/components/section-shell";
+import { BasketballIcon } from "./components/basketball-icon";
 import { ShotGameLoader } from "./components/shot-game-loader";
-
-const ICON_SIZE_IN_PIXELS = 20;
-const ICON_STROKE_WIDTH = 1.8;
-
-function BasketballIcon({ size = ICON_SIZE_IN_PIXELS }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={ICON_STROKE_WIDTH}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 2v20M2 12h20M4.9 4.9c3.1 3.1 3.1 11.1 0 14.2M19.1 4.9c-3.1 3.1-3.1 11.1 0 14.2" />
-    </svg>
-  );
-}
 
 export async function NbaSection() {
   const t = await getTranslations("Sections.nba");
@@ -48,7 +29,7 @@ export async function NbaSection() {
   return (
     <SectionShell
       id="nba"
-      icon={<BasketballIcon />}
+      icon={BasketballIcon}
       badgeClassName="bounce-ball"
       eyebrow={t("eyebrow")}
       title={t("title")}
@@ -66,10 +47,8 @@ export async function NbaSection() {
         ))}
       </ul>
       <div className="mt-6 flex flex-wrap items-center gap-4">
-        <a
+        <ExternalLink
           href={COURTSIDE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
           className="group inline-flex min-h-12 items-center gap-2 rounded-pill bg-(image:--ball-light) px-6 font-semibold text-on-accent no-underline hover:text-on-accent"
         >
           <BasketballIcon size={18} />
@@ -79,7 +58,7 @@ export async function NbaSection() {
             size={16}
             className="transition-transform duration-250 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]"
           />
-        </a>
+        </ExternalLink>
         <span className="text-small text-text-muted">{t("builtWith", { names })}</span>
       </div>
     </SectionShell>

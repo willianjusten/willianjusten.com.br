@@ -1,3 +1,4 @@
+import type { Locale } from "next-intl";
 import { buildCoverUrl } from "./igdb";
 import type { GameCoverEntry } from "@/content/game-cover-schema";
 import type { Game } from "@/content/games";
@@ -13,7 +14,7 @@ export type ShelfGame = Omit<Game, "note" | "igdbId"> & {
 export function buildShelfEntries(
   games: readonly Game[],
   covers: Record<string, GameCoverEntry>,
-  locale: "en" | "pt",
+  locale: Locale,
 ): ShelfGame[] {
   return games.map(({ note, igdbId: _igdbId, ...game }) => {
     const cover = covers[game.slug];

@@ -5,6 +5,7 @@ import { currentlyPlaying, games } from "@/content/games";
 import { music } from "@/content/music";
 import { profile } from "@/content/profile";
 import { PLATFORM_STYLES } from "@/sections/games/lib/platforms";
+import { findSongOfTheMoment } from "@/sections/music/lib/music-board";
 import { HeroSpotlight } from "./components/hero-spotlight";
 import { LocalTime } from "./components/local-time";
 import { StatusTile } from "./components/status-tile";
@@ -20,12 +21,12 @@ function secondsAfter(start: number, step: number, index: number): string {
   return `${(start + step * index).toFixed(3)}s`;
 }
 
-export async function Hero() {
+export async function HeroSection() {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
   const { now } = profile;
   const playing = currentlyPlaying(games);
-  const songOfTheMoment = music.tracks.find((track) => track.id === music.songOfTheMoment)!;
+  const songOfTheMoment = findSongOfTheMoment(music.tracks, music.songOfTheMoment);
 
   return (
     <section id="top" className="relative isolate">

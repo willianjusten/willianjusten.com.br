@@ -1,15 +1,20 @@
-import type { ReactNode } from "react";
+import type { ComponentType, ReactNode } from "react";
+
+const ICON_SIZE_IN_PIXELS = 20;
+const ICON_STROKE_WIDTH = 1.8;
+
+/** Lucide icons and the hand-drawn section icons both take this shape. */
+export type SectionIcon = ComponentType<{ size?: number; strokeWidth?: number }>;
 
 type SectionShellProps = {
   /** Anchor id, targeted by the header navigation. */
   id: string;
-  icon: ReactNode;
+  icon: SectionIcon;
   eyebrow: string;
   title: string;
   intro: ReactNode;
   /** Extra classes on the icon badge, e.g. the NBA ball bounce. */
   badgeClassName?: string;
-  /** Section body, filled in by the section tickets. */
   children?: ReactNode;
   /** Optional right-hand column; the header and children then sit in a left column beside it. */
   aside?: ReactNode;
@@ -17,9 +22,10 @@ type SectionShellProps = {
   headerAside?: ReactNode;
 };
 
+/** The frame every home page section shares: icon eyebrow, heading, intro and body. */
 export function SectionShell({
   id,
-  icon,
+  icon: Icon,
   eyebrow,
   title,
   intro,
@@ -37,7 +43,7 @@ export function SectionShell({
           aria-hidden="true"
           className={`wiggle flex size-10 items-center justify-center rounded-md bg-(image:--ball-light) text-on-accent shadow-(--badge-glow) ${badgeClassName}`}
         >
-          {icon}
+          <Icon size={ICON_SIZE_IN_PIXELS} strokeWidth={ICON_STROKE_WIDTH} />
         </span>
         {eyebrow}
       </p>

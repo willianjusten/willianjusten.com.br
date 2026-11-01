@@ -1,3 +1,4 @@
+import type { Locale } from "next-intl";
 import type { Place } from "@/content/places";
 import type { PhotoExif, TripPhoto, TripPhotosFile } from "@/content/trip-photo-schema";
 
@@ -73,7 +74,7 @@ export function countPlaces(
 export function buildGlobePlaces(
   places: readonly Place[],
   tripPhotos: TripPhotosFile,
-  locale: "en" | "pt",
+  locale: Locale,
 ): GlobePlace[] {
   return places.map((place) => {
     const album = place.cloudinaryFolder ? (tripPhotos.albums[place.cloudinaryFolder] ?? []) : [];
