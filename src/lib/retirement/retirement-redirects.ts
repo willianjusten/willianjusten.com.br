@@ -58,3 +58,19 @@ export function buildRetirementRedirects(oldPostSlugs: readonly string[]): Redir
 
   return [...postRules, ...routeRules];
 }
+
+/**
+ * Next's built-in slash redirect (a 308) runs before every custom rule, so old `/slug/` links
+ * took two hops and slash-only rules never matched. next.config turns it off with
+ * `skipTrailingSlashRedirect`, and this 301 takes its place after the old URL rules.
+ */
+const TRAILING_SLASH_REDIRECT: RedirectRule = {
+  source: "/:path+/",
+  destination: "/:path+",
+  statusCode: 301,
+};
+
+/** Every redirect the site serves, in match order: kept homes first, then old blog URLs. */
+export function buildSiteRedirects(oldPostSlugs: readonly string[]): RedirectRule[] {
+  return [...KEPT_REDIRECTS, ...buildRetirementRedirects(oldPostSlugs), TRAILING_SLASH_REDIRECT];
+}

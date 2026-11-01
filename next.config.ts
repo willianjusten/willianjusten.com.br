@@ -2,10 +2,7 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 import oldPostSlugs from "./data/legacy/old-post-slugs.json";
 import tripPhotos from "./src/content/generated/trip-photos.json";
-import {
-  KEPT_REDIRECTS,
-  buildRetirementRedirects,
-} from "./src/lib/retirement/retirement-redirects";
+import { buildSiteRedirects } from "./src/lib/retirement/retirement-redirects";
 
 const nextConfig: NextConfig = {
   images: {
@@ -15,9 +12,10 @@ const nextConfig: NextConfig = {
       new URL(`https://res.cloudinary.com/${tripPhotos.cloudName}/image/upload/**`),
     ],
   },
+  // Old blog links end in a slash; buildSiteRedirects strips it itself, after the old URL rules.
+  skipTrailingSlashRedirect: true,
   async redirects() {
-    // Kept redirects come first so they win over the generic post rules.
-    return [...KEPT_REDIRECTS, ...buildRetirementRedirects(oldPostSlugs)];
+    return buildSiteRedirects(oldPostSlugs);
   },
 };
 

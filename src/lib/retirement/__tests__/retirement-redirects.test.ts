@@ -1,6 +1,10 @@
 import { describe, expect, it } from "vitest";
 import oldPostSlugs from "../../../../data/legacy/old-post-slugs.json";
-import { KEPT_REDIRECTS, buildRetirementRedirects } from "../retirement-redirects";
+import {
+  KEPT_REDIRECTS,
+  buildRetirementRedirects,
+  buildSiteRedirects,
+} from "../retirement-redirects";
 
 const rules = buildRetirementRedirects(oldPostSlugs);
 
@@ -50,5 +54,19 @@ describe("blog retirement redirects", () => {
         statusCode: 301,
       });
     }
+  });
+
+  it("strips any other trailing slash with a 301, only after every old URL rule has had its turn", () => {
+    const siteRules = buildSiteRedirects(oldPostSlugs);
+    const slashRuleIndex = siteRules.findIndex((rule) => rule.source === "/:path+/");
+
+    expect(siteRules[slashRuleIndex]).toEqual({
+      source: "/:path+/",
+      destination: "/:path+",
+      statusCode: 301,
+    });
+    expect(slashRuleIndex).toBe(siteRules.length - 1);
+    expect(siteRules).toEqual(expect.arrayContaining([...KEPT_REDIRECTS, ...rules]));
+    expect(siteRules.indexOf(KEPT_REDIRECTS[0])).toBe(0);
   });
 });
