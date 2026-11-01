@@ -58,13 +58,7 @@ export function RecordPlayer({
               {...scratchHandlers}
               className="absolute top-2 left-0 flex size-(--record-size) cursor-grab touch-none items-center justify-center rounded-pill bg-[repeating-radial-gradient(circle,var(--bg-sunken)_0_2px,var(--surface-raised)_2px_4px)] active:cursor-grabbing"
             >
-              <div className="relative flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
-                <span
-                  aria-hidden="true"
-                  className="absolute top-[18%] font-mono text-record-label tracking-[1px] text-on-accent"
-                >
-                  WJ · SIDE A
-                </span>
+              <div className="flex aspect-square w-[36%] items-center justify-center rounded-pill bg-accent">
                 <div className="aspect-square w-[16%] rounded-pill bg-bg" />
               </div>
             </div>

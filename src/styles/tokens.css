@@ -61,7 +61,6 @@
   --fs-micro: 10px;
   --fs-tag: 9px;
   --fs-spine: 8px;
-  --fs-record-label: 6px;
 
   /* space */
   --s-4: 4px;
@@ -203,7 +202,6 @@
   --text-spine: var(--fs-spine);
   --text-logo: var(--fs-logo);
   --text-caption: var(--fs-caption);
-  --text-record-label: var(--fs-record-label);
   --text-h2: var(--fs-h2);
   --text-h3: var(--fs-h3);
   --text-lead: var(--fs-lead);
