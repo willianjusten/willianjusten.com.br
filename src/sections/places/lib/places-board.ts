@@ -4,7 +4,6 @@ import type { PhotoExif, TripPhoto, TripPhotosFile } from "@/content/trip-photo-
 
 /** Caps the size next/image fetches from Cloudinary; the originals are up to 6000px wide. */
 const MAX_SOURCE_WIDTH_IN_PIXELS = 2400;
-const COUNTER_DIGITS = 2;
 const TRIP_FOLDER_PREFIX = "trips/";
 const LINE_SEPARATOR = " · ";
 const EXIF_ORDER: (keyof PhotoExif)[] = [
@@ -45,30 +44,12 @@ export type GlobePlace = {
   photos: AlbumPhoto[];
 };
 
-export type PlaceCounters = { countries: string; cities: string; photos: string };
-
 export function formatPhotoLine({ title, exif }: Pick<TripPhoto, "title" | "exif">): PhotoLine {
   const settings = EXIF_ORDER.flatMap((field) => (exif?.[field] ? [exif[field]] : [])).join(
     LINE_SEPARATOR,
   );
   const details = settings && title ? `${LINE_SEPARATOR.trimStart()}${settings}` : settings;
   return { ...(title ? { title } : {}), ...(details ? { details } : {}) };
-}
-
-function padCount(count: number): string {
-  return String(count).padStart(COUNTER_DIGITS, "0");
-}
-
-/** The section header counts: home is where Will lives, not a trip, so it counts towards photos only. */
-export function countPlaces(
-  places: readonly (Pick<GlobePlace, "country" | "isHome"> & { photos: readonly unknown[] })[],
-): PlaceCounters {
-  const trips = places.filter((place) => !place.isHome);
-  return {
-    countries: padCount(new Set(trips.map((place) => place.country)).size),
-    cities: padCount(trips.length),
-    photos: padCount(places.reduce((total, place) => total + place.photos.length, 0)),
-  };
 }
 
 function readFolderYear(folder: string): number {

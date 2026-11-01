@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
 import { places } from "@/content/places";
@@ -7,11 +7,7 @@ import { tripPhotos } from "@/content/trip-photos";
 import { ExternalLink } from "@/shared/components/external-link";
 import { SectionShell } from "@/shared/components/section-shell";
 import { LazyGlobe } from "./components/lazy-globe";
-import { PlaceCounters } from "./components/place-counters";
-import { buildGlobePlaces, countPlaces } from "./lib/places-board";
-
-const PROFILE_CHIP_CLASS =
-  "chip-link flex min-h-11 items-center gap-2 rounded-pill border border-line-strong px-5 text-small text-text no-underline";
+import { buildGlobePlaces } from "./lib/places-board";
 
 function IntroLink({ href, children }: { href: string; children: ReactNode }) {
   return (
@@ -28,11 +24,6 @@ export async function PlacesSection() {
   const t = await getTranslations("Sections.places");
   const locale = await getLocale();
   const globePlaces = buildGlobePlaces(places, tripPhotos, locale);
-  const counters = countPlaces(globePlaces);
-  const profileChips = [
-    { key: "unsplash", label: "Unsplash", href: profile.links.unsplash.href },
-    { key: "pexels", label: "Pexels", href: profile.links.pexels.href },
-  ];
 
   return (
     <SectionShell
@@ -44,31 +35,6 @@ export async function PlacesSection() {
         unsplash: (label) => <IntroLink href={profile.links.unsplash.href}>{label}</IntroLink>,
         pexels: (label) => <IntroLink href={profile.links.pexels.href}>{label}</IntroLink>,
       })}
-      headerAside={
-        <div className="flex flex-col items-start gap-5">
-          <PlaceCounters
-            label={t("counters.label")}
-            counters={[
-              { key: "countries", value: counters.countries, label: t("counters.countries") },
-              { key: "cities", value: counters.cities, label: t("counters.cities") },
-              { key: "photos", value: counters.photos, label: t("counters.photos") },
-            ]}
-          />
-          <div className="flex flex-wrap gap-2">
-            {profileChips.map((chip) => (
-              <ExternalLink key={chip.key} href={chip.href} className={PROFILE_CHIP_CLASS}>
-                {chip.label}
-                <ArrowUpRight
-                  size={14}
-                  strokeWidth={1.8}
-                  aria-hidden="true"
-                  className="nudge-arrow"
-                />
-              </ExternalLink>
-            ))}
-          </div>
-        </div>
-      }
     >
       <div className="mt-10">
         <LazyGlobe

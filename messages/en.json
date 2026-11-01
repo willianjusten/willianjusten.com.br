@@ -57,12 +57,6 @@
         "hint": "drag to rotate · click to open a pin",
         "clusterOf": "Group of"
       },
-      "counters": {
-        "label": "Places in numbers",
-        "countries": "countries",
-        "cities": "cities",
-        "photos": "photos"
-      },
       "album": {
         "label": "Album: {place}",
         "home": "Home",

@@ -15,8 +15,6 @@ type SectionShellProps = {
   children?: ReactNode;
   /** Optional right-hand column; the header and children then sit in a left column beside it. */
   aside?: ReactNode;
-  /** Optional block beside the header only, bottom-aligned, that wraps below it on narrow screens. */
-  headerAside?: ReactNode;
 };
 
 export function SectionShell({
@@ -28,11 +26,10 @@ export function SectionShell({
   badgeClassName = "",
   children,
   aside,
-  headerAside,
 }: SectionShellProps) {
   const headingId = `${id}-heading`;
 
-  const headerContent = (
+  const header = (
     <>
       <p className="mb-4 flex items-center gap-3.5 font-mono text-eyebrow text-accent">
         <span
@@ -51,14 +48,6 @@ export function SectionShell({
       </h2>
       <p className="mt-4 mb-0 max-w-intro text-body-lg text-text-2">{intro}</p>
     </>
-  );
-  const header = headerAside ? (
-    <div className="flex flex-wrap items-end justify-between gap-x-12 gap-y-6">
-      <div className="min-w-0">{headerContent}</div>
-      {headerAside}
-    </div>
-  ) : (
-    headerContent
   );
 
   return (

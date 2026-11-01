@@ -57,12 +57,6 @@
         "hint": "arraste para girar · clique para abrir um pin",
         "clusterOf": "Grupo de"
       },
-      "counters": {
-        "label": "Lugares em números",
-        "countries": "países",
-        "cities": "cidades",
-        "photos": "fotos"
-      },
       "album": {
         "label": "Álbum: {place}",
         "home": "Casa",
