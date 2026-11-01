@@ -1,8 +1,10 @@
 import { Code, Gamepad2, Music, Plane } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { CSSProperties } from "react";
+import { currentlyPlaying, games } from "@/content/games";
 import { music } from "@/content/music";
 import { profile } from "@/content/profile";
+import { PLATFORM_STYLES } from "./games/platform-style";
 import { HeroSpotlight } from "./hero-spotlight";
 import { LocalTime } from "./local-time";
 import { StatusTile } from "./status-tile";
@@ -22,6 +24,7 @@ export async function Hero() {
   const locale = await getLocale();
   const t = await getTranslations("Hero");
   const { now } = profile;
+  const playing = currentlyPlaying(games);
   const songOfTheMoment = music.tracks.find((track) => track.id === music.songOfTheMoment)!;
 
   return (
@@ -108,8 +111,8 @@ export async function Hero() {
             href="#games"
             icon={Gamepad2}
             label={t("playing.label")}
-            value={now.playing.title}
-            sub={now.playing.platform}
+            value={playing.title}
+            sub={PLATFORM_STYLES[playing.platform].name}
           />
           <StatusTile
             href="#music"

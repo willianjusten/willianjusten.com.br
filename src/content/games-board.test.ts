@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildShelfEntries } from "./games-board";
-import { games } from "./games";
+import { currentlyPlaying, games } from "./games";
 
 const [firstGame] = games;
 const gameWithNote = {
@@ -42,3 +42,15 @@ describe("games board", () => {
 function coverFor(coverImageId: string) {
   return { igdbId: 1, igdbTitle: "Game", coverImageId, fetchedAt: "2026-10-31T00:00:00.000Z" };
 }
+
+describe("currentlyPlaying", () => {
+  it("is the first game on the Playing shelf, in curated order", () => {
+    const shelf = [
+      { ...firstGame, slug: "done", list: "played" as const },
+      { ...firstGame, slug: "first", list: "playing" as const },
+      { ...firstGame, slug: "second", list: "playing" as const },
+    ];
+
+    expect(currentlyPlaying(shelf).slug).toBe("first");
+  });
+});

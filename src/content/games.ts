@@ -40,6 +40,9 @@ export const gamesSchema = z
   .object({ games: z.array(gameSchema).min(1) })
   .refine((value) => new Set(value.games.map((game) => game.slug)).size === value.games.length, {
     message: "Game slugs must be unique",
+  })
+  .refine((value) => value.games.some((game) => game.list === "playing"), {
+    message: "At least one game must be in Playing, since the hero shows the first one",
   });
 
 export type Game = z.output<typeof gameSchema>;
@@ -255,3 +258,12 @@ export const gamesData: z.input<typeof gamesSchema> = {
 };
 
 export const games = gamesSchema.parse(gamesData).games;
+
+/** The first game on the Playing shelf, shown on the hero's Playing tile. */
+export function currentlyPlaying(shelf: readonly Game[]): Game {
+  const game = shelf.find((candidate) => candidate.list === "playing");
+  if (!game) {
+    throw new Error("No game in Playing");
+  }
+  return game;
+}

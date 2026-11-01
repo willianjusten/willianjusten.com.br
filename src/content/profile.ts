@@ -32,10 +32,6 @@ export const profileSchema = z.object({
   }),
   now: z.object({
     building: z.object({ company: z.string().min(1), link: z.url() }),
-    playing: z.object({
-      title: z.string().min(1),
-      platform: z.string().min(1),
-    }),
     lastSeen: z.object({ place: z.string().min(1), when: localizedText }),
   }),
   nba: z.object({
@@ -63,7 +59,6 @@ export const profileData: z.input<typeof profileSchema> = {
   },
   now: {
     building: { company: "Spoke", link: "https://spoke.com/connect" },
-    playing: { title: "Crimson Desert", platform: "ROG Ally X" },
     lastSeen: {
       place: "Amsterdam, NL",
       when: { en: "October 2026", pt: "Outubro de 2026" },

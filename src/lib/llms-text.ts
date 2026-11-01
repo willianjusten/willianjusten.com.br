@@ -1,3 +1,5 @@
+import { PLATFORM_STYLES } from "@/components/games/platform-style";
+import { currentlyPlaying, games } from "@/content/games";
 import { places } from "@/content/places";
 import { profile } from "@/content/profile";
 import englishMessages from "../../messages/en.json";
@@ -27,6 +29,7 @@ function toMarkdown(richText: string): string {
 export function buildLlmsText(): string {
   const { Metadata, Header, Sections, Hero } = englishMessages;
   const { now } = profile;
+  const playing = currentlyPlaying(games);
 
   const sectionLines = SECTION_KEYS.map(
     (key) => `- [${Header[key]}](${SITE_URL}/#${key}): ${toMarkdown(Sections[key].intro)}`,
@@ -55,7 +58,7 @@ export function buildLlmsText(): string {
     "## Now",
     "",
     `- ${Hero.building.label}: [${Hero.building.value}](${now.building.link})`,
-    `- ${Hero.playing.label}: ${now.playing.title} (${now.playing.platform})`,
+    `- ${Hero.playing.label}: ${playing.title} (${PLATFORM_STYLES[playing.platform].name})`,
     `- ${Hero.lastSeen.label}: ${now.lastSeen.place}, ${now.lastSeen.when.en}`,
     "",
     "## Places visited",
