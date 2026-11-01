@@ -84,6 +84,16 @@ export const gamesData: z.input<typeof gamesSchema> = {
       tone: "#5A2A1E",
     },
     {
+      slug: "moonlighter-2",
+      title: "Moonlighter 2",
+      // IGDB names it "Moonlighter 2: The Endless Vault".
+      igdbId: 324570,
+      platform: "rog",
+      list: "playing",
+      year: 2026,
+      tone: "#2A3A4A",
+    },
+    {
       slug: "control-resonant",
       title: "Control Resonant",
       platform: "rog",
