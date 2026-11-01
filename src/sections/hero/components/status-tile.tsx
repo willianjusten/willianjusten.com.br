@@ -6,11 +6,18 @@ type StatusTileProps = {
   icon: LucideIcon;
   label: string;
   value: string;
-  sub: string;
+  detail: string;
   isExternal?: boolean;
 };
 
-export function StatusTile({ href, icon: Icon, label, value, sub, isExternal }: StatusTileProps) {
+export function StatusTile({
+  href,
+  icon: Icon,
+  label,
+  value,
+  detail,
+  isExternal,
+}: StatusTileProps) {
   const Anchor = isExternal ? ExternalLink : "a";
   return (
     <Anchor
@@ -33,7 +40,7 @@ export function StatusTile({ href, icon: Icon, label, value, sub, isExternal }: 
           {label}
         </span>
         <span className="text-lg font-semibold text-text">{value}</span>
-        <span className="text-small text-text-muted">{sub}</span>
+        <span className="text-small text-text-muted">{detail}</span>
       </span>
     </Anchor>
   );

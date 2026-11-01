@@ -36,8 +36,8 @@ export async function HeroSection() {
       <Floodlight className="top-30 left-[68%] size-115 bg-[radial-gradient(circle,var(--glow-amber),transparent_65%)] motion-safe:animate-drift-2" />
       <Floodlight className="top-65 left-[30%] size-105 bg-[radial-gradient(circle,var(--glow-sand),transparent_65%)] motion-safe:animate-drift-3" />
 
-      <div className="mx-auto max-w-page px-8 pt-[136px] pb-[72px]">
-        <p className="mb-7 motion-safe:animate-fade-in flex items-center gap-2.5 font-mono text-eyebrow text-text-muted">
+      <div className="mx-auto max-w-page px-8 pt-34 pb-18">
+        <p className="mb-7 flex items-center gap-2.5 font-mono text-eyebrow text-text-muted motion-safe:animate-fade-in">
           <span
             className="relative inline-block size-2 rounded-full bg-accent after:absolute after:inset-0 after:rounded-full after:bg-accent/50 after:opacity-0 motion-safe:after:animate-pulse-ring"
             aria-hidden="true"
@@ -51,7 +51,7 @@ export async function HeroSection() {
             {[...FIRST_NAME].map((letter, index) => (
               <span
                 key={index}
-                className="letter-rise"
+                className="inline-block motion-safe:animate-letter-rise"
                 style={{
                   animationDelay: secondsAfter(
                     LETTER_RISE_START_IN_SECONDS,
@@ -85,9 +85,9 @@ export async function HeroSection() {
           </span>
         </h1>
 
-        <p className="mt-9 motion-safe:animate-fade-in mb-0 max-w-[640px] text-lead leading-[1.45] text-text-2">
+        <p className="mt-9 mb-0 max-w-lead text-lead leading-[1.45] text-text-2 motion-safe:animate-fade-in">
           {t.rich("lead", {
-            strong: (spokeName) => <strong className="font-semibold text-text">{spokeName}</strong>,
+            strong: (highlight) => <strong className="font-semibold text-text">{highlight}</strong>,
           })}
         </p>
 
@@ -98,28 +98,28 @@ export async function HeroSection() {
             icon={Code}
             label={t("building.label")}
             value={t("building.value", { company: now.building.company })}
-            sub={t("building.sub")}
+            detail={t("building.sub")}
           />
           <StatusTile
             href="#games"
             icon={Gamepad2}
             label={t("playing.label")}
             value={playing.title}
-            sub={PLATFORM_STYLES[playing.platform].name}
+            detail={PLATFORM_STYLES[playing.platform].name}
           />
           <StatusTile
             href="#music"
             icon={Music}
             label={t("onRepeat.label")}
             value={songOfTheMoment.title}
-            sub={songOfTheMoment.artist}
+            detail={songOfTheMoment.artist}
           />
           <StatusTile
             href="#places"
             icon={Plane}
             label={t("lastSeen.label")}
             value={now.lastSeen.place}
-            sub={now.lastSeen.when[locale]}
+            detail={now.lastSeen.when[locale]}
           />
         </div>
       </div>
