@@ -102,6 +102,7 @@ export const gamesData: z.input<typeof gamesSchema> = {
       platform: "pc",
       list: "played",
       year: "[year]",
+      rating: 5,
       tone: "#1E3434",
     },
     placeholderGame({
