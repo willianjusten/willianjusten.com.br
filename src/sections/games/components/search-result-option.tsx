@@ -27,7 +27,7 @@ export function SearchResultOption({ id, result, isHighlighted, onPick }: Search
       <CoverThumb
         coverUrl={result.coverUrl}
         platform={pickPrimaryPlatform(result.platforms)}
-        sizeClass="h-11 w-[34px]"
+        sizeClass="h-11 w-8.5"
         bandHeightClass="h-2"
       />
       <span className="flex min-w-0 flex-col gap-1">
@@ -41,7 +41,7 @@ export function SearchResultOption({ id, result, isHighlighted, onPick }: Search
           {result.platforms.map((platform) => (
             <span
               key={platform}
-              className={`rounded-xs px-1.5 py-px font-mono text-[9px] tracking-[0.5px] ${PLATFORM_STYLES[platform].bandClass}`}
+              className={`rounded-xs px-1.5 py-px font-mono text-tag tracking-[0.5px] ${PLATFORM_STYLES[platform].bandClass}`}
             >
               {PLATFORM_STYLES[platform].bandText}
             </span>

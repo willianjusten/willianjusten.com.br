@@ -61,7 +61,7 @@ export function GlobeControls({
           aria-pressed={isTouring}
           onPointerDown={stopDrag}
           onClick={onToggleTour}
-          className="flex min-h-11 cursor-pointer items-center gap-2 rounded-pill bg-(image:--ball-light) px-5 text-small font-semibold text-on-accent transition-[filter] hover:brightness-110"
+          className="flex min-h-11 items-center gap-2 pill-primary px-5 text-small transition-[filter] hover:brightness-110"
         >
           <TourIcon size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
           {isTouring ? labels.tour.stop : labels.tour.play}

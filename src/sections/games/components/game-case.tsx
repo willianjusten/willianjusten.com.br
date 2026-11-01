@@ -10,7 +10,7 @@ const WATERMARK_STROKE_WIDTH = 1.3;
 const BAND_CLASS =
   "flex h-7 items-center justify-between px-2.5 font-mono text-micro font-medium tracking-[1px]";
 const TITLE_CLASS =
-  "font-display text-[26px] leading-[0.95] font-extrabold tracking-[-0.02em] text-white text-shadow-[0_2px_12px_rgb(0_0_0/40%)]";
+  "font-display text-h3 leading-[0.95] font-extrabold tracking-[-0.02em] text-white text-shadow-[0_2px_12px_rgb(0_0_0/40%)]";
 // Darkens the edge turned away from the viewer on side cases.
 const SHADE_CLASS = {
   left: "bg-linear-to-l/srgb from-transparent to-black/55",
@@ -50,7 +50,7 @@ function CaseFrame({
     >
       <div className="game-case-back absolute inset-0 rounded-xs bg-bg-sunken" />
       <div className="game-case-spine absolute top-0 h-(--game-case-height)">
-        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-90 font-mono text-[8px] tracking-[1px] whitespace-nowrap text-text-muted">
+        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-90 font-mono text-spine tracking-[1px] whitespace-nowrap text-text-muted">
           {title}
         </span>
       </div>
@@ -77,7 +77,7 @@ function Watermark() {
       aria-hidden="true"
       size={WATERMARK_SIZE_IN_PIXELS}
       strokeWidth={WATERMARK_STROKE_WIDTH}
-      className="absolute top-[52px] -right-6 text-white/10"
+      className="absolute top-13 -right-6 text-white/10"
     />
   );
 }
@@ -131,7 +131,7 @@ export const GameCase = memo(function GameCase({
       )}
       <div className="absolute inset-x-3.5 bottom-3.5 flex flex-col gap-1.5">
         {entry.sticker ? (
-          <span className="-rotate-3 self-start rounded-pill bg-text px-2 py-[3px] font-mono text-[9px] text-on-accent">
+          <span className="-rotate-3 self-start rounded-pill bg-text px-2 py-0.75 font-mono text-tag text-on-accent">
             {entry.sticker}
           </span>
         ) : null}
@@ -143,7 +143,7 @@ export const GameCase = memo(function GameCase({
           aria-label={showLabel}
           aria-pressed={isActive}
           onClick={() => onSelect(index)}
-          className="absolute inset-0 cursor-pointer"
+          className="absolute inset-0"
         />
       ) : null}
     </CaseFrame>

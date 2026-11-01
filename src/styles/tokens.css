@@ -46,7 +46,9 @@
   --fs-footer: clamp(48px, 10vw, 152px);
   --fs-h2: clamp(36px, 4.5vw, 56px);
   --fs-h3: 26px;
+  --fs-title: 30px;
   --fs-menu: 22px;
+  --fs-score: 22px;
   --fs-lead: clamp(19px, 2vw, 23px);
   --fs-body-lg: 18px;
   --fs-logo: 17px;
@@ -57,6 +59,8 @@
   --fs-overline: 12px;
   --fs-caption: 11px;
   --fs-micro: 10px;
+  --fs-tag: 9px;
+  --fs-spine: 8px;
   --fs-record-label: 6px;
 
   /* space */
@@ -185,6 +189,10 @@
   --text-display: var(--fs-display);
   --text-footer: var(--fs-footer);
   --text-menu: var(--fs-menu);
+  --text-title: var(--fs-title);
+  --text-score: var(--fs-score);
+  --text-tag: var(--fs-tag);
+  --text-spine: var(--fs-spine);
   --text-logo: var(--fs-logo);
   --text-caption: var(--fs-caption);
   --text-record-label: var(--fs-record-label);

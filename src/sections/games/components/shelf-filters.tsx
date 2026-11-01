@@ -63,7 +63,7 @@ export function ShelfFilters({
                 type="button"
                 aria-pressed={isActive}
                 onClick={() => onChooseList(list)}
-                className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-4 text-small font-medium whitespace-nowrap transition-colors sm:min-h-11 sm:px-5 sm:text-ui ${
+                className={`inline-flex min-h-10 shrink-0 items-center gap-2 rounded-pill border px-4 text-small font-medium whitespace-nowrap transition-colors sm:min-h-11 sm:px-5 sm:text-ui ${
                   isActive
                     ? "border-accent bg-accent text-on-accent"
                     : "border-line-strong text-text hover:border-line-hover"
@@ -82,7 +82,7 @@ export function ShelfFilters({
           aria-controls={platformGroupId}
           disabled={isPlatformFilterOff}
           onClick={() => setIsPlatformMenuOpen((wasOpen) => !wasOpen)}
-          className={`relative inline-flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-pill border transition-colors disabled:cursor-default disabled:opacity-40 sm:hidden ${
+          className={`relative inline-flex size-10 shrink-0 items-center justify-center rounded-pill border transition-colors disabled:opacity-40 sm:hidden ${
             isPlatformMenuOpen
               ? "border-line-hover bg-surface-raised text-white"
               : "border-line-strong text-text"
@@ -117,7 +117,7 @@ export function ShelfFilters({
               aria-pressed={isActive}
               disabled={isPlatformFilterOff}
               onClick={() => onChoosePlatform(filter)}
-              className={`inline-flex min-h-10 shrink-0 cursor-pointer items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
+              className={`inline-flex min-h-10 shrink-0 items-center gap-2 rounded-pill border px-3.5 text-eyebrow whitespace-nowrap transition-colors sm:min-h-11 ${
                 isActive
                   ? "border-line-hover bg-surface-raised text-white"
                   : "border-line text-text-2 hover:border-line-hover"
@@ -128,7 +128,7 @@ export function ShelfFilters({
                 className={`size-2.5 rounded-full ${platformDotClass(filter)}`}
               />
               {filter === "all" ? labels.all : PLATFORM_STYLES[filter].name}
-              <span className="font-mono text-[11px] opacity-60">{count}</span>
+              <span className="font-mono text-caption opacity-60">{count}</span>
             </button>
           );
         })}

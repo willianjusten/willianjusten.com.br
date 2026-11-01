@@ -65,7 +65,7 @@ export function GlobePin({
       onClick={onActivate}
       onFocus={onFocus}
       style={{ transformOrigin: "50% 100%" }}
-      className="absolute top-0 left-0 flex cursor-pointer flex-col items-center hover:brightness-125 focus-visible:outline-offset-4"
+      className="absolute top-0 left-0 flex flex-col items-center hover:brightness-125 focus-visible:outline-offset-4"
     >
       <span
         ref={(name) => {
@@ -100,7 +100,7 @@ export function GlobePin({
             if (badge) onMount(place.slug, { badge });
           }}
           aria-hidden="true"
-          className="absolute -top-2.5 -right-2.5 hidden h-[22px] min-w-[22px] items-center justify-center rounded-pill bg-accent px-1.5 font-mono text-overline font-medium text-on-accent"
+          className="absolute -top-2.5 -right-2.5 hidden h-5.5 min-w-5.5 items-center justify-center rounded-pill bg-accent px-1.5 font-mono text-overline font-medium text-on-accent"
         />
       </span>
       <span aria-hidden="true" className={`h-2.5 w-0.5 ${isSelected ? "bg-accent" : "bg-text"}`} />

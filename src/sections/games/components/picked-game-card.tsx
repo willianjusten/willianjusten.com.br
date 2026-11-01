@@ -20,18 +20,18 @@ export function PickedGameCard({ game, chooseAnotherLabel, onClear }: PickedGame
       <CoverThumb
         coverUrl={game.coverUrl}
         platform={pickPrimaryPlatform(game.platforms)}
-        sizeClass="h-[66px] w-[52px] shadow-(--shadow-1)"
+        sizeClass="h-16.5 w-13 shadow-(--shadow-1)"
         bandHeightClass="h-3"
       />
       <div className="flex min-w-0 flex-1 flex-col gap-1">
         <span className="truncate text-base font-bold">{game.title}</span>
-        <span className="font-mono text-[11px] text-text-muted">{formatMeta(game)}</span>
+        <span className="font-mono text-caption text-text-muted">{formatMeta(game)}</span>
       </div>
       <button
         type="button"
         aria-label={chooseAnotherLabel}
         onClick={onClear}
-        className="flex size-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-line-strong text-text transition-colors hover:border-line-hover"
+        className="flex size-11 shrink-0 items-center justify-center rounded-full border border-line-strong text-text transition-colors hover:border-line-hover"
       >
         <X size={14} aria-hidden="true" />
       </button>

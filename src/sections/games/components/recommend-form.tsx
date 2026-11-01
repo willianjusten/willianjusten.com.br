@@ -96,11 +96,11 @@ export function RecommendForm({
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden rounded-2xl"
       >
-        <div className="absolute -top-[90px] -right-[90px] size-[260px] rounded-full bg-accent/20 blur-3xl" />
+        <div className="absolute -top-22.5 -right-22.5 size-65 rounded-full bg-accent/20 blur-3xl" />
       </div>
       <form
         onSubmit={handleSubmit}
-        className="relative flex max-w-[640px] flex-col gap-3.5 p-6 sm:p-8"
+        className="relative flex max-w-lead flex-col gap-3.5 p-6 sm:p-8"
       >
         <h3 className="m-0 font-display text-2xl font-bold">{labels.title}</h3>
         <p className="-mt-1.5 mb-0 text-sm text-text-muted">{labels.subtitle}</p>
@@ -137,7 +137,7 @@ export function RecommendForm({
             <button
               type="submit"
               disabled={isSending}
-              className="min-h-12 cursor-pointer rounded-pill bg-(image:--ball-light) px-6 text-ui font-semibold text-on-accent transition-opacity hover:opacity-90 disabled:cursor-default disabled:opacity-60"
+              className="min-h-12 pill-primary px-6 text-ui transition-opacity hover:opacity-90 disabled:opacity-60"
             >
               {isSending ? labels.submitting : fillTemplate(labels.submit, { title: picked.title })}
             </button>
@@ -154,7 +154,7 @@ export function RecommendForm({
           <button
             type="button"
             onClick={onOpenRecommended}
-            className="min-h-11 cursor-pointer self-start rounded-pill border border-line-strong px-4 text-eyebrow text-text-2 transition-colors hover:border-line-hover"
+            className="min-h-11 self-start pill-outline px-4 text-eyebrow text-text-2"
           >
             {fillTemplate(labels.seeAll, { count: recommendedCount })}
           </button>

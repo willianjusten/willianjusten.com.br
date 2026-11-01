@@ -29,7 +29,7 @@ export function AlbumThumbnails({
               })}
               aria-pressed={isCurrent}
               onClick={() => onShowPhoto(thumbnailIndex)}
-              className={`relative block size-11 cursor-pointer overflow-hidden rounded-xs border-2 bg-surface hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+              className={`relative block size-11 overflow-hidden rounded-xs border-2 bg-surface hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
                 isCurrent ? "border-accent" : "border-transparent"
               }`}
             >

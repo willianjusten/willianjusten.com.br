@@ -100,14 +100,14 @@ export function GameSearchCombobox({
           onQueryChange(event.target.value);
         }}
         onKeyDown={handleKeyDown}
-        className="min-h-[46px] w-full rounded-md border border-line-input bg-bg pr-3.5 pl-[42px] text-ui text-text placeholder:text-text-faint"
+        className="min-h-11.5 w-full rounded-md border border-line-input bg-bg pr-3.5 pl-10.5 text-ui text-text placeholder:text-text-faint"
       />
       {isListOpen ? (
         <ul
           id={listId}
           role="listbox"
           aria-label={labels.resultsLabel}
-          className="absolute inset-x-0 top-[52px] z-50 m-0 flex max-h-80 list-none flex-col gap-0.5 overflow-auto rounded-lg border border-line-strong bg-surface p-1.5 shadow-(--shadow-2)"
+          className="absolute inset-x-0 top-13 z-50 m-0 flex max-h-80 list-none flex-col gap-0.5 overflow-auto rounded-lg border border-line-strong bg-surface p-1.5 shadow-(--shadow-2)"
         >
           {shownResults.map((result, index) => (
             <SearchResultOption

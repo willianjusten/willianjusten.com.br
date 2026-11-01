@@ -35,7 +35,7 @@ type AlbumPanelProps = {
 };
 
 const OVERLAY_BUTTON_CLASS =
-  "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-bg/70 text-text transition-colors hover:bg-bg";
+  "absolute top-1/2 flex size-11 -translate-y-1/2 items-center justify-center rounded-full bg-bg/70 text-text transition-colors hover:bg-bg";
 
 /** Escape is handled by the globe frame. */
 export function AlbumPanel({
@@ -68,7 +68,7 @@ export function AlbumPanel({
         event.stopPropagation();
         onPress();
       }}
-      className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-(--glass-strong) shadow-2 backdrop-blur-md"
+      className="absolute top-3 right-3 bottom-3 z-[300] flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-glass-strong shadow-2 backdrop-blur-md"
     >
       <div className="relative aspect-[16/10] flex-none bg-surface">
         <Image
@@ -126,7 +126,7 @@ export function AlbumPanel({
             type="button"
             aria-label={labels.close}
             onClick={onClose}
-            className="flex size-11 flex-none cursor-pointer items-center justify-center rounded-full border border-line-strong text-text-2 transition-colors hover:border-line-hover hover:text-text"
+            className="flex size-11 flex-none items-center justify-center rounded-full border border-line-strong text-text-2 transition-colors hover:border-line-hover hover:text-text"
           >
             <X size={16} strokeWidth={2} aria-hidden="true" />
           </button>

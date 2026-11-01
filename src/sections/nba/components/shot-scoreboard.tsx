@@ -61,7 +61,7 @@ export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: Shot
         {statCells.map((cell, cellIndex) => (
           <div
             key={cell.label}
-            className={`flex flex-col justify-center gap-0.5 border-line px-5 py-3 sm:flex-[1_1_90px] sm:border-t-0 sm:border-l sm:px-[18px] ${
+            className={`flex flex-col justify-center gap-0.5 border-line px-5 py-3 sm:flex-[1_1_90px] sm:border-t-0 sm:border-l sm:px-4.5 ${
               cellIndex % CELLS_PER_PHONE_ROW === 1 ? "border-l" : ""
             } ${cellIndex >= CELLS_PER_PHONE_ROW ? "border-t" : ""}`}
           >
@@ -69,7 +69,7 @@ export function ShotScoreboard({ labels, personalStats, totals, isOnFire }: Shot
               {cell.label}
             </span>
             <span
-              className={`font-mono text-[22px] leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
+              className={`font-mono text-score leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
                 cell.isAccent ? "text-accent [text-shadow:0_0_14px_var(--accent)]" : "text-text"
               }`}
             >

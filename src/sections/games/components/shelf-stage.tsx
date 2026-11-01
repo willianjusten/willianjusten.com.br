@@ -100,9 +100,9 @@ export function ShelfStage({
       onPointerUp={handlePointerEnd}
       onPointerCancel={handlePointerEnd}
       onPointerLeave={handlePointerEnd}
-      className="games-stage relative h-[470px] overflow-hidden outline-offset-[-2px]"
+      className="games-stage relative h-117.5 overflow-hidden -outline-offset-2"
     >
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[120px] border-t border-white/4 bg-linear-to-b/srgb from-transparent to-white/2.5" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-30 border-t border-white/4 bg-linear-to-b/srgb from-transparent to-white/2.5" />
       <div className="absolute top-12 left-1/2 size-0 [transform-style:preserve-3d]">
         {cases.length > 0 ? (
           cases.map((shelfCase, index) => (
