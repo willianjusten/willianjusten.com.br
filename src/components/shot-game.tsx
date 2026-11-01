@@ -372,7 +372,7 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
   return (
     <div className="reveal min-w-0 flex-[999_1_560px] overflow-hidden rounded-xl border border-line-strong bg-bg-sunken shadow-3">
       <div className="flex flex-wrap border-b border-line bg-(image:--stage-gradient)">
-        <div className="flex flex-[2_1_200px] flex-col justify-center gap-0.5 px-5 py-3">
+        <div className="flex basis-full flex-col justify-center gap-0.5 px-5 py-3 sm:flex-[2_1_200px]">
           <span className="flex items-center gap-2 text-body font-semibold">
             <svg
               aria-hidden="true"
@@ -395,28 +395,33 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
             {isOnFire ? labels.onFireHint : labels.hint}
           </span>
         </div>
-        {statCells.map((cell) => (
-          <div
-            key={cell.label}
-            className="flex flex-[1_1_90px] flex-col justify-center gap-0.5 border-l border-line px-[18px] py-3"
-          >
-            <span className="font-mono text-micro tracking-[0.12em] whitespace-nowrap text-text-faint uppercase">
-              {cell.label}
-            </span>
-            <span
-              className={`font-mono text-[22px] leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
-                cell.isAccent ? "text-accent [text-shadow:0_0_14px_var(--accent)]" : "text-text"
-              }`}
+        {/* Phones: a 2x2 grid under the title. From sm up the wrapper dissolves into the row. */}
+        <div className="grid basis-full grid-cols-2 border-t border-line sm:contents">
+          {statCells.map((cell, cellIndex) => (
+            <div
+              key={cell.label}
+              className={`flex flex-col justify-center gap-0.5 border-line px-5 py-3 sm:flex-[1_1_90px] sm:border-t-0 sm:border-l sm:px-[18px] ${
+                cellIndex % 2 === 1 ? "border-l" : ""
+              } ${cellIndex >= 2 ? "border-t" : ""}`}
             >
-              {cell.value}
-            </span>
-            {cell.detail ? (
-              <span className="font-mono text-micro whitespace-nowrap text-text-muted tabular-nums">
-                {cell.detail}
+              <span className="font-mono text-micro tracking-[0.12em] whitespace-nowrap text-text-faint uppercase">
+                {cell.label}
               </span>
-            ) : null}
-          </div>
-        ))}
+              <span
+                className={`font-mono text-[22px] leading-[1.1] font-medium whitespace-nowrap tabular-nums ${
+                  cell.isAccent ? "text-accent [text-shadow:0_0_14px_var(--accent)]" : "text-text"
+                }`}
+              >
+                {cell.value}
+              </span>
+              {cell.detail ? (
+                <span className="font-mono text-micro whitespace-nowrap text-text-muted tabular-nums">
+                  {cell.detail}
+                </span>
+              ) : null}
+            </div>
+          ))}
+        </div>
       </div>
       {/* A canvas has no img equivalent; the role plus label is the required description. */}
       <canvas
