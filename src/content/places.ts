@@ -32,9 +32,6 @@ export type Place = z.output<typeof placeSchema>;
 
 const UNSPLASH_PROFILE_URL = profileData.links.unsplash.href;
 const PEXELS_PROFILE_URL = profileData.links.pexels.href;
-/** Unsplash collections shared by several places. Places with no collection link to the profile. */
-const UNSPLASH_JAPAN_URL = "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan";
-const UNSPLASH_CHILE_URL = "https://unsplash.com/collections/3812967/my-adventures-in-chile";
 
 export const placesData: z.input<typeof placesSchema> = {
   places: [
@@ -193,7 +190,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -41.12,
       lon: -73.06,
       cloudinaryFolders: ["trips/2019-frutillar"],
-      unsplashUrl: UNSPLASH_CHILE_URL,
+      unsplashUrl: "https://unsplash.com/collections/3812967/my-adventures-in-chile",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3B3826",
     },
@@ -226,7 +223,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: -33.02,
       lon: -71.55,
       cloudinaryFolders: ["trips/2019-vina-del-mar"],
-      unsplashUrl: UNSPLASH_CHILE_URL,
+      unsplashUrl: "https://unsplash.com/collections/3812967/my-adventures-in-chile",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3B2631",
     },
@@ -292,7 +289,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: 35.36,
       lon: 138.73,
       cloudinaryFolders: ["trips/2023-fuji"],
-      unsplashUrl: UNSPLASH_JAPAN_URL,
+      unsplashUrl: "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#373B26",
     },
@@ -303,7 +300,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: 35.01,
       lon: 135.77,
       cloudinaryFolders: ["trips/2023-kyoto"],
-      unsplashUrl: UNSPLASH_JAPAN_URL,
+      unsplashUrl: "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#26303B",
     },
@@ -347,7 +344,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: 34.69,
       lon: 135.8,
       cloudinaryFolders: ["trips/2023-nara"],
-      unsplashUrl: UNSPLASH_JAPAN_URL,
+      unsplashUrl: "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3B3426",
     },
@@ -369,7 +366,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: 34.69,
       lon: 135.5,
       cloudinaryFolders: ["trips/2023-osaka"],
-      unsplashUrl: UNSPLASH_JAPAN_URL,
+      unsplashUrl: "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#3B2636",
     },
@@ -402,7 +399,7 @@ export const placesData: z.input<typeof placesSchema> = {
       lat: 35.68,
       lon: 139.69,
       cloudinaryFolders: ["trips/2023-tokyo"],
-      unsplashUrl: UNSPLASH_JAPAN_URL,
+      unsplashUrl: "https://unsplash.com/collections/vczVgS_XTGw/my-adventures-in-japan",
       pexelsUrl: PEXELS_PROFILE_URL,
       color: "#26293B",
     },
