@@ -12,6 +12,8 @@ import { CoverThumb } from "./cover-thumb";
 import { PLATFORM_STYLES } from "../lib/platforms";
 import type { RecommendationSubmission, SubmitOutcome } from "../hooks/use-game-recommendations";
 import { useGameSearch } from "../hooks/use-game-search";
+import { ExternalLink } from "@/shared/components/external-link";
+import { fillTemplate } from "@/shared/lib/fill-template";
 
 export type RecommendFormLabels = {
   title: string;
@@ -129,7 +131,7 @@ export function RecommendForm({
     if (outcome.kind === "saved") {
       const doneText =
         outcome.recommendation?.status === "approved" ? labels.doneApproved : labels.donePending;
-      setFeedback({ tone: "success", text: doneText.replace("{title}", picked.title) });
+      setFeedback({ tone: "success", text: fillTemplate(doneText, { title: picked.title }) });
       setPicked(null);
       setQuery("");
     } else {
@@ -238,14 +240,12 @@ export function RecommendForm({
             </ul>
           ) : null}
           <p className="mt-1.5 mb-0 text-right text-micro text-text-faint">
-            <a
+            <ExternalLink
               href="https://www.igdb.com"
-              target="_blank"
-              rel="noopener noreferrer"
               className="no-underline opacity-70 transition-opacity hover:opacity-100"
             >
               {labels.credit}
-            </a>
+            </ExternalLink>
           </p>
         </div>
 
@@ -291,7 +291,7 @@ export function RecommendForm({
               disabled={isSending}
               className="min-h-12 cursor-pointer rounded-pill border-0 bg-(image:--ball-light) px-6 text-ui font-semibold text-on-accent transition-opacity hover:opacity-90 disabled:cursor-default disabled:opacity-60"
             >
-              {isSending ? labels.submitting : labels.submit.replace("{title}", picked.title)}
+              {isSending ? labels.submitting : fillTemplate(labels.submit, { title: picked.title })}
             </button>
           </>
         ) : null}
@@ -308,7 +308,7 @@ export function RecommendForm({
             onClick={onOpenRecommended}
             className="min-h-11 cursor-pointer self-start rounded-pill border border-line-strong bg-transparent px-4 text-eyebrow text-text-2 transition-colors hover:border-line-hover"
           >
-            {labels.seeAll.replace("{count}", String(recommendedCount))}
+            {fillTemplate(labels.seeAll, { count: recommendedCount })}
           </button>
         ) : null}
       </form>

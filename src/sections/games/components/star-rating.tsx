@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import { useLocale } from "next-intl";
 import { MAX_RATING } from "@/content/games";
+import { fillTemplate } from "@/shared/lib/fill-template";
 
 const STAR_SIZE_IN_PIXELS = 18;
 const STAR_STROKE_WIDTH = 1.8;
@@ -20,9 +21,10 @@ function starFill(rating: number, index: number): number {
 /** Filled stars up to the rating, a half-filled one for a .5, outlines for the rest. */
 export function StarRating({ rating, label }: StarRatingProps) {
   const locale = useLocale();
-  const accessibleLabel = label
-    .replace("{rating}", rating.toLocaleString(locale))
-    .replace("{max}", String(MAX_RATING));
+  const accessibleLabel = fillTemplate(label, {
+    rating: rating.toLocaleString(locale),
+    max: MAX_RATING,
+  });
 
   return (
     <p className="m-0 flex gap-1">

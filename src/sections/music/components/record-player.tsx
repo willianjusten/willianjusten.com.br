@@ -1,8 +1,10 @@
 "use client";
 
-import { ExternalLink, Pause, Play } from "lucide-react";
+import { ExternalLink as ExternalLinkIcon, Pause, Play } from "lucide-react";
 import { useEffect, useRef, type PointerEvent } from "react";
 import type { PlayableTrack } from "../lib/music-board";
+import { ExternalLink } from "@/shared/components/external-link";
+import { reducedMotionQuery, runWhileVisible } from "@/shared/lib/animation-loop";
 import type { MusicLabels } from "./music-board";
 
 /** 3 degrees per frame at 60fps is 180 degrees a second. */
@@ -40,38 +42,17 @@ export function RecordPlayer({
   }, [isPlaying]);
 
   useEffect(() => {
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let frameId = 0;
-
-    function renderFrame() {
+    const stack = stackRef.current;
+    if (!stack) return;
+    const reducedMotion = reducedMotionQuery();
+    return runWhileVisible(stack, () => {
       if (isPlayingRef.current && !dragRef.current && !reducedMotion.matches) {
         discAngleRef.current += SPIN_DEGREES_PER_FRAME;
       }
       if (discRef.current) {
         discRef.current.style.transform = `rotate(${discAngleRef.current.toFixed(2)}deg)`;
       }
-      frameId = requestAnimationFrame(renderFrame);
-    }
-
-    function stopLoop() {
-      cancelAnimationFrame(frameId);
-      frameId = 0;
-    }
-
-    // The loop only runs while the record is on screen.
-    const visibilityObserver = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        if (!frameId) frameId = requestAnimationFrame(renderFrame);
-      } else {
-        stopLoop();
-      }
     });
-    if (stackRef.current) visibilityObserver.observe(stackRef.current);
-
-    return () => {
-      visibilityObserver.disconnect();
-      stopLoop();
-    };
   }, []);
 
   function pointerAngleOnDisc(event: PointerEvent<HTMLDivElement>): number {
@@ -224,15 +205,13 @@ export function RecordPlayer({
           <ul className="m-0 -ml-2 flex list-none flex-wrap p-0">
             {listenLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <ExternalLink
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex min-h-11 items-center gap-1 px-2 text-small text-text-2 transition-colors hover:text-text"
                 >
                   {link.label}
-                  <ExternalLink size={11} aria-hidden="true" className="text-text-faint" />
-                </a>
+                  <ExternalLinkIcon size={11} aria-hidden="true" className="text-text-faint" />
+                </ExternalLink>
               </li>
             ))}
           </ul>

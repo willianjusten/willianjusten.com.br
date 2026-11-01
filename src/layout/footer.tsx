@@ -1,6 +1,7 @@
 import { ArrowUpRight, Briefcase, Camera, GitBranch, Mail, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { isPlaceholder, profile } from "@/content/profile";
+import { ExternalLink } from "@/shared/components/external-link";
 
 const chipClassName =
   "chip-link flex min-h-12 items-center gap-2.5 rounded-pill border border-line-strong bg-(--glass-chip) px-5 no-underline";
@@ -47,15 +48,9 @@ export async function Footer() {
           </h2>
           <nav aria-label={t("navigationLabel")} className="flex flex-wrap gap-3">
             {profileChips.map(({ key, icon, label, href }) => (
-              <a
-                key={key}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={chipClassName}
-              >
+              <ExternalLink key={key} href={href} className={chipClassName}>
                 <ChipContent icon={icon} label={label} />
-              </a>
+              </ExternalLink>
             ))}
             <a
               href={emailHref}

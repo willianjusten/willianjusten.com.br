@@ -1,5 +1,6 @@
 import { Pause, Play } from "lucide-react";
 import type { PlayableTrack } from "../lib/music-board";
+import { fillTemplate } from "@/shared/lib/fill-template";
 import type { MusicLabels } from "./music-board";
 
 type PastTracksProps = {
@@ -32,10 +33,9 @@ export function PastTracks({ locale, tracks, labels, playingTrackId, onToggle }:
       <ol className="m-0 list-none border-t border-line p-0">
         {tracks.map((track) => {
           const isPlaying = playingTrackId === track.id;
-          const buttonLabel = (isPlaying ? labels.pauseTrack : labels.previewTrack).replace(
-            "{title}",
-            track.title,
-          );
+          const buttonLabel = fillTemplate(isPlaying ? labels.pauseTrack : labels.previewTrack, {
+            title: track.title,
+          });
 
           return (
             <li

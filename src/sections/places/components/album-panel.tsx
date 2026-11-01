@@ -6,6 +6,8 @@
 import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import type { KeyboardEvent, Ref } from "react";
+import { ExternalLink } from "@/shared/components/external-link";
+import { fillTemplate } from "@/shared/lib/fill-template";
 import type { GlobePlace } from "../lib/places-board";
 
 export type AlbumLabels = {
@@ -34,10 +36,6 @@ type AlbumPanelProps = {
 const OVERLAY_BUTTON_CLASS =
   "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border-0 bg-bg/70 text-text transition-colors hover:bg-bg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
-function fillCount(template: string, index: number, total: number) {
-  return template.replace("{index}", String(index)).replace("{total}", String(total));
-}
-
 /** The album of one place, laid over the right side of the globe. Escape is handled by the globe frame. */
 export function AlbumPanel({
   place,
@@ -63,7 +61,7 @@ export function AlbumPanel({
     <section
       ref={panelRef}
       tabIndex={-1}
-      aria-label={labels.label.replace("{place}", place.name)}
+      aria-label={fillTemplate(labels.label, { place: place.name })}
       onKeyDown={onKeyDown}
       onPointerDown={(event) => {
         event.stopPropagation();
@@ -75,7 +73,7 @@ export function AlbumPanel({
         <Image
           key={photo.src}
           src={photo.src}
-          alt={photo.line.title ?? fillCount(labels.counter, photoIndex + 1, total)}
+          alt={photo.line.title ?? fillTemplate(labels.counter, { index: photoIndex + 1, total })}
           fill
           sizes="360px"
           placeholder="blur"
@@ -89,7 +87,9 @@ export function AlbumPanel({
           <span aria-hidden="true">
             {photoIndex + 1} / {total}
           </span>
-          <span className="sr-only">{fillCount(labels.counter, photoIndex + 1, total)}</span>
+          <span className="sr-only">
+            {fillTemplate(labels.counter, { index: photoIndex + 1, total })}
+          </span>
         </p>
         {total > 1 ? (
           <>
@@ -153,7 +153,10 @@ export function AlbumPanel({
                 <li key={thumbnail.src}>
                   <button
                     type="button"
-                    aria-label={fillCount(labels.showPhoto, thumbnailIndex + 1, total)}
+                    aria-label={fillTemplate(labels.showPhoto, {
+                      index: thumbnailIndex + 1,
+                      total,
+                    })}
                     aria-pressed={isCurrent}
                     onClick={() => onShowPhoto(thumbnailIndex)}
                     className={`relative block size-11 cursor-pointer overflow-hidden rounded-xs border-2 bg-surface p-0 hover:outline-1 hover:outline-line-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
@@ -176,15 +179,13 @@ export function AlbumPanel({
           </ul>
         ) : null}
 
-        <a
+        <ExternalLink
           href={place.unsplashUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="chip-link mt-auto inline-flex min-h-11 items-center gap-1.5 self-start text-eyebrow text-text-2 no-underline hover:text-text"
         >
-          {labels.moreFrom.replace("{place}", place.name)}
+          {fillTemplate(labels.moreFrom, { place: place.name })}
           <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" className="nudge-arrow" />
-        </a>
+        </ExternalLink>
       </div>
     </section>
   );

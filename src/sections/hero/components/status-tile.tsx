@@ -1,4 +1,5 @@
 import { ArrowUpRight, type LucideIcon } from "lucide-react";
+import { ExternalLink } from "@/shared/components/external-link";
 
 type StatusTileProps = {
   href: string;
@@ -6,15 +7,15 @@ type StatusTileProps = {
   label: string;
   value: string;
   sub: string;
-  /** Opens in a new tab with a safe rel, for off-site profiles. */
+  /** Opens in a new tab, for off-site profiles. */
   isExternal?: boolean;
 };
 
 export function StatusTile({ href, icon: Icon, label, value, sub, isExternal }: StatusTileProps) {
+  const Anchor = isExternal ? ExternalLink : "a";
   return (
-    <a
+    <Anchor
       href={href}
-      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className="status-tile reveal flex min-h-11 flex-col gap-3.5 rounded-lg border border-line-strong bg-(--glass) p-5 no-underline backdrop-blur-[10px]"
     >
       <span className="flex items-center justify-between">
@@ -35,6 +36,6 @@ export function StatusTile({ href, icon: Icon, label, value, sub, isExternal }: 
         <span className="text-lg font-semibold text-text">{value}</span>
         <span className="text-small text-text-muted">{sub}</span>
       </span>
-    </a>
+    </Anchor>
   );
 }
