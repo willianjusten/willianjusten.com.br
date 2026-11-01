@@ -3,7 +3,10 @@ import { buildShelfEntries } from "./games-board";
 import { games } from "./games";
 
 const [firstGame] = games;
-const gameWithNote = games.find((game) => game.note !== undefined)!;
+const gameWithNote = {
+  ...firstGame,
+  note: { en: "The couch and travel game of the month.", pt: "O jogo de sofá e de viagem do mês." },
+};
 
 describe("games board", () => {
   it("gives a game its IGDB cover when one was fetched", () => {

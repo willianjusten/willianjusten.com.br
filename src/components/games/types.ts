@@ -6,7 +6,8 @@ export type ShelfEntry = {
   title: string;
   platform: GamePlatform;
   list: GameList;
-  year: number | string;
+  /** Absent on the wishlist, where most games have no date yet. */
+  year?: number | string;
   note: string;
   /** Stars for a played game, absent until it is rated. */
   rating?: number;

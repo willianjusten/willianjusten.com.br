@@ -129,7 +129,7 @@ export function GamesShelf({ games, labels }: GamesShelfProps) {
       : filterShelf(games, activeList, platform).map((game) => ({
           key: game.slug,
           entry: game,
-          year: game.year,
+          year: game.year ?? null,
           badgeText: game.list === "wishlist" ? labels.soon : String(game.year),
           note: game.note,
           rating: game.list === "played" ? (game.rating ?? null) : null,

@@ -21,8 +21,8 @@ const gameSchema = z.object({
   title: z.string().min(1),
   platform: z.enum(GAME_PLATFORMS),
   list: z.enum(GAME_LISTS),
-  /** Release or play year, or a visible `[placeholder]` while unknown. */
-  year: z.union([z.number().int().min(1970).max(2100), placeholderText]),
+  /** Release or play year, or a visible `[placeholder]` while unknown. Left out on the wishlist. */
+  year: z.union([z.number().int().min(1970).max(2100), placeholderText]).optional(),
   /** One line under the title on the shelf; left out when there is nothing to say. */
   note: localizedText.optional(),
   /**
@@ -44,29 +44,6 @@ export const gamesSchema = z
 
 export type Game = z.output<typeof gameSchema>;
 
-const PLACEHOLDER_WHY = { en: "[Why it is on the list]", pt: "[Por que está na lista]" };
-
-type GameInput = z.input<typeof gameSchema>;
-
-type PlaceholderGameOptions = {
-  slug: string;
-  platform: GamePlatform;
-  list: GameList;
-  /** Case colour while there is no IGDB cover. */
-  coverTone: string;
-  note?: GameInput["note"];
-};
-
-function placeholderGame({
-  slug,
-  platform,
-  list,
-  coverTone,
-  note,
-}: PlaceholderGameOptions): GameInput {
-  return { slug, title: "[Game title]", platform, list, year: "[year]", note, tone: coverTone };
-}
-
 export const gamesData: z.input<typeof gamesSchema> = {
   games: [
     {
@@ -79,22 +56,30 @@ export const gamesData: z.input<typeof gamesSchema> = {
       year: 2026,
       tone: "#5A2A1E",
     },
-    placeholderGame({
-      slug: "playing-rog",
+    {
+      slug: "phantom-blade-zero",
+      title: "Phantom Blade Zero",
+      platform: "ps5",
+      list: "playing",
+      year: 2026,
+      tone: "#2E2A24",
+    },
+    {
+      slug: "the-blood-of-dawnwalker",
+      title: "The Blood of Dawnwalker",
       platform: "rog",
       list: "playing",
-      coverTone: "#1E3A52",
-      note: {
-        en: "The couch and travel game of the month.",
-        pt: "O jogo de sofá e de viagem do mês.",
-      },
-    }),
-    placeholderGame({
-      slug: "playing-switch2",
-      platform: "switch2",
+      year: 2026,
+      tone: "#4A2A1E",
+    },
+    {
+      slug: "007-first-light",
+      title: "007 First Light",
+      platform: "rog",
       list: "playing",
-      coverTone: "#4A2A24",
-    }),
+      year: 2026,
+      tone: "#3A3424",
+    },
     {
       slug: "control-resonant",
       title: "Control Resonant",
@@ -203,27 +188,69 @@ export const gamesData: z.input<typeof gamesSchema> = {
       rating: 4.5,
       tone: "#3A2A2A",
     },
-    placeholderGame({
-      slug: "wishlist-ps5",
+    {
+      slug: "the-midnight-walk",
+      title: "The Midnight Walk",
       platform: "ps5",
       list: "wishlist",
-      coverTone: "#36402A",
-      note: PLACEHOLDER_WHY,
-    }),
-    placeholderGame({
-      slug: "wishlist-switch2",
-      platform: "switch2",
+      tone: "#3A1E1E",
+    },
+    {
+      slug: "star-wars-galactic-racer",
+      title: "Star Wars: Galactic Racer",
+      platform: "rog",
       list: "wishlist",
-      coverTone: "#4A2840",
-      note: PLACEHOLDER_WHY,
-    }),
-    placeholderGame({
-      slug: "wishlist-xbox",
+      tone: "#34343C",
+    },
+    {
+      slug: "the-witcher-3-songs-of-the-past",
+      title: "The Witcher 3: Wild Hunt - Songs of the Past",
+      platform: "rog",
+      list: "wishlist",
+      tone: "#2A2424",
+    },
+    {
+      slug: "castlevania-belmonts-curse",
+      title: "Castlevania: Belmont's Curse",
+      platform: "rog",
+      list: "wishlist",
+      tone: "#3A2C1E",
+    },
+    {
+      slug: "gears-of-war-e-day",
+      title: "Gears of War: E-Day",
       platform: "xbox",
       list: "wishlist",
-      coverTone: "#1E3A52",
-      note: PLACEHOLDER_WHY,
-    }),
+      tone: "#4A1E1E",
+    },
+    {
+      slug: "valor-mortis",
+      title: "Valor Mortis",
+      platform: "xbox",
+      list: "wishlist",
+      tone: "#24303A",
+    },
+    {
+      slug: "grand-theft-auto-vi",
+      title: "Grand Theft Auto VI",
+      platform: "ps5",
+      list: "wishlist",
+      tone: "#3A2452",
+    },
+    {
+      slug: "the-legend-of-zelda-ocarina-of-time",
+      title: "The Legend of Zelda: Ocarina of Time",
+      platform: "switch2",
+      list: "wishlist",
+      tone: "#24402A",
+    },
+    {
+      slug: "splatoon-raiders",
+      title: "Splatoon Raiders",
+      platform: "switch2",
+      list: "wishlist",
+      tone: "#2E4A24",
+    },
   ],
 };
 
