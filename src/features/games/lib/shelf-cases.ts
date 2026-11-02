@@ -10,7 +10,8 @@ export const SHELF_LISTS: readonly ShelfList[] = ["playing", "played", "wishlist
 
 export type CaseEntry = {
   title: string;
-  platform: GamePlatform;
+  /** A shelf platform, or IGDB's name for one the shelf does not have. */
+  platform: GamePlatform | string;
   tone: string;
   coverUrl?: string | null;
   /** Pill above the title, e.g. "recommended x3". */

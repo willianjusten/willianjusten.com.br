@@ -5,7 +5,8 @@ export type RecommendationView = {
   id: number;
   title: string;
   year: number | null;
-  platform: GamePlatform;
+  /** A shelf platform, or IGDB's name for one the shelf does not have. */
+  platform: GamePlatform | string;
   coverUrl: string | null;
   status: "pending" | "approved";
   count: number;

@@ -32,6 +32,26 @@ export const PLATFORM_STYLES: Record<GamePlatform, PlatformStyle> = {
 
 export const EMPTY_BAND_CLASS = "bg-line-strong text-text-faint";
 
+function isShelfPlatform(platform: string): platform is GamePlatform {
+  return Object.hasOwn(PLATFORM_STYLES, platform);
+}
+
+/**
+ * Shelf platforms get their own colours. Recommendations can be for any other platform, saved
+ * under IGDB's name for it (Nintendo 64, Game Boy), which gets a neutral band showing that name.
+ */
+export function platformStyle(platform: string): PlatformStyle {
+  if (isShelfPlatform(platform)) {
+    return PLATFORM_STYLES[platform];
+  }
+  return {
+    name: platform,
+    bandText: platform.toUpperCase(),
+    bandClass: EMPTY_BAND_CLASS,
+    dotClass: "dot-all",
+  };
+}
+
 export function platformDotClass(filter: PlatformFilter): string {
   return filter === "all" ? "dot-all" : PLATFORM_STYLES[filter].dotClass;
 }

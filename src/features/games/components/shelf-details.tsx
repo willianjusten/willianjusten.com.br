@@ -1,5 +1,5 @@
 import { ArrowRight, Heart } from "lucide-react";
-import { PLATFORM_STYLES } from "../lib/platforms";
+import { platformStyle } from "../lib/platforms";
 import type { ShelfCase, ShelfList } from "../lib/shelf-cases";
 import { StarRating } from "./star-rating";
 
@@ -44,7 +44,7 @@ export function ShelfDetails({
   const note = activeCase ? activeCase.note : emptyNote;
   const meta = [
     labels.status[activeList],
-    ...(activeCase ? [PLATFORM_STYLES[activeCase.entry.platform].name, activeCase.year] : []),
+    ...(activeCase ? [platformStyle(activeCase.entry.platform).name, activeCase.year] : []),
   ].filter((part) => part !== null);
 
   return (

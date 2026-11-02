@@ -2,7 +2,7 @@ import { Gamepad2 } from "lucide-react";
 import Image from "next/image";
 import { memo, type CSSProperties, type ReactNode } from "react";
 import { getCasePose, type CasePose } from "../lib/coverflow";
-import { EMPTY_BAND_CLASS, PLATFORM_STYLES } from "../lib/platforms";
+import { EMPTY_BAND_CLASS, platformStyle } from "../lib/platforms";
 import type { CaseEntry } from "../lib/shelf-cases";
 
 const WATERMARK_SIZE_IN_PIXELS = 170;
@@ -103,7 +103,7 @@ export const GameCase = memo(function GameCase({
 }: GameCaseProps) {
   const pose = getCasePose(index, activeIndex);
   const isActive = index === activeIndex;
-  const platformStyle = PLATFORM_STYLES[entry.platform];
+  const platformBand = platformStyle(entry.platform);
 
   return (
     <CaseFrame
@@ -112,8 +112,8 @@ export const GameCase = memo(function GameCase({
       title={entry.title}
       frontStyle={{ background: `linear-gradient(160deg, ${entry.tone} 0%, var(--bg) 120%)` }}
     >
-      <div className={`${BAND_CLASS} ${platformStyle.bandClass}`}>
-        <span>{platformStyle.bandText}</span>
+      <div className={`${BAND_CLASS} ${platformBand.bandClass}`}>
+        <span>{platformBand.bandText}</span>
         <span>{badgeText}</span>
       </div>
       {entry.coverUrl ? (
