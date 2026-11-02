@@ -168,7 +168,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
       aria-label={labels.description}
       {...dragHandlers}
       onKeyDown={onKeyDown}
-      className={`relative cursor-grab touch-none overflow-hidden select-none ${GLOBE_FRAME_CLASS}`}
+      className={`relative isolate cursor-grab touch-none overflow-hidden select-none ${GLOBE_FRAME_CLASS}`}
     >
       <canvas
         ref={canvasRef}
