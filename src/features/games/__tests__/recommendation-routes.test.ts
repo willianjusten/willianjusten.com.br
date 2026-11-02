@@ -15,6 +15,7 @@ const GAME = {
   igdbId: 185246,
   title: "Alan Wake II",
   year: 2023,
+  releaseDate: "2023-10-27",
   platforms: ["ps5" as const],
   newestPlatformName: "PlayStation 5",
   coverImageId: "co6jar",

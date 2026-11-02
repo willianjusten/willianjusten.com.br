@@ -46,6 +46,8 @@ export type IgdbGame = {
   igdbId: number;
   title: string;
   year: number | null;
+  /** First release date as `YYYY-MM-DD` in UTC, or null while IGDB has none. */
+  releaseDate: string | null;
   /** Shelf platforms the game is on, in priority order. Empty for games only on other consoles. */
   platforms: GamePlatform[];
   /** IGDB's name for the newest platform the game is on, or null when IGDB lists none. */
@@ -146,13 +148,13 @@ export function translateIgdbGame(raw: RawIgdbGame): IgdbGame {
   const rawPlatforms = raw.platforms ?? [];
   const mapped = new Set(rawPlatforms.flatMap(({ id }) => PLATFORM_BY_IGDB_ID[id] ?? []));
   const platforms = PLATFORM_PRIORITY.filter((platform) => mapped.has(platform));
+  const releasedAt =
+    raw.first_release_date === undefined ? null : new Date(raw.first_release_date * 1000);
   return {
     igdbId: raw.id,
     title: raw.name,
-    year:
-      raw.first_release_date === undefined
-        ? null
-        : new Date(raw.first_release_date * 1000).getUTCFullYear(),
+    year: releasedAt?.getUTCFullYear() ?? null,
+    releaseDate: releasedAt?.toISOString().slice(0, "YYYY-MM-DD".length) ?? null,
     platforms,
     newestPlatformName: newestPlatformName(rawPlatforms),
     coverImageId: raw.cover?.image_id ?? null,

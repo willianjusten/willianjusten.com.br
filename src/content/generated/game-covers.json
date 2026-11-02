@@ -98,56 +98,65 @@
   "the-midnight-walk": {
     "igdbId": 317621,
     "igdbTitle": "The Midnight Walk",
-    "coverImageId": "co8ur3",
-    "fetchedAt": "2026-11-01T02:45:23.773Z"
+    "coverImageId": "cod8hm",
+    "releaseDate": "2025-05-08",
+    "fetchedAt": "2026-11-02T20:35:00.191Z"
   },
   "star-wars-galactic-racer": {
     "igdbId": 381248,
     "igdbTitle": "Star Wars: Galactic Racer",
     "coverImageId": "cobihx",
-    "fetchedAt": "2026-11-01T02:45:24.381Z"
+    "releaseDate": "2026-10-06",
+    "fetchedAt": "2026-11-02T20:35:00.693Z"
   },
   "the-witcher-3-songs-of-the-past": {
     "igdbId": 403150,
     "igdbTitle": "The Witcher 3: Wild Hunt - Songs of the Past",
     "coverImageId": "coc4hk",
-    "fetchedAt": "2026-11-01T02:45:24.898Z"
+    "releaseDate": "2027-12-31",
+    "fetchedAt": "2026-11-02T20:35:01.189Z"
   },
   "castlevania-belmonts-curse": {
     "igdbId": 389434,
     "igdbTitle": "Castlevania: Belmont's Curse",
     "coverImageId": "cod5fk",
-    "fetchedAt": "2026-11-01T02:45:25.531Z"
+    "releaseDate": "2026-10-15",
+    "fetchedAt": "2026-11-02T20:35:01.682Z"
   },
   "gears-of-war-e-day": {
     "igdbId": 305160,
     "igdbTitle": "Gears of War: E-Day",
     "coverImageId": "coc77n",
-    "fetchedAt": "2026-11-01T02:45:26.140Z"
+    "releaseDate": "2026-10-06",
+    "fetchedAt": "2026-11-02T20:35:02.317Z"
   },
   "valor-mortis": {
     "igdbId": 361833,
     "igdbTitle": "Valor Mortis",
     "coverImageId": "coaazc",
-    "fetchedAt": "2026-11-01T02:45:27.000Z"
+    "releaseDate": "2026-10-13",
+    "fetchedAt": "2026-11-02T20:35:02.822Z"
   },
   "grand-theft-auto-vi": {
     "igdbId": 52189,
     "igdbTitle": "Grand Theft Auto VI",
     "coverImageId": "cocv1v",
-    "fetchedAt": "2026-11-01T02:45:27.505Z"
+    "releaseDate": "2026-11-19",
+    "fetchedAt": "2026-11-02T20:34:59.690Z"
   },
   "the-legend-of-zelda-ocarina-of-time": {
     "igdbId": 405460,
     "igdbTitle": "The Legend of Zelda: Ocarina of Time",
     "coverImageId": "cocv5r",
-    "fetchedAt": "2026-11-01T02:45:28.005Z"
+    "releaseDate": "2026-11-05",
+    "fetchedAt": "2026-11-02T20:34:59.088Z"
   },
   "splatoon-raiders": {
     "igdbId": 348977,
     "igdbTitle": "Splatoon Raiders",
     "coverImageId": "cobyho",
-    "fetchedAt": "2026-11-01T02:45:28.514Z"
+    "releaseDate": "2026-07-23",
+    "fetchedAt": "2026-11-02T20:35:03.321Z"
   },
   "moonlighter-2": {
     "igdbId": 324570,

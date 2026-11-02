@@ -61,6 +61,7 @@ describe("translateIgdbGame", () => {
       igdbId: 185246,
       title: "Alan Wake II",
       year: 2023,
+      releaseDate: "2023-10-27",
       platforms: ["ps5", "xbox", "rog"],
       newestPlatformName: "Xbox Series X|S",
       coverImageId: "co6jar",

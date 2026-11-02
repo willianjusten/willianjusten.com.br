@@ -2,7 +2,15 @@ import { describe, expect, it } from "vitest";
 import { pickIgdbMatch } from "../match.ts";
 
 function result(igdbId: number, title: string, coverImageId: string | null = `co${igdbId}`) {
-  return { igdbId, title, year: 2024, platforms: [], newestPlatformName: null, coverImageId };
+  return {
+    igdbId,
+    title,
+    year: 2024,
+    releaseDate: null,
+    platforms: [],
+    newestPlatformName: null,
+    coverImageId,
+  };
 }
 
 describe("pickIgdbMatch", () => {

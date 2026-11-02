@@ -1,7 +1,8 @@
 /**
  * Run by hand: `pnpm games:covers` (add `--refresh` to ignore the cache).
  * Finds the IGDB cover of every curated game with a real title and writes
- * src/content/generated/game-covers.json. Games already in that file are skipped.
+ * src/content/generated/game-covers.json. Games already in that file are skipped, except wishlist
+ * games not released yet, whose release date is fetched again so the shelf can tell once they are out.
  * A game whose title search finds no exact match is reported; pin it with `igdbId` in games.ts.
  */
 import { readFile, writeFile } from "node:fs/promises";
@@ -36,17 +37,28 @@ const covers: Record<string, GameCoverEntry> = shouldRefresh
   ? {}
   : gameCoversFileSchema.parse(JSON.parse(await readFile(OUTPUT_PATH, "utf8")));
 
+const today = new Date().toISOString();
+
+function isAwaitingRelease(cover: GameCoverEntry): boolean {
+  return !cover.releaseDate || cover.releaseDate > today;
+}
+
 const curatedGames = games.filter((game) => !PLACEHOLDER_TITLE.test(game.title));
-const pendingGames = curatedGames.filter((game) => !covers[game.slug]);
+const pendingGames = curatedGames.filter((game) => {
+  const cover = covers[game.slug];
+  return !cover || (game.list === "wishlist" && isAwaitingRelease(cover));
+});
 const missing: string[] = [];
 
 for (const game of pendingGames) {
-  const match = await findGame(game.title, game.igdbId);
+  // A cached match is kept: refreshing a release date must not swap the game it belongs to.
+  const match = await findGame(game.title, covers[game.slug]?.igdbId ?? game.igdbId);
   if (match?.coverImageId) {
     covers[game.slug] = {
       igdbId: match.igdbId,
       igdbTitle: match.title,
       coverImageId: match.coverImageId,
+      ...(game.list === "wishlist" ? { releaseDate: match.releaseDate } : {}),
       fetchedAt: new Date().toISOString(),
     };
     console.log(`found   ${game.slug}: ${match.title} (${match.igdbId})`);
@@ -65,6 +77,6 @@ const keptCovers = Object.fromEntries(
 await writeFile(OUTPUT_PATH, `${JSON.stringify(keptCovers, null, 2)}\n`);
 
 console.log(
-  `\n${Object.keys(keptCovers).length} covers saved, ${pendingGames.length - missing.length} new.`,
+  `\n${Object.keys(keptCovers).length} covers saved, ${pendingGames.length - missing.length} fetched.`,
 );
 if (missing.length > 0) console.log(`Pin these with igdbId in games.ts: ${missing.join(", ")}`);
