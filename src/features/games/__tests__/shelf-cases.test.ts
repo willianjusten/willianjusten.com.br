@@ -86,6 +86,16 @@ describe("buildShelfCases", () => {
     expect(wishlistCase?.canRecommendSimilar).toBe(false);
   });
 
+  it("badges a released wishlist game with its release year instead of upcoming", () => {
+    const [releasedCase] = buildShelfCases({
+      ...emptySources,
+      list: "wishlist",
+      games: [buildGame({ list: "wishlist", year: 2026 })],
+    });
+
+    expect(releasedCase).toMatchObject({ badgeText: "2026", year: 2026 });
+  });
+
   it("stickers approved recommendations with their count and disables votes on pending ones", () => {
     const [approved, pending] = buildShelfCases({
       ...emptySources,

@@ -24,6 +24,33 @@ describe("games board", () => {
     expect(entry.tone).toBe(firstGame.tone);
   });
 
+  it("gives a wishlist game its release year once IGDB's release date has passed", () => {
+    const wishlistGame = { ...firstGame, list: "wishlist" as const, year: undefined };
+    const today = new Date("2026-11-02T12:00:00.000Z");
+    const [released] = buildShelfEntries(
+      [wishlistGame],
+      { [firstGame.slug]: { ...coverFor("co5vmg"), releaseDate: "2026-10-15" } },
+      "en",
+      today,
+    );
+    const [upcoming] = buildShelfEntries(
+      [wishlistGame],
+      { [firstGame.slug]: { ...coverFor("co5vmg"), releaseDate: "2027-03-01" } },
+      "en",
+      today,
+    );
+    const [undated] = buildShelfEntries(
+      [wishlistGame],
+      { [firstGame.slug]: { ...coverFor("co5vmg"), releaseDate: null } },
+      "en",
+      today,
+    );
+
+    expect(released.year).toBe(2026);
+    expect(upcoming.year).toBeUndefined();
+    expect(undated.year).toBeUndefined();
+  });
+
   it("picks the note in the visitor's language", () => {
     const [english] = buildShelfEntries([gameWithNote], {}, "en");
     const [portuguese] = buildShelfEntries([gameWithNote], {}, "pt");

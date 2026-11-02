@@ -93,7 +93,9 @@ function gameCase(
     key: game.slug,
     entry: game,
     year: game.year ?? null,
-    badgeText: game.list === "wishlist" ? sources.labels.soon : String(game.year),
+    // A wishlist game only has a year once it is out.
+    badgeText:
+      game.list === "wishlist" && game.year === undefined ? sources.labels.soon : String(game.year),
     note: game.note,
     rating: game.list === "played" ? (game.rating ?? null) : null,
     showLabel: fillTemplate(sources.labels.showGame, { title: game.title }),
