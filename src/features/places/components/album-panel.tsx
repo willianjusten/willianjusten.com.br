@@ -93,7 +93,8 @@ export function AlbumPanel({
       onKeyDown={onKeyDown}
       // A press inside the panel must not start a globe drag.
       onPointerDown={(event) => event.stopPropagation()}
-      className="absolute top-3 right-3 bottom-3 z-300 flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-glass-strong shadow-2 backdrop-blur-md"
+      // Phones get the whole globe frame; wider screens float a card beside the globe.
+      className="absolute inset-0 z-300 flex cursor-default flex-col overflow-hidden bg-bg-sunken sm:top-3 sm:right-3 sm:bottom-3 sm:left-auto sm:w-[min(360px,calc(100%-24px))] sm:rounded-md sm:border sm:border-line-strong sm:bg-glass-strong sm:shadow-2 sm:backdrop-blur-md"
     >
       <div
         onPointerDown={swipe.onPointerDown}
@@ -164,7 +165,8 @@ export function AlbumPanel({
           // A swipe that ends on a thumbnail or link must not also activate it.
           if (placeSwipe.consumeSwipe()) event.preventDefault();
         }}
-        className="flex min-h-0 flex-auto flex-col gap-2.5 overflow-auto px-4 pt-3.5 pb-4"
+        // Vertical pans scroll the details; horizontal ones stay with the place swipe instead of cancelling it.
+        className="flex min-h-0 flex-auto touch-pan-y flex-col gap-2.5 overflow-auto px-4 pt-3.5 pb-4"
       >
         <div className="flex items-start justify-between gap-3">
           <div className="flex min-w-0 flex-col gap-0.5">
