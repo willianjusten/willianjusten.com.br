@@ -1,4 +1,4 @@
-import { Globe as GlobeIcon, Minus, Play, Plus, Square } from "lucide-react";
+import { Globe as GlobeIcon, Minus, Plus } from "lucide-react";
 import type { PointerEvent } from "react";
 
 const ZOOM_STEP_FACTOR = 2;
@@ -10,33 +10,23 @@ export type GlobeControlsLabels = {
   zoomOut: string;
   reset: string;
   hint: string;
-  tour: { play: string; stop: string };
 };
 
 type GlobeControlsProps = {
   labels: GlobeControlsLabels;
-  isTouring: boolean;
   onZoomBy: (factor: number) => void;
   onReset: () => void;
-  onToggleTour: () => void;
 };
 
 /** A press on a control must not start a globe drag underneath it. */
 const stopDrag = (event: PointerEvent) => event.stopPropagation();
 
-export function GlobeControls({
-  labels,
-  isTouring,
-  onZoomBy,
-  onReset,
-  onToggleTour,
-}: GlobeControlsProps) {
+export function GlobeControls({ labels, onZoomBy, onReset }: GlobeControlsProps) {
   const zoomButtons = [
     { label: labels.zoomIn, icon: Plus, onClick: () => onZoomBy(ZOOM_STEP_FACTOR) },
     { label: labels.zoomOut, icon: Minus, onClick: () => onZoomBy(1 / ZOOM_STEP_FACTOR) },
     { label: labels.reset, icon: GlobeIcon, onClick: onReset },
   ];
-  const TourIcon = isTouring ? Square : Play;
 
   return (
     <>
@@ -55,19 +45,9 @@ export function GlobeControls({
         ))}
       </div>
 
-      <div className="absolute bottom-3 left-3 z-200 flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          aria-pressed={isTouring}
-          onPointerDown={stopDrag}
-          onClick={onToggleTour}
-          className="flex min-h-11 items-center gap-2 pill-primary px-5 text-small transition-[filter] hover:brightness-110"
-        >
-          <TourIcon size={14} fill="currentColor" strokeWidth={0} aria-hidden="true" />
-          {isTouring ? labels.tour.stop : labels.tour.play}
-        </button>
-        <p className="pointer-events-none font-mono text-overline text-text-faint">{labels.hint}</p>
-      </div>
+      <p className="pointer-events-none absolute bottom-3 left-3 z-200 font-mono text-overline text-text-faint">
+        {labels.hint}
+      </p>
     </>
   );
 }

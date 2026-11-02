@@ -8,7 +8,8 @@ import Image from "next/image";
 import type { KeyboardEvent, Ref } from "react";
 import { ExternalLink } from "@/components/external-link";
 import { fillTemplate } from "@/lib/fill-template";
-import { stepPhotoIndex, type GlobePlace } from "../lib/places-board";
+import { useSwipe } from "../hooks/use-swipe";
+import type { GlobePlace } from "../lib/places-board";
 import { AlbumThumbnails } from "./album-thumbnails";
 import { PhotoCaption } from "./photo-caption";
 import { PhotoCounter } from "./photo-counter";
@@ -27,14 +28,16 @@ export type AlbumLabels = PhotoViewerLabels & {
 type AlbumPanelProps = {
   place: GlobePlace;
   photoIndex: number;
+  /** Whether previous and next can reach another photo, possibly in another place. */
+  canStep: boolean;
   labels: AlbumLabels;
   panelRef: Ref<HTMLElement>;
   expandButtonRef: Ref<HTMLButtonElement>;
   onExpand: () => void;
   onShowPhoto: (photoIndex: number) => void;
+  /** Previous or next photo; past either end of the album it moves to the neighbouring place. */
+  onStep: (direction: 1 | -1) => void;
   onClose: () => void;
-  /** Any press inside the panel; it never reaches the globe, so it would not start a drag. */
-  onPress: () => void;
 };
 
 const OVERLAY_BUTTON_CLASS =
@@ -44,23 +47,25 @@ const OVERLAY_BUTTON_CLASS =
 export function AlbumPanel({
   place,
   photoIndex,
+  canStep,
   labels,
   panelRef,
   expandButtonRef,
   onExpand,
   onShowPhoto,
+  onStep,
   onClose,
-  onPress,
 }: AlbumPanelProps) {
   const { photos } = place;
   const photo = photos[photoIndex];
   const total = photos.length;
-  const showPrevious = () => onShowPhoto(stepPhotoIndex(photoIndex, -1, total));
-  const showNext = () => onShowPhoto(stepPhotoIndex(photoIndex, 1, total));
+  const swipe = useSwipe((direction) => {
+    if (canStep) onStep(direction);
+  });
   const onKeyDown = (event: KeyboardEvent<HTMLElement>) => {
-    if (event.target !== event.currentTarget) return;
-    if (event.key === "ArrowLeft") showPrevious();
-    if (event.key === "ArrowRight") showNext();
+    if (event.target !== event.currentTarget || !canStep) return;
+    if (event.key === "ArrowLeft") onStep(-1);
+    if (event.key === "ArrowRight") onStep(1);
   };
 
   return (
@@ -69,13 +74,15 @@ export function AlbumPanel({
       tabIndex={-1}
       aria-label={fillTemplate(labels.label, { place: place.name })}
       onKeyDown={onKeyDown}
-      onPointerDown={(event) => {
-        event.stopPropagation();
-        onPress();
-      }}
+      // A press inside the panel must not start a globe drag.
+      onPointerDown={(event) => event.stopPropagation()}
       className="absolute top-3 right-3 bottom-3 z-300 flex w-[min(360px,calc(100%-24px))] cursor-default flex-col overflow-hidden rounded-md border border-line-strong bg-glass-strong shadow-2 backdrop-blur-md"
     >
-      <div className="relative aspect-16/10 shrink-0 bg-surface">
+      <div
+        onPointerDown={swipe.onPointerDown}
+        onPointerUp={swipe.onPointerUp}
+        className="relative aspect-16/10 shrink-0 bg-surface"
+      >
         <div
           aria-hidden="true"
           style={{ backgroundImage: `url(${photo.blurDataUrl})` }}
@@ -85,7 +92,9 @@ export function AlbumPanel({
           ref={expandButtonRef}
           type="button"
           aria-label={labels.expand}
-          onClick={onExpand}
+          onClick={() => {
+            if (!swipe.consumeSwipe()) onExpand();
+          }}
           className="group absolute inset-0 cursor-zoom-in"
         >
           <Image
@@ -96,6 +105,7 @@ export function AlbumPanel({
             sizes="360px"
             placeholder="blur"
             blurDataURL={photo.blurDataUrl}
+            draggable={false}
             className="object-contain"
           />
           <span className="absolute top-2.5 left-2.5 flex size-7 items-center justify-center rounded-full bg-bg/70 text-text transition-colors group-hover:bg-bg">
@@ -108,12 +118,12 @@ export function AlbumPanel({
           label={labels.counter}
           className="absolute top-2.5 right-2.5"
         />
-        {total > 1 ? (
+        {canStep ? (
           <>
             <button
               type="button"
               aria-label={labels.previous}
-              onClick={showPrevious}
+              onClick={() => onStep(-1)}
               className={`${OVERLAY_BUTTON_CLASS} left-2`}
             >
               <ChevronLeft size={18} strokeWidth={2} aria-hidden="true" />
@@ -121,7 +131,7 @@ export function AlbumPanel({
             <button
               type="button"
               aria-label={labels.next}
-              onClick={showNext}
+              onClick={() => onStep(1)}
               className={`${OVERLAY_BUTTON_CLASS} right-2`}
             >
               <ChevronRight size={18} strokeWidth={2} aria-hidden="true" />

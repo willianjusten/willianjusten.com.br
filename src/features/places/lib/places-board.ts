@@ -56,9 +56,32 @@ function readFolderYear(folder: string): number {
   return Number(folder.slice(TRIP_FOLDER_PREFIX.length, TRIP_FOLDER_PREFIX.length + 4));
 }
 
-/** Moves through an album by `step` photos, wrapping at both ends. */
-export function stepPhotoIndex(photoIndex: number, step: number, total: number): number {
-  return (photoIndex + step + total) % total;
+/** An open album: the place and the photo on show. */
+export type AlbumPosition = { slug: string; photoIndex: number };
+
+/**
+ * Moves one photo forward or back. Past either end of an album it carries on into the next or
+ * previous place with photos, in content order, wrapping around at both ends of the list.
+ */
+export function stepAlbum(
+  places: readonly GlobePlace[],
+  position: AlbumPosition,
+  direction: 1 | -1,
+): AlbumPosition {
+  const placesWithPhotos = places.filter((place) => place.photos.length > 0);
+  const placeIndex = placesWithPhotos.findIndex((place) => place.slug === position.slug);
+  const place = placesWithPhotos[placeIndex];
+  if (!place) return position;
+  const photoIndex = position.photoIndex + direction;
+  if (photoIndex >= 0 && photoIndex < place.photos.length) return { slug: place.slug, photoIndex };
+  const count = placesWithPhotos.length;
+  const neighbour = placesWithPhotos[(placeIndex + direction + count) % count];
+  return { slug: neighbour.slug, photoIndex: direction === 1 ? 0 : neighbour.photos.length - 1 };
+}
+
+/** Whether stepping can show anything other than the current photo. */
+export function hasPhotosToStep(places: readonly GlobePlace[]): boolean {
+  return places.reduce((count, place) => count + place.photos.length, 0) > 1;
 }
 
 export function buildGlobePlaces(

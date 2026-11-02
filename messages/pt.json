@@ -69,10 +69,6 @@
         "thumbnails": "Fotos",
         "showPhoto": "Mostrar foto {index} de {total}",
         "moreFrom": "Mais de {place} no Unsplash"
-      },
-      "tour": {
-        "play": "Ver as viagens",
-        "stop": "Parar a viagem"
       }
     },
     "games": {

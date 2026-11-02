@@ -6,11 +6,9 @@ import { baseRadiusOf, dragTo, endDrag, startDrag, type GlobeMotion } from "../l
 export function useGlobeDrag(
   motionRef: RefObject<GlobeMotion>,
   canvasRef: RefObject<HTMLCanvasElement | null>,
-  onDragStart: () => void,
   onTap: () => void,
 ) {
   const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
-    onDragStart();
     startDrag(motionRef.current, event.clientX, event.clientY);
     event.currentTarget.setPointerCapture(event.pointerId);
     event.currentTarget.style.cursor = "grabbing";

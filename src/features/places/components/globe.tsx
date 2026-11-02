@@ -3,11 +3,10 @@
 /* The frame is a keyboard-operable widget (arrow keys rotate it) and the canvas is a described image. */
 /* oxlint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/no-noninteractive-tabindex, jsx-a11y/prefer-tag-over-role */
 
-import { useCallback, useEffect, useRef, useState, type KeyboardEvent } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { useGlobeAlbum } from "../hooks/use-globe-album";
 import { useGlobeDrag } from "../hooks/use-globe-drag";
 import { useGlobeScene } from "../hooks/use-globe-scene";
-import { useGlobeTour, type TourStep } from "../hooks/use-globe-tour";
 import { project, zoomToSplit } from "../lib/globe-math";
 import {
   INITIAL_VIEW,
@@ -18,7 +17,7 @@ import {
   zoomBy,
   zoomOutToStart,
 } from "../lib/globe-motion";
-import { stepPhotoIndex, type GlobePlace } from "../lib/places-board";
+import { hasPhotosToStep, stepAlbum, type GlobePlace } from "../lib/places-board";
 import { AlbumPanel, type AlbumLabels } from "./album-panel";
 import { GlobeControls, type GlobeControlsLabels } from "./globe-controls";
 import { GLOBE_FRAME_CLASS } from "./globe-frame";
@@ -52,16 +51,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
     showPhotoAt,
   } = useGlobeAlbum();
   const albumPlace = album ? places.find((place) => place.slug === album.slug) : undefined;
-
-  const playTourStep = useCallback(
-    ({ place, photoIndex }: TourStep) => {
-      selectPlace(place.slug);
-      openAlbum({ slug: place.slug, photoIndex });
-      flyTo(motionRef.current, place, PLACE_ZOOM);
-    },
-    [openAlbum, selectPlace],
-  );
-  const { isTouring, startTour, stopTour, isTourRunning } = useGlobeTour(places, playTourStep);
+  const canStepPhotos = useMemo(() => hasPhotosToStep(places), [places]);
   const { clustersByLeadRef, registerPinElement, focusPin } = useGlobeScene({
     frameRef,
     canvasRef,
@@ -73,11 +63,10 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   });
 
   const clearSelection = useCallback(() => {
-    stopTour();
     setIsPhotoExpanded(false);
     selectPlace(null);
     openAlbum(null);
-  }, [openAlbum, selectPlace, stopTour]);
+  }, [openAlbum, selectPlace]);
 
   const resetView = useCallback(() => {
     clearSelection();
@@ -93,19 +82,32 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
   }, [album, clearSelection, focusPin]);
 
   // Pins, controls and the album stop their own presses, so a tap here landed on the empty globe.
-  const dragHandlers = useGlobeDrag(motionRef, canvasRef, stopTour, closeAlbum);
+  const dragHandlers = useGlobeDrag(motionRef, canvasRef, closeAlbum);
 
-  const showPhoto = useCallback(
-    (photoIndex: number) => {
-      stopTour();
-      showPhotoAt(photoIndex);
+  const openPlace = useCallback(
+    (place: GlobePlace, photoIndex: number) => {
+      const motion = motionRef.current;
+      selectPlace(place.slug);
+      openAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex } : null);
+      // Never zoom out to open a place: a cluster that only split near full zoom would merge again.
+      flyTo(motion, place, place.isHome ? HOME_ZOOM : Math.max(PLACE_ZOOM, motion.zoomGoal));
     },
-    [showPhotoAt, stopTour],
+    [openAlbum, selectPlace],
+  );
+
+  const stepPhoto = useCallback(
+    (direction: 1 | -1) => {
+      if (!album) return;
+      const next = stepAlbum(places, album, direction);
+      const nextPlace = places.find((place) => place.slug === next.slug);
+      if (next.slug === album.slug || !nextPlace) showPhotoAt(next.photoIndex);
+      else openPlace(nextPlace, next.photoIndex);
+    },
+    [album, openPlace, places, showPhotoAt],
   );
 
   const activate = useCallback(
     (place: GlobePlace) => {
-      stopTour();
       const motion = motionRef.current;
       const cluster = clustersByLeadRef.current.get(place.slug);
       const canvas = canvasRef.current;
@@ -117,12 +119,9 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
         flyTo(motion, cluster.geo, Math.max(splitZoom, motion.view.zoom));
         return;
       }
-      selectPlace(place.slug);
-      openAlbum(place.photos.length > 0 ? { slug: place.slug, photoIndex: 0 } : null);
-      // Never zoom out to open a place: a cluster that only split near full zoom would merge again.
-      flyTo(motion, place, place.isHome ? HOME_ZOOM : Math.max(PLACE_ZOOM, motion.zoomGoal));
+      openPlace(place, 0);
     },
-    [clustersByLeadRef, openAlbum, selectPlace, stopTour],
+    [clustersByLeadRef, openPlace],
   );
 
   const bringPlaceToFront = useCallback((place: GlobePlace) => {
@@ -132,13 +131,12 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
   const albumSlug = album?.slug;
   useEffect(() => {
-    if (albumSlug && !isTourRunning()) panelRef.current?.focus();
-  }, [albumSlug, isTourRunning]);
+    const panel = panelRef.current;
+    // Stepping into another place from inside the panel keeps focus on the button that did it.
+    if (albumSlug && panel && !panel.contains(document.activeElement)) panel.focus();
+  }, [albumSlug]);
 
-  const expandPhoto = useCallback(() => {
-    stopTour();
-    setIsPhotoExpanded(true);
-  }, [stopTour]);
+  const expandPhoto = useCallback(() => setIsPhotoExpanded(true), []);
 
   const collapsePhoto = useCallback(() => {
     shouldRefocusExpandRef.current = true;
@@ -159,9 +157,7 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
       return;
     }
     if (event.target !== event.currentTarget) return;
-    if (!nudgeByArrowKey(motionRef.current, event.key)) return;
-    event.preventDefault();
-    stopTour();
+    if (nudgeByArrowKey(motionRef.current, event.key)) event.preventDefault();
   };
 
   return (
@@ -195,26 +191,22 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
 
         <GlobeControls
           labels={labels}
-          isTouring={isTouring}
-          onZoomBy={(factor) => {
-            stopTour();
-            zoomBy(motionRef.current, factor);
-          }}
+          onZoomBy={(factor) => zoomBy(motionRef.current, factor)}
           onReset={resetView}
-          onToggleTour={isTouring ? stopTour : startTour}
         />
 
         {album && albumPlace ? (
           <AlbumPanel
             place={albumPlace}
             photoIndex={album.photoIndex}
+            canStep={canStepPhotos}
             labels={labels.album}
             panelRef={panelRef}
             expandButtonRef={expandButtonRef}
             onExpand={expandPhoto}
-            onShowPhoto={showPhoto}
+            onShowPhoto={showPhotoAt}
+            onStep={stepPhoto}
             onClose={closeAlbum}
-            onPress={stopTour}
           />
         ) : null}
       </div>
@@ -224,11 +216,9 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
           photo={albumPlace.photos[album.photoIndex]}
           photoIndex={album.photoIndex}
           total={albumPlace.photos.length}
+          canStep={canStepPhotos}
           labels={labels.album}
-          onPrevious={() =>
-            showPhoto(stepPhotoIndex(album.photoIndex, -1, albumPlace.photos.length))
-          }
-          onNext={() => showPhoto(stepPhotoIndex(album.photoIndex, 1, albumPlace.photos.length))}
+          onStep={stepPhoto}
           onClose={collapsePhoto}
         />
       ) : null}

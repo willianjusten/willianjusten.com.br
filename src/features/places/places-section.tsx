@@ -59,7 +59,6 @@ export async function PlacesSection() {
               showPhoto: t.raw("album.showPhoto"),
               moreFrom: t.raw("album.moreFrom"),
             },
-            tour: { play: t("tour.play"), stop: t("tour.stop") },
           }}
         />
         {/* The globe draws on a canvas, so crawlers without JavaScript get the places as text. */}

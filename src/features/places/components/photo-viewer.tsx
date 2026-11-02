@@ -6,6 +6,7 @@
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, type KeyboardEvent, type PointerEvent } from "react";
+import { useSwipe } from "../hooks/use-swipe";
 import { fillTemplate } from "@/lib/fill-template";
 import type { AlbumPhoto } from "../lib/places-board";
 import { PhotoCaption } from "./photo-caption";
@@ -22,13 +23,12 @@ type PhotoViewerProps = {
   photo: AlbumPhoto;
   photoIndex: number;
   total: number;
+  /** Whether previous and next can reach another photo, possibly in another place. */
+  canStep: boolean;
   labels: PhotoViewerLabels;
-  onPrevious: () => void;
-  onNext: () => void;
+  onStep: (direction: 1 | -1) => void;
   onClose: () => void;
 };
-
-const SWIPE_THRESHOLD_IN_PIXELS = 50;
 
 const SIDE_BUTTON_CLASS =
   "absolute top-1/2 z-10 flex size-12 -translate-y-1/2 items-center justify-center rounded-full border border-line-strong bg-surface/80 text-text transition-colors hover:border-line-hover hover:bg-surface-hover";
@@ -37,14 +37,15 @@ export function PhotoViewer({
   photo,
   photoIndex,
   total,
+  canStep,
   labels,
-  onPrevious,
-  onNext,
+  onStep,
   onClose,
 }: PhotoViewerProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
-  const swipeStartXRef = useRef<number | null>(null);
-  const hasManyPhotos = total > 1;
+  const swipe = useSwipe((direction) => {
+    if (canStep) onStep(direction);
+  });
 
   useEffect(() => {
     closeButtonRef.current?.focus({ preventScroll: true });
@@ -53,23 +54,14 @@ export function PhotoViewer({
   const onKeyDown = (event: KeyboardEvent<HTMLDialogElement>) => {
     event.stopPropagation();
     if (event.key === "Escape") onClose();
-    if (!hasManyPhotos) return;
-    if (event.key === "ArrowLeft") onPrevious();
-    if (event.key === "ArrowRight") onNext();
+    if (!canStep) return;
+    if (event.key === "ArrowLeft") onStep(-1);
+    if (event.key === "ArrowRight") onStep(1);
   };
 
   const onPointerDown = (event: PointerEvent<HTMLDialogElement>) => {
     event.stopPropagation();
-    swipeStartXRef.current = event.clientX;
-  };
-
-  const onPointerUp = (event: PointerEvent<HTMLDialogElement>) => {
-    const startX = swipeStartXRef.current;
-    swipeStartXRef.current = null;
-    if (startX === null || !hasManyPhotos) return;
-    const distance = event.clientX - startX;
-    if (distance > SWIPE_THRESHOLD_IN_PIXELS) onPrevious();
-    if (distance < -SWIPE_THRESHOLD_IN_PIXELS) onNext();
+    swipe.onPointerDown(event);
   };
 
   return (
@@ -79,7 +71,7 @@ export function PhotoViewer({
       aria-label={fillTemplate(labels.counter, { index: photoIndex + 1, total })}
       onKeyDown={onKeyDown}
       onPointerDown={onPointerDown}
-      onPointerUp={onPointerUp}
+      onPointerUp={swipe.onPointerUp}
       className="absolute inset-0 z-400 m-0 flex size-full max-h-none max-w-none origin-top-right cursor-default flex-col bg-bg-sunken p-0 text-text motion-safe:animate-photo-expand"
     >
       <div className="flex items-center justify-between gap-3 p-3">
@@ -107,12 +99,12 @@ export function PhotoViewer({
           draggable={false}
           className="object-contain"
         />
-        {hasManyPhotos ? (
+        {canStep ? (
           <>
             <button
               type="button"
               aria-label={labels.previous}
-              onClick={onPrevious}
+              onClick={() => onStep(-1)}
               className={`${SIDE_BUTTON_CLASS} left-3`}
             >
               <ChevronLeft size={22} strokeWidth={2} aria-hidden="true" />
@@ -120,7 +112,7 @@ export function PhotoViewer({
             <button
               type="button"
               aria-label={labels.next}
-              onClick={onNext}
+              onClick={() => onStep(1)}
               className={`${SIDE_BUTTON_CLASS} right-3`}
             >
               <ChevronRight size={22} strokeWidth={2} aria-hidden="true" />
