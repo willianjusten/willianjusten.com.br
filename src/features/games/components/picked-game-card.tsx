@@ -9,8 +9,15 @@ type PickedGameCardProps = {
   onClear: () => void;
 };
 
-function formatMeta({ year, platforms }: Pick<IgdbSearchResult, "year" | "platforms">): string {
-  const platformNames = platforms.map((platform) => PLATFORM_STYLES[platform].name);
+function formatMeta({
+  year,
+  platforms,
+  newestPlatformName,
+}: Pick<IgdbSearchResult, "year" | "platforms" | "newestPlatformName">): string {
+  const platformNames =
+    platforms.length > 0
+      ? platforms.map((platform) => PLATFORM_STYLES[platform].name)
+      : [newestPlatformName];
   return [year, ...platformNames].filter(Boolean).join(" · ");
 }
 
@@ -19,7 +26,7 @@ export function PickedGameCard({ game, chooseAnotherLabel, onClear }: PickedGame
     <div className="flex items-center gap-3.5 rounded-lg border border-line-strong bg-bg p-3">
       <CoverThumb
         coverUrl={game.coverUrl}
-        platform={pickPrimaryPlatform(game.platforms)}
+        platform={pickPrimaryPlatform(game)}
         sizeClass="h-16.5 w-13 shadow-(--shadow-1)"
         bandHeightClass="h-3"
       />

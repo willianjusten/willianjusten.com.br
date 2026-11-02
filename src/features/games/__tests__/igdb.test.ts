@@ -5,8 +5,22 @@ const ALAN_WAKE_2 = {
   id: 185246,
   name: "Alan Wake II",
   first_release_date: 1698364800,
-  platforms: [169, 6, 167],
+  platforms: [
+    { id: 169, name: "Xbox Series X|S" },
+    { id: 6, name: "PC (Microsoft Windows)" },
+    { id: 167, name: "PlayStation 5" },
+  ],
   cover: { id: 1, image_id: "co6jar" },
+};
+
+const BREATH_OF_THE_WILD = {
+  id: 7346,
+  name: "The Legend of Zelda: Breath of the Wild",
+  first_release_date: 1488499200,
+  platforms: [
+    { id: 41, name: "Wii U" },
+    { id: 130, name: "Nintendo Switch" },
+  ],
 };
 
 function jsonResponse(body: unknown, status = 200) {
@@ -48,25 +62,39 @@ describe("translateIgdbGame", () => {
       title: "Alan Wake II",
       year: 2023,
       platforms: ["ps5", "xbox", "rog"],
+      newestPlatformName: "Xbox Series X|S",
       coverImageId: "co6jar",
     });
   });
 
-  it("keeps games that are on none of the shelf platforms, with no platforms listed", () => {
-    expect(translateIgdbGame({ id: 1, name: "Old", platforms: [12] })).toMatchObject({
-      igdbId: 1,
-      title: "Old",
+  it("keeps games that are on none of the shelf platforms, naming their newest platform", () => {
+    expect(translateIgdbGame(BREATH_OF_THE_WILD)).toMatchObject({
+      igdbId: 7346,
       platforms: [],
+      newestPlatformName: "Nintendo Switch",
     });
   });
 
-  it("falls back to a generic platform for the case when no shelf platform matches", () => {
-    expect(pickPrimaryPlatform([])).toBe("rog");
-    expect(pickPrimaryPlatform(["xbox", "rog"])).toBe("xbox");
+  it("picks the shelf platform in priority order, else the newest platform IGDB names", () => {
+    expect(pickPrimaryPlatform(translateIgdbGame(ALAN_WAKE_2))).toBe("ps5");
+    expect(pickPrimaryPlatform(translateIgdbGame(BREATH_OF_THE_WILD))).toBe("Nintendo Switch");
+    expect(pickPrimaryPlatform({ platforms: ["xbox", "rog"], newestPlatformName: null })).toBe(
+      "xbox",
+    );
+  });
+
+  it("falls back to the ROG Ally X only when IGDB lists no platform at all", () => {
+    expect(pickPrimaryPlatform(translateIgdbGame({ id: 3, name: "Unknown" }))).toBe("rog");
   });
 
   it("allows a missing year and cover", () => {
-    expect(translateIgdbGame({ id: 2, name: "New", platforms: [508] })).toMatchObject({
+    expect(
+      translateIgdbGame({
+        id: 2,
+        name: "New",
+        platforms: [{ id: 508, name: "Nintendo Switch 2" }],
+      }),
+    ).toMatchObject({
       year: null,
       coverImageId: null,
       platforms: ["switch2"],

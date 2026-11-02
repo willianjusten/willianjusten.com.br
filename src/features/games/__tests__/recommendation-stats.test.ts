@@ -25,9 +25,9 @@ describe("buildRecommendationViews", () => {
     expect(view?.platform).toBe("rog");
   });
 
-  it("drops a recommendation saved with a platform the shelf does not know", () => {
-    expect(buildRecommendationViews([recommendationRow("dreamcast")], [vote], undefined)).toEqual(
-      [],
-    );
+  it("keeps a recommendation for a platform off the shelf under the name it was saved with", () => {
+    const [view] = buildRecommendationViews([recommendationRow("Nintendo 64")], [vote], undefined);
+
+    expect(view?.platform).toBe("Nintendo 64");
   });
 });

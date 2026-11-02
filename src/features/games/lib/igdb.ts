@@ -46,18 +46,22 @@ export type IgdbGame = {
   igdbId: number;
   title: string;
   year: number | null;
-  /** Shelf platforms the game is on, in priority order. Informational, and empty for other consoles. */
+  /** Shelf platforms the game is on, in priority order. Empty for games only on other consoles. */
   platforms: GamePlatform[];
+  /** IGDB's name for the newest platform the game is on, or null when IGDB lists none. */
+  newestPlatformName: string | null;
   coverImageId: string | null;
 };
 
 export type IgdbSearchResult = IgdbGame & { coverUrl: string | null };
 
+type RawIgdbPlatform = { id: number; name: string };
+
 type RawIgdbGame = {
   id: number;
   name: string;
   first_release_date?: number;
-  platforms?: number[];
+  platforms?: RawIgdbPlatform[];
   cover?: { image_id?: string };
   game_type?: number;
   total_rating_count?: number;
@@ -68,8 +72,8 @@ function normalizeTitle(title: string): string {
   return title.toLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
 }
 
-const SEARCH_FIELDS =
-  "fields name,first_release_date,platforms,cover.image_id,game_type,total_rating_count;";
+const GAME_FIELDS = "name,first_release_date,platforms.name,cover.image_id";
+const SEARCH_FIELDS = `fields ${GAME_FIELDS},game_type,total_rating_count;`;
 
 /**
  * IGDB's `search` only matches whole words, so "zelda bre" finds nothing while the visitor is
@@ -111,15 +115,36 @@ export function buildCoverUrl(coverImageId: string, size: CoverSize = "thumbnail
   return `${COVER_URL_BASE}/${COVER_SIZES[size]}/${coverImageId}.jpg`;
 }
 
-/** Games on none of the shelf platforms get a ROG Ally X case, the closest thing to a PC. */
+/** Only games IGDB lists on no platform at all get a ROG Ally X case, the closest thing to a PC. */
 const FALLBACK_PLATFORM: GamePlatform = "rog";
 
-export function pickPrimaryPlatform(platforms: readonly GamePlatform[]): GamePlatform {
-  return PLATFORM_PRIORITY.find((platform) => platforms.includes(platform)) ?? FALLBACK_PLATFORM;
+/**
+ * The platform a recommendation is saved and shown with: a shelf platform when the game is on one,
+ * otherwise IGDB's own name for its newest platform (so Breath of the Wild says Nintendo Switch,
+ * not ROG Ally X).
+ */
+export function pickPrimaryPlatform(
+  game: Pick<IgdbGame, "platforms" | "newestPlatformName">,
+): GamePlatform | string {
+  return (
+    PLATFORM_PRIORITY.find((platform) => game.platforms.includes(platform)) ??
+    game.newestPlatformName ??
+    FALLBACK_PLATFORM
+  );
+}
+
+/** IGDB platform ids grow as platforms are released, so the highest id is the newest. */
+function newestPlatformName(rawPlatforms: readonly RawIgdbPlatform[]): string | null {
+  const newest = rawPlatforms.reduce<RawIgdbPlatform | null>(
+    (best, platform) => (best === null || platform.id > best.id ? platform : best),
+    null,
+  );
+  return newest?.name ?? null;
 }
 
 export function translateIgdbGame(raw: RawIgdbGame): IgdbGame {
-  const mapped = new Set((raw.platforms ?? []).flatMap((id) => PLATFORM_BY_IGDB_ID[id] ?? []));
+  const rawPlatforms = raw.platforms ?? [];
+  const mapped = new Set(rawPlatforms.flatMap(({ id }) => PLATFORM_BY_IGDB_ID[id] ?? []));
   const platforms = PLATFORM_PRIORITY.filter((platform) => mapped.has(platform));
   return {
     igdbId: raw.id,
@@ -129,6 +154,7 @@ export function translateIgdbGame(raw: RawIgdbGame): IgdbGame {
         ? null
         : new Date(raw.first_release_date * 1000).getUTCFullYear(),
     platforms,
+    newestPlatformName: newestPlatformName(rawPlatforms),
     coverImageId: raw.cover?.image_id ?? null,
   };
 }
@@ -244,7 +270,7 @@ export function createIgdbClient({
     /** One game by id, so a submission never trusts the title or cover the browser sends. */
     async getGame(igdbId: number): Promise<IgdbGame | undefined> {
       const [raw] = await queryGames(
-        `fields name,first_release_date,platforms,cover.image_id; where id = ${Math.trunc(igdbId)}; limit 1;`,
+        `fields ${GAME_FIELDS}; where id = ${Math.trunc(igdbId)}; limit 1;`,
       );
       return raw ? translateIgdbGame(raw) : undefined;
     },

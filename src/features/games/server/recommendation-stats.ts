@@ -1,5 +1,4 @@
 import { and, count, desc, eq, inArray, or } from "drizzle-orm";
-import { GAME_PLATFORMS } from "@/content/games";
 import type { GamePlatform } from "@/content/games";
 import type { Database } from "@/lib/db/client";
 import { gameRecommendations, gameRecommendationVotes } from "@/lib/db/schema";
@@ -14,11 +13,9 @@ type VoteRow = typeof gameRecommendationVotes.$inferSelect;
 /** Rows saved before PC was folded into the ROG Ally X still say `pc`. */
 const LEGACY_PLATFORMS: Record<string, GamePlatform> = { pc: "rog" };
 
-function toShelfPlatform(storedPlatform: string): GamePlatform | null {
-  if ((GAME_PLATFORMS as readonly string[]).includes(storedPlatform)) {
-    return storedPlatform as GamePlatform;
-  }
-  return LEGACY_PLATFORMS[storedPlatform] ?? null;
+/** A shelf platform key, or the IGDB platform name the row was saved with. */
+function toViewPlatform(storedPlatform: string): GamePlatform | string {
+  return LEGACY_PLATFORMS[storedPlatform] ?? storedPlatform;
 }
 
 export function buildRecommendationViews(
@@ -28,8 +25,7 @@ export function buildRecommendationViews(
 ): RecommendationView[] {
   const votesByRecommendation = Map.groupBy(votes, (vote) => vote.recommendationId);
   const views = recommendations.flatMap((recommendation): RecommendationView[] => {
-    const platform = toShelfPlatform(recommendation.platform);
-    if (recommendation.status === "hidden" || platform === null) {
+    if (recommendation.status === "hidden") {
       return [];
     }
     const newestFirst = [...(votesByRecommendation.get(recommendation.id) ?? [])].sort(
@@ -43,7 +39,7 @@ export function buildRecommendationViews(
         id: recommendation.id,
         title: recommendation.title,
         year: recommendation.year,
-        platform,
+        platform: toViewPlatform(recommendation.platform),
         coverUrl: recommendation.coverImageId
           ? buildCoverUrl(recommendation.coverImageId, "case")
           : null,
@@ -132,7 +128,7 @@ export async function submitRecommendation(
   database: Database,
   { game, browserId }: NewRecommendation,
 ): Promise<RecommendationView | undefined> {
-  const platform = pickPrimaryPlatform(game.platforms);
+  const platform = pickPrimaryPlatform(game);
   await database
     .insert(gameRecommendations)
     .values({

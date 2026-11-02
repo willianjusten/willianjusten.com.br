@@ -26,7 +26,7 @@ export function SearchResultOption({ id, result, isHighlighted, onPick }: Search
     >
       <CoverThumb
         coverUrl={result.coverUrl}
-        platform={pickPrimaryPlatform(result.platforms)}
+        platform={pickPrimaryPlatform(result)}
         sizeClass="h-11 w-8.5"
         bandHeightClass="h-2"
       />

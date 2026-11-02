@@ -16,6 +16,7 @@ const GAME = {
   title: "Alan Wake II",
   year: 2023,
   platforms: ["ps5" as const],
+  newestPlatformName: "PlayStation 5",
   coverImageId: "co6jar",
 };
 
