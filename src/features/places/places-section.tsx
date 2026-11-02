@@ -58,6 +58,8 @@ export async function PlacesSection() {
               thumbnails: t("album.thumbnails"),
               showPhoto: t.raw("album.showPhoto"),
               moreFrom: t.raw("album.moreFrom"),
+              previousPlace: t.raw("album.previousPlace"),
+              nextPlace: t.raw("album.nextPlace"),
             },
           }}
         />

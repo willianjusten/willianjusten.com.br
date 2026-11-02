@@ -23,6 +23,8 @@ export type AlbumLabels = PhotoViewerLabels & {
   thumbnails: string;
   showPhoto: string;
   moreFrom: string;
+  previousPlace: string;
+  nextPlace: string;
 };
 
 type AlbumPanelProps = {
@@ -37,11 +39,19 @@ type AlbumPanelProps = {
   onShowPhoto: (photoIndex: number) => void;
   /** Previous or next photo; past either end of the album it moves to the neighbouring place. */
   onStep: (direction: 1 | -1) => void;
+  /** The neighbouring places with photos; absent when no other place has photos. */
+  previousPlace?: GlobePlace;
+  nextPlace?: GlobePlace;
+  /** Opens the first photo of the previous or next place. */
+  onStepPlace: (direction: 1 | -1) => void;
   onClose: () => void;
 };
 
 const OVERLAY_BUTTON_CLASS =
   "absolute top-1/2 flex size-11 -translate-y-1/2 items-center justify-center rounded-full bg-bg/70 text-text transition-colors hover:bg-bg";
+
+const PLACE_BUTTON_CLASS =
+  "flex min-h-11 min-w-0 flex-1 items-center gap-1.5 px-4 text-eyebrow text-text-2 transition-colors hover:bg-bg/40 hover:text-text";
 
 /** Escape is handled by the globe frame. */
 export function AlbumPanel({
@@ -54,6 +64,9 @@ export function AlbumPanel({
   onExpand,
   onShowPhoto,
   onStep,
+  previousPlace,
+  nextPlace,
+  onStepPlace,
   onClose,
 }: AlbumPanelProps) {
   const { photos } = place;
@@ -61,6 +74,10 @@ export function AlbumPanel({
   const total = photos.length;
   const swipe = useSwipe((direction) => {
     if (canStep) onStep(direction);
+  });
+  const canStepPlace = Boolean(previousPlace && nextPlace);
+  const placeSwipe = useSwipe((direction) => {
+    if (canStepPlace) onStepPlace(direction);
   });
   const onKeyDown = (event: KeyboardEvent<HTMLElement>) => {
     if (event.target !== event.currentTarget || !canStep) return;
@@ -140,7 +157,15 @@ export function AlbumPanel({
         ) : null}
       </div>
 
-      <div className="flex min-h-0 flex-auto flex-col gap-2.5 overflow-auto px-4 pt-3.5 pb-4">
+      <div
+        onPointerDown={placeSwipe.onPointerDown}
+        onPointerUp={placeSwipe.onPointerUp}
+        onClickCapture={(event) => {
+          // A swipe that ends on a thumbnail or link must not also activate it.
+          if (placeSwipe.consumeSwipe()) event.preventDefault();
+        }}
+        className="flex min-h-0 flex-auto flex-col gap-2.5 overflow-auto px-4 pt-3.5 pb-4"
+      >
         <div className="flex items-start justify-between gap-3">
           <div className="flex min-w-0 flex-col gap-0.5">
             <p className="font-mono text-overline text-accent">
@@ -179,6 +204,29 @@ export function AlbumPanel({
           <ArrowUpRight size={14} strokeWidth={1.8} aria-hidden="true" className="nudge-arrow" />
         </ExternalLink>
       </div>
+
+      {canStepPlace && previousPlace && nextPlace ? (
+        <nav className="flex shrink-0 items-stretch border-t border-line-strong">
+          <button
+            type="button"
+            aria-label={fillTemplate(labels.previousPlace, { place: previousPlace.name })}
+            onClick={() => onStepPlace(-1)}
+            className={`${PLACE_BUTTON_CLASS} justify-start border-r border-line-strong`}
+          >
+            <ChevronLeft size={14} strokeWidth={2} aria-hidden="true" className="shrink-0" />
+            <span className="truncate">{previousPlace.name}</span>
+          </button>
+          <button
+            type="button"
+            aria-label={fillTemplate(labels.nextPlace, { place: nextPlace.name })}
+            onClick={() => onStepPlace(1)}
+            className={`${PLACE_BUTTON_CLASS} justify-end`}
+          >
+            <span className="truncate">{nextPlace.name}</span>
+            <ChevronRight size={14} strokeWidth={2} aria-hidden="true" className="shrink-0" />
+          </button>
+        </nav>
+      ) : null}
     </section>
   );
 }

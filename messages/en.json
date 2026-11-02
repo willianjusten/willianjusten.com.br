@@ -68,7 +68,9 @@
         "counter": "Photo {index} of {total}",
         "thumbnails": "Photos",
         "showPhoto": "Show photo {index} of {total}",
-        "moreFrom": "More from {place} on Unsplash"
+        "moreFrom": "More from {place} on Unsplash",
+        "previousPlace": "Previous place: {place}",
+        "nextPlace": "Next place: {place}"
       }
     },
     "games": {

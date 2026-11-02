@@ -17,7 +17,7 @@ import {
   zoomBy,
   zoomOutToStart,
 } from "../lib/globe-motion";
-import { hasPhotosToStep, stepAlbum, type GlobePlace } from "../lib/places-board";
+import { hasPhotosToStep, neighbourPlace, stepAlbum, type GlobePlace } from "../lib/places-board";
 import { AlbumPanel, type AlbumLabels } from "./album-panel";
 import { GlobeControls, type GlobeControlsLabels } from "./globe-controls";
 import { GLOBE_FRAME_CLASS } from "./globe-frame";
@@ -104,6 +104,18 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
       else openPlace(nextPlace, next.photoIndex);
     },
     [album, openPlace, places, showPhotoAt],
+  );
+
+  const previousPlace = album ? neighbourPlace(places, album.slug, -1) : undefined;
+  const nextPlace = album ? neighbourPlace(places, album.slug, 1) : undefined;
+
+  const stepPlace = useCallback(
+    (direction: 1 | -1) => {
+      if (!album) return;
+      const neighbour = neighbourPlace(places, album.slug, direction);
+      if (neighbour) openPlace(neighbour, 0);
+    },
+    [album, openPlace, places],
   );
 
   const activate = useCallback(
@@ -206,6 +218,9 @@ export function Globe({ places, labels }: { places: GlobePlace[]; labels: GlobeL
             onExpand={expandPhoto}
             onShowPhoto={showPhotoAt}
             onStep={stepPhoto}
+            previousPlace={previousPlace}
+            nextPlace={nextPlace}
+            onStepPlace={stepPlace}
             onClose={closeAlbum}
           />
         ) : null}
