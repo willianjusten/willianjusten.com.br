@@ -4,6 +4,7 @@ import {
   buildGlobePlaces,
   formatPhotoLine,
   hasPhotosToStep,
+  neighbourPlace,
   stepAlbum,
   type GlobePlace,
 } from "../lib/places-board";
@@ -125,5 +126,26 @@ describe("stepAlbum", () => {
   it("only offers stepping when there is more than one photo across every place", () => {
     expect(hasPhotosToStep(places)).toBe(true);
     expect(hasPhotosToStep([placeWith("paris", 1), placeWith("home", 0)])).toBe(false);
+  });
+});
+
+describe("neighbourPlace", () => {
+  const placeWith = (slug: string, photoCount: number) =>
+    ({
+      slug,
+      photos: Array.from({ length: photoCount }, (_unused, index) => ({ src: `${slug}-${index}` })),
+    }) as unknown as GlobePlace;
+  const places = [placeWith("paris", 2), placeWith("home", 0), placeWith("rome", 3)];
+
+  it("skips places without photos and wraps around at both ends", () => {
+    expect(neighbourPlace(places, "paris", 1)?.slug).toBe("rome");
+    expect(neighbourPlace(places, "rome", 1)?.slug).toBe("paris");
+    expect(neighbourPlace(places, "paris", -1)?.slug).toBe("rome");
+  });
+
+  it("has no neighbour when only one place has photos", () => {
+    expect(neighbourPlace([placeWith("paris", 3), placeWith("home", 0)], "paris", 1)).toBe(
+      undefined,
+    );
   });
 });
