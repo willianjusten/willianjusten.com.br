@@ -12,8 +12,12 @@ const SHOE = "#f2f2ee";
 const MOUTHGUARD = "#eef3f6";
 
 const WALK_FRAMES = 36;
-/** Room (px) between the resting ball and his shadow on narrow courts. */
-const MIN_GAP_FROM_BALL = 70;
+/** Half his drawn width (px): the shadow and the far elbow reach about this far from his centre. */
+const FIGURE_HALF_WIDTH = 28;
+/** Clear space (px) he keeps from the resting ball and from under the rim. */
+const BALL_CLEARANCE = 6;
+const RIM_CLEARANCE = 14;
+const CAPTION_MARGIN = 8;
 const SNORE_LETTERS = 3;
 
 function easeOutCubic(progress: number) {
@@ -179,6 +183,21 @@ function drawSnore(ctx: CanvasRenderingContext2D, fonts: SceneFonts, seconds: nu
   ctx.globalAlpha = baseAlpha;
 }
 
+/**
+ * Halfway between the ball and the paint (court.ts starts it 120px before the hoop), but never
+ * under the rim. On courts too narrow to fit him between the ball and the rim, he stands behind
+ * the ball instead.
+ */
+function getRestingX(geometry: ShotGeometry) {
+  const paintEdgeX = geometry.hoopX - 120;
+  const clearOfBallX = geometry.startX + geometry.ballRadius + FIGURE_HALF_WIDTH + BALL_CLEARANCE;
+  const clearOfRimX = geometry.hoopX - geometry.halfRim - FIGURE_HALF_WIDTH - RIM_CLEARANCE;
+  if (clearOfRimX < clearOfBallX) {
+    return geometry.startX - geometry.ballRadius - FIGURE_HALF_WIDTH - BALL_CLEARANCE;
+  }
+  return Math.min(Math.max(clearOfBallX, (geometry.startX + paintEdgeX) / 2), clearOfRimX);
+}
+
 export function drawCurryCameo(
   ctx: CanvasRenderingContext2D,
   geometry: ShotGeometry,
@@ -188,12 +207,7 @@ export function drawCurryCameo(
   fonts: SceneFonts,
 ) {
   const presence = getPresence(cameo);
-  // Halfway between the ball and the paint, which court.ts starts 120px before the hoop.
-  const paintEdgeX = geometry.hoopX - 120;
-  const restingX = Math.max(
-    geometry.startX + MIN_GAP_FROM_BALL,
-    (geometry.startX + paintEdgeX) / 2,
-  );
+  const restingX = getRestingX(geometry);
   const x = -60 + (restingX + 60) * presence;
   const breath = Math.sin(seconds * 2.2) * 1.2;
 
@@ -207,6 +221,12 @@ export function drawCurryCameo(
   ctx.textAlign = "center";
   ctx.textBaseline = "alphabetic";
   ctx.fillStyle = JERSEY_GOLD;
-  ctx.fillText(caption, 0, -212);
+  // Keep the caption on the canvas when he stands near the edge of a narrow court.
+  const captionHalfWidth = ctx.measureText(caption).width / 2;
+  const captionX = Math.min(
+    Math.max(x, captionHalfWidth + CAPTION_MARGIN),
+    geometry.width - captionHalfWidth - CAPTION_MARGIN,
+  );
+  ctx.fillText(caption, captionX - x, -212);
   ctx.restore();
 }
