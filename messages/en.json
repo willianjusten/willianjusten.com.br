@@ -160,7 +160,9 @@
         "keyboardAim": "angle {angle}°  ·  ↑↓ to aim, release Space to shoot",
         "swish": "Swish!",
         "bucket": "Bucket!",
-        "onFire": "You're on fire!"
+        "onFire": "You're on fire!",
+        "curryCaption": "Night night.",
+        "curryAnnouncement": "Five in a row: Stephen Curry checks in. Night night."
       }
     },
     "music": {

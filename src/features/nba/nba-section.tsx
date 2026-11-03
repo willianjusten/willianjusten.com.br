@@ -25,6 +25,8 @@ export async function NbaSection() {
     swish: t("game.swish"),
     bucket: t("game.bucket"),
     onFire: t("game.onFire"),
+    curryCaption: t("game.curryCaption"),
+    curryAnnouncement: t("game.curryAnnouncement"),
   };
 
   return (

@@ -27,6 +27,8 @@ export type ShotGameLabels = ShotScoreboardLabels & {
   swish: string;
   bucket: string;
   onFire: string;
+  curryCaption: string;
+  curryAnnouncement: string;
 };
 
 function readFontFamily(element: HTMLElement, variableName: string, fallback: string): string {
@@ -78,8 +80,8 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
       onScore: (outcome) => {
         const streakAfterMake = personalStatsRef.current.streak + 1;
         const text = getScoreText(outcome, streakAfterMake, labelsRef.current);
-        markScored(runtime, text);
-        setAnnouncement(text);
+        const broughtOnCurry = markScored(runtime, text, streakAfterMake);
+        setAnnouncement(broughtOnCurry ? labelsRef.current.curryAnnouncement : text);
         playMake(streakAfterMake);
       },
       onShotOver: finishShot,
@@ -95,10 +97,12 @@ export function ShotGame({ labels }: { labels: ShotGameLabels }) {
         isOnFire: personalStatsRef.current.streak >= ON_FIRE_STREAK,
         netEnergy: runtime.netEnergy,
         message: runtime.message,
+        curryCameo: runtime.curryCameo,
         seconds: runtime.seconds,
         fonts,
         labels: {
           keyboardAim: (angle) => fillTemplate(labelsRef.current.keyboardAim, { angle }),
+          curryCaption: labelsRef.current.curryCaption,
         },
       });
     };

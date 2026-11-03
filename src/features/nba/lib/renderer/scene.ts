@@ -1,6 +1,8 @@
 import type { Ball, ShotGeometry, Velocity } from "../shot-physics";
 import { drawAimGuide, drawBall, drawTrail } from "./ball";
 import { drawCourt } from "./court";
+import type { CurryCameo } from "../game-runtime";
+import { drawCurryCameo } from "./curry";
 import { drawNet, drawRim } from "./hoop";
 import { drawKeyboardAimHint, drawMessage, type SceneFonts, type SceneMessage } from "./overlay";
 
@@ -11,9 +13,10 @@ type SceneState = {
   isOnFire: boolean;
   netEnergy: number;
   message: SceneMessage | null;
+  curryCameo: CurryCameo | null;
   seconds: number;
   fonts: SceneFonts;
-  labels: { keyboardAim: (angle: number) => string };
+  labels: { keyboardAim: (angle: number) => string; curryCaption: string };
 };
 
 function paintCourtLayer(
@@ -51,6 +54,10 @@ export function createSceneRenderer() {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.drawImage(courtLayer, 0, 0);
     ctx.restore();
+    if (scene.curryCameo) {
+      const { curryCameo, labels, seconds, fonts } = scene;
+      drawCurryCameo(ctx, geometry, curryCameo, labels.curryCaption, seconds, fonts);
+    }
     drawRim(ctx, geometry, "back");
     drawNet(ctx, geometry, scene.netEnergy, scene.seconds, "back");
 
