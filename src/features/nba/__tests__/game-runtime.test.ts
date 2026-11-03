@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   advanceRuntime,
+  CURRY_CAMEO_STREAK,
   createGameRuntime,
   getScoreText,
   markScored,
@@ -25,7 +26,7 @@ function playOut(velocity: { vx: number; vy: number }) {
   const events: RuntimeEvents = {
     onScore: (outcome) => {
       scores.push(outcome);
-      markScored(runtime, getScoreText(outcome, 1, labels));
+      markScored(runtime, getScoreText(outcome, 1, labels), 1);
     },
     onShotOver: (made) => shotsOver.push(made),
   };
@@ -58,5 +59,29 @@ describe("game runtime", () => {
     expect(getScoreText("bucket", ON_FIRE_STREAK, labels)).toBe("On fire");
     expect(getScoreText("bucket", 1, labels)).toBe("Bucket");
     expect(getScoreText("swish", 1, labels)).toBe("Swish");
+  });
+
+  it("brings Curry on when a make reaches the streak", () => {
+    const runtime = createGameRuntime();
+    expect(markScored(runtime, "On fire", CURRY_CAMEO_STREAK - 1)).toBe(false);
+    expect(runtime.curryCameo).toBeNull();
+    expect(markScored(runtime, "On fire", CURRY_CAMEO_STREAK)).toBe(true);
+    expect(runtime.curryCameo).not.toBeNull();
+  });
+
+  it("leaves Curry on the bench past the streak, so one run brings him on once", () => {
+    const runtime = createGameRuntime();
+    expect(markScored(runtime, "On fire", CURRY_CAMEO_STREAK + 1)).toBe(false);
+    expect(runtime.curryCameo).toBeNull();
+  });
+
+  it("walks Curry off once the cameo has played", () => {
+    const runtime = createGameRuntime();
+    markScored(runtime, "On fire", CURRY_CAMEO_STREAK);
+    const events: RuntimeEvents = { onScore: () => undefined, onShotOver: () => undefined };
+    for (let step = 0; step < 2000 && runtime.curryCameo; step++) {
+      advanceRuntime(runtime, geometry, events);
+    }
+    expect(runtime.curryCameo).toBeNull();
   });
 });

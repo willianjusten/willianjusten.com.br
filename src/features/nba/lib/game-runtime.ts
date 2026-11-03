@@ -14,6 +14,12 @@ import {
 } from "./shot-physics";
 
 const NET_DECAY_PER_FRAME = 0.95;
+/** Makes in a row that bring Curry on. */
+export const CURRY_CAMEO_STREAK = 3;
+/** Five seconds at 60 Hz: walk on, hold the pose, walk off. */
+export const CURRY_CAMEO_FRAMES = 300;
+
+export type CurryCameo = { framesLeft: number };
 
 type GameRuntime = {
   ball: Ball | null;
@@ -22,6 +28,7 @@ type GameRuntime = {
   message: SceneMessage | null;
   seconds: number;
   wasScoredThisShot: boolean;
+  curryCameo: CurryCameo | null;
 };
 
 type MadeShot = Exclude<ShotOutcome, "miss">;
@@ -41,6 +48,7 @@ export function createGameRuntime(): GameRuntime {
     message: null,
     seconds: 0,
     wasScoredThisShot: false,
+    curryCameo: null,
   };
 }
 
@@ -55,13 +63,17 @@ export function getScoreText(outcome: MadeShot, streakAfterMake: number, labels:
   return outcome === "bucket" ? labels.bucket : labels.swish;
 }
 
-export function markScored(runtime: GameRuntime, text: string) {
+/** Returns whether this make brought Curry on. */
+export function markScored(runtime: GameRuntime, text: string, streakAfterMake: number) {
   runtime.netEnergy = 1;
   runtime.message = { text, framesLeft: RESULT_MESSAGE_FRAMES };
   runtime.wasScoredThisShot = true;
+  if (streakAfterMake !== CURRY_CAMEO_STREAK) return false;
+  runtime.curryCameo = { framesLeft: CURRY_CAMEO_FRAMES };
+  return true;
 }
 
-/** One 60 Hz step of the clock, net, message and ball. */
+/** One 60 Hz step of the clock, net, message, cameo and ball. */
 export function advanceRuntime(
   runtime: GameRuntime,
   geometry: ShotGeometry,
@@ -70,6 +82,7 @@ export function advanceRuntime(
   runtime.seconds += 1 / 60;
   runtime.netEnergy *= NET_DECAY_PER_FRAME;
   if (runtime.message && --runtime.message.framesLeft <= 0) runtime.message = null;
+  if (runtime.curryCameo && --runtime.curryCameo.framesLeft <= 0) runtime.curryCameo = null;
 
   const ball = runtime.ball;
   if (!ball) return;
