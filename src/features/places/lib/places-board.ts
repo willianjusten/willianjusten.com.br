@@ -2,8 +2,6 @@ import type { Locale } from "next-intl";
 import type { Place } from "@/content/places";
 import type { PhotoExif, TripPhoto, TripPhotosFile } from "@/content/trip-photo-schema";
 
-/** Caps the size next/image fetches from Cloudinary; the originals are up to 6000px wide. */
-const MAX_SOURCE_WIDTH_IN_PIXELS = 2400;
 const TRIP_FOLDER_PREFIX = "trips/";
 const LINE_SEPARATOR = " · ";
 const EXIF_ORDER: (keyof PhotoExif)[] = [
@@ -121,7 +119,7 @@ export function buildGlobePlaces(
       ...(place.caption ? { caption: place.caption[locale] } : {}),
       unsplashUrl: place.unsplashUrl,
       photos: album.map((photo) => ({
-        src: `https://res.cloudinary.com/${tripPhotos.cloudName}/image/upload/c_limit,w_${MAX_SOURCE_WIDTH_IN_PIXELS}/${photo.publicId}`,
+        src: `https://res.cloudinary.com/${tripPhotos.cloudName}/image/upload/${photo.publicId}`,
         width: photo.width,
         height: photo.height,
         blurDataUrl: photo.blurDataUrl,
