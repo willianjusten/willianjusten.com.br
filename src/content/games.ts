@@ -50,6 +50,14 @@ export type Game = z.output<typeof gameSchema>;
 export const gamesData: z.input<typeof gamesSchema> = {
   games: [
     {
+      slug: "the-legend-of-zelda-ocarina-of-time",
+      title: "The Legend of Zelda: Ocarina of Time",
+      platform: "switch2",
+      list: "playing",
+      year: 2026,
+      tone: "#24402A",
+    },
+    {
       slug: "phantom-blade-zero",
       title: "Phantom Blade Zero",
       platform: "ps5",
@@ -200,13 +208,6 @@ export const gamesData: z.input<typeof gamesSchema> = {
       year: 2026,
       rating: 4.5,
       tone: "#3A2A2A",
-    },
-    {
-      slug: "the-legend-of-zelda-ocarina-of-time",
-      title: "The Legend of Zelda: Ocarina of Time",
-      platform: "switch2",
-      list: "wishlist",
-      tone: "#24402A",
     },
     {
       slug: "grand-theft-auto-vi",
