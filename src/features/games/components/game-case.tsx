@@ -130,6 +130,9 @@ export const GameCase = memo(function GameCase({
       ) : (
         <Watermark />
       )}
+      {entry.foil ? (
+        <div aria-hidden="true" className="game-case-foil pointer-events-none absolute inset-0" />
+      ) : null}
       <div className={CASE_FOOTER_CLASS}>
         {entry.sticker ? (
           <span className="-rotate-3 self-start rounded-pill bg-text px-2 py-0.75 font-mono text-tag text-on-accent">

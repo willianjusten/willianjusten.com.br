@@ -30,6 +30,18 @@
   --panel-gradient: linear-gradient(180deg, #19191d, #131316);
   --stage-gradient: linear-gradient(180deg, #16161a, #0e0e11);
   --floodlight: radial-gradient(circle, rgba(255, 107, 53, 0.38), transparent 65%);
+  /* Holographic foil bands, repeated and slid across a special-edition game case. */
+  --foil-gradient: linear-gradient(
+    115deg,
+    #ff5f6d 0%,
+    #ffc371 14%,
+    #f9f871 28%,
+    #6ef3a5 42%,
+    #4fc3f7 57%,
+    #a78bfa 71%,
+    #f472b6 85%,
+    #ff5f6d 100%
+  );
 
   /* platforms */
   --ps5: #0b4fbf;
