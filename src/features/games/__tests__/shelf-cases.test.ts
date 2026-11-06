@@ -50,6 +50,22 @@ const emptySources = {
 };
 
 describe("buildShelfCases", () => {
+  it("keeps the foil finish on the case of a foil game", () => {
+    const cases = buildShelfCases({
+      ...emptySources,
+      list: "playing",
+      games: [
+        buildGame({ slug: "foil", list: "playing", foil: true }),
+        buildGame({ slug: "plain", list: "playing" }),
+      ],
+    });
+
+    expect(cases.map((shelfCase) => [shelfCase.key, shelfCase.entry.foil ?? false])).toEqual([
+      ["foil", true],
+      ["plain", false],
+    ]);
+  });
+
   it("keeps the curated games on the tab and platform, with their reactions", () => {
     const cases = buildShelfCases({
       ...emptySources,

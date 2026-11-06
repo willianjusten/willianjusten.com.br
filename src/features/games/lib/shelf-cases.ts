@@ -16,6 +16,8 @@ export type CaseEntry = {
   coverUrl?: string | null;
   /** Pill above the title, e.g. "recommended x3". */
   sticker?: string;
+  /** Draws the holographic foil layer over the front. */
+  foil?: boolean;
 };
 
 type ReactionTarget =

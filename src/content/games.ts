@@ -34,6 +34,8 @@ const gameSchema = z.object({
   rating: z.number().min(RATING_STEP).max(MAX_RATING).multipleOf(RATING_STEP).optional(),
   /** Case colour while there is no IGDB cover, and behind the cover while it loads. */
   tone: colorHex,
+  /** Gives the case a holographic foil finish, for a special edition. Usually left out. */
+  foil: z.boolean().optional(),
 });
 
 export const gamesSchema = z
