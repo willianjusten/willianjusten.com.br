@@ -58,6 +58,7 @@ export const gamesData: z.input<typeof gamesSchema> = {
       list: "playing",
       year: 2026,
       tone: "#24402A",
+      foil: true,
     },
     {
       slug: "phantom-blade-zero",
